@@ -1,28 +1,28 @@
-# `dnsRecord` Submodule <a name="`dnsRecord` Submodule" id="@cdktf/provider-cloudflare.dnsRecord"></a>
+# `dnsRecord` Submodule <a name="`dnsRecord` Submodule" id="@cdktn/provider-cloudflare.dnsRecord"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DnsRecord <a name="DnsRecord" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord"></a>
+### DnsRecord <a name="DnsRecord" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record cloudflare_dns_record}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record cloudflare_dns_record}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 dnsrecord.NewDnsRecord(scope Construct, id *string, config DnsRecordConfig) DnsRecord
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope">scope</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id">id</a></code> | <code>*string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id"></a>
 
 - *Type:* *string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toString">ToString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride">AddOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toMetadata">ToMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove">HasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom">ImportFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putData">PutData</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putSettings">PutSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetComment">ResetComment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetContent">ResetContent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetData">ResetData</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetPriority">ResetPriority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetProxied">ResetProxied</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetSettings">ResetSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetTags">ResetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toString">ToString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride">AddOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toMetadata">ToMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove">HasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom">ImportFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putData">PutData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putSettings">PutSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetComment">ResetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetContent">ResetContent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetData">ResetData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetPriority">ResetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetProxied">ResetProxied</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetSettings">ResetSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetTags">ResetTags</a></code> | *No description.* |
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toString"></a>
 
 ```go
 func ToString() *string
@@ -93,25 +93,25 @@ func ToString() *string
 
 Returns a string representation of this construct.
 
-##### `AddOverride` <a name="AddOverride" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride"></a>
+##### `AddOverride` <a name="AddOverride" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride"></a>
 
 ```go
 func AddOverride(path *string, value interface{})
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.path"></a>
 
 - *Type:* *string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.value"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId"></a>
+##### `OverrideLogicalId` <a name="OverrideLogicalId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId"></a>
 
 ```go
 func OverrideLogicalId(newLogicalId *string)
@@ -119,7 +119,7 @@ func OverrideLogicalId(newLogicalId *string)
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* *string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId"></a>
+##### `ResetOverrideLogicalId` <a name="ResetOverrideLogicalId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId"></a>
 
 ```go
 func ResetOverrideLogicalId()
@@ -135,19 +135,19 @@ func ResetOverrideLogicalId()
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform"></a>
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform"></a>
 
 ```go
 func ToHclTerraform() interface{}
 ```
 
-##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toMetadata"></a>
+##### `ToMetadata` <a name="ToMetadata" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toMetadata"></a>
 
 ```go
 func ToMetadata() interface{}
 ```
 
-##### `ToTerraform` <a name="ToTerraform" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toTerraform"></a>
+##### `ToTerraform` <a name="ToTerraform" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toTerraform"></a>
 
 ```go
 func ToTerraform() interface{}
@@ -155,7 +155,7 @@ func ToTerraform() interface{}
 
 Adds this resource to the terraform JSON output.
 
-##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget"></a>
+##### `AddMoveTarget` <a name="AddMoveTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget"></a>
 
 ```go
 func AddMoveTarget(moveTarget *string)
@@ -163,7 +163,7 @@ func AddMoveTarget(moveTarget *string)
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove"></a>
+##### `HasResourceMove` <a name="HasResourceMove" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove"></a>
 
 ```go
 func HasResourceMove() interface{}
 ```
 
-##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom"></a>
+##### `ImportFrom` <a name="ImportFrom" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom"></a>
 
 ```go
 func ImportFrom(id *string, provider TerraformProvider)
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.id"></a>
 
 - *Type:* *string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `MoveFromId` <a name="MoveFromId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveFromId"></a>
+##### `MoveFromId` <a name="MoveFromId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveFromId"></a>
 
 ```go
 func MoveFromId(id *string)
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveFromId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo"></a>
+##### `MoveTo` <a name="MoveTo" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo"></a>
 
 ```go
 func MoveTo(moveTarget *string, index interface{})
@@ -341,7 +341,7 @@ func MoveTo(moveTarget *string, index interface{})
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.moveTarget"></a>
 
 - *Type:* *string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.index"></a>
 
 - *Type:* interface{}
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `MoveToId` <a name="MoveToId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveToId"></a>
+##### `MoveToId` <a name="MoveToId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveToId"></a>
 
 ```go
 func MoveToId(id *string)
@@ -365,7 +365,7 @@ func MoveToId(id *string)
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveToId.parameter.id"></a>
 
 - *Type:* *string
 
@@ -373,67 +373,67 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `PutData` <a name="PutData" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putData"></a>
+##### `PutData` <a name="PutData" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putData"></a>
 
 ```go
 func PutData(value DnsRecordData)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putData.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putData.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
 
 ---
 
-##### `PutSettings` <a name="PutSettings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putSettings"></a>
+##### `PutSettings` <a name="PutSettings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putSettings"></a>
 
 ```go
 func PutSettings(value DnsRecordSettings)
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putSettings.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putSettings.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
 
 ---
 
-##### `ResetComment` <a name="ResetComment" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetComment"></a>
+##### `ResetComment` <a name="ResetComment" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetComment"></a>
 
 ```go
 func ResetComment()
 ```
 
-##### `ResetContent` <a name="ResetContent" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetContent"></a>
+##### `ResetContent` <a name="ResetContent" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetContent"></a>
 
 ```go
 func ResetContent()
 ```
 
-##### `ResetData` <a name="ResetData" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetData"></a>
+##### `ResetData` <a name="ResetData" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetData"></a>
 
 ```go
 func ResetData()
 ```
 
-##### `ResetPriority` <a name="ResetPriority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetPriority"></a>
+##### `ResetPriority` <a name="ResetPriority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetPriority"></a>
 
 ```go
 func ResetPriority()
 ```
 
-##### `ResetProxied` <a name="ResetProxied" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetProxied"></a>
+##### `ResetProxied` <a name="ResetProxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetProxied"></a>
 
 ```go
 func ResetProxied()
 ```
 
-##### `ResetSettings` <a name="ResetSettings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetSettings"></a>
+##### `ResetSettings` <a name="ResetSettings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetSettings"></a>
 
 ```go
 func ResetSettings()
 ```
 
-##### `ResetTags` <a name="ResetTags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetTags"></a>
+##### `ResetTags` <a name="ResetTags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetTags"></a>
 
 ```go
 func ResetTags()
@@ -443,17 +443,17 @@ func ResetTags()
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DnsRecord resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource">IsTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTN code for importing a DnsRecord resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isConstruct"></a>
+##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 dnsrecord.DnsRecord_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isConstruct.parameter.x"></a>
 
 - *Type:* interface{}
 
@@ -482,45 +482,45 @@ Any object.
 
 ---
 
-##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement"></a>
+##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 dnsrecord.DnsRecord_IsTerraformElement(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource"></a>
+##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 dnsrecord.DnsRecord_IsTerraformResource(x interface{}) *bool
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource.parameter.x"></a>
 
 - *Type:* interface{}
 
 ---
 
-##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport"></a>
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 dnsrecord.DnsRecord_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
 
-Generates CDKTF code for importing a DnsRecord resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DnsRecord resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* github.com/aws/constructs-go/constructs/v10.Construct
 
@@ -528,7 +528,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* *string
 
@@ -536,19 +536,19 @@ The construct id used in the generated config for the DnsRecord to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* *string
 
 The id of the existing DnsRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DnsRecord to import is found.
 
@@ -558,53 +558,53 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack">CdktfStack</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn">CommentModifiedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.data">Data</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.id">Id</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.meta">Meta</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable">Proxiable</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settings">Settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn">TagsModifiedOn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput">ContentInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput">DataInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput">ProxiedInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput">SettingsInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput">TagsInput</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.content">Content</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxied">Proxied</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttl">Ttl</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.type">Type</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.node">Node</a></code> | <code>github.com/aws/constructs-go/constructs/v10.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack">CdktfStack</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId">FriendlyUniqueId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn">CommentModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn">CreatedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.data">Data</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.meta">Meta</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable">Proxiable</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn">TagsModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput">CommentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput">ContentInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput">DataInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput">NameInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput">ProxiedInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput">SettingsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput">TagsInput</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput">TtlInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput">TypeInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.comment">Comment</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.content">Content</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.name">Name</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxied">Proxied</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tags">Tags</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttl">Ttl</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.type">Type</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `Node`<sup>Required</sup> <a name="Node" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.node"></a>
+##### `Node`<sup>Required</sup> <a name="Node" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.node"></a>
 
 ```go
 func Node() Node
@@ -616,17 +616,17 @@ The tree node.
 
 ---
 
-##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack"></a>
+##### `CdktfStack`<sup>Required</sup> <a name="CdktfStack" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack"></a>
 
 ```go
 func CdktfStack() TerraformStack
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformStack
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformStack
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -636,7 +636,7 @@ func Fqn() *string
 
 ---
 
-##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId"></a>
+##### `FriendlyUniqueId`<sup>Required</sup> <a name="FriendlyUniqueId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId"></a>
 
 ```go
 func FriendlyUniqueId() *string
@@ -646,7 +646,7 @@ func FriendlyUniqueId() *string
 
 ---
 
-##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments"></a>
+##### `TerraformMetaArguments`<sup>Required</sup> <a name="TerraformMetaArguments" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments"></a>
 
 ```go
 func TerraformMetaArguments() *map[string]interface{}
@@ -656,7 +656,7 @@ func TerraformMetaArguments() *map[string]interface{}
 
 ---
 
-##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType"></a>
+##### `TerraformResourceType`<sup>Required</sup> <a name="TerraformResourceType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType"></a>
 
 ```go
 func TerraformResourceType() *string
@@ -666,17 +666,17 @@ func TerraformResourceType() *string
 
 ---
 
-##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata"></a>
+##### `TerraformGeneratorMetadata`<sup>Optional</sup> <a name="TerraformGeneratorMetadata" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata"></a>
 
 ```go
 func TerraformGeneratorMetadata() TerraformProviderGeneratorMetadata
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.connection"></a>
 
 ```go
 func Connection() interface{}
@@ -686,7 +686,7 @@ func Connection() interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.count"></a>
 
 ```go
 func Count() interface{}
@@ -696,7 +696,7 @@ func Count() interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn"></a>
 
 ```go
 func DependsOn() *[]*string
@@ -706,37 +706,37 @@ func DependsOn() *[]*string
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.forEach"></a>
 
 ```go
 func ForEach() ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle"></a>
 
 ```go
 func Lifecycle() TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provider"></a>
 
 ```go
 func Provider() TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners"></a>
 
 ```go
 func Provisioners() *[]interface{}
@@ -746,7 +746,7 @@ func Provisioners() *[]interface{}
 
 ---
 
-##### `CommentModifiedOn`<sup>Required</sup> <a name="CommentModifiedOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn"></a>
+##### `CommentModifiedOn`<sup>Required</sup> <a name="CommentModifiedOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn"></a>
 
 ```go
 func CommentModifiedOn() *string
@@ -756,7 +756,7 @@ func CommentModifiedOn() *string
 
 ---
 
-##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn"></a>
+##### `CreatedOn`<sup>Required</sup> <a name="CreatedOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn"></a>
 
 ```go
 func CreatedOn() *string
@@ -766,17 +766,17 @@ func CreatedOn() *string
 
 ---
 
-##### `Data`<sup>Required</sup> <a name="Data" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.data"></a>
+##### `Data`<sup>Required</sup> <a name="Data" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.data"></a>
 
 ```go
 func Data() DnsRecordDataOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a>
 
 ---
 
-##### `Id`<sup>Required</sup> <a name="Id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.id"></a>
+##### `Id`<sup>Required</sup> <a name="Id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.id"></a>
 
 ```go
 func Id() *string
@@ -786,7 +786,7 @@ func Id() *string
 
 ---
 
-##### `Meta`<sup>Required</sup> <a name="Meta" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.meta"></a>
+##### `Meta`<sup>Required</sup> <a name="Meta" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.meta"></a>
 
 ```go
 func Meta() *string
@@ -796,7 +796,7 @@ func Meta() *string
 
 ---
 
-##### `ModifiedOn`<sup>Required</sup> <a name="ModifiedOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn"></a>
+##### `ModifiedOn`<sup>Required</sup> <a name="ModifiedOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn"></a>
 
 ```go
 func ModifiedOn() *string
@@ -806,27 +806,27 @@ func ModifiedOn() *string
 
 ---
 
-##### `Proxiable`<sup>Required</sup> <a name="Proxiable" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable"></a>
+##### `Proxiable`<sup>Required</sup> <a name="Proxiable" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable"></a>
 
 ```go
 func Proxiable() IResolvable
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolvable
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
 
 ---
 
-##### `Settings`<sup>Required</sup> <a name="Settings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settings"></a>
+##### `Settings`<sup>Required</sup> <a name="Settings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settings"></a>
 
 ```go
 func Settings() DnsRecordSettingsOutputReference
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a>
 
 ---
 
-##### `TagsModifiedOn`<sup>Required</sup> <a name="TagsModifiedOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn"></a>
+##### `TagsModifiedOn`<sup>Required</sup> <a name="TagsModifiedOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn"></a>
 
 ```go
 func TagsModifiedOn() *string
@@ -836,7 +836,7 @@ func TagsModifiedOn() *string
 
 ---
 
-##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput"></a>
+##### `CommentInput`<sup>Optional</sup> <a name="CommentInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput"></a>
 
 ```go
 func CommentInput() *string
@@ -846,7 +846,7 @@ func CommentInput() *string
 
 ---
 
-##### `ContentInput`<sup>Optional</sup> <a name="ContentInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput"></a>
+##### `ContentInput`<sup>Optional</sup> <a name="ContentInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput"></a>
 
 ```go
 func ContentInput() *string
@@ -856,7 +856,7 @@ func ContentInput() *string
 
 ---
 
-##### `DataInput`<sup>Optional</sup> <a name="DataInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput"></a>
+##### `DataInput`<sup>Optional</sup> <a name="DataInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput"></a>
 
 ```go
 func DataInput() interface{}
@@ -866,7 +866,7 @@ func DataInput() interface{}
 
 ---
 
-##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput"></a>
+##### `NameInput`<sup>Optional</sup> <a name="NameInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput"></a>
 
 ```go
 func NameInput() *string
@@ -876,7 +876,7 @@ func NameInput() *string
 
 ---
 
-##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput"></a>
+##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput"></a>
 
 ```go
 func PriorityInput() *f64
@@ -886,7 +886,7 @@ func PriorityInput() *f64
 
 ---
 
-##### `ProxiedInput`<sup>Optional</sup> <a name="ProxiedInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput"></a>
+##### `ProxiedInput`<sup>Optional</sup> <a name="ProxiedInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput"></a>
 
 ```go
 func ProxiedInput() interface{}
@@ -896,7 +896,7 @@ func ProxiedInput() interface{}
 
 ---
 
-##### `SettingsInput`<sup>Optional</sup> <a name="SettingsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput"></a>
+##### `SettingsInput`<sup>Optional</sup> <a name="SettingsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput"></a>
 
 ```go
 func SettingsInput() interface{}
@@ -906,7 +906,7 @@ func SettingsInput() interface{}
 
 ---
 
-##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput"></a>
+##### `TagsInput`<sup>Optional</sup> <a name="TagsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput"></a>
 
 ```go
 func TagsInput() *[]*string
@@ -916,7 +916,7 @@ func TagsInput() *[]*string
 
 ---
 
-##### `TtlInput`<sup>Optional</sup> <a name="TtlInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput"></a>
+##### `TtlInput`<sup>Optional</sup> <a name="TtlInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput"></a>
 
 ```go
 func TtlInput() *f64
@@ -926,7 +926,7 @@ func TtlInput() *f64
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput"></a>
 
 ```go
 func TypeInput() *string
@@ -936,7 +936,7 @@ func TypeInput() *string
 
 ---
 
-##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput"></a>
+##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput"></a>
 
 ```go
 func ZoneIdInput() *string
@@ -946,7 +946,7 @@ func ZoneIdInput() *string
 
 ---
 
-##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.comment"></a>
+##### `Comment`<sup>Required</sup> <a name="Comment" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.comment"></a>
 
 ```go
 func Comment() *string
@@ -956,7 +956,7 @@ func Comment() *string
 
 ---
 
-##### `Content`<sup>Required</sup> <a name="Content" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.content"></a>
+##### `Content`<sup>Required</sup> <a name="Content" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.content"></a>
 
 ```go
 func Content() *string
@@ -966,7 +966,7 @@ func Content() *string
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.name"></a>
 
 ```go
 func Name() *string
@@ -976,7 +976,7 @@ func Name() *string
 
 ---
 
-##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priority"></a>
+##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priority"></a>
 
 ```go
 func Priority() *f64
@@ -986,7 +986,7 @@ func Priority() *f64
 
 ---
 
-##### `Proxied`<sup>Required</sup> <a name="Proxied" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxied"></a>
+##### `Proxied`<sup>Required</sup> <a name="Proxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxied"></a>
 
 ```go
 func Proxied() interface{}
@@ -996,7 +996,7 @@ func Proxied() interface{}
 
 ---
 
-##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tags"></a>
+##### `Tags`<sup>Required</sup> <a name="Tags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tags"></a>
 
 ```go
 func Tags() *[]*string
@@ -1006,7 +1006,7 @@ func Tags() *[]*string
 
 ---
 
-##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttl"></a>
+##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttl"></a>
 
 ```go
 func Ttl() *f64
@@ -1016,7 +1016,7 @@ func Ttl() *f64
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.type"></a>
 
 ```go
 func Type() *string
@@ -1026,7 +1026,7 @@ func Type() *string
 
 ---
 
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId"></a>
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId"></a>
 
 ```go
 func ZoneId() *string
@@ -1040,11 +1040,11 @@ func ZoneId() *string
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType">TfResourceType</a></code> | <code>*string</code> | *No description.* |
 
 ---
 
-##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType"></a>
+##### `TfResourceType`<sup>Required</sup> <a name="TfResourceType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType"></a>
 
 ```go
 func TfResourceType() *string
@@ -1056,20 +1056,20 @@ func TfResourceType() *string
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DnsRecordConfig <a name="DnsRecordConfig" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig"></a>
+### DnsRecordConfig <a name="DnsRecordConfig" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 &dnsrecord.DnsRecordConfig {
 	Connection: interface{},
 	Count: interface{},
-	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
-	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
-	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
-	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
+	DependsOn: *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable,
+	ForEach: github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator,
+	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
+	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
 	Ttl: *f64,
@@ -1077,10 +1077,10 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 	ZoneId: *string,
 	Comment: *string,
 	Content: *string,
-	Data: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dnsRecord.DnsRecordData,
+	Data: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.dnsRecord.DnsRecordData,
 	Priority: *f64,
 	Proxied: interface{},
-	Settings: github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13.dnsRecord.DnsRecordSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.dnsRecord.DnsRecordSettings,
 	Tags: *[]*string,
 }
 ```
@@ -1089,28 +1089,28 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name">Name</a></code> | <code>*string</code> | DNS record name (or @ for the zone apex) in Punycode. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Time To Live (TTL) of the DNS record in seconds. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type">Type</a></code> | <code>*string</code> | Record type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment">Comment</a></code> | <code>*string</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content">Content</a></code> | <code>*string</code> | A valid IPv4 address. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data">Data</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | Components of a CAA record. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority">Priority</a></code> | <code>*f64</code> | Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied">Proxied</a></code> | <code>interface{}</code> | Whether the record is receiving the performance and security benefits of Cloudflare. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings">Settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | Settings for the DNS record. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Custom tags for the DNS record. This field has no effect on DNS responses. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name">Name</a></code> | <code>*string</code> | DNS record name (or @ for the zone apex) in Punycode. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl">Ttl</a></code> | <code>*f64</code> | Time To Live (TTL) of the DNS record in seconds. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type">Type</a></code> | <code>*string</code> | Record type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment">Comment</a></code> | <code>*string</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content">Content</a></code> | <code>*string</code> | A valid IPv4 address. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data">Data</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | Components of a CAA record. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority">Priority</a></code> | <code>*f64</code> | Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied">Proxied</a></code> | <code>interface{}</code> | Whether the record is receiving the performance and security benefits of Cloudflare. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings">Settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | Settings for the DNS record. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags">Tags</a></code> | <code>*[]*string</code> | Custom tags for the DNS record. This field has no effect on DNS responses. |
 
 ---
 
-##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection"></a>
+##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection"></a>
 
 ```go
 Connection interface{}
@@ -1120,7 +1120,7 @@ Connection interface{}
 
 ---
 
-##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count"></a>
+##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count"></a>
 
 ```go
 Count interface{}
@@ -1130,47 +1130,47 @@ Count interface{}
 
 ---
 
-##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn"></a>
+##### `DependsOn`<sup>Optional</sup> <a name="DependsOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn"></a>
 
 ```go
 DependsOn *[]ITerraformDependable
 ```
 
-- *Type:* *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable
+- *Type:* *[]github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformDependable
 
 ---
 
-##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach"></a>
+##### `ForEach`<sup>Optional</sup> <a name="ForEach" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach"></a>
 
 ```go
 ForEach ITerraformIterator
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator
 
 ---
 
-##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle"></a>
+##### `Lifecycle`<sup>Optional</sup> <a name="Lifecycle" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle"></a>
 
 ```go
 Lifecycle TerraformResourceLifecycle
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider"></a>
+##### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider"></a>
 
 ```go
 Provider TerraformProvider
 ```
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider
 
 ---
 
-##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners"></a>
+##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners"></a>
 
 ```go
 Provisioners *[]interface{}
@@ -1180,7 +1180,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `Name`<sup>Required</sup> <a name="Name" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name"></a>
+##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name"></a>
 
 ```go
 Name *string
@@ -1190,11 +1190,11 @@ Name *string
 
 DNS record name (or @ for the zone apex) in Punycode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#name DnsRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#name DnsRecord#name}
 
 ---
 
-##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl"></a>
+##### `Ttl`<sup>Required</sup> <a name="Ttl" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl"></a>
 
 ```go
 Ttl *f64
@@ -1206,11 +1206,11 @@ Time To Live (TTL) of the DNS record in seconds.
 
 Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ttl DnsRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ttl DnsRecord#ttl}
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type"></a>
 
 ```go
 Type *string
@@ -1222,11 +1222,11 @@ Record type.
 
 Available values: "A", "AAAA", "CNAME", "MX", "NS", "OPENPGPKEY", "PTR", "TXT", "CAA", "CERT", "DNSKEY", "DS", "HTTPS", "LOC", "NAPTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "URI".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId"></a>
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId"></a>
 
 ```go
 ZoneId *string
@@ -1236,11 +1236,11 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
 
 ---
 
-##### `Comment`<sup>Optional</sup> <a name="Comment" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment"></a>
+##### `Comment`<sup>Optional</sup> <a name="Comment" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment"></a>
 
 ```go
 Comment *string
@@ -1250,11 +1250,11 @@ Comment *string
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#comment DnsRecord#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#comment DnsRecord#comment}
 
 ---
 
-##### `Content`<sup>Optional</sup> <a name="Content" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content"></a>
+##### `Content`<sup>Optional</sup> <a name="Content" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content"></a>
 
 ```go
 Content *string
@@ -1264,25 +1264,25 @@ Content *string
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#content DnsRecord#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#content DnsRecord#content}
 
 ---
 
-##### `Data`<sup>Optional</sup> <a name="Data" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data"></a>
+##### `Data`<sup>Optional</sup> <a name="Data" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data"></a>
 
 ```go
 Data DnsRecordData
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
 
 Components of a CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#data DnsRecord#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#data DnsRecord#data}
 
 ---
 
-##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority"></a>
+##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority"></a>
 
 ```go
 Priority *f64
@@ -1292,11 +1292,11 @@ Priority *f64
 
 Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
-##### `Proxied`<sup>Optional</sup> <a name="Proxied" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied"></a>
+##### `Proxied`<sup>Optional</sup> <a name="Proxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied"></a>
 
 ```go
 Proxied interface{}
@@ -1306,25 +1306,25 @@ Proxied interface{}
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#proxied DnsRecord#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#proxied DnsRecord#proxied}
 
 ---
 
-##### `Settings`<sup>Optional</sup> <a name="Settings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings"></a>
+##### `Settings`<sup>Optional</sup> <a name="Settings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings"></a>
 
 ```go
 Settings DnsRecordSettings
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
 
 Settings for the DNS record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#settings DnsRecord#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#settings DnsRecord#settings}
 
 ---
 
-##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags"></a>
+##### `Tags`<sup>Optional</sup> <a name="Tags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags"></a>
 
 ```go
 Tags *[]*string
@@ -1334,16 +1334,16 @@ Tags *[]*string
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#tags DnsRecord#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#tags DnsRecord#tags}
 
 ---
 
-### DnsRecordData <a name="DnsRecordData" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData"></a>
+### DnsRecordData <a name="DnsRecordData" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 &dnsrecord.DnsRecordData {
 	Algorithm: *f64,
@@ -1389,46 +1389,46 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm">Algorithm</a></code> | <code>*f64</code> | Algorithm. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude">Altitude</a></code> | <code>*f64</code> | Altitude of location in meters. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate">Certificate</a></code> | <code>*string</code> | Certificate. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digest">Digest</a></code> | <code>*string</code> | Digest. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType">DigestType</a></code> | <code>*f64</code> | Digest Type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint">Fingerprint</a></code> | <code>*string</code> | Fingerprint. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.flags">Flags</a></code> | <code>*map[string]interface{}</code> | Flags for the CAA record. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag">KeyTag</a></code> | <code>*f64</code> | Key Tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees">LatDegrees</a></code> | <code>*f64</code> | Degrees of latitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection">LatDirection</a></code> | <code>*string</code> | Latitude direction. Available values: "N", "S". |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes">LatMinutes</a></code> | <code>*f64</code> | Minutes of latitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds">LatSeconds</a></code> | <code>*f64</code> | Seconds of latitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees">LongDegrees</a></code> | <code>*f64</code> | Degrees of longitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection">LongDirection</a></code> | <code>*string</code> | Longitude direction. Available values: "E", "W". |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes">LongMinutes</a></code> | <code>*f64</code> | Minutes of longitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds">LongSeconds</a></code> | <code>*f64</code> | Seconds of longitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType">MatchingType</a></code> | <code>*f64</code> | Matching Type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.order">Order</a></code> | <code>*f64</code> | Order. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.port">Port</a></code> | <code>*f64</code> | The port of the service. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz">PrecisionHorz</a></code> | <code>*f64</code> | Horizontal precision of location. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert">PrecisionVert</a></code> | <code>*f64</code> | Vertical precision of location. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.preference">Preference</a></code> | <code>*f64</code> | Preference. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.priority">Priority</a></code> | <code>*f64</code> | Priority. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol">Protocol</a></code> | <code>*f64</code> | Protocol. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey">PublicKey</a></code> | <code>*string</code> | Public Key. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.regex">Regex</a></code> | <code>*string</code> | Regex. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement">Replacement</a></code> | <code>*string</code> | Replacement. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.selector">Selector</a></code> | <code>*f64</code> | Selector. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.service">Service</a></code> | <code>*string</code> | Service. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.size">Size</a></code> | <code>*f64</code> | Size of location in meters. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.tag">Tag</a></code> | <code>*string</code> | Name of the property controlled by this record (e.g.: issue, issuewild, iodef). |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.target">Target</a></code> | <code>*string</code> | Target. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.type">Type</a></code> | <code>*f64</code> | Type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.usage">Usage</a></code> | <code>*f64</code> | Usage. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.value">Value</a></code> | <code>*string</code> | Value of the record. This field's semantics depend on the chosen tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.weight">Weight</a></code> | <code>*f64</code> | The record weight. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm">Algorithm</a></code> | <code>*f64</code> | Algorithm. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude">Altitude</a></code> | <code>*f64</code> | Altitude of location in meters. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate">Certificate</a></code> | <code>*string</code> | Certificate. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digest">Digest</a></code> | <code>*string</code> | Digest. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType">DigestType</a></code> | <code>*f64</code> | Digest Type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint">Fingerprint</a></code> | <code>*string</code> | Fingerprint. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.flags">Flags</a></code> | <code>*map[string]interface{}</code> | Flags for the CAA record. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag">KeyTag</a></code> | <code>*f64</code> | Key Tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees">LatDegrees</a></code> | <code>*f64</code> | Degrees of latitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection">LatDirection</a></code> | <code>*string</code> | Latitude direction. Available values: "N", "S". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes">LatMinutes</a></code> | <code>*f64</code> | Minutes of latitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds">LatSeconds</a></code> | <code>*f64</code> | Seconds of latitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees">LongDegrees</a></code> | <code>*f64</code> | Degrees of longitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection">LongDirection</a></code> | <code>*string</code> | Longitude direction. Available values: "E", "W". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes">LongMinutes</a></code> | <code>*f64</code> | Minutes of longitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds">LongSeconds</a></code> | <code>*f64</code> | Seconds of longitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType">MatchingType</a></code> | <code>*f64</code> | Matching Type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.order">Order</a></code> | <code>*f64</code> | Order. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.port">Port</a></code> | <code>*f64</code> | The port of the service. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz">PrecisionHorz</a></code> | <code>*f64</code> | Horizontal precision of location. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert">PrecisionVert</a></code> | <code>*f64</code> | Vertical precision of location. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.preference">Preference</a></code> | <code>*f64</code> | Preference. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.priority">Priority</a></code> | <code>*f64</code> | Priority. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol">Protocol</a></code> | <code>*f64</code> | Protocol. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey">PublicKey</a></code> | <code>*string</code> | Public Key. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.regex">Regex</a></code> | <code>*string</code> | Regex. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement">Replacement</a></code> | <code>*string</code> | Replacement. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.selector">Selector</a></code> | <code>*f64</code> | Selector. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.service">Service</a></code> | <code>*string</code> | Service. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.size">Size</a></code> | <code>*f64</code> | Size of location in meters. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.tag">Tag</a></code> | <code>*string</code> | Name of the property controlled by this record (e.g.: issue, issuewild, iodef). |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.target">Target</a></code> | <code>*string</code> | Target. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.type">Type</a></code> | <code>*f64</code> | Type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.usage">Usage</a></code> | <code>*f64</code> | Usage. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.value">Value</a></code> | <code>*string</code> | Value of the record. This field's semantics depend on the chosen tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.weight">Weight</a></code> | <code>*f64</code> | The record weight. |
 
 ---
 
-##### `Algorithm`<sup>Optional</sup> <a name="Algorithm" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm"></a>
+##### `Algorithm`<sup>Optional</sup> <a name="Algorithm" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm"></a>
 
 ```go
 Algorithm *f64
@@ -1438,11 +1438,11 @@ Algorithm *f64
 
 Algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
 
 ---
 
-##### `Altitude`<sup>Optional</sup> <a name="Altitude" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude"></a>
+##### `Altitude`<sup>Optional</sup> <a name="Altitude" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude"></a>
 
 ```go
 Altitude *f64
@@ -1452,11 +1452,11 @@ Altitude *f64
 
 Altitude of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#altitude DnsRecord#altitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#altitude DnsRecord#altitude}
 
 ---
 
-##### `Certificate`<sup>Optional</sup> <a name="Certificate" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate"></a>
+##### `Certificate`<sup>Optional</sup> <a name="Certificate" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate"></a>
 
 ```go
 Certificate *string
@@ -1466,11 +1466,11 @@ Certificate *string
 
 Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#certificate DnsRecord#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#certificate DnsRecord#certificate}
 
 ---
 
-##### `Digest`<sup>Optional</sup> <a name="Digest" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digest"></a>
+##### `Digest`<sup>Optional</sup> <a name="Digest" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digest"></a>
 
 ```go
 Digest *string
@@ -1480,11 +1480,11 @@ Digest *string
 
 Digest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#digest DnsRecord#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#digest DnsRecord#digest}
 
 ---
 
-##### `DigestType`<sup>Optional</sup> <a name="DigestType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType"></a>
+##### `DigestType`<sup>Optional</sup> <a name="DigestType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType"></a>
 
 ```go
 DigestType *f64
@@ -1494,11 +1494,11 @@ DigestType *f64
 
 Digest Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
 
 ---
 
-##### `Fingerprint`<sup>Optional</sup> <a name="Fingerprint" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint"></a>
+##### `Fingerprint`<sup>Optional</sup> <a name="Fingerprint" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint"></a>
 
 ```go
 Fingerprint *string
@@ -1508,11 +1508,11 @@ Fingerprint *string
 
 Fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
 
 ---
 
-##### `Flags`<sup>Optional</sup> <a name="Flags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.flags"></a>
+##### `Flags`<sup>Optional</sup> <a name="Flags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.flags"></a>
 
 ```go
 Flags *map[string]interface{}
@@ -1522,11 +1522,11 @@ Flags *map[string]interface{}
 
 Flags for the CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#flags DnsRecord#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#flags DnsRecord#flags}
 
 ---
 
-##### `KeyTag`<sup>Optional</sup> <a name="KeyTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag"></a>
+##### `KeyTag`<sup>Optional</sup> <a name="KeyTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag"></a>
 
 ```go
 KeyTag *f64
@@ -1536,11 +1536,11 @@ KeyTag *f64
 
 Key Tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
 
 ---
 
-##### `LatDegrees`<sup>Optional</sup> <a name="LatDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees"></a>
+##### `LatDegrees`<sup>Optional</sup> <a name="LatDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees"></a>
 
 ```go
 LatDegrees *f64
@@ -1550,11 +1550,11 @@ LatDegrees *f64
 
 Degrees of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
 
 ---
 
-##### `LatDirection`<sup>Optional</sup> <a name="LatDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection"></a>
+##### `LatDirection`<sup>Optional</sup> <a name="LatDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection"></a>
 
 ```go
 LatDirection *string
@@ -1564,11 +1564,11 @@ LatDirection *string
 
 Latitude direction. Available values: "N", "S".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
 
 ---
 
-##### `LatMinutes`<sup>Optional</sup> <a name="LatMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes"></a>
+##### `LatMinutes`<sup>Optional</sup> <a name="LatMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes"></a>
 
 ```go
 LatMinutes *f64
@@ -1578,11 +1578,11 @@ LatMinutes *f64
 
 Minutes of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
 
 ---
 
-##### `LatSeconds`<sup>Optional</sup> <a name="LatSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds"></a>
+##### `LatSeconds`<sup>Optional</sup> <a name="LatSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds"></a>
 
 ```go
 LatSeconds *f64
@@ -1592,11 +1592,11 @@ LatSeconds *f64
 
 Seconds of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
 
 ---
 
-##### `LongDegrees`<sup>Optional</sup> <a name="LongDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees"></a>
+##### `LongDegrees`<sup>Optional</sup> <a name="LongDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees"></a>
 
 ```go
 LongDegrees *f64
@@ -1606,11 +1606,11 @@ LongDegrees *f64
 
 Degrees of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
 
 ---
 
-##### `LongDirection`<sup>Optional</sup> <a name="LongDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection"></a>
+##### `LongDirection`<sup>Optional</sup> <a name="LongDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection"></a>
 
 ```go
 LongDirection *string
@@ -1620,11 +1620,11 @@ LongDirection *string
 
 Longitude direction. Available values: "E", "W".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
 
 ---
 
-##### `LongMinutes`<sup>Optional</sup> <a name="LongMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes"></a>
+##### `LongMinutes`<sup>Optional</sup> <a name="LongMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes"></a>
 
 ```go
 LongMinutes *f64
@@ -1634,11 +1634,11 @@ LongMinutes *f64
 
 Minutes of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
 
 ---
 
-##### `LongSeconds`<sup>Optional</sup> <a name="LongSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds"></a>
+##### `LongSeconds`<sup>Optional</sup> <a name="LongSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds"></a>
 
 ```go
 LongSeconds *f64
@@ -1648,11 +1648,11 @@ LongSeconds *f64
 
 Seconds of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
 
 ---
 
-##### `MatchingType`<sup>Optional</sup> <a name="MatchingType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType"></a>
+##### `MatchingType`<sup>Optional</sup> <a name="MatchingType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType"></a>
 
 ```go
 MatchingType *f64
@@ -1662,11 +1662,11 @@ MatchingType *f64
 
 Matching Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
 
 ---
 
-##### `Order`<sup>Optional</sup> <a name="Order" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.order"></a>
+##### `Order`<sup>Optional</sup> <a name="Order" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.order"></a>
 
 ```go
 Order *f64
@@ -1676,11 +1676,11 @@ Order *f64
 
 Order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#order DnsRecord#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#order DnsRecord#order}
 
 ---
 
-##### `Port`<sup>Optional</sup> <a name="Port" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.port"></a>
+##### `Port`<sup>Optional</sup> <a name="Port" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.port"></a>
 
 ```go
 Port *f64
@@ -1690,11 +1690,11 @@ Port *f64
 
 The port of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#port DnsRecord#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#port DnsRecord#port}
 
 ---
 
-##### `PrecisionHorz`<sup>Optional</sup> <a name="PrecisionHorz" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz"></a>
+##### `PrecisionHorz`<sup>Optional</sup> <a name="PrecisionHorz" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz"></a>
 
 ```go
 PrecisionHorz *f64
@@ -1704,11 +1704,11 @@ PrecisionHorz *f64
 
 Horizontal precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
 
 ---
 
-##### `PrecisionVert`<sup>Optional</sup> <a name="PrecisionVert" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert"></a>
+##### `PrecisionVert`<sup>Optional</sup> <a name="PrecisionVert" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert"></a>
 
 ```go
 PrecisionVert *f64
@@ -1718,11 +1718,11 @@ PrecisionVert *f64
 
 Vertical precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
 
 ---
 
-##### `Preference`<sup>Optional</sup> <a name="Preference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.preference"></a>
+##### `Preference`<sup>Optional</sup> <a name="Preference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.preference"></a>
 
 ```go
 Preference *f64
@@ -1732,11 +1732,11 @@ Preference *f64
 
 Preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#preference DnsRecord#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#preference DnsRecord#preference}
 
 ---
 
-##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.priority"></a>
+##### `Priority`<sup>Optional</sup> <a name="Priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.priority"></a>
 
 ```go
 Priority *f64
@@ -1746,11 +1746,11 @@ Priority *f64
 
 Priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
-##### `Protocol`<sup>Optional</sup> <a name="Protocol" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol"></a>
+##### `Protocol`<sup>Optional</sup> <a name="Protocol" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol"></a>
 
 ```go
 Protocol *f64
@@ -1760,11 +1760,11 @@ Protocol *f64
 
 Protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#protocol DnsRecord#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#protocol DnsRecord#protocol}
 
 ---
 
-##### `PublicKey`<sup>Optional</sup> <a name="PublicKey" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey"></a>
+##### `PublicKey`<sup>Optional</sup> <a name="PublicKey" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey"></a>
 
 ```go
 PublicKey *string
@@ -1774,11 +1774,11 @@ PublicKey *string
 
 Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#public_key DnsRecord#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#public_key DnsRecord#public_key}
 
 ---
 
-##### `Regex`<sup>Optional</sup> <a name="Regex" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.regex"></a>
+##### `Regex`<sup>Optional</sup> <a name="Regex" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.regex"></a>
 
 ```go
 Regex *string
@@ -1788,11 +1788,11 @@ Regex *string
 
 Regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#regex DnsRecord#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#regex DnsRecord#regex}
 
 ---
 
-##### `Replacement`<sup>Optional</sup> <a name="Replacement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement"></a>
+##### `Replacement`<sup>Optional</sup> <a name="Replacement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement"></a>
 
 ```go
 Replacement *string
@@ -1802,11 +1802,11 @@ Replacement *string
 
 Replacement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#replacement DnsRecord#replacement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#replacement DnsRecord#replacement}
 
 ---
 
-##### `Selector`<sup>Optional</sup> <a name="Selector" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.selector"></a>
+##### `Selector`<sup>Optional</sup> <a name="Selector" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.selector"></a>
 
 ```go
 Selector *f64
@@ -1816,11 +1816,11 @@ Selector *f64
 
 Selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#selector DnsRecord#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#selector DnsRecord#selector}
 
 ---
 
-##### `Service`<sup>Optional</sup> <a name="Service" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.service"></a>
+##### `Service`<sup>Optional</sup> <a name="Service" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.service"></a>
 
 ```go
 Service *string
@@ -1830,11 +1830,11 @@ Service *string
 
 Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#service DnsRecord#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#service DnsRecord#service}
 
 ---
 
-##### `Size`<sup>Optional</sup> <a name="Size" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.size"></a>
+##### `Size`<sup>Optional</sup> <a name="Size" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.size"></a>
 
 ```go
 Size *f64
@@ -1844,11 +1844,11 @@ Size *f64
 
 Size of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#size DnsRecord#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#size DnsRecord#size}
 
 ---
 
-##### `Tag`<sup>Optional</sup> <a name="Tag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.tag"></a>
+##### `Tag`<sup>Optional</sup> <a name="Tag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.tag"></a>
 
 ```go
 Tag *string
@@ -1858,11 +1858,11 @@ Tag *string
 
 Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#tag DnsRecord#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#tag DnsRecord#tag}
 
 ---
 
-##### `Target`<sup>Optional</sup> <a name="Target" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.target"></a>
+##### `Target`<sup>Optional</sup> <a name="Target" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.target"></a>
 
 ```go
 Target *string
@@ -1872,11 +1872,11 @@ Target *string
 
 Target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#target DnsRecord#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#target DnsRecord#target}
 
 ---
 
-##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.type"></a>
+##### `Type`<sup>Optional</sup> <a name="Type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.type"></a>
 
 ```go
 Type *f64
@@ -1886,11 +1886,11 @@ Type *f64
 
 Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
-##### `Usage`<sup>Optional</sup> <a name="Usage" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.usage"></a>
+##### `Usage`<sup>Optional</sup> <a name="Usage" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.usage"></a>
 
 ```go
 Usage *f64
@@ -1900,11 +1900,11 @@ Usage *f64
 
 Usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#usage DnsRecord#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#usage DnsRecord#usage}
 
 ---
 
-##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.value"></a>
+##### `Value`<sup>Optional</sup> <a name="Value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.value"></a>
 
 ```go
 Value *string
@@ -1914,11 +1914,11 @@ Value *string
 
 Value of the record. This field's semantics depend on the chosen tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#value DnsRecord#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#value DnsRecord#value}
 
 ---
 
-##### `Weight`<sup>Optional</sup> <a name="Weight" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.weight"></a>
+##### `Weight`<sup>Optional</sup> <a name="Weight" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.weight"></a>
 
 ```go
 Weight *f64
@@ -1928,16 +1928,16 @@ Weight *f64
 
 The record weight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#weight DnsRecord#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#weight DnsRecord#weight}
 
 ---
 
-### DnsRecordSettings <a name="DnsRecordSettings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings"></a>
+### DnsRecordSettings <a name="DnsRecordSettings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 &dnsrecord.DnsRecordSettings {
 	FlattenCname: interface{},
@@ -1950,13 +1950,13 @@ import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname">FlattenCname</a></code> | <code>interface{}</code> | If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only">Ipv4Only</a></code> | <code>interface{}</code> | When enabled, only A records will be generated, and AAAA records will not be created. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only">Ipv6Only</a></code> | <code>interface{}</code> | When enabled, only AAAA records will be generated, and A records will not be created. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname">FlattenCname</a></code> | <code>interface{}</code> | If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only">Ipv4Only</a></code> | <code>interface{}</code> | When enabled, only A records will be generated, and AAAA records will not be created. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only">Ipv6Only</a></code> | <code>interface{}</code> | When enabled, only AAAA records will be generated, and A records will not be created. |
 
 ---
 
-##### `FlattenCname`<sup>Optional</sup> <a name="FlattenCname" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname"></a>
+##### `FlattenCname`<sup>Optional</sup> <a name="FlattenCname" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname"></a>
 
 ```go
 FlattenCname interface{}
@@ -1966,11 +1966,11 @@ FlattenCname interface{}
 
 If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
 
 ---
 
-##### `Ipv4Only`<sup>Optional</sup> <a name="Ipv4Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only"></a>
+##### `Ipv4Only`<sup>Optional</sup> <a name="Ipv4Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only"></a>
 
 ```go
 Ipv4Only interface{}
@@ -1982,11 +1982,11 @@ When enabled, only A records will be generated, and AAAA records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
 
 ---
 
-##### `Ipv6Only`<sup>Optional</sup> <a name="Ipv6Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only"></a>
+##### `Ipv6Only`<sup>Optional</sup> <a name="Ipv6Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only"></a>
 
 ```go
 Ipv6Only interface{}
@@ -1998,38 +1998,38 @@ When enabled, only AAAA records will be generated, and A records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DnsRecordDataOutputReference <a name="DnsRecordDataOutputReference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference"></a>
+### DnsRecordDataOutputReference <a name="DnsRecordDataOutputReference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 dnsrecord.NewDnsRecordDataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsRecordDataOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -2041,185 +2041,185 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm">ResetAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude">ResetAltitude</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate">ResetCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest">ResetDigest</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType">ResetDigestType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint">ResetFingerprint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags">ResetFlags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag">ResetKeyTag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees">ResetLatDegrees</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection">ResetLatDirection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes">ResetLatMinutes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds">ResetLatSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees">ResetLongDegrees</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection">ResetLongDirection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes">ResetLongMinutes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds">ResetLongSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType">ResetMatchingType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder">ResetOrder</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort">ResetPort</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz">ResetPrecisionHorz</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert">ResetPrecisionVert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference">ResetPreference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority">ResetPriority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol">ResetProtocol</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey">ResetPublicKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex">ResetRegex</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement">ResetReplacement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector">ResetSelector</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService">ResetService</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize">ResetSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag">ResetTag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget">ResetTarget</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType">ResetType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage">ResetUsage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue">ResetValue</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight">ResetWeight</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm">ResetAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude">ResetAltitude</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate">ResetCertificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest">ResetDigest</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType">ResetDigestType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint">ResetFingerprint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags">ResetFlags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag">ResetKeyTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees">ResetLatDegrees</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection">ResetLatDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes">ResetLatMinutes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds">ResetLatSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees">ResetLongDegrees</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection">ResetLongDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes">ResetLongMinutes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds">ResetLongSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType">ResetMatchingType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder">ResetOrder</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort">ResetPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz">ResetPrecisionHorz</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert">ResetPrecisionVert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference">ResetPreference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority">ResetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol">ResetProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey">ResetPublicKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex">ResetRegex</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement">ResetReplacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector">ResetSelector</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService">ResetService</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize">ResetSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag">ResetTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget">ResetTarget</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType">ResetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage">ResetUsage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue">ResetValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight">ResetWeight</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -2227,13 +2227,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -2243,217 +2243,217 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetAlgorithm` <a name="ResetAlgorithm" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm"></a>
+##### `ResetAlgorithm` <a name="ResetAlgorithm" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm"></a>
 
 ```go
 func ResetAlgorithm()
 ```
 
-##### `ResetAltitude` <a name="ResetAltitude" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude"></a>
+##### `ResetAltitude` <a name="ResetAltitude" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude"></a>
 
 ```go
 func ResetAltitude()
 ```
 
-##### `ResetCertificate` <a name="ResetCertificate" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate"></a>
+##### `ResetCertificate` <a name="ResetCertificate" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate"></a>
 
 ```go
 func ResetCertificate()
 ```
 
-##### `ResetDigest` <a name="ResetDigest" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest"></a>
+##### `ResetDigest` <a name="ResetDigest" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest"></a>
 
 ```go
 func ResetDigest()
 ```
 
-##### `ResetDigestType` <a name="ResetDigestType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType"></a>
+##### `ResetDigestType` <a name="ResetDigestType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType"></a>
 
 ```go
 func ResetDigestType()
 ```
 
-##### `ResetFingerprint` <a name="ResetFingerprint" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint"></a>
+##### `ResetFingerprint` <a name="ResetFingerprint" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint"></a>
 
 ```go
 func ResetFingerprint()
 ```
 
-##### `ResetFlags` <a name="ResetFlags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags"></a>
+##### `ResetFlags` <a name="ResetFlags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags"></a>
 
 ```go
 func ResetFlags()
 ```
 
-##### `ResetKeyTag` <a name="ResetKeyTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag"></a>
+##### `ResetKeyTag` <a name="ResetKeyTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag"></a>
 
 ```go
 func ResetKeyTag()
 ```
 
-##### `ResetLatDegrees` <a name="ResetLatDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees"></a>
+##### `ResetLatDegrees` <a name="ResetLatDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees"></a>
 
 ```go
 func ResetLatDegrees()
 ```
 
-##### `ResetLatDirection` <a name="ResetLatDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection"></a>
+##### `ResetLatDirection` <a name="ResetLatDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection"></a>
 
 ```go
 func ResetLatDirection()
 ```
 
-##### `ResetLatMinutes` <a name="ResetLatMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes"></a>
+##### `ResetLatMinutes` <a name="ResetLatMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes"></a>
 
 ```go
 func ResetLatMinutes()
 ```
 
-##### `ResetLatSeconds` <a name="ResetLatSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds"></a>
+##### `ResetLatSeconds` <a name="ResetLatSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds"></a>
 
 ```go
 func ResetLatSeconds()
 ```
 
-##### `ResetLongDegrees` <a name="ResetLongDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees"></a>
+##### `ResetLongDegrees` <a name="ResetLongDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees"></a>
 
 ```go
 func ResetLongDegrees()
 ```
 
-##### `ResetLongDirection` <a name="ResetLongDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection"></a>
+##### `ResetLongDirection` <a name="ResetLongDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection"></a>
 
 ```go
 func ResetLongDirection()
 ```
 
-##### `ResetLongMinutes` <a name="ResetLongMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes"></a>
+##### `ResetLongMinutes` <a name="ResetLongMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes"></a>
 
 ```go
 func ResetLongMinutes()
 ```
 
-##### `ResetLongSeconds` <a name="ResetLongSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds"></a>
+##### `ResetLongSeconds` <a name="ResetLongSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds"></a>
 
 ```go
 func ResetLongSeconds()
 ```
 
-##### `ResetMatchingType` <a name="ResetMatchingType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType"></a>
+##### `ResetMatchingType` <a name="ResetMatchingType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType"></a>
 
 ```go
 func ResetMatchingType()
 ```
 
-##### `ResetOrder` <a name="ResetOrder" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder"></a>
+##### `ResetOrder` <a name="ResetOrder" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder"></a>
 
 ```go
 func ResetOrder()
 ```
 
-##### `ResetPort` <a name="ResetPort" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort"></a>
+##### `ResetPort` <a name="ResetPort" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort"></a>
 
 ```go
 func ResetPort()
 ```
 
-##### `ResetPrecisionHorz` <a name="ResetPrecisionHorz" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz"></a>
+##### `ResetPrecisionHorz` <a name="ResetPrecisionHorz" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz"></a>
 
 ```go
 func ResetPrecisionHorz()
 ```
 
-##### `ResetPrecisionVert` <a name="ResetPrecisionVert" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert"></a>
+##### `ResetPrecisionVert` <a name="ResetPrecisionVert" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert"></a>
 
 ```go
 func ResetPrecisionVert()
 ```
 
-##### `ResetPreference` <a name="ResetPreference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference"></a>
+##### `ResetPreference` <a name="ResetPreference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference"></a>
 
 ```go
 func ResetPreference()
 ```
 
-##### `ResetPriority` <a name="ResetPriority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority"></a>
+##### `ResetPriority` <a name="ResetPriority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority"></a>
 
 ```go
 func ResetPriority()
 ```
 
-##### `ResetProtocol` <a name="ResetProtocol" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol"></a>
+##### `ResetProtocol` <a name="ResetProtocol" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol"></a>
 
 ```go
 func ResetProtocol()
 ```
 
-##### `ResetPublicKey` <a name="ResetPublicKey" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey"></a>
+##### `ResetPublicKey` <a name="ResetPublicKey" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey"></a>
 
 ```go
 func ResetPublicKey()
 ```
 
-##### `ResetRegex` <a name="ResetRegex" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex"></a>
+##### `ResetRegex` <a name="ResetRegex" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex"></a>
 
 ```go
 func ResetRegex()
 ```
 
-##### `ResetReplacement` <a name="ResetReplacement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement"></a>
+##### `ResetReplacement` <a name="ResetReplacement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement"></a>
 
 ```go
 func ResetReplacement()
 ```
 
-##### `ResetSelector` <a name="ResetSelector" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector"></a>
+##### `ResetSelector` <a name="ResetSelector" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector"></a>
 
 ```go
 func ResetSelector()
 ```
 
-##### `ResetService` <a name="ResetService" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService"></a>
+##### `ResetService` <a name="ResetService" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService"></a>
 
 ```go
 func ResetService()
 ```
 
-##### `ResetSize` <a name="ResetSize" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize"></a>
+##### `ResetSize` <a name="ResetSize" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize"></a>
 
 ```go
 func ResetSize()
 ```
 
-##### `ResetTag` <a name="ResetTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag"></a>
+##### `ResetTag` <a name="ResetTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag"></a>
 
 ```go
 func ResetTag()
 ```
 
-##### `ResetTarget` <a name="ResetTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget"></a>
+##### `ResetTarget` <a name="ResetTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget"></a>
 
 ```go
 func ResetTarget()
 ```
 
-##### `ResetType` <a name="ResetType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType"></a>
+##### `ResetType` <a name="ResetType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType"></a>
 
 ```go
 func ResetType()
 ```
 
-##### `ResetUsage` <a name="ResetUsage" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage"></a>
+##### `ResetUsage` <a name="ResetUsage" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage"></a>
 
 ```go
 func ResetUsage()
 ```
 
-##### `ResetValue` <a name="ResetValue" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue"></a>
+##### `ResetValue` <a name="ResetValue" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue"></a>
 
 ```go
 func ResetValue()
 ```
 
-##### `ResetWeight` <a name="ResetWeight" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight"></a>
+##### `ResetWeight` <a name="ResetWeight" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight"></a>
 
 ```go
 func ResetWeight()
@@ -2464,85 +2464,85 @@ func ResetWeight()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput">AlgorithmInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput">AltitudeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput">CertificateInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput">DigestInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput">DigestTypeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput">FingerprintInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput">FlagsInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput">KeyTagInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput">LatDegreesInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput">LatDirectionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput">LatMinutesInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput">LatSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput">LongDegreesInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput">LongDirectionInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput">LongMinutesInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput">LongSecondsInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput">MatchingTypeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput">OrderInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput">PrecisionHorzInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput">PrecisionVertInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput">PreferenceInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput">ProtocolInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput">PublicKeyInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput">RegexInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput">ReplacementInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput">SelectorInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput">ServiceInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput">SizeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput">TagInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput">TargetInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput">TypeInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput">UsageInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput">WeightInput</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm">Algorithm</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude">Altitude</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate">Certificate</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest">Digest</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType">DigestType</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint">Fingerprint</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags">Flags</a></code> | <code>*map[string]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag">KeyTag</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees">LatDegrees</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection">LatDirection</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes">LatMinutes</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds">LatSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees">LongDegrees</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection">LongDirection</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes">LongMinutes</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds">LongSeconds</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType">MatchingType</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order">Order</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz">PrecisionHorz</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert">PrecisionVert</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference">Preference</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol">Protocol</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey">PublicKey</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex">Regex</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement">Replacement</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector">Selector</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service">Service</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag">Tag</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target">Target</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type">Type</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage">Usage</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight">Weight</a></code> | <code>*f64</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput">AlgorithmInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput">AltitudeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput">CertificateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput">DigestInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput">DigestTypeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput">FingerprintInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput">FlagsInput</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput">KeyTagInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput">LatDegreesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput">LatDirectionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput">LatMinutesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput">LatSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput">LongDegreesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput">LongDirectionInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput">LongMinutesInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput">LongSecondsInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput">MatchingTypeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput">OrderInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput">PortInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput">PrecisionHorzInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput">PrecisionVertInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput">PreferenceInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput">PriorityInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput">ProtocolInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput">PublicKeyInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput">RegexInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput">ReplacementInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput">SelectorInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput">ServiceInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput">SizeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput">TagInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput">TargetInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput">TypeInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput">UsageInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput">ValueInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput">WeightInput</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm">Algorithm</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude">Altitude</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate">Certificate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest">Digest</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType">DigestType</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint">Fingerprint</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags">Flags</a></code> | <code>*map[string]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag">KeyTag</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees">LatDegrees</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection">LatDirection</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes">LatMinutes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds">LatSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees">LongDegrees</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection">LongDirection</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes">LongMinutes</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds">LongSeconds</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType">MatchingType</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order">Order</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port">Port</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz">PrecisionHorz</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert">PrecisionVert</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference">Preference</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol">Protocol</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey">PublicKey</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex">Regex</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement">Replacement</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector">Selector</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service">Service</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size">Size</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag">Tag</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target">Target</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type">Type</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage">Usage</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value">Value</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight">Weight</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -2556,7 +2556,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -2566,7 +2566,7 @@ func Fqn() *string
 
 ---
 
-##### `AlgorithmInput`<sup>Optional</sup> <a name="AlgorithmInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput"></a>
+##### `AlgorithmInput`<sup>Optional</sup> <a name="AlgorithmInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput"></a>
 
 ```go
 func AlgorithmInput() *f64
@@ -2576,7 +2576,7 @@ func AlgorithmInput() *f64
 
 ---
 
-##### `AltitudeInput`<sup>Optional</sup> <a name="AltitudeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput"></a>
+##### `AltitudeInput`<sup>Optional</sup> <a name="AltitudeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput"></a>
 
 ```go
 func AltitudeInput() *f64
@@ -2586,7 +2586,7 @@ func AltitudeInput() *f64
 
 ---
 
-##### `CertificateInput`<sup>Optional</sup> <a name="CertificateInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput"></a>
+##### `CertificateInput`<sup>Optional</sup> <a name="CertificateInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput"></a>
 
 ```go
 func CertificateInput() *string
@@ -2596,7 +2596,7 @@ func CertificateInput() *string
 
 ---
 
-##### `DigestInput`<sup>Optional</sup> <a name="DigestInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput"></a>
+##### `DigestInput`<sup>Optional</sup> <a name="DigestInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput"></a>
 
 ```go
 func DigestInput() *string
@@ -2606,7 +2606,7 @@ func DigestInput() *string
 
 ---
 
-##### `DigestTypeInput`<sup>Optional</sup> <a name="DigestTypeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput"></a>
+##### `DigestTypeInput`<sup>Optional</sup> <a name="DigestTypeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput"></a>
 
 ```go
 func DigestTypeInput() *f64
@@ -2616,7 +2616,7 @@ func DigestTypeInput() *f64
 
 ---
 
-##### `FingerprintInput`<sup>Optional</sup> <a name="FingerprintInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput"></a>
+##### `FingerprintInput`<sup>Optional</sup> <a name="FingerprintInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput"></a>
 
 ```go
 func FingerprintInput() *string
@@ -2626,7 +2626,7 @@ func FingerprintInput() *string
 
 ---
 
-##### `FlagsInput`<sup>Optional</sup> <a name="FlagsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput"></a>
+##### `FlagsInput`<sup>Optional</sup> <a name="FlagsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput"></a>
 
 ```go
 func FlagsInput() *map[string]interface{}
@@ -2636,7 +2636,7 @@ func FlagsInput() *map[string]interface{}
 
 ---
 
-##### `KeyTagInput`<sup>Optional</sup> <a name="KeyTagInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput"></a>
+##### `KeyTagInput`<sup>Optional</sup> <a name="KeyTagInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput"></a>
 
 ```go
 func KeyTagInput() *f64
@@ -2646,7 +2646,7 @@ func KeyTagInput() *f64
 
 ---
 
-##### `LatDegreesInput`<sup>Optional</sup> <a name="LatDegreesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput"></a>
+##### `LatDegreesInput`<sup>Optional</sup> <a name="LatDegreesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput"></a>
 
 ```go
 func LatDegreesInput() *f64
@@ -2656,7 +2656,7 @@ func LatDegreesInput() *f64
 
 ---
 
-##### `LatDirectionInput`<sup>Optional</sup> <a name="LatDirectionInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput"></a>
+##### `LatDirectionInput`<sup>Optional</sup> <a name="LatDirectionInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput"></a>
 
 ```go
 func LatDirectionInput() *string
@@ -2666,7 +2666,7 @@ func LatDirectionInput() *string
 
 ---
 
-##### `LatMinutesInput`<sup>Optional</sup> <a name="LatMinutesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput"></a>
+##### `LatMinutesInput`<sup>Optional</sup> <a name="LatMinutesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput"></a>
 
 ```go
 func LatMinutesInput() *f64
@@ -2676,7 +2676,7 @@ func LatMinutesInput() *f64
 
 ---
 
-##### `LatSecondsInput`<sup>Optional</sup> <a name="LatSecondsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput"></a>
+##### `LatSecondsInput`<sup>Optional</sup> <a name="LatSecondsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput"></a>
 
 ```go
 func LatSecondsInput() *f64
@@ -2686,7 +2686,7 @@ func LatSecondsInput() *f64
 
 ---
 
-##### `LongDegreesInput`<sup>Optional</sup> <a name="LongDegreesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput"></a>
+##### `LongDegreesInput`<sup>Optional</sup> <a name="LongDegreesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput"></a>
 
 ```go
 func LongDegreesInput() *f64
@@ -2696,7 +2696,7 @@ func LongDegreesInput() *f64
 
 ---
 
-##### `LongDirectionInput`<sup>Optional</sup> <a name="LongDirectionInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput"></a>
+##### `LongDirectionInput`<sup>Optional</sup> <a name="LongDirectionInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput"></a>
 
 ```go
 func LongDirectionInput() *string
@@ -2706,7 +2706,7 @@ func LongDirectionInput() *string
 
 ---
 
-##### `LongMinutesInput`<sup>Optional</sup> <a name="LongMinutesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput"></a>
+##### `LongMinutesInput`<sup>Optional</sup> <a name="LongMinutesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput"></a>
 
 ```go
 func LongMinutesInput() *f64
@@ -2716,7 +2716,7 @@ func LongMinutesInput() *f64
 
 ---
 
-##### `LongSecondsInput`<sup>Optional</sup> <a name="LongSecondsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput"></a>
+##### `LongSecondsInput`<sup>Optional</sup> <a name="LongSecondsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput"></a>
 
 ```go
 func LongSecondsInput() *f64
@@ -2726,7 +2726,7 @@ func LongSecondsInput() *f64
 
 ---
 
-##### `MatchingTypeInput`<sup>Optional</sup> <a name="MatchingTypeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput"></a>
+##### `MatchingTypeInput`<sup>Optional</sup> <a name="MatchingTypeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput"></a>
 
 ```go
 func MatchingTypeInput() *f64
@@ -2736,7 +2736,7 @@ func MatchingTypeInput() *f64
 
 ---
 
-##### `OrderInput`<sup>Optional</sup> <a name="OrderInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput"></a>
+##### `OrderInput`<sup>Optional</sup> <a name="OrderInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput"></a>
 
 ```go
 func OrderInput() *f64
@@ -2746,7 +2746,7 @@ func OrderInput() *f64
 
 ---
 
-##### `PortInput`<sup>Optional</sup> <a name="PortInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput"></a>
+##### `PortInput`<sup>Optional</sup> <a name="PortInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput"></a>
 
 ```go
 func PortInput() *f64
@@ -2756,7 +2756,7 @@ func PortInput() *f64
 
 ---
 
-##### `PrecisionHorzInput`<sup>Optional</sup> <a name="PrecisionHorzInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput"></a>
+##### `PrecisionHorzInput`<sup>Optional</sup> <a name="PrecisionHorzInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput"></a>
 
 ```go
 func PrecisionHorzInput() *f64
@@ -2766,7 +2766,7 @@ func PrecisionHorzInput() *f64
 
 ---
 
-##### `PrecisionVertInput`<sup>Optional</sup> <a name="PrecisionVertInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput"></a>
+##### `PrecisionVertInput`<sup>Optional</sup> <a name="PrecisionVertInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput"></a>
 
 ```go
 func PrecisionVertInput() *f64
@@ -2776,7 +2776,7 @@ func PrecisionVertInput() *f64
 
 ---
 
-##### `PreferenceInput`<sup>Optional</sup> <a name="PreferenceInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput"></a>
+##### `PreferenceInput`<sup>Optional</sup> <a name="PreferenceInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput"></a>
 
 ```go
 func PreferenceInput() *f64
@@ -2786,7 +2786,7 @@ func PreferenceInput() *f64
 
 ---
 
-##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput"></a>
+##### `PriorityInput`<sup>Optional</sup> <a name="PriorityInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput"></a>
 
 ```go
 func PriorityInput() *f64
@@ -2796,7 +2796,7 @@ func PriorityInput() *f64
 
 ---
 
-##### `ProtocolInput`<sup>Optional</sup> <a name="ProtocolInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput"></a>
+##### `ProtocolInput`<sup>Optional</sup> <a name="ProtocolInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput"></a>
 
 ```go
 func ProtocolInput() *f64
@@ -2806,7 +2806,7 @@ func ProtocolInput() *f64
 
 ---
 
-##### `PublicKeyInput`<sup>Optional</sup> <a name="PublicKeyInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput"></a>
+##### `PublicKeyInput`<sup>Optional</sup> <a name="PublicKeyInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput"></a>
 
 ```go
 func PublicKeyInput() *string
@@ -2816,7 +2816,7 @@ func PublicKeyInput() *string
 
 ---
 
-##### `RegexInput`<sup>Optional</sup> <a name="RegexInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput"></a>
+##### `RegexInput`<sup>Optional</sup> <a name="RegexInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput"></a>
 
 ```go
 func RegexInput() *string
@@ -2826,7 +2826,7 @@ func RegexInput() *string
 
 ---
 
-##### `ReplacementInput`<sup>Optional</sup> <a name="ReplacementInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput"></a>
+##### `ReplacementInput`<sup>Optional</sup> <a name="ReplacementInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput"></a>
 
 ```go
 func ReplacementInput() *string
@@ -2836,7 +2836,7 @@ func ReplacementInput() *string
 
 ---
 
-##### `SelectorInput`<sup>Optional</sup> <a name="SelectorInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput"></a>
+##### `SelectorInput`<sup>Optional</sup> <a name="SelectorInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput"></a>
 
 ```go
 func SelectorInput() *f64
@@ -2846,7 +2846,7 @@ func SelectorInput() *f64
 
 ---
 
-##### `ServiceInput`<sup>Optional</sup> <a name="ServiceInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput"></a>
+##### `ServiceInput`<sup>Optional</sup> <a name="ServiceInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput"></a>
 
 ```go
 func ServiceInput() *string
@@ -2856,7 +2856,7 @@ func ServiceInput() *string
 
 ---
 
-##### `SizeInput`<sup>Optional</sup> <a name="SizeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput"></a>
+##### `SizeInput`<sup>Optional</sup> <a name="SizeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput"></a>
 
 ```go
 func SizeInput() *f64
@@ -2866,7 +2866,7 @@ func SizeInput() *f64
 
 ---
 
-##### `TagInput`<sup>Optional</sup> <a name="TagInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput"></a>
+##### `TagInput`<sup>Optional</sup> <a name="TagInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput"></a>
 
 ```go
 func TagInput() *string
@@ -2876,7 +2876,7 @@ func TagInput() *string
 
 ---
 
-##### `TargetInput`<sup>Optional</sup> <a name="TargetInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput"></a>
+##### `TargetInput`<sup>Optional</sup> <a name="TargetInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput"></a>
 
 ```go
 func TargetInput() *string
@@ -2886,7 +2886,7 @@ func TargetInput() *string
 
 ---
 
-##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput"></a>
+##### `TypeInput`<sup>Optional</sup> <a name="TypeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput"></a>
 
 ```go
 func TypeInput() *f64
@@ -2896,7 +2896,7 @@ func TypeInput() *f64
 
 ---
 
-##### `UsageInput`<sup>Optional</sup> <a name="UsageInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput"></a>
+##### `UsageInput`<sup>Optional</sup> <a name="UsageInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput"></a>
 
 ```go
 func UsageInput() *f64
@@ -2906,7 +2906,7 @@ func UsageInput() *f64
 
 ---
 
-##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput"></a>
+##### `ValueInput`<sup>Optional</sup> <a name="ValueInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput"></a>
 
 ```go
 func ValueInput() *string
@@ -2916,7 +2916,7 @@ func ValueInput() *string
 
 ---
 
-##### `WeightInput`<sup>Optional</sup> <a name="WeightInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput"></a>
+##### `WeightInput`<sup>Optional</sup> <a name="WeightInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput"></a>
 
 ```go
 func WeightInput() *f64
@@ -2926,7 +2926,7 @@ func WeightInput() *f64
 
 ---
 
-##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm"></a>
+##### `Algorithm`<sup>Required</sup> <a name="Algorithm" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm"></a>
 
 ```go
 func Algorithm() *f64
@@ -2936,7 +2936,7 @@ func Algorithm() *f64
 
 ---
 
-##### `Altitude`<sup>Required</sup> <a name="Altitude" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude"></a>
+##### `Altitude`<sup>Required</sup> <a name="Altitude" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude"></a>
 
 ```go
 func Altitude() *f64
@@ -2946,7 +2946,7 @@ func Altitude() *f64
 
 ---
 
-##### `Certificate`<sup>Required</sup> <a name="Certificate" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate"></a>
+##### `Certificate`<sup>Required</sup> <a name="Certificate" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate"></a>
 
 ```go
 func Certificate() *string
@@ -2956,7 +2956,7 @@ func Certificate() *string
 
 ---
 
-##### `Digest`<sup>Required</sup> <a name="Digest" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest"></a>
+##### `Digest`<sup>Required</sup> <a name="Digest" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest"></a>
 
 ```go
 func Digest() *string
@@ -2966,7 +2966,7 @@ func Digest() *string
 
 ---
 
-##### `DigestType`<sup>Required</sup> <a name="DigestType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType"></a>
+##### `DigestType`<sup>Required</sup> <a name="DigestType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType"></a>
 
 ```go
 func DigestType() *f64
@@ -2976,7 +2976,7 @@ func DigestType() *f64
 
 ---
 
-##### `Fingerprint`<sup>Required</sup> <a name="Fingerprint" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint"></a>
+##### `Fingerprint`<sup>Required</sup> <a name="Fingerprint" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint"></a>
 
 ```go
 func Fingerprint() *string
@@ -2986,7 +2986,7 @@ func Fingerprint() *string
 
 ---
 
-##### `Flags`<sup>Required</sup> <a name="Flags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags"></a>
+##### `Flags`<sup>Required</sup> <a name="Flags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags"></a>
 
 ```go
 func Flags() *map[string]interface{}
@@ -2996,7 +2996,7 @@ func Flags() *map[string]interface{}
 
 ---
 
-##### `KeyTag`<sup>Required</sup> <a name="KeyTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag"></a>
+##### `KeyTag`<sup>Required</sup> <a name="KeyTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag"></a>
 
 ```go
 func KeyTag() *f64
@@ -3006,7 +3006,7 @@ func KeyTag() *f64
 
 ---
 
-##### `LatDegrees`<sup>Required</sup> <a name="LatDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees"></a>
+##### `LatDegrees`<sup>Required</sup> <a name="LatDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees"></a>
 
 ```go
 func LatDegrees() *f64
@@ -3016,7 +3016,7 @@ func LatDegrees() *f64
 
 ---
 
-##### `LatDirection`<sup>Required</sup> <a name="LatDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection"></a>
+##### `LatDirection`<sup>Required</sup> <a name="LatDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection"></a>
 
 ```go
 func LatDirection() *string
@@ -3026,7 +3026,7 @@ func LatDirection() *string
 
 ---
 
-##### `LatMinutes`<sup>Required</sup> <a name="LatMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes"></a>
+##### `LatMinutes`<sup>Required</sup> <a name="LatMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes"></a>
 
 ```go
 func LatMinutes() *f64
@@ -3036,7 +3036,7 @@ func LatMinutes() *f64
 
 ---
 
-##### `LatSeconds`<sup>Required</sup> <a name="LatSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds"></a>
+##### `LatSeconds`<sup>Required</sup> <a name="LatSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds"></a>
 
 ```go
 func LatSeconds() *f64
@@ -3046,7 +3046,7 @@ func LatSeconds() *f64
 
 ---
 
-##### `LongDegrees`<sup>Required</sup> <a name="LongDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees"></a>
+##### `LongDegrees`<sup>Required</sup> <a name="LongDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees"></a>
 
 ```go
 func LongDegrees() *f64
@@ -3056,7 +3056,7 @@ func LongDegrees() *f64
 
 ---
 
-##### `LongDirection`<sup>Required</sup> <a name="LongDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection"></a>
+##### `LongDirection`<sup>Required</sup> <a name="LongDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection"></a>
 
 ```go
 func LongDirection() *string
@@ -3066,7 +3066,7 @@ func LongDirection() *string
 
 ---
 
-##### `LongMinutes`<sup>Required</sup> <a name="LongMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes"></a>
+##### `LongMinutes`<sup>Required</sup> <a name="LongMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes"></a>
 
 ```go
 func LongMinutes() *f64
@@ -3076,7 +3076,7 @@ func LongMinutes() *f64
 
 ---
 
-##### `LongSeconds`<sup>Required</sup> <a name="LongSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds"></a>
+##### `LongSeconds`<sup>Required</sup> <a name="LongSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds"></a>
 
 ```go
 func LongSeconds() *f64
@@ -3086,7 +3086,7 @@ func LongSeconds() *f64
 
 ---
 
-##### `MatchingType`<sup>Required</sup> <a name="MatchingType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType"></a>
+##### `MatchingType`<sup>Required</sup> <a name="MatchingType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType"></a>
 
 ```go
 func MatchingType() *f64
@@ -3096,7 +3096,7 @@ func MatchingType() *f64
 
 ---
 
-##### `Order`<sup>Required</sup> <a name="Order" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order"></a>
+##### `Order`<sup>Required</sup> <a name="Order" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order"></a>
 
 ```go
 func Order() *f64
@@ -3106,7 +3106,7 @@ func Order() *f64
 
 ---
 
-##### `Port`<sup>Required</sup> <a name="Port" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port"></a>
+##### `Port`<sup>Required</sup> <a name="Port" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port"></a>
 
 ```go
 func Port() *f64
@@ -3116,7 +3116,7 @@ func Port() *f64
 
 ---
 
-##### `PrecisionHorz`<sup>Required</sup> <a name="PrecisionHorz" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz"></a>
+##### `PrecisionHorz`<sup>Required</sup> <a name="PrecisionHorz" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz"></a>
 
 ```go
 func PrecisionHorz() *f64
@@ -3126,7 +3126,7 @@ func PrecisionHorz() *f64
 
 ---
 
-##### `PrecisionVert`<sup>Required</sup> <a name="PrecisionVert" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert"></a>
+##### `PrecisionVert`<sup>Required</sup> <a name="PrecisionVert" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert"></a>
 
 ```go
 func PrecisionVert() *f64
@@ -3136,7 +3136,7 @@ func PrecisionVert() *f64
 
 ---
 
-##### `Preference`<sup>Required</sup> <a name="Preference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference"></a>
+##### `Preference`<sup>Required</sup> <a name="Preference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference"></a>
 
 ```go
 func Preference() *f64
@@ -3146,7 +3146,7 @@ func Preference() *f64
 
 ---
 
-##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority"></a>
+##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority"></a>
 
 ```go
 func Priority() *f64
@@ -3156,7 +3156,7 @@ func Priority() *f64
 
 ---
 
-##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol"></a>
+##### `Protocol`<sup>Required</sup> <a name="Protocol" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol"></a>
 
 ```go
 func Protocol() *f64
@@ -3166,7 +3166,7 @@ func Protocol() *f64
 
 ---
 
-##### `PublicKey`<sup>Required</sup> <a name="PublicKey" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey"></a>
+##### `PublicKey`<sup>Required</sup> <a name="PublicKey" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey"></a>
 
 ```go
 func PublicKey() *string
@@ -3176,7 +3176,7 @@ func PublicKey() *string
 
 ---
 
-##### `Regex`<sup>Required</sup> <a name="Regex" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex"></a>
+##### `Regex`<sup>Required</sup> <a name="Regex" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex"></a>
 
 ```go
 func Regex() *string
@@ -3186,7 +3186,7 @@ func Regex() *string
 
 ---
 
-##### `Replacement`<sup>Required</sup> <a name="Replacement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement"></a>
+##### `Replacement`<sup>Required</sup> <a name="Replacement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement"></a>
 
 ```go
 func Replacement() *string
@@ -3196,7 +3196,7 @@ func Replacement() *string
 
 ---
 
-##### `Selector`<sup>Required</sup> <a name="Selector" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector"></a>
+##### `Selector`<sup>Required</sup> <a name="Selector" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector"></a>
 
 ```go
 func Selector() *f64
@@ -3206,7 +3206,7 @@ func Selector() *f64
 
 ---
 
-##### `Service`<sup>Required</sup> <a name="Service" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service"></a>
+##### `Service`<sup>Required</sup> <a name="Service" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service"></a>
 
 ```go
 func Service() *string
@@ -3216,7 +3216,7 @@ func Service() *string
 
 ---
 
-##### `Size`<sup>Required</sup> <a name="Size" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size"></a>
+##### `Size`<sup>Required</sup> <a name="Size" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size"></a>
 
 ```go
 func Size() *f64
@@ -3226,7 +3226,7 @@ func Size() *f64
 
 ---
 
-##### `Tag`<sup>Required</sup> <a name="Tag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag"></a>
+##### `Tag`<sup>Required</sup> <a name="Tag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag"></a>
 
 ```go
 func Tag() *string
@@ -3236,7 +3236,7 @@ func Tag() *string
 
 ---
 
-##### `Target`<sup>Required</sup> <a name="Target" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target"></a>
+##### `Target`<sup>Required</sup> <a name="Target" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target"></a>
 
 ```go
 func Target() *string
@@ -3246,7 +3246,7 @@ func Target() *string
 
 ---
 
-##### `Type`<sup>Required</sup> <a name="Type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type"></a>
+##### `Type`<sup>Required</sup> <a name="Type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type"></a>
 
 ```go
 func Type() *f64
@@ -3256,7 +3256,7 @@ func Type() *f64
 
 ---
 
-##### `Usage`<sup>Required</sup> <a name="Usage" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage"></a>
+##### `Usage`<sup>Required</sup> <a name="Usage" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage"></a>
 
 ```go
 func Usage() *f64
@@ -3266,7 +3266,7 @@ func Usage() *f64
 
 ---
 
-##### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value"></a>
+##### `Value`<sup>Required</sup> <a name="Value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value"></a>
 
 ```go
 func Value() *string
@@ -3276,7 +3276,7 @@ func Value() *string
 
 ---
 
-##### `Weight`<sup>Required</sup> <a name="Weight" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight"></a>
+##### `Weight`<sup>Required</sup> <a name="Weight" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight"></a>
 
 ```go
 func Weight() *f64
@@ -3286,7 +3286,7 @@ func Weight() *f64
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
@@ -3297,32 +3297,32 @@ func InternalValue() interface{}
 ---
 
 
-### DnsRecordSettingsOutputReference <a name="DnsRecordSettingsOutputReference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference"></a>
+### DnsRecordSettingsOutputReference <a name="DnsRecordSettingsOutputReference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-cloudflare-go/cloudflare/v13/dnsrecord"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dnsrecord"
 
 dnsrecord.NewDnsRecordSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DnsRecordSettingsOutputReference
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IInterpolatingParent
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
@@ -3334,152 +3334,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname">ResetFlattenCname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only">ResetIpv4Only</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only">ResetIpv6Only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname">ResetFlattenCname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only">ResetIpv4Only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only">ResetIpv6Only</a></code> | *No description.* |
 
 ---
 
-##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn"></a>
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn"></a>
 
 ```go
 func ComputeFqn() *string
 ```
 
-##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute"></a>
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute"></a>
 
 ```go
 func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute"></a>
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute"></a>
 
 ```go
 func GetBooleanAttribute(terraformAttribute *string) IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute"></a>
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute"></a>
 
 ```go
 func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute"></a>
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute"></a>
 
 ```go
 func GetListAttribute(terraformAttribute *string) *[]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute"></a>
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute"></a>
 
 ```go
 func GetNumberAttribute(terraformAttribute *string) *f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute"></a>
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute"></a>
 
 ```go
 func GetNumberListAttribute(terraformAttribute *string) *[]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute"></a>
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute"></a>
 
 ```go
 func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute"></a>
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute"></a>
 
 ```go
 func GetStringAttribute(terraformAttribute *string) *string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute"></a>
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute"></a>
 
 ```go
 func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* *string
 
 ---
 
-##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute"></a>
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute"></a>
 
 ```go
 func InterpolationForAttribute(property *string) IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* *string
 
 ---
 
-##### `Resolve` <a name="Resolve" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve"></a>
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve"></a>
 
 ```go
 func Resolve(_context IResolveContext) interface{}
@@ -3487,13 +3487,13 @@ func Resolve(_context IResolveContext) interface{}
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.IResolveContext
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
 
 ---
 
-##### `ToString` <a name="ToString" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString"></a>
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString"></a>
 
 ```go
 func ToString() *string
@@ -3503,19 +3503,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `ResetFlattenCname` <a name="ResetFlattenCname" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname"></a>
+##### `ResetFlattenCname` <a name="ResetFlattenCname" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname"></a>
 
 ```go
 func ResetFlattenCname()
 ```
 
-##### `ResetIpv4Only` <a name="ResetIpv4Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only"></a>
+##### `ResetIpv4Only` <a name="ResetIpv4Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only"></a>
 
 ```go
 func ResetIpv4Only()
 ```
 
-##### `ResetIpv6Only` <a name="ResetIpv6Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only"></a>
+##### `ResetIpv6Only` <a name="ResetIpv6Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only"></a>
 
 ```go
 func ResetIpv6Only()
@@ -3526,19 +3526,19 @@ func ResetIpv6Only()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput">FlattenCnameInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput">Ipv4OnlyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput">Ipv6OnlyInput</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname">FlattenCname</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only">Ipv4Only</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only">Ipv6Only</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput">FlattenCnameInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput">Ipv4OnlyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput">Ipv6OnlyInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname">FlattenCname</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only">Ipv4Only</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only">Ipv6Only</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue">InternalValue</a></code> | <code>interface{}</code> | *No description.* |
 
 ---
 
-##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack"></a>
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack"></a>
 
 ```go
 func CreationStack() *[]*string
@@ -3552,7 +3552,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn"></a>
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn"></a>
 
 ```go
 func Fqn() *string
@@ -3562,7 +3562,7 @@ func Fqn() *string
 
 ---
 
-##### `FlattenCnameInput`<sup>Optional</sup> <a name="FlattenCnameInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput"></a>
+##### `FlattenCnameInput`<sup>Optional</sup> <a name="FlattenCnameInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput"></a>
 
 ```go
 func FlattenCnameInput() interface{}
@@ -3572,7 +3572,7 @@ func FlattenCnameInput() interface{}
 
 ---
 
-##### `Ipv4OnlyInput`<sup>Optional</sup> <a name="Ipv4OnlyInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput"></a>
+##### `Ipv4OnlyInput`<sup>Optional</sup> <a name="Ipv4OnlyInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput"></a>
 
 ```go
 func Ipv4OnlyInput() interface{}
@@ -3582,7 +3582,7 @@ func Ipv4OnlyInput() interface{}
 
 ---
 
-##### `Ipv6OnlyInput`<sup>Optional</sup> <a name="Ipv6OnlyInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput"></a>
+##### `Ipv6OnlyInput`<sup>Optional</sup> <a name="Ipv6OnlyInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput"></a>
 
 ```go
 func Ipv6OnlyInput() interface{}
@@ -3592,7 +3592,7 @@ func Ipv6OnlyInput() interface{}
 
 ---
 
-##### `FlattenCname`<sup>Required</sup> <a name="FlattenCname" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname"></a>
+##### `FlattenCname`<sup>Required</sup> <a name="FlattenCname" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname"></a>
 
 ```go
 func FlattenCname() interface{}
@@ -3602,7 +3602,7 @@ func FlattenCname() interface{}
 
 ---
 
-##### `Ipv4Only`<sup>Required</sup> <a name="Ipv4Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only"></a>
+##### `Ipv4Only`<sup>Required</sup> <a name="Ipv4Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only"></a>
 
 ```go
 func Ipv4Only() interface{}
@@ -3612,7 +3612,7 @@ func Ipv4Only() interface{}
 
 ---
 
-##### `Ipv6Only`<sup>Required</sup> <a name="Ipv6Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only"></a>
+##### `Ipv6Only`<sup>Required</sup> <a name="Ipv6Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only"></a>
 
 ```go
 func Ipv6Only() interface{}
@@ -3622,7 +3622,7 @@ func Ipv6Only() interface{}
 
 ---
 
-##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue"></a>
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue"></a>
 
 ```go
 func InternalValue() interface{}
