@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/magic_wan_gre_tunnel
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_wan_gre_tunnel
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareMagicWanGreTunnelConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareMagicWanGreTunnelConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/magic_wan_gre_tunnel#account_id DataCloudflareMagicWanGreTunnel#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_wan_gre_tunnel#account_id DataCloudflareMagicWanGreTunnel#account_id}
   */
   readonly accountId: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/magic_wan_gre_tunnel#gre_tunnel_id DataCloudflareMagicWanGreTunnel#gre_tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_wan_gre_tunnel#gre_tunnel_id DataCloudflareMagicWanGreTunnel#gre_tunnel_id}
   */
   readonly greTunnelId: string;
 }
@@ -29,8 +29,8 @@ export interface DataCloudflareMagicWanGreTunnelGreTunnelBgp {
 }
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelBgpToTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelBgpToTerraform(struct?: 
 
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelBgpToHclTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelBgpToHclTerraform(struct
   return attrs;
 }
 
-export class DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -93,8 +93,8 @@ export interface DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus {
 }
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelBgpStatusToTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -103,8 +103,8 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelBgpStatusToTerraform(str
 
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelBgpStatusToHclTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -112,14 +112,14 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelBgpStatusToHclTerraform(
   return attrs;
 }
 
-export class DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -182,8 +182,8 @@ export interface DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTarget {
 }
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetToTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -192,8 +192,8 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetToTerra
 
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetToHclTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTarget): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -201,14 +201,14 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetToHclTe
   return attrs;
 }
 
-export class DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -241,8 +241,8 @@ export interface DataCloudflareMagicWanGreTunnelGreTunnelHealthCheck {
 }
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckToTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -251,8 +251,8 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckToTerraform(s
 
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckToHclTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnelHealthCheck): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -260,14 +260,14 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelHealthCheckToHclTerrafor
   return attrs;
 }
 
-export class DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -316,8 +316,8 @@ export interface DataCloudflareMagicWanGreTunnelGreTunnel {
 }
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelToTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -326,8 +326,8 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelToTerraform(struct?: Dat
 
 
 export function dataCloudflareMagicWanGreTunnelGreTunnelToHclTerraform(struct?: DataCloudflareMagicWanGreTunnelGreTunnel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -335,14 +335,14 @@ export function dataCloudflareMagicWanGreTunnelGreTunnelToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataCloudflareMagicWanGreTunnelGreTunnelOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareMagicWanGreTunnelGreTunnelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -441,9 +441,9 @@ export class DataCloudflareMagicWanGreTunnelGreTunnelOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel}
 */
-export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
+export class DataCloudflareMagicWanGreTunnel extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -454,14 +454,14 @@ export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareMagicWanGreTunnel resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareMagicWanGreTunnel resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicWanGreTunnel to import
-  * @param importFromId The id of the existing DataCloudflareMagicWanGreTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicWanGreTunnel that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_wan_gre_tunnel#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicWanGreTunnel to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_wan_gre_tunnel", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_wan_gre_tunnel", importId: importFromId, provider });
       }
 
   // ===========
@@ -469,7 +469,7 @@ export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/magic_wan_gre_tunnel cloudflare_magic_wan_gre_tunnel} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -480,7 +480,7 @@ export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_magic_wan_gre_tunnel',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -542,21 +542,21 @@ export class DataCloudflareMagicWanGreTunnel extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      gre_tunnel_id: cdktf.stringToTerraform(this._greTunnelId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      gre_tunnel_id: cdktn.stringToTerraform(this._greTunnelId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       gre_tunnel_id: {
-        value: cdktf.stringToHclTerraform(this._greTunnelId),
+        value: cdktn.stringToHclTerraform(this._greTunnelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

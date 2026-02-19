@@ -1,40 +1,40 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustTunnelCloudflaredConfigAConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustTunnelCloudflaredConfigAConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#account_id ZeroTrustTunnelCloudflaredConfigA#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#account_id ZeroTrustTunnelCloudflaredConfigA#account_id}
   */
   readonly accountId: string;
   /**
   * The tunnel configuration and ingress rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#config ZeroTrustTunnelCloudflaredConfigA#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#config ZeroTrustTunnelCloudflaredConfigA#config}
   */
   readonly config?: ZeroTrustTunnelCloudflaredConfigConfig;
   /**
   * Indicates if this is a locally or remotely configured tunnel. If `local`, manage the tunnel using a YAML file on the origin machine. If `cloudflare`, manage the tunnel's configuration on the Zero Trust dashboard.
   * Available values: "local", "cloudflare".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#source ZeroTrustTunnelCloudflaredConfigA#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#source ZeroTrustTunnelCloudflaredConfigA#source}
   */
   readonly source?: string;
   /**
   * UUID of the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#tunnel_id ZeroTrustTunnelCloudflaredConfigA#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#tunnel_id ZeroTrustTunnelCloudflaredConfigA#tunnel_id}
   */
   readonly tunnelId: string;
 }
@@ -42,54 +42,54 @@ export interface ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAcces
   /**
   * Access applications that are allowed to reach this hostname for this Tunnel. Audience tags can be identified in the dashboard or via the List Access policies API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#aud_tag ZeroTrustTunnelCloudflaredConfigA#aud_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#aud_tag ZeroTrustTunnelCloudflaredConfigA#aud_tag}
   */
   readonly audTag: string[];
   /**
   * Deny traffic that has not fulfilled Access authorization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#required ZeroTrustTunnelCloudflaredConfigA#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#required ZeroTrustTunnelCloudflaredConfigA#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#team_name ZeroTrustTunnelCloudflaredConfigA#team_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#team_name ZeroTrustTunnelCloudflaredConfigA#team_name}
   */
   readonly teamName: string;
 }
 
-export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aud_tag: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audTag),
-    required: cdktf.booleanToTerraform(struct!.required),
-    team_name: cdktf.stringToTerraform(struct!.teamName),
+    aud_tag: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audTag),
+    required: cdktn.booleanToTerraform(struct!.required),
+    team_name: cdktn.stringToTerraform(struct!.teamName),
   }
 }
 
 
-export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aud_tag: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audTag),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.audTag),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     team_name: {
-      value: cdktf.stringToHclTerraform(struct!.teamName),
+      value: cdktn.stringToHclTerraform(struct!.teamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -100,19 +100,19 @@ export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,7 +133,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOut
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -141,7 +141,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOut
       this._required = undefined;
       this._teamName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -168,11 +168,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOut
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -200,123 +200,123 @@ export interface ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest {
   /**
   * For all L7 requests to this hostname, cloudflared will validate each request's Cf-Access-Jwt-Assertion request header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#access ZeroTrustTunnelCloudflaredConfigA#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#access ZeroTrustTunnelCloudflaredConfigA#access}
   */
   readonly access?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess;
   /**
   * Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#ca_pool ZeroTrustTunnelCloudflaredConfigA#ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#ca_pool ZeroTrustTunnelCloudflaredConfigA#ca_pool}
   */
   readonly caPool?: string;
   /**
   * Timeout for establishing a new TCP connection to your origin server. This excludes the time taken to establish TLS, which is controlled by tlsTimeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#connect_timeout ZeroTrustTunnelCloudflaredConfigA#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#connect_timeout ZeroTrustTunnelCloudflaredConfigA#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * Disables chunked transfer encoding. Useful if you are running a WSGI server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#disable_chunked_encoding ZeroTrustTunnelCloudflaredConfigA#disable_chunked_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#disable_chunked_encoding ZeroTrustTunnelCloudflaredConfigA#disable_chunked_encoding}
   */
-  readonly disableChunkedEncoding?: boolean | cdktf.IResolvable;
+  readonly disableChunkedEncoding?: boolean | cdktn.IResolvable;
   /**
   * Attempt to connect to origin using HTTP2. Origin must be configured as https.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#http2_origin ZeroTrustTunnelCloudflaredConfigA#http2_origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#http2_origin ZeroTrustTunnelCloudflaredConfigA#http2_origin}
   */
-  readonly http2Origin?: boolean | cdktf.IResolvable;
+  readonly http2Origin?: boolean | cdktn.IResolvable;
   /**
   * Sets the HTTP Host header on requests sent to the local service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#http_host_header ZeroTrustTunnelCloudflaredConfigA#http_host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#http_host_header ZeroTrustTunnelCloudflaredConfigA#http_host_header}
   */
   readonly httpHostHeader?: string;
   /**
   * Maximum number of idle keepalive connections between Tunnel and your origin. This does not restrict the total number of concurrent connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_connections ZeroTrustTunnelCloudflaredConfigA#keep_alive_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_connections ZeroTrustTunnelCloudflaredConfigA#keep_alive_connections}
   */
   readonly keepAliveConnections?: number;
   /**
   * Timeout after which an idle keepalive connection can be discarded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_timeout ZeroTrustTunnelCloudflaredConfigA#keep_alive_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_timeout ZeroTrustTunnelCloudflaredConfigA#keep_alive_timeout}
   */
   readonly keepAliveTimeout?: number;
   /**
   * Auto configure the Hostname on the origin server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#match_sn_ito_host ZeroTrustTunnelCloudflaredConfigA#match_sn_ito_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#match_sn_ito_host ZeroTrustTunnelCloudflaredConfigA#match_sn_ito_host}
   */
-  readonly matchSnItoHost?: boolean | cdktf.IResolvable;
+  readonly matchSnItoHost?: boolean | cdktn.IResolvable;
   /**
   * Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local network has misconfigured one of the protocols.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_happy_eyeballs ZeroTrustTunnelCloudflaredConfigA#no_happy_eyeballs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_happy_eyeballs ZeroTrustTunnelCloudflaredConfigA#no_happy_eyeballs}
   */
-  readonly noHappyEyeballs?: boolean | cdktf.IResolvable;
+  readonly noHappyEyeballs?: boolean | cdktn.IResolvable;
   /**
   * Disables TLS verification of the certificate presented by your origin. Will allow any certificate from the origin to be accepted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_tls_verify ZeroTrustTunnelCloudflaredConfigA#no_tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_tls_verify ZeroTrustTunnelCloudflaredConfigA#no_tls_verify}
   */
-  readonly noTlsVerify?: boolean | cdktf.IResolvable;
+  readonly noTlsVerify?: boolean | cdktn.IResolvable;
   /**
   * Hostname that cloudflared should expect from your origin server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_server_name ZeroTrustTunnelCloudflaredConfigA#origin_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_server_name ZeroTrustTunnelCloudflaredConfigA#origin_server_name}
   */
   readonly originServerName?: string;
   /**
   * cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures what type of proxy will be started. Valid options are: "" for the regular proxy and "socks" for a SOCKS5 proxy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#proxy_type ZeroTrustTunnelCloudflaredConfigA#proxy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#proxy_type ZeroTrustTunnelCloudflaredConfigA#proxy_type}
   */
   readonly proxyType?: string;
   /**
   * The timeout after which a TCP keepalive packet is sent on a connection between Tunnel and the origin server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#tcp_keep_alive ZeroTrustTunnelCloudflaredConfigA#tcp_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#tcp_keep_alive ZeroTrustTunnelCloudflaredConfigA#tcp_keep_alive}
   */
   readonly tcpKeepAlive?: number;
   /**
   * Timeout for completing a TLS handshake to your origin server, if you have chosen to connect Tunnel to an HTTPS server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#tls_timeout ZeroTrustTunnelCloudflaredConfigA#tls_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#tls_timeout ZeroTrustTunnelCloudflaredConfigA#tls_timeout}
   */
   readonly tlsTimeout?: number;
 }
 
-export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     access: zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessToTerraform(struct!.access),
-    ca_pool: cdktf.stringToTerraform(struct!.caPool),
-    connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
-    disable_chunked_encoding: cdktf.booleanToTerraform(struct!.disableChunkedEncoding),
-    http2_origin: cdktf.booleanToTerraform(struct!.http2Origin),
-    http_host_header: cdktf.stringToTerraform(struct!.httpHostHeader),
-    keep_alive_connections: cdktf.numberToTerraform(struct!.keepAliveConnections),
-    keep_alive_timeout: cdktf.numberToTerraform(struct!.keepAliveTimeout),
-    match_sn_ito_host: cdktf.booleanToTerraform(struct!.matchSnItoHost),
-    no_happy_eyeballs: cdktf.booleanToTerraform(struct!.noHappyEyeballs),
-    no_tls_verify: cdktf.booleanToTerraform(struct!.noTlsVerify),
-    origin_server_name: cdktf.stringToTerraform(struct!.originServerName),
-    proxy_type: cdktf.stringToTerraform(struct!.proxyType),
-    tcp_keep_alive: cdktf.numberToTerraform(struct!.tcpKeepAlive),
-    tls_timeout: cdktf.numberToTerraform(struct!.tlsTimeout),
+    ca_pool: cdktn.stringToTerraform(struct!.caPool),
+    connect_timeout: cdktn.numberToTerraform(struct!.connectTimeout),
+    disable_chunked_encoding: cdktn.booleanToTerraform(struct!.disableChunkedEncoding),
+    http2_origin: cdktn.booleanToTerraform(struct!.http2Origin),
+    http_host_header: cdktn.stringToTerraform(struct!.httpHostHeader),
+    keep_alive_connections: cdktn.numberToTerraform(struct!.keepAliveConnections),
+    keep_alive_timeout: cdktn.numberToTerraform(struct!.keepAliveTimeout),
+    match_sn_ito_host: cdktn.booleanToTerraform(struct!.matchSnItoHost),
+    no_happy_eyeballs: cdktn.booleanToTerraform(struct!.noHappyEyeballs),
+    no_tls_verify: cdktn.booleanToTerraform(struct!.noTlsVerify),
+    origin_server_name: cdktn.stringToTerraform(struct!.originServerName),
+    proxy_type: cdktn.stringToTerraform(struct!.proxyType),
+    tcp_keep_alive: cdktn.numberToTerraform(struct!.tcpKeepAlive),
+    tls_timeout: cdktn.numberToTerraform(struct!.tlsTimeout),
   }
 }
 
 
-export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -327,85 +327,85 @@ export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToHclT
       storageClassType: "ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess",
     },
     ca_pool: {
-      value: cdktf.stringToHclTerraform(struct!.caPool),
+      value: cdktn.stringToHclTerraform(struct!.caPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connect_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.connectTimeout),
+      value: cdktn.numberToHclTerraform(struct!.connectTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     disable_chunked_encoding: {
-      value: cdktf.booleanToHclTerraform(struct!.disableChunkedEncoding),
+      value: cdktn.booleanToHclTerraform(struct!.disableChunkedEncoding),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http2_origin: {
-      value: cdktf.booleanToHclTerraform(struct!.http2Origin),
+      value: cdktn.booleanToHclTerraform(struct!.http2Origin),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http_host_header: {
-      value: cdktf.stringToHclTerraform(struct!.httpHostHeader),
+      value: cdktn.stringToHclTerraform(struct!.httpHostHeader),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keep_alive_connections: {
-      value: cdktf.numberToHclTerraform(struct!.keepAliveConnections),
+      value: cdktn.numberToHclTerraform(struct!.keepAliveConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     keep_alive_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.keepAliveTimeout),
+      value: cdktn.numberToHclTerraform(struct!.keepAliveTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     match_sn_ito_host: {
-      value: cdktf.booleanToHclTerraform(struct!.matchSnItoHost),
+      value: cdktn.booleanToHclTerraform(struct!.matchSnItoHost),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_happy_eyeballs: {
-      value: cdktf.booleanToHclTerraform(struct!.noHappyEyeballs),
+      value: cdktn.booleanToHclTerraform(struct!.noHappyEyeballs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_tls_verify: {
-      value: cdktf.booleanToHclTerraform(struct!.noTlsVerify),
+      value: cdktn.booleanToHclTerraform(struct!.noTlsVerify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     origin_server_name: {
-      value: cdktf.stringToHclTerraform(struct!.originServerName),
+      value: cdktn.stringToHclTerraform(struct!.originServerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     proxy_type: {
-      value: cdktf.stringToHclTerraform(struct!.proxyType),
+      value: cdktn.stringToHclTerraform(struct!.proxyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tcp_keep_alive: {
-      value: cdktf.numberToHclTerraform(struct!.tcpKeepAlive),
+      value: cdktn.numberToHclTerraform(struct!.tcpKeepAlive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tls_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.tlsTimeout),
+      value: cdktn.numberToHclTerraform(struct!.tlsTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -416,19 +416,19 @@ export function zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToHclT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -497,7 +497,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputRef
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -517,7 +517,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputRef
       this._tcpKeepAlive = undefined;
       this._tlsTimeout = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -591,11 +591,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputRef
   }
 
   // disable_chunked_encoding - computed: true, optional: true, required: false
-  private _disableChunkedEncoding?: boolean | cdktf.IResolvable; 
+  private _disableChunkedEncoding?: boolean | cdktn.IResolvable; 
   public get disableChunkedEncoding() {
     return this.getBooleanAttribute('disable_chunked_encoding');
   }
-  public set disableChunkedEncoding(value: boolean | cdktf.IResolvable) {
+  public set disableChunkedEncoding(value: boolean | cdktn.IResolvable) {
     this._disableChunkedEncoding = value;
   }
   public resetDisableChunkedEncoding() {
@@ -607,11 +607,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputRef
   }
 
   // http2_origin - computed: true, optional: true, required: false
-  private _http2Origin?: boolean | cdktf.IResolvable; 
+  private _http2Origin?: boolean | cdktn.IResolvable; 
   public get http2Origin() {
     return this.getBooleanAttribute('http2_origin');
   }
-  public set http2Origin(value: boolean | cdktf.IResolvable) {
+  public set http2Origin(value: boolean | cdktn.IResolvable) {
     this._http2Origin = value;
   }
   public resetHttp2Origin() {
@@ -671,11 +671,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputRef
   }
 
   // match_sn_ito_host - computed: true, optional: true, required: false
-  private _matchSnItoHost?: boolean | cdktf.IResolvable; 
+  private _matchSnItoHost?: boolean | cdktn.IResolvable; 
   public get matchSnItoHost() {
     return this.getBooleanAttribute('match_sn_ito_host');
   }
-  public set matchSnItoHost(value: boolean | cdktf.IResolvable) {
+  public set matchSnItoHost(value: boolean | cdktn.IResolvable) {
     this._matchSnItoHost = value;
   }
   public resetMatchSnItoHost() {
@@ -687,11 +687,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputRef
   }
 
   // no_happy_eyeballs - computed: true, optional: true, required: false
-  private _noHappyEyeballs?: boolean | cdktf.IResolvable; 
+  private _noHappyEyeballs?: boolean | cdktn.IResolvable; 
   public get noHappyEyeballs() {
     return this.getBooleanAttribute('no_happy_eyeballs');
   }
-  public set noHappyEyeballs(value: boolean | cdktf.IResolvable) {
+  public set noHappyEyeballs(value: boolean | cdktn.IResolvable) {
     this._noHappyEyeballs = value;
   }
   public resetNoHappyEyeballs() {
@@ -703,11 +703,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputRef
   }
 
   // no_tls_verify - computed: true, optional: true, required: false
-  private _noTlsVerify?: boolean | cdktf.IResolvable; 
+  private _noTlsVerify?: boolean | cdktn.IResolvable; 
   public get noTlsVerify() {
     return this.getBooleanAttribute('no_tls_verify');
   }
-  public set noTlsVerify(value: boolean | cdktf.IResolvable) {
+  public set noTlsVerify(value: boolean | cdktn.IResolvable) {
     this._noTlsVerify = value;
   }
   public resetNoTlsVerify() {
@@ -786,51 +786,51 @@ export interface ZeroTrustTunnelCloudflaredConfigConfigIngress {
   /**
   * Public hostname for this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#hostname ZeroTrustTunnelCloudflaredConfigA#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#hostname ZeroTrustTunnelCloudflaredConfigA#hostname}
   */
   readonly hostname?: string;
   /**
   * Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
   */
   readonly originRequest?: ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest;
   /**
   * Requests with this path route to this public hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#path ZeroTrustTunnelCloudflaredConfigA#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#path ZeroTrustTunnelCloudflaredConfigA#path}
   */
   readonly path?: string;
   /**
   * Protocol and address of destination server. Supported protocols: http://, https://, unix://, tcp://, ssh://, rdp://, unix+tls://, smb://. Alternatively can return a HTTP status code http_status:[code] e.g. 'http_status:404'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#service ZeroTrustTunnelCloudflaredConfigA#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#service ZeroTrustTunnelCloudflaredConfigA#service}
   */
   readonly service: string;
 }
 
-export function zeroTrustTunnelCloudflaredConfigConfigIngressToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigIngressToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    hostname: cdktf.stringToTerraform(struct!.hostname),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
     origin_request: zeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToTerraform(struct!.originRequest),
-    path: cdktf.stringToTerraform(struct!.path),
-    service: cdktf.stringToTerraform(struct!.service),
+    path: cdktn.stringToTerraform(struct!.path),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function zeroTrustTunnelCloudflaredConfigConfigIngressToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigIngressToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -842,13 +842,13 @@ export function zeroTrustTunnelCloudflaredConfigConfigIngressToHclTerraform(stru
       storageClassType: "ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -859,9 +859,9 @@ export function zeroTrustTunnelCloudflaredConfigConfigIngressToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -869,11 +869,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -898,7 +898,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigIngress | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -907,7 +907,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference extend
       this._path = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -983,15 +983,15 @@ export class ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference extend
   }
 }
 
-export class ZeroTrustTunnelCloudflaredConfigConfigIngressList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustTunnelCloudflaredConfigConfigIngress[] | cdktf.IResolvable
+export class ZeroTrustTunnelCloudflaredConfigConfigIngressList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustTunnelCloudflaredConfigConfigIngress[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1006,54 +1006,54 @@ export interface ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess {
   /**
   * Access applications that are allowed to reach this hostname for this Tunnel. Audience tags can be identified in the dashboard or via the List Access policies API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#aud_tag ZeroTrustTunnelCloudflaredConfigA#aud_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#aud_tag ZeroTrustTunnelCloudflaredConfigA#aud_tag}
   */
   readonly audTag: string[];
   /**
   * Deny traffic that has not fulfilled Access authorization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#required ZeroTrustTunnelCloudflaredConfigA#required}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#required ZeroTrustTunnelCloudflaredConfigA#required}
   */
-  readonly required?: boolean | cdktf.IResolvable;
+  readonly required?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#team_name ZeroTrustTunnelCloudflaredConfigA#team_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#team_name ZeroTrustTunnelCloudflaredConfigA#team_name}
   */
   readonly teamName: string;
 }
 
-export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    aud_tag: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audTag),
-    required: cdktf.booleanToTerraform(struct!.required),
-    team_name: cdktf.stringToTerraform(struct!.teamName),
+    aud_tag: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.audTag),
+    required: cdktn.booleanToTerraform(struct!.required),
+    team_name: cdktn.stringToTerraform(struct!.teamName),
   }
 }
 
 
-export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     aud_tag: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audTag),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.audTag),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     required: {
-      value: cdktf.booleanToHclTerraform(struct!.required),
+      value: cdktn.booleanToHclTerraform(struct!.required),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     team_name: {
-      value: cdktf.stringToHclTerraform(struct!.teamName),
+      value: cdktn.stringToHclTerraform(struct!.teamName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1064,19 +1064,19 @@ export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1097,7 +1097,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1105,7 +1105,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputRefe
       this._required = undefined;
       this._teamName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1132,11 +1132,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputRefe
   }
 
   // required - computed: true, optional: true, required: false
-  private _required?: boolean | cdktf.IResolvable; 
+  private _required?: boolean | cdktn.IResolvable; 
   public get required() {
     return this.getBooleanAttribute('required');
   }
-  public set required(value: boolean | cdktf.IResolvable) {
+  public set required(value: boolean | cdktn.IResolvable) {
     this._required = value;
   }
   public resetRequired() {
@@ -1164,123 +1164,123 @@ export interface ZeroTrustTunnelCloudflaredConfigConfigOriginRequest {
   /**
   * For all L7 requests to this hostname, cloudflared will validate each request's Cf-Access-Jwt-Assertion request header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#access ZeroTrustTunnelCloudflaredConfigA#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#access ZeroTrustTunnelCloudflaredConfigA#access}
   */
   readonly access?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess;
   /**
   * Path to the certificate authority (CA) for the certificate of your origin. This option should be used only if your certificate is not signed by Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#ca_pool ZeroTrustTunnelCloudflaredConfigA#ca_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#ca_pool ZeroTrustTunnelCloudflaredConfigA#ca_pool}
   */
   readonly caPool?: string;
   /**
   * Timeout for establishing a new TCP connection to your origin server. This excludes the time taken to establish TLS, which is controlled by tlsTimeout.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#connect_timeout ZeroTrustTunnelCloudflaredConfigA#connect_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#connect_timeout ZeroTrustTunnelCloudflaredConfigA#connect_timeout}
   */
   readonly connectTimeout?: number;
   /**
   * Disables chunked transfer encoding. Useful if you are running a WSGI server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#disable_chunked_encoding ZeroTrustTunnelCloudflaredConfigA#disable_chunked_encoding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#disable_chunked_encoding ZeroTrustTunnelCloudflaredConfigA#disable_chunked_encoding}
   */
-  readonly disableChunkedEncoding?: boolean | cdktf.IResolvable;
+  readonly disableChunkedEncoding?: boolean | cdktn.IResolvable;
   /**
   * Attempt to connect to origin using HTTP2. Origin must be configured as https.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#http2_origin ZeroTrustTunnelCloudflaredConfigA#http2_origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#http2_origin ZeroTrustTunnelCloudflaredConfigA#http2_origin}
   */
-  readonly http2Origin?: boolean | cdktf.IResolvable;
+  readonly http2Origin?: boolean | cdktn.IResolvable;
   /**
   * Sets the HTTP Host header on requests sent to the local service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#http_host_header ZeroTrustTunnelCloudflaredConfigA#http_host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#http_host_header ZeroTrustTunnelCloudflaredConfigA#http_host_header}
   */
   readonly httpHostHeader?: string;
   /**
   * Maximum number of idle keepalive connections between Tunnel and your origin. This does not restrict the total number of concurrent connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_connections ZeroTrustTunnelCloudflaredConfigA#keep_alive_connections}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_connections ZeroTrustTunnelCloudflaredConfigA#keep_alive_connections}
   */
   readonly keepAliveConnections?: number;
   /**
   * Timeout after which an idle keepalive connection can be discarded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_timeout ZeroTrustTunnelCloudflaredConfigA#keep_alive_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#keep_alive_timeout ZeroTrustTunnelCloudflaredConfigA#keep_alive_timeout}
   */
   readonly keepAliveTimeout?: number;
   /**
   * Auto configure the Hostname on the origin server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#match_sn_ito_host ZeroTrustTunnelCloudflaredConfigA#match_sn_ito_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#match_sn_ito_host ZeroTrustTunnelCloudflaredConfigA#match_sn_ito_host}
   */
-  readonly matchSnItoHost?: boolean | cdktf.IResolvable;
+  readonly matchSnItoHost?: boolean | cdktn.IResolvable;
   /**
   * Disable the “happy eyeballs” algorithm for IPv4/IPv6 fallback if your local network has misconfigured one of the protocols.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_happy_eyeballs ZeroTrustTunnelCloudflaredConfigA#no_happy_eyeballs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_happy_eyeballs ZeroTrustTunnelCloudflaredConfigA#no_happy_eyeballs}
   */
-  readonly noHappyEyeballs?: boolean | cdktf.IResolvable;
+  readonly noHappyEyeballs?: boolean | cdktn.IResolvable;
   /**
   * Disables TLS verification of the certificate presented by your origin. Will allow any certificate from the origin to be accepted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_tls_verify ZeroTrustTunnelCloudflaredConfigA#no_tls_verify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#no_tls_verify ZeroTrustTunnelCloudflaredConfigA#no_tls_verify}
   */
-  readonly noTlsVerify?: boolean | cdktf.IResolvable;
+  readonly noTlsVerify?: boolean | cdktn.IResolvable;
   /**
   * Hostname that cloudflared should expect from your origin server certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_server_name ZeroTrustTunnelCloudflaredConfigA#origin_server_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_server_name ZeroTrustTunnelCloudflaredConfigA#origin_server_name}
   */
   readonly originServerName?: string;
   /**
   * cloudflared starts a proxy server to translate HTTP traffic into TCP when proxying, for example, SSH or RDP. This configures what type of proxy will be started. Valid options are: "" for the regular proxy and "socks" for a SOCKS5 proxy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#proxy_type ZeroTrustTunnelCloudflaredConfigA#proxy_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#proxy_type ZeroTrustTunnelCloudflaredConfigA#proxy_type}
   */
   readonly proxyType?: string;
   /**
   * The timeout after which a TCP keepalive packet is sent on a connection between Tunnel and the origin server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#tcp_keep_alive ZeroTrustTunnelCloudflaredConfigA#tcp_keep_alive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#tcp_keep_alive ZeroTrustTunnelCloudflaredConfigA#tcp_keep_alive}
   */
   readonly tcpKeepAlive?: number;
   /**
   * Timeout for completing a TLS handshake to your origin server, if you have chosen to connect Tunnel to an HTTPS server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#tls_timeout ZeroTrustTunnelCloudflaredConfigA#tls_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#tls_timeout ZeroTrustTunnelCloudflaredConfigA#tls_timeout}
   */
   readonly tlsTimeout?: number;
 }
 
-export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     access: zeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToTerraform(struct!.access),
-    ca_pool: cdktf.stringToTerraform(struct!.caPool),
-    connect_timeout: cdktf.numberToTerraform(struct!.connectTimeout),
-    disable_chunked_encoding: cdktf.booleanToTerraform(struct!.disableChunkedEncoding),
-    http2_origin: cdktf.booleanToTerraform(struct!.http2Origin),
-    http_host_header: cdktf.stringToTerraform(struct!.httpHostHeader),
-    keep_alive_connections: cdktf.numberToTerraform(struct!.keepAliveConnections),
-    keep_alive_timeout: cdktf.numberToTerraform(struct!.keepAliveTimeout),
-    match_sn_ito_host: cdktf.booleanToTerraform(struct!.matchSnItoHost),
-    no_happy_eyeballs: cdktf.booleanToTerraform(struct!.noHappyEyeballs),
-    no_tls_verify: cdktf.booleanToTerraform(struct!.noTlsVerify),
-    origin_server_name: cdktf.stringToTerraform(struct!.originServerName),
-    proxy_type: cdktf.stringToTerraform(struct!.proxyType),
-    tcp_keep_alive: cdktf.numberToTerraform(struct!.tcpKeepAlive),
-    tls_timeout: cdktf.numberToTerraform(struct!.tlsTimeout),
+    ca_pool: cdktn.stringToTerraform(struct!.caPool),
+    connect_timeout: cdktn.numberToTerraform(struct!.connectTimeout),
+    disable_chunked_encoding: cdktn.booleanToTerraform(struct!.disableChunkedEncoding),
+    http2_origin: cdktn.booleanToTerraform(struct!.http2Origin),
+    http_host_header: cdktn.stringToTerraform(struct!.httpHostHeader),
+    keep_alive_connections: cdktn.numberToTerraform(struct!.keepAliveConnections),
+    keep_alive_timeout: cdktn.numberToTerraform(struct!.keepAliveTimeout),
+    match_sn_ito_host: cdktn.booleanToTerraform(struct!.matchSnItoHost),
+    no_happy_eyeballs: cdktn.booleanToTerraform(struct!.noHappyEyeballs),
+    no_tls_verify: cdktn.booleanToTerraform(struct!.noTlsVerify),
+    origin_server_name: cdktn.stringToTerraform(struct!.originServerName),
+    proxy_type: cdktn.stringToTerraform(struct!.proxyType),
+    tcp_keep_alive: cdktn.numberToTerraform(struct!.tcpKeepAlive),
+    tls_timeout: cdktn.numberToTerraform(struct!.tlsTimeout),
   }
 }
 
 
-export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1291,85 +1291,85 @@ export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestToHclTerrafor
       storageClassType: "ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess",
     },
     ca_pool: {
-      value: cdktf.stringToHclTerraform(struct!.caPool),
+      value: cdktn.stringToHclTerraform(struct!.caPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     connect_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.connectTimeout),
+      value: cdktn.numberToHclTerraform(struct!.connectTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     disable_chunked_encoding: {
-      value: cdktf.booleanToHclTerraform(struct!.disableChunkedEncoding),
+      value: cdktn.booleanToHclTerraform(struct!.disableChunkedEncoding),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http2_origin: {
-      value: cdktf.booleanToHclTerraform(struct!.http2Origin),
+      value: cdktn.booleanToHclTerraform(struct!.http2Origin),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     http_host_header: {
-      value: cdktf.stringToHclTerraform(struct!.httpHostHeader),
+      value: cdktn.stringToHclTerraform(struct!.httpHostHeader),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keep_alive_connections: {
-      value: cdktf.numberToHclTerraform(struct!.keepAliveConnections),
+      value: cdktn.numberToHclTerraform(struct!.keepAliveConnections),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     keep_alive_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.keepAliveTimeout),
+      value: cdktn.numberToHclTerraform(struct!.keepAliveTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     match_sn_ito_host: {
-      value: cdktf.booleanToHclTerraform(struct!.matchSnItoHost),
+      value: cdktn.booleanToHclTerraform(struct!.matchSnItoHost),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_happy_eyeballs: {
-      value: cdktf.booleanToHclTerraform(struct!.noHappyEyeballs),
+      value: cdktn.booleanToHclTerraform(struct!.noHappyEyeballs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     no_tls_verify: {
-      value: cdktf.booleanToHclTerraform(struct!.noTlsVerify),
+      value: cdktn.booleanToHclTerraform(struct!.noTlsVerify),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     origin_server_name: {
-      value: cdktf.stringToHclTerraform(struct!.originServerName),
+      value: cdktn.stringToHclTerraform(struct!.originServerName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     proxy_type: {
-      value: cdktf.stringToHclTerraform(struct!.proxyType),
+      value: cdktn.stringToHclTerraform(struct!.proxyType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     tcp_keep_alive: {
-      value: cdktf.numberToHclTerraform(struct!.tcpKeepAlive),
+      value: cdktn.numberToHclTerraform(struct!.tcpKeepAlive),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tls_timeout: {
-      value: cdktf.numberToHclTerraform(struct!.tlsTimeout),
+      value: cdktn.numberToHclTerraform(struct!.tlsTimeout),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1380,19 +1380,19 @@ export function zeroTrustTunnelCloudflaredConfigConfigOriginRequestToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1461,7 +1461,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfigOriginRequest | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1481,7 +1481,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference 
       this._tcpKeepAlive = undefined;
       this._tlsTimeout = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1555,11 +1555,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference 
   }
 
   // disable_chunked_encoding - computed: true, optional: true, required: false
-  private _disableChunkedEncoding?: boolean | cdktf.IResolvable; 
+  private _disableChunkedEncoding?: boolean | cdktn.IResolvable; 
   public get disableChunkedEncoding() {
     return this.getBooleanAttribute('disable_chunked_encoding');
   }
-  public set disableChunkedEncoding(value: boolean | cdktf.IResolvable) {
+  public set disableChunkedEncoding(value: boolean | cdktn.IResolvable) {
     this._disableChunkedEncoding = value;
   }
   public resetDisableChunkedEncoding() {
@@ -1571,11 +1571,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference 
   }
 
   // http2_origin - computed: true, optional: true, required: false
-  private _http2Origin?: boolean | cdktf.IResolvable; 
+  private _http2Origin?: boolean | cdktn.IResolvable; 
   public get http2Origin() {
     return this.getBooleanAttribute('http2_origin');
   }
-  public set http2Origin(value: boolean | cdktf.IResolvable) {
+  public set http2Origin(value: boolean | cdktn.IResolvable) {
     this._http2Origin = value;
   }
   public resetHttp2Origin() {
@@ -1635,11 +1635,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference 
   }
 
   // match_sn_ito_host - computed: true, optional: true, required: false
-  private _matchSnItoHost?: boolean | cdktf.IResolvable; 
+  private _matchSnItoHost?: boolean | cdktn.IResolvable; 
   public get matchSnItoHost() {
     return this.getBooleanAttribute('match_sn_ito_host');
   }
-  public set matchSnItoHost(value: boolean | cdktf.IResolvable) {
+  public set matchSnItoHost(value: boolean | cdktn.IResolvable) {
     this._matchSnItoHost = value;
   }
   public resetMatchSnItoHost() {
@@ -1651,11 +1651,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference 
   }
 
   // no_happy_eyeballs - computed: true, optional: true, required: false
-  private _noHappyEyeballs?: boolean | cdktf.IResolvable; 
+  private _noHappyEyeballs?: boolean | cdktn.IResolvable; 
   public get noHappyEyeballs() {
     return this.getBooleanAttribute('no_happy_eyeballs');
   }
-  public set noHappyEyeballs(value: boolean | cdktf.IResolvable) {
+  public set noHappyEyeballs(value: boolean | cdktn.IResolvable) {
     this._noHappyEyeballs = value;
   }
   public resetNoHappyEyeballs() {
@@ -1667,11 +1667,11 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference 
   }
 
   // no_tls_verify - computed: true, optional: true, required: false
-  private _noTlsVerify?: boolean | cdktf.IResolvable; 
+  private _noTlsVerify?: boolean | cdktn.IResolvable; 
   public get noTlsVerify() {
     return this.getBooleanAttribute('no_tls_verify');
   }
-  public set noTlsVerify(value: boolean | cdktf.IResolvable) {
+  public set noTlsVerify(value: boolean | cdktn.IResolvable) {
     this._noTlsVerify = value;
   }
   public resetNoTlsVerify() {
@@ -1750,37 +1750,37 @@ export interface ZeroTrustTunnelCloudflaredConfigConfig {
   /**
   * List of public hostname definitions. At least one ingress rule needs to be defined for the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#ingress ZeroTrustTunnelCloudflaredConfigA#ingress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#ingress ZeroTrustTunnelCloudflaredConfigA#ingress}
   */
-  readonly ingress?: ZeroTrustTunnelCloudflaredConfigConfigIngress[] | cdktf.IResolvable;
+  readonly ingress?: ZeroTrustTunnelCloudflaredConfigConfigIngress[] | cdktn.IResolvable;
   /**
   * Configuration parameters for the public hostname specific connection settings between cloudflared and origin server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#origin_request ZeroTrustTunnelCloudflaredConfigA#origin_request}
   */
   readonly originRequest?: ZeroTrustTunnelCloudflaredConfigConfigOriginRequest;
 }
 
-export function zeroTrustTunnelCloudflaredConfigConfigToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigToTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ingress: cdktf.listMapper(zeroTrustTunnelCloudflaredConfigConfigIngressToTerraform, false)(struct!.ingress),
+    ingress: cdktn.listMapper(zeroTrustTunnelCloudflaredConfigConfigIngressToTerraform, false)(struct!.ingress),
     origin_request: zeroTrustTunnelCloudflaredConfigConfigOriginRequestToTerraform(struct!.originRequest),
   }
 }
 
 
-export function zeroTrustTunnelCloudflaredConfigConfigToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustTunnelCloudflaredConfigConfigToHclTerraform(struct?: ZeroTrustTunnelCloudflaredConfigConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ingress: {
-      value: cdktf.listMapperHcl(zeroTrustTunnelCloudflaredConfigConfigIngressToHclTerraform, false)(struct!.ingress),
+      value: cdktn.listMapperHcl(zeroTrustTunnelCloudflaredConfigConfigIngressToHclTerraform, false)(struct!.ingress),
       isBlock: true,
       type: "list",
       storageClassType: "ZeroTrustTunnelCloudflaredConfigConfigIngressList",
@@ -1797,19 +1797,19 @@ export function zeroTrustTunnelCloudflaredConfigConfigToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustTunnelCloudflaredConfigConfigOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustTunnelCloudflaredConfigConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustTunnelCloudflaredConfigConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1826,14 +1826,14 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustTunnelCloudflaredConfigConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ingress.internalValue = undefined;
       this._originRequest.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1850,7 +1850,7 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOutputReference extends cdktf
   public get ingress() {
     return this._ingress;
   }
-  public putIngress(value: ZeroTrustTunnelCloudflaredConfigConfigIngress[] | cdktf.IResolvable) {
+  public putIngress(value: ZeroTrustTunnelCloudflaredConfigConfigIngress[] | cdktn.IResolvable) {
     this._ingress.internalValue = value;
   }
   public resetIngress() {
@@ -1879,9 +1879,9 @@ export class ZeroTrustTunnelCloudflaredConfigConfigOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}
 */
-export class ZeroTrustTunnelCloudflaredConfigA extends cdktf.TerraformResource {
+export class ZeroTrustTunnelCloudflaredConfigA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1892,14 +1892,14 @@ export class ZeroTrustTunnelCloudflaredConfigA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustTunnelCloudflaredConfigA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustTunnelCloudflaredConfigA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustTunnelCloudflaredConfigA to import
-  * @param importFromId The id of the existing ZeroTrustTunnelCloudflaredConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustTunnelCloudflaredConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustTunnelCloudflaredConfigA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_tunnel_cloudflared_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_tunnel_cloudflared_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -1907,7 +1907,7 @@ export class ZeroTrustTunnelCloudflaredConfigA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1918,7 +1918,7 @@ export class ZeroTrustTunnelCloudflaredConfigA extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_tunnel_cloudflared_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -2018,17 +2018,17 @@ export class ZeroTrustTunnelCloudflaredConfigA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       config: zeroTrustTunnelCloudflaredConfigConfigToTerraform(this._config.internalValue),
-      source: cdktf.stringToTerraform(this._source),
-      tunnel_id: cdktf.stringToTerraform(this._tunnelId),
+      source: cdktn.stringToTerraform(this._source),
+      tunnel_id: cdktn.stringToTerraform(this._tunnelId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2040,13 +2040,13 @@ export class ZeroTrustTunnelCloudflaredConfigA extends cdktf.TerraformResource {
         storageClassType: "ZeroTrustTunnelCloudflaredConfigConfig",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tunnel_id: {
-        value: cdktf.stringToHclTerraform(this._tunnelId),
+        value: cdktn.stringToHclTerraform(this._tunnelId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

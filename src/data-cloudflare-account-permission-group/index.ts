@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_permission_group
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_permission_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareAccountPermissionGroupConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareAccountPermissionGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
   */
   readonly accountId: string;
   /**
   * Permission Group identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
   */
   readonly permissionGroupId: string;
 }
@@ -29,8 +29,8 @@ export interface DataCloudflareAccountPermissionGroupMeta {
 }
 
 export function dataCloudflareAccountPermissionGroupMetaToTerraform(struct?: DataCloudflareAccountPermissionGroupMeta): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataCloudflareAccountPermissionGroupMetaToTerraform(struct?: Dat
 
 
 export function dataCloudflareAccountPermissionGroupMetaToHclTerraform(struct?: DataCloudflareAccountPermissionGroupMeta): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function dataCloudflareAccountPermissionGroupMetaToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataCloudflareAccountPermissionGroupMetaOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountPermissionGroupMetaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -86,9 +86,9 @@ export class DataCloudflareAccountPermissionGroupMetaOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_permission_group cloudflare_account_permission_group}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_permission_group cloudflare_account_permission_group}
 */
-export class DataCloudflareAccountPermissionGroup extends cdktf.TerraformDataSource {
+export class DataCloudflareAccountPermissionGroup extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -99,14 +99,14 @@ export class DataCloudflareAccountPermissionGroup extends cdktf.TerraformDataSou
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareAccountPermissionGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareAccountPermissionGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccountPermissionGroup to import
-  * @param importFromId The id of the existing DataCloudflareAccountPermissionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_permission_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccountPermissionGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_permission_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccountPermissionGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_permission_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_permission_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -114,7 +114,7 @@ export class DataCloudflareAccountPermissionGroup extends cdktf.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_permission_group cloudflare_account_permission_group} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_permission_group cloudflare_account_permission_group} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -125,7 +125,7 @@ export class DataCloudflareAccountPermissionGroup extends cdktf.TerraformDataSou
       terraformResourceType: 'cloudflare_account_permission_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -192,21 +192,21 @@ export class DataCloudflareAccountPermissionGroup extends cdktf.TerraformDataSou
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      permission_group_id: cdktf.stringToTerraform(this._permissionGroupId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      permission_group_id: cdktn.stringToTerraform(this._permissionGroupId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       permission_group_id: {
-        value: cdktf.stringToHclTerraform(this._permissionGroupId),
+        value: cdktn.stringToHclTerraform(this._permissionGroupId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

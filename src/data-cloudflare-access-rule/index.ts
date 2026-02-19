@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareAccessRuleConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareAccessRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#account_id DataCloudflareAccessRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#account_id DataCloudflareAccessRule#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#filter DataCloudflareAccessRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#filter DataCloudflareAccessRule#filter}
   */
   readonly filter?: DataCloudflareAccessRuleFilter;
   /**
   * Unique identifier for a rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#rule_id DataCloudflareAccessRule#rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#rule_id DataCloudflareAccessRule#rule_id}
   */
   readonly ruleId?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#zone_id DataCloudflareAccessRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#zone_id DataCloudflareAccessRule#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -39,8 +39,8 @@ export interface DataCloudflareAccessRuleConfiguration {
 }
 
 export function dataCloudflareAccessRuleConfigurationToTerraform(struct?: DataCloudflareAccessRuleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -49,8 +49,8 @@ export function dataCloudflareAccessRuleConfigurationToTerraform(struct?: DataCl
 
 
 export function dataCloudflareAccessRuleConfigurationToHclTerraform(struct?: DataCloudflareAccessRuleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -58,14 +58,14 @@ export function dataCloudflareAccessRuleConfigurationToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataCloudflareAccessRuleConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccessRuleConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -99,44 +99,44 @@ export interface DataCloudflareAccessRuleFilterConfiguration {
   * Defines the target to search in existing rules.
   * Available values: "ip", "ip_range", "asn", "country".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#target DataCloudflareAccessRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#target DataCloudflareAccessRule#target}
   */
   readonly target?: string;
   /**
   * Defines the target value to search for in existing rules: an IP address, an IP address range, or a country code, depending on the provided `configuration.target`.
   * Notes: You can search for a single IPv4 address, an IP address range with a subnet of '/16' or '/24', or a two-letter ISO-3166-1 alpha-2 country code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#value DataCloudflareAccessRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#value DataCloudflareAccessRule#value}
   */
   readonly value?: string;
 }
 
-export function dataCloudflareAccessRuleFilterConfigurationToTerraform(struct?: DataCloudflareAccessRuleFilterConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccessRuleFilterConfigurationToTerraform(struct?: DataCloudflareAccessRuleFilterConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target: cdktf.stringToTerraform(struct!.target),
-    value: cdktf.stringToTerraform(struct!.value),
+    target: cdktn.stringToTerraform(struct!.target),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function dataCloudflareAccessRuleFilterConfigurationToHclTerraform(struct?: DataCloudflareAccessRuleFilterConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccessRuleFilterConfigurationToHclTerraform(struct?: DataCloudflareAccessRuleFilterConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -147,19 +147,19 @@ export function dataCloudflareAccessRuleFilterConfigurationToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareAccessRuleFilterConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccessRuleFilterConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareAccessRuleFilterConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareAccessRuleFilterConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -176,14 +176,14 @@ export class DataCloudflareAccessRuleFilterConfigurationOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareAccessRuleFilterConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareAccessRuleFilterConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._target = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -229,65 +229,65 @@ export class DataCloudflareAccessRuleFilterConfigurationOutputReference extends 
 }
 export interface DataCloudflareAccessRuleFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#configuration DataCloudflareAccessRule#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#configuration DataCloudflareAccessRule#configuration}
   */
   readonly configuration?: DataCloudflareAccessRuleFilterConfiguration;
   /**
   * Defines the direction used to sort returned rules.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#direction DataCloudflareAccessRule#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#direction DataCloudflareAccessRule#direction}
   */
   readonly direction?: string;
   /**
   * Defines the search requirements. When set to `all`, all the search requirements must match. When set to `any`, only one of the search requirements has to match.
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#match DataCloudflareAccessRule#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#match DataCloudflareAccessRule#match}
   */
   readonly match?: string;
   /**
   * The action to apply to a matched request.
   * Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#mode DataCloudflareAccessRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#mode DataCloudflareAccessRule#mode}
   */
   readonly mode?: string;
   /**
   * Defines the string to search for in the notes of existing IP Access rules.
   * Notes: For example, the string 'attack' would match IP Access rules with notes 'Attack 26/02' and 'Attack 27/02'. The search is case insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#notes DataCloudflareAccessRule#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#notes DataCloudflareAccessRule#notes}
   */
   readonly notes?: string;
   /**
   * Defines the field used to sort returned rules.
   * Available values: "configuration.target", "configuration.value", "mode".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#order DataCloudflareAccessRule#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#order DataCloudflareAccessRule#order}
   */
   readonly order?: string;
 }
 
-export function dataCloudflareAccessRuleFilterToTerraform(struct?: DataCloudflareAccessRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccessRuleFilterToTerraform(struct?: DataCloudflareAccessRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     configuration: dataCloudflareAccessRuleFilterConfigurationToTerraform(struct!.configuration),
-    direction: cdktf.stringToTerraform(struct!.direction),
-    match: cdktf.stringToTerraform(struct!.match),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    notes: cdktf.stringToTerraform(struct!.notes),
-    order: cdktf.stringToTerraform(struct!.order),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    match: cdktn.stringToTerraform(struct!.match),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    notes: cdktn.stringToTerraform(struct!.notes),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
-export function dataCloudflareAccessRuleFilterToHclTerraform(struct?: DataCloudflareAccessRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccessRuleFilterToHclTerraform(struct?: DataCloudflareAccessRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -298,31 +298,31 @@ export function dataCloudflareAccessRuleFilterToHclTerraform(struct?: DataCloudf
       storageClassType: "DataCloudflareAccessRuleFilterConfiguration",
     },
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match: {
-      value: cdktf.stringToHclTerraform(struct!.match),
+      value: cdktn.stringToHclTerraform(struct!.match),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     notes: {
-      value: cdktf.stringToHclTerraform(struct!.notes),
+      value: cdktn.stringToHclTerraform(struct!.notes),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -333,19 +333,19 @@ export function dataCloudflareAccessRuleFilterToHclTerraform(struct?: DataCloudf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareAccessRuleFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccessRuleFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareAccessRuleFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareAccessRuleFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -378,7 +378,7 @@ export class DataCloudflareAccessRuleFilterOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareAccessRuleFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareAccessRuleFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -389,7 +389,7 @@ export class DataCloudflareAccessRuleFilterOutputReference extends cdktf.Complex
       this._notes = undefined;
       this._order = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -505,8 +505,8 @@ export interface DataCloudflareAccessRuleScope {
 }
 
 export function dataCloudflareAccessRuleScopeToTerraform(struct?: DataCloudflareAccessRuleScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -515,8 +515,8 @@ export function dataCloudflareAccessRuleScopeToTerraform(struct?: DataCloudflare
 
 
 export function dataCloudflareAccessRuleScopeToHclTerraform(struct?: DataCloudflareAccessRuleScope): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -524,14 +524,14 @@ export function dataCloudflareAccessRuleScopeToHclTerraform(struct?: DataCloudfl
   return attrs;
 }
 
-export class DataCloudflareAccessRuleScopeOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccessRuleScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -567,9 +567,9 @@ export class DataCloudflareAccessRuleScopeOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule cloudflare_access_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule cloudflare_access_rule}
 */
-export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
+export class DataCloudflareAccessRule extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -580,14 +580,14 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareAccessRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareAccessRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccessRule to import
-  * @param importFromId The id of the existing DataCloudflareAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccessRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccessRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_access_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_access_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -595,7 +595,7 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/access_rule cloudflare_access_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/access_rule cloudflare_access_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -606,7 +606,7 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_access_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -739,17 +739,17 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       filter: dataCloudflareAccessRuleFilterToTerraform(this._filter.internalValue),
-      rule_id: cdktf.stringToTerraform(this._ruleId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      rule_id: cdktn.stringToTerraform(this._ruleId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -761,13 +761,13 @@ export class DataCloudflareAccessRule extends cdktf.TerraformDataSource {
         storageClassType: "DataCloudflareAccessRuleFilter",
       },
       rule_id: {
-        value: cdktf.stringToHclTerraform(this._ruleId),
+        value: cdktn.stringToHclTerraform(this._ruleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

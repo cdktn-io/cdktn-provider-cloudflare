@@ -1,41 +1,41 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CallsTurnAppConfig extends cdktf.TerraformMetaArguments {
+export interface CallsTurnAppConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
   */
   readonly accountId: string;
   /**
   * A Cloudflare-generated unique identifier for a item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
   */
   readonly keyId?: string;
   /**
   * A short description of a TURN key, not shown to end users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
   */
   readonly name?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}
 */
-export class CallsTurnApp extends cdktf.TerraformResource {
+export class CallsTurnApp extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class CallsTurnApp extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CallsTurnApp resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CallsTurnApp resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CallsTurnApp to import
-  * @param importFromId The id of the existing CallsTurnApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CallsTurnApp that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CallsTurnApp to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_calls_turn_app", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_calls_turn_app", importId: importFromId, provider });
       }
 
   // ===========
@@ -61,7 +61,7 @@ export class CallsTurnApp extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/calls_turn_app cloudflare_calls_turn_app} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CallsTurnApp extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_calls_turn_app',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -163,28 +163,28 @@ export class CallsTurnApp extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      key_id: cdktf.stringToTerraform(this._keyId),
-      name: cdktf.stringToTerraform(this._name),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      key_id: cdktn.stringToTerraform(this._keyId),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       key_id: {
-        value: cdktf.stringToHclTerraform(this._keyId),
+        value: cdktn.stringToHclTerraform(this._keyId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

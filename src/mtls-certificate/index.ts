@@ -1,53 +1,53 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MtlsCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface MtlsCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate#account_id MtlsCertificate#account_id}
   */
   readonly accountId: string;
   /**
   * Indicates whether the certificate is a CA or leaf certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate#ca MtlsCertificate#ca}
   */
-  readonly ca: boolean | cdktf.IResolvable;
+  readonly ca: boolean | cdktn.IResolvable;
   /**
-  * The uploaded root CA certificate.
+  * The uploaded root CA certificate or certificate chain. Certificates must be provided in PEM format with the certificate matching the private_key first in the chain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate#certificates MtlsCertificate#certificates}
   */
   readonly certificates: string;
   /**
   * Optional unique name for the certificate. Only used for human readability.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate#name MtlsCertificate#name}
   */
   readonly name?: string;
   /**
   * The private key for the certificate. This field is only needed for specific use cases such as using a custom certificate with Zero Trust's block page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate#private_key MtlsCertificate#private_key}
   */
   readonly privateKey?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate cloudflare_mtls_certificate}
 */
-export class MtlsCertificate extends cdktf.TerraformResource {
+export class MtlsCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -58,14 +58,14 @@ export class MtlsCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MtlsCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MtlsCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MtlsCertificate to import
-  * @param importFromId The id of the existing MtlsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MtlsCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MtlsCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_mtls_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_mtls_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -73,7 +73,7 @@ export class MtlsCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/mtls_certificate cloudflare_mtls_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class MtlsCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_mtls_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -120,11 +120,11 @@ export class MtlsCertificate extends cdktf.TerraformResource {
   }
 
   // ca - computed: false, optional: false, required: true
-  private _ca?: boolean | cdktf.IResolvable; 
+  private _ca?: boolean | cdktn.IResolvable; 
   public get ca() {
     return this.getBooleanAttribute('ca');
   }
-  public set ca(value: boolean | cdktf.IResolvable) {
+  public set ca(value: boolean | cdktn.IResolvable) {
     this._ca = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -218,42 +218,42 @@ export class MtlsCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      ca: cdktf.booleanToTerraform(this._ca),
-      certificates: cdktf.stringToTerraform(this._certificates),
-      name: cdktf.stringToTerraform(this._name),
-      private_key: cdktf.stringToTerraform(this._privateKey),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      ca: cdktn.booleanToTerraform(this._ca),
+      certificates: cdktn.stringToTerraform(this._certificates),
+      name: cdktn.stringToTerraform(this._name),
+      private_key: cdktn.stringToTerraform(this._privateKey),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ca: {
-        value: cdktf.booleanToHclTerraform(this._ca),
+        value: cdktn.booleanToHclTerraform(this._ca),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       certificates: {
-        value: cdktf.stringToHclTerraform(this._certificates),
+        value: cdktn.stringToHclTerraform(this._certificates),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

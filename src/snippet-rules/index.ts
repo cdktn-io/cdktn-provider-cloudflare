@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SnippetRulesConfig extends cdktf.TerraformMetaArguments {
+export interface SnippetRulesConfig extends cdktn.TerraformMetaArguments {
   /**
   * A list of snippet rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules#rules SnippetRules#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#rules SnippetRules#rules}
   */
-  readonly rules: SnippetRulesRules[] | cdktf.IResolvable;
+  readonly rules: SnippetRulesRules[] | cdktn.IResolvable;
   /**
   * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -29,69 +29,69 @@ export interface SnippetRulesRules {
   /**
   * An informative description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules#description SnippetRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#description SnippetRules#description}
   */
   readonly description?: string;
   /**
   * Whether the rule should be executed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The expression defining which traffic will match the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules#expression SnippetRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#expression SnippetRules#expression}
   */
   readonly expression: string;
   /**
   * The identifying name of the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
   */
   readonly snippetName: string;
 }
 
-export function snippetRulesRulesToTerraform(struct?: SnippetRulesRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function snippetRulesRulesToTerraform(struct?: SnippetRulesRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    snippet_name: cdktf.stringToTerraform(struct!.snippetName),
+    description: cdktn.stringToTerraform(struct!.description),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    snippet_name: cdktn.stringToTerraform(struct!.snippetName),
   }
 }
 
 
-export function snippetRulesRulesToHclTerraform(struct?: SnippetRulesRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function snippetRulesRulesToHclTerraform(struct?: SnippetRulesRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     snippet_name: {
-      value: cdktf.stringToHclTerraform(struct!.snippetName),
+      value: cdktn.stringToHclTerraform(struct!.snippetName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -102,9 +102,9 @@ export function snippetRulesRulesToHclTerraform(struct?: SnippetRulesRules | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class SnippetRulesRulesOutputReference extends cdktf.ComplexObject {
+export class SnippetRulesRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -112,11 +112,11 @@ export class SnippetRulesRulesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): SnippetRulesRules | cdktf.IResolvable | undefined {
+  public get internalValue(): SnippetRulesRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -141,7 +141,7 @@ export class SnippetRulesRulesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: SnippetRulesRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: SnippetRulesRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -150,7 +150,7 @@ export class SnippetRulesRulesOutputReference extends cdktf.ComplexObject {
       this._expression = undefined;
       this._snippetName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -181,11 +181,11 @@ export class SnippetRulesRulesOutputReference extends cdktf.ComplexObject {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -233,15 +233,15 @@ export class SnippetRulesRulesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class SnippetRulesRulesList extends cdktf.ComplexList {
-  public internalValue? : SnippetRulesRules[] | cdktf.IResolvable
+export class SnippetRulesRulesList extends cdktn.ComplexList {
+  public internalValue? : SnippetRulesRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -254,9 +254,9 @@ export class SnippetRulesRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules cloudflare_snippet_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules}
 */
-export class SnippetRules extends cdktf.TerraformResource {
+export class SnippetRules extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -267,14 +267,14 @@ export class SnippetRules extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SnippetRules resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SnippetRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SnippetRules to import
-  * @param importFromId The id of the existing SnippetRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SnippetRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SnippetRules to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_snippet_rules", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_snippet_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -282,7 +282,7 @@ export class SnippetRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +293,7 @@ export class SnippetRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_snippet_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -317,7 +317,7 @@ export class SnippetRules extends cdktf.TerraformResource {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: SnippetRulesRules[] | cdktf.IResolvable) {
+  public putRules(value: SnippetRulesRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -344,21 +344,21 @@ export class SnippetRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      rules: cdktf.listMapper(snippetRulesRulesToTerraform, false)(this._rules.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      rules: cdktn.listMapper(snippetRulesRulesToTerraform, false)(this._rules.internalValue),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       rules: {
-        value: cdktf.listMapperHcl(snippetRulesRulesToHclTerraform, false)(this._rules.internalValue),
+        value: cdktn.listMapperHcl(snippetRulesRulesToHclTerraform, false)(this._rules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "SnippetRulesRulesList",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

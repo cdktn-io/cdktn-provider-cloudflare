@@ -1,34 +1,34 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccountSubscriptionConfig extends cdktf.TerraformMetaArguments {
+export interface AccountSubscriptionConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
   */
   readonly accountId: string;
   /**
   * How often the subscription is renewed automatically.
   * Available values: "weekly", "monthly", "quarterly", "yearly".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
   */
   readonly frequency?: string;
   /**
   * The rate plan applied to the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
   */
   readonly ratePlan?: AccountSubscriptionRatePlan;
 }
@@ -36,7 +36,7 @@ export interface AccountSubscriptionRatePlan {
   /**
   * The ID of the rate plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription#id AccountSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#id AccountSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,37 +45,37 @@ export interface AccountSubscriptionRatePlan {
   /**
   * The scope that this rate plan applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription#scope AccountSubscription#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#scope AccountSubscription#scope}
   */
   readonly scope?: string;
 }
 
-export function accountSubscriptionRatePlanToTerraform(struct?: AccountSubscriptionRatePlan | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountSubscriptionRatePlanToTerraform(struct?: AccountSubscriptionRatePlan | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    scope: cdktf.stringToTerraform(struct!.scope),
+    id: cdktn.stringToTerraform(struct!.id),
+    scope: cdktn.stringToTerraform(struct!.scope),
   }
 }
 
 
-export function accountSubscriptionRatePlanToHclTerraform(struct?: AccountSubscriptionRatePlan | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountSubscriptionRatePlanToHclTerraform(struct?: AccountSubscriptionRatePlan | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     scope: {
-      value: cdktf.stringToHclTerraform(struct!.scope),
+      value: cdktn.stringToHclTerraform(struct!.scope),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -86,19 +86,19 @@ export function accountSubscriptionRatePlanToHclTerraform(struct?: AccountSubscr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObject {
+export class AccountSubscriptionRatePlanOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccountSubscriptionRatePlan | cdktf.IResolvable | undefined {
+  public get internalValue(): AccountSubscriptionRatePlan | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -115,14 +115,14 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccountSubscriptionRatePlan | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccountSubscriptionRatePlan | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._scope = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -144,7 +144,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
     return this.getBooleanAttribute('externally_managed');
   }
 
-  // id - computed: false, optional: true, required: false
+  // id - computed: true, optional: true, required: false
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -193,9 +193,9 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription cloudflare_account_subscription}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription cloudflare_account_subscription}
 */
-export class AccountSubscription extends cdktf.TerraformResource {
+export class AccountSubscription extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -206,14 +206,14 @@ export class AccountSubscription extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccountSubscription resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccountSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountSubscription to import
-  * @param importFromId The id of the existing AccountSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountSubscription to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_subscription", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_subscription", importId: importFromId, provider });
       }
 
   // ===========
@@ -221,7 +221,7 @@ export class AccountSubscription extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_subscription cloudflare_account_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription cloudflare_account_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -232,7 +232,7 @@ export class AccountSubscription extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_subscription',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -306,7 +306,7 @@ export class AccountSubscription extends cdktf.TerraformResource {
     return this.getNumberAttribute('price');
   }
 
-  // rate_plan - computed: false, optional: true, required: false
+  // rate_plan - computed: true, optional: true, required: false
   private _ratePlan = new AccountSubscriptionRatePlanOutputReference(this, "rate_plan");
   public get ratePlan() {
     return this._ratePlan;
@@ -333,8 +333,8 @@ export class AccountSubscription extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      frequency: cdktf.stringToTerraform(this._frequency),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      frequency: cdktn.stringToTerraform(this._frequency),
       rate_plan: accountSubscriptionRatePlanToTerraform(this._ratePlan.internalValue),
     };
   }
@@ -342,13 +342,13 @@ export class AccountSubscription extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       frequency: {
-        value: cdktf.stringToHclTerraform(this._frequency),
+        value: cdktn.stringToHclTerraform(this._frequency),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

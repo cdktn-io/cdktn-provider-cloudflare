@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface D1DatabaseConfig extends cdktf.TerraformMetaArguments {
+export interface D1DatabaseConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#account_id D1Database#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database#account_id D1Database#account_id}
   */
   readonly accountId: string;
   /**
   * Specify the location to restrict the D1 database to run and store data. If this option is present, the location hint is ignored.
   * Available values: "eu", "fedramp".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * D1 database name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#name D1Database#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database#name D1Database#name}
   */
   readonly name: string;
   /**
   * Specify the region to create the D1 primary, if available. If this option is omitted, the D1 will be created as close as possible to the current user.
   * Available values: "wnam", "enam", "weur", "eeur", "apac", "oc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
   */
   readonly primaryLocationHint?: string;
   /**
   * Configuration for D1 read replication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#read_replication D1Database#read_replication}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database#read_replication D1Database#read_replication}
   */
   readonly readReplication?: D1DatabaseReadReplication;
 }
@@ -50,30 +50,30 @@ export interface D1DatabaseReadReplication {
   * The read replication mode for the database. Use 'auto' to create replicas and allow D1 automatically place them around the world, or 'disabled' to not use any database replicas (it can take a few hours for all replicas to be deleted).
   * Available values: "auto", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#mode D1Database#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database#mode D1Database#mode}
   */
   readonly mode: string;
 }
 
-export function d1DatabaseReadReplicationToTerraform(struct?: D1DatabaseReadReplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function d1DatabaseReadReplicationToTerraform(struct?: D1DatabaseReadReplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
-export function d1DatabaseReadReplicationToHclTerraform(struct?: D1DatabaseReadReplication | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function d1DatabaseReadReplicationToHclTerraform(struct?: D1DatabaseReadReplication | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -84,19 +84,19 @@ export function d1DatabaseReadReplicationToHclTerraform(struct?: D1DatabaseReadR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class D1DatabaseReadReplicationOutputReference extends cdktf.ComplexObject {
+export class D1DatabaseReadReplicationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): D1DatabaseReadReplication | cdktf.IResolvable | undefined {
+  public get internalValue(): D1DatabaseReadReplication | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -109,13 +109,13 @@ export class D1DatabaseReadReplicationOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: D1DatabaseReadReplication | cdktf.IResolvable | undefined) {
+  public set internalValue(value: D1DatabaseReadReplication | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -141,9 +141,9 @@ export class D1DatabaseReadReplicationOutputReference extends cdktf.ComplexObjec
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database cloudflare_d1_database}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database cloudflare_d1_database}
 */
-export class D1Database extends cdktf.TerraformResource {
+export class D1Database extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -154,14 +154,14 @@ export class D1Database extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a D1Database resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a D1Database resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the D1Database to import
-  * @param importFromId The id of the existing D1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing D1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the D1Database to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_d1_database", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_d1_database", importId: importFromId, provider });
       }
 
   // ===========
@@ -169,7 +169,7 @@ export class D1Database extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/d1_database cloudflare_d1_database} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/d1_database cloudflare_d1_database} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -180,7 +180,7 @@ export class D1Database extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_d1_database',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -312,10 +312,10 @@ export class D1Database extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      jurisdiction: cdktf.stringToTerraform(this._jurisdiction),
-      name: cdktf.stringToTerraform(this._name),
-      primary_location_hint: cdktf.stringToTerraform(this._primaryLocationHint),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      jurisdiction: cdktn.stringToTerraform(this._jurisdiction),
+      name: cdktn.stringToTerraform(this._name),
+      primary_location_hint: cdktn.stringToTerraform(this._primaryLocationHint),
       read_replication: d1DatabaseReadReplicationToTerraform(this._readReplication.internalValue),
     };
   }
@@ -323,25 +323,25 @@ export class D1Database extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jurisdiction: {
-        value: cdktf.stringToHclTerraform(this._jurisdiction),
+        value: cdktn.stringToHclTerraform(this._jurisdiction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       primary_location_hint: {
-        value: cdktf.stringToHclTerraform(this._primaryLocationHint),
+        value: cdktn.stringToHclTerraform(this._primaryLocationHint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

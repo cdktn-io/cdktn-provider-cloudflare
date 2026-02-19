@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_projects
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_projects
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflarePagesProjectsConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflarePagesProjectsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_projects#account_id DataCloudflarePagesProjects#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_projects#account_id DataCloudflarePagesProjects#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_projects#max_items DataCloudflarePagesProjects#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_projects#max_items DataCloudflarePagesProjects#max_items}
   */
   readonly maxItems?: number;
 }
@@ -29,8 +29,8 @@ export interface DataCloudflarePagesProjectsResultBuildConfig {
 }
 
 export function dataCloudflarePagesProjectsResultBuildConfigToTerraform(struct?: DataCloudflarePagesProjectsResultBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataCloudflarePagesProjectsResultBuildConfigToTerraform(struct?:
 
 
 export function dataCloudflarePagesProjectsResultBuildConfigToHclTerraform(struct?: DataCloudflarePagesProjectsResultBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function dataCloudflarePagesProjectsResultBuildConfigToHclTerraform(struc
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultBuildConfigOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultBuildConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -108,8 +108,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfig
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfigToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -118,8 +118,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfigT
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfigToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -127,14 +127,14 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfigT
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfigOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentBuildConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -187,8 +187,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentT
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerMetadataToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -197,8 +197,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTr
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerMetadataToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -206,14 +206,14 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTr
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerMetadataOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -256,8 +256,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentT
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -266,8 +266,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTr
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -275,14 +275,14 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTr
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentDeploymentTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -316,8 +316,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVars {
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -326,8 +326,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsToTer
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -335,7 +335,7 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsToHcl
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -343,7 +343,7 @@ export class DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsOutputRe
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -373,13 +373,13 @@ export class DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsOutputRe
   }
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentEnvVarsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -394,8 +394,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentLatestStage
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentLatestStageToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -404,8 +404,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentLatestStageT
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentLatestStageToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -413,14 +413,14 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentLatestStageT
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentLatestStageOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentLatestStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -463,8 +463,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfi
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfigToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -473,8 +473,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfig
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfigToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -482,14 +482,14 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfig
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfigOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentSourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -577,8 +577,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentSource {
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -587,8 +587,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceToTerr
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -596,14 +596,14 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentSourceToHclT
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentSourceOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -637,8 +637,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeploymentStages {
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentStagesToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -647,8 +647,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentStagesToTerr
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentStagesToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -656,7 +656,7 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentStagesToHclT
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentStagesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentStagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -665,7 +665,7 @@ export class DataCloudflarePagesProjectsResultCanonicalDeploymentStagesOutputRef
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -705,14 +705,14 @@ export class DataCloudflarePagesProjectsResultCanonicalDeploymentStagesOutputRef
   }
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentStagesList extends cdktf.ComplexList {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentStagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -727,8 +727,8 @@ export interface DataCloudflarePagesProjectsResultCanonicalDeployment {
 }
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentToTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -737,8 +737,8 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentToTerraform(
 
 
 export function dataCloudflarePagesProjectsResultCanonicalDeploymentToHclTerraform(struct?: DataCloudflarePagesProjectsResultCanonicalDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -746,14 +746,14 @@ export function dataCloudflarePagesProjectsResultCanonicalDeploymentToHclTerrafo
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultCanonicalDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -867,8 +867,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBind
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindingsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -877,8 +877,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindi
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindingsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -886,7 +886,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindi
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindingsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -894,7 +894,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindings
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -919,13 +919,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindings
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindingsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAiBindingsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -940,8 +940,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyt
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasetsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -950,8 +950,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyti
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasetsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -959,7 +959,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyti
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -967,7 +967,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsE
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -992,13 +992,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsE
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasetsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewAnalyticsEngineDatasetsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1013,8 +1013,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowse
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1023,8 +1023,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowser
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1032,7 +1032,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowser
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1040,7 +1040,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersOu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1060,13 +1060,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersOu
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewBrowsersMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1081,8 +1081,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1Data
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1DatabasesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1Databases): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1091,8 +1091,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1Datab
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1DatabasesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1Databases): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1100,7 +1100,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1Datab
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1DatabasesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1DatabasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1108,7 +1108,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1Database
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1133,13 +1133,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1Database
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1DatabasesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewD1DatabasesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1154,8 +1154,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurabl
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespacesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1164,8 +1164,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurable
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1173,7 +1173,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurable
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespacesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1181,7 +1181,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObj
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1206,13 +1206,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObj
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespacesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewDurableObjectNamespacesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1227,8 +1227,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVar
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1237,8 +1237,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVars
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1246,7 +1246,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVars
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1254,7 +1254,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsOut
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1284,13 +1284,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsOut
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewEnvVarsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1305,8 +1305,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperd
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindingsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1315,8 +1315,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdr
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindingsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1324,7 +1324,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdr
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindingsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1332,7 +1332,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdrive
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1357,13 +1357,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdrive
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindingsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewHyperdriveBindingsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1378,8 +1378,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvName
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1388,8 +1388,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNames
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1397,7 +1397,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNames
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1405,7 +1405,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespac
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1430,13 +1430,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespac
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewKvNamespacesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1451,8 +1451,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimits
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimitsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1461,8 +1461,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimitsT
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimitsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1470,14 +1470,14 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimitsT
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimitsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -1505,8 +1505,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCe
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificatesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1515,8 +1515,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCer
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificatesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1524,7 +1524,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCer
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificatesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1532,7 +1532,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertif
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1557,13 +1557,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertif
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificatesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewMtlsCertificatesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1578,8 +1578,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlacem
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlacementToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1588,8 +1588,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlaceme
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlacementToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1597,14 +1597,14 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlaceme
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlacementOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewPlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -1632,8 +1632,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueP
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducersToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1642,8 +1642,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueuePr
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducersToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1651,7 +1651,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueuePr
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducersOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1659,7 +1659,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProdu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1684,13 +1684,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProdu
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducersMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewQueueProducersMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1705,8 +1705,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2Buck
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2Buckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1715,8 +1715,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2Bucke
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2Buckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1724,7 +1724,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2Bucke
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1732,7 +1732,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsO
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1762,13 +1762,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsO
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewR2BucketsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1783,8 +1783,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServic
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1793,8 +1793,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewService
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1802,7 +1802,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewService
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1810,7 +1810,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesOu
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1845,13 +1845,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesOu
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewServicesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1866,8 +1866,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVector
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindingsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1876,8 +1876,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectori
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindingsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1885,7 +1885,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectori
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindingsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -1893,7 +1893,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeB
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -1918,13 +1918,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeB
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindingsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewVectorizeBindingsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1939,8 +1939,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsPreview {
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreview): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1949,8 +1949,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewToTerra
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsPreview): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1958,14 +1958,14 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsPreviewToHclTe
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsPreviewOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -2113,8 +2113,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiB
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindingsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2123,8 +2123,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBi
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindingsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2132,7 +2132,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBi
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindingsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2140,7 +2140,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindi
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2165,13 +2165,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindi
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindingsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAiBindingsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2186,8 +2186,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionAna
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasetsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2196,8 +2196,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAnal
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasetsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2205,7 +2205,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionAnal
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2213,7 +2213,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyti
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2238,13 +2238,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyti
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasetsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionAnalyticsEngineDatasetsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2259,8 +2259,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionBro
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsersToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2269,8 +2269,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionBrow
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsersToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2278,7 +2278,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionBrow
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsersOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2286,7 +2286,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowser
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2306,13 +2306,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowser
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsersMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionBrowsersMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2327,8 +2327,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1D
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionD1DatabasesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1Databases): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2337,8 +2337,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionD1Da
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionD1DatabasesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1Databases): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2346,7 +2346,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionD1Da
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1DatabasesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1DatabasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2354,7 +2354,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1Datab
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2379,13 +2379,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1Datab
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1DatabasesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionD1DatabasesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2400,8 +2400,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionDur
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2410,8 +2410,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionDura
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2419,7 +2419,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionDura
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2427,7 +2427,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurable
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2452,13 +2452,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurable
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionDurableObjectNamespacesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2473,8 +2473,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnv
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVarsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2483,8 +2483,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvV
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2492,7 +2492,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvV
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVarsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2500,7 +2500,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVars
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2530,13 +2530,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVars
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVarsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionEnvVarsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2551,8 +2551,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyp
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindingsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2561,8 +2561,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionHype
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindingsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2570,7 +2570,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionHype
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindingsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2578,7 +2578,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdr
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2603,13 +2603,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdr
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindingsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionHyperdriveBindingsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2624,8 +2624,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvN
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespacesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2634,8 +2634,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNa
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespaces): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2643,7 +2643,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNa
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespacesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2651,7 +2651,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNames
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2676,13 +2676,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNames
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespacesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionKvNamespacesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2697,8 +2697,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionLim
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionLimitsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2707,8 +2707,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionLimi
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionLimitsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionLimits): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2716,14 +2716,14 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionLimi
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionLimitsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -2751,8 +2751,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtl
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificatesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2761,8 +2761,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionMtls
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificatesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2770,7 +2770,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionMtls
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificatesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2778,7 +2778,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2803,13 +2803,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCer
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificatesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionMtlsCertificatesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2824,8 +2824,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionPla
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionPlacementToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2834,8 +2834,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionPlac
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionPlacementToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionPlacement): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2843,14 +2843,14 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionPlac
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionPlacementOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionPlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -2878,8 +2878,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionQue
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducersToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2888,8 +2888,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionQueu
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducersToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2897,7 +2897,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionQueu
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducersOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2905,7 +2905,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueuePr
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -2930,13 +2930,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueuePr
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducersMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionQueueProducersMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2951,8 +2951,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2B
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionR2BucketsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2Buckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2961,8 +2961,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionR2Bu
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionR2BucketsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2Buckets): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2970,7 +2970,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionR2Bu
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2BucketsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2BucketsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -2978,7 +2978,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2Bucke
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -3008,13 +3008,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2Bucke
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2BucketsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionR2BucketsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3029,8 +3029,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionSer
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionServicesToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3039,8 +3039,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionServ
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionServicesToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionServices): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3048,7 +3048,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionServ
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionServicesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3056,7 +3056,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionService
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -3091,13 +3091,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionService
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionServicesMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionServicesMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3112,8 +3112,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProductionVec
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindingsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3122,8 +3122,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionVect
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindingsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3131,7 +3131,7 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionVect
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindingsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3139,7 +3139,7 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectori
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -3164,13 +3164,13 @@ export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectori
   }
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindingsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionVectorizeBindingsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3185,8 +3185,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigsProduction {
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProduction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3195,8 +3195,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionToTe
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigsProduction): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3204,14 +3204,14 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsProductionToHc
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsProductionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3359,8 +3359,8 @@ export interface DataCloudflarePagesProjectsResultDeploymentConfigs {
 }
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsToTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3369,8 +3369,8 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsToTerraform(st
 
 
 export function dataCloudflarePagesProjectsResultDeploymentConfigsToHclTerraform(struct?: DataCloudflarePagesProjectsResultDeploymentConfigs): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3378,14 +3378,14 @@ export function dataCloudflarePagesProjectsResultDeploymentConfigsToHclTerraform
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultDeploymentConfigsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultDeploymentConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3420,8 +3420,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentBuildConfig {
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentBuildConfigToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3430,8 +3430,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentBuildConfigToTe
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentBuildConfigToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3439,14 +3439,14 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentBuildConfigToHc
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentBuildConfigOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentBuildConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3499,8 +3499,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrig
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerMetadataToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3509,8 +3509,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrigg
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerMetadataToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3518,14 +3518,14 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrigg
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerMetadataOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3568,8 +3568,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrig
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3578,8 +3578,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrigg
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3587,14 +3587,14 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentDeploymentTrigg
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentDeploymentTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3628,8 +3628,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentEnvVars {
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentEnvVarsToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3638,8 +3638,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentEnvVarsToTerraf
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3647,7 +3647,7 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentEnvVarsToHclTer
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentEnvVarsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3655,7 +3655,7 @@ export class DataCloudflarePagesProjectsResultLatestDeploymentEnvVarsOutputRefer
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -3685,13 +3685,13 @@ export class DataCloudflarePagesProjectsResultLatestDeploymentEnvVarsOutputRefer
   }
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentEnvVarsMap extends cdktf.ComplexMap {
+export class DataCloudflarePagesProjectsResultLatestDeploymentEnvVarsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3706,8 +3706,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentLatestStage {
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentLatestStageToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3716,8 +3716,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentLatestStageToTe
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentLatestStageToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3725,14 +3725,14 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentLatestStageToHc
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentLatestStageOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentLatestStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3775,8 +3775,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentSourceConfig {
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentSourceConfigToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3785,8 +3785,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentSourceConfigToT
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentSourceConfigToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3794,14 +3794,14 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentSourceConfigToH
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentSourceConfigOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentSourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3889,8 +3889,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentSource {
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentSourceToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3899,8 +3899,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentSourceToTerrafo
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentSourceToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3908,14 +3908,14 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentSourceToHclTerr
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentSourceOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -3949,8 +3949,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeploymentStages {
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentStagesToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3959,8 +3959,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentStagesToTerrafo
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentStagesToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3968,7 +3968,7 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentStagesToHclTerr
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentStagesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentStagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3977,7 +3977,7 @@ export class DataCloudflarePagesProjectsResultLatestDeploymentStagesOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4017,14 +4017,14 @@ export class DataCloudflarePagesProjectsResultLatestDeploymentStagesOutputRefere
   }
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentStagesList extends cdktf.ComplexList {
+export class DataCloudflarePagesProjectsResultLatestDeploymentStagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4039,8 +4039,8 @@ export interface DataCloudflarePagesProjectsResultLatestDeployment {
 }
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentToTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4049,8 +4049,8 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentToTerraform(str
 
 
 export function dataCloudflarePagesProjectsResultLatestDeploymentToHclTerraform(struct?: DataCloudflarePagesProjectsResultLatestDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4058,14 +4058,14 @@ export function dataCloudflarePagesProjectsResultLatestDeploymentToHclTerraform(
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultLatestDeploymentOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultLatestDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -4179,8 +4179,8 @@ export interface DataCloudflarePagesProjectsResultSourceConfig {
 }
 
 export function dataCloudflarePagesProjectsResultSourceConfigToTerraform(struct?: DataCloudflarePagesProjectsResultSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4189,8 +4189,8 @@ export function dataCloudflarePagesProjectsResultSourceConfigToTerraform(struct?
 
 
 export function dataCloudflarePagesProjectsResultSourceConfigToHclTerraform(struct?: DataCloudflarePagesProjectsResultSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4198,14 +4198,14 @@ export function dataCloudflarePagesProjectsResultSourceConfigToHclTerraform(stru
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultSourceConfigOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultSourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -4293,8 +4293,8 @@ export interface DataCloudflarePagesProjectsResultSource {
 }
 
 export function dataCloudflarePagesProjectsResultSourceToTerraform(struct?: DataCloudflarePagesProjectsResultSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4303,8 +4303,8 @@ export function dataCloudflarePagesProjectsResultSourceToTerraform(struct?: Data
 
 
 export function dataCloudflarePagesProjectsResultSourceToHclTerraform(struct?: DataCloudflarePagesProjectsResultSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4312,14 +4312,14 @@ export function dataCloudflarePagesProjectsResultSourceToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultSourceOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -4353,8 +4353,8 @@ export interface DataCloudflarePagesProjectsResult {
 }
 
 export function dataCloudflarePagesProjectsResultToTerraform(struct?: DataCloudflarePagesProjectsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4363,8 +4363,8 @@ export function dataCloudflarePagesProjectsResultToTerraform(struct?: DataCloudf
 
 
 export function dataCloudflarePagesProjectsResultToHclTerraform(struct?: DataCloudflarePagesProjectsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4372,7 +4372,7 @@ export function dataCloudflarePagesProjectsResultToHclTerraform(struct?: DataClo
   return attrs;
 }
 
-export class DataCloudflarePagesProjectsResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesProjectsResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -4381,7 +4381,7 @@ export class DataCloudflarePagesProjectsResultOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -4486,14 +4486,14 @@ export class DataCloudflarePagesProjectsResultOutputReference extends cdktf.Comp
   }
 }
 
-export class DataCloudflarePagesProjectsResultList extends cdktf.ComplexList {
+export class DataCloudflarePagesProjectsResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4506,9 +4506,9 @@ export class DataCloudflarePagesProjectsResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_projects cloudflare_pages_projects}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_projects cloudflare_pages_projects}
 */
-export class DataCloudflarePagesProjects extends cdktf.TerraformDataSource {
+export class DataCloudflarePagesProjects extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -4519,14 +4519,14 @@ export class DataCloudflarePagesProjects extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflarePagesProjects resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflarePagesProjects resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePagesProjects to import
-  * @param importFromId The id of the existing DataCloudflarePagesProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_projects#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePagesProjects that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_projects#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePagesProjects to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_pages_projects", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_pages_projects", importId: importFromId, provider });
       }
 
   // ===========
@@ -4534,7 +4534,7 @@ export class DataCloudflarePagesProjects extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_projects cloudflare_pages_projects} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_projects cloudflare_pages_projects} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4545,7 +4545,7 @@ export class DataCloudflarePagesProjects extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_pages_projects',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -4605,21 +4605,21 @@ export class DataCloudflarePagesProjects extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      max_items: cdktf.numberToTerraform(this._maxItems),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      max_items: cdktn.numberToTerraform(this._maxItems),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

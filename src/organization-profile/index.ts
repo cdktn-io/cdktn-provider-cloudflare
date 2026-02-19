@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationProfileAConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationProfileAConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile#business_address OrganizationProfileA#business_address}
   */
   readonly businessAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile#business_email OrganizationProfileA#business_email}
   */
   readonly businessEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile#business_name OrganizationProfileA#business_name}
   */
   readonly businessName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile#business_phone OrganizationProfileA#business_phone}
   */
   readonly businessPhone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile#external_metadata OrganizationProfileA#external_metadata}
   */
   readonly externalMetadata: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile#organization_id OrganizationProfileA#organization_id}
   */
   readonly organizationId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile cloudflare_organization_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile cloudflare_organization_profile}
 */
-export class OrganizationProfileA extends cdktf.TerraformResource {
+export class OrganizationProfileA extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class OrganizationProfileA extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OrganizationProfileA resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OrganizationProfileA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OrganizationProfileA to import
-  * @param importFromId The id of the existing OrganizationProfileA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OrganizationProfileA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OrganizationProfileA to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_organization_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_organization_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class OrganizationProfileA extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization_profile cloudflare_organization_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization_profile cloudflare_organization_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class OrganizationProfileA extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_organization_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -185,49 +185,49 @@ export class OrganizationProfileA extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      business_address: cdktf.stringToTerraform(this._businessAddress),
-      business_email: cdktf.stringToTerraform(this._businessEmail),
-      business_name: cdktf.stringToTerraform(this._businessName),
-      business_phone: cdktf.stringToTerraform(this._businessPhone),
-      external_metadata: cdktf.stringToTerraform(this._externalMetadata),
-      organization_id: cdktf.stringToTerraform(this._organizationId),
+      business_address: cdktn.stringToTerraform(this._businessAddress),
+      business_email: cdktn.stringToTerraform(this._businessEmail),
+      business_name: cdktn.stringToTerraform(this._businessName),
+      business_phone: cdktn.stringToTerraform(this._businessPhone),
+      external_metadata: cdktn.stringToTerraform(this._externalMetadata),
+      organization_id: cdktn.stringToTerraform(this._organizationId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       business_address: {
-        value: cdktf.stringToHclTerraform(this._businessAddress),
+        value: cdktn.stringToHclTerraform(this._businessAddress),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_email: {
-        value: cdktf.stringToHclTerraform(this._businessEmail),
+        value: cdktn.stringToHclTerraform(this._businessEmail),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_name: {
-        value: cdktf.stringToHclTerraform(this._businessName),
+        value: cdktn.stringToHclTerraform(this._businessName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       business_phone: {
-        value: cdktf.stringToHclTerraform(this._businessPhone),
+        value: cdktn.stringToHclTerraform(this._businessPhone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       external_metadata: {
-        value: cdktf.stringToHclTerraform(this._externalMetadata),
+        value: cdktn.stringToHclTerraform(this._externalMetadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       organization_id: {
-        value: cdktf.stringToHclTerraform(this._organizationId),
+        value: cdktn.stringToHclTerraform(this._organizationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

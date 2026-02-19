@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkersScriptSubdomainConfig extends cdktf.TerraformMetaArguments {
+export interface WorkersScriptSubdomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain#account_id WorkersScriptSubdomain#account_id}
   */
   readonly accountId: string;
   /**
   * Whether the Worker should be available on the workers.dev subdomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain#enabled WorkersScriptSubdomain#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Whether the Worker's Preview URLs should be available on the workers.dev subdomain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain#previews_enabled WorkersScriptSubdomain#previews_enabled}
   */
-  readonly previewsEnabled?: boolean | cdktf.IResolvable;
+  readonly previewsEnabled?: boolean | cdktn.IResolvable;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain#script_name WorkersScriptSubdomain#script_name}
   */
   readonly scriptName: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain}
 */
-export class WorkersScriptSubdomain extends cdktf.TerraformResource {
+export class WorkersScriptSubdomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkersScriptSubdomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkersScriptSubdomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersScriptSubdomain to import
-  * @param importFromId The id of the existing WorkersScriptSubdomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersScriptSubdomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersScriptSubdomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_script_subdomain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_script_subdomain", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script_subdomain cloudflare_workers_script_subdomain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_script_subdomain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -113,11 +113,11 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -131,11 +131,11 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
   }
 
   // previews_enabled - computed: true, optional: true, required: false
-  private _previewsEnabled?: boolean | cdktf.IResolvable; 
+  private _previewsEnabled?: boolean | cdktn.IResolvable; 
   public get previewsEnabled() {
     return this.getBooleanAttribute('previews_enabled');
   }
-  public set previewsEnabled(value: boolean | cdktf.IResolvable) {
+  public set previewsEnabled(value: boolean | cdktn.IResolvable) {
     this._previewsEnabled = value;
   }
   public resetPreviewsEnabled() {
@@ -165,35 +165,35 @@ export class WorkersScriptSubdomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      previews_enabled: cdktf.booleanToTerraform(this._previewsEnabled),
-      script_name: cdktf.stringToTerraform(this._scriptName),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      previews_enabled: cdktn.booleanToTerraform(this._previewsEnabled),
+      script_name: cdktn.stringToTerraform(this._scriptName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       previews_enabled: {
-        value: cdktf.booleanToHclTerraform(this._previewsEnabled),
+        value: cdktn.booleanToHclTerraform(this._previewsEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       script_name: {
-        value: cdktf.stringToHclTerraform(this._scriptName),
+        value: cdktn.stringToHclTerraform(this._scriptName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

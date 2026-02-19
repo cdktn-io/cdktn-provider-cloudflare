@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustGatewayCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustGatewayCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}
   */
   readonly accountId: string;
   /**
   * Whether to activate the certificate on Cloudflare's edge. When true, the certificate will be activated. When false, the certificate will be deactivated at the edge. This is a Terraform-only field and does not appear in the API response. Monitor `binding_status` for the activation status. Once a certificate is activated, you may use the certificate to intercept traffic
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
   */
-  readonly activate?: boolean | cdktf.IResolvable;
+  readonly activate?: boolean | cdktn.IResolvable;
   /**
   * Sets the certificate validity period in days (range: 1-10,950 days / ~30 years). Defaults to 1,825 days (5 years). **Important**: This field is only settable during the certificate creation.  Certificates becomes immutable after creation - use the `/activate` and `/deactivate` endpoints to manage certificate lifecycle.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
   */
   readonly validityPeriodDays?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}
 */
-export class ZeroTrustGatewayCertificate extends cdktf.TerraformResource {
+export class ZeroTrustGatewayCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -44,14 +44,14 @@ export class ZeroTrustGatewayCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustGatewayCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustGatewayCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustGatewayCertificate to import
-  * @param importFromId The id of the existing ZeroTrustGatewayCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustGatewayCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustGatewayCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_gateway_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_gateway_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -59,7 +59,7 @@ export class ZeroTrustGatewayCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class ZeroTrustGatewayCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_gateway_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -104,11 +104,11 @@ export class ZeroTrustGatewayCertificate extends cdktf.TerraformResource {
   }
 
   // activate - computed: false, optional: true, required: false
-  private _activate?: boolean | cdktf.IResolvable; 
+  private _activate?: boolean | cdktn.IResolvable; 
   public get activate() {
     return this.getBooleanAttribute('activate');
   }
-  public set activate(value: boolean | cdktf.IResolvable) {
+  public set activate(value: boolean | cdktn.IResolvable) {
     this._activate = value;
   }
   public resetActivate() {
@@ -201,28 +201,28 @@ export class ZeroTrustGatewayCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      activate: cdktf.booleanToTerraform(this._activate),
-      validity_period_days: cdktf.numberToTerraform(this._validityPeriodDays),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      activate: cdktn.booleanToTerraform(this._activate),
+      validity_period_days: cdktn.numberToTerraform(this._validityPeriodDays),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       activate: {
-        value: cdktf.booleanToHclTerraform(this._activate),
+        value: cdktn.booleanToHclTerraform(this._activate),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       validity_period_days: {
-        value: cdktf.numberToHclTerraform(this._validityPeriodDays),
+        value: cdktn.numberToHclTerraform(this._validityPeriodDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

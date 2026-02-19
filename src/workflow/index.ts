@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkflowConfig extends cdktf.TerraformMetaArguments {
+export interface WorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow#account_id Workflow#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow#account_id Workflow#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow#class_name Workflow#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow#class_name Workflow#class_name}
   */
   readonly className: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow#script_name Workflow#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow#script_name Workflow#script_name}
   */
   readonly scriptName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow#workflow_name Workflow#workflow_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow#workflow_name Workflow#workflow_name}
   */
   readonly workflowName: string;
 }
@@ -33,8 +33,8 @@ export interface WorkflowInstances {
 }
 
 export function workflowInstancesToTerraform(struct?: WorkflowInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -43,8 +43,8 @@ export function workflowInstancesToTerraform(struct?: WorkflowInstances): any {
 
 
 export function workflowInstancesToHclTerraform(struct?: WorkflowInstances): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,14 +52,14 @@ export function workflowInstancesToHclTerraform(struct?: WorkflowInstances): any
   return attrs;
 }
 
-export class WorkflowInstancesOutputReference extends cdktf.ComplexObject {
+export class WorkflowInstancesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -120,9 +120,9 @@ export class WorkflowInstancesOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow cloudflare_workflow}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow cloudflare_workflow}
 */
-export class Workflow extends cdktf.TerraformResource {
+export class Workflow extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -133,14 +133,14 @@ export class Workflow extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Workflow resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Workflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workflow to import
-  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workflow to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workflow", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workflow", importId: importFromId, provider });
       }
 
   // ===========
@@ -148,7 +148,7 @@ export class Workflow extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workflow cloudflare_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workflow cloudflare_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -159,7 +159,7 @@ export class Workflow extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workflow',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -284,35 +284,35 @@ export class Workflow extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      class_name: cdktf.stringToTerraform(this._className),
-      script_name: cdktf.stringToTerraform(this._scriptName),
-      workflow_name: cdktf.stringToTerraform(this._workflowName),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      class_name: cdktn.stringToTerraform(this._className),
+      script_name: cdktn.stringToTerraform(this._scriptName),
+      workflow_name: cdktn.stringToTerraform(this._workflowName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       class_name: {
-        value: cdktf.stringToHclTerraform(this._className),
+        value: cdktn.stringToHclTerraform(this._className),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       script_name: {
-        value: cdktf.stringToHclTerraform(this._scriptName),
+        value: cdktn.stringToHclTerraform(this._scriptName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       workflow_name: {
-        value: cdktf.stringToHclTerraform(this._workflowName),
+        value: cdktn.stringToHclTerraform(this._workflowName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

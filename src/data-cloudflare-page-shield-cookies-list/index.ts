@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflarePageShieldCookiesListConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflarePageShieldCookiesListConfig extends cdktn.TerraformMetaArguments {
   /**
   * The direction used to sort returned cookies.'
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#direction DataCloudflarePageShieldCookiesList#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#direction DataCloudflarePageShieldCookiesList#direction}
   */
   readonly direction?: string;
   /**
   * Filters the returned cookies that match the specified domain attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#domain DataCloudflarePageShieldCookiesList#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#domain DataCloudflarePageShieldCookiesList#domain}
   */
   readonly domain?: string;
   /**
   * Export the list of cookies as a file, limited to 50000 entries.
   * Available values: "csv".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#export DataCloudflarePageShieldCookiesList#export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#export DataCloudflarePageShieldCookiesList#export}
   */
   readonly export?: string;
   /**
@@ -38,19 +38,19 @@ export interface DataCloudflarePageShieldCookiesListConfig extends cdktf.Terrafo
   * Wildcards are supported at the start and end of each hostname to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#hosts DataCloudflarePageShieldCookiesList#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#hosts DataCloudflarePageShieldCookiesList#hosts}
   */
   readonly hosts?: string;
   /**
   * Filters the returned cookies that are set with HttpOnly
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#http_only DataCloudflarePageShieldCookiesList#http_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#http_only DataCloudflarePageShieldCookiesList#http_only}
   */
-  readonly httpOnly?: boolean | cdktf.IResolvable;
+  readonly httpOnly?: boolean | cdktn.IResolvable;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#max_items DataCloudflarePageShieldCookiesList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#max_items DataCloudflarePageShieldCookiesList#max_items}
   */
   readonly maxItems?: number;
   /**
@@ -58,14 +58,14 @@ export interface DataCloudflarePageShieldCookiesListConfig extends cdktf.Terrafo
   * Wildcards are supported at the start and end to support starts with, ends with
   * and contains. e.g. session*
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#name DataCloudflarePageShieldCookiesList#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#name DataCloudflarePageShieldCookiesList#name}
   */
   readonly name?: string;
   /**
   * The field used to sort returned cookies.
   * Available values: "first_seen_at", "last_seen_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#order_by DataCloudflarePageShieldCookiesList#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#order_by DataCloudflarePageShieldCookiesList#order_by}
   */
   readonly orderBy?: string;
   /**
@@ -75,7 +75,7 @@ export interface DataCloudflarePageShieldCookiesListConfig extends cdktf.Terrafo
   * with the applied filters in a single page. This feature is best-effort and it may only work for zones with 
   * a low number of cookies
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#page DataCloudflarePageShieldCookiesList#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#page DataCloudflarePageShieldCookiesList#page}
   */
   readonly page?: string;
   /**
@@ -84,45 +84,45 @@ export interface DataCloudflarePageShieldCookiesListConfig extends cdktf.Terrafo
   * Wildcards are supported at the start and end of each page URL to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#page_url DataCloudflarePageShieldCookiesList#page_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#page_url DataCloudflarePageShieldCookiesList#page_url}
   */
   readonly pageUrl?: string;
   /**
   * Filters the returned cookies that match the specified path attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#path DataCloudflarePageShieldCookiesList#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#path DataCloudflarePageShieldCookiesList#path}
   */
   readonly path?: string;
   /**
   * The number of results per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#per_page DataCloudflarePageShieldCookiesList#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#per_page DataCloudflarePageShieldCookiesList#per_page}
   */
   readonly perPage?: number;
   /**
   * Filters the returned cookies that match the specified same_site attribute
   * Available values: "lax", "strict", "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#same_site DataCloudflarePageShieldCookiesList#same_site}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#same_site DataCloudflarePageShieldCookiesList#same_site}
   */
   readonly sameSite?: string;
   /**
   * Filters the returned cookies that are set with Secure
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#secure DataCloudflarePageShieldCookiesList#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#secure DataCloudflarePageShieldCookiesList#secure}
   */
-  readonly secure?: boolean | cdktf.IResolvable;
+  readonly secure?: boolean | cdktn.IResolvable;
   /**
   * Filters the returned cookies that match the specified type attribute
   * Available values: "first_party", "unknown".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#type DataCloudflarePageShieldCookiesList#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#type DataCloudflarePageShieldCookiesList#type}
   */
   readonly type?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#zone_id DataCloudflarePageShieldCookiesList#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#zone_id DataCloudflarePageShieldCookiesList#zone_id}
   */
   readonly zoneId: string;
 }
@@ -130,8 +130,8 @@ export interface DataCloudflarePageShieldCookiesListResult {
 }
 
 export function dataCloudflarePageShieldCookiesListResultToTerraform(struct?: DataCloudflarePageShieldCookiesListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -140,8 +140,8 @@ export function dataCloudflarePageShieldCookiesListResultToTerraform(struct?: Da
 
 
 export function dataCloudflarePageShieldCookiesListResultToHclTerraform(struct?: DataCloudflarePageShieldCookiesListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -149,7 +149,7 @@ export function dataCloudflarePageShieldCookiesListResultToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataCloudflarePageShieldCookiesListResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePageShieldCookiesListResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -158,7 +158,7 @@ export class DataCloudflarePageShieldCookiesListResultOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -248,14 +248,14 @@ export class DataCloudflarePageShieldCookiesListResultOutputReference extends cd
   }
 }
 
-export class DataCloudflarePageShieldCookiesListResultList extends cdktf.ComplexList {
+export class DataCloudflarePageShieldCookiesListResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -268,9 +268,9 @@ export class DataCloudflarePageShieldCookiesListResultList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}
 */
-export class DataCloudflarePageShieldCookiesList extends cdktf.TerraformDataSource {
+export class DataCloudflarePageShieldCookiesList extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -281,14 +281,14 @@ export class DataCloudflarePageShieldCookiesList extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflarePageShieldCookiesList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflarePageShieldCookiesList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePageShieldCookiesList to import
-  * @param importFromId The id of the existing DataCloudflarePageShieldCookiesList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePageShieldCookiesList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePageShieldCookiesList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_page_shield_cookies_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_page_shield_cookies_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -296,7 +296,7 @@ export class DataCloudflarePageShieldCookiesList extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -307,7 +307,7 @@ export class DataCloudflarePageShieldCookiesList extends cdktf.TerraformDataSour
       terraformResourceType: 'cloudflare_page_shield_cookies_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -405,11 +405,11 @@ export class DataCloudflarePageShieldCookiesList extends cdktf.TerraformDataSour
   }
 
   // http_only - computed: false, optional: true, required: false
-  private _httpOnly?: boolean | cdktf.IResolvable; 
+  private _httpOnly?: boolean | cdktn.IResolvable; 
   public get httpOnly() {
     return this.getBooleanAttribute('http_only');
   }
-  public set httpOnly(value: boolean | cdktf.IResolvable) {
+  public set httpOnly(value: boolean | cdktn.IResolvable) {
     this._httpOnly = value;
   }
   public resetHttpOnly() {
@@ -555,11 +555,11 @@ export class DataCloudflarePageShieldCookiesList extends cdktf.TerraformDataSour
   }
 
   // secure - computed: false, optional: true, required: false
-  private _secure?: boolean | cdktf.IResolvable; 
+  private _secure?: boolean | cdktn.IResolvable; 
   public get secure() {
     return this.getBooleanAttribute('secure');
   }
-  public set secure(value: boolean | cdktf.IResolvable) {
+  public set secure(value: boolean | cdktn.IResolvable) {
     this._secure = value;
   }
   public resetSecure() {
@@ -605,119 +605,119 @@ export class DataCloudflarePageShieldCookiesList extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      direction: cdktf.stringToTerraform(this._direction),
-      domain: cdktf.stringToTerraform(this._domain),
-      export: cdktf.stringToTerraform(this._export),
-      hosts: cdktf.stringToTerraform(this._hosts),
-      http_only: cdktf.booleanToTerraform(this._httpOnly),
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      name: cdktf.stringToTerraform(this._name),
-      order_by: cdktf.stringToTerraform(this._orderBy),
-      page: cdktf.stringToTerraform(this._page),
-      page_url: cdktf.stringToTerraform(this._pageUrl),
-      path: cdktf.stringToTerraform(this._path),
-      per_page: cdktf.numberToTerraform(this._perPage),
-      same_site: cdktf.stringToTerraform(this._sameSite),
-      secure: cdktf.booleanToTerraform(this._secure),
-      type: cdktf.stringToTerraform(this._type),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      direction: cdktn.stringToTerraform(this._direction),
+      domain: cdktn.stringToTerraform(this._domain),
+      export: cdktn.stringToTerraform(this._export),
+      hosts: cdktn.stringToTerraform(this._hosts),
+      http_only: cdktn.booleanToTerraform(this._httpOnly),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      name: cdktn.stringToTerraform(this._name),
+      order_by: cdktn.stringToTerraform(this._orderBy),
+      page: cdktn.stringToTerraform(this._page),
+      page_url: cdktn.stringToTerraform(this._pageUrl),
+      path: cdktn.stringToTerraform(this._path),
+      per_page: cdktn.numberToTerraform(this._perPage),
+      same_site: cdktn.stringToTerraform(this._sameSite),
+      secure: cdktn.booleanToTerraform(this._secure),
+      type: cdktn.stringToTerraform(this._type),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain: {
-        value: cdktf.stringToHclTerraform(this._domain),
+        value: cdktn.stringToHclTerraform(this._domain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export: {
-        value: cdktf.stringToHclTerraform(this._export),
+        value: cdktn.stringToHclTerraform(this._export),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hosts: {
-        value: cdktf.stringToHclTerraform(this._hosts),
+        value: cdktn.stringToHclTerraform(this._hosts),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       http_only: {
-        value: cdktf.booleanToHclTerraform(this._httpOnly),
+        value: cdktn.booleanToHclTerraform(this._httpOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       order_by: {
-        value: cdktf.stringToHclTerraform(this._orderBy),
+        value: cdktn.stringToHclTerraform(this._orderBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page: {
-        value: cdktf.stringToHclTerraform(this._page),
+        value: cdktn.stringToHclTerraform(this._page),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page_url: {
-        value: cdktf.stringToHclTerraform(this._pageUrl),
+        value: cdktn.stringToHclTerraform(this._pageUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       per_page: {
-        value: cdktf.numberToHclTerraform(this._perPage),
+        value: cdktn.numberToHclTerraform(this._perPage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       same_site: {
-        value: cdktf.stringToHclTerraform(this._sameSite),
+        value: cdktn.stringToHclTerraform(this._sameSite),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secure: {
-        value: cdktf.booleanToHclTerraform(this._secure),
+        value: cdktn.booleanToHclTerraform(this._secure),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,97 +1,97 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustDlpCustomProfileConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustDlpCustomProfileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#account_id ZeroTrustDlpCustomProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#account_id ZeroTrustDlpCustomProfile#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#ai_context_enabled ZeroTrustDlpCustomProfile#ai_context_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#ai_context_enabled ZeroTrustDlpCustomProfile#ai_context_enabled}
   */
-  readonly aiContextEnabled?: boolean | cdktf.IResolvable;
+  readonly aiContextEnabled?: boolean | cdktn.IResolvable;
   /**
   * Related DLP policies will trigger when the match count exceeds the number set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#allowed_match_count ZeroTrustDlpCustomProfile#allowed_match_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#allowed_match_count ZeroTrustDlpCustomProfile#allowed_match_count}
   */
   readonly allowedMatchCount?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#confidence_threshold ZeroTrustDlpCustomProfile#confidence_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#confidence_threshold ZeroTrustDlpCustomProfile#confidence_threshold}
   */
   readonly confidenceThreshold?: string;
   /**
   * Scan the context of predefined entries to only return matches surrounded by keywords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#context_awareness ZeroTrustDlpCustomProfile#context_awareness}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#context_awareness ZeroTrustDlpCustomProfile#context_awareness}
   */
   readonly contextAwareness?: ZeroTrustDlpCustomProfileContextAwareness;
   /**
   * The description of the profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#description ZeroTrustDlpCustomProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#description ZeroTrustDlpCustomProfile#description}
   */
   readonly description?: string;
   /**
   * Custom entries from this profile.
   * If this field is omitted, entries owned by this profile will not be changed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#entries ZeroTrustDlpCustomProfile#entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#entries ZeroTrustDlpCustomProfile#entries}
   */
-  readonly entries?: ZeroTrustDlpCustomProfileEntries[] | cdktf.IResolvable;
+  readonly entries?: ZeroTrustDlpCustomProfileEntries[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#ocr_enabled ZeroTrustDlpCustomProfile#ocr_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#ocr_enabled ZeroTrustDlpCustomProfile#ocr_enabled}
   */
-  readonly ocrEnabled?: boolean | cdktf.IResolvable;
+  readonly ocrEnabled?: boolean | cdktn.IResolvable;
   /**
   * Entries from other profiles (e.g. pre-defined Cloudflare profiles, or your Microsoft Information Protection profiles).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#shared_entries ZeroTrustDlpCustomProfile#shared_entries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#shared_entries ZeroTrustDlpCustomProfile#shared_entries}
   */
-  readonly sharedEntries?: ZeroTrustDlpCustomProfileSharedEntries[] | cdktf.IResolvable;
+  readonly sharedEntries?: ZeroTrustDlpCustomProfileSharedEntries[] | cdktn.IResolvable;
 }
 export interface ZeroTrustDlpCustomProfileContextAwarenessSkip {
   /**
   * If the content type is a file, skip context analysis and return all matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#files ZeroTrustDlpCustomProfile#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#files ZeroTrustDlpCustomProfile#files}
   */
-  readonly files: boolean | cdktf.IResolvable;
+  readonly files: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustDlpCustomProfileContextAwarenessSkipToTerraform(struct?: ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileContextAwarenessSkipToTerraform(struct?: ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    files: cdktf.booleanToTerraform(struct!.files),
+    files: cdktn.booleanToTerraform(struct!.files),
   }
 }
 
 
-export function zeroTrustDlpCustomProfileContextAwarenessSkipToHclTerraform(struct?: ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileContextAwarenessSkipToHclTerraform(struct?: ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     files: {
-      value: cdktf.booleanToHclTerraform(struct!.files),
+      value: cdktn.booleanToHclTerraform(struct!.files),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -102,19 +102,19 @@ export function zeroTrustDlpCustomProfileContextAwarenessSkipToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -127,13 +127,13 @@ export class ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDlpCustomProfileContextAwarenessSkip | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._files = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -145,11 +145,11 @@ export class ZeroTrustDlpCustomProfileContextAwarenessSkipOutputReference extend
   }
 
   // files - computed: false, optional: false, required: true
-  private _files?: boolean | cdktf.IResolvable; 
+  private _files?: boolean | cdktn.IResolvable; 
   public get files() {
     return this.getBooleanAttribute('files');
   }
-  public set files(value: boolean | cdktf.IResolvable) {
+  public set files(value: boolean | cdktn.IResolvable) {
     this._files = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -161,37 +161,37 @@ export interface ZeroTrustDlpCustomProfileContextAwareness {
   /**
   * If true, scan the context of predefined entries to only return matches surrounded by keywords.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Content types to exclude from context analysis and return all matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#skip ZeroTrustDlpCustomProfile#skip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#skip ZeroTrustDlpCustomProfile#skip}
   */
   readonly skip: ZeroTrustDlpCustomProfileContextAwarenessSkip;
 }
 
-export function zeroTrustDlpCustomProfileContextAwarenessToTerraform(struct?: ZeroTrustDlpCustomProfileContextAwareness | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileContextAwarenessToTerraform(struct?: ZeroTrustDlpCustomProfileContextAwareness | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
     skip: zeroTrustDlpCustomProfileContextAwarenessSkipToTerraform(struct!.skip),
   }
 }
 
 
-export function zeroTrustDlpCustomProfileContextAwarenessToHclTerraform(struct?: ZeroTrustDlpCustomProfileContextAwareness | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileContextAwarenessToHclTerraform(struct?: ZeroTrustDlpCustomProfileContextAwareness | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -208,19 +208,19 @@ export function zeroTrustDlpCustomProfileContextAwarenessToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDlpCustomProfileContextAwarenessOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpCustomProfileContextAwarenessOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDlpCustomProfileContextAwareness | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDlpCustomProfileContextAwareness | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -237,14 +237,14 @@ export class ZeroTrustDlpCustomProfileContextAwarenessOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDlpCustomProfileContextAwareness | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDlpCustomProfileContextAwareness | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._skip.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -257,11 +257,11 @@ export class ZeroTrustDlpCustomProfileContextAwarenessOutputReference extends cd
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -284,43 +284,43 @@ export class ZeroTrustDlpCustomProfileContextAwarenessOutputReference extends cd
 }
 export interface ZeroTrustDlpCustomProfileEntriesPattern {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#regex ZeroTrustDlpCustomProfile#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#regex ZeroTrustDlpCustomProfile#regex}
   */
   readonly regex: string;
   /**
   * Available values: "luhn".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#validation ZeroTrustDlpCustomProfile#validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#validation ZeroTrustDlpCustomProfile#validation}
   */
   readonly validation?: string;
 }
 
-export function zeroTrustDlpCustomProfileEntriesPatternToTerraform(struct?: ZeroTrustDlpCustomProfileEntriesPattern | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileEntriesPatternToTerraform(struct?: ZeroTrustDlpCustomProfileEntriesPattern | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    regex: cdktf.stringToTerraform(struct!.regex),
-    validation: cdktf.stringToTerraform(struct!.validation),
+    regex: cdktn.stringToTerraform(struct!.regex),
+    validation: cdktn.stringToTerraform(struct!.validation),
   }
 }
 
 
-export function zeroTrustDlpCustomProfileEntriesPatternToHclTerraform(struct?: ZeroTrustDlpCustomProfileEntriesPattern | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileEntriesPatternToHclTerraform(struct?: ZeroTrustDlpCustomProfileEntriesPattern | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     regex: {
-      value: cdktf.stringToHclTerraform(struct!.regex),
+      value: cdktn.stringToHclTerraform(struct!.regex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     validation: {
-      value: cdktf.stringToHclTerraform(struct!.validation),
+      value: cdktn.stringToHclTerraform(struct!.validation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -331,19 +331,19 @@ export function zeroTrustDlpCustomProfileEntriesPatternToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDlpCustomProfileEntriesPatternOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpCustomProfileEntriesPatternOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDlpCustomProfileEntriesPattern | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDlpCustomProfileEntriesPattern | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -360,14 +360,14 @@ export class ZeroTrustDlpCustomProfileEntriesPatternOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDlpCustomProfileEntriesPattern | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDlpCustomProfileEntriesPattern | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._regex = undefined;
       this._validation = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -410,57 +410,57 @@ export class ZeroTrustDlpCustomProfileEntriesPatternOutputReference extends cdkt
 }
 export interface ZeroTrustDlpCustomProfileEntries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#entry_id ZeroTrustDlpCustomProfile#entry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#entry_id ZeroTrustDlpCustomProfile#entry_id}
   */
   readonly entryId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#name ZeroTrustDlpCustomProfile#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#pattern ZeroTrustDlpCustomProfile#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#pattern ZeroTrustDlpCustomProfile#pattern}
   */
   readonly pattern: ZeroTrustDlpCustomProfileEntriesPattern;
 }
 
-export function zeroTrustDlpCustomProfileEntriesToTerraform(struct?: ZeroTrustDlpCustomProfileEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileEntriesToTerraform(struct?: ZeroTrustDlpCustomProfileEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    entry_id: cdktf.stringToTerraform(struct!.entryId),
-    name: cdktf.stringToTerraform(struct!.name),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    entry_id: cdktn.stringToTerraform(struct!.entryId),
+    name: cdktn.stringToTerraform(struct!.name),
     pattern: zeroTrustDlpCustomProfileEntriesPatternToTerraform(struct!.pattern),
   }
 }
 
 
-export function zeroTrustDlpCustomProfileEntriesToHclTerraform(struct?: ZeroTrustDlpCustomProfileEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileEntriesToHclTerraform(struct?: ZeroTrustDlpCustomProfileEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     entry_id: {
-      value: cdktf.stringToHclTerraform(struct!.entryId),
+      value: cdktn.stringToHclTerraform(struct!.entryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -477,9 +477,9 @@ export function zeroTrustDlpCustomProfileEntriesToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -487,11 +487,11 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDlpCustomProfileEntries | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDlpCustomProfileEntries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -516,7 +516,7 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDlpCustomProfileEntries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDlpCustomProfileEntries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -525,7 +525,7 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
       this._name = undefined;
       this._pattern.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -540,11 +540,11 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -595,15 +595,15 @@ export class ZeroTrustDlpCustomProfileEntriesOutputReference extends cdktf.Compl
   }
 }
 
-export class ZeroTrustDlpCustomProfileEntriesList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDlpCustomProfileEntries[] | cdktf.IResolvable
+export class ZeroTrustDlpCustomProfileEntriesList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDlpCustomProfileEntries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -616,54 +616,54 @@ export class ZeroTrustDlpCustomProfileEntriesList extends cdktf.ComplexList {
 }
 export interface ZeroTrustDlpCustomProfileSharedEntries {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#enabled ZeroTrustDlpCustomProfile#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#entry_id ZeroTrustDlpCustomProfile#entry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#entry_id ZeroTrustDlpCustomProfile#entry_id}
   */
   readonly entryId: string;
   /**
   * Available values: "custom", "predefined", "integration", "exact_data", "document_fingerprint".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#entry_type ZeroTrustDlpCustomProfile#entry_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#entry_type ZeroTrustDlpCustomProfile#entry_type}
   */
   readonly entryType: string;
 }
 
-export function zeroTrustDlpCustomProfileSharedEntriesToTerraform(struct?: ZeroTrustDlpCustomProfileSharedEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileSharedEntriesToTerraform(struct?: ZeroTrustDlpCustomProfileSharedEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    entry_id: cdktf.stringToTerraform(struct!.entryId),
-    entry_type: cdktf.stringToTerraform(struct!.entryType),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    entry_id: cdktn.stringToTerraform(struct!.entryId),
+    entry_type: cdktn.stringToTerraform(struct!.entryType),
   }
 }
 
 
-export function zeroTrustDlpCustomProfileSharedEntriesToHclTerraform(struct?: ZeroTrustDlpCustomProfileSharedEntries | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDlpCustomProfileSharedEntriesToHclTerraform(struct?: ZeroTrustDlpCustomProfileSharedEntries | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     entry_id: {
-      value: cdktf.stringToHclTerraform(struct!.entryId),
+      value: cdktn.stringToHclTerraform(struct!.entryId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     entry_type: {
-      value: cdktf.stringToHclTerraform(struct!.entryType),
+      value: cdktn.stringToHclTerraform(struct!.entryType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -674,9 +674,9 @@ export function zeroTrustDlpCustomProfileSharedEntriesToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -684,11 +684,11 @@ export class ZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDlpCustomProfileSharedEntries | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDlpCustomProfileSharedEntries | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -709,7 +709,7 @@ export class ZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDlpCustomProfileSharedEntries | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDlpCustomProfileSharedEntries | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -717,7 +717,7 @@ export class ZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktf
       this._entryId = undefined;
       this._entryType = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -731,11 +731,11 @@ export class ZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktf
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -770,15 +770,15 @@ export class ZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktf
   }
 }
 
-export class ZeroTrustDlpCustomProfileSharedEntriesList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDlpCustomProfileSharedEntries[] | cdktf.IResolvable
+export class ZeroTrustDlpCustomProfileSharedEntriesList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDlpCustomProfileSharedEntries[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -791,9 +791,9 @@ export class ZeroTrustDlpCustomProfileSharedEntriesList extends cdktf.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}
 */
-export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
+export class ZeroTrustDlpCustomProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -804,14 +804,14 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustDlpCustomProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustDlpCustomProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDlpCustomProfile to import
-  * @param importFromId The id of the existing ZeroTrustDlpCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDlpCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDlpCustomProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dlp_custom_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dlp_custom_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -819,7 +819,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -830,7 +830,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dlp_custom_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -871,11 +871,11 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   }
 
   // ai_context_enabled - computed: true, optional: true, required: false
-  private _aiContextEnabled?: boolean | cdktf.IResolvable; 
+  private _aiContextEnabled?: boolean | cdktn.IResolvable; 
   public get aiContextEnabled() {
     return this.getBooleanAttribute('ai_context_enabled');
   }
-  public set aiContextEnabled(value: boolean | cdktf.IResolvable) {
+  public set aiContextEnabled(value: boolean | cdktn.IResolvable) {
     this._aiContextEnabled = value;
   }
   public resetAiContextEnabled() {
@@ -960,7 +960,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   public get entries() {
     return this._entries;
   }
-  public putEntries(value: ZeroTrustDlpCustomProfileEntries[] | cdktf.IResolvable) {
+  public putEntries(value: ZeroTrustDlpCustomProfileEntries[] | cdktn.IResolvable) {
     this._entries.internalValue = value;
   }
   public resetEntries() {
@@ -990,11 +990,11 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   }
 
   // ocr_enabled - computed: true, optional: true, required: false
-  private _ocrEnabled?: boolean | cdktf.IResolvable; 
+  private _ocrEnabled?: boolean | cdktn.IResolvable; 
   public get ocrEnabled() {
     return this.getBooleanAttribute('ocr_enabled');
   }
-  public set ocrEnabled(value: boolean | cdktf.IResolvable) {
+  public set ocrEnabled(value: boolean | cdktn.IResolvable) {
     this._ocrEnabled = value;
   }
   public resetOcrEnabled() {
@@ -1015,7 +1015,7 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
   public get sharedEntries() {
     return this._sharedEntries;
   }
-  public putSharedEntries(value: ZeroTrustDlpCustomProfileSharedEntries[] | cdktf.IResolvable) {
+  public putSharedEntries(value: ZeroTrustDlpCustomProfileSharedEntries[] | cdktn.IResolvable) {
     this._sharedEntries.internalValue = value;
   }
   public resetSharedEntries() {
@@ -1042,41 +1042,41 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      ai_context_enabled: cdktf.booleanToTerraform(this._aiContextEnabled),
-      allowed_match_count: cdktf.numberToTerraform(this._allowedMatchCount),
-      confidence_threshold: cdktf.stringToTerraform(this._confidenceThreshold),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      ai_context_enabled: cdktn.booleanToTerraform(this._aiContextEnabled),
+      allowed_match_count: cdktn.numberToTerraform(this._allowedMatchCount),
+      confidence_threshold: cdktn.stringToTerraform(this._confidenceThreshold),
       context_awareness: zeroTrustDlpCustomProfileContextAwarenessToTerraform(this._contextAwareness.internalValue),
-      description: cdktf.stringToTerraform(this._description),
-      entries: cdktf.listMapper(zeroTrustDlpCustomProfileEntriesToTerraform, false)(this._entries.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      ocr_enabled: cdktf.booleanToTerraform(this._ocrEnabled),
-      shared_entries: cdktf.listMapper(zeroTrustDlpCustomProfileSharedEntriesToTerraform, false)(this._sharedEntries.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      entries: cdktn.listMapper(zeroTrustDlpCustomProfileEntriesToTerraform, false)(this._entries.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      ocr_enabled: cdktn.booleanToTerraform(this._ocrEnabled),
+      shared_entries: cdktn.listMapper(zeroTrustDlpCustomProfileSharedEntriesToTerraform, false)(this._sharedEntries.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ai_context_enabled: {
-        value: cdktf.booleanToHclTerraform(this._aiContextEnabled),
+        value: cdktn.booleanToHclTerraform(this._aiContextEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allowed_match_count: {
-        value: cdktf.numberToHclTerraform(this._allowedMatchCount),
+        value: cdktn.numberToHclTerraform(this._allowedMatchCount),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       confidence_threshold: {
-        value: cdktf.stringToHclTerraform(this._confidenceThreshold),
+        value: cdktn.stringToHclTerraform(this._confidenceThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1088,31 +1088,31 @@ export class ZeroTrustDlpCustomProfile extends cdktf.TerraformResource {
         storageClassType: "ZeroTrustDlpCustomProfileContextAwareness",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entries: {
-        value: cdktf.listMapperHcl(zeroTrustDlpCustomProfileEntriesToHclTerraform, false)(this._entries.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustDlpCustomProfileEntriesToHclTerraform, false)(this._entries.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ZeroTrustDlpCustomProfileEntriesList",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ocr_enabled: {
-        value: cdktf.booleanToHclTerraform(this._ocrEnabled),
+        value: cdktn.booleanToHclTerraform(this._ocrEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       shared_entries: {
-        value: cdktf.listMapperHcl(zeroTrustDlpCustomProfileSharedEntriesToHclTerraform, false)(this._sharedEntries.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustDlpCustomProfileSharedEntriesToHclTerraform, false)(this._sharedEntries.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ZeroTrustDlpCustomProfileSharedEntriesList",

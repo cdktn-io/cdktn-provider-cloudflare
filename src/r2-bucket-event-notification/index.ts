@@ -1,115 +1,115 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface R2BucketEventNotificationConfig extends cdktf.TerraformMetaArguments {
+export interface R2BucketEventNotificationConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#account_id R2BucketEventNotification#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#bucket_name R2BucketEventNotification#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#jurisdiction R2BucketEventNotification#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Queue ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#queue_id R2BucketEventNotification#queue_id}
   */
   readonly queueId: string;
   /**
   * Array of rules to drive notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#rules R2BucketEventNotification#rules}
   */
-  readonly rules: R2BucketEventNotificationRules[] | cdktf.IResolvable;
+  readonly rules: R2BucketEventNotificationRules[] | cdktn.IResolvable;
 }
 export interface R2BucketEventNotificationRules {
   /**
   * Array of R2 object actions that will trigger notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#actions R2BucketEventNotification#actions}
   */
   readonly actions: string[];
   /**
   * A description that can be used to identify the event notification rule after creation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#description R2BucketEventNotification#description}
   */
   readonly description?: string;
   /**
   * Notifications will be sent only for objects with this prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#prefix R2BucketEventNotification#prefix}
   */
   readonly prefix?: string;
   /**
   * Notifications will be sent only for objects with this suffix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#suffix R2BucketEventNotification#suffix}
   */
   readonly suffix?: string;
 }
 
-export function r2BucketEventNotificationRulesToTerraform(struct?: R2BucketEventNotificationRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function r2BucketEventNotificationRulesToTerraform(struct?: R2BucketEventNotificationRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    description: cdktf.stringToTerraform(struct!.description),
-    prefix: cdktf.stringToTerraform(struct!.prefix),
-    suffix: cdktf.stringToTerraform(struct!.suffix),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    description: cdktn.stringToTerraform(struct!.description),
+    prefix: cdktn.stringToTerraform(struct!.prefix),
+    suffix: cdktn.stringToTerraform(struct!.suffix),
   }
 }
 
 
-export function r2BucketEventNotificationRulesToHclTerraform(struct?: R2BucketEventNotificationRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function r2BucketEventNotificationRulesToHclTerraform(struct?: R2BucketEventNotificationRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefix: {
-      value: cdktf.stringToHclTerraform(struct!.prefix),
+      value: cdktn.stringToHclTerraform(struct!.prefix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     suffix: {
-      value: cdktf.stringToHclTerraform(struct!.suffix),
+      value: cdktn.stringToHclTerraform(struct!.suffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -120,9 +120,9 @@ export function r2BucketEventNotificationRulesToHclTerraform(struct?: R2BucketEv
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class R2BucketEventNotificationRulesOutputReference extends cdktf.ComplexObject {
+export class R2BucketEventNotificationRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -130,11 +130,11 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): R2BucketEventNotificationRules | cdktf.IResolvable | undefined {
+  public get internalValue(): R2BucketEventNotificationRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -159,7 +159,7 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: R2BucketEventNotificationRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: R2BucketEventNotificationRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -168,7 +168,7 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
       this._prefix = undefined;
       this._suffix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -244,15 +244,15 @@ export class R2BucketEventNotificationRulesOutputReference extends cdktf.Complex
   }
 }
 
-export class R2BucketEventNotificationRulesList extends cdktf.ComplexList {
-  public internalValue? : R2BucketEventNotificationRules[] | cdktf.IResolvable
+export class R2BucketEventNotificationRulesList extends cdktn.ComplexList {
+  public internalValue? : R2BucketEventNotificationRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -265,9 +265,9 @@ export class R2BucketEventNotificationRulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification}
 */
-export class R2BucketEventNotification extends cdktf.TerraformResource {
+export class R2BucketEventNotification extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -278,14 +278,14 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a R2BucketEventNotification resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a R2BucketEventNotification resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2BucketEventNotification to import
-  * @param importFromId The id of the existing R2BucketEventNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2BucketEventNotification that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2BucketEventNotification to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_r2_bucket_event_notification", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_r2_bucket_event_notification", importId: importFromId, provider });
       }
 
   // ===========
@@ -293,7 +293,7 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket_event_notification cloudflare_r2_bucket_event_notification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -304,7 +304,7 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket_event_notification',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -391,7 +391,7 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: R2BucketEventNotificationRules[] | cdktf.IResolvable) {
+  public putRules(value: R2BucketEventNotificationRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -405,42 +405,42 @@ export class R2BucketEventNotification extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      jurisdiction: cdktf.stringToTerraform(this._jurisdiction),
-      queue_id: cdktf.stringToTerraform(this._queueId),
-      rules: cdktf.listMapper(r2BucketEventNotificationRulesToTerraform, false)(this._rules.internalValue),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      jurisdiction: cdktn.stringToTerraform(this._jurisdiction),
+      queue_id: cdktn.stringToTerraform(this._queueId),
+      rules: cdktn.listMapper(r2BucketEventNotificationRulesToTerraform, false)(this._rules.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jurisdiction: {
-        value: cdktf.stringToHclTerraform(this._jurisdiction),
+        value: cdktn.stringToHclTerraform(this._jurisdiction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queue_id: {
-        value: cdktf.stringToHclTerraform(this._queueId),
+        value: cdktn.stringToHclTerraform(this._queueId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       rules: {
-        value: cdktf.listMapperHcl(r2BucketEventNotificationRulesToHclTerraform, false)(this._rules.internalValue),
+        value: cdktn.listMapperHcl(r2BucketEventNotificationRulesToHclTerraform, false)(this._rules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "R2BucketEventNotificationRulesList",

@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareUserAgentBlockingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareUserAgentBlockingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule#filter DataCloudflareUserAgentBlockingRule#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule#filter DataCloudflareUserAgentBlockingRule#filter}
   */
   readonly filter?: DataCloudflareUserAgentBlockingRuleFilter;
   /**
   * The unique identifier of the User Agent Blocking rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule#ua_rule_id DataCloudflareUserAgentBlockingRule#ua_rule_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule#ua_rule_id DataCloudflareUserAgentBlockingRule#ua_rule_id}
   */
   readonly uaRuleId?: string;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule#zone_id DataCloudflareUserAgentBlockingRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule#zone_id DataCloudflareUserAgentBlockingRule#zone_id}
   */
   readonly zoneId: string;
 }
@@ -33,8 +33,8 @@ export interface DataCloudflareUserAgentBlockingRuleConfiguration {
 }
 
 export function dataCloudflareUserAgentBlockingRuleConfigurationToTerraform(struct?: DataCloudflareUserAgentBlockingRuleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -43,8 +43,8 @@ export function dataCloudflareUserAgentBlockingRuleConfigurationToTerraform(stru
 
 
 export function dataCloudflareUserAgentBlockingRuleConfigurationToHclTerraform(struct?: DataCloudflareUserAgentBlockingRuleConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,14 +52,14 @@ export function dataCloudflareUserAgentBlockingRuleConfigurationToHclTerraform(s
   return attrs;
 }
 
-export class DataCloudflareUserAgentBlockingRuleConfigurationOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareUserAgentBlockingRuleConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -92,56 +92,56 @@ export interface DataCloudflareUserAgentBlockingRuleFilter {
   /**
   * A string to search for in the description of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule#description DataCloudflareUserAgentBlockingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule#description DataCloudflareUserAgentBlockingRule#description}
   */
   readonly description?: string;
   /**
   * When true, indicates that the rule is currently paused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule#paused DataCloudflareUserAgentBlockingRule#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule#paused DataCloudflareUserAgentBlockingRule#paused}
   */
-  readonly paused?: boolean | cdktf.IResolvable;
+  readonly paused?: boolean | cdktn.IResolvable;
   /**
   * A string to search for in the user agent values of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule#user_agent DataCloudflareUserAgentBlockingRule#user_agent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule#user_agent DataCloudflareUserAgentBlockingRule#user_agent}
   */
   readonly userAgent?: string;
 }
 
-export function dataCloudflareUserAgentBlockingRuleFilterToTerraform(struct?: DataCloudflareUserAgentBlockingRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareUserAgentBlockingRuleFilterToTerraform(struct?: DataCloudflareUserAgentBlockingRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    paused: cdktf.booleanToTerraform(struct!.paused),
-    user_agent: cdktf.stringToTerraform(struct!.userAgent),
+    description: cdktn.stringToTerraform(struct!.description),
+    paused: cdktn.booleanToTerraform(struct!.paused),
+    user_agent: cdktn.stringToTerraform(struct!.userAgent),
   }
 }
 
 
-export function dataCloudflareUserAgentBlockingRuleFilterToHclTerraform(struct?: DataCloudflareUserAgentBlockingRuleFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareUserAgentBlockingRuleFilterToHclTerraform(struct?: DataCloudflareUserAgentBlockingRuleFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     paused: {
-      value: cdktf.booleanToHclTerraform(struct!.paused),
+      value: cdktn.booleanToHclTerraform(struct!.paused),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     user_agent: {
-      value: cdktf.stringToHclTerraform(struct!.userAgent),
+      value: cdktn.stringToHclTerraform(struct!.userAgent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -152,19 +152,19 @@ export function dataCloudflareUserAgentBlockingRuleFilterToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareUserAgentBlockingRuleFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareUserAgentBlockingRuleFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareUserAgentBlockingRuleFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareUserAgentBlockingRuleFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -185,7 +185,7 @@ export class DataCloudflareUserAgentBlockingRuleFilterOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareUserAgentBlockingRuleFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareUserAgentBlockingRuleFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -193,7 +193,7 @@ export class DataCloudflareUserAgentBlockingRuleFilterOutputReference extends cd
       this._paused = undefined;
       this._userAgent = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,11 +223,11 @@ export class DataCloudflareUserAgentBlockingRuleFilterOutputReference extends cd
   }
 
   // paused - computed: false, optional: true, required: false
-  private _paused?: boolean | cdktf.IResolvable; 
+  private _paused?: boolean | cdktn.IResolvable; 
   public get paused() {
     return this.getBooleanAttribute('paused');
   }
-  public set paused(value: boolean | cdktf.IResolvable) {
+  public set paused(value: boolean | cdktn.IResolvable) {
     this._paused = value;
   }
   public resetPaused() {
@@ -256,9 +256,9 @@ export class DataCloudflareUserAgentBlockingRuleFilterOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
 */
-export class DataCloudflareUserAgentBlockingRule extends cdktf.TerraformDataSource {
+export class DataCloudflareUserAgentBlockingRule extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -269,14 +269,14 @@ export class DataCloudflareUserAgentBlockingRule extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareUserAgentBlockingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareUserAgentBlockingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareUserAgentBlockingRule to import
-  * @param importFromId The id of the existing DataCloudflareUserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareUserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareUserAgentBlockingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_user_agent_blocking_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_user_agent_blocking_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -284,7 +284,7 @@ export class DataCloudflareUserAgentBlockingRule extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -295,7 +295,7 @@ export class DataCloudflareUserAgentBlockingRule extends cdktf.TerraformDataSour
       terraformResourceType: 'cloudflare_user_agent_blocking_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -393,8 +393,8 @@ export class DataCloudflareUserAgentBlockingRule extends cdktf.TerraformDataSour
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       filter: dataCloudflareUserAgentBlockingRuleFilterToTerraform(this._filter.internalValue),
-      ua_rule_id: cdktf.stringToTerraform(this._uaRuleId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      ua_rule_id: cdktn.stringToTerraform(this._uaRuleId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -407,13 +407,13 @@ export class DataCloudflareUserAgentBlockingRule extends cdktf.TerraformDataSour
         storageClassType: "DataCloudflareUserAgentBlockingRuleFilter",
       },
       ua_rule_id: {
-        value: cdktf.stringToHclTerraform(this._uaRuleId),
+        value: cdktn.stringToHclTerraform(this._uaRuleId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

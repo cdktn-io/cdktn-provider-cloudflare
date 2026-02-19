@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareConnectivityDirectoryServiceConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareConnectivityDirectoryServiceConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service#account_id DataCloudflareConnectivityDirectoryService#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service#account_id DataCloudflareConnectivityDirectoryService#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service#filter DataCloudflareConnectivityDirectoryService#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service#filter DataCloudflareConnectivityDirectoryService#filter}
   */
   readonly filter?: DataCloudflareConnectivityDirectoryServiceFilter;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service#service_id DataCloudflareConnectivityDirectoryService#service_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service#service_id DataCloudflareConnectivityDirectoryService#service_id}
   */
   readonly serviceId?: string;
 }
@@ -29,30 +29,30 @@ export interface DataCloudflareConnectivityDirectoryServiceFilter {
   /**
   * Available values: "http".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service#type DataCloudflareConnectivityDirectoryService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service#type DataCloudflareConnectivityDirectoryService#type}
   */
   readonly type?: string;
 }
 
-export function dataCloudflareConnectivityDirectoryServiceFilterToTerraform(struct?: DataCloudflareConnectivityDirectoryServiceFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareConnectivityDirectoryServiceFilterToTerraform(struct?: DataCloudflareConnectivityDirectoryServiceFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataCloudflareConnectivityDirectoryServiceFilterToHclTerraform(struct?: DataCloudflareConnectivityDirectoryServiceFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareConnectivityDirectoryServiceFilterToHclTerraform(struct?: DataCloudflareConnectivityDirectoryServiceFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -63,19 +63,19 @@ export function dataCloudflareConnectivityDirectoryServiceFilterToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareConnectivityDirectoryServiceFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareConnectivityDirectoryServiceFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareConnectivityDirectoryServiceFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareConnectivityDirectoryServiceFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -88,13 +88,13 @@ export class DataCloudflareConnectivityDirectoryServiceFilterOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareConnectivityDirectoryServiceFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareConnectivityDirectoryServiceFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -125,8 +125,8 @@ export interface DataCloudflareConnectivityDirectoryServiceHostNetwork {
 }
 
 export function dataCloudflareConnectivityDirectoryServiceHostNetworkToTerraform(struct?: DataCloudflareConnectivityDirectoryServiceHostNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -135,8 +135,8 @@ export function dataCloudflareConnectivityDirectoryServiceHostNetworkToTerraform
 
 
 export function dataCloudflareConnectivityDirectoryServiceHostNetworkToHclTerraform(struct?: DataCloudflareConnectivityDirectoryServiceHostNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -144,14 +144,14 @@ export function dataCloudflareConnectivityDirectoryServiceHostNetworkToHclTerraf
   return attrs;
 }
 
-export class DataCloudflareConnectivityDirectoryServiceHostNetworkOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareConnectivityDirectoryServiceHostNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -179,8 +179,8 @@ export interface DataCloudflareConnectivityDirectoryServiceHostResolverNetwork {
 }
 
 export function dataCloudflareConnectivityDirectoryServiceHostResolverNetworkToTerraform(struct?: DataCloudflareConnectivityDirectoryServiceHostResolverNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -189,8 +189,8 @@ export function dataCloudflareConnectivityDirectoryServiceHostResolverNetworkToT
 
 
 export function dataCloudflareConnectivityDirectoryServiceHostResolverNetworkToHclTerraform(struct?: DataCloudflareConnectivityDirectoryServiceHostResolverNetwork): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -198,14 +198,14 @@ export function dataCloudflareConnectivityDirectoryServiceHostResolverNetworkToH
   return attrs;
 }
 
-export class DataCloudflareConnectivityDirectoryServiceHostResolverNetworkOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareConnectivityDirectoryServiceHostResolverNetworkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -238,8 +238,8 @@ export interface DataCloudflareConnectivityDirectoryServiceHost {
 }
 
 export function dataCloudflareConnectivityDirectoryServiceHostToTerraform(struct?: DataCloudflareConnectivityDirectoryServiceHost): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -248,8 +248,8 @@ export function dataCloudflareConnectivityDirectoryServiceHostToTerraform(struct
 
 
 export function dataCloudflareConnectivityDirectoryServiceHostToHclTerraform(struct?: DataCloudflareConnectivityDirectoryServiceHost): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -257,14 +257,14 @@ export function dataCloudflareConnectivityDirectoryServiceHostToHclTerraform(str
   return attrs;
 }
 
-export class DataCloudflareConnectivityDirectoryServiceHostOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareConnectivityDirectoryServiceHostOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -312,9 +312,9 @@ export class DataCloudflareConnectivityDirectoryServiceHostOutputReference exten
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service}
 */
-export class DataCloudflareConnectivityDirectoryService extends cdktf.TerraformDataSource {
+export class DataCloudflareConnectivityDirectoryService extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -325,14 +325,14 @@ export class DataCloudflareConnectivityDirectoryService extends cdktf.TerraformD
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareConnectivityDirectoryService resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareConnectivityDirectoryService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareConnectivityDirectoryService to import
-  * @param importFromId The id of the existing DataCloudflareConnectivityDirectoryService that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareConnectivityDirectoryService that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareConnectivityDirectoryService to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_connectivity_directory_service", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_connectivity_directory_service", importId: importFromId, provider });
       }
 
   // ===========
@@ -340,7 +340,7 @@ export class DataCloudflareConnectivityDirectoryService extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/connectivity_directory_service cloudflare_connectivity_directory_service} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -351,7 +351,7 @@ export class DataCloudflareConnectivityDirectoryService extends cdktf.TerraformD
       terraformResourceType: 'cloudflare_connectivity_directory_service',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -463,16 +463,16 @@ export class DataCloudflareConnectivityDirectoryService extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       filter: dataCloudflareConnectivityDirectoryServiceFilterToTerraform(this._filter.internalValue),
-      service_id: cdktf.stringToTerraform(this._serviceId),
+      service_id: cdktn.stringToTerraform(this._serviceId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -484,7 +484,7 @@ export class DataCloudflareConnectivityDirectoryService extends cdktf.TerraformD
         storageClassType: "DataCloudflareConnectivityDirectoryServiceFilter",
       },
       service_id: {
-        value: cdktf.stringToHclTerraform(this._serviceId),
+        value: cdktn.stringToHclTerraform(this._serviceId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

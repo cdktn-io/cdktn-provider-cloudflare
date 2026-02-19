@@ -1,57 +1,57 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MagicWanStaticRouteConfig extends cdktf.TerraformMetaArguments {
+export interface MagicWanStaticRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#account_id MagicWanStaticRoute#account_id}
   */
   readonly accountId: string;
   /**
   * An optional human provided description of the static route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#description MagicWanStaticRoute#description}
   */
   readonly description?: string;
   /**
   * The next-hop IP Address for the static route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#nexthop MagicWanStaticRoute#nexthop}
   */
   readonly nexthop: string;
   /**
   * IP Prefix in Classless Inter-Domain Routing format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#prefix MagicWanStaticRoute#prefix}
   */
   readonly prefix: string;
   /**
   * Priority of the static route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#priority MagicWanStaticRoute#priority}
   */
   readonly priority: number;
   /**
   * Used only for ECMP routes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#scope MagicWanStaticRoute#scope}
   */
   readonly scope?: MagicWanStaticRouteScope;
   /**
   * Optional weight of the ECMP scope - if provided.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#weight MagicWanStaticRoute#weight}
   */
   readonly weight?: number;
 }
@@ -59,43 +59,43 @@ export interface MagicWanStaticRouteScope {
   /**
   * List of colo names for the ECMP scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#colo_names MagicWanStaticRoute#colo_names}
   */
   readonly coloNames?: string[];
   /**
   * List of colo regions for the ECMP scope.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#colo_regions MagicWanStaticRoute#colo_regions}
   */
   readonly coloRegions?: string[];
 }
 
-export function magicWanStaticRouteScopeToTerraform(struct?: MagicWanStaticRouteScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicWanStaticRouteScopeToTerraform(struct?: MagicWanStaticRouteScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    colo_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.coloNames),
-    colo_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.coloRegions),
+    colo_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.coloNames),
+    colo_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.coloRegions),
   }
 }
 
 
-export function magicWanStaticRouteScopeToHclTerraform(struct?: MagicWanStaticRouteScope | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicWanStaticRouteScopeToHclTerraform(struct?: MagicWanStaticRouteScope | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     colo_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.coloNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.coloNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     colo_regions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.coloRegions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.coloRegions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -106,19 +106,19 @@ export function magicWanStaticRouteScopeToHclTerraform(struct?: MagicWanStaticRo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MagicWanStaticRouteScopeOutputReference extends cdktf.ComplexObject {
+export class MagicWanStaticRouteScopeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MagicWanStaticRouteScope | cdktf.IResolvable | undefined {
+  public get internalValue(): MagicWanStaticRouteScope | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -135,14 +135,14 @@ export class MagicWanStaticRouteScopeOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MagicWanStaticRouteScope | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MagicWanStaticRouteScope | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._coloNames = undefined;
       this._coloRegions = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -188,9 +188,9 @@ export class MagicWanStaticRouteScopeOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route}
 */
-export class MagicWanStaticRoute extends cdktf.TerraformResource {
+export class MagicWanStaticRoute extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -201,14 +201,14 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MagicWanStaticRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MagicWanStaticRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicWanStaticRoute to import
-  * @param importFromId The id of the existing MagicWanStaticRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicWanStaticRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicWanStaticRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_wan_static_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_wan_static_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -216,7 +216,7 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_wan_static_route cloudflare_magic_wan_static_route} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_wan_static_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -372,44 +372,44 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      nexthop: cdktf.stringToTerraform(this._nexthop),
-      prefix: cdktf.stringToTerraform(this._prefix),
-      priority: cdktf.numberToTerraform(this._priority),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      nexthop: cdktn.stringToTerraform(this._nexthop),
+      prefix: cdktn.stringToTerraform(this._prefix),
+      priority: cdktn.numberToTerraform(this._priority),
       scope: magicWanStaticRouteScopeToTerraform(this._scope.internalValue),
-      weight: cdktf.numberToTerraform(this._weight),
+      weight: cdktn.numberToTerraform(this._weight),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       nexthop: {
-        value: cdktf.stringToHclTerraform(this._nexthop),
+        value: cdktn.stringToHclTerraform(this._nexthop),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       prefix: {
-        value: cdktf.stringToHclTerraform(this._prefix),
+        value: cdktn.stringToHclTerraform(this._prefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -421,7 +421,7 @@ export class MagicWanStaticRoute extends cdktf.TerraformResource {
         storageClassType: "MagicWanStaticRouteScope",
       },
       weight: {
-        value: cdktf.numberToHclTerraform(this._weight),
+        value: cdktn.numberToHclTerraform(this._weight),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

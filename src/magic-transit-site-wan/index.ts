@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MagicTransitSiteWanConfig extends cdktf.TerraformMetaArguments {
+export interface MagicTransitSiteWanConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#account_id MagicTransitSiteWan#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#name MagicTransitSiteWan#name}
   */
   readonly name?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#physport MagicTransitSiteWan#physport}
   */
   readonly physport: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#priority MagicTransitSiteWan#priority}
   */
   readonly priority?: number;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#site_id MagicTransitSiteWan#site_id}
   */
   readonly siteId: string;
   /**
   * (optional) if omitted, use DHCP. Submit secondary_address when site is in high availability mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#static_addressing MagicTransitSiteWan#static_addressing}
   */
   readonly staticAddressing?: MagicTransitSiteWanStaticAddressing;
   /**
   * VLAN ID. Use zero for untagged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#vlan_tag MagicTransitSiteWan#vlan_tag}
   */
   readonly vlanTag?: number;
 }
@@ -53,56 +53,56 @@ export interface MagicTransitSiteWanStaticAddressing {
   /**
   * A valid CIDR notation representing an IP range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#address MagicTransitSiteWan#address}
   */
   readonly address: string;
   /**
   * A valid IPv4 address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#gateway_address MagicTransitSiteWan#gateway_address}
   */
   readonly gatewayAddress: string;
   /**
   * A valid CIDR notation representing an IP range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#secondary_address MagicTransitSiteWan#secondary_address}
   */
   readonly secondaryAddress?: string;
 }
 
-export function magicTransitSiteWanStaticAddressingToTerraform(struct?: MagicTransitSiteWanStaticAddressing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitSiteWanStaticAddressingToTerraform(struct?: MagicTransitSiteWanStaticAddressing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    gateway_address: cdktf.stringToTerraform(struct!.gatewayAddress),
-    secondary_address: cdktf.stringToTerraform(struct!.secondaryAddress),
+    address: cdktn.stringToTerraform(struct!.address),
+    gateway_address: cdktn.stringToTerraform(struct!.gatewayAddress),
+    secondary_address: cdktn.stringToTerraform(struct!.secondaryAddress),
   }
 }
 
 
-export function magicTransitSiteWanStaticAddressingToHclTerraform(struct?: MagicTransitSiteWanStaticAddressing | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitSiteWanStaticAddressingToHclTerraform(struct?: MagicTransitSiteWanStaticAddressing | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     gateway_address: {
-      value: cdktf.stringToHclTerraform(struct!.gatewayAddress),
+      value: cdktn.stringToHclTerraform(struct!.gatewayAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secondary_address: {
-      value: cdktf.stringToHclTerraform(struct!.secondaryAddress),
+      value: cdktn.stringToHclTerraform(struct!.secondaryAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function magicTransitSiteWanStaticAddressingToHclTerraform(struct?: Magic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MagicTransitSiteWanStaticAddressingOutputReference extends cdktf.ComplexObject {
+export class MagicTransitSiteWanStaticAddressingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MagicTransitSiteWanStaticAddressing | cdktf.IResolvable | undefined {
+  public get internalValue(): MagicTransitSiteWanStaticAddressing | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -146,7 +146,7 @@ export class MagicTransitSiteWanStaticAddressingOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MagicTransitSiteWanStaticAddressing | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MagicTransitSiteWanStaticAddressing | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -154,7 +154,7 @@ export class MagicTransitSiteWanStaticAddressingOutputReference extends cdktf.Co
       this._gatewayAddress = undefined;
       this._secondaryAddress = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -211,9 +211,9 @@ export class MagicTransitSiteWanStaticAddressingOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan}
 */
-export class MagicTransitSiteWan extends cdktf.TerraformResource {
+export class MagicTransitSiteWan extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -224,14 +224,14 @@ export class MagicTransitSiteWan extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MagicTransitSiteWan resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MagicTransitSiteWan resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicTransitSiteWan to import
-  * @param importFromId The id of the existing MagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicTransitSiteWan that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicTransitSiteWan to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_transit_site_wan", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_transit_site_wan", importId: importFromId, provider });
       }
 
   // ===========
@@ -239,7 +239,7 @@ export class MagicTransitSiteWan extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_wan cloudflare_magic_transit_site_wan} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +250,7 @@ export class MagicTransitSiteWan extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_transit_site_wan',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -393,44 +393,44 @@ export class MagicTransitSiteWan extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      name: cdktf.stringToTerraform(this._name),
-      physport: cdktf.numberToTerraform(this._physport),
-      priority: cdktf.numberToTerraform(this._priority),
-      site_id: cdktf.stringToTerraform(this._siteId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      name: cdktn.stringToTerraform(this._name),
+      physport: cdktn.numberToTerraform(this._physport),
+      priority: cdktn.numberToTerraform(this._priority),
+      site_id: cdktn.stringToTerraform(this._siteId),
       static_addressing: magicTransitSiteWanStaticAddressingToTerraform(this._staticAddressing.internalValue),
-      vlan_tag: cdktf.numberToTerraform(this._vlanTag),
+      vlan_tag: cdktn.numberToTerraform(this._vlanTag),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       physport: {
-        value: cdktf.numberToHclTerraform(this._physport),
+        value: cdktn.numberToHclTerraform(this._physport),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       site_id: {
-        value: cdktf.stringToHclTerraform(this._siteId),
+        value: cdktn.stringToHclTerraform(this._siteId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -442,7 +442,7 @@ export class MagicTransitSiteWan extends cdktf.TerraformResource {
         storageClassType: "MagicTransitSiteWanStaticAddressing",
       },
       vlan_tag: {
-        value: cdktf.numberToHclTerraform(this._vlanTag),
+        value: cdktn.numberToHclTerraform(this._vlanTag),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

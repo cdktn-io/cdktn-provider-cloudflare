@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/hyperdrive_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hyperdrive_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareHyperdriveConfigConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareHyperdriveConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Define configurations using a unique string identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/hyperdrive_config#account_id DataCloudflareHyperdriveConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hyperdrive_config#account_id DataCloudflareHyperdriveConfig#account_id}
   */
   readonly accountId: string;
   /**
   * Define configurations using a unique string identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/hyperdrive_config#hyperdrive_id DataCloudflareHyperdriveConfig#hyperdrive_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hyperdrive_config#hyperdrive_id DataCloudflareHyperdriveConfig#hyperdrive_id}
   */
   readonly hyperdriveId: string;
 }
@@ -29,8 +29,8 @@ export interface DataCloudflareHyperdriveConfigCaching {
 }
 
 export function dataCloudflareHyperdriveConfigCachingToTerraform(struct?: DataCloudflareHyperdriveConfigCaching): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataCloudflareHyperdriveConfigCachingToTerraform(struct?: DataCl
 
 
 export function dataCloudflareHyperdriveConfigCachingToHclTerraform(struct?: DataCloudflareHyperdriveConfigCaching): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function dataCloudflareHyperdriveConfigCachingToHclTerraform(struct?: Dat
   return attrs;
 }
 
-export class DataCloudflareHyperdriveConfigCachingOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareHyperdriveConfigCachingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -93,8 +93,8 @@ export interface DataCloudflareHyperdriveConfigMtls {
 }
 
 export function dataCloudflareHyperdriveConfigMtlsToTerraform(struct?: DataCloudflareHyperdriveConfigMtls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -103,8 +103,8 @@ export function dataCloudflareHyperdriveConfigMtlsToTerraform(struct?: DataCloud
 
 
 export function dataCloudflareHyperdriveConfigMtlsToHclTerraform(struct?: DataCloudflareHyperdriveConfigMtls): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -112,14 +112,14 @@ export function dataCloudflareHyperdriveConfigMtlsToHclTerraform(struct?: DataCl
   return attrs;
 }
 
-export class DataCloudflareHyperdriveConfigMtlsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareHyperdriveConfigMtlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -157,8 +157,8 @@ export interface DataCloudflareHyperdriveConfigOrigin {
 }
 
 export function dataCloudflareHyperdriveConfigOriginToTerraform(struct?: DataCloudflareHyperdriveConfigOrigin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -167,8 +167,8 @@ export function dataCloudflareHyperdriveConfigOriginToTerraform(struct?: DataClo
 
 
 export function dataCloudflareHyperdriveConfigOriginToHclTerraform(struct?: DataCloudflareHyperdriveConfigOrigin): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -176,14 +176,14 @@ export function dataCloudflareHyperdriveConfigOriginToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataCloudflareHyperdriveConfigOriginOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareHyperdriveConfigOriginOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -244,9 +244,9 @@ export class DataCloudflareHyperdriveConfigOriginOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config}
 */
-export class DataCloudflareHyperdriveConfig extends cdktf.TerraformDataSource {
+export class DataCloudflareHyperdriveConfig extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -257,14 +257,14 @@ export class DataCloudflareHyperdriveConfig extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareHyperdriveConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareHyperdriveConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareHyperdriveConfig to import
-  * @param importFromId The id of the existing DataCloudflareHyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareHyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareHyperdriveConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_hyperdrive_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_hyperdrive_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -272,7 +272,7 @@ export class DataCloudflareHyperdriveConfig extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/hyperdrive_config cloudflare_hyperdrive_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -283,7 +283,7 @@ export class DataCloudflareHyperdriveConfig extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_hyperdrive_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -377,21 +377,21 @@ export class DataCloudflareHyperdriveConfig extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      hyperdrive_id: cdktf.stringToTerraform(this._hyperdriveId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      hyperdrive_id: cdktn.stringToTerraform(this._hyperdriveId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hyperdrive_id: {
-        value: cdktf.stringToHclTerraform(this._hyperdriveId),
+        value: cdktn.stringToHclTerraform(this._hyperdriveId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

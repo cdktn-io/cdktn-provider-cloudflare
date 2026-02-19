@@ -1,37 +1,37 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WaitingRoomSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface WaitingRoomSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Whether to allow verified search engine crawlers to bypass all waiting rooms on this zone.
   * Verified search engine crawlers will not be tracked or counted by the waiting room system,
   * and will not appear in waiting room analytics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_settings#search_engine_crawler_bypass WaitingRoomSettings#search_engine_crawler_bypass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_settings#search_engine_crawler_bypass WaitingRoomSettings#search_engine_crawler_bypass}
   */
-  readonly searchEngineCrawlerBypass?: boolean | cdktf.IResolvable;
+  readonly searchEngineCrawlerBypass?: boolean | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_settings#zone_id WaitingRoomSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_settings#zone_id WaitingRoomSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings}
 */
-export class WaitingRoomSettings extends cdktf.TerraformResource {
+export class WaitingRoomSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -42,14 +42,14 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WaitingRoomSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WaitingRoomSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoomSettings to import
-  * @param importFromId The id of the existing WaitingRoomSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoomSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoomSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_waiting_room_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_waiting_room_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -57,7 +57,7 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_settings cloudflare_waiting_room_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -68,7 +68,7 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -93,11 +93,11 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
   }
 
   // search_engine_crawler_bypass - computed: true, optional: true, required: false
-  private _searchEngineCrawlerBypass?: boolean | cdktf.IResolvable; 
+  private _searchEngineCrawlerBypass?: boolean | cdktn.IResolvable; 
   public get searchEngineCrawlerBypass() {
     return this.getBooleanAttribute('search_engine_crawler_bypass');
   }
-  public set searchEngineCrawlerBypass(value: boolean | cdktf.IResolvable) {
+  public set searchEngineCrawlerBypass(value: boolean | cdktn.IResolvable) {
     this._searchEngineCrawlerBypass = value;
   }
   public resetSearchEngineCrawlerBypass() {
@@ -127,21 +127,21 @@ export class WaitingRoomSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      search_engine_crawler_bypass: cdktf.booleanToTerraform(this._searchEngineCrawlerBypass),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      search_engine_crawler_bypass: cdktn.booleanToTerraform(this._searchEngineCrawlerBypass),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       search_engine_crawler_bypass: {
-        value: cdktf.booleanToHclTerraform(this._searchEngineCrawlerBypass),
+        value: cdktn.booleanToHclTerraform(this._searchEngineCrawlerBypass),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,33 +1,33 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ManagedTransformsConfig extends cdktf.TerraformMetaArguments {
+export interface ManagedTransformsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The list of Managed Request Transforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
   */
-  readonly managedRequestHeaders: ManagedTransformsManagedRequestHeaders[] | cdktf.IResolvable;
+  readonly managedRequestHeaders: ManagedTransformsManagedRequestHeaders[] | cdktn.IResolvable;
   /**
   * The list of Managed Response Transforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
   */
-  readonly managedResponseHeaders: ManagedTransformsManagedResponseHeaders[] | cdktf.IResolvable;
+  readonly managedResponseHeaders: ManagedTransformsManagedResponseHeaders[] | cdktn.IResolvable;
   /**
   * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
   */
   readonly zoneId: string;
 }
@@ -35,13 +35,13 @@ export interface ManagedTransformsManagedRequestHeaders {
   /**
   * Whether the Managed Transform is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The human-readable identifier of the Managed Transform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#id ManagedTransforms#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#id ManagedTransforms#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -49,32 +49,32 @@ export interface ManagedTransformsManagedRequestHeaders {
   readonly id: string;
 }
 
-export function managedTransformsManagedRequestHeadersToTerraform(struct?: ManagedTransformsManagedRequestHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedTransformsManagedRequestHeadersToTerraform(struct?: ManagedTransformsManagedRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    id: cdktf.stringToTerraform(struct!.id),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function managedTransformsManagedRequestHeadersToHclTerraform(struct?: ManagedTransformsManagedRequestHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedTransformsManagedRequestHeadersToHclTerraform(struct?: ManagedTransformsManagedRequestHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -85,9 +85,9 @@ export function managedTransformsManagedRequestHeadersToHclTerraform(struct?: Ma
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktf.ComplexObject {
+export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,11 +95,11 @@ export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktf
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManagedTransformsManagedRequestHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedTransformsManagedRequestHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -116,14 +116,14 @@ export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedTransformsManagedRequestHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedTransformsManagedRequestHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -136,11 +136,11 @@ export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktf
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -162,15 +162,15 @@ export class ManagedTransformsManagedRequestHeadersOutputReference extends cdktf
   }
 }
 
-export class ManagedTransformsManagedRequestHeadersList extends cdktf.ComplexList {
-  public internalValue? : ManagedTransformsManagedRequestHeaders[] | cdktf.IResolvable
+export class ManagedTransformsManagedRequestHeadersList extends cdktn.ComplexList {
+  public internalValue? : ManagedTransformsManagedRequestHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -185,13 +185,13 @@ export interface ManagedTransformsManagedResponseHeaders {
   /**
   * Whether the Managed Transform is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The human-readable identifier of the Managed Transform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#id ManagedTransforms#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#id ManagedTransforms#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -199,32 +199,32 @@ export interface ManagedTransformsManagedResponseHeaders {
   readonly id: string;
 }
 
-export function managedTransformsManagedResponseHeadersToTerraform(struct?: ManagedTransformsManagedResponseHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedTransformsManagedResponseHeadersToTerraform(struct?: ManagedTransformsManagedResponseHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    id: cdktf.stringToTerraform(struct!.id),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function managedTransformsManagedResponseHeadersToHclTerraform(struct?: ManagedTransformsManagedResponseHeaders | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function managedTransformsManagedResponseHeadersToHclTerraform(struct?: ManagedTransformsManagedResponseHeaders | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -235,9 +235,9 @@ export function managedTransformsManagedResponseHeadersToHclTerraform(struct?: M
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ManagedTransformsManagedResponseHeadersOutputReference extends cdktf.ComplexObject {
+export class ManagedTransformsManagedResponseHeadersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -245,11 +245,11 @@ export class ManagedTransformsManagedResponseHeadersOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ManagedTransformsManagedResponseHeaders | cdktf.IResolvable | undefined {
+  public get internalValue(): ManagedTransformsManagedResponseHeaders | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -266,14 +266,14 @@ export class ManagedTransformsManagedResponseHeadersOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ManagedTransformsManagedResponseHeaders | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ManagedTransformsManagedResponseHeaders | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -286,11 +286,11 @@ export class ManagedTransformsManagedResponseHeadersOutputReference extends cdkt
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -312,15 +312,15 @@ export class ManagedTransformsManagedResponseHeadersOutputReference extends cdkt
   }
 }
 
-export class ManagedTransformsManagedResponseHeadersList extends cdktf.ComplexList {
-  public internalValue? : ManagedTransformsManagedResponseHeaders[] | cdktf.IResolvable
+export class ManagedTransformsManagedResponseHeadersList extends cdktn.ComplexList {
+  public internalValue? : ManagedTransformsManagedResponseHeaders[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -333,9 +333,9 @@ export class ManagedTransformsManagedResponseHeadersList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms cloudflare_managed_transforms}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms}
 */
-export class ManagedTransforms extends cdktf.TerraformResource {
+export class ManagedTransforms extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -346,14 +346,14 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ManagedTransforms resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ManagedTransforms resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedTransforms to import
-  * @param importFromId The id of the existing ManagedTransforms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedTransforms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedTransforms to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_managed_transforms", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_managed_transforms", importId: importFromId, provider });
       }
 
   // ===========
@@ -361,7 +361,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -372,7 +372,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_managed_transforms',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -402,7 +402,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   public get managedRequestHeaders() {
     return this._managedRequestHeaders;
   }
-  public putManagedRequestHeaders(value: ManagedTransformsManagedRequestHeaders[] | cdktf.IResolvable) {
+  public putManagedRequestHeaders(value: ManagedTransformsManagedRequestHeaders[] | cdktn.IResolvable) {
     this._managedRequestHeaders.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -415,7 +415,7 @@ export class ManagedTransforms extends cdktf.TerraformResource {
   public get managedResponseHeaders() {
     return this._managedResponseHeaders;
   }
-  public putManagedResponseHeaders(value: ManagedTransformsManagedResponseHeaders[] | cdktf.IResolvable) {
+  public putManagedResponseHeaders(value: ManagedTransformsManagedResponseHeaders[] | cdktn.IResolvable) {
     this._managedResponseHeaders.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -442,28 +442,28 @@ export class ManagedTransforms extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      managed_request_headers: cdktf.listMapper(managedTransformsManagedRequestHeadersToTerraform, false)(this._managedRequestHeaders.internalValue),
-      managed_response_headers: cdktf.listMapper(managedTransformsManagedResponseHeadersToTerraform, false)(this._managedResponseHeaders.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      managed_request_headers: cdktn.listMapper(managedTransformsManagedRequestHeadersToTerraform, false)(this._managedRequestHeaders.internalValue),
+      managed_response_headers: cdktn.listMapper(managedTransformsManagedResponseHeadersToTerraform, false)(this._managedResponseHeaders.internalValue),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       managed_request_headers: {
-        value: cdktf.listMapperHcl(managedTransformsManagedRequestHeadersToHclTerraform, false)(this._managedRequestHeaders.internalValue),
+        value: cdktn.listMapperHcl(managedTransformsManagedRequestHeadersToHclTerraform, false)(this._managedRequestHeaders.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ManagedTransformsManagedRequestHeadersList",
       },
       managed_response_headers: {
-        value: cdktf.listMapperHcl(managedTransformsManagedResponseHeadersToHclTerraform, false)(this._managedResponseHeaders.internalValue),
+        value: cdktn.listMapperHcl(managedTransformsManagedResponseHeadersToHclTerraform, false)(this._managedResponseHeaders.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ManagedTransformsManagedResponseHeadersList",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZoneSettingConfig extends cdktf.TerraformMetaArguments {
+export interface ZoneSettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * ssl-recommender enrollment setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Setting name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
   */
   readonly settingId: string;
   /**
   * Current value of the zone setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting#value ZoneSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting#value ZoneSetting#value}
   */
   readonly value: { [key: string]: any };
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting cloudflare_zone_setting}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting cloudflare_zone_setting}
 */
-export class ZoneSetting extends cdktf.TerraformResource {
+export class ZoneSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class ZoneSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZoneSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZoneSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneSetting to import
-  * @param importFromId The id of the existing ZoneSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class ZoneSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_setting cloudflare_zone_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_setting cloudflare_zone_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class ZoneSetting extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_setting',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -105,11 +105,11 @@ export class ZoneSetting extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -180,35 +180,35 @@ export class ZoneSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      setting_id: cdktf.stringToTerraform(this._settingId),
-      value: cdktf.hashMapper(cdktf.anyToTerraform)(this._value),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      setting_id: cdktn.stringToTerraform(this._settingId),
+      value: cdktn.hashMapper(cdktn.anyToTerraform)(this._value),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       setting_id: {
-        value: cdktf.stringToHclTerraform(this._settingId),
+        value: cdktn.stringToHclTerraform(this._settingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._value),
+        value: cdktn.hashMapperHcl(cdktn.anyToHclTerraform)(this._value),
         isBlock: false,
         type: "map",
         storageClassType: "anyMap",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

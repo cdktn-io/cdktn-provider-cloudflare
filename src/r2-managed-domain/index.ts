@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface R2ManagedDomainConfig extends cdktf.TerraformMetaArguments {
+export interface R2ManagedDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#account_id R2ManagedDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#bucket_name R2ManagedDomain#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Whether to enable public bucket access at the r2.dev domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#enabled R2ManagedDomain#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#jurisdiction R2ManagedDomain#jurisdiction}
   */
   readonly jurisdiction?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain}
 */
-export class R2ManagedDomain extends cdktf.TerraformResource {
+export class R2ManagedDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class R2ManagedDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a R2ManagedDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a R2ManagedDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2ManagedDomain to import
-  * @param importFromId The id of the existing R2ManagedDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2ManagedDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2ManagedDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_r2_managed_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_r2_managed_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class R2ManagedDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_managed_domain cloudflare_r2_managed_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class R2ManagedDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_managed_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -136,11 +136,11 @@ export class R2ManagedDomain extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -170,35 +170,35 @@ export class R2ManagedDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      bucket_name: cdktf.stringToTerraform(this._bucketName),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      jurisdiction: cdktf.stringToTerraform(this._jurisdiction),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      bucket_name: cdktn.stringToTerraform(this._bucketName),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      jurisdiction: cdktn.stringToTerraform(this._jurisdiction),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bucket_name: {
-        value: cdktf.stringToHclTerraform(this._bucketName),
+        value: cdktn.stringToHclTerraform(this._bucketName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       jurisdiction: {
-        value: cdktf.stringToHclTerraform(this._jurisdiction),
+        value: cdktn.stringToHclTerraform(this._jurisdiction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

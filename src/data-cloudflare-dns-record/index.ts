@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareDnsRecordConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareDnsRecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#dns_record_id DataCloudflareDnsRecord#dns_record_id}
   */
   readonly dnsRecordId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#filter DataCloudflareDnsRecord#filter}
   */
   readonly filter?: DataCloudflareDnsRecordFilter;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#zone_id DataCloudflareDnsRecord#zone_id}
   */
   readonly zoneId: string;
 }
@@ -33,8 +33,8 @@ export interface DataCloudflareDnsRecordData {
 }
 
 export function dataCloudflareDnsRecordDataToTerraform(struct?: DataCloudflareDnsRecordData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -43,8 +43,8 @@ export function dataCloudflareDnsRecordDataToTerraform(struct?: DataCloudflareDn
 
 
 export function dataCloudflareDnsRecordDataToHclTerraform(struct?: DataCloudflareDnsRecordData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,14 +52,14 @@ export function dataCloudflareDnsRecordDataToHclTerraform(struct?: DataCloudflar
   return attrs;
 }
 
-export class DataCloudflareDnsRecordDataOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareDnsRecordDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -109,7 +109,7 @@ export class DataCloudflareDnsRecordDataOutputReference extends cdktf.ComplexObj
   }
 
   // flags - computed: true, optional: false, required: false
-  private _flags = new cdktf.AnyMap(this, "flags");
+  private _flags = new cdktn.AnyMap(this, "flags");
   public get flags() {
     return this._flags;
   }
@@ -263,95 +263,95 @@ export interface DataCloudflareDnsRecordFilterComment {
   /**
   * If this parameter is present, only records *without* a comment are returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
   */
   readonly absent?: string;
   /**
   * Substring of the DNS record comment. Comment filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * Suffix of the DNS record comment. Comment filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * Exact value of the DNS record comment. Comment filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * If this parameter is present, only records *with* a comment are returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
   */
   readonly present?: string;
   /**
   * Prefix of the DNS record comment. Comment filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
 
-export function dataCloudflareDnsRecordFilterCommentToTerraform(struct?: DataCloudflareDnsRecordFilterComment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterCommentToTerraform(struct?: DataCloudflareDnsRecordFilterComment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    absent: cdktf.stringToTerraform(struct!.absent),
-    contains: cdktf.stringToTerraform(struct!.contains),
-    endswith: cdktf.stringToTerraform(struct!.endswith),
-    exact: cdktf.stringToTerraform(struct!.exact),
-    present: cdktf.stringToTerraform(struct!.present),
-    startswith: cdktf.stringToTerraform(struct!.startswith),
+    absent: cdktn.stringToTerraform(struct!.absent),
+    contains: cdktn.stringToTerraform(struct!.contains),
+    endswith: cdktn.stringToTerraform(struct!.endswith),
+    exact: cdktn.stringToTerraform(struct!.exact),
+    present: cdktn.stringToTerraform(struct!.present),
+    startswith: cdktn.stringToTerraform(struct!.startswith),
   }
 }
 
 
-export function dataCloudflareDnsRecordFilterCommentToHclTerraform(struct?: DataCloudflareDnsRecordFilterComment | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterCommentToHclTerraform(struct?: DataCloudflareDnsRecordFilterComment | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     absent: {
-      value: cdktf.stringToHclTerraform(struct!.absent),
+      value: cdktn.stringToHclTerraform(struct!.absent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     contains: {
-      value: cdktf.stringToHclTerraform(struct!.contains),
+      value: cdktn.stringToHclTerraform(struct!.contains),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endswith: {
-      value: cdktf.stringToHclTerraform(struct!.endswith),
+      value: cdktn.stringToHclTerraform(struct!.endswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exact: {
-      value: cdktf.stringToHclTerraform(struct!.exact),
+      value: cdktn.stringToHclTerraform(struct!.exact),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     present: {
-      value: cdktf.stringToHclTerraform(struct!.present),
+      value: cdktn.stringToHclTerraform(struct!.present),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     startswith: {
-      value: cdktf.stringToHclTerraform(struct!.startswith),
+      value: cdktn.stringToHclTerraform(struct!.startswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -362,19 +362,19 @@ export function dataCloudflareDnsRecordFilterCommentToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareDnsRecordFilterCommentOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareDnsRecordFilterCommentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareDnsRecordFilterComment | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareDnsRecordFilterComment | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -407,7 +407,7 @@ export class DataCloudflareDnsRecordFilterCommentOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareDnsRecordFilterComment | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareDnsRecordFilterComment | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -418,7 +418,7 @@ export class DataCloudflareDnsRecordFilterCommentOutputReference extends cdktf.C
       this._present = undefined;
       this._startswith = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -534,69 +534,69 @@ export interface DataCloudflareDnsRecordFilterContent {
   /**
   * Substring of the DNS record content. Content filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * Suffix of the DNS record content. Content filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * Exact value of the DNS record content. Content filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * Prefix of the DNS record content. Content filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
 
-export function dataCloudflareDnsRecordFilterContentToTerraform(struct?: DataCloudflareDnsRecordFilterContent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterContentToTerraform(struct?: DataCloudflareDnsRecordFilterContent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contains: cdktf.stringToTerraform(struct!.contains),
-    endswith: cdktf.stringToTerraform(struct!.endswith),
-    exact: cdktf.stringToTerraform(struct!.exact),
-    startswith: cdktf.stringToTerraform(struct!.startswith),
+    contains: cdktn.stringToTerraform(struct!.contains),
+    endswith: cdktn.stringToTerraform(struct!.endswith),
+    exact: cdktn.stringToTerraform(struct!.exact),
+    startswith: cdktn.stringToTerraform(struct!.startswith),
   }
 }
 
 
-export function dataCloudflareDnsRecordFilterContentToHclTerraform(struct?: DataCloudflareDnsRecordFilterContent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterContentToHclTerraform(struct?: DataCloudflareDnsRecordFilterContent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contains: {
-      value: cdktf.stringToHclTerraform(struct!.contains),
+      value: cdktn.stringToHclTerraform(struct!.contains),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endswith: {
-      value: cdktf.stringToHclTerraform(struct!.endswith),
+      value: cdktn.stringToHclTerraform(struct!.endswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exact: {
-      value: cdktf.stringToHclTerraform(struct!.exact),
+      value: cdktn.stringToHclTerraform(struct!.exact),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     startswith: {
-      value: cdktf.stringToHclTerraform(struct!.startswith),
+      value: cdktn.stringToHclTerraform(struct!.startswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -607,19 +607,19 @@ export function dataCloudflareDnsRecordFilterContentToHclTerraform(struct?: Data
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareDnsRecordFilterContentOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareDnsRecordFilterContentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareDnsRecordFilterContent | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareDnsRecordFilterContent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -644,7 +644,7 @@ export class DataCloudflareDnsRecordFilterContentOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareDnsRecordFilterContent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareDnsRecordFilterContent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -653,7 +653,7 @@ export class DataCloudflareDnsRecordFilterContentOutputReference extends cdktf.C
       this._exact = undefined;
       this._startswith = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -735,69 +735,69 @@ export interface DataCloudflareDnsRecordFilterName {
   /**
   * Substring of the DNS record name. Name filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * Suffix of the DNS record name. Name filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * Exact value of the DNS record name. Name filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * Prefix of the DNS record name. Name filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
 
-export function dataCloudflareDnsRecordFilterNameToTerraform(struct?: DataCloudflareDnsRecordFilterName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterNameToTerraform(struct?: DataCloudflareDnsRecordFilterName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contains: cdktf.stringToTerraform(struct!.contains),
-    endswith: cdktf.stringToTerraform(struct!.endswith),
-    exact: cdktf.stringToTerraform(struct!.exact),
-    startswith: cdktf.stringToTerraform(struct!.startswith),
+    contains: cdktn.stringToTerraform(struct!.contains),
+    endswith: cdktn.stringToTerraform(struct!.endswith),
+    exact: cdktn.stringToTerraform(struct!.exact),
+    startswith: cdktn.stringToTerraform(struct!.startswith),
   }
 }
 
 
-export function dataCloudflareDnsRecordFilterNameToHclTerraform(struct?: DataCloudflareDnsRecordFilterName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterNameToHclTerraform(struct?: DataCloudflareDnsRecordFilterName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contains: {
-      value: cdktf.stringToHclTerraform(struct!.contains),
+      value: cdktn.stringToHclTerraform(struct!.contains),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endswith: {
-      value: cdktf.stringToHclTerraform(struct!.endswith),
+      value: cdktn.stringToHclTerraform(struct!.endswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exact: {
-      value: cdktf.stringToHclTerraform(struct!.exact),
+      value: cdktn.stringToHclTerraform(struct!.exact),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     startswith: {
-      value: cdktf.stringToHclTerraform(struct!.startswith),
+      value: cdktn.stringToHclTerraform(struct!.startswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -808,19 +808,19 @@ export function dataCloudflareDnsRecordFilterNameToHclTerraform(struct?: DataClo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareDnsRecordFilterNameOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareDnsRecordFilterNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareDnsRecordFilterName | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareDnsRecordFilterName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -845,7 +845,7 @@ export class DataCloudflareDnsRecordFilterNameOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareDnsRecordFilterName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareDnsRecordFilterName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -854,7 +854,7 @@ export class DataCloudflareDnsRecordFilterNameOutputReference extends cdktf.Comp
       this._exact = undefined;
       this._startswith = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -936,95 +936,95 @@ export interface DataCloudflareDnsRecordFilterTag {
   /**
   * Name of a tag which must *not* be present on the DNS record. Tag filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#absent DataCloudflareDnsRecord#absent}
   */
   readonly absent?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value contains `<tag-value>`. Tag filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#contains DataCloudflareDnsRecord#contains}
   */
   readonly contains?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value ends with `<tag-value>`. Tag filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#endswith DataCloudflareDnsRecord#endswith}
   */
   readonly endswith?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value is `<tag-value>`. Tag filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#exact DataCloudflareDnsRecord#exact}
   */
   readonly exact?: string;
   /**
   * Name of a tag which must be present on the DNS record. Tag filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#present DataCloudflareDnsRecord#present}
   */
   readonly present?: string;
   /**
   * A tag and value, of the form `<tag-name>:<tag-value>`. The API will only return DNS records that have a tag named `<tag-name>` whose value starts with `<tag-value>`. Tag filters are case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#startswith DataCloudflareDnsRecord#startswith}
   */
   readonly startswith?: string;
 }
 
-export function dataCloudflareDnsRecordFilterTagToTerraform(struct?: DataCloudflareDnsRecordFilterTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterTagToTerraform(struct?: DataCloudflareDnsRecordFilterTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    absent: cdktf.stringToTerraform(struct!.absent),
-    contains: cdktf.stringToTerraform(struct!.contains),
-    endswith: cdktf.stringToTerraform(struct!.endswith),
-    exact: cdktf.stringToTerraform(struct!.exact),
-    present: cdktf.stringToTerraform(struct!.present),
-    startswith: cdktf.stringToTerraform(struct!.startswith),
+    absent: cdktn.stringToTerraform(struct!.absent),
+    contains: cdktn.stringToTerraform(struct!.contains),
+    endswith: cdktn.stringToTerraform(struct!.endswith),
+    exact: cdktn.stringToTerraform(struct!.exact),
+    present: cdktn.stringToTerraform(struct!.present),
+    startswith: cdktn.stringToTerraform(struct!.startswith),
   }
 }
 
 
-export function dataCloudflareDnsRecordFilterTagToHclTerraform(struct?: DataCloudflareDnsRecordFilterTag | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterTagToHclTerraform(struct?: DataCloudflareDnsRecordFilterTag | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     absent: {
-      value: cdktf.stringToHclTerraform(struct!.absent),
+      value: cdktn.stringToHclTerraform(struct!.absent),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     contains: {
-      value: cdktf.stringToHclTerraform(struct!.contains),
+      value: cdktn.stringToHclTerraform(struct!.contains),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endswith: {
-      value: cdktf.stringToHclTerraform(struct!.endswith),
+      value: cdktn.stringToHclTerraform(struct!.endswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exact: {
-      value: cdktf.stringToHclTerraform(struct!.exact),
+      value: cdktn.stringToHclTerraform(struct!.exact),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     present: {
-      value: cdktf.stringToHclTerraform(struct!.present),
+      value: cdktn.stringToHclTerraform(struct!.present),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     startswith: {
-      value: cdktf.stringToHclTerraform(struct!.startswith),
+      value: cdktn.stringToHclTerraform(struct!.startswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1035,19 +1035,19 @@ export function dataCloudflareDnsRecordFilterTagToHclTerraform(struct?: DataClou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareDnsRecordFilterTagOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareDnsRecordFilterTagOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareDnsRecordFilterTag | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareDnsRecordFilterTag | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1080,7 +1080,7 @@ export class DataCloudflareDnsRecordFilterTagOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareDnsRecordFilterTag | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareDnsRecordFilterTag | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1091,7 +1091,7 @@ export class DataCloudflareDnsRecordFilterTagOutputReference extends cdktf.Compl
       this._present = undefined;
       this._startswith = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1205,94 +1205,94 @@ export class DataCloudflareDnsRecordFilterTagOutputReference extends cdktf.Compl
 }
 export interface DataCloudflareDnsRecordFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#comment DataCloudflareDnsRecord#comment}
   */
   readonly comment?: DataCloudflareDnsRecordFilterComment;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#content DataCloudflareDnsRecord#content}
   */
   readonly content?: DataCloudflareDnsRecordFilterContent;
   /**
   * Direction to order DNS records in.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#direction DataCloudflareDnsRecord#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#direction DataCloudflareDnsRecord#direction}
   */
   readonly direction?: string;
   /**
   * Whether to match all search requirements or at least one (any). If set to `all`, acts like a logical AND between filters. If set to `any`, acts like a logical OR instead. Note that the interaction between tag filters is controlled by the `tag-match` parameter instead.
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#match DataCloudflareDnsRecord#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#match DataCloudflareDnsRecord#match}
   */
   readonly match?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#name DataCloudflareDnsRecord#name}
   */
   readonly name?: DataCloudflareDnsRecordFilterName;
   /**
   * Field to order DNS records by.
   * Available values: "type", "name", "content", "ttl", "proxied".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#order DataCloudflareDnsRecord#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#order DataCloudflareDnsRecord#order}
   */
   readonly order?: string;
   /**
   * Whether the record is receiving the performance and security benefits of Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#proxied DataCloudflareDnsRecord#proxied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#proxied DataCloudflareDnsRecord#proxied}
   */
-  readonly proxied?: boolean | cdktf.IResolvable;
+  readonly proxied?: boolean | cdktn.IResolvable;
   /**
   * Allows searching in multiple properties of a DNS record simultaneously. This parameter is intended for human users, not automation. Its exact behavior is intentionally left unspecified and is subject to change in the future. This parameter works independently of the `match` setting. For automated searches, please use the other available parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#search DataCloudflareDnsRecord#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#search DataCloudflareDnsRecord#search}
   */
   readonly search?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#tag DataCloudflareDnsRecord#tag}
   */
   readonly tag?: DataCloudflareDnsRecordFilterTag;
   /**
   * Whether to match all tag search requirements or at least one (any). If set to `all`, acts like a logical AND between tag filters. If set to `any`, acts like a logical OR instead. Note that the regular `match` parameter is still used to combine the resulting condition with other filters that aren't related to tags.
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#tag_match DataCloudflareDnsRecord#tag_match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#tag_match DataCloudflareDnsRecord#tag_match}
   */
   readonly tagMatch?: string;
   /**
   * Record type.
   * Available values: "A", "AAAA", "CAA", "CERT", "CNAME", "DNSKEY", "DS", "HTTPS", "LOC", "MX", "NAPTR", "NS", "OPENPGPKEY", "PTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "TXT", "URI".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#type DataCloudflareDnsRecord#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#type DataCloudflareDnsRecord#type}
   */
   readonly type?: string;
 }
 
-export function dataCloudflareDnsRecordFilterToTerraform(struct?: DataCloudflareDnsRecordFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterToTerraform(struct?: DataCloudflareDnsRecordFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     comment: dataCloudflareDnsRecordFilterCommentToTerraform(struct!.comment),
     content: dataCloudflareDnsRecordFilterContentToTerraform(struct!.content),
-    direction: cdktf.stringToTerraform(struct!.direction),
-    match: cdktf.stringToTerraform(struct!.match),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    match: cdktn.stringToTerraform(struct!.match),
     name: dataCloudflareDnsRecordFilterNameToTerraform(struct!.name),
-    order: cdktf.stringToTerraform(struct!.order),
-    proxied: cdktf.booleanToTerraform(struct!.proxied),
-    search: cdktf.stringToTerraform(struct!.search),
+    order: cdktn.stringToTerraform(struct!.order),
+    proxied: cdktn.booleanToTerraform(struct!.proxied),
+    search: cdktn.stringToTerraform(struct!.search),
     tag: dataCloudflareDnsRecordFilterTagToTerraform(struct!.tag),
-    tag_match: cdktf.stringToTerraform(struct!.tagMatch),
-    type: cdktf.stringToTerraform(struct!.type),
+    tag_match: cdktn.stringToTerraform(struct!.tagMatch),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function dataCloudflareDnsRecordFilterToHclTerraform(struct?: DataCloudflareDnsRecordFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareDnsRecordFilterToHclTerraform(struct?: DataCloudflareDnsRecordFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1309,13 +1309,13 @@ export function dataCloudflareDnsRecordFilterToHclTerraform(struct?: DataCloudfl
       storageClassType: "DataCloudflareDnsRecordFilterContent",
     },
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match: {
-      value: cdktf.stringToHclTerraform(struct!.match),
+      value: cdktn.stringToHclTerraform(struct!.match),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1327,19 +1327,19 @@ export function dataCloudflareDnsRecordFilterToHclTerraform(struct?: DataCloudfl
       storageClassType: "DataCloudflareDnsRecordFilterName",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     proxied: {
-      value: cdktf.booleanToHclTerraform(struct!.proxied),
+      value: cdktn.booleanToHclTerraform(struct!.proxied),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     search: {
-      value: cdktf.stringToHclTerraform(struct!.search),
+      value: cdktn.stringToHclTerraform(struct!.search),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1351,13 +1351,13 @@ export function dataCloudflareDnsRecordFilterToHclTerraform(struct?: DataCloudfl
       storageClassType: "DataCloudflareDnsRecordFilterTag",
     },
     tag_match: {
-      value: cdktf.stringToHclTerraform(struct!.tagMatch),
+      value: cdktn.stringToHclTerraform(struct!.tagMatch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1368,19 +1368,19 @@ export function dataCloudflareDnsRecordFilterToHclTerraform(struct?: DataCloudfl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareDnsRecordFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareDnsRecordFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareDnsRecordFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareDnsRecordFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1433,7 +1433,7 @@ export class DataCloudflareDnsRecordFilterOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareDnsRecordFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareDnsRecordFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1449,7 +1449,7 @@ export class DataCloudflareDnsRecordFilterOutputReference extends cdktf.ComplexO
       this._tagMatch = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1567,11 +1567,11 @@ export class DataCloudflareDnsRecordFilterOutputReference extends cdktf.ComplexO
   }
 
   // proxied - computed: true, optional: true, required: false
-  private _proxied?: boolean | cdktf.IResolvable; 
+  private _proxied?: boolean | cdktn.IResolvable; 
   public get proxied() {
     return this.getBooleanAttribute('proxied');
   }
-  public set proxied(value: boolean | cdktf.IResolvable) {
+  public set proxied(value: boolean | cdktn.IResolvable) {
     this._proxied = value;
   }
   public resetProxied() {
@@ -1650,8 +1650,8 @@ export interface DataCloudflareDnsRecordSettings {
 }
 
 export function dataCloudflareDnsRecordSettingsToTerraform(struct?: DataCloudflareDnsRecordSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1660,8 +1660,8 @@ export function dataCloudflareDnsRecordSettingsToTerraform(struct?: DataCloudfla
 
 
 export function dataCloudflareDnsRecordSettingsToHclTerraform(struct?: DataCloudflareDnsRecordSettings): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1669,14 +1669,14 @@ export function dataCloudflareDnsRecordSettingsToHclTerraform(struct?: DataCloud
   return attrs;
 }
 
-export class DataCloudflareDnsRecordSettingsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareDnsRecordSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -1712,9 +1712,9 @@ export class DataCloudflareDnsRecordSettingsOutputReference extends cdktf.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record cloudflare_dns_record}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record cloudflare_dns_record}
 */
-export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
+export class DataCloudflareDnsRecord extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -1725,14 +1725,14 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareDnsRecord resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareDnsRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareDnsRecord to import
-  * @param importFromId The id of the existing DataCloudflareDnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareDnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareDnsRecord to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -1740,7 +1740,7 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/dns_record cloudflare_dns_record} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dns_record cloudflare_dns_record} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1751,7 +1751,7 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_dns_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1872,7 +1872,7 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
 
   // tags - computed: true, optional: false, required: false
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
 
   // tags_modified_on - computed: true, optional: false, required: false
@@ -1909,16 +1909,16 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      dns_record_id: cdktf.stringToTerraform(this._dnsRecordId),
+      dns_record_id: cdktn.stringToTerraform(this._dnsRecordId),
       filter: dataCloudflareDnsRecordFilterToTerraform(this._filter.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       dns_record_id: {
-        value: cdktf.stringToHclTerraform(this._dnsRecordId),
+        value: cdktn.stringToHclTerraform(this._dnsRecordId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1930,7 +1930,7 @@ export class DataCloudflareDnsRecord extends cdktf.TerraformDataSource {
         storageClassType: "DataCloudflareDnsRecordFilter",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

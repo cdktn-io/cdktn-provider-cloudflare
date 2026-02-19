@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareTurnstileWidgetConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareTurnstileWidgetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget#account_id DataCloudflareTurnstileWidget#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}
   */
   readonly filter?: DataCloudflareTurnstileWidgetFilter;
   /**
   * Widget item identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget#sitekey DataCloudflareTurnstileWidget#sitekey}
   */
   readonly sitekey?: string;
 }
@@ -34,44 +34,65 @@ export interface DataCloudflareTurnstileWidgetFilter {
   * Direction to order widgets.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget#direction DataCloudflareTurnstileWidget#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget#direction DataCloudflareTurnstileWidget#direction}
   */
   readonly direction?: string;
+  /**
+  * Filter widgets by field using case-insensitive substring matching.
+  * Format: `field:value`
+  * 
+  * Supported fields:
+  * - `name` - Filter by widget name (e.g., `filter=name:login-form`)
+  * - `sitekey` - Filter by sitekey (e.g., `filter=sitekey:0x4AAA`)
+  * 
+  * Returns 400 Bad Request if the field is unsupported or format is invalid.
+  * An empty filter value returns all results.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget#filter DataCloudflareTurnstileWidget#filter}
+  */
+  readonly filter?: string;
   /**
   * Field to order widgets by.
   * Available values: "id", "sitekey", "name", "created_on", "modified_on".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget#order DataCloudflareTurnstileWidget#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget#order DataCloudflareTurnstileWidget#order}
   */
   readonly order?: string;
 }
 
-export function dataCloudflareTurnstileWidgetFilterToTerraform(struct?: DataCloudflareTurnstileWidgetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareTurnstileWidgetFilterToTerraform(struct?: DataCloudflareTurnstileWidgetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    order: cdktf.stringToTerraform(struct!.order),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    filter: cdktn.stringToTerraform(struct!.filter),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
-export function dataCloudflareTurnstileWidgetFilterToHclTerraform(struct?: DataCloudflareTurnstileWidgetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareTurnstileWidgetFilterToHclTerraform(struct?: DataCloudflareTurnstileWidgetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    filter: {
+      value: cdktn.stringToHclTerraform(struct!.filter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,19 +103,19 @@ export function dataCloudflareTurnstileWidgetFilterToHclTerraform(struct?: DataC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareTurnstileWidgetFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareTurnstileWidgetFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareTurnstileWidgetFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareTurnstileWidgetFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -104,6 +125,10 @@ export class DataCloudflareTurnstileWidgetFilterOutputReference extends cdktf.Co
       hasAnyValues = true;
       internalValueResult.direction = this._direction;
     }
+    if (this._filter !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.filter = this._filter;
+    }
     if (this._order !== undefined) {
       hasAnyValues = true;
       internalValueResult.order = this._order;
@@ -111,14 +136,15 @@ export class DataCloudflareTurnstileWidgetFilterOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareTurnstileWidgetFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareTurnstileWidgetFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._direction = undefined;
+      this._filter = undefined;
       this._order = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -126,6 +152,7 @@ export class DataCloudflareTurnstileWidgetFilterOutputReference extends cdktf.Co
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
       this._direction = value.direction;
+      this._filter = value.filter;
       this._order = value.order;
     }
   }
@@ -146,6 +173,22 @@ export class DataCloudflareTurnstileWidgetFilterOutputReference extends cdktf.Co
     return this._direction;
   }
 
+  // filter - computed: false, optional: true, required: false
+  private _filter?: string; 
+  public get filter() {
+    return this.getStringAttribute('filter');
+  }
+  public set filter(value: string) {
+    this._filter = value;
+  }
+  public resetFilter() {
+    this._filter = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get filterInput() {
+    return this._filter;
+  }
+
   // order - computed: false, optional: true, required: false
   private _order?: string; 
   public get order() {
@@ -164,9 +207,9 @@ export class DataCloudflareTurnstileWidgetFilterOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget}
 */
-export class DataCloudflareTurnstileWidget extends cdktf.TerraformDataSource {
+export class DataCloudflareTurnstileWidget extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -177,14 +220,14 @@ export class DataCloudflareTurnstileWidget extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareTurnstileWidget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareTurnstileWidget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareTurnstileWidget to import
-  * @param importFromId The id of the existing DataCloudflareTurnstileWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareTurnstileWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareTurnstileWidget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_turnstile_widget", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_turnstile_widget", importId: importFromId, provider });
       }
 
   // ===========
@@ -192,7 +235,7 @@ export class DataCloudflareTurnstileWidget extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/turnstile_widget cloudflare_turnstile_widget} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -203,7 +246,7 @@ export class DataCloudflareTurnstileWidget extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_turnstile_widget',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -334,16 +377,16 @@ export class DataCloudflareTurnstileWidget extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       filter: dataCloudflareTurnstileWidgetFilterToTerraform(this._filter.internalValue),
-      sitekey: cdktf.stringToTerraform(this._sitekey),
+      sitekey: cdktn.stringToTerraform(this._sitekey),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -355,7 +398,7 @@ export class DataCloudflareTurnstileWidget extends cdktf.TerraformDataSource {
         storageClassType: "DataCloudflareTurnstileWidgetFilter",
       },
       sitekey: {
-        value: cdktf.stringToHclTerraform(this._sitekey),
+        value: cdktn.stringToHclTerraform(this._sitekey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,64 +1,64 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface NotificationPolicyConfig extends cdktf.TerraformMetaArguments {
+export interface NotificationPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#account_id NotificationPolicy#account_id}
   */
   readonly accountId: string;
   /**
   * Optional specification of how often to re-alert from the same incident, not support on all alert types.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#alert_interval NotificationPolicy#alert_interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#alert_interval NotificationPolicy#alert_interval}
   */
   readonly alertInterval?: string;
   /**
   * Refers to which event will trigger a Notification dispatch. You can use the endpoint to get available alert types which then will give you a list of possible values.
   * Available values: "abuse_report_alert", "access_custom_certificate_expiration_type", "advanced_ddos_attack_l4_alert", "advanced_ddos_attack_l7_alert", "advanced_http_alert_error", "bgp_hijack_notification", "billing_usage_alert", "block_notification_block_removed", "block_notification_new_block", "block_notification_review_rejected", "bot_traffic_basic_alert", "brand_protection_alert", "brand_protection_digest", "clickhouse_alert_fw_anomaly", "clickhouse_alert_fw_ent_anomaly", "cloudforce_one_request_notification", "custom_analytics", "custom_bot_detection_alert", "custom_ssl_certificate_event_type", "dedicated_ssl_certificate_event_type", "device_connectivity_anomaly_alert", "dos_attack_l4", "dos_attack_l7", "expiring_service_token_alert", "failing_logpush_job_disabled_alert", "fbm_auto_advertisement", "fbm_dosd_attack", "fbm_volumetric_attack", "health_check_status_notification", "hostname_aop_custom_certificate_expiration_type", "http_alert_edge_error", "http_alert_origin_error", "image_notification", "image_resizing_notification", "incident_alert", "load_balancing_health_alert", "load_balancing_pool_enablement_alert", "logo_match_alert", "magic_tunnel_health_check_event", "magic_wan_tunnel_health", "maintenance_event_notification", "mtls_certificate_store_certificate_expiration_type", "pages_event_alert", "radar_notification", "real_origin_monitoring", "scriptmonitor_alert_new_code_change_detections", "scriptmonitor_alert_new_hosts", "scriptmonitor_alert_new_malicious_hosts", "scriptmonitor_alert_new_malicious_scripts", "scriptmonitor_alert_new_malicious_url", "scriptmonitor_alert_new_max_length_resource_url", "scriptmonitor_alert_new_resources", "secondary_dns_all_primaries_failing", "secondary_dns_primaries_failing", "secondary_dns_warning", "secondary_dns_zone_successfully_updated", "secondary_dns_zone_validation_warning", "security_insights_alert", "sentinel_alert", "stream_live_notifications", "synthetic_test_latency_alert", "synthetic_test_low_availability_alert", "traffic_anomalies_alert", "tunnel_health_event", "tunnel_update_event", "universal_ssl_event_type", "web_analytics_metrics_update", "zone_aop_custom_certificate_expiration_type".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#alert_type NotificationPolicy#alert_type}
   */
   readonly alertType: string;
   /**
   * Optional description for the Notification policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#description NotificationPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#description NotificationPolicy#description}
   */
   readonly description?: string;
   /**
   * Whether or not the Notification policy is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Optional filters that allow you to be alerted only on a subset of events for that alert type based on some criteria. This is only available for select alert types. See alert type documentation for more details.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#filters NotificationPolicy#filters}
   */
   readonly filters?: NotificationPolicyFilters;
   /**
   * List of IDs that will be used when dispatching a notification. IDs for email type will be the email address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#mechanisms NotificationPolicy#mechanisms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#mechanisms NotificationPolicy#mechanisms}
   */
   readonly mechanisms: NotificationPolicyMechanisms;
   /**
   * Name of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#name NotificationPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#name NotificationPolicy#name}
   */
   readonly name: string;
 }
@@ -66,576 +66,576 @@ export interface NotificationPolicyFilters {
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#actions NotificationPolicy#actions}
   */
   readonly actions?: string[];
   /**
   * Used for configuring radar_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#affected_asns NotificationPolicy#affected_asns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#affected_asns NotificationPolicy#affected_asns}
   */
   readonly affectedAsns?: string[];
   /**
   * Used for configuring incident_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#affected_components NotificationPolicy#affected_components}
   */
   readonly affectedComponents?: string[];
   /**
   * Used for configuring radar_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#affected_locations NotificationPolicy#affected_locations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#affected_locations NotificationPolicy#affected_locations}
   */
   readonly affectedLocations?: string[];
   /**
   * Used for configuring maintenance_event_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#airport_code NotificationPolicy#airport_code}
   */
   readonly airportCode?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#alert_trigger_preferences NotificationPolicy#alert_trigger_preferences}
   */
   readonly alertTriggerPreferences?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#alert_trigger_preferences_value NotificationPolicy#alert_trigger_preferences_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#alert_trigger_preferences_value NotificationPolicy#alert_trigger_preferences_value}
   */
   readonly alertTriggerPreferencesValue?: string[];
   /**
   * Used for configuring load_balancing_pool_enablement_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#enabled NotificationPolicy#enabled}
   */
   readonly enabled?: string[];
   /**
   * Used for configuring pages_event_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#environment NotificationPolicy#environment}
   */
   readonly environment?: string[];
   /**
   * Used for configuring pages_event_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#event NotificationPolicy#event}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#event NotificationPolicy#event}
   */
   readonly event?: string[];
   /**
   * Used for configuring load_balancing_health_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#event_source NotificationPolicy#event_source}
   */
   readonly eventSource?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#event_type NotificationPolicy#event_type}
   */
   readonly eventType?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#group_by NotificationPolicy#group_by}
   */
   readonly groupBy?: string[];
   /**
   * Used for configuring health_check_status_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#health_check_id NotificationPolicy#health_check_id}
   */
   readonly healthCheckId?: string[];
   /**
   * Used for configuring incident_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#incident_impact NotificationPolicy#incident_impact}
   */
   readonly incidentImpact?: string[];
   /**
   * Used for configuring stream_live_notifications
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#input_id NotificationPolicy#input_id}
   */
   readonly inputId?: string[];
   /**
   * Used for configuring security_insights_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#insight_class NotificationPolicy#insight_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#insight_class NotificationPolicy#insight_class}
   */
   readonly insightClass?: string[];
   /**
   * Used for configuring billing_usage_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#limit NotificationPolicy#limit}
   */
   readonly limit?: string[];
   /**
   * Used for configuring logo_match_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#logo_tag NotificationPolicy#logo_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#logo_tag NotificationPolicy#logo_tag}
   */
   readonly logoTag?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#megabits_per_second NotificationPolicy#megabits_per_second}
   */
   readonly megabitsPerSecond?: string[];
   /**
   * Used for configuring load_balancing_health_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#new_health NotificationPolicy#new_health}
   */
   readonly newHealth?: string[];
   /**
   * Used for configuring tunnel_health_event
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#new_status NotificationPolicy#new_status}
   */
   readonly newStatus?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#packets_per_second NotificationPolicy#packets_per_second}
   */
   readonly packetsPerSecond?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#pool_id NotificationPolicy#pool_id}
   */
   readonly poolId?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#pop_names NotificationPolicy#pop_names}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#pop_names NotificationPolicy#pop_names}
   */
   readonly popNames?: string[];
   /**
   * Used for configuring billing_usage_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#product NotificationPolicy#product}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#product NotificationPolicy#product}
   */
   readonly product?: string[];
   /**
   * Used for configuring pages_event_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#project_id NotificationPolicy#project_id}
   */
   readonly projectId?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#protocol NotificationPolicy#protocol}
   */
   readonly protocol?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#query_tag NotificationPolicy#query_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#query_tag NotificationPolicy#query_tag}
   */
   readonly queryTag?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l7_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#requests_per_second NotificationPolicy#requests_per_second}
   */
   readonly requestsPerSecond?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#selectors NotificationPolicy#selectors}
   */
   readonly selectors?: string[];
   /**
   * Used for configuring clickhouse_alert_fw_ent_anomaly
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#services NotificationPolicy#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#services NotificationPolicy#services}
   */
   readonly services?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#slo NotificationPolicy#slo}
   */
   readonly slo?: string[];
   /**
   * Used for configuring health_check_status_notification
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#status NotificationPolicy#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#status NotificationPolicy#status}
   */
   readonly status?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l7_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#target_hostname NotificationPolicy#target_hostname}
   */
   readonly targetHostname?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l4_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#target_ip NotificationPolicy#target_ip}
   */
   readonly targetIp?: string[];
   /**
   * Used for configuring advanced_ddos_attack_l7_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#target_zone_name NotificationPolicy#target_zone_name}
   */
   readonly targetZoneName?: string[];
   /**
   * Used for configuring traffic_anomalies_alert
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#traffic_exclusions NotificationPolicy#traffic_exclusions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#traffic_exclusions NotificationPolicy#traffic_exclusions}
   */
   readonly trafficExclusions?: string[];
   /**
   * Used for configuring tunnel_health_event
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#tunnel_id NotificationPolicy#tunnel_id}
   */
   readonly tunnelId?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#tunnel_name NotificationPolicy#tunnel_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#tunnel_name NotificationPolicy#tunnel_name}
   */
   readonly tunnelName?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#type NotificationPolicy#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#type NotificationPolicy#type}
   */
   readonly type?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#where NotificationPolicy#where}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#where NotificationPolicy#where}
   */
   readonly where?: string[];
   /**
   * Usage depends on specific alert type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#zones NotificationPolicy#zones}
   */
   readonly zones?: string[];
 }
 
-export function notificationPolicyFiltersToTerraform(struct?: NotificationPolicyFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyFiltersToTerraform(struct?: NotificationPolicyFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    actions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.actions),
-    affected_asns: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.affectedAsns),
-    affected_components: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.affectedComponents),
-    affected_locations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.affectedLocations),
-    airport_code: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.airportCode),
-    alert_trigger_preferences: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alertTriggerPreferences),
-    alert_trigger_preferences_value: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.alertTriggerPreferencesValue),
-    enabled: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enabled),
-    environment: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.environment),
-    event: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.event),
-    event_source: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventSource),
-    event_type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.eventType),
-    group_by: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.groupBy),
-    health_check_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.healthCheckId),
-    incident_impact: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.incidentImpact),
-    input_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.inputId),
-    insight_class: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.insightClass),
-    limit: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.limit),
-    logo_tag: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.logoTag),
-    megabits_per_second: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.megabitsPerSecond),
-    new_health: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.newHealth),
-    new_status: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.newStatus),
-    packets_per_second: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.packetsPerSecond),
-    pool_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.poolId),
-    pop_names: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.popNames),
-    product: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.product),
-    project_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.projectId),
-    protocol: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.protocol),
-    query_tag: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.queryTag),
-    requests_per_second: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.requestsPerSecond),
-    selectors: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.selectors),
-    services: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.services),
-    slo: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.slo),
-    status: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.status),
-    target_hostname: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetHostname),
-    target_ip: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetIp),
-    target_zone_name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetZoneName),
-    traffic_exclusions: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.trafficExclusions),
-    tunnel_id: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tunnelId),
-    tunnel_name: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tunnelName),
-    type: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.type),
-    where: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.where),
-    zones: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.zones),
+    actions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.actions),
+    affected_asns: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.affectedAsns),
+    affected_components: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.affectedComponents),
+    affected_locations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.affectedLocations),
+    airport_code: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.airportCode),
+    alert_trigger_preferences: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alertTriggerPreferences),
+    alert_trigger_preferences_value: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.alertTriggerPreferencesValue),
+    enabled: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.enabled),
+    environment: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.environment),
+    event: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.event),
+    event_source: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.eventSource),
+    event_type: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.eventType),
+    group_by: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.groupBy),
+    health_check_id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.healthCheckId),
+    incident_impact: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.incidentImpact),
+    input_id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.inputId),
+    insight_class: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.insightClass),
+    limit: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.limit),
+    logo_tag: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.logoTag),
+    megabits_per_second: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.megabitsPerSecond),
+    new_health: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.newHealth),
+    new_status: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.newStatus),
+    packets_per_second: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.packetsPerSecond),
+    pool_id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.poolId),
+    pop_names: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.popNames),
+    product: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.product),
+    project_id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.projectId),
+    protocol: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.protocol),
+    query_tag: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.queryTag),
+    requests_per_second: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.requestsPerSecond),
+    selectors: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.selectors),
+    services: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.services),
+    slo: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.slo),
+    status: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.status),
+    target_hostname: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetHostname),
+    target_ip: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetIp),
+    target_zone_name: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetZoneName),
+    traffic_exclusions: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.trafficExclusions),
+    tunnel_id: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tunnelId),
+    tunnel_name: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tunnelName),
+    type: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.type),
+    where: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.where),
+    zones: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.zones),
   }
 }
 
 
-export function notificationPolicyFiltersToHclTerraform(struct?: NotificationPolicyFilters | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyFiltersToHclTerraform(struct?: NotificationPolicyFilters | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     actions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.actions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.actions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     affected_asns: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.affectedAsns),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.affectedAsns),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     affected_components: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.affectedComponents),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.affectedComponents),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     affected_locations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.affectedLocations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.affectedLocations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     airport_code: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.airportCode),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.airportCode),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     alert_trigger_preferences: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.alertTriggerPreferences),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alertTriggerPreferences),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     alert_trigger_preferences_value: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.alertTriggerPreferencesValue),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.alertTriggerPreferencesValue),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enabled: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.enabled),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.enabled),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     environment: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.environment),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.environment),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     event: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.event),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.event),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     event_source: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eventSource),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.eventSource),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     event_type: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.eventType),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.eventType),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     group_by: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.groupBy),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.groupBy),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     health_check_id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.healthCheckId),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.healthCheckId),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     incident_impact: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.incidentImpact),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.incidentImpact),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     input_id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.inputId),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.inputId),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     insight_class: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.insightClass),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.insightClass),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     limit: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.limit),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.limit),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     logo_tag: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.logoTag),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.logoTag),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     megabits_per_second: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.megabitsPerSecond),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.megabitsPerSecond),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     new_health: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.newHealth),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.newHealth),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     new_status: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.newStatus),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.newStatus),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     packets_per_second: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.packetsPerSecond),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.packetsPerSecond),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     pool_id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.poolId),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.poolId),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     pop_names: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.popNames),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.popNames),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     product: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.product),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.product),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     project_id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.projectId),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.projectId),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     protocol: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.protocol),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.protocol),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     query_tag: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.queryTag),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.queryTag),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     requests_per_second: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.requestsPerSecond),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.requestsPerSecond),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     selectors: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.selectors),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.selectors),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     services: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.services),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.services),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     slo: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.slo),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.slo),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     status: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.status),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.status),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target_hostname: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetHostname),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetHostname),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target_ip: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetIp),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetIp),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     target_zone_name: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetZoneName),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetZoneName),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     traffic_exclusions: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.trafficExclusions),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.trafficExclusions),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tunnel_id: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tunnelId),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tunnelId),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tunnel_name: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tunnelName),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tunnelName),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     type: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.type),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.type),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     where: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.where),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.where),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     zones: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.zones),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.zones),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -646,19 +646,19 @@ export function notificationPolicyFiltersToHclTerraform(struct?: NotificationPol
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObject {
+export class NotificationPolicyFiltersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NotificationPolicyFilters | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationPolicyFilters | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -839,7 +839,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationPolicyFilters | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationPolicyFilters | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -887,7 +887,7 @@ export class NotificationPolicyFiltersOutputReference extends cdktf.ComplexObjec
       this._where = undefined;
       this._zones = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1632,7 +1632,7 @@ export interface NotificationPolicyMechanismsEmail {
   /**
   * The email address
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#id NotificationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#id NotificationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1640,25 +1640,25 @@ export interface NotificationPolicyMechanismsEmail {
   readonly id?: string;
 }
 
-export function notificationPolicyMechanismsEmailToTerraform(struct?: NotificationPolicyMechanismsEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsEmailToTerraform(struct?: NotificationPolicyMechanismsEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function notificationPolicyMechanismsEmailToHclTerraform(struct?: NotificationPolicyMechanismsEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsEmailToHclTerraform(struct?: NotificationPolicyMechanismsEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1669,9 +1669,9 @@ export function notificationPolicyMechanismsEmailToHclTerraform(struct?: Notific
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationPolicyMechanismsEmailOutputReference extends cdktf.ComplexObject {
+export class NotificationPolicyMechanismsEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1679,11 +1679,11 @@ export class NotificationPolicyMechanismsEmailOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NotificationPolicyMechanismsEmail | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationPolicyMechanismsEmail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1696,13 +1696,13 @@ export class NotificationPolicyMechanismsEmailOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationPolicyMechanismsEmail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationPolicyMechanismsEmail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1730,15 +1730,15 @@ export class NotificationPolicyMechanismsEmailOutputReference extends cdktf.Comp
   }
 }
 
-export class NotificationPolicyMechanismsEmailList extends cdktf.ComplexList {
-  public internalValue? : NotificationPolicyMechanismsEmail[] | cdktf.IResolvable
+export class NotificationPolicyMechanismsEmailList extends cdktn.ComplexList {
+  public internalValue? : NotificationPolicyMechanismsEmail[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1753,7 +1753,7 @@ export interface NotificationPolicyMechanismsPagerduty {
   /**
   * UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#id NotificationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#id NotificationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1761,25 +1761,25 @@ export interface NotificationPolicyMechanismsPagerduty {
   readonly id?: string;
 }
 
-export function notificationPolicyMechanismsPagerdutyToTerraform(struct?: NotificationPolicyMechanismsPagerduty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsPagerdutyToTerraform(struct?: NotificationPolicyMechanismsPagerduty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function notificationPolicyMechanismsPagerdutyToHclTerraform(struct?: NotificationPolicyMechanismsPagerduty | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsPagerdutyToHclTerraform(struct?: NotificationPolicyMechanismsPagerduty | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1790,9 +1790,9 @@ export function notificationPolicyMechanismsPagerdutyToHclTerraform(struct?: Not
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationPolicyMechanismsPagerdutyOutputReference extends cdktf.ComplexObject {
+export class NotificationPolicyMechanismsPagerdutyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1800,11 +1800,11 @@ export class NotificationPolicyMechanismsPagerdutyOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NotificationPolicyMechanismsPagerduty | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationPolicyMechanismsPagerduty | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1817,13 +1817,13 @@ export class NotificationPolicyMechanismsPagerdutyOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationPolicyMechanismsPagerduty | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationPolicyMechanismsPagerduty | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1851,15 +1851,15 @@ export class NotificationPolicyMechanismsPagerdutyOutputReference extends cdktf.
   }
 }
 
-export class NotificationPolicyMechanismsPagerdutyList extends cdktf.ComplexList {
-  public internalValue? : NotificationPolicyMechanismsPagerduty[] | cdktf.IResolvable
+export class NotificationPolicyMechanismsPagerdutyList extends cdktn.ComplexList {
+  public internalValue? : NotificationPolicyMechanismsPagerduty[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1874,7 +1874,7 @@ export interface NotificationPolicyMechanismsWebhooks {
   /**
   * UUID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#id NotificationPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#id NotificationPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1882,25 +1882,25 @@ export interface NotificationPolicyMechanismsWebhooks {
   readonly id?: string;
 }
 
-export function notificationPolicyMechanismsWebhooksToTerraform(struct?: NotificationPolicyMechanismsWebhooks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsWebhooksToTerraform(struct?: NotificationPolicyMechanismsWebhooks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function notificationPolicyMechanismsWebhooksToHclTerraform(struct?: NotificationPolicyMechanismsWebhooks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsWebhooksToHclTerraform(struct?: NotificationPolicyMechanismsWebhooks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1911,9 +1911,9 @@ export function notificationPolicyMechanismsWebhooksToHclTerraform(struct?: Noti
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationPolicyMechanismsWebhooksOutputReference extends cdktf.ComplexObject {
+export class NotificationPolicyMechanismsWebhooksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1921,11 +1921,11 @@ export class NotificationPolicyMechanismsWebhooksOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): NotificationPolicyMechanismsWebhooks | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationPolicyMechanismsWebhooks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1938,13 +1938,13 @@ export class NotificationPolicyMechanismsWebhooksOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationPolicyMechanismsWebhooks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationPolicyMechanismsWebhooks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1972,15 +1972,15 @@ export class NotificationPolicyMechanismsWebhooksOutputReference extends cdktf.C
   }
 }
 
-export class NotificationPolicyMechanismsWebhooksList extends cdktf.ComplexList {
-  public internalValue? : NotificationPolicyMechanismsWebhooks[] | cdktf.IResolvable
+export class NotificationPolicyMechanismsWebhooksList extends cdktn.ComplexList {
+  public internalValue? : NotificationPolicyMechanismsWebhooks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1993,52 +1993,52 @@ export class NotificationPolicyMechanismsWebhooksList extends cdktf.ComplexList 
 }
 export interface NotificationPolicyMechanisms {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#email NotificationPolicy#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#email NotificationPolicy#email}
   */
-  readonly email?: NotificationPolicyMechanismsEmail[] | cdktf.IResolvable;
+  readonly email?: NotificationPolicyMechanismsEmail[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#pagerduty NotificationPolicy#pagerduty}
   */
-  readonly pagerduty?: NotificationPolicyMechanismsPagerduty[] | cdktf.IResolvable;
+  readonly pagerduty?: NotificationPolicyMechanismsPagerduty[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#webhooks NotificationPolicy#webhooks}
   */
-  readonly webhooks?: NotificationPolicyMechanismsWebhooks[] | cdktf.IResolvable;
+  readonly webhooks?: NotificationPolicyMechanismsWebhooks[] | cdktn.IResolvable;
 }
 
-export function notificationPolicyMechanismsToTerraform(struct?: NotificationPolicyMechanisms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsToTerraform(struct?: NotificationPolicyMechanisms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.listMapper(notificationPolicyMechanismsEmailToTerraform, false)(struct!.email),
-    pagerduty: cdktf.listMapper(notificationPolicyMechanismsPagerdutyToTerraform, false)(struct!.pagerduty),
-    webhooks: cdktf.listMapper(notificationPolicyMechanismsWebhooksToTerraform, false)(struct!.webhooks),
+    email: cdktn.listMapper(notificationPolicyMechanismsEmailToTerraform, false)(struct!.email),
+    pagerduty: cdktn.listMapper(notificationPolicyMechanismsPagerdutyToTerraform, false)(struct!.pagerduty),
+    webhooks: cdktn.listMapper(notificationPolicyMechanismsWebhooksToTerraform, false)(struct!.webhooks),
   }
 }
 
 
-export function notificationPolicyMechanismsToHclTerraform(struct?: NotificationPolicyMechanisms | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function notificationPolicyMechanismsToHclTerraform(struct?: NotificationPolicyMechanisms | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.listMapperHcl(notificationPolicyMechanismsEmailToHclTerraform, false)(struct!.email),
+      value: cdktn.listMapperHcl(notificationPolicyMechanismsEmailToHclTerraform, false)(struct!.email),
       isBlock: true,
       type: "set",
       storageClassType: "NotificationPolicyMechanismsEmailList",
     },
     pagerduty: {
-      value: cdktf.listMapperHcl(notificationPolicyMechanismsPagerdutyToHclTerraform, false)(struct!.pagerduty),
+      value: cdktn.listMapperHcl(notificationPolicyMechanismsPagerdutyToHclTerraform, false)(struct!.pagerduty),
       isBlock: true,
       type: "set",
       storageClassType: "NotificationPolicyMechanismsPagerdutyList",
     },
     webhooks: {
-      value: cdktf.listMapperHcl(notificationPolicyMechanismsWebhooksToHclTerraform, false)(struct!.webhooks),
+      value: cdktn.listMapperHcl(notificationPolicyMechanismsWebhooksToHclTerraform, false)(struct!.webhooks),
       isBlock: true,
       type: "set",
       storageClassType: "NotificationPolicyMechanismsWebhooksList",
@@ -2049,19 +2049,19 @@ export function notificationPolicyMechanismsToHclTerraform(struct?: Notification
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexObject {
+export class NotificationPolicyMechanismsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): NotificationPolicyMechanisms | cdktf.IResolvable | undefined {
+  public get internalValue(): NotificationPolicyMechanisms | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2082,7 +2082,7 @@ export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: NotificationPolicyMechanisms | cdktf.IResolvable | undefined) {
+  public set internalValue(value: NotificationPolicyMechanisms | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2090,7 +2090,7 @@ export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexOb
       this._pagerduty.internalValue = undefined;
       this._webhooks.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2108,7 +2108,7 @@ export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexOb
   public get email() {
     return this._email;
   }
-  public putEmail(value: NotificationPolicyMechanismsEmail[] | cdktf.IResolvable) {
+  public putEmail(value: NotificationPolicyMechanismsEmail[] | cdktn.IResolvable) {
     this._email.internalValue = value;
   }
   public resetEmail() {
@@ -2124,7 +2124,7 @@ export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexOb
   public get pagerduty() {
     return this._pagerduty;
   }
-  public putPagerduty(value: NotificationPolicyMechanismsPagerduty[] | cdktf.IResolvable) {
+  public putPagerduty(value: NotificationPolicyMechanismsPagerduty[] | cdktn.IResolvable) {
     this._pagerduty.internalValue = value;
   }
   public resetPagerduty() {
@@ -2140,7 +2140,7 @@ export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexOb
   public get webhooks() {
     return this._webhooks;
   }
-  public putWebhooks(value: NotificationPolicyMechanismsWebhooks[] | cdktf.IResolvable) {
+  public putWebhooks(value: NotificationPolicyMechanismsWebhooks[] | cdktn.IResolvable) {
     this._webhooks.internalValue = value;
   }
   public resetWebhooks() {
@@ -2153,9 +2153,9 @@ export class NotificationPolicyMechanismsOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy cloudflare_notification_policy}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy cloudflare_notification_policy}
 */
-export class NotificationPolicy extends cdktf.TerraformResource {
+export class NotificationPolicy extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2166,14 +2166,14 @@ export class NotificationPolicy extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a NotificationPolicy resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a NotificationPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NotificationPolicy to import
-  * @param importFromId The id of the existing NotificationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NotificationPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NotificationPolicy to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_notification_policy", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_notification_policy", importId: importFromId, provider });
       }
 
   // ===========
@@ -2181,7 +2181,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/notification_policy cloudflare_notification_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/notification_policy cloudflare_notification_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2192,7 +2192,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_notification_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -2281,11 +2281,11 @@ export class NotificationPolicy extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2354,45 +2354,45 @@ export class NotificationPolicy extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      alert_interval: cdktf.stringToTerraform(this._alertInterval),
-      alert_type: cdktf.stringToTerraform(this._alertType),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      alert_interval: cdktn.stringToTerraform(this._alertInterval),
+      alert_type: cdktn.stringToTerraform(this._alertType),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
       filters: notificationPolicyFiltersToTerraform(this._filters.internalValue),
       mechanisms: notificationPolicyMechanismsToTerraform(this._mechanisms.internalValue),
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alert_interval: {
-        value: cdktf.stringToHclTerraform(this._alertInterval),
+        value: cdktn.stringToHclTerraform(this._alertInterval),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       alert_type: {
-        value: cdktf.stringToHclTerraform(this._alertType),
+        value: cdktn.stringToHclTerraform(this._alertType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -2410,7 +2410,7 @@ export class NotificationPolicy extends cdktf.TerraformResource {
         storageClassType: "NotificationPolicyMechanisms",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

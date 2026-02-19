@@ -1,53 +1,53 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareEmailSecurityTrustedDomainsListConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareEmailSecurityTrustedDomainsListConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#account_id DataCloudflareEmailSecurityTrustedDomainsList#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#account_id DataCloudflareEmailSecurityTrustedDomainsList#account_id}
   */
   readonly accountId: string;
   /**
   * The sorting direction.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#direction DataCloudflareEmailSecurityTrustedDomainsList#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#direction DataCloudflareEmailSecurityTrustedDomainsList#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#is_recent DataCloudflareEmailSecurityTrustedDomainsList#is_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#is_recent DataCloudflareEmailSecurityTrustedDomainsList#is_recent}
   */
-  readonly isRecent?: boolean | cdktf.IResolvable;
+  readonly isRecent?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#is_similarity DataCloudflareEmailSecurityTrustedDomainsList#is_similarity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#is_similarity DataCloudflareEmailSecurityTrustedDomainsList#is_similarity}
   */
-  readonly isSimilarity?: boolean | cdktf.IResolvable;
+  readonly isSimilarity?: boolean | cdktn.IResolvable;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#max_items DataCloudflareEmailSecurityTrustedDomainsList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#max_items DataCloudflareEmailSecurityTrustedDomainsList#max_items}
   */
   readonly maxItems?: number;
   /**
   * The field to sort by.
   * Available values: "pattern", "created_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#order DataCloudflareEmailSecurityTrustedDomainsList#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#order DataCloudflareEmailSecurityTrustedDomainsList#order}
   */
   readonly order?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#pattern DataCloudflareEmailSecurityTrustedDomainsList#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#pattern DataCloudflareEmailSecurityTrustedDomainsList#pattern}
   */
   readonly pattern?: string;
   /**
@@ -56,7 +56,7 @@ export interface DataCloudflareEmailSecurityTrustedDomainsListConfig extends cdk
   * behavior is intentionally left unspecified and is subject to change
   * in the future.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#search DataCloudflareEmailSecurityTrustedDomainsList#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#search DataCloudflareEmailSecurityTrustedDomainsList#search}
   */
   readonly search?: string;
 }
@@ -64,8 +64,8 @@ export interface DataCloudflareEmailSecurityTrustedDomainsListResult {
 }
 
 export function dataCloudflareEmailSecurityTrustedDomainsListResultToTerraform(struct?: DataCloudflareEmailSecurityTrustedDomainsListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -74,8 +74,8 @@ export function dataCloudflareEmailSecurityTrustedDomainsListResultToTerraform(s
 
 
 export function dataCloudflareEmailSecurityTrustedDomainsListResultToHclTerraform(struct?: DataCloudflareEmailSecurityTrustedDomainsListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -83,7 +83,7 @@ export function dataCloudflareEmailSecurityTrustedDomainsListResultToHclTerrafor
   return attrs;
 }
 
-export class DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +92,7 @@ export class DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -152,14 +152,14 @@ export class DataCloudflareEmailSecurityTrustedDomainsListResultOutputReference 
   }
 }
 
-export class DataCloudflareEmailSecurityTrustedDomainsListResultList extends cdktf.ComplexList {
+export class DataCloudflareEmailSecurityTrustedDomainsListResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -172,9 +172,9 @@ export class DataCloudflareEmailSecurityTrustedDomainsListResultList extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list}
 */
-export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktf.TerraformDataSource {
+export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -185,14 +185,14 @@ export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktf.Terrafo
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareEmailSecurityTrustedDomainsList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareEmailSecurityTrustedDomainsList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailSecurityTrustedDomainsList to import
-  * @param importFromId The id of the existing DataCloudflareEmailSecurityTrustedDomainsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailSecurityTrustedDomainsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailSecurityTrustedDomainsList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_trusted_domains_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_trusted_domains_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -200,7 +200,7 @@ export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktf.Terrafo
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_security_trusted_domains_list cloudflare_email_security_trusted_domains_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -211,7 +211,7 @@ export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktf.Terrafo
       terraformResourceType: 'cloudflare_email_security_trusted_domains_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -266,11 +266,11 @@ export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktf.Terrafo
   }
 
   // is_recent - computed: false, optional: true, required: false
-  private _isRecent?: boolean | cdktf.IResolvable; 
+  private _isRecent?: boolean | cdktn.IResolvable; 
   public get isRecent() {
     return this.getBooleanAttribute('is_recent');
   }
-  public set isRecent(value: boolean | cdktf.IResolvable) {
+  public set isRecent(value: boolean | cdktn.IResolvable) {
     this._isRecent = value;
   }
   public resetIsRecent() {
@@ -282,11 +282,11 @@ export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktf.Terrafo
   }
 
   // is_similarity - computed: false, optional: true, required: false
-  private _isSimilarity?: boolean | cdktf.IResolvable; 
+  private _isSimilarity?: boolean | cdktn.IResolvable; 
   public get isSimilarity() {
     return this.getBooleanAttribute('is_similarity');
   }
-  public set isSimilarity(value: boolean | cdktf.IResolvable) {
+  public set isSimilarity(value: boolean | cdktn.IResolvable) {
     this._isSimilarity = value;
   }
   public resetIsSimilarity() {
@@ -373,63 +373,63 @@ export class DataCloudflareEmailSecurityTrustedDomainsList extends cdktf.Terrafo
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      direction: cdktf.stringToTerraform(this._direction),
-      is_recent: cdktf.booleanToTerraform(this._isRecent),
-      is_similarity: cdktf.booleanToTerraform(this._isSimilarity),
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      order: cdktf.stringToTerraform(this._order),
-      pattern: cdktf.stringToTerraform(this._pattern),
-      search: cdktf.stringToTerraform(this._search),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      direction: cdktn.stringToTerraform(this._direction),
+      is_recent: cdktn.booleanToTerraform(this._isRecent),
+      is_similarity: cdktn.booleanToTerraform(this._isSimilarity),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      order: cdktn.stringToTerraform(this._order),
+      pattern: cdktn.stringToTerraform(this._pattern),
+      search: cdktn.stringToTerraform(this._search),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_recent: {
-        value: cdktf.booleanToHclTerraform(this._isRecent),
+        value: cdktn.booleanToHclTerraform(this._isRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_similarity: {
-        value: cdktf.booleanToHclTerraform(this._isSimilarity),
+        value: cdktn.booleanToHclTerraform(this._isSimilarity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       order: {
-        value: cdktf.stringToHclTerraform(this._order),
+        value: cdktn.stringToHclTerraform(this._order),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pattern: {
-        value: cdktf.stringToHclTerraform(this._pattern),
+        value: cdktn.stringToHclTerraform(this._pattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       search: {
-        value: cdktf.stringToHclTerraform(this._search),
+        value: cdktn.stringToHclTerraform(this._search),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

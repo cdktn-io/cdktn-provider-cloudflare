@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareZeroTrustAccessInfrastructureTargetConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareZeroTrustAccessInfrastructureTargetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#account_id DataCloudflareZeroTrustAccessInfrastructureTarget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#account_id DataCloudflareZeroTrustAccessInfrastructureTarget#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#filter DataCloudflareZeroTrustAccessInfrastructureTarget#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#filter DataCloudflareZeroTrustAccessInfrastructureTarget#filter}
   */
   readonly filter?: DataCloudflareZeroTrustAccessInfrastructureTargetFilter;
   /**
   * Target identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#target_id DataCloudflareZeroTrustAccessInfrastructureTarget#target_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#target_id DataCloudflareZeroTrustAccessInfrastructureTarget#target_id}
   */
   readonly targetId?: string;
 }
@@ -33,105 +33,105 @@ export interface DataCloudflareZeroTrustAccessInfrastructureTargetFilter {
   /**
   * Date and time at which the target was created after (inclusive)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#created_after DataCloudflareZeroTrustAccessInfrastructureTarget#created_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#created_after DataCloudflareZeroTrustAccessInfrastructureTarget#created_after}
   */
   readonly createdAfter?: string;
   /**
   * Date and time at which the target was created before (inclusive)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#created_before DataCloudflareZeroTrustAccessInfrastructureTarget#created_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#created_before DataCloudflareZeroTrustAccessInfrastructureTarget#created_before}
   */
   readonly createdBefore?: string;
   /**
   * The sorting direction.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#direction DataCloudflareZeroTrustAccessInfrastructureTarget#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#direction DataCloudflareZeroTrustAccessInfrastructureTarget#direction}
   */
   readonly direction?: string;
   /**
   * Hostname of a target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#hostname DataCloudflareZeroTrustAccessInfrastructureTarget#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#hostname DataCloudflareZeroTrustAccessInfrastructureTarget#hostname}
   */
   readonly hostname?: string;
   /**
   * Partial match to the hostname of a target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#hostname_contains DataCloudflareZeroTrustAccessInfrastructureTarget#hostname_contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#hostname_contains DataCloudflareZeroTrustAccessInfrastructureTarget#hostname_contains}
   */
   readonly hostnameContains?: string;
   /**
   * Filters for targets whose IP addresses look like the specified string.
   * Supports `*` as a wildcard character
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_like DataCloudflareZeroTrustAccessInfrastructureTarget#ip_like}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_like DataCloudflareZeroTrustAccessInfrastructureTarget#ip_like}
   */
   readonly ipLike?: string;
   /**
   * IPv4 address of the target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_v4 DataCloudflareZeroTrustAccessInfrastructureTarget#ip_v4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_v4 DataCloudflareZeroTrustAccessInfrastructureTarget#ip_v4}
   */
   readonly ipV4?: string;
   /**
   * IPv6 address of the target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_v6 DataCloudflareZeroTrustAccessInfrastructureTarget#ip_v6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ip_v6 DataCloudflareZeroTrustAccessInfrastructureTarget#ip_v6}
   */
   readonly ipV6?: string;
   /**
   * Filters for targets that have any of the following IP addresses. Specify
   * `ips` multiple times in query parameter to build list of candidates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ips DataCloudflareZeroTrustAccessInfrastructureTarget#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ips DataCloudflareZeroTrustAccessInfrastructureTarget#ips}
   */
   readonly ips?: string[];
   /**
   * Defines an IPv4 filter range's ending value (inclusive). Requires
   * `ipv4_start` to be specified as well.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv4_end DataCloudflareZeroTrustAccessInfrastructureTarget#ipv4_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv4_end DataCloudflareZeroTrustAccessInfrastructureTarget#ipv4_end}
   */
   readonly ipv4End?: string;
   /**
   * Defines an IPv4 filter range's starting value (inclusive). Requires
   * `ipv4_end` to be specified as well.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv4_start DataCloudflareZeroTrustAccessInfrastructureTarget#ipv4_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv4_start DataCloudflareZeroTrustAccessInfrastructureTarget#ipv4_start}
   */
   readonly ipv4Start?: string;
   /**
   * Defines an IPv6 filter range's ending value (inclusive). Requires
   * `ipv6_start` to be specified as well.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv6_end DataCloudflareZeroTrustAccessInfrastructureTarget#ipv6_end}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv6_end DataCloudflareZeroTrustAccessInfrastructureTarget#ipv6_end}
   */
   readonly ipv6End?: string;
   /**
   * Defines an IPv6 filter range's starting value (inclusive). Requires
   * `ipv6_end` to be specified as well.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv6_start DataCloudflareZeroTrustAccessInfrastructureTarget#ipv6_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#ipv6_start DataCloudflareZeroTrustAccessInfrastructureTarget#ipv6_start}
   */
   readonly ipv6Start?: string;
   /**
   * Date and time at which the target was modified after (inclusive)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#modified_after DataCloudflareZeroTrustAccessInfrastructureTarget#modified_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#modified_after DataCloudflareZeroTrustAccessInfrastructureTarget#modified_after}
   */
   readonly modifiedAfter?: string;
   /**
   * Date and time at which the target was modified before (inclusive)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#modified_before DataCloudflareZeroTrustAccessInfrastructureTarget#modified_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#modified_before DataCloudflareZeroTrustAccessInfrastructureTarget#modified_before}
   */
   readonly modifiedBefore?: string;
   /**
   * The field to sort by.
   * Available values: "hostname", "created_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#order DataCloudflareZeroTrustAccessInfrastructureTarget#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#order DataCloudflareZeroTrustAccessInfrastructureTarget#order}
   */
   readonly order?: string;
   /**
@@ -139,155 +139,155 @@ export interface DataCloudflareZeroTrustAccessInfrastructureTargetFilter {
   * `target_ids` multiple times in query parameter to build list of
   * candidates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#target_ids DataCloudflareZeroTrustAccessInfrastructureTarget#target_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#target_ids DataCloudflareZeroTrustAccessInfrastructureTarget#target_ids}
   */
   readonly targetIds?: string[];
   /**
   * Private virtual network identifier of the target
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#virtual_network_id DataCloudflareZeroTrustAccessInfrastructureTarget#virtual_network_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#virtual_network_id DataCloudflareZeroTrustAccessInfrastructureTarget#virtual_network_id}
   */
   readonly virtualNetworkId?: string;
 }
 
-export function dataCloudflareZeroTrustAccessInfrastructureTargetFilterToTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareZeroTrustAccessInfrastructureTargetFilterToTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    created_after: cdktf.stringToTerraform(struct!.createdAfter),
-    created_before: cdktf.stringToTerraform(struct!.createdBefore),
-    direction: cdktf.stringToTerraform(struct!.direction),
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    hostname_contains: cdktf.stringToTerraform(struct!.hostnameContains),
-    ip_like: cdktf.stringToTerraform(struct!.ipLike),
-    ip_v4: cdktf.stringToTerraform(struct!.ipV4),
-    ip_v6: cdktf.stringToTerraform(struct!.ipV6),
-    ips: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.ips),
-    ipv4_end: cdktf.stringToTerraform(struct!.ipv4End),
-    ipv4_start: cdktf.stringToTerraform(struct!.ipv4Start),
-    ipv6_end: cdktf.stringToTerraform(struct!.ipv6End),
-    ipv6_start: cdktf.stringToTerraform(struct!.ipv6Start),
-    modified_after: cdktf.stringToTerraform(struct!.modifiedAfter),
-    modified_before: cdktf.stringToTerraform(struct!.modifiedBefore),
-    order: cdktf.stringToTerraform(struct!.order),
-    target_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.targetIds),
-    virtual_network_id: cdktf.stringToTerraform(struct!.virtualNetworkId),
+    created_after: cdktn.stringToTerraform(struct!.createdAfter),
+    created_before: cdktn.stringToTerraform(struct!.createdBefore),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    hostname_contains: cdktn.stringToTerraform(struct!.hostnameContains),
+    ip_like: cdktn.stringToTerraform(struct!.ipLike),
+    ip_v4: cdktn.stringToTerraform(struct!.ipV4),
+    ip_v6: cdktn.stringToTerraform(struct!.ipV6),
+    ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.ips),
+    ipv4_end: cdktn.stringToTerraform(struct!.ipv4End),
+    ipv4_start: cdktn.stringToTerraform(struct!.ipv4Start),
+    ipv6_end: cdktn.stringToTerraform(struct!.ipv6End),
+    ipv6_start: cdktn.stringToTerraform(struct!.ipv6Start),
+    modified_after: cdktn.stringToTerraform(struct!.modifiedAfter),
+    modified_before: cdktn.stringToTerraform(struct!.modifiedBefore),
+    order: cdktn.stringToTerraform(struct!.order),
+    target_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.targetIds),
+    virtual_network_id: cdktn.stringToTerraform(struct!.virtualNetworkId),
   }
 }
 
 
-export function dataCloudflareZeroTrustAccessInfrastructureTargetFilterToHclTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareZeroTrustAccessInfrastructureTargetFilterToHclTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     created_after: {
-      value: cdktf.stringToHclTerraform(struct!.createdAfter),
+      value: cdktn.stringToHclTerraform(struct!.createdAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     created_before: {
-      value: cdktf.stringToHclTerraform(struct!.createdBefore),
+      value: cdktn.stringToHclTerraform(struct!.createdBefore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hostname_contains: {
-      value: cdktf.stringToHclTerraform(struct!.hostnameContains),
+      value: cdktn.stringToHclTerraform(struct!.hostnameContains),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_like: {
-      value: cdktf.stringToHclTerraform(struct!.ipLike),
+      value: cdktn.stringToHclTerraform(struct!.ipLike),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_v4: {
-      value: cdktf.stringToHclTerraform(struct!.ipV4),
+      value: cdktn.stringToHclTerraform(struct!.ipV4),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_v6: {
-      value: cdktf.stringToHclTerraform(struct!.ipV6),
+      value: cdktn.stringToHclTerraform(struct!.ipV6),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ips: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.ips),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.ips),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ipv4_end: {
-      value: cdktf.stringToHclTerraform(struct!.ipv4End),
+      value: cdktn.stringToHclTerraform(struct!.ipv4End),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv4_start: {
-      value: cdktf.stringToHclTerraform(struct!.ipv4Start),
+      value: cdktn.stringToHclTerraform(struct!.ipv4Start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv6_end: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6End),
+      value: cdktn.stringToHclTerraform(struct!.ipv6End),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ipv6_start: {
-      value: cdktf.stringToHclTerraform(struct!.ipv6Start),
+      value: cdktn.stringToHclTerraform(struct!.ipv6Start),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     modified_after: {
-      value: cdktf.stringToHclTerraform(struct!.modifiedAfter),
+      value: cdktn.stringToHclTerraform(struct!.modifiedAfter),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     modified_before: {
-      value: cdktf.stringToHclTerraform(struct!.modifiedBefore),
+      value: cdktn.stringToHclTerraform(struct!.modifiedBefore),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.targetIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.targetIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     virtual_network_id: {
-      value: cdktf.stringToHclTerraform(struct!.virtualNetworkId),
+      value: cdktn.stringToHclTerraform(struct!.virtualNetworkId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -298,19 +298,19 @@ export function dataCloudflareZeroTrustAccessInfrastructureTargetFilterToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -391,7 +391,7 @@ export class DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareZeroTrustAccessInfrastructureTargetFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -414,7 +414,7 @@ export class DataCloudflareZeroTrustAccessInfrastructureTargetFilterOutputRefere
       this._targetIds = undefined;
       this._virtualNetworkId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -734,8 +734,8 @@ export interface DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4 {
 }
 
 export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4ToTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -744,8 +744,8 @@ export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4ToTerrafo
 
 
 export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4ToHclTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -753,14 +753,14 @@ export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4ToHclTerr
   return attrs;
 }
 
-export class DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4OutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv4OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -793,8 +793,8 @@ export interface DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6 {
 }
 
 export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6ToTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -803,8 +803,8 @@ export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6ToTerrafo
 
 
 export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6ToHclTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -812,14 +812,14 @@ export function dataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6ToHclTerr
   return attrs;
 }
 
-export class DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6OutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustAccessInfrastructureTargetIpIpv6OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -852,8 +852,8 @@ export interface DataCloudflareZeroTrustAccessInfrastructureTargetIp {
 }
 
 export function dataCloudflareZeroTrustAccessInfrastructureTargetIpToTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -862,8 +862,8 @@ export function dataCloudflareZeroTrustAccessInfrastructureTargetIpToTerraform(s
 
 
 export function dataCloudflareZeroTrustAccessInfrastructureTargetIpToHclTerraform(struct?: DataCloudflareZeroTrustAccessInfrastructureTargetIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -871,14 +871,14 @@ export function dataCloudflareZeroTrustAccessInfrastructureTargetIpToHclTerrafor
   return attrs;
 }
 
-export class DataCloudflareZeroTrustAccessInfrastructureTargetIpOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustAccessInfrastructureTargetIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -911,9 +911,9 @@ export class DataCloudflareZeroTrustAccessInfrastructureTargetIpOutputReference 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target}
 */
-export class DataCloudflareZeroTrustAccessInfrastructureTarget extends cdktf.TerraformDataSource {
+export class DataCloudflareZeroTrustAccessInfrastructureTarget extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -924,14 +924,14 @@ export class DataCloudflareZeroTrustAccessInfrastructureTarget extends cdktf.Ter
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareZeroTrustAccessInfrastructureTarget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareZeroTrustAccessInfrastructureTarget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustAccessInfrastructureTarget to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessInfrastructureTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessInfrastructureTarget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustAccessInfrastructureTarget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_infrastructure_target", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_infrastructure_target", importId: importFromId, provider });
       }
 
   // ===========
@@ -939,7 +939,7 @@ export class DataCloudflareZeroTrustAccessInfrastructureTarget extends cdktf.Ter
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_infrastructure_target cloudflare_zero_trust_access_infrastructure_target} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -950,7 +950,7 @@ export class DataCloudflareZeroTrustAccessInfrastructureTarget extends cdktf.Ter
       terraformResourceType: 'cloudflare_zero_trust_access_infrastructure_target',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1047,16 +1047,16 @@ export class DataCloudflareZeroTrustAccessInfrastructureTarget extends cdktf.Ter
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       filter: dataCloudflareZeroTrustAccessInfrastructureTargetFilterToTerraform(this._filter.internalValue),
-      target_id: cdktf.stringToTerraform(this._targetId),
+      target_id: cdktn.stringToTerraform(this._targetId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1068,7 +1068,7 @@ export class DataCloudflareZeroTrustAccessInfrastructureTarget extends cdktf.Ter
         storageClassType: "DataCloudflareZeroTrustAccessInfrastructureTargetFilter",
       },
       target_id: {
-        value: cdktf.stringToHclTerraform(this._targetId),
+        value: cdktn.stringToHclTerraform(this._targetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

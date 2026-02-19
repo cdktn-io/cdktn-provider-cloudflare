@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustDlpDatasetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#account_id ZeroTrustDlpDataset#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#account_id ZeroTrustDlpDataset#account_id}
   */
   readonly accountId: string;
   /**
@@ -21,17 +21,17 @@ export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments 
   * Determines if the words should be matched in a case-sensitive manner
   * Cannot be set to false if `secret` is true or undefined
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#case_sensitive ZeroTrustDlpDataset#case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#case_sensitive ZeroTrustDlpDataset#case_sensitive}
   */
-  readonly caseSensitive?: boolean | cdktf.IResolvable;
+  readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#dataset_id ZeroTrustDlpDataset#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#dataset_id ZeroTrustDlpDataset#dataset_id}
   */
   readonly datasetId?: string;
   /**
   * The description of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#description ZeroTrustDlpDataset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#description ZeroTrustDlpDataset#description}
   */
   readonly description?: string;
   /**
@@ -43,11 +43,11 @@ export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments 
   * Omitting this field provides the default value 0, which is interpreted
   * the same as 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#encoding_version ZeroTrustDlpDataset#encoding_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#encoding_version ZeroTrustDlpDataset#encoding_version}
   */
   readonly encodingVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#name ZeroTrustDlpDataset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#name ZeroTrustDlpDataset#name}
   */
   readonly name: string;
   /**
@@ -56,16 +56,16 @@ export interface ZeroTrustDlpDatasetConfig extends cdktf.TerraformMetaArguments 
   * If true, the response will include a secret to use with the EDM encoder.
   * If false, the response has no secret and the dataset is uploaded in plaintext.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#secret ZeroTrustDlpDataset#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#secret ZeroTrustDlpDataset#secret}
   */
-  readonly secret?: boolean | cdktf.IResolvable;
+  readonly secret?: boolean | cdktn.IResolvable;
 }
 export interface ZeroTrustDlpDatasetColumns {
 }
 
 export function zeroTrustDlpDatasetColumnsToTerraform(struct?: ZeroTrustDlpDatasetColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -74,8 +74,8 @@ export function zeroTrustDlpDatasetColumnsToTerraform(struct?: ZeroTrustDlpDatas
 
 
 export function zeroTrustDlpDatasetColumnsToHclTerraform(struct?: ZeroTrustDlpDatasetColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -83,7 +83,7 @@ export function zeroTrustDlpDatasetColumnsToHclTerraform(struct?: ZeroTrustDlpDa
   return attrs;
 }
 
-export class ZeroTrustDlpDatasetColumnsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpDatasetColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -92,7 +92,7 @@ export class ZeroTrustDlpDatasetColumnsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -132,14 +132,14 @@ export class ZeroTrustDlpDatasetColumnsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class ZeroTrustDlpDatasetColumnsList extends cdktf.ComplexList {
+export class ZeroTrustDlpDatasetColumnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -154,8 +154,8 @@ export interface ZeroTrustDlpDatasetDatasetColumns {
 }
 
 export function zeroTrustDlpDatasetDatasetColumnsToTerraform(struct?: ZeroTrustDlpDatasetDatasetColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -164,8 +164,8 @@ export function zeroTrustDlpDatasetDatasetColumnsToTerraform(struct?: ZeroTrustD
 
 
 export function zeroTrustDlpDatasetDatasetColumnsToHclTerraform(struct?: ZeroTrustDlpDatasetDatasetColumns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -173,7 +173,7 @@ export function zeroTrustDlpDatasetDatasetColumnsToHclTerraform(struct?: ZeroTru
   return attrs;
 }
 
-export class ZeroTrustDlpDatasetDatasetColumnsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpDatasetDatasetColumnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -182,7 +182,7 @@ export class ZeroTrustDlpDatasetDatasetColumnsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -222,14 +222,14 @@ export class ZeroTrustDlpDatasetDatasetColumnsOutputReference extends cdktf.Comp
   }
 }
 
-export class ZeroTrustDlpDatasetDatasetColumnsList extends cdktf.ComplexList {
+export class ZeroTrustDlpDatasetDatasetColumnsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -244,8 +244,8 @@ export interface ZeroTrustDlpDatasetDatasetUploads {
 }
 
 export function zeroTrustDlpDatasetDatasetUploadsToTerraform(struct?: ZeroTrustDlpDatasetDatasetUploads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -254,8 +254,8 @@ export function zeroTrustDlpDatasetDatasetUploadsToTerraform(struct?: ZeroTrustD
 
 
 export function zeroTrustDlpDatasetDatasetUploadsToHclTerraform(struct?: ZeroTrustDlpDatasetDatasetUploads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -263,7 +263,7 @@ export function zeroTrustDlpDatasetDatasetUploadsToHclTerraform(struct?: ZeroTru
   return attrs;
 }
 
-export class ZeroTrustDlpDatasetDatasetUploadsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpDatasetDatasetUploadsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -272,7 +272,7 @@ export class ZeroTrustDlpDatasetDatasetUploadsOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -307,14 +307,14 @@ export class ZeroTrustDlpDatasetDatasetUploadsOutputReference extends cdktf.Comp
   }
 }
 
-export class ZeroTrustDlpDatasetDatasetUploadsList extends cdktf.ComplexList {
+export class ZeroTrustDlpDatasetDatasetUploadsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -329,8 +329,8 @@ export interface ZeroTrustDlpDatasetDataset {
 }
 
 export function zeroTrustDlpDatasetDatasetToTerraform(struct?: ZeroTrustDlpDatasetDataset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -339,8 +339,8 @@ export function zeroTrustDlpDatasetDatasetToTerraform(struct?: ZeroTrustDlpDatas
 
 
 export function zeroTrustDlpDatasetDatasetToHclTerraform(struct?: ZeroTrustDlpDatasetDataset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -348,14 +348,14 @@ export function zeroTrustDlpDatasetDatasetToHclTerraform(struct?: ZeroTrustDlpDa
   return attrs;
 }
 
-export class ZeroTrustDlpDatasetDatasetOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpDatasetDatasetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -440,8 +440,8 @@ export interface ZeroTrustDlpDatasetUploads {
 }
 
 export function zeroTrustDlpDatasetUploadsToTerraform(struct?: ZeroTrustDlpDatasetUploads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -450,8 +450,8 @@ export function zeroTrustDlpDatasetUploadsToTerraform(struct?: ZeroTrustDlpDatas
 
 
 export function zeroTrustDlpDatasetUploadsToHclTerraform(struct?: ZeroTrustDlpDatasetUploads): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -459,7 +459,7 @@ export function zeroTrustDlpDatasetUploadsToHclTerraform(struct?: ZeroTrustDlpDa
   return attrs;
 }
 
-export class ZeroTrustDlpDatasetUploadsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDlpDatasetUploadsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -468,7 +468,7 @@ export class ZeroTrustDlpDatasetUploadsOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -503,14 +503,14 @@ export class ZeroTrustDlpDatasetUploadsOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class ZeroTrustDlpDatasetUploadsList extends cdktf.ComplexList {
+export class ZeroTrustDlpDatasetUploadsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -523,9 +523,9 @@ export class ZeroTrustDlpDatasetUploadsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}
 */
-export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
+export class ZeroTrustDlpDataset extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -536,14 +536,14 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustDlpDataset resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustDlpDataset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDlpDataset to import
-  * @param importFromId The id of the existing ZeroTrustDlpDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDlpDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDlpDataset to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dlp_dataset", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dlp_dataset", importId: importFromId, provider });
       }
 
   // ===========
@@ -551,7 +551,7 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -562,7 +562,7 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dlp_dataset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -600,11 +600,11 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
   }
 
   // case_sensitive - computed: false, optional: true, required: false
-  private _caseSensitive?: boolean | cdktf.IResolvable; 
+  private _caseSensitive?: boolean | cdktn.IResolvable; 
   public get caseSensitive() {
     return this.getBooleanAttribute('case_sensitive');
   }
-  public set caseSensitive(value: boolean | cdktf.IResolvable) {
+  public set caseSensitive(value: boolean | cdktn.IResolvable) {
     this._caseSensitive = value;
   }
   public resetCaseSensitive() {
@@ -709,11 +709,11 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
   }
 
   // secret - computed: false, optional: true, required: false
-  private _secret?: boolean | cdktf.IResolvable; 
+  private _secret?: boolean | cdktn.IResolvable; 
   public get secret() {
     return this.getBooleanAttribute('secret');
   }
-  public set secret(value: boolean | cdktf.IResolvable) {
+  public set secret(value: boolean | cdktn.IResolvable) {
     this._secret = value;
   }
   public resetSecret() {
@@ -751,56 +751,56 @@ export class ZeroTrustDlpDataset extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      case_sensitive: cdktf.booleanToTerraform(this._caseSensitive),
-      dataset_id: cdktf.stringToTerraform(this._datasetId),
-      description: cdktf.stringToTerraform(this._description),
-      encoding_version: cdktf.numberToTerraform(this._encodingVersion),
-      name: cdktf.stringToTerraform(this._name),
-      secret: cdktf.booleanToTerraform(this._secret),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      case_sensitive: cdktn.booleanToTerraform(this._caseSensitive),
+      dataset_id: cdktn.stringToTerraform(this._datasetId),
+      description: cdktn.stringToTerraform(this._description),
+      encoding_version: cdktn.numberToTerraform(this._encodingVersion),
+      name: cdktn.stringToTerraform(this._name),
+      secret: cdktn.booleanToTerraform(this._secret),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       case_sensitive: {
-        value: cdktf.booleanToHclTerraform(this._caseSensitive),
+        value: cdktn.booleanToHclTerraform(this._caseSensitive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dataset_id: {
-        value: cdktf.stringToHclTerraform(this._datasetId),
+        value: cdktn.stringToHclTerraform(this._datasetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       encoding_version: {
-        value: cdktf.numberToHclTerraform(this._encodingVersion),
+        value: cdktn.numberToHclTerraform(this._encodingVersion),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       secret: {
-        value: cdktf.booleanToHclTerraform(this._secret),
+        value: cdktn.booleanToHclTerraform(this._secret),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

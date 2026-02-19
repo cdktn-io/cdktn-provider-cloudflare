@@ -1,44 +1,44 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustDevicePostureIntegrationConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustDevicePostureIntegrationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#account_id ZeroTrustDevicePostureIntegration#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#account_id ZeroTrustDevicePostureIntegration#account_id}
   */
   readonly accountId: string;
   /**
   * The configuration object containing third-party integration information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#config ZeroTrustDevicePostureIntegration#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#config ZeroTrustDevicePostureIntegration#config}
   */
   readonly config: ZeroTrustDevicePostureIntegrationConfigA;
   /**
   * The interval between each posture check with the third-party API. Use `m` for minutes (e.g. `5m`) and `h` for hours (e.g. `12h`).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#interval ZeroTrustDevicePostureIntegration#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#interval ZeroTrustDevicePostureIntegration#interval}
   */
   readonly interval: string;
   /**
   * The name of the device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#name ZeroTrustDevicePostureIntegration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#name ZeroTrustDevicePostureIntegration#name}
   */
   readonly name: string;
   /**
   * The type of device posture integration.
   * Available values: "workspace_one", "crowdstrike_s2s", "uptycs", "intune", "kolide", "tanium_s2s", "sentinelone_s2s", "custom_s2s".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#type ZeroTrustDevicePostureIntegration#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#type ZeroTrustDevicePostureIntegration#type}
   */
   readonly type: string;
 }
@@ -46,121 +46,121 @@ export interface ZeroTrustDevicePostureIntegrationConfigA {
   /**
   * If present, this id will be passed in the `CF-Access-Client-ID` header when hitting the `api_url`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#access_client_id ZeroTrustDevicePostureIntegration#access_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#access_client_id ZeroTrustDevicePostureIntegration#access_client_id}
   */
   readonly accessClientId?: string;
   /**
   * If present, this secret will be passed in the `CF-Access-Client-Secret` header when hitting the `api_url`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#access_client_secret ZeroTrustDevicePostureIntegration#access_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#access_client_secret ZeroTrustDevicePostureIntegration#access_client_secret}
   */
   readonly accessClientSecret?: string;
   /**
   * The Workspace One API URL provided in the Workspace One Admin Dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#api_url ZeroTrustDevicePostureIntegration#api_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#api_url ZeroTrustDevicePostureIntegration#api_url}
   */
   readonly apiUrl?: string;
   /**
   * The Workspace One Authorization URL depending on your region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#auth_url ZeroTrustDevicePostureIntegration#auth_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#auth_url ZeroTrustDevicePostureIntegration#auth_url}
   */
   readonly authUrl?: string;
   /**
   * The Workspace One client ID provided in the Workspace One Admin Dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#client_id ZeroTrustDevicePostureIntegration#client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#client_id ZeroTrustDevicePostureIntegration#client_id}
   */
   readonly clientId?: string;
   /**
   * The Uptycs client secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#client_key ZeroTrustDevicePostureIntegration#client_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#client_key ZeroTrustDevicePostureIntegration#client_key}
   */
   readonly clientKey?: string;
   /**
   * The Workspace One client secret provided in the Workspace One Admin Dashboard.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#client_secret ZeroTrustDevicePostureIntegration#client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#client_secret ZeroTrustDevicePostureIntegration#client_secret}
   */
   readonly clientSecret?: string;
   /**
   * The Crowdstrike customer ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#customer_id ZeroTrustDevicePostureIntegration#customer_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#customer_id ZeroTrustDevicePostureIntegration#customer_id}
   */
   readonly customerId?: string;
 }
 
-export function zeroTrustDevicePostureIntegrationConfigAToTerraform(struct?: ZeroTrustDevicePostureIntegrationConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDevicePostureIntegrationConfigAToTerraform(struct?: ZeroTrustDevicePostureIntegrationConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_client_id: cdktf.stringToTerraform(struct!.accessClientId),
-    access_client_secret: cdktf.stringToTerraform(struct!.accessClientSecret),
-    api_url: cdktf.stringToTerraform(struct!.apiUrl),
-    auth_url: cdktf.stringToTerraform(struct!.authUrl),
-    client_id: cdktf.stringToTerraform(struct!.clientId),
-    client_key: cdktf.stringToTerraform(struct!.clientKey),
-    client_secret: cdktf.stringToTerraform(struct!.clientSecret),
-    customer_id: cdktf.stringToTerraform(struct!.customerId),
+    access_client_id: cdktn.stringToTerraform(struct!.accessClientId),
+    access_client_secret: cdktn.stringToTerraform(struct!.accessClientSecret),
+    api_url: cdktn.stringToTerraform(struct!.apiUrl),
+    auth_url: cdktn.stringToTerraform(struct!.authUrl),
+    client_id: cdktn.stringToTerraform(struct!.clientId),
+    client_key: cdktn.stringToTerraform(struct!.clientKey),
+    client_secret: cdktn.stringToTerraform(struct!.clientSecret),
+    customer_id: cdktn.stringToTerraform(struct!.customerId),
   }
 }
 
 
-export function zeroTrustDevicePostureIntegrationConfigAToHclTerraform(struct?: ZeroTrustDevicePostureIntegrationConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDevicePostureIntegrationConfigAToHclTerraform(struct?: ZeroTrustDevicePostureIntegrationConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessClientId),
+      value: cdktn.stringToHclTerraform(struct!.accessClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     access_client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.accessClientSecret),
+      value: cdktn.stringToHclTerraform(struct!.accessClientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     api_url: {
-      value: cdktf.stringToHclTerraform(struct!.apiUrl),
+      value: cdktn.stringToHclTerraform(struct!.apiUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     auth_url: {
-      value: cdktf.stringToHclTerraform(struct!.authUrl),
+      value: cdktn.stringToHclTerraform(struct!.authUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_id: {
-      value: cdktf.stringToHclTerraform(struct!.clientId),
+      value: cdktn.stringToHclTerraform(struct!.clientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_key: {
-      value: cdktf.stringToHclTerraform(struct!.clientKey),
+      value: cdktn.stringToHclTerraform(struct!.clientKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.clientSecret),
+      value: cdktn.stringToHclTerraform(struct!.clientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     customer_id: {
-      value: cdktf.stringToHclTerraform(struct!.customerId),
+      value: cdktn.stringToHclTerraform(struct!.customerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -171,19 +171,19 @@ export function zeroTrustDevicePostureIntegrationConfigAToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDevicePostureIntegrationConfigAOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDevicePostureIntegrationConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDevicePostureIntegrationConfigA | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDevicePostureIntegrationConfigA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -224,7 +224,7 @@ export class ZeroTrustDevicePostureIntegrationConfigAOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDevicePostureIntegrationConfigA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDevicePostureIntegrationConfigA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -237,7 +237,7 @@ export class ZeroTrustDevicePostureIntegrationConfigAOutputReference extends cdk
       this._clientSecret = undefined;
       this._customerId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -385,9 +385,9 @@ export class ZeroTrustDevicePostureIntegrationConfigAOutputReference extends cdk
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration}
 */
-export class ZeroTrustDevicePostureIntegration extends cdktf.TerraformResource {
+export class ZeroTrustDevicePostureIntegration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -398,14 +398,14 @@ export class ZeroTrustDevicePostureIntegration extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustDevicePostureIntegration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustDevicePostureIntegration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDevicePostureIntegration to import
-  * @param importFromId The id of the existing ZeroTrustDevicePostureIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDevicePostureIntegration that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDevicePostureIntegration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_device_posture_integration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_device_posture_integration", importId: importFromId, provider });
       }
 
   // ===========
@@ -413,7 +413,7 @@ export class ZeroTrustDevicePostureIntegration extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_posture_integration cloudflare_zero_trust_device_posture_integration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -424,7 +424,7 @@ export class ZeroTrustDevicePostureIntegration extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_device_posture_integration',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -522,18 +522,18 @@ export class ZeroTrustDevicePostureIntegration extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       config: zeroTrustDevicePostureIntegrationConfigAToTerraform(this._config.internalValue),
-      interval: cdktf.stringToTerraform(this._interval),
-      name: cdktf.stringToTerraform(this._name),
-      type: cdktf.stringToTerraform(this._type),
+      interval: cdktn.stringToTerraform(this._interval),
+      name: cdktn.stringToTerraform(this._name),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -545,19 +545,19 @@ export class ZeroTrustDevicePostureIntegration extends cdktf.TerraformResource {
         storageClassType: "ZeroTrustDevicePostureIntegrationConfigA",
       },
       interval: {
-        value: cdktf.stringToHclTerraform(this._interval),
+        value: cdktn.stringToHclTerraform(this._interval),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

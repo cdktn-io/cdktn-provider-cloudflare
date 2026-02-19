@@ -1,44 +1,44 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserAgentBlockingRuleConfig extends cdktf.TerraformMetaArguments {
+export interface UserAgentBlockingRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}
   */
   readonly configuration: UserAgentBlockingRuleConfiguration;
   /**
   * An informative summary of the rule. This value is sanitized and any tags will be removed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
   */
   readonly description?: string;
   /**
   * The action to apply to a matched request.
   * Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
   */
   readonly mode: string;
   /**
   * When true, indicates that the rule is currently paused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
   */
-  readonly paused?: boolean | cdktf.IResolvable;
+  readonly paused?: boolean | cdktn.IResolvable;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
   */
   readonly zoneId: string;
 }
@@ -47,43 +47,43 @@ export interface UserAgentBlockingRuleConfiguration {
   * The configuration target. You must set the target to `ua` when specifying a user agent in the rule.
   * Available values: "ua".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
   */
   readonly target?: string;
   /**
   * the user agent to exactly match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
   */
   readonly value?: string;
 }
 
-export function userAgentBlockingRuleConfigurationToTerraform(struct?: UserAgentBlockingRuleConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function userAgentBlockingRuleConfigurationToTerraform(struct?: UserAgentBlockingRuleConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    target: cdktf.stringToTerraform(struct!.target),
-    value: cdktf.stringToTerraform(struct!.value),
+    target: cdktn.stringToTerraform(struct!.target),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function userAgentBlockingRuleConfigurationToHclTerraform(struct?: UserAgentBlockingRuleConfiguration | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function userAgentBlockingRuleConfigurationToHclTerraform(struct?: UserAgentBlockingRuleConfiguration | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -94,19 +94,19 @@ export function userAgentBlockingRuleConfigurationToHclTerraform(struct?: UserAg
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class UserAgentBlockingRuleConfigurationOutputReference extends cdktf.ComplexObject {
+export class UserAgentBlockingRuleConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): UserAgentBlockingRuleConfiguration | cdktf.IResolvable | undefined {
+  public get internalValue(): UserAgentBlockingRuleConfiguration | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -123,14 +123,14 @@ export class UserAgentBlockingRuleConfigurationOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: UserAgentBlockingRuleConfiguration | cdktf.IResolvable | undefined) {
+  public set internalValue(value: UserAgentBlockingRuleConfiguration | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._target = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -176,9 +176,9 @@ export class UserAgentBlockingRuleConfigurationOutputReference extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}
 */
-export class UserAgentBlockingRule extends cdktf.TerraformResource {
+export class UserAgentBlockingRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -189,14 +189,14 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a UserAgentBlockingRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a UserAgentBlockingRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the UserAgentBlockingRule to import
-  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing UserAgentBlockingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the UserAgentBlockingRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_user_agent_blocking_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_user_agent_blocking_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -204,7 +204,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -215,7 +215,7 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_user_agent_blocking_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -285,11 +285,11 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   }
 
   // paused - computed: true, optional: true, required: false
-  private _paused?: boolean | cdktf.IResolvable; 
+  private _paused?: boolean | cdktn.IResolvable; 
   public get paused() {
     return this.getBooleanAttribute('paused');
   }
-  public set paused(value: boolean | cdktf.IResolvable) {
+  public set paused(value: boolean | cdktn.IResolvable) {
     this._paused = value;
   }
   public resetPaused() {
@@ -320,10 +320,10 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       configuration: userAgentBlockingRuleConfigurationToTerraform(this._configuration.internalValue),
-      description: cdktf.stringToTerraform(this._description),
-      mode: cdktf.stringToTerraform(this._mode),
-      paused: cdktf.booleanToTerraform(this._paused),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      description: cdktn.stringToTerraform(this._description),
+      mode: cdktn.stringToTerraform(this._mode),
+      paused: cdktn.booleanToTerraform(this._paused),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -336,25 +336,25 @@ export class UserAgentBlockingRule extends cdktf.TerraformResource {
         storageClassType: "UserAgentBlockingRuleConfiguration",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       paused: {
-        value: cdktf.booleanToHclTerraform(this._paused),
+        value: cdktn.booleanToHclTerraform(this._paused),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

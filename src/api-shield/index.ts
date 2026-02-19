@@ -1,70 +1,70 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiShieldConfig extends cdktf.TerraformMetaArguments {
+export interface ApiShieldConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield#auth_id_characteristics ApiShield#auth_id_characteristics}
   */
-  readonly authIdCharacteristics: ApiShieldAuthIdCharacteristics[] | cdktf.IResolvable;
+  readonly authIdCharacteristics: ApiShieldAuthIdCharacteristics[] | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield#zone_id ApiShield#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield#zone_id ApiShield#zone_id}
   */
   readonly zoneId: string;
 }
 export interface ApiShieldAuthIdCharacteristics {
   /**
-  * The name of the characteristic field, i.e., the header or cookie name.
+  * The name of the characteristic field, i.e., the header or cookie name. When using type "jwt", this must be a claim location expressed as `$(token_config_id):$(json_path)`, where `token_config_id` is the ID of the token configuration used in validating the JWT, and `json_path` is a RFC 9535 JSONPath expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield#name ApiShield#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield#name ApiShield#name}
   */
   readonly name: string;
   /**
   * The type of characteristic.
   * Available values: "header", "cookie", "jwt".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield#type ApiShield#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield#type ApiShield#type}
   */
   readonly type: string;
 }
 
-export function apiShieldAuthIdCharacteristicsToTerraform(struct?: ApiShieldAuthIdCharacteristics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiShieldAuthIdCharacteristicsToTerraform(struct?: ApiShieldAuthIdCharacteristics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
-    type: cdktf.stringToTerraform(struct!.type),
+    name: cdktn.stringToTerraform(struct!.name),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function apiShieldAuthIdCharacteristicsToHclTerraform(struct?: ApiShieldAuthIdCharacteristics | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiShieldAuthIdCharacteristicsToHclTerraform(struct?: ApiShieldAuthIdCharacteristics | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -75,9 +75,9 @@ export function apiShieldAuthIdCharacteristicsToHclTerraform(struct?: ApiShieldA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiShieldAuthIdCharacteristicsOutputReference extends cdktf.ComplexObject {
+export class ApiShieldAuthIdCharacteristicsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -85,11 +85,11 @@ export class ApiShieldAuthIdCharacteristicsOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiShieldAuthIdCharacteristics | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiShieldAuthIdCharacteristics | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -106,14 +106,14 @@ export class ApiShieldAuthIdCharacteristicsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiShieldAuthIdCharacteristics | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiShieldAuthIdCharacteristics | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -152,15 +152,15 @@ export class ApiShieldAuthIdCharacteristicsOutputReference extends cdktf.Complex
   }
 }
 
-export class ApiShieldAuthIdCharacteristicsList extends cdktf.ComplexList {
-  public internalValue? : ApiShieldAuthIdCharacteristics[] | cdktf.IResolvable
+export class ApiShieldAuthIdCharacteristicsList extends cdktn.ComplexList {
+  public internalValue? : ApiShieldAuthIdCharacteristics[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,9 +173,9 @@ export class ApiShieldAuthIdCharacteristicsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield cloudflare_api_shield}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield cloudflare_api_shield}
 */
-export class ApiShield extends cdktf.TerraformResource {
+export class ApiShield extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +186,14 @@ export class ApiShield extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiShield resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiShield resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiShield to import
-  * @param importFromId The id of the existing ApiShield that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiShield that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiShield to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield", importId: importFromId, provider });
       }
 
   // ===========
@@ -201,7 +201,7 @@ export class ApiShield extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield cloudflare_api_shield} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield cloudflare_api_shield} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -212,7 +212,7 @@ export class ApiShield extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_shield',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -236,7 +236,7 @@ export class ApiShield extends cdktf.TerraformResource {
   public get authIdCharacteristics() {
     return this._authIdCharacteristics;
   }
-  public putAuthIdCharacteristics(value: ApiShieldAuthIdCharacteristics[] | cdktf.IResolvable) {
+  public putAuthIdCharacteristics(value: ApiShieldAuthIdCharacteristics[] | cdktn.IResolvable) {
     this._authIdCharacteristics.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -268,21 +268,21 @@ export class ApiShield extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auth_id_characteristics: cdktf.listMapper(apiShieldAuthIdCharacteristicsToTerraform, false)(this._authIdCharacteristics.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      auth_id_characteristics: cdktn.listMapper(apiShieldAuthIdCharacteristicsToTerraform, false)(this._authIdCharacteristics.internalValue),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auth_id_characteristics: {
-        value: cdktf.listMapperHcl(apiShieldAuthIdCharacteristicsToHclTerraform, false)(this._authIdCharacteristics.internalValue),
+        value: cdktn.listMapperHcl(apiShieldAuthIdCharacteristicsToHclTerraform, false)(this._authIdCharacteristics.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ApiShieldAuthIdCharacteristicsList",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

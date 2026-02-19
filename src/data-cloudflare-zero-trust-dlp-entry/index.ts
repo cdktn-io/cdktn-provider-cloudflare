@@ -1,23 +1,23 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_dlp_entry
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareZeroTrustDlpEntryConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareZeroTrustDlpEntryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_dlp_entry#account_id DataCloudflareZeroTrustDlpEntry#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry#account_id DataCloudflareZeroTrustDlpEntry#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_dlp_entry#entry_id DataCloudflareZeroTrustDlpEntry#entry_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry#entry_id DataCloudflareZeroTrustDlpEntry#entry_id}
   */
   readonly entryId: string;
 }
@@ -25,8 +25,8 @@ export interface DataCloudflareZeroTrustDlpEntryConfidence {
 }
 
 export function dataCloudflareZeroTrustDlpEntryConfidenceToTerraform(struct?: DataCloudflareZeroTrustDlpEntryConfidence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -35,8 +35,8 @@ export function dataCloudflareZeroTrustDlpEntryConfidenceToTerraform(struct?: Da
 
 
 export function dataCloudflareZeroTrustDlpEntryConfidenceToHclTerraform(struct?: DataCloudflareZeroTrustDlpEntryConfidence): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -44,14 +44,14 @@ export function dataCloudflareZeroTrustDlpEntryConfidenceToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataCloudflareZeroTrustDlpEntryConfidenceOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustDlpEntryConfidenceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -84,8 +84,8 @@ export interface DataCloudflareZeroTrustDlpEntryPattern {
 }
 
 export function dataCloudflareZeroTrustDlpEntryPatternToTerraform(struct?: DataCloudflareZeroTrustDlpEntryPattern): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -94,8 +94,8 @@ export function dataCloudflareZeroTrustDlpEntryPatternToTerraform(struct?: DataC
 
 
 export function dataCloudflareZeroTrustDlpEntryPatternToHclTerraform(struct?: DataCloudflareZeroTrustDlpEntryPattern): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -103,14 +103,14 @@ export function dataCloudflareZeroTrustDlpEntryPatternToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataCloudflareZeroTrustDlpEntryPatternOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustDlpEntryPatternOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -143,8 +143,8 @@ export interface DataCloudflareZeroTrustDlpEntryProfiles {
 }
 
 export function dataCloudflareZeroTrustDlpEntryProfilesToTerraform(struct?: DataCloudflareZeroTrustDlpEntryProfiles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -153,8 +153,8 @@ export function dataCloudflareZeroTrustDlpEntryProfilesToTerraform(struct?: Data
 
 
 export function dataCloudflareZeroTrustDlpEntryProfilesToHclTerraform(struct?: DataCloudflareZeroTrustDlpEntryProfiles): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -162,7 +162,7 @@ export function dataCloudflareZeroTrustDlpEntryProfilesToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataCloudflareZeroTrustDlpEntryProfilesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustDlpEntryProfilesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -171,7 +171,7 @@ export class DataCloudflareZeroTrustDlpEntryProfilesOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -201,14 +201,14 @@ export class DataCloudflareZeroTrustDlpEntryProfilesOutputReference extends cdkt
   }
 }
 
-export class DataCloudflareZeroTrustDlpEntryProfilesList extends cdktf.ComplexList {
+export class DataCloudflareZeroTrustDlpEntryProfilesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -223,8 +223,8 @@ export interface DataCloudflareZeroTrustDlpEntryVariant {
 }
 
 export function dataCloudflareZeroTrustDlpEntryVariantToTerraform(struct?: DataCloudflareZeroTrustDlpEntryVariant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -233,8 +233,8 @@ export function dataCloudflareZeroTrustDlpEntryVariantToTerraform(struct?: DataC
 
 
 export function dataCloudflareZeroTrustDlpEntryVariantToHclTerraform(struct?: DataCloudflareZeroTrustDlpEntryVariant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -242,14 +242,14 @@ export function dataCloudflareZeroTrustDlpEntryVariantToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataCloudflareZeroTrustDlpEntryVariantOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustDlpEntryVariantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -285,9 +285,9 @@ export class DataCloudflareZeroTrustDlpEntryVariantOutputReference extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}
 */
-export class DataCloudflareZeroTrustDlpEntry extends cdktf.TerraformDataSource {
+export class DataCloudflareZeroTrustDlpEntry extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -298,14 +298,14 @@ export class DataCloudflareZeroTrustDlpEntry extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareZeroTrustDlpEntry resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareZeroTrustDlpEntry resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDlpEntry to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDlpEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_dlp_entry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDlpEntry that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDlpEntry to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dlp_entry", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dlp_entry", importId: importFromId, provider });
       }
 
   // ===========
@@ -313,7 +313,7 @@ export class DataCloudflareZeroTrustDlpEntry extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -324,7 +324,7 @@ export class DataCloudflareZeroTrustDlpEntry extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zero_trust_dlp_entry',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -432,6 +432,11 @@ export class DataCloudflareZeroTrustDlpEntry extends cdktf.TerraformDataSource {
     return this.getStringAttribute('updated_at');
   }
 
+  // upload_status - computed: true, optional: false, required: false
+  public get uploadStatus() {
+    return this.getStringAttribute('upload_status');
+  }
+
   // variant - computed: true, optional: false, required: false
   private _variant = new DataCloudflareZeroTrustDlpEntryVariantOutputReference(this, "variant");
   public get variant() {
@@ -449,21 +454,21 @@ export class DataCloudflareZeroTrustDlpEntry extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      entry_id: cdktf.stringToTerraform(this._entryId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      entry_id: cdktn.stringToTerraform(this._entryId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       entry_id: {
-        value: cdktf.stringToHclTerraform(this._entryId),
+        value: cdktn.stringToHclTerraform(this._entryId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,86 +1,86 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustDnsLocationConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustDnsLocationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#account_id ZeroTrustDnsLocation#account_id}
   */
   readonly accountId: string;
   /**
   * Indicate whether this location is the default location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#client_default ZeroTrustDnsLocation#client_default}
   */
-  readonly clientDefault?: boolean | cdktf.IResolvable;
+  readonly clientDefault?: boolean | cdktn.IResolvable;
   /**
   * Specify the identifier of the pair of IPv4 addresses assigned to this location. When creating a location, if this field is absent or set to null, the pair of shared IPv4 addresses (0e4a32c6-6fb8-4858-9296-98f51631e8e6) is auto-assigned. When updating a location, if this field is absent or set to null, the pre-assigned pair remains unchanged.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#dns_destination_ips_id ZeroTrustDnsLocation#dns_destination_ips_id}
   */
   readonly dnsDestinationIpsId?: string;
   /**
   * Indicate whether the location must resolve EDNS queries.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#ecs_support ZeroTrustDnsLocation#ecs_support}
   */
-  readonly ecsSupport?: boolean | cdktf.IResolvable;
+  readonly ecsSupport?: boolean | cdktn.IResolvable;
   /**
   * Configure the destination endpoints for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#endpoints ZeroTrustDnsLocation#endpoints}
   */
   readonly endpoints?: ZeroTrustDnsLocationEndpoints;
   /**
   * Specify the location name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#name ZeroTrustDnsLocation#name}
   */
   readonly name: string;
   /**
   * Specify the list of network ranges from which requests at this location originate. The list takes effect only if it is non-empty and the IPv4 endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
-  readonly networks?: ZeroTrustDnsLocationNetworks[] | cdktf.IResolvable;
+  readonly networks?: ZeroTrustDnsLocationNetworks[] | cdktn.IResolvable;
 }
 export interface ZeroTrustDnsLocationEndpointsDohNetworks {
   /**
   * Specify the IP address or IP CIDR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network: string;
 }
 
-export function zeroTrustDnsLocationEndpointsDohNetworksToTerraform(struct?: ZeroTrustDnsLocationEndpointsDohNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDohNetworksToTerraform(struct?: ZeroTrustDnsLocationEndpointsDohNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
+    network: cdktn.stringToTerraform(struct!.network),
   }
 }
 
 
-export function zeroTrustDnsLocationEndpointsDohNetworksToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDohNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDohNetworksToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDohNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -91,9 +91,9 @@ export function zeroTrustDnsLocationEndpointsDohNetworksToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsDohNetworksOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsDohNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -101,11 +101,11 @@ export class ZeroTrustDnsLocationEndpointsDohNetworksOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpointsDohNetworks | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpointsDohNetworks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -118,13 +118,13 @@ export class ZeroTrustDnsLocationEndpointsDohNetworksOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpointsDohNetworks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpointsDohNetworks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -149,15 +149,15 @@ export class ZeroTrustDnsLocationEndpointsDohNetworksOutputReference extends cdk
   }
 }
 
-export class ZeroTrustDnsLocationEndpointsDohNetworksList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDnsLocationEndpointsDohNetworks[] | cdktf.IResolvable
+export class ZeroTrustDnsLocationEndpointsDohNetworksList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDnsLocationEndpointsDohNetworks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -172,56 +172,56 @@ export interface ZeroTrustDnsLocationEndpointsDoh {
   /**
   * Indicate whether the DOH endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Specify the list of allowed source IP network ranges for this endpoint. When the list is empty, the endpoint allows all source IPs. The list takes effect only if the endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
-  readonly networks?: ZeroTrustDnsLocationEndpointsDohNetworks[] | cdktf.IResolvable;
+  readonly networks?: ZeroTrustDnsLocationEndpointsDohNetworks[] | cdktn.IResolvable;
   /**
   * Specify whether the DOH endpoint requires user identity authentication.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#require_token ZeroTrustDnsLocation#require_token}
   */
-  readonly requireToken?: boolean | cdktf.IResolvable;
+  readonly requireToken?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustDnsLocationEndpointsDohToTerraform(struct?: ZeroTrustDnsLocationEndpointsDoh | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDohToTerraform(struct?: ZeroTrustDnsLocationEndpointsDoh | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    networks: cdktf.listMapper(zeroTrustDnsLocationEndpointsDohNetworksToTerraform, false)(struct!.networks),
-    require_token: cdktf.booleanToTerraform(struct!.requireToken),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    networks: cdktn.listMapper(zeroTrustDnsLocationEndpointsDohNetworksToTerraform, false)(struct!.networks),
+    require_token: cdktn.booleanToTerraform(struct!.requireToken),
   }
 }
 
 
-export function zeroTrustDnsLocationEndpointsDohToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDoh | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDohToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDoh | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     networks: {
-      value: cdktf.listMapperHcl(zeroTrustDnsLocationEndpointsDohNetworksToHclTerraform, false)(struct!.networks),
+      value: cdktn.listMapperHcl(zeroTrustDnsLocationEndpointsDohNetworksToHclTerraform, false)(struct!.networks),
       isBlock: true,
       type: "list",
       storageClassType: "ZeroTrustDnsLocationEndpointsDohNetworksList",
     },
     require_token: {
-      value: cdktf.booleanToHclTerraform(struct!.requireToken),
+      value: cdktn.booleanToHclTerraform(struct!.requireToken),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -232,19 +232,19 @@ export function zeroTrustDnsLocationEndpointsDohToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpointsDoh | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpointsDoh | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -265,7 +265,7 @@ export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpointsDoh | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpointsDoh | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -273,7 +273,7 @@ export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktf.Compl
       this._networks.internalValue = undefined;
       this._requireToken = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -287,11 +287,11 @@ export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktf.Compl
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -307,7 +307,7 @@ export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktf.Compl
   public get networks() {
     return this._networks;
   }
-  public putNetworks(value: ZeroTrustDnsLocationEndpointsDohNetworks[] | cdktf.IResolvable) {
+  public putNetworks(value: ZeroTrustDnsLocationEndpointsDohNetworks[] | cdktn.IResolvable) {
     this._networks.internalValue = value;
   }
   public resetNetworks() {
@@ -319,11 +319,11 @@ export class ZeroTrustDnsLocationEndpointsDohOutputReference extends cdktf.Compl
   }
 
   // require_token - computed: true, optional: true, required: false
-  private _requireToken?: boolean | cdktf.IResolvable; 
+  private _requireToken?: boolean | cdktn.IResolvable; 
   public get requireToken() {
     return this.getBooleanAttribute('require_token');
   }
-  public set requireToken(value: boolean | cdktf.IResolvable) {
+  public set requireToken(value: boolean | cdktn.IResolvable) {
     this._requireToken = value;
   }
   public resetRequireToken() {
@@ -338,30 +338,30 @@ export interface ZeroTrustDnsLocationEndpointsDotNetworks {
   /**
   * Specify the IP address or IP CIDR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network: string;
 }
 
-export function zeroTrustDnsLocationEndpointsDotNetworksToTerraform(struct?: ZeroTrustDnsLocationEndpointsDotNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDotNetworksToTerraform(struct?: ZeroTrustDnsLocationEndpointsDotNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
+    network: cdktn.stringToTerraform(struct!.network),
   }
 }
 
 
-export function zeroTrustDnsLocationEndpointsDotNetworksToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDotNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDotNetworksToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDotNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -372,9 +372,9 @@ export function zeroTrustDnsLocationEndpointsDotNetworksToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsDotNetworksOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsDotNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -382,11 +382,11 @@ export class ZeroTrustDnsLocationEndpointsDotNetworksOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpointsDotNetworks | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpointsDotNetworks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -399,13 +399,13 @@ export class ZeroTrustDnsLocationEndpointsDotNetworksOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpointsDotNetworks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpointsDotNetworks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -430,15 +430,15 @@ export class ZeroTrustDnsLocationEndpointsDotNetworksOutputReference extends cdk
   }
 }
 
-export class ZeroTrustDnsLocationEndpointsDotNetworksList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDnsLocationEndpointsDotNetworks[] | cdktf.IResolvable
+export class ZeroTrustDnsLocationEndpointsDotNetworksList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDnsLocationEndpointsDotNetworks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -453,43 +453,43 @@ export interface ZeroTrustDnsLocationEndpointsDot {
   /**
   * Indicate whether the DOT endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Specify the list of allowed source IP network ranges for this endpoint. When the list is empty, the endpoint allows all source IPs. The list takes effect only if the endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
-  readonly networks?: ZeroTrustDnsLocationEndpointsDotNetworks[] | cdktf.IResolvable;
+  readonly networks?: ZeroTrustDnsLocationEndpointsDotNetworks[] | cdktn.IResolvable;
 }
 
-export function zeroTrustDnsLocationEndpointsDotToTerraform(struct?: ZeroTrustDnsLocationEndpointsDot | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDotToTerraform(struct?: ZeroTrustDnsLocationEndpointsDot | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    networks: cdktf.listMapper(zeroTrustDnsLocationEndpointsDotNetworksToTerraform, false)(struct!.networks),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    networks: cdktn.listMapper(zeroTrustDnsLocationEndpointsDotNetworksToTerraform, false)(struct!.networks),
   }
 }
 
 
-export function zeroTrustDnsLocationEndpointsDotToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDot | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsDotToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsDot | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     networks: {
-      value: cdktf.listMapperHcl(zeroTrustDnsLocationEndpointsDotNetworksToHclTerraform, false)(struct!.networks),
+      value: cdktn.listMapperHcl(zeroTrustDnsLocationEndpointsDotNetworksToHclTerraform, false)(struct!.networks),
       isBlock: true,
       type: "list",
       storageClassType: "ZeroTrustDnsLocationEndpointsDotNetworksList",
@@ -500,19 +500,19 @@ export function zeroTrustDnsLocationEndpointsDotToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsDotOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsDotOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpointsDot | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpointsDot | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -529,14 +529,14 @@ export class ZeroTrustDnsLocationEndpointsDotOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpointsDot | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpointsDot | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._networks.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -549,11 +549,11 @@ export class ZeroTrustDnsLocationEndpointsDotOutputReference extends cdktf.Compl
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -569,7 +569,7 @@ export class ZeroTrustDnsLocationEndpointsDotOutputReference extends cdktf.Compl
   public get networks() {
     return this._networks;
   }
-  public putNetworks(value: ZeroTrustDnsLocationEndpointsDotNetworks[] | cdktf.IResolvable) {
+  public putNetworks(value: ZeroTrustDnsLocationEndpointsDotNetworks[] | cdktn.IResolvable) {
     this._networks.internalValue = value;
   }
   public resetNetworks() {
@@ -584,30 +584,30 @@ export interface ZeroTrustDnsLocationEndpointsIpv4 {
   /**
   * Indicate whether the IPv4 endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustDnsLocationEndpointsIpv4ToTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv4 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsIpv4ToTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv4 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function zeroTrustDnsLocationEndpointsIpv4ToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv4 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsIpv4ToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv4 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -618,19 +618,19 @@ export function zeroTrustDnsLocationEndpointsIpv4ToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsIpv4OutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsIpv4OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpointsIpv4 | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpointsIpv4 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -643,13 +643,13 @@ export class ZeroTrustDnsLocationEndpointsIpv4OutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpointsIpv4 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpointsIpv4 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -661,11 +661,11 @@ export class ZeroTrustDnsLocationEndpointsIpv4OutputReference extends cdktf.Comp
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -680,30 +680,30 @@ export interface ZeroTrustDnsLocationEndpointsIpv6Networks {
   /**
   * Specify the IPv6 address or IPv6 CIDR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network: string;
 }
 
-export function zeroTrustDnsLocationEndpointsIpv6NetworksToTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6Networks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsIpv6NetworksToTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6Networks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
+    network: cdktn.stringToTerraform(struct!.network),
   }
 }
 
 
-export function zeroTrustDnsLocationEndpointsIpv6NetworksToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6Networks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsIpv6NetworksToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6Networks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -714,9 +714,9 @@ export function zeroTrustDnsLocationEndpointsIpv6NetworksToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -724,11 +724,11 @@ export class ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpointsIpv6Networks | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpointsIpv6Networks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -741,13 +741,13 @@ export class ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpointsIpv6Networks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpointsIpv6Networks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -772,15 +772,15 @@ export class ZeroTrustDnsLocationEndpointsIpv6NetworksOutputReference extends cd
   }
 }
 
-export class ZeroTrustDnsLocationEndpointsIpv6NetworksList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDnsLocationEndpointsIpv6Networks[] | cdktf.IResolvable
+export class ZeroTrustDnsLocationEndpointsIpv6NetworksList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDnsLocationEndpointsIpv6Networks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -795,43 +795,43 @@ export interface ZeroTrustDnsLocationEndpointsIpv6 {
   /**
   * Indicate whether the IPV6 endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#enabled ZeroTrustDnsLocation#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Specify the list of allowed source IPv6 network ranges for this endpoint. When the list is empty, the endpoint allows all source IPs. The list takes effect only if the endpoint is enabled for this location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#networks ZeroTrustDnsLocation#networks}
   */
-  readonly networks?: ZeroTrustDnsLocationEndpointsIpv6Networks[] | cdktf.IResolvable;
+  readonly networks?: ZeroTrustDnsLocationEndpointsIpv6Networks[] | cdktn.IResolvable;
 }
 
-export function zeroTrustDnsLocationEndpointsIpv6ToTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsIpv6ToTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    networks: cdktf.listMapper(zeroTrustDnsLocationEndpointsIpv6NetworksToTerraform, false)(struct!.networks),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    networks: cdktn.listMapper(zeroTrustDnsLocationEndpointsIpv6NetworksToTerraform, false)(struct!.networks),
   }
 }
 
 
-export function zeroTrustDnsLocationEndpointsIpv6ToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsIpv6ToHclTerraform(struct?: ZeroTrustDnsLocationEndpointsIpv6 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     networks: {
-      value: cdktf.listMapperHcl(zeroTrustDnsLocationEndpointsIpv6NetworksToHclTerraform, false)(struct!.networks),
+      value: cdktn.listMapperHcl(zeroTrustDnsLocationEndpointsIpv6NetworksToHclTerraform, false)(struct!.networks),
       isBlock: true,
       type: "list",
       storageClassType: "ZeroTrustDnsLocationEndpointsIpv6NetworksList",
@@ -842,19 +842,19 @@ export function zeroTrustDnsLocationEndpointsIpv6ToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsIpv6OutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsIpv6OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpointsIpv6 | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpointsIpv6 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -871,14 +871,14 @@ export class ZeroTrustDnsLocationEndpointsIpv6OutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpointsIpv6 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpointsIpv6 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._networks.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -891,11 +891,11 @@ export class ZeroTrustDnsLocationEndpointsIpv6OutputReference extends cdktf.Comp
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -911,7 +911,7 @@ export class ZeroTrustDnsLocationEndpointsIpv6OutputReference extends cdktf.Comp
   public get networks() {
     return this._networks;
   }
-  public putNetworks(value: ZeroTrustDnsLocationEndpointsIpv6Networks[] | cdktf.IResolvable) {
+  public putNetworks(value: ZeroTrustDnsLocationEndpointsIpv6Networks[] | cdktn.IResolvable) {
     this._networks.internalValue = value;
   }
   public resetNetworks() {
@@ -924,26 +924,26 @@ export class ZeroTrustDnsLocationEndpointsIpv6OutputReference extends cdktf.Comp
 }
 export interface ZeroTrustDnsLocationEndpoints {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#doh ZeroTrustDnsLocation#doh}
   */
   readonly doh: ZeroTrustDnsLocationEndpointsDoh;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#dot ZeroTrustDnsLocation#dot}
   */
   readonly dot: ZeroTrustDnsLocationEndpointsDot;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#ipv4 ZeroTrustDnsLocation#ipv4}
   */
   readonly ipv4: ZeroTrustDnsLocationEndpointsIpv4;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#ipv6 ZeroTrustDnsLocation#ipv6}
   */
   readonly ipv6: ZeroTrustDnsLocationEndpointsIpv6;
 }
 
-export function zeroTrustDnsLocationEndpointsToTerraform(struct?: ZeroTrustDnsLocationEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsToTerraform(struct?: ZeroTrustDnsLocationEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -955,9 +955,9 @@ export function zeroTrustDnsLocationEndpointsToTerraform(struct?: ZeroTrustDnsLo
 }
 
 
-export function zeroTrustDnsLocationEndpointsToHclTerraform(struct?: ZeroTrustDnsLocationEndpoints | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationEndpointsToHclTerraform(struct?: ZeroTrustDnsLocationEndpoints | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -991,19 +991,19 @@ export function zeroTrustDnsLocationEndpointsToHclTerraform(struct?: ZeroTrustDn
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationEndpointsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationEndpointsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationEndpoints | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationEndpoints | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1028,7 +1028,7 @@ export class ZeroTrustDnsLocationEndpointsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationEndpoints | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationEndpoints | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1037,7 +1037,7 @@ export class ZeroTrustDnsLocationEndpointsOutputReference extends cdktf.ComplexO
       this._ipv4.internalValue = undefined;
       this._ipv6.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1107,30 +1107,30 @@ export interface ZeroTrustDnsLocationNetworks {
   /**
   * Specify the IPv4 address or IPv4 CIDR. Limit IPv4 CIDRs to a maximum of /24.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#network ZeroTrustDnsLocation#network}
   */
   readonly network: string;
 }
 
-export function zeroTrustDnsLocationNetworksToTerraform(struct?: ZeroTrustDnsLocationNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationNetworksToTerraform(struct?: ZeroTrustDnsLocationNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    network: cdktf.stringToTerraform(struct!.network),
+    network: cdktn.stringToTerraform(struct!.network),
   }
 }
 
 
-export function zeroTrustDnsLocationNetworksToHclTerraform(struct?: ZeroTrustDnsLocationNetworks | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDnsLocationNetworksToHclTerraform(struct?: ZeroTrustDnsLocationNetworks | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     network: {
-      value: cdktf.stringToHclTerraform(struct!.network),
+      value: cdktn.stringToHclTerraform(struct!.network),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1141,9 +1141,9 @@ export function zeroTrustDnsLocationNetworksToHclTerraform(struct?: ZeroTrustDns
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDnsLocationNetworksOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDnsLocationNetworksOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1151,11 +1151,11 @@ export class ZeroTrustDnsLocationNetworksOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDnsLocationNetworks | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDnsLocationNetworks | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1168,13 +1168,13 @@ export class ZeroTrustDnsLocationNetworksOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDnsLocationNetworks | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDnsLocationNetworks | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._network = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1199,15 +1199,15 @@ export class ZeroTrustDnsLocationNetworksOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class ZeroTrustDnsLocationNetworksList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDnsLocationNetworks[] | cdktf.IResolvable
+export class ZeroTrustDnsLocationNetworksList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDnsLocationNetworks[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -1220,9 +1220,9 @@ export class ZeroTrustDnsLocationNetworksList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
 */
-export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
+export class ZeroTrustDnsLocation extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1233,14 +1233,14 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustDnsLocation resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustDnsLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDnsLocation to import
-  * @param importFromId The id of the existing ZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDnsLocation to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dns_location", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dns_location", importId: importFromId, provider });
       }
 
   // ===========
@@ -1248,7 +1248,7 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1259,7 +1259,7 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dns_location',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1297,11 +1297,11 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
   }
 
   // client_default - computed: true, optional: true, required: false
-  private _clientDefault?: boolean | cdktf.IResolvable; 
+  private _clientDefault?: boolean | cdktn.IResolvable; 
   public get clientDefault() {
     return this.getBooleanAttribute('client_default');
   }
-  public set clientDefault(value: boolean | cdktf.IResolvable) {
+  public set clientDefault(value: boolean | cdktn.IResolvable) {
     this._clientDefault = value;
   }
   public resetClientDefault() {
@@ -1344,11 +1344,11 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
   }
 
   // ecs_support - computed: true, optional: true, required: false
-  private _ecsSupport?: boolean | cdktf.IResolvable; 
+  private _ecsSupport?: boolean | cdktn.IResolvable; 
   public get ecsSupport() {
     return this.getBooleanAttribute('ecs_support');
   }
-  public set ecsSupport(value: boolean | cdktf.IResolvable) {
+  public set ecsSupport(value: boolean | cdktn.IResolvable) {
     this._ecsSupport = value;
   }
   public resetEcsSupport() {
@@ -1413,7 +1413,7 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
   public get networks() {
     return this._networks;
   }
-  public putNetworks(value: ZeroTrustDnsLocationNetworks[] | cdktf.IResolvable) {
+  public putNetworks(value: ZeroTrustDnsLocationNetworks[] | cdktn.IResolvable) {
     this._networks.internalValue = value;
   }
   public resetNetworks() {
@@ -1435,38 +1435,38 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      client_default: cdktf.booleanToTerraform(this._clientDefault),
-      dns_destination_ips_id: cdktf.stringToTerraform(this._dnsDestinationIpsId),
-      ecs_support: cdktf.booleanToTerraform(this._ecsSupport),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      client_default: cdktn.booleanToTerraform(this._clientDefault),
+      dns_destination_ips_id: cdktn.stringToTerraform(this._dnsDestinationIpsId),
+      ecs_support: cdktn.booleanToTerraform(this._ecsSupport),
       endpoints: zeroTrustDnsLocationEndpointsToTerraform(this._endpoints.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      networks: cdktf.listMapper(zeroTrustDnsLocationNetworksToTerraform, false)(this._networks.internalValue),
+      name: cdktn.stringToTerraform(this._name),
+      networks: cdktn.listMapper(zeroTrustDnsLocationNetworksToTerraform, false)(this._networks.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       client_default: {
-        value: cdktf.booleanToHclTerraform(this._clientDefault),
+        value: cdktn.booleanToHclTerraform(this._clientDefault),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       dns_destination_ips_id: {
-        value: cdktf.stringToHclTerraform(this._dnsDestinationIpsId),
+        value: cdktn.stringToHclTerraform(this._dnsDestinationIpsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ecs_support: {
-        value: cdktf.booleanToHclTerraform(this._ecsSupport),
+        value: cdktn.booleanToHclTerraform(this._ecsSupport),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -1478,13 +1478,13 @@ export class ZeroTrustDnsLocation extends cdktf.TerraformResource {
         storageClassType: "ZeroTrustDnsLocationEndpoints",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       networks: {
-        value: cdktf.listMapperHcl(zeroTrustDnsLocationNetworksToHclTerraform, false)(this._networks.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustDnsLocationNetworksToHclTerraform, false)(this._networks.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustDnsLocationNetworksList",

@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareStreamConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareStreamConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
   */
   readonly accountId: string;
   /**
   * A Cloudflare-generated unique identifier for a media item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
   */
   readonly identifier: string;
 }
@@ -29,8 +29,8 @@ export interface DataCloudflareStreamInput {
 }
 
 export function dataCloudflareStreamInputToTerraform(struct?: DataCloudflareStreamInput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataCloudflareStreamInputToTerraform(struct?: DataCloudflareStre
 
 
 export function dataCloudflareStreamInputToHclTerraform(struct?: DataCloudflareStreamInput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function dataCloudflareStreamInputToHclTerraform(struct?: DataCloudflareS
   return attrs;
 }
 
-export class DataCloudflareStreamInputOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamInputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -88,8 +88,8 @@ export interface DataCloudflareStreamPlayback {
 }
 
 export function dataCloudflareStreamPlaybackToTerraform(struct?: DataCloudflareStreamPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -98,8 +98,8 @@ export function dataCloudflareStreamPlaybackToTerraform(struct?: DataCloudflareS
 
 
 export function dataCloudflareStreamPlaybackToHclTerraform(struct?: DataCloudflareStreamPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -107,14 +107,14 @@ export function dataCloudflareStreamPlaybackToHclTerraform(struct?: DataCloudfla
   return attrs;
 }
 
-export class DataCloudflareStreamPlaybackOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -147,8 +147,8 @@ export interface DataCloudflareStreamStatus {
 }
 
 export function dataCloudflareStreamStatusToTerraform(struct?: DataCloudflareStreamStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -157,8 +157,8 @@ export function dataCloudflareStreamStatusToTerraform(struct?: DataCloudflareStr
 
 
 export function dataCloudflareStreamStatusToHclTerraform(struct?: DataCloudflareStreamStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -166,14 +166,14 @@ export function dataCloudflareStreamStatusToHclTerraform(struct?: DataCloudflare
   return attrs;
 }
 
-export class DataCloudflareStreamStatusOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -216,8 +216,8 @@ export interface DataCloudflareStreamWatermark {
 }
 
 export function dataCloudflareStreamWatermarkToTerraform(struct?: DataCloudflareStreamWatermark): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -226,8 +226,8 @@ export function dataCloudflareStreamWatermarkToTerraform(struct?: DataCloudflare
 
 
 export function dataCloudflareStreamWatermarkToHclTerraform(struct?: DataCloudflareStreamWatermark): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -235,14 +235,14 @@ export function dataCloudflareStreamWatermarkToHclTerraform(struct?: DataCloudfl
   return attrs;
 }
 
-export class DataCloudflareStreamWatermarkOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamWatermarkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -318,9 +318,9 @@ export class DataCloudflareStreamWatermarkOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream cloudflare_stream}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream cloudflare_stream}
 */
-export class DataCloudflareStream extends cdktf.TerraformDataSource {
+export class DataCloudflareStream extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -331,14 +331,14 @@ export class DataCloudflareStream extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareStream resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareStream to import
-  * @param importFromId The id of the existing DataCloudflareStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareStream to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream", importId: importFromId, provider });
       }
 
   // ===========
@@ -346,7 +346,7 @@ export class DataCloudflareStream extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream cloudflare_stream} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream cloudflare_stream} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +357,7 @@ export class DataCloudflareStream extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_stream',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -527,21 +527,21 @@ export class DataCloudflareStream extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      identifier: cdktf.stringToTerraform(this._identifier),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      identifier: cdktn.stringToTerraform(this._identifier),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier: {
-        value: cdktf.stringToHclTerraform(this._identifier),
+        value: cdktn.stringToHclTerraform(this._identifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

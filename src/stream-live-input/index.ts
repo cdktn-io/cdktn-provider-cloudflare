@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamLiveInputConfig extends cdktf.TerraformMetaArguments {
+export interface StreamLiveInputConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
   */
   readonly accountId: string;
   /**
   * Sets the creator ID asssociated with this live input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
   */
   readonly defaultCreator?: string;
   /**
   * Indicates the number of days after which the live inputs recordings will be deleted. When a stream completes and the recording is ready, the value is used to calculate a scheduled deletion date for that recording. Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
   */
   readonly deleteRecordingAfterDays?: number;
   /**
   * A unique identifier for a live input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
   */
   readonly liveInputIdentifier?: string;
   /**
   * A user modifiable key-value store used to reference other systems of record for managing live inputs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
   */
   readonly meta?: string;
   /**
   * Records the input to a Cloudflare Stream video. Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
   */
   readonly recording?: StreamLiveInputRecording;
 }
@@ -53,83 +53,83 @@ export interface StreamLiveInputRecording {
   /**
   * Lists the origins allowed to display videos created with this input. Enter allowed origin domains in an array and use `*` for wildcard subdomains. An empty array allows videos to be viewed on any origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * Disables reporting the number of live viewers when this property is set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
   */
-  readonly hideLiveViewerCount?: boolean | cdktf.IResolvable;
+  readonly hideLiveViewerCount?: boolean | cdktn.IResolvable;
   /**
   * Specifies the recording behavior for the live input. Set this value to `off` to prevent a recording. Set the value to `automatic` to begin a recording and transition to on-demand after Stream Live stops receiving input.
   * Available values: "off", "automatic".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
   */
   readonly mode?: string;
   /**
   * Indicates if a video using the live input has the `requireSignedURLs` property set. Also enforces access controls on any video recording of the livestream with the live input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
   */
-  readonly requireSignedUrls?: boolean | cdktf.IResolvable;
+  readonly requireSignedUrls?: boolean | cdktn.IResolvable;
   /**
   * Determines the amount of time a live input configured in `automatic` mode should wait before a recording transitions from live to on-demand. `0` is recommended for most use cases and indicates the platform default should be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
   */
   readonly timeoutSeconds?: number;
 }
 
-export function streamLiveInputRecordingToTerraform(struct?: StreamLiveInputRecording | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamLiveInputRecordingToTerraform(struct?: StreamLiveInputRecording | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedOrigins),
-    hide_live_viewer_count: cdktf.booleanToTerraform(struct!.hideLiveViewerCount),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    require_signed_urls: cdktf.booleanToTerraform(struct!.requireSignedUrls),
-    timeout_seconds: cdktf.numberToTerraform(struct!.timeoutSeconds),
+    allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedOrigins),
+    hide_live_viewer_count: cdktn.booleanToTerraform(struct!.hideLiveViewerCount),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    require_signed_urls: cdktn.booleanToTerraform(struct!.requireSignedUrls),
+    timeout_seconds: cdktn.numberToTerraform(struct!.timeoutSeconds),
   }
 }
 
 
-export function streamLiveInputRecordingToHclTerraform(struct?: StreamLiveInputRecording | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function streamLiveInputRecordingToHclTerraform(struct?: StreamLiveInputRecording | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allowed_origins: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedOrigins),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedOrigins),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     hide_live_viewer_count: {
-      value: cdktf.booleanToHclTerraform(struct!.hideLiveViewerCount),
+      value: cdktn.booleanToHclTerraform(struct!.hideLiveViewerCount),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     require_signed_urls: {
-      value: cdktf.booleanToHclTerraform(struct!.requireSignedUrls),
+      value: cdktn.booleanToHclTerraform(struct!.requireSignedUrls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     timeout_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.timeoutSeconds),
+      value: cdktn.numberToHclTerraform(struct!.timeoutSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -140,19 +140,19 @@ export function streamLiveInputRecordingToHclTerraform(struct?: StreamLiveInputR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class StreamLiveInputRecordingOutputReference extends cdktf.ComplexObject {
+export class StreamLiveInputRecordingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): StreamLiveInputRecording | cdktf.IResolvable | undefined {
+  public get internalValue(): StreamLiveInputRecording | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -181,7 +181,7 @@ export class StreamLiveInputRecordingOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: StreamLiveInputRecording | cdktf.IResolvable | undefined) {
+  public set internalValue(value: StreamLiveInputRecording | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -191,7 +191,7 @@ export class StreamLiveInputRecordingOutputReference extends cdktf.ComplexObject
       this._requireSignedUrls = undefined;
       this._timeoutSeconds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,11 +223,11 @@ export class StreamLiveInputRecordingOutputReference extends cdktf.ComplexObject
   }
 
   // hide_live_viewer_count - computed: true, optional: true, required: false
-  private _hideLiveViewerCount?: boolean | cdktf.IResolvable; 
+  private _hideLiveViewerCount?: boolean | cdktn.IResolvable; 
   public get hideLiveViewerCount() {
     return this.getBooleanAttribute('hide_live_viewer_count');
   }
-  public set hideLiveViewerCount(value: boolean | cdktf.IResolvable) {
+  public set hideLiveViewerCount(value: boolean | cdktn.IResolvable) {
     this._hideLiveViewerCount = value;
   }
   public resetHideLiveViewerCount() {
@@ -255,11 +255,11 @@ export class StreamLiveInputRecordingOutputReference extends cdktf.ComplexObject
   }
 
   // require_signed_urls - computed: true, optional: true, required: false
-  private _requireSignedUrls?: boolean | cdktf.IResolvable; 
+  private _requireSignedUrls?: boolean | cdktn.IResolvable; 
   public get requireSignedUrls() {
     return this.getBooleanAttribute('require_signed_urls');
   }
-  public set requireSignedUrls(value: boolean | cdktf.IResolvable) {
+  public set requireSignedUrls(value: boolean | cdktn.IResolvable) {
     this._requireSignedUrls = value;
   }
   public resetRequireSignedUrls() {
@@ -290,8 +290,8 @@ export interface StreamLiveInputRtmps {
 }
 
 export function streamLiveInputRtmpsToTerraform(struct?: StreamLiveInputRtmps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -300,8 +300,8 @@ export function streamLiveInputRtmpsToTerraform(struct?: StreamLiveInputRtmps): 
 
 
 export function streamLiveInputRtmpsToHclTerraform(struct?: StreamLiveInputRtmps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -309,14 +309,14 @@ export function streamLiveInputRtmpsToHclTerraform(struct?: StreamLiveInputRtmps
   return attrs;
 }
 
-export class StreamLiveInputRtmpsOutputReference extends cdktf.ComplexObject {
+export class StreamLiveInputRtmpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -349,8 +349,8 @@ export interface StreamLiveInputRtmpsPlayback {
 }
 
 export function streamLiveInputRtmpsPlaybackToTerraform(struct?: StreamLiveInputRtmpsPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -359,8 +359,8 @@ export function streamLiveInputRtmpsPlaybackToTerraform(struct?: StreamLiveInput
 
 
 export function streamLiveInputRtmpsPlaybackToHclTerraform(struct?: StreamLiveInputRtmpsPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -368,14 +368,14 @@ export function streamLiveInputRtmpsPlaybackToHclTerraform(struct?: StreamLiveIn
   return attrs;
 }
 
-export class StreamLiveInputRtmpsPlaybackOutputReference extends cdktf.ComplexObject {
+export class StreamLiveInputRtmpsPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -408,8 +408,8 @@ export interface StreamLiveInputSrt {
 }
 
 export function streamLiveInputSrtToTerraform(struct?: StreamLiveInputSrt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -418,8 +418,8 @@ export function streamLiveInputSrtToTerraform(struct?: StreamLiveInputSrt): any 
 
 
 export function streamLiveInputSrtToHclTerraform(struct?: StreamLiveInputSrt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -427,14 +427,14 @@ export function streamLiveInputSrtToHclTerraform(struct?: StreamLiveInputSrt): a
   return attrs;
 }
 
-export class StreamLiveInputSrtOutputReference extends cdktf.ComplexObject {
+export class StreamLiveInputSrtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -472,8 +472,8 @@ export interface StreamLiveInputSrtPlayback {
 }
 
 export function streamLiveInputSrtPlaybackToTerraform(struct?: StreamLiveInputSrtPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -482,8 +482,8 @@ export function streamLiveInputSrtPlaybackToTerraform(struct?: StreamLiveInputSr
 
 
 export function streamLiveInputSrtPlaybackToHclTerraform(struct?: StreamLiveInputSrtPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -491,14 +491,14 @@ export function streamLiveInputSrtPlaybackToHclTerraform(struct?: StreamLiveInpu
   return attrs;
 }
 
-export class StreamLiveInputSrtPlaybackOutputReference extends cdktf.ComplexObject {
+export class StreamLiveInputSrtPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -536,8 +536,8 @@ export interface StreamLiveInputWebRtc {
 }
 
 export function streamLiveInputWebRtcToTerraform(struct?: StreamLiveInputWebRtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -546,8 +546,8 @@ export function streamLiveInputWebRtcToTerraform(struct?: StreamLiveInputWebRtc)
 
 
 export function streamLiveInputWebRtcToHclTerraform(struct?: StreamLiveInputWebRtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -555,14 +555,14 @@ export function streamLiveInputWebRtcToHclTerraform(struct?: StreamLiveInputWebR
   return attrs;
 }
 
-export class StreamLiveInputWebRtcOutputReference extends cdktf.ComplexObject {
+export class StreamLiveInputWebRtcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -590,8 +590,8 @@ export interface StreamLiveInputWebRtcPlayback {
 }
 
 export function streamLiveInputWebRtcPlaybackToTerraform(struct?: StreamLiveInputWebRtcPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -600,8 +600,8 @@ export function streamLiveInputWebRtcPlaybackToTerraform(struct?: StreamLiveInpu
 
 
 export function streamLiveInputWebRtcPlaybackToHclTerraform(struct?: StreamLiveInputWebRtcPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -609,14 +609,14 @@ export function streamLiveInputWebRtcPlaybackToHclTerraform(struct?: StreamLiveI
   return attrs;
 }
 
-export class StreamLiveInputWebRtcPlaybackOutputReference extends cdktf.ComplexObject {
+export class StreamLiveInputWebRtcPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -642,9 +642,9 @@ export class StreamLiveInputWebRtcPlaybackOutputReference extends cdktf.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input cloudflare_stream_live_input}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input}
 */
-export class StreamLiveInput extends cdktf.TerraformResource {
+export class StreamLiveInput extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -655,14 +655,14 @@ export class StreamLiveInput extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamLiveInput resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamLiveInput resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamLiveInput to import
-  * @param importFromId The id of the existing StreamLiveInput that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamLiveInput that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamLiveInput to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream_live_input", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream_live_input", importId: importFromId, provider });
       }
 
   // ===========
@@ -670,7 +670,7 @@ export class StreamLiveInput extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -681,7 +681,7 @@ export class StreamLiveInput extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_stream_live_input',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -859,11 +859,11 @@ export class StreamLiveInput extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      default_creator: cdktf.stringToTerraform(this._defaultCreator),
-      delete_recording_after_days: cdktf.numberToTerraform(this._deleteRecordingAfterDays),
-      live_input_identifier: cdktf.stringToTerraform(this._liveInputIdentifier),
-      meta: cdktf.stringToTerraform(this._meta),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      default_creator: cdktn.stringToTerraform(this._defaultCreator),
+      delete_recording_after_days: cdktn.numberToTerraform(this._deleteRecordingAfterDays),
+      live_input_identifier: cdktn.stringToTerraform(this._liveInputIdentifier),
+      meta: cdktn.stringToTerraform(this._meta),
       recording: streamLiveInputRecordingToTerraform(this._recording.internalValue),
     };
   }
@@ -871,31 +871,31 @@ export class StreamLiveInput extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_creator: {
-        value: cdktf.stringToHclTerraform(this._defaultCreator),
+        value: cdktn.stringToHclTerraform(this._defaultCreator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delete_recording_after_days: {
-        value: cdktf.numberToHclTerraform(this._deleteRecordingAfterDays),
+        value: cdktn.numberToHclTerraform(this._deleteRecordingAfterDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       live_input_identifier: {
-        value: cdktf.stringToHclTerraform(this._liveInputIdentifier),
+        value: cdktn.stringToHclTerraform(this._liveInputIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       meta: {
-        value: cdktf.stringToHclTerraform(this._meta),
+        value: cdktn.stringToHclTerraform(this._meta),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

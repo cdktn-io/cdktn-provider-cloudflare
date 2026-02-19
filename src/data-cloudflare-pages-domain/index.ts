@@ -1,33 +1,33 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflarePagesDomainConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflarePagesDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
   */
   readonly accountId: string;
   /**
   * The domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
   */
   readonly domainName: string;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
   */
   readonly projectName: string;
 }
@@ -35,8 +35,8 @@ export interface DataCloudflarePagesDomainValidationData {
 }
 
 export function dataCloudflarePagesDomainValidationDataToTerraform(struct?: DataCloudflarePagesDomainValidationData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -45,8 +45,8 @@ export function dataCloudflarePagesDomainValidationDataToTerraform(struct?: Data
 
 
 export function dataCloudflarePagesDomainValidationDataToHclTerraform(struct?: DataCloudflarePagesDomainValidationData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -54,14 +54,14 @@ export function dataCloudflarePagesDomainValidationDataToHclTerraform(struct?: D
   return attrs;
 }
 
-export class DataCloudflarePagesDomainValidationDataOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesDomainValidationDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -109,8 +109,8 @@ export interface DataCloudflarePagesDomainVerificationData {
 }
 
 export function dataCloudflarePagesDomainVerificationDataToTerraform(struct?: DataCloudflarePagesDomainVerificationData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -119,8 +119,8 @@ export function dataCloudflarePagesDomainVerificationDataToTerraform(struct?: Da
 
 
 export function dataCloudflarePagesDomainVerificationDataToHclTerraform(struct?: DataCloudflarePagesDomainVerificationData): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -128,14 +128,14 @@ export function dataCloudflarePagesDomainVerificationDataToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataCloudflarePagesDomainVerificationDataOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePagesDomainVerificationDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -166,9 +166,9 @@ export class DataCloudflarePagesDomainVerificationDataOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_domain cloudflare_pages_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_domain cloudflare_pages_domain}
 */
-export class DataCloudflarePagesDomain extends cdktf.TerraformDataSource {
+export class DataCloudflarePagesDomain extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -179,14 +179,14 @@ export class DataCloudflarePagesDomain extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflarePagesDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflarePagesDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePagesDomain to import
-  * @param importFromId The id of the existing DataCloudflarePagesDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePagesDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePagesDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_pages_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_pages_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -194,7 +194,7 @@ export class DataCloudflarePagesDomain extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/pages_domain cloudflare_pages_domain} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/pages_domain cloudflare_pages_domain} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +205,7 @@ export class DataCloudflarePagesDomain extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_pages_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -317,28 +317,28 @@ export class DataCloudflarePagesDomain extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      project_name: cdktf.stringToTerraform(this._projectName),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      project_name: cdktn.stringToTerraform(this._projectName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       project_name: {
-        value: cdktf.stringToHclTerraform(this._projectName),
+        value: cdktn.stringToHclTerraform(this._projectName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

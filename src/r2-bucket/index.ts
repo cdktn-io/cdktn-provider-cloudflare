@@ -1,56 +1,56 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface R2BucketConfig extends cdktf.TerraformMetaArguments {
+export interface R2BucketConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
   */
   readonly accountId: string;
   /**
   * Jurisdiction where objects in this bucket are guaranteed to be stored.
   * Available values: "default", "eu", "fedramp".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Location of the bucket.
-  * Available values: "apac", "eeur", "enam", "weur", "wnam", "oc".
+  * Available values: "apac", "eeur", "enam", "weur", "wnam", "oc".  Note: `location` is only honored the first time a bucket with a given name is created. If you delete and recreate a bucket with the same name, the original bucket location will be used. It is also a best-effort, not a guarantee, of bucket location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket#location R2Bucket#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket#location R2Bucket#location}
   */
   readonly location?: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket#name R2Bucket#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket#name R2Bucket#name}
   */
   readonly name: string;
   /**
   * Storage class for newly uploaded objects, unless specified otherwise.
   * Available values: "Standard", "InfrequentAccess".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
   */
   readonly storageClass?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket cloudflare_r2_bucket}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket cloudflare_r2_bucket}
 */
-export class R2Bucket extends cdktf.TerraformResource {
+export class R2Bucket extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -61,14 +61,14 @@ export class R2Bucket extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a R2Bucket resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a R2Bucket resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2Bucket to import
-  * @param importFromId The id of the existing R2Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2Bucket that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2Bucket to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_r2_bucket", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_r2_bucket", importId: importFromId, provider });
       }
 
   // ===========
@@ -76,7 +76,7 @@ export class R2Bucket extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/r2_bucket cloudflare_r2_bucket} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -87,7 +87,7 @@ export class R2Bucket extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -199,42 +199,42 @@ export class R2Bucket extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      jurisdiction: cdktf.stringToTerraform(this._jurisdiction),
-      location: cdktf.stringToTerraform(this._location),
-      name: cdktf.stringToTerraform(this._name),
-      storage_class: cdktf.stringToTerraform(this._storageClass),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      jurisdiction: cdktn.stringToTerraform(this._jurisdiction),
+      location: cdktn.stringToTerraform(this._location),
+      name: cdktn.stringToTerraform(this._name),
+      storage_class: cdktn.stringToTerraform(this._storageClass),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       jurisdiction: {
-        value: cdktf.stringToHclTerraform(this._jurisdiction),
+        value: cdktn.stringToHclTerraform(this._jurisdiction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       location: {
-        value: cdktf.stringToHclTerraform(this._location),
+        value: cdktn.stringToHclTerraform(this._location),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       storage_class: {
-        value: cdktf.stringToHclTerraform(this._storageClass),
+        value: cdktn.stringToHclTerraform(this._storageClass),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

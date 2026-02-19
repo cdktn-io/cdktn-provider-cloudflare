@@ -1,59 +1,59 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CustomSslConfig extends cdktf.TerraformMetaArguments {
+export interface CustomSslConfig extends cdktn.TerraformMetaArguments {
   /**
   * A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
   * Available values: "ubiquitous", "optimal", "force".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
   */
   readonly bundleMethod?: string;
   /**
   * The zone's SSL certificate or certificate and the intermediate(s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
   */
   readonly certificate: string;
   /**
   * Specify the region where your private key can be held locally for optimal TLS performance. HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Options allow distribution to only to U.S. data centers, only to E.U. data centers, or only to highest security data centers. Default distribution is to all Cloudflare datacenters, for optimal performance.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
   */
   readonly geoRestrictions?: CustomSslGeoRestrictions;
   /**
   * Specify the policy that determines the region where your private key will be held locally. HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Any combination of countries, specified by their two letter country code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) can be chosen, such as 'country: IN', as well as 'region: EU' which refers to the EU region. If there are too few data centers satisfying the policy, it will be rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#policy CustomSsl#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#policy CustomSsl#policy}
   */
   readonly policy?: string;
   /**
   * The zone's private key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
   */
   readonly privateKey: string;
   /**
   * The type 'legacy_custom' enables support for legacy clients which do not include SNI in the TLS handshake.
   * Available values: "legacy_custom", "sni_custom".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#type CustomSsl#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#type CustomSsl#type}
   */
   readonly type?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
   */
   readonly zoneId: string;
 }
@@ -61,30 +61,30 @@ export interface CustomSslGeoRestrictions {
   /**
   * Available values: "us", "eu", "highest_security".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#label CustomSsl#label}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#label CustomSsl#label}
   */
   readonly label?: string;
 }
 
-export function customSslGeoRestrictionsToTerraform(struct?: CustomSslGeoRestrictions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customSslGeoRestrictionsToTerraform(struct?: CustomSslGeoRestrictions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    label: cdktf.stringToTerraform(struct!.label),
+    label: cdktn.stringToTerraform(struct!.label),
   }
 }
 
 
-export function customSslGeoRestrictionsToHclTerraform(struct?: CustomSslGeoRestrictions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function customSslGeoRestrictionsToHclTerraform(struct?: CustomSslGeoRestrictions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     label: {
-      value: cdktf.stringToHclTerraform(struct!.label),
+      value: cdktn.stringToHclTerraform(struct!.label),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -95,19 +95,19 @@ export function customSslGeoRestrictionsToHclTerraform(struct?: CustomSslGeoRest
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class CustomSslGeoRestrictionsOutputReference extends cdktf.ComplexObject {
+export class CustomSslGeoRestrictionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): CustomSslGeoRestrictions | cdktf.IResolvable | undefined {
+  public get internalValue(): CustomSslGeoRestrictions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,13 +120,13 @@ export class CustomSslGeoRestrictionsOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: CustomSslGeoRestrictions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: CustomSslGeoRestrictions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._label = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -157,8 +157,8 @@ export interface CustomSslKeylessServerTunnel {
 }
 
 export function customSslKeylessServerTunnelToTerraform(struct?: CustomSslKeylessServerTunnel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -167,8 +167,8 @@ export function customSslKeylessServerTunnelToTerraform(struct?: CustomSslKeyles
 
 
 export function customSslKeylessServerTunnelToHclTerraform(struct?: CustomSslKeylessServerTunnel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -176,14 +176,14 @@ export function customSslKeylessServerTunnelToHclTerraform(struct?: CustomSslKey
   return attrs;
 }
 
-export class CustomSslKeylessServerTunnelOutputReference extends cdktf.ComplexObject {
+export class CustomSslKeylessServerTunnelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -216,8 +216,8 @@ export interface CustomSslKeylessServer {
 }
 
 export function customSslKeylessServerToTerraform(struct?: CustomSslKeylessServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -226,8 +226,8 @@ export function customSslKeylessServerToTerraform(struct?: CustomSslKeylessServe
 
 
 export function customSslKeylessServerToHclTerraform(struct?: CustomSslKeylessServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -235,14 +235,14 @@ export function customSslKeylessServerToHclTerraform(struct?: CustomSslKeylessSe
   return attrs;
 }
 
-export class CustomSslKeylessServerOutputReference extends cdktf.ComplexObject {
+export class CustomSslKeylessServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -314,9 +314,9 @@ export class CustomSslKeylessServerOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl cloudflare_custom_ssl}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl cloudflare_custom_ssl}
 */
-export class CustomSsl extends cdktf.TerraformResource {
+export class CustomSsl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -327,14 +327,14 @@ export class CustomSsl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CustomSsl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CustomSsl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CustomSsl to import
-  * @param importFromId The id of the existing CustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CustomSsl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_custom_ssl", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_custom_ssl", importId: importFromId, provider });
       }
 
   // ===========
@@ -342,7 +342,7 @@ export class CustomSsl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl cloudflare_custom_ssl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -353,7 +353,7 @@ export class CustomSsl extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_custom_ssl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -537,26 +537,26 @@ export class CustomSsl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_method: cdktf.stringToTerraform(this._bundleMethod),
-      certificate: cdktf.stringToTerraform(this._certificate),
+      bundle_method: cdktn.stringToTerraform(this._bundleMethod),
+      certificate: cdktn.stringToTerraform(this._certificate),
       geo_restrictions: customSslGeoRestrictionsToTerraform(this._geoRestrictions.internalValue),
-      policy: cdktf.stringToTerraform(this._policy),
-      private_key: cdktf.stringToTerraform(this._privateKey),
-      type: cdktf.stringToTerraform(this._type),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      policy: cdktn.stringToTerraform(this._policy),
+      private_key: cdktn.stringToTerraform(this._privateKey),
+      type: cdktn.stringToTerraform(this._type),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bundle_method: {
-        value: cdktf.stringToHclTerraform(this._bundleMethod),
+        value: cdktn.stringToHclTerraform(this._bundleMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate: {
-        value: cdktf.stringToHclTerraform(this._certificate),
+        value: cdktn.stringToHclTerraform(this._certificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -568,25 +568,25 @@ export class CustomSsl extends cdktf.TerraformResource {
         storageClassType: "CustomSslGeoRestrictions",
       },
       policy: {
-        value: cdktf.stringToHclTerraform(this._policy),
+        value: cdktn.stringToHclTerraform(this._policy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       private_key: {
-        value: cdktf.stringToHclTerraform(this._privateKey),
+        value: cdktn.stringToHclTerraform(this._privateKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

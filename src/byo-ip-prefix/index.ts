@@ -1,59 +1,59 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ByoIpPrefixConfig extends cdktf.TerraformMetaArguments {
+export interface ByoIpPrefixConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier of a Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
   */
   readonly accountId: string;
   /**
   * Autonomous System Number (ASN) the prefix will be advertised under.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
   */
   readonly asn: number;
   /**
   * IP Prefix in Classless Inter-Domain Routing format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
   */
   readonly cidr: string;
   /**
   * Whether Cloudflare is allowed to generate the LOA document on behalf of the prefix owner.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
   */
-  readonly delegateLoaCreation?: boolean | cdktf.IResolvable;
+  readonly delegateLoaCreation?: boolean | cdktn.IResolvable;
   /**
   * Description of the prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
   */
   readonly description?: string;
   /**
   * Identifier for the uploaded LOA document.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
   */
   readonly loaDocumentId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}
 */
-export class ByoIpPrefix extends cdktf.TerraformResource {
+export class ByoIpPrefix extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -64,14 +64,14 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ByoIpPrefix resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ByoIpPrefix resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ByoIpPrefix to import
-  * @param importFromId The id of the existing ByoIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ByoIpPrefix that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ByoIpPrefix to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_byo_ip_prefix", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_byo_ip_prefix", importId: importFromId, provider });
       }
 
   // ===========
@@ -79,7 +79,7 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -90,7 +90,7 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_byo_ip_prefix',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -173,11 +173,11 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
   }
 
   // delegate_loa_creation - computed: true, optional: true, required: false
-  private _delegateLoaCreation?: boolean | cdktf.IResolvable; 
+  private _delegateLoaCreation?: boolean | cdktn.IResolvable; 
   public get delegateLoaCreation() {
     return this.getBooleanAttribute('delegate_loa_creation');
   }
-  public set delegateLoaCreation(value: boolean | cdktf.IResolvable) {
+  public set delegateLoaCreation(value: boolean | cdktn.IResolvable) {
     this._delegateLoaCreation = value;
   }
   public resetDelegateLoaCreation() {
@@ -266,49 +266,49 @@ export class ByoIpPrefix extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      asn: cdktf.numberToTerraform(this._asn),
-      cidr: cdktf.stringToTerraform(this._cidr),
-      delegate_loa_creation: cdktf.booleanToTerraform(this._delegateLoaCreation),
-      description: cdktf.stringToTerraform(this._description),
-      loa_document_id: cdktf.stringToTerraform(this._loaDocumentId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      asn: cdktn.numberToTerraform(this._asn),
+      cidr: cdktn.stringToTerraform(this._cidr),
+      delegate_loa_creation: cdktn.booleanToTerraform(this._delegateLoaCreation),
+      description: cdktn.stringToTerraform(this._description),
+      loa_document_id: cdktn.stringToTerraform(this._loaDocumentId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       asn: {
-        value: cdktf.numberToHclTerraform(this._asn),
+        value: cdktn.numberToHclTerraform(this._asn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       cidr: {
-        value: cdktf.stringToHclTerraform(this._cidr),
+        value: cdktn.stringToHclTerraform(this._cidr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       delegate_loa_creation: {
-        value: cdktf.booleanToHclTerraform(this._delegateLoaCreation),
+        value: cdktn.booleanToHclTerraform(this._delegateLoaCreation),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       loa_document_id: {
-        value: cdktf.stringToHclTerraform(this._loaDocumentId),
+        value: cdktn.stringToHclTerraform(this._loaDocumentId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

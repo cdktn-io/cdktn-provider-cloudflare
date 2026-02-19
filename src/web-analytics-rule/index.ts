@@ -1,55 +1,55 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebAnalyticsRuleConfig extends cdktf.TerraformMetaArguments {
+export interface WebAnalyticsRuleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}
   */
   readonly host?: string;
   /**
   * Whether the rule includes or excludes traffic from being measured.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
   */
-  readonly inclusive?: boolean | cdktf.IResolvable;
+  readonly inclusive?: boolean | cdktn.IResolvable;
   /**
   * Whether the rule is paused or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
   */
-  readonly isPaused?: boolean | cdktf.IResolvable;
+  readonly isPaused?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}
   */
   readonly paths?: string[];
   /**
   * The Web Analytics ruleset identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
   */
   readonly rulesetId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}
 */
-export class WebAnalyticsRule extends cdktf.TerraformResource {
+export class WebAnalyticsRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -60,14 +60,14 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WebAnalyticsRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WebAnalyticsRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebAnalyticsRule to import
-  * @param importFromId The id of the existing WebAnalyticsRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebAnalyticsRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebAnalyticsRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_web_analytics_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_web_analytics_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -75,7 +75,7 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,7 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_web_analytics_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -149,11 +149,11 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   }
 
   // inclusive - computed: false, optional: true, required: false
-  private _inclusive?: boolean | cdktf.IResolvable; 
+  private _inclusive?: boolean | cdktn.IResolvable; 
   public get inclusive() {
     return this.getBooleanAttribute('inclusive');
   }
-  public set inclusive(value: boolean | cdktf.IResolvable) {
+  public set inclusive(value: boolean | cdktn.IResolvable) {
     this._inclusive = value;
   }
   public resetInclusive() {
@@ -165,11 +165,11 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
   }
 
   // is_paused - computed: false, optional: true, required: false
-  private _isPaused?: boolean | cdktf.IResolvable; 
+  private _isPaused?: boolean | cdktn.IResolvable; 
   public get isPaused() {
     return this.getBooleanAttribute('is_paused');
   }
-  public set isPaused(value: boolean | cdktf.IResolvable) {
+  public set isPaused(value: boolean | cdktn.IResolvable) {
     this._isPaused = value;
   }
   public resetIsPaused() {
@@ -220,49 +220,49 @@ export class WebAnalyticsRule extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      host: cdktf.stringToTerraform(this._host),
-      inclusive: cdktf.booleanToTerraform(this._inclusive),
-      is_paused: cdktf.booleanToTerraform(this._isPaused),
-      paths: cdktf.listMapper(cdktf.stringToTerraform, false)(this._paths),
-      ruleset_id: cdktf.stringToTerraform(this._rulesetId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      host: cdktn.stringToTerraform(this._host),
+      inclusive: cdktn.booleanToTerraform(this._inclusive),
+      is_paused: cdktn.booleanToTerraform(this._isPaused),
+      paths: cdktn.listMapper(cdktn.stringToTerraform, false)(this._paths),
+      ruleset_id: cdktn.stringToTerraform(this._rulesetId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       inclusive: {
-        value: cdktf.booleanToHclTerraform(this._inclusive),
+        value: cdktn.booleanToHclTerraform(this._inclusive),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_paused: {
-        value: cdktf.booleanToHclTerraform(this._isPaused),
+        value: cdktn.booleanToHclTerraform(this._isPaused),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       paths: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._paths),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._paths),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ruleset_id: {
-        value: cdktf.stringToHclTerraform(this._rulesetId),
+        value: cdktn.stringToHclTerraform(this._rulesetId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

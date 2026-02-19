@@ -1,72 +1,72 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareCloudforceOneRequestMessageConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareCloudforceOneRequestMessageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#account_id DataCloudflareCloudforceOneRequestMessage#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#account_id DataCloudflareCloudforceOneRequestMessage#account_id}
   */
   readonly accountId: string;
   /**
   * Retrieve mes  ges created after this time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#after DataCloudflareCloudforceOneRequestMessage#after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#after DataCloudflareCloudforceOneRequestMessage#after}
   */
   readonly after?: string;
   /**
   * Retrieve messages created before this time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#before DataCloudflareCloudforceOneRequestMessage#before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#before DataCloudflareCloudforceOneRequestMessage#before}
   */
   readonly before?: string;
   /**
   * Page number of results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#page DataCloudflareCloudforceOneRequestMessage#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#page DataCloudflareCloudforceOneRequestMessage#page}
   */
   readonly page: number;
   /**
   * Number of results per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#per_page DataCloudflareCloudforceOneRequestMessage#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#per_page DataCloudflareCloudforceOneRequestMessage#per_page}
   */
   readonly perPage: number;
   /**
   * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#request_id DataCloudflareCloudforceOneRequestMessage#request_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#request_id DataCloudflareCloudforceOneRequestMessage#request_id}
   */
   readonly requestId: string;
   /**
   * Field to sort results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#sort_by DataCloudflareCloudforceOneRequestMessage#sort_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#sort_by DataCloudflareCloudforceOneRequestMessage#sort_by}
   */
   readonly sortBy?: string;
   /**
   * Sort order (asc or desc).
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#sort_order DataCloudflareCloudforceOneRequestMessage#sort_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#sort_order DataCloudflareCloudforceOneRequestMessage#sort_order}
   */
   readonly sortOrder?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}
 */
-export class DataCloudflareCloudforceOneRequestMessage extends cdktf.TerraformDataSource {
+export class DataCloudflareCloudforceOneRequestMessage extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -77,14 +77,14 @@ export class DataCloudflareCloudforceOneRequestMessage extends cdktf.TerraformDa
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareCloudforceOneRequestMessage resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareCloudforceOneRequestMessage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCloudforceOneRequestMessage to import
-  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequestMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequestMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCloudforceOneRequestMessage to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_request_message", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_request_message", importId: importFromId, provider });
       }
 
   // ===========
@@ -92,7 +92,7 @@ export class DataCloudflareCloudforceOneRequestMessage extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -103,7 +103,7 @@ export class DataCloudflareCloudforceOneRequestMessage extends cdktf.TerraformDa
       terraformResourceType: 'cloudflare_cloudforce_one_request_message',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -280,63 +280,63 @@ export class DataCloudflareCloudforceOneRequestMessage extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      after: cdktf.stringToTerraform(this._after),
-      before: cdktf.stringToTerraform(this._before),
-      page: cdktf.numberToTerraform(this._page),
-      per_page: cdktf.numberToTerraform(this._perPage),
-      request_id: cdktf.stringToTerraform(this._requestId),
-      sort_by: cdktf.stringToTerraform(this._sortBy),
-      sort_order: cdktf.stringToTerraform(this._sortOrder),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      after: cdktn.stringToTerraform(this._after),
+      before: cdktn.stringToTerraform(this._before),
+      page: cdktn.numberToTerraform(this._page),
+      per_page: cdktn.numberToTerraform(this._perPage),
+      request_id: cdktn.stringToTerraform(this._requestId),
+      sort_by: cdktn.stringToTerraform(this._sortBy),
+      sort_order: cdktn.stringToTerraform(this._sortOrder),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       after: {
-        value: cdktf.stringToHclTerraform(this._after),
+        value: cdktn.stringToHclTerraform(this._after),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       before: {
-        value: cdktf.stringToHclTerraform(this._before),
+        value: cdktn.stringToHclTerraform(this._before),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page: {
-        value: cdktf.numberToHclTerraform(this._page),
+        value: cdktn.numberToHclTerraform(this._page),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       per_page: {
-        value: cdktf.numberToHclTerraform(this._perPage),
+        value: cdktn.numberToHclTerraform(this._perPage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       request_id: {
-        value: cdktf.stringToHclTerraform(this._requestId),
+        value: cdktn.stringToHclTerraform(this._requestId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sort_by: {
-        value: cdktf.stringToHclTerraform(this._sortBy),
+        value: cdktn.stringToHclTerraform(this._sortBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sort_order: {
-        value: cdktf.stringToHclTerraform(this._sortOrder),
+        value: cdktn.stringToHclTerraform(this._sortOrder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

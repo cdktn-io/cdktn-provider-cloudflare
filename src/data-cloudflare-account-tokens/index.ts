@@ -1,34 +1,34 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_tokens
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_tokens
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareAccountTokensConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareAccountTokensConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
   */
   readonly accountId: string;
   /**
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
   */
   readonly direction?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
   */
   readonly maxItems?: number;
 }
@@ -36,8 +36,8 @@ export interface DataCloudflareAccountTokensResultConditionRequestIp {
 }
 
 export function dataCloudflareAccountTokensResultConditionRequestIpToTerraform(struct?: DataCloudflareAccountTokensResultConditionRequestIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -46,8 +46,8 @@ export function dataCloudflareAccountTokensResultConditionRequestIpToTerraform(s
 
 
 export function dataCloudflareAccountTokensResultConditionRequestIpToHclTerraform(struct?: DataCloudflareAccountTokensResultConditionRequestIp): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -55,14 +55,14 @@ export function dataCloudflareAccountTokensResultConditionRequestIpToHclTerrafor
   return attrs;
 }
 
-export class DataCloudflareAccountTokensResultConditionRequestIpOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountTokensResultConditionRequestIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -95,8 +95,8 @@ export interface DataCloudflareAccountTokensResultCondition {
 }
 
 export function dataCloudflareAccountTokensResultConditionToTerraform(struct?: DataCloudflareAccountTokensResultCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -105,8 +105,8 @@ export function dataCloudflareAccountTokensResultConditionToTerraform(struct?: D
 
 
 export function dataCloudflareAccountTokensResultConditionToHclTerraform(struct?: DataCloudflareAccountTokensResultCondition): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -114,14 +114,14 @@ export function dataCloudflareAccountTokensResultConditionToHclTerraform(struct?
   return attrs;
 }
 
-export class DataCloudflareAccountTokensResultConditionOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountTokensResultConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -150,8 +150,8 @@ export interface DataCloudflareAccountTokensResultPoliciesPermissionGroupsMeta {
 }
 
 export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaToTerraform(struct?: DataCloudflareAccountTokensResultPoliciesPermissionGroupsMeta): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -160,8 +160,8 @@ export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaToT
 
 
 export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaToHclTerraform(struct?: DataCloudflareAccountTokensResultPoliciesPermissionGroupsMeta): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -169,14 +169,14 @@ export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaToH
   return attrs;
 }
 
-export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsMetaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -209,8 +209,8 @@ export interface DataCloudflareAccountTokensResultPoliciesPermissionGroups {
 }
 
 export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsToTerraform(struct?: DataCloudflareAccountTokensResultPoliciesPermissionGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -219,8 +219,8 @@ export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsToTerra
 
 
 export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsToHclTerraform(struct?: DataCloudflareAccountTokensResultPoliciesPermissionGroups): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -228,7 +228,7 @@ export function dataCloudflareAccountTokensResultPoliciesPermissionGroupsToHclTe
   return attrs;
 }
 
-export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -237,7 +237,7 @@ export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsOutputRefe
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -273,14 +273,14 @@ export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsOutputRefe
   }
 }
 
-export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsList extends cdktf.ComplexList {
+export class DataCloudflareAccountTokensResultPoliciesPermissionGroupsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -295,8 +295,8 @@ export interface DataCloudflareAccountTokensResultPolicies {
 }
 
 export function dataCloudflareAccountTokensResultPoliciesToTerraform(struct?: DataCloudflareAccountTokensResultPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -305,8 +305,8 @@ export function dataCloudflareAccountTokensResultPoliciesToTerraform(struct?: Da
 
 
 export function dataCloudflareAccountTokensResultPoliciesToHclTerraform(struct?: DataCloudflareAccountTokensResultPolicies): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -314,7 +314,7 @@ export function dataCloudflareAccountTokensResultPoliciesToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataCloudflareAccountTokensResultPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountTokensResultPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -323,7 +323,7 @@ export class DataCloudflareAccountTokensResultPoliciesOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -359,20 +359,20 @@ export class DataCloudflareAccountTokensResultPoliciesOutputReference extends cd
   }
 
   // resources - computed: true, optional: false, required: false
-  private _resources = new cdktf.StringMap(this, "resources");
+  private _resources = new cdktn.StringMap(this, "resources");
   public get resources() {
     return this._resources;
   }
 }
 
-export class DataCloudflareAccountTokensResultPoliciesList extends cdktf.ComplexList {
+export class DataCloudflareAccountTokensResultPoliciesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -387,8 +387,8 @@ export interface DataCloudflareAccountTokensResult {
 }
 
 export function dataCloudflareAccountTokensResultToTerraform(struct?: DataCloudflareAccountTokensResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -397,8 +397,8 @@ export function dataCloudflareAccountTokensResultToTerraform(struct?: DataCloudf
 
 
 export function dataCloudflareAccountTokensResultToHclTerraform(struct?: DataCloudflareAccountTokensResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -406,7 +406,7 @@ export function dataCloudflareAccountTokensResultToHclTerraform(struct?: DataClo
   return attrs;
 }
 
-export class DataCloudflareAccountTokensResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountTokensResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -415,7 +415,7 @@ export class DataCloudflareAccountTokensResultOutputReference extends cdktf.Comp
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -487,14 +487,14 @@ export class DataCloudflareAccountTokensResultOutputReference extends cdktf.Comp
   }
 }
 
-export class DataCloudflareAccountTokensResultList extends cdktf.ComplexList {
+export class DataCloudflareAccountTokensResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -507,9 +507,9 @@ export class DataCloudflareAccountTokensResultList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_tokens cloudflare_account_tokens}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_tokens cloudflare_account_tokens}
 */
-export class DataCloudflareAccountTokens extends cdktf.TerraformDataSource {
+export class DataCloudflareAccountTokens extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -520,14 +520,14 @@ export class DataCloudflareAccountTokens extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareAccountTokens resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareAccountTokens resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccountTokens to import
-  * @param importFromId The id of the existing DataCloudflareAccountTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccountTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccountTokens to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_tokens", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_tokens", importId: importFromId, provider });
       }
 
   // ===========
@@ -535,7 +535,7 @@ export class DataCloudflareAccountTokens extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_tokens cloudflare_account_tokens} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_tokens cloudflare_account_tokens} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -546,7 +546,7 @@ export class DataCloudflareAccountTokens extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_account_tokens',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -623,28 +623,28 @@ export class DataCloudflareAccountTokens extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      direction: cdktf.stringToTerraform(this._direction),
-      max_items: cdktf.numberToTerraform(this._maxItems),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      direction: cdktn.stringToTerraform(this._direction),
+      max_items: cdktn.numberToTerraform(this._maxItems),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

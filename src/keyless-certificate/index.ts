@@ -1,64 +1,64 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface KeylessCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface KeylessCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
   * Available values: "ubiquitous", "optimal", "force".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
   */
   readonly bundleMethod?: string;
   /**
   * The zone's SSL certificate or SSL certificate and intermediate(s).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
   */
   readonly certificate: string;
   /**
   * Whether or not the Keyless SSL is on or off.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The keyless SSL name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
   */
   readonly host: string;
   /**
   * The keyless SSL name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
   */
   readonly name?: string;
   /**
   * The keyless SSL port used to communicate between Cloudflare and the client's Keyless SSL server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
   */
   readonly port?: number;
   /**
   * Configuration for using Keyless SSL through a Cloudflare Tunnel
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
   */
   readonly tunnel?: KeylessCertificateTunnel;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
   */
   readonly zoneId: string;
 }
@@ -66,43 +66,43 @@ export interface KeylessCertificateTunnel {
   /**
   * Private IP of the Key Server Host
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
   */
   readonly privateIp: string;
   /**
   * Cloudflare Tunnel Virtual Network ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
   */
   readonly vnetId: string;
 }
 
-export function keylessCertificateTunnelToTerraform(struct?: KeylessCertificateTunnel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keylessCertificateTunnelToTerraform(struct?: KeylessCertificateTunnel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    private_ip: cdktf.stringToTerraform(struct!.privateIp),
-    vnet_id: cdktf.stringToTerraform(struct!.vnetId),
+    private_ip: cdktn.stringToTerraform(struct!.privateIp),
+    vnet_id: cdktn.stringToTerraform(struct!.vnetId),
   }
 }
 
 
-export function keylessCertificateTunnelToHclTerraform(struct?: KeylessCertificateTunnel | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function keylessCertificateTunnelToHclTerraform(struct?: KeylessCertificateTunnel | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     private_ip: {
-      value: cdktf.stringToHclTerraform(struct!.privateIp),
+      value: cdktn.stringToHclTerraform(struct!.privateIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vnet_id: {
-      value: cdktf.stringToHclTerraform(struct!.vnetId),
+      value: cdktn.stringToHclTerraform(struct!.vnetId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -113,19 +113,19 @@ export function keylessCertificateTunnelToHclTerraform(struct?: KeylessCertifica
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class KeylessCertificateTunnelOutputReference extends cdktf.ComplexObject {
+export class KeylessCertificateTunnelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): KeylessCertificateTunnel | cdktf.IResolvable | undefined {
+  public get internalValue(): KeylessCertificateTunnel | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -142,14 +142,14 @@ export class KeylessCertificateTunnelOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: KeylessCertificateTunnel | cdktf.IResolvable | undefined) {
+  public set internalValue(value: KeylessCertificateTunnel | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._privateIp = undefined;
       this._vnetId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -189,9 +189,9 @@ export class KeylessCertificateTunnelOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}
 */
-export class KeylessCertificate extends cdktf.TerraformResource {
+export class KeylessCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -202,14 +202,14 @@ export class KeylessCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a KeylessCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a KeylessCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the KeylessCertificate to import
-  * @param importFromId The id of the existing KeylessCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing KeylessCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the KeylessCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_keyless_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_keyless_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -217,7 +217,7 @@ export class KeylessCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/keyless_certificate cloudflare_keyless_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -228,7 +228,7 @@ export class KeylessCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_keyless_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -288,11 +288,11 @@ export class KeylessCertificate extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -403,51 +403,51 @@ export class KeylessCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      bundle_method: cdktf.stringToTerraform(this._bundleMethod),
-      certificate: cdktf.stringToTerraform(this._certificate),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      host: cdktf.stringToTerraform(this._host),
-      name: cdktf.stringToTerraform(this._name),
-      port: cdktf.numberToTerraform(this._port),
+      bundle_method: cdktn.stringToTerraform(this._bundleMethod),
+      certificate: cdktn.stringToTerraform(this._certificate),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      host: cdktn.stringToTerraform(this._host),
+      name: cdktn.stringToTerraform(this._name),
+      port: cdktn.numberToTerraform(this._port),
       tunnel: keylessCertificateTunnelToTerraform(this._tunnel.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       bundle_method: {
-        value: cdktf.stringToHclTerraform(this._bundleMethod),
+        value: cdktn.stringToHclTerraform(this._bundleMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       certificate: {
-        value: cdktf.stringToHclTerraform(this._certificate),
+        value: cdktn.stringToHclTerraform(this._certificate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -459,7 +459,7 @@ export class KeylessCertificate extends cdktf.TerraformResource {
         storageClassType: "KeylessCertificateTunnel",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

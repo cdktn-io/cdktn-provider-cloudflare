@@ -1,17 +1,17 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_hold
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZoneHoldConfig extends cdktf.TerraformMetaArguments {
+export interface ZoneHoldConfig extends cdktn.TerraformMetaArguments {
   /**
   * If `hold_after` is provided and future-dated, the hold will be temporarily disabled,
   * then automatically re-enabled by the system at the time specified
@@ -19,7 +19,7 @@ export interface ZoneHoldConfig extends cdktf.TerraformMetaArguments {
   * no effect on an existing, enabled hold. Providing an empty string will set its value
   * to the current time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_hold#hold_after ZoneHold#hold_after}
   */
   readonly holdAfter?: string;
   /**
@@ -28,21 +28,21 @@ export interface ZoneHoldConfig extends cdktf.TerraformMetaArguments {
   * 'example.com' and include_subdomains=true will block 'example.com',
   * 'staging.example.com', 'api.staging.example.com', etc.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_hold#include_subdomains ZoneHold#include_subdomains}
   */
-  readonly includeSubdomains?: boolean | cdktf.IResolvable;
+  readonly includeSubdomains?: boolean | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_hold#zone_id ZoneHold#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold cloudflare_zone_hold}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_hold cloudflare_zone_hold}
 */
-export class ZoneHold extends cdktf.TerraformResource {
+export class ZoneHold extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class ZoneHold extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZoneHold resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZoneHold resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneHold to import
-  * @param importFromId The id of the existing ZoneHold that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneHold that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_hold#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneHold to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_hold", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_hold", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class ZoneHold extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_hold cloudflare_zone_hold} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_hold cloudflare_zone_hold} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class ZoneHold extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_hold',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -126,11 +126,11 @@ export class ZoneHold extends cdktf.TerraformResource {
   }
 
   // include_subdomains - computed: true, optional: true, required: false
-  private _includeSubdomains?: boolean | cdktf.IResolvable; 
+  private _includeSubdomains?: boolean | cdktn.IResolvable; 
   public get includeSubdomains() {
     return this.getBooleanAttribute('include_subdomains');
   }
-  public set includeSubdomains(value: boolean | cdktf.IResolvable) {
+  public set includeSubdomains(value: boolean | cdktn.IResolvable) {
     this._includeSubdomains = value;
   }
   public resetIncludeSubdomains() {
@@ -160,28 +160,28 @@ export class ZoneHold extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hold_after: cdktf.stringToTerraform(this._holdAfter),
-      include_subdomains: cdktf.booleanToTerraform(this._includeSubdomains),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      hold_after: cdktn.stringToTerraform(this._holdAfter),
+      include_subdomains: cdktn.booleanToTerraform(this._includeSubdomains),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hold_after: {
-        value: cdktf.stringToHclTerraform(this._holdAfter),
+        value: cdktn.stringToHclTerraform(this._holdAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_subdomains: {
-        value: cdktf.booleanToHclTerraform(this._includeSubdomains),
+        value: cdktn.booleanToHclTerraform(this._includeSubdomains),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

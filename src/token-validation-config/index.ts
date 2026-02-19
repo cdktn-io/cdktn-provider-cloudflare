@@ -1,43 +1,43 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TokenValidationConfigConfig extends cdktf.TerraformMetaArguments {
+export interface TokenValidationConfigConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}
   */
   readonly credentials: TokenValidationConfigCredentials;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#description TokenValidationConfig#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#description TokenValidationConfig#description}
   */
   readonly description: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#title TokenValidationConfig#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#title TokenValidationConfig#title}
   */
   readonly title: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}
   */
   readonly tokenSources: string[];
   /**
   * Available values: "JWT".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
   */
   readonly tokenType: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
   */
   readonly zoneId: string;
 }
@@ -46,123 +46,123 @@ export interface TokenValidationConfigCredentialsKeys {
   * Algorithm
   * Available values: "RS256", "RS384", "RS512", "PS256", "PS384", "PS512", "ES256", "ES384".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#alg TokenValidationConfig#alg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#alg TokenValidationConfig#alg}
   */
   readonly alg: string;
   /**
   * Curve
   * Available values: "P-256", "P-384".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#crv TokenValidationConfig#crv}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#crv TokenValidationConfig#crv}
   */
   readonly crv?: string;
   /**
   * RSA exponent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#e TokenValidationConfig#e}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#e TokenValidationConfig#e}
   */
   readonly e?: string;
   /**
   * Key ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#kid TokenValidationConfig#kid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#kid TokenValidationConfig#kid}
   */
   readonly kid: string;
   /**
   * Key Type
   * Available values: "RSA", "EC".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#kty TokenValidationConfig#kty}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#kty TokenValidationConfig#kty}
   */
   readonly kty: string;
   /**
   * RSA modulus
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#n TokenValidationConfig#n}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#n TokenValidationConfig#n}
   */
   readonly n?: string;
   /**
   * X EC coordinate
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#x TokenValidationConfig#x}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#x TokenValidationConfig#x}
   */
   readonly x?: string;
   /**
   * Y EC coordinate
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#y TokenValidationConfig#y}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#y TokenValidationConfig#y}
   */
   readonly y?: string;
 }
 
-export function tokenValidationConfigCredentialsKeysToTerraform(struct?: TokenValidationConfigCredentialsKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationConfigCredentialsKeysToTerraform(struct?: TokenValidationConfigCredentialsKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    alg: cdktf.stringToTerraform(struct!.alg),
-    crv: cdktf.stringToTerraform(struct!.crv),
-    e: cdktf.stringToTerraform(struct!.e),
-    kid: cdktf.stringToTerraform(struct!.kid),
-    kty: cdktf.stringToTerraform(struct!.kty),
-    n: cdktf.stringToTerraform(struct!.n),
-    x: cdktf.stringToTerraform(struct!.x),
-    y: cdktf.stringToTerraform(struct!.y),
+    alg: cdktn.stringToTerraform(struct!.alg),
+    crv: cdktn.stringToTerraform(struct!.crv),
+    e: cdktn.stringToTerraform(struct!.e),
+    kid: cdktn.stringToTerraform(struct!.kid),
+    kty: cdktn.stringToTerraform(struct!.kty),
+    n: cdktn.stringToTerraform(struct!.n),
+    x: cdktn.stringToTerraform(struct!.x),
+    y: cdktn.stringToTerraform(struct!.y),
   }
 }
 
 
-export function tokenValidationConfigCredentialsKeysToHclTerraform(struct?: TokenValidationConfigCredentialsKeys | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationConfigCredentialsKeysToHclTerraform(struct?: TokenValidationConfigCredentialsKeys | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     alg: {
-      value: cdktf.stringToHclTerraform(struct!.alg),
+      value: cdktn.stringToHclTerraform(struct!.alg),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     crv: {
-      value: cdktf.stringToHclTerraform(struct!.crv),
+      value: cdktn.stringToHclTerraform(struct!.crv),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     e: {
-      value: cdktf.stringToHclTerraform(struct!.e),
+      value: cdktn.stringToHclTerraform(struct!.e),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kid: {
-      value: cdktf.stringToHclTerraform(struct!.kid),
+      value: cdktn.stringToHclTerraform(struct!.kid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kty: {
-      value: cdktf.stringToHclTerraform(struct!.kty),
+      value: cdktn.stringToHclTerraform(struct!.kty),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     n: {
-      value: cdktf.stringToHclTerraform(struct!.n),
+      value: cdktn.stringToHclTerraform(struct!.n),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     x: {
-      value: cdktf.stringToHclTerraform(struct!.x),
+      value: cdktn.stringToHclTerraform(struct!.x),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     y: {
-      value: cdktf.stringToHclTerraform(struct!.y),
+      value: cdktn.stringToHclTerraform(struct!.y),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -173,9 +173,9 @@ export function tokenValidationConfigCredentialsKeysToHclTerraform(struct?: Toke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenValidationConfigCredentialsKeysOutputReference extends cdktf.ComplexObject {
+export class TokenValidationConfigCredentialsKeysOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -183,11 +183,11 @@ export class TokenValidationConfigCredentialsKeysOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TokenValidationConfigCredentialsKeys | cdktf.IResolvable | undefined {
+  public get internalValue(): TokenValidationConfigCredentialsKeys | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -228,7 +228,7 @@ export class TokenValidationConfigCredentialsKeysOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TokenValidationConfigCredentialsKeys | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TokenValidationConfigCredentialsKeys | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -241,7 +241,7 @@ export class TokenValidationConfigCredentialsKeysOutputReference extends cdktf.C
       this._x = undefined;
       this._y = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -379,15 +379,15 @@ export class TokenValidationConfigCredentialsKeysOutputReference extends cdktf.C
   }
 }
 
-export class TokenValidationConfigCredentialsKeysList extends cdktf.ComplexList {
-  public internalValue? : TokenValidationConfigCredentialsKeys[] | cdktf.IResolvable
+export class TokenValidationConfigCredentialsKeysList extends cdktn.ComplexList {
+  public internalValue? : TokenValidationConfigCredentialsKeys[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -400,30 +400,30 @@ export class TokenValidationConfigCredentialsKeysList extends cdktf.ComplexList 
 }
 export interface TokenValidationConfigCredentials {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}
   */
-  readonly keys: TokenValidationConfigCredentialsKeys[] | cdktf.IResolvable;
+  readonly keys: TokenValidationConfigCredentialsKeys[] | cdktn.IResolvable;
 }
 
-export function tokenValidationConfigCredentialsToTerraform(struct?: TokenValidationConfigCredentials | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationConfigCredentialsToTerraform(struct?: TokenValidationConfigCredentials | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    keys: cdktf.listMapper(tokenValidationConfigCredentialsKeysToTerraform, false)(struct!.keys),
+    keys: cdktn.listMapper(tokenValidationConfigCredentialsKeysToTerraform, false)(struct!.keys),
   }
 }
 
 
-export function tokenValidationConfigCredentialsToHclTerraform(struct?: TokenValidationConfigCredentials | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationConfigCredentialsToHclTerraform(struct?: TokenValidationConfigCredentials | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     keys: {
-      value: cdktf.listMapperHcl(tokenValidationConfigCredentialsKeysToHclTerraform, false)(struct!.keys),
+      value: cdktn.listMapperHcl(tokenValidationConfigCredentialsKeysToHclTerraform, false)(struct!.keys),
       isBlock: true,
       type: "list",
       storageClassType: "TokenValidationConfigCredentialsKeysList",
@@ -434,19 +434,19 @@ export function tokenValidationConfigCredentialsToHclTerraform(struct?: TokenVal
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenValidationConfigCredentialsOutputReference extends cdktf.ComplexObject {
+export class TokenValidationConfigCredentialsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TokenValidationConfigCredentials | cdktf.IResolvable | undefined {
+  public get internalValue(): TokenValidationConfigCredentials | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -459,13 +459,13 @@ export class TokenValidationConfigCredentialsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TokenValidationConfigCredentials | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TokenValidationConfigCredentials | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._keys.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -481,7 +481,7 @@ export class TokenValidationConfigCredentialsOutputReference extends cdktf.Compl
   public get keys() {
     return this._keys;
   }
-  public putKeys(value: TokenValidationConfigCredentialsKeys[] | cdktf.IResolvable) {
+  public putKeys(value: TokenValidationConfigCredentialsKeys[] | cdktn.IResolvable) {
     this._keys.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -491,9 +491,9 @@ export class TokenValidationConfigCredentialsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config cloudflare_token_validation_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config cloudflare_token_validation_config}
 */
-export class TokenValidationConfig extends cdktf.TerraformResource {
+export class TokenValidationConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -504,14 +504,14 @@ export class TokenValidationConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TokenValidationConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TokenValidationConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TokenValidationConfig to import
-  * @param importFromId The id of the existing TokenValidationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TokenValidationConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TokenValidationConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_token_validation_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_token_validation_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -519,7 +519,7 @@ export class TokenValidationConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_config cloudflare_token_validation_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -530,7 +530,7 @@ export class TokenValidationConfig extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_token_validation_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -653,11 +653,11 @@ export class TokenValidationConfig extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       credentials: tokenValidationConfigCredentialsToTerraform(this._credentials.internalValue),
-      description: cdktf.stringToTerraform(this._description),
-      title: cdktf.stringToTerraform(this._title),
-      token_sources: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tokenSources),
-      token_type: cdktf.stringToTerraform(this._tokenType),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      description: cdktn.stringToTerraform(this._description),
+      title: cdktn.stringToTerraform(this._title),
+      token_sources: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tokenSources),
+      token_type: cdktn.stringToTerraform(this._tokenType),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -670,31 +670,31 @@ export class TokenValidationConfig extends cdktf.TerraformResource {
         storageClassType: "TokenValidationConfigCredentials",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       token_sources: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tokenSources),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tokenSources),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       token_type: {
-        value: cdktf.stringToHclTerraform(this._tokenType),
+        value: cdktn.stringToHclTerraform(this._tokenType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

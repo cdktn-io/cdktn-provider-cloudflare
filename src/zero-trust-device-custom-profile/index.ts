@@ -1,149 +1,149 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustDeviceCustomProfileConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustDeviceCustomProfileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#account_id ZeroTrustDeviceCustomProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#account_id ZeroTrustDeviceCustomProfile#account_id}
   */
   readonly accountId: string;
   /**
   * Whether to allow the user to switch WARP between modes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#allow_mode_switch ZeroTrustDeviceCustomProfile#allow_mode_switch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#allow_mode_switch ZeroTrustDeviceCustomProfile#allow_mode_switch}
   */
-  readonly allowModeSwitch?: boolean | cdktf.IResolvable;
+  readonly allowModeSwitch?: boolean | cdktn.IResolvable;
   /**
   * Whether to receive update notifications when a new version of the client is available.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#allow_updates ZeroTrustDeviceCustomProfile#allow_updates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#allow_updates ZeroTrustDeviceCustomProfile#allow_updates}
   */
-  readonly allowUpdates?: boolean | cdktf.IResolvable;
+  readonly allowUpdates?: boolean | cdktn.IResolvable;
   /**
   * Whether to allow devices to leave the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#allowed_to_leave ZeroTrustDeviceCustomProfile#allowed_to_leave}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#allowed_to_leave ZeroTrustDeviceCustomProfile#allowed_to_leave}
   */
-  readonly allowedToLeave?: boolean | cdktf.IResolvable;
+  readonly allowedToLeave?: boolean | cdktn.IResolvable;
   /**
   * The amount of time in seconds to reconnect after having been disabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#auto_connect ZeroTrustDeviceCustomProfile#auto_connect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#auto_connect ZeroTrustDeviceCustomProfile#auto_connect}
   */
   readonly autoConnect?: number;
   /**
   * Turn on the captive portal after the specified amount of time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#captive_portal ZeroTrustDeviceCustomProfile#captive_portal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#captive_portal ZeroTrustDeviceCustomProfile#captive_portal}
   */
   readonly captivePortal?: number;
   /**
   * A description of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
   */
   readonly description?: string;
   /**
   * If the `dns_server` field of a fallback domain is not present, the client will fall back to a best guess of the default/system DNS resolvers unless this policy option is set to `true`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#disable_auto_fallback ZeroTrustDeviceCustomProfile#disable_auto_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#disable_auto_fallback ZeroTrustDeviceCustomProfile#disable_auto_fallback}
   */
-  readonly disableAutoFallback?: boolean | cdktf.IResolvable;
+  readonly disableAutoFallback?: boolean | cdktn.IResolvable;
   /**
   * Whether the policy will be applied to matching devices.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#enabled ZeroTrustDeviceCustomProfile#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#enabled ZeroTrustDeviceCustomProfile#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * List of routes excluded in the WARP client's tunnel. Both 'exclude' and 'include' cannot be set in the same request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#exclude ZeroTrustDeviceCustomProfile#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#exclude ZeroTrustDeviceCustomProfile#exclude}
   */
-  readonly exclude?: ZeroTrustDeviceCustomProfileExclude[] | cdktf.IResolvable;
+  readonly exclude?: ZeroTrustDeviceCustomProfileExclude[] | cdktn.IResolvable;
   /**
   * Whether to add Microsoft IPs to Split Tunnel exclusions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#exclude_office_ips ZeroTrustDeviceCustomProfile#exclude_office_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#exclude_office_ips ZeroTrustDeviceCustomProfile#exclude_office_ips}
   */
-  readonly excludeOfficeIps?: boolean | cdktf.IResolvable;
+  readonly excludeOfficeIps?: boolean | cdktn.IResolvable;
   /**
   * List of routes included in the WARP client's tunnel. Both 'exclude' and 'include' cannot be set in the same request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#include ZeroTrustDeviceCustomProfile#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#include ZeroTrustDeviceCustomProfile#include}
   */
-  readonly include?: ZeroTrustDeviceCustomProfileInclude[] | cdktf.IResolvable;
+  readonly include?: ZeroTrustDeviceCustomProfileInclude[] | cdktn.IResolvable;
   /**
   * The amount of time in minutes a user is allowed access to their LAN. A value of 0 will allow LAN access until the next WARP reconnection, such as a reboot or a laptop waking from sleep. Note that this field is omitted from the response if null or unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#lan_allow_minutes ZeroTrustDeviceCustomProfile#lan_allow_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#lan_allow_minutes ZeroTrustDeviceCustomProfile#lan_allow_minutes}
   */
   readonly lanAllowMinutes?: number;
   /**
   * The size of the subnet for the local access network. Note that this field is omitted from the response if null or unset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#lan_allow_subnet_size ZeroTrustDeviceCustomProfile#lan_allow_subnet_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#lan_allow_subnet_size ZeroTrustDeviceCustomProfile#lan_allow_subnet_size}
   */
   readonly lanAllowSubnetSize?: number;
   /**
   * The wirefilter expression to match devices. Available values: "identity.email", "identity.groups.id", "identity.groups.name", "identity.groups.email", "identity.service_token_uuid", "identity.saml_attributes", "network", "os.name", "os.version".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#match ZeroTrustDeviceCustomProfile#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#match ZeroTrustDeviceCustomProfile#match}
   */
   readonly match: string;
   /**
   * The name of the device settings profile.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#name ZeroTrustDeviceCustomProfile#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#name ZeroTrustDeviceCustomProfile#name}
   */
   readonly name: string;
   /**
   * The precedence of the policy. Lower values indicate higher precedence. Policies will be evaluated in ascending order of this field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#precedence ZeroTrustDeviceCustomProfile#precedence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#precedence ZeroTrustDeviceCustomProfile#precedence}
   */
-  readonly precedence: number;
+  readonly precedence?: number;
   /**
   * Determines if the operating system will register WARP's local interface IP with your on-premises DNS server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#register_interface_ip_with_dns ZeroTrustDeviceCustomProfile#register_interface_ip_with_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#register_interface_ip_with_dns ZeroTrustDeviceCustomProfile#register_interface_ip_with_dns}
   */
-  readonly registerInterfaceIpWithDns?: boolean | cdktf.IResolvable;
+  readonly registerInterfaceIpWithDns?: boolean | cdktn.IResolvable;
   /**
   * Determines whether the WARP client indicates to SCCM that it is inside a VPN boundary. (Windows only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#sccm_vpn_boundary_support ZeroTrustDeviceCustomProfile#sccm_vpn_boundary_support}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#sccm_vpn_boundary_support ZeroTrustDeviceCustomProfile#sccm_vpn_boundary_support}
   */
-  readonly sccmVpnBoundarySupport?: boolean | cdktf.IResolvable;
+  readonly sccmVpnBoundarySupport?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#service_mode_v2 ZeroTrustDeviceCustomProfile#service_mode_v2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#service_mode_v2 ZeroTrustDeviceCustomProfile#service_mode_v2}
   */
   readonly serviceModeV2?: ZeroTrustDeviceCustomProfileServiceModeV2;
   /**
   * The URL to launch when the Send Feedback button is clicked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#support_url ZeroTrustDeviceCustomProfile#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#support_url ZeroTrustDeviceCustomProfile#support_url}
   */
   readonly supportUrl?: string;
   /**
   * Whether to allow the user to turn off the WARP switch and disconnect the client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#switch_locked ZeroTrustDeviceCustomProfile#switch_locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#switch_locked ZeroTrustDeviceCustomProfile#switch_locked}
   */
-  readonly switchLocked?: boolean | cdktf.IResolvable;
+  readonly switchLocked?: boolean | cdktn.IResolvable;
   /**
   * Determines which tunnel protocol to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#tunnel_protocol ZeroTrustDeviceCustomProfile#tunnel_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#tunnel_protocol ZeroTrustDeviceCustomProfile#tunnel_protocol}
   */
   readonly tunnelProtocol?: string;
 }
@@ -151,56 +151,56 @@ export interface ZeroTrustDeviceCustomProfileExclude {
   /**
   * The address in CIDR format to exclude from the tunnel. If `address` is present, `host` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#address ZeroTrustDeviceCustomProfile#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#address ZeroTrustDeviceCustomProfile#address}
   */
   readonly address?: string;
   /**
   * A description of the Split Tunnel item, displayed in the client UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
   */
   readonly description?: string;
   /**
   * The domain name to exclude from the tunnel. If `host` is present, `address` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#host ZeroTrustDeviceCustomProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#host ZeroTrustDeviceCustomProfile#host}
   */
   readonly host?: string;
 }
 
-export function zeroTrustDeviceCustomProfileExcludeToTerraform(struct?: ZeroTrustDeviceCustomProfileExclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceCustomProfileExcludeToTerraform(struct?: ZeroTrustDeviceCustomProfileExclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    description: cdktf.stringToTerraform(struct!.description),
-    host: cdktf.stringToTerraform(struct!.host),
+    address: cdktn.stringToTerraform(struct!.address),
+    description: cdktn.stringToTerraform(struct!.description),
+    host: cdktn.stringToTerraform(struct!.host),
   }
 }
 
 
-export function zeroTrustDeviceCustomProfileExcludeToHclTerraform(struct?: ZeroTrustDeviceCustomProfileExclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceCustomProfileExcludeToHclTerraform(struct?: ZeroTrustDeviceCustomProfileExclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -211,9 +211,9 @@ export function zeroTrustDeviceCustomProfileExcludeToHclTerraform(struct?: ZeroT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDeviceCustomProfileExcludeOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDeviceCustomProfileExcludeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -221,11 +221,11 @@ export class ZeroTrustDeviceCustomProfileExcludeOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDeviceCustomProfileExclude | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDeviceCustomProfileExclude | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -246,7 +246,7 @@ export class ZeroTrustDeviceCustomProfileExcludeOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDeviceCustomProfileExclude | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDeviceCustomProfileExclude | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -254,7 +254,7 @@ export class ZeroTrustDeviceCustomProfileExcludeOutputReference extends cdktf.Co
       this._description = undefined;
       this._host = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -316,15 +316,15 @@ export class ZeroTrustDeviceCustomProfileExcludeOutputReference extends cdktf.Co
   }
 }
 
-export class ZeroTrustDeviceCustomProfileExcludeList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDeviceCustomProfileExclude[] | cdktf.IResolvable
+export class ZeroTrustDeviceCustomProfileExcludeList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDeviceCustomProfileExclude[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -339,8 +339,8 @@ export interface ZeroTrustDeviceCustomProfileFallbackDomains {
 }
 
 export function zeroTrustDeviceCustomProfileFallbackDomainsToTerraform(struct?: ZeroTrustDeviceCustomProfileFallbackDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -349,8 +349,8 @@ export function zeroTrustDeviceCustomProfileFallbackDomainsToTerraform(struct?: 
 
 
 export function zeroTrustDeviceCustomProfileFallbackDomainsToHclTerraform(struct?: ZeroTrustDeviceCustomProfileFallbackDomains): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -358,7 +358,7 @@ export function zeroTrustDeviceCustomProfileFallbackDomainsToHclTerraform(struct
   return attrs;
 }
 
-export class ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -367,7 +367,7 @@ export class ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -402,14 +402,14 @@ export class ZeroTrustDeviceCustomProfileFallbackDomainsOutputReference extends 
   }
 }
 
-export class ZeroTrustDeviceCustomProfileFallbackDomainsList extends cdktf.ComplexList {
+export class ZeroTrustDeviceCustomProfileFallbackDomainsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -424,56 +424,56 @@ export interface ZeroTrustDeviceCustomProfileInclude {
   /**
   * The address in CIDR format to include in the tunnel. If `address` is present, `host` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#address ZeroTrustDeviceCustomProfile#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#address ZeroTrustDeviceCustomProfile#address}
   */
   readonly address?: string;
   /**
   * A description of the Split Tunnel item, displayed in the client UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#description ZeroTrustDeviceCustomProfile#description}
   */
   readonly description?: string;
   /**
   * The domain name to include in the tunnel. If `host` is present, `address` must not be present.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#host ZeroTrustDeviceCustomProfile#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#host ZeroTrustDeviceCustomProfile#host}
   */
   readonly host?: string;
 }
 
-export function zeroTrustDeviceCustomProfileIncludeToTerraform(struct?: ZeroTrustDeviceCustomProfileInclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceCustomProfileIncludeToTerraform(struct?: ZeroTrustDeviceCustomProfileInclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    address: cdktf.stringToTerraform(struct!.address),
-    description: cdktf.stringToTerraform(struct!.description),
-    host: cdktf.stringToTerraform(struct!.host),
+    address: cdktn.stringToTerraform(struct!.address),
+    description: cdktn.stringToTerraform(struct!.description),
+    host: cdktn.stringToTerraform(struct!.host),
   }
 }
 
 
-export function zeroTrustDeviceCustomProfileIncludeToHclTerraform(struct?: ZeroTrustDeviceCustomProfileInclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceCustomProfileIncludeToHclTerraform(struct?: ZeroTrustDeviceCustomProfileInclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     address: {
-      value: cdktf.stringToHclTerraform(struct!.address),
+      value: cdktn.stringToHclTerraform(struct!.address),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -484,9 +484,9 @@ export function zeroTrustDeviceCustomProfileIncludeToHclTerraform(struct?: ZeroT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDeviceCustomProfileIncludeOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDeviceCustomProfileIncludeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -494,11 +494,11 @@ export class ZeroTrustDeviceCustomProfileIncludeOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDeviceCustomProfileInclude | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDeviceCustomProfileInclude | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -519,7 +519,7 @@ export class ZeroTrustDeviceCustomProfileIncludeOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDeviceCustomProfileInclude | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDeviceCustomProfileInclude | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -527,7 +527,7 @@ export class ZeroTrustDeviceCustomProfileIncludeOutputReference extends cdktf.Co
       this._description = undefined;
       this._host = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -589,15 +589,15 @@ export class ZeroTrustDeviceCustomProfileIncludeOutputReference extends cdktf.Co
   }
 }
 
-export class ZeroTrustDeviceCustomProfileIncludeList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDeviceCustomProfileInclude[] | cdktf.IResolvable
+export class ZeroTrustDeviceCustomProfileIncludeList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDeviceCustomProfileInclude[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -612,43 +612,43 @@ export interface ZeroTrustDeviceCustomProfileServiceModeV2 {
   /**
   * The mode to run the WARP client under.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#mode ZeroTrustDeviceCustomProfile#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#mode ZeroTrustDeviceCustomProfile#mode}
   */
   readonly mode?: string;
   /**
   * The port number when used with proxy mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#port ZeroTrustDeviceCustomProfile#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#port ZeroTrustDeviceCustomProfile#port}
   */
   readonly port?: number;
 }
 
-export function zeroTrustDeviceCustomProfileServiceModeV2ToTerraform(struct?: ZeroTrustDeviceCustomProfileServiceModeV2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceCustomProfileServiceModeV2ToTerraform(struct?: ZeroTrustDeviceCustomProfileServiceModeV2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    port: cdktf.numberToTerraform(struct!.port),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
-export function zeroTrustDeviceCustomProfileServiceModeV2ToHclTerraform(struct?: ZeroTrustDeviceCustomProfileServiceModeV2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceCustomProfileServiceModeV2ToHclTerraform(struct?: ZeroTrustDeviceCustomProfileServiceModeV2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -659,19 +659,19 @@ export function zeroTrustDeviceCustomProfileServiceModeV2ToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDeviceCustomProfileServiceModeV2OutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDeviceCustomProfileServiceModeV2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDeviceCustomProfileServiceModeV2 | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDeviceCustomProfileServiceModeV2 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -688,14 +688,14 @@ export class ZeroTrustDeviceCustomProfileServiceModeV2OutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDeviceCustomProfileServiceModeV2 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDeviceCustomProfileServiceModeV2 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -743,8 +743,8 @@ export interface ZeroTrustDeviceCustomProfileTargetTests {
 }
 
 export function zeroTrustDeviceCustomProfileTargetTestsToTerraform(struct?: ZeroTrustDeviceCustomProfileTargetTests): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -753,8 +753,8 @@ export function zeroTrustDeviceCustomProfileTargetTestsToTerraform(struct?: Zero
 
 
 export function zeroTrustDeviceCustomProfileTargetTestsToHclTerraform(struct?: ZeroTrustDeviceCustomProfileTargetTests): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -762,7 +762,7 @@ export function zeroTrustDeviceCustomProfileTargetTestsToHclTerraform(struct?: Z
   return attrs;
 }
 
-export class ZeroTrustDeviceCustomProfileTargetTestsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDeviceCustomProfileTargetTestsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -771,7 +771,7 @@ export class ZeroTrustDeviceCustomProfileTargetTestsOutputReference extends cdkt
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -801,14 +801,14 @@ export class ZeroTrustDeviceCustomProfileTargetTestsOutputReference extends cdkt
   }
 }
 
-export class ZeroTrustDeviceCustomProfileTargetTestsList extends cdktf.ComplexList {
+export class ZeroTrustDeviceCustomProfileTargetTestsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -821,9 +821,9 @@ export class ZeroTrustDeviceCustomProfileTargetTestsList extends cdktf.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}
 */
-export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
+export class ZeroTrustDeviceCustomProfile extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -834,14 +834,14 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustDeviceCustomProfile resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustDeviceCustomProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDeviceCustomProfile to import
-  * @param importFromId The id of the existing ZeroTrustDeviceCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDeviceCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDeviceCustomProfile to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_device_custom_profile", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_device_custom_profile", importId: importFromId, provider });
       }
 
   // ===========
@@ -849,7 +849,7 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -860,7 +860,7 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_device_custom_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -914,11 +914,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // allow_mode_switch - computed: true, optional: true, required: false
-  private _allowModeSwitch?: boolean | cdktf.IResolvable; 
+  private _allowModeSwitch?: boolean | cdktn.IResolvable; 
   public get allowModeSwitch() {
     return this.getBooleanAttribute('allow_mode_switch');
   }
-  public set allowModeSwitch(value: boolean | cdktf.IResolvable) {
+  public set allowModeSwitch(value: boolean | cdktn.IResolvable) {
     this._allowModeSwitch = value;
   }
   public resetAllowModeSwitch() {
@@ -930,11 +930,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // allow_updates - computed: true, optional: true, required: false
-  private _allowUpdates?: boolean | cdktf.IResolvable; 
+  private _allowUpdates?: boolean | cdktn.IResolvable; 
   public get allowUpdates() {
     return this.getBooleanAttribute('allow_updates');
   }
-  public set allowUpdates(value: boolean | cdktf.IResolvable) {
+  public set allowUpdates(value: boolean | cdktn.IResolvable) {
     this._allowUpdates = value;
   }
   public resetAllowUpdates() {
@@ -946,11 +946,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // allowed_to_leave - computed: true, optional: true, required: false
-  private _allowedToLeave?: boolean | cdktf.IResolvable; 
+  private _allowedToLeave?: boolean | cdktn.IResolvable; 
   public get allowedToLeave() {
     return this.getBooleanAttribute('allowed_to_leave');
   }
-  public set allowedToLeave(value: boolean | cdktf.IResolvable) {
+  public set allowedToLeave(value: boolean | cdktn.IResolvable) {
     this._allowedToLeave = value;
   }
   public resetAllowedToLeave() {
@@ -998,7 +998,7 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
     return this.getBooleanAttribute('default');
   }
 
-  // description - computed: false, optional: true, required: false
+  // description - computed: true, optional: true, required: false
   private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
@@ -1015,11 +1015,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // disable_auto_fallback - computed: true, optional: true, required: false
-  private _disableAutoFallback?: boolean | cdktf.IResolvable; 
+  private _disableAutoFallback?: boolean | cdktn.IResolvable; 
   public get disableAutoFallback() {
     return this.getBooleanAttribute('disable_auto_fallback');
   }
-  public set disableAutoFallback(value: boolean | cdktf.IResolvable) {
+  public set disableAutoFallback(value: boolean | cdktn.IResolvable) {
     this._disableAutoFallback = value;
   }
   public resetDisableAutoFallback() {
@@ -1031,11 +1031,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1051,7 +1051,7 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   public get exclude() {
     return this._exclude;
   }
-  public putExclude(value: ZeroTrustDeviceCustomProfileExclude[] | cdktf.IResolvable) {
+  public putExclude(value: ZeroTrustDeviceCustomProfileExclude[] | cdktn.IResolvable) {
     this._exclude.internalValue = value;
   }
   public resetExclude() {
@@ -1063,11 +1063,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // exclude_office_ips - computed: true, optional: true, required: false
-  private _excludeOfficeIps?: boolean | cdktf.IResolvable; 
+  private _excludeOfficeIps?: boolean | cdktn.IResolvable; 
   public get excludeOfficeIps() {
     return this.getBooleanAttribute('exclude_office_ips');
   }
-  public set excludeOfficeIps(value: boolean | cdktf.IResolvable) {
+  public set excludeOfficeIps(value: boolean | cdktn.IResolvable) {
     this._excludeOfficeIps = value;
   }
   public resetExcludeOfficeIps() {
@@ -1099,7 +1099,7 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   public get include() {
     return this._include;
   }
-  public putInclude(value: ZeroTrustDeviceCustomProfileInclude[] | cdktf.IResolvable) {
+  public putInclude(value: ZeroTrustDeviceCustomProfileInclude[] | cdktn.IResolvable) {
     this._include.internalValue = value;
   }
   public resetInclude() {
@@ -1173,7 +1173,7 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
     return this.getStringAttribute('policy_id');
   }
 
-  // precedence - computed: false, optional: false, required: true
+  // precedence - computed: true, optional: true, required: false
   private _precedence?: number; 
   public get precedence() {
     return this.getNumberAttribute('precedence');
@@ -1181,17 +1181,20 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   public set precedence(value: number) {
     this._precedence = value;
   }
+  public resetPrecedence() {
+    this._precedence = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get precedenceInput() {
     return this._precedence;
   }
 
   // register_interface_ip_with_dns - computed: true, optional: true, required: false
-  private _registerInterfaceIpWithDns?: boolean | cdktf.IResolvable; 
+  private _registerInterfaceIpWithDns?: boolean | cdktn.IResolvable; 
   public get registerInterfaceIpWithDns() {
     return this.getBooleanAttribute('register_interface_ip_with_dns');
   }
-  public set registerInterfaceIpWithDns(value: boolean | cdktf.IResolvable) {
+  public set registerInterfaceIpWithDns(value: boolean | cdktn.IResolvable) {
     this._registerInterfaceIpWithDns = value;
   }
   public resetRegisterInterfaceIpWithDns() {
@@ -1203,11 +1206,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // sccm_vpn_boundary_support - computed: true, optional: true, required: false
-  private _sccmVpnBoundarySupport?: boolean | cdktf.IResolvable; 
+  private _sccmVpnBoundarySupport?: boolean | cdktn.IResolvable; 
   public get sccmVpnBoundarySupport() {
     return this.getBooleanAttribute('sccm_vpn_boundary_support');
   }
-  public set sccmVpnBoundarySupport(value: boolean | cdktf.IResolvable) {
+  public set sccmVpnBoundarySupport(value: boolean | cdktn.IResolvable) {
     this._sccmVpnBoundarySupport = value;
   }
   public resetSccmVpnBoundarySupport() {
@@ -1251,11 +1254,11 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
   }
 
   // switch_locked - computed: true, optional: true, required: false
-  private _switchLocked?: boolean | cdktf.IResolvable; 
+  private _switchLocked?: boolean | cdktn.IResolvable; 
   public get switchLocked() {
     return this.getBooleanAttribute('switch_locked');
   }
-  public set switchLocked(value: boolean | cdktf.IResolvable) {
+  public set switchLocked(value: boolean | cdktn.IResolvable) {
     this._switchLocked = value;
   }
   public resetSwitchLocked() {
@@ -1294,144 +1297,144 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      allow_mode_switch: cdktf.booleanToTerraform(this._allowModeSwitch),
-      allow_updates: cdktf.booleanToTerraform(this._allowUpdates),
-      allowed_to_leave: cdktf.booleanToTerraform(this._allowedToLeave),
-      auto_connect: cdktf.numberToTerraform(this._autoConnect),
-      captive_portal: cdktf.numberToTerraform(this._captivePortal),
-      description: cdktf.stringToTerraform(this._description),
-      disable_auto_fallback: cdktf.booleanToTerraform(this._disableAutoFallback),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      exclude: cdktf.listMapper(zeroTrustDeviceCustomProfileExcludeToTerraform, false)(this._exclude.internalValue),
-      exclude_office_ips: cdktf.booleanToTerraform(this._excludeOfficeIps),
-      include: cdktf.listMapper(zeroTrustDeviceCustomProfileIncludeToTerraform, false)(this._include.internalValue),
-      lan_allow_minutes: cdktf.numberToTerraform(this._lanAllowMinutes),
-      lan_allow_subnet_size: cdktf.numberToTerraform(this._lanAllowSubnetSize),
-      match: cdktf.stringToTerraform(this._match),
-      name: cdktf.stringToTerraform(this._name),
-      precedence: cdktf.numberToTerraform(this._precedence),
-      register_interface_ip_with_dns: cdktf.booleanToTerraform(this._registerInterfaceIpWithDns),
-      sccm_vpn_boundary_support: cdktf.booleanToTerraform(this._sccmVpnBoundarySupport),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      allow_mode_switch: cdktn.booleanToTerraform(this._allowModeSwitch),
+      allow_updates: cdktn.booleanToTerraform(this._allowUpdates),
+      allowed_to_leave: cdktn.booleanToTerraform(this._allowedToLeave),
+      auto_connect: cdktn.numberToTerraform(this._autoConnect),
+      captive_portal: cdktn.numberToTerraform(this._captivePortal),
+      description: cdktn.stringToTerraform(this._description),
+      disable_auto_fallback: cdktn.booleanToTerraform(this._disableAutoFallback),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      exclude: cdktn.listMapper(zeroTrustDeviceCustomProfileExcludeToTerraform, false)(this._exclude.internalValue),
+      exclude_office_ips: cdktn.booleanToTerraform(this._excludeOfficeIps),
+      include: cdktn.listMapper(zeroTrustDeviceCustomProfileIncludeToTerraform, false)(this._include.internalValue),
+      lan_allow_minutes: cdktn.numberToTerraform(this._lanAllowMinutes),
+      lan_allow_subnet_size: cdktn.numberToTerraform(this._lanAllowSubnetSize),
+      match: cdktn.stringToTerraform(this._match),
+      name: cdktn.stringToTerraform(this._name),
+      precedence: cdktn.numberToTerraform(this._precedence),
+      register_interface_ip_with_dns: cdktn.booleanToTerraform(this._registerInterfaceIpWithDns),
+      sccm_vpn_boundary_support: cdktn.booleanToTerraform(this._sccmVpnBoundarySupport),
       service_mode_v2: zeroTrustDeviceCustomProfileServiceModeV2ToTerraform(this._serviceModeV2.internalValue),
-      support_url: cdktf.stringToTerraform(this._supportUrl),
-      switch_locked: cdktf.booleanToTerraform(this._switchLocked),
-      tunnel_protocol: cdktf.stringToTerraform(this._tunnelProtocol),
+      support_url: cdktn.stringToTerraform(this._supportUrl),
+      switch_locked: cdktn.booleanToTerraform(this._switchLocked),
+      tunnel_protocol: cdktn.stringToTerraform(this._tunnelProtocol),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_mode_switch: {
-        value: cdktf.booleanToHclTerraform(this._allowModeSwitch),
+        value: cdktn.booleanToHclTerraform(this._allowModeSwitch),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allow_updates: {
-        value: cdktf.booleanToHclTerraform(this._allowUpdates),
+        value: cdktn.booleanToHclTerraform(this._allowUpdates),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       allowed_to_leave: {
-        value: cdktf.booleanToHclTerraform(this._allowedToLeave),
+        value: cdktn.booleanToHclTerraform(this._allowedToLeave),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auto_connect: {
-        value: cdktf.numberToHclTerraform(this._autoConnect),
+        value: cdktn.numberToHclTerraform(this._autoConnect),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       captive_portal: {
-        value: cdktf.numberToHclTerraform(this._captivePortal),
+        value: cdktn.numberToHclTerraform(this._captivePortal),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_auto_fallback: {
-        value: cdktf.booleanToHclTerraform(this._disableAutoFallback),
+        value: cdktn.booleanToHclTerraform(this._disableAutoFallback),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       exclude: {
-        value: cdktf.listMapperHcl(zeroTrustDeviceCustomProfileExcludeToHclTerraform, false)(this._exclude.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustDeviceCustomProfileExcludeToHclTerraform, false)(this._exclude.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustDeviceCustomProfileExcludeList",
       },
       exclude_office_ips: {
-        value: cdktf.booleanToHclTerraform(this._excludeOfficeIps),
+        value: cdktn.booleanToHclTerraform(this._excludeOfficeIps),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       include: {
-        value: cdktf.listMapperHcl(zeroTrustDeviceCustomProfileIncludeToHclTerraform, false)(this._include.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustDeviceCustomProfileIncludeToHclTerraform, false)(this._include.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustDeviceCustomProfileIncludeList",
       },
       lan_allow_minutes: {
-        value: cdktf.numberToHclTerraform(this._lanAllowMinutes),
+        value: cdktn.numberToHclTerraform(this._lanAllowMinutes),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       lan_allow_subnet_size: {
-        value: cdktf.numberToHclTerraform(this._lanAllowSubnetSize),
+        value: cdktn.numberToHclTerraform(this._lanAllowSubnetSize),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       match: {
-        value: cdktf.stringToHclTerraform(this._match),
+        value: cdktn.stringToHclTerraform(this._match),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       precedence: {
-        value: cdktf.numberToHclTerraform(this._precedence),
+        value: cdktn.numberToHclTerraform(this._precedence),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       register_interface_ip_with_dns: {
-        value: cdktf.booleanToHclTerraform(this._registerInterfaceIpWithDns),
+        value: cdktn.booleanToHclTerraform(this._registerInterfaceIpWithDns),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sccm_vpn_boundary_support: {
-        value: cdktf.booleanToHclTerraform(this._sccmVpnBoundarySupport),
+        value: cdktn.booleanToHclTerraform(this._sccmVpnBoundarySupport),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -1443,19 +1446,19 @@ export class ZeroTrustDeviceCustomProfile extends cdktf.TerraformResource {
         storageClassType: "ZeroTrustDeviceCustomProfileServiceModeV2",
       },
       support_url: {
-        value: cdktf.stringToHclTerraform(this._supportUrl),
+        value: cdktn.stringToHclTerraform(this._supportUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       switch_locked: {
-        value: cdktf.booleanToHclTerraform(this._switchLocked),
+        value: cdktn.booleanToHclTerraform(this._switchLocked),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       tunnel_protocol: {
-        value: cdktf.stringToHclTerraform(this._tunnelProtocol),
+        value: cdktn.stringToHclTerraform(this._tunnelProtocol),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,46 +1,46 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsZoneTransfersIncomingConfig extends cdktf.TerraformMetaArguments {
+export interface DnsZoneTransfersIncomingConfig extends cdktn.TerraformMetaArguments {
   /**
   * How often should a secondary zone auto refresh regardless of DNS NOTIFY.
   * Not applicable for primary zones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming#auto_refresh_seconds DnsZoneTransfersIncoming#auto_refresh_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming#auto_refresh_seconds DnsZoneTransfersIncoming#auto_refresh_seconds}
   */
   readonly autoRefreshSeconds?: number;
   /**
   * Zone name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming#name DnsZoneTransfersIncoming#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming#name DnsZoneTransfersIncoming#name}
   */
   readonly name: string;
   /**
   * A list of peer tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming#peers DnsZoneTransfersIncoming#peers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming#peers DnsZoneTransfersIncoming#peers}
   */
   readonly peers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}
 */
-export class DnsZoneTransfersIncoming extends cdktf.TerraformResource {
+export class DnsZoneTransfersIncoming extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -51,14 +51,14 @@ export class DnsZoneTransfersIncoming extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsZoneTransfersIncoming resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsZoneTransfersIncoming resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsZoneTransfersIncoming to import
-  * @param importFromId The id of the existing DnsZoneTransfersIncoming that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsZoneTransfersIncoming that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsZoneTransfersIncoming to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_zone_transfers_incoming", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_zone_transfers_incoming", importId: importFromId, provider });
       }
 
   // ===========
@@ -66,7 +66,7 @@ export class DnsZoneTransfersIncoming extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,7 +77,7 @@ export class DnsZoneTransfersIncoming extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dns_zone_transfers_incoming',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -150,7 +150,7 @@ export class DnsZoneTransfersIncoming extends cdktf.TerraformResource {
   // peers - computed: false, optional: false, required: true
   private _peers?: string[]; 
   public get peers() {
-    return cdktf.Fn.tolist(this.getListAttribute('peers'));
+    return cdktn.Fn.tolist(this.getListAttribute('peers'));
   }
   public set peers(value: string[]) {
     this._peers = value;
@@ -184,35 +184,35 @@ export class DnsZoneTransfersIncoming extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      auto_refresh_seconds: cdktf.numberToTerraform(this._autoRefreshSeconds),
-      name: cdktf.stringToTerraform(this._name),
-      peers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._peers),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      auto_refresh_seconds: cdktn.numberToTerraform(this._autoRefreshSeconds),
+      name: cdktn.stringToTerraform(this._name),
+      peers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._peers),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       auto_refresh_seconds: {
-        value: cdktf.numberToHclTerraform(this._autoRefreshSeconds),
+        value: cdktn.numberToHclTerraform(this._autoRefreshSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._peers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._peers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

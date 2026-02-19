@@ -1,126 +1,126 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoadBalancerMonitorConfig extends cdktf.TerraformMetaArguments {
+export interface LoadBalancerMonitorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#account_id LoadBalancerMonitor#account_id}
   */
   readonly accountId: string;
   /**
   * Do not validate the certificate when monitor use HTTPS. This parameter is currently only valid for HTTP and HTTPS monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#allow_insecure LoadBalancerMonitor#allow_insecure}
   */
-  readonly allowInsecure?: boolean | cdktf.IResolvable;
+  readonly allowInsecure?: boolean | cdktn.IResolvable;
   /**
   * To be marked unhealthy the monitored origin must fail this healthcheck N consecutive times.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#consecutive_down LoadBalancerMonitor#consecutive_down}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#consecutive_down LoadBalancerMonitor#consecutive_down}
   */
   readonly consecutiveDown?: number;
   /**
   * To be marked healthy the monitored origin must pass this healthcheck N consecutive times.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#consecutive_up LoadBalancerMonitor#consecutive_up}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#consecutive_up LoadBalancerMonitor#consecutive_up}
   */
   readonly consecutiveUp?: number;
   /**
   * Object description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#description LoadBalancerMonitor#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#description LoadBalancerMonitor#description}
   */
   readonly description?: string;
   /**
   * A case-insensitive sub-string to look for in the response body. If this string is not found, the origin will be marked as unhealthy. This parameter is only valid for HTTP and HTTPS monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#expected_body LoadBalancerMonitor#expected_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#expected_body LoadBalancerMonitor#expected_body}
   */
   readonly expectedBody?: string;
   /**
   * The expected HTTP response code or code range of the health check. This parameter is only valid for HTTP and HTTPS monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#expected_codes LoadBalancerMonitor#expected_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#expected_codes LoadBalancerMonitor#expected_codes}
   */
   readonly expectedCodes?: string;
   /**
   * Follow redirects if returned by the origin. This parameter is only valid for HTTP and HTTPS monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#follow_redirects LoadBalancerMonitor#follow_redirects}
   */
-  readonly followRedirects?: boolean | cdktf.IResolvable;
+  readonly followRedirects?: boolean | cdktn.IResolvable;
   /**
   * The HTTP request headers to send in the health check. It is recommended you set a Host header by default. The User-Agent header cannot be overridden. This parameter is only valid for HTTP and HTTPS monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#header LoadBalancerMonitor#header}
   */
-  readonly header?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly header?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * The interval between each health check. Shorter intervals may improve failover time, but will increase load on the origins as we check from multiple locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#interval LoadBalancerMonitor#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#interval LoadBalancerMonitor#interval}
   */
   readonly interval?: number;
   /**
   * The method to use for the health check. This defaults to 'GET' for HTTP/HTTPS based checks and 'connection_established' for TCP based health checks.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#method LoadBalancerMonitor#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#method LoadBalancerMonitor#method}
   */
   readonly method?: string;
   /**
   * The endpoint path you want to conduct a health check against. This parameter is only valid for HTTP and HTTPS monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#path LoadBalancerMonitor#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#path LoadBalancerMonitor#path}
   */
   readonly path?: string;
   /**
   * The port number to connect to for the health check. Required for TCP, UDP, and SMTP checks. HTTP and HTTPS checks should only define the port when using a non-standard port (HTTP: default 80, HTTPS: default 443).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#port LoadBalancerMonitor#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#port LoadBalancerMonitor#port}
   */
   readonly port?: number;
   /**
   * Assign this monitor to emulate the specified zone while probing. This parameter is only valid for HTTP and HTTPS monitors.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#probe_zone LoadBalancerMonitor#probe_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#probe_zone LoadBalancerMonitor#probe_zone}
   */
   readonly probeZone?: string;
   /**
   * The number of retries to attempt in case of a timeout before marking the origin as unhealthy. Retries are attempted immediately.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#retries LoadBalancerMonitor#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#retries LoadBalancerMonitor#retries}
   */
   readonly retries?: number;
   /**
   * The timeout (in seconds) before marking the health check as failed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#timeout LoadBalancerMonitor#timeout}
   */
   readonly timeout?: number;
   /**
   * The protocol to use for the health check. Currently supported protocols are 'HTTP','HTTPS', 'TCP', 'ICMP-PING', 'UDP-ICMP', and 'SMTP'.
   * Available values: "http", "https", "tcp", "udp_icmp", "icmp_ping", "smtp".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#type LoadBalancerMonitor#type}
   */
   readonly type?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor}
 */
-export class LoadBalancerMonitor extends cdktf.TerraformResource {
+export class LoadBalancerMonitor extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -131,14 +131,14 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoadBalancerMonitor resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoadBalancerMonitor resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadBalancerMonitor to import
-  * @param importFromId The id of the existing LoadBalancerMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadBalancerMonitor that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadBalancerMonitor to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_load_balancer_monitor", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_load_balancer_monitor", importId: importFromId, provider });
       }
 
   // ===========
@@ -146,7 +146,7 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer_monitor cloudflare_load_balancer_monitor} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -157,7 +157,7 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer_monitor',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -205,11 +205,11 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
   }
 
   // allow_insecure - computed: true, optional: true, required: false
-  private _allowInsecure?: boolean | cdktf.IResolvable; 
+  private _allowInsecure?: boolean | cdktn.IResolvable; 
   public get allowInsecure() {
     return this.getBooleanAttribute('allow_insecure');
   }
-  public set allowInsecure(value: boolean | cdktf.IResolvable) {
+  public set allowInsecure(value: boolean | cdktn.IResolvable) {
     this._allowInsecure = value;
   }
   public resetAllowInsecure() {
@@ -306,11 +306,11 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
   }
 
   // follow_redirects - computed: true, optional: true, required: false
-  private _followRedirects?: boolean | cdktf.IResolvable; 
+  private _followRedirects?: boolean | cdktn.IResolvable; 
   public get followRedirects() {
     return this.getBooleanAttribute('follow_redirects');
   }
-  public set followRedirects(value: boolean | cdktf.IResolvable) {
+  public set followRedirects(value: boolean | cdktn.IResolvable) {
     this._followRedirects = value;
   }
   public resetFollowRedirects() {
@@ -322,11 +322,11 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
   }
 
   // header - computed: false, optional: true, required: false
-  private _header?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _header?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get header() {
     return this.interpolationForAttribute('header');
   }
-  public set header(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set header(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._header = value;
   }
   public resetHeader() {
@@ -481,126 +481,126 @@ export class LoadBalancerMonitor extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      allow_insecure: cdktf.booleanToTerraform(this._allowInsecure),
-      consecutive_down: cdktf.numberToTerraform(this._consecutiveDown),
-      consecutive_up: cdktf.numberToTerraform(this._consecutiveUp),
-      description: cdktf.stringToTerraform(this._description),
-      expected_body: cdktf.stringToTerraform(this._expectedBody),
-      expected_codes: cdktf.stringToTerraform(this._expectedCodes),
-      follow_redirects: cdktf.booleanToTerraform(this._followRedirects),
-      header: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(this._header),
-      interval: cdktf.numberToTerraform(this._interval),
-      method: cdktf.stringToTerraform(this._method),
-      path: cdktf.stringToTerraform(this._path),
-      port: cdktf.numberToTerraform(this._port),
-      probe_zone: cdktf.stringToTerraform(this._probeZone),
-      retries: cdktf.numberToTerraform(this._retries),
-      timeout: cdktf.numberToTerraform(this._timeout),
-      type: cdktf.stringToTerraform(this._type),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      allow_insecure: cdktn.booleanToTerraform(this._allowInsecure),
+      consecutive_down: cdktn.numberToTerraform(this._consecutiveDown),
+      consecutive_up: cdktn.numberToTerraform(this._consecutiveUp),
+      description: cdktn.stringToTerraform(this._description),
+      expected_body: cdktn.stringToTerraform(this._expectedBody),
+      expected_codes: cdktn.stringToTerraform(this._expectedCodes),
+      follow_redirects: cdktn.booleanToTerraform(this._followRedirects),
+      header: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(this._header),
+      interval: cdktn.numberToTerraform(this._interval),
+      method: cdktn.stringToTerraform(this._method),
+      path: cdktn.stringToTerraform(this._path),
+      port: cdktn.numberToTerraform(this._port),
+      probe_zone: cdktn.stringToTerraform(this._probeZone),
+      retries: cdktn.numberToTerraform(this._retries),
+      timeout: cdktn.numberToTerraform(this._timeout),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_insecure: {
-        value: cdktf.booleanToHclTerraform(this._allowInsecure),
+        value: cdktn.booleanToHclTerraform(this._allowInsecure),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       consecutive_down: {
-        value: cdktf.numberToHclTerraform(this._consecutiveDown),
+        value: cdktn.numberToHclTerraform(this._consecutiveDown),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       consecutive_up: {
-        value: cdktf.numberToHclTerraform(this._consecutiveUp),
+        value: cdktn.numberToHclTerraform(this._consecutiveUp),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_body: {
-        value: cdktf.stringToHclTerraform(this._expectedBody),
+        value: cdktn.stringToHclTerraform(this._expectedBody),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       expected_codes: {
-        value: cdktf.stringToHclTerraform(this._expectedCodes),
+        value: cdktn.stringToHclTerraform(this._expectedCodes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       follow_redirects: {
-        value: cdktf.booleanToHclTerraform(this._followRedirects),
+        value: cdktn.booleanToHclTerraform(this._followRedirects),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       header: {
-        value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(this._header),
+        value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(this._header),
         isBlock: false,
         type: "map",
         storageClassType: "stringListMap",
       },
       interval: {
-        value: cdktf.numberToHclTerraform(this._interval),
+        value: cdktn.numberToHclTerraform(this._interval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       method: {
-        value: cdktf.stringToHclTerraform(this._method),
+        value: cdktn.stringToHclTerraform(this._method),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       port: {
-        value: cdktf.numberToHclTerraform(this._port),
+        value: cdktn.numberToHclTerraform(this._port),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       probe_zone: {
-        value: cdktf.stringToHclTerraform(this._probeZone),
+        value: cdktn.stringToHclTerraform(this._probeZone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retries: {
-        value: cdktf.numberToHclTerraform(this._retries),
+        value: cdktn.numberToHclTerraform(this._retries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       timeout: {
-        value: cdktf.numberToHclTerraform(this._timeout),
+        value: cdktn.numberToHclTerraform(this._timeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

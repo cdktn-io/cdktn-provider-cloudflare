@@ -1,132 +1,132 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmailSecurityTrustedDomainsConfig extends cdktf.TerraformMetaArguments {
+export interface EmailSecurityTrustedDomainsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#body EmailSecurityTrustedDomains#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#body EmailSecurityTrustedDomains#body}
   */
-  readonly body?: EmailSecurityTrustedDomainsBody[] | cdktf.IResolvable;
+  readonly body?: EmailSecurityTrustedDomainsBody[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
   */
   readonly comments?: string;
   /**
   * Select to prevent recently registered domains from triggering a
   * Suspicious or Malicious disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
   */
-  readonly isRecent?: boolean | cdktf.IResolvable;
+  readonly isRecent?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
   */
-  readonly isRegex?: boolean | cdktf.IResolvable;
+  readonly isRegex?: boolean | cdktn.IResolvable;
   /**
   * Select for partner or other approved domains that have similar
   * spelling to your connected domains. Prevents listed domains from
   * triggering a Spoof disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
   */
-  readonly isSimilarity?: boolean | cdktf.IResolvable;
+  readonly isSimilarity?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
   */
   readonly pattern?: string;
 }
 export interface EmailSecurityTrustedDomainsBody {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}
   */
   readonly comments?: string;
   /**
   * Select to prevent recently registered domains from triggering a
   * Suspicious or Malicious disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
   */
-  readonly isRecent: boolean | cdktf.IResolvable;
+  readonly isRecent: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}
   */
-  readonly isRegex: boolean | cdktf.IResolvable;
+  readonly isRegex: boolean | cdktn.IResolvable;
   /**
   * Select for partner or other approved domains that have similar
   * spelling to your connected domains. Prevents listed domains from
   * triggering a Spoof disposition.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
   */
-  readonly isSimilarity: boolean | cdktf.IResolvable;
+  readonly isSimilarity: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}
   */
   readonly pattern: string;
 }
 
-export function emailSecurityTrustedDomainsBodyToTerraform(struct?: EmailSecurityTrustedDomainsBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emailSecurityTrustedDomainsBodyToTerraform(struct?: EmailSecurityTrustedDomainsBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comments: cdktf.stringToTerraform(struct!.comments),
-    is_recent: cdktf.booleanToTerraform(struct!.isRecent),
-    is_regex: cdktf.booleanToTerraform(struct!.isRegex),
-    is_similarity: cdktf.booleanToTerraform(struct!.isSimilarity),
-    pattern: cdktf.stringToTerraform(struct!.pattern),
+    comments: cdktn.stringToTerraform(struct!.comments),
+    is_recent: cdktn.booleanToTerraform(struct!.isRecent),
+    is_regex: cdktn.booleanToTerraform(struct!.isRegex),
+    is_similarity: cdktn.booleanToTerraform(struct!.isSimilarity),
+    pattern: cdktn.stringToTerraform(struct!.pattern),
   }
 }
 
 
-export function emailSecurityTrustedDomainsBodyToHclTerraform(struct?: EmailSecurityTrustedDomainsBody | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function emailSecurityTrustedDomainsBodyToHclTerraform(struct?: EmailSecurityTrustedDomainsBody | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comments: {
-      value: cdktf.stringToHclTerraform(struct!.comments),
+      value: cdktn.stringToHclTerraform(struct!.comments),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_recent: {
-      value: cdktf.booleanToHclTerraform(struct!.isRecent),
+      value: cdktn.booleanToHclTerraform(struct!.isRecent),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_regex: {
-      value: cdktf.booleanToHclTerraform(struct!.isRegex),
+      value: cdktn.booleanToHclTerraform(struct!.isRegex),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     is_similarity: {
-      value: cdktf.booleanToHclTerraform(struct!.isSimilarity),
+      value: cdktn.booleanToHclTerraform(struct!.isSimilarity),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     pattern: {
-      value: cdktf.stringToHclTerraform(struct!.pattern),
+      value: cdktn.stringToHclTerraform(struct!.pattern),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -137,9 +137,9 @@ export function emailSecurityTrustedDomainsBodyToHclTerraform(struct?: EmailSecu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.ComplexObject {
+export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -147,11 +147,11 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): EmailSecurityTrustedDomainsBody | cdktf.IResolvable | undefined {
+  public get internalValue(): EmailSecurityTrustedDomainsBody | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,7 +180,7 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: EmailSecurityTrustedDomainsBody | cdktf.IResolvable | undefined) {
+  public set internalValue(value: EmailSecurityTrustedDomainsBody | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -190,7 +190,7 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
       this._isSimilarity = undefined;
       this._pattern = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,11 +222,11 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
   }
 
   // is_recent - computed: false, optional: false, required: true
-  private _isRecent?: boolean | cdktf.IResolvable; 
+  private _isRecent?: boolean | cdktn.IResolvable; 
   public get isRecent() {
     return this.getBooleanAttribute('is_recent');
   }
-  public set isRecent(value: boolean | cdktf.IResolvable) {
+  public set isRecent(value: boolean | cdktn.IResolvable) {
     this._isRecent = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -235,11 +235,11 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
   }
 
   // is_regex - computed: false, optional: false, required: true
-  private _isRegex?: boolean | cdktf.IResolvable; 
+  private _isRegex?: boolean | cdktn.IResolvable; 
   public get isRegex() {
     return this.getBooleanAttribute('is_regex');
   }
-  public set isRegex(value: boolean | cdktf.IResolvable) {
+  public set isRegex(value: boolean | cdktn.IResolvable) {
     this._isRegex = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -248,11 +248,11 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
   }
 
   // is_similarity - computed: false, optional: false, required: true
-  private _isSimilarity?: boolean | cdktf.IResolvable; 
+  private _isSimilarity?: boolean | cdktn.IResolvable; 
   public get isSimilarity() {
     return this.getBooleanAttribute('is_similarity');
   }
-  public set isSimilarity(value: boolean | cdktf.IResolvable) {
+  public set isSimilarity(value: boolean | cdktn.IResolvable) {
     this._isSimilarity = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -274,15 +274,15 @@ export class EmailSecurityTrustedDomainsBodyOutputReference extends cdktf.Comple
   }
 }
 
-export class EmailSecurityTrustedDomainsBodyList extends cdktf.ComplexList {
-  public internalValue? : EmailSecurityTrustedDomainsBody[] | cdktf.IResolvable
+export class EmailSecurityTrustedDomainsBodyList extends cdktn.ComplexList {
+  public internalValue? : EmailSecurityTrustedDomainsBody[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -295,9 +295,9 @@ export class EmailSecurityTrustedDomainsBodyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}
 */
-export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
+export class EmailSecurityTrustedDomains extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -308,14 +308,14 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmailSecurityTrustedDomains resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmailSecurityTrustedDomains resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailSecurityTrustedDomains to import
-  * @param importFromId The id of the existing EmailSecurityTrustedDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailSecurityTrustedDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailSecurityTrustedDomains to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_trusted_domains", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_trusted_domains", importId: importFromId, provider });
       }
 
   // ===========
@@ -323,7 +323,7 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -334,7 +334,7 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_security_trusted_domains',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -376,7 +376,7 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   public get body() {
     return this._body;
   }
-  public putBody(value: EmailSecurityTrustedDomainsBody[] | cdktf.IResolvable) {
+  public putBody(value: EmailSecurityTrustedDomainsBody[] | cdktn.IResolvable) {
     this._body.internalValue = value;
   }
   public resetBody() {
@@ -414,11 +414,11 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   }
 
   // is_recent - computed: false, optional: true, required: false
-  private _isRecent?: boolean | cdktf.IResolvable; 
+  private _isRecent?: boolean | cdktn.IResolvable; 
   public get isRecent() {
     return this.getBooleanAttribute('is_recent');
   }
-  public set isRecent(value: boolean | cdktf.IResolvable) {
+  public set isRecent(value: boolean | cdktn.IResolvable) {
     this._isRecent = value;
   }
   public resetIsRecent() {
@@ -430,11 +430,11 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   }
 
   // is_regex - computed: false, optional: true, required: false
-  private _isRegex?: boolean | cdktf.IResolvable; 
+  private _isRegex?: boolean | cdktn.IResolvable; 
   public get isRegex() {
     return this.getBooleanAttribute('is_regex');
   }
-  public set isRegex(value: boolean | cdktf.IResolvable) {
+  public set isRegex(value: boolean | cdktn.IResolvable) {
     this._isRegex = value;
   }
   public resetIsRegex() {
@@ -446,11 +446,11 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
   }
 
   // is_similarity - computed: false, optional: true, required: false
-  private _isSimilarity?: boolean | cdktf.IResolvable; 
+  private _isSimilarity?: boolean | cdktn.IResolvable; 
   public get isSimilarity() {
     return this.getBooleanAttribute('is_similarity');
   }
-  public set isSimilarity(value: boolean | cdktf.IResolvable) {
+  public set isSimilarity(value: boolean | cdktn.IResolvable) {
     this._isSimilarity = value;
   }
   public resetIsSimilarity() {
@@ -488,56 +488,56 @@ export class EmailSecurityTrustedDomains extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      body: cdktf.listMapper(emailSecurityTrustedDomainsBodyToTerraform, false)(this._body.internalValue),
-      comments: cdktf.stringToTerraform(this._comments),
-      is_recent: cdktf.booleanToTerraform(this._isRecent),
-      is_regex: cdktf.booleanToTerraform(this._isRegex),
-      is_similarity: cdktf.booleanToTerraform(this._isSimilarity),
-      pattern: cdktf.stringToTerraform(this._pattern),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      body: cdktn.listMapper(emailSecurityTrustedDomainsBodyToTerraform, false)(this._body.internalValue),
+      comments: cdktn.stringToTerraform(this._comments),
+      is_recent: cdktn.booleanToTerraform(this._isRecent),
+      is_regex: cdktn.booleanToTerraform(this._isRegex),
+      is_similarity: cdktn.booleanToTerraform(this._isSimilarity),
+      pattern: cdktn.stringToTerraform(this._pattern),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       body: {
-        value: cdktf.listMapperHcl(emailSecurityTrustedDomainsBodyToHclTerraform, false)(this._body.internalValue),
+        value: cdktn.listMapperHcl(emailSecurityTrustedDomainsBodyToHclTerraform, false)(this._body.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "EmailSecurityTrustedDomainsBodyList",
       },
       comments: {
-        value: cdktf.stringToHclTerraform(this._comments),
+        value: cdktn.stringToHclTerraform(this._comments),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_recent: {
-        value: cdktf.booleanToHclTerraform(this._isRecent),
+        value: cdktn.booleanToHclTerraform(this._isRecent),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_regex: {
-        value: cdktf.booleanToHclTerraform(this._isRegex),
+        value: cdktn.booleanToHclTerraform(this._isRegex),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_similarity: {
-        value: cdktf.booleanToHclTerraform(this._isSimilarity),
+        value: cdktn.booleanToHclTerraform(this._isSimilarity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       pattern: {
-        value: cdktf.stringToHclTerraform(this._pattern),
+        value: cdktn.stringToHclTerraform(this._pattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

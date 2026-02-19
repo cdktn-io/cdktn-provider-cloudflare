@@ -1,48 +1,48 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HostnameTlsSettingConfig extends cdktf.TerraformMetaArguments {
+export interface HostnameTlsSettingConfig extends cdktn.TerraformMetaArguments {
   /**
   * The hostname for which the tls settings are set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
   */
   readonly hostname: string;
   /**
   * The TLS Setting name.
   * Available values: "ciphers", "min_tls_version", "http2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
   */
   readonly settingId: string;
   /**
   * The tls setting value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
   */
   readonly value: { [key: string]: any };
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}
 */
-export class HostnameTlsSetting extends cdktf.TerraformResource {
+export class HostnameTlsSetting extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -53,14 +53,14 @@ export class HostnameTlsSetting extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HostnameTlsSetting resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HostnameTlsSetting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HostnameTlsSetting to import
-  * @param importFromId The id of the existing HostnameTlsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HostnameTlsSetting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HostnameTlsSetting to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_hostname_tls_setting", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_hostname_tls_setting", importId: importFromId, provider });
       }
 
   // ===========
@@ -68,7 +68,7 @@ export class HostnameTlsSetting extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +79,7 @@ export class HostnameTlsSetting extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_hostname_tls_setting',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -178,35 +178,35 @@ export class HostnameTlsSetting extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hostname: cdktf.stringToTerraform(this._hostname),
-      setting_id: cdktf.stringToTerraform(this._settingId),
-      value: cdktf.hashMapper(cdktf.anyToTerraform)(this._value),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      hostname: cdktn.stringToTerraform(this._hostname),
+      setting_id: cdktn.stringToTerraform(this._settingId),
+      value: cdktn.hashMapper(cdktn.anyToTerraform)(this._value),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hostname: {
-        value: cdktf.stringToHclTerraform(this._hostname),
+        value: cdktn.stringToHclTerraform(this._hostname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       setting_id: {
-        value: cdktf.stringToHclTerraform(this._settingId),
+        value: cdktn.stringToHclTerraform(this._settingId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       value: {
-        value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(this._value),
+        value: cdktn.hashMapperHcl(cdktn.anyToHclTerraform)(this._value),
         isBlock: false,
         type: "map",
         storageClassType: "anyMap",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

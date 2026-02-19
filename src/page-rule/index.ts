@@ -1,19 +1,19 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PageRuleConfig extends cdktf.TerraformMetaArguments {
+export interface PageRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#actions PageRule#actions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#actions PageRule#actions}
   */
   readonly actions: PageRuleActions;
   /**
@@ -23,64 +23,64 @@ export interface PageRuleConfig extends cdktf.TerraformMetaArguments {
   * specific Page Rule to take precedence (rule B: `/images/special/*`),
   * specify a higher priority for rule B so it overrides rule A.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#priority PageRule#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#priority PageRule#priority}
   */
   readonly priority?: number;
   /**
   * The status of the Page Rule.
   * Available values: "active", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#status PageRule#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#status PageRule#status}
   */
   readonly status?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#target PageRule#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#target PageRule#target}
   */
   readonly target: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#zone_id PageRule#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#zone_id PageRule#zone_id}
   */
   readonly zoneId: string;
 }
 export interface PageRuleActionsCacheKeyFieldsCookie {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#check_presence PageRule#check_presence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#check_presence PageRule#check_presence}
   */
   readonly checkPresence?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#include PageRule#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#include PageRule#include}
   */
   readonly include?: string[];
 }
 
-export function pageRuleActionsCacheKeyFieldsCookieToTerraform(struct?: PageRuleActionsCacheKeyFieldsCookie | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsCookieToTerraform(struct?: PageRuleActionsCacheKeyFieldsCookie | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    check_presence: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checkPresence),
-    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
+    check_presence: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.checkPresence),
+    include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.include),
   }
 }
 
 
-export function pageRuleActionsCacheKeyFieldsCookieToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsCookie | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsCookieToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsCookie | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     check_presence: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.checkPresence),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.checkPresence),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.include),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.include),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -91,19 +91,19 @@ export function pageRuleActionsCacheKeyFieldsCookieToHclTerraform(struct?: PageR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsCacheKeyFieldsCookieOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsCacheKeyFieldsCookieOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActionsCacheKeyFieldsCookie | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActionsCacheKeyFieldsCookie | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,14 +120,14 @@ export class PageRuleActionsCacheKeyFieldsCookieOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActionsCacheKeyFieldsCookie | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActionsCacheKeyFieldsCookie | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._checkPresence = undefined;
       this._include = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -173,52 +173,52 @@ export class PageRuleActionsCacheKeyFieldsCookieOutputReference extends cdktf.Co
 }
 export interface PageRuleActionsCacheKeyFieldsHeader {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#check_presence PageRule#check_presence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#check_presence PageRule#check_presence}
   */
   readonly checkPresence?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#exclude PageRule#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#exclude PageRule#exclude}
   */
   readonly exclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#include PageRule#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#include PageRule#include}
   */
   readonly include?: string[];
 }
 
-export function pageRuleActionsCacheKeyFieldsHeaderToTerraform(struct?: PageRuleActionsCacheKeyFieldsHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsHeaderToTerraform(struct?: PageRuleActionsCacheKeyFieldsHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    check_presence: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.checkPresence),
-    exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclude),
-    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
+    check_presence: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.checkPresence),
+    exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclude),
+    include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.include),
   }
 }
 
 
-export function pageRuleActionsCacheKeyFieldsHeaderToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsHeader | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsHeaderToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsHeader | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     check_presence: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.checkPresence),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.checkPresence),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.include),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.include),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -229,19 +229,19 @@ export function pageRuleActionsCacheKeyFieldsHeaderToHclTerraform(struct?: PageR
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsCacheKeyFieldsHeaderOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsCacheKeyFieldsHeaderOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActionsCacheKeyFieldsHeader | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActionsCacheKeyFieldsHeader | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -262,7 +262,7 @@ export class PageRuleActionsCacheKeyFieldsHeaderOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActionsCacheKeyFieldsHeader | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActionsCacheKeyFieldsHeader | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -270,7 +270,7 @@ export class PageRuleActionsCacheKeyFieldsHeaderOutputReference extends cdktf.Co
       this._exclude = undefined;
       this._include = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -333,30 +333,30 @@ export class PageRuleActionsCacheKeyFieldsHeaderOutputReference extends cdktf.Co
 }
 export interface PageRuleActionsCacheKeyFieldsHost {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#resolved PageRule#resolved}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#resolved PageRule#resolved}
   */
-  readonly resolved?: boolean | cdktf.IResolvable;
+  readonly resolved?: boolean | cdktn.IResolvable;
 }
 
-export function pageRuleActionsCacheKeyFieldsHostToTerraform(struct?: PageRuleActionsCacheKeyFieldsHost | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsHostToTerraform(struct?: PageRuleActionsCacheKeyFieldsHost | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    resolved: cdktf.booleanToTerraform(struct!.resolved),
+    resolved: cdktn.booleanToTerraform(struct!.resolved),
   }
 }
 
 
-export function pageRuleActionsCacheKeyFieldsHostToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsHost | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsHostToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsHost | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     resolved: {
-      value: cdktf.booleanToHclTerraform(struct!.resolved),
+      value: cdktn.booleanToHclTerraform(struct!.resolved),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -367,19 +367,19 @@ export function pageRuleActionsCacheKeyFieldsHostToHclTerraform(struct?: PageRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsCacheKeyFieldsHostOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsCacheKeyFieldsHostOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActionsCacheKeyFieldsHost | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActionsCacheKeyFieldsHost | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -392,13 +392,13 @@ export class PageRuleActionsCacheKeyFieldsHostOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActionsCacheKeyFieldsHost | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActionsCacheKeyFieldsHost | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._resolved = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -410,11 +410,11 @@ export class PageRuleActionsCacheKeyFieldsHostOutputReference extends cdktf.Comp
   }
 
   // resolved - computed: true, optional: true, required: false
-  private _resolved?: boolean | cdktf.IResolvable; 
+  private _resolved?: boolean | cdktn.IResolvable; 
   public get resolved() {
     return this.getBooleanAttribute('resolved');
   }
-  public set resolved(value: boolean | cdktf.IResolvable) {
+  public set resolved(value: boolean | cdktn.IResolvable) {
     this._resolved = value;
   }
   public resetResolved() {
@@ -427,41 +427,41 @@ export class PageRuleActionsCacheKeyFieldsHostOutputReference extends cdktf.Comp
 }
 export interface PageRuleActionsCacheKeyFieldsQueryString {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#exclude PageRule#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#exclude PageRule#exclude}
   */
   readonly exclude?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#include PageRule#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#include PageRule#include}
   */
   readonly include?: string[];
 }
 
-export function pageRuleActionsCacheKeyFieldsQueryStringToTerraform(struct?: PageRuleActionsCacheKeyFieldsQueryString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsQueryStringToTerraform(struct?: PageRuleActionsCacheKeyFieldsQueryString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.exclude),
-    include: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.include),
+    exclude: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.exclude),
+    include: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.include),
   }
 }
 
 
-export function pageRuleActionsCacheKeyFieldsQueryStringToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsQueryString | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsQueryStringToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsQueryString | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.exclude),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.exclude),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     include: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.include),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.include),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -472,19 +472,19 @@ export function pageRuleActionsCacheKeyFieldsQueryStringToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsCacheKeyFieldsQueryStringOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsCacheKeyFieldsQueryStringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActionsCacheKeyFieldsQueryString | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActionsCacheKeyFieldsQueryString | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -501,14 +501,14 @@ export class PageRuleActionsCacheKeyFieldsQueryStringOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActionsCacheKeyFieldsQueryString | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActionsCacheKeyFieldsQueryString | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._exclude = undefined;
       this._include = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -554,52 +554,52 @@ export class PageRuleActionsCacheKeyFieldsQueryStringOutputReference extends cdk
 }
 export interface PageRuleActionsCacheKeyFieldsUser {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#device_type PageRule#device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#device_type PageRule#device_type}
   */
-  readonly deviceType?: boolean | cdktf.IResolvable;
+  readonly deviceType?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#geo PageRule#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#geo PageRule#geo}
   */
-  readonly geo?: boolean | cdktf.IResolvable;
+  readonly geo?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#lang PageRule#lang}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#lang PageRule#lang}
   */
-  readonly lang?: boolean | cdktf.IResolvable;
+  readonly lang?: boolean | cdktn.IResolvable;
 }
 
-export function pageRuleActionsCacheKeyFieldsUserToTerraform(struct?: PageRuleActionsCacheKeyFieldsUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsUserToTerraform(struct?: PageRuleActionsCacheKeyFieldsUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    device_type: cdktf.booleanToTerraform(struct!.deviceType),
-    geo: cdktf.booleanToTerraform(struct!.geo),
-    lang: cdktf.booleanToTerraform(struct!.lang),
+    device_type: cdktn.booleanToTerraform(struct!.deviceType),
+    geo: cdktn.booleanToTerraform(struct!.geo),
+    lang: cdktn.booleanToTerraform(struct!.lang),
   }
 }
 
 
-export function pageRuleActionsCacheKeyFieldsUserToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsUser | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsUserToHclTerraform(struct?: PageRuleActionsCacheKeyFieldsUser | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     device_type: {
-      value: cdktf.booleanToHclTerraform(struct!.deviceType),
+      value: cdktn.booleanToHclTerraform(struct!.deviceType),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     geo: {
-      value: cdktf.booleanToHclTerraform(struct!.geo),
+      value: cdktn.booleanToHclTerraform(struct!.geo),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     lang: {
-      value: cdktf.booleanToHclTerraform(struct!.lang),
+      value: cdktn.booleanToHclTerraform(struct!.lang),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -610,19 +610,19 @@ export function pageRuleActionsCacheKeyFieldsUserToHclTerraform(struct?: PageRul
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActionsCacheKeyFieldsUser | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActionsCacheKeyFieldsUser | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -643,7 +643,7 @@ export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActionsCacheKeyFieldsUser | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActionsCacheKeyFieldsUser | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -651,7 +651,7 @@ export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktf.Comp
       this._geo = undefined;
       this._lang = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -665,11 +665,11 @@ export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktf.Comp
   }
 
   // device_type - computed: true, optional: true, required: false
-  private _deviceType?: boolean | cdktf.IResolvable; 
+  private _deviceType?: boolean | cdktn.IResolvable; 
   public get deviceType() {
     return this.getBooleanAttribute('device_type');
   }
-  public set deviceType(value: boolean | cdktf.IResolvable) {
+  public set deviceType(value: boolean | cdktn.IResolvable) {
     this._deviceType = value;
   }
   public resetDeviceType() {
@@ -681,11 +681,11 @@ export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktf.Comp
   }
 
   // geo - computed: true, optional: true, required: false
-  private _geo?: boolean | cdktf.IResolvable; 
+  private _geo?: boolean | cdktn.IResolvable; 
   public get geo() {
     return this.getBooleanAttribute('geo');
   }
-  public set geo(value: boolean | cdktf.IResolvable) {
+  public set geo(value: boolean | cdktn.IResolvable) {
     this._geo = value;
   }
   public resetGeo() {
@@ -697,11 +697,11 @@ export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktf.Comp
   }
 
   // lang - computed: true, optional: true, required: false
-  private _lang?: boolean | cdktf.IResolvable; 
+  private _lang?: boolean | cdktn.IResolvable; 
   public get lang() {
     return this.getBooleanAttribute('lang');
   }
-  public set lang(value: boolean | cdktf.IResolvable) {
+  public set lang(value: boolean | cdktn.IResolvable) {
     this._lang = value;
   }
   public resetLang() {
@@ -714,30 +714,30 @@ export class PageRuleActionsCacheKeyFieldsUserOutputReference extends cdktf.Comp
 }
 export interface PageRuleActionsCacheKeyFields {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#cookie PageRule#cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#cookie PageRule#cookie}
   */
   readonly cookie?: PageRuleActionsCacheKeyFieldsCookie;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#header PageRule#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#header PageRule#header}
   */
   readonly header?: PageRuleActionsCacheKeyFieldsHeader;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#host PageRule#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#host PageRule#host}
   */
   readonly host?: PageRuleActionsCacheKeyFieldsHost;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#query_string PageRule#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#query_string PageRule#query_string}
   */
   readonly queryString?: PageRuleActionsCacheKeyFieldsQueryString;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#user PageRule#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#user PageRule#user}
   */
   readonly user?: PageRuleActionsCacheKeyFieldsUser;
 }
 
-export function pageRuleActionsCacheKeyFieldsToTerraform(struct?: PageRuleActionsCacheKeyFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsToTerraform(struct?: PageRuleActionsCacheKeyFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -750,9 +750,9 @@ export function pageRuleActionsCacheKeyFieldsToTerraform(struct?: PageRuleAction
 }
 
 
-export function pageRuleActionsCacheKeyFieldsToHclTerraform(struct?: PageRuleActionsCacheKeyFields | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsCacheKeyFieldsToHclTerraform(struct?: PageRuleActionsCacheKeyFields | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -792,19 +792,19 @@ export function pageRuleActionsCacheKeyFieldsToHclTerraform(struct?: PageRuleAct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsCacheKeyFieldsOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsCacheKeyFieldsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActionsCacheKeyFields | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActionsCacheKeyFields | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -833,7 +833,7 @@ export class PageRuleActionsCacheKeyFieldsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActionsCacheKeyFields | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActionsCacheKeyFields | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -843,7 +843,7 @@ export class PageRuleActionsCacheKeyFieldsOutputReference extends cdktf.ComplexO
       this._queryString.internalValue = undefined;
       this._user.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -940,41 +940,41 @@ export class PageRuleActionsCacheKeyFieldsOutputReference extends cdktf.ComplexO
 }
 export interface PageRuleActionsForwardingUrl {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#status_code PageRule#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#status_code PageRule#status_code}
   */
   readonly statusCode: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#url PageRule#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#url PageRule#url}
   */
   readonly url: string;
 }
 
-export function pageRuleActionsForwardingUrlToTerraform(struct?: PageRuleActionsForwardingUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsForwardingUrlToTerraform(struct?: PageRuleActionsForwardingUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    status_code: cdktf.numberToTerraform(struct!.statusCode),
-    url: cdktf.stringToTerraform(struct!.url),
+    status_code: cdktn.numberToTerraform(struct!.statusCode),
+    url: cdktn.stringToTerraform(struct!.url),
   }
 }
 
 
-export function pageRuleActionsForwardingUrlToHclTerraform(struct?: PageRuleActionsForwardingUrl | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsForwardingUrlToHclTerraform(struct?: PageRuleActionsForwardingUrl | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     status_code: {
-      value: cdktf.numberToHclTerraform(struct!.statusCode),
+      value: cdktn.numberToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     url: {
-      value: cdktf.stringToHclTerraform(struct!.url),
+      value: cdktn.stringToHclTerraform(struct!.url),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -985,19 +985,19 @@ export function pageRuleActionsForwardingUrlToHclTerraform(struct?: PageRuleActi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsForwardingUrlOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsForwardingUrlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActionsForwardingUrl | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActionsForwardingUrl | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1014,14 +1014,14 @@ export class PageRuleActionsForwardingUrlOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActionsForwardingUrl | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActionsForwardingUrl | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._statusCode = undefined;
       this._url = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1061,231 +1061,231 @@ export class PageRuleActionsForwardingUrlOutputReference extends cdktf.ComplexOb
 }
 export interface PageRuleActions {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#always_use_https PageRule#always_use_https}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#always_use_https PageRule#always_use_https}
   */
-  readonly alwaysUseHttps?: boolean | cdktf.IResolvable;
+  readonly alwaysUseHttps?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#automatic_https_rewrites PageRule#automatic_https_rewrites}
   */
   readonly automaticHttpsRewrites?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#browser_cache_ttl PageRule#browser_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#browser_cache_ttl PageRule#browser_cache_ttl}
   */
   readonly browserCacheTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#browser_check PageRule#browser_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#browser_check PageRule#browser_check}
   */
   readonly browserCheck?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#bypass_cache_on_cookie PageRule#bypass_cache_on_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#bypass_cache_on_cookie PageRule#bypass_cache_on_cookie}
   */
   readonly bypassCacheOnCookie?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#cache_by_device_type PageRule#cache_by_device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#cache_by_device_type PageRule#cache_by_device_type}
   */
   readonly cacheByDeviceType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#cache_deception_armor PageRule#cache_deception_armor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#cache_deception_armor PageRule#cache_deception_armor}
   */
   readonly cacheDeceptionArmor?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#cache_key_fields PageRule#cache_key_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#cache_key_fields PageRule#cache_key_fields}
   */
   readonly cacheKeyFields?: PageRuleActionsCacheKeyFields;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#cache_level PageRule#cache_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#cache_level PageRule#cache_level}
   */
   readonly cacheLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#cache_on_cookie PageRule#cache_on_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#cache_on_cookie PageRule#cache_on_cookie}
   */
   readonly cacheOnCookie?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#cache_ttl_by_status PageRule#cache_ttl_by_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#cache_ttl_by_status PageRule#cache_ttl_by_status}
   */
   readonly cacheTtlByStatus?: { [key: string]: string };
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#disable_apps PageRule#disable_apps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#disable_apps PageRule#disable_apps}
   */
-  readonly disableApps?: boolean | cdktf.IResolvable;
+  readonly disableApps?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#disable_performance PageRule#disable_performance}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#disable_performance PageRule#disable_performance}
   */
-  readonly disablePerformance?: boolean | cdktf.IResolvable;
+  readonly disablePerformance?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#disable_security PageRule#disable_security}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#disable_security PageRule#disable_security}
   */
-  readonly disableSecurity?: boolean | cdktf.IResolvable;
+  readonly disableSecurity?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#disable_zaraz PageRule#disable_zaraz}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#disable_zaraz PageRule#disable_zaraz}
   */
-  readonly disableZaraz?: boolean | cdktf.IResolvable;
+  readonly disableZaraz?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#edge_cache_ttl PageRule#edge_cache_ttl}
   */
   readonly edgeCacheTtl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#email_obfuscation PageRule#email_obfuscation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#email_obfuscation PageRule#email_obfuscation}
   */
   readonly emailObfuscation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#explicit_cache_control PageRule#explicit_cache_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#explicit_cache_control PageRule#explicit_cache_control}
   */
   readonly explicitCacheControl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#forwarding_url PageRule#forwarding_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#forwarding_url PageRule#forwarding_url}
   */
   readonly forwardingUrl?: PageRuleActionsForwardingUrl;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#host_header_override PageRule#host_header_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#host_header_override PageRule#host_header_override}
   */
   readonly hostHeaderOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#ip_geolocation PageRule#ip_geolocation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#ip_geolocation PageRule#ip_geolocation}
   */
   readonly ipGeolocation?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#mirage PageRule#mirage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#mirage PageRule#mirage}
   */
   readonly mirage?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#opportunistic_encryption PageRule#opportunistic_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#opportunistic_encryption PageRule#opportunistic_encryption}
   */
   readonly opportunisticEncryption?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#origin_error_page_pass_thru PageRule#origin_error_page_pass_thru}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#origin_error_page_pass_thru PageRule#origin_error_page_pass_thru}
   */
   readonly originErrorPagePassThru?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#polish PageRule#polish}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#polish PageRule#polish}
   */
   readonly polish?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#resolve_override PageRule#resolve_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#resolve_override PageRule#resolve_override}
   */
   readonly resolveOverride?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#respect_strong_etag PageRule#respect_strong_etag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#respect_strong_etag PageRule#respect_strong_etag}
   */
   readonly respectStrongEtag?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#response_buffering PageRule#response_buffering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#response_buffering PageRule#response_buffering}
   */
   readonly responseBuffering?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#rocket_loader PageRule#rocket_loader}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#rocket_loader PageRule#rocket_loader}
   */
   readonly rocketLoader?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#security_level PageRule#security_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#security_level PageRule#security_level}
   */
   readonly securityLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#sort_query_string_for_cache PageRule#sort_query_string_for_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#sort_query_string_for_cache PageRule#sort_query_string_for_cache}
   */
   readonly sortQueryStringForCache?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#ssl PageRule#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#ssl PageRule#ssl}
   */
   readonly ssl?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#true_client_ip_header PageRule#true_client_ip_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#true_client_ip_header PageRule#true_client_ip_header}
   */
   readonly trueClientIpHeader?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#waf PageRule#waf}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#waf PageRule#waf}
   */
   readonly waf?: string;
 }
 
-export function pageRuleActionsToTerraform(struct?: PageRuleActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsToTerraform(struct?: PageRuleActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    always_use_https: cdktf.booleanToTerraform(struct!.alwaysUseHttps),
-    automatic_https_rewrites: cdktf.stringToTerraform(struct!.automaticHttpsRewrites),
-    browser_cache_ttl: cdktf.numberToTerraform(struct!.browserCacheTtl),
-    browser_check: cdktf.stringToTerraform(struct!.browserCheck),
-    bypass_cache_on_cookie: cdktf.stringToTerraform(struct!.bypassCacheOnCookie),
-    cache_by_device_type: cdktf.stringToTerraform(struct!.cacheByDeviceType),
-    cache_deception_armor: cdktf.stringToTerraform(struct!.cacheDeceptionArmor),
+    always_use_https: cdktn.booleanToTerraform(struct!.alwaysUseHttps),
+    automatic_https_rewrites: cdktn.stringToTerraform(struct!.automaticHttpsRewrites),
+    browser_cache_ttl: cdktn.numberToTerraform(struct!.browserCacheTtl),
+    browser_check: cdktn.stringToTerraform(struct!.browserCheck),
+    bypass_cache_on_cookie: cdktn.stringToTerraform(struct!.bypassCacheOnCookie),
+    cache_by_device_type: cdktn.stringToTerraform(struct!.cacheByDeviceType),
+    cache_deception_armor: cdktn.stringToTerraform(struct!.cacheDeceptionArmor),
     cache_key_fields: pageRuleActionsCacheKeyFieldsToTerraform(struct!.cacheKeyFields),
-    cache_level: cdktf.stringToTerraform(struct!.cacheLevel),
-    cache_on_cookie: cdktf.stringToTerraform(struct!.cacheOnCookie),
-    cache_ttl_by_status: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.cacheTtlByStatus),
-    disable_apps: cdktf.booleanToTerraform(struct!.disableApps),
-    disable_performance: cdktf.booleanToTerraform(struct!.disablePerformance),
-    disable_security: cdktf.booleanToTerraform(struct!.disableSecurity),
-    disable_zaraz: cdktf.booleanToTerraform(struct!.disableZaraz),
-    edge_cache_ttl: cdktf.numberToTerraform(struct!.edgeCacheTtl),
-    email_obfuscation: cdktf.stringToTerraform(struct!.emailObfuscation),
-    explicit_cache_control: cdktf.stringToTerraform(struct!.explicitCacheControl),
+    cache_level: cdktn.stringToTerraform(struct!.cacheLevel),
+    cache_on_cookie: cdktn.stringToTerraform(struct!.cacheOnCookie),
+    cache_ttl_by_status: cdktn.hashMapper(cdktn.stringToTerraform)(struct!.cacheTtlByStatus),
+    disable_apps: cdktn.booleanToTerraform(struct!.disableApps),
+    disable_performance: cdktn.booleanToTerraform(struct!.disablePerformance),
+    disable_security: cdktn.booleanToTerraform(struct!.disableSecurity),
+    disable_zaraz: cdktn.booleanToTerraform(struct!.disableZaraz),
+    edge_cache_ttl: cdktn.numberToTerraform(struct!.edgeCacheTtl),
+    email_obfuscation: cdktn.stringToTerraform(struct!.emailObfuscation),
+    explicit_cache_control: cdktn.stringToTerraform(struct!.explicitCacheControl),
     forwarding_url: pageRuleActionsForwardingUrlToTerraform(struct!.forwardingUrl),
-    host_header_override: cdktf.stringToTerraform(struct!.hostHeaderOverride),
-    ip_geolocation: cdktf.stringToTerraform(struct!.ipGeolocation),
-    mirage: cdktf.stringToTerraform(struct!.mirage),
-    opportunistic_encryption: cdktf.stringToTerraform(struct!.opportunisticEncryption),
-    origin_error_page_pass_thru: cdktf.stringToTerraform(struct!.originErrorPagePassThru),
-    polish: cdktf.stringToTerraform(struct!.polish),
-    resolve_override: cdktf.stringToTerraform(struct!.resolveOverride),
-    respect_strong_etag: cdktf.stringToTerraform(struct!.respectStrongEtag),
-    response_buffering: cdktf.stringToTerraform(struct!.responseBuffering),
-    rocket_loader: cdktf.stringToTerraform(struct!.rocketLoader),
-    security_level: cdktf.stringToTerraform(struct!.securityLevel),
-    sort_query_string_for_cache: cdktf.stringToTerraform(struct!.sortQueryStringForCache),
-    ssl: cdktf.stringToTerraform(struct!.ssl),
-    true_client_ip_header: cdktf.stringToTerraform(struct!.trueClientIpHeader),
-    waf: cdktf.stringToTerraform(struct!.waf),
+    host_header_override: cdktn.stringToTerraform(struct!.hostHeaderOverride),
+    ip_geolocation: cdktn.stringToTerraform(struct!.ipGeolocation),
+    mirage: cdktn.stringToTerraform(struct!.mirage),
+    opportunistic_encryption: cdktn.stringToTerraform(struct!.opportunisticEncryption),
+    origin_error_page_pass_thru: cdktn.stringToTerraform(struct!.originErrorPagePassThru),
+    polish: cdktn.stringToTerraform(struct!.polish),
+    resolve_override: cdktn.stringToTerraform(struct!.resolveOverride),
+    respect_strong_etag: cdktn.stringToTerraform(struct!.respectStrongEtag),
+    response_buffering: cdktn.stringToTerraform(struct!.responseBuffering),
+    rocket_loader: cdktn.stringToTerraform(struct!.rocketLoader),
+    security_level: cdktn.stringToTerraform(struct!.securityLevel),
+    sort_query_string_for_cache: cdktn.stringToTerraform(struct!.sortQueryStringForCache),
+    ssl: cdktn.stringToTerraform(struct!.ssl),
+    true_client_ip_header: cdktn.stringToTerraform(struct!.trueClientIpHeader),
+    waf: cdktn.stringToTerraform(struct!.waf),
   }
 }
 
 
-export function pageRuleActionsToHclTerraform(struct?: PageRuleActions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pageRuleActionsToHclTerraform(struct?: PageRuleActions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     always_use_https: {
-      value: cdktf.booleanToHclTerraform(struct!.alwaysUseHttps),
+      value: cdktn.booleanToHclTerraform(struct!.alwaysUseHttps),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     automatic_https_rewrites: {
-      value: cdktf.stringToHclTerraform(struct!.automaticHttpsRewrites),
+      value: cdktn.stringToHclTerraform(struct!.automaticHttpsRewrites),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     browser_cache_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.browserCacheTtl),
+      value: cdktn.numberToHclTerraform(struct!.browserCacheTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     browser_check: {
-      value: cdktf.stringToHclTerraform(struct!.browserCheck),
+      value: cdktn.stringToHclTerraform(struct!.browserCheck),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     bypass_cache_on_cookie: {
-      value: cdktf.stringToHclTerraform(struct!.bypassCacheOnCookie),
+      value: cdktn.stringToHclTerraform(struct!.bypassCacheOnCookie),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cache_by_device_type: {
-      value: cdktf.stringToHclTerraform(struct!.cacheByDeviceType),
+      value: cdktn.stringToHclTerraform(struct!.cacheByDeviceType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cache_deception_armor: {
-      value: cdktf.stringToHclTerraform(struct!.cacheDeceptionArmor),
+      value: cdktn.stringToHclTerraform(struct!.cacheDeceptionArmor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1297,61 +1297,61 @@ export function pageRuleActionsToHclTerraform(struct?: PageRuleActions | cdktf.I
       storageClassType: "PageRuleActionsCacheKeyFields",
     },
     cache_level: {
-      value: cdktf.stringToHclTerraform(struct!.cacheLevel),
+      value: cdktn.stringToHclTerraform(struct!.cacheLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cache_on_cookie: {
-      value: cdktf.stringToHclTerraform(struct!.cacheOnCookie),
+      value: cdktn.stringToHclTerraform(struct!.cacheOnCookie),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     cache_ttl_by_status: {
-      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.cacheTtlByStatus),
+      value: cdktn.hashMapperHcl(cdktn.stringToHclTerraform)(struct!.cacheTtlByStatus),
       isBlock: false,
       type: "map",
       storageClassType: "stringMap",
     },
     disable_apps: {
-      value: cdktf.booleanToHclTerraform(struct!.disableApps),
+      value: cdktn.booleanToHclTerraform(struct!.disableApps),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_performance: {
-      value: cdktf.booleanToHclTerraform(struct!.disablePerformance),
+      value: cdktn.booleanToHclTerraform(struct!.disablePerformance),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_security: {
-      value: cdktf.booleanToHclTerraform(struct!.disableSecurity),
+      value: cdktn.booleanToHclTerraform(struct!.disableSecurity),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     disable_zaraz: {
-      value: cdktf.booleanToHclTerraform(struct!.disableZaraz),
+      value: cdktn.booleanToHclTerraform(struct!.disableZaraz),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     edge_cache_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.edgeCacheTtl),
+      value: cdktn.numberToHclTerraform(struct!.edgeCacheTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     email_obfuscation: {
-      value: cdktf.stringToHclTerraform(struct!.emailObfuscation),
+      value: cdktn.stringToHclTerraform(struct!.emailObfuscation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     explicit_cache_control: {
-      value: cdktf.stringToHclTerraform(struct!.explicitCacheControl),
+      value: cdktn.stringToHclTerraform(struct!.explicitCacheControl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1363,91 +1363,91 @@ export function pageRuleActionsToHclTerraform(struct?: PageRuleActions | cdktf.I
       storageClassType: "PageRuleActionsForwardingUrl",
     },
     host_header_override: {
-      value: cdktf.stringToHclTerraform(struct!.hostHeaderOverride),
+      value: cdktn.stringToHclTerraform(struct!.hostHeaderOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_geolocation: {
-      value: cdktf.stringToHclTerraform(struct!.ipGeolocation),
+      value: cdktn.stringToHclTerraform(struct!.ipGeolocation),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mirage: {
-      value: cdktf.stringToHclTerraform(struct!.mirage),
+      value: cdktn.stringToHclTerraform(struct!.mirage),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     opportunistic_encryption: {
-      value: cdktf.stringToHclTerraform(struct!.opportunisticEncryption),
+      value: cdktn.stringToHclTerraform(struct!.opportunisticEncryption),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     origin_error_page_pass_thru: {
-      value: cdktf.stringToHclTerraform(struct!.originErrorPagePassThru),
+      value: cdktn.stringToHclTerraform(struct!.originErrorPagePassThru),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     polish: {
-      value: cdktf.stringToHclTerraform(struct!.polish),
+      value: cdktn.stringToHclTerraform(struct!.polish),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     resolve_override: {
-      value: cdktf.stringToHclTerraform(struct!.resolveOverride),
+      value: cdktn.stringToHclTerraform(struct!.resolveOverride),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     respect_strong_etag: {
-      value: cdktf.stringToHclTerraform(struct!.respectStrongEtag),
+      value: cdktn.stringToHclTerraform(struct!.respectStrongEtag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     response_buffering: {
-      value: cdktf.stringToHclTerraform(struct!.responseBuffering),
+      value: cdktn.stringToHclTerraform(struct!.responseBuffering),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     rocket_loader: {
-      value: cdktf.stringToHclTerraform(struct!.rocketLoader),
+      value: cdktn.stringToHclTerraform(struct!.rocketLoader),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     security_level: {
-      value: cdktf.stringToHclTerraform(struct!.securityLevel),
+      value: cdktn.stringToHclTerraform(struct!.securityLevel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sort_query_string_for_cache: {
-      value: cdktf.stringToHclTerraform(struct!.sortQueryStringForCache),
+      value: cdktn.stringToHclTerraform(struct!.sortQueryStringForCache),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ssl: {
-      value: cdktf.stringToHclTerraform(struct!.ssl),
+      value: cdktn.stringToHclTerraform(struct!.ssl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     true_client_ip_header: {
-      value: cdktf.stringToHclTerraform(struct!.trueClientIpHeader),
+      value: cdktn.stringToHclTerraform(struct!.trueClientIpHeader),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     waf: {
-      value: cdktf.stringToHclTerraform(struct!.waf),
+      value: cdktn.stringToHclTerraform(struct!.waf),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1458,19 +1458,19 @@ export function pageRuleActionsToHclTerraform(struct?: PageRuleActions | cdktf.I
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
+export class PageRuleActionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PageRuleActions | cdktf.IResolvable | undefined {
+  public get internalValue(): PageRuleActions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1615,7 +1615,7 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PageRuleActions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PageRuleActions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1654,7 +1654,7 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
       this._trueClientIpHeader = undefined;
       this._waf = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1699,11 +1699,11 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   }
 
   // always_use_https - computed: false, optional: true, required: false
-  private _alwaysUseHttps?: boolean | cdktf.IResolvable; 
+  private _alwaysUseHttps?: boolean | cdktn.IResolvable; 
   public get alwaysUseHttps() {
     return this.getBooleanAttribute('always_use_https');
   }
-  public set alwaysUseHttps(value: boolean | cdktf.IResolvable) {
+  public set alwaysUseHttps(value: boolean | cdktn.IResolvable) {
     this._alwaysUseHttps = value;
   }
   public resetAlwaysUseHttps() {
@@ -1875,11 +1875,11 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   }
 
   // disable_apps - computed: false, optional: true, required: false
-  private _disableApps?: boolean | cdktf.IResolvable; 
+  private _disableApps?: boolean | cdktn.IResolvable; 
   public get disableApps() {
     return this.getBooleanAttribute('disable_apps');
   }
-  public set disableApps(value: boolean | cdktf.IResolvable) {
+  public set disableApps(value: boolean | cdktn.IResolvable) {
     this._disableApps = value;
   }
   public resetDisableApps() {
@@ -1891,11 +1891,11 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   }
 
   // disable_performance - computed: false, optional: true, required: false
-  private _disablePerformance?: boolean | cdktf.IResolvable; 
+  private _disablePerformance?: boolean | cdktn.IResolvable; 
   public get disablePerformance() {
     return this.getBooleanAttribute('disable_performance');
   }
-  public set disablePerformance(value: boolean | cdktf.IResolvable) {
+  public set disablePerformance(value: boolean | cdktn.IResolvable) {
     this._disablePerformance = value;
   }
   public resetDisablePerformance() {
@@ -1907,11 +1907,11 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   }
 
   // disable_security - computed: false, optional: true, required: false
-  private _disableSecurity?: boolean | cdktf.IResolvable; 
+  private _disableSecurity?: boolean | cdktn.IResolvable; 
   public get disableSecurity() {
     return this.getBooleanAttribute('disable_security');
   }
-  public set disableSecurity(value: boolean | cdktf.IResolvable) {
+  public set disableSecurity(value: boolean | cdktn.IResolvable) {
     this._disableSecurity = value;
   }
   public resetDisableSecurity() {
@@ -1923,11 +1923,11 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
   }
 
   // disable_zaraz - computed: false, optional: true, required: false
-  private _disableZaraz?: boolean | cdktf.IResolvable; 
+  private _disableZaraz?: boolean | cdktn.IResolvable; 
   public get disableZaraz() {
     return this.getBooleanAttribute('disable_zaraz');
   }
-  public set disableZaraz(value: boolean | cdktf.IResolvable) {
+  public set disableZaraz(value: boolean | cdktn.IResolvable) {
     this._disableZaraz = value;
   }
   public resetDisableZaraz() {
@@ -2244,9 +2244,9 @@ export class PageRuleActionsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule cloudflare_page_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule cloudflare_page_rule}
 */
-export class PageRule extends cdktf.TerraformResource {
+export class PageRule extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2257,14 +2257,14 @@ export class PageRule extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PageRule resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PageRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PageRule to import
-  * @param importFromId The id of the existing PageRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PageRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PageRule to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_page_rule", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_page_rule", importId: importFromId, provider });
       }
 
   // ===========
@@ -2272,7 +2272,7 @@ export class PageRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/page_rule cloudflare_page_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/page_rule cloudflare_page_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2283,7 +2283,7 @@ export class PageRule extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_page_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -2398,10 +2398,10 @@ export class PageRule extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       actions: pageRuleActionsToTerraform(this._actions.internalValue),
-      priority: cdktf.numberToTerraform(this._priority),
-      status: cdktf.stringToTerraform(this._status),
-      target: cdktf.stringToTerraform(this._target),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      priority: cdktn.numberToTerraform(this._priority),
+      status: cdktn.stringToTerraform(this._status),
+      target: cdktn.stringToTerraform(this._target),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -2414,25 +2414,25 @@ export class PageRule extends cdktf.TerraformResource {
         storageClassType: "PageRuleActions",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target: {
-        value: cdktf.stringToHclTerraform(this._target),
+        value: cdktn.stringToHclTerraform(this._target),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

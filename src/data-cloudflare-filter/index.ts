@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareFilterConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareFilterConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#filter DataCloudflareFilter#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#filter DataCloudflareFilter#filter}
   */
   readonly filter?: DataCloudflareFilterFilter;
   /**
   * The unique identifier of the filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#filter_id DataCloudflareFilter#filter_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#filter_id DataCloudflareFilter#filter_id}
   */
   readonly filterId?: string;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#zone_id DataCloudflareFilter#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#zone_id DataCloudflareFilter#zone_id}
   */
   readonly zoneId: string;
 }
@@ -33,19 +33,19 @@ export interface DataCloudflareFilterFilter {
   /**
   * A case-insensitive string to find in the description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#description DataCloudflareFilter#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#description DataCloudflareFilter#description}
   */
   readonly description?: string;
   /**
   * A case-insensitive string to find in the expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#expression DataCloudflareFilter#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#expression DataCloudflareFilter#expression}
   */
   readonly expression?: string;
   /**
   * The unique identifier of the filter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#id DataCloudflareFilter#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#id DataCloudflareFilter#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,64 +54,64 @@ export interface DataCloudflareFilterFilter {
   /**
   * When true, indicates that the filter is currently paused.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#paused DataCloudflareFilter#paused}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#paused DataCloudflareFilter#paused}
   */
-  readonly paused?: boolean | cdktf.IResolvable;
+  readonly paused?: boolean | cdktn.IResolvable;
   /**
   * The filter ref (a short reference tag) to search for. Must be an exact match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#ref DataCloudflareFilter#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#ref DataCloudflareFilter#ref}
   */
   readonly ref?: string;
 }
 
-export function dataCloudflareFilterFilterToTerraform(struct?: DataCloudflareFilterFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareFilterFilterToTerraform(struct?: DataCloudflareFilterFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    expression: cdktf.stringToTerraform(struct!.expression),
-    id: cdktf.stringToTerraform(struct!.id),
-    paused: cdktf.booleanToTerraform(struct!.paused),
-    ref: cdktf.stringToTerraform(struct!.ref),
+    description: cdktn.stringToTerraform(struct!.description),
+    expression: cdktn.stringToTerraform(struct!.expression),
+    id: cdktn.stringToTerraform(struct!.id),
+    paused: cdktn.booleanToTerraform(struct!.paused),
+    ref: cdktn.stringToTerraform(struct!.ref),
   }
 }
 
 
-export function dataCloudflareFilterFilterToHclTerraform(struct?: DataCloudflareFilterFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareFilterFilterToHclTerraform(struct?: DataCloudflareFilterFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expression: {
-      value: cdktf.stringToHclTerraform(struct!.expression),
+      value: cdktn.stringToHclTerraform(struct!.expression),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     paused: {
-      value: cdktf.booleanToHclTerraform(struct!.paused),
+      value: cdktn.booleanToHclTerraform(struct!.paused),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ref: {
-      value: cdktf.stringToHclTerraform(struct!.ref),
+      value: cdktn.stringToHclTerraform(struct!.ref),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -122,19 +122,19 @@ export function dataCloudflareFilterFilterToHclTerraform(struct?: DataCloudflare
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareFilterFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareFilterFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareFilterFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareFilterFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -163,7 +163,7 @@ export class DataCloudflareFilterFilterOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareFilterFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareFilterFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -173,7 +173,7 @@ export class DataCloudflareFilterFilterOutputReference extends cdktf.ComplexObje
       this._paused = undefined;
       this._ref = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -237,11 +237,11 @@ export class DataCloudflareFilterFilterOutputReference extends cdktf.ComplexObje
   }
 
   // paused - computed: false, optional: true, required: false
-  private _paused?: boolean | cdktf.IResolvable; 
+  private _paused?: boolean | cdktn.IResolvable; 
   public get paused() {
     return this.getBooleanAttribute('paused');
   }
-  public set paused(value: boolean | cdktf.IResolvable) {
+  public set paused(value: boolean | cdktn.IResolvable) {
     this._paused = value;
   }
   public resetPaused() {
@@ -270,9 +270,9 @@ export class DataCloudflareFilterFilterOutputReference extends cdktf.ComplexObje
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter cloudflare_filter}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter cloudflare_filter}
 */
-export class DataCloudflareFilter extends cdktf.TerraformDataSource {
+export class DataCloudflareFilter extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -283,14 +283,14 @@ export class DataCloudflareFilter extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareFilter resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareFilter resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareFilter to import
-  * @param importFromId The id of the existing DataCloudflareFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareFilter that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareFilter to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_filter", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_filter", importId: importFromId, provider });
       }
 
   // ===========
@@ -298,7 +298,7 @@ export class DataCloudflareFilter extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/filter cloudflare_filter} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/filter cloudflare_filter} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -309,7 +309,7 @@ export class DataCloudflareFilter extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_filter',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -406,8 +406,8 @@ export class DataCloudflareFilter extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       filter: dataCloudflareFilterFilterToTerraform(this._filter.internalValue),
-      filter_id: cdktf.stringToTerraform(this._filterId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      filter_id: cdktn.stringToTerraform(this._filterId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -420,13 +420,13 @@ export class DataCloudflareFilter extends cdktf.TerraformDataSource {
         storageClassType: "DataCloudflareFilterFilter",
       },
       filter_id: {
-        value: cdktf.stringToHclTerraform(this._filterId),
+        value: cdktn.stringToHclTerraform(this._filterId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

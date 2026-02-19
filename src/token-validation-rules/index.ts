@@ -1,48 +1,48 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TokenValidationRulesConfig extends cdktf.TerraformMetaArguments {
+export interface TokenValidationRulesConfig extends cdktn.TerraformMetaArguments {
   /**
   * Action to take on requests that match operations included in `selector` and fail `expression`.
   * Available values: "log", "block".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#action TokenValidationRules#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#action TokenValidationRules#action}
   */
   readonly action: string;
   /**
   * A human-readable description that gives more details than `title`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#description TokenValidationRules#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#description TokenValidationRules#description}
   */
   readonly description: string;
   /**
   * Toggle rule on or off.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Rule expression. Requests that fail to match this expression will be subject to `action`.
   * 
   * For details on expressions, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
   */
   readonly expression: string;
   /**
   * Update rule order among zone rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#position TokenValidationRules#position}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#position TokenValidationRules#position}
   */
   readonly position?: TokenValidationRulesPosition;
   /**
@@ -50,19 +50,19 @@ export interface TokenValidationRulesConfig extends cdktf.TerraformMetaArguments
   * 
   * For details on selectors, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
   */
   readonly selector: TokenValidationRulesSelector;
   /**
   * A human-readable name for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#title TokenValidationRules#title}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#title TokenValidationRules#title}
   */
   readonly title: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
   */
   readonly zoneId: string;
 }
@@ -70,56 +70,56 @@ export interface TokenValidationRulesPosition {
   /**
   * Move rule to after rule with this ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#after TokenValidationRules#after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#after TokenValidationRules#after}
   */
   readonly after?: string;
   /**
   * Move rule to before rule with this ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#before TokenValidationRules#before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#before TokenValidationRules#before}
   */
   readonly before?: string;
   /**
   * Move rule to this position
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#index TokenValidationRules#index}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#index TokenValidationRules#index}
   */
   readonly index?: number;
 }
 
-export function tokenValidationRulesPositionToTerraform(struct?: TokenValidationRulesPosition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesPositionToTerraform(struct?: TokenValidationRulesPosition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    after: cdktf.stringToTerraform(struct!.after),
-    before: cdktf.stringToTerraform(struct!.before),
-    index: cdktf.numberToTerraform(struct!.index),
+    after: cdktn.stringToTerraform(struct!.after),
+    before: cdktn.stringToTerraform(struct!.before),
+    index: cdktn.numberToTerraform(struct!.index),
   }
 }
 
 
-export function tokenValidationRulesPositionToHclTerraform(struct?: TokenValidationRulesPosition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesPositionToHclTerraform(struct?: TokenValidationRulesPosition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     after: {
-      value: cdktf.stringToHclTerraform(struct!.after),
+      value: cdktn.stringToHclTerraform(struct!.after),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     before: {
-      value: cdktf.stringToHclTerraform(struct!.before),
+      value: cdktn.stringToHclTerraform(struct!.before),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index: {
-      value: cdktf.numberToHclTerraform(struct!.index),
+      value: cdktn.numberToHclTerraform(struct!.index),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -130,19 +130,19 @@ export function tokenValidationRulesPositionToHclTerraform(struct?: TokenValidat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenValidationRulesPositionOutputReference extends cdktf.ComplexObject {
+export class TokenValidationRulesPositionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TokenValidationRulesPosition | cdktf.IResolvable | undefined {
+  public get internalValue(): TokenValidationRulesPosition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -163,7 +163,7 @@ export class TokenValidationRulesPositionOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TokenValidationRulesPosition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TokenValidationRulesPosition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -171,7 +171,7 @@ export class TokenValidationRulesPositionOutputReference extends cdktf.ComplexOb
       this._before = undefined;
       this._index = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -236,30 +236,30 @@ export interface TokenValidationRulesSelectorExclude {
   /**
   * Excluded operation IDs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#operation_ids TokenValidationRules#operation_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#operation_ids TokenValidationRules#operation_ids}
   */
   readonly operationIds?: string[];
 }
 
-export function tokenValidationRulesSelectorExcludeToTerraform(struct?: TokenValidationRulesSelectorExclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesSelectorExcludeToTerraform(struct?: TokenValidationRulesSelectorExclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    operation_ids: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.operationIds),
+    operation_ids: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.operationIds),
   }
 }
 
 
-export function tokenValidationRulesSelectorExcludeToHclTerraform(struct?: TokenValidationRulesSelectorExclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesSelectorExcludeToHclTerraform(struct?: TokenValidationRulesSelectorExclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     operation_ids: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.operationIds),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.operationIds),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -270,9 +270,9 @@ export function tokenValidationRulesSelectorExcludeToHclTerraform(struct?: Token
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenValidationRulesSelectorExcludeOutputReference extends cdktf.ComplexObject {
+export class TokenValidationRulesSelectorExcludeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -280,11 +280,11 @@ export class TokenValidationRulesSelectorExcludeOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TokenValidationRulesSelectorExclude | cdktf.IResolvable | undefined {
+  public get internalValue(): TokenValidationRulesSelectorExclude | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -297,13 +297,13 @@ export class TokenValidationRulesSelectorExcludeOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TokenValidationRulesSelectorExclude | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TokenValidationRulesSelectorExclude | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._operationIds = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -331,15 +331,15 @@ export class TokenValidationRulesSelectorExcludeOutputReference extends cdktf.Co
   }
 }
 
-export class TokenValidationRulesSelectorExcludeList extends cdktf.ComplexList {
-  public internalValue? : TokenValidationRulesSelectorExclude[] | cdktf.IResolvable
+export class TokenValidationRulesSelectorExcludeList extends cdktn.ComplexList {
+  public internalValue? : TokenValidationRulesSelectorExclude[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -354,30 +354,30 @@ export interface TokenValidationRulesSelectorInclude {
   /**
   * Included hostnames.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#host TokenValidationRules#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#host TokenValidationRules#host}
   */
   readonly host?: string[];
 }
 
-export function tokenValidationRulesSelectorIncludeToTerraform(struct?: TokenValidationRulesSelectorInclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesSelectorIncludeToTerraform(struct?: TokenValidationRulesSelectorInclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.host),
+    host: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.host),
   }
 }
 
 
-export function tokenValidationRulesSelectorIncludeToHclTerraform(struct?: TokenValidationRulesSelectorInclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesSelectorIncludeToHclTerraform(struct?: TokenValidationRulesSelectorInclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.host),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.host),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -388,9 +388,9 @@ export function tokenValidationRulesSelectorIncludeToHclTerraform(struct?: Token
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenValidationRulesSelectorIncludeOutputReference extends cdktf.ComplexObject {
+export class TokenValidationRulesSelectorIncludeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -398,11 +398,11 @@ export class TokenValidationRulesSelectorIncludeOutputReference extends cdktf.Co
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): TokenValidationRulesSelectorInclude | cdktf.IResolvable | undefined {
+  public get internalValue(): TokenValidationRulesSelectorInclude | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -415,13 +415,13 @@ export class TokenValidationRulesSelectorIncludeOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TokenValidationRulesSelectorInclude | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TokenValidationRulesSelectorInclude | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._host = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -449,15 +449,15 @@ export class TokenValidationRulesSelectorIncludeOutputReference extends cdktf.Co
   }
 }
 
-export class TokenValidationRulesSelectorIncludeList extends cdktf.ComplexList {
-  public internalValue? : TokenValidationRulesSelectorInclude[] | cdktf.IResolvable
+export class TokenValidationRulesSelectorIncludeList extends cdktn.ComplexList {
+  public internalValue? : TokenValidationRulesSelectorInclude[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -472,43 +472,43 @@ export interface TokenValidationRulesSelector {
   /**
   * Ignore operations that were otherwise included by `include`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#exclude TokenValidationRules#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#exclude TokenValidationRules#exclude}
   */
-  readonly exclude?: TokenValidationRulesSelectorExclude[] | cdktf.IResolvable;
+  readonly exclude?: TokenValidationRulesSelectorExclude[] | cdktn.IResolvable;
   /**
   * Select all matching operations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#include TokenValidationRules#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#include TokenValidationRules#include}
   */
-  readonly include?: TokenValidationRulesSelectorInclude[] | cdktf.IResolvable;
+  readonly include?: TokenValidationRulesSelectorInclude[] | cdktn.IResolvable;
 }
 
-export function tokenValidationRulesSelectorToTerraform(struct?: TokenValidationRulesSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesSelectorToTerraform(struct?: TokenValidationRulesSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude: cdktf.listMapper(tokenValidationRulesSelectorExcludeToTerraform, false)(struct!.exclude),
-    include: cdktf.listMapper(tokenValidationRulesSelectorIncludeToTerraform, false)(struct!.include),
+    exclude: cdktn.listMapper(tokenValidationRulesSelectorExcludeToTerraform, false)(struct!.exclude),
+    include: cdktn.listMapper(tokenValidationRulesSelectorIncludeToTerraform, false)(struct!.include),
   }
 }
 
 
-export function tokenValidationRulesSelectorToHclTerraform(struct?: TokenValidationRulesSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function tokenValidationRulesSelectorToHclTerraform(struct?: TokenValidationRulesSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude: {
-      value: cdktf.listMapperHcl(tokenValidationRulesSelectorExcludeToHclTerraform, false)(struct!.exclude),
+      value: cdktn.listMapperHcl(tokenValidationRulesSelectorExcludeToHclTerraform, false)(struct!.exclude),
       isBlock: true,
       type: "list",
       storageClassType: "TokenValidationRulesSelectorExcludeList",
     },
     include: {
-      value: cdktf.listMapperHcl(tokenValidationRulesSelectorIncludeToHclTerraform, false)(struct!.include),
+      value: cdktn.listMapperHcl(tokenValidationRulesSelectorIncludeToHclTerraform, false)(struct!.include),
       isBlock: true,
       type: "list",
       storageClassType: "TokenValidationRulesSelectorIncludeList",
@@ -519,19 +519,19 @@ export function tokenValidationRulesSelectorToHclTerraform(struct?: TokenValidat
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class TokenValidationRulesSelectorOutputReference extends cdktf.ComplexObject {
+export class TokenValidationRulesSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): TokenValidationRulesSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): TokenValidationRulesSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -548,14 +548,14 @@ export class TokenValidationRulesSelectorOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: TokenValidationRulesSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: TokenValidationRulesSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._exclude.internalValue = undefined;
       this._include.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -572,7 +572,7 @@ export class TokenValidationRulesSelectorOutputReference extends cdktf.ComplexOb
   public get exclude() {
     return this._exclude;
   }
-  public putExclude(value: TokenValidationRulesSelectorExclude[] | cdktf.IResolvable) {
+  public putExclude(value: TokenValidationRulesSelectorExclude[] | cdktn.IResolvable) {
     this._exclude.internalValue = value;
   }
   public resetExclude() {
@@ -588,7 +588,7 @@ export class TokenValidationRulesSelectorOutputReference extends cdktf.ComplexOb
   public get include() {
     return this._include;
   }
-  public putInclude(value: TokenValidationRulesSelectorInclude[] | cdktf.IResolvable) {
+  public putInclude(value: TokenValidationRulesSelectorInclude[] | cdktn.IResolvable) {
     this._include.internalValue = value;
   }
   public resetInclude() {
@@ -601,9 +601,9 @@ export class TokenValidationRulesSelectorOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}
 */
-export class TokenValidationRules extends cdktf.TerraformResource {
+export class TokenValidationRules extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -614,14 +614,14 @@ export class TokenValidationRules extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TokenValidationRules resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TokenValidationRules resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TokenValidationRules to import
-  * @param importFromId The id of the existing TokenValidationRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TokenValidationRules that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TokenValidationRules to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_token_validation_rules", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_token_validation_rules", importId: importFromId, provider });
       }
 
   // ===========
@@ -629,7 +629,7 @@ export class TokenValidationRules extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/token_validation_rules cloudflare_token_validation_rules} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -640,7 +640,7 @@ export class TokenValidationRules extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_token_validation_rules',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -697,11 +697,11 @@ export class TokenValidationRules extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -793,39 +793,39 @@ export class TokenValidationRules extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      action: cdktf.stringToTerraform(this._action),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      expression: cdktf.stringToTerraform(this._expression),
+      action: cdktn.stringToTerraform(this._action),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      expression: cdktn.stringToTerraform(this._expression),
       position: tokenValidationRulesPositionToTerraform(this._position.internalValue),
       selector: tokenValidationRulesSelectorToTerraform(this._selector.internalValue),
-      title: cdktf.stringToTerraform(this._title),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      title: cdktn.stringToTerraform(this._title),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       action: {
-        value: cdktf.stringToHclTerraform(this._action),
+        value: cdktn.stringToHclTerraform(this._action),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       expression: {
-        value: cdktf.stringToHclTerraform(this._expression),
+        value: cdktn.stringToHclTerraform(this._expression),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -843,13 +843,13 @@ export class TokenValidationRules extends cdktf.TerraformResource {
         storageClassType: "TokenValidationRulesSelector",
       },
       title: {
-        value: cdktf.stringToHclTerraform(this._title),
+        value: cdktn.stringToHclTerraform(this._title),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

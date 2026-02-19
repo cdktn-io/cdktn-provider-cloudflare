@@ -1,112 +1,112 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustDexTestConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustDexTestConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}
   */
   readonly accountId: string;
   /**
   * The configuration object which contains the details for the WARP client to conduct the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
   */
   readonly data: ZeroTrustDexTestData;
   /**
   * Additional details about the test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
   */
   readonly description?: string;
   /**
   * Determines whether or not the test is active.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * How often the test will run.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
   */
   readonly interval: string;
   /**
   * The name of the DEX test. Must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
   */
   readonly name: string;
   /**
   * DEX rules targeted by this test
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#target_policies ZeroTrustDexTest#target_policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#target_policies ZeroTrustDexTest#target_policies}
   */
-  readonly targetPolicies?: ZeroTrustDexTestTargetPolicies[] | cdktf.IResolvable;
+  readonly targetPolicies?: ZeroTrustDexTestTargetPolicies[] | cdktn.IResolvable;
 }
 export interface ZeroTrustDexTestData {
   /**
   * The desired endpoint to test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
   */
   readonly host?: string;
   /**
   * The type of test.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
   */
   readonly kind?: string;
   /**
   * The HTTP request method type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
   */
   readonly method?: string;
 }
 
-export function zeroTrustDexTestDataToTerraform(struct?: ZeroTrustDexTestData | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDexTestDataToTerraform(struct?: ZeroTrustDexTestData | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    kind: cdktf.stringToTerraform(struct!.kind),
-    method: cdktf.stringToTerraform(struct!.method),
+    host: cdktn.stringToTerraform(struct!.host),
+    kind: cdktn.stringToTerraform(struct!.kind),
+    method: cdktn.stringToTerraform(struct!.method),
   }
 }
 
 
-export function zeroTrustDexTestDataToHclTerraform(struct?: ZeroTrustDexTestData | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDexTestDataToHclTerraform(struct?: ZeroTrustDexTestData | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     kind: {
-      value: cdktf.stringToHclTerraform(struct!.kind),
+      value: cdktn.stringToHclTerraform(struct!.kind),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -117,19 +117,19 @@ export function zeroTrustDexTestDataToHclTerraform(struct?: ZeroTrustDexTestData
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDexTestDataOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDexTestDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustDexTestData | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDexTestData | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -150,7 +150,7 @@ export class ZeroTrustDexTestDataOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDexTestData | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDexTestData | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -158,7 +158,7 @@ export class ZeroTrustDexTestDataOutputReference extends cdktf.ComplexObject {
       this._kind = undefined;
       this._method = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -223,7 +223,7 @@ export interface ZeroTrustDexTestTargetPolicies {
   /**
   * The id of the DEX rule
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#id ZeroTrustDexTest#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#id ZeroTrustDexTest#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -231,25 +231,25 @@ export interface ZeroTrustDexTestTargetPolicies {
   readonly id: string;
 }
 
-export function zeroTrustDexTestTargetPoliciesToTerraform(struct?: ZeroTrustDexTestTargetPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDexTestTargetPoliciesToTerraform(struct?: ZeroTrustDexTestTargetPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustDexTestTargetPoliciesToHclTerraform(struct?: ZeroTrustDexTestTargetPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDexTestTargetPoliciesToHclTerraform(struct?: ZeroTrustDexTestTargetPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -260,9 +260,9 @@ export function zeroTrustDexTestTargetPoliciesToHclTerraform(struct?: ZeroTrustD
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDexTestTargetPoliciesOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDexTestTargetPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -270,11 +270,11 @@ export class ZeroTrustDexTestTargetPoliciesOutputReference extends cdktf.Complex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDexTestTargetPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDexTestTargetPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -287,13 +287,13 @@ export class ZeroTrustDexTestTargetPoliciesOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDexTestTargetPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDexTestTargetPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -328,15 +328,15 @@ export class ZeroTrustDexTestTargetPoliciesOutputReference extends cdktf.Complex
   }
 }
 
-export class ZeroTrustDexTestTargetPoliciesList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDexTestTargetPolicies[] | cdktf.IResolvable
+export class ZeroTrustDexTestTargetPoliciesList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDexTestTargetPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -349,9 +349,9 @@ export class ZeroTrustDexTestTargetPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}
 */
-export class ZeroTrustDexTest extends cdktf.TerraformResource {
+export class ZeroTrustDexTest extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -362,14 +362,14 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustDexTest resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustDexTest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDexTest to import
-  * @param importFromId The id of the existing ZeroTrustDexTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDexTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDexTest to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dex_test", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_dex_test", importId: importFromId, provider });
       }
 
   // ===========
@@ -377,7 +377,7 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -388,7 +388,7 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dex_test',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -455,11 +455,11 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -503,7 +503,7 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
   public get targetPolicies() {
     return this._targetPolicies;
   }
-  public putTargetPolicies(value: ZeroTrustDexTestTargetPolicies[] | cdktf.IResolvable) {
+  public putTargetPolicies(value: ZeroTrustDexTestTargetPolicies[] | cdktn.IResolvable) {
     this._targetPolicies.internalValue = value;
   }
   public resetTargetPolicies() {
@@ -530,20 +530,20 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       data: zeroTrustDexTestDataToTerraform(this._data.internalValue),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      interval: cdktf.stringToTerraform(this._interval),
-      name: cdktf.stringToTerraform(this._name),
-      target_policies: cdktf.listMapper(zeroTrustDexTestTargetPoliciesToTerraform, false)(this._targetPolicies.internalValue),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      interval: cdktn.stringToTerraform(this._interval),
+      name: cdktn.stringToTerraform(this._name),
+      target_policies: cdktn.listMapper(zeroTrustDexTestTargetPoliciesToTerraform, false)(this._targetPolicies.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -555,31 +555,31 @@ export class ZeroTrustDexTest extends cdktf.TerraformResource {
         storageClassType: "ZeroTrustDexTestData",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       interval: {
-        value: cdktf.stringToHclTerraform(this._interval),
+        value: cdktn.stringToHclTerraform(this._interval),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       target_policies: {
-        value: cdktf.listMapperHcl(zeroTrustDexTestTargetPoliciesToHclTerraform, false)(this._targetPolicies.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustDexTestTargetPoliciesToHclTerraform, false)(this._targetPolicies.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustDexTestTargetPoliciesList",

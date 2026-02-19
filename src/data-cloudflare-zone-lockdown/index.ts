@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareZoneLockdownConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareZoneLockdownConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#filter DataCloudflareZoneLockdown#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#filter DataCloudflareZoneLockdown#filter}
   */
   readonly filter?: DataCloudflareZoneLockdownFilter;
   /**
   * The unique identifier of the Zone Lockdown rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#lock_downs_id DataCloudflareZoneLockdown#lock_downs_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#lock_downs_id DataCloudflareZoneLockdown#lock_downs_id}
   */
   readonly lockDownsId?: string;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#zone_id DataCloudflareZoneLockdown#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#zone_id DataCloudflareZoneLockdown#zone_id}
   */
   readonly zoneId: string;
 }
@@ -33,8 +33,8 @@ export interface DataCloudflareZoneLockdownConfigurations {
 }
 
 export function dataCloudflareZoneLockdownConfigurationsToTerraform(struct?: DataCloudflareZoneLockdownConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -43,8 +43,8 @@ export function dataCloudflareZoneLockdownConfigurationsToTerraform(struct?: Dat
 
 
 export function dataCloudflareZoneLockdownConfigurationsToHclTerraform(struct?: DataCloudflareZoneLockdownConfigurations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,7 +52,7 @@ export function dataCloudflareZoneLockdownConfigurationsToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataCloudflareZoneLockdownConfigurationsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZoneLockdownConfigurationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -61,7 +61,7 @@ export class DataCloudflareZoneLockdownConfigurationsOutputReference extends cdk
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -91,14 +91,14 @@ export class DataCloudflareZoneLockdownConfigurationsOutputReference extends cdk
   }
 }
 
-export class DataCloudflareZoneLockdownConfigurationsList extends cdktf.ComplexList {
+export class DataCloudflareZoneLockdownConfigurationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -113,134 +113,134 @@ export interface DataCloudflareZoneLockdownFilter {
   /**
   * The timestamp of when the rule was created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#created_on DataCloudflareZoneLockdown#created_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#created_on DataCloudflareZoneLockdown#created_on}
   */
   readonly createdOn?: string;
   /**
   * A string to search for in the description of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#description DataCloudflareZoneLockdown#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#description DataCloudflareZoneLockdown#description}
   */
   readonly description?: string;
   /**
   * A string to search for in the description of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#description_search DataCloudflareZoneLockdown#description_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#description_search DataCloudflareZoneLockdown#description_search}
   */
   readonly descriptionSearch?: string;
   /**
   * A single IP address to search for in existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#ip DataCloudflareZoneLockdown#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#ip DataCloudflareZoneLockdown#ip}
   */
   readonly ip?: string;
   /**
   * A single IP address range to search for in existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#ip_range_search DataCloudflareZoneLockdown#ip_range_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#ip_range_search DataCloudflareZoneLockdown#ip_range_search}
   */
   readonly ipRangeSearch?: string;
   /**
   * A single IP address to search for in existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#ip_search DataCloudflareZoneLockdown#ip_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#ip_search DataCloudflareZoneLockdown#ip_search}
   */
   readonly ipSearch?: string;
   /**
   * The timestamp of when the rule was last modified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#modified_on DataCloudflareZoneLockdown#modified_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#modified_on DataCloudflareZoneLockdown#modified_on}
   */
   readonly modifiedOn?: string;
   /**
   * The priority of the rule to control the processing order. A lower number indicates higher priority. If not provided, any rules with a configured priority will be processed before rules without a priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#priority DataCloudflareZoneLockdown#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#priority DataCloudflareZoneLockdown#priority}
   */
   readonly priority?: number;
   /**
   * A single URI to search for in the list of URLs of existing rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#uri_search DataCloudflareZoneLockdown#uri_search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#uri_search DataCloudflareZoneLockdown#uri_search}
   */
   readonly uriSearch?: string;
 }
 
-export function dataCloudflareZoneLockdownFilterToTerraform(struct?: DataCloudflareZoneLockdownFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareZoneLockdownFilterToTerraform(struct?: DataCloudflareZoneLockdownFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    created_on: cdktf.stringToTerraform(struct!.createdOn),
-    description: cdktf.stringToTerraform(struct!.description),
-    description_search: cdktf.stringToTerraform(struct!.descriptionSearch),
-    ip: cdktf.stringToTerraform(struct!.ip),
-    ip_range_search: cdktf.stringToTerraform(struct!.ipRangeSearch),
-    ip_search: cdktf.stringToTerraform(struct!.ipSearch),
-    modified_on: cdktf.stringToTerraform(struct!.modifiedOn),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    uri_search: cdktf.stringToTerraform(struct!.uriSearch),
+    created_on: cdktn.stringToTerraform(struct!.createdOn),
+    description: cdktn.stringToTerraform(struct!.description),
+    description_search: cdktn.stringToTerraform(struct!.descriptionSearch),
+    ip: cdktn.stringToTerraform(struct!.ip),
+    ip_range_search: cdktn.stringToTerraform(struct!.ipRangeSearch),
+    ip_search: cdktn.stringToTerraform(struct!.ipSearch),
+    modified_on: cdktn.stringToTerraform(struct!.modifiedOn),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    uri_search: cdktn.stringToTerraform(struct!.uriSearch),
   }
 }
 
 
-export function dataCloudflareZoneLockdownFilterToHclTerraform(struct?: DataCloudflareZoneLockdownFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareZoneLockdownFilterToHclTerraform(struct?: DataCloudflareZoneLockdownFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     created_on: {
-      value: cdktf.stringToHclTerraform(struct!.createdOn),
+      value: cdktn.stringToHclTerraform(struct!.createdOn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     description_search: {
-      value: cdktf.stringToHclTerraform(struct!.descriptionSearch),
+      value: cdktn.stringToHclTerraform(struct!.descriptionSearch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_range_search: {
-      value: cdktf.stringToHclTerraform(struct!.ipRangeSearch),
+      value: cdktn.stringToHclTerraform(struct!.ipRangeSearch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ip_search: {
-      value: cdktf.stringToHclTerraform(struct!.ipSearch),
+      value: cdktn.stringToHclTerraform(struct!.ipSearch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     modified_on: {
-      value: cdktf.stringToHclTerraform(struct!.modifiedOn),
+      value: cdktn.stringToHclTerraform(struct!.modifiedOn),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     uri_search: {
-      value: cdktf.stringToHclTerraform(struct!.uriSearch),
+      value: cdktn.stringToHclTerraform(struct!.uriSearch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -251,19 +251,19 @@ export function dataCloudflareZoneLockdownFilterToHclTerraform(struct?: DataClou
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareZoneLockdownFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZoneLockdownFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareZoneLockdownFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareZoneLockdownFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -308,7 +308,7 @@ export class DataCloudflareZoneLockdownFilterOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareZoneLockdownFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareZoneLockdownFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -322,7 +322,7 @@ export class DataCloudflareZoneLockdownFilterOutputReference extends cdktf.Compl
       this._priority = undefined;
       this._uriSearch = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -487,9 +487,9 @@ export class DataCloudflareZoneLockdownFilterOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown}
 */
-export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
+export class DataCloudflareZoneLockdown extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -500,14 +500,14 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareZoneLockdown resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareZoneLockdown resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZoneLockdown to import
-  * @param importFromId The id of the existing DataCloudflareZoneLockdown that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZoneLockdown that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZoneLockdown to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_lockdown", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_lockdown", importId: importFromId, provider });
       }
 
   // ===========
@@ -515,7 +515,7 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_lockdown cloudflare_zone_lockdown} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -526,7 +526,7 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone_lockdown',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -634,8 +634,8 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       filter: dataCloudflareZoneLockdownFilterToTerraform(this._filter.internalValue),
-      lock_downs_id: cdktf.stringToTerraform(this._lockDownsId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      lock_downs_id: cdktn.stringToTerraform(this._lockDownsId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -648,13 +648,13 @@ export class DataCloudflareZoneLockdown extends cdktf.TerraformDataSource {
         storageClassType: "DataCloudflareZoneLockdownFilter",
       },
       lock_downs_id: {
-        value: cdktf.stringToHclTerraform(this._lockDownsId),
+        value: cdktn.stringToHclTerraform(this._lockDownsId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

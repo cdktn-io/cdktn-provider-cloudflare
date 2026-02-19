@@ -1,142 +1,142 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkersScriptConfig extends cdktf.TerraformMetaArguments {
+export interface WorkersScriptConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#account_id WorkersScript#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#account_id WorkersScript#account_id}
   */
   readonly accountId: string;
   /**
   * Configuration for assets within a Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#assets WorkersScript#assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#assets WorkersScript#assets}
   */
   readonly assets?: WorkersScriptAssets;
   /**
   * List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#bindings WorkersScript#bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#bindings WorkersScript#bindings}
   */
-  readonly bindings?: WorkersScriptBindings[] | cdktf.IResolvable;
+  readonly bindings?: WorkersScriptBindings[] | cdktn.IResolvable;
   /**
   * Name of the uploaded file that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#body_part WorkersScript#body_part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#body_part WorkersScript#body_part}
   */
   readonly bodyPart?: string;
   /**
   * Date indicating targeted support in the Workers runtime. Backwards incompatible fixes to the runtime following this date will not affect this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Flags that enable or disable certain features in the Workers runtime. Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * Module or Service Worker contents of the Worker. Conflicts with `content_file`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#content WorkersScript#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#content WorkersScript#content}
   */
   readonly content?: string;
   /**
   * Path to a file containing the Module or Service Worker contents of the Worker. Conflicts with `content`. Must be paired with `content_sha256`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#content_file WorkersScript#content_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#content_file WorkersScript#content_file}
   */
   readonly contentFile?: string;
   /**
   * SHA-256 hash of the Worker contents. Used to trigger updates when source code changes. Must be provided when `content_file` is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#content_sha256 WorkersScript#content_sha256}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#content_sha256 WorkersScript#content_sha256}
   */
   readonly contentSha256?: string;
   /**
   * Content-Type of the Worker. Required if uploading a non-JavaScript Worker (e.g. "text/x-python").
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#content_type WorkersScript#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#content_type WorkersScript#content_type}
   */
   readonly contentType?: string;
   /**
   * Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
   */
-  readonly keepAssets?: boolean | cdktf.IResolvable;
+  readonly keepAssets?: boolean | cdktn.IResolvable;
   /**
   * List of binding types to keep from previous_upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
   */
   readonly keepBindings?: string[];
   /**
   * Limits to apply for this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#limits WorkersScript#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#limits WorkersScript#limits}
   */
   readonly limits?: WorkersScriptLimits;
   /**
   * Whether Logpush is turned on for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#logpush WorkersScript#logpush}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#logpush WorkersScript#logpush}
   */
-  readonly logpush?: boolean | cdktf.IResolvable;
+  readonly logpush?: boolean | cdktn.IResolvable;
   /**
   * Name of the uploaded file that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#main_module WorkersScript#main_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#main_module WorkersScript#main_module}
   */
   readonly mainModule?: string;
   /**
   * Migrations to apply for Durable Objects associated with this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#migrations WorkersScript#migrations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#migrations WorkersScript#migrations}
   */
   readonly migrations?: WorkersScriptMigrations;
   /**
   * Observability settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#observability WorkersScript#observability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#observability WorkersScript#observability}
   */
   readonly observability?: WorkersScriptObservability;
   /**
-  * Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
+  * Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode='smart' for Smart Placement, or one of region/hostname/host.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#placement WorkersScript#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#placement WorkersScript#placement}
   */
   readonly placement?: WorkersScriptPlacement;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#script_name WorkersScript#script_name}
   */
   readonly scriptName: string;
   /**
   * List of Workers that will consume logs from the attached Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
   */
-  readonly tailConsumers?: WorkersScriptTailConsumers[] | cdktf.IResolvable;
+  readonly tailConsumers?: WorkersScriptTailConsumers[] | cdktn.IResolvable;
   /**
   * Usage model for the Worker invocations.
   * Available values: "standard", "bundled", "unbound".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
   */
   readonly usageModel?: string;
 }
@@ -144,97 +144,97 @@ export interface WorkersScriptAssetsConfig {
   /**
   * The contents of a _headers file (used to attach custom headers on asset responses).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#headers WorkersScript#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#headers WorkersScript#headers}
   */
   readonly headers?: string;
   /**
   * Determines the redirects and rewrites of requests for HTML content.
   * Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
   */
   readonly htmlHandling?: string;
   /**
   * Determines the response when a request does not match a static asset, and there is no Worker script.
   * Available values: "none", "404-page", "single-page-application".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
   */
   readonly notFoundHandling?: string;
   /**
   * The contents of a _redirects file (used to apply redirects or proxy paths ahead of asset serving).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#redirects WorkersScript#redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#redirects WorkersScript#redirects}
   */
   readonly redirects?: string;
   /**
   * When a boolean true, requests will always invoke the Worker script. Otherwise, attempt to serve an asset matching the request, falling back to the Worker script. When a list of strings, contains path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either '/' or '!/'. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
   */
   readonly runWorkerFirst?: { [key: string]: any };
   /**
   * When true and the incoming request matches an asset, that will be served instead of invoking the Worker script. When false, requests will always invoke the Worker script.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
   */
-  readonly serveDirectly?: boolean | cdktf.IResolvable;
+  readonly serveDirectly?: boolean | cdktn.IResolvable;
 }
 
-export function workersScriptAssetsConfigToTerraform(struct?: WorkersScriptAssetsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptAssetsConfigToTerraform(struct?: WorkersScriptAssetsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    headers: cdktf.stringToTerraform(struct!.headers),
-    html_handling: cdktf.stringToTerraform(struct!.htmlHandling),
-    not_found_handling: cdktf.stringToTerraform(struct!.notFoundHandling),
-    redirects: cdktf.stringToTerraform(struct!.redirects),
-    run_worker_first: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.runWorkerFirst),
-    serve_directly: cdktf.booleanToTerraform(struct!.serveDirectly),
+    headers: cdktn.stringToTerraform(struct!.headers),
+    html_handling: cdktn.stringToTerraform(struct!.htmlHandling),
+    not_found_handling: cdktn.stringToTerraform(struct!.notFoundHandling),
+    redirects: cdktn.stringToTerraform(struct!.redirects),
+    run_worker_first: cdktn.hashMapper(cdktn.anyToTerraform)(struct!.runWorkerFirst),
+    serve_directly: cdktn.booleanToTerraform(struct!.serveDirectly),
   }
 }
 
 
-export function workersScriptAssetsConfigToHclTerraform(struct?: WorkersScriptAssetsConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptAssetsConfigToHclTerraform(struct?: WorkersScriptAssetsConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     headers: {
-      value: cdktf.stringToHclTerraform(struct!.headers),
+      value: cdktn.stringToHclTerraform(struct!.headers),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     html_handling: {
-      value: cdktf.stringToHclTerraform(struct!.htmlHandling),
+      value: cdktn.stringToHclTerraform(struct!.htmlHandling),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     not_found_handling: {
-      value: cdktf.stringToHclTerraform(struct!.notFoundHandling),
+      value: cdktn.stringToHclTerraform(struct!.notFoundHandling),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     redirects: {
-      value: cdktf.stringToHclTerraform(struct!.redirects),
+      value: cdktn.stringToHclTerraform(struct!.redirects),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     run_worker_first: {
-      value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(struct!.runWorkerFirst),
+      value: cdktn.hashMapperHcl(cdktn.anyToHclTerraform)(struct!.runWorkerFirst),
       isBlock: false,
       type: "map",
       storageClassType: "anyMap",
     },
     serve_directly: {
-      value: cdktf.booleanToHclTerraform(struct!.serveDirectly),
+      value: cdktn.booleanToHclTerraform(struct!.serveDirectly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -245,19 +245,19 @@ export function workersScriptAssetsConfigToHclTerraform(struct?: WorkersScriptAs
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptAssetsConfigOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptAssetsConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptAssetsConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptAssetsConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -290,7 +290,7 @@ export class WorkersScriptAssetsConfigOutputReference extends cdktf.ComplexObjec
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptAssetsConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptAssetsConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -301,7 +301,7 @@ export class WorkersScriptAssetsConfigOutputReference extends cdktf.ComplexObjec
       this._runWorkerFirst = undefined;
       this._serveDirectly = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -398,11 +398,11 @@ export class WorkersScriptAssetsConfigOutputReference extends cdktf.ComplexObjec
   }
 
   // serve_directly - computed: false, optional: true, required: false
-  private _serveDirectly?: boolean | cdktf.IResolvable; 
+  private _serveDirectly?: boolean | cdktn.IResolvable; 
   public get serveDirectly() {
     return this.getBooleanAttribute('serve_directly');
   }
-  public set serveDirectly(value: boolean | cdktf.IResolvable) {
+  public set serveDirectly(value: boolean | cdktn.IResolvable) {
     this._serveDirectly = value;
   }
   public resetServeDirectly() {
@@ -417,39 +417,39 @@ export interface WorkersScriptAssets {
   /**
   * Configuration for assets within a Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#config WorkersScript#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#config WorkersScript#config}
   */
   readonly config?: WorkersScriptAssetsConfig;
   /**
   * Path to the directory containing asset files to upload.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#directory WorkersScript#directory}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#directory WorkersScript#directory}
   */
   readonly directory?: string;
   /**
   * Token provided upon successful upload of all files from a registered manifest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#jwt WorkersScript#jwt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#jwt WorkersScript#jwt}
   */
   readonly jwt?: string;
 }
 
-export function workersScriptAssetsToTerraform(struct?: WorkersScriptAssets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptAssetsToTerraform(struct?: WorkersScriptAssets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     config: workersScriptAssetsConfigToTerraform(struct!.config),
-    directory: cdktf.stringToTerraform(struct!.directory),
-    jwt: cdktf.stringToTerraform(struct!.jwt),
+    directory: cdktn.stringToTerraform(struct!.directory),
+    jwt: cdktn.stringToTerraform(struct!.jwt),
   }
 }
 
 
-export function workersScriptAssetsToHclTerraform(struct?: WorkersScriptAssets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptAssetsToHclTerraform(struct?: WorkersScriptAssets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -460,13 +460,13 @@ export function workersScriptAssetsToHclTerraform(struct?: WorkersScriptAssets |
       storageClassType: "WorkersScriptAssetsConfig",
     },
     directory: {
-      value: cdktf.stringToHclTerraform(struct!.directory),
+      value: cdktn.stringToHclTerraform(struct!.directory),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jwt: {
-      value: cdktf.stringToHclTerraform(struct!.jwt),
+      value: cdktn.stringToHclTerraform(struct!.jwt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -477,19 +477,19 @@ export function workersScriptAssetsToHclTerraform(struct?: WorkersScriptAssets |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptAssetsOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptAssetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptAssets | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptAssets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -510,7 +510,7 @@ export class WorkersScriptAssetsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptAssets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptAssets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -518,7 +518,7 @@ export class WorkersScriptAssetsOutputReference extends cdktf.ComplexObject {
       this._directory = undefined;
       this._jwt = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -588,43 +588,43 @@ export interface WorkersScriptBindingsOutboundWorker {
   /**
   * Environment of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Name of the outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service?: string;
 }
 
-export function workersScriptBindingsOutboundWorkerToTerraform(struct?: WorkersScriptBindingsOutboundWorker | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptBindingsOutboundWorkerToTerraform(struct?: WorkersScriptBindingsOutboundWorker | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    environment: cdktf.stringToTerraform(struct!.environment),
-    service: cdktf.stringToTerraform(struct!.service),
+    environment: cdktn.stringToTerraform(struct!.environment),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function workersScriptBindingsOutboundWorkerToHclTerraform(struct?: WorkersScriptBindingsOutboundWorker | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptBindingsOutboundWorkerToHclTerraform(struct?: WorkersScriptBindingsOutboundWorker | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     environment: {
-      value: cdktf.stringToHclTerraform(struct!.environment),
+      value: cdktn.stringToHclTerraform(struct!.environment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -635,19 +635,19 @@ export function workersScriptBindingsOutboundWorkerToHclTerraform(struct?: Worke
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptBindingsOutboundWorkerOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptBindingsOutboundWorkerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptBindingsOutboundWorker | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptBindingsOutboundWorker | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -664,14 +664,14 @@ export class WorkersScriptBindingsOutboundWorkerOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptBindingsOutboundWorker | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptBindingsOutboundWorker | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._environment = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -719,37 +719,37 @@ export interface WorkersScriptBindingsOutbound {
   /**
   * Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#params WorkersScript#params}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#params WorkersScript#params}
   */
   readonly params?: string[];
   /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#worker WorkersScript#worker}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#worker WorkersScript#worker}
   */
   readonly worker?: WorkersScriptBindingsOutboundWorker;
 }
 
-export function workersScriptBindingsOutboundToTerraform(struct?: WorkersScriptBindingsOutbound | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptBindingsOutboundToTerraform(struct?: WorkersScriptBindingsOutbound | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    params: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.params),
+    params: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.params),
     worker: workersScriptBindingsOutboundWorkerToTerraform(struct!.worker),
   }
 }
 
 
-export function workersScriptBindingsOutboundToHclTerraform(struct?: WorkersScriptBindingsOutbound | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptBindingsOutboundToHclTerraform(struct?: WorkersScriptBindingsOutbound | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     params: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.params),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.params),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -766,19 +766,19 @@ export function workersScriptBindingsOutboundToHclTerraform(struct?: WorkersScri
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptBindingsOutboundOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptBindingsOutboundOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptBindingsOutbound | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptBindingsOutbound | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -795,14 +795,14 @@ export class WorkersScriptBindingsOutboundOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptBindingsOutbound | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptBindingsOutbound | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._params = undefined;
       this._worker.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -846,72 +846,197 @@ export class WorkersScriptBindingsOutboundOutputReference extends cdktf.ComplexO
     return this._worker.internalValue;
   }
 }
+export interface WorkersScriptBindingsSimple {
+  /**
+  * The rate limit value.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#limit WorkersScript#limit}
+  */
+  readonly limit: number;
+  /**
+  * The rate limit period in seconds.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#period WorkersScript#period}
+  */
+  readonly period: number;
+}
+
+export function workersScriptBindingsSimpleToTerraform(struct?: WorkersScriptBindingsSimple | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    limit: cdktn.numberToTerraform(struct!.limit),
+    period: cdktn.numberToTerraform(struct!.period),
+  }
+}
+
+
+export function workersScriptBindingsSimpleToHclTerraform(struct?: WorkersScriptBindingsSimple | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    limit: {
+      value: cdktn.numberToHclTerraform(struct!.limit),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    period: {
+      value: cdktn.numberToHclTerraform(struct!.period),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkersScriptBindingsSimpleOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkersScriptBindingsSimple | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._limit !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.limit = this._limit;
+    }
+    if (this._period !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.period = this._period;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkersScriptBindingsSimple | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._limit = undefined;
+      this._period = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._limit = value.limit;
+      this._period = value.period;
+    }
+  }
+
+  // limit - computed: true, optional: false, required: true
+  private _limit?: number; 
+  public get limit() {
+    return this.getNumberAttribute('limit');
+  }
+  public set limit(value: number) {
+    this._limit = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get limitInput() {
+    return this._limit;
+  }
+
+  // period - computed: true, optional: false, required: true
+  private _period?: number; 
+  public get period() {
+    return this.getNumberAttribute('period');
+  }
+  public set period(value: number) {
+    this._period = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get periodInput() {
+    return this._period;
+  }
+}
 export interface WorkersScriptBindings {
   /**
   * Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#algorithm WorkersScript#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#algorithm WorkersScript#algorithm}
   */
   readonly algorithm?: string;
   /**
   * List of allowed destination addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#allowed_destination_addresses WorkersScript#allowed_destination_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#allowed_destination_addresses WorkersScript#allowed_destination_addresses}
   */
   readonly allowedDestinationAddresses?: string[];
   /**
   * List of allowed sender addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#allowed_sender_addresses WorkersScript#allowed_sender_addresses}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#allowed_sender_addresses WorkersScript#allowed_sender_addresses}
   */
   readonly allowedSenderAddresses?: string[];
   /**
   * R2 bucket to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
   */
   readonly bucketName?: string;
   /**
   * Identifier of the certificate to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
   */
   readonly certificateId?: string;
   /**
   * The exported class name of the Durable Object.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#class_name WorkersScript#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#class_name WorkersScript#class_name}
   */
   readonly className?: string;
   /**
   * The name of the dataset to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#dataset WorkersScript#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#dataset WorkersScript#dataset}
   */
   readonly dataset?: string;
   /**
   * Destination address for the email.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#destination_address WorkersScript#destination_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#destination_address WorkersScript#destination_address}
   */
   readonly destinationAddress?: string;
   /**
   * The environment of the script_name to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format).
   * Available values: "raw", "pkcs8", "spki", "jwk".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#format WorkersScript#format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#format WorkersScript#format}
   */
   readonly format?: string;
   /**
   * Identifier of the D1 database to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#id WorkersScript#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#id WorkersScript#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -920,304 +1045,311 @@ export interface WorkersScriptBindings {
   /**
   * Name of the Vectorize index to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#index_name WorkersScript#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#index_name WorkersScript#index_name}
   */
   readonly indexName?: string;
   /**
   * JSON data to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#json WorkersScript#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#json WorkersScript#json}
   */
   readonly json?: string;
   /**
   * The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket.
   * Available values: "eu", "fedramp".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#jurisdiction WorkersScript#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#jurisdiction WorkersScript#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#key_base64 WorkersScript#key_base64}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#key_base64 WorkersScript#key_base64}
   */
   readonly keyBase64?: string;
   /**
   * Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#key_jwk WorkersScript#key_jwk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#key_jwk WorkersScript#key_jwk}
   */
   readonly keyJwk?: string;
   /**
   * A JavaScript variable name for the binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#name WorkersScript#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#name WorkersScript#name}
   */
   readonly name: string;
   /**
   * The name of the dispatch namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#namespace WorkersScript#namespace}
   */
   readonly namespace?: string;
   /**
   * Namespace identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
   */
   readonly namespaceId?: string;
   /**
   * The old name of the inherited binding. If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#old_name WorkersScript#old_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#old_name WorkersScript#old_name}
   */
   readonly oldName?: string;
   /**
   * Outbound worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#outbound WorkersScript#outbound}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#outbound WorkersScript#outbound}
   */
   readonly outbound?: WorkersScriptBindingsOutbound;
   /**
   * The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#part WorkersScript#part}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#part WorkersScript#part}
   */
   readonly part?: string;
   /**
   * Name of the Pipeline to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#pipeline WorkersScript#pipeline}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#pipeline WorkersScript#pipeline}
   */
   readonly pipeline?: string;
   /**
   * Name of the Queue to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
   */
   readonly queueName?: string;
   /**
   * The script where the Durable Object is defined, if it is external to this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#script_name WorkersScript#script_name}
   */
   readonly scriptName?: string;
   /**
   * Name of the secret in the store.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#secret_name WorkersScript#secret_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#secret_name WorkersScript#secret_name}
   */
   readonly secretName?: string;
   /**
   * Name of Worker to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service?: string;
   /**
+  * A simple rate limit.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#simple WorkersScript#simple}
+  */
+  readonly simple?: WorkersScriptBindingsSimple;
+  /**
   * ID of the store containing the secret.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#store_id WorkersScript#store_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#store_id WorkersScript#store_id}
   */
   readonly storeId?: string;
   /**
   * The text value to use.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#text WorkersScript#text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#text WorkersScript#text}
   */
   readonly text?: string;
   /**
   * The kind of resource that the binding provides.
   * Available values: "ai", "analytics_engine", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "r2_bucket", "secret_text", "send_email", "service", "tail_consumer", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow", "wasm_module".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#type WorkersScript#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#type WorkersScript#type}
   */
   readonly type: string;
   /**
   * Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#usages WorkersScript#usages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#usages WorkersScript#usages}
   */
   readonly usages?: string[];
   /**
   * Identifier for the version to inherit the binding from, which can be the version ID or the literal "latest" to inherit from the latest version. Defaults to inheriting the binding from the latest version.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#version_id WorkersScript#version_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#version_id WorkersScript#version_id}
   */
   readonly versionId?: string;
   /**
   * Name of the Workflow to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#workflow_name WorkersScript#workflow_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#workflow_name WorkersScript#workflow_name}
   */
   readonly workflowName?: string;
 }
 
-export function workersScriptBindingsToTerraform(struct?: WorkersScriptBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptBindingsToTerraform(struct?: WorkersScriptBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.stringToTerraform(struct!.algorithm),
-    allowed_destination_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedDestinationAddresses),
-    allowed_sender_addresses: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowedSenderAddresses),
-    bucket_name: cdktf.stringToTerraform(struct!.bucketName),
-    certificate_id: cdktf.stringToTerraform(struct!.certificateId),
-    class_name: cdktf.stringToTerraform(struct!.className),
-    dataset: cdktf.stringToTerraform(struct!.dataset),
-    destination_address: cdktf.stringToTerraform(struct!.destinationAddress),
-    environment: cdktf.stringToTerraform(struct!.environment),
-    format: cdktf.stringToTerraform(struct!.format),
-    id: cdktf.stringToTerraform(struct!.id),
-    index_name: cdktf.stringToTerraform(struct!.indexName),
-    json: cdktf.stringToTerraform(struct!.json),
-    jurisdiction: cdktf.stringToTerraform(struct!.jurisdiction),
-    key_base64: cdktf.stringToTerraform(struct!.keyBase64),
-    key_jwk: cdktf.stringToTerraform(struct!.keyJwk),
-    name: cdktf.stringToTerraform(struct!.name),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
-    old_name: cdktf.stringToTerraform(struct!.oldName),
+    algorithm: cdktn.stringToTerraform(struct!.algorithm),
+    allowed_destination_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedDestinationAddresses),
+    allowed_sender_addresses: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.allowedSenderAddresses),
+    bucket_name: cdktn.stringToTerraform(struct!.bucketName),
+    certificate_id: cdktn.stringToTerraform(struct!.certificateId),
+    class_name: cdktn.stringToTerraform(struct!.className),
+    dataset: cdktn.stringToTerraform(struct!.dataset),
+    destination_address: cdktn.stringToTerraform(struct!.destinationAddress),
+    environment: cdktn.stringToTerraform(struct!.environment),
+    format: cdktn.stringToTerraform(struct!.format),
+    id: cdktn.stringToTerraform(struct!.id),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
+    json: cdktn.stringToTerraform(struct!.json),
+    jurisdiction: cdktn.stringToTerraform(struct!.jurisdiction),
+    key_base64: cdktn.stringToTerraform(struct!.keyBase64),
+    key_jwk: cdktn.stringToTerraform(struct!.keyJwk),
+    name: cdktn.stringToTerraform(struct!.name),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    namespace_id: cdktn.stringToTerraform(struct!.namespaceId),
+    old_name: cdktn.stringToTerraform(struct!.oldName),
     outbound: workersScriptBindingsOutboundToTerraform(struct!.outbound),
-    part: cdktf.stringToTerraform(struct!.part),
-    pipeline: cdktf.stringToTerraform(struct!.pipeline),
-    queue_name: cdktf.stringToTerraform(struct!.queueName),
-    script_name: cdktf.stringToTerraform(struct!.scriptName),
-    secret_name: cdktf.stringToTerraform(struct!.secretName),
-    service: cdktf.stringToTerraform(struct!.service),
-    store_id: cdktf.stringToTerraform(struct!.storeId),
-    text: cdktf.stringToTerraform(struct!.text),
-    type: cdktf.stringToTerraform(struct!.type),
-    usages: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.usages),
-    version_id: cdktf.stringToTerraform(struct!.versionId),
-    workflow_name: cdktf.stringToTerraform(struct!.workflowName),
+    part: cdktn.stringToTerraform(struct!.part),
+    pipeline: cdktn.stringToTerraform(struct!.pipeline),
+    queue_name: cdktn.stringToTerraform(struct!.queueName),
+    script_name: cdktn.stringToTerraform(struct!.scriptName),
+    secret_name: cdktn.stringToTerraform(struct!.secretName),
+    service: cdktn.stringToTerraform(struct!.service),
+    simple: workersScriptBindingsSimpleToTerraform(struct!.simple),
+    store_id: cdktn.stringToTerraform(struct!.storeId),
+    text: cdktn.stringToTerraform(struct!.text),
+    type: cdktn.stringToTerraform(struct!.type),
+    usages: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.usages),
+    version_id: cdktn.stringToTerraform(struct!.versionId),
+    workflow_name: cdktn.stringToTerraform(struct!.workflowName),
   }
 }
 
 
-export function workersScriptBindingsToHclTerraform(struct?: WorkersScriptBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptBindingsToHclTerraform(struct?: WorkersScriptBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.stringToHclTerraform(struct!.algorithm),
+      value: cdktn.stringToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     allowed_destination_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedDestinationAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedDestinationAddresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     allowed_sender_addresses: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowedSenderAddresses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.allowedSenderAddresses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     bucket_name: {
-      value: cdktf.stringToHclTerraform(struct!.bucketName),
+      value: cdktn.stringToHclTerraform(struct!.bucketName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.certificateId),
+      value: cdktn.stringToHclTerraform(struct!.certificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     class_name: {
-      value: cdktf.stringToHclTerraform(struct!.className),
+      value: cdktn.stringToHclTerraform(struct!.className),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dataset: {
-      value: cdktf.stringToHclTerraform(struct!.dataset),
+      value: cdktn.stringToHclTerraform(struct!.dataset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_address: {
-      value: cdktf.stringToHclTerraform(struct!.destinationAddress),
+      value: cdktn.stringToHclTerraform(struct!.destinationAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     environment: {
-      value: cdktf.stringToHclTerraform(struct!.environment),
+      value: cdktn.stringToHclTerraform(struct!.environment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     format: {
-      value: cdktf.stringToHclTerraform(struct!.format),
+      value: cdktn.stringToHclTerraform(struct!.format),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     json: {
-      value: cdktf.stringToHclTerraform(struct!.json),
+      value: cdktn.stringToHclTerraform(struct!.json),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     jurisdiction: {
-      value: cdktf.stringToHclTerraform(struct!.jurisdiction),
+      value: cdktn.stringToHclTerraform(struct!.jurisdiction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_base64: {
-      value: cdktf.stringToHclTerraform(struct!.keyBase64),
+      value: cdktn.stringToHclTerraform(struct!.keyBase64),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     key_jwk: {
-      value: cdktf.stringToHclTerraform(struct!.keyJwk),
+      value: cdktn.stringToHclTerraform(struct!.keyJwk),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace_id: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      value: cdktn.stringToHclTerraform(struct!.namespaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     old_name: {
-      value: cdktf.stringToHclTerraform(struct!.oldName),
+      value: cdktn.stringToHclTerraform(struct!.oldName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1229,73 +1361,79 @@ export function workersScriptBindingsToHclTerraform(struct?: WorkersScriptBindin
       storageClassType: "WorkersScriptBindingsOutbound",
     },
     part: {
-      value: cdktf.stringToHclTerraform(struct!.part),
+      value: cdktn.stringToHclTerraform(struct!.part),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     pipeline: {
-      value: cdktf.stringToHclTerraform(struct!.pipeline),
+      value: cdktn.stringToHclTerraform(struct!.pipeline),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     queue_name: {
-      value: cdktf.stringToHclTerraform(struct!.queueName),
+      value: cdktn.stringToHclTerraform(struct!.queueName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     script_name: {
-      value: cdktf.stringToHclTerraform(struct!.scriptName),
+      value: cdktn.stringToHclTerraform(struct!.scriptName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secret_name: {
-      value: cdktf.stringToHclTerraform(struct!.secretName),
+      value: cdktn.stringToHclTerraform(struct!.secretName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
+    simple: {
+      value: workersScriptBindingsSimpleToHclTerraform(struct!.simple),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "WorkersScriptBindingsSimple",
+    },
     store_id: {
-      value: cdktf.stringToHclTerraform(struct!.storeId),
+      value: cdktn.stringToHclTerraform(struct!.storeId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text: {
-      value: cdktf.stringToHclTerraform(struct!.text),
+      value: cdktn.stringToHclTerraform(struct!.text),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     usages: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.usages),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.usages),
       isBlock: false,
       type: "set",
       storageClassType: "stringList",
     },
     version_id: {
-      value: cdktf.stringToHclTerraform(struct!.versionId),
+      value: cdktn.stringToHclTerraform(struct!.versionId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     workflow_name: {
-      value: cdktf.stringToHclTerraform(struct!.workflowName),
+      value: cdktn.stringToHclTerraform(struct!.workflowName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1306,9 +1444,9 @@ export function workersScriptBindingsToHclTerraform(struct?: WorkersScriptBindin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -1316,11 +1454,11 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersScriptBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1434,6 +1572,10 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.service = this._service;
     }
+    if (this._simple?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.simple = this._simple?.internalValue;
+    }
     if (this._storeId !== undefined) {
       hasAnyValues = true;
       internalValueResult.storeId = this._storeId;
@@ -1461,7 +1603,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1492,6 +1634,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
       this._scriptName = undefined;
       this._secretName = undefined;
       this._service = undefined;
+      this._simple.internalValue = undefined;
       this._storeId = undefined;
       this._text = undefined;
       this._type = undefined;
@@ -1499,7 +1642,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
       this._versionId = undefined;
       this._workflowName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1533,6 +1676,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
       this._scriptName = value.scriptName;
       this._secretName = value.secretName;
       this._service = value.service;
+      this._simple.internalValue = value.simple;
       this._storeId = value.storeId;
       this._text = value.text;
       this._type = value.type;
@@ -1971,6 +2115,22 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
     return this._service;
   }
 
+  // simple - computed: true, optional: true, required: false
+  private _simple = new WorkersScriptBindingsSimpleOutputReference(this, "simple");
+  public get simple() {
+    return this._simple;
+  }
+  public putSimple(value: WorkersScriptBindingsSimple) {
+    this._simple.internalValue = value;
+  }
+  public resetSimple() {
+    this._simple.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get simpleInput() {
+    return this._simple.internalValue;
+  }
+
   // store_id - computed: true, optional: true, required: false
   private _storeId?: string; 
   public get storeId() {
@@ -2019,7 +2179,7 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
   // usages - computed: true, optional: true, required: false
   private _usages?: string[]; 
   public get usages() {
-    return cdktf.Fn.tolist(this.getListAttribute('usages'));
+    return cdktn.Fn.tolist(this.getListAttribute('usages'));
   }
   public set usages(value: string[]) {
     this._usages = value;
@@ -2065,15 +2225,15 @@ export class WorkersScriptBindingsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class WorkersScriptBindingsList extends cdktf.ComplexList {
-  public internalValue? : WorkersScriptBindings[] | cdktf.IResolvable
+export class WorkersScriptBindingsList extends cdktn.ComplexList {
+  public internalValue? : WorkersScriptBindings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2088,30 +2248,30 @@ export interface WorkersScriptLimits {
   /**
   * The amount of CPU time this Worker can use in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#cpu_ms WorkersScript#cpu_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#cpu_ms WorkersScript#cpu_ms}
   */
   readonly cpuMs?: number;
 }
 
-export function workersScriptLimitsToTerraform(struct?: WorkersScriptLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptLimitsToTerraform(struct?: WorkersScriptLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu_ms: cdktf.numberToTerraform(struct!.cpuMs),
+    cpu_ms: cdktn.numberToTerraform(struct!.cpuMs),
   }
 }
 
 
-export function workersScriptLimitsToHclTerraform(struct?: WorkersScriptLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptLimitsToHclTerraform(struct?: WorkersScriptLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu_ms: {
-      value: cdktf.numberToHclTerraform(struct!.cpuMs),
+      value: cdktn.numberToHclTerraform(struct!.cpuMs),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2122,19 +2282,19 @@ export function workersScriptLimitsToHclTerraform(struct?: WorkersScriptLimits |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptLimitsOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptLimits | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptLimits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2147,13 +2307,13 @@ export class WorkersScriptLimitsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptLimits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptLimits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cpuMs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2182,41 +2342,41 @@ export class WorkersScriptLimitsOutputReference extends cdktf.ComplexObject {
 }
 export interface WorkersScriptMigrationsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
 
-export function workersScriptMigrationsRenamedClassesToTerraform(struct?: WorkersScriptMigrationsRenamedClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsRenamedClassesToTerraform(struct?: WorkersScriptMigrationsRenamedClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    to: cdktf.stringToTerraform(struct!.to),
+    from: cdktn.stringToTerraform(struct!.from),
+    to: cdktn.stringToTerraform(struct!.to),
   }
 }
 
 
-export function workersScriptMigrationsRenamedClassesToHclTerraform(struct?: WorkersScriptMigrationsRenamedClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsRenamedClassesToHclTerraform(struct?: WorkersScriptMigrationsRenamedClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to: {
-      value: cdktf.stringToHclTerraform(struct!.to),
+      value: cdktn.stringToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2227,9 +2387,9 @@ export function workersScriptMigrationsRenamedClassesToHclTerraform(struct?: Wor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptMigrationsRenamedClassesOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptMigrationsRenamedClassesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2237,11 +2397,11 @@ export class WorkersScriptMigrationsRenamedClassesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersScriptMigrationsRenamedClasses | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptMigrationsRenamedClasses | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2258,14 +2418,14 @@ export class WorkersScriptMigrationsRenamedClassesOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptMigrationsRenamedClasses | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptMigrationsRenamedClasses | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._from = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2310,15 +2470,15 @@ export class WorkersScriptMigrationsRenamedClassesOutputReference extends cdktf.
   }
 }
 
-export class WorkersScriptMigrationsRenamedClassesList extends cdktf.ComplexList {
-  public internalValue? : WorkersScriptMigrationsRenamedClasses[] | cdktf.IResolvable
+export class WorkersScriptMigrationsRenamedClassesList extends cdktn.ComplexList {
+  public internalValue? : WorkersScriptMigrationsRenamedClasses[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2331,41 +2491,41 @@ export class WorkersScriptMigrationsRenamedClassesList extends cdktf.ComplexList
 }
 export interface WorkersScriptMigrationsStepsRenamedClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
 
-export function workersScriptMigrationsStepsRenamedClassesToTerraform(struct?: WorkersScriptMigrationsStepsRenamedClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsStepsRenamedClassesToTerraform(struct?: WorkersScriptMigrationsStepsRenamedClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    to: cdktf.stringToTerraform(struct!.to),
+    from: cdktn.stringToTerraform(struct!.from),
+    to: cdktn.stringToTerraform(struct!.to),
   }
 }
 
 
-export function workersScriptMigrationsStepsRenamedClassesToHclTerraform(struct?: WorkersScriptMigrationsStepsRenamedClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsStepsRenamedClassesToHclTerraform(struct?: WorkersScriptMigrationsStepsRenamedClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to: {
-      value: cdktf.stringToHclTerraform(struct!.to),
+      value: cdktn.stringToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2376,9 +2536,9 @@ export function workersScriptMigrationsStepsRenamedClassesToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptMigrationsStepsRenamedClassesOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptMigrationsStepsRenamedClassesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2386,11 +2546,11 @@ export class WorkersScriptMigrationsStepsRenamedClassesOutputReference extends c
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersScriptMigrationsStepsRenamedClasses | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptMigrationsStepsRenamedClasses | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2407,14 +2567,14 @@ export class WorkersScriptMigrationsStepsRenamedClassesOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptMigrationsStepsRenamedClasses | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptMigrationsStepsRenamedClasses | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._from = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2459,15 +2619,15 @@ export class WorkersScriptMigrationsStepsRenamedClassesOutputReference extends c
   }
 }
 
-export class WorkersScriptMigrationsStepsRenamedClassesList extends cdktf.ComplexList {
-  public internalValue? : WorkersScriptMigrationsStepsRenamedClasses[] | cdktf.IResolvable
+export class WorkersScriptMigrationsStepsRenamedClassesList extends cdktn.ComplexList {
+  public internalValue? : WorkersScriptMigrationsStepsRenamedClasses[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2480,52 +2640,52 @@ export class WorkersScriptMigrationsStepsRenamedClassesList extends cdktf.Comple
 }
 export interface WorkersScriptMigrationsStepsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#from_script WorkersScript#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#from_script WorkersScript#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
 
-export function workersScriptMigrationsStepsTransferredClassesToTerraform(struct?: WorkersScriptMigrationsStepsTransferredClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsStepsTransferredClassesToTerraform(struct?: WorkersScriptMigrationsStepsTransferredClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    from_script: cdktf.stringToTerraform(struct!.fromScript),
-    to: cdktf.stringToTerraform(struct!.to),
+    from: cdktn.stringToTerraform(struct!.from),
+    from_script: cdktn.stringToTerraform(struct!.fromScript),
+    to: cdktn.stringToTerraform(struct!.to),
   }
 }
 
 
-export function workersScriptMigrationsStepsTransferredClassesToHclTerraform(struct?: WorkersScriptMigrationsStepsTransferredClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsStepsTransferredClassesToHclTerraform(struct?: WorkersScriptMigrationsStepsTransferredClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_script: {
-      value: cdktf.stringToHclTerraform(struct!.fromScript),
+      value: cdktn.stringToHclTerraform(struct!.fromScript),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to: {
-      value: cdktf.stringToHclTerraform(struct!.to),
+      value: cdktn.stringToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2536,9 +2696,9 @@ export function workersScriptMigrationsStepsTransferredClassesToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptMigrationsStepsTransferredClassesOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptMigrationsStepsTransferredClassesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2546,11 +2706,11 @@ export class WorkersScriptMigrationsStepsTransferredClassesOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersScriptMigrationsStepsTransferredClasses | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptMigrationsStepsTransferredClasses | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2571,7 +2731,7 @@ export class WorkersScriptMigrationsStepsTransferredClassesOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptMigrationsStepsTransferredClasses | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptMigrationsStepsTransferredClasses | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2579,7 +2739,7 @@ export class WorkersScriptMigrationsStepsTransferredClassesOutputReference exten
       this._fromScript = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2641,15 +2801,15 @@ export class WorkersScriptMigrationsStepsTransferredClassesOutputReference exten
   }
 }
 
-export class WorkersScriptMigrationsStepsTransferredClassesList extends cdktf.ComplexList {
-  public internalValue? : WorkersScriptMigrationsStepsTransferredClasses[] | cdktf.IResolvable
+export class WorkersScriptMigrationsStepsTransferredClassesList extends cdktn.ComplexList {
+  public internalValue? : WorkersScriptMigrationsStepsTransferredClasses[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2664,82 +2824,82 @@ export interface WorkersScriptMigrationsSteps {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
   */
-  readonly renamedClasses?: WorkersScriptMigrationsStepsRenamedClasses[] | cdktf.IResolvable;
+  readonly renamedClasses?: WorkersScriptMigrationsStepsRenamedClasses[] | cdktn.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
   */
-  readonly transferredClasses?: WorkersScriptMigrationsStepsTransferredClasses[] | cdktf.IResolvable;
+  readonly transferredClasses?: WorkersScriptMigrationsStepsTransferredClasses[] | cdktn.IResolvable;
 }
 
-export function workersScriptMigrationsStepsToTerraform(struct?: WorkersScriptMigrationsSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsStepsToTerraform(struct?: WorkersScriptMigrationsSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deleted_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deletedClasses),
-    new_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.newClasses),
-    new_sqlite_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.newSqliteClasses),
-    renamed_classes: cdktf.listMapper(workersScriptMigrationsStepsRenamedClassesToTerraform, false)(struct!.renamedClasses),
-    transferred_classes: cdktf.listMapper(workersScriptMigrationsStepsTransferredClassesToTerraform, false)(struct!.transferredClasses),
+    deleted_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.deletedClasses),
+    new_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.newClasses),
+    new_sqlite_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.newSqliteClasses),
+    renamed_classes: cdktn.listMapper(workersScriptMigrationsStepsRenamedClassesToTerraform, false)(struct!.renamedClasses),
+    transferred_classes: cdktn.listMapper(workersScriptMigrationsStepsTransferredClassesToTerraform, false)(struct!.transferredClasses),
   }
 }
 
 
-export function workersScriptMigrationsStepsToHclTerraform(struct?: WorkersScriptMigrationsSteps | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsStepsToHclTerraform(struct?: WorkersScriptMigrationsSteps | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deleted_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deletedClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.deletedClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     new_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.newClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.newClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     new_sqlite_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.newSqliteClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.newSqliteClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     renamed_classes: {
-      value: cdktf.listMapperHcl(workersScriptMigrationsStepsRenamedClassesToHclTerraform, false)(struct!.renamedClasses),
+      value: cdktn.listMapperHcl(workersScriptMigrationsStepsRenamedClassesToHclTerraform, false)(struct!.renamedClasses),
       isBlock: true,
       type: "list",
       storageClassType: "WorkersScriptMigrationsStepsRenamedClassesList",
     },
     transferred_classes: {
-      value: cdktf.listMapperHcl(workersScriptMigrationsStepsTransferredClassesToHclTerraform, false)(struct!.transferredClasses),
+      value: cdktn.listMapperHcl(workersScriptMigrationsStepsTransferredClassesToHclTerraform, false)(struct!.transferredClasses),
       isBlock: true,
       type: "list",
       storageClassType: "WorkersScriptMigrationsStepsTransferredClassesList",
@@ -2750,9 +2910,9 @@ export function workersScriptMigrationsStepsToHclTerraform(struct?: WorkersScrip
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptMigrationsStepsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2760,11 +2920,11 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersScriptMigrationsSteps | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptMigrationsSteps | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2793,7 +2953,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptMigrationsSteps | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptMigrationsSteps | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2803,7 +2963,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
       this._renamedClasses.internalValue = undefined;
       this._transferredClasses.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2871,7 +3031,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
   public get renamedClasses() {
     return this._renamedClasses;
   }
-  public putRenamedClasses(value: WorkersScriptMigrationsStepsRenamedClasses[] | cdktf.IResolvable) {
+  public putRenamedClasses(value: WorkersScriptMigrationsStepsRenamedClasses[] | cdktn.IResolvable) {
     this._renamedClasses.internalValue = value;
   }
   public resetRenamedClasses() {
@@ -2887,7 +3047,7 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
   public get transferredClasses() {
     return this._transferredClasses;
   }
-  public putTransferredClasses(value: WorkersScriptMigrationsStepsTransferredClasses[] | cdktf.IResolvable) {
+  public putTransferredClasses(value: WorkersScriptMigrationsStepsTransferredClasses[] | cdktn.IResolvable) {
     this._transferredClasses.internalValue = value;
   }
   public resetTransferredClasses() {
@@ -2899,15 +3059,15 @@ export class WorkersScriptMigrationsStepsOutputReference extends cdktf.ComplexOb
   }
 }
 
-export class WorkersScriptMigrationsStepsList extends cdktf.ComplexList {
-  public internalValue? : WorkersScriptMigrationsSteps[] | cdktf.IResolvable
+export class WorkersScriptMigrationsStepsList extends cdktn.ComplexList {
+  public internalValue? : WorkersScriptMigrationsSteps[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2920,52 +3080,52 @@ export class WorkersScriptMigrationsStepsList extends cdktf.ComplexList {
 }
 export interface WorkersScriptMigrationsTransferredClasses {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#from WorkersScript#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#from WorkersScript#from}
   */
   readonly from?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#from_script WorkersScript#from_script}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#from_script WorkersScript#from_script}
   */
   readonly fromScript?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#to WorkersScript#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#to WorkersScript#to}
   */
   readonly to?: string;
 }
 
-export function workersScriptMigrationsTransferredClassesToTerraform(struct?: WorkersScriptMigrationsTransferredClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsTransferredClassesToTerraform(struct?: WorkersScriptMigrationsTransferredClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    from: cdktf.stringToTerraform(struct!.from),
-    from_script: cdktf.stringToTerraform(struct!.fromScript),
-    to: cdktf.stringToTerraform(struct!.to),
+    from: cdktn.stringToTerraform(struct!.from),
+    from_script: cdktn.stringToTerraform(struct!.fromScript),
+    to: cdktn.stringToTerraform(struct!.to),
   }
 }
 
 
-export function workersScriptMigrationsTransferredClassesToHclTerraform(struct?: WorkersScriptMigrationsTransferredClasses | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsTransferredClassesToHclTerraform(struct?: WorkersScriptMigrationsTransferredClasses | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     from: {
-      value: cdktf.stringToHclTerraform(struct!.from),
+      value: cdktn.stringToHclTerraform(struct!.from),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     from_script: {
-      value: cdktf.stringToHclTerraform(struct!.fromScript),
+      value: cdktn.stringToHclTerraform(struct!.fromScript),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     to: {
-      value: cdktf.stringToHclTerraform(struct!.to),
+      value: cdktn.stringToHclTerraform(struct!.to),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2976,9 +3136,9 @@ export function workersScriptMigrationsTransferredClassesToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptMigrationsTransferredClassesOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptMigrationsTransferredClassesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2986,11 +3146,11 @@ export class WorkersScriptMigrationsTransferredClassesOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersScriptMigrationsTransferredClasses | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptMigrationsTransferredClasses | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3011,7 +3171,7 @@ export class WorkersScriptMigrationsTransferredClassesOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptMigrationsTransferredClasses | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptMigrationsTransferredClasses | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3019,7 +3179,7 @@ export class WorkersScriptMigrationsTransferredClassesOutputReference extends cd
       this._fromScript = undefined;
       this._to = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3081,15 +3241,15 @@ export class WorkersScriptMigrationsTransferredClassesOutputReference extends cd
   }
 }
 
-export class WorkersScriptMigrationsTransferredClassesList extends cdktf.ComplexList {
-  public internalValue? : WorkersScriptMigrationsTransferredClasses[] | cdktf.IResolvable
+export class WorkersScriptMigrationsTransferredClassesList extends cdktn.ComplexList {
+  public internalValue? : WorkersScriptMigrationsTransferredClasses[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3104,121 +3264,121 @@ export interface WorkersScriptMigrations {
   /**
   * A list of classes to delete Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
   */
   readonly deletedClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
   */
   readonly newClasses?: string[];
   /**
   * A list of classes to create Durable Object namespaces with SQLite from.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
   */
   readonly newSqliteClasses?: string[];
   /**
   * Tag to set as the latest migration tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
   */
   readonly newTag?: string;
   /**
   * Tag used to verify against the latest migration tag for this Worker. If they don't match, the upload is rejected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
   */
   readonly oldTag?: string;
   /**
   * A list of classes with Durable Object namespaces that were renamed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
   */
-  readonly renamedClasses?: WorkersScriptMigrationsRenamedClasses[] | cdktf.IResolvable;
+  readonly renamedClasses?: WorkersScriptMigrationsRenamedClasses[] | cdktn.IResolvable;
   /**
   * Migrations to apply in order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#steps WorkersScript#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#steps WorkersScript#steps}
   */
-  readonly steps?: WorkersScriptMigrationsSteps[] | cdktf.IResolvable;
+  readonly steps?: WorkersScriptMigrationsSteps[] | cdktn.IResolvable;
   /**
   * A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
   */
-  readonly transferredClasses?: WorkersScriptMigrationsTransferredClasses[] | cdktf.IResolvable;
+  readonly transferredClasses?: WorkersScriptMigrationsTransferredClasses[] | cdktn.IResolvable;
 }
 
-export function workersScriptMigrationsToTerraform(struct?: WorkersScriptMigrations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsToTerraform(struct?: WorkersScriptMigrations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deleted_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.deletedClasses),
-    new_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.newClasses),
-    new_sqlite_classes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.newSqliteClasses),
-    new_tag: cdktf.stringToTerraform(struct!.newTag),
-    old_tag: cdktf.stringToTerraform(struct!.oldTag),
-    renamed_classes: cdktf.listMapper(workersScriptMigrationsRenamedClassesToTerraform, false)(struct!.renamedClasses),
-    steps: cdktf.listMapper(workersScriptMigrationsStepsToTerraform, false)(struct!.steps),
-    transferred_classes: cdktf.listMapper(workersScriptMigrationsTransferredClassesToTerraform, false)(struct!.transferredClasses),
+    deleted_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.deletedClasses),
+    new_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.newClasses),
+    new_sqlite_classes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.newSqliteClasses),
+    new_tag: cdktn.stringToTerraform(struct!.newTag),
+    old_tag: cdktn.stringToTerraform(struct!.oldTag),
+    renamed_classes: cdktn.listMapper(workersScriptMigrationsRenamedClassesToTerraform, false)(struct!.renamedClasses),
+    steps: cdktn.listMapper(workersScriptMigrationsStepsToTerraform, false)(struct!.steps),
+    transferred_classes: cdktn.listMapper(workersScriptMigrationsTransferredClassesToTerraform, false)(struct!.transferredClasses),
   }
 }
 
 
-export function workersScriptMigrationsToHclTerraform(struct?: WorkersScriptMigrations | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptMigrationsToHclTerraform(struct?: WorkersScriptMigrations | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deleted_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.deletedClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.deletedClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     new_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.newClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.newClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     new_sqlite_classes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.newSqliteClasses),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.newSqliteClasses),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     new_tag: {
-      value: cdktf.stringToHclTerraform(struct!.newTag),
+      value: cdktn.stringToHclTerraform(struct!.newTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     old_tag: {
-      value: cdktf.stringToHclTerraform(struct!.oldTag),
+      value: cdktn.stringToHclTerraform(struct!.oldTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     renamed_classes: {
-      value: cdktf.listMapperHcl(workersScriptMigrationsRenamedClassesToHclTerraform, false)(struct!.renamedClasses),
+      value: cdktn.listMapperHcl(workersScriptMigrationsRenamedClassesToHclTerraform, false)(struct!.renamedClasses),
       isBlock: true,
       type: "list",
       storageClassType: "WorkersScriptMigrationsRenamedClassesList",
     },
     steps: {
-      value: cdktf.listMapperHcl(workersScriptMigrationsStepsToHclTerraform, false)(struct!.steps),
+      value: cdktn.listMapperHcl(workersScriptMigrationsStepsToHclTerraform, false)(struct!.steps),
       isBlock: true,
       type: "list",
       storageClassType: "WorkersScriptMigrationsStepsList",
     },
     transferred_classes: {
-      value: cdktf.listMapperHcl(workersScriptMigrationsTransferredClassesToHclTerraform, false)(struct!.transferredClasses),
+      value: cdktn.listMapperHcl(workersScriptMigrationsTransferredClassesToHclTerraform, false)(struct!.transferredClasses),
       isBlock: true,
       type: "list",
       storageClassType: "WorkersScriptMigrationsTransferredClassesList",
@@ -3229,19 +3389,19 @@ export function workersScriptMigrationsToHclTerraform(struct?: WorkersScriptMigr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptMigrationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptMigrations | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptMigrations | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3282,7 +3442,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptMigrations | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptMigrations | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3295,7 +3455,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
       this._steps.internalValue = undefined;
       this._transferredClasses.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3398,7 +3558,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
   public get renamedClasses() {
     return this._renamedClasses;
   }
-  public putRenamedClasses(value: WorkersScriptMigrationsRenamedClasses[] | cdktf.IResolvable) {
+  public putRenamedClasses(value: WorkersScriptMigrationsRenamedClasses[] | cdktn.IResolvable) {
     this._renamedClasses.internalValue = value;
   }
   public resetRenamedClasses() {
@@ -3414,7 +3574,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
   public get steps() {
     return this._steps;
   }
-  public putSteps(value: WorkersScriptMigrationsSteps[] | cdktf.IResolvable) {
+  public putSteps(value: WorkersScriptMigrationsSteps[] | cdktn.IResolvable) {
     this._steps.internalValue = value;
   }
   public resetSteps() {
@@ -3430,7 +3590,7 @@ export class WorkersScriptMigrationsOutputReference extends cdktf.ComplexObject 
   public get transferredClasses() {
     return this._transferredClasses;
   }
-  public putTransferredClasses(value: WorkersScriptMigrationsTransferredClasses[] | cdktf.IResolvable) {
+  public putTransferredClasses(value: WorkersScriptMigrationsTransferredClasses[] | cdktn.IResolvable) {
     this._transferredClasses.internalValue = value;
   }
   public resetTransferredClasses() {
@@ -3445,8 +3605,8 @@ export interface WorkersScriptNamedHandlers {
 }
 
 export function workersScriptNamedHandlersToTerraform(struct?: WorkersScriptNamedHandlers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3455,8 +3615,8 @@ export function workersScriptNamedHandlersToTerraform(struct?: WorkersScriptName
 
 
 export function workersScriptNamedHandlersToHclTerraform(struct?: WorkersScriptNamedHandlers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3464,7 +3624,7 @@ export function workersScriptNamedHandlersToHclTerraform(struct?: WorkersScriptN
   return attrs;
 }
 
-export class WorkersScriptNamedHandlersOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptNamedHandlersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -3473,7 +3633,7 @@ export class WorkersScriptNamedHandlersOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -3503,14 +3663,14 @@ export class WorkersScriptNamedHandlersOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class WorkersScriptNamedHandlersList extends cdktf.ComplexList {
+export class WorkersScriptNamedHandlersList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3525,82 +3685,82 @@ export interface WorkersScriptObservabilityLogs {
   /**
   * A list of destinations where logs will be exported to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#destinations WorkersScript#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#destinations WorkersScript#destinations}
   */
   readonly destinations?: string[];
   /**
   * Whether logs are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#enabled WorkersScript#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
   /**
   * Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#invocation_logs WorkersScript#invocation_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#invocation_logs WorkersScript#invocation_logs}
   */
-  readonly invocationLogs: boolean | cdktf.IResolvable;
+  readonly invocationLogs: boolean | cdktn.IResolvable;
   /**
   * Whether log persistence is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#persist WorkersScript#persist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#persist WorkersScript#persist}
   */
-  readonly persist?: boolean | cdktf.IResolvable;
+  readonly persist?: boolean | cdktn.IResolvable;
 }
 
-export function workersScriptObservabilityLogsToTerraform(struct?: WorkersScriptObservabilityLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptObservabilityLogsToTerraform(struct?: WorkersScriptObservabilityLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    destinations: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.destinations),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    head_sampling_rate: cdktf.numberToTerraform(struct!.headSamplingRate),
-    invocation_logs: cdktf.booleanToTerraform(struct!.invocationLogs),
-    persist: cdktf.booleanToTerraform(struct!.persist),
+    destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    head_sampling_rate: cdktn.numberToTerraform(struct!.headSamplingRate),
+    invocation_logs: cdktn.booleanToTerraform(struct!.invocationLogs),
+    persist: cdktn.booleanToTerraform(struct!.persist),
   }
 }
 
 
-export function workersScriptObservabilityLogsToHclTerraform(struct?: WorkersScriptObservabilityLogs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptObservabilityLogsToHclTerraform(struct?: WorkersScriptObservabilityLogs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     destinations: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.destinations),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinations),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     head_sampling_rate: {
-      value: cdktf.numberToHclTerraform(struct!.headSamplingRate),
+      value: cdktn.numberToHclTerraform(struct!.headSamplingRate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     invocation_logs: {
-      value: cdktf.booleanToHclTerraform(struct!.invocationLogs),
+      value: cdktn.booleanToHclTerraform(struct!.invocationLogs),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     persist: {
-      value: cdktf.booleanToHclTerraform(struct!.persist),
+      value: cdktn.booleanToHclTerraform(struct!.persist),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -3611,19 +3771,19 @@ export function workersScriptObservabilityLogsToHclTerraform(struct?: WorkersScr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptObservabilityLogsOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptObservabilityLogsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptObservabilityLogs | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptObservabilityLogs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3652,7 +3812,7 @@ export class WorkersScriptObservabilityLogsOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptObservabilityLogs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptObservabilityLogs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3662,7 +3822,7 @@ export class WorkersScriptObservabilityLogsOutputReference extends cdktf.Complex
       this._invocationLogs = undefined;
       this._persist = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3694,11 +3854,11 @@ export class WorkersScriptObservabilityLogsOutputReference extends cdktf.Complex
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3723,11 +3883,11 @@ export class WorkersScriptObservabilityLogsOutputReference extends cdktf.Complex
   }
 
   // invocation_logs - computed: false, optional: false, required: true
-  private _invocationLogs?: boolean | cdktf.IResolvable; 
+  private _invocationLogs?: boolean | cdktn.IResolvable; 
   public get invocationLogs() {
     return this.getBooleanAttribute('invocation_logs');
   }
-  public set invocationLogs(value: boolean | cdktf.IResolvable) {
+  public set invocationLogs(value: boolean | cdktn.IResolvable) {
     this._invocationLogs = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3736,11 +3896,11 @@ export class WorkersScriptObservabilityLogsOutputReference extends cdktf.Complex
   }
 
   // persist - computed: true, optional: true, required: false
-  private _persist?: boolean | cdktf.IResolvable; 
+  private _persist?: boolean | cdktn.IResolvable; 
   public get persist() {
     return this.getBooleanAttribute('persist');
   }
-  public set persist(value: boolean | cdktf.IResolvable) {
+  public set persist(value: boolean | cdktn.IResolvable) {
     this._persist = value;
   }
   public resetPersist() {
@@ -3755,50 +3915,50 @@ export interface WorkersScriptObservability {
   /**
   * Whether observability is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#enabled WorkersScript#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
   /**
   * Log settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#logs WorkersScript#logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#logs WorkersScript#logs}
   */
   readonly logs?: WorkersScriptObservabilityLogs;
 }
 
-export function workersScriptObservabilityToTerraform(struct?: WorkersScriptObservability | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptObservabilityToTerraform(struct?: WorkersScriptObservability | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    head_sampling_rate: cdktf.numberToTerraform(struct!.headSamplingRate),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    head_sampling_rate: cdktn.numberToTerraform(struct!.headSamplingRate),
     logs: workersScriptObservabilityLogsToTerraform(struct!.logs),
   }
 }
 
 
-export function workersScriptObservabilityToHclTerraform(struct?: WorkersScriptObservability | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptObservabilityToHclTerraform(struct?: WorkersScriptObservability | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     head_sampling_rate: {
-      value: cdktf.numberToHclTerraform(struct!.headSamplingRate),
+      value: cdktn.numberToHclTerraform(struct!.headSamplingRate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -3815,19 +3975,19 @@ export function workersScriptObservabilityToHclTerraform(struct?: WorkersScriptO
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptObservabilityOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptObservability | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptObservability | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3848,7 +4008,7 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptObservability | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptObservability | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3856,7 +4016,7 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
       this._headSamplingRate = undefined;
       this._logs.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3870,11 +4030,11 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -3914,35 +4074,120 @@ export class WorkersScriptObservabilityOutputReference extends cdktf.ComplexObje
     return this._logs.internalValue;
   }
 }
+export interface WorkersScriptPlacementTarget {
+}
+
+export function workersScriptPlacementTargetToTerraform(struct?: WorkersScriptPlacementTarget): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function workersScriptPlacementTargetToHclTerraform(struct?: WorkersScriptPlacementTarget): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class WorkersScriptPlacementTargetOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WorkersScriptPlacementTarget | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkersScriptPlacementTarget | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // host - computed: true, optional: false, required: false
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+
+  // hostname - computed: true, optional: false, required: false
+  public get hostname() {
+    return this.getStringAttribute('hostname');
+  }
+
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+}
+
+export class WorkersScriptPlacementTargetList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WorkersScriptPlacementTargetOutputReference {
+    return new WorkersScriptPlacementTargetOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface WorkersScriptPlacement {
   /**
   * Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement).
-  * Available values: "smart".
+  * Available values: "smart", "targeted".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#mode WorkersScript#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#mode WorkersScript#mode}
   */
   readonly mode?: string;
 }
 
-export function workersScriptPlacementToTerraform(struct?: WorkersScriptPlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptPlacementToTerraform(struct?: WorkersScriptPlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
-export function workersScriptPlacementToHclTerraform(struct?: WorkersScriptPlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptPlacementToHclTerraform(struct?: WorkersScriptPlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3953,19 +4198,19 @@ export function workersScriptPlacementToHclTerraform(struct?: WorkersScriptPlace
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptPlacementOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptPlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WorkersScriptPlacement | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptPlacement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3978,13 +4223,13 @@ export class WorkersScriptPlacementOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptPlacement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptPlacement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3993,6 +4238,16 @@ export class WorkersScriptPlacementOutputReference extends cdktf.ComplexObject {
       this.resolvableValue = undefined;
       this._mode = value.mode;
     }
+  }
+
+  // host - computed: true, optional: false, required: false
+  public get host() {
+    return this.getStringAttribute('host');
+  }
+
+  // hostname - computed: true, optional: false, required: false
+  public get hostname() {
+    return this.getStringAttribute('hostname');
   }
 
   // last_analyzed_at - computed: true, optional: false, required: false
@@ -4016,65 +4271,76 @@ export class WorkersScriptPlacementOutputReference extends cdktf.ComplexObject {
     return this._mode;
   }
 
+  // region - computed: true, optional: false, required: false
+  public get region() {
+    return this.getStringAttribute('region');
+  }
+
   // status - computed: true, optional: false, required: false
   public get status() {
     return this.getStringAttribute('status');
+  }
+
+  // target - computed: true, optional: false, required: false
+  private _target = new WorkersScriptPlacementTargetList(this, "target", false);
+  public get target() {
+    return this._target;
   }
 }
 export interface WorkersScriptTailConsumers {
   /**
   * Optional environment if the Worker utilizes one.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#environment WorkersScript#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#environment WorkersScript#environment}
   */
   readonly environment?: string;
   /**
   * Optional dispatch namespace the script belongs to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#namespace WorkersScript#namespace}
   */
   readonly namespace?: string;
   /**
   * Name of Worker that is to be the consumer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#service WorkersScript#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#service WorkersScript#service}
   */
   readonly service: string;
 }
 
-export function workersScriptTailConsumersToTerraform(struct?: WorkersScriptTailConsumers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptTailConsumersToTerraform(struct?: WorkersScriptTailConsumers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    environment: cdktf.stringToTerraform(struct!.environment),
-    namespace: cdktf.stringToTerraform(struct!.namespace),
-    service: cdktf.stringToTerraform(struct!.service),
+    environment: cdktn.stringToTerraform(struct!.environment),
+    namespace: cdktn.stringToTerraform(struct!.namespace),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function workersScriptTailConsumersToHclTerraform(struct?: WorkersScriptTailConsumers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersScriptTailConsumersToHclTerraform(struct?: WorkersScriptTailConsumers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     environment: {
-      value: cdktf.stringToHclTerraform(struct!.environment),
+      value: cdktn.stringToHclTerraform(struct!.environment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     namespace: {
-      value: cdktf.stringToHclTerraform(struct!.namespace),
+      value: cdktn.stringToHclTerraform(struct!.namespace),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4085,9 +4351,9 @@ export function workersScriptTailConsumersToHclTerraform(struct?: WorkersScriptT
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObject {
+export class WorkersScriptTailConsumersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -4095,11 +4361,11 @@ export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObje
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersScriptTailConsumers | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersScriptTailConsumers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4120,7 +4386,7 @@ export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersScriptTailConsumers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersScriptTailConsumers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4128,7 +4394,7 @@ export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObje
       this._namespace = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4187,15 +4453,15 @@ export class WorkersScriptTailConsumersOutputReference extends cdktf.ComplexObje
   }
 }
 
-export class WorkersScriptTailConsumersList extends cdktf.ComplexList {
-  public internalValue? : WorkersScriptTailConsumers[] | cdktf.IResolvable
+export class WorkersScriptTailConsumersList extends cdktn.ComplexList {
+  public internalValue? : WorkersScriptTailConsumers[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -4208,9 +4474,9 @@ export class WorkersScriptTailConsumersList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script cloudflare_workers_script}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script cloudflare_workers_script}
 */
-export class WorkersScript extends cdktf.TerraformResource {
+export class WorkersScript extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -4221,14 +4487,14 @@ export class WorkersScript extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkersScript resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkersScript resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersScript to import
-  * @param importFromId The id of the existing WorkersScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersScript that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersScript to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_script", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_script", importId: importFromId, provider });
       }
 
   // ===========
@@ -4236,7 +4502,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_script cloudflare_workers_script} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_script cloudflare_workers_script} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4247,7 +4513,7 @@ export class WorkersScript extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_script',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -4319,7 +4585,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   public get bindings() {
     return this._bindings;
   }
-  public putBindings(value: WorkersScriptBindings[] | cdktf.IResolvable) {
+  public putBindings(value: WorkersScriptBindings[] | cdktn.IResolvable) {
     this._bindings.internalValue = value;
   }
   public resetBindings() {
@@ -4365,7 +4631,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   // compatibility_flags - computed: true, optional: true, required: false
   private _compatibilityFlags?: string[]; 
   public get compatibilityFlags() {
-    return cdktf.Fn.tolist(this.getListAttribute('compatibility_flags'));
+    return cdktn.Fn.tolist(this.getListAttribute('compatibility_flags'));
   }
   public set compatibilityFlags(value: string[]) {
     this._compatibilityFlags = value;
@@ -4473,11 +4739,11 @@ export class WorkersScript extends cdktf.TerraformResource {
   }
 
   // keep_assets - computed: false, optional: true, required: false
-  private _keepAssets?: boolean | cdktf.IResolvable; 
+  private _keepAssets?: boolean | cdktn.IResolvable; 
   public get keepAssets() {
     return this.getBooleanAttribute('keep_assets');
   }
-  public set keepAssets(value: boolean | cdktf.IResolvable) {
+  public set keepAssets(value: boolean | cdktn.IResolvable) {
     this._keepAssets = value;
   }
   public resetKeepAssets() {
@@ -4491,7 +4757,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   // keep_bindings - computed: false, optional: true, required: false
   private _keepBindings?: string[]; 
   public get keepBindings() {
-    return cdktf.Fn.tolist(this.getListAttribute('keep_bindings'));
+    return cdktn.Fn.tolist(this.getListAttribute('keep_bindings'));
   }
   public set keepBindings(value: string[]) {
     this._keepBindings = value;
@@ -4526,11 +4792,11 @@ export class WorkersScript extends cdktf.TerraformResource {
   }
 
   // logpush - computed: true, optional: true, required: false
-  private _logpush?: boolean | cdktf.IResolvable; 
+  private _logpush?: boolean | cdktn.IResolvable; 
   public get logpush() {
     return this.getBooleanAttribute('logpush');
   }
-  public set logpush(value: boolean | cdktf.IResolvable) {
+  public set logpush(value: boolean | cdktn.IResolvable) {
     this._logpush = value;
   }
   public resetLogpush() {
@@ -4621,6 +4887,16 @@ export class WorkersScript extends cdktf.TerraformResource {
     return this._placement.internalValue;
   }
 
+  // placement_mode - computed: true, optional: false, required: false
+  public get placementMode() {
+    return this.getStringAttribute('placement_mode');
+  }
+
+  // placement_status - computed: true, optional: false, required: false
+  public get placementStatus() {
+    return this.getStringAttribute('placement_status');
+  }
+
   // script_name - computed: false, optional: false, required: true
   private _scriptName?: string; 
   public get scriptName() {
@@ -4644,7 +4920,7 @@ export class WorkersScript extends cdktf.TerraformResource {
   public get tailConsumers() {
     return this._tailConsumers;
   }
-  public putTailConsumers(value: WorkersScriptTailConsumers[] | cdktf.IResolvable) {
+  public putTailConsumers(value: WorkersScriptTailConsumers[] | cdktn.IResolvable) {
     this._tailConsumers.internalValue = value;
   }
   public resetTailConsumers() {
@@ -4677,34 +4953,34 @@ export class WorkersScript extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       assets: workersScriptAssetsToTerraform(this._assets.internalValue),
-      bindings: cdktf.listMapper(workersScriptBindingsToTerraform, false)(this._bindings.internalValue),
-      body_part: cdktf.stringToTerraform(this._bodyPart),
-      compatibility_date: cdktf.stringToTerraform(this._compatibilityDate),
-      compatibility_flags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._compatibilityFlags),
-      content: cdktf.stringToTerraform(this._content),
-      content_file: cdktf.stringToTerraform(this._contentFile),
-      content_sha256: cdktf.stringToTerraform(this._contentSha256),
-      content_type: cdktf.stringToTerraform(this._contentType),
-      keep_assets: cdktf.booleanToTerraform(this._keepAssets),
-      keep_bindings: cdktf.listMapper(cdktf.stringToTerraform, false)(this._keepBindings),
+      bindings: cdktn.listMapper(workersScriptBindingsToTerraform, false)(this._bindings.internalValue),
+      body_part: cdktn.stringToTerraform(this._bodyPart),
+      compatibility_date: cdktn.stringToTerraform(this._compatibilityDate),
+      compatibility_flags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._compatibilityFlags),
+      content: cdktn.stringToTerraform(this._content),
+      content_file: cdktn.stringToTerraform(this._contentFile),
+      content_sha256: cdktn.stringToTerraform(this._contentSha256),
+      content_type: cdktn.stringToTerraform(this._contentType),
+      keep_assets: cdktn.booleanToTerraform(this._keepAssets),
+      keep_bindings: cdktn.listMapper(cdktn.stringToTerraform, false)(this._keepBindings),
       limits: workersScriptLimitsToTerraform(this._limits.internalValue),
-      logpush: cdktf.booleanToTerraform(this._logpush),
-      main_module: cdktf.stringToTerraform(this._mainModule),
+      logpush: cdktn.booleanToTerraform(this._logpush),
+      main_module: cdktn.stringToTerraform(this._mainModule),
       migrations: workersScriptMigrationsToTerraform(this._migrations.internalValue),
       observability: workersScriptObservabilityToTerraform(this._observability.internalValue),
       placement: workersScriptPlacementToTerraform(this._placement.internalValue),
-      script_name: cdktf.stringToTerraform(this._scriptName),
-      tail_consumers: cdktf.listMapper(workersScriptTailConsumersToTerraform, false)(this._tailConsumers.internalValue),
-      usage_model: cdktf.stringToTerraform(this._usageModel),
+      script_name: cdktn.stringToTerraform(this._scriptName),
+      tail_consumers: cdktn.listMapper(workersScriptTailConsumersToTerraform, false)(this._tailConsumers.internalValue),
+      usage_model: cdktn.stringToTerraform(this._usageModel),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -4716,61 +4992,61 @@ export class WorkersScript extends cdktf.TerraformResource {
         storageClassType: "WorkersScriptAssets",
       },
       bindings: {
-        value: cdktf.listMapperHcl(workersScriptBindingsToHclTerraform, false)(this._bindings.internalValue),
+        value: cdktn.listMapperHcl(workersScriptBindingsToHclTerraform, false)(this._bindings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WorkersScriptBindingsList",
       },
       body_part: {
-        value: cdktf.stringToHclTerraform(this._bodyPart),
+        value: cdktn.stringToHclTerraform(this._bodyPart),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compatibility_date: {
-        value: cdktf.stringToHclTerraform(this._compatibilityDate),
+        value: cdktn.stringToHclTerraform(this._compatibilityDate),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       compatibility_flags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._compatibilityFlags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._compatibilityFlags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_file: {
-        value: cdktf.stringToHclTerraform(this._contentFile),
+        value: cdktn.stringToHclTerraform(this._contentFile),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_sha256: {
-        value: cdktf.stringToHclTerraform(this._contentSha256),
+        value: cdktn.stringToHclTerraform(this._contentSha256),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content_type: {
-        value: cdktf.stringToHclTerraform(this._contentType),
+        value: cdktn.stringToHclTerraform(this._contentType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       keep_assets: {
-        value: cdktf.booleanToHclTerraform(this._keepAssets),
+        value: cdktn.booleanToHclTerraform(this._keepAssets),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       keep_bindings: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._keepBindings),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._keepBindings),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
@@ -4782,13 +5058,13 @@ export class WorkersScript extends cdktf.TerraformResource {
         storageClassType: "WorkersScriptLimits",
       },
       logpush: {
-        value: cdktf.booleanToHclTerraform(this._logpush),
+        value: cdktn.booleanToHclTerraform(this._logpush),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       main_module: {
-        value: cdktf.stringToHclTerraform(this._mainModule),
+        value: cdktn.stringToHclTerraform(this._mainModule),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -4812,19 +5088,19 @@ export class WorkersScript extends cdktf.TerraformResource {
         storageClassType: "WorkersScriptPlacement",
       },
       script_name: {
-        value: cdktf.stringToHclTerraform(this._scriptName),
+        value: cdktn.stringToHclTerraform(this._scriptName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tail_consumers: {
-        value: cdktf.listMapperHcl(workersScriptTailConsumersToHclTerraform, false)(this._tailConsumers.internalValue),
+        value: cdktn.listMapperHcl(workersScriptTailConsumersToHclTerraform, false)(this._tailConsumers.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "WorkersScriptTailConsumersList",
       },
       usage_model: {
-        value: cdktf.stringToHclTerraform(this._usageModel),
+        value: cdktn.stringToHclTerraform(this._usageModel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

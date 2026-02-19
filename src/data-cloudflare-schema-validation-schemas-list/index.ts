@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareSchemaValidationSchemasListConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareSchemaValidationSchemasListConfig extends cdktn.TerraformMetaArguments {
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list#max_items DataCloudflareSchemaValidationSchemasList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list#max_items DataCloudflareSchemaValidationSchemasList#max_items}
   */
   readonly maxItems?: number;
   /**
   * Omit the source-files of schemas and only retrieve their meta-data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list#omit_source DataCloudflareSchemaValidationSchemasList#omit_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list#omit_source DataCloudflareSchemaValidationSchemasList#omit_source}
   */
-  readonly omitSource?: boolean | cdktf.IResolvable;
+  readonly omitSource?: boolean | cdktn.IResolvable;
   /**
   * Filter for enabled schemas
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list#validation_enabled DataCloudflareSchemaValidationSchemasList#validation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list#validation_enabled DataCloudflareSchemaValidationSchemasList#validation_enabled}
   */
-  readonly validationEnabled?: boolean | cdktf.IResolvable;
+  readonly validationEnabled?: boolean | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list#zone_id DataCloudflareSchemaValidationSchemasList#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list#zone_id DataCloudflareSchemaValidationSchemasList#zone_id}
   */
   readonly zoneId: string;
 }
@@ -41,8 +41,8 @@ export interface DataCloudflareSchemaValidationSchemasListResult {
 }
 
 export function dataCloudflareSchemaValidationSchemasListResultToTerraform(struct?: DataCloudflareSchemaValidationSchemasListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -51,8 +51,8 @@ export function dataCloudflareSchemaValidationSchemasListResultToTerraform(struc
 
 
 export function dataCloudflareSchemaValidationSchemasListResultToHclTerraform(struct?: DataCloudflareSchemaValidationSchemasListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -60,7 +60,7 @@ export function dataCloudflareSchemaValidationSchemasListResultToHclTerraform(st
   return attrs;
 }
 
-export class DataCloudflareSchemaValidationSchemasListResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareSchemaValidationSchemasListResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -69,7 +69,7 @@ export class DataCloudflareSchemaValidationSchemasListResultOutputReference exte
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -124,14 +124,14 @@ export class DataCloudflareSchemaValidationSchemasListResultOutputReference exte
   }
 }
 
-export class DataCloudflareSchemaValidationSchemasListResultList extends cdktf.ComplexList {
+export class DataCloudflareSchemaValidationSchemasListResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -144,9 +144,9 @@ export class DataCloudflareSchemaValidationSchemasListResultList extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list cloudflare_schema_validation_schemas_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list cloudflare_schema_validation_schemas_list}
 */
-export class DataCloudflareSchemaValidationSchemasList extends cdktf.TerraformDataSource {
+export class DataCloudflareSchemaValidationSchemasList extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -157,14 +157,14 @@ export class DataCloudflareSchemaValidationSchemasList extends cdktf.TerraformDa
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareSchemaValidationSchemasList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareSchemaValidationSchemasList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareSchemaValidationSchemasList to import
-  * @param importFromId The id of the existing DataCloudflareSchemaValidationSchemasList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareSchemaValidationSchemasList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareSchemaValidationSchemasList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_schema_validation_schemas_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_schema_validation_schemas_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -172,7 +172,7 @@ export class DataCloudflareSchemaValidationSchemasList extends cdktf.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/schema_validation_schemas_list cloudflare_schema_validation_schemas_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/schema_validation_schemas_list cloudflare_schema_validation_schemas_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -183,7 +183,7 @@ export class DataCloudflareSchemaValidationSchemasList extends cdktf.TerraformDa
       terraformResourceType: 'cloudflare_schema_validation_schemas_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -221,11 +221,11 @@ export class DataCloudflareSchemaValidationSchemasList extends cdktf.TerraformDa
   }
 
   // omit_source - computed: true, optional: true, required: false
-  private _omitSource?: boolean | cdktf.IResolvable; 
+  private _omitSource?: boolean | cdktn.IResolvable; 
   public get omitSource() {
     return this.getBooleanAttribute('omit_source');
   }
-  public set omitSource(value: boolean | cdktf.IResolvable) {
+  public set omitSource(value: boolean | cdktn.IResolvable) {
     this._omitSource = value;
   }
   public resetOmitSource() {
@@ -243,11 +243,11 @@ export class DataCloudflareSchemaValidationSchemasList extends cdktf.TerraformDa
   }
 
   // validation_enabled - computed: false, optional: true, required: false
-  private _validationEnabled?: boolean | cdktf.IResolvable; 
+  private _validationEnabled?: boolean | cdktn.IResolvable; 
   public get validationEnabled() {
     return this.getBooleanAttribute('validation_enabled');
   }
-  public set validationEnabled(value: boolean | cdktf.IResolvable) {
+  public set validationEnabled(value: boolean | cdktn.IResolvable) {
     this._validationEnabled = value;
   }
   public resetValidationEnabled() {
@@ -277,35 +277,35 @@ export class DataCloudflareSchemaValidationSchemasList extends cdktf.TerraformDa
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      omit_source: cdktf.booleanToTerraform(this._omitSource),
-      validation_enabled: cdktf.booleanToTerraform(this._validationEnabled),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      omit_source: cdktn.booleanToTerraform(this._omitSource),
+      validation_enabled: cdktn.booleanToTerraform(this._validationEnabled),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       omit_source: {
-        value: cdktf.booleanToHclTerraform(this._omitSource),
+        value: cdktn.booleanToHclTerraform(this._omitSource),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       validation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._validationEnabled),
+        value: cdktn.booleanToHclTerraform(this._validationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

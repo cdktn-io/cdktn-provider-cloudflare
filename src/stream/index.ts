@@ -1,75 +1,75 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamConfig extends cdktf.TerraformMetaArguments {
+export interface StreamConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#account_id Stream#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#account_id Stream#account_id}
   */
   readonly accountId: string;
   /**
   * Lists the origins allowed to display the video. Enter allowed origin domains in an array and use `*` for wildcard subdomains. Empty arrays allow the video to be viewed on any origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
   */
   readonly allowedOrigins?: string[];
   /**
   * A user-defined identifier for the media creator.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#creator Stream#creator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#creator Stream#creator}
   */
   readonly creator?: string;
   /**
   * A Cloudflare-generated unique identifier for a media item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#identifier Stream#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#identifier Stream#identifier}
   */
   readonly identifier?: string;
   /**
   * The maximum duration in seconds for a video upload. Can be set for a video that is not yet uploaded to limit its duration. Uploads that exceed the specified duration will fail during processing. A value of `-1` means the value is unknown.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
   */
   readonly maxDurationSeconds?: number;
   /**
   * A user modifiable key-value store used to reference other systems of record for managing videos.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#meta Stream#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#meta Stream#meta}
   */
   readonly meta?: string;
   /**
   * Indicates whether the video can be a accessed using the UID. When set to `true`, a signed token must be generated with a signing key to view the video.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
   */
-  readonly requireSignedUrls?: boolean | cdktf.IResolvable;
+  readonly requireSignedUrls?: boolean | cdktn.IResolvable;
   /**
   * Indicates the date and time at which the video will be deleted. Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
   */
   readonly scheduledDeletion?: string;
   /**
   * The timestamp for a thumbnail image calculated as a percentage value of the video's duration. To convert from a second-wise timestamp to a percentage, divide the desired timestamp by the total duration of the video.  If this value is not set, the default thumbnail image is taken from 0s of the video.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
   */
   readonly thumbnailTimestampPct?: number;
   /**
   * The date and time when the video upload URL is no longer valid for direct user uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
   */
   readonly uploadExpiry?: string;
 }
@@ -77,8 +77,8 @@ export interface StreamInput {
 }
 
 export function streamInputToTerraform(struct?: StreamInput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -87,8 +87,8 @@ export function streamInputToTerraform(struct?: StreamInput): any {
 
 
 export function streamInputToHclTerraform(struct?: StreamInput): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -96,14 +96,14 @@ export function streamInputToHclTerraform(struct?: StreamInput): any {
   return attrs;
 }
 
-export class StreamInputOutputReference extends cdktf.ComplexObject {
+export class StreamInputOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -136,8 +136,8 @@ export interface StreamPlayback {
 }
 
 export function streamPlaybackToTerraform(struct?: StreamPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -146,8 +146,8 @@ export function streamPlaybackToTerraform(struct?: StreamPlayback): any {
 
 
 export function streamPlaybackToHclTerraform(struct?: StreamPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -155,14 +155,14 @@ export function streamPlaybackToHclTerraform(struct?: StreamPlayback): any {
   return attrs;
 }
 
-export class StreamPlaybackOutputReference extends cdktf.ComplexObject {
+export class StreamPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -195,8 +195,8 @@ export interface StreamStatus {
 }
 
 export function streamStatusToTerraform(struct?: StreamStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -205,8 +205,8 @@ export function streamStatusToTerraform(struct?: StreamStatus): any {
 
 
 export function streamStatusToHclTerraform(struct?: StreamStatus): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -214,14 +214,14 @@ export function streamStatusToHclTerraform(struct?: StreamStatus): any {
   return attrs;
 }
 
-export class StreamStatusOutputReference extends cdktf.ComplexObject {
+export class StreamStatusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -264,8 +264,8 @@ export interface StreamWatermark {
 }
 
 export function streamWatermarkToTerraform(struct?: StreamWatermark): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -274,8 +274,8 @@ export function streamWatermarkToTerraform(struct?: StreamWatermark): any {
 
 
 export function streamWatermarkToHclTerraform(struct?: StreamWatermark): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -283,14 +283,14 @@ export function streamWatermarkToHclTerraform(struct?: StreamWatermark): any {
   return attrs;
 }
 
-export class StreamWatermarkOutputReference extends cdktf.ComplexObject {
+export class StreamWatermarkOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -366,9 +366,9 @@ export class StreamWatermarkOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream cloudflare_stream}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream}
 */
-export class Stream extends cdktf.TerraformResource {
+export class Stream extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -379,14 +379,14 @@ export class Stream extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Stream resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Stream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Stream to import
-  * @param importFromId The id of the existing Stream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Stream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Stream to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream", importId: importFromId, provider });
       }
 
   // ===========
@@ -394,7 +394,7 @@ export class Stream extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream cloudflare_stream} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream cloudflare_stream} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -405,7 +405,7 @@ export class Stream extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_stream',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -573,11 +573,11 @@ export class Stream extends cdktf.TerraformResource {
   }
 
   // require_signed_urls - computed: true, optional: true, required: false
-  private _requireSignedUrls?: boolean | cdktf.IResolvable; 
+  private _requireSignedUrls?: boolean | cdktn.IResolvable; 
   public get requireSignedUrls() {
     return this.getBooleanAttribute('require_signed_urls');
   }
-  public set requireSignedUrls(value: boolean | cdktf.IResolvable) {
+  public set requireSignedUrls(value: boolean | cdktn.IResolvable) {
     this._requireSignedUrls = value;
   }
   public resetRequireSignedUrls() {
@@ -674,77 +674,77 @@ export class Stream extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      allowed_origins: cdktf.listMapper(cdktf.stringToTerraform, false)(this._allowedOrigins),
-      creator: cdktf.stringToTerraform(this._creator),
-      identifier: cdktf.stringToTerraform(this._identifier),
-      max_duration_seconds: cdktf.numberToTerraform(this._maxDurationSeconds),
-      meta: cdktf.stringToTerraform(this._meta),
-      require_signed_urls: cdktf.booleanToTerraform(this._requireSignedUrls),
-      scheduled_deletion: cdktf.stringToTerraform(this._scheduledDeletion),
-      thumbnail_timestamp_pct: cdktf.numberToTerraform(this._thumbnailTimestampPct),
-      upload_expiry: cdktf.stringToTerraform(this._uploadExpiry),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      allowed_origins: cdktn.listMapper(cdktn.stringToTerraform, false)(this._allowedOrigins),
+      creator: cdktn.stringToTerraform(this._creator),
+      identifier: cdktn.stringToTerraform(this._identifier),
+      max_duration_seconds: cdktn.numberToTerraform(this._maxDurationSeconds),
+      meta: cdktn.stringToTerraform(this._meta),
+      require_signed_urls: cdktn.booleanToTerraform(this._requireSignedUrls),
+      scheduled_deletion: cdktn.stringToTerraform(this._scheduledDeletion),
+      thumbnail_timestamp_pct: cdktn.numberToTerraform(this._thumbnailTimestampPct),
+      upload_expiry: cdktn.stringToTerraform(this._uploadExpiry),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allowed_origins: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._allowedOrigins),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._allowedOrigins),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       creator: {
-        value: cdktf.stringToHclTerraform(this._creator),
+        value: cdktn.stringToHclTerraform(this._creator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       identifier: {
-        value: cdktf.stringToHclTerraform(this._identifier),
+        value: cdktn.stringToHclTerraform(this._identifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_duration_seconds: {
-        value: cdktf.numberToHclTerraform(this._maxDurationSeconds),
+        value: cdktn.numberToHclTerraform(this._maxDurationSeconds),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       meta: {
-        value: cdktf.stringToHclTerraform(this._meta),
+        value: cdktn.stringToHclTerraform(this._meta),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       require_signed_urls: {
-        value: cdktf.booleanToHclTerraform(this._requireSignedUrls),
+        value: cdktn.booleanToHclTerraform(this._requireSignedUrls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       scheduled_deletion: {
-        value: cdktf.stringToHclTerraform(this._scheduledDeletion),
+        value: cdktn.stringToHclTerraform(this._scheduledDeletion),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       thumbnail_timestamp_pct: {
-        value: cdktf.numberToHclTerraform(this._thumbnailTimestampPct),
+        value: cdktn.numberToHclTerraform(this._thumbnailTimestampPct),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       upload_expiry: {
-        value: cdktf.stringToHclTerraform(this._uploadExpiry),
+        value: cdktn.stringToHclTerraform(this._uploadExpiry),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

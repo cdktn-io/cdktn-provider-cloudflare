@@ -1,121 +1,121 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
+export interface LoadBalancerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
   */
   readonly adaptiveRouting?: LoadBalancerAdaptiveRouting;
   /**
   * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
   */
-  readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly countryPools?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * A list of pool IDs ordered by their failover priority. Pools defined here are used by default, or when region_pools are not configured for a given region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
   */
   readonly defaultPools: string[];
   /**
   * Object description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#description LoadBalancer#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#description LoadBalancer#description}
   */
   readonly description?: string;
   /**
   * Whether to enable (the default) this load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#enabled LoadBalancer#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The pool ID to use when all other pools are detected as unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
   */
   readonly fallbackPool: string;
   /**
   * Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
   */
   readonly locationStrategy?: LoadBalancerLocationStrategy;
   /**
   * The DNS hostname to associate with your Load Balancer. If this hostname already exists as a DNS record in Cloudflare's DNS, the Load Balancer will take precedence and the DNS record will not be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#name LoadBalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#name LoadBalancer#name}
   */
   readonly name: string;
   /**
   * List of networks where Load Balancer or Pool is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#networks LoadBalancer#networks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#networks LoadBalancer#networks}
   */
   readonly networks?: string[];
   /**
   * Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
   */
-  readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly popPools?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * Whether the hostname should be gray clouded (false) or orange clouded (true).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#proxied LoadBalancer#proxied}
   */
-  readonly proxied?: boolean | cdktf.IResolvable;
+  readonly proxied?: boolean | cdktn.IResolvable;
   /**
   * Configures pool weights.
   * - `steering_policy="random"`: A random pool is selected with probability proportional to pool weights.
   * - `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
   * - `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
   */
   readonly randomSteering?: LoadBalancerRandomSteering;
   /**
   * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
   */
-  readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly regionPools?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * BETA Field Not General Access: A list of rules for this load balancer to execute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#rules LoadBalancer#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#rules LoadBalancer#rules}
   */
-  readonly rules?: LoadBalancerRules[] | cdktf.IResolvable;
+  readonly rules?: LoadBalancerRules[] | cdktn.IResolvable;
   /**
   * Specifies the type of session affinity the load balancer should use unless specified as `"none"`. The supported types are: - `"cookie"`: On the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy, then a new origin server is calculated and used. - `"ip_cookie"`: Behaves the same as `"cookie"` except the initial origin selection is stable and based on the client's ip address. - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
   * Available values: "none", "cookie", "ip_cookie", "header".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
   * Configures attributes for session affinity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
   */
   readonly sessionAffinityAttributes?: LoadBalancerSessionAffinityAttributes;
   /**
   * Time, in seconds, until a client's session expires after being created. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are: - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800]. - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
@@ -130,17 +130,17 @@ export interface LoadBalancerConfig extends cdktf.TerraformMetaArguments {
   * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   * Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
   * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
   */
   readonly ttl?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#zone_id LoadBalancer#zone_id}
   */
   readonly zoneId: string;
 }
@@ -148,30 +148,30 @@ export interface LoadBalancerAdaptiveRouting {
   /**
   * Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
   */
-  readonly failoverAcrossPools?: boolean | cdktf.IResolvable;
+  readonly failoverAcrossPools?: boolean | cdktn.IResolvable;
 }
 
-export function loadBalancerAdaptiveRoutingToTerraform(struct?: LoadBalancerAdaptiveRouting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerAdaptiveRoutingToTerraform(struct?: LoadBalancerAdaptiveRouting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failover_across_pools: cdktf.booleanToTerraform(struct!.failoverAcrossPools),
+    failover_across_pools: cdktn.booleanToTerraform(struct!.failoverAcrossPools),
   }
 }
 
 
-export function loadBalancerAdaptiveRoutingToHclTerraform(struct?: LoadBalancerAdaptiveRouting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerAdaptiveRoutingToHclTerraform(struct?: LoadBalancerAdaptiveRouting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failover_across_pools: {
-      value: cdktf.booleanToHclTerraform(struct!.failoverAcrossPools),
+      value: cdktn.booleanToHclTerraform(struct!.failoverAcrossPools),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -182,19 +182,19 @@ export function loadBalancerAdaptiveRoutingToHclTerraform(struct?: LoadBalancerA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerAdaptiveRoutingOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerAdaptiveRoutingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerAdaptiveRouting | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerAdaptiveRouting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -207,13 +207,13 @@ export class LoadBalancerAdaptiveRoutingOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerAdaptiveRouting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerAdaptiveRouting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._failoverAcrossPools = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -225,11 +225,11 @@ export class LoadBalancerAdaptiveRoutingOutputReference extends cdktf.ComplexObj
   }
 
   // failover_across_pools - computed: true, optional: true, required: false
-  private _failoverAcrossPools?: boolean | cdktf.IResolvable; 
+  private _failoverAcrossPools?: boolean | cdktn.IResolvable; 
   public get failoverAcrossPools() {
     return this.getBooleanAttribute('failover_across_pools');
   }
-  public set failoverAcrossPools(value: boolean | cdktf.IResolvable) {
+  public set failoverAcrossPools(value: boolean | cdktn.IResolvable) {
     this._failoverAcrossPools = value;
   }
   public resetFailoverAcrossPools() {
@@ -247,7 +247,7 @@ export interface LoadBalancerLocationStrategy {
   * - `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   * Available values: "pop", "resolver_ip".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#mode LoadBalancer#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#mode LoadBalancer#mode}
   */
   readonly mode?: string;
   /**
@@ -258,37 +258,37 @@ export interface LoadBalancerLocationStrategy {
   * - `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   * Available values: "always", "never", "proximity", "geo".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
   */
   readonly preferEcs?: string;
 }
 
-export function loadBalancerLocationStrategyToTerraform(struct?: LoadBalancerLocationStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerLocationStrategyToTerraform(struct?: LoadBalancerLocationStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    prefer_ecs: cdktf.stringToTerraform(struct!.preferEcs),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    prefer_ecs: cdktn.stringToTerraform(struct!.preferEcs),
   }
 }
 
 
-export function loadBalancerLocationStrategyToHclTerraform(struct?: LoadBalancerLocationStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerLocationStrategyToHclTerraform(struct?: LoadBalancerLocationStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefer_ecs: {
-      value: cdktf.stringToHclTerraform(struct!.preferEcs),
+      value: cdktn.stringToHclTerraform(struct!.preferEcs),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -299,19 +299,19 @@ export function loadBalancerLocationStrategyToHclTerraform(struct?: LoadBalancer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerLocationStrategyOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerLocationStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerLocationStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerLocationStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -328,14 +328,14 @@ export class LoadBalancerLocationStrategyOutputReference extends cdktf.ComplexOb
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerLocationStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerLocationStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
       this._preferEcs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -383,43 +383,43 @@ export interface LoadBalancerRandomSteering {
   /**
   * The default weight for pools in the load balancer that are not specified in the pool_weights map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
   */
   readonly defaultWeight?: number;
   /**
   * A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
   */
   readonly poolWeights?: { [key: string]: number };
 }
 
-export function loadBalancerRandomSteeringToTerraform(struct?: LoadBalancerRandomSteering | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRandomSteeringToTerraform(struct?: LoadBalancerRandomSteering | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_weight: cdktf.numberToTerraform(struct!.defaultWeight),
-    pool_weights: cdktf.hashMapper(cdktf.numberToTerraform)(struct!.poolWeights),
+    default_weight: cdktn.numberToTerraform(struct!.defaultWeight),
+    pool_weights: cdktn.hashMapper(cdktn.numberToTerraform)(struct!.poolWeights),
   }
 }
 
 
-export function loadBalancerRandomSteeringToHclTerraform(struct?: LoadBalancerRandomSteering | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRandomSteeringToHclTerraform(struct?: LoadBalancerRandomSteering | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_weight: {
-      value: cdktf.numberToHclTerraform(struct!.defaultWeight),
+      value: cdktn.numberToHclTerraform(struct!.defaultWeight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     pool_weights: {
-      value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(struct!.poolWeights),
+      value: cdktn.hashMapperHcl(cdktn.numberToHclTerraform)(struct!.poolWeights),
       isBlock: false,
       type: "map",
       storageClassType: "numberMap",
@@ -430,19 +430,19 @@ export function loadBalancerRandomSteeringToHclTerraform(struct?: LoadBalancerRa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRandomSteeringOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRandomSteeringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerRandomSteering | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRandomSteering | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -459,14 +459,14 @@ export class LoadBalancerRandomSteeringOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRandomSteering | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRandomSteering | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._defaultWeight = undefined;
       this._poolWeights = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -514,69 +514,69 @@ export interface LoadBalancerRulesFixedResponse {
   /**
   * The http 'Content-Type' header to include in the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#content_type LoadBalancer#content_type}
   */
   readonly contentType?: string;
   /**
   * The http 'Location' header to include in the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#location LoadBalancer#location}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#location LoadBalancer#location}
   */
   readonly location?: string;
   /**
   * Text to include as the http body.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#message_body LoadBalancer#message_body}
   */
   readonly messageBody?: string;
   /**
   * The http status code to respond with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#status_code LoadBalancer#status_code}
   */
   readonly statusCode?: number;
 }
 
-export function loadBalancerRulesFixedResponseToTerraform(struct?: LoadBalancerRulesFixedResponse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesFixedResponseToTerraform(struct?: LoadBalancerRulesFixedResponse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    content_type: cdktf.stringToTerraform(struct!.contentType),
-    location: cdktf.stringToTerraform(struct!.location),
-    message_body: cdktf.stringToTerraform(struct!.messageBody),
-    status_code: cdktf.numberToTerraform(struct!.statusCode),
+    content_type: cdktn.stringToTerraform(struct!.contentType),
+    location: cdktn.stringToTerraform(struct!.location),
+    message_body: cdktn.stringToTerraform(struct!.messageBody),
+    status_code: cdktn.numberToTerraform(struct!.statusCode),
   }
 }
 
 
-export function loadBalancerRulesFixedResponseToHclTerraform(struct?: LoadBalancerRulesFixedResponse | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesFixedResponseToHclTerraform(struct?: LoadBalancerRulesFixedResponse | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     content_type: {
-      value: cdktf.stringToHclTerraform(struct!.contentType),
+      value: cdktn.stringToHclTerraform(struct!.contentType),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     location: {
-      value: cdktf.stringToHclTerraform(struct!.location),
+      value: cdktn.stringToHclTerraform(struct!.location),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     message_body: {
-      value: cdktf.stringToHclTerraform(struct!.messageBody),
+      value: cdktn.stringToHclTerraform(struct!.messageBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.numberToHclTerraform(struct!.statusCode),
+      value: cdktn.numberToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -587,19 +587,19 @@ export function loadBalancerRulesFixedResponseToHclTerraform(struct?: LoadBalanc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRulesFixedResponseOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRulesFixedResponseOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerRulesFixedResponse | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRulesFixedResponse | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -624,7 +624,7 @@ export class LoadBalancerRulesFixedResponseOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRulesFixedResponse | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRulesFixedResponse | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -633,7 +633,7 @@ export class LoadBalancerRulesFixedResponseOutputReference extends cdktf.Complex
       this._messageBody = undefined;
       this._statusCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -715,30 +715,30 @@ export interface LoadBalancerRulesOverridesAdaptiveRouting {
   /**
   * Extends zero-downtime failover of requests to healthy origins from alternate pools, when no healthy alternate exists in the same pool, according to the failover order defined by traffic and origin steering. When set false (the default) zero-downtime failover will only occur between origins within the same pool. See `session_affinity_attributes` for control over when sessions are broken or reassigned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#failover_across_pools LoadBalancer#failover_across_pools}
   */
-  readonly failoverAcrossPools?: boolean | cdktf.IResolvable;
+  readonly failoverAcrossPools?: boolean | cdktn.IResolvable;
 }
 
-export function loadBalancerRulesOverridesAdaptiveRoutingToTerraform(struct?: LoadBalancerRulesOverridesAdaptiveRouting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesAdaptiveRoutingToTerraform(struct?: LoadBalancerRulesOverridesAdaptiveRouting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    failover_across_pools: cdktf.booleanToTerraform(struct!.failoverAcrossPools),
+    failover_across_pools: cdktn.booleanToTerraform(struct!.failoverAcrossPools),
   }
 }
 
 
-export function loadBalancerRulesOverridesAdaptiveRoutingToHclTerraform(struct?: LoadBalancerRulesOverridesAdaptiveRouting | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesAdaptiveRoutingToHclTerraform(struct?: LoadBalancerRulesOverridesAdaptiveRouting | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     failover_across_pools: {
-      value: cdktf.booleanToHclTerraform(struct!.failoverAcrossPools),
+      value: cdktn.booleanToHclTerraform(struct!.failoverAcrossPools),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -749,19 +749,19 @@ export function loadBalancerRulesOverridesAdaptiveRoutingToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRulesOverridesAdaptiveRoutingOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRulesOverridesAdaptiveRoutingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerRulesOverridesAdaptiveRouting | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRulesOverridesAdaptiveRouting | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -774,13 +774,13 @@ export class LoadBalancerRulesOverridesAdaptiveRoutingOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRulesOverridesAdaptiveRouting | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRulesOverridesAdaptiveRouting | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._failoverAcrossPools = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -792,11 +792,11 @@ export class LoadBalancerRulesOverridesAdaptiveRoutingOutputReference extends cd
   }
 
   // failover_across_pools - computed: true, optional: true, required: false
-  private _failoverAcrossPools?: boolean | cdktf.IResolvable; 
+  private _failoverAcrossPools?: boolean | cdktn.IResolvable; 
   public get failoverAcrossPools() {
     return this.getBooleanAttribute('failover_across_pools');
   }
-  public set failoverAcrossPools(value: boolean | cdktf.IResolvable) {
+  public set failoverAcrossPools(value: boolean | cdktn.IResolvable) {
     this._failoverAcrossPools = value;
   }
   public resetFailoverAcrossPools() {
@@ -814,7 +814,7 @@ export interface LoadBalancerRulesOverridesLocationStrategy {
   * - `"resolver_ip"`: Use the DNS resolver GeoIP location. If the GeoIP lookup is unsuccessful, use the Cloudflare PoP location.
   * Available values: "pop", "resolver_ip".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#mode LoadBalancer#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#mode LoadBalancer#mode}
   */
   readonly mode?: string;
   /**
@@ -825,37 +825,37 @@ export interface LoadBalancerRulesOverridesLocationStrategy {
   * - `"geo"`: Prefer ECS only when `steering_policy="geo"`.
   * Available values: "always", "never", "proximity", "geo".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#prefer_ecs LoadBalancer#prefer_ecs}
   */
   readonly preferEcs?: string;
 }
 
-export function loadBalancerRulesOverridesLocationStrategyToTerraform(struct?: LoadBalancerRulesOverridesLocationStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesLocationStrategyToTerraform(struct?: LoadBalancerRulesOverridesLocationStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
-    prefer_ecs: cdktf.stringToTerraform(struct!.preferEcs),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    prefer_ecs: cdktn.stringToTerraform(struct!.preferEcs),
   }
 }
 
 
-export function loadBalancerRulesOverridesLocationStrategyToHclTerraform(struct?: LoadBalancerRulesOverridesLocationStrategy | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesLocationStrategyToHclTerraform(struct?: LoadBalancerRulesOverridesLocationStrategy | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     prefer_ecs: {
-      value: cdktf.stringToHclTerraform(struct!.preferEcs),
+      value: cdktn.stringToHclTerraform(struct!.preferEcs),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -866,19 +866,19 @@ export function loadBalancerRulesOverridesLocationStrategyToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRulesOverridesLocationStrategyOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRulesOverridesLocationStrategyOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerRulesOverridesLocationStrategy | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRulesOverridesLocationStrategy | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -895,14 +895,14 @@ export class LoadBalancerRulesOverridesLocationStrategyOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRulesOverridesLocationStrategy | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRulesOverridesLocationStrategy | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
       this._preferEcs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -950,43 +950,43 @@ export interface LoadBalancerRulesOverridesRandomSteering {
   /**
   * The default weight for pools in the load balancer that are not specified in the pool_weights map.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#default_weight LoadBalancer#default_weight}
   */
   readonly defaultWeight?: number;
   /**
   * A mapping of pool IDs to custom weights. The weight is relative to other pools in the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#pool_weights LoadBalancer#pool_weights}
   */
   readonly poolWeights?: { [key: string]: number };
 }
 
-export function loadBalancerRulesOverridesRandomSteeringToTerraform(struct?: LoadBalancerRulesOverridesRandomSteering | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesRandomSteeringToTerraform(struct?: LoadBalancerRulesOverridesRandomSteering | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    default_weight: cdktf.numberToTerraform(struct!.defaultWeight),
-    pool_weights: cdktf.hashMapper(cdktf.numberToTerraform)(struct!.poolWeights),
+    default_weight: cdktn.numberToTerraform(struct!.defaultWeight),
+    pool_weights: cdktn.hashMapper(cdktn.numberToTerraform)(struct!.poolWeights),
   }
 }
 
 
-export function loadBalancerRulesOverridesRandomSteeringToHclTerraform(struct?: LoadBalancerRulesOverridesRandomSteering | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesRandomSteeringToHclTerraform(struct?: LoadBalancerRulesOverridesRandomSteering | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     default_weight: {
-      value: cdktf.numberToHclTerraform(struct!.defaultWeight),
+      value: cdktn.numberToHclTerraform(struct!.defaultWeight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     pool_weights: {
-      value: cdktf.hashMapperHcl(cdktf.numberToHclTerraform)(struct!.poolWeights),
+      value: cdktn.hashMapperHcl(cdktn.numberToHclTerraform)(struct!.poolWeights),
       isBlock: false,
       type: "map",
       storageClassType: "numberMap",
@@ -997,19 +997,19 @@ export function loadBalancerRulesOverridesRandomSteeringToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRulesOverridesRandomSteeringOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRulesOverridesRandomSteeringOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerRulesOverridesRandomSteering | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRulesOverridesRandomSteering | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1026,14 +1026,14 @@ export class LoadBalancerRulesOverridesRandomSteeringOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRulesOverridesRandomSteering | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRulesOverridesRandomSteering | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._defaultWeight = undefined;
       this._poolWeights = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1081,98 +1081,98 @@ export interface LoadBalancerRulesOverridesSessionAffinityAttributes {
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
   /**
   * Configures the names of HTTP headers to base session affinity on when header `session_affinity` is enabled. At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#headers LoadBalancer#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#headers LoadBalancer#headers}
   */
   readonly headers?: string[];
   /**
   * When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used. The supported values are: - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created. - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
   */
-  readonly requireAllHeaders?: boolean | cdktf.IResolvable;
+  readonly requireAllHeaders?: boolean | cdktn.IResolvable;
   /**
   * Configures the SameSite attribute on session affinity cookie. Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
   * Available values: "Auto", "Lax", "None", "Strict".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
   */
   readonly samesite?: string;
   /**
   * Configures the Secure attribute on session affinity cookie. Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
   * Available values: "Auto", "Always", "Never".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#secure LoadBalancer#secure}
   */
   readonly secure?: string;
   /**
   * Configures the zero-downtime failover between origins within a pool when session affinity is enabled. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - `"none"`: No failover takes place for sessions pinned to the origin (default). - `"temporary"`: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
   * Available values: "none", "temporary", "sticky".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
   */
   readonly zeroDowntimeFailover?: string;
 }
 
-export function loadBalancerRulesOverridesSessionAffinityAttributesToTerraform(struct?: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesSessionAffinityAttributesToTerraform(struct?: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    drain_duration: cdktf.numberToTerraform(struct!.drainDuration),
-    headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.headers),
-    require_all_headers: cdktf.booleanToTerraform(struct!.requireAllHeaders),
-    samesite: cdktf.stringToTerraform(struct!.samesite),
-    secure: cdktf.stringToTerraform(struct!.secure),
-    zero_downtime_failover: cdktf.stringToTerraform(struct!.zeroDowntimeFailover),
+    drain_duration: cdktn.numberToTerraform(struct!.drainDuration),
+    headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.headers),
+    require_all_headers: cdktn.booleanToTerraform(struct!.requireAllHeaders),
+    samesite: cdktn.stringToTerraform(struct!.samesite),
+    secure: cdktn.stringToTerraform(struct!.secure),
+    zero_downtime_failover: cdktn.stringToTerraform(struct!.zeroDowntimeFailover),
   }
 }
 
 
-export function loadBalancerRulesOverridesSessionAffinityAttributesToHclTerraform(struct?: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesSessionAffinityAttributesToHclTerraform(struct?: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     drain_duration: {
-      value: cdktf.numberToHclTerraform(struct!.drainDuration),
+      value: cdktn.numberToHclTerraform(struct!.drainDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.headers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.headers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     require_all_headers: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAllHeaders),
+      value: cdktn.booleanToHclTerraform(struct!.requireAllHeaders),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     samesite: {
-      value: cdktf.stringToHclTerraform(struct!.samesite),
+      value: cdktn.stringToHclTerraform(struct!.samesite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secure: {
-      value: cdktf.stringToHclTerraform(struct!.secure),
+      value: cdktn.stringToHclTerraform(struct!.secure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zero_downtime_failover: {
-      value: cdktf.stringToHclTerraform(struct!.zeroDowntimeFailover),
+      value: cdktn.stringToHclTerraform(struct!.zeroDowntimeFailover),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1183,19 +1183,19 @@ export function loadBalancerRulesOverridesSessionAffinityAttributesToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerRulesOverridesSessionAffinityAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRulesOverridesSessionAffinityAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1228,7 +1228,7 @@ export class LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRulesOverridesSessionAffinityAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1239,7 +1239,7 @@ export class LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference 
       this._secure = undefined;
       this._zeroDowntimeFailover = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1288,11 +1288,11 @@ export class LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference 
   }
 
   // require_all_headers - computed: true, optional: true, required: false
-  private _requireAllHeaders?: boolean | cdktf.IResolvable; 
+  private _requireAllHeaders?: boolean | cdktn.IResolvable; 
   public get requireAllHeaders() {
     return this.getBooleanAttribute('require_all_headers');
   }
-  public set requireAllHeaders(value: boolean | cdktf.IResolvable) {
+  public set requireAllHeaders(value: boolean | cdktn.IResolvable) {
     this._requireAllHeaders = value;
   }
   public resetRequireAllHeaders() {
@@ -1355,71 +1355,71 @@ export interface LoadBalancerRulesOverrides {
   /**
   * Controls features that modify the routing of requests to pools and origins in response to dynamic conditions, such as during the interval between active health monitoring requests. For example, zero-downtime failover occurs immediately when an origin becomes unavailable due to HTTP 521, 522, or 523 response codes. If there is another healthy origin in the same pool, the request is retried once against this alternate origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#adaptive_routing LoadBalancer#adaptive_routing}
   */
   readonly adaptiveRouting?: LoadBalancerRulesOverridesAdaptiveRouting;
   /**
   * A mapping of country codes to a list of pool IDs (ordered by their failover priority) for the given country. Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#country_pools LoadBalancer#country_pools}
   */
-  readonly countryPools?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly countryPools?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * A list of pool IDs ordered by their failover priority. Pools defined here are used by default, or when region_pools are not configured for a given region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#default_pools LoadBalancer#default_pools}
   */
   readonly defaultPools?: string[];
   /**
   * The pool ID to use when all other pools are detected as unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#fallback_pool LoadBalancer#fallback_pool}
   */
   readonly fallbackPool?: string;
   /**
   * Controls location-based steering for non-proxied requests. See `steering_policy` to learn how steering is affected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#location_strategy LoadBalancer#location_strategy}
   */
   readonly locationStrategy?: LoadBalancerRulesOverridesLocationStrategy;
   /**
   * Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#pop_pools LoadBalancer#pop_pools}
   */
-  readonly popPools?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly popPools?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * Configures pool weights.
   * - `steering_policy="random"`: A random pool is selected with probability proportional to pool weights.
   * - `steering_policy="least_outstanding_requests"`: Use pool weights to scale each pool's outstanding requests.
   * - `steering_policy="least_connections"`: Use pool weights to scale each pool's open connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#random_steering LoadBalancer#random_steering}
   */
   readonly randomSteering?: LoadBalancerRulesOverridesRandomSteering;
   /**
   * A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. Any regions not explicitly defined will fall back to using default_pools.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#region_pools LoadBalancer#region_pools}
   */
-  readonly regionPools?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly regionPools?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * Specifies the type of session affinity the load balancer should use unless specified as `"none"`. The supported types are: - `"cookie"`: On the first request to a proxied load balancer, a cookie is generated, encoding information of which origin the request will be forwarded to. Subsequent requests, by the same client to the same load balancer, will be sent to the origin server the cookie encodes, for the duration of the cookie and as long as the origin server remains healthy. If the cookie has expired or the origin server is unhealthy, then a new origin server is calculated and used. - `"ip_cookie"`: Behaves the same as `"cookie"` except the initial origin selection is stable and based on the client's ip address. - `"header"`: On the first request to a proxied load balancer, a session key based on the configured HTTP headers (see `session_affinity_attributes.headers`) is generated, encoding the request headers used for storing in the load balancer session state which origin the request will be forwarded to. Subsequent requests to the load balancer with the same headers will be sent to the same origin server, for the duration of the session and as long as the origin server remains healthy. If the session has been idle for the duration of `session_affinity_ttl` seconds or the origin server is unhealthy, then a new origin server is calculated and used. See `headers` in `session_affinity_attributes` for additional required configuration.
   * Available values: "none", "cookie", "ip_cookie", "header".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#session_affinity LoadBalancer#session_affinity}
   */
   readonly sessionAffinity?: string;
   /**
   * Configures attributes for session affinity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#session_affinity_attributes LoadBalancer#session_affinity_attributes}
   */
   readonly sessionAffinityAttributes?: LoadBalancerRulesOverridesSessionAffinityAttributes;
   /**
   * Time, in seconds, until a client's session expires after being created. Once the expiry time has been reached, subsequent requests may get sent to a different origin server. The accepted ranges per `session_affinity` policy are: - `"cookie"` / `"ip_cookie"`: The current default of 23 hours will be used unless explicitly set. The accepted range of values is between [1800, 604800]. - `"header"`: The current default of 1800 seconds will be used unless explicitly set. The accepted range of values is between [30, 3600]. Note: With session affinity by header, sessions only expire after they haven't been used for the number of seconds specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#session_affinity_ttl LoadBalancer#session_affinity_ttl}
   */
   readonly sessionAffinityTtl?: number;
   /**
@@ -1434,43 +1434,43 @@ export interface LoadBalancerRulesOverrides {
   * - `""`: Will map to `"geo"` if you use `region_pools`/`country_pools`/`pop_pools` otherwise `"off"`.
   * Available values: "off", "geo", "random", "dynamic_latency", "proximity", "least_outstanding_requests", "least_connections", "".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#steering_policy LoadBalancer#steering_policy}
   */
   readonly steeringPolicy?: string;
   /**
   * Time to live (TTL) of the DNS entry for the IP address returned by this load balancer. This only applies to gray-clouded (unproxied) load balancers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#ttl LoadBalancer#ttl}
   */
   readonly ttl?: number;
 }
 
-export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRulesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesToTerraform(struct?: LoadBalancerRulesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     adaptive_routing: loadBalancerRulesOverridesAdaptiveRoutingToTerraform(struct!.adaptiveRouting),
-    country_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(struct!.countryPools),
-    default_pools: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.defaultPools),
-    fallback_pool: cdktf.stringToTerraform(struct!.fallbackPool),
+    country_pools: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(struct!.countryPools),
+    default_pools: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.defaultPools),
+    fallback_pool: cdktn.stringToTerraform(struct!.fallbackPool),
     location_strategy: loadBalancerRulesOverridesLocationStrategyToTerraform(struct!.locationStrategy),
-    pop_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(struct!.popPools),
+    pop_pools: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(struct!.popPools),
     random_steering: loadBalancerRulesOverridesRandomSteeringToTerraform(struct!.randomSteering),
-    region_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(struct!.regionPools),
-    session_affinity: cdktf.stringToTerraform(struct!.sessionAffinity),
+    region_pools: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(struct!.regionPools),
+    session_affinity: cdktn.stringToTerraform(struct!.sessionAffinity),
     session_affinity_attributes: loadBalancerRulesOverridesSessionAffinityAttributesToTerraform(struct!.sessionAffinityAttributes),
-    session_affinity_ttl: cdktf.numberToTerraform(struct!.sessionAffinityTtl),
-    steering_policy: cdktf.stringToTerraform(struct!.steeringPolicy),
-    ttl: cdktf.numberToTerraform(struct!.ttl),
+    session_affinity_ttl: cdktn.numberToTerraform(struct!.sessionAffinityTtl),
+    steering_policy: cdktn.stringToTerraform(struct!.steeringPolicy),
+    ttl: cdktn.numberToTerraform(struct!.ttl),
   }
 }
 
 
-export function loadBalancerRulesOverridesToHclTerraform(struct?: LoadBalancerRulesOverrides | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesOverridesToHclTerraform(struct?: LoadBalancerRulesOverrides | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1481,19 +1481,19 @@ export function loadBalancerRulesOverridesToHclTerraform(struct?: LoadBalancerRu
       storageClassType: "LoadBalancerRulesOverridesAdaptiveRouting",
     },
     country_pools: {
-      value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(struct!.countryPools),
+      value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(struct!.countryPools),
       isBlock: false,
       type: "map",
       storageClassType: "stringListMap",
     },
     default_pools: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.defaultPools),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.defaultPools),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     fallback_pool: {
-      value: cdktf.stringToHclTerraform(struct!.fallbackPool),
+      value: cdktn.stringToHclTerraform(struct!.fallbackPool),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1505,7 +1505,7 @@ export function loadBalancerRulesOverridesToHclTerraform(struct?: LoadBalancerRu
       storageClassType: "LoadBalancerRulesOverridesLocationStrategy",
     },
     pop_pools: {
-      value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(struct!.popPools),
+      value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(struct!.popPools),
       isBlock: false,
       type: "map",
       storageClassType: "stringListMap",
@@ -1517,13 +1517,13 @@ export function loadBalancerRulesOverridesToHclTerraform(struct?: LoadBalancerRu
       storageClassType: "LoadBalancerRulesOverridesRandomSteering",
     },
     region_pools: {
-      value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(struct!.regionPools),
+      value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(struct!.regionPools),
       isBlock: false,
       type: "map",
       storageClassType: "stringListMap",
     },
     session_affinity: {
-      value: cdktf.stringToHclTerraform(struct!.sessionAffinity),
+      value: cdktn.stringToHclTerraform(struct!.sessionAffinity),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1535,19 +1535,19 @@ export function loadBalancerRulesOverridesToHclTerraform(struct?: LoadBalancerRu
       storageClassType: "LoadBalancerRulesOverridesSessionAffinityAttributes",
     },
     session_affinity_ttl: {
-      value: cdktf.numberToHclTerraform(struct!.sessionAffinityTtl),
+      value: cdktn.numberToHclTerraform(struct!.sessionAffinityTtl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     steering_policy: {
-      value: cdktf.stringToHclTerraform(struct!.steeringPolicy),
+      value: cdktn.stringToHclTerraform(struct!.steeringPolicy),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     ttl: {
-      value: cdktf.numberToHclTerraform(struct!.ttl),
+      value: cdktn.numberToHclTerraform(struct!.ttl),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1558,19 +1558,19 @@ export function loadBalancerRulesOverridesToHclTerraform(struct?: LoadBalancerRu
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRulesOverridesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerRulesOverrides | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRulesOverrides | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1631,7 +1631,7 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRulesOverrides | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRulesOverrides | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1649,7 +1649,7 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
       this._steeringPolicy = undefined;
       this._ttl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1689,11 +1689,11 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
   }
 
   // country_pools - computed: true, optional: true, required: false
-  private _countryPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _countryPools?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get countryPools() {
     return this.interpolationForAttribute('country_pools');
   }
-  public set countryPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set countryPools(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._countryPools = value;
   }
   public resetCountryPools() {
@@ -1753,11 +1753,11 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
   }
 
   // pop_pools - computed: true, optional: true, required: false
-  private _popPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _popPools?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get popPools() {
     return this.interpolationForAttribute('pop_pools');
   }
-  public set popPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set popPools(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._popPools = value;
   }
   public resetPopPools() {
@@ -1785,11 +1785,11 @@ export class LoadBalancerRulesOverridesOutputReference extends cdktf.ComplexObje
   }
 
   // region_pools - computed: true, optional: true, required: false
-  private _regionPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _regionPools?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get regionPools() {
     return this.interpolationForAttribute('region_pools');
   }
-  public set regionPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set regionPools(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._regionPools = value;
   }
   public resetRegionPools() {
@@ -1884,78 +1884,78 @@ export interface LoadBalancerRules {
   /**
   * The condition expressions to evaluate. If the condition evaluates to true, the overrides or fixed_response in this rule will be applied. An empty condition is always true. For more details on condition expressions, please see https://developers.cloudflare.com/load-balancing/understand-basics/load-balancing-rules/expressions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#condition LoadBalancer#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#condition LoadBalancer#condition}
   */
   readonly condition?: string;
   /**
   * Disable this specific rule. It will no longer be evaluated by this load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#disabled LoadBalancer#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
   * A collection of fields used to directly respond to the eyeball instead of routing to a pool. If a fixed_response is supplied the rule will be marked as terminates.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#fixed_response LoadBalancer#fixed_response}
   */
   readonly fixedResponse?: LoadBalancerRulesFixedResponse;
   /**
   * Name of this rule. Only used for human readability.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#name LoadBalancer#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#name LoadBalancer#name}
   */
   readonly name?: string;
   /**
   * A collection of overrides to apply to the load balancer when this rule's condition is true. All fields are optional.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#overrides LoadBalancer#overrides}
   */
   readonly overrides?: LoadBalancerRulesOverrides;
   /**
   * The order in which rules should be executed in relation to each other. Lower values are executed first. Values do not need to be sequential. If no value is provided for any rule the array order of the rules field will be used to assign a priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#priority LoadBalancer#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#priority LoadBalancer#priority}
   */
   readonly priority?: number;
   /**
   * If this rule's condition is true, this causes rule evaluation to stop after processing this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#terminates LoadBalancer#terminates}
   */
-  readonly terminates?: boolean | cdktf.IResolvable;
+  readonly terminates?: boolean | cdktn.IResolvable;
 }
 
-export function loadBalancerRulesToTerraform(struct?: LoadBalancerRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesToTerraform(struct?: LoadBalancerRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    condition: cdktf.stringToTerraform(struct!.condition),
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
+    condition: cdktn.stringToTerraform(struct!.condition),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
     fixed_response: loadBalancerRulesFixedResponseToTerraform(struct!.fixedResponse),
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
     overrides: loadBalancerRulesOverridesToTerraform(struct!.overrides),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    terminates: cdktf.booleanToTerraform(struct!.terminates),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    terminates: cdktn.booleanToTerraform(struct!.terminates),
   }
 }
 
 
-export function loadBalancerRulesToHclTerraform(struct?: LoadBalancerRules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerRulesToHclTerraform(struct?: LoadBalancerRules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     condition: {
-      value: cdktf.stringToHclTerraform(struct!.condition),
+      value: cdktn.stringToHclTerraform(struct!.condition),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1967,7 +1967,7 @@ export function loadBalancerRulesToHclTerraform(struct?: LoadBalancerRules | cdk
       storageClassType: "LoadBalancerRulesFixedResponse",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1979,13 +1979,13 @@ export function loadBalancerRulesToHclTerraform(struct?: LoadBalancerRules | cdk
       storageClassType: "LoadBalancerRulesOverrides",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     terminates: {
-      value: cdktf.booleanToHclTerraform(struct!.terminates),
+      value: cdktn.booleanToHclTerraform(struct!.terminates),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1996,9 +1996,9 @@ export function loadBalancerRulesToHclTerraform(struct?: LoadBalancerRules | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2006,11 +2006,11 @@ export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): LoadBalancerRules | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerRules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2047,7 +2047,7 @@ export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerRules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerRules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2059,7 +2059,7 @@ export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
       this._priority = undefined;
       this._terminates = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2093,11 +2093,11 @@ export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
   }
 
   // disabled - computed: true, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -2173,11 +2173,11 @@ export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
   }
 
   // terminates - computed: true, optional: true, required: false
-  private _terminates?: boolean | cdktf.IResolvable; 
+  private _terminates?: boolean | cdktn.IResolvable; 
   public get terminates() {
     return this.getBooleanAttribute('terminates');
   }
-  public set terminates(value: boolean | cdktf.IResolvable) {
+  public set terminates(value: boolean | cdktn.IResolvable) {
     this._terminates = value;
   }
   public resetTerminates() {
@@ -2189,15 +2189,15 @@ export class LoadBalancerRulesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class LoadBalancerRulesList extends cdktf.ComplexList {
-  public internalValue? : LoadBalancerRules[] | cdktf.IResolvable
+export class LoadBalancerRulesList extends cdktn.ComplexList {
+  public internalValue? : LoadBalancerRules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -2212,98 +2212,98 @@ export interface LoadBalancerSessionAffinityAttributes {
   /**
   * Configures the drain duration in seconds. This field is only used when session affinity is enabled on the load balancer.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#drain_duration LoadBalancer#drain_duration}
   */
   readonly drainDuration?: number;
   /**
   * Configures the names of HTTP headers to base session affinity on when header `session_affinity` is enabled. At least one HTTP header name must be provided. To specify the exact cookies to be used, include an item in the following format: `"cookie:<cookie-name-1>,<cookie-name-2>"` (example) where everything after the colon is a comma-separated list of cookie names. Providing only `"cookie"` will result in all cookies being used. The default max number of HTTP header names that can be provided depends on your plan: 5 for Enterprise, 1 for all other plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#headers LoadBalancer#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#headers LoadBalancer#headers}
   */
   readonly headers?: string[];
   /**
   * When header `session_affinity` is enabled, this option can be used to specify how HTTP headers on load balancing requests will be used. The supported values are: - `"true"`: Load balancing requests must contain *all* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created. - `"false"`: Load balancing requests must contain *at least one* of the HTTP headers specified by the `headers` session affinity attribute, otherwise sessions aren't created.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#require_all_headers LoadBalancer#require_all_headers}
   */
-  readonly requireAllHeaders?: boolean | cdktf.IResolvable;
+  readonly requireAllHeaders?: boolean | cdktn.IResolvable;
   /**
   * Configures the SameSite attribute on session affinity cookie. Value "Auto" will be translated to "Lax" or "None" depending if Always Use HTTPS is enabled. Note: when using value "None", the secure attribute can not be set to "Never".
   * Available values: "Auto", "Lax", "None", "Strict".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#samesite LoadBalancer#samesite}
   */
   readonly samesite?: string;
   /**
   * Configures the Secure attribute on session affinity cookie. Value "Always" indicates the Secure attribute will be set in the Set-Cookie header, "Never" indicates the Secure attribute will not be set, and "Auto" will set the Secure attribute depending if Always Use HTTPS is enabled.
   * Available values: "Auto", "Always", "Never".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#secure LoadBalancer#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#secure LoadBalancer#secure}
   */
   readonly secure?: string;
   /**
   * Configures the zero-downtime failover between origins within a pool when session affinity is enabled. This feature is currently incompatible with Argo, Tiered Cache, and Bandwidth Alliance. The supported values are: - `"none"`: No failover takes place for sessions pinned to the origin (default). - `"temporary"`: Traffic will be sent to another other healthy origin until the originally pinned origin is available; note that this can potentially result in heavy origin flapping. - `"sticky"`: The session affinity cookie is updated and subsequent requests are sent to the new origin. Note: Zero-downtime failover with sticky sessions is currently not supported for session affinity by header.
   * Available values: "none", "temporary", "sticky".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#zero_downtime_failover LoadBalancer#zero_downtime_failover}
   */
   readonly zeroDowntimeFailover?: string;
 }
 
-export function loadBalancerSessionAffinityAttributesToTerraform(struct?: LoadBalancerSessionAffinityAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerSessionAffinityAttributesToTerraform(struct?: LoadBalancerSessionAffinityAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    drain_duration: cdktf.numberToTerraform(struct!.drainDuration),
-    headers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.headers),
-    require_all_headers: cdktf.booleanToTerraform(struct!.requireAllHeaders),
-    samesite: cdktf.stringToTerraform(struct!.samesite),
-    secure: cdktf.stringToTerraform(struct!.secure),
-    zero_downtime_failover: cdktf.stringToTerraform(struct!.zeroDowntimeFailover),
+    drain_duration: cdktn.numberToTerraform(struct!.drainDuration),
+    headers: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.headers),
+    require_all_headers: cdktn.booleanToTerraform(struct!.requireAllHeaders),
+    samesite: cdktn.stringToTerraform(struct!.samesite),
+    secure: cdktn.stringToTerraform(struct!.secure),
+    zero_downtime_failover: cdktn.stringToTerraform(struct!.zeroDowntimeFailover),
   }
 }
 
 
-export function loadBalancerSessionAffinityAttributesToHclTerraform(struct?: LoadBalancerSessionAffinityAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function loadBalancerSessionAffinityAttributesToHclTerraform(struct?: LoadBalancerSessionAffinityAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     drain_duration: {
-      value: cdktf.numberToHclTerraform(struct!.drainDuration),
+      value: cdktn.numberToHclTerraform(struct!.drainDuration),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     headers: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.headers),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.headers),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     require_all_headers: {
-      value: cdktf.booleanToHclTerraform(struct!.requireAllHeaders),
+      value: cdktn.booleanToHclTerraform(struct!.requireAllHeaders),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     samesite: {
-      value: cdktf.stringToHclTerraform(struct!.samesite),
+      value: cdktn.stringToHclTerraform(struct!.samesite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secure: {
-      value: cdktf.stringToHclTerraform(struct!.secure),
+      value: cdktn.stringToHclTerraform(struct!.secure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zero_downtime_failover: {
-      value: cdktf.stringToHclTerraform(struct!.zeroDowntimeFailover),
+      value: cdktn.stringToHclTerraform(struct!.zeroDowntimeFailover),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2314,19 +2314,19 @@ export function loadBalancerSessionAffinityAttributesToHclTerraform(struct?: Loa
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktf.ComplexObject {
+export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): LoadBalancerSessionAffinityAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): LoadBalancerSessionAffinityAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2359,7 +2359,7 @@ export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: LoadBalancerSessionAffinityAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: LoadBalancerSessionAffinityAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2370,7 +2370,7 @@ export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktf.
       this._secure = undefined;
       this._zeroDowntimeFailover = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2419,11 +2419,11 @@ export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktf.
   }
 
   // require_all_headers - computed: true, optional: true, required: false
-  private _requireAllHeaders?: boolean | cdktf.IResolvable; 
+  private _requireAllHeaders?: boolean | cdktn.IResolvable; 
   public get requireAllHeaders() {
     return this.getBooleanAttribute('require_all_headers');
   }
-  public set requireAllHeaders(value: boolean | cdktf.IResolvable) {
+  public set requireAllHeaders(value: boolean | cdktn.IResolvable) {
     this._requireAllHeaders = value;
   }
   public resetRequireAllHeaders() {
@@ -2484,9 +2484,9 @@ export class LoadBalancerSessionAffinityAttributesOutputReference extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer cloudflare_load_balancer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer cloudflare_load_balancer}
 */
-export class LoadBalancer extends cdktf.TerraformResource {
+export class LoadBalancer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -2497,14 +2497,14 @@ export class LoadBalancer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a LoadBalancer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a LoadBalancer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the LoadBalancer to import
-  * @param importFromId The id of the existing LoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing LoadBalancer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the LoadBalancer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_load_balancer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_load_balancer", importId: importFromId, provider });
       }
 
   // ===========
@@ -2512,7 +2512,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/load_balancer cloudflare_load_balancer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/load_balancer cloudflare_load_balancer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2523,7 +2523,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_load_balancer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -2577,11 +2577,11 @@ export class LoadBalancer extends cdktf.TerraformResource {
   }
 
   // country_pools - computed: true, optional: true, required: false
-  private _countryPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _countryPools?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get countryPools() {
     return this.interpolationForAttribute('country_pools');
   }
-  public set countryPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set countryPools(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._countryPools = value;
   }
   public resetCountryPools() {
@@ -2627,11 +2627,11 @@ export class LoadBalancer extends cdktf.TerraformResource {
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2711,11 +2711,11 @@ export class LoadBalancer extends cdktf.TerraformResource {
   }
 
   // pop_pools - computed: true, optional: true, required: false
-  private _popPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _popPools?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get popPools() {
     return this.interpolationForAttribute('pop_pools');
   }
-  public set popPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set popPools(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._popPools = value;
   }
   public resetPopPools() {
@@ -2727,11 +2727,11 @@ export class LoadBalancer extends cdktf.TerraformResource {
   }
 
   // proxied - computed: true, optional: true, required: false
-  private _proxied?: boolean | cdktf.IResolvable; 
+  private _proxied?: boolean | cdktn.IResolvable; 
   public get proxied() {
     return this.getBooleanAttribute('proxied');
   }
-  public set proxied(value: boolean | cdktf.IResolvable) {
+  public set proxied(value: boolean | cdktn.IResolvable) {
     this._proxied = value;
   }
   public resetProxied() {
@@ -2759,11 +2759,11 @@ export class LoadBalancer extends cdktf.TerraformResource {
   }
 
   // region_pools - computed: true, optional: true, required: false
-  private _regionPools?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _regionPools?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get regionPools() {
     return this.interpolationForAttribute('region_pools');
   }
-  public set regionPools(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set regionPools(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._regionPools = value;
   }
   public resetRegionPools() {
@@ -2779,7 +2779,7 @@ export class LoadBalancer extends cdktf.TerraformResource {
   public get rules() {
     return this._rules;
   }
-  public putRules(value: LoadBalancerRules[] | cdktf.IResolvable) {
+  public putRules(value: LoadBalancerRules[] | cdktn.IResolvable) {
     this._rules.internalValue = value;
   }
   public resetRules() {
@@ -2895,25 +2895,25 @@ export class LoadBalancer extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       adaptive_routing: loadBalancerAdaptiveRoutingToTerraform(this._adaptiveRouting.internalValue),
-      country_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(this._countryPools),
-      default_pools: cdktf.listMapper(cdktf.stringToTerraform, false)(this._defaultPools),
-      description: cdktf.stringToTerraform(this._description),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      fallback_pool: cdktf.stringToTerraform(this._fallbackPool),
+      country_pools: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(this._countryPools),
+      default_pools: cdktn.listMapper(cdktn.stringToTerraform, false)(this._defaultPools),
+      description: cdktn.stringToTerraform(this._description),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      fallback_pool: cdktn.stringToTerraform(this._fallbackPool),
       location_strategy: loadBalancerLocationStrategyToTerraform(this._locationStrategy.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      networks: cdktf.listMapper(cdktf.stringToTerraform, false)(this._networks),
-      pop_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(this._popPools),
-      proxied: cdktf.booleanToTerraform(this._proxied),
+      name: cdktn.stringToTerraform(this._name),
+      networks: cdktn.listMapper(cdktn.stringToTerraform, false)(this._networks),
+      pop_pools: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(this._popPools),
+      proxied: cdktn.booleanToTerraform(this._proxied),
       random_steering: loadBalancerRandomSteeringToTerraform(this._randomSteering.internalValue),
-      region_pools: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(this._regionPools),
-      rules: cdktf.listMapper(loadBalancerRulesToTerraform, false)(this._rules.internalValue),
-      session_affinity: cdktf.stringToTerraform(this._sessionAffinity),
+      region_pools: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(this._regionPools),
+      rules: cdktn.listMapper(loadBalancerRulesToTerraform, false)(this._rules.internalValue),
+      session_affinity: cdktn.stringToTerraform(this._sessionAffinity),
       session_affinity_attributes: loadBalancerSessionAffinityAttributesToTerraform(this._sessionAffinityAttributes.internalValue),
-      session_affinity_ttl: cdktf.numberToTerraform(this._sessionAffinityTtl),
-      steering_policy: cdktf.stringToTerraform(this._steeringPolicy),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      session_affinity_ttl: cdktn.numberToTerraform(this._sessionAffinityTtl),
+      steering_policy: cdktn.stringToTerraform(this._steeringPolicy),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -2926,31 +2926,31 @@ export class LoadBalancer extends cdktf.TerraformResource {
         storageClassType: "LoadBalancerAdaptiveRouting",
       },
       country_pools: {
-        value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(this._countryPools),
+        value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(this._countryPools),
         isBlock: false,
         type: "map",
         storageClassType: "stringListMap",
       },
       default_pools: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._defaultPools),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._defaultPools),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fallback_pool: {
-        value: cdktf.stringToHclTerraform(this._fallbackPool),
+        value: cdktn.stringToHclTerraform(this._fallbackPool),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -2962,25 +2962,25 @@ export class LoadBalancer extends cdktf.TerraformResource {
         storageClassType: "LoadBalancerLocationStrategy",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       networks: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._networks),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._networks),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       pop_pools: {
-        value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(this._popPools),
+        value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(this._popPools),
         isBlock: false,
         type: "map",
         storageClassType: "stringListMap",
       },
       proxied: {
-        value: cdktf.booleanToHclTerraform(this._proxied),
+        value: cdktn.booleanToHclTerraform(this._proxied),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -2992,19 +2992,19 @@ export class LoadBalancer extends cdktf.TerraformResource {
         storageClassType: "LoadBalancerRandomSteering",
       },
       region_pools: {
-        value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(this._regionPools),
+        value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(this._regionPools),
         isBlock: false,
         type: "map",
         storageClassType: "stringListMap",
       },
       rules: {
-        value: cdktf.listMapperHcl(loadBalancerRulesToHclTerraform, false)(this._rules.internalValue),
+        value: cdktn.listMapperHcl(loadBalancerRulesToHclTerraform, false)(this._rules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "LoadBalancerRulesList",
       },
       session_affinity: {
-        value: cdktf.stringToHclTerraform(this._sessionAffinity),
+        value: cdktn.stringToHclTerraform(this._sessionAffinity),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -3016,25 +3016,25 @@ export class LoadBalancer extends cdktf.TerraformResource {
         storageClassType: "LoadBalancerSessionAffinityAttributes",
       },
       session_affinity_ttl: {
-        value: cdktf.numberToHclTerraform(this._sessionAffinityTtl),
+        value: cdktn.numberToHclTerraform(this._sessionAffinityTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       steering_policy: {
-        value: cdktf.stringToHclTerraform(this._steeringPolicy),
+        value: cdktn.stringToHclTerraform(this._steeringPolicy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

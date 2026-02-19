@@ -1,50 +1,50 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiTokenConfig extends cdktf.TerraformMetaArguments {
+export interface ApiTokenConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#condition ApiToken#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#condition ApiToken#condition}
   */
   readonly condition?: ApiTokenCondition;
   /**
   * The expiration time on or after which the JWT MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#expires_on ApiToken#expires_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#expires_on ApiToken#expires_on}
   */
   readonly expiresOn?: string;
   /**
   * Token name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#name ApiToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#name ApiToken#name}
   */
   readonly name: string;
   /**
   * The time before which the token MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#not_before ApiToken#not_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#not_before ApiToken#not_before}
   */
   readonly notBefore?: string;
   /**
   * Set of access policies assigned to the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#policies ApiToken#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#policies ApiToken#policies}
   */
-  readonly policies: ApiTokenPolicies[] | cdktf.IResolvable;
+  readonly policies: ApiTokenPolicies[] | cdktn.IResolvable;
   /**
   * Status of the token.
   * Available values: "active", "disabled", "expired".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#status ApiToken#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#status ApiToken#status}
   */
   readonly status?: string;
 }
@@ -52,43 +52,43 @@ export interface ApiTokenConditionRequestIp {
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#in ApiToken#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#in ApiToken#in}
   */
   readonly in?: string[];
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#not_in ApiToken#not_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#not_in ApiToken#not_in}
   */
   readonly notIn?: string[];
 }
 
-export function apiTokenConditionRequestIpToTerraform(struct?: ApiTokenConditionRequestIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenConditionRequestIpToTerraform(struct?: ApiTokenConditionRequestIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.in),
-    not_in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notIn),
+    in: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.in),
+    not_in: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notIn),
   }
 }
 
 
-export function apiTokenConditionRequestIpToHclTerraform(struct?: ApiTokenConditionRequestIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenConditionRequestIpToHclTerraform(struct?: ApiTokenConditionRequestIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     in: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.in),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.in),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_in: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notIn),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notIn),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -99,19 +99,19 @@ export function apiTokenConditionRequestIpToHclTerraform(struct?: ApiTokenCondit
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiTokenConditionRequestIpOutputReference extends cdktf.ComplexObject {
+export class ApiTokenConditionRequestIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiTokenConditionRequestIp | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiTokenConditionRequestIp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -128,14 +128,14 @@ export class ApiTokenConditionRequestIpOutputReference extends cdktf.ComplexObje
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiTokenConditionRequestIp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiTokenConditionRequestIp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._in = undefined;
       this._notIn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -183,14 +183,14 @@ export interface ApiTokenCondition {
   /**
   * Client IP restrictions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#request_ip ApiToken#request_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#request_ip ApiToken#request_ip}
   */
   readonly requestIp?: ApiTokenConditionRequestIp;
 }
 
-export function apiTokenConditionToTerraform(struct?: ApiTokenCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenConditionToTerraform(struct?: ApiTokenCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -199,9 +199,9 @@ export function apiTokenConditionToTerraform(struct?: ApiTokenCondition | cdktf.
 }
 
 
-export function apiTokenConditionToHclTerraform(struct?: ApiTokenCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenConditionToHclTerraform(struct?: ApiTokenCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -217,19 +217,19 @@ export function apiTokenConditionToHclTerraform(struct?: ApiTokenCondition | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiTokenConditionOutputReference extends cdktf.ComplexObject {
+export class ApiTokenConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ApiTokenCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiTokenCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -242,13 +242,13 @@ export class ApiTokenConditionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiTokenCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiTokenCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._requestIp.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -279,7 +279,7 @@ export interface ApiTokenPoliciesPermissionGroups {
   /**
   * Identifier of the permission group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#id ApiToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#id ApiToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -287,25 +287,25 @@ export interface ApiTokenPoliciesPermissionGroups {
   readonly id: string;
 }
 
-export function apiTokenPoliciesPermissionGroupsToTerraform(struct?: ApiTokenPoliciesPermissionGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenPoliciesPermissionGroupsToTerraform(struct?: ApiTokenPoliciesPermissionGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function apiTokenPoliciesPermissionGroupsToHclTerraform(struct?: ApiTokenPoliciesPermissionGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenPoliciesPermissionGroupsToHclTerraform(struct?: ApiTokenPoliciesPermissionGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -316,9 +316,9 @@ export function apiTokenPoliciesPermissionGroupsToHclTerraform(struct?: ApiToken
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.ComplexObject {
+export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -326,11 +326,11 @@ export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiTokenPoliciesPermissionGroups | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiTokenPoliciesPermissionGroups | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -343,13 +343,13 @@ export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiTokenPoliciesPermissionGroups | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiTokenPoliciesPermissionGroups | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -374,15 +374,15 @@ export class ApiTokenPoliciesPermissionGroupsOutputReference extends cdktf.Compl
   }
 }
 
-export class ApiTokenPoliciesPermissionGroupsList extends cdktf.ComplexList {
-  public internalValue? : ApiTokenPoliciesPermissionGroups[] | cdktf.IResolvable
+export class ApiTokenPoliciesPermissionGroupsList extends cdktn.ComplexList {
+  public internalValue? : ApiTokenPoliciesPermissionGroups[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -398,56 +398,56 @@ export interface ApiTokenPolicies {
   * Allow or deny operations against the resources.
   * Available values: "allow", "deny".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#effect ApiToken#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#effect ApiToken#effect}
   */
   readonly effect: string;
   /**
   * A set of permission groups that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#permission_groups ApiToken#permission_groups}
   */
-  readonly permissionGroups: ApiTokenPoliciesPermissionGroups[] | cdktf.IResolvable;
+  readonly permissionGroups: ApiTokenPoliciesPermissionGroups[] | cdktn.IResolvable;
   /**
   * A json object representing the resources that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#resources ApiToken#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#resources ApiToken#resources}
   */
   readonly resources: string;
 }
 
-export function apiTokenPoliciesToTerraform(struct?: ApiTokenPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenPoliciesToTerraform(struct?: ApiTokenPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effect: cdktf.stringToTerraform(struct!.effect),
-    permission_groups: cdktf.listMapper(apiTokenPoliciesPermissionGroupsToTerraform, false)(struct!.permissionGroups),
-    resources: cdktf.stringToTerraform(struct!.resources),
+    effect: cdktn.stringToTerraform(struct!.effect),
+    permission_groups: cdktn.listMapper(apiTokenPoliciesPermissionGroupsToTerraform, false)(struct!.permissionGroups),
+    resources: cdktn.stringToTerraform(struct!.resources),
   }
 }
 
 
-export function apiTokenPoliciesToHclTerraform(struct?: ApiTokenPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function apiTokenPoliciesToHclTerraform(struct?: ApiTokenPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effect: {
-      value: cdktf.stringToHclTerraform(struct!.effect),
+      value: cdktn.stringToHclTerraform(struct!.effect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission_groups: {
-      value: cdktf.listMapperHcl(apiTokenPoliciesPermissionGroupsToHclTerraform, false)(struct!.permissionGroups),
+      value: cdktn.listMapperHcl(apiTokenPoliciesPermissionGroupsToHclTerraform, false)(struct!.permissionGroups),
       isBlock: true,
       type: "set",
       storageClassType: "ApiTokenPoliciesPermissionGroupsList",
     },
     resources: {
-      value: cdktf.stringToHclTerraform(struct!.resources),
+      value: cdktn.stringToHclTerraform(struct!.resources),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -458,9 +458,9 @@ export function apiTokenPoliciesToHclTerraform(struct?: ApiTokenPolicies | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
+export class ApiTokenPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -468,11 +468,11 @@ export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ApiTokenPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): ApiTokenPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -493,7 +493,7 @@ export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ApiTokenPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ApiTokenPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -501,7 +501,7 @@ export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
       this._permissionGroups.internalValue = undefined;
       this._resources = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -532,7 +532,7 @@ export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
   public get permissionGroups() {
     return this._permissionGroups;
   }
-  public putPermissionGroups(value: ApiTokenPoliciesPermissionGroups[] | cdktf.IResolvable) {
+  public putPermissionGroups(value: ApiTokenPoliciesPermissionGroups[] | cdktn.IResolvable) {
     this._permissionGroups.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -554,15 +554,15 @@ export class ApiTokenPoliciesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class ApiTokenPoliciesList extends cdktf.ComplexList {
-  public internalValue? : ApiTokenPolicies[] | cdktf.IResolvable
+export class ApiTokenPoliciesList extends cdktn.ComplexList {
+  public internalValue? : ApiTokenPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -575,9 +575,9 @@ export class ApiTokenPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token cloudflare_api_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token cloudflare_api_token}
 */
-export class ApiToken extends cdktf.TerraformResource {
+export class ApiToken extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -588,14 +588,14 @@ export class ApiToken extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiToken to import
-  * @param importFromId The id of the existing ApiToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -603,7 +603,7 @@ export class ApiToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_token cloudflare_api_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_token cloudflare_api_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -614,7 +614,7 @@ export class ApiToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -723,7 +723,7 @@ export class ApiToken extends cdktf.TerraformResource {
   public get policies() {
     return this._policies;
   }
-  public putPolicies(value: ApiTokenPolicies[] | cdktf.IResolvable) {
+  public putPolicies(value: ApiTokenPolicies[] | cdktn.IResolvable) {
     this._policies.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -759,11 +759,11 @@ export class ApiToken extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       condition: apiTokenConditionToTerraform(this._condition.internalValue),
-      expires_on: cdktf.stringToTerraform(this._expiresOn),
-      name: cdktf.stringToTerraform(this._name),
-      not_before: cdktf.stringToTerraform(this._notBefore),
-      policies: cdktf.listMapper(apiTokenPoliciesToTerraform, false)(this._policies.internalValue),
-      status: cdktf.stringToTerraform(this._status),
+      expires_on: cdktn.stringToTerraform(this._expiresOn),
+      name: cdktn.stringToTerraform(this._name),
+      not_before: cdktn.stringToTerraform(this._notBefore),
+      policies: cdktn.listMapper(apiTokenPoliciesToTerraform, false)(this._policies.internalValue),
+      status: cdktn.stringToTerraform(this._status),
     };
   }
 
@@ -776,31 +776,31 @@ export class ApiToken extends cdktf.TerraformResource {
         storageClassType: "ApiTokenCondition",
       },
       expires_on: {
-        value: cdktf.stringToHclTerraform(this._expiresOn),
+        value: cdktn.stringToHclTerraform(this._expiresOn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_before: {
-        value: cdktf.stringToHclTerraform(this._notBefore),
+        value: cdktn.stringToHclTerraform(this._notBefore),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policies: {
-        value: cdktf.listMapperHcl(apiTokenPoliciesToHclTerraform, false)(this._policies.internalValue),
+        value: cdktn.listMapperHcl(apiTokenPoliciesToHclTerraform, false)(this._policies.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "ApiTokenPoliciesList",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,41 +1,41 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsFirewallConfig extends cdktf.TerraformMetaArguments {
+export interface DnsFirewallConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#account_id DnsFirewall#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#account_id DnsFirewall#account_id}
   */
   readonly accountId: string;
   /**
   * Attack mitigation settings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#attack_mitigation DnsFirewall#attack_mitigation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#attack_mitigation DnsFirewall#attack_mitigation}
   */
   readonly attackMitigation?: DnsFirewallAttackMitigation;
   /**
   * Whether to refuse to answer queries for the ANY type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#deprecate_any_requests DnsFirewall#deprecate_any_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#deprecate_any_requests DnsFirewall#deprecate_any_requests}
   */
-  readonly deprecateAnyRequests?: boolean | cdktf.IResolvable;
+  readonly deprecateAnyRequests?: boolean | cdktn.IResolvable;
   /**
   * Whether to forward client IP (resolver) subnet if no EDNS Client Subnet is sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#ecs_fallback DnsFirewall#ecs_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#ecs_fallback DnsFirewall#ecs_fallback}
   */
-  readonly ecsFallback?: boolean | cdktf.IResolvable;
+  readonly ecsFallback?: boolean | cdktn.IResolvable;
   /**
   * By default, Cloudflare attempts to cache responses for as long as
   * indicated by the TTL received from upstream nameservers. This setting
@@ -46,7 +46,7 @@ export interface DnsFirewallConfig extends cdktf.TerraformMetaArguments {
   * Cloudflare returns to clients. Cloudflare will always forward the TTL
   * value received from upstream nameservers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#maximum_cache_ttl DnsFirewall#maximum_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#maximum_cache_ttl DnsFirewall#maximum_cache_ttl}
   */
   readonly maximumCacheTtl?: number;
   /**
@@ -64,13 +64,13 @@ export interface DnsFirewallConfig extends cdktf.TerraformMetaArguments {
   * responses may be removed earlier for capacity or other operational
   * reasons.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#minimum_cache_ttl DnsFirewall#minimum_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#minimum_cache_ttl DnsFirewall#minimum_cache_ttl}
   */
   readonly minimumCacheTtl?: number;
   /**
   * DNS Firewall cluster name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#name DnsFirewall#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#name DnsFirewall#name}
   */
   readonly name: string;
   /**
@@ -81,23 +81,23 @@ export interface DnsFirewallConfig extends cdktf.TerraformMetaArguments {
   * Cloudflare returns to clients. Cloudflare will always forward the TTL
   * value received from upstream nameservers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#negative_cache_ttl DnsFirewall#negative_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#negative_cache_ttl DnsFirewall#negative_cache_ttl}
   */
   readonly negativeCacheTtl?: number;
   /**
   * Ratelimit in queries per second per datacenter (applies to DNS queries sent to the upstream nameservers configured on the cluster)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#ratelimit DnsFirewall#ratelimit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#ratelimit DnsFirewall#ratelimit}
   */
   readonly ratelimit?: number;
   /**
   * Number of retries for fetching DNS responses from upstream nameservers (not counting the initial attempt)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#retries DnsFirewall#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#retries DnsFirewall#retries}
   */
   readonly retries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}
   */
   readonly upstreamIps: string[];
 }
@@ -105,43 +105,43 @@ export interface DnsFirewallAttackMitigation {
   /**
   * When enabled, automatically mitigate random-prefix attacks to protect upstream DNS servers
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#enabled DnsFirewall#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#enabled DnsFirewall#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Only mitigate attacks when upstream servers seem unhealthy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#only_when_upstream_unhealthy DnsFirewall#only_when_upstream_unhealthy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#only_when_upstream_unhealthy DnsFirewall#only_when_upstream_unhealthy}
   */
-  readonly onlyWhenUpstreamUnhealthy?: boolean | cdktf.IResolvable;
+  readonly onlyWhenUpstreamUnhealthy?: boolean | cdktn.IResolvable;
 }
 
-export function dnsFirewallAttackMitigationToTerraform(struct?: DnsFirewallAttackMitigation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsFirewallAttackMitigationToTerraform(struct?: DnsFirewallAttackMitigation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    only_when_upstream_unhealthy: cdktf.booleanToTerraform(struct!.onlyWhenUpstreamUnhealthy),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    only_when_upstream_unhealthy: cdktn.booleanToTerraform(struct!.onlyWhenUpstreamUnhealthy),
   }
 }
 
 
-export function dnsFirewallAttackMitigationToHclTerraform(struct?: DnsFirewallAttackMitigation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsFirewallAttackMitigationToHclTerraform(struct?: DnsFirewallAttackMitigation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     only_when_upstream_unhealthy: {
-      value: cdktf.booleanToHclTerraform(struct!.onlyWhenUpstreamUnhealthy),
+      value: cdktn.booleanToHclTerraform(struct!.onlyWhenUpstreamUnhealthy),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -152,19 +152,19 @@ export function dnsFirewallAttackMitigationToHclTerraform(struct?: DnsFirewallAt
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsFirewallAttackMitigationOutputReference extends cdktf.ComplexObject {
+export class DnsFirewallAttackMitigationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DnsFirewallAttackMitigation | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsFirewallAttackMitigation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -181,14 +181,14 @@ export class DnsFirewallAttackMitigationOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsFirewallAttackMitigation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsFirewallAttackMitigation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._onlyWhenUpstreamUnhealthy = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -201,11 +201,11 @@ export class DnsFirewallAttackMitigationOutputReference extends cdktf.ComplexObj
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -217,11 +217,11 @@ export class DnsFirewallAttackMitigationOutputReference extends cdktf.ComplexObj
   }
 
   // only_when_upstream_unhealthy - computed: true, optional: true, required: false
-  private _onlyWhenUpstreamUnhealthy?: boolean | cdktf.IResolvable; 
+  private _onlyWhenUpstreamUnhealthy?: boolean | cdktn.IResolvable; 
   public get onlyWhenUpstreamUnhealthy() {
     return this.getBooleanAttribute('only_when_upstream_unhealthy');
   }
-  public set onlyWhenUpstreamUnhealthy(value: boolean | cdktf.IResolvable) {
+  public set onlyWhenUpstreamUnhealthy(value: boolean | cdktn.IResolvable) {
     this._onlyWhenUpstreamUnhealthy = value;
   }
   public resetOnlyWhenUpstreamUnhealthy() {
@@ -234,9 +234,9 @@ export class DnsFirewallAttackMitigationOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall cloudflare_dns_firewall}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall cloudflare_dns_firewall}
 */
-export class DnsFirewall extends cdktf.TerraformResource {
+export class DnsFirewall extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -247,14 +247,14 @@ export class DnsFirewall extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsFirewall resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsFirewall resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsFirewall to import
-  * @param importFromId The id of the existing DnsFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsFirewall to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_firewall", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_firewall", importId: importFromId, provider });
       }
 
   // ===========
@@ -262,7 +262,7 @@ export class DnsFirewall extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +273,7 @@ export class DnsFirewall extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dns_firewall',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -331,11 +331,11 @@ export class DnsFirewall extends cdktf.TerraformResource {
   }
 
   // deprecate_any_requests - computed: false, optional: true, required: false
-  private _deprecateAnyRequests?: boolean | cdktf.IResolvable; 
+  private _deprecateAnyRequests?: boolean | cdktn.IResolvable; 
   public get deprecateAnyRequests() {
     return this.getBooleanAttribute('deprecate_any_requests');
   }
-  public set deprecateAnyRequests(value: boolean | cdktf.IResolvable) {
+  public set deprecateAnyRequests(value: boolean | cdktn.IResolvable) {
     this._deprecateAnyRequests = value;
   }
   public resetDeprecateAnyRequests() {
@@ -348,15 +348,15 @@ export class DnsFirewall extends cdktf.TerraformResource {
 
   // dns_firewall_ips - computed: true, optional: false, required: false
   public get dnsFirewallIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('dns_firewall_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('dns_firewall_ips'));
   }
 
   // ecs_fallback - computed: false, optional: true, required: false
-  private _ecsFallback?: boolean | cdktf.IResolvable; 
+  private _ecsFallback?: boolean | cdktn.IResolvable; 
   public get ecsFallback() {
     return this.getBooleanAttribute('ecs_fallback');
   }
-  public set ecsFallback(value: boolean | cdktf.IResolvable) {
+  public set ecsFallback(value: boolean | cdktn.IResolvable) {
     this._ecsFallback = value;
   }
   public resetEcsFallback() {
@@ -473,7 +473,7 @@ export class DnsFirewall extends cdktf.TerraformResource {
   // upstream_ips - computed: false, optional: false, required: true
   private _upstreamIps?: string[]; 
   public get upstreamIps() {
-    return cdktf.Fn.tolist(this.getListAttribute('upstream_ips'));
+    return cdktn.Fn.tolist(this.getListAttribute('upstream_ips'));
   }
   public set upstreamIps(value: string[]) {
     this._upstreamIps = value;
@@ -489,24 +489,24 @@ export class DnsFirewall extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       attack_mitigation: dnsFirewallAttackMitigationToTerraform(this._attackMitigation.internalValue),
-      deprecate_any_requests: cdktf.booleanToTerraform(this._deprecateAnyRequests),
-      ecs_fallback: cdktf.booleanToTerraform(this._ecsFallback),
-      maximum_cache_ttl: cdktf.numberToTerraform(this._maximumCacheTtl),
-      minimum_cache_ttl: cdktf.numberToTerraform(this._minimumCacheTtl),
-      name: cdktf.stringToTerraform(this._name),
-      negative_cache_ttl: cdktf.numberToTerraform(this._negativeCacheTtl),
-      ratelimit: cdktf.numberToTerraform(this._ratelimit),
-      retries: cdktf.numberToTerraform(this._retries),
-      upstream_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._upstreamIps),
+      deprecate_any_requests: cdktn.booleanToTerraform(this._deprecateAnyRequests),
+      ecs_fallback: cdktn.booleanToTerraform(this._ecsFallback),
+      maximum_cache_ttl: cdktn.numberToTerraform(this._maximumCacheTtl),
+      minimum_cache_ttl: cdktn.numberToTerraform(this._minimumCacheTtl),
+      name: cdktn.stringToTerraform(this._name),
+      negative_cache_ttl: cdktn.numberToTerraform(this._negativeCacheTtl),
+      ratelimit: cdktn.numberToTerraform(this._ratelimit),
+      retries: cdktn.numberToTerraform(this._retries),
+      upstream_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._upstreamIps),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -518,55 +518,55 @@ export class DnsFirewall extends cdktf.TerraformResource {
         storageClassType: "DnsFirewallAttackMitigation",
       },
       deprecate_any_requests: {
-        value: cdktf.booleanToHclTerraform(this._deprecateAnyRequests),
+        value: cdktn.booleanToHclTerraform(this._deprecateAnyRequests),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       ecs_fallback: {
-        value: cdktf.booleanToHclTerraform(this._ecsFallback),
+        value: cdktn.booleanToHclTerraform(this._ecsFallback),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       maximum_cache_ttl: {
-        value: cdktf.numberToHclTerraform(this._maximumCacheTtl),
+        value: cdktn.numberToHclTerraform(this._maximumCacheTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       minimum_cache_ttl: {
-        value: cdktf.numberToHclTerraform(this._minimumCacheTtl),
+        value: cdktn.numberToHclTerraform(this._minimumCacheTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       negative_cache_ttl: {
-        value: cdktf.numberToHclTerraform(this._negativeCacheTtl),
+        value: cdktn.numberToHclTerraform(this._negativeCacheTtl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       ratelimit: {
-        value: cdktf.numberToHclTerraform(this._ratelimit),
+        value: cdktn.numberToHclTerraform(this._ratelimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       retries: {
-        value: cdktf.numberToHclTerraform(this._retries),
+        value: cdktn.numberToHclTerraform(this._retries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       upstream_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._upstreamIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._upstreamIps),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",

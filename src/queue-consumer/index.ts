@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface QueueConsumerConfig extends cdktf.TerraformMetaArguments {
+export interface QueueConsumerConfig extends cdktn.TerraformMetaArguments {
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
   */
   readonly deadLetterQueue?: string;
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
   */
   readonly queueId: string;
   /**
   * Name of a Worker
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
   */
   readonly scriptName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
   */
   readonly settings?: QueueConsumerSettings;
   /**
   * Available values: "worker", "http_pull".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#type QueueConsumer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#type QueueConsumer#type}
   */
   readonly type?: string;
 }
@@ -49,95 +49,95 @@ export interface QueueConsumerSettings {
   /**
   * The maximum number of messages to include in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
   */
   readonly batchSize?: number;
   /**
   * Maximum number of concurrent consumers that may consume from this Queue. Set to `null` to automatically opt in to the platform's maximum (recommended).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
   */
   readonly maxConcurrency?: number;
   /**
   * The maximum number of retries
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * The number of milliseconds to wait for a batch to fill up before attempting to deliver it
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
   */
   readonly maxWaitTimeMs?: number;
   /**
   * The number of seconds to delay before making the message available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
   */
   readonly retryDelay?: number;
   /**
   * The number of milliseconds that a message is exclusively leased. After the timeout, the message becomes available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
   */
   readonly visibilityTimeoutMs?: number;
 }
 
-export function queueConsumerSettingsToTerraform(struct?: QueueConsumerSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function queueConsumerSettingsToTerraform(struct?: QueueConsumerSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    batch_size: cdktf.numberToTerraform(struct!.batchSize),
-    max_concurrency: cdktf.numberToTerraform(struct!.maxConcurrency),
-    max_retries: cdktf.numberToTerraform(struct!.maxRetries),
-    max_wait_time_ms: cdktf.numberToTerraform(struct!.maxWaitTimeMs),
-    retry_delay: cdktf.numberToTerraform(struct!.retryDelay),
-    visibility_timeout_ms: cdktf.numberToTerraform(struct!.visibilityTimeoutMs),
+    batch_size: cdktn.numberToTerraform(struct!.batchSize),
+    max_concurrency: cdktn.numberToTerraform(struct!.maxConcurrency),
+    max_retries: cdktn.numberToTerraform(struct!.maxRetries),
+    max_wait_time_ms: cdktn.numberToTerraform(struct!.maxWaitTimeMs),
+    retry_delay: cdktn.numberToTerraform(struct!.retryDelay),
+    visibility_timeout_ms: cdktn.numberToTerraform(struct!.visibilityTimeoutMs),
   }
 }
 
 
-export function queueConsumerSettingsToHclTerraform(struct?: QueueConsumerSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function queueConsumerSettingsToHclTerraform(struct?: QueueConsumerSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     batch_size: {
-      value: cdktf.numberToHclTerraform(struct!.batchSize),
+      value: cdktn.numberToHclTerraform(struct!.batchSize),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_concurrency: {
-      value: cdktf.numberToHclTerraform(struct!.maxConcurrency),
+      value: cdktn.numberToHclTerraform(struct!.maxConcurrency),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_retries: {
-      value: cdktf.numberToHclTerraform(struct!.maxRetries),
+      value: cdktn.numberToHclTerraform(struct!.maxRetries),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     max_wait_time_ms: {
-      value: cdktf.numberToHclTerraform(struct!.maxWaitTimeMs),
+      value: cdktn.numberToHclTerraform(struct!.maxWaitTimeMs),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     retry_delay: {
-      value: cdktf.numberToHclTerraform(struct!.retryDelay),
+      value: cdktn.numberToHclTerraform(struct!.retryDelay),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     visibility_timeout_ms: {
-      value: cdktf.numberToHclTerraform(struct!.visibilityTimeoutMs),
+      value: cdktn.numberToHclTerraform(struct!.visibilityTimeoutMs),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -148,19 +148,19 @@ export function queueConsumerSettingsToHclTerraform(struct?: QueueConsumerSettin
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class QueueConsumerSettingsOutputReference extends cdktf.ComplexObject {
+export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): QueueConsumerSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): QueueConsumerSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -193,7 +193,7 @@ export class QueueConsumerSettingsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: QueueConsumerSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: QueueConsumerSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -204,7 +204,7 @@ export class QueueConsumerSettingsOutputReference extends cdktf.ComplexObject {
       this._retryDelay = undefined;
       this._visibilityTimeoutMs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -318,9 +318,9 @@ export class QueueConsumerSettingsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer cloudflare_queue_consumer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer}
 */
-export class QueueConsumer extends cdktf.TerraformResource {
+export class QueueConsumer extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -331,14 +331,14 @@ export class QueueConsumer extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a QueueConsumer resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a QueueConsumer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QueueConsumer to import
-  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QueueConsumer to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_queue_consumer", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_queue_consumer", importId: importFromId, provider });
       }
 
   // ===========
@@ -346,7 +346,7 @@ export class QueueConsumer extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +357,7 @@ export class QueueConsumer extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_queue_consumer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -491,37 +491,37 @@ export class QueueConsumer extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      dead_letter_queue: cdktf.stringToTerraform(this._deadLetterQueue),
-      queue_id: cdktf.stringToTerraform(this._queueId),
-      script_name: cdktf.stringToTerraform(this._scriptName),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      dead_letter_queue: cdktn.stringToTerraform(this._deadLetterQueue),
+      queue_id: cdktn.stringToTerraform(this._queueId),
+      script_name: cdktn.stringToTerraform(this._scriptName),
       settings: queueConsumerSettingsToTerraform(this._settings.internalValue),
-      type: cdktf.stringToTerraform(this._type),
+      type: cdktn.stringToTerraform(this._type),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       dead_letter_queue: {
-        value: cdktf.stringToHclTerraform(this._deadLetterQueue),
+        value: cdktn.stringToHclTerraform(this._deadLetterQueue),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queue_id: {
-        value: cdktf.stringToHclTerraform(this._queueId),
+        value: cdktn.stringToHclTerraform(this._queueId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       script_name: {
-        value: cdktf.stringToHclTerraform(this._scriptName),
+        value: cdktn.stringToHclTerraform(this._scriptName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -533,7 +533,7 @@ export class QueueConsumer extends cdktf.TerraformResource {
         storageClassType: "QueueConsumerSettings",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

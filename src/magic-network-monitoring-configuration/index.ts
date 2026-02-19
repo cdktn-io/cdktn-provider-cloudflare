@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MagicNetworkMonitoringConfigurationConfig extends cdktf.TerraformMetaArguments {
+export interface MagicNetworkMonitoringConfigurationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#account_id MagicNetworkMonitoringConfiguration#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#account_id MagicNetworkMonitoringConfiguration#account_id}
   */
   readonly accountId: string;
   /**
   * Fallback sampling rate of flow messages being sent in packets per second. This should match the packet sampling rate configured on the router.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#default_sampling MagicNetworkMonitoringConfiguration#default_sampling}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#default_sampling MagicNetworkMonitoringConfiguration#default_sampling}
   */
   readonly defaultSampling?: number;
   /**
   * The account name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#name MagicNetworkMonitoringConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#name MagicNetworkMonitoringConfiguration#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#router_ips MagicNetworkMonitoringConfiguration#router_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#router_ips MagicNetworkMonitoringConfiguration#router_ips}
   */
   readonly routerIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#warp_devices MagicNetworkMonitoringConfiguration#warp_devices}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#warp_devices MagicNetworkMonitoringConfiguration#warp_devices}
   */
-  readonly warpDevices?: MagicNetworkMonitoringConfigurationWarpDevices[] | cdktf.IResolvable;
+  readonly warpDevices?: MagicNetworkMonitoringConfigurationWarpDevices[] | cdktn.IResolvable;
 }
 export interface MagicNetworkMonitoringConfigurationWarpDevices {
   /**
   * Unique identifier for the warp device.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#id MagicNetworkMonitoringConfiguration#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#id MagicNetworkMonitoringConfiguration#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -50,50 +50,50 @@ export interface MagicNetworkMonitoringConfigurationWarpDevices {
   /**
   * Name of the warp device.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#name MagicNetworkMonitoringConfiguration#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#name MagicNetworkMonitoringConfiguration#name}
   */
   readonly name: string;
   /**
   * IPv4 CIDR of the router sourcing flow data associated with this warp device. Only /32 addresses are currently supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#router_ip MagicNetworkMonitoringConfiguration#router_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#router_ip MagicNetworkMonitoringConfiguration#router_ip}
   */
   readonly routerIp: string;
 }
 
-export function magicNetworkMonitoringConfigurationWarpDevicesToTerraform(struct?: MagicNetworkMonitoringConfigurationWarpDevices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicNetworkMonitoringConfigurationWarpDevicesToTerraform(struct?: MagicNetworkMonitoringConfigurationWarpDevices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    name: cdktf.stringToTerraform(struct!.name),
-    router_ip: cdktf.stringToTerraform(struct!.routerIp),
+    id: cdktn.stringToTerraform(struct!.id),
+    name: cdktn.stringToTerraform(struct!.name),
+    router_ip: cdktn.stringToTerraform(struct!.routerIp),
   }
 }
 
 
-export function magicNetworkMonitoringConfigurationWarpDevicesToHclTerraform(struct?: MagicNetworkMonitoringConfigurationWarpDevices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicNetworkMonitoringConfigurationWarpDevicesToHclTerraform(struct?: MagicNetworkMonitoringConfigurationWarpDevices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     router_ip: {
-      value: cdktf.stringToHclTerraform(struct!.routerIp),
+      value: cdktn.stringToHclTerraform(struct!.routerIp),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,9 +104,9 @@ export function magicNetworkMonitoringConfigurationWarpDevicesToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MagicNetworkMonitoringConfigurationWarpDevicesOutputReference extends cdktf.ComplexObject {
+export class MagicNetworkMonitoringConfigurationWarpDevicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -114,11 +114,11 @@ export class MagicNetworkMonitoringConfigurationWarpDevicesOutputReference exten
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): MagicNetworkMonitoringConfigurationWarpDevices | cdktf.IResolvable | undefined {
+  public get internalValue(): MagicNetworkMonitoringConfigurationWarpDevices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -139,7 +139,7 @@ export class MagicNetworkMonitoringConfigurationWarpDevicesOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MagicNetworkMonitoringConfigurationWarpDevices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MagicNetworkMonitoringConfigurationWarpDevices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -147,7 +147,7 @@ export class MagicNetworkMonitoringConfigurationWarpDevicesOutputReference exten
       this._name = undefined;
       this._routerIp = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -200,15 +200,15 @@ export class MagicNetworkMonitoringConfigurationWarpDevicesOutputReference exten
   }
 }
 
-export class MagicNetworkMonitoringConfigurationWarpDevicesList extends cdktf.ComplexList {
-  public internalValue? : MagicNetworkMonitoringConfigurationWarpDevices[] | cdktf.IResolvable
+export class MagicNetworkMonitoringConfigurationWarpDevicesList extends cdktn.ComplexList {
+  public internalValue? : MagicNetworkMonitoringConfigurationWarpDevices[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -221,9 +221,9 @@ export class MagicNetworkMonitoringConfigurationWarpDevicesList extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration}
 */
-export class MagicNetworkMonitoringConfiguration extends cdktf.TerraformResource {
+export class MagicNetworkMonitoringConfiguration extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -234,14 +234,14 @@ export class MagicNetworkMonitoringConfiguration extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MagicNetworkMonitoringConfiguration resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MagicNetworkMonitoringConfiguration resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicNetworkMonitoringConfiguration to import
-  * @param importFromId The id of the existing MagicNetworkMonitoringConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicNetworkMonitoringConfiguration that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicNetworkMonitoringConfiguration to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_network_monitoring_configuration", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_network_monitoring_configuration", importId: importFromId, provider });
       }
 
   // ===========
@@ -249,7 +249,7 @@ export class MagicNetworkMonitoringConfiguration extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_network_monitoring_configuration cloudflare_magic_network_monitoring_configuration} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -260,7 +260,7 @@ export class MagicNetworkMonitoringConfiguration extends cdktf.TerraformResource
       terraformResourceType: 'cloudflare_magic_network_monitoring_configuration',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -345,7 +345,7 @@ export class MagicNetworkMonitoringConfiguration extends cdktf.TerraformResource
   public get warpDevices() {
     return this._warpDevices;
   }
-  public putWarpDevices(value: MagicNetworkMonitoringConfigurationWarpDevices[] | cdktf.IResolvable) {
+  public putWarpDevices(value: MagicNetworkMonitoringConfigurationWarpDevices[] | cdktn.IResolvable) {
     this._warpDevices.internalValue = value;
   }
   public resetWarpDevices() {
@@ -362,42 +362,42 @@ export class MagicNetworkMonitoringConfiguration extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      default_sampling: cdktf.numberToTerraform(this._defaultSampling),
-      name: cdktf.stringToTerraform(this._name),
-      router_ips: cdktf.listMapper(cdktf.stringToTerraform, false)(this._routerIps),
-      warp_devices: cdktf.listMapper(magicNetworkMonitoringConfigurationWarpDevicesToTerraform, false)(this._warpDevices.internalValue),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      default_sampling: cdktn.numberToTerraform(this._defaultSampling),
+      name: cdktn.stringToTerraform(this._name),
+      router_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(this._routerIps),
+      warp_devices: cdktn.listMapper(magicNetworkMonitoringConfigurationWarpDevicesToTerraform, false)(this._warpDevices.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_sampling: {
-        value: cdktf.numberToHclTerraform(this._defaultSampling),
+        value: cdktn.numberToHclTerraform(this._defaultSampling),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       router_ips: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._routerIps),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._routerIps),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       warp_devices: {
-        value: cdktf.listMapperHcl(magicNetworkMonitoringConfigurationWarpDevicesToHclTerraform, false)(this._warpDevices.internalValue),
+        value: cdktn.listMapperHcl(magicNetworkMonitoringConfigurationWarpDevicesToHclTerraform, false)(this._warpDevices.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "MagicNetworkMonitoringConfigurationWarpDevicesList",

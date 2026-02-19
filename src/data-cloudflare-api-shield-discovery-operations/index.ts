@@ -1,59 +1,59 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareApiShieldDiscoveryOperationsConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareApiShieldDiscoveryOperationsConfig extends cdktn.TerraformMetaArguments {
   /**
   * When `true`, only return API Discovery results that are not saved into API Shield Endpoint Management
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#diff DataCloudflareApiShieldDiscoveryOperations#diff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#diff DataCloudflareApiShieldDiscoveryOperations#diff}
   */
-  readonly diff?: boolean | cdktf.IResolvable;
+  readonly diff?: boolean | cdktn.IResolvable;
   /**
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#direction DataCloudflareApiShieldDiscoveryOperations#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#direction DataCloudflareApiShieldDiscoveryOperations#direction}
   */
   readonly direction?: string;
   /**
   * Filter results to only include endpoints containing this pattern.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#endpoint DataCloudflareApiShieldDiscoveryOperations#endpoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#endpoint DataCloudflareApiShieldDiscoveryOperations#endpoint}
   */
   readonly endpoint?: string;
   /**
   * Filter results to only include the specified hosts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#host DataCloudflareApiShieldDiscoveryOperations#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#host DataCloudflareApiShieldDiscoveryOperations#host}
   */
   readonly host?: string[];
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#max_items DataCloudflareApiShieldDiscoveryOperations#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#max_items DataCloudflareApiShieldDiscoveryOperations#max_items}
   */
   readonly maxItems?: number;
   /**
   * Filter results to only include the specified HTTP methods.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#method DataCloudflareApiShieldDiscoveryOperations#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#method DataCloudflareApiShieldDiscoveryOperations#method}
   */
   readonly method?: string[];
   /**
   * Field to order by
   * Available values: "host", "method", "endpoint", "traffic_stats.requests", "traffic_stats.last_updated".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#order DataCloudflareApiShieldDiscoveryOperations#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#order DataCloudflareApiShieldDiscoveryOperations#order}
   */
   readonly order?: string;
   /**
@@ -62,7 +62,7 @@ export interface DataCloudflareApiShieldDiscoveryOperationsConfig extends cdktf.
   *   * `SessionIdentifier` - Discovered operations that were sourced using Session Identifier API Discovery
   * Available values: "ML", "SessionIdentifier", "LabelDiscovery".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#origin DataCloudflareApiShieldDiscoveryOperations#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#origin DataCloudflareApiShieldDiscoveryOperations#origin}
   */
   readonly origin?: string;
   /**
@@ -72,13 +72,13 @@ export interface DataCloudflareApiShieldDiscoveryOperationsConfig extends cdktf.
   *   * `ignored` - Discovered operations that have been marked as ignored
   * Available values: "review", "saved", "ignored".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#state DataCloudflareApiShieldDiscoveryOperations#state}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#state DataCloudflareApiShieldDiscoveryOperations#state}
   */
   readonly state?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#zone_id DataCloudflareApiShieldDiscoveryOperations#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#zone_id DataCloudflareApiShieldDiscoveryOperations#zone_id}
   */
   readonly zoneId: string;
 }
@@ -86,8 +86,8 @@ export interface DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTraffic
 }
 
 export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStatsToTerraform(struct?: DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStats): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -96,8 +96,8 @@ export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficS
 
 
 export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStatsToHclTerraform(struct?: DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStats): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -105,14 +105,14 @@ export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficS
   return attrs;
 }
 
-export class DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStatsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareApiShieldDiscoveryOperationsResultFeaturesTrafficStatsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -150,8 +150,8 @@ export interface DataCloudflareApiShieldDiscoveryOperationsResultFeatures {
 }
 
 export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesToTerraform(struct?: DataCloudflareApiShieldDiscoveryOperationsResultFeatures): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -160,8 +160,8 @@ export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesToTerraf
 
 
 export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesToHclTerraform(struct?: DataCloudflareApiShieldDiscoveryOperationsResultFeatures): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -169,14 +169,14 @@ export function dataCloudflareApiShieldDiscoveryOperationsResultFeaturesToHclTer
   return attrs;
 }
 
-export class DataCloudflareApiShieldDiscoveryOperationsResultFeaturesOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareApiShieldDiscoveryOperationsResultFeaturesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -205,8 +205,8 @@ export interface DataCloudflareApiShieldDiscoveryOperationsResult {
 }
 
 export function dataCloudflareApiShieldDiscoveryOperationsResultToTerraform(struct?: DataCloudflareApiShieldDiscoveryOperationsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -215,8 +215,8 @@ export function dataCloudflareApiShieldDiscoveryOperationsResultToTerraform(stru
 
 
 export function dataCloudflareApiShieldDiscoveryOperationsResultToHclTerraform(struct?: DataCloudflareApiShieldDiscoveryOperationsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -224,7 +224,7 @@ export function dataCloudflareApiShieldDiscoveryOperationsResultToHclTerraform(s
   return attrs;
 }
 
-export class DataCloudflareApiShieldDiscoveryOperationsResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareApiShieldDiscoveryOperationsResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -233,7 +233,7 @@ export class DataCloudflareApiShieldDiscoveryOperationsResultOutputReference ext
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -294,14 +294,14 @@ export class DataCloudflareApiShieldDiscoveryOperationsResultOutputReference ext
   }
 }
 
-export class DataCloudflareApiShieldDiscoveryOperationsResultList extends cdktf.ComplexList {
+export class DataCloudflareApiShieldDiscoveryOperationsResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -314,9 +314,9 @@ export class DataCloudflareApiShieldDiscoveryOperationsResultList extends cdktf.
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations}
 */
-export class DataCloudflareApiShieldDiscoveryOperations extends cdktf.TerraformDataSource {
+export class DataCloudflareApiShieldDiscoveryOperations extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -327,14 +327,14 @@ export class DataCloudflareApiShieldDiscoveryOperations extends cdktf.TerraformD
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareApiShieldDiscoveryOperations resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareApiShieldDiscoveryOperations resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiShieldDiscoveryOperations to import
-  * @param importFromId The id of the existing DataCloudflareApiShieldDiscoveryOperations that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiShieldDiscoveryOperations that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiShieldDiscoveryOperations to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield_discovery_operations", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield_discovery_operations", importId: importFromId, provider });
       }
 
   // ===========
@@ -342,7 +342,7 @@ export class DataCloudflareApiShieldDiscoveryOperations extends cdktf.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_discovery_operations cloudflare_api_shield_discovery_operations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -353,7 +353,7 @@ export class DataCloudflareApiShieldDiscoveryOperations extends cdktf.TerraformD
       terraformResourceType: 'cloudflare_api_shield_discovery_operations',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -381,11 +381,11 @@ export class DataCloudflareApiShieldDiscoveryOperations extends cdktf.TerraformD
   // ==========
 
   // diff - computed: false, optional: true, required: false
-  private _diff?: boolean | cdktf.IResolvable; 
+  private _diff?: boolean | cdktn.IResolvable; 
   public get diff() {
     return this.getBooleanAttribute('diff');
   }
-  public set diff(value: boolean | cdktf.IResolvable) {
+  public set diff(value: boolean | cdktn.IResolvable) {
     this._diff = value;
   }
   public resetDiff() {
@@ -549,77 +549,77 @@ export class DataCloudflareApiShieldDiscoveryOperations extends cdktf.TerraformD
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      diff: cdktf.booleanToTerraform(this._diff),
-      direction: cdktf.stringToTerraform(this._direction),
-      endpoint: cdktf.stringToTerraform(this._endpoint),
-      host: cdktf.listMapper(cdktf.stringToTerraform, false)(this._host),
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      method: cdktf.listMapper(cdktf.stringToTerraform, false)(this._method),
-      order: cdktf.stringToTerraform(this._order),
-      origin: cdktf.stringToTerraform(this._origin),
-      state: cdktf.stringToTerraform(this._state),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      diff: cdktn.booleanToTerraform(this._diff),
+      direction: cdktn.stringToTerraform(this._direction),
+      endpoint: cdktn.stringToTerraform(this._endpoint),
+      host: cdktn.listMapper(cdktn.stringToTerraform, false)(this._host),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      method: cdktn.listMapper(cdktn.stringToTerraform, false)(this._method),
+      order: cdktn.stringToTerraform(this._order),
+      origin: cdktn.stringToTerraform(this._origin),
+      state: cdktn.stringToTerraform(this._state),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       diff: {
-        value: cdktf.booleanToHclTerraform(this._diff),
+        value: cdktn.booleanToHclTerraform(this._diff),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       endpoint: {
-        value: cdktf.stringToHclTerraform(this._endpoint),
+        value: cdktn.stringToHclTerraform(this._endpoint),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       host: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._host),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._host),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       method: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._method),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._method),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       order: {
-        value: cdktf.stringToHclTerraform(this._order),
+        value: cdktn.stringToHclTerraform(this._order),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       origin: {
-        value: cdktf.stringToHclTerraform(this._origin),
+        value: cdktn.stringToHclTerraform(this._origin),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       state: {
-        value: cdktf.stringToHclTerraform(this._state),
+        value: cdktn.stringToHclTerraform(this._state),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

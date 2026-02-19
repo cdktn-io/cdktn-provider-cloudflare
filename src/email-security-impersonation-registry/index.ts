@@ -1,41 +1,41 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmailSecurityImpersonationRegistryConfig extends cdktf.TerraformMetaArguments {
+export interface EmailSecurityImpersonationRegistryConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry#account_id EmailSecurityImpersonationRegistry#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry#account_id EmailSecurityImpersonationRegistry#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry#email EmailSecurityImpersonationRegistry#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry#email EmailSecurityImpersonationRegistry#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry#is_email_regex EmailSecurityImpersonationRegistry#is_email_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry#is_email_regex EmailSecurityImpersonationRegistry#is_email_regex}
   */
-  readonly isEmailRegex: boolean | cdktf.IResolvable;
+  readonly isEmailRegex: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry#name EmailSecurityImpersonationRegistry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry#name EmailSecurityImpersonationRegistry#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}
 */
-export class EmailSecurityImpersonationRegistry extends cdktf.TerraformResource {
+export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -46,14 +46,14 @@ export class EmailSecurityImpersonationRegistry extends cdktf.TerraformResource 
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmailSecurityImpersonationRegistry resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmailSecurityImpersonationRegistry resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailSecurityImpersonationRegistry to import
-  * @param importFromId The id of the existing EmailSecurityImpersonationRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailSecurityImpersonationRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailSecurityImpersonationRegistry to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_impersonation_registry", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_impersonation_registry", importId: importFromId, provider });
       }
 
   // ===========
@@ -61,7 +61,7 @@ export class EmailSecurityImpersonationRegistry extends cdktf.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class EmailSecurityImpersonationRegistry extends cdktf.TerraformResource 
       terraformResourceType: 'cloudflare_email_security_impersonation_registry',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -150,11 +150,11 @@ export class EmailSecurityImpersonationRegistry extends cdktf.TerraformResource 
   }
 
   // is_email_regex - computed: false, optional: false, required: true
-  private _isEmailRegex?: boolean | cdktf.IResolvable; 
+  private _isEmailRegex?: boolean | cdktn.IResolvable; 
   public get isEmailRegex() {
     return this.getBooleanAttribute('is_email_regex');
   }
-  public set isEmailRegex(value: boolean | cdktf.IResolvable) {
+  public set isEmailRegex(value: boolean | cdktn.IResolvable) {
     this._isEmailRegex = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -191,35 +191,35 @@ export class EmailSecurityImpersonationRegistry extends cdktf.TerraformResource 
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      email: cdktf.stringToTerraform(this._email),
-      is_email_regex: cdktf.booleanToTerraform(this._isEmailRegex),
-      name: cdktf.stringToTerraform(this._name),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      email: cdktn.stringToTerraform(this._email),
+      is_email_regex: cdktn.booleanToTerraform(this._isEmailRegex),
+      name: cdktn.stringToTerraform(this._name),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       email: {
-        value: cdktf.stringToHclTerraform(this._email),
+        value: cdktn.stringToHclTerraform(this._email),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_email_regex: {
-        value: cdktf.booleanToHclTerraform(this._isEmailRegex),
+        value: cdktn.booleanToHclTerraform(this._isEmailRegex),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

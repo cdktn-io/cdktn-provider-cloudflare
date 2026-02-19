@@ -1,57 +1,57 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ListItemConfig extends cdktf.TerraformMetaArguments {
+export interface ListItemConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Account ID for this resource.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#account_id ListItem#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#account_id ListItem#account_id}
   */
   readonly accountId: string;
   /**
   * A non-negative 32 bit integer
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#asn ListItem#asn}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#asn ListItem#asn}
   */
   readonly asn?: number;
   /**
   * An informative summary of the list item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#comment ListItem#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#comment ListItem#comment}
   */
   readonly comment?: string;
   /**
   * Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, wildcards (*), and the hyphen (-).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#hostname ListItem#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#hostname ListItem#hostname}
   */
   readonly hostname?: ListItemHostname;
   /**
   * An IPv4 address, an IPv4 CIDR, an IPv6 address, or an IPv6 CIDR.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#ip ListItem#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#ip ListItem#ip}
   */
   readonly ip?: string;
   /**
   * The unique ID of the list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#list_id ListItem#list_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#list_id ListItem#list_id}
   */
   readonly listId: string;
   /**
   * The definition of the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#redirect ListItem#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#redirect ListItem#redirect}
   */
   readonly redirect?: ListItemRedirect;
 }
@@ -59,41 +59,41 @@ export interface ListItemHostname {
   /**
   * Only applies to wildcard hostnames (e.g., *.example.com). When true (default), only subdomains are blocked. When false, both the root domain and subdomains are blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#exclude_exact_hostname ListItem#exclude_exact_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#exclude_exact_hostname ListItem#exclude_exact_hostname}
   */
-  readonly excludeExactHostname?: boolean | cdktf.IResolvable;
+  readonly excludeExactHostname?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#url_hostname ListItem#url_hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#url_hostname ListItem#url_hostname}
   */
   readonly urlHostname: string;
 }
 
-export function listItemHostnameToTerraform(struct?: ListItemHostname | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function listItemHostnameToTerraform(struct?: ListItemHostname | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    exclude_exact_hostname: cdktf.booleanToTerraform(struct!.excludeExactHostname),
-    url_hostname: cdktf.stringToTerraform(struct!.urlHostname),
+    exclude_exact_hostname: cdktn.booleanToTerraform(struct!.excludeExactHostname),
+    url_hostname: cdktn.stringToTerraform(struct!.urlHostname),
   }
 }
 
 
-export function listItemHostnameToHclTerraform(struct?: ListItemHostname | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function listItemHostnameToHclTerraform(struct?: ListItemHostname | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     exclude_exact_hostname: {
-      value: cdktf.booleanToHclTerraform(struct!.excludeExactHostname),
+      value: cdktn.booleanToHclTerraform(struct!.excludeExactHostname),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     url_hostname: {
-      value: cdktf.stringToHclTerraform(struct!.urlHostname),
+      value: cdktn.stringToHclTerraform(struct!.urlHostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -104,19 +104,19 @@ export function listItemHostnameToHclTerraform(struct?: ListItemHostname | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ListItemHostnameOutputReference extends cdktf.ComplexObject {
+export class ListItemHostnameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ListItemHostname | cdktf.IResolvable | undefined {
+  public get internalValue(): ListItemHostname | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -133,14 +133,14 @@ export class ListItemHostnameOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ListItemHostname | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ListItemHostname | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._excludeExactHostname = undefined;
       this._urlHostname = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -153,11 +153,11 @@ export class ListItemHostnameOutputReference extends cdktf.ComplexObject {
   }
 
   // exclude_exact_hostname - computed: false, optional: true, required: false
-  private _excludeExactHostname?: boolean | cdktf.IResolvable; 
+  private _excludeExactHostname?: boolean | cdktn.IResolvable; 
   public get excludeExactHostname() {
     return this.getBooleanAttribute('exclude_exact_hostname');
   }
-  public set excludeExactHostname(value: boolean | cdktf.IResolvable) {
+  public set excludeExactHostname(value: boolean | cdktn.IResolvable) {
     this._excludeExactHostname = value;
   }
   public resetExcludeExactHostname() {
@@ -183,98 +183,98 @@ export class ListItemHostnameOutputReference extends cdktf.ComplexObject {
 }
 export interface ListItemRedirect {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#include_subdomains ListItem#include_subdomains}
   */
-  readonly includeSubdomains?: boolean | cdktf.IResolvable;
+  readonly includeSubdomains?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#preserve_path_suffix ListItem#preserve_path_suffix}
   */
-  readonly preservePathSuffix?: boolean | cdktf.IResolvable;
+  readonly preservePathSuffix?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#preserve_query_string ListItem#preserve_query_string}
   */
-  readonly preserveQueryString?: boolean | cdktf.IResolvable;
+  readonly preserveQueryString?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#source_url ListItem#source_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#source_url ListItem#source_url}
   */
   readonly sourceUrl: string;
   /**
   * Available values: 301, 302, 307, 308.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#status_code ListItem#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#status_code ListItem#status_code}
   */
   readonly statusCode?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#subpath_matching ListItem#subpath_matching}
   */
-  readonly subpathMatching?: boolean | cdktf.IResolvable;
+  readonly subpathMatching?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#target_url ListItem#target_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#target_url ListItem#target_url}
   */
   readonly targetUrl: string;
 }
 
-export function listItemRedirectToTerraform(struct?: ListItemRedirect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function listItemRedirectToTerraform(struct?: ListItemRedirect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    include_subdomains: cdktf.booleanToTerraform(struct!.includeSubdomains),
-    preserve_path_suffix: cdktf.booleanToTerraform(struct!.preservePathSuffix),
-    preserve_query_string: cdktf.booleanToTerraform(struct!.preserveQueryString),
-    source_url: cdktf.stringToTerraform(struct!.sourceUrl),
-    status_code: cdktf.numberToTerraform(struct!.statusCode),
-    subpath_matching: cdktf.booleanToTerraform(struct!.subpathMatching),
-    target_url: cdktf.stringToTerraform(struct!.targetUrl),
+    include_subdomains: cdktn.booleanToTerraform(struct!.includeSubdomains),
+    preserve_path_suffix: cdktn.booleanToTerraform(struct!.preservePathSuffix),
+    preserve_query_string: cdktn.booleanToTerraform(struct!.preserveQueryString),
+    source_url: cdktn.stringToTerraform(struct!.sourceUrl),
+    status_code: cdktn.numberToTerraform(struct!.statusCode),
+    subpath_matching: cdktn.booleanToTerraform(struct!.subpathMatching),
+    target_url: cdktn.stringToTerraform(struct!.targetUrl),
   }
 }
 
 
-export function listItemRedirectToHclTerraform(struct?: ListItemRedirect | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function listItemRedirectToHclTerraform(struct?: ListItemRedirect | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     include_subdomains: {
-      value: cdktf.booleanToHclTerraform(struct!.includeSubdomains),
+      value: cdktn.booleanToHclTerraform(struct!.includeSubdomains),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preserve_path_suffix: {
-      value: cdktf.booleanToHclTerraform(struct!.preservePathSuffix),
+      value: cdktn.booleanToHclTerraform(struct!.preservePathSuffix),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preserve_query_string: {
-      value: cdktf.booleanToHclTerraform(struct!.preserveQueryString),
+      value: cdktn.booleanToHclTerraform(struct!.preserveQueryString),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_url: {
-      value: cdktf.stringToHclTerraform(struct!.sourceUrl),
+      value: cdktn.stringToHclTerraform(struct!.sourceUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status_code: {
-      value: cdktf.numberToHclTerraform(struct!.statusCode),
+      value: cdktn.numberToHclTerraform(struct!.statusCode),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     subpath_matching: {
-      value: cdktf.booleanToHclTerraform(struct!.subpathMatching),
+      value: cdktn.booleanToHclTerraform(struct!.subpathMatching),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target_url: {
-      value: cdktf.stringToHclTerraform(struct!.targetUrl),
+      value: cdktn.stringToHclTerraform(struct!.targetUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -285,19 +285,19 @@ export function listItemRedirectToHclTerraform(struct?: ListItemRedirect | cdktf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
+export class ListItemRedirectOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ListItemRedirect | cdktf.IResolvable | undefined {
+  public get internalValue(): ListItemRedirect | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -334,7 +334,7 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ListItemRedirect | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ListItemRedirect | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -346,7 +346,7 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
       this._subpathMatching = undefined;
       this._targetUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -364,11 +364,11 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
   }
 
   // include_subdomains - computed: true, optional: true, required: false
-  private _includeSubdomains?: boolean | cdktf.IResolvable; 
+  private _includeSubdomains?: boolean | cdktn.IResolvable; 
   public get includeSubdomains() {
     return this.getBooleanAttribute('include_subdomains');
   }
-  public set includeSubdomains(value: boolean | cdktf.IResolvable) {
+  public set includeSubdomains(value: boolean | cdktn.IResolvable) {
     this._includeSubdomains = value;
   }
   public resetIncludeSubdomains() {
@@ -380,11 +380,11 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
   }
 
   // preserve_path_suffix - computed: true, optional: true, required: false
-  private _preservePathSuffix?: boolean | cdktf.IResolvable; 
+  private _preservePathSuffix?: boolean | cdktn.IResolvable; 
   public get preservePathSuffix() {
     return this.getBooleanAttribute('preserve_path_suffix');
   }
-  public set preservePathSuffix(value: boolean | cdktf.IResolvable) {
+  public set preservePathSuffix(value: boolean | cdktn.IResolvable) {
     this._preservePathSuffix = value;
   }
   public resetPreservePathSuffix() {
@@ -396,11 +396,11 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
   }
 
   // preserve_query_string - computed: true, optional: true, required: false
-  private _preserveQueryString?: boolean | cdktf.IResolvable; 
+  private _preserveQueryString?: boolean | cdktn.IResolvable; 
   public get preserveQueryString() {
     return this.getBooleanAttribute('preserve_query_string');
   }
-  public set preserveQueryString(value: boolean | cdktf.IResolvable) {
+  public set preserveQueryString(value: boolean | cdktn.IResolvable) {
     this._preserveQueryString = value;
   }
   public resetPreserveQueryString() {
@@ -441,11 +441,11 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
   }
 
   // subpath_matching - computed: true, optional: true, required: false
-  private _subpathMatching?: boolean | cdktf.IResolvable; 
+  private _subpathMatching?: boolean | cdktn.IResolvable; 
   public get subpathMatching() {
     return this.getBooleanAttribute('subpath_matching');
   }
-  public set subpathMatching(value: boolean | cdktf.IResolvable) {
+  public set subpathMatching(value: boolean | cdktn.IResolvable) {
     this._subpathMatching = value;
   }
   public resetSubpathMatching() {
@@ -471,9 +471,9 @@ export class ListItemRedirectOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item cloudflare_list_item}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item}
 */
-export class ListItem extends cdktf.TerraformResource {
+export class ListItem extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -484,14 +484,14 @@ export class ListItem extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ListItem resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ListItem resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ListItem to import
-  * @param importFromId The id of the existing ListItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ListItem that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ListItem to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_list_item", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_list_item", importId: importFromId, provider });
       }
 
   // ===========
@@ -499,7 +499,7 @@ export class ListItem extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/list_item cloudflare_list_item} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/list_item cloudflare_list_item} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -510,7 +510,7 @@ export class ListItem extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_list_item',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -666,12 +666,12 @@ export class ListItem extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      asn: cdktf.numberToTerraform(this._asn),
-      comment: cdktf.stringToTerraform(this._comment),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      asn: cdktn.numberToTerraform(this._asn),
+      comment: cdktn.stringToTerraform(this._comment),
       hostname: listItemHostnameToTerraform(this._hostname.internalValue),
-      ip: cdktf.stringToTerraform(this._ip),
-      list_id: cdktf.stringToTerraform(this._listId),
+      ip: cdktn.stringToTerraform(this._ip),
+      list_id: cdktn.stringToTerraform(this._listId),
       redirect: listItemRedirectToTerraform(this._redirect.internalValue),
     };
   }
@@ -679,19 +679,19 @@ export class ListItem extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       asn: {
-        value: cdktf.numberToHclTerraform(this._asn),
+        value: cdktn.numberToHclTerraform(this._asn),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -703,13 +703,13 @@ export class ListItem extends cdktf.TerraformResource {
         storageClassType: "ListItemHostname",
       },
       ip: {
-        value: cdktf.stringToHclTerraform(this._ip),
+        value: cdktn.stringToHclTerraform(this._ip),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       list_id: {
-        value: cdktf.stringToHclTerraform(this._listId),
+        value: cdktn.stringToHclTerraform(this._listId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

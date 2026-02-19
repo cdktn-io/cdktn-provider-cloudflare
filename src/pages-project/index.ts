@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface PagesProjectConfig extends cdktf.TerraformMetaArguments {
+export interface PagesProjectConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#account_id PagesProject#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#account_id PagesProject#account_id}
   */
   readonly accountId: string;
   /**
   * Configs for the project build process.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#build_config PagesProject#build_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#build_config PagesProject#build_config}
   */
   readonly buildConfig?: PagesProjectBuildConfig;
   /**
   * Configs for deployments in a project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#deployment_configs PagesProject#deployment_configs}
   */
   readonly deploymentConfigs?: PagesProjectDeploymentConfigs;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
   /**
   * Production branch of the project. Used to identify production deployments.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
   */
   readonly productionBranch: string;
   /**
   * Configs for the project source control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#source PagesProject#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#source PagesProject#source}
   */
   readonly source?: PagesProjectSource;
 }
@@ -53,95 +53,95 @@ export interface PagesProjectBuildConfig {
   /**
   * Enable build caching for the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#build_caching PagesProject#build_caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#build_caching PagesProject#build_caching}
   */
-  readonly buildCaching?: boolean | cdktf.IResolvable;
+  readonly buildCaching?: boolean | cdktn.IResolvable;
   /**
   * Command used to build project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#build_command PagesProject#build_command}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#build_command PagesProject#build_command}
   */
   readonly buildCommand?: string;
   /**
   * Output directory of the build.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#destination_dir PagesProject#destination_dir}
   */
   readonly destinationDir?: string;
   /**
   * Directory to run the command.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#root_dir PagesProject#root_dir}
   */
   readonly rootDir?: string;
   /**
   * The classifying tag for analytics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#web_analytics_tag PagesProject#web_analytics_tag}
   */
   readonly webAnalyticsTag?: string;
   /**
   * The auth token for analytics.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#web_analytics_token PagesProject#web_analytics_token}
   */
   readonly webAnalyticsToken?: string;
 }
 
-export function pagesProjectBuildConfigToTerraform(struct?: PagesProjectBuildConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectBuildConfigToTerraform(struct?: PagesProjectBuildConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    build_caching: cdktf.booleanToTerraform(struct!.buildCaching),
-    build_command: cdktf.stringToTerraform(struct!.buildCommand),
-    destination_dir: cdktf.stringToTerraform(struct!.destinationDir),
-    root_dir: cdktf.stringToTerraform(struct!.rootDir),
-    web_analytics_tag: cdktf.stringToTerraform(struct!.webAnalyticsTag),
-    web_analytics_token: cdktf.stringToTerraform(struct!.webAnalyticsToken),
+    build_caching: cdktn.booleanToTerraform(struct!.buildCaching),
+    build_command: cdktn.stringToTerraform(struct!.buildCommand),
+    destination_dir: cdktn.stringToTerraform(struct!.destinationDir),
+    root_dir: cdktn.stringToTerraform(struct!.rootDir),
+    web_analytics_tag: cdktn.stringToTerraform(struct!.webAnalyticsTag),
+    web_analytics_token: cdktn.stringToTerraform(struct!.webAnalyticsToken),
   }
 }
 
 
-export function pagesProjectBuildConfigToHclTerraform(struct?: PagesProjectBuildConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectBuildConfigToHclTerraform(struct?: PagesProjectBuildConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     build_caching: {
-      value: cdktf.booleanToHclTerraform(struct!.buildCaching),
+      value: cdktn.booleanToHclTerraform(struct!.buildCaching),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     build_command: {
-      value: cdktf.stringToHclTerraform(struct!.buildCommand),
+      value: cdktn.stringToHclTerraform(struct!.buildCommand),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     destination_dir: {
-      value: cdktf.stringToHclTerraform(struct!.destinationDir),
+      value: cdktn.stringToHclTerraform(struct!.destinationDir),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     root_dir: {
-      value: cdktf.stringToHclTerraform(struct!.rootDir),
+      value: cdktn.stringToHclTerraform(struct!.rootDir),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     web_analytics_tag: {
-      value: cdktf.stringToHclTerraform(struct!.webAnalyticsTag),
+      value: cdktn.stringToHclTerraform(struct!.webAnalyticsTag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     web_analytics_token: {
-      value: cdktf.stringToHclTerraform(struct!.webAnalyticsToken),
+      value: cdktn.stringToHclTerraform(struct!.webAnalyticsToken),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -152,19 +152,19 @@ export function pagesProjectBuildConfigToHclTerraform(struct?: PagesProjectBuild
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject {
+export class PagesProjectBuildConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectBuildConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectBuildConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -197,7 +197,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectBuildConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectBuildConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -208,7 +208,7 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
       this._webAnalyticsTag = undefined;
       this._webAnalyticsToken = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -225,11 +225,11 @@ export class PagesProjectBuildConfigOutputReference extends cdktf.ComplexObject 
   }
 
   // build_caching - computed: true, optional: true, required: false
-  private _buildCaching?: boolean | cdktf.IResolvable; 
+  private _buildCaching?: boolean | cdktn.IResolvable; 
   public get buildCaching() {
     return this.getBooleanAttribute('build_caching');
   }
-  public set buildCaching(value: boolean | cdktf.IResolvable) {
+  public set buildCaching(value: boolean | cdktn.IResolvable) {
     this._buildCaching = value;
   }
   public resetBuildCaching() {
@@ -324,8 +324,8 @@ export interface PagesProjectCanonicalDeploymentBuildConfig {
 }
 
 export function pagesProjectCanonicalDeploymentBuildConfigToTerraform(struct?: PagesProjectCanonicalDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -334,8 +334,8 @@ export function pagesProjectCanonicalDeploymentBuildConfigToTerraform(struct?: P
 
 
 export function pagesProjectCanonicalDeploymentBuildConfigToHclTerraform(struct?: PagesProjectCanonicalDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -343,14 +343,14 @@ export function pagesProjectCanonicalDeploymentBuildConfigToHclTerraform(struct?
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentBuildConfigOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentBuildConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -403,8 +403,8 @@ export interface PagesProjectCanonicalDeploymentDeploymentTriggerMetadata {
 }
 
 export function pagesProjectCanonicalDeploymentDeploymentTriggerMetadataToTerraform(struct?: PagesProjectCanonicalDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -413,8 +413,8 @@ export function pagesProjectCanonicalDeploymentDeploymentTriggerMetadataToTerraf
 
 
 export function pagesProjectCanonicalDeploymentDeploymentTriggerMetadataToHclTerraform(struct?: PagesProjectCanonicalDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -422,14 +422,14 @@ export function pagesProjectCanonicalDeploymentDeploymentTriggerMetadataToHclTer
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentDeploymentTriggerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -472,8 +472,8 @@ export interface PagesProjectCanonicalDeploymentDeploymentTrigger {
 }
 
 export function pagesProjectCanonicalDeploymentDeploymentTriggerToTerraform(struct?: PagesProjectCanonicalDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -482,8 +482,8 @@ export function pagesProjectCanonicalDeploymentDeploymentTriggerToTerraform(stru
 
 
 export function pagesProjectCanonicalDeploymentDeploymentTriggerToHclTerraform(struct?: PagesProjectCanonicalDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -491,14 +491,14 @@ export function pagesProjectCanonicalDeploymentDeploymentTriggerToHclTerraform(s
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentDeploymentTriggerOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentDeploymentTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -532,8 +532,8 @@ export interface PagesProjectCanonicalDeploymentEnvVars {
 }
 
 export function pagesProjectCanonicalDeploymentEnvVarsToTerraform(struct?: PagesProjectCanonicalDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -542,8 +542,8 @@ export function pagesProjectCanonicalDeploymentEnvVarsToTerraform(struct?: Pages
 
 
 export function pagesProjectCanonicalDeploymentEnvVarsToHclTerraform(struct?: PagesProjectCanonicalDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -551,7 +551,7 @@ export function pagesProjectCanonicalDeploymentEnvVarsToHclTerraform(struct?: Pa
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentEnvVarsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -559,7 +559,7 @@ export class PagesProjectCanonicalDeploymentEnvVarsOutputReference extends cdktf
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -589,13 +589,13 @@ export class PagesProjectCanonicalDeploymentEnvVarsOutputReference extends cdktf
   }
 }
 
-export class PagesProjectCanonicalDeploymentEnvVarsMap extends cdktf.ComplexMap {
+export class PagesProjectCanonicalDeploymentEnvVarsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -610,8 +610,8 @@ export interface PagesProjectCanonicalDeploymentLatestStage {
 }
 
 export function pagesProjectCanonicalDeploymentLatestStageToTerraform(struct?: PagesProjectCanonicalDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -620,8 +620,8 @@ export function pagesProjectCanonicalDeploymentLatestStageToTerraform(struct?: P
 
 
 export function pagesProjectCanonicalDeploymentLatestStageToHclTerraform(struct?: PagesProjectCanonicalDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -629,14 +629,14 @@ export function pagesProjectCanonicalDeploymentLatestStageToHclTerraform(struct?
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentLatestStageOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentLatestStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -679,8 +679,8 @@ export interface PagesProjectCanonicalDeploymentSourceConfig {
 }
 
 export function pagesProjectCanonicalDeploymentSourceConfigToTerraform(struct?: PagesProjectCanonicalDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -689,8 +689,8 @@ export function pagesProjectCanonicalDeploymentSourceConfigToTerraform(struct?: 
 
 
 export function pagesProjectCanonicalDeploymentSourceConfigToHclTerraform(struct?: PagesProjectCanonicalDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -698,14 +698,14 @@ export function pagesProjectCanonicalDeploymentSourceConfigToHclTerraform(struct
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentSourceConfigOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentSourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -793,8 +793,8 @@ export interface PagesProjectCanonicalDeploymentSource {
 }
 
 export function pagesProjectCanonicalDeploymentSourceToTerraform(struct?: PagesProjectCanonicalDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -803,8 +803,8 @@ export function pagesProjectCanonicalDeploymentSourceToTerraform(struct?: PagesP
 
 
 export function pagesProjectCanonicalDeploymentSourceToHclTerraform(struct?: PagesProjectCanonicalDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -812,14 +812,14 @@ export function pagesProjectCanonicalDeploymentSourceToHclTerraform(struct?: Pag
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentSourceOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -853,8 +853,8 @@ export interface PagesProjectCanonicalDeploymentStages {
 }
 
 export function pagesProjectCanonicalDeploymentStagesToTerraform(struct?: PagesProjectCanonicalDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -863,8 +863,8 @@ export function pagesProjectCanonicalDeploymentStagesToTerraform(struct?: PagesP
 
 
 export function pagesProjectCanonicalDeploymentStagesToHclTerraform(struct?: PagesProjectCanonicalDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -872,7 +872,7 @@ export function pagesProjectCanonicalDeploymentStagesToHclTerraform(struct?: Pag
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentStagesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentStagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -881,7 +881,7 @@ export class PagesProjectCanonicalDeploymentStagesOutputReference extends cdktf.
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -921,14 +921,14 @@ export class PagesProjectCanonicalDeploymentStagesOutputReference extends cdktf.
   }
 }
 
-export class PagesProjectCanonicalDeploymentStagesList extends cdktf.ComplexList {
+export class PagesProjectCanonicalDeploymentStagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -943,8 +943,8 @@ export interface PagesProjectCanonicalDeployment {
 }
 
 export function pagesProjectCanonicalDeploymentToTerraform(struct?: PagesProjectCanonicalDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -953,8 +953,8 @@ export function pagesProjectCanonicalDeploymentToTerraform(struct?: PagesProject
 
 
 export function pagesProjectCanonicalDeploymentToHclTerraform(struct?: PagesProjectCanonicalDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -962,14 +962,14 @@ export function pagesProjectCanonicalDeploymentToHclTerraform(struct?: PagesProj
   return attrs;
 }
 
-export class PagesProjectCanonicalDeploymentOutputReference extends cdktf.ComplexObject {
+export class PagesProjectCanonicalDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -1081,30 +1081,30 @@ export class PagesProjectCanonicalDeploymentOutputReference extends cdktf.Comple
 }
 export interface PagesProjectDeploymentConfigsPreviewAiBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#project_id PagesProject#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#project_id PagesProject#project_id}
   */
   readonly projectId: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewAiBindingsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewAiBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewAiBindingsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewAiBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewAiBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewAiBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewAiBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewAiBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1115,20 +1115,20 @@ export function pagesProjectDeploymentConfigsPreviewAiBindingsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewAiBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewAiBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1141,13 +1141,13 @@ export class PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewAiBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewAiBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._projectId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1172,14 +1172,14 @@ export class PagesProjectDeploymentConfigsPreviewAiBindingsOutputReference exten
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewAiBindingsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewAiBindings } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewAiBindingsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewAiBindings } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1194,30 +1194,30 @@ export interface PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets {
   /**
   * Name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#dataset PagesProject#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#dataset PagesProject#dataset}
   */
   readonly dataset: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataset: cdktf.stringToTerraform(struct!.dataset),
+    dataset: cdktn.stringToTerraform(struct!.dataset),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataset: {
-      value: cdktf.stringToHclTerraform(struct!.dataset),
+      value: cdktn.stringToHclTerraform(struct!.dataset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1228,20 +1228,20 @@ export function pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1254,13 +1254,13 @@ export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataset = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1285,14 +1285,14 @@ export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsOutputRe
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1306,9 +1306,9 @@ export class PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap exte
 export interface PagesProjectDeploymentConfigsPreviewBrowsers {
 }
 
-export function pagesProjectDeploymentConfigsPreviewBrowsersToTerraform(struct?: PagesProjectDeploymentConfigsPreviewBrowsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewBrowsersToTerraform(struct?: PagesProjectDeploymentConfigsPreviewBrowsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1316,9 +1316,9 @@ export function pagesProjectDeploymentConfigsPreviewBrowsersToTerraform(struct?:
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewBrowsersToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewBrowsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewBrowsersToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewBrowsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1326,20 +1326,20 @@ export function pagesProjectDeploymentConfigsPreviewBrowsersToHclTerraform(struc
   return attrs;
 }
 
-export class PagesProjectDeploymentConfigsPreviewBrowsersOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewBrowsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewBrowsers | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewBrowsers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1348,12 +1348,12 @@ export class PagesProjectDeploymentConfigsPreviewBrowsersOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewBrowsers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewBrowsers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1364,14 +1364,14 @@ export class PagesProjectDeploymentConfigsPreviewBrowsersOutputReference extends
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewBrowsersMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewBrowsers } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewBrowsersMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewBrowsers } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1386,7 +1386,7 @@ export interface PagesProjectDeploymentConfigsPreviewD1Databases {
   /**
   * UUID of the D1 database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1394,25 +1394,25 @@ export interface PagesProjectDeploymentConfigsPreviewD1Databases {
   readonly id: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewD1DatabasesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewD1Databases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewD1DatabasesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewD1Databases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewD1DatabasesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewD1Databases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewD1DatabasesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewD1Databases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1423,20 +1423,20 @@ export function pagesProjectDeploymentConfigsPreviewD1DatabasesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewD1Databases | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewD1Databases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1449,13 +1449,13 @@ export class PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewD1Databases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewD1Databases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1480,14 +1480,14 @@ export class PagesProjectDeploymentConfigsPreviewD1DatabasesOutputReference exte
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewD1DatabasesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewD1Databases } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewD1DatabasesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewD1Databases } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1502,30 +1502,30 @@ export interface PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces {
   /**
   * ID of the Durable Object namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
+    namespace_id: cdktn.stringToTerraform(struct!.namespaceId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace_id: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      value: cdktn.stringToHclTerraform(struct!.namespaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1536,20 +1536,20 @@ export function pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToHcl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1562,13 +1562,13 @@ export class PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputRe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._namespaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1593,14 +1593,14 @@ export class PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesOutputRe
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1615,43 +1615,43 @@ export interface PagesProjectDeploymentConfigsPreviewEnvVars {
   /**
   * Available values: "plain_text", "secret_text".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#type PagesProject#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#type PagesProject#type}
   */
   readonly type: string;
   /**
   * Environment variable value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#value PagesProject#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#value PagesProject#value}
   */
   readonly value: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewEnvVarsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewEnvVars | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewEnvVarsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewEnvVars | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewEnvVarsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewEnvVars | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewEnvVarsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewEnvVars | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1662,20 +1662,20 @@ export function pagesProjectDeploymentConfigsPreviewEnvVarsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewEnvVars | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewEnvVars | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1692,14 +1692,14 @@ export class PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewEnvVars | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewEnvVars | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1738,14 +1738,14 @@ export class PagesProjectDeploymentConfigsPreviewEnvVarsOutputReference extends 
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewEnvVarsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewEnvVars } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewEnvVarsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewEnvVars } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1758,7 +1758,7 @@ export class PagesProjectDeploymentConfigsPreviewEnvVarsMap extends cdktf.Comple
 }
 export interface PagesProjectDeploymentConfigsPreviewHyperdriveBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1766,25 +1766,25 @@ export interface PagesProjectDeploymentConfigsPreviewHyperdriveBindings {
   readonly id: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1795,20 +1795,20 @@ export function pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1821,13 +1821,13 @@ export class PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewHyperdriveBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1852,14 +1852,14 @@ export class PagesProjectDeploymentConfigsPreviewHyperdriveBindingsOutputReferen
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewHyperdriveBindings } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewHyperdriveBindings } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1874,30 +1874,30 @@ export interface PagesProjectDeploymentConfigsPreviewKvNamespaces {
   /**
   * ID of the KV namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewKvNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewKvNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
+    namespace_id: cdktn.stringToTerraform(struct!.namespaceId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewKvNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewKvNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace_id: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      value: cdktn.stringToHclTerraform(struct!.namespaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1908,20 +1908,20 @@ export function pagesProjectDeploymentConfigsPreviewKvNamespacesToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1934,13 +1934,13 @@ export class PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewKvNamespaces | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._namespaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1965,14 +1965,14 @@ export class PagesProjectDeploymentConfigsPreviewKvNamespacesOutputReference ext
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewKvNamespacesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewKvNamespaces } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewKvNamespacesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewKvNamespaces } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1987,30 +1987,30 @@ export interface PagesProjectDeploymentConfigsPreviewLimits {
   /**
   * CPU time limit in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#cpu_ms PagesProject#cpu_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#cpu_ms PagesProject#cpu_ms}
   */
   readonly cpuMs: number;
 }
 
-export function pagesProjectDeploymentConfigsPreviewLimitsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewLimitsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu_ms: cdktf.numberToTerraform(struct!.cpuMs),
+    cpu_ms: cdktn.numberToTerraform(struct!.cpuMs),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewLimitsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewLimitsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu_ms: {
-      value: cdktf.numberToHclTerraform(struct!.cpuMs),
+      value: cdktn.numberToHclTerraform(struct!.cpuMs),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -2021,19 +2021,19 @@ export function pagesProjectDeploymentConfigsPreviewLimitsToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewLimitsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewLimits | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewLimits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2046,13 +2046,13 @@ export class PagesProjectDeploymentConfigsPreviewLimitsOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewLimits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewLimits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cpuMs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2078,30 +2078,30 @@ export class PagesProjectDeploymentConfigsPreviewLimitsOutputReference extends c
 }
 export interface PagesProjectDeploymentConfigsPreviewMtlsCertificates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
   */
   readonly certificateId: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewMtlsCertificatesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewMtlsCertificatesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_id: cdktf.stringToTerraform(struct!.certificateId),
+    certificate_id: cdktn.stringToTerraform(struct!.certificateId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewMtlsCertificatesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewMtlsCertificatesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.certificateId),
+      value: cdktn.stringToHclTerraform(struct!.certificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2112,20 +2112,20 @@ export function pagesProjectDeploymentConfigsPreviewMtlsCertificatesToHclTerrafo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2138,13 +2138,13 @@ export class PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewMtlsCertificates | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._certificateId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2169,14 +2169,14 @@ export class PagesProjectDeploymentConfigsPreviewMtlsCertificatesOutputReference
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewMtlsCertificates } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewMtlsCertificates } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2191,30 +2191,30 @@ export interface PagesProjectDeploymentConfigsPreviewPlacement {
   /**
   * Placement mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#mode PagesProject#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#mode PagesProject#mode}
   */
   readonly mode?: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct?: PagesProjectDeploymentConfigsPreviewPlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct?: PagesProjectDeploymentConfigsPreviewPlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewPlacementToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewPlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewPlacementToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewPlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2225,19 +2225,19 @@ export function pagesProjectDeploymentConfigsPreviewPlacementToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewPlacementOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewPlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewPlacement | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewPlacement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2250,13 +2250,13 @@ export class PagesProjectDeploymentConfigsPreviewPlacementOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewPlacement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewPlacement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2287,30 +2287,30 @@ export interface PagesProjectDeploymentConfigsPreviewQueueProducers {
   /**
   * Name of the Queue.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewQueueProducersToTerraform(struct?: PagesProjectDeploymentConfigsPreviewQueueProducers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewQueueProducersToTerraform(struct?: PagesProjectDeploymentConfigsPreviewQueueProducers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewQueueProducersToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewQueueProducers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewQueueProducersToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewQueueProducers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2321,20 +2321,20 @@ export function pagesProjectDeploymentConfigsPreviewQueueProducersToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewQueueProducers | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewQueueProducers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2347,13 +2347,13 @@ export class PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewQueueProducers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewQueueProducers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2378,14 +2378,14 @@ export class PagesProjectDeploymentConfigsPreviewQueueProducersOutputReference e
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewQueueProducersMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewQueueProducers } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewQueueProducersMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewQueueProducers } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2400,43 +2400,43 @@ export interface PagesProjectDeploymentConfigsPreviewR2Buckets {
   /**
   * Jurisdiction of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Name of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewR2BucketsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewR2Buckets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewR2BucketsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewR2Buckets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jurisdiction: cdktf.stringToTerraform(struct!.jurisdiction),
-    name: cdktf.stringToTerraform(struct!.name),
+    jurisdiction: cdktn.stringToTerraform(struct!.jurisdiction),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewR2BucketsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewR2Buckets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewR2BucketsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewR2Buckets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jurisdiction: {
-      value: cdktf.stringToHclTerraform(struct!.jurisdiction),
+      value: cdktn.stringToHclTerraform(struct!.jurisdiction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2447,20 +2447,20 @@ export function pagesProjectDeploymentConfigsPreviewR2BucketsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewR2Buckets | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewR2Buckets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2477,14 +2477,14 @@ export class PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewR2Buckets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewR2Buckets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._jurisdiction = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2526,14 +2526,14 @@ export class PagesProjectDeploymentConfigsPreviewR2BucketsOutputReference extend
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewR2BucketsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewR2Buckets } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewR2BucketsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewR2Buckets } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2548,56 +2548,56 @@ export interface PagesProjectDeploymentConfigsPreviewServices {
   /**
   * The entrypoint to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
   */
   readonly entrypoint?: string;
   /**
   * The Service environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#environment PagesProject#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#environment PagesProject#environment}
   */
   readonly environment?: string;
   /**
   * The Service name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#service PagesProject#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#service PagesProject#service}
   */
   readonly service: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewServicesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewServicesToTerraform(struct?: PagesProjectDeploymentConfigsPreviewServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entrypoint: cdktf.stringToTerraform(struct!.entrypoint),
-    environment: cdktf.stringToTerraform(struct!.environment),
-    service: cdktf.stringToTerraform(struct!.service),
+    entrypoint: cdktn.stringToTerraform(struct!.entrypoint),
+    environment: cdktn.stringToTerraform(struct!.environment),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewServicesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewServicesToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entrypoint: {
-      value: cdktf.stringToHclTerraform(struct!.entrypoint),
+      value: cdktn.stringToHclTerraform(struct!.entrypoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     environment: {
-      value: cdktf.stringToHclTerraform(struct!.environment),
+      value: cdktn.stringToHclTerraform(struct!.environment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2608,20 +2608,20 @@ export function pagesProjectDeploymentConfigsPreviewServicesToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewServices | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2642,7 +2642,7 @@ export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2650,7 +2650,7 @@ export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends
       this._environment = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2709,14 +2709,14 @@ export class PagesProjectDeploymentConfigsPreviewServicesOutputReference extends
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewServicesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewServices } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewServicesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewServices } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2729,30 +2729,30 @@ export class PagesProjectDeploymentConfigsPreviewServicesMap extends cdktf.Compl
 }
 export interface PagesProjectDeploymentConfigsPreviewVectorizeBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#index_name PagesProject#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#index_name PagesProject#index_name}
   */
   readonly indexName: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewVectorizeBindingsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewVectorizeBindingsToTerraform(struct?: PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index_name: cdktf.stringToTerraform(struct!.indexName),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewVectorizeBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewVectorizeBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2763,20 +2763,20 @@ export function pagesProjectDeploymentConfigsPreviewVectorizeBindingsToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2789,13 +2789,13 @@ export class PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreviewVectorizeBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._indexName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2820,14 +2820,14 @@ export class PagesProjectDeploymentConfigsPreviewVectorizeBindingsOutputReferenc
   }
 }
 
-export class PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewVectorizeBindings } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsPreviewVectorizeBindings } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2842,250 +2842,250 @@ export interface PagesProjectDeploymentConfigsPreview {
   /**
   * Constellation bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
   */
-  readonly aiBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewAiBindings } | cdktf.IResolvable;
+  readonly aiBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewAiBindings } | cdktn.IResolvable;
   /**
   * Whether to always use the latest compatibility date for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
   */
-  readonly alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable;
+  readonly alwaysUseLatestCompatibilityDate?: boolean | cdktn.IResolvable;
   /**
   * Analytics Engine bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
   */
-  readonly analyticsEngineDatasets?: { [key: string]: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets } | cdktf.IResolvable;
+  readonly analyticsEngineDatasets?: { [key: string]: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets } | cdktn.IResolvable;
   /**
   * Browser bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#browsers PagesProject#browsers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#browsers PagesProject#browsers}
   */
-  readonly browsers?: { [key: string]: PagesProjectDeploymentConfigsPreviewBrowsers } | cdktf.IResolvable;
+  readonly browsers?: { [key: string]: PagesProjectDeploymentConfigsPreviewBrowsers } | cdktn.IResolvable;
   /**
   * The major version of the build image to use for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#build_image_major_version PagesProject#build_image_major_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#build_image_major_version PagesProject#build_image_major_version}
   */
   readonly buildImageMajorVersion?: number;
   /**
   * Compatibility date used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Compatibility flags used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * D1 databases used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
   */
-  readonly d1Databases?: { [key: string]: PagesProjectDeploymentConfigsPreviewD1Databases } | cdktf.IResolvable;
+  readonly d1Databases?: { [key: string]: PagesProjectDeploymentConfigsPreviewD1Databases } | cdktn.IResolvable;
   /**
   * Durable Object namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
   */
-  readonly durableObjectNamespaces?: { [key: string]: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces } | cdktf.IResolvable;
+  readonly durableObjectNamespaces?: { [key: string]: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces } | cdktn.IResolvable;
   /**
   * Environment variables used for builds and Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
   */
-  readonly envVars?: { [key: string]: PagesProjectDeploymentConfigsPreviewEnvVars } | cdktf.IResolvable;
+  readonly envVars?: { [key: string]: PagesProjectDeploymentConfigsPreviewEnvVars } | cdktn.IResolvable;
   /**
   * Whether to fail open when the deployment config cannot be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
   */
-  readonly failOpen?: boolean | cdktf.IResolvable;
+  readonly failOpen?: boolean | cdktn.IResolvable;
   /**
   * Hyperdrive bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
   */
-  readonly hyperdriveBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewHyperdriveBindings } | cdktf.IResolvable;
+  readonly hyperdriveBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewHyperdriveBindings } | cdktn.IResolvable;
   /**
   * KV namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
   */
-  readonly kvNamespaces?: { [key: string]: PagesProjectDeploymentConfigsPreviewKvNamespaces } | cdktf.IResolvable;
+  readonly kvNamespaces?: { [key: string]: PagesProjectDeploymentConfigsPreviewKvNamespaces } | cdktn.IResolvable;
   /**
   * Limits for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#limits PagesProject#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#limits PagesProject#limits}
   */
   readonly limits?: PagesProjectDeploymentConfigsPreviewLimits;
   /**
   * mTLS bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
   */
-  readonly mtlsCertificates?: { [key: string]: PagesProjectDeploymentConfigsPreviewMtlsCertificates } | cdktf.IResolvable;
+  readonly mtlsCertificates?: { [key: string]: PagesProjectDeploymentConfigsPreviewMtlsCertificates } | cdktn.IResolvable;
   /**
   * Placement setting used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#placement PagesProject#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#placement PagesProject#placement}
   */
   readonly placement?: PagesProjectDeploymentConfigsPreviewPlacement;
   /**
   * Queue Producer bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
   */
-  readonly queueProducers?: { [key: string]: PagesProjectDeploymentConfigsPreviewQueueProducers } | cdktf.IResolvable;
+  readonly queueProducers?: { [key: string]: PagesProjectDeploymentConfigsPreviewQueueProducers } | cdktn.IResolvable;
   /**
   * R2 buckets used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
   */
-  readonly r2Buckets?: { [key: string]: PagesProjectDeploymentConfigsPreviewR2Buckets } | cdktf.IResolvable;
+  readonly r2Buckets?: { [key: string]: PagesProjectDeploymentConfigsPreviewR2Buckets } | cdktn.IResolvable;
   /**
   * Services used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#services PagesProject#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#services PagesProject#services}
   */
-  readonly services?: { [key: string]: PagesProjectDeploymentConfigsPreviewServices } | cdktf.IResolvable;
+  readonly services?: { [key: string]: PagesProjectDeploymentConfigsPreviewServices } | cdktn.IResolvable;
   /**
   * The usage model for Pages Functions.
   * Available values: "standard", "bundled", "unbound".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
   */
   readonly usageModel?: string;
   /**
   * Vectorize bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
   */
-  readonly vectorizeBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewVectorizeBindings } | cdktf.IResolvable;
+  readonly vectorizeBindings?: { [key: string]: PagesProjectDeploymentConfigsPreviewVectorizeBindings } | cdktn.IResolvable;
   /**
   * Hash of the Wrangler configuration used for the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#wrangler_config_hash PagesProject#wrangler_config_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#wrangler_config_hash PagesProject#wrangler_config_hash}
   */
   readonly wranglerConfigHash?: string;
 }
 
-export function pagesProjectDeploymentConfigsPreviewToTerraform(struct?: PagesProjectDeploymentConfigsPreview | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewToTerraform(struct?: PagesProjectDeploymentConfigsPreview | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ai_bindings: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewAiBindingsToTerraform)(struct!.aiBindings),
-    always_use_latest_compatibility_date: cdktf.booleanToTerraform(struct!.alwaysUseLatestCompatibilityDate),
-    analytics_engine_datasets: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToTerraform)(struct!.analyticsEngineDatasets),
-    browsers: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewBrowsersToTerraform)(struct!.browsers),
-    build_image_major_version: cdktf.numberToTerraform(struct!.buildImageMajorVersion),
-    compatibility_date: cdktf.stringToTerraform(struct!.compatibilityDate),
-    compatibility_flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.compatibilityFlags),
-    d1_databases: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewD1DatabasesToTerraform)(struct!.d1Databases),
-    durable_object_namespaces: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToTerraform)(struct!.durableObjectNamespaces),
-    env_vars: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewEnvVarsToTerraform)(struct!.envVars),
-    fail_open: cdktf.booleanToTerraform(struct!.failOpen),
-    hyperdrive_bindings: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToTerraform)(struct!.hyperdriveBindings),
-    kv_namespaces: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewKvNamespacesToTerraform)(struct!.kvNamespaces),
+    ai_bindings: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewAiBindingsToTerraform)(struct!.aiBindings),
+    always_use_latest_compatibility_date: cdktn.booleanToTerraform(struct!.alwaysUseLatestCompatibilityDate),
+    analytics_engine_datasets: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToTerraform)(struct!.analyticsEngineDatasets),
+    browsers: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewBrowsersToTerraform)(struct!.browsers),
+    build_image_major_version: cdktn.numberToTerraform(struct!.buildImageMajorVersion),
+    compatibility_date: cdktn.stringToTerraform(struct!.compatibilityDate),
+    compatibility_flags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.compatibilityFlags),
+    d1_databases: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewD1DatabasesToTerraform)(struct!.d1Databases),
+    durable_object_namespaces: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToTerraform)(struct!.durableObjectNamespaces),
+    env_vars: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewEnvVarsToTerraform)(struct!.envVars),
+    fail_open: cdktn.booleanToTerraform(struct!.failOpen),
+    hyperdrive_bindings: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToTerraform)(struct!.hyperdriveBindings),
+    kv_namespaces: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewKvNamespacesToTerraform)(struct!.kvNamespaces),
     limits: pagesProjectDeploymentConfigsPreviewLimitsToTerraform(struct!.limits),
-    mtls_certificates: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewMtlsCertificatesToTerraform)(struct!.mtlsCertificates),
+    mtls_certificates: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewMtlsCertificatesToTerraform)(struct!.mtlsCertificates),
     placement: pagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct!.placement),
-    queue_producers: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewQueueProducersToTerraform)(struct!.queueProducers),
-    r2_buckets: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewR2BucketsToTerraform)(struct!.r2Buckets),
-    services: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewServicesToTerraform)(struct!.services),
-    usage_model: cdktf.stringToTerraform(struct!.usageModel),
-    vectorize_bindings: cdktf.hashMapper(pagesProjectDeploymentConfigsPreviewVectorizeBindingsToTerraform)(struct!.vectorizeBindings),
-    wrangler_config_hash: cdktf.stringToTerraform(struct!.wranglerConfigHash),
+    queue_producers: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewQueueProducersToTerraform)(struct!.queueProducers),
+    r2_buckets: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewR2BucketsToTerraform)(struct!.r2Buckets),
+    services: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewServicesToTerraform)(struct!.services),
+    usage_model: cdktn.stringToTerraform(struct!.usageModel),
+    vectorize_bindings: cdktn.hashMapper(pagesProjectDeploymentConfigsPreviewVectorizeBindingsToTerraform)(struct!.vectorizeBindings),
+    wrangler_config_hash: cdktn.stringToTerraform(struct!.wranglerConfigHash),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsPreviewToHclTerraform(struct?: PagesProjectDeploymentConfigsPreview | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsPreviewToHclTerraform(struct?: PagesProjectDeploymentConfigsPreview | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ai_bindings: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewAiBindingsToHclTerraform)(struct!.aiBindings),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewAiBindingsToHclTerraform)(struct!.aiBindings),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewAiBindingsMap",
     },
     always_use_latest_compatibility_date: {
-      value: cdktf.booleanToHclTerraform(struct!.alwaysUseLatestCompatibilityDate),
+      value: cdktn.booleanToHclTerraform(struct!.alwaysUseLatestCompatibilityDate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     analytics_engine_datasets: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToHclTerraform)(struct!.analyticsEngineDatasets),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToHclTerraform)(struct!.analyticsEngineDatasets),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsMap",
     },
     browsers: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewBrowsersToHclTerraform)(struct!.browsers),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewBrowsersToHclTerraform)(struct!.browsers),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewBrowsersMap",
     },
     build_image_major_version: {
-      value: cdktf.numberToHclTerraform(struct!.buildImageMajorVersion),
+      value: cdktn.numberToHclTerraform(struct!.buildImageMajorVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compatibility_date: {
-      value: cdktf.stringToHclTerraform(struct!.compatibilityDate),
+      value: cdktn.stringToHclTerraform(struct!.compatibilityDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compatibility_flags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.compatibilityFlags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.compatibilityFlags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     d1_databases: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewD1DatabasesToHclTerraform)(struct!.d1Databases),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewD1DatabasesToHclTerraform)(struct!.d1Databases),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewD1DatabasesMap",
     },
     durable_object_namespaces: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToHclTerraform)(struct!.durableObjectNamespaces),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToHclTerraform)(struct!.durableObjectNamespaces),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewDurableObjectNamespacesMap",
     },
     env_vars: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewEnvVarsToHclTerraform)(struct!.envVars),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewEnvVarsToHclTerraform)(struct!.envVars),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewEnvVarsMap",
     },
     fail_open: {
-      value: cdktf.booleanToHclTerraform(struct!.failOpen),
+      value: cdktn.booleanToHclTerraform(struct!.failOpen),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hyperdrive_bindings: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToHclTerraform)(struct!.hyperdriveBindings),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewHyperdriveBindingsToHclTerraform)(struct!.hyperdriveBindings),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewHyperdriveBindingsMap",
     },
     kv_namespaces: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewKvNamespacesToHclTerraform)(struct!.kvNamespaces),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewKvNamespacesToHclTerraform)(struct!.kvNamespaces),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewKvNamespacesMap",
@@ -3097,7 +3097,7 @@ export function pagesProjectDeploymentConfigsPreviewToHclTerraform(struct?: Page
       storageClassType: "PagesProjectDeploymentConfigsPreviewLimits",
     },
     mtls_certificates: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewMtlsCertificatesToHclTerraform)(struct!.mtlsCertificates),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewMtlsCertificatesToHclTerraform)(struct!.mtlsCertificates),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewMtlsCertificatesMap",
@@ -3109,37 +3109,37 @@ export function pagesProjectDeploymentConfigsPreviewToHclTerraform(struct?: Page
       storageClassType: "PagesProjectDeploymentConfigsPreviewPlacement",
     },
     queue_producers: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewQueueProducersToHclTerraform)(struct!.queueProducers),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewQueueProducersToHclTerraform)(struct!.queueProducers),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewQueueProducersMap",
     },
     r2_buckets: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewR2BucketsToHclTerraform)(struct!.r2Buckets),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewR2BucketsToHclTerraform)(struct!.r2Buckets),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewR2BucketsMap",
     },
     services: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewServicesToHclTerraform)(struct!.services),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewServicesToHclTerraform)(struct!.services),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewServicesMap",
     },
     usage_model: {
-      value: cdktf.stringToHclTerraform(struct!.usageModel),
+      value: cdktn.stringToHclTerraform(struct!.usageModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vectorize_bindings: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsPreviewVectorizeBindingsToHclTerraform)(struct!.vectorizeBindings),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsPreviewVectorizeBindingsToHclTerraform)(struct!.vectorizeBindings),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsPreviewVectorizeBindingsMap",
     },
     wrangler_config_hash: {
-      value: cdktf.stringToHclTerraform(struct!.wranglerConfigHash),
+      value: cdktn.stringToHclTerraform(struct!.wranglerConfigHash),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3150,19 +3150,19 @@ export function pagesProjectDeploymentConfigsPreviewToHclTerraform(struct?: Page
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsPreview | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsPreview | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3259,7 +3259,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsPreview | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsPreview | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3286,7 +3286,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
       this._vectorizeBindings.internalValue = undefined;
       this._wranglerConfigHash = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3323,7 +3323,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get aiBindings() {
     return this._aiBindings;
   }
-  public putAiBindings(value: { [key: string]: PagesProjectDeploymentConfigsPreviewAiBindings } | cdktf.IResolvable) {
+  public putAiBindings(value: { [key: string]: PagesProjectDeploymentConfigsPreviewAiBindings } | cdktn.IResolvable) {
     this._aiBindings.internalValue = value;
   }
   public resetAiBindings() {
@@ -3335,11 +3335,11 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   }
 
   // always_use_latest_compatibility_date - computed: true, optional: true, required: false
-  private _alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable; 
+  private _alwaysUseLatestCompatibilityDate?: boolean | cdktn.IResolvable; 
   public get alwaysUseLatestCompatibilityDate() {
     return this.getBooleanAttribute('always_use_latest_compatibility_date');
   }
-  public set alwaysUseLatestCompatibilityDate(value: boolean | cdktf.IResolvable) {
+  public set alwaysUseLatestCompatibilityDate(value: boolean | cdktn.IResolvable) {
     this._alwaysUseLatestCompatibilityDate = value;
   }
   public resetAlwaysUseLatestCompatibilityDate() {
@@ -3355,7 +3355,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get analyticsEngineDatasets() {
     return this._analyticsEngineDatasets;
   }
-  public putAnalyticsEngineDatasets(value: { [key: string]: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets } | cdktf.IResolvable) {
+  public putAnalyticsEngineDatasets(value: { [key: string]: PagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets } | cdktn.IResolvable) {
     this._analyticsEngineDatasets.internalValue = value;
   }
   public resetAnalyticsEngineDatasets() {
@@ -3371,7 +3371,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get browsers() {
     return this._browsers;
   }
-  public putBrowsers(value: { [key: string]: PagesProjectDeploymentConfigsPreviewBrowsers } | cdktf.IResolvable) {
+  public putBrowsers(value: { [key: string]: PagesProjectDeploymentConfigsPreviewBrowsers } | cdktn.IResolvable) {
     this._browsers.internalValue = value;
   }
   public resetBrowsers() {
@@ -3435,7 +3435,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get d1Databases() {
     return this._d1Databases;
   }
-  public putD1Databases(value: { [key: string]: PagesProjectDeploymentConfigsPreviewD1Databases } | cdktf.IResolvable) {
+  public putD1Databases(value: { [key: string]: PagesProjectDeploymentConfigsPreviewD1Databases } | cdktn.IResolvable) {
     this._d1Databases.internalValue = value;
   }
   public resetD1Databases() {
@@ -3451,7 +3451,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get durableObjectNamespaces() {
     return this._durableObjectNamespaces;
   }
-  public putDurableObjectNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces } | cdktf.IResolvable) {
+  public putDurableObjectNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsPreviewDurableObjectNamespaces } | cdktn.IResolvable) {
     this._durableObjectNamespaces.internalValue = value;
   }
   public resetDurableObjectNamespaces() {
@@ -3467,7 +3467,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get envVars() {
     return this._envVars;
   }
-  public putEnvVars(value: { [key: string]: PagesProjectDeploymentConfigsPreviewEnvVars } | cdktf.IResolvable) {
+  public putEnvVars(value: { [key: string]: PagesProjectDeploymentConfigsPreviewEnvVars } | cdktn.IResolvable) {
     this._envVars.internalValue = value;
   }
   public resetEnvVars() {
@@ -3479,11 +3479,11 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   }
 
   // fail_open - computed: true, optional: true, required: false
-  private _failOpen?: boolean | cdktf.IResolvable; 
+  private _failOpen?: boolean | cdktn.IResolvable; 
   public get failOpen() {
     return this.getBooleanAttribute('fail_open');
   }
-  public set failOpen(value: boolean | cdktf.IResolvable) {
+  public set failOpen(value: boolean | cdktn.IResolvable) {
     this._failOpen = value;
   }
   public resetFailOpen() {
@@ -3499,7 +3499,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get hyperdriveBindings() {
     return this._hyperdriveBindings;
   }
-  public putHyperdriveBindings(value: { [key: string]: PagesProjectDeploymentConfigsPreviewHyperdriveBindings } | cdktf.IResolvable) {
+  public putHyperdriveBindings(value: { [key: string]: PagesProjectDeploymentConfigsPreviewHyperdriveBindings } | cdktn.IResolvable) {
     this._hyperdriveBindings.internalValue = value;
   }
   public resetHyperdriveBindings() {
@@ -3515,7 +3515,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get kvNamespaces() {
     return this._kvNamespaces;
   }
-  public putKvNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsPreviewKvNamespaces } | cdktf.IResolvable) {
+  public putKvNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsPreviewKvNamespaces } | cdktn.IResolvable) {
     this._kvNamespaces.internalValue = value;
   }
   public resetKvNamespaces() {
@@ -3547,7 +3547,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get mtlsCertificates() {
     return this._mtlsCertificates;
   }
-  public putMtlsCertificates(value: { [key: string]: PagesProjectDeploymentConfigsPreviewMtlsCertificates } | cdktf.IResolvable) {
+  public putMtlsCertificates(value: { [key: string]: PagesProjectDeploymentConfigsPreviewMtlsCertificates } | cdktn.IResolvable) {
     this._mtlsCertificates.internalValue = value;
   }
   public resetMtlsCertificates() {
@@ -3579,7 +3579,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get queueProducers() {
     return this._queueProducers;
   }
-  public putQueueProducers(value: { [key: string]: PagesProjectDeploymentConfigsPreviewQueueProducers } | cdktf.IResolvable) {
+  public putQueueProducers(value: { [key: string]: PagesProjectDeploymentConfigsPreviewQueueProducers } | cdktn.IResolvable) {
     this._queueProducers.internalValue = value;
   }
   public resetQueueProducers() {
@@ -3595,7 +3595,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get r2Buckets() {
     return this._r2Buckets;
   }
-  public putR2Buckets(value: { [key: string]: PagesProjectDeploymentConfigsPreviewR2Buckets } | cdktf.IResolvable) {
+  public putR2Buckets(value: { [key: string]: PagesProjectDeploymentConfigsPreviewR2Buckets } | cdktn.IResolvable) {
     this._r2Buckets.internalValue = value;
   }
   public resetR2Buckets() {
@@ -3611,7 +3611,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get services() {
     return this._services;
   }
-  public putServices(value: { [key: string]: PagesProjectDeploymentConfigsPreviewServices } | cdktf.IResolvable) {
+  public putServices(value: { [key: string]: PagesProjectDeploymentConfigsPreviewServices } | cdktn.IResolvable) {
     this._services.internalValue = value;
   }
   public resetServices() {
@@ -3643,7 +3643,7 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
   public get vectorizeBindings() {
     return this._vectorizeBindings;
   }
-  public putVectorizeBindings(value: { [key: string]: PagesProjectDeploymentConfigsPreviewVectorizeBindings } | cdktf.IResolvable) {
+  public putVectorizeBindings(value: { [key: string]: PagesProjectDeploymentConfigsPreviewVectorizeBindings } | cdktn.IResolvable) {
     this._vectorizeBindings.internalValue = value;
   }
   public resetVectorizeBindings() {
@@ -3672,30 +3672,30 @@ export class PagesProjectDeploymentConfigsPreviewOutputReference extends cdktf.C
 }
 export interface PagesProjectDeploymentConfigsProductionAiBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#project_id PagesProject#project_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#project_id PagesProject#project_id}
   */
   readonly projectId: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionAiBindingsToTerraform(struct?: PagesProjectDeploymentConfigsProductionAiBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionAiBindingsToTerraform(struct?: PagesProjectDeploymentConfigsProductionAiBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    project_id: cdktf.stringToTerraform(struct!.projectId),
+    project_id: cdktn.stringToTerraform(struct!.projectId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionAiBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionAiBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionAiBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionAiBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     project_id: {
-      value: cdktf.stringToHclTerraform(struct!.projectId),
+      value: cdktn.stringToHclTerraform(struct!.projectId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3706,20 +3706,20 @@ export function pagesProjectDeploymentConfigsProductionAiBindingsToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionAiBindingsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionAiBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionAiBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionAiBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3732,13 +3732,13 @@ export class PagesProjectDeploymentConfigsProductionAiBindingsOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionAiBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionAiBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._projectId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3763,14 +3763,14 @@ export class PagesProjectDeploymentConfigsProductionAiBindingsOutputReference ex
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionAiBindingsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionAiBindings } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionAiBindingsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionAiBindings } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3785,30 +3785,30 @@ export interface PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets 
   /**
   * Name of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#dataset PagesProject#dataset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#dataset PagesProject#dataset}
   */
   readonly dataset: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToTerraform(struct?: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToTerraform(struct?: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    dataset: cdktf.stringToTerraform(struct!.dataset),
+    dataset: cdktn.stringToTerraform(struct!.dataset),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     dataset: {
-      value: cdktf.stringToHclTerraform(struct!.dataset),
+      value: cdktn.stringToHclTerraform(struct!.dataset),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3819,20 +3819,20 @@ export function pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3845,13 +3845,13 @@ export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._dataset = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3876,14 +3876,14 @@ export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsOutpu
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3897,9 +3897,9 @@ export class PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap e
 export interface PagesProjectDeploymentConfigsProductionBrowsers {
 }
 
-export function pagesProjectDeploymentConfigsProductionBrowsersToTerraform(struct?: PagesProjectDeploymentConfigsProductionBrowsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionBrowsersToTerraform(struct?: PagesProjectDeploymentConfigsProductionBrowsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3907,9 +3907,9 @@ export function pagesProjectDeploymentConfigsProductionBrowsersToTerraform(struc
 }
 
 
-export function pagesProjectDeploymentConfigsProductionBrowsersToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionBrowsers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionBrowsersToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionBrowsers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3917,20 +3917,20 @@ export function pagesProjectDeploymentConfigsProductionBrowsersToHclTerraform(st
   return attrs;
 }
 
-export class PagesProjectDeploymentConfigsProductionBrowsersOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionBrowsersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionBrowsers | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionBrowsers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3939,12 +3939,12 @@ export class PagesProjectDeploymentConfigsProductionBrowsersOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionBrowsers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionBrowsers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3955,14 +3955,14 @@ export class PagesProjectDeploymentConfigsProductionBrowsersOutputReference exte
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionBrowsersMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionBrowsers } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionBrowsersMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionBrowsers } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3977,7 +3977,7 @@ export interface PagesProjectDeploymentConfigsProductionD1Databases {
   /**
   * UUID of the D1 database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3985,25 +3985,25 @@ export interface PagesProjectDeploymentConfigsProductionD1Databases {
   readonly id: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionD1DatabasesToTerraform(struct?: PagesProjectDeploymentConfigsProductionD1Databases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionD1DatabasesToTerraform(struct?: PagesProjectDeploymentConfigsProductionD1Databases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionD1DatabasesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionD1Databases | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionD1DatabasesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionD1Databases | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4014,20 +4014,20 @@ export function pagesProjectDeploymentConfigsProductionD1DatabasesToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionD1Databases | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionD1Databases | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4040,13 +4040,13 @@ export class PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionD1Databases | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionD1Databases | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4071,14 +4071,14 @@ export class PagesProjectDeploymentConfigsProductionD1DatabasesOutputReference e
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionD1DatabasesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionD1Databases } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionD1DatabasesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionD1Databases } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4093,30 +4093,30 @@ export interface PagesProjectDeploymentConfigsProductionDurableObjectNamespaces 
   /**
   * ID of the Durable Object namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
+    namespace_id: cdktn.stringToTerraform(struct!.namespaceId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace_id: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      value: cdktn.stringToHclTerraform(struct!.namespaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4127,20 +4127,20 @@ export function pagesProjectDeploymentConfigsProductionDurableObjectNamespacesTo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4153,13 +4153,13 @@ export class PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutpu
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._namespaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4184,14 +4184,14 @@ export class PagesProjectDeploymentConfigsProductionDurableObjectNamespacesOutpu
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4206,43 +4206,43 @@ export interface PagesProjectDeploymentConfigsProductionEnvVars {
   /**
   * Available values: "plain_text", "secret_text".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#type PagesProject#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#type PagesProject#type}
   */
   readonly type: string;
   /**
   * Environment variable value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#value PagesProject#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#value PagesProject#value}
   */
   readonly value: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionEnvVarsToTerraform(struct?: PagesProjectDeploymentConfigsProductionEnvVars | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionEnvVarsToTerraform(struct?: PagesProjectDeploymentConfigsProductionEnvVars | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    type: cdktf.stringToTerraform(struct!.type),
-    value: cdktf.stringToTerraform(struct!.value),
+    type: cdktn.stringToTerraform(struct!.type),
+    value: cdktn.stringToTerraform(struct!.value),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionEnvVarsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionEnvVars | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionEnvVarsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionEnvVars | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4253,20 +4253,20 @@ export function pagesProjectDeploymentConfigsProductionEnvVarsToHclTerraform(str
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionEnvVarsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionEnvVars | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionEnvVars | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4283,14 +4283,14 @@ export class PagesProjectDeploymentConfigsProductionEnvVarsOutputReference exten
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionEnvVars | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionEnvVars | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._type = undefined;
       this._value = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4329,14 +4329,14 @@ export class PagesProjectDeploymentConfigsProductionEnvVarsOutputReference exten
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionEnvVarsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionEnvVars } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionEnvVarsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionEnvVars } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4349,7 +4349,7 @@ export class PagesProjectDeploymentConfigsProductionEnvVarsMap extends cdktf.Com
 }
 export interface PagesProjectDeploymentConfigsProductionHyperdriveBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#id PagesProject#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#id PagesProject#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4357,25 +4357,25 @@ export interface PagesProjectDeploymentConfigsProductionHyperdriveBindings {
   readonly id: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionHyperdriveBindingsToTerraform(struct?: PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionHyperdriveBindingsToTerraform(struct?: PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionHyperdriveBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionHyperdriveBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4386,20 +4386,20 @@ export function pagesProjectDeploymentConfigsProductionHyperdriveBindingsToHclTe
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4412,13 +4412,13 @@ export class PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputRefe
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionHyperdriveBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4443,14 +4443,14 @@ export class PagesProjectDeploymentConfigsProductionHyperdriveBindingsOutputRefe
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionHyperdriveBindings } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionHyperdriveBindings } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4465,30 +4465,30 @@ export interface PagesProjectDeploymentConfigsProductionKvNamespaces {
   /**
   * ID of the KV namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#namespace_id PagesProject#namespace_id}
   */
   readonly namespaceId: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionKvNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsProductionKvNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionKvNamespacesToTerraform(struct?: PagesProjectDeploymentConfigsProductionKvNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    namespace_id: cdktf.stringToTerraform(struct!.namespaceId),
+    namespace_id: cdktn.stringToTerraform(struct!.namespaceId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionKvNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionKvNamespaces | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionKvNamespacesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionKvNamespaces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     namespace_id: {
-      value: cdktf.stringToHclTerraform(struct!.namespaceId),
+      value: cdktn.stringToHclTerraform(struct!.namespaceId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4499,20 +4499,20 @@ export function pagesProjectDeploymentConfigsProductionKvNamespacesToHclTerrafor
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionKvNamespaces | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionKvNamespaces | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4525,13 +4525,13 @@ export class PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionKvNamespaces | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionKvNamespaces | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._namespaceId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4556,14 +4556,14 @@ export class PagesProjectDeploymentConfigsProductionKvNamespacesOutputReference 
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionKvNamespacesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionKvNamespaces } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionKvNamespacesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionKvNamespaces } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4578,30 +4578,30 @@ export interface PagesProjectDeploymentConfigsProductionLimits {
   /**
   * CPU time limit in milliseconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#cpu_ms PagesProject#cpu_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#cpu_ms PagesProject#cpu_ms}
   */
   readonly cpuMs: number;
 }
 
-export function pagesProjectDeploymentConfigsProductionLimitsToTerraform(struct?: PagesProjectDeploymentConfigsProductionLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionLimitsToTerraform(struct?: PagesProjectDeploymentConfigsProductionLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cpu_ms: cdktf.numberToTerraform(struct!.cpuMs),
+    cpu_ms: cdktn.numberToTerraform(struct!.cpuMs),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionLimitsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionLimits | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionLimitsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionLimits | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cpu_ms: {
-      value: cdktf.numberToHclTerraform(struct!.cpuMs),
+      value: cdktn.numberToHclTerraform(struct!.cpuMs),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -4612,19 +4612,19 @@ export function pagesProjectDeploymentConfigsProductionLimitsToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionLimitsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionLimitsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionLimits | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionLimits | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4637,13 +4637,13 @@ export class PagesProjectDeploymentConfigsProductionLimitsOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionLimits | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionLimits | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cpuMs = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4669,30 +4669,30 @@ export class PagesProjectDeploymentConfigsProductionLimitsOutputReference extend
 }
 export interface PagesProjectDeploymentConfigsProductionMtlsCertificates {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#certificate_id PagesProject#certificate_id}
   */
   readonly certificateId: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionMtlsCertificatesToTerraform(struct?: PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionMtlsCertificatesToTerraform(struct?: PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    certificate_id: cdktf.stringToTerraform(struct!.certificateId),
+    certificate_id: cdktn.stringToTerraform(struct!.certificateId),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionMtlsCertificatesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionMtlsCertificatesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.certificateId),
+      value: cdktn.stringToHclTerraform(struct!.certificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4703,20 +4703,20 @@ export function pagesProjectDeploymentConfigsProductionMtlsCertificatesToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4729,13 +4729,13 @@ export class PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionMtlsCertificates | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._certificateId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4760,14 +4760,14 @@ export class PagesProjectDeploymentConfigsProductionMtlsCertificatesOutputRefere
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionMtlsCertificatesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionMtlsCertificates } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionMtlsCertificatesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionMtlsCertificates } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4782,30 +4782,30 @@ export interface PagesProjectDeploymentConfigsProductionPlacement {
   /**
   * Placement mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#mode PagesProject#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#mode PagesProject#mode}
   */
   readonly mode?: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionPlacementToTerraform(struct?: PagesProjectDeploymentConfigsProductionPlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionPlacementToTerraform(struct?: PagesProjectDeploymentConfigsProductionPlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionPlacementToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionPlacement | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionPlacementToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionPlacement | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4816,19 +4816,19 @@ export function pagesProjectDeploymentConfigsProductionPlacementToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionPlacementOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionPlacementOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionPlacement | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionPlacement | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4841,13 +4841,13 @@ export class PagesProjectDeploymentConfigsProductionPlacementOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionPlacement | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionPlacement | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4878,30 +4878,30 @@ export interface PagesProjectDeploymentConfigsProductionQueueProducers {
   /**
   * Name of the Queue.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionQueueProducersToTerraform(struct?: PagesProjectDeploymentConfigsProductionQueueProducers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionQueueProducersToTerraform(struct?: PagesProjectDeploymentConfigsProductionQueueProducers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    name: cdktf.stringToTerraform(struct!.name),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionQueueProducersToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionQueueProducers | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionQueueProducersToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionQueueProducers | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4912,20 +4912,20 @@ export function pagesProjectDeploymentConfigsProductionQueueProducersToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionQueueProducersOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionQueueProducersOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionQueueProducers | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionQueueProducers | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4938,13 +4938,13 @@ export class PagesProjectDeploymentConfigsProductionQueueProducersOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionQueueProducers | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionQueueProducers | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4969,14 +4969,14 @@ export class PagesProjectDeploymentConfigsProductionQueueProducersOutputReferenc
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionQueueProducersMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionQueueProducers } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionQueueProducersMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionQueueProducers } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4991,43 +4991,43 @@ export interface PagesProjectDeploymentConfigsProductionR2Buckets {
   /**
   * Jurisdiction of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#jurisdiction PagesProject#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
   * Name of the R2 bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#name PagesProject#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#name PagesProject#name}
   */
   readonly name: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionR2BucketsToTerraform(struct?: PagesProjectDeploymentConfigsProductionR2Buckets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionR2BucketsToTerraform(struct?: PagesProjectDeploymentConfigsProductionR2Buckets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    jurisdiction: cdktf.stringToTerraform(struct!.jurisdiction),
-    name: cdktf.stringToTerraform(struct!.name),
+    jurisdiction: cdktn.stringToTerraform(struct!.jurisdiction),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionR2BucketsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionR2Buckets | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionR2BucketsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionR2Buckets | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     jurisdiction: {
-      value: cdktf.stringToHclTerraform(struct!.jurisdiction),
+      value: cdktn.stringToHclTerraform(struct!.jurisdiction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5038,20 +5038,20 @@ export function pagesProjectDeploymentConfigsProductionR2BucketsToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionR2BucketsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionR2BucketsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionR2Buckets | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionR2Buckets | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5068,14 +5068,14 @@ export class PagesProjectDeploymentConfigsProductionR2BucketsOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionR2Buckets | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionR2Buckets | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._jurisdiction = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5117,14 +5117,14 @@ export class PagesProjectDeploymentConfigsProductionR2BucketsOutputReference ext
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionR2BucketsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionR2Buckets } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionR2BucketsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionR2Buckets } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -5139,56 +5139,56 @@ export interface PagesProjectDeploymentConfigsProductionServices {
   /**
   * The entrypoint to bind to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#entrypoint PagesProject#entrypoint}
   */
   readonly entrypoint?: string;
   /**
   * The Service environment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#environment PagesProject#environment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#environment PagesProject#environment}
   */
   readonly environment?: string;
   /**
   * The Service name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#service PagesProject#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#service PagesProject#service}
   */
   readonly service: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionServicesToTerraform(struct?: PagesProjectDeploymentConfigsProductionServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionServicesToTerraform(struct?: PagesProjectDeploymentConfigsProductionServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    entrypoint: cdktf.stringToTerraform(struct!.entrypoint),
-    environment: cdktf.stringToTerraform(struct!.environment),
-    service: cdktf.stringToTerraform(struct!.service),
+    entrypoint: cdktn.stringToTerraform(struct!.entrypoint),
+    environment: cdktn.stringToTerraform(struct!.environment),
+    service: cdktn.stringToTerraform(struct!.service),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionServicesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionServices | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionServicesToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionServices | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     entrypoint: {
-      value: cdktf.stringToHclTerraform(struct!.entrypoint),
+      value: cdktn.stringToHclTerraform(struct!.entrypoint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     environment: {
-      value: cdktf.stringToHclTerraform(struct!.environment),
+      value: cdktn.stringToHclTerraform(struct!.environment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5199,20 +5199,20 @@ export function pagesProjectDeploymentConfigsProductionServicesToHclTerraform(st
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionServicesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionServicesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionServices | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionServices | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5233,7 +5233,7 @@ export class PagesProjectDeploymentConfigsProductionServicesOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionServices | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionServices | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5241,7 +5241,7 @@ export class PagesProjectDeploymentConfigsProductionServicesOutputReference exte
       this._environment = undefined;
       this._service = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5300,14 +5300,14 @@ export class PagesProjectDeploymentConfigsProductionServicesOutputReference exte
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionServicesMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionServices } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionServicesMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionServices } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -5320,30 +5320,30 @@ export class PagesProjectDeploymentConfigsProductionServicesMap extends cdktf.Co
 }
 export interface PagesProjectDeploymentConfigsProductionVectorizeBindings {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#index_name PagesProject#index_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#index_name PagesProject#index_name}
   */
   readonly indexName: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionVectorizeBindingsToTerraform(struct?: PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionVectorizeBindingsToTerraform(struct?: PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    index_name: cdktf.stringToTerraform(struct!.indexName),
+    index_name: cdktn.stringToTerraform(struct!.indexName),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionVectorizeBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionVectorizeBindingsToHclTerraform(struct?: PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     index_name: {
-      value: cdktf.stringToHclTerraform(struct!.indexName),
+      value: cdktn.stringToHclTerraform(struct!.indexName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5354,20 +5354,20 @@ export function pagesProjectDeploymentConfigsProductionVectorizeBindingsToHclTer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5380,13 +5380,13 @@ export class PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputRefer
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProductionVectorizeBindings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._indexName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5411,14 +5411,14 @@ export class PagesProjectDeploymentConfigsProductionVectorizeBindingsOutputRefer
   }
 }
 
-export class PagesProjectDeploymentConfigsProductionVectorizeBindingsMap extends cdktf.ComplexMap {
-  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionVectorizeBindings } | cdktf.IResolvable
+export class PagesProjectDeploymentConfigsProductionVectorizeBindingsMap extends cdktn.ComplexMap {
+  public internalValue? : { [key: string]: PagesProjectDeploymentConfigsProductionVectorizeBindings } | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -5433,250 +5433,250 @@ export interface PagesProjectDeploymentConfigsProduction {
   /**
   * Constellation bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#ai_bindings PagesProject#ai_bindings}
   */
-  readonly aiBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionAiBindings } | cdktf.IResolvable;
+  readonly aiBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionAiBindings } | cdktn.IResolvable;
   /**
   * Whether to always use the latest compatibility date for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#always_use_latest_compatibility_date PagesProject#always_use_latest_compatibility_date}
   */
-  readonly alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable;
+  readonly alwaysUseLatestCompatibilityDate?: boolean | cdktn.IResolvable;
   /**
   * Analytics Engine bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#analytics_engine_datasets PagesProject#analytics_engine_datasets}
   */
-  readonly analyticsEngineDatasets?: { [key: string]: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets } | cdktf.IResolvable;
+  readonly analyticsEngineDatasets?: { [key: string]: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets } | cdktn.IResolvable;
   /**
   * Browser bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#browsers PagesProject#browsers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#browsers PagesProject#browsers}
   */
-  readonly browsers?: { [key: string]: PagesProjectDeploymentConfigsProductionBrowsers } | cdktf.IResolvable;
+  readonly browsers?: { [key: string]: PagesProjectDeploymentConfigsProductionBrowsers } | cdktn.IResolvable;
   /**
   * The major version of the build image to use for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#build_image_major_version PagesProject#build_image_major_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#build_image_major_version PagesProject#build_image_major_version}
   */
   readonly buildImageMajorVersion?: number;
   /**
   * Compatibility date used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#compatibility_date PagesProject#compatibility_date}
   */
   readonly compatibilityDate?: string;
   /**
   * Compatibility flags used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#compatibility_flags PagesProject#compatibility_flags}
   */
   readonly compatibilityFlags?: string[];
   /**
   * D1 databases used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#d1_databases PagesProject#d1_databases}
   */
-  readonly d1Databases?: { [key: string]: PagesProjectDeploymentConfigsProductionD1Databases } | cdktf.IResolvable;
+  readonly d1Databases?: { [key: string]: PagesProjectDeploymentConfigsProductionD1Databases } | cdktn.IResolvable;
   /**
   * Durable Object namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#durable_object_namespaces PagesProject#durable_object_namespaces}
   */
-  readonly durableObjectNamespaces?: { [key: string]: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces } | cdktf.IResolvable;
+  readonly durableObjectNamespaces?: { [key: string]: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces } | cdktn.IResolvable;
   /**
   * Environment variables used for builds and Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#env_vars PagesProject#env_vars}
   */
-  readonly envVars?: { [key: string]: PagesProjectDeploymentConfigsProductionEnvVars } | cdktf.IResolvable;
+  readonly envVars?: { [key: string]: PagesProjectDeploymentConfigsProductionEnvVars } | cdktn.IResolvable;
   /**
   * Whether to fail open when the deployment config cannot be applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#fail_open PagesProject#fail_open}
   */
-  readonly failOpen?: boolean | cdktf.IResolvable;
+  readonly failOpen?: boolean | cdktn.IResolvable;
   /**
   * Hyperdrive bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#hyperdrive_bindings PagesProject#hyperdrive_bindings}
   */
-  readonly hyperdriveBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionHyperdriveBindings } | cdktf.IResolvable;
+  readonly hyperdriveBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionHyperdriveBindings } | cdktn.IResolvable;
   /**
   * KV namespaces used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#kv_namespaces PagesProject#kv_namespaces}
   */
-  readonly kvNamespaces?: { [key: string]: PagesProjectDeploymentConfigsProductionKvNamespaces } | cdktf.IResolvable;
+  readonly kvNamespaces?: { [key: string]: PagesProjectDeploymentConfigsProductionKvNamespaces } | cdktn.IResolvable;
   /**
   * Limits for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#limits PagesProject#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#limits PagesProject#limits}
   */
   readonly limits?: PagesProjectDeploymentConfigsProductionLimits;
   /**
   * mTLS bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#mtls_certificates PagesProject#mtls_certificates}
   */
-  readonly mtlsCertificates?: { [key: string]: PagesProjectDeploymentConfigsProductionMtlsCertificates } | cdktf.IResolvable;
+  readonly mtlsCertificates?: { [key: string]: PagesProjectDeploymentConfigsProductionMtlsCertificates } | cdktn.IResolvable;
   /**
   * Placement setting used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#placement PagesProject#placement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#placement PagesProject#placement}
   */
   readonly placement?: PagesProjectDeploymentConfigsProductionPlacement;
   /**
   * Queue Producer bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#queue_producers PagesProject#queue_producers}
   */
-  readonly queueProducers?: { [key: string]: PagesProjectDeploymentConfigsProductionQueueProducers } | cdktf.IResolvable;
+  readonly queueProducers?: { [key: string]: PagesProjectDeploymentConfigsProductionQueueProducers } | cdktn.IResolvable;
   /**
   * R2 buckets used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#r2_buckets PagesProject#r2_buckets}
   */
-  readonly r2Buckets?: { [key: string]: PagesProjectDeploymentConfigsProductionR2Buckets } | cdktf.IResolvable;
+  readonly r2Buckets?: { [key: string]: PagesProjectDeploymentConfigsProductionR2Buckets } | cdktn.IResolvable;
   /**
   * Services used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#services PagesProject#services}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#services PagesProject#services}
   */
-  readonly services?: { [key: string]: PagesProjectDeploymentConfigsProductionServices } | cdktf.IResolvable;
+  readonly services?: { [key: string]: PagesProjectDeploymentConfigsProductionServices } | cdktn.IResolvable;
   /**
   * The usage model for Pages Functions.
   * Available values: "standard", "bundled", "unbound".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#usage_model PagesProject#usage_model}
   */
   readonly usageModel?: string;
   /**
   * Vectorize bindings used for Pages Functions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#vectorize_bindings PagesProject#vectorize_bindings}
   */
-  readonly vectorizeBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionVectorizeBindings } | cdktf.IResolvable;
+  readonly vectorizeBindings?: { [key: string]: PagesProjectDeploymentConfigsProductionVectorizeBindings } | cdktn.IResolvable;
   /**
   * Hash of the Wrangler configuration used for the deployment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#wrangler_config_hash PagesProject#wrangler_config_hash}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#wrangler_config_hash PagesProject#wrangler_config_hash}
   */
   readonly wranglerConfigHash?: string;
 }
 
-export function pagesProjectDeploymentConfigsProductionToTerraform(struct?: PagesProjectDeploymentConfigsProduction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionToTerraform(struct?: PagesProjectDeploymentConfigsProduction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ai_bindings: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionAiBindingsToTerraform)(struct!.aiBindings),
-    always_use_latest_compatibility_date: cdktf.booleanToTerraform(struct!.alwaysUseLatestCompatibilityDate),
-    analytics_engine_datasets: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToTerraform)(struct!.analyticsEngineDatasets),
-    browsers: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionBrowsersToTerraform)(struct!.browsers),
-    build_image_major_version: cdktf.numberToTerraform(struct!.buildImageMajorVersion),
-    compatibility_date: cdktf.stringToTerraform(struct!.compatibilityDate),
-    compatibility_flags: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.compatibilityFlags),
-    d1_databases: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionD1DatabasesToTerraform)(struct!.d1Databases),
-    durable_object_namespaces: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToTerraform)(struct!.durableObjectNamespaces),
-    env_vars: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionEnvVarsToTerraform)(struct!.envVars),
-    fail_open: cdktf.booleanToTerraform(struct!.failOpen),
-    hyperdrive_bindings: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionHyperdriveBindingsToTerraform)(struct!.hyperdriveBindings),
-    kv_namespaces: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionKvNamespacesToTerraform)(struct!.kvNamespaces),
+    ai_bindings: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionAiBindingsToTerraform)(struct!.aiBindings),
+    always_use_latest_compatibility_date: cdktn.booleanToTerraform(struct!.alwaysUseLatestCompatibilityDate),
+    analytics_engine_datasets: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToTerraform)(struct!.analyticsEngineDatasets),
+    browsers: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionBrowsersToTerraform)(struct!.browsers),
+    build_image_major_version: cdktn.numberToTerraform(struct!.buildImageMajorVersion),
+    compatibility_date: cdktn.stringToTerraform(struct!.compatibilityDate),
+    compatibility_flags: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.compatibilityFlags),
+    d1_databases: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionD1DatabasesToTerraform)(struct!.d1Databases),
+    durable_object_namespaces: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToTerraform)(struct!.durableObjectNamespaces),
+    env_vars: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionEnvVarsToTerraform)(struct!.envVars),
+    fail_open: cdktn.booleanToTerraform(struct!.failOpen),
+    hyperdrive_bindings: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionHyperdriveBindingsToTerraform)(struct!.hyperdriveBindings),
+    kv_namespaces: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionKvNamespacesToTerraform)(struct!.kvNamespaces),
     limits: pagesProjectDeploymentConfigsProductionLimitsToTerraform(struct!.limits),
-    mtls_certificates: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionMtlsCertificatesToTerraform)(struct!.mtlsCertificates),
+    mtls_certificates: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionMtlsCertificatesToTerraform)(struct!.mtlsCertificates),
     placement: pagesProjectDeploymentConfigsProductionPlacementToTerraform(struct!.placement),
-    queue_producers: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionQueueProducersToTerraform)(struct!.queueProducers),
-    r2_buckets: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionR2BucketsToTerraform)(struct!.r2Buckets),
-    services: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionServicesToTerraform)(struct!.services),
-    usage_model: cdktf.stringToTerraform(struct!.usageModel),
-    vectorize_bindings: cdktf.hashMapper(pagesProjectDeploymentConfigsProductionVectorizeBindingsToTerraform)(struct!.vectorizeBindings),
-    wrangler_config_hash: cdktf.stringToTerraform(struct!.wranglerConfigHash),
+    queue_producers: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionQueueProducersToTerraform)(struct!.queueProducers),
+    r2_buckets: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionR2BucketsToTerraform)(struct!.r2Buckets),
+    services: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionServicesToTerraform)(struct!.services),
+    usage_model: cdktn.stringToTerraform(struct!.usageModel),
+    vectorize_bindings: cdktn.hashMapper(pagesProjectDeploymentConfigsProductionVectorizeBindingsToTerraform)(struct!.vectorizeBindings),
+    wrangler_config_hash: cdktn.stringToTerraform(struct!.wranglerConfigHash),
   }
 }
 
 
-export function pagesProjectDeploymentConfigsProductionToHclTerraform(struct?: PagesProjectDeploymentConfigsProduction | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsProductionToHclTerraform(struct?: PagesProjectDeploymentConfigsProduction | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ai_bindings: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionAiBindingsToHclTerraform)(struct!.aiBindings),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionAiBindingsToHclTerraform)(struct!.aiBindings),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionAiBindingsMap",
     },
     always_use_latest_compatibility_date: {
-      value: cdktf.booleanToHclTerraform(struct!.alwaysUseLatestCompatibilityDate),
+      value: cdktn.booleanToHclTerraform(struct!.alwaysUseLatestCompatibilityDate),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     analytics_engine_datasets: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToHclTerraform)(struct!.analyticsEngineDatasets),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToHclTerraform)(struct!.analyticsEngineDatasets),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsMap",
     },
     browsers: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionBrowsersToHclTerraform)(struct!.browsers),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionBrowsersToHclTerraform)(struct!.browsers),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionBrowsersMap",
     },
     build_image_major_version: {
-      value: cdktf.numberToHclTerraform(struct!.buildImageMajorVersion),
+      value: cdktn.numberToHclTerraform(struct!.buildImageMajorVersion),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     compatibility_date: {
-      value: cdktf.stringToHclTerraform(struct!.compatibilityDate),
+      value: cdktn.stringToHclTerraform(struct!.compatibilityDate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     compatibility_flags: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.compatibilityFlags),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.compatibilityFlags),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     d1_databases: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionD1DatabasesToHclTerraform)(struct!.d1Databases),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionD1DatabasesToHclTerraform)(struct!.d1Databases),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionD1DatabasesMap",
     },
     durable_object_namespaces: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToHclTerraform)(struct!.durableObjectNamespaces),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionDurableObjectNamespacesToHclTerraform)(struct!.durableObjectNamespaces),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionDurableObjectNamespacesMap",
     },
     env_vars: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionEnvVarsToHclTerraform)(struct!.envVars),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionEnvVarsToHclTerraform)(struct!.envVars),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionEnvVarsMap",
     },
     fail_open: {
-      value: cdktf.booleanToHclTerraform(struct!.failOpen),
+      value: cdktn.booleanToHclTerraform(struct!.failOpen),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hyperdrive_bindings: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionHyperdriveBindingsToHclTerraform)(struct!.hyperdriveBindings),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionHyperdriveBindingsToHclTerraform)(struct!.hyperdriveBindings),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionHyperdriveBindingsMap",
     },
     kv_namespaces: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionKvNamespacesToHclTerraform)(struct!.kvNamespaces),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionKvNamespacesToHclTerraform)(struct!.kvNamespaces),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionKvNamespacesMap",
@@ -5688,7 +5688,7 @@ export function pagesProjectDeploymentConfigsProductionToHclTerraform(struct?: P
       storageClassType: "PagesProjectDeploymentConfigsProductionLimits",
     },
     mtls_certificates: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionMtlsCertificatesToHclTerraform)(struct!.mtlsCertificates),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionMtlsCertificatesToHclTerraform)(struct!.mtlsCertificates),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionMtlsCertificatesMap",
@@ -5700,37 +5700,37 @@ export function pagesProjectDeploymentConfigsProductionToHclTerraform(struct?: P
       storageClassType: "PagesProjectDeploymentConfigsProductionPlacement",
     },
     queue_producers: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionQueueProducersToHclTerraform)(struct!.queueProducers),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionQueueProducersToHclTerraform)(struct!.queueProducers),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionQueueProducersMap",
     },
     r2_buckets: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionR2BucketsToHclTerraform)(struct!.r2Buckets),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionR2BucketsToHclTerraform)(struct!.r2Buckets),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionR2BucketsMap",
     },
     services: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionServicesToHclTerraform)(struct!.services),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionServicesToHclTerraform)(struct!.services),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionServicesMap",
     },
     usage_model: {
-      value: cdktf.stringToHclTerraform(struct!.usageModel),
+      value: cdktn.stringToHclTerraform(struct!.usageModel),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     vectorize_bindings: {
-      value: cdktf.hashMapperHcl(pagesProjectDeploymentConfigsProductionVectorizeBindingsToHclTerraform)(struct!.vectorizeBindings),
+      value: cdktn.hashMapperHcl(pagesProjectDeploymentConfigsProductionVectorizeBindingsToHclTerraform)(struct!.vectorizeBindings),
       isBlock: true,
       type: "map",
       storageClassType: "PagesProjectDeploymentConfigsProductionVectorizeBindingsMap",
     },
     wrangler_config_hash: {
-      value: cdktf.stringToHclTerraform(struct!.wranglerConfigHash),
+      value: cdktn.stringToHclTerraform(struct!.wranglerConfigHash),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5741,19 +5741,19 @@ export function pagesProjectDeploymentConfigsProductionToHclTerraform(struct?: P
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsProductionOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsProductionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigsProduction | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigsProduction | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5850,7 +5850,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigsProduction | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigsProduction | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5877,7 +5877,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
       this._vectorizeBindings.internalValue = undefined;
       this._wranglerConfigHash = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5914,7 +5914,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get aiBindings() {
     return this._aiBindings;
   }
-  public putAiBindings(value: { [key: string]: PagesProjectDeploymentConfigsProductionAiBindings } | cdktf.IResolvable) {
+  public putAiBindings(value: { [key: string]: PagesProjectDeploymentConfigsProductionAiBindings } | cdktn.IResolvable) {
     this._aiBindings.internalValue = value;
   }
   public resetAiBindings() {
@@ -5926,11 +5926,11 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   }
 
   // always_use_latest_compatibility_date - computed: true, optional: true, required: false
-  private _alwaysUseLatestCompatibilityDate?: boolean | cdktf.IResolvable; 
+  private _alwaysUseLatestCompatibilityDate?: boolean | cdktn.IResolvable; 
   public get alwaysUseLatestCompatibilityDate() {
     return this.getBooleanAttribute('always_use_latest_compatibility_date');
   }
-  public set alwaysUseLatestCompatibilityDate(value: boolean | cdktf.IResolvable) {
+  public set alwaysUseLatestCompatibilityDate(value: boolean | cdktn.IResolvable) {
     this._alwaysUseLatestCompatibilityDate = value;
   }
   public resetAlwaysUseLatestCompatibilityDate() {
@@ -5946,7 +5946,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get analyticsEngineDatasets() {
     return this._analyticsEngineDatasets;
   }
-  public putAnalyticsEngineDatasets(value: { [key: string]: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets } | cdktf.IResolvable) {
+  public putAnalyticsEngineDatasets(value: { [key: string]: PagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets } | cdktn.IResolvable) {
     this._analyticsEngineDatasets.internalValue = value;
   }
   public resetAnalyticsEngineDatasets() {
@@ -5962,7 +5962,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get browsers() {
     return this._browsers;
   }
-  public putBrowsers(value: { [key: string]: PagesProjectDeploymentConfigsProductionBrowsers } | cdktf.IResolvable) {
+  public putBrowsers(value: { [key: string]: PagesProjectDeploymentConfigsProductionBrowsers } | cdktn.IResolvable) {
     this._browsers.internalValue = value;
   }
   public resetBrowsers() {
@@ -6026,7 +6026,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get d1Databases() {
     return this._d1Databases;
   }
-  public putD1Databases(value: { [key: string]: PagesProjectDeploymentConfigsProductionD1Databases } | cdktf.IResolvable) {
+  public putD1Databases(value: { [key: string]: PagesProjectDeploymentConfigsProductionD1Databases } | cdktn.IResolvable) {
     this._d1Databases.internalValue = value;
   }
   public resetD1Databases() {
@@ -6042,7 +6042,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get durableObjectNamespaces() {
     return this._durableObjectNamespaces;
   }
-  public putDurableObjectNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces } | cdktf.IResolvable) {
+  public putDurableObjectNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsProductionDurableObjectNamespaces } | cdktn.IResolvable) {
     this._durableObjectNamespaces.internalValue = value;
   }
   public resetDurableObjectNamespaces() {
@@ -6058,7 +6058,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get envVars() {
     return this._envVars;
   }
-  public putEnvVars(value: { [key: string]: PagesProjectDeploymentConfigsProductionEnvVars } | cdktf.IResolvable) {
+  public putEnvVars(value: { [key: string]: PagesProjectDeploymentConfigsProductionEnvVars } | cdktn.IResolvable) {
     this._envVars.internalValue = value;
   }
   public resetEnvVars() {
@@ -6070,11 +6070,11 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   }
 
   // fail_open - computed: true, optional: true, required: false
-  private _failOpen?: boolean | cdktf.IResolvable; 
+  private _failOpen?: boolean | cdktn.IResolvable; 
   public get failOpen() {
     return this.getBooleanAttribute('fail_open');
   }
-  public set failOpen(value: boolean | cdktf.IResolvable) {
+  public set failOpen(value: boolean | cdktn.IResolvable) {
     this._failOpen = value;
   }
   public resetFailOpen() {
@@ -6090,7 +6090,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get hyperdriveBindings() {
     return this._hyperdriveBindings;
   }
-  public putHyperdriveBindings(value: { [key: string]: PagesProjectDeploymentConfigsProductionHyperdriveBindings } | cdktf.IResolvable) {
+  public putHyperdriveBindings(value: { [key: string]: PagesProjectDeploymentConfigsProductionHyperdriveBindings } | cdktn.IResolvable) {
     this._hyperdriveBindings.internalValue = value;
   }
   public resetHyperdriveBindings() {
@@ -6106,7 +6106,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get kvNamespaces() {
     return this._kvNamespaces;
   }
-  public putKvNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsProductionKvNamespaces } | cdktf.IResolvable) {
+  public putKvNamespaces(value: { [key: string]: PagesProjectDeploymentConfigsProductionKvNamespaces } | cdktn.IResolvable) {
     this._kvNamespaces.internalValue = value;
   }
   public resetKvNamespaces() {
@@ -6138,7 +6138,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get mtlsCertificates() {
     return this._mtlsCertificates;
   }
-  public putMtlsCertificates(value: { [key: string]: PagesProjectDeploymentConfigsProductionMtlsCertificates } | cdktf.IResolvable) {
+  public putMtlsCertificates(value: { [key: string]: PagesProjectDeploymentConfigsProductionMtlsCertificates } | cdktn.IResolvable) {
     this._mtlsCertificates.internalValue = value;
   }
   public resetMtlsCertificates() {
@@ -6170,7 +6170,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get queueProducers() {
     return this._queueProducers;
   }
-  public putQueueProducers(value: { [key: string]: PagesProjectDeploymentConfigsProductionQueueProducers } | cdktf.IResolvable) {
+  public putQueueProducers(value: { [key: string]: PagesProjectDeploymentConfigsProductionQueueProducers } | cdktn.IResolvable) {
     this._queueProducers.internalValue = value;
   }
   public resetQueueProducers() {
@@ -6186,7 +6186,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get r2Buckets() {
     return this._r2Buckets;
   }
-  public putR2Buckets(value: { [key: string]: PagesProjectDeploymentConfigsProductionR2Buckets } | cdktf.IResolvable) {
+  public putR2Buckets(value: { [key: string]: PagesProjectDeploymentConfigsProductionR2Buckets } | cdktn.IResolvable) {
     this._r2Buckets.internalValue = value;
   }
   public resetR2Buckets() {
@@ -6202,7 +6202,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get services() {
     return this._services;
   }
-  public putServices(value: { [key: string]: PagesProjectDeploymentConfigsProductionServices } | cdktf.IResolvable) {
+  public putServices(value: { [key: string]: PagesProjectDeploymentConfigsProductionServices } | cdktn.IResolvable) {
     this._services.internalValue = value;
   }
   public resetServices() {
@@ -6234,7 +6234,7 @@ export class PagesProjectDeploymentConfigsProductionOutputReference extends cdkt
   public get vectorizeBindings() {
     return this._vectorizeBindings;
   }
-  public putVectorizeBindings(value: { [key: string]: PagesProjectDeploymentConfigsProductionVectorizeBindings } | cdktf.IResolvable) {
+  public putVectorizeBindings(value: { [key: string]: PagesProjectDeploymentConfigsProductionVectorizeBindings } | cdktn.IResolvable) {
     this._vectorizeBindings.internalValue = value;
   }
   public resetVectorizeBindings() {
@@ -6265,20 +6265,20 @@ export interface PagesProjectDeploymentConfigs {
   /**
   * Configs for preview deploys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#preview PagesProject#preview}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#preview PagesProject#preview}
   */
   readonly preview?: PagesProjectDeploymentConfigsPreview;
   /**
   * Configs for production deploys.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#production PagesProject#production}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#production PagesProject#production}
   */
   readonly production?: PagesProjectDeploymentConfigsProduction;
 }
 
-export function pagesProjectDeploymentConfigsToTerraform(struct?: PagesProjectDeploymentConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsToTerraform(struct?: PagesProjectDeploymentConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6288,9 +6288,9 @@ export function pagesProjectDeploymentConfigsToTerraform(struct?: PagesProjectDe
 }
 
 
-export function pagesProjectDeploymentConfigsToHclTerraform(struct?: PagesProjectDeploymentConfigs | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectDeploymentConfigsToHclTerraform(struct?: PagesProjectDeploymentConfigs | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6312,19 +6312,19 @@ export function pagesProjectDeploymentConfigsToHclTerraform(struct?: PagesProjec
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectDeploymentConfigsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectDeploymentConfigs | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectDeploymentConfigs | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6341,14 +6341,14 @@ export class PagesProjectDeploymentConfigsOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectDeploymentConfigs | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectDeploymentConfigs | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._preview.internalValue = undefined;
       this._production.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6396,8 +6396,8 @@ export interface PagesProjectLatestDeploymentBuildConfig {
 }
 
 export function pagesProjectLatestDeploymentBuildConfigToTerraform(struct?: PagesProjectLatestDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6406,8 +6406,8 @@ export function pagesProjectLatestDeploymentBuildConfigToTerraform(struct?: Page
 
 
 export function pagesProjectLatestDeploymentBuildConfigToHclTerraform(struct?: PagesProjectLatestDeploymentBuildConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6415,14 +6415,14 @@ export function pagesProjectLatestDeploymentBuildConfigToHclTerraform(struct?: P
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentBuildConfigOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentBuildConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -6475,8 +6475,8 @@ export interface PagesProjectLatestDeploymentDeploymentTriggerMetadata {
 }
 
 export function pagesProjectLatestDeploymentDeploymentTriggerMetadataToTerraform(struct?: PagesProjectLatestDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6485,8 +6485,8 @@ export function pagesProjectLatestDeploymentDeploymentTriggerMetadataToTerraform
 
 
 export function pagesProjectLatestDeploymentDeploymentTriggerMetadataToHclTerraform(struct?: PagesProjectLatestDeploymentDeploymentTriggerMetadata): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6494,14 +6494,14 @@ export function pagesProjectLatestDeploymentDeploymentTriggerMetadataToHclTerraf
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentDeploymentTriggerMetadataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -6544,8 +6544,8 @@ export interface PagesProjectLatestDeploymentDeploymentTrigger {
 }
 
 export function pagesProjectLatestDeploymentDeploymentTriggerToTerraform(struct?: PagesProjectLatestDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6554,8 +6554,8 @@ export function pagesProjectLatestDeploymentDeploymentTriggerToTerraform(struct?
 
 
 export function pagesProjectLatestDeploymentDeploymentTriggerToHclTerraform(struct?: PagesProjectLatestDeploymentDeploymentTrigger): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6563,14 +6563,14 @@ export function pagesProjectLatestDeploymentDeploymentTriggerToHclTerraform(stru
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentDeploymentTriggerOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentDeploymentTriggerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -6604,8 +6604,8 @@ export interface PagesProjectLatestDeploymentEnvVars {
 }
 
 export function pagesProjectLatestDeploymentEnvVarsToTerraform(struct?: PagesProjectLatestDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6614,8 +6614,8 @@ export function pagesProjectLatestDeploymentEnvVarsToTerraform(struct?: PagesPro
 
 
 export function pagesProjectLatestDeploymentEnvVarsToHclTerraform(struct?: PagesProjectLatestDeploymentEnvVars): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6623,7 +6623,7 @@ export function pagesProjectLatestDeploymentEnvVarsToHclTerraform(struct?: Pages
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentEnvVarsOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentEnvVarsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6631,7 +6631,7 @@ export class PagesProjectLatestDeploymentEnvVarsOutputReference extends cdktf.Co
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param complexObjectKey the key of this item in the map
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectKey: string) {
     super(terraformResource, terraformAttribute, false, complexObjectKey);
   }
 
@@ -6661,13 +6661,13 @@ export class PagesProjectLatestDeploymentEnvVarsOutputReference extends cdktf.Co
   }
 }
 
-export class PagesProjectLatestDeploymentEnvVarsMap extends cdktf.ComplexMap {
+export class PagesProjectLatestDeploymentEnvVarsMap extends cdktn.ComplexMap {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -6682,8 +6682,8 @@ export interface PagesProjectLatestDeploymentLatestStage {
 }
 
 export function pagesProjectLatestDeploymentLatestStageToTerraform(struct?: PagesProjectLatestDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6692,8 +6692,8 @@ export function pagesProjectLatestDeploymentLatestStageToTerraform(struct?: Page
 
 
 export function pagesProjectLatestDeploymentLatestStageToHclTerraform(struct?: PagesProjectLatestDeploymentLatestStage): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6701,14 +6701,14 @@ export function pagesProjectLatestDeploymentLatestStageToHclTerraform(struct?: P
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentLatestStageOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentLatestStageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -6751,8 +6751,8 @@ export interface PagesProjectLatestDeploymentSourceConfig {
 }
 
 export function pagesProjectLatestDeploymentSourceConfigToTerraform(struct?: PagesProjectLatestDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6761,8 +6761,8 @@ export function pagesProjectLatestDeploymentSourceConfigToTerraform(struct?: Pag
 
 
 export function pagesProjectLatestDeploymentSourceConfigToHclTerraform(struct?: PagesProjectLatestDeploymentSourceConfig): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6770,14 +6770,14 @@ export function pagesProjectLatestDeploymentSourceConfigToHclTerraform(struct?: 
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentSourceConfigOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentSourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -6865,8 +6865,8 @@ export interface PagesProjectLatestDeploymentSource {
 }
 
 export function pagesProjectLatestDeploymentSourceToTerraform(struct?: PagesProjectLatestDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6875,8 +6875,8 @@ export function pagesProjectLatestDeploymentSourceToTerraform(struct?: PagesProj
 
 
 export function pagesProjectLatestDeploymentSourceToHclTerraform(struct?: PagesProjectLatestDeploymentSource): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6884,14 +6884,14 @@ export function pagesProjectLatestDeploymentSourceToHclTerraform(struct?: PagesP
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentSourceOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -6925,8 +6925,8 @@ export interface PagesProjectLatestDeploymentStages {
 }
 
 export function pagesProjectLatestDeploymentStagesToTerraform(struct?: PagesProjectLatestDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6935,8 +6935,8 @@ export function pagesProjectLatestDeploymentStagesToTerraform(struct?: PagesProj
 
 
 export function pagesProjectLatestDeploymentStagesToHclTerraform(struct?: PagesProjectLatestDeploymentStages): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6944,7 +6944,7 @@ export function pagesProjectLatestDeploymentStagesToHclTerraform(struct?: PagesP
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentStagesOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentStagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -6953,7 +6953,7 @@ export class PagesProjectLatestDeploymentStagesOutputReference extends cdktf.Com
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -6993,14 +6993,14 @@ export class PagesProjectLatestDeploymentStagesOutputReference extends cdktf.Com
   }
 }
 
-export class PagesProjectLatestDeploymentStagesList extends cdktf.ComplexList {
+export class PagesProjectLatestDeploymentStagesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -7015,8 +7015,8 @@ export interface PagesProjectLatestDeployment {
 }
 
 export function pagesProjectLatestDeploymentToTerraform(struct?: PagesProjectLatestDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7025,8 +7025,8 @@ export function pagesProjectLatestDeploymentToTerraform(struct?: PagesProjectLat
 
 
 export function pagesProjectLatestDeploymentToHclTerraform(struct?: PagesProjectLatestDeployment): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7034,14 +7034,14 @@ export function pagesProjectLatestDeploymentToHclTerraform(struct?: PagesProject
   return attrs;
 }
 
-export class PagesProjectLatestDeploymentOutputReference extends cdktf.ComplexObject {
+export class PagesProjectLatestDeploymentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -7156,187 +7156,187 @@ export interface PagesProjectSourceConfig {
   * Whether to enable automatic deployments when pushing to the source repository.
   * When disabled, no deployments (production or preview) will be triggered automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#deployments_enabled PagesProject#deployments_enabled}
   */
-  readonly deploymentsEnabled?: boolean | cdktf.IResolvable;
+  readonly deploymentsEnabled?: boolean | cdktn.IResolvable;
   /**
   * The owner of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#owner PagesProject#owner}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#owner PagesProject#owner}
   */
   readonly owner?: string;
   /**
   * The owner ID of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#owner_id PagesProject#owner_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#owner_id PagesProject#owner_id}
   */
   readonly ownerId?: string;
   /**
   * A list of paths that should be excluded from triggering a preview deployment. Wildcard syntax (`*`) is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#path_excludes PagesProject#path_excludes}
   */
   readonly pathExcludes?: string[];
   /**
   * A list of paths that should be watched to trigger a preview deployment. Wildcard syntax (`*`) is supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#path_includes PagesProject#path_includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#path_includes PagesProject#path_includes}
   */
   readonly pathIncludes?: string[];
   /**
   * Whether to enable PR comments.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#pr_comments_enabled PagesProject#pr_comments_enabled}
   */
-  readonly prCommentsEnabled?: boolean | cdktf.IResolvable;
+  readonly prCommentsEnabled?: boolean | cdktn.IResolvable;
   /**
   * A list of branches that should not trigger a preview deployment. Wildcard syntax (`*`) is supported. Must be used with `preview_deployment_setting` set to `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#preview_branch_excludes PagesProject#preview_branch_excludes}
   */
   readonly previewBranchExcludes?: string[];
   /**
   * A list of branches that should trigger a preview deployment. Wildcard syntax (`*`) is supported. Must be used with `preview_deployment_setting` set to `custom`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#preview_branch_includes PagesProject#preview_branch_includes}
   */
   readonly previewBranchIncludes?: string[];
   /**
   * Controls whether commits to preview branches trigger a preview deployment.
   * Available values: "all", "none", "custom".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#preview_deployment_setting PagesProject#preview_deployment_setting}
   */
   readonly previewDeploymentSetting?: string;
   /**
   * The production branch of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#production_branch PagesProject#production_branch}
   */
   readonly productionBranch?: string;
   /**
   * Whether to trigger a production deployment on commits to the production branch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#production_deployments_enabled PagesProject#production_deployments_enabled}
   */
-  readonly productionDeploymentsEnabled?: boolean | cdktf.IResolvable;
+  readonly productionDeploymentsEnabled?: boolean | cdktn.IResolvable;
   /**
   * The ID of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#repo_id PagesProject#repo_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#repo_id PagesProject#repo_id}
   */
   readonly repoId?: string;
   /**
   * The name of the repository.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#repo_name PagesProject#repo_name}
   */
   readonly repoName?: string;
 }
 
-export function pagesProjectSourceConfigToTerraform(struct?: PagesProjectSourceConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectSourceConfigToTerraform(struct?: PagesProjectSourceConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    deployments_enabled: cdktf.booleanToTerraform(struct!.deploymentsEnabled),
-    owner: cdktf.stringToTerraform(struct!.owner),
-    owner_id: cdktf.stringToTerraform(struct!.ownerId),
-    path_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pathExcludes),
-    path_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.pathIncludes),
-    pr_comments_enabled: cdktf.booleanToTerraform(struct!.prCommentsEnabled),
-    preview_branch_excludes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.previewBranchExcludes),
-    preview_branch_includes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.previewBranchIncludes),
-    preview_deployment_setting: cdktf.stringToTerraform(struct!.previewDeploymentSetting),
-    production_branch: cdktf.stringToTerraform(struct!.productionBranch),
-    production_deployments_enabled: cdktf.booleanToTerraform(struct!.productionDeploymentsEnabled),
-    repo_id: cdktf.stringToTerraform(struct!.repoId),
-    repo_name: cdktf.stringToTerraform(struct!.repoName),
+    deployments_enabled: cdktn.booleanToTerraform(struct!.deploymentsEnabled),
+    owner: cdktn.stringToTerraform(struct!.owner),
+    owner_id: cdktn.stringToTerraform(struct!.ownerId),
+    path_excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pathExcludes),
+    path_includes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.pathIncludes),
+    pr_comments_enabled: cdktn.booleanToTerraform(struct!.prCommentsEnabled),
+    preview_branch_excludes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.previewBranchExcludes),
+    preview_branch_includes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.previewBranchIncludes),
+    preview_deployment_setting: cdktn.stringToTerraform(struct!.previewDeploymentSetting),
+    production_branch: cdktn.stringToTerraform(struct!.productionBranch),
+    production_deployments_enabled: cdktn.booleanToTerraform(struct!.productionDeploymentsEnabled),
+    repo_id: cdktn.stringToTerraform(struct!.repoId),
+    repo_name: cdktn.stringToTerraform(struct!.repoName),
   }
 }
 
 
-export function pagesProjectSourceConfigToHclTerraform(struct?: PagesProjectSourceConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectSourceConfigToHclTerraform(struct?: PagesProjectSourceConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     deployments_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.deploymentsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.deploymentsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     owner: {
-      value: cdktf.stringToHclTerraform(struct!.owner),
+      value: cdktn.stringToHclTerraform(struct!.owner),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     owner_id: {
-      value: cdktf.stringToHclTerraform(struct!.ownerId),
+      value: cdktn.stringToHclTerraform(struct!.ownerId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path_excludes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pathExcludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pathExcludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     path_includes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.pathIncludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.pathIncludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     pr_comments_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.prCommentsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.prCommentsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     preview_branch_excludes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.previewBranchExcludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.previewBranchExcludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     preview_branch_includes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.previewBranchIncludes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.previewBranchIncludes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     preview_deployment_setting: {
-      value: cdktf.stringToHclTerraform(struct!.previewDeploymentSetting),
+      value: cdktn.stringToHclTerraform(struct!.previewDeploymentSetting),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     production_branch: {
-      value: cdktf.stringToHclTerraform(struct!.productionBranch),
+      value: cdktn.stringToHclTerraform(struct!.productionBranch),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     production_deployments_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.productionDeploymentsEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.productionDeploymentsEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     repo_id: {
-      value: cdktf.stringToHclTerraform(struct!.repoId),
+      value: cdktn.stringToHclTerraform(struct!.repoId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     repo_name: {
-      value: cdktf.stringToHclTerraform(struct!.repoName),
+      value: cdktn.stringToHclTerraform(struct!.repoName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7347,19 +7347,19 @@ export function pagesProjectSourceConfigToHclTerraform(struct?: PagesProjectSour
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject {
+export class PagesProjectSourceConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectSourceConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectSourceConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7420,7 +7420,7 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectSourceConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectSourceConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7438,7 +7438,7 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
       this._repoId = undefined;
       this._repoName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7462,11 +7462,11 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
   }
 
   // deployments_enabled - computed: true, optional: true, required: false
-  private _deploymentsEnabled?: boolean | cdktf.IResolvable; 
+  private _deploymentsEnabled?: boolean | cdktn.IResolvable; 
   public get deploymentsEnabled() {
     return this.getBooleanAttribute('deployments_enabled');
   }
-  public set deploymentsEnabled(value: boolean | cdktf.IResolvable) {
+  public set deploymentsEnabled(value: boolean | cdktn.IResolvable) {
     this._deploymentsEnabled = value;
   }
   public resetDeploymentsEnabled() {
@@ -7542,11 +7542,11 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
   }
 
   // pr_comments_enabled - computed: true, optional: true, required: false
-  private _prCommentsEnabled?: boolean | cdktf.IResolvable; 
+  private _prCommentsEnabled?: boolean | cdktn.IResolvable; 
   public get prCommentsEnabled() {
     return this.getBooleanAttribute('pr_comments_enabled');
   }
-  public set prCommentsEnabled(value: boolean | cdktf.IResolvable) {
+  public set prCommentsEnabled(value: boolean | cdktn.IResolvable) {
     this._prCommentsEnabled = value;
   }
   public resetPrCommentsEnabled() {
@@ -7622,11 +7622,11 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
   }
 
   // production_deployments_enabled - computed: true, optional: true, required: false
-  private _productionDeploymentsEnabled?: boolean | cdktf.IResolvable; 
+  private _productionDeploymentsEnabled?: boolean | cdktn.IResolvable; 
   public get productionDeploymentsEnabled() {
     return this.getBooleanAttribute('production_deployments_enabled');
   }
-  public set productionDeploymentsEnabled(value: boolean | cdktf.IResolvable) {
+  public set productionDeploymentsEnabled(value: boolean | cdktn.IResolvable) {
     this._productionDeploymentsEnabled = value;
   }
   public resetProductionDeploymentsEnabled() {
@@ -7671,33 +7671,33 @@ export class PagesProjectSourceConfigOutputReference extends cdktf.ComplexObject
 }
 export interface PagesProjectSource {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#config PagesProject#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#config PagesProject#config}
   */
   readonly config: PagesProjectSourceConfig;
   /**
   * The source control management provider.
   * Available values: "github", "gitlab".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#type PagesProject#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#type PagesProject#type}
   */
   readonly type: string;
 }
 
-export function pagesProjectSourceToTerraform(struct?: PagesProjectSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectSourceToTerraform(struct?: PagesProjectSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
     config: pagesProjectSourceConfigToTerraform(struct!.config),
-    type: cdktf.stringToTerraform(struct!.type),
+    type: cdktn.stringToTerraform(struct!.type),
   }
 }
 
 
-export function pagesProjectSourceToHclTerraform(struct?: PagesProjectSource | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function pagesProjectSourceToHclTerraform(struct?: PagesProjectSource | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7708,7 +7708,7 @@ export function pagesProjectSourceToHclTerraform(struct?: PagesProjectSource | c
       storageClassType: "PagesProjectSourceConfig",
     },
     type: {
-      value: cdktf.stringToHclTerraform(struct!.type),
+      value: cdktn.stringToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7719,19 +7719,19 @@ export function pagesProjectSourceToHclTerraform(struct?: PagesProjectSource | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class PagesProjectSourceOutputReference extends cdktf.ComplexObject {
+export class PagesProjectSourceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): PagesProjectSource | cdktf.IResolvable | undefined {
+  public get internalValue(): PagesProjectSource | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7748,14 +7748,14 @@ export class PagesProjectSourceOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: PagesProjectSource | cdktf.IResolvable | undefined) {
+  public set internalValue(value: PagesProjectSource | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._config.internalValue = undefined;
       this._type = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7795,9 +7795,9 @@ export class PagesProjectSourceOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project cloudflare_pages_project}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project}
 */
-export class PagesProject extends cdktf.TerraformResource {
+export class PagesProject extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -7808,14 +7808,14 @@ export class PagesProject extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a PagesProject resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a PagesProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PagesProject to import
-  * @param importFromId The id of the existing PagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PagesProject to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_pages_project", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_pages_project", importId: importFromId, provider });
       }
 
   // ===========
@@ -7823,7 +7823,7 @@ export class PagesProject extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/pages_project cloudflare_pages_project} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_project cloudflare_pages_project} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -7834,7 +7834,7 @@ export class PagesProject extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -7870,7 +7870,7 @@ export class PagesProject extends cdktf.TerraformResource {
     return this._accountId;
   }
 
-  // build_config - computed: false, optional: true, required: false
+  // build_config - computed: true, optional: true, required: false
   private _buildConfig = new PagesProjectBuildConfigOutputReference(this, "build_config");
   public get buildConfig() {
     return this._buildConfig;
@@ -8007,11 +8007,11 @@ export class PagesProject extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       build_config: pagesProjectBuildConfigToTerraform(this._buildConfig.internalValue),
       deployment_configs: pagesProjectDeploymentConfigsToTerraform(this._deploymentConfigs.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      production_branch: cdktf.stringToTerraform(this._productionBranch),
+      name: cdktn.stringToTerraform(this._name),
+      production_branch: cdktn.stringToTerraform(this._productionBranch),
       source: pagesProjectSourceToTerraform(this._source.internalValue),
     };
   }
@@ -8019,7 +8019,7 @@ export class PagesProject extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -8037,13 +8037,13 @@ export class PagesProject extends cdktf.TerraformResource {
         storageClassType: "PagesProjectDeploymentConfigs",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       production_branch: {
-        value: cdktf.stringToHclTerraform(this._productionBranch),
+        value: cdktn.stringToHclTerraform(this._productionBranch),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

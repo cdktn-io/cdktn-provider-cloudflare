@@ -1,60 +1,60 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WorkersCronTriggerConfig extends cdktf.TerraformMetaArguments {
+export interface WorkersCronTriggerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}
   */
-  readonly schedules: WorkersCronTriggerSchedules[] | cdktf.IResolvable;
+  readonly schedules: WorkersCronTriggerSchedules[] | cdktn.IResolvable;
   /**
   * Name of the script, used in URLs and route configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
   */
   readonly scriptName: string;
 }
 export interface WorkersCronTriggerSchedules {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}
   */
   readonly cron: string;
 }
 
-export function workersCronTriggerSchedulesToTerraform(struct?: WorkersCronTriggerSchedules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersCronTriggerSchedulesToTerraform(struct?: WorkersCronTriggerSchedules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cron: cdktf.stringToTerraform(struct!.cron),
+    cron: cdktn.stringToTerraform(struct!.cron),
   }
 }
 
 
-export function workersCronTriggerSchedulesToHclTerraform(struct?: WorkersCronTriggerSchedules | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function workersCronTriggerSchedulesToHclTerraform(struct?: WorkersCronTriggerSchedules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cron: {
-      value: cdktf.stringToHclTerraform(struct!.cron),
+      value: cdktn.stringToHclTerraform(struct!.cron),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -65,9 +65,9 @@ export function workersCronTriggerSchedulesToHclTerraform(struct?: WorkersCronTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WorkersCronTriggerSchedulesOutputReference extends cdktf.ComplexObject {
+export class WorkersCronTriggerSchedulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -75,11 +75,11 @@ export class WorkersCronTriggerSchedulesOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WorkersCronTriggerSchedules | cdktf.IResolvable | undefined {
+  public get internalValue(): WorkersCronTriggerSchedules | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -92,13 +92,13 @@ export class WorkersCronTriggerSchedulesOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WorkersCronTriggerSchedules | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WorkersCronTriggerSchedules | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._cron = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -133,15 +133,15 @@ export class WorkersCronTriggerSchedulesOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class WorkersCronTriggerSchedulesList extends cdktf.ComplexList {
-  public internalValue? : WorkersCronTriggerSchedules[] | cdktf.IResolvable
+export class WorkersCronTriggerSchedulesList extends cdktn.ComplexList {
+  public internalValue? : WorkersCronTriggerSchedules[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -154,9 +154,9 @@ export class WorkersCronTriggerSchedulesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}
 */
-export class WorkersCronTrigger extends cdktf.TerraformResource {
+export class WorkersCronTrigger extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -167,14 +167,14 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WorkersCronTrigger resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WorkersCronTrigger resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WorkersCronTrigger to import
-  * @param importFromId The id of the existing WorkersCronTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WorkersCronTrigger that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WorkersCronTrigger to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_cron_trigger", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_workers_cron_trigger", importId: importFromId, provider });
       }
 
   // ===========
@@ -182,7 +182,7 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -193,7 +193,7 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_workers_cron_trigger',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -236,7 +236,7 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
   public get schedules() {
     return this._schedules;
   }
-  public putSchedules(value: WorkersCronTriggerSchedules[] | cdktf.IResolvable) {
+  public putSchedules(value: WorkersCronTriggerSchedules[] | cdktn.IResolvable) {
     this._schedules.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -263,28 +263,28 @@ export class WorkersCronTrigger extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      schedules: cdktf.listMapper(workersCronTriggerSchedulesToTerraform, false)(this._schedules.internalValue),
-      script_name: cdktf.stringToTerraform(this._scriptName),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      schedules: cdktn.listMapper(workersCronTriggerSchedulesToTerraform, false)(this._schedules.internalValue),
+      script_name: cdktn.stringToTerraform(this._scriptName),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       schedules: {
-        value: cdktf.listMapperHcl(workersCronTriggerSchedulesToHclTerraform, false)(this._schedules.internalValue),
+        value: cdktn.listMapperHcl(workersCronTriggerSchedulesToHclTerraform, false)(this._schedules.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WorkersCronTriggerSchedulesList",
       },
       script_name: {
-        value: cdktf.stringToHclTerraform(this._scriptName),
+        value: cdktn.stringToHclTerraform(this._scriptName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

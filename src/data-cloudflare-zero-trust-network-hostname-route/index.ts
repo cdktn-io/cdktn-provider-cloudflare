@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareZeroTrustNetworkHostnameRouteConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareZeroTrustNetworkHostnameRouteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Cloudflare account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#account_id DataCloudflareZeroTrustNetworkHostnameRoute#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#account_id DataCloudflareZeroTrustNetworkHostnameRoute#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#filter DataCloudflareZeroTrustNetworkHostnameRoute#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#filter DataCloudflareZeroTrustNetworkHostnameRoute#filter}
   */
   readonly filter?: DataCloudflareZeroTrustNetworkHostnameRouteFilter;
   /**
   * The hostname route ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#hostname_route_id DataCloudflareZeroTrustNetworkHostnameRoute#hostname_route_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#hostname_route_id DataCloudflareZeroTrustNetworkHostnameRoute#hostname_route_id}
   */
   readonly hostnameRouteId?: string;
 }
@@ -33,25 +33,25 @@ export interface DataCloudflareZeroTrustNetworkHostnameRouteFilter {
   /**
   * If set, only list hostname routes with the given comment.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#comment DataCloudflareZeroTrustNetworkHostnameRoute#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#comment DataCloudflareZeroTrustNetworkHostnameRoute#comment}
   */
   readonly comment?: string;
   /**
   * If provided, include only resources that were created (and not deleted) before this time. URL encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#existed_at DataCloudflareZeroTrustNetworkHostnameRoute#existed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#existed_at DataCloudflareZeroTrustNetworkHostnameRoute#existed_at}
   */
   readonly existedAt?: string;
   /**
   * If set, only list hostname routes that contain a substring of the given value, the filter is case-insensitive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#hostname DataCloudflareZeroTrustNetworkHostnameRoute#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#hostname DataCloudflareZeroTrustNetworkHostnameRoute#hostname}
   */
   readonly hostname?: string;
   /**
   * The hostname route ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#id DataCloudflareZeroTrustNetworkHostnameRoute#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#id DataCloudflareZeroTrustNetworkHostnameRoute#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -60,71 +60,71 @@ export interface DataCloudflareZeroTrustNetworkHostnameRouteFilter {
   /**
   * If `true`, only return deleted hostname routes. If `false`, exclude deleted hostname routes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#is_deleted DataCloudflareZeroTrustNetworkHostnameRoute#is_deleted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#is_deleted DataCloudflareZeroTrustNetworkHostnameRoute#is_deleted}
   */
-  readonly isDeleted?: boolean | cdktf.IResolvable;
+  readonly isDeleted?: boolean | cdktn.IResolvable;
   /**
   * If set, only list hostname routes that point to a specific tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#tunnel_id DataCloudflareZeroTrustNetworkHostnameRoute#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#tunnel_id DataCloudflareZeroTrustNetworkHostnameRoute#tunnel_id}
   */
   readonly tunnelId?: string;
 }
 
-export function dataCloudflareZeroTrustNetworkHostnameRouteFilterToTerraform(struct?: DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareZeroTrustNetworkHostnameRouteFilterToTerraform(struct?: DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    comment: cdktf.stringToTerraform(struct!.comment),
-    existed_at: cdktf.stringToTerraform(struct!.existedAt),
-    hostname: cdktf.stringToTerraform(struct!.hostname),
-    id: cdktf.stringToTerraform(struct!.id),
-    is_deleted: cdktf.booleanToTerraform(struct!.isDeleted),
-    tunnel_id: cdktf.stringToTerraform(struct!.tunnelId),
+    comment: cdktn.stringToTerraform(struct!.comment),
+    existed_at: cdktn.stringToTerraform(struct!.existedAt),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
+    id: cdktn.stringToTerraform(struct!.id),
+    is_deleted: cdktn.booleanToTerraform(struct!.isDeleted),
+    tunnel_id: cdktn.stringToTerraform(struct!.tunnelId),
   }
 }
 
 
-export function dataCloudflareZeroTrustNetworkHostnameRouteFilterToHclTerraform(struct?: DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareZeroTrustNetworkHostnameRouteFilterToHclTerraform(struct?: DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     comment: {
-      value: cdktf.stringToHclTerraform(struct!.comment),
+      value: cdktn.stringToHclTerraform(struct!.comment),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     existed_at: {
-      value: cdktf.stringToHclTerraform(struct!.existedAt),
+      value: cdktn.stringToHclTerraform(struct!.existedAt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     is_deleted: {
-      value: cdktf.booleanToHclTerraform(struct!.isDeleted),
+      value: cdktn.booleanToHclTerraform(struct!.isDeleted),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     tunnel_id: {
-      value: cdktf.stringToHclTerraform(struct!.tunnelId),
+      value: cdktn.stringToHclTerraform(struct!.tunnelId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -135,19 +135,19 @@ export function dataCloudflareZeroTrustNetworkHostnameRouteFilterToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareZeroTrustNetworkHostnameRouteFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustNetworkHostnameRouteFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -180,7 +180,7 @@ export class DataCloudflareZeroTrustNetworkHostnameRouteFilterOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareZeroTrustNetworkHostnameRouteFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -191,7 +191,7 @@ export class DataCloudflareZeroTrustNetworkHostnameRouteFilterOutputReference ex
       this._isDeleted = undefined;
       this._tunnelId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -272,11 +272,11 @@ export class DataCloudflareZeroTrustNetworkHostnameRouteFilterOutputReference ex
   }
 
   // is_deleted - computed: true, optional: true, required: false
-  private _isDeleted?: boolean | cdktf.IResolvable; 
+  private _isDeleted?: boolean | cdktn.IResolvable; 
   public get isDeleted() {
     return this.getBooleanAttribute('is_deleted');
   }
-  public set isDeleted(value: boolean | cdktf.IResolvable) {
+  public set isDeleted(value: boolean | cdktn.IResolvable) {
     this._isDeleted = value;
   }
   public resetIsDeleted() {
@@ -305,9 +305,9 @@ export class DataCloudflareZeroTrustNetworkHostnameRouteFilterOutputReference ex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}
 */
-export class DataCloudflareZeroTrustNetworkHostnameRoute extends cdktf.TerraformDataSource {
+export class DataCloudflareZeroTrustNetworkHostnameRoute extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -318,14 +318,14 @@ export class DataCloudflareZeroTrustNetworkHostnameRoute extends cdktf.Terraform
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareZeroTrustNetworkHostnameRoute resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareZeroTrustNetworkHostnameRoute resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustNetworkHostnameRoute to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustNetworkHostnameRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustNetworkHostnameRoute that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustNetworkHostnameRoute to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_network_hostname_route", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_network_hostname_route", importId: importFromId, provider });
       }
 
   // ===========
@@ -333,7 +333,7 @@ export class DataCloudflareZeroTrustNetworkHostnameRoute extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -344,7 +344,7 @@ export class DataCloudflareZeroTrustNetworkHostnameRoute extends cdktf.Terraform
       terraformResourceType: 'cloudflare_zero_trust_network_hostname_route',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -450,16 +450,16 @@ export class DataCloudflareZeroTrustNetworkHostnameRoute extends cdktf.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       filter: dataCloudflareZeroTrustNetworkHostnameRouteFilterToTerraform(this._filter.internalValue),
-      hostname_route_id: cdktf.stringToTerraform(this._hostnameRouteId),
+      hostname_route_id: cdktn.stringToTerraform(this._hostnameRouteId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -471,7 +471,7 @@ export class DataCloudflareZeroTrustNetworkHostnameRoute extends cdktf.Terraform
         storageClassType: "DataCloudflareZeroTrustNetworkHostnameRouteFilter",
       },
       hostname_route_id: {
-        value: cdktf.stringToHclTerraform(this._hostnameRouteId),
+        value: cdktn.stringToHclTerraform(this._hostnameRouteId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

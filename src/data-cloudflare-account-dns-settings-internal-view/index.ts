@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareAccountDnsSettingsInternalViewConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareAccountDnsSettingsInternalViewConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#account_id DataCloudflareAccountDnsSettingsInternalView#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#account_id DataCloudflareAccountDnsSettingsInternalView#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#filter DataCloudflareAccountDnsSettingsInternalView#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#filter DataCloudflareAccountDnsSettingsInternalView#filter}
   */
   readonly filter?: DataCloudflareAccountDnsSettingsInternalViewFilter;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#view_id DataCloudflareAccountDnsSettingsInternalView#view_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#view_id DataCloudflareAccountDnsSettingsInternalView#view_id}
   */
   readonly viewId?: string;
 }
@@ -33,69 +33,69 @@ export interface DataCloudflareAccountDnsSettingsInternalViewFilterName {
   /**
   * Substring of the DNS view name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#contains DataCloudflareAccountDnsSettingsInternalView#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#contains DataCloudflareAccountDnsSettingsInternalView#contains}
   */
   readonly contains?: string;
   /**
   * Suffix of the DNS view name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#endswith DataCloudflareAccountDnsSettingsInternalView#endswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#endswith DataCloudflareAccountDnsSettingsInternalView#endswith}
   */
   readonly endswith?: string;
   /**
   * Exact value of the DNS view name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#exact DataCloudflareAccountDnsSettingsInternalView#exact}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#exact DataCloudflareAccountDnsSettingsInternalView#exact}
   */
   readonly exact?: string;
   /**
   * Prefix of the DNS view name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#startswith DataCloudflareAccountDnsSettingsInternalView#startswith}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#startswith DataCloudflareAccountDnsSettingsInternalView#startswith}
   */
   readonly startswith?: string;
 }
 
-export function dataCloudflareAccountDnsSettingsInternalViewFilterNameToTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccountDnsSettingsInternalViewFilterNameToTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    contains: cdktf.stringToTerraform(struct!.contains),
-    endswith: cdktf.stringToTerraform(struct!.endswith),
-    exact: cdktf.stringToTerraform(struct!.exact),
-    startswith: cdktf.stringToTerraform(struct!.startswith),
+    contains: cdktn.stringToTerraform(struct!.contains),
+    endswith: cdktn.stringToTerraform(struct!.endswith),
+    exact: cdktn.stringToTerraform(struct!.exact),
+    startswith: cdktn.stringToTerraform(struct!.startswith),
   }
 }
 
 
-export function dataCloudflareAccountDnsSettingsInternalViewFilterNameToHclTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccountDnsSettingsInternalViewFilterNameToHclTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     contains: {
-      value: cdktf.stringToHclTerraform(struct!.contains),
+      value: cdktn.stringToHclTerraform(struct!.contains),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     endswith: {
-      value: cdktf.stringToHclTerraform(struct!.endswith),
+      value: cdktn.stringToHclTerraform(struct!.endswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     exact: {
-      value: cdktf.stringToHclTerraform(struct!.exact),
+      value: cdktn.stringToHclTerraform(struct!.exact),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     startswith: {
-      value: cdktf.stringToHclTerraform(struct!.startswith),
+      value: cdktn.stringToHclTerraform(struct!.startswith),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,19 +106,19 @@ export function dataCloudflareAccountDnsSettingsInternalViewFilterNameToHclTerra
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareAccountDnsSettingsInternalViewFilterNameOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountDnsSettingsInternalViewFilterNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -143,7 +143,7 @@ export class DataCloudflareAccountDnsSettingsInternalViewFilterNameOutputReferen
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareAccountDnsSettingsInternalViewFilterName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -152,7 +152,7 @@ export class DataCloudflareAccountDnsSettingsInternalViewFilterNameOutputReferen
       this._exact = undefined;
       this._startswith = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -235,71 +235,71 @@ export interface DataCloudflareAccountDnsSettingsInternalViewFilter {
   * Direction to order DNS views in.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#direction DataCloudflareAccountDnsSettingsInternalView#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#direction DataCloudflareAccountDnsSettingsInternalView#direction}
   */
   readonly direction?: string;
   /**
   * Whether to match all search requirements or at least one (any). If set to `all`, acts like a logical AND between filters. If set to `any`, acts like a logical OR instead.
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#match DataCloudflareAccountDnsSettingsInternalView#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#match DataCloudflareAccountDnsSettingsInternalView#match}
   */
   readonly match?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#name DataCloudflareAccountDnsSettingsInternalView#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#name DataCloudflareAccountDnsSettingsInternalView#name}
   */
   readonly name?: DataCloudflareAccountDnsSettingsInternalViewFilterName;
   /**
   * Field to order DNS views by.
   * Available values: "name", "created_on", "modified_on".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#order DataCloudflareAccountDnsSettingsInternalView#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#order DataCloudflareAccountDnsSettingsInternalView#order}
   */
   readonly order?: string;
   /**
   * A zone ID that exists in the zones list for the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#zone_id DataCloudflareAccountDnsSettingsInternalView#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#zone_id DataCloudflareAccountDnsSettingsInternalView#zone_id}
   */
   readonly zoneId?: string;
   /**
   * A zone name that exists in the zones list for the view.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#zone_name DataCloudflareAccountDnsSettingsInternalView#zone_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#zone_name DataCloudflareAccountDnsSettingsInternalView#zone_name}
   */
   readonly zoneName?: string;
 }
 
-export function dataCloudflareAccountDnsSettingsInternalViewFilterToTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccountDnsSettingsInternalViewFilterToTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    match: cdktf.stringToTerraform(struct!.match),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    match: cdktn.stringToTerraform(struct!.match),
     name: dataCloudflareAccountDnsSettingsInternalViewFilterNameToTerraform(struct!.name),
-    order: cdktf.stringToTerraform(struct!.order),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
-    zone_name: cdktf.stringToTerraform(struct!.zoneName),
+    order: cdktn.stringToTerraform(struct!.order),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
+    zone_name: cdktn.stringToTerraform(struct!.zoneName),
   }
 }
 
 
-export function dataCloudflareAccountDnsSettingsInternalViewFilterToHclTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareAccountDnsSettingsInternalViewFilterToHclTerraform(struct?: DataCloudflareAccountDnsSettingsInternalViewFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     match: {
-      value: cdktf.stringToHclTerraform(struct!.match),
+      value: cdktn.stringToHclTerraform(struct!.match),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -311,19 +311,19 @@ export function dataCloudflareAccountDnsSettingsInternalViewFilterToHclTerraform
       storageClassType: "DataCloudflareAccountDnsSettingsInternalViewFilterName",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     zone_name: {
-      value: cdktf.stringToHclTerraform(struct!.zoneName),
+      value: cdktn.stringToHclTerraform(struct!.zoneName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -334,19 +334,19 @@ export function dataCloudflareAccountDnsSettingsInternalViewFilterToHclTerraform
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareAccountDnsSettingsInternalViewFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareAccountDnsSettingsInternalViewFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -379,7 +379,7 @@ export class DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference e
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareAccountDnsSettingsInternalViewFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareAccountDnsSettingsInternalViewFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -390,7 +390,7 @@ export class DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference e
       this._zoneId = undefined;
       this._zoneName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -504,9 +504,9 @@ export class DataCloudflareAccountDnsSettingsInternalViewFilterOutputReference e
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}
 */
-export class DataCloudflareAccountDnsSettingsInternalView extends cdktf.TerraformDataSource {
+export class DataCloudflareAccountDnsSettingsInternalView extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -517,14 +517,14 @@ export class DataCloudflareAccountDnsSettingsInternalView extends cdktf.Terrafor
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareAccountDnsSettingsInternalView resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareAccountDnsSettingsInternalView resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccountDnsSettingsInternalView to import
-  * @param importFromId The id of the existing DataCloudflareAccountDnsSettingsInternalView that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccountDnsSettingsInternalView that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccountDnsSettingsInternalView to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_dns_settings_internal_view", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_dns_settings_internal_view", importId: importFromId, provider });
       }
 
   // ===========
@@ -532,7 +532,7 @@ export class DataCloudflareAccountDnsSettingsInternalView extends cdktf.Terrafor
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -543,7 +543,7 @@ export class DataCloudflareAccountDnsSettingsInternalView extends cdktf.Terrafor
       terraformResourceType: 'cloudflare_account_dns_settings_internal_view',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -630,7 +630,7 @@ export class DataCloudflareAccountDnsSettingsInternalView extends cdktf.Terrafor
 
   // zones - computed: true, optional: false, required: false
   public get zones() {
-    return cdktf.Fn.tolist(this.getListAttribute('zones'));
+    return cdktn.Fn.tolist(this.getListAttribute('zones'));
   }
 
   // =========
@@ -639,16 +639,16 @@ export class DataCloudflareAccountDnsSettingsInternalView extends cdktf.Terrafor
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       filter: dataCloudflareAccountDnsSettingsInternalViewFilterToTerraform(this._filter.internalValue),
-      view_id: cdktf.stringToTerraform(this._viewId),
+      view_id: cdktn.stringToTerraform(this._viewId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -660,7 +660,7 @@ export class DataCloudflareAccountDnsSettingsInternalView extends cdktf.Terrafor
         storageClassType: "DataCloudflareAccountDnsSettingsInternalViewFilter",
       },
       view_id: {
-        value: cdktf.stringToHclTerraform(this._viewId),
+        value: cdktn.stringToHclTerraform(this._viewId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

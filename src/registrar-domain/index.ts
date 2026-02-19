@@ -1,53 +1,53 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RegistrarDomainConfig extends cdktf.TerraformMetaArguments {
+export interface RegistrarDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
   */
   readonly accountId: string;
   /**
   * Auto-renew controls whether subscription is automatically renewed upon domain expiration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
   */
-  readonly autoRenew?: boolean | cdktf.IResolvable;
+  readonly autoRenew?: boolean | cdktn.IResolvable;
   /**
   * Domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
   */
   readonly domainName: string;
   /**
   * Shows whether a registrar lock is in place for a domain.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
   */
-  readonly locked?: boolean | cdktf.IResolvable;
+  readonly locked?: boolean | cdktn.IResolvable;
   /**
   * Privacy option controls redacting WHOIS information.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
   */
-  readonly privacy?: boolean | cdktf.IResolvable;
+  readonly privacy?: boolean | cdktn.IResolvable;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain cloudflare_registrar_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain cloudflare_registrar_domain}
 */
-export class RegistrarDomain extends cdktf.TerraformResource {
+export class RegistrarDomain extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -58,14 +58,14 @@ export class RegistrarDomain extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RegistrarDomain resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RegistrarDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegistrarDomain to import
-  * @param importFromId The id of the existing RegistrarDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegistrarDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegistrarDomain to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_registrar_domain", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_registrar_domain", importId: importFromId, provider });
       }
 
   // ===========
@@ -73,7 +73,7 @@ export class RegistrarDomain extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/registrar_domain cloudflare_registrar_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -84,7 +84,7 @@ export class RegistrarDomain extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_registrar_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -120,11 +120,11 @@ export class RegistrarDomain extends cdktf.TerraformResource {
   }
 
   // auto_renew - computed: false, optional: true, required: false
-  private _autoRenew?: boolean | cdktf.IResolvable; 
+  private _autoRenew?: boolean | cdktn.IResolvable; 
   public get autoRenew() {
     return this.getBooleanAttribute('auto_renew');
   }
-  public set autoRenew(value: boolean | cdktf.IResolvable) {
+  public set autoRenew(value: boolean | cdktn.IResolvable) {
     this._autoRenew = value;
   }
   public resetAutoRenew() {
@@ -149,11 +149,11 @@ export class RegistrarDomain extends cdktf.TerraformResource {
   }
 
   // locked - computed: false, optional: true, required: false
-  private _locked?: boolean | cdktf.IResolvable; 
+  private _locked?: boolean | cdktn.IResolvable; 
   public get locked() {
     return this.getBooleanAttribute('locked');
   }
-  public set locked(value: boolean | cdktf.IResolvable) {
+  public set locked(value: boolean | cdktn.IResolvable) {
     this._locked = value;
   }
   public resetLocked() {
@@ -165,11 +165,11 @@ export class RegistrarDomain extends cdktf.TerraformResource {
   }
 
   // privacy - computed: false, optional: true, required: false
-  private _privacy?: boolean | cdktf.IResolvable; 
+  private _privacy?: boolean | cdktn.IResolvable; 
   public get privacy() {
     return this.getBooleanAttribute('privacy');
   }
-  public set privacy(value: boolean | cdktf.IResolvable) {
+  public set privacy(value: boolean | cdktn.IResolvable) {
     this._privacy = value;
   }
   public resetPrivacy() {
@@ -186,42 +186,42 @@ export class RegistrarDomain extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      auto_renew: cdktf.booleanToTerraform(this._autoRenew),
-      domain_name: cdktf.stringToTerraform(this._domainName),
-      locked: cdktf.booleanToTerraform(this._locked),
-      privacy: cdktf.booleanToTerraform(this._privacy),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      auto_renew: cdktn.booleanToTerraform(this._autoRenew),
+      domain_name: cdktn.stringToTerraform(this._domainName),
+      locked: cdktn.booleanToTerraform(this._locked),
+      privacy: cdktn.booleanToTerraform(this._privacy),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_renew: {
-        value: cdktf.booleanToHclTerraform(this._autoRenew),
+        value: cdktn.booleanToHclTerraform(this._autoRenew),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       domain_name: {
-        value: cdktf.stringToHclTerraform(this._domainName),
+        value: cdktn.stringToHclTerraform(this._domainName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       locked: {
-        value: cdktf.booleanToHclTerraform(this._locked),
+        value: cdktn.booleanToHclTerraform(this._locked),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       privacy: {
-        value: cdktf.booleanToHclTerraform(this._privacy),
+        value: cdktn.booleanToHclTerraform(this._privacy),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

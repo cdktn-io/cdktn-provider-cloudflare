@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareZeroTrustAccessAiControlsMcpServersConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareZeroTrustAccessAiControlsMcpServersConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#account_id DataCloudflareZeroTrustAccessAiControlsMcpServers#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#account_id DataCloudflareZeroTrustAccessAiControlsMcpServers#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#max_items DataCloudflareZeroTrustAccessAiControlsMcpServers#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#max_items DataCloudflareZeroTrustAccessAiControlsMcpServers#max_items}
   */
   readonly maxItems?: number;
   /**
   * Search by id, name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#search DataCloudflareZeroTrustAccessAiControlsMcpServers#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#search DataCloudflareZeroTrustAccessAiControlsMcpServers#search}
   */
   readonly search?: string;
 }
@@ -33,8 +33,8 @@ export interface DataCloudflareZeroTrustAccessAiControlsMcpServersResult {
 }
 
 export function dataCloudflareZeroTrustAccessAiControlsMcpServersResultToTerraform(struct?: DataCloudflareZeroTrustAccessAiControlsMcpServersResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -43,8 +43,8 @@ export function dataCloudflareZeroTrustAccessAiControlsMcpServersResultToTerrafo
 
 
 export function dataCloudflareZeroTrustAccessAiControlsMcpServersResultToHclTerraform(struct?: DataCloudflareZeroTrustAccessAiControlsMcpServersResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,7 +52,7 @@ export function dataCloudflareZeroTrustAccessAiControlsMcpServersResultToHclTerr
   return attrs;
 }
 
-export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -61,7 +61,7 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -115,6 +115,11 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputRefere
     return this.getStringAttribute('id');
   }
 
+  // last_successful_sync - computed: true, optional: false, required: false
+  public get lastSuccessfulSync() {
+    return this.getStringAttribute('last_successful_sync');
+  }
+
   // last_synced - computed: true, optional: false, required: false
   public get lastSynced() {
     return this.getStringAttribute('last_synced');
@@ -136,7 +141,7 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputRefere
   }
 
   // prompts - computed: true, optional: false, required: false
-  private _prompts = new cdktf.StringMapList(this, "prompts", false);
+  private _prompts = new cdktn.StringMapList(this, "prompts", false);
   public get prompts() {
     return this._prompts;
   }
@@ -147,20 +152,20 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultOutputRefere
   }
 
   // tools - computed: true, optional: false, required: false
-  private _tools = new cdktf.StringMapList(this, "tools", false);
+  private _tools = new cdktn.StringMapList(this, "tools", false);
   public get tools() {
     return this._tools;
   }
 }
 
-export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultList extends cdktf.ComplexList {
+export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -173,9 +178,9 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServersResultList extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers cloudflare_zero_trust_access_ai_controls_mcp_servers}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers cloudflare_zero_trust_access_ai_controls_mcp_servers}
 */
-export class DataCloudflareZeroTrustAccessAiControlsMcpServers extends cdktf.TerraformDataSource {
+export class DataCloudflareZeroTrustAccessAiControlsMcpServers extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -186,14 +191,14 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServers extends cdktf.Ter
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareZeroTrustAccessAiControlsMcpServers resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareZeroTrustAccessAiControlsMcpServers resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustAccessAiControlsMcpServers to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessAiControlsMcpServers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessAiControlsMcpServers that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustAccessAiControlsMcpServers to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_ai_controls_mcp_servers", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_ai_controls_mcp_servers", importId: importFromId, provider });
       }
 
   // ===========
@@ -201,7 +206,7 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServers extends cdktf.Ter
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers cloudflare_zero_trust_access_ai_controls_mcp_servers} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_ai_controls_mcp_servers cloudflare_zero_trust_access_ai_controls_mcp_servers} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -212,7 +217,7 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServers extends cdktf.Ter
       terraformResourceType: 'cloudflare_zero_trust_access_ai_controls_mcp_servers',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -289,28 +294,28 @@ export class DataCloudflareZeroTrustAccessAiControlsMcpServers extends cdktf.Ter
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      search: cdktf.stringToTerraform(this._search),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      search: cdktn.stringToTerraform(this._search),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       search: {
-        value: cdktf.stringToHclTerraform(this._search),
+        value: cdktn.stringToHclTerraform(this._search),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
