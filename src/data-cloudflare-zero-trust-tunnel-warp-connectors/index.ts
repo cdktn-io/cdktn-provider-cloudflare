@@ -1,74 +1,74 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareZeroTrustTunnelWarpConnectorsConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareZeroTrustTunnelWarpConnectorsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Cloudflare account ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#account_id DataCloudflareZeroTrustTunnelWarpConnectors#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#account_id DataCloudflareZeroTrustTunnelWarpConnectors#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#exclude_prefix DataCloudflareZeroTrustTunnelWarpConnectors#exclude_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#exclude_prefix DataCloudflareZeroTrustTunnelWarpConnectors#exclude_prefix}
   */
   readonly excludePrefix?: string;
   /**
   * If provided, include only resources that were created (and not deleted) before this time. URL encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#existed_at DataCloudflareZeroTrustTunnelWarpConnectors#existed_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#existed_at DataCloudflareZeroTrustTunnelWarpConnectors#existed_at}
   */
   readonly existedAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#include_prefix DataCloudflareZeroTrustTunnelWarpConnectors#include_prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#include_prefix DataCloudflareZeroTrustTunnelWarpConnectors#include_prefix}
   */
   readonly includePrefix?: string;
   /**
   * If `true`, only include deleted tunnels. If `false`, exclude deleted tunnels. If empty, all tunnels will be included.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#is_deleted DataCloudflareZeroTrustTunnelWarpConnectors#is_deleted}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#is_deleted DataCloudflareZeroTrustTunnelWarpConnectors#is_deleted}
   */
-  readonly isDeleted?: boolean | cdktf.IResolvable;
+  readonly isDeleted?: boolean | cdktn.IResolvable;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#max_items DataCloudflareZeroTrustTunnelWarpConnectors#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#max_items DataCloudflareZeroTrustTunnelWarpConnectors#max_items}
   */
   readonly maxItems?: number;
   /**
   * A user-friendly name for the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#name DataCloudflareZeroTrustTunnelWarpConnectors#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#name DataCloudflareZeroTrustTunnelWarpConnectors#name}
   */
   readonly name?: string;
   /**
   * The status of the tunnel. Valid values are `inactive` (tunnel has never been run), `degraded` (tunnel is active and able to serve traffic but in an unhealthy state), `healthy` (tunnel is active and able to serve traffic), or `down` (tunnel can not serve traffic as it has no connections to the Cloudflare Edge).
   * Available values: "inactive", "degraded", "healthy", "down".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#status DataCloudflareZeroTrustTunnelWarpConnectors#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#status DataCloudflareZeroTrustTunnelWarpConnectors#status}
   */
   readonly status?: string;
   /**
   * UUID of the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#uuid DataCloudflareZeroTrustTunnelWarpConnectors#uuid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#uuid DataCloudflareZeroTrustTunnelWarpConnectors#uuid}
   */
   readonly uuid?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#was_active_at DataCloudflareZeroTrustTunnelWarpConnectors#was_active_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#was_active_at DataCloudflareZeroTrustTunnelWarpConnectors#was_active_at}
   */
   readonly wasActiveAt?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#was_inactive_at DataCloudflareZeroTrustTunnelWarpConnectors#was_inactive_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#was_inactive_at DataCloudflareZeroTrustTunnelWarpConnectors#was_inactive_at}
   */
   readonly wasInactiveAt?: string;
 }
@@ -76,8 +76,8 @@ export interface DataCloudflareZeroTrustTunnelWarpConnectorsResultConnections {
 }
 
 export function dataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsToTerraform(struct?: DataCloudflareZeroTrustTunnelWarpConnectorsResultConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -86,8 +86,8 @@ export function dataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsToTe
 
 
 export function dataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsToHclTerraform(struct?: DataCloudflareZeroTrustTunnelWarpConnectorsResultConnections): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -95,7 +95,7 @@ export function dataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsToHc
   return attrs;
 }
 
-export class DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -104,7 +104,7 @@ export class DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputR
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -164,14 +164,14 @@ export class DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputR
   }
 }
 
-export class DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsList extends cdktf.ComplexList {
+export class DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -186,8 +186,8 @@ export interface DataCloudflareZeroTrustTunnelWarpConnectorsResult {
 }
 
 export function dataCloudflareZeroTrustTunnelWarpConnectorsResultToTerraform(struct?: DataCloudflareZeroTrustTunnelWarpConnectorsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -196,8 +196,8 @@ export function dataCloudflareZeroTrustTunnelWarpConnectorsResultToTerraform(str
 
 
 export function dataCloudflareZeroTrustTunnelWarpConnectorsResultToHclTerraform(struct?: DataCloudflareZeroTrustTunnelWarpConnectorsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -205,7 +205,7 @@ export function dataCloudflareZeroTrustTunnelWarpConnectorsResultToHclTerraform(
   return attrs;
 }
 
-export class DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -214,7 +214,7 @@ export class DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference ex
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -290,14 +290,14 @@ export class DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference ex
   }
 }
 
-export class DataCloudflareZeroTrustTunnelWarpConnectorsResultList extends cdktf.ComplexList {
+export class DataCloudflareZeroTrustTunnelWarpConnectorsResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -310,9 +310,9 @@ export class DataCloudflareZeroTrustTunnelWarpConnectorsResultList extends cdktf
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors cloudflare_zero_trust_tunnel_warp_connectors}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors cloudflare_zero_trust_tunnel_warp_connectors}
 */
-export class DataCloudflareZeroTrustTunnelWarpConnectors extends cdktf.TerraformDataSource {
+export class DataCloudflareZeroTrustTunnelWarpConnectors extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -323,14 +323,14 @@ export class DataCloudflareZeroTrustTunnelWarpConnectors extends cdktf.Terraform
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareZeroTrustTunnelWarpConnectors resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareZeroTrustTunnelWarpConnectors resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustTunnelWarpConnectors to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustTunnelWarpConnectors that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustTunnelWarpConnectors that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustTunnelWarpConnectors to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_tunnel_warp_connectors", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_tunnel_warp_connectors", importId: importFromId, provider });
       }
 
   // ===========
@@ -338,7 +338,7 @@ export class DataCloudflareZeroTrustTunnelWarpConnectors extends cdktf.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zero_trust_tunnel_warp_connectors cloudflare_zero_trust_tunnel_warp_connectors} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_tunnel_warp_connectors cloudflare_zero_trust_tunnel_warp_connectors} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -349,7 +349,7 @@ export class DataCloudflareZeroTrustTunnelWarpConnectors extends cdktf.Terraform
       terraformResourceType: 'cloudflare_zero_trust_tunnel_warp_connectors',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -439,11 +439,11 @@ export class DataCloudflareZeroTrustTunnelWarpConnectors extends cdktf.Terraform
   }
 
   // is_deleted - computed: false, optional: true, required: false
-  private _isDeleted?: boolean | cdktf.IResolvable; 
+  private _isDeleted?: boolean | cdktn.IResolvable; 
   public get isDeleted() {
     return this.getBooleanAttribute('is_deleted');
   }
-  public set isDeleted(value: boolean | cdktf.IResolvable) {
+  public set isDeleted(value: boolean | cdktn.IResolvable) {
     this._isDeleted = value;
   }
   public resetIsDeleted() {
@@ -562,84 +562,84 @@ export class DataCloudflareZeroTrustTunnelWarpConnectors extends cdktf.Terraform
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      exclude_prefix: cdktf.stringToTerraform(this._excludePrefix),
-      existed_at: cdktf.stringToTerraform(this._existedAt),
-      include_prefix: cdktf.stringToTerraform(this._includePrefix),
-      is_deleted: cdktf.booleanToTerraform(this._isDeleted),
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      name: cdktf.stringToTerraform(this._name),
-      status: cdktf.stringToTerraform(this._status),
-      uuid: cdktf.stringToTerraform(this._uuid),
-      was_active_at: cdktf.stringToTerraform(this._wasActiveAt),
-      was_inactive_at: cdktf.stringToTerraform(this._wasInactiveAt),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      exclude_prefix: cdktn.stringToTerraform(this._excludePrefix),
+      existed_at: cdktn.stringToTerraform(this._existedAt),
+      include_prefix: cdktn.stringToTerraform(this._includePrefix),
+      is_deleted: cdktn.booleanToTerraform(this._isDeleted),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      name: cdktn.stringToTerraform(this._name),
+      status: cdktn.stringToTerraform(this._status),
+      uuid: cdktn.stringToTerraform(this._uuid),
+      was_active_at: cdktn.stringToTerraform(this._wasActiveAt),
+      was_inactive_at: cdktn.stringToTerraform(this._wasInactiveAt),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_prefix: {
-        value: cdktf.stringToHclTerraform(this._excludePrefix),
+        value: cdktn.stringToHclTerraform(this._excludePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       existed_at: {
-        value: cdktf.stringToHclTerraform(this._existedAt),
+        value: cdktn.stringToHclTerraform(this._existedAt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       include_prefix: {
-        value: cdktf.stringToHclTerraform(this._includePrefix),
+        value: cdktn.stringToHclTerraform(this._includePrefix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_deleted: {
-        value: cdktf.booleanToHclTerraform(this._isDeleted),
+        value: cdktn.booleanToHclTerraform(this._isDeleted),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       uuid: {
-        value: cdktf.stringToHclTerraform(this._uuid),
+        value: cdktn.stringToHclTerraform(this._uuid),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       was_active_at: {
-        value: cdktf.stringToHclTerraform(this._wasActiveAt),
+        value: cdktn.stringToHclTerraform(this._wasActiveAt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       was_inactive_at: {
-        value: cdktf.stringToHclTerraform(this._wasInactiveAt),
+        value: cdktn.stringToHclTerraform(this._wasInactiveAt),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

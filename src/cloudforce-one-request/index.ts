@@ -1,60 +1,60 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudforceOneRequestConfig extends cdktf.TerraformMetaArguments {
+export interface CloudforceOneRequestConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request#account_id CloudforceOneRequest#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request#account_id CloudforceOneRequest#account_id}
   */
   readonly accountId: string;
   /**
   * Request content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
   */
   readonly content?: string;
   /**
   * Priority for analyzing the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
   */
   readonly priority?: string;
   /**
   * Requested information from request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
   */
   readonly requestType?: string;
   /**
   * Brief description of the request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
   */
   readonly summary?: string;
   /**
   * The CISA defined Traffic Light Protocol (TLP).
   * Available values: "clear", "amber", "amber-strict", "green", "red".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
   */
   readonly tlp?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}
 */
-export class CloudforceOneRequest extends cdktf.TerraformResource {
+export class CloudforceOneRequest extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -65,14 +65,14 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudforceOneRequest resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudforceOneRequest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudforceOneRequest to import
-  * @param importFromId The id of the existing CloudforceOneRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudforceOneRequest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudforceOneRequest to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_request", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_request", importId: importFromId, provider });
       }
 
   // ===========
@@ -80,7 +80,7 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_cloudforce_one_request',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -258,49 +258,49 @@ export class CloudforceOneRequest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      content: cdktf.stringToTerraform(this._content),
-      priority: cdktf.stringToTerraform(this._priority),
-      request_type: cdktf.stringToTerraform(this._requestType),
-      summary: cdktf.stringToTerraform(this._summary),
-      tlp: cdktf.stringToTerraform(this._tlp),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      content: cdktn.stringToTerraform(this._content),
+      priority: cdktn.stringToTerraform(this._priority),
+      request_type: cdktn.stringToTerraform(this._requestType),
+      summary: cdktn.stringToTerraform(this._summary),
+      tlp: cdktn.stringToTerraform(this._tlp),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.stringToHclTerraform(this._priority),
+        value: cdktn.stringToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       request_type: {
-        value: cdktf.stringToHclTerraform(this._requestType),
+        value: cdktn.stringToHclTerraform(this._requestType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       summary: {
-        value: cdktf.stringToHclTerraform(this._summary),
+        value: cdktn.stringToHclTerraform(this._summary),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tlp: {
-        value: cdktf.stringToHclTerraform(this._tlp),
+        value: cdktn.stringToHclTerraform(this._tlp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,66 +1,66 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustAccessGroupConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustAccessGroupConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#account_id ZeroTrustAccessGroup#account_id}
   */
   readonly accountId?: string;
   /**
   * Rules evaluated with a NOT logical operator. To match a policy, a user cannot meet any of the Exclude rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#exclude ZeroTrustAccessGroup#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#exclude ZeroTrustAccessGroup#exclude}
   */
-  readonly exclude?: ZeroTrustAccessGroupExclude[] | cdktf.IResolvable;
+  readonly exclude?: ZeroTrustAccessGroupExclude[] | cdktn.IResolvable;
   /**
   * Rules evaluated with an OR logical operator. A user needs to meet only one of the Include rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#include ZeroTrustAccessGroup#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#include ZeroTrustAccessGroup#include}
   */
-  readonly include: ZeroTrustAccessGroupInclude[] | cdktf.IResolvable;
+  readonly include: ZeroTrustAccessGroupInclude[] | cdktn.IResolvable;
   /**
   * Whether this is the default group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#is_default ZeroTrustAccessGroup#is_default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#is_default ZeroTrustAccessGroup#is_default}
   */
-  readonly isDefault?: boolean | cdktf.IResolvable;
+  readonly isDefault?: boolean | cdktn.IResolvable;
   /**
   * The name of the Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
   */
   readonly name: string;
   /**
   * Rules evaluated with an AND logical operator. To match a policy, a user must meet all of the Require rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#require ZeroTrustAccessGroup#require}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#require ZeroTrustAccessGroup#require}
   */
-  readonly require?: ZeroTrustAccessGroupRequire[] | cdktf.IResolvable;
+  readonly require?: ZeroTrustAccessGroupRequire[] | cdktn.IResolvable;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#zone_id ZeroTrustAccessGroup#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#zone_id ZeroTrustAccessGroup#zone_id}
   */
   readonly zoneId?: string;
 }
 export interface ZeroTrustAccessGroupExcludeAnyValidServiceToken {
 }
 
-export function zeroTrustAccessGroupExcludeAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -68,9 +68,9 @@ export function zeroTrustAccessGroupExcludeAnyValidServiceTokenToTerraform(struc
 }
 
 
-export function zeroTrustAccessGroupExcludeAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -78,19 +78,19 @@ export function zeroTrustAccessGroupExcludeAnyValidServiceTokenToHclTerraform(st
   return attrs;
 }
 
-export class ZeroTrustAccessGroupExcludeAnyValidServiceTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeAnyValidServiceTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -99,12 +99,12 @@ export class ZeroTrustAccessGroupExcludeAnyValidServiceTokenOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeAnyValidServiceToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -118,13 +118,13 @@ export interface ZeroTrustAccessGroupExcludeAuthContext {
   /**
   * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -133,44 +133,44 @@ export interface ZeroTrustAccessGroupExcludeAuthContext {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupExcludeAuthContextToTerraform(struct?: ZeroTrustAccessGroupExcludeAuthContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAuthContextToTerraform(struct?: ZeroTrustAccessGroupExcludeAuthContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ac_id: cdktf.stringToTerraform(struct!.acId),
-    id: cdktf.stringToTerraform(struct!.id),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    ac_id: cdktn.stringToTerraform(struct!.acId),
+    id: cdktn.stringToTerraform(struct!.id),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeAuthContextToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAuthContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAuthContextToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAuthContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ac_id: {
-      value: cdktf.stringToHclTerraform(struct!.acId),
+      value: cdktn.stringToHclTerraform(struct!.acId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -181,19 +181,19 @@ export function zeroTrustAccessGroupExcludeAuthContextToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeAuthContextOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeAuthContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeAuthContext | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeAuthContext | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -214,7 +214,7 @@ export class ZeroTrustAccessGroupExcludeAuthContextOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeAuthContext | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeAuthContext | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -222,7 +222,7 @@ export class ZeroTrustAccessGroupExcludeAuthContextOutputReference extends cdktf
       this._id = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -278,30 +278,30 @@ export interface ZeroTrustAccessGroupExcludeAuthMethod {
   /**
   * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
   */
   readonly authMethod: string;
 }
 
-export function zeroTrustAccessGroupExcludeAuthMethodToTerraform(struct?: ZeroTrustAccessGroupExcludeAuthMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAuthMethodToTerraform(struct?: ZeroTrustAccessGroupExcludeAuthMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_method: cdktf.stringToTerraform(struct!.authMethod),
+    auth_method: cdktn.stringToTerraform(struct!.authMethod),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeAuthMethodToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAuthMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAuthMethodToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAuthMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_method: {
-      value: cdktf.stringToHclTerraform(struct!.authMethod),
+      value: cdktn.stringToHclTerraform(struct!.authMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -312,19 +312,19 @@ export function zeroTrustAccessGroupExcludeAuthMethodToHclTerraform(struct?: Zer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeAuthMethodOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeAuthMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeAuthMethod | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeAuthMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -337,13 +337,13 @@ export class ZeroTrustAccessGroupExcludeAuthMethodOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeAuthMethod | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeAuthMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authMethod = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -371,7 +371,7 @@ export interface ZeroTrustAccessGroupExcludeAzureAd {
   /**
   * The ID of an Azure group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -380,37 +380,37 @@ export interface ZeroTrustAccessGroupExcludeAzureAd {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupExcludeAzureAdToTerraform(struct?: ZeroTrustAccessGroupExcludeAzureAd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAzureAdToTerraform(struct?: ZeroTrustAccessGroupExcludeAzureAd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    id: cdktn.stringToTerraform(struct!.id),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeAzureAdToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAzureAd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeAzureAdToHclTerraform(struct?: ZeroTrustAccessGroupExcludeAzureAd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -421,19 +421,19 @@ export function zeroTrustAccessGroupExcludeAzureAdToHclTerraform(struct?: ZeroTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeAzureAdOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeAzureAdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeAzureAd | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeAzureAd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -450,14 +450,14 @@ export class ZeroTrustAccessGroupExcludeAzureAdOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeAzureAd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeAzureAd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -498,9 +498,9 @@ export class ZeroTrustAccessGroupExcludeAzureAdOutputReference extends cdktf.Com
 export interface ZeroTrustAccessGroupExcludeCertificate {
 }
 
-export function zeroTrustAccessGroupExcludeCertificateToTerraform(struct?: ZeroTrustAccessGroupExcludeCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeCertificateToTerraform(struct?: ZeroTrustAccessGroupExcludeCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -508,9 +508,9 @@ export function zeroTrustAccessGroupExcludeCertificateToTerraform(struct?: ZeroT
 }
 
 
-export function zeroTrustAccessGroupExcludeCertificateToHclTerraform(struct?: ZeroTrustAccessGroupExcludeCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeCertificateToHclTerraform(struct?: ZeroTrustAccessGroupExcludeCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -518,19 +518,19 @@ export function zeroTrustAccessGroupExcludeCertificateToHclTerraform(struct?: Ze
   return attrs;
 }
 
-export class ZeroTrustAccessGroupExcludeCertificateOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -539,12 +539,12 @@ export class ZeroTrustAccessGroupExcludeCertificateOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -558,30 +558,30 @@ export interface ZeroTrustAccessGroupExcludeCommonName {
   /**
   * The common name to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
   */
   readonly commonName: string;
 }
 
-export function zeroTrustAccessGroupExcludeCommonNameToTerraform(struct?: ZeroTrustAccessGroupExcludeCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeCommonNameToTerraform(struct?: ZeroTrustAccessGroupExcludeCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    common_name: cdktf.stringToTerraform(struct!.commonName),
+    common_name: cdktn.stringToTerraform(struct!.commonName),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeCommonNameToHclTerraform(struct?: ZeroTrustAccessGroupExcludeCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeCommonNameToHclTerraform(struct?: ZeroTrustAccessGroupExcludeCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
+      value: cdktn.stringToHclTerraform(struct!.commonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -592,19 +592,19 @@ export function zeroTrustAccessGroupExcludeCommonNameToHclTerraform(struct?: Zer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeCommonNameOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeCommonNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeCommonName | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeCommonName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -617,13 +617,13 @@ export class ZeroTrustAccessGroupExcludeCommonNameOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeCommonName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeCommonName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._commonName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -651,30 +651,30 @@ export interface ZeroTrustAccessGroupExcludeDevicePosture {
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
   */
   readonly integrationUid: string;
 }
 
-export function zeroTrustAccessGroupExcludeDevicePostureToTerraform(struct?: ZeroTrustAccessGroupExcludeDevicePosture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeDevicePostureToTerraform(struct?: ZeroTrustAccessGroupExcludeDevicePosture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    integration_uid: cdktf.stringToTerraform(struct!.integrationUid),
+    integration_uid: cdktn.stringToTerraform(struct!.integrationUid),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeDevicePostureToHclTerraform(struct?: ZeroTrustAccessGroupExcludeDevicePosture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeDevicePostureToHclTerraform(struct?: ZeroTrustAccessGroupExcludeDevicePosture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     integration_uid: {
-      value: cdktf.stringToHclTerraform(struct!.integrationUid),
+      value: cdktn.stringToHclTerraform(struct!.integrationUid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -685,19 +685,19 @@ export function zeroTrustAccessGroupExcludeDevicePostureToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeDevicePostureOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeDevicePostureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeDevicePosture | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeDevicePosture | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -710,13 +710,13 @@ export class ZeroTrustAccessGroupExcludeDevicePostureOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeDevicePosture | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeDevicePosture | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._integrationUid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -744,30 +744,30 @@ export interface ZeroTrustAccessGroupExcludeEmail {
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email: string;
 }
 
-export function zeroTrustAccessGroupExcludeEmailToTerraform(struct?: ZeroTrustAccessGroupExcludeEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEmailToTerraform(struct?: ZeroTrustAccessGroupExcludeEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeEmailToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEmailToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -778,19 +778,19 @@ export function zeroTrustAccessGroupExcludeEmailToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeEmailOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeEmail | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeEmail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -803,13 +803,13 @@ export class ZeroTrustAccessGroupExcludeEmailOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeEmail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeEmail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._email = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -837,30 +837,30 @@ export interface ZeroTrustAccessGroupExcludeEmailDomain {
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
   */
   readonly domain: string;
 }
 
-export function zeroTrustAccessGroupExcludeEmailDomainToTerraform(struct?: ZeroTrustAccessGroupExcludeEmailDomain | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEmailDomainToTerraform(struct?: ZeroTrustAccessGroupExcludeEmailDomain | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
+    domain: cdktn.stringToTerraform(struct!.domain),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeEmailDomainToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEmailDomain | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEmailDomainToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEmailDomain | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -871,19 +871,19 @@ export function zeroTrustAccessGroupExcludeEmailDomainToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeEmailDomainOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeEmailDomainOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeEmailDomain | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeEmailDomain | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -896,13 +896,13 @@ export class ZeroTrustAccessGroupExcludeEmailDomainOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeEmailDomain | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeEmailDomain | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._domain = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -930,7 +930,7 @@ export interface ZeroTrustAccessGroupExcludeEmailListStruct {
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -938,25 +938,25 @@ export interface ZeroTrustAccessGroupExcludeEmailListStruct {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupExcludeEmailListStructToTerraform(struct?: ZeroTrustAccessGroupExcludeEmailListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEmailListStructToTerraform(struct?: ZeroTrustAccessGroupExcludeEmailListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeEmailListStructToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEmailListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEmailListStructToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEmailListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -967,19 +967,19 @@ export function zeroTrustAccessGroupExcludeEmailListStructToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeEmailListStructOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeEmailListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeEmailListStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeEmailListStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -992,13 +992,13 @@ export class ZeroTrustAccessGroupExcludeEmailListStructOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeEmailListStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeEmailListStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1025,9 +1025,9 @@ export class ZeroTrustAccessGroupExcludeEmailListStructOutputReference extends c
 export interface ZeroTrustAccessGroupExcludeEveryone {
 }
 
-export function zeroTrustAccessGroupExcludeEveryoneToTerraform(struct?: ZeroTrustAccessGroupExcludeEveryone | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEveryoneToTerraform(struct?: ZeroTrustAccessGroupExcludeEveryone | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -1035,9 +1035,9 @@ export function zeroTrustAccessGroupExcludeEveryoneToTerraform(struct?: ZeroTrus
 }
 
 
-export function zeroTrustAccessGroupExcludeEveryoneToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEveryone | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeEveryoneToHclTerraform(struct?: ZeroTrustAccessGroupExcludeEveryone | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -1045,19 +1045,19 @@ export function zeroTrustAccessGroupExcludeEveryoneToHclTerraform(struct?: ZeroT
   return attrs;
 }
 
-export class ZeroTrustAccessGroupExcludeEveryoneOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeEveryoneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeEveryone | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeEveryone | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1066,12 +1066,12 @@ export class ZeroTrustAccessGroupExcludeEveryoneOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeEveryone | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeEveryone | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1085,43 +1085,43 @@ export interface ZeroTrustAccessGroupExcludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
   */
   readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
   */
   readonly keysUrl: string;
 }
 
-export function zeroTrustAccessGroupExcludeExternalEvaluationToTerraform(struct?: ZeroTrustAccessGroupExcludeExternalEvaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeExternalEvaluationToTerraform(struct?: ZeroTrustAccessGroupExcludeExternalEvaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
-    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+    evaluate_url: cdktn.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktn.stringToTerraform(struct!.keysUrl),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeExternalEvaluationToHclTerraform(struct?: ZeroTrustAccessGroupExcludeExternalEvaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeExternalEvaluationToHclTerraform(struct?: ZeroTrustAccessGroupExcludeExternalEvaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     evaluate_url: {
-      value: cdktf.stringToHclTerraform(struct!.evaluateUrl),
+      value: cdktn.stringToHclTerraform(struct!.evaluateUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keys_url: {
-      value: cdktf.stringToHclTerraform(struct!.keysUrl),
+      value: cdktn.stringToHclTerraform(struct!.keysUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1132,19 +1132,19 @@ export function zeroTrustAccessGroupExcludeExternalEvaluationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeExternalEvaluationOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeExternalEvaluationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeExternalEvaluation | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeExternalEvaluation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1161,14 +1161,14 @@ export class ZeroTrustAccessGroupExcludeExternalEvaluationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeExternalEvaluation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeExternalEvaluation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._evaluateUrl = undefined;
       this._keysUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1210,30 +1210,30 @@ export interface ZeroTrustAccessGroupExcludeGeo {
   /**
   * The country code that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
   */
   readonly countryCode: string;
 }
 
-export function zeroTrustAccessGroupExcludeGeoToTerraform(struct?: ZeroTrustAccessGroupExcludeGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGeoToTerraform(struct?: ZeroTrustAccessGroupExcludeGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeGeoToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGeoToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1244,19 +1244,19 @@ export function zeroTrustAccessGroupExcludeGeoToHclTerraform(struct?: ZeroTrustA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeGeoOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeGeoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeGeo | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeGeo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1269,13 +1269,13 @@ export class ZeroTrustAccessGroupExcludeGeoOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeGeo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeGeo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._countryCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1303,56 +1303,56 @@ export interface ZeroTrustAccessGroupExcludeGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
   */
   readonly name: string;
   /**
   * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
   */
   readonly team?: string;
 }
 
-export function zeroTrustAccessGroupExcludeGithubOrganizationToTerraform(struct?: ZeroTrustAccessGroupExcludeGithubOrganization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGithubOrganizationToTerraform(struct?: ZeroTrustAccessGroupExcludeGithubOrganization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.stringToTerraform(struct!.name),
-    team: cdktf.stringToTerraform(struct!.team),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
+    name: cdktn.stringToTerraform(struct!.name),
+    team: cdktn.stringToTerraform(struct!.team),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGithubOrganization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGithubOrganization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     team: {
-      value: cdktf.stringToHclTerraform(struct!.team),
+      value: cdktn.stringToHclTerraform(struct!.team),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1363,19 +1363,19 @@ export function zeroTrustAccessGroupExcludeGithubOrganizationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeGithubOrganization | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeGithubOrganization | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1396,7 +1396,7 @@ export class ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeGithubOrganization | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeGithubOrganization | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1404,7 +1404,7 @@ export class ZeroTrustAccessGroupExcludeGithubOrganizationOutputReference extend
       this._name = undefined;
       this._team = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1463,7 +1463,7 @@ export interface ZeroTrustAccessGroupExcludeGroup {
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1471,25 +1471,25 @@ export interface ZeroTrustAccessGroupExcludeGroup {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupExcludeGroupToTerraform(struct?: ZeroTrustAccessGroupExcludeGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGroupToTerraform(struct?: ZeroTrustAccessGroupExcludeGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeGroupToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGroupToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1500,19 +1500,19 @@ export function zeroTrustAccessGroupExcludeGroupToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeGroupOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1525,13 +1525,13 @@ export class ZeroTrustAccessGroupExcludeGroupOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1559,43 +1559,43 @@ export interface ZeroTrustAccessGroupExcludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupExcludeGsuiteToTerraform(struct?: ZeroTrustAccessGroupExcludeGsuite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGsuiteToTerraform(struct?: ZeroTrustAccessGroupExcludeGsuite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    email: cdktn.stringToTerraform(struct!.email),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeGsuiteToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGsuite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeGsuiteToHclTerraform(struct?: ZeroTrustAccessGroupExcludeGsuite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1606,19 +1606,19 @@ export function zeroTrustAccessGroupExcludeGsuiteToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeGsuiteOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeGsuiteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeGsuite | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeGsuite | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1635,14 +1635,14 @@ export class ZeroTrustAccessGroupExcludeGsuiteOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeGsuite | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeGsuite | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._email = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1684,30 +1684,30 @@ export interface ZeroTrustAccessGroupExcludeIp {
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
   */
   readonly ip: string;
 }
 
-export function zeroTrustAccessGroupExcludeIpToTerraform(struct?: ZeroTrustAccessGroupExcludeIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeIpToTerraform(struct?: ZeroTrustAccessGroupExcludeIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip: cdktf.stringToTerraform(struct!.ip),
+    ip: cdktn.stringToTerraform(struct!.ip),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeIpToHclTerraform(struct?: ZeroTrustAccessGroupExcludeIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeIpToHclTerraform(struct?: ZeroTrustAccessGroupExcludeIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1718,19 +1718,19 @@ export function zeroTrustAccessGroupExcludeIpToHclTerraform(struct?: ZeroTrustAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeIpOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeIp | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeIp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1743,13 +1743,13 @@ export class ZeroTrustAccessGroupExcludeIpOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeIp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeIp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ip = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1777,7 +1777,7 @@ export interface ZeroTrustAccessGroupExcludeIpListStruct {
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1785,25 +1785,25 @@ export interface ZeroTrustAccessGroupExcludeIpListStruct {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupExcludeIpListStructToTerraform(struct?: ZeroTrustAccessGroupExcludeIpListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeIpListStructToTerraform(struct?: ZeroTrustAccessGroupExcludeIpListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeIpListStructToHclTerraform(struct?: ZeroTrustAccessGroupExcludeIpListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeIpListStructToHclTerraform(struct?: ZeroTrustAccessGroupExcludeIpListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1814,19 +1814,19 @@ export function zeroTrustAccessGroupExcludeIpListStructToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeIpListStructOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeIpListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeIpListStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeIpListStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1839,13 +1839,13 @@ export class ZeroTrustAccessGroupExcludeIpListStructOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeIpListStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeIpListStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1873,30 +1873,30 @@ export interface ZeroTrustAccessGroupExcludeLinkedAppToken {
   /**
   * The ID of an Access OIDC SaaS application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
   */
   readonly appUid: string;
 }
 
-export function zeroTrustAccessGroupExcludeLinkedAppTokenToTerraform(struct?: ZeroTrustAccessGroupExcludeLinkedAppToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeLinkedAppTokenToTerraform(struct?: ZeroTrustAccessGroupExcludeLinkedAppToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_uid: cdktf.stringToTerraform(struct!.appUid),
+    app_uid: cdktn.stringToTerraform(struct!.appUid),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeLinkedAppTokenToHclTerraform(struct?: ZeroTrustAccessGroupExcludeLinkedAppToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeLinkedAppTokenToHclTerraform(struct?: ZeroTrustAccessGroupExcludeLinkedAppToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_uid: {
-      value: cdktf.stringToHclTerraform(struct!.appUid),
+      value: cdktn.stringToHclTerraform(struct!.appUid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1907,19 +1907,19 @@ export function zeroTrustAccessGroupExcludeLinkedAppTokenToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeLinkedAppTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeLinkedAppTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeLinkedAppToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeLinkedAppToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1932,13 +1932,13 @@ export class ZeroTrustAccessGroupExcludeLinkedAppTokenOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeLinkedAppToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeLinkedAppToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._appUid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1966,7 +1966,7 @@ export interface ZeroTrustAccessGroupExcludeLoginMethod {
   /**
   * The ID of an identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1974,25 +1974,25 @@ export interface ZeroTrustAccessGroupExcludeLoginMethod {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupExcludeLoginMethodToTerraform(struct?: ZeroTrustAccessGroupExcludeLoginMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeLoginMethodToTerraform(struct?: ZeroTrustAccessGroupExcludeLoginMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeLoginMethodToHclTerraform(struct?: ZeroTrustAccessGroupExcludeLoginMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeLoginMethodToHclTerraform(struct?: ZeroTrustAccessGroupExcludeLoginMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2003,19 +2003,19 @@ export function zeroTrustAccessGroupExcludeLoginMethodToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeLoginMethodOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeLoginMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeLoginMethod | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeLoginMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2028,13 +2028,13 @@ export class ZeroTrustAccessGroupExcludeLoginMethodOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeLoginMethod | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeLoginMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2062,56 +2062,56 @@ export interface ZeroTrustAccessGroupExcludeOidc {
   /**
   * The name of the OIDC claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
   */
   readonly claimName: string;
   /**
   * The OIDC claim value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
   */
   readonly claimValue: string;
   /**
   * The ID of your OIDC identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupExcludeOidcToTerraform(struct?: ZeroTrustAccessGroupExcludeOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeOidcToTerraform(struct?: ZeroTrustAccessGroupExcludeOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim_name: cdktf.stringToTerraform(struct!.claimName),
-    claim_value: cdktf.stringToTerraform(struct!.claimValue),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    claim_name: cdktn.stringToTerraform(struct!.claimName),
+    claim_value: cdktn.stringToTerraform(struct!.claimValue),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeOidcToHclTerraform(struct?: ZeroTrustAccessGroupExcludeOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeOidcToHclTerraform(struct?: ZeroTrustAccessGroupExcludeOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim_name: {
-      value: cdktf.stringToHclTerraform(struct!.claimName),
+      value: cdktn.stringToHclTerraform(struct!.claimName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     claim_value: {
-      value: cdktf.stringToHclTerraform(struct!.claimValue),
+      value: cdktn.stringToHclTerraform(struct!.claimValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2122,19 +2122,19 @@ export function zeroTrustAccessGroupExcludeOidcToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeOidcOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeOidc | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeOidc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2155,7 +2155,7 @@ export class ZeroTrustAccessGroupExcludeOidcOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeOidc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeOidc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2163,7 +2163,7 @@ export class ZeroTrustAccessGroupExcludeOidcOutputReference extends cdktf.Comple
       this._claimValue = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2219,43 +2219,43 @@ export interface ZeroTrustAccessGroupExcludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
   */
   readonly name: string;
 }
 
-export function zeroTrustAccessGroupExcludeOktaToTerraform(struct?: ZeroTrustAccessGroupExcludeOkta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeOktaToTerraform(struct?: ZeroTrustAccessGroupExcludeOkta | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.stringToTerraform(struct!.name),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeOktaToHclTerraform(struct?: ZeroTrustAccessGroupExcludeOkta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeOktaToHclTerraform(struct?: ZeroTrustAccessGroupExcludeOkta | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2266,19 +2266,19 @@ export function zeroTrustAccessGroupExcludeOktaToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeOktaOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeOktaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeOkta | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeOkta | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2295,14 +2295,14 @@ export class ZeroTrustAccessGroupExcludeOktaOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeOkta | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeOkta | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._identityProviderId = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2344,56 +2344,56 @@ export interface ZeroTrustAccessGroupExcludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
   */
   readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
   */
   readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupExcludeSamlToTerraform(struct?: ZeroTrustAccessGroupExcludeSaml | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeSamlToTerraform(struct?: ZeroTrustAccessGroupExcludeSaml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute_name: cdktf.stringToTerraform(struct!.attributeName),
-    attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    attribute_name: cdktn.stringToTerraform(struct!.attributeName),
+    attribute_value: cdktn.stringToTerraform(struct!.attributeValue),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeSamlToHclTerraform(struct?: ZeroTrustAccessGroupExcludeSaml | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeSamlToHclTerraform(struct?: ZeroTrustAccessGroupExcludeSaml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute_name: {
-      value: cdktf.stringToHclTerraform(struct!.attributeName),
+      value: cdktn.stringToHclTerraform(struct!.attributeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     attribute_value: {
-      value: cdktf.stringToHclTerraform(struct!.attributeValue),
+      value: cdktn.stringToHclTerraform(struct!.attributeValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2404,19 +2404,19 @@ export function zeroTrustAccessGroupExcludeSamlToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeSamlOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeSamlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeSaml | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeSaml | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2437,7 +2437,7 @@ export class ZeroTrustAccessGroupExcludeSamlOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeSaml | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeSaml | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2445,7 +2445,7 @@ export class ZeroTrustAccessGroupExcludeSamlOutputReference extends cdktf.Comple
       this._attributeValue = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2501,30 +2501,30 @@ export interface ZeroTrustAccessGroupExcludeServiceToken {
   /**
   * The ID of a Service Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
   */
   readonly tokenId: string;
 }
 
-export function zeroTrustAccessGroupExcludeServiceTokenToTerraform(struct?: ZeroTrustAccessGroupExcludeServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeServiceTokenToTerraform(struct?: ZeroTrustAccessGroupExcludeServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    token_id: cdktf.stringToTerraform(struct!.tokenId),
+    token_id: cdktn.stringToTerraform(struct!.tokenId),
   }
 }
 
 
-export function zeroTrustAccessGroupExcludeServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupExcludeServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupExcludeServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     token_id: {
-      value: cdktf.stringToHclTerraform(struct!.tokenId),
+      value: cdktn.stringToHclTerraform(struct!.tokenId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2535,19 +2535,19 @@ export function zeroTrustAccessGroupExcludeServiceTokenToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeServiceTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeServiceTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExcludeServiceToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExcludeServiceToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2560,13 +2560,13 @@ export class ZeroTrustAccessGroupExcludeServiceTokenOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExcludeServiceToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExcludeServiceToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tokenId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2594,108 +2594,108 @@ export interface ZeroTrustAccessGroupExclude {
   /**
   * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
   */
   readonly anyValidServiceToken?: ZeroTrustAccessGroupExcludeAnyValidServiceToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}
   */
   readonly authContext?: ZeroTrustAccessGroupExcludeAuthContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
   */
   readonly authMethod?: ZeroTrustAccessGroupExcludeAuthMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}
   */
   readonly azureAd?: ZeroTrustAccessGroupExcludeAzureAd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}
   */
   readonly certificate?: ZeroTrustAccessGroupExcludeCertificate;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
   */
   readonly commonName?: ZeroTrustAccessGroupExcludeCommonName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}
   */
   readonly devicePosture?: ZeroTrustAccessGroupExcludeDevicePosture;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email?: ZeroTrustAccessGroupExcludeEmail;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}
   */
   readonly emailDomain?: ZeroTrustAccessGroupExcludeEmailDomain;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}
   */
   readonly emailList?: ZeroTrustAccessGroupExcludeEmailListStruct;
   /**
   * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
   */
   readonly everyone?: ZeroTrustAccessGroupExcludeEveryone;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}
   */
   readonly externalEvaluation?: ZeroTrustAccessGroupExcludeExternalEvaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}
   */
   readonly geo?: ZeroTrustAccessGroupExcludeGeo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}
   */
   readonly githubOrganization?: ZeroTrustAccessGroupExcludeGithubOrganization;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}
   */
   readonly group?: ZeroTrustAccessGroupExcludeGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}
   */
   readonly gsuite?: ZeroTrustAccessGroupExcludeGsuite;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
   */
   readonly ip?: ZeroTrustAccessGroupExcludeIp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}
   */
   readonly ipList?: ZeroTrustAccessGroupExcludeIpListStruct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}
   */
   readonly linkedAppToken?: ZeroTrustAccessGroupExcludeLinkedAppToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}
   */
   readonly loginMethod?: ZeroTrustAccessGroupExcludeLoginMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}
   */
   readonly oidc?: ZeroTrustAccessGroupExcludeOidc;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}
   */
   readonly okta?: ZeroTrustAccessGroupExcludeOkta;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}
   */
   readonly saml?: ZeroTrustAccessGroupExcludeSaml;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}
   */
   readonly serviceToken?: ZeroTrustAccessGroupExcludeServiceToken;
 }
 
-export function zeroTrustAccessGroupExcludeToTerraform(struct?: ZeroTrustAccessGroupExclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeToTerraform(struct?: ZeroTrustAccessGroupExclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2727,9 +2727,9 @@ export function zeroTrustAccessGroupExcludeToTerraform(struct?: ZeroTrustAccessG
 }
 
 
-export function zeroTrustAccessGroupExcludeToHclTerraform(struct?: ZeroTrustAccessGroupExclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupExcludeToHclTerraform(struct?: ZeroTrustAccessGroupExclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2883,9 +2883,9 @@ export function zeroTrustAccessGroupExcludeToHclTerraform(struct?: ZeroTrustAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupExcludeOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupExcludeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -2893,11 +2893,11 @@ export class ZeroTrustAccessGroupExcludeOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupExclude | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupExclude | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3002,7 +3002,7 @@ export class ZeroTrustAccessGroupExcludeOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupExclude | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupExclude | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3031,7 +3031,7 @@ export class ZeroTrustAccessGroupExcludeOutputReference extends cdktf.ComplexObj
       this._saml.internalValue = undefined;
       this._serviceToken.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3450,15 +3450,15 @@ export class ZeroTrustAccessGroupExcludeOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ZeroTrustAccessGroupExcludeList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessGroupExclude[] | cdktf.IResolvable
+export class ZeroTrustAccessGroupExcludeList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustAccessGroupExclude[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -3472,9 +3472,9 @@ export class ZeroTrustAccessGroupExcludeList extends cdktf.ComplexList {
 export interface ZeroTrustAccessGroupIncludeAnyValidServiceToken {
 }
 
-export function zeroTrustAccessGroupIncludeAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3482,9 +3482,9 @@ export function zeroTrustAccessGroupIncludeAnyValidServiceTokenToTerraform(struc
 }
 
 
-export function zeroTrustAccessGroupIncludeAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3492,19 +3492,19 @@ export function zeroTrustAccessGroupIncludeAnyValidServiceTokenToHclTerraform(st
   return attrs;
 }
 
-export class ZeroTrustAccessGroupIncludeAnyValidServiceTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeAnyValidServiceTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3513,12 +3513,12 @@ export class ZeroTrustAccessGroupIncludeAnyValidServiceTokenOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeAnyValidServiceToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3532,13 +3532,13 @@ export interface ZeroTrustAccessGroupIncludeAuthContext {
   /**
   * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3547,44 +3547,44 @@ export interface ZeroTrustAccessGroupIncludeAuthContext {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupIncludeAuthContextToTerraform(struct?: ZeroTrustAccessGroupIncludeAuthContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAuthContextToTerraform(struct?: ZeroTrustAccessGroupIncludeAuthContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ac_id: cdktf.stringToTerraform(struct!.acId),
-    id: cdktf.stringToTerraform(struct!.id),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    ac_id: cdktn.stringToTerraform(struct!.acId),
+    id: cdktn.stringToTerraform(struct!.id),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeAuthContextToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAuthContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAuthContextToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAuthContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ac_id: {
-      value: cdktf.stringToHclTerraform(struct!.acId),
+      value: cdktn.stringToHclTerraform(struct!.acId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3595,19 +3595,19 @@ export function zeroTrustAccessGroupIncludeAuthContextToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeAuthContextOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeAuthContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeAuthContext | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeAuthContext | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3628,7 +3628,7 @@ export class ZeroTrustAccessGroupIncludeAuthContextOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeAuthContext | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeAuthContext | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -3636,7 +3636,7 @@ export class ZeroTrustAccessGroupIncludeAuthContextOutputReference extends cdktf
       this._id = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3692,30 +3692,30 @@ export interface ZeroTrustAccessGroupIncludeAuthMethod {
   /**
   * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
   */
   readonly authMethod: string;
 }
 
-export function zeroTrustAccessGroupIncludeAuthMethodToTerraform(struct?: ZeroTrustAccessGroupIncludeAuthMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAuthMethodToTerraform(struct?: ZeroTrustAccessGroupIncludeAuthMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_method: cdktf.stringToTerraform(struct!.authMethod),
+    auth_method: cdktn.stringToTerraform(struct!.authMethod),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeAuthMethodToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAuthMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAuthMethodToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAuthMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_method: {
-      value: cdktf.stringToHclTerraform(struct!.authMethod),
+      value: cdktn.stringToHclTerraform(struct!.authMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3726,19 +3726,19 @@ export function zeroTrustAccessGroupIncludeAuthMethodToHclTerraform(struct?: Zer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeAuthMethodOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeAuthMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeAuthMethod | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeAuthMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3751,13 +3751,13 @@ export class ZeroTrustAccessGroupIncludeAuthMethodOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeAuthMethod | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeAuthMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authMethod = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3785,7 +3785,7 @@ export interface ZeroTrustAccessGroupIncludeAzureAd {
   /**
   * The ID of an Azure group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3794,37 +3794,37 @@ export interface ZeroTrustAccessGroupIncludeAzureAd {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupIncludeAzureAdToTerraform(struct?: ZeroTrustAccessGroupIncludeAzureAd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAzureAdToTerraform(struct?: ZeroTrustAccessGroupIncludeAzureAd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    id: cdktn.stringToTerraform(struct!.id),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeAzureAdToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAzureAd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeAzureAdToHclTerraform(struct?: ZeroTrustAccessGroupIncludeAzureAd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -3835,19 +3835,19 @@ export function zeroTrustAccessGroupIncludeAzureAdToHclTerraform(struct?: ZeroTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeAzureAdOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeAzureAdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeAzureAd | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeAzureAd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3864,14 +3864,14 @@ export class ZeroTrustAccessGroupIncludeAzureAdOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeAzureAd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeAzureAd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3912,9 +3912,9 @@ export class ZeroTrustAccessGroupIncludeAzureAdOutputReference extends cdktf.Com
 export interface ZeroTrustAccessGroupIncludeCertificate {
 }
 
-export function zeroTrustAccessGroupIncludeCertificateToTerraform(struct?: ZeroTrustAccessGroupIncludeCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeCertificateToTerraform(struct?: ZeroTrustAccessGroupIncludeCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -3922,9 +3922,9 @@ export function zeroTrustAccessGroupIncludeCertificateToTerraform(struct?: ZeroT
 }
 
 
-export function zeroTrustAccessGroupIncludeCertificateToHclTerraform(struct?: ZeroTrustAccessGroupIncludeCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeCertificateToHclTerraform(struct?: ZeroTrustAccessGroupIncludeCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -3932,19 +3932,19 @@ export function zeroTrustAccessGroupIncludeCertificateToHclTerraform(struct?: Ze
   return attrs;
 }
 
-export class ZeroTrustAccessGroupIncludeCertificateOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -3953,12 +3953,12 @@ export class ZeroTrustAccessGroupIncludeCertificateOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -3972,30 +3972,30 @@ export interface ZeroTrustAccessGroupIncludeCommonName {
   /**
   * The common name to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
   */
   readonly commonName: string;
 }
 
-export function zeroTrustAccessGroupIncludeCommonNameToTerraform(struct?: ZeroTrustAccessGroupIncludeCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeCommonNameToTerraform(struct?: ZeroTrustAccessGroupIncludeCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    common_name: cdktf.stringToTerraform(struct!.commonName),
+    common_name: cdktn.stringToTerraform(struct!.commonName),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeCommonNameToHclTerraform(struct?: ZeroTrustAccessGroupIncludeCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeCommonNameToHclTerraform(struct?: ZeroTrustAccessGroupIncludeCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
+      value: cdktn.stringToHclTerraform(struct!.commonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4006,19 +4006,19 @@ export function zeroTrustAccessGroupIncludeCommonNameToHclTerraform(struct?: Zer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeCommonNameOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeCommonNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeCommonName | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeCommonName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4031,13 +4031,13 @@ export class ZeroTrustAccessGroupIncludeCommonNameOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeCommonName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeCommonName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._commonName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4065,30 +4065,30 @@ export interface ZeroTrustAccessGroupIncludeDevicePosture {
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
   */
   readonly integrationUid: string;
 }
 
-export function zeroTrustAccessGroupIncludeDevicePostureToTerraform(struct?: ZeroTrustAccessGroupIncludeDevicePosture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeDevicePostureToTerraform(struct?: ZeroTrustAccessGroupIncludeDevicePosture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    integration_uid: cdktf.stringToTerraform(struct!.integrationUid),
+    integration_uid: cdktn.stringToTerraform(struct!.integrationUid),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeDevicePostureToHclTerraform(struct?: ZeroTrustAccessGroupIncludeDevicePosture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeDevicePostureToHclTerraform(struct?: ZeroTrustAccessGroupIncludeDevicePosture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     integration_uid: {
-      value: cdktf.stringToHclTerraform(struct!.integrationUid),
+      value: cdktn.stringToHclTerraform(struct!.integrationUid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4099,19 +4099,19 @@ export function zeroTrustAccessGroupIncludeDevicePostureToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeDevicePostureOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeDevicePostureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeDevicePosture | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeDevicePosture | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4124,13 +4124,13 @@ export class ZeroTrustAccessGroupIncludeDevicePostureOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeDevicePosture | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeDevicePosture | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._integrationUid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4158,30 +4158,30 @@ export interface ZeroTrustAccessGroupIncludeEmail {
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email: string;
 }
 
-export function zeroTrustAccessGroupIncludeEmailToTerraform(struct?: ZeroTrustAccessGroupIncludeEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEmailToTerraform(struct?: ZeroTrustAccessGroupIncludeEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeEmailToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEmailToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4192,19 +4192,19 @@ export function zeroTrustAccessGroupIncludeEmailToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeEmailOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeEmail | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeEmail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4217,13 +4217,13 @@ export class ZeroTrustAccessGroupIncludeEmailOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeEmail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeEmail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._email = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4251,30 +4251,30 @@ export interface ZeroTrustAccessGroupIncludeEmailDomain {
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
   */
   readonly domain: string;
 }
 
-export function zeroTrustAccessGroupIncludeEmailDomainToTerraform(struct?: ZeroTrustAccessGroupIncludeEmailDomain | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEmailDomainToTerraform(struct?: ZeroTrustAccessGroupIncludeEmailDomain | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
+    domain: cdktn.stringToTerraform(struct!.domain),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeEmailDomainToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEmailDomain | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEmailDomainToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEmailDomain | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4285,19 +4285,19 @@ export function zeroTrustAccessGroupIncludeEmailDomainToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeEmailDomainOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeEmailDomainOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeEmailDomain | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeEmailDomain | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4310,13 +4310,13 @@ export class ZeroTrustAccessGroupIncludeEmailDomainOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeEmailDomain | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeEmailDomain | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._domain = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4344,7 +4344,7 @@ export interface ZeroTrustAccessGroupIncludeEmailListStruct {
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4352,25 +4352,25 @@ export interface ZeroTrustAccessGroupIncludeEmailListStruct {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupIncludeEmailListStructToTerraform(struct?: ZeroTrustAccessGroupIncludeEmailListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEmailListStructToTerraform(struct?: ZeroTrustAccessGroupIncludeEmailListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeEmailListStructToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEmailListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEmailListStructToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEmailListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4381,19 +4381,19 @@ export function zeroTrustAccessGroupIncludeEmailListStructToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeEmailListStructOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeEmailListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeEmailListStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeEmailListStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4406,13 +4406,13 @@ export class ZeroTrustAccessGroupIncludeEmailListStructOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeEmailListStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeEmailListStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4439,9 +4439,9 @@ export class ZeroTrustAccessGroupIncludeEmailListStructOutputReference extends c
 export interface ZeroTrustAccessGroupIncludeEveryone {
 }
 
-export function zeroTrustAccessGroupIncludeEveryoneToTerraform(struct?: ZeroTrustAccessGroupIncludeEveryone | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEveryoneToTerraform(struct?: ZeroTrustAccessGroupIncludeEveryone | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -4449,9 +4449,9 @@ export function zeroTrustAccessGroupIncludeEveryoneToTerraform(struct?: ZeroTrus
 }
 
 
-export function zeroTrustAccessGroupIncludeEveryoneToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEveryone | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeEveryoneToHclTerraform(struct?: ZeroTrustAccessGroupIncludeEveryone | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -4459,19 +4459,19 @@ export function zeroTrustAccessGroupIncludeEveryoneToHclTerraform(struct?: ZeroT
   return attrs;
 }
 
-export class ZeroTrustAccessGroupIncludeEveryoneOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeEveryoneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeEveryone | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeEveryone | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4480,12 +4480,12 @@ export class ZeroTrustAccessGroupIncludeEveryoneOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeEveryone | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeEveryone | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4499,43 +4499,43 @@ export interface ZeroTrustAccessGroupIncludeExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
   */
   readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
   */
   readonly keysUrl: string;
 }
 
-export function zeroTrustAccessGroupIncludeExternalEvaluationToTerraform(struct?: ZeroTrustAccessGroupIncludeExternalEvaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeExternalEvaluationToTerraform(struct?: ZeroTrustAccessGroupIncludeExternalEvaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
-    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+    evaluate_url: cdktn.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktn.stringToTerraform(struct!.keysUrl),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeExternalEvaluationToHclTerraform(struct?: ZeroTrustAccessGroupIncludeExternalEvaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeExternalEvaluationToHclTerraform(struct?: ZeroTrustAccessGroupIncludeExternalEvaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     evaluate_url: {
-      value: cdktf.stringToHclTerraform(struct!.evaluateUrl),
+      value: cdktn.stringToHclTerraform(struct!.evaluateUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keys_url: {
-      value: cdktf.stringToHclTerraform(struct!.keysUrl),
+      value: cdktn.stringToHclTerraform(struct!.keysUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4546,19 +4546,19 @@ export function zeroTrustAccessGroupIncludeExternalEvaluationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeExternalEvaluationOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeExternalEvaluationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeExternalEvaluation | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeExternalEvaluation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4575,14 +4575,14 @@ export class ZeroTrustAccessGroupIncludeExternalEvaluationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeExternalEvaluation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeExternalEvaluation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._evaluateUrl = undefined;
       this._keysUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4624,30 +4624,30 @@ export interface ZeroTrustAccessGroupIncludeGeo {
   /**
   * The country code that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
   */
   readonly countryCode: string;
 }
 
-export function zeroTrustAccessGroupIncludeGeoToTerraform(struct?: ZeroTrustAccessGroupIncludeGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGeoToTerraform(struct?: ZeroTrustAccessGroupIncludeGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeGeoToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGeoToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4658,19 +4658,19 @@ export function zeroTrustAccessGroupIncludeGeoToHclTerraform(struct?: ZeroTrustA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeGeoOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeGeoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeGeo | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeGeo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4683,13 +4683,13 @@ export class ZeroTrustAccessGroupIncludeGeoOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeGeo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeGeo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._countryCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4717,56 +4717,56 @@ export interface ZeroTrustAccessGroupIncludeGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
   */
   readonly name: string;
   /**
   * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
   */
   readonly team?: string;
 }
 
-export function zeroTrustAccessGroupIncludeGithubOrganizationToTerraform(struct?: ZeroTrustAccessGroupIncludeGithubOrganization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGithubOrganizationToTerraform(struct?: ZeroTrustAccessGroupIncludeGithubOrganization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.stringToTerraform(struct!.name),
-    team: cdktf.stringToTerraform(struct!.team),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
+    name: cdktn.stringToTerraform(struct!.name),
+    team: cdktn.stringToTerraform(struct!.team),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGithubOrganization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGithubOrganization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     team: {
-      value: cdktf.stringToHclTerraform(struct!.team),
+      value: cdktn.stringToHclTerraform(struct!.team),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4777,19 +4777,19 @@ export function zeroTrustAccessGroupIncludeGithubOrganizationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeGithubOrganizationOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeGithubOrganizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeGithubOrganization | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeGithubOrganization | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4810,7 +4810,7 @@ export class ZeroTrustAccessGroupIncludeGithubOrganizationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeGithubOrganization | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeGithubOrganization | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -4818,7 +4818,7 @@ export class ZeroTrustAccessGroupIncludeGithubOrganizationOutputReference extend
       this._name = undefined;
       this._team = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4877,7 +4877,7 @@ export interface ZeroTrustAccessGroupIncludeGroup {
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4885,25 +4885,25 @@ export interface ZeroTrustAccessGroupIncludeGroup {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupIncludeGroupToTerraform(struct?: ZeroTrustAccessGroupIncludeGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGroupToTerraform(struct?: ZeroTrustAccessGroupIncludeGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeGroupToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGroupToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -4914,19 +4914,19 @@ export function zeroTrustAccessGroupIncludeGroupToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeGroupOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -4939,13 +4939,13 @@ export class ZeroTrustAccessGroupIncludeGroupOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -4973,43 +4973,43 @@ export interface ZeroTrustAccessGroupIncludeGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupIncludeGsuiteToTerraform(struct?: ZeroTrustAccessGroupIncludeGsuite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGsuiteToTerraform(struct?: ZeroTrustAccessGroupIncludeGsuite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    email: cdktn.stringToTerraform(struct!.email),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeGsuiteToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGsuite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeGsuiteToHclTerraform(struct?: ZeroTrustAccessGroupIncludeGsuite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5020,19 +5020,19 @@ export function zeroTrustAccessGroupIncludeGsuiteToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeGsuiteOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeGsuiteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeGsuite | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeGsuite | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5049,14 +5049,14 @@ export class ZeroTrustAccessGroupIncludeGsuiteOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeGsuite | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeGsuite | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._email = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5098,30 +5098,30 @@ export interface ZeroTrustAccessGroupIncludeIp {
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
   */
   readonly ip: string;
 }
 
-export function zeroTrustAccessGroupIncludeIpToTerraform(struct?: ZeroTrustAccessGroupIncludeIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeIpToTerraform(struct?: ZeroTrustAccessGroupIncludeIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip: cdktf.stringToTerraform(struct!.ip),
+    ip: cdktn.stringToTerraform(struct!.ip),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeIpToHclTerraform(struct?: ZeroTrustAccessGroupIncludeIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeIpToHclTerraform(struct?: ZeroTrustAccessGroupIncludeIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5132,19 +5132,19 @@ export function zeroTrustAccessGroupIncludeIpToHclTerraform(struct?: ZeroTrustAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeIpOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeIp | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeIp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5157,13 +5157,13 @@ export class ZeroTrustAccessGroupIncludeIpOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeIp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeIp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ip = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5191,7 +5191,7 @@ export interface ZeroTrustAccessGroupIncludeIpListStruct {
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5199,25 +5199,25 @@ export interface ZeroTrustAccessGroupIncludeIpListStruct {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupIncludeIpListStructToTerraform(struct?: ZeroTrustAccessGroupIncludeIpListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeIpListStructToTerraform(struct?: ZeroTrustAccessGroupIncludeIpListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeIpListStructToHclTerraform(struct?: ZeroTrustAccessGroupIncludeIpListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeIpListStructToHclTerraform(struct?: ZeroTrustAccessGroupIncludeIpListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5228,19 +5228,19 @@ export function zeroTrustAccessGroupIncludeIpListStructToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeIpListStructOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeIpListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeIpListStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeIpListStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5253,13 +5253,13 @@ export class ZeroTrustAccessGroupIncludeIpListStructOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeIpListStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeIpListStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5287,30 +5287,30 @@ export interface ZeroTrustAccessGroupIncludeLinkedAppToken {
   /**
   * The ID of an Access OIDC SaaS application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
   */
   readonly appUid: string;
 }
 
-export function zeroTrustAccessGroupIncludeLinkedAppTokenToTerraform(struct?: ZeroTrustAccessGroupIncludeLinkedAppToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeLinkedAppTokenToTerraform(struct?: ZeroTrustAccessGroupIncludeLinkedAppToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_uid: cdktf.stringToTerraform(struct!.appUid),
+    app_uid: cdktn.stringToTerraform(struct!.appUid),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeLinkedAppTokenToHclTerraform(struct?: ZeroTrustAccessGroupIncludeLinkedAppToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeLinkedAppTokenToHclTerraform(struct?: ZeroTrustAccessGroupIncludeLinkedAppToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_uid: {
-      value: cdktf.stringToHclTerraform(struct!.appUid),
+      value: cdktn.stringToHclTerraform(struct!.appUid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5321,19 +5321,19 @@ export function zeroTrustAccessGroupIncludeLinkedAppTokenToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeLinkedAppTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeLinkedAppTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeLinkedAppToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeLinkedAppToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5346,13 +5346,13 @@ export class ZeroTrustAccessGroupIncludeLinkedAppTokenOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeLinkedAppToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeLinkedAppToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._appUid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5380,7 +5380,7 @@ export interface ZeroTrustAccessGroupIncludeLoginMethod {
   /**
   * The ID of an identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -5388,25 +5388,25 @@ export interface ZeroTrustAccessGroupIncludeLoginMethod {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupIncludeLoginMethodToTerraform(struct?: ZeroTrustAccessGroupIncludeLoginMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeLoginMethodToTerraform(struct?: ZeroTrustAccessGroupIncludeLoginMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeLoginMethodToHclTerraform(struct?: ZeroTrustAccessGroupIncludeLoginMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeLoginMethodToHclTerraform(struct?: ZeroTrustAccessGroupIncludeLoginMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5417,19 +5417,19 @@ export function zeroTrustAccessGroupIncludeLoginMethodToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeLoginMethodOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeLoginMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeLoginMethod | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeLoginMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5442,13 +5442,13 @@ export class ZeroTrustAccessGroupIncludeLoginMethodOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeLoginMethod | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeLoginMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5476,56 +5476,56 @@ export interface ZeroTrustAccessGroupIncludeOidc {
   /**
   * The name of the OIDC claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
   */
   readonly claimName: string;
   /**
   * The OIDC claim value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
   */
   readonly claimValue: string;
   /**
   * The ID of your OIDC identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupIncludeOidcToTerraform(struct?: ZeroTrustAccessGroupIncludeOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeOidcToTerraform(struct?: ZeroTrustAccessGroupIncludeOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim_name: cdktf.stringToTerraform(struct!.claimName),
-    claim_value: cdktf.stringToTerraform(struct!.claimValue),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    claim_name: cdktn.stringToTerraform(struct!.claimName),
+    claim_value: cdktn.stringToTerraform(struct!.claimValue),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeOidcToHclTerraform(struct?: ZeroTrustAccessGroupIncludeOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeOidcToHclTerraform(struct?: ZeroTrustAccessGroupIncludeOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim_name: {
-      value: cdktf.stringToHclTerraform(struct!.claimName),
+      value: cdktn.stringToHclTerraform(struct!.claimName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     claim_value: {
-      value: cdktf.stringToHclTerraform(struct!.claimValue),
+      value: cdktn.stringToHclTerraform(struct!.claimValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5536,19 +5536,19 @@ export function zeroTrustAccessGroupIncludeOidcToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeOidcOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeOidc | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeOidc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5569,7 +5569,7 @@ export class ZeroTrustAccessGroupIncludeOidcOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeOidc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeOidc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5577,7 +5577,7 @@ export class ZeroTrustAccessGroupIncludeOidcOutputReference extends cdktf.Comple
       this._claimValue = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5633,43 +5633,43 @@ export interface ZeroTrustAccessGroupIncludeOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
   */
   readonly name: string;
 }
 
-export function zeroTrustAccessGroupIncludeOktaToTerraform(struct?: ZeroTrustAccessGroupIncludeOkta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeOktaToTerraform(struct?: ZeroTrustAccessGroupIncludeOkta | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.stringToTerraform(struct!.name),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeOktaToHclTerraform(struct?: ZeroTrustAccessGroupIncludeOkta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeOktaToHclTerraform(struct?: ZeroTrustAccessGroupIncludeOkta | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5680,19 +5680,19 @@ export function zeroTrustAccessGroupIncludeOktaToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeOktaOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeOktaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeOkta | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeOkta | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5709,14 +5709,14 @@ export class ZeroTrustAccessGroupIncludeOktaOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeOkta | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeOkta | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._identityProviderId = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5758,56 +5758,56 @@ export interface ZeroTrustAccessGroupIncludeSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
   */
   readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
   */
   readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupIncludeSamlToTerraform(struct?: ZeroTrustAccessGroupIncludeSaml | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeSamlToTerraform(struct?: ZeroTrustAccessGroupIncludeSaml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute_name: cdktf.stringToTerraform(struct!.attributeName),
-    attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    attribute_name: cdktn.stringToTerraform(struct!.attributeName),
+    attribute_value: cdktn.stringToTerraform(struct!.attributeValue),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeSamlToHclTerraform(struct?: ZeroTrustAccessGroupIncludeSaml | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeSamlToHclTerraform(struct?: ZeroTrustAccessGroupIncludeSaml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute_name: {
-      value: cdktf.stringToHclTerraform(struct!.attributeName),
+      value: cdktn.stringToHclTerraform(struct!.attributeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     attribute_value: {
-      value: cdktf.stringToHclTerraform(struct!.attributeValue),
+      value: cdktn.stringToHclTerraform(struct!.attributeValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5818,19 +5818,19 @@ export function zeroTrustAccessGroupIncludeSamlToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeSamlOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeSamlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeSaml | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeSaml | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5851,7 +5851,7 @@ export class ZeroTrustAccessGroupIncludeSamlOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeSaml | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeSaml | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -5859,7 +5859,7 @@ export class ZeroTrustAccessGroupIncludeSamlOutputReference extends cdktf.Comple
       this._attributeValue = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -5915,30 +5915,30 @@ export interface ZeroTrustAccessGroupIncludeServiceToken {
   /**
   * The ID of a Service Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
   */
   readonly tokenId: string;
 }
 
-export function zeroTrustAccessGroupIncludeServiceTokenToTerraform(struct?: ZeroTrustAccessGroupIncludeServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeServiceTokenToTerraform(struct?: ZeroTrustAccessGroupIncludeServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    token_id: cdktf.stringToTerraform(struct!.tokenId),
+    token_id: cdktn.stringToTerraform(struct!.tokenId),
   }
 }
 
 
-export function zeroTrustAccessGroupIncludeServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupIncludeServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupIncludeServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     token_id: {
-      value: cdktf.stringToHclTerraform(struct!.tokenId),
+      value: cdktn.stringToHclTerraform(struct!.tokenId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -5949,19 +5949,19 @@ export function zeroTrustAccessGroupIncludeServiceTokenToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeServiceTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeServiceTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupIncludeServiceToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupIncludeServiceToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -5974,13 +5974,13 @@ export class ZeroTrustAccessGroupIncludeServiceTokenOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupIncludeServiceToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupIncludeServiceToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tokenId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6008,108 +6008,108 @@ export interface ZeroTrustAccessGroupInclude {
   /**
   * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
   */
   readonly anyValidServiceToken?: ZeroTrustAccessGroupIncludeAnyValidServiceToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}
   */
   readonly authContext?: ZeroTrustAccessGroupIncludeAuthContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
   */
   readonly authMethod?: ZeroTrustAccessGroupIncludeAuthMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}
   */
   readonly azureAd?: ZeroTrustAccessGroupIncludeAzureAd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}
   */
   readonly certificate?: ZeroTrustAccessGroupIncludeCertificate;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
   */
   readonly commonName?: ZeroTrustAccessGroupIncludeCommonName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}
   */
   readonly devicePosture?: ZeroTrustAccessGroupIncludeDevicePosture;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email?: ZeroTrustAccessGroupIncludeEmail;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}
   */
   readonly emailDomain?: ZeroTrustAccessGroupIncludeEmailDomain;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}
   */
   readonly emailList?: ZeroTrustAccessGroupIncludeEmailListStruct;
   /**
   * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
   */
   readonly everyone?: ZeroTrustAccessGroupIncludeEveryone;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}
   */
   readonly externalEvaluation?: ZeroTrustAccessGroupIncludeExternalEvaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}
   */
   readonly geo?: ZeroTrustAccessGroupIncludeGeo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}
   */
   readonly githubOrganization?: ZeroTrustAccessGroupIncludeGithubOrganization;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}
   */
   readonly group?: ZeroTrustAccessGroupIncludeGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}
   */
   readonly gsuite?: ZeroTrustAccessGroupIncludeGsuite;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
   */
   readonly ip?: ZeroTrustAccessGroupIncludeIp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}
   */
   readonly ipList?: ZeroTrustAccessGroupIncludeIpListStruct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}
   */
   readonly linkedAppToken?: ZeroTrustAccessGroupIncludeLinkedAppToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}
   */
   readonly loginMethod?: ZeroTrustAccessGroupIncludeLoginMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}
   */
   readonly oidc?: ZeroTrustAccessGroupIncludeOidc;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}
   */
   readonly okta?: ZeroTrustAccessGroupIncludeOkta;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}
   */
   readonly saml?: ZeroTrustAccessGroupIncludeSaml;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}
   */
   readonly serviceToken?: ZeroTrustAccessGroupIncludeServiceToken;
 }
 
-export function zeroTrustAccessGroupIncludeToTerraform(struct?: ZeroTrustAccessGroupInclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeToTerraform(struct?: ZeroTrustAccessGroupInclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6141,9 +6141,9 @@ export function zeroTrustAccessGroupIncludeToTerraform(struct?: ZeroTrustAccessG
 }
 
 
-export function zeroTrustAccessGroupIncludeToHclTerraform(struct?: ZeroTrustAccessGroupInclude | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupIncludeToHclTerraform(struct?: ZeroTrustAccessGroupInclude | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6297,9 +6297,9 @@ export function zeroTrustAccessGroupIncludeToHclTerraform(struct?: ZeroTrustAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupIncludeOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupIncludeOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -6307,11 +6307,11 @@ export class ZeroTrustAccessGroupIncludeOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupInclude | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupInclude | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6416,7 +6416,7 @@ export class ZeroTrustAccessGroupIncludeOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupInclude | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupInclude | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -6445,7 +6445,7 @@ export class ZeroTrustAccessGroupIncludeOutputReference extends cdktf.ComplexObj
       this._saml.internalValue = undefined;
       this._serviceToken.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6864,15 +6864,15 @@ export class ZeroTrustAccessGroupIncludeOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ZeroTrustAccessGroupIncludeList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessGroupInclude[] | cdktf.IResolvable
+export class ZeroTrustAccessGroupIncludeList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustAccessGroupInclude[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -6886,9 +6886,9 @@ export class ZeroTrustAccessGroupIncludeList extends cdktf.ComplexList {
 export interface ZeroTrustAccessGroupRequireAnyValidServiceToken {
 }
 
-export function zeroTrustAccessGroupRequireAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAnyValidServiceTokenToTerraform(struct?: ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -6896,9 +6896,9 @@ export function zeroTrustAccessGroupRequireAnyValidServiceTokenToTerraform(struc
 }
 
 
-export function zeroTrustAccessGroupRequireAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAnyValidServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -6906,19 +6906,19 @@ export function zeroTrustAccessGroupRequireAnyValidServiceTokenToHclTerraform(st
   return attrs;
 }
 
-export class ZeroTrustAccessGroupRequireAnyValidServiceTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireAnyValidServiceTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -6927,12 +6927,12 @@ export class ZeroTrustAccessGroupRequireAnyValidServiceTokenOutputReference exte
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireAnyValidServiceToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -6946,13 +6946,13 @@ export interface ZeroTrustAccessGroupRequireAuthContext {
   /**
   * The ACID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ac_id ZeroTrustAccessGroup#ac_id}
   */
   readonly acId: string;
   /**
   * The ID of an Authentication context.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -6961,44 +6961,44 @@ export interface ZeroTrustAccessGroupRequireAuthContext {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupRequireAuthContextToTerraform(struct?: ZeroTrustAccessGroupRequireAuthContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAuthContextToTerraform(struct?: ZeroTrustAccessGroupRequireAuthContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ac_id: cdktf.stringToTerraform(struct!.acId),
-    id: cdktf.stringToTerraform(struct!.id),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    ac_id: cdktn.stringToTerraform(struct!.acId),
+    id: cdktn.stringToTerraform(struct!.id),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireAuthContextToHclTerraform(struct?: ZeroTrustAccessGroupRequireAuthContext | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAuthContextToHclTerraform(struct?: ZeroTrustAccessGroupRequireAuthContext | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ac_id: {
-      value: cdktf.stringToHclTerraform(struct!.acId),
+      value: cdktn.stringToHclTerraform(struct!.acId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7009,19 +7009,19 @@ export function zeroTrustAccessGroupRequireAuthContextToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireAuthContextOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireAuthContextOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireAuthContext | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireAuthContext | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7042,7 +7042,7 @@ export class ZeroTrustAccessGroupRequireAuthContextOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireAuthContext | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireAuthContext | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -7050,7 +7050,7 @@ export class ZeroTrustAccessGroupRequireAuthContextOutputReference extends cdktf
       this._id = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7106,30 +7106,30 @@ export interface ZeroTrustAccessGroupRequireAuthMethod {
   /**
   * The type of authentication method https://datatracker.ietf.org/doc/html/rfc8176#section-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
   */
   readonly authMethod: string;
 }
 
-export function zeroTrustAccessGroupRequireAuthMethodToTerraform(struct?: ZeroTrustAccessGroupRequireAuthMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAuthMethodToTerraform(struct?: ZeroTrustAccessGroupRequireAuthMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    auth_method: cdktf.stringToTerraform(struct!.authMethod),
+    auth_method: cdktn.stringToTerraform(struct!.authMethod),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireAuthMethodToHclTerraform(struct?: ZeroTrustAccessGroupRequireAuthMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAuthMethodToHclTerraform(struct?: ZeroTrustAccessGroupRequireAuthMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     auth_method: {
-      value: cdktf.stringToHclTerraform(struct!.authMethod),
+      value: cdktn.stringToHclTerraform(struct!.authMethod),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7140,19 +7140,19 @@ export function zeroTrustAccessGroupRequireAuthMethodToHclTerraform(struct?: Zer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireAuthMethodOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireAuthMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireAuthMethod | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireAuthMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7165,13 +7165,13 @@ export class ZeroTrustAccessGroupRequireAuthMethodOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireAuthMethod | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireAuthMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._authMethod = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7199,7 +7199,7 @@ export interface ZeroTrustAccessGroupRequireAzureAd {
   /**
   * The ID of an Azure group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7208,37 +7208,37 @@ export interface ZeroTrustAccessGroupRequireAzureAd {
   /**
   * The ID of your Azure identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupRequireAzureAdToTerraform(struct?: ZeroTrustAccessGroupRequireAzureAd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAzureAdToTerraform(struct?: ZeroTrustAccessGroupRequireAzureAd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    id: cdktn.stringToTerraform(struct!.id),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireAzureAdToHclTerraform(struct?: ZeroTrustAccessGroupRequireAzureAd | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireAzureAdToHclTerraform(struct?: ZeroTrustAccessGroupRequireAzureAd | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7249,19 +7249,19 @@ export function zeroTrustAccessGroupRequireAzureAdToHclTerraform(struct?: ZeroTr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireAzureAdOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireAzureAdOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireAzureAd | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireAzureAd | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7278,14 +7278,14 @@ export class ZeroTrustAccessGroupRequireAzureAdOutputReference extends cdktf.Com
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireAzureAd | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireAzureAd | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7326,9 +7326,9 @@ export class ZeroTrustAccessGroupRequireAzureAdOutputReference extends cdktf.Com
 export interface ZeroTrustAccessGroupRequireCertificate {
 }
 
-export function zeroTrustAccessGroupRequireCertificateToTerraform(struct?: ZeroTrustAccessGroupRequireCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireCertificateToTerraform(struct?: ZeroTrustAccessGroupRequireCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7336,9 +7336,9 @@ export function zeroTrustAccessGroupRequireCertificateToTerraform(struct?: ZeroT
 }
 
 
-export function zeroTrustAccessGroupRequireCertificateToHclTerraform(struct?: ZeroTrustAccessGroupRequireCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireCertificateToHclTerraform(struct?: ZeroTrustAccessGroupRequireCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7346,19 +7346,19 @@ export function zeroTrustAccessGroupRequireCertificateToHclTerraform(struct?: Ze
   return attrs;
 }
 
-export class ZeroTrustAccessGroupRequireCertificateOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7367,12 +7367,12 @@ export class ZeroTrustAccessGroupRequireCertificateOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7386,30 +7386,30 @@ export interface ZeroTrustAccessGroupRequireCommonName {
   /**
   * The common name to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
   */
   readonly commonName: string;
 }
 
-export function zeroTrustAccessGroupRequireCommonNameToTerraform(struct?: ZeroTrustAccessGroupRequireCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireCommonNameToTerraform(struct?: ZeroTrustAccessGroupRequireCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    common_name: cdktf.stringToTerraform(struct!.commonName),
+    common_name: cdktn.stringToTerraform(struct!.commonName),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireCommonNameToHclTerraform(struct?: ZeroTrustAccessGroupRequireCommonName | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireCommonNameToHclTerraform(struct?: ZeroTrustAccessGroupRequireCommonName | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     common_name: {
-      value: cdktf.stringToHclTerraform(struct!.commonName),
+      value: cdktn.stringToHclTerraform(struct!.commonName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7420,19 +7420,19 @@ export function zeroTrustAccessGroupRequireCommonNameToHclTerraform(struct?: Zer
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireCommonNameOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireCommonNameOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireCommonName | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireCommonName | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7445,13 +7445,13 @@ export class ZeroTrustAccessGroupRequireCommonNameOutputReference extends cdktf.
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireCommonName | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireCommonName | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._commonName = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7479,30 +7479,30 @@ export interface ZeroTrustAccessGroupRequireDevicePosture {
   /**
   * The ID of a device posture integration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#integration_uid ZeroTrustAccessGroup#integration_uid}
   */
   readonly integrationUid: string;
 }
 
-export function zeroTrustAccessGroupRequireDevicePostureToTerraform(struct?: ZeroTrustAccessGroupRequireDevicePosture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireDevicePostureToTerraform(struct?: ZeroTrustAccessGroupRequireDevicePosture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    integration_uid: cdktf.stringToTerraform(struct!.integrationUid),
+    integration_uid: cdktn.stringToTerraform(struct!.integrationUid),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireDevicePostureToHclTerraform(struct?: ZeroTrustAccessGroupRequireDevicePosture | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireDevicePostureToHclTerraform(struct?: ZeroTrustAccessGroupRequireDevicePosture | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     integration_uid: {
-      value: cdktf.stringToHclTerraform(struct!.integrationUid),
+      value: cdktn.stringToHclTerraform(struct!.integrationUid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7513,19 +7513,19 @@ export function zeroTrustAccessGroupRequireDevicePostureToHclTerraform(struct?: 
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireDevicePostureOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireDevicePostureOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireDevicePosture | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireDevicePosture | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7538,13 +7538,13 @@ export class ZeroTrustAccessGroupRequireDevicePostureOutputReference extends cdk
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireDevicePosture | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireDevicePosture | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._integrationUid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7572,30 +7572,30 @@ export interface ZeroTrustAccessGroupRequireEmail {
   /**
   * The email of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email: string;
 }
 
-export function zeroTrustAccessGroupRequireEmailToTerraform(struct?: ZeroTrustAccessGroupRequireEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEmailToTerraform(struct?: ZeroTrustAccessGroupRequireEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
+    email: cdktn.stringToTerraform(struct!.email),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireEmailToHclTerraform(struct?: ZeroTrustAccessGroupRequireEmail | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEmailToHclTerraform(struct?: ZeroTrustAccessGroupRequireEmail | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7606,19 +7606,19 @@ export function zeroTrustAccessGroupRequireEmailToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireEmailOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireEmailOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireEmail | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireEmail | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7631,13 +7631,13 @@ export class ZeroTrustAccessGroupRequireEmailOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireEmail | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireEmail | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._email = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7665,30 +7665,30 @@ export interface ZeroTrustAccessGroupRequireEmailDomain {
   /**
   * The email domain to match.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#domain ZeroTrustAccessGroup#domain}
   */
   readonly domain: string;
 }
 
-export function zeroTrustAccessGroupRequireEmailDomainToTerraform(struct?: ZeroTrustAccessGroupRequireEmailDomain | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEmailDomainToTerraform(struct?: ZeroTrustAccessGroupRequireEmailDomain | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    domain: cdktf.stringToTerraform(struct!.domain),
+    domain: cdktn.stringToTerraform(struct!.domain),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireEmailDomainToHclTerraform(struct?: ZeroTrustAccessGroupRequireEmailDomain | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEmailDomainToHclTerraform(struct?: ZeroTrustAccessGroupRequireEmailDomain | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     domain: {
-      value: cdktf.stringToHclTerraform(struct!.domain),
+      value: cdktn.stringToHclTerraform(struct!.domain),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7699,19 +7699,19 @@ export function zeroTrustAccessGroupRequireEmailDomainToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireEmailDomainOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireEmailDomainOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireEmailDomain | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireEmailDomain | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7724,13 +7724,13 @@ export class ZeroTrustAccessGroupRequireEmailDomainOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireEmailDomain | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireEmailDomain | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._domain = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7758,7 +7758,7 @@ export interface ZeroTrustAccessGroupRequireEmailListStruct {
   /**
   * The ID of a previously created email list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7766,25 +7766,25 @@ export interface ZeroTrustAccessGroupRequireEmailListStruct {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupRequireEmailListStructToTerraform(struct?: ZeroTrustAccessGroupRequireEmailListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEmailListStructToTerraform(struct?: ZeroTrustAccessGroupRequireEmailListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireEmailListStructToHclTerraform(struct?: ZeroTrustAccessGroupRequireEmailListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEmailListStructToHclTerraform(struct?: ZeroTrustAccessGroupRequireEmailListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7795,19 +7795,19 @@ export function zeroTrustAccessGroupRequireEmailListStructToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireEmailListStructOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireEmailListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireEmailListStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireEmailListStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7820,13 +7820,13 @@ export class ZeroTrustAccessGroupRequireEmailListStructOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireEmailListStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireEmailListStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7853,9 +7853,9 @@ export class ZeroTrustAccessGroupRequireEmailListStructOutputReference extends c
 export interface ZeroTrustAccessGroupRequireEveryone {
 }
 
-export function zeroTrustAccessGroupRequireEveryoneToTerraform(struct?: ZeroTrustAccessGroupRequireEveryone | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEveryoneToTerraform(struct?: ZeroTrustAccessGroupRequireEveryone | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -7863,9 +7863,9 @@ export function zeroTrustAccessGroupRequireEveryoneToTerraform(struct?: ZeroTrus
 }
 
 
-export function zeroTrustAccessGroupRequireEveryoneToHclTerraform(struct?: ZeroTrustAccessGroupRequireEveryone | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireEveryoneToHclTerraform(struct?: ZeroTrustAccessGroupRequireEveryone | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -7873,19 +7873,19 @@ export function zeroTrustAccessGroupRequireEveryoneToHclTerraform(struct?: ZeroT
   return attrs;
 }
 
-export class ZeroTrustAccessGroupRequireEveryoneOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireEveryoneOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireEveryone | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireEveryone | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7894,12 +7894,12 @@ export class ZeroTrustAccessGroupRequireEveryoneOutputReference extends cdktf.Co
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireEveryone | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireEveryone | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -7913,43 +7913,43 @@ export interface ZeroTrustAccessGroupRequireExternalEvaluation {
   /**
   * The API endpoint containing your business logic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#evaluate_url ZeroTrustAccessGroup#evaluate_url}
   */
   readonly evaluateUrl: string;
   /**
   * The API endpoint containing the key that Access uses to verify that the response came from your API.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#keys_url ZeroTrustAccessGroup#keys_url}
   */
   readonly keysUrl: string;
 }
 
-export function zeroTrustAccessGroupRequireExternalEvaluationToTerraform(struct?: ZeroTrustAccessGroupRequireExternalEvaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireExternalEvaluationToTerraform(struct?: ZeroTrustAccessGroupRequireExternalEvaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    evaluate_url: cdktf.stringToTerraform(struct!.evaluateUrl),
-    keys_url: cdktf.stringToTerraform(struct!.keysUrl),
+    evaluate_url: cdktn.stringToTerraform(struct!.evaluateUrl),
+    keys_url: cdktn.stringToTerraform(struct!.keysUrl),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireExternalEvaluationToHclTerraform(struct?: ZeroTrustAccessGroupRequireExternalEvaluation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireExternalEvaluationToHclTerraform(struct?: ZeroTrustAccessGroupRequireExternalEvaluation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     evaluate_url: {
-      value: cdktf.stringToHclTerraform(struct!.evaluateUrl),
+      value: cdktn.stringToHclTerraform(struct!.evaluateUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     keys_url: {
-      value: cdktf.stringToHclTerraform(struct!.keysUrl),
+      value: cdktn.stringToHclTerraform(struct!.keysUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -7960,19 +7960,19 @@ export function zeroTrustAccessGroupRequireExternalEvaluationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireExternalEvaluationOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireExternalEvaluationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireExternalEvaluation | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireExternalEvaluation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -7989,14 +7989,14 @@ export class ZeroTrustAccessGroupRequireExternalEvaluationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireExternalEvaluation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireExternalEvaluation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._evaluateUrl = undefined;
       this._keysUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8038,30 +8038,30 @@ export interface ZeroTrustAccessGroupRequireGeo {
   /**
   * The country code that should be matched.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#country_code ZeroTrustAccessGroup#country_code}
   */
   readonly countryCode: string;
 }
 
-export function zeroTrustAccessGroupRequireGeoToTerraform(struct?: ZeroTrustAccessGroupRequireGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGeoToTerraform(struct?: ZeroTrustAccessGroupRequireGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    country_code: cdktf.stringToTerraform(struct!.countryCode),
+    country_code: cdktn.stringToTerraform(struct!.countryCode),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireGeoToHclTerraform(struct?: ZeroTrustAccessGroupRequireGeo | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGeoToHclTerraform(struct?: ZeroTrustAccessGroupRequireGeo | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     country_code: {
-      value: cdktf.stringToHclTerraform(struct!.countryCode),
+      value: cdktn.stringToHclTerraform(struct!.countryCode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8072,19 +8072,19 @@ export function zeroTrustAccessGroupRequireGeoToHclTerraform(struct?: ZeroTrustA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireGeoOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireGeoOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireGeo | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireGeo | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8097,13 +8097,13 @@ export class ZeroTrustAccessGroupRequireGeoOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireGeo | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireGeo | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._countryCode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8131,56 +8131,56 @@ export interface ZeroTrustAccessGroupRequireGithubOrganization {
   /**
   * The ID of your Github identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
   */
   readonly name: string;
   /**
   * The name of the team
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#team ZeroTrustAccessGroup#team}
   */
   readonly team?: string;
 }
 
-export function zeroTrustAccessGroupRequireGithubOrganizationToTerraform(struct?: ZeroTrustAccessGroupRequireGithubOrganization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGithubOrganizationToTerraform(struct?: ZeroTrustAccessGroupRequireGithubOrganization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.stringToTerraform(struct!.name),
-    team: cdktf.stringToTerraform(struct!.team),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
+    name: cdktn.stringToTerraform(struct!.name),
+    team: cdktn.stringToTerraform(struct!.team),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessGroupRequireGithubOrganization | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGithubOrganizationToHclTerraform(struct?: ZeroTrustAccessGroupRequireGithubOrganization | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     team: {
-      value: cdktf.stringToHclTerraform(struct!.team),
+      value: cdktn.stringToHclTerraform(struct!.team),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8191,19 +8191,19 @@ export function zeroTrustAccessGroupRequireGithubOrganizationToHclTerraform(stru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireGithubOrganizationOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireGithubOrganizationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireGithubOrganization | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireGithubOrganization | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8224,7 +8224,7 @@ export class ZeroTrustAccessGroupRequireGithubOrganizationOutputReference extend
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireGithubOrganization | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireGithubOrganization | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8232,7 +8232,7 @@ export class ZeroTrustAccessGroupRequireGithubOrganizationOutputReference extend
       this._name = undefined;
       this._team = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8291,7 +8291,7 @@ export interface ZeroTrustAccessGroupRequireGroup {
   /**
   * The ID of a previously created Access group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8299,25 +8299,25 @@ export interface ZeroTrustAccessGroupRequireGroup {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupRequireGroupToTerraform(struct?: ZeroTrustAccessGroupRequireGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGroupToTerraform(struct?: ZeroTrustAccessGroupRequireGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireGroupToHclTerraform(struct?: ZeroTrustAccessGroupRequireGroup | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGroupToHclTerraform(struct?: ZeroTrustAccessGroupRequireGroup | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8328,19 +8328,19 @@ export function zeroTrustAccessGroupRequireGroupToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireGroupOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireGroupOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireGroup | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireGroup | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8353,13 +8353,13 @@ export class ZeroTrustAccessGroupRequireGroupOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireGroup | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireGroup | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8387,43 +8387,43 @@ export interface ZeroTrustAccessGroupRequireGsuite {
   /**
   * The email of the Google Workspace group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email: string;
   /**
   * The ID of your Google Workspace identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupRequireGsuiteToTerraform(struct?: ZeroTrustAccessGroupRequireGsuite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGsuiteToTerraform(struct?: ZeroTrustAccessGroupRequireGsuite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    email: cdktf.stringToTerraform(struct!.email),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    email: cdktn.stringToTerraform(struct!.email),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireGsuiteToHclTerraform(struct?: ZeroTrustAccessGroupRequireGsuite | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireGsuiteToHclTerraform(struct?: ZeroTrustAccessGroupRequireGsuite | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     email: {
-      value: cdktf.stringToHclTerraform(struct!.email),
+      value: cdktn.stringToHclTerraform(struct!.email),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8434,19 +8434,19 @@ export function zeroTrustAccessGroupRequireGsuiteToHclTerraform(struct?: ZeroTru
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireGsuiteOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireGsuiteOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireGsuite | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireGsuite | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8463,14 +8463,14 @@ export class ZeroTrustAccessGroupRequireGsuiteOutputReference extends cdktf.Comp
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireGsuite | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireGsuite | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._email = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8512,30 +8512,30 @@ export interface ZeroTrustAccessGroupRequireIp {
   /**
   * An IPv4 or IPv6 CIDR block.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
   */
   readonly ip: string;
 }
 
-export function zeroTrustAccessGroupRequireIpToTerraform(struct?: ZeroTrustAccessGroupRequireIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireIpToTerraform(struct?: ZeroTrustAccessGroupRequireIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ip: cdktf.stringToTerraform(struct!.ip),
+    ip: cdktn.stringToTerraform(struct!.ip),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireIpToHclTerraform(struct?: ZeroTrustAccessGroupRequireIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireIpToHclTerraform(struct?: ZeroTrustAccessGroupRequireIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ip: {
-      value: cdktf.stringToHclTerraform(struct!.ip),
+      value: cdktn.stringToHclTerraform(struct!.ip),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8546,19 +8546,19 @@ export function zeroTrustAccessGroupRequireIpToHclTerraform(struct?: ZeroTrustAc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireIpOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireIp | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireIp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8571,13 +8571,13 @@ export class ZeroTrustAccessGroupRequireIpOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireIp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireIp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._ip = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8605,7 +8605,7 @@ export interface ZeroTrustAccessGroupRequireIpListStruct {
   /**
   * The ID of a previously created IP list.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8613,25 +8613,25 @@ export interface ZeroTrustAccessGroupRequireIpListStruct {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupRequireIpListStructToTerraform(struct?: ZeroTrustAccessGroupRequireIpListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireIpListStructToTerraform(struct?: ZeroTrustAccessGroupRequireIpListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireIpListStructToHclTerraform(struct?: ZeroTrustAccessGroupRequireIpListStruct | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireIpListStructToHclTerraform(struct?: ZeroTrustAccessGroupRequireIpListStruct | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8642,19 +8642,19 @@ export function zeroTrustAccessGroupRequireIpListStructToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireIpListStructOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireIpListStructOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireIpListStruct | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireIpListStruct | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8667,13 +8667,13 @@ export class ZeroTrustAccessGroupRequireIpListStructOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireIpListStruct | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireIpListStruct | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8701,30 +8701,30 @@ export interface ZeroTrustAccessGroupRequireLinkedAppToken {
   /**
   * The ID of an Access OIDC SaaS application
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#app_uid ZeroTrustAccessGroup#app_uid}
   */
   readonly appUid: string;
 }
 
-export function zeroTrustAccessGroupRequireLinkedAppTokenToTerraform(struct?: ZeroTrustAccessGroupRequireLinkedAppToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireLinkedAppTokenToTerraform(struct?: ZeroTrustAccessGroupRequireLinkedAppToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    app_uid: cdktf.stringToTerraform(struct!.appUid),
+    app_uid: cdktn.stringToTerraform(struct!.appUid),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireLinkedAppTokenToHclTerraform(struct?: ZeroTrustAccessGroupRequireLinkedAppToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireLinkedAppTokenToHclTerraform(struct?: ZeroTrustAccessGroupRequireLinkedAppToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     app_uid: {
-      value: cdktf.stringToHclTerraform(struct!.appUid),
+      value: cdktn.stringToHclTerraform(struct!.appUid),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8735,19 +8735,19 @@ export function zeroTrustAccessGroupRequireLinkedAppTokenToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireLinkedAppTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireLinkedAppTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireLinkedAppToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireLinkedAppToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8760,13 +8760,13 @@ export class ZeroTrustAccessGroupRequireLinkedAppTokenOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireLinkedAppToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireLinkedAppToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._appUid = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8794,7 +8794,7 @@ export interface ZeroTrustAccessGroupRequireLoginMethod {
   /**
   * The ID of an identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#id ZeroTrustAccessGroup#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -8802,25 +8802,25 @@ export interface ZeroTrustAccessGroupRequireLoginMethod {
   readonly id: string;
 }
 
-export function zeroTrustAccessGroupRequireLoginMethodToTerraform(struct?: ZeroTrustAccessGroupRequireLoginMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireLoginMethodToTerraform(struct?: ZeroTrustAccessGroupRequireLoginMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireLoginMethodToHclTerraform(struct?: ZeroTrustAccessGroupRequireLoginMethod | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireLoginMethodToHclTerraform(struct?: ZeroTrustAccessGroupRequireLoginMethod | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8831,19 +8831,19 @@ export function zeroTrustAccessGroupRequireLoginMethodToHclTerraform(struct?: Ze
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireLoginMethodOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireLoginMethodOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireLoginMethod | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireLoginMethod | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8856,13 +8856,13 @@ export class ZeroTrustAccessGroupRequireLoginMethodOutputReference extends cdktf
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireLoginMethod | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireLoginMethod | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -8890,56 +8890,56 @@ export interface ZeroTrustAccessGroupRequireOidc {
   /**
   * The name of the OIDC claim.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#claim_name ZeroTrustAccessGroup#claim_name}
   */
   readonly claimName: string;
   /**
   * The OIDC claim value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#claim_value ZeroTrustAccessGroup#claim_value}
   */
   readonly claimValue: string;
   /**
   * The ID of your OIDC identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupRequireOidcToTerraform(struct?: ZeroTrustAccessGroupRequireOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireOidcToTerraform(struct?: ZeroTrustAccessGroupRequireOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    claim_name: cdktf.stringToTerraform(struct!.claimName),
-    claim_value: cdktf.stringToTerraform(struct!.claimValue),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    claim_name: cdktn.stringToTerraform(struct!.claimName),
+    claim_value: cdktn.stringToTerraform(struct!.claimValue),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireOidcToHclTerraform(struct?: ZeroTrustAccessGroupRequireOidc | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireOidcToHclTerraform(struct?: ZeroTrustAccessGroupRequireOidc | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     claim_name: {
-      value: cdktf.stringToHclTerraform(struct!.claimName),
+      value: cdktn.stringToHclTerraform(struct!.claimName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     claim_value: {
-      value: cdktf.stringToHclTerraform(struct!.claimValue),
+      value: cdktn.stringToHclTerraform(struct!.claimValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -8950,19 +8950,19 @@ export function zeroTrustAccessGroupRequireOidcToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireOidcOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireOidcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireOidc | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireOidc | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -8983,7 +8983,7 @@ export class ZeroTrustAccessGroupRequireOidcOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireOidc | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireOidc | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -8991,7 +8991,7 @@ export class ZeroTrustAccessGroupRequireOidcOutputReference extends cdktf.Comple
       this._claimValue = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9047,43 +9047,43 @@ export interface ZeroTrustAccessGroupRequireOkta {
   /**
   * The ID of your Okta identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
   /**
   * The name of the Okta group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#name ZeroTrustAccessGroup#name}
   */
   readonly name: string;
 }
 
-export function zeroTrustAccessGroupRequireOktaToTerraform(struct?: ZeroTrustAccessGroupRequireOkta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireOktaToTerraform(struct?: ZeroTrustAccessGroupRequireOkta | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
-    name: cdktf.stringToTerraform(struct!.name),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
+    name: cdktn.stringToTerraform(struct!.name),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireOktaToHclTerraform(struct?: ZeroTrustAccessGroupRequireOkta | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireOktaToHclTerraform(struct?: ZeroTrustAccessGroupRequireOkta | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9094,19 +9094,19 @@ export function zeroTrustAccessGroupRequireOktaToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireOktaOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireOktaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireOkta | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireOkta | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9123,14 +9123,14 @@ export class ZeroTrustAccessGroupRequireOktaOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireOkta | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireOkta | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._identityProviderId = undefined;
       this._name = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9172,56 +9172,56 @@ export interface ZeroTrustAccessGroupRequireSaml {
   /**
   * The name of the SAML attribute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#attribute_name ZeroTrustAccessGroup#attribute_name}
   */
   readonly attributeName: string;
   /**
   * The SAML attribute value to look for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#attribute_value ZeroTrustAccessGroup#attribute_value}
   */
   readonly attributeValue: string;
   /**
   * The ID of your SAML identity provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#identity_provider_id ZeroTrustAccessGroup#identity_provider_id}
   */
   readonly identityProviderId: string;
 }
 
-export function zeroTrustAccessGroupRequireSamlToTerraform(struct?: ZeroTrustAccessGroupRequireSaml | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireSamlToTerraform(struct?: ZeroTrustAccessGroupRequireSaml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    attribute_name: cdktf.stringToTerraform(struct!.attributeName),
-    attribute_value: cdktf.stringToTerraform(struct!.attributeValue),
-    identity_provider_id: cdktf.stringToTerraform(struct!.identityProviderId),
+    attribute_name: cdktn.stringToTerraform(struct!.attributeName),
+    attribute_value: cdktn.stringToTerraform(struct!.attributeValue),
+    identity_provider_id: cdktn.stringToTerraform(struct!.identityProviderId),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireSamlToHclTerraform(struct?: ZeroTrustAccessGroupRequireSaml | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireSamlToHclTerraform(struct?: ZeroTrustAccessGroupRequireSaml | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     attribute_name: {
-      value: cdktf.stringToHclTerraform(struct!.attributeName),
+      value: cdktn.stringToHclTerraform(struct!.attributeName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     attribute_value: {
-      value: cdktf.stringToHclTerraform(struct!.attributeValue),
+      value: cdktn.stringToHclTerraform(struct!.attributeValue),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_provider_id: {
-      value: cdktf.stringToHclTerraform(struct!.identityProviderId),
+      value: cdktn.stringToHclTerraform(struct!.identityProviderId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9232,19 +9232,19 @@ export function zeroTrustAccessGroupRequireSamlToHclTerraform(struct?: ZeroTrust
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireSamlOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireSamlOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireSaml | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireSaml | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9265,7 +9265,7 @@ export class ZeroTrustAccessGroupRequireSamlOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireSaml | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireSaml | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9273,7 +9273,7 @@ export class ZeroTrustAccessGroupRequireSamlOutputReference extends cdktf.Comple
       this._attributeValue = undefined;
       this._identityProviderId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9329,30 +9329,30 @@ export interface ZeroTrustAccessGroupRequireServiceToken {
   /**
   * The ID of a Service Token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#token_id ZeroTrustAccessGroup#token_id}
   */
   readonly tokenId: string;
 }
 
-export function zeroTrustAccessGroupRequireServiceTokenToTerraform(struct?: ZeroTrustAccessGroupRequireServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireServiceTokenToTerraform(struct?: ZeroTrustAccessGroupRequireServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    token_id: cdktf.stringToTerraform(struct!.tokenId),
+    token_id: cdktn.stringToTerraform(struct!.tokenId),
   }
 }
 
 
-export function zeroTrustAccessGroupRequireServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupRequireServiceToken | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireServiceTokenToHclTerraform(struct?: ZeroTrustAccessGroupRequireServiceToken | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     token_id: {
-      value: cdktf.stringToHclTerraform(struct!.tokenId),
+      value: cdktn.stringToHclTerraform(struct!.tokenId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -9363,19 +9363,19 @@ export function zeroTrustAccessGroupRequireServiceTokenToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireServiceTokenOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireServiceTokenOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequireServiceToken | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequireServiceToken | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9388,13 +9388,13 @@ export class ZeroTrustAccessGroupRequireServiceTokenOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequireServiceToken | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequireServiceToken | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tokenId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -9422,108 +9422,108 @@ export interface ZeroTrustAccessGroupRequire {
   /**
   * An empty object which matches on all service tokens.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#any_valid_service_token ZeroTrustAccessGroup#any_valid_service_token}
   */
   readonly anyValidServiceToken?: ZeroTrustAccessGroupRequireAnyValidServiceToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_context ZeroTrustAccessGroup#auth_context}
   */
   readonly authContext?: ZeroTrustAccessGroupRequireAuthContext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#auth_method ZeroTrustAccessGroup#auth_method}
   */
   readonly authMethod?: ZeroTrustAccessGroupRequireAuthMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#azure_ad ZeroTrustAccessGroup#azure_ad}
   */
   readonly azureAd?: ZeroTrustAccessGroupRequireAzureAd;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#certificate ZeroTrustAccessGroup#certificate}
   */
   readonly certificate?: ZeroTrustAccessGroupRequireCertificate;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#common_name ZeroTrustAccessGroup#common_name}
   */
   readonly commonName?: ZeroTrustAccessGroupRequireCommonName;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#device_posture ZeroTrustAccessGroup#device_posture}
   */
   readonly devicePosture?: ZeroTrustAccessGroupRequireDevicePosture;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email ZeroTrustAccessGroup#email}
   */
   readonly email?: ZeroTrustAccessGroupRequireEmail;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email_domain ZeroTrustAccessGroup#email_domain}
   */
   readonly emailDomain?: ZeroTrustAccessGroupRequireEmailDomain;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#email_list ZeroTrustAccessGroup#email_list}
   */
   readonly emailList?: ZeroTrustAccessGroupRequireEmailListStruct;
   /**
   * An empty object which matches on all users.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#everyone ZeroTrustAccessGroup#everyone}
   */
   readonly everyone?: ZeroTrustAccessGroupRequireEveryone;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#external_evaluation ZeroTrustAccessGroup#external_evaluation}
   */
   readonly externalEvaluation?: ZeroTrustAccessGroupRequireExternalEvaluation;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#geo ZeroTrustAccessGroup#geo}
   */
   readonly geo?: ZeroTrustAccessGroupRequireGeo;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#github_organization ZeroTrustAccessGroup#github_organization}
   */
   readonly githubOrganization?: ZeroTrustAccessGroupRequireGithubOrganization;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#group ZeroTrustAccessGroup#group}
   */
   readonly group?: ZeroTrustAccessGroupRequireGroup;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#gsuite ZeroTrustAccessGroup#gsuite}
   */
   readonly gsuite?: ZeroTrustAccessGroupRequireGsuite;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip ZeroTrustAccessGroup#ip}
   */
   readonly ip?: ZeroTrustAccessGroupRequireIp;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#ip_list ZeroTrustAccessGroup#ip_list}
   */
   readonly ipList?: ZeroTrustAccessGroupRequireIpListStruct;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#linked_app_token ZeroTrustAccessGroup#linked_app_token}
   */
   readonly linkedAppToken?: ZeroTrustAccessGroupRequireLinkedAppToken;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#login_method ZeroTrustAccessGroup#login_method}
   */
   readonly loginMethod?: ZeroTrustAccessGroupRequireLoginMethod;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#oidc ZeroTrustAccessGroup#oidc}
   */
   readonly oidc?: ZeroTrustAccessGroupRequireOidc;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#okta ZeroTrustAccessGroup#okta}
   */
   readonly okta?: ZeroTrustAccessGroupRequireOkta;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#saml ZeroTrustAccessGroup#saml}
   */
   readonly saml?: ZeroTrustAccessGroupRequireSaml;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#service_token ZeroTrustAccessGroup#service_token}
   */
   readonly serviceToken?: ZeroTrustAccessGroupRequireServiceToken;
 }
 
-export function zeroTrustAccessGroupRequireToTerraform(struct?: ZeroTrustAccessGroupRequire | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireToTerraform(struct?: ZeroTrustAccessGroupRequire | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -9555,9 +9555,9 @@ export function zeroTrustAccessGroupRequireToTerraform(struct?: ZeroTrustAccessG
 }
 
 
-export function zeroTrustAccessGroupRequireToHclTerraform(struct?: ZeroTrustAccessGroupRequire | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessGroupRequireToHclTerraform(struct?: ZeroTrustAccessGroupRequire | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -9711,9 +9711,9 @@ export function zeroTrustAccessGroupRequireToHclTerraform(struct?: ZeroTrustAcce
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessGroupRequireOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessGroupRequireOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -9721,11 +9721,11 @@ export class ZeroTrustAccessGroupRequireOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustAccessGroupRequire | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessGroupRequire | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -9830,7 +9830,7 @@ export class ZeroTrustAccessGroupRequireOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessGroupRequire | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessGroupRequire | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -9859,7 +9859,7 @@ export class ZeroTrustAccessGroupRequireOutputReference extends cdktf.ComplexObj
       this._saml.internalValue = undefined;
       this._serviceToken.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -10278,15 +10278,15 @@ export class ZeroTrustAccessGroupRequireOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class ZeroTrustAccessGroupRequireList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessGroupRequire[] | cdktf.IResolvable
+export class ZeroTrustAccessGroupRequireList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustAccessGroupRequire[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -10299,9 +10299,9 @@ export class ZeroTrustAccessGroupRequireList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group}
 */
-export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
+export class ZeroTrustAccessGroup extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -10312,14 +10312,14 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustAccessGroup resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustAccessGroup resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustAccessGroup to import
-  * @param importFromId The id of the existing ZeroTrustAccessGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustAccessGroup that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustAccessGroup to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_group", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_group", importId: importFromId, provider });
       }
 
   // ===========
@@ -10327,7 +10327,7 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_group cloudflare_zero_trust_access_group} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -10338,7 +10338,7 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_access_group',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -10383,7 +10383,7 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
   public get exclude() {
     return this._exclude;
   }
-  public putExclude(value: ZeroTrustAccessGroupExclude[] | cdktf.IResolvable) {
+  public putExclude(value: ZeroTrustAccessGroupExclude[] | cdktn.IResolvable) {
     this._exclude.internalValue = value;
   }
   public resetExclude() {
@@ -10404,7 +10404,7 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
   public get include() {
     return this._include;
   }
-  public putInclude(value: ZeroTrustAccessGroupInclude[] | cdktf.IResolvable) {
+  public putInclude(value: ZeroTrustAccessGroupInclude[] | cdktn.IResolvable) {
     this._include.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -10413,11 +10413,11 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
   }
 
   // is_default - computed: false, optional: true, required: false
-  private _isDefault?: boolean | cdktf.IResolvable; 
+  private _isDefault?: boolean | cdktn.IResolvable; 
   public get isDefault() {
     return this.getBooleanAttribute('is_default');
   }
-  public set isDefault(value: boolean | cdktf.IResolvable) {
+  public set isDefault(value: boolean | cdktn.IResolvable) {
     this._isDefault = value;
   }
   public resetIsDefault() {
@@ -10446,7 +10446,7 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
   public get require() {
     return this._require;
   }
-  public putRequire(value: ZeroTrustAccessGroupRequire[] | cdktf.IResolvable) {
+  public putRequire(value: ZeroTrustAccessGroupRequire[] | cdktn.IResolvable) {
     this._require.internalValue = value;
   }
   public resetRequire() {
@@ -10479,56 +10479,56 @@ export class ZeroTrustAccessGroup extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      exclude: cdktf.listMapper(zeroTrustAccessGroupExcludeToTerraform, false)(this._exclude.internalValue),
-      include: cdktf.listMapper(zeroTrustAccessGroupIncludeToTerraform, false)(this._include.internalValue),
-      is_default: cdktf.booleanToTerraform(this._isDefault),
-      name: cdktf.stringToTerraform(this._name),
-      require: cdktf.listMapper(zeroTrustAccessGroupRequireToTerraform, false)(this._require.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      exclude: cdktn.listMapper(zeroTrustAccessGroupExcludeToTerraform, false)(this._exclude.internalValue),
+      include: cdktn.listMapper(zeroTrustAccessGroupIncludeToTerraform, false)(this._include.internalValue),
+      is_default: cdktn.booleanToTerraform(this._isDefault),
+      name: cdktn.stringToTerraform(this._name),
+      require: cdktn.listMapper(zeroTrustAccessGroupRequireToTerraform, false)(this._require.internalValue),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude: {
-        value: cdktf.listMapperHcl(zeroTrustAccessGroupExcludeToHclTerraform, false)(this._exclude.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustAccessGroupExcludeToHclTerraform, false)(this._exclude.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustAccessGroupExcludeList",
       },
       include: {
-        value: cdktf.listMapperHcl(zeroTrustAccessGroupIncludeToHclTerraform, false)(this._include.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustAccessGroupIncludeToHclTerraform, false)(this._include.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustAccessGroupIncludeList",
       },
       is_default: {
-        value: cdktf.booleanToHclTerraform(this._isDefault),
+        value: cdktn.booleanToHclTerraform(this._isDefault),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       require: {
-        value: cdktf.listMapperHcl(zeroTrustAccessGroupRequireToHclTerraform, false)(this._require.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustAccessGroupRequireToHclTerraform, false)(this._require.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustAccessGroupRequireList",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

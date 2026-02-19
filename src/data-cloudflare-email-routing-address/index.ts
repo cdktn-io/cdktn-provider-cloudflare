@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareEmailRoutingAddressConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareEmailRoutingAddressConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address#account_id DataCloudflareEmailRoutingAddress#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address#account_id DataCloudflareEmailRoutingAddress#account_id}
   */
   readonly accountId: string;
   /**
   * Destination address identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address#destination_address_identifier DataCloudflareEmailRoutingAddress#destination_address_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address#destination_address_identifier DataCloudflareEmailRoutingAddress#destination_address_identifier}
   */
   readonly destinationAddressIdentifier?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address#filter DataCloudflareEmailRoutingAddress#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address#filter DataCloudflareEmailRoutingAddress#filter}
   */
   readonly filter?: DataCloudflareEmailRoutingAddressFilter;
 }
@@ -34,43 +34,43 @@ export interface DataCloudflareEmailRoutingAddressFilter {
   * Sorts results in an ascending or descending order.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address#direction DataCloudflareEmailRoutingAddress#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address#direction DataCloudflareEmailRoutingAddress#direction}
   */
   readonly direction?: string;
   /**
   * Filter by verified destination addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address#verified DataCloudflareEmailRoutingAddress#verified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address#verified DataCloudflareEmailRoutingAddress#verified}
   */
-  readonly verified?: boolean | cdktf.IResolvable;
+  readonly verified?: boolean | cdktn.IResolvable;
 }
 
-export function dataCloudflareEmailRoutingAddressFilterToTerraform(struct?: DataCloudflareEmailRoutingAddressFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareEmailRoutingAddressFilterToTerraform(struct?: DataCloudflareEmailRoutingAddressFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    verified: cdktf.booleanToTerraform(struct!.verified),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    verified: cdktn.booleanToTerraform(struct!.verified),
   }
 }
 
 
-export function dataCloudflareEmailRoutingAddressFilterToHclTerraform(struct?: DataCloudflareEmailRoutingAddressFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareEmailRoutingAddressFilterToHclTerraform(struct?: DataCloudflareEmailRoutingAddressFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     verified: {
-      value: cdktf.booleanToHclTerraform(struct!.verified),
+      value: cdktn.booleanToHclTerraform(struct!.verified),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -81,19 +81,19 @@ export function dataCloudflareEmailRoutingAddressFilterToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareEmailRoutingAddressFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareEmailRoutingAddressFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareEmailRoutingAddressFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareEmailRoutingAddressFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -110,14 +110,14 @@ export class DataCloudflareEmailRoutingAddressFilterOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareEmailRoutingAddressFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareEmailRoutingAddressFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._direction = undefined;
       this._verified = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -146,11 +146,11 @@ export class DataCloudflareEmailRoutingAddressFilterOutputReference extends cdkt
   }
 
   // verified - computed: true, optional: true, required: false
-  private _verified?: boolean | cdktf.IResolvable; 
+  private _verified?: boolean | cdktn.IResolvable; 
   public get verified() {
     return this.getBooleanAttribute('verified');
   }
-  public set verified(value: boolean | cdktf.IResolvable) {
+  public set verified(value: boolean | cdktn.IResolvable) {
     this._verified = value;
   }
   public resetVerified() {
@@ -163,9 +163,9 @@ export class DataCloudflareEmailRoutingAddressFilterOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address cloudflare_email_routing_address}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address cloudflare_email_routing_address}
 */
-export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource {
+export class DataCloudflareEmailRoutingAddress extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -176,14 +176,14 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareEmailRoutingAddress resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareEmailRoutingAddress resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailRoutingAddress to import
-  * @param importFromId The id of the existing DataCloudflareEmailRoutingAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailRoutingAddress that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailRoutingAddress to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_routing_address", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_routing_address", importId: importFromId, provider });
       }
 
   // ===========
@@ -191,7 +191,7 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/email_routing_address cloudflare_email_routing_address} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -202,7 +202,7 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
       terraformResourceType: 'cloudflare_email_routing_address',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -303,8 +303,8 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      destination_address_identifier: cdktf.stringToTerraform(this._destinationAddressIdentifier),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      destination_address_identifier: cdktn.stringToTerraform(this._destinationAddressIdentifier),
       filter: dataCloudflareEmailRoutingAddressFilterToTerraform(this._filter.internalValue),
     };
   }
@@ -312,13 +312,13 @@ export class DataCloudflareEmailRoutingAddress extends cdktf.TerraformDataSource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       destination_address_identifier: {
-        value: cdktf.stringToHclTerraform(this._destinationAddressIdentifier),
+        value: cdktn.stringToHclTerraform(this._destinationAddressIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

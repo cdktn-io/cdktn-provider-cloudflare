@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ImageVariantConfig extends cdktf.TerraformMetaArguments {
+export interface ImageVariantConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#account_id ImageVariant#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#account_id ImageVariant#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#id ImageVariant#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#id ImageVariant#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +28,13 @@ export interface ImageVariantConfig extends cdktf.TerraformMetaArguments {
   /**
   * Indicates whether the variant can access an image without a signature, regardless of image access control.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#never_require_signed_urls ImageVariant#never_require_signed_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#never_require_signed_urls ImageVariant#never_require_signed_urls}
   */
-  readonly neverRequireSignedUrls?: boolean | cdktf.IResolvable;
+  readonly neverRequireSignedUrls?: boolean | cdktn.IResolvable;
   /**
   * Allows you to define image resizing sizes for different use cases.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#options ImageVariant#options}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#options ImageVariant#options}
   */
   readonly options: ImageVariantOptions;
 }
@@ -43,70 +43,70 @@ export interface ImageVariantOptions {
   * The fit property describes how the width and height dimensions should be interpreted.
   * Available values: "scale-down", "contain", "cover", "crop", "pad".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#fit ImageVariant#fit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#fit ImageVariant#fit}
   */
   readonly fit: string;
   /**
   * Maximum height in image pixels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#height ImageVariant#height}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#height ImageVariant#height}
   */
   readonly height: number;
   /**
   * What EXIF data should be preserved in the output image.
   * Available values: "keep", "copyright", "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#metadata ImageVariant#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#metadata ImageVariant#metadata}
   */
   readonly metadata: string;
   /**
   * Maximum width in image pixels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#width ImageVariant#width}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#width ImageVariant#width}
   */
   readonly width: number;
 }
 
-export function imageVariantOptionsToTerraform(struct?: ImageVariantOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imageVariantOptionsToTerraform(struct?: ImageVariantOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    fit: cdktf.stringToTerraform(struct!.fit),
-    height: cdktf.numberToTerraform(struct!.height),
-    metadata: cdktf.stringToTerraform(struct!.metadata),
-    width: cdktf.numberToTerraform(struct!.width),
+    fit: cdktn.stringToTerraform(struct!.fit),
+    height: cdktn.numberToTerraform(struct!.height),
+    metadata: cdktn.stringToTerraform(struct!.metadata),
+    width: cdktn.numberToTerraform(struct!.width),
   }
 }
 
 
-export function imageVariantOptionsToHclTerraform(struct?: ImageVariantOptions | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function imageVariantOptionsToHclTerraform(struct?: ImageVariantOptions | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     fit: {
-      value: cdktf.stringToHclTerraform(struct!.fit),
+      value: cdktn.stringToHclTerraform(struct!.fit),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     height: {
-      value: cdktf.numberToHclTerraform(struct!.height),
+      value: cdktn.numberToHclTerraform(struct!.height),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     metadata: {
-      value: cdktf.stringToHclTerraform(struct!.metadata),
+      value: cdktn.stringToHclTerraform(struct!.metadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     width: {
-      value: cdktf.numberToHclTerraform(struct!.width),
+      value: cdktn.numberToHclTerraform(struct!.width),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -117,19 +117,19 @@ export function imageVariantOptionsToHclTerraform(struct?: ImageVariantOptions |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ImageVariantOptionsOutputReference extends cdktf.ComplexObject {
+export class ImageVariantOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ImageVariantOptions | cdktf.IResolvable | undefined {
+  public get internalValue(): ImageVariantOptions | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -154,7 +154,7 @@ export class ImageVariantOptionsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ImageVariantOptions | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ImageVariantOptions | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -163,7 +163,7 @@ export class ImageVariantOptionsOutputReference extends cdktf.ComplexObject {
       this._metadata = undefined;
       this._width = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -233,8 +233,8 @@ export interface ImageVariantVariantOptions {
 }
 
 export function imageVariantVariantOptionsToTerraform(struct?: ImageVariantVariantOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -243,8 +243,8 @@ export function imageVariantVariantOptionsToTerraform(struct?: ImageVariantVaria
 
 
 export function imageVariantVariantOptionsToHclTerraform(struct?: ImageVariantVariantOptions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -252,14 +252,14 @@ export function imageVariantVariantOptionsToHclTerraform(struct?: ImageVariantVa
   return attrs;
 }
 
-export class ImageVariantVariantOptionsOutputReference extends cdktf.ComplexObject {
+export class ImageVariantVariantOptionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -302,8 +302,8 @@ export interface ImageVariantVariant {
 }
 
 export function imageVariantVariantToTerraform(struct?: ImageVariantVariant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -312,8 +312,8 @@ export function imageVariantVariantToTerraform(struct?: ImageVariantVariant): an
 
 
 export function imageVariantVariantToHclTerraform(struct?: ImageVariantVariant): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -321,14 +321,14 @@ export function imageVariantVariantToHclTerraform(struct?: ImageVariantVariant):
   return attrs;
 }
 
-export class ImageVariantVariantOutputReference extends cdktf.ComplexObject {
+export class ImageVariantVariantOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -365,9 +365,9 @@ export class ImageVariantVariantOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant cloudflare_image_variant}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant cloudflare_image_variant}
 */
-export class ImageVariant extends cdktf.TerraformResource {
+export class ImageVariant extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -378,14 +378,14 @@ export class ImageVariant extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ImageVariant resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ImageVariant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ImageVariant to import
-  * @param importFromId The id of the existing ImageVariant that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ImageVariant that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ImageVariant to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_image_variant", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_image_variant", importId: importFromId, provider });
       }
 
   // ===========
@@ -393,7 +393,7 @@ export class ImageVariant extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image_variant cloudflare_image_variant} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image_variant cloudflare_image_variant} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -404,7 +404,7 @@ export class ImageVariant extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_image_variant',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -452,11 +452,11 @@ export class ImageVariant extends cdktf.TerraformResource {
   }
 
   // never_require_signed_urls - computed: true, optional: true, required: false
-  private _neverRequireSignedUrls?: boolean | cdktf.IResolvable; 
+  private _neverRequireSignedUrls?: boolean | cdktn.IResolvable; 
   public get neverRequireSignedUrls() {
     return this.getBooleanAttribute('never_require_signed_urls');
   }
-  public set neverRequireSignedUrls(value: boolean | cdktf.IResolvable) {
+  public set neverRequireSignedUrls(value: boolean | cdktn.IResolvable) {
     this._neverRequireSignedUrls = value;
   }
   public resetNeverRequireSignedUrls() {
@@ -492,9 +492,9 @@ export class ImageVariant extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      id: cdktf.stringToTerraform(this._id),
-      never_require_signed_urls: cdktf.booleanToTerraform(this._neverRequireSignedUrls),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      id: cdktn.stringToTerraform(this._id),
+      never_require_signed_urls: cdktn.booleanToTerraform(this._neverRequireSignedUrls),
       options: imageVariantOptionsToTerraform(this._options.internalValue),
     };
   }
@@ -502,19 +502,19 @@ export class ImageVariant extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       never_require_signed_urls: {
-        value: cdktf.booleanToHclTerraform(this._neverRequireSignedUrls),
+        value: cdktn.booleanToHclTerraform(this._neverRequireSignedUrls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

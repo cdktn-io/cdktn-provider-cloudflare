@@ -1,35 +1,35 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_webhook
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface StreamWebhookConfig extends cdktf.TerraformMetaArguments {
+export interface StreamWebhookConfig extends cdktn.TerraformMetaArguments {
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
   */
   readonly accountId: string;
   /**
   * The URL where webhooks will be sent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
   */
   readonly notificationUrl: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_webhook cloudflare_stream_webhook}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook cloudflare_stream_webhook}
 */
-export class StreamWebhook extends cdktf.TerraformResource {
+export class StreamWebhook extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -40,14 +40,14 @@ export class StreamWebhook extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a StreamWebhook resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a StreamWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the StreamWebhook to import
-  * @param importFromId The id of the existing StreamWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing StreamWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the StreamWebhook to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream_webhook", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream_webhook", importId: importFromId, provider });
       }
 
   // ===========
@@ -55,7 +55,7 @@ export class StreamWebhook extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_webhook cloudflare_stream_webhook} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -66,7 +66,7 @@ export class StreamWebhook extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_stream_webhook',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -117,21 +117,21 @@ export class StreamWebhook extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      notification_url: cdktf.stringToTerraform(this._notificationUrl),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      notification_url: cdktn.stringToTerraform(this._notificationUrl),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       notification_url: {
-        value: cdktf.stringToHclTerraform(this._notificationUrl),
+        value: cdktn.stringToHclTerraform(this._notificationUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OrganizationConfig extends cdktf.TerraformMetaArguments {
+export interface OrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#name Organization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#name Organization#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#parent Organization#parent}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#parent Organization#parent}
   */
   readonly parent?: OrganizationParent;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#profile Organization#profile}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#profile Organization#profile}
   */
   readonly profile?: OrganizationProfile;
 }
@@ -29,8 +29,8 @@ export interface OrganizationMetaFlags {
 }
 
 export function organizationMetaFlagsToTerraform(struct?: OrganizationMetaFlags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function organizationMetaFlagsToTerraform(struct?: OrganizationMetaFlags)
 
 
 export function organizationMetaFlagsToHclTerraform(struct?: OrganizationMetaFlags): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function organizationMetaFlagsToHclTerraform(struct?: OrganizationMetaFla
   return attrs;
 }
 
-export class OrganizationMetaFlagsOutputReference extends cdktf.ComplexObject {
+export class OrganizationMetaFlagsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -103,8 +103,8 @@ export interface OrganizationMeta {
 }
 
 export function organizationMetaToTerraform(struct?: OrganizationMeta): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -113,8 +113,8 @@ export function organizationMetaToTerraform(struct?: OrganizationMeta): any {
 
 
 export function organizationMetaToHclTerraform(struct?: OrganizationMeta): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -122,14 +122,14 @@ export function organizationMetaToHclTerraform(struct?: OrganizationMeta): any {
   return attrs;
 }
 
-export class OrganizationMetaOutputReference extends cdktf.ComplexObject {
+export class OrganizationMetaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -161,7 +161,7 @@ export class OrganizationMetaOutputReference extends cdktf.ComplexObject {
 }
 export interface OrganizationParent {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#id Organization#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#id Organization#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -169,25 +169,25 @@ export interface OrganizationParent {
   readonly id: string;
 }
 
-export function organizationParentToTerraform(struct?: OrganizationParent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationParentToTerraform(struct?: OrganizationParent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function organizationParentToHclTerraform(struct?: OrganizationParent | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationParentToHclTerraform(struct?: OrganizationParent | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -198,19 +198,19 @@ export function organizationParentToHclTerraform(struct?: OrganizationParent | c
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationParentOutputReference extends cdktf.ComplexObject {
+export class OrganizationParentOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrganizationParent | cdktf.IResolvable | undefined {
+  public get internalValue(): OrganizationParent | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -223,13 +223,13 @@ export class OrganizationParentOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrganizationParent | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrganizationParent | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -260,74 +260,74 @@ export class OrganizationParentOutputReference extends cdktf.ComplexObject {
 }
 export interface OrganizationProfile {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#business_address Organization#business_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#business_address Organization#business_address}
   */
   readonly businessAddress: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#business_email Organization#business_email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#business_email Organization#business_email}
   */
   readonly businessEmail: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#business_name Organization#business_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#business_name Organization#business_name}
   */
   readonly businessName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#business_phone Organization#business_phone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#business_phone Organization#business_phone}
   */
   readonly businessPhone: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#external_metadata Organization#external_metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#external_metadata Organization#external_metadata}
   */
   readonly externalMetadata: string;
 }
 
-export function organizationProfileToTerraform(struct?: OrganizationProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationProfileToTerraform(struct?: OrganizationProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    business_address: cdktf.stringToTerraform(struct!.businessAddress),
-    business_email: cdktf.stringToTerraform(struct!.businessEmail),
-    business_name: cdktf.stringToTerraform(struct!.businessName),
-    business_phone: cdktf.stringToTerraform(struct!.businessPhone),
-    external_metadata: cdktf.stringToTerraform(struct!.externalMetadata),
+    business_address: cdktn.stringToTerraform(struct!.businessAddress),
+    business_email: cdktn.stringToTerraform(struct!.businessEmail),
+    business_name: cdktn.stringToTerraform(struct!.businessName),
+    business_phone: cdktn.stringToTerraform(struct!.businessPhone),
+    external_metadata: cdktn.stringToTerraform(struct!.externalMetadata),
   }
 }
 
 
-export function organizationProfileToHclTerraform(struct?: OrganizationProfile | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function organizationProfileToHclTerraform(struct?: OrganizationProfile | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     business_address: {
-      value: cdktf.stringToHclTerraform(struct!.businessAddress),
+      value: cdktn.stringToHclTerraform(struct!.businessAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     business_email: {
-      value: cdktf.stringToHclTerraform(struct!.businessEmail),
+      value: cdktn.stringToHclTerraform(struct!.businessEmail),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     business_name: {
-      value: cdktf.stringToHclTerraform(struct!.businessName),
+      value: cdktn.stringToHclTerraform(struct!.businessName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     business_phone: {
-      value: cdktf.stringToHclTerraform(struct!.businessPhone),
+      value: cdktn.stringToHclTerraform(struct!.businessPhone),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     external_metadata: {
-      value: cdktf.stringToHclTerraform(struct!.externalMetadata),
+      value: cdktn.stringToHclTerraform(struct!.externalMetadata),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -338,19 +338,19 @@ export function organizationProfileToHclTerraform(struct?: OrganizationProfile |
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class OrganizationProfileOutputReference extends cdktf.ComplexObject {
+export class OrganizationProfileOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): OrganizationProfile | cdktf.IResolvable | undefined {
+  public get internalValue(): OrganizationProfile | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -379,7 +379,7 @@ export class OrganizationProfileOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: OrganizationProfile | cdktf.IResolvable | undefined) {
+  public set internalValue(value: OrganizationProfile | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -389,7 +389,7 @@ export class OrganizationProfileOutputReference extends cdktf.ComplexObject {
       this._businessPhone = undefined;
       this._externalMetadata = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -471,9 +471,9 @@ export class OrganizationProfileOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization cloudflare_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization cloudflare_organization}
 */
-export class Organization extends cdktf.TerraformResource {
+export class Organization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -484,14 +484,14 @@ export class Organization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Organization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Organization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Organization to import
-  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Organization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Organization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_organization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_organization", importId: importFromId, provider });
       }
 
   // ===========
@@ -499,7 +499,7 @@ export class Organization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/organization cloudflare_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/organization cloudflare_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -510,7 +510,7 @@ export class Organization extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -597,7 +597,7 @@ export class Organization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
       parent: organizationParentToTerraform(this._parent.internalValue),
       profile: organizationProfileToTerraform(this._profile.internalValue),
     };
@@ -606,7 +606,7 @@ export class Organization extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

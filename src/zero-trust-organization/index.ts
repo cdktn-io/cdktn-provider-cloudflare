@@ -1,89 +1,101 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustOrganizationConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustOrganizationConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
   */
   readonly accountId?: string;
   /**
   * When set to true, users can authenticate via WARP for any application in your organization. Application settings will take precedence over this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
   */
-  readonly allowAuthenticateViaWarp?: boolean | cdktf.IResolvable;
+  readonly allowAuthenticateViaWarp?: boolean | cdktn.IResolvable;
   /**
   * The unique subdomain assigned to your Zero Trust organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
   */
   readonly authDomain?: string;
   /**
   * When set to `true`, users skip the identity provider selection step during login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
   */
-  readonly autoRedirectToIdentity?: boolean | cdktf.IResolvable;
+  readonly autoRedirectToIdentity?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}
   */
   readonly customPages?: ZeroTrustOrganizationCustomPages;
   /**
+  * Determines whether to deny all requests to Cloudflare-protected resources that lack an associated Access application. If enabled, you must explicitly configure an Access application and policy to allow traffic to your Cloudflare-protected resources. For domains you want to be public across all subdomains, add the domain to the `deny_unmatched_requests_exempted_zone_names` array.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#deny_unmatched_requests ZeroTrustOrganization#deny_unmatched_requests}
+  */
+  readonly denyUnmatchedRequests?: boolean | cdktn.IResolvable;
+  /**
+  * Contains zone names to exempt from the `deny_unmatched_requests` feature. Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#deny_unmatched_requests_exempted_zone_names ZeroTrustOrganization#deny_unmatched_requests_exempted_zone_names}
+  */
+  readonly denyUnmatchedRequestsExemptedZoneNames?: string[];
+  /**
   * Lock all settings as Read-Only in the Dashboard, regardless of user permission. Updates may only be made via the API or Terraform for this account when enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
   */
-  readonly isUiReadOnly?: boolean | cdktf.IResolvable;
+  readonly isUiReadOnly?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}
   */
   readonly loginDesign?: ZeroTrustOrganizationLoginDesign;
   /**
   * The name of your Zero Trust organization.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
   */
   readonly name?: string;
   /**
   * The amount of time that tokens issued for applications will be valid. Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
   */
   readonly sessionDuration?: string;
   /**
   * A description of the reason why the UI read only field is being toggled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
   */
   readonly uiReadOnlyToggleReason?: string;
   /**
   * The amount of time a user seat is inactive before it expires. When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count.  Minimum value for this setting is 1 month (730h). Must be in the format `300ms` or `2h45m`. Valid time units are: `ns`, `us` (or `µs`), `ms`, `s`, `m`, `h`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
   */
   readonly userSeatExpirationInactiveTime?: string;
   /**
   * The amount of time that tokens issued for applications will be valid. Must be in the format `30m` or `2h45m`. Valid time units are: m, h.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
   */
   readonly warpAuthSessionDuration?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -91,43 +103,43 @@ export interface ZeroTrustOrganizationCustomPages {
   /**
   * The uid of the custom page to use when a user is denied access after failing a non-identity rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
   */
   readonly forbidden?: string;
   /**
   * The uid of the custom page to use when a user is denied access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
   */
   readonly identityDenied?: string;
 }
 
-export function zeroTrustOrganizationCustomPagesToTerraform(struct?: ZeroTrustOrganizationCustomPages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustOrganizationCustomPagesToTerraform(struct?: ZeroTrustOrganizationCustomPages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    forbidden: cdktf.stringToTerraform(struct!.forbidden),
-    identity_denied: cdktf.stringToTerraform(struct!.identityDenied),
+    forbidden: cdktn.stringToTerraform(struct!.forbidden),
+    identity_denied: cdktn.stringToTerraform(struct!.identityDenied),
   }
 }
 
 
-export function zeroTrustOrganizationCustomPagesToHclTerraform(struct?: ZeroTrustOrganizationCustomPages | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustOrganizationCustomPagesToHclTerraform(struct?: ZeroTrustOrganizationCustomPages | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     forbidden: {
-      value: cdktf.stringToHclTerraform(struct!.forbidden),
+      value: cdktn.stringToHclTerraform(struct!.forbidden),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     identity_denied: {
-      value: cdktf.stringToHclTerraform(struct!.identityDenied),
+      value: cdktn.stringToHclTerraform(struct!.identityDenied),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -138,19 +150,19 @@ export function zeroTrustOrganizationCustomPagesToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustOrganizationCustomPagesOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustOrganizationCustomPagesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustOrganizationCustomPages | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustOrganizationCustomPages | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -167,14 +179,14 @@ export class ZeroTrustOrganizationCustomPagesOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustOrganizationCustomPages | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustOrganizationCustomPages | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._forbidden = undefined;
       this._identityDenied = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -222,82 +234,82 @@ export interface ZeroTrustOrganizationLoginDesign {
   /**
   * The background color on your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * The text at the bottom of your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
   */
   readonly footerText?: string;
   /**
   * The text at the top of your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
   */
   readonly headerText?: string;
   /**
   * The URL of the logo on your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
   */
   readonly logoPath?: string;
   /**
   * The text color on your login page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
   */
   readonly textColor?: string;
 }
 
-export function zeroTrustOrganizationLoginDesignToTerraform(struct?: ZeroTrustOrganizationLoginDesign | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustOrganizationLoginDesignToTerraform(struct?: ZeroTrustOrganizationLoginDesign | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    background_color: cdktf.stringToTerraform(struct!.backgroundColor),
-    footer_text: cdktf.stringToTerraform(struct!.footerText),
-    header_text: cdktf.stringToTerraform(struct!.headerText),
-    logo_path: cdktf.stringToTerraform(struct!.logoPath),
-    text_color: cdktf.stringToTerraform(struct!.textColor),
+    background_color: cdktn.stringToTerraform(struct!.backgroundColor),
+    footer_text: cdktn.stringToTerraform(struct!.footerText),
+    header_text: cdktn.stringToTerraform(struct!.headerText),
+    logo_path: cdktn.stringToTerraform(struct!.logoPath),
+    text_color: cdktn.stringToTerraform(struct!.textColor),
   }
 }
 
 
-export function zeroTrustOrganizationLoginDesignToHclTerraform(struct?: ZeroTrustOrganizationLoginDesign | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustOrganizationLoginDesignToHclTerraform(struct?: ZeroTrustOrganizationLoginDesign | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     background_color: {
-      value: cdktf.stringToHclTerraform(struct!.backgroundColor),
+      value: cdktn.stringToHclTerraform(struct!.backgroundColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     footer_text: {
-      value: cdktf.stringToHclTerraform(struct!.footerText),
+      value: cdktn.stringToHclTerraform(struct!.footerText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_text: {
-      value: cdktf.stringToHclTerraform(struct!.headerText),
+      value: cdktn.stringToHclTerraform(struct!.headerText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     logo_path: {
-      value: cdktf.stringToHclTerraform(struct!.logoPath),
+      value: cdktn.stringToHclTerraform(struct!.logoPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     text_color: {
-      value: cdktf.stringToHclTerraform(struct!.textColor),
+      value: cdktn.stringToHclTerraform(struct!.textColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -308,19 +320,19 @@ export function zeroTrustOrganizationLoginDesignToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustOrganizationLoginDesignOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustOrganizationLoginDesignOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustOrganizationLoginDesign | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustOrganizationLoginDesign | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,7 +361,7 @@ export class ZeroTrustOrganizationLoginDesignOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustOrganizationLoginDesign | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustOrganizationLoginDesign | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -359,7 +371,7 @@ export class ZeroTrustOrganizationLoginDesignOutputReference extends cdktf.Compl
       this._logoPath = undefined;
       this._textColor = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -456,9 +468,9 @@ export class ZeroTrustOrganizationLoginDesignOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}
 */
-export class ZeroTrustOrganization extends cdktf.TerraformResource {
+export class ZeroTrustOrganization extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -469,14 +481,14 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustOrganization resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustOrganization to import
-  * @param importFromId The id of the existing ZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustOrganization to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_organization", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_organization", importId: importFromId, provider });
       }
 
   // ===========
@@ -484,7 +496,7 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -495,7 +507,7 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -511,6 +523,8 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
     this._authDomain = config.authDomain;
     this._autoRedirectToIdentity = config.autoRedirectToIdentity;
     this._customPages.internalValue = config.customPages;
+    this._denyUnmatchedRequests = config.denyUnmatchedRequests;
+    this._denyUnmatchedRequestsExemptedZoneNames = config.denyUnmatchedRequestsExemptedZoneNames;
     this._isUiReadOnly = config.isUiReadOnly;
     this._loginDesign.internalValue = config.loginDesign;
     this._name = config.name;
@@ -542,11 +556,11 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
   }
 
   // allow_authenticate_via_warp - computed: true, optional: true, required: false
-  private _allowAuthenticateViaWarp?: boolean | cdktf.IResolvable; 
+  private _allowAuthenticateViaWarp?: boolean | cdktn.IResolvable; 
   public get allowAuthenticateViaWarp() {
     return this.getBooleanAttribute('allow_authenticate_via_warp');
   }
-  public set allowAuthenticateViaWarp(value: boolean | cdktf.IResolvable) {
+  public set allowAuthenticateViaWarp(value: boolean | cdktn.IResolvable) {
     this._allowAuthenticateViaWarp = value;
   }
   public resetAllowAuthenticateViaWarp() {
@@ -574,11 +588,11 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
   }
 
   // auto_redirect_to_identity - computed: true, optional: true, required: false
-  private _autoRedirectToIdentity?: boolean | cdktf.IResolvable; 
+  private _autoRedirectToIdentity?: boolean | cdktn.IResolvable; 
   public get autoRedirectToIdentity() {
     return this.getBooleanAttribute('auto_redirect_to_identity');
   }
-  public set autoRedirectToIdentity(value: boolean | cdktf.IResolvable) {
+  public set autoRedirectToIdentity(value: boolean | cdktn.IResolvable) {
     this._autoRedirectToIdentity = value;
   }
   public resetAutoRedirectToIdentity() {
@@ -605,12 +619,44 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
     return this._customPages.internalValue;
   }
 
+  // deny_unmatched_requests - computed: false, optional: true, required: false
+  private _denyUnmatchedRequests?: boolean | cdktn.IResolvable; 
+  public get denyUnmatchedRequests() {
+    return this.getBooleanAttribute('deny_unmatched_requests');
+  }
+  public set denyUnmatchedRequests(value: boolean | cdktn.IResolvable) {
+    this._denyUnmatchedRequests = value;
+  }
+  public resetDenyUnmatchedRequests() {
+    this._denyUnmatchedRequests = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get denyUnmatchedRequestsInput() {
+    return this._denyUnmatchedRequests;
+  }
+
+  // deny_unmatched_requests_exempted_zone_names - computed: false, optional: true, required: false
+  private _denyUnmatchedRequestsExemptedZoneNames?: string[]; 
+  public get denyUnmatchedRequestsExemptedZoneNames() {
+    return this.getListAttribute('deny_unmatched_requests_exempted_zone_names');
+  }
+  public set denyUnmatchedRequestsExemptedZoneNames(value: string[]) {
+    this._denyUnmatchedRequestsExemptedZoneNames = value;
+  }
+  public resetDenyUnmatchedRequestsExemptedZoneNames() {
+    this._denyUnmatchedRequestsExemptedZoneNames = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get denyUnmatchedRequestsExemptedZoneNamesInput() {
+    return this._denyUnmatchedRequestsExemptedZoneNames;
+  }
+
   // is_ui_read_only - computed: true, optional: true, required: false
-  private _isUiReadOnly?: boolean | cdktf.IResolvable; 
+  private _isUiReadOnly?: boolean | cdktn.IResolvable; 
   public get isUiReadOnly() {
     return this.getBooleanAttribute('is_ui_read_only');
   }
-  public set isUiReadOnly(value: boolean | cdktf.IResolvable) {
+  public set isUiReadOnly(value: boolean | cdktn.IResolvable) {
     this._isUiReadOnly = value;
   }
   public resetIsUiReadOnly() {
@@ -669,7 +715,7 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
     return this._sessionDuration;
   }
 
-  // ui_read_only_toggle_reason - computed: false, optional: true, required: false
+  // ui_read_only_toggle_reason - computed: true, optional: true, required: false
   private _uiReadOnlyToggleReason?: string; 
   public get uiReadOnlyToggleReason() {
     return this.getStringAttribute('ui_read_only_toggle_reason');
@@ -739,44 +785,46 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      allow_authenticate_via_warp: cdktf.booleanToTerraform(this._allowAuthenticateViaWarp),
-      auth_domain: cdktf.stringToTerraform(this._authDomain),
-      auto_redirect_to_identity: cdktf.booleanToTerraform(this._autoRedirectToIdentity),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      allow_authenticate_via_warp: cdktn.booleanToTerraform(this._allowAuthenticateViaWarp),
+      auth_domain: cdktn.stringToTerraform(this._authDomain),
+      auto_redirect_to_identity: cdktn.booleanToTerraform(this._autoRedirectToIdentity),
       custom_pages: zeroTrustOrganizationCustomPagesToTerraform(this._customPages.internalValue),
-      is_ui_read_only: cdktf.booleanToTerraform(this._isUiReadOnly),
+      deny_unmatched_requests: cdktn.booleanToTerraform(this._denyUnmatchedRequests),
+      deny_unmatched_requests_exempted_zone_names: cdktn.listMapper(cdktn.stringToTerraform, false)(this._denyUnmatchedRequestsExemptedZoneNames),
+      is_ui_read_only: cdktn.booleanToTerraform(this._isUiReadOnly),
       login_design: zeroTrustOrganizationLoginDesignToTerraform(this._loginDesign.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      session_duration: cdktf.stringToTerraform(this._sessionDuration),
-      ui_read_only_toggle_reason: cdktf.stringToTerraform(this._uiReadOnlyToggleReason),
-      user_seat_expiration_inactive_time: cdktf.stringToTerraform(this._userSeatExpirationInactiveTime),
-      warp_auth_session_duration: cdktf.stringToTerraform(this._warpAuthSessionDuration),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      name: cdktn.stringToTerraform(this._name),
+      session_duration: cdktn.stringToTerraform(this._sessionDuration),
+      ui_read_only_toggle_reason: cdktn.stringToTerraform(this._uiReadOnlyToggleReason),
+      user_seat_expiration_inactive_time: cdktn.stringToTerraform(this._userSeatExpirationInactiveTime),
+      warp_auth_session_duration: cdktn.stringToTerraform(this._warpAuthSessionDuration),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       allow_authenticate_via_warp: {
-        value: cdktf.booleanToHclTerraform(this._allowAuthenticateViaWarp),
+        value: cdktn.booleanToHclTerraform(this._allowAuthenticateViaWarp),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       auth_domain: {
-        value: cdktf.stringToHclTerraform(this._authDomain),
+        value: cdktn.stringToHclTerraform(this._authDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_redirect_to_identity: {
-        value: cdktf.booleanToHclTerraform(this._autoRedirectToIdentity),
+        value: cdktn.booleanToHclTerraform(this._autoRedirectToIdentity),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -787,8 +835,20 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
         type: "struct",
         storageClassType: "ZeroTrustOrganizationCustomPages",
       },
+      deny_unmatched_requests: {
+        value: cdktn.booleanToHclTerraform(this._denyUnmatchedRequests),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      deny_unmatched_requests_exempted_zone_names: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._denyUnmatchedRequestsExemptedZoneNames),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
+      },
       is_ui_read_only: {
-        value: cdktf.booleanToHclTerraform(this._isUiReadOnly),
+        value: cdktn.booleanToHclTerraform(this._isUiReadOnly),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -800,37 +860,37 @@ export class ZeroTrustOrganization extends cdktf.TerraformResource {
         storageClassType: "ZeroTrustOrganizationLoginDesign",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_duration: {
-        value: cdktf.stringToHclTerraform(this._sessionDuration),
+        value: cdktn.stringToHclTerraform(this._sessionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       ui_read_only_toggle_reason: {
-        value: cdktf.stringToHclTerraform(this._uiReadOnlyToggleReason),
+        value: cdktn.stringToHclTerraform(this._uiReadOnlyToggleReason),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       user_seat_expiration_inactive_time: {
-        value: cdktf.stringToHclTerraform(this._userSeatExpirationInactiveTime),
+        value: cdktn.stringToHclTerraform(this._userSeatExpirationInactiveTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       warp_auth_session_duration: {
-        value: cdktf.stringToHclTerraform(this._warpAuthSessionDuration),
+        value: cdktn.stringToHclTerraform(this._warpAuthSessionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

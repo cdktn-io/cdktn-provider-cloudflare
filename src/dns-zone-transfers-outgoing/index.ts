@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_outgoing
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsZoneTransfersOutgoingConfig extends cdktf.TerraformMetaArguments {
+export interface DnsZoneTransfersOutgoingConfig extends cdktn.TerraformMetaArguments {
   /**
   * Zone name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
   */
   readonly name: string;
   /**
   * A list of peer tags.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
   */
   readonly peers: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}
 */
-export class DnsZoneTransfersOutgoing extends cdktf.TerraformResource {
+export class DnsZoneTransfersOutgoing extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -44,14 +44,14 @@ export class DnsZoneTransfersOutgoing extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsZoneTransfersOutgoing resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsZoneTransfersOutgoing resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsZoneTransfersOutgoing to import
-  * @param importFromId The id of the existing DnsZoneTransfersOutgoing that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_outgoing#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsZoneTransfersOutgoing that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsZoneTransfersOutgoing to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_zone_transfers_outgoing", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_zone_transfers_outgoing", importId: importFromId, provider });
       }
 
   // ===========
@@ -59,7 +59,7 @@ export class DnsZoneTransfersOutgoing extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class DnsZoneTransfersOutgoing extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dns_zone_transfers_outgoing',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -126,7 +126,7 @@ export class DnsZoneTransfersOutgoing extends cdktf.TerraformResource {
   // peers - computed: false, optional: false, required: true
   private _peers?: string[]; 
   public get peers() {
-    return cdktf.Fn.tolist(this.getListAttribute('peers'));
+    return cdktn.Fn.tolist(this.getListAttribute('peers'));
   }
   public set peers(value: string[]) {
     this._peers = value;
@@ -160,28 +160,28 @@ export class DnsZoneTransfersOutgoing extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      name: cdktf.stringToTerraform(this._name),
-      peers: cdktf.listMapper(cdktf.stringToTerraform, false)(this._peers),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      name: cdktn.stringToTerraform(this._name),
+      peers: cdktn.listMapper(cdktn.stringToTerraform, false)(this._peers),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       peers: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._peers),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._peers),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

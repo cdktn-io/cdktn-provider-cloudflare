@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/observatory_scheduled_test
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ObservatoryScheduledTestConfig extends cdktf.TerraformMetaArguments {
+export interface ObservatoryScheduledTestConfig extends cdktn.TerraformMetaArguments {
   /**
   * A URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
   */
   readonly url: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
   */
   readonly zoneId: string;
 }
@@ -29,8 +29,8 @@ export interface ObservatoryScheduledTestSchedule {
 }
 
 export function observatoryScheduledTestScheduleToTerraform(struct?: ObservatoryScheduledTestSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function observatoryScheduledTestScheduleToTerraform(struct?: Observatory
 
 
 export function observatoryScheduledTestScheduleToHclTerraform(struct?: ObservatoryScheduledTestSchedule): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function observatoryScheduledTestScheduleToHclTerraform(struct?: Observat
   return attrs;
 }
 
-export class ObservatoryScheduledTestScheduleOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestScheduleOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -93,8 +93,8 @@ export interface ObservatoryScheduledTestTestDesktopReportError {
 }
 
 export function observatoryScheduledTestTestDesktopReportErrorToTerraform(struct?: ObservatoryScheduledTestTestDesktopReportError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -103,8 +103,8 @@ export function observatoryScheduledTestTestDesktopReportErrorToTerraform(struct
 
 
 export function observatoryScheduledTestTestDesktopReportErrorToHclTerraform(struct?: ObservatoryScheduledTestTestDesktopReportError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -112,14 +112,14 @@ export function observatoryScheduledTestTestDesktopReportErrorToHclTerraform(str
   return attrs;
 }
 
-export class ObservatoryScheduledTestTestDesktopReportErrorOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestTestDesktopReportErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -157,8 +157,8 @@ export interface ObservatoryScheduledTestTestDesktopReport {
 }
 
 export function observatoryScheduledTestTestDesktopReportToTerraform(struct?: ObservatoryScheduledTestTestDesktopReport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -167,8 +167,8 @@ export function observatoryScheduledTestTestDesktopReportToTerraform(struct?: Ob
 
 
 export function observatoryScheduledTestTestDesktopReportToHclTerraform(struct?: ObservatoryScheduledTestTestDesktopReport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -176,14 +176,14 @@ export function observatoryScheduledTestTestDesktopReportToHclTerraform(struct?:
   return attrs;
 }
 
-export class ObservatoryScheduledTestTestDesktopReportOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestTestDesktopReportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -267,8 +267,8 @@ export interface ObservatoryScheduledTestTestMobileReportError {
 }
 
 export function observatoryScheduledTestTestMobileReportErrorToTerraform(struct?: ObservatoryScheduledTestTestMobileReportError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -277,8 +277,8 @@ export function observatoryScheduledTestTestMobileReportErrorToTerraform(struct?
 
 
 export function observatoryScheduledTestTestMobileReportErrorToHclTerraform(struct?: ObservatoryScheduledTestTestMobileReportError): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -286,14 +286,14 @@ export function observatoryScheduledTestTestMobileReportErrorToHclTerraform(stru
   return attrs;
 }
 
-export class ObservatoryScheduledTestTestMobileReportErrorOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestTestMobileReportErrorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -331,8 +331,8 @@ export interface ObservatoryScheduledTestTestMobileReport {
 }
 
 export function observatoryScheduledTestTestMobileReportToTerraform(struct?: ObservatoryScheduledTestTestMobileReport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -341,8 +341,8 @@ export function observatoryScheduledTestTestMobileReportToTerraform(struct?: Obs
 
 
 export function observatoryScheduledTestTestMobileReportToHclTerraform(struct?: ObservatoryScheduledTestTestMobileReport): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -350,14 +350,14 @@ export function observatoryScheduledTestTestMobileReportToHclTerraform(struct?: 
   return attrs;
 }
 
-export class ObservatoryScheduledTestTestMobileReportOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestTestMobileReportOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -441,8 +441,8 @@ export interface ObservatoryScheduledTestTestRegion {
 }
 
 export function observatoryScheduledTestTestRegionToTerraform(struct?: ObservatoryScheduledTestTestRegion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -451,8 +451,8 @@ export function observatoryScheduledTestTestRegionToTerraform(struct?: Observato
 
 
 export function observatoryScheduledTestTestRegionToHclTerraform(struct?: ObservatoryScheduledTestTestRegion): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -460,14 +460,14 @@ export function observatoryScheduledTestTestRegionToHclTerraform(struct?: Observ
   return attrs;
 }
 
-export class ObservatoryScheduledTestTestRegionOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestTestRegionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -500,8 +500,8 @@ export interface ObservatoryScheduledTestTest {
 }
 
 export function observatoryScheduledTestTestToTerraform(struct?: ObservatoryScheduledTestTest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -510,8 +510,8 @@ export function observatoryScheduledTestTestToTerraform(struct?: ObservatorySche
 
 
 export function observatoryScheduledTestTestToHclTerraform(struct?: ObservatoryScheduledTestTest): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -519,14 +519,14 @@ export function observatoryScheduledTestTestToHclTerraform(struct?: ObservatoryS
   return attrs;
 }
 
-export class ObservatoryScheduledTestTestOutputReference extends cdktf.ComplexObject {
+export class ObservatoryScheduledTestTestOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -585,9 +585,9 @@ export class ObservatoryScheduledTestTestOutputReference extends cdktf.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
 */
-export class ObservatoryScheduledTest extends cdktf.TerraformResource {
+export class ObservatoryScheduledTest extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -598,14 +598,14 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ObservatoryScheduledTest resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ObservatoryScheduledTest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservatoryScheduledTest to import
-  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservatoryScheduledTest to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_observatory_scheduled_test", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_observatory_scheduled_test", importId: importFromId, provider });
       }
 
   // ===========
@@ -613,7 +613,7 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -624,7 +624,7 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_observatory_scheduled_test',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -702,21 +702,21 @@ export class ObservatoryScheduledTest extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      url: cdktf.stringToTerraform(this._url),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      url: cdktn.stringToTerraform(this._url),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

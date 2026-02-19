@@ -1,89 +1,89 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareCloudforceOneRequestsConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareCloudforceOneRequestsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#account_id DataCloudflareCloudforceOneRequests#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#account_id DataCloudflareCloudforceOneRequests#account_id}
   */
   readonly accountId: string;
   /**
   * Retrieve requests completed after this time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#completed_after DataCloudflareCloudforceOneRequests#completed_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#completed_after DataCloudflareCloudforceOneRequests#completed_after}
   */
   readonly completedAfter?: string;
   /**
   * Retrieve requests completed before this time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#completed_before DataCloudflareCloudforceOneRequests#completed_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#completed_before DataCloudflareCloudforceOneRequests#completed_before}
   */
   readonly completedBefore?: string;
   /**
   * Retrieve requests created after this time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#created_after DataCloudflareCloudforceOneRequests#created_after}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#created_after DataCloudflareCloudforceOneRequests#created_after}
   */
   readonly createdAfter?: string;
   /**
   * Retrieve requests created before this time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#created_before DataCloudflareCloudforceOneRequests#created_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#created_before DataCloudflareCloudforceOneRequests#created_before}
   */
   readonly createdBefore?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#max_items DataCloudflareCloudforceOneRequests#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#max_items DataCloudflareCloudforceOneRequests#max_items}
   */
   readonly maxItems?: number;
   /**
   * Page number of results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#page DataCloudflareCloudforceOneRequests#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#page DataCloudflareCloudforceOneRequests#page}
   */
   readonly page: number;
   /**
   * Number of results per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#per_page DataCloudflareCloudforceOneRequests#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#per_page DataCloudflareCloudforceOneRequests#per_page}
   */
   readonly perPage: number;
   /**
   * Requested information from request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#request_type DataCloudflareCloudforceOneRequests#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#request_type DataCloudflareCloudforceOneRequests#request_type}
   */
   readonly requestType?: string;
   /**
   * Field to sort results by.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#sort_by DataCloudflareCloudforceOneRequests#sort_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#sort_by DataCloudflareCloudforceOneRequests#sort_by}
   */
   readonly sortBy?: string;
   /**
   * Sort order (asc or desc).
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#sort_order DataCloudflareCloudforceOneRequests#sort_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#sort_order DataCloudflareCloudforceOneRequests#sort_order}
   */
   readonly sortOrder?: string;
   /**
   * Request Status.
   * Available values: "open", "accepted", "reported", "approved", "completed", "declined".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#status DataCloudflareCloudforceOneRequests#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#status DataCloudflareCloudforceOneRequests#status}
   */
   readonly status?: string;
 }
@@ -91,8 +91,8 @@ export interface DataCloudflareCloudforceOneRequestsResult {
 }
 
 export function dataCloudflareCloudforceOneRequestsResultToTerraform(struct?: DataCloudflareCloudforceOneRequestsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -101,8 +101,8 @@ export function dataCloudflareCloudforceOneRequestsResultToTerraform(struct?: Da
 
 
 export function dataCloudflareCloudforceOneRequestsResultToHclTerraform(struct?: DataCloudflareCloudforceOneRequestsResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -110,7 +110,7 @@ export function dataCloudflareCloudforceOneRequestsResultToHclTerraform(struct?:
   return attrs;
 }
 
-export class DataCloudflareCloudforceOneRequestsResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareCloudforceOneRequestsResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -119,7 +119,7 @@ export class DataCloudflareCloudforceOneRequestsResultOutputReference extends cd
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -199,14 +199,14 @@ export class DataCloudflareCloudforceOneRequestsResultOutputReference extends cd
   }
 }
 
-export class DataCloudflareCloudforceOneRequestsResultList extends cdktf.ComplexList {
+export class DataCloudflareCloudforceOneRequestsResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -219,9 +219,9 @@ export class DataCloudflareCloudforceOneRequestsResultList extends cdktf.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests}
 */
-export class DataCloudflareCloudforceOneRequests extends cdktf.TerraformDataSource {
+export class DataCloudflareCloudforceOneRequests extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -232,14 +232,14 @@ export class DataCloudflareCloudforceOneRequests extends cdktf.TerraformDataSour
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareCloudforceOneRequests resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareCloudforceOneRequests resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCloudforceOneRequests to import
-  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequests that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCloudforceOneRequests that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCloudforceOneRequests to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_requests", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_requests", importId: importFromId, provider });
       }
 
   // ===========
@@ -247,7 +247,7 @@ export class DataCloudflareCloudforceOneRequests extends cdktf.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/cloudforce_one_requests cloudflare_cloudforce_one_requests} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,7 +258,7 @@ export class DataCloudflareCloudforceOneRequests extends cdktf.TerraformDataSour
       terraformResourceType: 'cloudflare_cloudforce_one_requests',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -482,91 +482,91 @@ export class DataCloudflareCloudforceOneRequests extends cdktf.TerraformDataSour
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      completed_after: cdktf.stringToTerraform(this._completedAfter),
-      completed_before: cdktf.stringToTerraform(this._completedBefore),
-      created_after: cdktf.stringToTerraform(this._createdAfter),
-      created_before: cdktf.stringToTerraform(this._createdBefore),
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      page: cdktf.numberToTerraform(this._page),
-      per_page: cdktf.numberToTerraform(this._perPage),
-      request_type: cdktf.stringToTerraform(this._requestType),
-      sort_by: cdktf.stringToTerraform(this._sortBy),
-      sort_order: cdktf.stringToTerraform(this._sortOrder),
-      status: cdktf.stringToTerraform(this._status),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      completed_after: cdktn.stringToTerraform(this._completedAfter),
+      completed_before: cdktn.stringToTerraform(this._completedBefore),
+      created_after: cdktn.stringToTerraform(this._createdAfter),
+      created_before: cdktn.stringToTerraform(this._createdBefore),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      page: cdktn.numberToTerraform(this._page),
+      per_page: cdktn.numberToTerraform(this._perPage),
+      request_type: cdktn.stringToTerraform(this._requestType),
+      sort_by: cdktn.stringToTerraform(this._sortBy),
+      sort_order: cdktn.stringToTerraform(this._sortOrder),
+      status: cdktn.stringToTerraform(this._status),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       completed_after: {
-        value: cdktf.stringToHclTerraform(this._completedAfter),
+        value: cdktn.stringToHclTerraform(this._completedAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       completed_before: {
-        value: cdktf.stringToHclTerraform(this._completedBefore),
+        value: cdktn.stringToHclTerraform(this._completedBefore),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       created_after: {
-        value: cdktf.stringToHclTerraform(this._createdAfter),
+        value: cdktn.stringToHclTerraform(this._createdAfter),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       created_before: {
-        value: cdktf.stringToHclTerraform(this._createdBefore),
+        value: cdktn.stringToHclTerraform(this._createdBefore),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       page: {
-        value: cdktf.numberToHclTerraform(this._page),
+        value: cdktn.numberToHclTerraform(this._page),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       per_page: {
-        value: cdktf.numberToHclTerraform(this._perPage),
+        value: cdktn.numberToHclTerraform(this._perPage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       request_type: {
-        value: cdktf.stringToHclTerraform(this._requestType),
+        value: cdktn.stringToHclTerraform(this._requestType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sort_by: {
-        value: cdktf.stringToHclTerraform(this._sortBy),
+        value: cdktn.stringToHclTerraform(this._sortBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sort_order: {
-        value: cdktf.stringToHclTerraform(this._sortOrder),
+        value: cdktn.stringToHclTerraform(this._sortOrder),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

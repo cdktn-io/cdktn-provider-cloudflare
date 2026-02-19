@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_schema
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareApiShieldSchemaConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareApiShieldSchemaConfig extends cdktn.TerraformMetaArguments {
   /**
   * Omit the source-files of schemas and only retrieve their meta-data.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_schema#omit_source DataCloudflareApiShieldSchema#omit_source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema#omit_source DataCloudflareApiShieldSchema#omit_source}
   */
-  readonly omitSource?: boolean | cdktf.IResolvable;
+  readonly omitSource?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_schema#schema_id DataCloudflareApiShieldSchema#schema_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema#schema_id DataCloudflareApiShieldSchema#schema_id}
   */
   readonly schemaId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_schema#zone_id DataCloudflareApiShieldSchema#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema#zone_id DataCloudflareApiShieldSchema#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema}
 */
-export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
+export class DataCloudflareApiShieldSchema extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -44,14 +44,14 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareApiShieldSchema resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareApiShieldSchema resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiShieldSchema to import
-  * @param importFromId The id of the existing DataCloudflareApiShieldSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_schema#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiShieldSchema that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiShieldSchema to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield_schema", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield_schema", importId: importFromId, provider });
       }
 
   // ===========
@@ -59,7 +59,7 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/api_shield_schema cloudflare_api_shield_schema} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_api_shield_schema',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -106,11 +106,11 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
   }
 
   // omit_source - computed: true, optional: true, required: false
-  private _omitSource?: boolean | cdktf.IResolvable; 
+  private _omitSource?: boolean | cdktn.IResolvable; 
   public get omitSource() {
     return this.getBooleanAttribute('omit_source');
   }
-  public set omitSource(value: boolean | cdktf.IResolvable) {
+  public set omitSource(value: boolean | cdktn.IResolvable) {
     this._omitSource = value;
   }
   public resetOmitSource() {
@@ -163,28 +163,28 @@ export class DataCloudflareApiShieldSchema extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      omit_source: cdktf.booleanToTerraform(this._omitSource),
-      schema_id: cdktf.stringToTerraform(this._schemaId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      omit_source: cdktn.booleanToTerraform(this._omitSource),
+      schema_id: cdktn.stringToTerraform(this._schemaId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       omit_source: {
-        value: cdktf.booleanToHclTerraform(this._omitSource),
+        value: cdktn.booleanToHclTerraform(this._omitSource),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       schema_id: {
-        value: cdktf.stringToHclTerraform(this._schemaId),
+        value: cdktn.stringToHclTerraform(this._schemaId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

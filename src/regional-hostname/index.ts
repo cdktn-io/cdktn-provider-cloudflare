@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RegionalHostnameConfig extends cdktf.TerraformMetaArguments {
+export interface RegionalHostnameConfig extends cdktn.TerraformMetaArguments {
   /**
   * DNS hostname to be regionalized, must be a subdomain of the zone. Wildcards are supported for one level, e.g `*.example.com`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
   */
   readonly hostname: string;
   /**
   * Identifying key for the region
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
   */
   readonly regionKey: string;
   /**
   * Configure which routing method to use for the regional hostname
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname#routing RegionalHostname#routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname#routing RegionalHostname#routing}
   */
   readonly routing?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname cloudflare_regional_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname cloudflare_regional_hostname}
 */
-export class RegionalHostname extends cdktf.TerraformResource {
+export class RegionalHostname extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class RegionalHostname extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RegionalHostname resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RegionalHostname resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegionalHostname to import
-  * @param importFromId The id of the existing RegionalHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegionalHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegionalHostname to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_regional_hostname", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_regional_hostname", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class RegionalHostname extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_hostname cloudflare_regional_hostname} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class RegionalHostname extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_regional_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -170,35 +170,35 @@ export class RegionalHostname extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      hostname: cdktf.stringToTerraform(this._hostname),
-      region_key: cdktf.stringToTerraform(this._regionKey),
-      routing: cdktf.stringToTerraform(this._routing),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      hostname: cdktn.stringToTerraform(this._hostname),
+      region_key: cdktn.stringToTerraform(this._regionKey),
+      routing: cdktn.stringToTerraform(this._routing),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       hostname: {
-        value: cdktf.stringToHclTerraform(this._hostname),
+        value: cdktn.stringToHclTerraform(this._hostname),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       region_key: {
-        value: cdktf.stringToHclTerraform(this._regionKey),
+        value: cdktn.stringToHclTerraform(this._regionKey),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       routing: {
-        value: cdktf.stringToHclTerraform(this._routing),
+        value: cdktn.stringToHclTerraform(this._routing),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

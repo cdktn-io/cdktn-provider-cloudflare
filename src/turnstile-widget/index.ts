@@ -1,53 +1,53 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface TurnstileWidgetConfig extends cdktf.TerraformMetaArguments {
+export interface TurnstileWidgetConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
   */
   readonly accountId: string;
   /**
   * If bot_fight_mode is set to `true`, Cloudflare issues computationally
   * expensive challenges in response to malicious bots (ENT only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
   */
-  readonly botFightMode?: boolean | cdktf.IResolvable;
+  readonly botFightMode?: boolean | cdktn.IResolvable;
   /**
   * If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance,
   * this setting can determine the clearance level to be set
   * Available values: "no_clearance", "jschallenge", "managed", "interactive".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
   */
   readonly clearanceLevel?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}
   */
   readonly domains: string[];
   /**
   * Return the Ephemeral ID in /siteverify (ENT only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
   */
-  readonly ephemeralId?: boolean | cdktf.IResolvable;
+  readonly ephemeralId?: boolean | cdktn.IResolvable;
   /**
   * Widget Mode
   * Available values: "non-interactive", "invisible", "managed".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
   */
   readonly mode: string;
   /**
@@ -55,28 +55,28 @@ export interface TurnstileWidgetConfig extends cdktf.TerraformMetaArguments {
   * set this to a meaningful string to make it easier to identify your
   * widget, and where it is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
   */
   readonly name: string;
   /**
   * Do not show any Cloudflare branding on the widget (ENT only).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
   */
-  readonly offlabel?: boolean | cdktf.IResolvable;
+  readonly offlabel?: boolean | cdktn.IResolvable;
   /**
   * Region where this widget can be used. This cannot be changed after creation.
   * Available values: "world", "china".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
   */
   readonly region?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}
 */
-export class TurnstileWidget extends cdktf.TerraformResource {
+export class TurnstileWidget extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -87,14 +87,14 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a TurnstileWidget resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a TurnstileWidget resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the TurnstileWidget to import
-  * @param importFromId The id of the existing TurnstileWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing TurnstileWidget that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the TurnstileWidget to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_turnstile_widget", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_turnstile_widget", importId: importFromId, provider });
       }
 
   // ===========
@@ -102,7 +102,7 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/turnstile_widget cloudflare_turnstile_widget} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,7 +113,7 @@ export class TurnstileWidget extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_turnstile_widget',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -153,11 +153,11 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   }
 
   // bot_fight_mode - computed: true, optional: true, required: false
-  private _botFightMode?: boolean | cdktf.IResolvable; 
+  private _botFightMode?: boolean | cdktn.IResolvable; 
   public get botFightMode() {
     return this.getBooleanAttribute('bot_fight_mode');
   }
-  public set botFightMode(value: boolean | cdktf.IResolvable) {
+  public set botFightMode(value: boolean | cdktn.IResolvable) {
     this._botFightMode = value;
   }
   public resetBotFightMode() {
@@ -203,11 +203,11 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   }
 
   // ephemeral_id - computed: true, optional: true, required: false
-  private _ephemeralId?: boolean | cdktf.IResolvable; 
+  private _ephemeralId?: boolean | cdktn.IResolvable; 
   public get ephemeralId() {
     return this.getBooleanAttribute('ephemeral_id');
   }
-  public set ephemeralId(value: boolean | cdktf.IResolvable) {
+  public set ephemeralId(value: boolean | cdktn.IResolvable) {
     this._ephemeralId = value;
   }
   public resetEphemeralId() {
@@ -255,11 +255,11 @@ export class TurnstileWidget extends cdktf.TerraformResource {
   }
 
   // offlabel - computed: true, optional: true, required: false
-  private _offlabel?: boolean | cdktf.IResolvable; 
+  private _offlabel?: boolean | cdktn.IResolvable; 
   public get offlabel() {
     return this.getBooleanAttribute('offlabel');
   }
-  public set offlabel(value: boolean | cdktf.IResolvable) {
+  public set offlabel(value: boolean | cdktn.IResolvable) {
     this._offlabel = value;
   }
   public resetOfflabel() {
@@ -302,70 +302,70 @@ export class TurnstileWidget extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      bot_fight_mode: cdktf.booleanToTerraform(this._botFightMode),
-      clearance_level: cdktf.stringToTerraform(this._clearanceLevel),
-      domains: cdktf.listMapper(cdktf.stringToTerraform, false)(this._domains),
-      ephemeral_id: cdktf.booleanToTerraform(this._ephemeralId),
-      mode: cdktf.stringToTerraform(this._mode),
-      name: cdktf.stringToTerraform(this._name),
-      offlabel: cdktf.booleanToTerraform(this._offlabel),
-      region: cdktf.stringToTerraform(this._region),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      bot_fight_mode: cdktn.booleanToTerraform(this._botFightMode),
+      clearance_level: cdktn.stringToTerraform(this._clearanceLevel),
+      domains: cdktn.listMapper(cdktn.stringToTerraform, false)(this._domains),
+      ephemeral_id: cdktn.booleanToTerraform(this._ephemeralId),
+      mode: cdktn.stringToTerraform(this._mode),
+      name: cdktn.stringToTerraform(this._name),
+      offlabel: cdktn.booleanToTerraform(this._offlabel),
+      region: cdktn.stringToTerraform(this._region),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       bot_fight_mode: {
-        value: cdktf.booleanToHclTerraform(this._botFightMode),
+        value: cdktn.booleanToHclTerraform(this._botFightMode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       clearance_level: {
-        value: cdktf.stringToHclTerraform(this._clearanceLevel),
+        value: cdktn.stringToHclTerraform(this._clearanceLevel),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domains: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._domains),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._domains),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       ephemeral_id: {
-        value: cdktf.booleanToHclTerraform(this._ephemeralId),
+        value: cdktn.booleanToHclTerraform(this._ephemeralId),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       mode: {
-        value: cdktf.stringToHclTerraform(this._mode),
+        value: cdktn.stringToHclTerraform(this._mode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       offlabel: {
-        value: cdktf.booleanToHclTerraform(this._offlabel),
+        value: cdktn.booleanToHclTerraform(this._offlabel),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       region: {
-        value: cdktf.stringToHclTerraform(this._region),
+        value: cdktn.stringToHclTerraform(this._region),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

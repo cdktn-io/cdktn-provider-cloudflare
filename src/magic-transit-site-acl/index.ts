@@ -1,146 +1,146 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MagicTransitSiteAclConfig extends cdktf.TerraformMetaArguments {
+export interface MagicTransitSiteAclConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#account_id MagicTransitSiteAcl#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#account_id MagicTransitSiteAcl#account_id}
   */
   readonly accountId: string;
   /**
   * Description for the ACL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#description MagicTransitSiteAcl#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#description MagicTransitSiteAcl#description}
   */
   readonly description?: string;
   /**
   * The desired forwarding action for this ACL policy. If set to "false", the policy will forward traffic to Cloudflare. If set to "true", the policy will forward traffic locally on the Magic Connector. If not included in request, will default to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#forward_locally MagicTransitSiteAcl#forward_locally}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#forward_locally MagicTransitSiteAcl#forward_locally}
   */
-  readonly forwardLocally?: boolean | cdktf.IResolvable;
+  readonly forwardLocally?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#lan_1 MagicTransitSiteAcl#lan_1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#lan_1 MagicTransitSiteAcl#lan_1}
   */
   readonly lan1: MagicTransitSiteAclLan1;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#lan_2 MagicTransitSiteAcl#lan_2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#lan_2 MagicTransitSiteAcl#lan_2}
   */
   readonly lan2: MagicTransitSiteAclLan2;
   /**
   * The name of the ACL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#name MagicTransitSiteAcl#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#name MagicTransitSiteAcl#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#protocols MagicTransitSiteAcl#protocols}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#protocols MagicTransitSiteAcl#protocols}
   */
   readonly protocols?: string[];
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#site_id MagicTransitSiteAcl#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#site_id MagicTransitSiteAcl#site_id}
   */
   readonly siteId: string;
   /**
   * The desired traffic direction for this ACL policy. If set to "false", the policy will allow bidirectional traffic. If set to "true", the policy will only allow traffic in one direction. If not included in request, will default to false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#unidirectional MagicTransitSiteAcl#unidirectional}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#unidirectional MagicTransitSiteAcl#unidirectional}
   */
-  readonly unidirectional?: boolean | cdktf.IResolvable;
+  readonly unidirectional?: boolean | cdktn.IResolvable;
 }
 export interface MagicTransitSiteAclLan1 {
   /**
   * The identifier for the LAN you want to create an ACL policy with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
   */
   readonly lanId: string;
   /**
   * The name of the LAN based on the provided lan_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
   */
   readonly lanName?: string;
   /**
   * Array of port ranges on the provided LAN that will be included in the ACL. If no ports or port rangess are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
   */
   readonly portRanges?: string[];
   /**
   * Array of ports on the provided LAN that will be included in the ACL. If no ports or port ranges are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
   */
   readonly ports?: number[];
   /**
   * Array of subnet IPs within the LAN that will be included in the ACL. If no subnets are provided, communication on any subnets on this LAN are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
   */
   readonly subnets?: string[];
 }
 
-export function magicTransitSiteAclLan1ToTerraform(struct?: MagicTransitSiteAclLan1 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitSiteAclLan1ToTerraform(struct?: MagicTransitSiteAclLan1 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lan_id: cdktf.stringToTerraform(struct!.lanId),
-    lan_name: cdktf.stringToTerraform(struct!.lanName),
-    port_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.portRanges),
-    ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    lan_id: cdktn.stringToTerraform(struct!.lanId),
+    lan_name: cdktn.stringToTerraform(struct!.lanName),
+    port_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.portRanges),
+    ports: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.ports),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
-export function magicTransitSiteAclLan1ToHclTerraform(struct?: MagicTransitSiteAclLan1 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitSiteAclLan1ToHclTerraform(struct?: MagicTransitSiteAclLan1 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lan_id: {
-      value: cdktf.stringToHclTerraform(struct!.lanId),
+      value: cdktn.stringToHclTerraform(struct!.lanId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lan_name: {
-      value: cdktf.stringToHclTerraform(struct!.lanName),
+      value: cdktn.stringToHclTerraform(struct!.lanName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.portRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.portRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ports: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.ports),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.ports),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -151,19 +151,19 @@ export function magicTransitSiteAclLan1ToHclTerraform(struct?: MagicTransitSiteA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MagicTransitSiteAclLan1OutputReference extends cdktf.ComplexObject {
+export class MagicTransitSiteAclLan1OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MagicTransitSiteAclLan1 | cdktf.IResolvable | undefined {
+  public get internalValue(): MagicTransitSiteAclLan1 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -192,7 +192,7 @@ export class MagicTransitSiteAclLan1OutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MagicTransitSiteAclLan1 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MagicTransitSiteAclLan1 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -202,7 +202,7 @@ export class MagicTransitSiteAclLan1OutputReference extends cdktf.ComplexObject 
       this._ports = undefined;
       this._subnets = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -298,82 +298,82 @@ export interface MagicTransitSiteAclLan2 {
   /**
   * The identifier for the LAN you want to create an ACL policy with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#lan_id MagicTransitSiteAcl#lan_id}
   */
   readonly lanId: string;
   /**
   * The name of the LAN based on the provided lan_id.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#lan_name MagicTransitSiteAcl#lan_name}
   */
   readonly lanName?: string;
   /**
   * Array of port ranges on the provided LAN that will be included in the ACL. If no ports or port rangess are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#port_ranges MagicTransitSiteAcl#port_ranges}
   */
   readonly portRanges?: string[];
   /**
   * Array of ports on the provided LAN that will be included in the ACL. If no ports or port ranges are provided, communication on any port on this LAN is allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#ports MagicTransitSiteAcl#ports}
   */
   readonly ports?: number[];
   /**
   * Array of subnet IPs within the LAN that will be included in the ACL. If no subnets are provided, communication on any subnets on this LAN are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#subnets MagicTransitSiteAcl#subnets}
   */
   readonly subnets?: string[];
 }
 
-export function magicTransitSiteAclLan2ToTerraform(struct?: MagicTransitSiteAclLan2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitSiteAclLan2ToTerraform(struct?: MagicTransitSiteAclLan2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    lan_id: cdktf.stringToTerraform(struct!.lanId),
-    lan_name: cdktf.stringToTerraform(struct!.lanName),
-    port_ranges: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.portRanges),
-    ports: cdktf.listMapper(cdktf.numberToTerraform, false)(struct!.ports),
-    subnets: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.subnets),
+    lan_id: cdktn.stringToTerraform(struct!.lanId),
+    lan_name: cdktn.stringToTerraform(struct!.lanName),
+    port_ranges: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.portRanges),
+    ports: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.ports),
+    subnets: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.subnets),
   }
 }
 
 
-export function magicTransitSiteAclLan2ToHclTerraform(struct?: MagicTransitSiteAclLan2 | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitSiteAclLan2ToHclTerraform(struct?: MagicTransitSiteAclLan2 | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     lan_id: {
-      value: cdktf.stringToHclTerraform(struct!.lanId),
+      value: cdktn.stringToHclTerraform(struct!.lanId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lan_name: {
-      value: cdktf.stringToHclTerraform(struct!.lanName),
+      value: cdktn.stringToHclTerraform(struct!.lanName),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port_ranges: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.portRanges),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.portRanges),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     ports: {
-      value: cdktf.listMapperHcl(cdktf.numberToHclTerraform, false)(struct!.ports),
+      value: cdktn.listMapperHcl(cdktn.numberToHclTerraform, false)(struct!.ports),
       isBlock: false,
       type: "list",
       storageClassType: "numberList",
     },
     subnets: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.subnets),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.subnets),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -384,19 +384,19 @@ export function magicTransitSiteAclLan2ToHclTerraform(struct?: MagicTransitSiteA
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MagicTransitSiteAclLan2OutputReference extends cdktf.ComplexObject {
+export class MagicTransitSiteAclLan2OutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MagicTransitSiteAclLan2 | cdktf.IResolvable | undefined {
+  public get internalValue(): MagicTransitSiteAclLan2 | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -425,7 +425,7 @@ export class MagicTransitSiteAclLan2OutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MagicTransitSiteAclLan2 | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MagicTransitSiteAclLan2 | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -435,7 +435,7 @@ export class MagicTransitSiteAclLan2OutputReference extends cdktf.ComplexObject 
       this._ports = undefined;
       this._subnets = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -529,9 +529,9 @@ export class MagicTransitSiteAclLan2OutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl}
 */
-export class MagicTransitSiteAcl extends cdktf.TerraformResource {
+export class MagicTransitSiteAcl extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -542,14 +542,14 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MagicTransitSiteAcl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MagicTransitSiteAcl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicTransitSiteAcl to import
-  * @param importFromId The id of the existing MagicTransitSiteAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicTransitSiteAcl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicTransitSiteAcl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_transit_site_acl", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_transit_site_acl", importId: importFromId, provider });
       }
 
   // ===========
@@ -557,7 +557,7 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_site_acl cloudflare_magic_transit_site_acl} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -568,7 +568,7 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_transit_site_acl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -624,11 +624,11 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
   }
 
   // forward_locally - computed: false, optional: true, required: false
-  private _forwardLocally?: boolean | cdktf.IResolvable; 
+  private _forwardLocally?: boolean | cdktn.IResolvable; 
   public get forwardLocally() {
     return this.getBooleanAttribute('forward_locally');
   }
-  public set forwardLocally(value: boolean | cdktf.IResolvable) {
+  public set forwardLocally(value: boolean | cdktn.IResolvable) {
     this._forwardLocally = value;
   }
   public resetForwardLocally() {
@@ -713,11 +713,11 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
   }
 
   // unidirectional - computed: false, optional: true, required: false
-  private _unidirectional?: boolean | cdktf.IResolvable; 
+  private _unidirectional?: boolean | cdktn.IResolvable; 
   public get unidirectional() {
     return this.getBooleanAttribute('unidirectional');
   }
-  public set unidirectional(value: boolean | cdktf.IResolvable) {
+  public set unidirectional(value: boolean | cdktn.IResolvable) {
     this._unidirectional = value;
   }
   public resetUnidirectional() {
@@ -734,34 +734,34 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      description: cdktf.stringToTerraform(this._description),
-      forward_locally: cdktf.booleanToTerraform(this._forwardLocally),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      description: cdktn.stringToTerraform(this._description),
+      forward_locally: cdktn.booleanToTerraform(this._forwardLocally),
       lan_1: magicTransitSiteAclLan1ToTerraform(this._lan1.internalValue),
       lan_2: magicTransitSiteAclLan2ToTerraform(this._lan2.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      protocols: cdktf.listMapper(cdktf.stringToTerraform, false)(this._protocols),
-      site_id: cdktf.stringToTerraform(this._siteId),
-      unidirectional: cdktf.booleanToTerraform(this._unidirectional),
+      name: cdktn.stringToTerraform(this._name),
+      protocols: cdktn.listMapper(cdktn.stringToTerraform, false)(this._protocols),
+      site_id: cdktn.stringToTerraform(this._siteId),
+      unidirectional: cdktn.booleanToTerraform(this._unidirectional),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       forward_locally: {
-        value: cdktf.booleanToHclTerraform(this._forwardLocally),
+        value: cdktn.booleanToHclTerraform(this._forwardLocally),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -779,25 +779,25 @@ export class MagicTransitSiteAcl extends cdktf.TerraformResource {
         storageClassType: "MagicTransitSiteAclLan2",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       protocols: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._protocols),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._protocols),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       site_id: {
-        value: cdktf.stringToHclTerraform(this._siteId),
+        value: cdktn.stringToHclTerraform(this._siteId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       unidirectional: {
-        value: cdktf.booleanToHclTerraform(this._unidirectional),
+        value: cdktn.booleanToHclTerraform(this._unidirectional),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

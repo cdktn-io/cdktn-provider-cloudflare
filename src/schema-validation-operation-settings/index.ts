@@ -1,17 +1,17 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_operation_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_operation_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SchemaValidationOperationSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface SchemaValidationOperationSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * When set, this applies a mitigation action to this operation
   * 
@@ -21,27 +21,27 @@ export interface SchemaValidationOperationSettingsConfig extends cdktf.Terraform
   *   - `null` - clears any mitigation action
   * Available values: "log", "block", "none".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_operation_settings#mitigation_action SchemaValidationOperationSettings#mitigation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_operation_settings#mitigation_action SchemaValidationOperationSettings#mitigation_action}
   */
   readonly mitigationAction: string;
   /**
   * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_operation_settings#operation_id SchemaValidationOperationSettings#operation_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_operation_settings#operation_id SchemaValidationOperationSettings#operation_id}
   */
   readonly operationId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_operation_settings#zone_id SchemaValidationOperationSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_operation_settings#zone_id SchemaValidationOperationSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}
 */
-export class SchemaValidationOperationSettings extends cdktf.TerraformResource {
+export class SchemaValidationOperationSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class SchemaValidationOperationSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SchemaValidationOperationSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SchemaValidationOperationSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SchemaValidationOperationSettings to import
-  * @param importFromId The id of the existing SchemaValidationOperationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_operation_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SchemaValidationOperationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_operation_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SchemaValidationOperationSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_schema_validation_operation_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_schema_validation_operation_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class SchemaValidationOperationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class SchemaValidationOperationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_schema_validation_operation_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -143,28 +143,28 @@ export class SchemaValidationOperationSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      mitigation_action: cdktf.stringToTerraform(this._mitigationAction),
-      operation_id: cdktf.stringToTerraform(this._operationId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      mitigation_action: cdktn.stringToTerraform(this._mitigationAction),
+      operation_id: cdktn.stringToTerraform(this._operationId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       mitigation_action: {
-        value: cdktf.stringToHclTerraform(this._mitigationAction),
+        value: cdktn.stringToHclTerraform(this._mitigationAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       operation_id: {
-        value: cdktf.stringToHclTerraform(this._operationId),
+        value: cdktn.stringToHclTerraform(this._operationId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

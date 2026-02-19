@@ -1,54 +1,54 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CloudforceOneRequestPriorityConfig extends cdktf.TerraformMetaArguments {
+export interface CloudforceOneRequestPriorityConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority#account_id CloudforceOneRequestPriority#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority#account_id CloudforceOneRequestPriority#account_id}
   */
   readonly accountId: string;
   /**
   * List of labels.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority#labels CloudforceOneRequestPriority#labels}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority#labels CloudforceOneRequestPriority#labels}
   */
   readonly labels: string[];
   /**
   * Priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority#priority CloudforceOneRequestPriority#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority#priority CloudforceOneRequestPriority#priority}
   */
   readonly priority: number;
   /**
   * Requirement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority#requirement CloudforceOneRequestPriority#requirement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority#requirement CloudforceOneRequestPriority#requirement}
   */
   readonly requirement: string;
   /**
   * The CISA defined Traffic Light Protocol (TLP).
   * Available values: "clear", "amber", "amber-strict", "green", "red".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority#tlp CloudforceOneRequestPriority#tlp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority#tlp CloudforceOneRequestPriority#tlp}
   */
   readonly tlp: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}
 */
-export class CloudforceOneRequestPriority extends cdktf.TerraformResource {
+export class CloudforceOneRequestPriority extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class CloudforceOneRequestPriority extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CloudforceOneRequestPriority resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CloudforceOneRequestPriority resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudforceOneRequestPriority to import
-  * @param importFromId The id of the existing CloudforceOneRequestPriority that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudforceOneRequestPriority that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudforceOneRequestPriority to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_request_priority", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_cloudforce_one_request_priority", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class CloudforceOneRequestPriority extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class CloudforceOneRequestPriority extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_cloudforce_one_request_priority',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -233,42 +233,42 @@ export class CloudforceOneRequestPriority extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      labels: cdktf.listMapper(cdktf.stringToTerraform, false)(this._labels),
-      priority: cdktf.numberToTerraform(this._priority),
-      requirement: cdktf.stringToTerraform(this._requirement),
-      tlp: cdktf.stringToTerraform(this._tlp),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      labels: cdktn.listMapper(cdktn.stringToTerraform, false)(this._labels),
+      priority: cdktn.numberToTerraform(this._priority),
+      requirement: cdktn.stringToTerraform(this._requirement),
+      tlp: cdktn.stringToTerraform(this._tlp),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       labels: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._labels),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._labels),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       requirement: {
-        value: cdktf.stringToHclTerraform(this._requirement),
+        value: cdktn.stringToHclTerraform(this._requirement),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       tlp: {
-        value: cdktf.stringToHclTerraform(this._tlp),
+        value: cdktn.stringToHclTerraform(this._tlp),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

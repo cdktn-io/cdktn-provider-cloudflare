@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareSpectrumApplicationConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareSpectrumApplicationConfig extends cdktn.TerraformMetaArguments {
   /**
   * App identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
   */
   readonly appId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}
   */
   readonly filter?: DataCloudflareSpectrumApplicationFilter;
   /**
   * Zone identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
   */
   readonly zoneId: string;
 }
@@ -33,8 +33,8 @@ export interface DataCloudflareSpectrumApplicationDns {
 }
 
 export function dataCloudflareSpectrumApplicationDnsToTerraform(struct?: DataCloudflareSpectrumApplicationDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -43,8 +43,8 @@ export function dataCloudflareSpectrumApplicationDnsToTerraform(struct?: DataClo
 
 
 export function dataCloudflareSpectrumApplicationDnsToHclTerraform(struct?: DataCloudflareSpectrumApplicationDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -52,14 +52,14 @@ export function dataCloudflareSpectrumApplicationDnsToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataCloudflareSpectrumApplicationDnsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareSpectrumApplicationDnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -92,8 +92,8 @@ export interface DataCloudflareSpectrumApplicationEdgeIps {
 }
 
 export function dataCloudflareSpectrumApplicationEdgeIpsToTerraform(struct?: DataCloudflareSpectrumApplicationEdgeIps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -102,8 +102,8 @@ export function dataCloudflareSpectrumApplicationEdgeIpsToTerraform(struct?: Dat
 
 
 export function dataCloudflareSpectrumApplicationEdgeIpsToHclTerraform(struct?: DataCloudflareSpectrumApplicationEdgeIps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -111,14 +111,14 @@ export function dataCloudflareSpectrumApplicationEdgeIpsToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataCloudflareSpectrumApplicationEdgeIpsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareSpectrumApplicationEdgeIpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -157,44 +157,44 @@ export interface DataCloudflareSpectrumApplicationFilter {
   * Sets the direction by which results are ordered.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
   */
   readonly direction?: string;
   /**
   * Application field by which results are ordered.
   * Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
   */
   readonly order?: string;
 }
 
-export function dataCloudflareSpectrumApplicationFilterToTerraform(struct?: DataCloudflareSpectrumApplicationFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareSpectrumApplicationFilterToTerraform(struct?: DataCloudflareSpectrumApplicationFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    direction: cdktf.stringToTerraform(struct!.direction),
-    order: cdktf.stringToTerraform(struct!.order),
+    direction: cdktn.stringToTerraform(struct!.direction),
+    order: cdktn.stringToTerraform(struct!.order),
   }
 }
 
 
-export function dataCloudflareSpectrumApplicationFilterToHclTerraform(struct?: DataCloudflareSpectrumApplicationFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareSpectrumApplicationFilterToHclTerraform(struct?: DataCloudflareSpectrumApplicationFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     direction: {
-      value: cdktf.stringToHclTerraform(struct!.direction),
+      value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     order: {
-      value: cdktf.stringToHclTerraform(struct!.order),
+      value: cdktn.stringToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -205,19 +205,19 @@ export function dataCloudflareSpectrumApplicationFilterToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareSpectrumApplicationFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareSpectrumApplicationFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareSpectrumApplicationFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareSpectrumApplicationFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -234,14 +234,14 @@ export class DataCloudflareSpectrumApplicationFilterOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareSpectrumApplicationFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareSpectrumApplicationFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._direction = undefined;
       this._order = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -289,8 +289,8 @@ export interface DataCloudflareSpectrumApplicationOriginDns {
 }
 
 export function dataCloudflareSpectrumApplicationOriginDnsToTerraform(struct?: DataCloudflareSpectrumApplicationOriginDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -299,8 +299,8 @@ export function dataCloudflareSpectrumApplicationOriginDnsToTerraform(struct?: D
 
 
 export function dataCloudflareSpectrumApplicationOriginDnsToHclTerraform(struct?: DataCloudflareSpectrumApplicationOriginDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -308,14 +308,14 @@ export function dataCloudflareSpectrumApplicationOriginDnsToHclTerraform(struct?
   return attrs;
 }
 
-export class DataCloudflareSpectrumApplicationOriginDnsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareSpectrumApplicationOriginDnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -351,9 +351,9 @@ export class DataCloudflareSpectrumApplicationOriginDnsOutputReference extends c
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}
 */
-export class DataCloudflareSpectrumApplication extends cdktf.TerraformDataSource {
+export class DataCloudflareSpectrumApplication extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -364,14 +364,14 @@ export class DataCloudflareSpectrumApplication extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareSpectrumApplication resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareSpectrumApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareSpectrumApplication to import
-  * @param importFromId The id of the existing DataCloudflareSpectrumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareSpectrumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareSpectrumApplication to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_spectrum_application", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_spectrum_application", importId: importFromId, provider });
       }
 
   // ===========
@@ -379,7 +379,7 @@ export class DataCloudflareSpectrumApplication extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/spectrum_application cloudflare_spectrum_application} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -390,7 +390,7 @@ export class DataCloudflareSpectrumApplication extends cdktf.TerraformDataSource
       terraformResourceType: 'cloudflare_spectrum_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -491,7 +491,7 @@ export class DataCloudflareSpectrumApplication extends cdktf.TerraformDataSource
   }
 
   // origin_port - computed: true, optional: false, required: false
-  private _originPort = new cdktf.AnyMap(this, "origin_port");
+  private _originPort = new cdktn.AnyMap(this, "origin_port");
   public get originPort() {
     return this._originPort;
   }
@@ -535,16 +535,16 @@ export class DataCloudflareSpectrumApplication extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      app_id: cdktf.stringToTerraform(this._appId),
+      app_id: cdktn.stringToTerraform(this._appId),
       filter: dataCloudflareSpectrumApplicationFilterToTerraform(this._filter.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       app_id: {
-        value: cdktf.stringToHclTerraform(this._appId),
+        value: cdktn.stringToHclTerraform(this._appId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -556,7 +556,7 @@ export class DataCloudflareSpectrumApplication extends cdktf.TerraformDataSource
         storageClassType: "DataCloudflareSpectrumApplicationFilter",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

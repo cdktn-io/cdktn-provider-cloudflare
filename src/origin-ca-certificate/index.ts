@@ -1,49 +1,49 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface OriginCaCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface OriginCaCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Certificate Signing Request (CSR). Must be newline-encoded.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate#csr OriginCaCertificate#csr}
   */
   readonly csr: string;
   /**
   * Array of hostnames or wildcard names (e.g., *.example.com) bound to the certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate#hostnames OriginCaCertificate#hostnames}
   */
   readonly hostnames: string[];
   /**
   * Signature type desired on certificate ("origin-rsa" (rsa), "origin-ecc" (ecdsa), or "keyless-certificate" (for Keyless SSL servers).
   * Available values: "origin-rsa", "origin-ecc", "keyless-certificate".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate#request_type OriginCaCertificate#request_type}
   */
   readonly requestType: string;
   /**
   * The number of days for which the certificate should be valid.
   * Available values: 7, 30, 90, 365, 730, 1095, 5475.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate#requested_validity OriginCaCertificate#requested_validity}
   */
   readonly requestedValidity?: number;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate}
 */
-export class OriginCaCertificate extends cdktf.TerraformResource {
+export class OriginCaCertificate extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -54,14 +54,14 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a OriginCaCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a OriginCaCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the OriginCaCertificate to import
-  * @param importFromId The id of the existing OriginCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing OriginCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the OriginCaCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_origin_ca_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_origin_ca_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -69,7 +69,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/origin_ca_certificate cloudflare_origin_ca_certificate} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -80,7 +80,7 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_origin_ca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -177,35 +177,35 @@ export class OriginCaCertificate extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      csr: cdktf.stringToTerraform(this._csr),
-      hostnames: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hostnames),
-      request_type: cdktf.stringToTerraform(this._requestType),
-      requested_validity: cdktf.numberToTerraform(this._requestedValidity),
+      csr: cdktn.stringToTerraform(this._csr),
+      hostnames: cdktn.listMapper(cdktn.stringToTerraform, false)(this._hostnames),
+      request_type: cdktn.stringToTerraform(this._requestType),
+      requested_validity: cdktn.numberToTerraform(this._requestedValidity),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       csr: {
-        value: cdktf.stringToHclTerraform(this._csr),
+        value: cdktn.stringToHclTerraform(this._csr),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hostnames: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hostnames),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._hostnames),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       request_type: {
-        value: cdktf.stringToHclTerraform(this._requestType),
+        value: cdktn.stringToHclTerraform(this._requestType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       requested_validity: {
-        value: cdktf.numberToHclTerraform(this._requestedValidity),
+        value: cdktn.numberToHclTerraform(this._requestedValidity),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

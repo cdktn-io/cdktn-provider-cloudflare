@@ -1,28 +1,28 @@
-# `dnsRecord` Submodule <a name="`dnsRecord` Submodule" id="@cdktf/provider-cloudflare.dnsRecord"></a>
+# `dnsRecord` Submodule <a name="`dnsRecord` Submodule" id="@cdktn/provider-cloudflare.dnsRecord"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
 
-### DnsRecord <a name="DnsRecord" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord"></a>
+### DnsRecord <a name="DnsRecord" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record cloudflare_dns_record}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record cloudflare_dns_record}.
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 new dnsRecord.DnsRecord(scope: Construct, id: string, config: DnsRecordConfig)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a></code> | *No description.* |
 
 ---
 
-##### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope"></a>
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -30,7 +30,7 @@ The scope in which to define this construct.
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.id"></a>
 
 - *Type:* string
 
@@ -40,9 +40,9 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.config"></a>
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig">DnsRecordConfig</a>
 
 ---
 
@@ -50,42 +50,42 @@ Must be unique amongst siblings in the same scope
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toString">toString</a></code> | Returns a string representation of this construct. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride">addOverride</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform">toHclTerraform</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toMetadata">toMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove">hasResourceMove</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom">importFrom</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putData">putData</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putSettings">putSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetComment">resetComment</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetContent">resetContent</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetData">resetData</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetPriority">resetPriority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetProxied">resetProxied</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetSettings">resetSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetTags">resetTags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putData">putData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putSettings">putSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetComment">resetComment</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetContent">resetContent</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetData">resetData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetPriority">resetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetProxied">resetProxied</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetSettings">resetSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetTags">resetTags</a></code> | *No description.* |
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toString"></a>
 
 ```typescript
 public toString(): string
@@ -93,25 +93,25 @@ public toString(): string
 
 Returns a string representation of this construct.
 
-##### `addOverride` <a name="addOverride" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride"></a>
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride"></a>
 
 ```typescript
 public addOverride(path: string, value: any): void
 ```
 
-###### `path`<sup>Required</sup> <a name="path" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.path"></a>
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.path"></a>
 
 - *Type:* string
 
 ---
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addOverride.parameter.value"></a>
 
 - *Type:* any
 
 ---
 
-##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId"></a>
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId"></a>
 
 ```typescript
 public overrideLogicalId(newLogicalId: string): void
@@ -119,7 +119,7 @@ public overrideLogicalId(newLogicalId: string): void
 
 Overrides the auto-generated logical ID with a specific ID.
 
-###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId.parameter.newLogicalId"></a>
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.overrideLogicalId.parameter.newLogicalId"></a>
 
 - *Type:* string
 
@@ -127,7 +127,7 @@ The new logical ID to use for this stack element.
 
 ---
 
-##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId"></a>
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetOverrideLogicalId"></a>
 
 ```typescript
 public resetOverrideLogicalId(): void
@@ -135,19 +135,19 @@ public resetOverrideLogicalId(): void
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
 
-##### `toHclTerraform` <a name="toHclTerraform" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform"></a>
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toHclTerraform"></a>
 
 ```typescript
 public toHclTerraform(): any
 ```
 
-##### `toMetadata` <a name="toMetadata" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toMetadata"></a>
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toMetadata"></a>
 
 ```typescript
 public toMetadata(): any
 ```
 
-##### `toTerraform` <a name="toTerraform" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.toTerraform"></a>
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.toTerraform"></a>
 
 ```typescript
 public toTerraform(): any
@@ -155,7 +155,7 @@ public toTerraform(): any
 
 Adds this resource to the terraform JSON output.
 
-##### `addMoveTarget` <a name="addMoveTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget"></a>
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget"></a>
 
 ```typescript
 public addMoveTarget(moveTarget: string): void
@@ -163,7 +163,7 @@ public addMoveTarget(moveTarget: string): void
 
 Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.addMoveTarget.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -171,151 +171,151 @@ The string move target that will correspond to this resource.
 
 ---
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove"></a>
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.hasResourceMove"></a>
 
 ```typescript
 public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
-##### `importFrom` <a name="importFrom" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom"></a>
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom"></a>
 
 ```typescript
 public importFrom(id: string, provider?: TerraformProvider): void
 ```
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.id"></a>
 
 - *Type:* string
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.importFrom.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.interpolationForAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `moveFromId` <a name="moveFromId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveFromId"></a>
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveFromId"></a>
 
 ```typescript
 public moveFromId(id: string): void
@@ -325,7 +325,7 @@ Move the resource corresponding to "id" to this resource.
 
 Note that the resource being moved from must be marked as moved using it's instance function.
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveFromId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveFromId.parameter.id"></a>
 
 - *Type:* string
 
@@ -333,7 +333,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `moveTo` <a name="moveTo" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo"></a>
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo"></a>
 
 ```typescript
 public moveTo(moveTarget: string, index?: string | number): void
@@ -341,7 +341,7 @@ public moveTo(moveTarget: string, index?: string | number): void
 
 Moves this resource to the target resource given by moveTarget.
 
-###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.moveTarget"></a>
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.moveTarget"></a>
 
 - *Type:* string
 
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ---
 
-###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.index"></a>
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveTo.parameter.index"></a>
 
 - *Type:* string | number
 
@@ -357,7 +357,7 @@ Optional The index corresponding to the key the resource is to appear in the for
 
 ---
 
-##### `moveToId` <a name="moveToId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveToId"></a>
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveToId"></a>
 
 ```typescript
 public moveToId(id: string): void
@@ -365,7 +365,7 @@ public moveToId(id: string): void
 
 Moves this resource to the resource corresponding to "id".
 
-###### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.moveToId.parameter.id"></a>
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.moveToId.parameter.id"></a>
 
 - *Type:* string
 
@@ -373,67 +373,67 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `putData` <a name="putData" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putData"></a>
+##### `putData` <a name="putData" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putData"></a>
 
 ```typescript
 public putData(value: DnsRecordData): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putData.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putData.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
 
 ---
 
-##### `putSettings` <a name="putSettings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putSettings"></a>
+##### `putSettings` <a name="putSettings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putSettings"></a>
 
 ```typescript
 public putSettings(value: DnsRecordSettings): void
 ```
 
-###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.putSettings.parameter.value"></a>
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.putSettings.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
 
 ---
 
-##### `resetComment` <a name="resetComment" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetComment"></a>
+##### `resetComment` <a name="resetComment" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetComment"></a>
 
 ```typescript
 public resetComment(): void
 ```
 
-##### `resetContent` <a name="resetContent" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetContent"></a>
+##### `resetContent` <a name="resetContent" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetContent"></a>
 
 ```typescript
 public resetContent(): void
 ```
 
-##### `resetData` <a name="resetData" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetData"></a>
+##### `resetData` <a name="resetData" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetData"></a>
 
 ```typescript
 public resetData(): void
 ```
 
-##### `resetPriority` <a name="resetPriority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetPriority"></a>
+##### `resetPriority` <a name="resetPriority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetPriority"></a>
 
 ```typescript
 public resetPriority(): void
 ```
 
-##### `resetProxied` <a name="resetProxied" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetProxied"></a>
+##### `resetProxied` <a name="resetProxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetProxied"></a>
 
 ```typescript
 public resetProxied(): void
 ```
 
-##### `resetSettings` <a name="resetSettings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetSettings"></a>
+##### `resetSettings` <a name="resetSettings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetSettings"></a>
 
 ```typescript
 public resetSettings(): void
 ```
 
-##### `resetTags` <a name="resetTags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.resetTags"></a>
+##### `resetTags` <a name="resetTags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetTags"></a>
 
 ```typescript
 public resetTags(): void
@@ -443,17 +443,17 @@ public resetTags(): void
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement">isTerraformElement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource">isTerraformResource</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTF code for importing a DnsRecord resource upon running "cdktf plan <stack-name>". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a DnsRecord resource upon running "cdktn plan <stack-name>". |
 
 ---
 
-##### `isConstruct` <a name="isConstruct" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isConstruct"></a>
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isConstruct"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 dnsRecord.DnsRecord.isConstruct(x: any)
 ```
@@ -474,7 +474,7 @@ library can be accidentally installed, and `instanceof` will behave
 unpredictably. It is safest to avoid using `instanceof`, and using
 this type-testing method instead.
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isConstruct.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isConstruct.parameter.x"></a>
 
 - *Type:* any
 
@@ -482,45 +482,45 @@ Any object.
 
 ---
 
-##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement"></a>
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 dnsRecord.DnsRecord.isTerraformElement(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformElement.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource"></a>
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 dnsRecord.DnsRecord.isTerraformResource(x: any)
 ```
 
-###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource.parameter.x"></a>
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.isTerraformResource.parameter.x"></a>
 
 - *Type:* any
 
 ---
 
-##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport"></a>
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 dnsRecord.DnsRecord.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
 ```
 
-Generates CDKTF code for importing a DnsRecord resource upon running "cdktf plan <stack-name>".
+Generates CDKTN code for importing a DnsRecord resource upon running "cdktn plan <stack-name>".
 
-###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.scope"></a>
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.scope"></a>
 
 - *Type:* constructs.Construct
 
@@ -528,7 +528,7 @@ The scope in which to define this construct.
 
 ---
 
-###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importToId"></a>
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importToId"></a>
 
 - *Type:* string
 
@@ -536,19 +536,19 @@ The construct id used in the generated config for the DnsRecord to import.
 
 ---
 
-###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importFromId"></a>
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.importFromId"></a>
 
 - *Type:* string
 
 The id of the existing DnsRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
-###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.provider"></a>
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.generateConfigForImport.parameter.provider"></a>
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ? Optional instance of the provider where the DnsRecord to import is found.
 
@@ -558,53 +558,53 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack">cdktfStack</a></code> | <code>cdktf.TerraformStack</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn">commentModifiedOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.data">data</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.meta">meta</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn">modifiedOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable">proxiable</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn">tagsModifiedOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput">dataInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput">proxiedInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput">settingsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.comment">comment</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.content">content</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priority">priority</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxied">proxied</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.type">type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn">commentModifiedOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.data">data</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.meta">meta</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn">modifiedOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable">proxiable</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn">tagsModifiedOn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput">commentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput">contentInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput">dataInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput">proxiedInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput">settingsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput">tagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput">ttlInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.comment">comment</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.content">content</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priority">priority</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxied">proxied</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tags">tags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttl">ttl</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.type">type</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `node`<sup>Required</sup> <a name="node" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.node"></a>
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.node"></a>
 
 ```typescript
 public readonly node: Node;
@@ -616,17 +616,17 @@ The tree node.
 
 ---
 
-##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack"></a>
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.cdktfStack"></a>
 
 ```typescript
 public readonly cdktfStack: TerraformStack;
 ```
 
-- *Type:* cdktf.TerraformStack
+- *Type:* cdktn.TerraformStack
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -636,7 +636,7 @@ public readonly fqn: string;
 
 ---
 
-##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId"></a>
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.friendlyUniqueId"></a>
 
 ```typescript
 public readonly friendlyUniqueId: string;
@@ -646,7 +646,7 @@ public readonly friendlyUniqueId: string;
 
 ---
 
-##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments"></a>
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformMetaArguments"></a>
 
 ```typescript
 public readonly terraformMetaArguments: {[ key: string ]: any};
@@ -656,7 +656,7 @@ public readonly terraformMetaArguments: {[ key: string ]: any};
 
 ---
 
-##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType"></a>
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformResourceType"></a>
 
 ```typescript
 public readonly terraformResourceType: string;
@@ -666,37 +666,37 @@ public readonly terraformResourceType: string;
 
 ---
 
-##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata"></a>
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.terraformGeneratorMetadata"></a>
 
 ```typescript
 public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ```
 
-- *Type:* cdktf.TerraformProviderGeneratorMetadata
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: string[];
@@ -706,47 +706,47 @@ public readonly dependsOn: string[];
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `commentModifiedOn`<sup>Required</sup> <a name="commentModifiedOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn"></a>
+##### `commentModifiedOn`<sup>Required</sup> <a name="commentModifiedOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentModifiedOn"></a>
 
 ```typescript
 public readonly commentModifiedOn: string;
@@ -756,7 +756,7 @@ public readonly commentModifiedOn: string;
 
 ---
 
-##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn"></a>
+##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.createdOn"></a>
 
 ```typescript
 public readonly createdOn: string;
@@ -766,17 +766,17 @@ public readonly createdOn: string;
 
 ---
 
-##### `data`<sup>Required</sup> <a name="data" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.data"></a>
+##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.data"></a>
 
 ```typescript
 public readonly data: DnsRecordDataOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference">DnsRecordDataOutputReference</a>
 
 ---
 
-##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.id"></a>
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.id"></a>
 
 ```typescript
 public readonly id: string;
@@ -786,7 +786,7 @@ public readonly id: string;
 
 ---
 
-##### `meta`<sup>Required</sup> <a name="meta" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.meta"></a>
+##### `meta`<sup>Required</sup> <a name="meta" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.meta"></a>
 
 ```typescript
 public readonly meta: string;
@@ -796,7 +796,7 @@ public readonly meta: string;
 
 ---
 
-##### `modifiedOn`<sup>Required</sup> <a name="modifiedOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn"></a>
+##### `modifiedOn`<sup>Required</sup> <a name="modifiedOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.modifiedOn"></a>
 
 ```typescript
 public readonly modifiedOn: string;
@@ -806,27 +806,27 @@ public readonly modifiedOn: string;
 
 ---
 
-##### `proxiable`<sup>Required</sup> <a name="proxiable" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable"></a>
+##### `proxiable`<sup>Required</sup> <a name="proxiable" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiable"></a>
 
 ```typescript
 public readonly proxiable: IResolvable;
 ```
 
-- *Type:* cdktf.IResolvable
+- *Type:* cdktn.IResolvable
 
 ---
 
-##### `settings`<sup>Required</sup> <a name="settings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settings"></a>
+##### `settings`<sup>Required</sup> <a name="settings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settings"></a>
 
 ```typescript
 public readonly settings: DnsRecordSettingsOutputReference;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference">DnsRecordSettingsOutputReference</a>
 
 ---
 
-##### `tagsModifiedOn`<sup>Required</sup> <a name="tagsModifiedOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn"></a>
+##### `tagsModifiedOn`<sup>Required</sup> <a name="tagsModifiedOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsModifiedOn"></a>
 
 ```typescript
 public readonly tagsModifiedOn: string;
@@ -836,7 +836,7 @@ public readonly tagsModifiedOn: string;
 
 ---
 
-##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput"></a>
+##### `commentInput`<sup>Optional</sup> <a name="commentInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.commentInput"></a>
 
 ```typescript
 public readonly commentInput: string;
@@ -846,7 +846,7 @@ public readonly commentInput: string;
 
 ---
 
-##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput"></a>
+##### `contentInput`<sup>Optional</sup> <a name="contentInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.contentInput"></a>
 
 ```typescript
 public readonly contentInput: string;
@@ -856,17 +856,17 @@ public readonly contentInput: string;
 
 ---
 
-##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput"></a>
+##### `dataInput`<sup>Optional</sup> <a name="dataInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput"></a>
 
 ```typescript
 public readonly dataInput: IResolvable | DnsRecordData;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
 
 ---
 
-##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput"></a>
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput"></a>
 
 ```typescript
 public readonly nameInput: string;
@@ -876,7 +876,7 @@ public readonly nameInput: string;
 
 ---
 
-##### `priorityInput`<sup>Optional</sup> <a name="priorityInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput"></a>
+##### `priorityInput`<sup>Optional</sup> <a name="priorityInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput"></a>
 
 ```typescript
 public readonly priorityInput: number;
@@ -886,27 +886,27 @@ public readonly priorityInput: number;
 
 ---
 
-##### `proxiedInput`<sup>Optional</sup> <a name="proxiedInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput"></a>
+##### `proxiedInput`<sup>Optional</sup> <a name="proxiedInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput"></a>
 
 ```typescript
 public readonly proxiedInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `settingsInput`<sup>Optional</sup> <a name="settingsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput"></a>
+##### `settingsInput`<sup>Optional</sup> <a name="settingsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput"></a>
 
 ```typescript
 public readonly settingsInput: IResolvable | DnsRecordSettings;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
 
 ---
 
-##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput"></a>
+##### `tagsInput`<sup>Optional</sup> <a name="tagsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput"></a>
 
 ```typescript
 public readonly tagsInput: string[];
@@ -916,7 +916,7 @@ public readonly tagsInput: string[];
 
 ---
 
-##### `ttlInput`<sup>Optional</sup> <a name="ttlInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput"></a>
+##### `ttlInput`<sup>Optional</sup> <a name="ttlInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttlInput"></a>
 
 ```typescript
 public readonly ttlInput: number;
@@ -926,7 +926,7 @@ public readonly ttlInput: number;
 
 ---
 
-##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput"></a>
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.typeInput"></a>
 
 ```typescript
 public readonly typeInput: string;
@@ -936,7 +936,7 @@ public readonly typeInput: string;
 
 ---
 
-##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput"></a>
+##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneIdInput"></a>
 
 ```typescript
 public readonly zoneIdInput: string;
@@ -946,7 +946,7 @@ public readonly zoneIdInput: string;
 
 ---
 
-##### `comment`<sup>Required</sup> <a name="comment" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.comment"></a>
+##### `comment`<sup>Required</sup> <a name="comment" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -956,7 +956,7 @@ public readonly comment: string;
 
 ---
 
-##### `content`<sup>Required</sup> <a name="content" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.content"></a>
+##### `content`<sup>Required</sup> <a name="content" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -966,7 +966,7 @@ public readonly content: string;
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -976,7 +976,7 @@ public readonly name: string;
 
 ---
 
-##### `priority`<sup>Required</sup> <a name="priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.priority"></a>
+##### `priority`<sup>Required</sup> <a name="priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priority"></a>
 
 ```typescript
 public readonly priority: number;
@@ -986,17 +986,17 @@ public readonly priority: number;
 
 ---
 
-##### `proxied`<sup>Required</sup> <a name="proxied" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.proxied"></a>
+##### `proxied`<sup>Required</sup> <a name="proxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxied"></a>
 
 ```typescript
 public readonly proxied: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `tags`<sup>Required</sup> <a name="tags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tags"></a>
+##### `tags`<sup>Required</sup> <a name="tags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tags"></a>
 
 ```typescript
 public readonly tags: string[];
@@ -1006,7 +1006,7 @@ public readonly tags: string[];
 
 ---
 
-##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.ttl"></a>
+##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttl"></a>
 
 ```typescript
 public readonly ttl: number;
@@ -1016,7 +1016,7 @@ public readonly ttl: number;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -1026,7 +1026,7 @@ public readonly type: string;
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -1040,11 +1040,11 @@ public readonly zoneId: string;
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
 
 ---
 
-##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType"></a>
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tfResourceType"></a>
 
 ```typescript
 public readonly tfResourceType: string;
@@ -1056,12 +1056,12 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
-### DnsRecordConfig <a name="DnsRecordConfig" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig"></a>
+### DnsRecordConfig <a name="DnsRecordConfig" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.Initializer"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 const dnsRecordConfig: dnsRecord.DnsRecordConfig = { ... }
 ```
@@ -1070,98 +1070,98 @@ const dnsRecordConfig: dnsRecord.DnsRecordConfig = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name">name</a></code> | <code>string</code> | DNS record name (or @ for the zone apex) in Punycode. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl">ttl</a></code> | <code>number</code> | Time To Live (TTL) of the DNS record in seconds. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type">type</a></code> | <code>string</code> | Record type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment">comment</a></code> | <code>string</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content">content</a></code> | <code>string</code> | A valid IPv4 address. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data">data</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | Components of a CAA record. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority">priority</a></code> | <code>number</code> | Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied">proxied</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether the record is receiving the performance and security benefits of Cloudflare. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings">settings</a></code> | <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | Settings for the DNS record. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags">tags</a></code> | <code>string[]</code> | Custom tags for the DNS record. This field has no effect on DNS responses. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name">name</a></code> | <code>string</code> | DNS record name (or @ for the zone apex) in Punycode. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl">ttl</a></code> | <code>number</code> | Time To Live (TTL) of the DNS record in seconds. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type">type</a></code> | <code>string</code> | Record type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment">comment</a></code> | <code>string</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content">content</a></code> | <code>string</code> | A valid IPv4 address. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data">data</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | Components of a CAA record. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority">priority</a></code> | <code>number</code> | Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied">proxied</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the record is receiving the performance and security benefits of Cloudflare. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | Settings for the DNS record. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags">tags</a></code> | <code>string[]</code> | Custom tags for the DNS record. This field has no effect on DNS responses. |
 
 ---
 
-##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection"></a>
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.connection"></a>
 
 ```typescript
 public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
 ```
 
-- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
 
 ---
 
-##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count"></a>
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.count"></a>
 
 ```typescript
 public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number | cdktf.TerraformCount
+- *Type:* number | cdktn.TerraformCount
 
 ---
 
-##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn"></a>
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.dependsOn"></a>
 
 ```typescript
 public readonly dependsOn: ITerraformDependable[];
 ```
 
-- *Type:* cdktf.ITerraformDependable[]
+- *Type:* cdktn.ITerraformDependable[]
 
 ---
 
-##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach"></a>
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.forEach"></a>
 
 ```typescript
 public readonly forEach: ITerraformIterator;
 ```
 
-- *Type:* cdktf.ITerraformIterator
+- *Type:* cdktn.ITerraformIterator
 
 ---
 
-##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle"></a>
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.lifecycle"></a>
 
 ```typescript
 public readonly lifecycle: TerraformResourceLifecycle;
 ```
 
-- *Type:* cdktf.TerraformResourceLifecycle
+- *Type:* cdktn.TerraformResourceLifecycle
 
 ---
 
-##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider"></a>
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provider"></a>
 
 ```typescript
 public readonly provider: TerraformProvider;
 ```
 
-- *Type:* cdktf.TerraformProvider
+- *Type:* cdktn.TerraformProvider
 
 ---
 
-##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners"></a>
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.provisioners"></a>
 
 ```typescript
 public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
 ```
 
-- *Type:* cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner[]
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
 
 ---
 
-##### `name`<sup>Required</sup> <a name="name" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name"></a>
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name"></a>
 
 ```typescript
 public readonly name: string;
@@ -1171,11 +1171,11 @@ public readonly name: string;
 
 DNS record name (or @ for the zone apex) in Punycode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#name DnsRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#name DnsRecord#name}
 
 ---
 
-##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl"></a>
+##### `ttl`<sup>Required</sup> <a name="ttl" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl"></a>
 
 ```typescript
 public readonly ttl: number;
@@ -1187,11 +1187,11 @@ Time To Live (TTL) of the DNS record in seconds.
 
 Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ttl DnsRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ttl DnsRecord#ttl}
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type"></a>
 
 ```typescript
 public readonly type: string;
@@ -1203,11 +1203,11 @@ Record type.
 
 Available values: "A", "AAAA", "CNAME", "MX", "NS", "OPENPGPKEY", "PTR", "TXT", "CAA", "CERT", "DNSKEY", "DS", "HTTPS", "LOC", "NAPTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "URI".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -1217,11 +1217,11 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
 
 ---
 
-##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment"></a>
+##### `comment`<sup>Optional</sup> <a name="comment" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment"></a>
 
 ```typescript
 public readonly comment: string;
@@ -1231,11 +1231,11 @@ public readonly comment: string;
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#comment DnsRecord#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#comment DnsRecord#comment}
 
 ---
 
-##### `content`<sup>Optional</sup> <a name="content" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content"></a>
+##### `content`<sup>Optional</sup> <a name="content" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content"></a>
 
 ```typescript
 public readonly content: string;
@@ -1245,25 +1245,25 @@ public readonly content: string;
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#content DnsRecord#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#content DnsRecord#content}
 
 ---
 
-##### `data`<sup>Optional</sup> <a name="data" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data"></a>
+##### `data`<sup>Optional</sup> <a name="data" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data"></a>
 
 ```typescript
 public readonly data: DnsRecordData;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
 
 Components of a CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#data DnsRecord#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#data DnsRecord#data}
 
 ---
 
-##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority"></a>
+##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority"></a>
 
 ```typescript
 public readonly priority: number;
@@ -1273,39 +1273,39 @@ public readonly priority: number;
 
 Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
-##### `proxied`<sup>Optional</sup> <a name="proxied" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied"></a>
+##### `proxied`<sup>Optional</sup> <a name="proxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied"></a>
 
 ```typescript
 public readonly proxied: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#proxied DnsRecord#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#proxied DnsRecord#proxied}
 
 ---
 
-##### `settings`<sup>Optional</sup> <a name="settings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings"></a>
+##### `settings`<sup>Optional</sup> <a name="settings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings"></a>
 
 ```typescript
 public readonly settings: DnsRecordSettings;
 ```
 
-- *Type:* <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
+- *Type:* <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
 
 Settings for the DNS record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#settings DnsRecord#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#settings DnsRecord#settings}
 
 ---
 
-##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags"></a>
+##### `tags`<sup>Optional</sup> <a name="tags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags"></a>
 
 ```typescript
 public readonly tags: string[];
@@ -1315,16 +1315,16 @@ public readonly tags: string[];
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#tags DnsRecord#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#tags DnsRecord#tags}
 
 ---
 
-### DnsRecordData <a name="DnsRecordData" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData"></a>
+### DnsRecordData <a name="DnsRecordData" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.Initializer"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 const dnsRecordData: dnsRecord.DnsRecordData = { ... }
 ```
@@ -1333,46 +1333,46 @@ const dnsRecordData: dnsRecord.DnsRecordData = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm">algorithm</a></code> | <code>number</code> | Algorithm. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude">altitude</a></code> | <code>number</code> | Altitude of location in meters. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate">certificate</a></code> | <code>string</code> | Certificate. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digest">digest</a></code> | <code>string</code> | Digest. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType">digestType</a></code> | <code>number</code> | Digest Type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint">fingerprint</a></code> | <code>string</code> | Fingerprint. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.flags">flags</a></code> | <code>{[ key: string ]: any}</code> | Flags for the CAA record. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag">keyTag</a></code> | <code>number</code> | Key Tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees">latDegrees</a></code> | <code>number</code> | Degrees of latitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection">latDirection</a></code> | <code>string</code> | Latitude direction. Available values: "N", "S". |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes">latMinutes</a></code> | <code>number</code> | Minutes of latitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds">latSeconds</a></code> | <code>number</code> | Seconds of latitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees">longDegrees</a></code> | <code>number</code> | Degrees of longitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection">longDirection</a></code> | <code>string</code> | Longitude direction. Available values: "E", "W". |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes">longMinutes</a></code> | <code>number</code> | Minutes of longitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds">longSeconds</a></code> | <code>number</code> | Seconds of longitude. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType">matchingType</a></code> | <code>number</code> | Matching Type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.order">order</a></code> | <code>number</code> | Order. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.port">port</a></code> | <code>number</code> | The port of the service. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz">precisionHorz</a></code> | <code>number</code> | Horizontal precision of location. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert">precisionVert</a></code> | <code>number</code> | Vertical precision of location. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.preference">preference</a></code> | <code>number</code> | Preference. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.priority">priority</a></code> | <code>number</code> | Priority. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol">protocol</a></code> | <code>number</code> | Protocol. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey">publicKey</a></code> | <code>string</code> | Public Key. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.regex">regex</a></code> | <code>string</code> | Regex. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement">replacement</a></code> | <code>string</code> | Replacement. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.selector">selector</a></code> | <code>number</code> | Selector. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.service">service</a></code> | <code>string</code> | Service. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.size">size</a></code> | <code>number</code> | Size of location in meters. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.tag">tag</a></code> | <code>string</code> | Name of the property controlled by this record (e.g.: issue, issuewild, iodef). |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.target">target</a></code> | <code>string</code> | Target. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.type">type</a></code> | <code>number</code> | Type. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.usage">usage</a></code> | <code>number</code> | Usage. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.value">value</a></code> | <code>string</code> | Value of the record. This field's semantics depend on the chosen tag. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.weight">weight</a></code> | <code>number</code> | The record weight. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm">algorithm</a></code> | <code>number</code> | Algorithm. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude">altitude</a></code> | <code>number</code> | Altitude of location in meters. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate">certificate</a></code> | <code>string</code> | Certificate. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digest">digest</a></code> | <code>string</code> | Digest. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType">digestType</a></code> | <code>number</code> | Digest Type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint">fingerprint</a></code> | <code>string</code> | Fingerprint. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.flags">flags</a></code> | <code>{[ key: string ]: any}</code> | Flags for the CAA record. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag">keyTag</a></code> | <code>number</code> | Key Tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees">latDegrees</a></code> | <code>number</code> | Degrees of latitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection">latDirection</a></code> | <code>string</code> | Latitude direction. Available values: "N", "S". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes">latMinutes</a></code> | <code>number</code> | Minutes of latitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds">latSeconds</a></code> | <code>number</code> | Seconds of latitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees">longDegrees</a></code> | <code>number</code> | Degrees of longitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection">longDirection</a></code> | <code>string</code> | Longitude direction. Available values: "E", "W". |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes">longMinutes</a></code> | <code>number</code> | Minutes of longitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds">longSeconds</a></code> | <code>number</code> | Seconds of longitude. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType">matchingType</a></code> | <code>number</code> | Matching Type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.order">order</a></code> | <code>number</code> | Order. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.port">port</a></code> | <code>number</code> | The port of the service. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz">precisionHorz</a></code> | <code>number</code> | Horizontal precision of location. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert">precisionVert</a></code> | <code>number</code> | Vertical precision of location. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.preference">preference</a></code> | <code>number</code> | Preference. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.priority">priority</a></code> | <code>number</code> | Priority. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol">protocol</a></code> | <code>number</code> | Protocol. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey">publicKey</a></code> | <code>string</code> | Public Key. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.regex">regex</a></code> | <code>string</code> | Regex. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement">replacement</a></code> | <code>string</code> | Replacement. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.selector">selector</a></code> | <code>number</code> | Selector. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.service">service</a></code> | <code>string</code> | Service. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.size">size</a></code> | <code>number</code> | Size of location in meters. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.tag">tag</a></code> | <code>string</code> | Name of the property controlled by this record (e.g.: issue, issuewild, iodef). |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.target">target</a></code> | <code>string</code> | Target. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.type">type</a></code> | <code>number</code> | Type. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.usage">usage</a></code> | <code>number</code> | Usage. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.value">value</a></code> | <code>string</code> | Value of the record. This field's semantics depend on the chosen tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.weight">weight</a></code> | <code>number</code> | The record weight. |
 
 ---
 
-##### `algorithm`<sup>Optional</sup> <a name="algorithm" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm"></a>
+##### `algorithm`<sup>Optional</sup> <a name="algorithm" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.algorithm"></a>
 
 ```typescript
 public readonly algorithm: number;
@@ -1382,11 +1382,11 @@ public readonly algorithm: number;
 
 Algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
 
 ---
 
-##### `altitude`<sup>Optional</sup> <a name="altitude" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude"></a>
+##### `altitude`<sup>Optional</sup> <a name="altitude" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.altitude"></a>
 
 ```typescript
 public readonly altitude: number;
@@ -1396,11 +1396,11 @@ public readonly altitude: number;
 
 Altitude of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#altitude DnsRecord#altitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#altitude DnsRecord#altitude}
 
 ---
 
-##### `certificate`<sup>Optional</sup> <a name="certificate" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate"></a>
+##### `certificate`<sup>Optional</sup> <a name="certificate" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.certificate"></a>
 
 ```typescript
 public readonly certificate: string;
@@ -1410,11 +1410,11 @@ public readonly certificate: string;
 
 Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#certificate DnsRecord#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#certificate DnsRecord#certificate}
 
 ---
 
-##### `digest`<sup>Optional</sup> <a name="digest" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digest"></a>
+##### `digest`<sup>Optional</sup> <a name="digest" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digest"></a>
 
 ```typescript
 public readonly digest: string;
@@ -1424,11 +1424,11 @@ public readonly digest: string;
 
 Digest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#digest DnsRecord#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#digest DnsRecord#digest}
 
 ---
 
-##### `digestType`<sup>Optional</sup> <a name="digestType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType"></a>
+##### `digestType`<sup>Optional</sup> <a name="digestType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.digestType"></a>
 
 ```typescript
 public readonly digestType: number;
@@ -1438,11 +1438,11 @@ public readonly digestType: number;
 
 Digest Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
 
 ---
 
-##### `fingerprint`<sup>Optional</sup> <a name="fingerprint" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint"></a>
+##### `fingerprint`<sup>Optional</sup> <a name="fingerprint" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.fingerprint"></a>
 
 ```typescript
 public readonly fingerprint: string;
@@ -1452,11 +1452,11 @@ public readonly fingerprint: string;
 
 Fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
 
 ---
 
-##### `flags`<sup>Optional</sup> <a name="flags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.flags"></a>
+##### `flags`<sup>Optional</sup> <a name="flags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.flags"></a>
 
 ```typescript
 public readonly flags: {[ key: string ]: any};
@@ -1466,11 +1466,11 @@ public readonly flags: {[ key: string ]: any};
 
 Flags for the CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#flags DnsRecord#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#flags DnsRecord#flags}
 
 ---
 
-##### `keyTag`<sup>Optional</sup> <a name="keyTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag"></a>
+##### `keyTag`<sup>Optional</sup> <a name="keyTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.keyTag"></a>
 
 ```typescript
 public readonly keyTag: number;
@@ -1480,11 +1480,11 @@ public readonly keyTag: number;
 
 Key Tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
 
 ---
 
-##### `latDegrees`<sup>Optional</sup> <a name="latDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees"></a>
+##### `latDegrees`<sup>Optional</sup> <a name="latDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDegrees"></a>
 
 ```typescript
 public readonly latDegrees: number;
@@ -1494,11 +1494,11 @@ public readonly latDegrees: number;
 
 Degrees of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
 
 ---
 
-##### `latDirection`<sup>Optional</sup> <a name="latDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection"></a>
+##### `latDirection`<sup>Optional</sup> <a name="latDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latDirection"></a>
 
 ```typescript
 public readonly latDirection: string;
@@ -1508,11 +1508,11 @@ public readonly latDirection: string;
 
 Latitude direction. Available values: "N", "S".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
 
 ---
 
-##### `latMinutes`<sup>Optional</sup> <a name="latMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes"></a>
+##### `latMinutes`<sup>Optional</sup> <a name="latMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latMinutes"></a>
 
 ```typescript
 public readonly latMinutes: number;
@@ -1522,11 +1522,11 @@ public readonly latMinutes: number;
 
 Minutes of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
 
 ---
 
-##### `latSeconds`<sup>Optional</sup> <a name="latSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds"></a>
+##### `latSeconds`<sup>Optional</sup> <a name="latSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.latSeconds"></a>
 
 ```typescript
 public readonly latSeconds: number;
@@ -1536,11 +1536,11 @@ public readonly latSeconds: number;
 
 Seconds of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
 
 ---
 
-##### `longDegrees`<sup>Optional</sup> <a name="longDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees"></a>
+##### `longDegrees`<sup>Optional</sup> <a name="longDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDegrees"></a>
 
 ```typescript
 public readonly longDegrees: number;
@@ -1550,11 +1550,11 @@ public readonly longDegrees: number;
 
 Degrees of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
 
 ---
 
-##### `longDirection`<sup>Optional</sup> <a name="longDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection"></a>
+##### `longDirection`<sup>Optional</sup> <a name="longDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longDirection"></a>
 
 ```typescript
 public readonly longDirection: string;
@@ -1564,11 +1564,11 @@ public readonly longDirection: string;
 
 Longitude direction. Available values: "E", "W".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
 
 ---
 
-##### `longMinutes`<sup>Optional</sup> <a name="longMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes"></a>
+##### `longMinutes`<sup>Optional</sup> <a name="longMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longMinutes"></a>
 
 ```typescript
 public readonly longMinutes: number;
@@ -1578,11 +1578,11 @@ public readonly longMinutes: number;
 
 Minutes of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
 
 ---
 
-##### `longSeconds`<sup>Optional</sup> <a name="longSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds"></a>
+##### `longSeconds`<sup>Optional</sup> <a name="longSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.longSeconds"></a>
 
 ```typescript
 public readonly longSeconds: number;
@@ -1592,11 +1592,11 @@ public readonly longSeconds: number;
 
 Seconds of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
 
 ---
 
-##### `matchingType`<sup>Optional</sup> <a name="matchingType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType"></a>
+##### `matchingType`<sup>Optional</sup> <a name="matchingType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.matchingType"></a>
 
 ```typescript
 public readonly matchingType: number;
@@ -1606,11 +1606,11 @@ public readonly matchingType: number;
 
 Matching Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
 
 ---
 
-##### `order`<sup>Optional</sup> <a name="order" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.order"></a>
+##### `order`<sup>Optional</sup> <a name="order" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.order"></a>
 
 ```typescript
 public readonly order: number;
@@ -1620,11 +1620,11 @@ public readonly order: number;
 
 Order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#order DnsRecord#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#order DnsRecord#order}
 
 ---
 
-##### `port`<sup>Optional</sup> <a name="port" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.port"></a>
+##### `port`<sup>Optional</sup> <a name="port" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.port"></a>
 
 ```typescript
 public readonly port: number;
@@ -1634,11 +1634,11 @@ public readonly port: number;
 
 The port of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#port DnsRecord#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#port DnsRecord#port}
 
 ---
 
-##### `precisionHorz`<sup>Optional</sup> <a name="precisionHorz" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz"></a>
+##### `precisionHorz`<sup>Optional</sup> <a name="precisionHorz" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionHorz"></a>
 
 ```typescript
 public readonly precisionHorz: number;
@@ -1648,11 +1648,11 @@ public readonly precisionHorz: number;
 
 Horizontal precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
 
 ---
 
-##### `precisionVert`<sup>Optional</sup> <a name="precisionVert" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert"></a>
+##### `precisionVert`<sup>Optional</sup> <a name="precisionVert" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.precisionVert"></a>
 
 ```typescript
 public readonly precisionVert: number;
@@ -1662,11 +1662,11 @@ public readonly precisionVert: number;
 
 Vertical precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
 
 ---
 
-##### `preference`<sup>Optional</sup> <a name="preference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.preference"></a>
+##### `preference`<sup>Optional</sup> <a name="preference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.preference"></a>
 
 ```typescript
 public readonly preference: number;
@@ -1676,11 +1676,11 @@ public readonly preference: number;
 
 Preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#preference DnsRecord#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#preference DnsRecord#preference}
 
 ---
 
-##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.priority"></a>
+##### `priority`<sup>Optional</sup> <a name="priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.priority"></a>
 
 ```typescript
 public readonly priority: number;
@@ -1690,11 +1690,11 @@ public readonly priority: number;
 
 Priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
-##### `protocol`<sup>Optional</sup> <a name="protocol" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol"></a>
+##### `protocol`<sup>Optional</sup> <a name="protocol" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.protocol"></a>
 
 ```typescript
 public readonly protocol: number;
@@ -1704,11 +1704,11 @@ public readonly protocol: number;
 
 Protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#protocol DnsRecord#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#protocol DnsRecord#protocol}
 
 ---
 
-##### `publicKey`<sup>Optional</sup> <a name="publicKey" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey"></a>
+##### `publicKey`<sup>Optional</sup> <a name="publicKey" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.publicKey"></a>
 
 ```typescript
 public readonly publicKey: string;
@@ -1718,11 +1718,11 @@ public readonly publicKey: string;
 
 Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#public_key DnsRecord#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#public_key DnsRecord#public_key}
 
 ---
 
-##### `regex`<sup>Optional</sup> <a name="regex" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.regex"></a>
+##### `regex`<sup>Optional</sup> <a name="regex" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.regex"></a>
 
 ```typescript
 public readonly regex: string;
@@ -1732,11 +1732,11 @@ public readonly regex: string;
 
 Regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#regex DnsRecord#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#regex DnsRecord#regex}
 
 ---
 
-##### `replacement`<sup>Optional</sup> <a name="replacement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement"></a>
+##### `replacement`<sup>Optional</sup> <a name="replacement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.replacement"></a>
 
 ```typescript
 public readonly replacement: string;
@@ -1746,11 +1746,11 @@ public readonly replacement: string;
 
 Replacement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#replacement DnsRecord#replacement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#replacement DnsRecord#replacement}
 
 ---
 
-##### `selector`<sup>Optional</sup> <a name="selector" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.selector"></a>
+##### `selector`<sup>Optional</sup> <a name="selector" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.selector"></a>
 
 ```typescript
 public readonly selector: number;
@@ -1760,11 +1760,11 @@ public readonly selector: number;
 
 Selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#selector DnsRecord#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#selector DnsRecord#selector}
 
 ---
 
-##### `service`<sup>Optional</sup> <a name="service" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.service"></a>
+##### `service`<sup>Optional</sup> <a name="service" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.service"></a>
 
 ```typescript
 public readonly service: string;
@@ -1774,11 +1774,11 @@ public readonly service: string;
 
 Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#service DnsRecord#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#service DnsRecord#service}
 
 ---
 
-##### `size`<sup>Optional</sup> <a name="size" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.size"></a>
+##### `size`<sup>Optional</sup> <a name="size" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.size"></a>
 
 ```typescript
 public readonly size: number;
@@ -1788,11 +1788,11 @@ public readonly size: number;
 
 Size of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#size DnsRecord#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#size DnsRecord#size}
 
 ---
 
-##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.tag"></a>
+##### `tag`<sup>Optional</sup> <a name="tag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.tag"></a>
 
 ```typescript
 public readonly tag: string;
@@ -1802,11 +1802,11 @@ public readonly tag: string;
 
 Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#tag DnsRecord#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#tag DnsRecord#tag}
 
 ---
 
-##### `target`<sup>Optional</sup> <a name="target" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.target"></a>
+##### `target`<sup>Optional</sup> <a name="target" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.target"></a>
 
 ```typescript
 public readonly target: string;
@@ -1816,11 +1816,11 @@ public readonly target: string;
 
 Target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#target DnsRecord#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#target DnsRecord#target}
 
 ---
 
-##### `type`<sup>Optional</sup> <a name="type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.type"></a>
+##### `type`<sup>Optional</sup> <a name="type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.type"></a>
 
 ```typescript
 public readonly type: number;
@@ -1830,11 +1830,11 @@ public readonly type: number;
 
 Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
-##### `usage`<sup>Optional</sup> <a name="usage" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.usage"></a>
+##### `usage`<sup>Optional</sup> <a name="usage" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.usage"></a>
 
 ```typescript
 public readonly usage: number;
@@ -1844,11 +1844,11 @@ public readonly usage: number;
 
 Usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#usage DnsRecord#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#usage DnsRecord#usage}
 
 ---
 
-##### `value`<sup>Optional</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.value"></a>
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -1858,11 +1858,11 @@ public readonly value: string;
 
 Value of the record. This field's semantics depend on the chosen tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#value DnsRecord#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#value DnsRecord#value}
 
 ---
 
-##### `weight`<sup>Optional</sup> <a name="weight" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordData.property.weight"></a>
+##### `weight`<sup>Optional</sup> <a name="weight" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordData.property.weight"></a>
 
 ```typescript
 public readonly weight: number;
@@ -1872,16 +1872,16 @@ public readonly weight: number;
 
 The record weight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#weight DnsRecord#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#weight DnsRecord#weight}
 
 ---
 
-### DnsRecordSettings <a name="DnsRecordSettings" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings"></a>
+### DnsRecordSettings <a name="DnsRecordSettings" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings"></a>
 
-#### Initializer <a name="Initializer" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.Initializer"></a>
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.Initializer"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 const dnsRecordSettings: dnsRecord.DnsRecordSettings = { ... }
 ```
@@ -1890,86 +1890,86 @@ const dnsRecordSettings: dnsRecord.DnsRecordSettings = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname">flattenCname</a></code> | <code>boolean \| cdktf.IResolvable</code> | If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only">ipv4Only</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, only A records will be generated, and AAAA records will not be created. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only">ipv6Only</a></code> | <code>boolean \| cdktf.IResolvable</code> | When enabled, only AAAA records will be generated, and A records will not be created. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname">flattenCname</a></code> | <code>boolean \| cdktn.IResolvable</code> | If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only">ipv4Only</a></code> | <code>boolean \| cdktn.IResolvable</code> | When enabled, only A records will be generated, and AAAA records will not be created. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only">ipv6Only</a></code> | <code>boolean \| cdktn.IResolvable</code> | When enabled, only AAAA records will be generated, and A records will not be created. |
 
 ---
 
-##### `flattenCname`<sup>Optional</sup> <a name="flattenCname" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname"></a>
+##### `flattenCname`<sup>Optional</sup> <a name="flattenCname" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.flattenCname"></a>
 
 ```typescript
 public readonly flattenCname: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
 
 ---
 
-##### `ipv4Only`<sup>Optional</sup> <a name="ipv4Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only"></a>
+##### `ipv4Only`<sup>Optional</sup> <a name="ipv4Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv4Only"></a>
 
 ```typescript
 public readonly ipv4Only: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When enabled, only A records will be generated, and AAAA records will not be created.
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
 
 ---
 
-##### `ipv6Only`<sup>Optional</sup> <a name="ipv6Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only"></a>
+##### `ipv6Only`<sup>Optional</sup> <a name="ipv6Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings.property.ipv6Only"></a>
 
 ```typescript
 public readonly ipv6Only: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 When enabled, only AAAA records will be generated, and A records will not be created.
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
-### DnsRecordDataOutputReference <a name="DnsRecordDataOutputReference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference"></a>
+### DnsRecordDataOutputReference <a name="DnsRecordDataOutputReference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 new dnsRecord.DnsRecordDataOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -1981,185 +1981,185 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm">resetAlgorithm</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude">resetAltitude</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate">resetCertificate</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest">resetDigest</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType">resetDigestType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint">resetFingerprint</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags">resetFlags</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag">resetKeyTag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees">resetLatDegrees</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection">resetLatDirection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes">resetLatMinutes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds">resetLatSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees">resetLongDegrees</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection">resetLongDirection</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes">resetLongMinutes</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds">resetLongSeconds</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType">resetMatchingType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder">resetOrder</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort">resetPort</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz">resetPrecisionHorz</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert">resetPrecisionVert</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference">resetPreference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority">resetPriority</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol">resetProtocol</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey">resetPublicKey</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex">resetRegex</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement">resetReplacement</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector">resetSelector</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService">resetService</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize">resetSize</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag">resetTag</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget">resetTarget</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType">resetType</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage">resetUsage</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue">resetValue</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight">resetWeight</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm">resetAlgorithm</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude">resetAltitude</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate">resetCertificate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest">resetDigest</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType">resetDigestType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint">resetFingerprint</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags">resetFlags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag">resetKeyTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees">resetLatDegrees</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection">resetLatDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes">resetLatMinutes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds">resetLatSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees">resetLongDegrees</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection">resetLongDirection</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes">resetLongMinutes</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds">resetLongSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType">resetMatchingType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder">resetOrder</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort">resetPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz">resetPrecisionHorz</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert">resetPrecisionVert</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference">resetPreference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority">resetPriority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol">resetProtocol</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey">resetPublicKey</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex">resetRegex</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement">resetReplacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector">resetSelector</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService">resetService</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize">resetSize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag">resetTag</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget">resetTarget</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType">resetType</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage">resetUsage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue">resetValue</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight">resetWeight</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -2167,13 +2167,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -2183,217 +2183,217 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetAlgorithm` <a name="resetAlgorithm" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm"></a>
+##### `resetAlgorithm` <a name="resetAlgorithm" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAlgorithm"></a>
 
 ```typescript
 public resetAlgorithm(): void
 ```
 
-##### `resetAltitude` <a name="resetAltitude" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude"></a>
+##### `resetAltitude` <a name="resetAltitude" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetAltitude"></a>
 
 ```typescript
 public resetAltitude(): void
 ```
 
-##### `resetCertificate` <a name="resetCertificate" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate"></a>
+##### `resetCertificate` <a name="resetCertificate" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetCertificate"></a>
 
 ```typescript
 public resetCertificate(): void
 ```
 
-##### `resetDigest` <a name="resetDigest" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest"></a>
+##### `resetDigest` <a name="resetDigest" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigest"></a>
 
 ```typescript
 public resetDigest(): void
 ```
 
-##### `resetDigestType` <a name="resetDigestType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType"></a>
+##### `resetDigestType` <a name="resetDigestType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetDigestType"></a>
 
 ```typescript
 public resetDigestType(): void
 ```
 
-##### `resetFingerprint` <a name="resetFingerprint" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint"></a>
+##### `resetFingerprint` <a name="resetFingerprint" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFingerprint"></a>
 
 ```typescript
 public resetFingerprint(): void
 ```
 
-##### `resetFlags` <a name="resetFlags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags"></a>
+##### `resetFlags` <a name="resetFlags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetFlags"></a>
 
 ```typescript
 public resetFlags(): void
 ```
 
-##### `resetKeyTag` <a name="resetKeyTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag"></a>
+##### `resetKeyTag` <a name="resetKeyTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetKeyTag"></a>
 
 ```typescript
 public resetKeyTag(): void
 ```
 
-##### `resetLatDegrees` <a name="resetLatDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees"></a>
+##### `resetLatDegrees` <a name="resetLatDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDegrees"></a>
 
 ```typescript
 public resetLatDegrees(): void
 ```
 
-##### `resetLatDirection` <a name="resetLatDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection"></a>
+##### `resetLatDirection` <a name="resetLatDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatDirection"></a>
 
 ```typescript
 public resetLatDirection(): void
 ```
 
-##### `resetLatMinutes` <a name="resetLatMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes"></a>
+##### `resetLatMinutes` <a name="resetLatMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatMinutes"></a>
 
 ```typescript
 public resetLatMinutes(): void
 ```
 
-##### `resetLatSeconds` <a name="resetLatSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds"></a>
+##### `resetLatSeconds` <a name="resetLatSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLatSeconds"></a>
 
 ```typescript
 public resetLatSeconds(): void
 ```
 
-##### `resetLongDegrees` <a name="resetLongDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees"></a>
+##### `resetLongDegrees` <a name="resetLongDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDegrees"></a>
 
 ```typescript
 public resetLongDegrees(): void
 ```
 
-##### `resetLongDirection` <a name="resetLongDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection"></a>
+##### `resetLongDirection` <a name="resetLongDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongDirection"></a>
 
 ```typescript
 public resetLongDirection(): void
 ```
 
-##### `resetLongMinutes` <a name="resetLongMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes"></a>
+##### `resetLongMinutes` <a name="resetLongMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongMinutes"></a>
 
 ```typescript
 public resetLongMinutes(): void
 ```
 
-##### `resetLongSeconds` <a name="resetLongSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds"></a>
+##### `resetLongSeconds` <a name="resetLongSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetLongSeconds"></a>
 
 ```typescript
 public resetLongSeconds(): void
 ```
 
-##### `resetMatchingType` <a name="resetMatchingType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType"></a>
+##### `resetMatchingType` <a name="resetMatchingType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetMatchingType"></a>
 
 ```typescript
 public resetMatchingType(): void
 ```
 
-##### `resetOrder` <a name="resetOrder" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder"></a>
+##### `resetOrder` <a name="resetOrder" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetOrder"></a>
 
 ```typescript
 public resetOrder(): void
 ```
 
-##### `resetPort` <a name="resetPort" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort"></a>
+##### `resetPort` <a name="resetPort" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPort"></a>
 
 ```typescript
 public resetPort(): void
 ```
 
-##### `resetPrecisionHorz` <a name="resetPrecisionHorz" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz"></a>
+##### `resetPrecisionHorz` <a name="resetPrecisionHorz" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionHorz"></a>
 
 ```typescript
 public resetPrecisionHorz(): void
 ```
 
-##### `resetPrecisionVert` <a name="resetPrecisionVert" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert"></a>
+##### `resetPrecisionVert` <a name="resetPrecisionVert" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPrecisionVert"></a>
 
 ```typescript
 public resetPrecisionVert(): void
 ```
 
-##### `resetPreference` <a name="resetPreference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference"></a>
+##### `resetPreference` <a name="resetPreference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPreference"></a>
 
 ```typescript
 public resetPreference(): void
 ```
 
-##### `resetPriority` <a name="resetPriority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority"></a>
+##### `resetPriority` <a name="resetPriority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPriority"></a>
 
 ```typescript
 public resetPriority(): void
 ```
 
-##### `resetProtocol` <a name="resetProtocol" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol"></a>
+##### `resetProtocol` <a name="resetProtocol" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetProtocol"></a>
 
 ```typescript
 public resetProtocol(): void
 ```
 
-##### `resetPublicKey` <a name="resetPublicKey" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey"></a>
+##### `resetPublicKey` <a name="resetPublicKey" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetPublicKey"></a>
 
 ```typescript
 public resetPublicKey(): void
 ```
 
-##### `resetRegex` <a name="resetRegex" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex"></a>
+##### `resetRegex` <a name="resetRegex" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetRegex"></a>
 
 ```typescript
 public resetRegex(): void
 ```
 
-##### `resetReplacement` <a name="resetReplacement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement"></a>
+##### `resetReplacement` <a name="resetReplacement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetReplacement"></a>
 
 ```typescript
 public resetReplacement(): void
 ```
 
-##### `resetSelector` <a name="resetSelector" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector"></a>
+##### `resetSelector` <a name="resetSelector" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSelector"></a>
 
 ```typescript
 public resetSelector(): void
 ```
 
-##### `resetService` <a name="resetService" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService"></a>
+##### `resetService` <a name="resetService" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetService"></a>
 
 ```typescript
 public resetService(): void
 ```
 
-##### `resetSize` <a name="resetSize" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize"></a>
+##### `resetSize` <a name="resetSize" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetSize"></a>
 
 ```typescript
 public resetSize(): void
 ```
 
-##### `resetTag` <a name="resetTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag"></a>
+##### `resetTag` <a name="resetTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTag"></a>
 
 ```typescript
 public resetTag(): void
 ```
 
-##### `resetTarget` <a name="resetTarget" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget"></a>
+##### `resetTarget` <a name="resetTarget" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetTarget"></a>
 
 ```typescript
 public resetTarget(): void
 ```
 
-##### `resetType` <a name="resetType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType"></a>
+##### `resetType` <a name="resetType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetType"></a>
 
 ```typescript
 public resetType(): void
 ```
 
-##### `resetUsage` <a name="resetUsage" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage"></a>
+##### `resetUsage` <a name="resetUsage" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetUsage"></a>
 
 ```typescript
 public resetUsage(): void
 ```
 
-##### `resetValue` <a name="resetValue" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue"></a>
+##### `resetValue` <a name="resetValue" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetValue"></a>
 
 ```typescript
 public resetValue(): void
 ```
 
-##### `resetWeight` <a name="resetWeight" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight"></a>
+##### `resetWeight` <a name="resetWeight" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.resetWeight"></a>
 
 ```typescript
 public resetWeight(): void
@@ -2404,85 +2404,85 @@ public resetWeight(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput">algorithmInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput">altitudeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput">certificateInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput">digestInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput">digestTypeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput">fingerprintInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput">flagsInput</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput">keyTagInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput">latDegreesInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput">latDirectionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput">latMinutesInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput">latSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput">longDegreesInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput">longDirectionInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput">longMinutesInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput">longSecondsInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput">matchingTypeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput">orderInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput">precisionHorzInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput">precisionVertInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput">preferenceInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput">protocolInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput">publicKeyInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput">regexInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput">replacementInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput">selectorInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput">tagInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput">typeInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput">usageInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput">weightInput</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm">algorithm</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude">altitude</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate">certificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest">digest</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType">digestType</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint">fingerprint</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags">flags</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag">keyTag</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees">latDegrees</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection">latDirection</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes">latMinutes</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds">latSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees">longDegrees</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection">longDirection</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes">longMinutes</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds">longSeconds</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType">matchingType</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order">order</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port">port</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz">precisionHorz</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert">precisionVert</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference">preference</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol">protocol</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey">publicKey</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex">regex</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement">replacement</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector">selector</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag">tag</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type">type</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage">usage</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight">weight</a></code> | <code>number</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput">algorithmInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput">altitudeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput">certificateInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput">digestInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput">digestTypeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput">fingerprintInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput">flagsInput</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput">keyTagInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput">latDegreesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput">latDirectionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput">latMinutesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput">latSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput">longDegreesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput">longDirectionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput">longMinutesInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput">longSecondsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput">matchingTypeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput">orderInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput">portInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput">precisionHorzInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput">precisionVertInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput">preferenceInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput">priorityInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput">protocolInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput">publicKeyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput">regexInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput">replacementInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput">selectorInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput">sizeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput">tagInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput">targetInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput">typeInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput">usageInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput">valueInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput">weightInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm">algorithm</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude">altitude</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate">certificate</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest">digest</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType">digestType</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint">fingerprint</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags">flags</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag">keyTag</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees">latDegrees</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection">latDirection</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes">latMinutes</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds">latSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees">longDegrees</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection">longDirection</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes">longMinutes</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds">longSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType">matchingType</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order">order</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port">port</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz">precisionHorz</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert">precisionVert</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference">preference</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority">priority</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol">protocol</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey">publicKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex">regex</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement">replacement</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector">selector</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size">size</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag">tag</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target">target</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type">type</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage">usage</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value">value</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight">weight</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -2496,7 +2496,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -2506,7 +2506,7 @@ public readonly fqn: string;
 
 ---
 
-##### `algorithmInput`<sup>Optional</sup> <a name="algorithmInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput"></a>
+##### `algorithmInput`<sup>Optional</sup> <a name="algorithmInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithmInput"></a>
 
 ```typescript
 public readonly algorithmInput: number;
@@ -2516,7 +2516,7 @@ public readonly algorithmInput: number;
 
 ---
 
-##### `altitudeInput`<sup>Optional</sup> <a name="altitudeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput"></a>
+##### `altitudeInput`<sup>Optional</sup> <a name="altitudeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitudeInput"></a>
 
 ```typescript
 public readonly altitudeInput: number;
@@ -2526,7 +2526,7 @@ public readonly altitudeInput: number;
 
 ---
 
-##### `certificateInput`<sup>Optional</sup> <a name="certificateInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput"></a>
+##### `certificateInput`<sup>Optional</sup> <a name="certificateInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificateInput"></a>
 
 ```typescript
 public readonly certificateInput: string;
@@ -2536,7 +2536,7 @@ public readonly certificateInput: string;
 
 ---
 
-##### `digestInput`<sup>Optional</sup> <a name="digestInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput"></a>
+##### `digestInput`<sup>Optional</sup> <a name="digestInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestInput"></a>
 
 ```typescript
 public readonly digestInput: string;
@@ -2546,7 +2546,7 @@ public readonly digestInput: string;
 
 ---
 
-##### `digestTypeInput`<sup>Optional</sup> <a name="digestTypeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput"></a>
+##### `digestTypeInput`<sup>Optional</sup> <a name="digestTypeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestTypeInput"></a>
 
 ```typescript
 public readonly digestTypeInput: number;
@@ -2556,7 +2556,7 @@ public readonly digestTypeInput: number;
 
 ---
 
-##### `fingerprintInput`<sup>Optional</sup> <a name="fingerprintInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput"></a>
+##### `fingerprintInput`<sup>Optional</sup> <a name="fingerprintInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprintInput"></a>
 
 ```typescript
 public readonly fingerprintInput: string;
@@ -2566,7 +2566,7 @@ public readonly fingerprintInput: string;
 
 ---
 
-##### `flagsInput`<sup>Optional</sup> <a name="flagsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput"></a>
+##### `flagsInput`<sup>Optional</sup> <a name="flagsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flagsInput"></a>
 
 ```typescript
 public readonly flagsInput: {[ key: string ]: any};
@@ -2576,7 +2576,7 @@ public readonly flagsInput: {[ key: string ]: any};
 
 ---
 
-##### `keyTagInput`<sup>Optional</sup> <a name="keyTagInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput"></a>
+##### `keyTagInput`<sup>Optional</sup> <a name="keyTagInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTagInput"></a>
 
 ```typescript
 public readonly keyTagInput: number;
@@ -2586,7 +2586,7 @@ public readonly keyTagInput: number;
 
 ---
 
-##### `latDegreesInput`<sup>Optional</sup> <a name="latDegreesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput"></a>
+##### `latDegreesInput`<sup>Optional</sup> <a name="latDegreesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegreesInput"></a>
 
 ```typescript
 public readonly latDegreesInput: number;
@@ -2596,7 +2596,7 @@ public readonly latDegreesInput: number;
 
 ---
 
-##### `latDirectionInput`<sup>Optional</sup> <a name="latDirectionInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput"></a>
+##### `latDirectionInput`<sup>Optional</sup> <a name="latDirectionInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirectionInput"></a>
 
 ```typescript
 public readonly latDirectionInput: string;
@@ -2606,7 +2606,7 @@ public readonly latDirectionInput: string;
 
 ---
 
-##### `latMinutesInput`<sup>Optional</sup> <a name="latMinutesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput"></a>
+##### `latMinutesInput`<sup>Optional</sup> <a name="latMinutesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutesInput"></a>
 
 ```typescript
 public readonly latMinutesInput: number;
@@ -2616,7 +2616,7 @@ public readonly latMinutesInput: number;
 
 ---
 
-##### `latSecondsInput`<sup>Optional</sup> <a name="latSecondsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput"></a>
+##### `latSecondsInput`<sup>Optional</sup> <a name="latSecondsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSecondsInput"></a>
 
 ```typescript
 public readonly latSecondsInput: number;
@@ -2626,7 +2626,7 @@ public readonly latSecondsInput: number;
 
 ---
 
-##### `longDegreesInput`<sup>Optional</sup> <a name="longDegreesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput"></a>
+##### `longDegreesInput`<sup>Optional</sup> <a name="longDegreesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegreesInput"></a>
 
 ```typescript
 public readonly longDegreesInput: number;
@@ -2636,7 +2636,7 @@ public readonly longDegreesInput: number;
 
 ---
 
-##### `longDirectionInput`<sup>Optional</sup> <a name="longDirectionInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput"></a>
+##### `longDirectionInput`<sup>Optional</sup> <a name="longDirectionInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirectionInput"></a>
 
 ```typescript
 public readonly longDirectionInput: string;
@@ -2646,7 +2646,7 @@ public readonly longDirectionInput: string;
 
 ---
 
-##### `longMinutesInput`<sup>Optional</sup> <a name="longMinutesInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput"></a>
+##### `longMinutesInput`<sup>Optional</sup> <a name="longMinutesInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutesInput"></a>
 
 ```typescript
 public readonly longMinutesInput: number;
@@ -2656,7 +2656,7 @@ public readonly longMinutesInput: number;
 
 ---
 
-##### `longSecondsInput`<sup>Optional</sup> <a name="longSecondsInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput"></a>
+##### `longSecondsInput`<sup>Optional</sup> <a name="longSecondsInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSecondsInput"></a>
 
 ```typescript
 public readonly longSecondsInput: number;
@@ -2666,7 +2666,7 @@ public readonly longSecondsInput: number;
 
 ---
 
-##### `matchingTypeInput`<sup>Optional</sup> <a name="matchingTypeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput"></a>
+##### `matchingTypeInput`<sup>Optional</sup> <a name="matchingTypeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingTypeInput"></a>
 
 ```typescript
 public readonly matchingTypeInput: number;
@@ -2676,7 +2676,7 @@ public readonly matchingTypeInput: number;
 
 ---
 
-##### `orderInput`<sup>Optional</sup> <a name="orderInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput"></a>
+##### `orderInput`<sup>Optional</sup> <a name="orderInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.orderInput"></a>
 
 ```typescript
 public readonly orderInput: number;
@@ -2686,7 +2686,7 @@ public readonly orderInput: number;
 
 ---
 
-##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput"></a>
+##### `portInput`<sup>Optional</sup> <a name="portInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.portInput"></a>
 
 ```typescript
 public readonly portInput: number;
@@ -2696,7 +2696,7 @@ public readonly portInput: number;
 
 ---
 
-##### `precisionHorzInput`<sup>Optional</sup> <a name="precisionHorzInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput"></a>
+##### `precisionHorzInput`<sup>Optional</sup> <a name="precisionHorzInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorzInput"></a>
 
 ```typescript
 public readonly precisionHorzInput: number;
@@ -2706,7 +2706,7 @@ public readonly precisionHorzInput: number;
 
 ---
 
-##### `precisionVertInput`<sup>Optional</sup> <a name="precisionVertInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput"></a>
+##### `precisionVertInput`<sup>Optional</sup> <a name="precisionVertInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVertInput"></a>
 
 ```typescript
 public readonly precisionVertInput: number;
@@ -2716,7 +2716,7 @@ public readonly precisionVertInput: number;
 
 ---
 
-##### `preferenceInput`<sup>Optional</sup> <a name="preferenceInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput"></a>
+##### `preferenceInput`<sup>Optional</sup> <a name="preferenceInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preferenceInput"></a>
 
 ```typescript
 public readonly preferenceInput: number;
@@ -2726,7 +2726,7 @@ public readonly preferenceInput: number;
 
 ---
 
-##### `priorityInput`<sup>Optional</sup> <a name="priorityInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput"></a>
+##### `priorityInput`<sup>Optional</sup> <a name="priorityInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priorityInput"></a>
 
 ```typescript
 public readonly priorityInput: number;
@@ -2736,7 +2736,7 @@ public readonly priorityInput: number;
 
 ---
 
-##### `protocolInput`<sup>Optional</sup> <a name="protocolInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput"></a>
+##### `protocolInput`<sup>Optional</sup> <a name="protocolInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocolInput"></a>
 
 ```typescript
 public readonly protocolInput: number;
@@ -2746,7 +2746,7 @@ public readonly protocolInput: number;
 
 ---
 
-##### `publicKeyInput`<sup>Optional</sup> <a name="publicKeyInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput"></a>
+##### `publicKeyInput`<sup>Optional</sup> <a name="publicKeyInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKeyInput"></a>
 
 ```typescript
 public readonly publicKeyInput: string;
@@ -2756,7 +2756,7 @@ public readonly publicKeyInput: string;
 
 ---
 
-##### `regexInput`<sup>Optional</sup> <a name="regexInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput"></a>
+##### `regexInput`<sup>Optional</sup> <a name="regexInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regexInput"></a>
 
 ```typescript
 public readonly regexInput: string;
@@ -2766,7 +2766,7 @@ public readonly regexInput: string;
 
 ---
 
-##### `replacementInput`<sup>Optional</sup> <a name="replacementInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput"></a>
+##### `replacementInput`<sup>Optional</sup> <a name="replacementInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacementInput"></a>
 
 ```typescript
 public readonly replacementInput: string;
@@ -2776,7 +2776,7 @@ public readonly replacementInput: string;
 
 ---
 
-##### `selectorInput`<sup>Optional</sup> <a name="selectorInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput"></a>
+##### `selectorInput`<sup>Optional</sup> <a name="selectorInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selectorInput"></a>
 
 ```typescript
 public readonly selectorInput: number;
@@ -2786,7 +2786,7 @@ public readonly selectorInput: number;
 
 ---
 
-##### `serviceInput`<sup>Optional</sup> <a name="serviceInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput"></a>
+##### `serviceInput`<sup>Optional</sup> <a name="serviceInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.serviceInput"></a>
 
 ```typescript
 public readonly serviceInput: string;
@@ -2796,7 +2796,7 @@ public readonly serviceInput: string;
 
 ---
 
-##### `sizeInput`<sup>Optional</sup> <a name="sizeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput"></a>
+##### `sizeInput`<sup>Optional</sup> <a name="sizeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.sizeInput"></a>
 
 ```typescript
 public readonly sizeInput: number;
@@ -2806,7 +2806,7 @@ public readonly sizeInput: number;
 
 ---
 
-##### `tagInput`<sup>Optional</sup> <a name="tagInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput"></a>
+##### `tagInput`<sup>Optional</sup> <a name="tagInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tagInput"></a>
 
 ```typescript
 public readonly tagInput: string;
@@ -2816,7 +2816,7 @@ public readonly tagInput: string;
 
 ---
 
-##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput"></a>
+##### `targetInput`<sup>Optional</sup> <a name="targetInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.targetInput"></a>
 
 ```typescript
 public readonly targetInput: string;
@@ -2826,7 +2826,7 @@ public readonly targetInput: string;
 
 ---
 
-##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput"></a>
+##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.typeInput"></a>
 
 ```typescript
 public readonly typeInput: number;
@@ -2836,7 +2836,7 @@ public readonly typeInput: number;
 
 ---
 
-##### `usageInput`<sup>Optional</sup> <a name="usageInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput"></a>
+##### `usageInput`<sup>Optional</sup> <a name="usageInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usageInput"></a>
 
 ```typescript
 public readonly usageInput: number;
@@ -2846,7 +2846,7 @@ public readonly usageInput: number;
 
 ---
 
-##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput"></a>
+##### `valueInput`<sup>Optional</sup> <a name="valueInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.valueInput"></a>
 
 ```typescript
 public readonly valueInput: string;
@@ -2856,7 +2856,7 @@ public readonly valueInput: string;
 
 ---
 
-##### `weightInput`<sup>Optional</sup> <a name="weightInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput"></a>
+##### `weightInput`<sup>Optional</sup> <a name="weightInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weightInput"></a>
 
 ```typescript
 public readonly weightInput: number;
@@ -2866,7 +2866,7 @@ public readonly weightInput: number;
 
 ---
 
-##### `algorithm`<sup>Required</sup> <a name="algorithm" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm"></a>
+##### `algorithm`<sup>Required</sup> <a name="algorithm" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.algorithm"></a>
 
 ```typescript
 public readonly algorithm: number;
@@ -2876,7 +2876,7 @@ public readonly algorithm: number;
 
 ---
 
-##### `altitude`<sup>Required</sup> <a name="altitude" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude"></a>
+##### `altitude`<sup>Required</sup> <a name="altitude" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.altitude"></a>
 
 ```typescript
 public readonly altitude: number;
@@ -2886,7 +2886,7 @@ public readonly altitude: number;
 
 ---
 
-##### `certificate`<sup>Required</sup> <a name="certificate" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate"></a>
+##### `certificate`<sup>Required</sup> <a name="certificate" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.certificate"></a>
 
 ```typescript
 public readonly certificate: string;
@@ -2896,7 +2896,7 @@ public readonly certificate: string;
 
 ---
 
-##### `digest`<sup>Required</sup> <a name="digest" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest"></a>
+##### `digest`<sup>Required</sup> <a name="digest" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digest"></a>
 
 ```typescript
 public readonly digest: string;
@@ -2906,7 +2906,7 @@ public readonly digest: string;
 
 ---
 
-##### `digestType`<sup>Required</sup> <a name="digestType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType"></a>
+##### `digestType`<sup>Required</sup> <a name="digestType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.digestType"></a>
 
 ```typescript
 public readonly digestType: number;
@@ -2916,7 +2916,7 @@ public readonly digestType: number;
 
 ---
 
-##### `fingerprint`<sup>Required</sup> <a name="fingerprint" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint"></a>
+##### `fingerprint`<sup>Required</sup> <a name="fingerprint" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.fingerprint"></a>
 
 ```typescript
 public readonly fingerprint: string;
@@ -2926,7 +2926,7 @@ public readonly fingerprint: string;
 
 ---
 
-##### `flags`<sup>Required</sup> <a name="flags" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags"></a>
+##### `flags`<sup>Required</sup> <a name="flags" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.flags"></a>
 
 ```typescript
 public readonly flags: {[ key: string ]: any};
@@ -2936,7 +2936,7 @@ public readonly flags: {[ key: string ]: any};
 
 ---
 
-##### `keyTag`<sup>Required</sup> <a name="keyTag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag"></a>
+##### `keyTag`<sup>Required</sup> <a name="keyTag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.keyTag"></a>
 
 ```typescript
 public readonly keyTag: number;
@@ -2946,7 +2946,7 @@ public readonly keyTag: number;
 
 ---
 
-##### `latDegrees`<sup>Required</sup> <a name="latDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees"></a>
+##### `latDegrees`<sup>Required</sup> <a name="latDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDegrees"></a>
 
 ```typescript
 public readonly latDegrees: number;
@@ -2956,7 +2956,7 @@ public readonly latDegrees: number;
 
 ---
 
-##### `latDirection`<sup>Required</sup> <a name="latDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection"></a>
+##### `latDirection`<sup>Required</sup> <a name="latDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latDirection"></a>
 
 ```typescript
 public readonly latDirection: string;
@@ -2966,7 +2966,7 @@ public readonly latDirection: string;
 
 ---
 
-##### `latMinutes`<sup>Required</sup> <a name="latMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes"></a>
+##### `latMinutes`<sup>Required</sup> <a name="latMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latMinutes"></a>
 
 ```typescript
 public readonly latMinutes: number;
@@ -2976,7 +2976,7 @@ public readonly latMinutes: number;
 
 ---
 
-##### `latSeconds`<sup>Required</sup> <a name="latSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds"></a>
+##### `latSeconds`<sup>Required</sup> <a name="latSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.latSeconds"></a>
 
 ```typescript
 public readonly latSeconds: number;
@@ -2986,7 +2986,7 @@ public readonly latSeconds: number;
 
 ---
 
-##### `longDegrees`<sup>Required</sup> <a name="longDegrees" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees"></a>
+##### `longDegrees`<sup>Required</sup> <a name="longDegrees" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDegrees"></a>
 
 ```typescript
 public readonly longDegrees: number;
@@ -2996,7 +2996,7 @@ public readonly longDegrees: number;
 
 ---
 
-##### `longDirection`<sup>Required</sup> <a name="longDirection" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection"></a>
+##### `longDirection`<sup>Required</sup> <a name="longDirection" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longDirection"></a>
 
 ```typescript
 public readonly longDirection: string;
@@ -3006,7 +3006,7 @@ public readonly longDirection: string;
 
 ---
 
-##### `longMinutes`<sup>Required</sup> <a name="longMinutes" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes"></a>
+##### `longMinutes`<sup>Required</sup> <a name="longMinutes" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longMinutes"></a>
 
 ```typescript
 public readonly longMinutes: number;
@@ -3016,7 +3016,7 @@ public readonly longMinutes: number;
 
 ---
 
-##### `longSeconds`<sup>Required</sup> <a name="longSeconds" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds"></a>
+##### `longSeconds`<sup>Required</sup> <a name="longSeconds" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.longSeconds"></a>
 
 ```typescript
 public readonly longSeconds: number;
@@ -3026,7 +3026,7 @@ public readonly longSeconds: number;
 
 ---
 
-##### `matchingType`<sup>Required</sup> <a name="matchingType" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType"></a>
+##### `matchingType`<sup>Required</sup> <a name="matchingType" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.matchingType"></a>
 
 ```typescript
 public readonly matchingType: number;
@@ -3036,7 +3036,7 @@ public readonly matchingType: number;
 
 ---
 
-##### `order`<sup>Required</sup> <a name="order" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order"></a>
+##### `order`<sup>Required</sup> <a name="order" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.order"></a>
 
 ```typescript
 public readonly order: number;
@@ -3046,7 +3046,7 @@ public readonly order: number;
 
 ---
 
-##### `port`<sup>Required</sup> <a name="port" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port"></a>
+##### `port`<sup>Required</sup> <a name="port" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.port"></a>
 
 ```typescript
 public readonly port: number;
@@ -3056,7 +3056,7 @@ public readonly port: number;
 
 ---
 
-##### `precisionHorz`<sup>Required</sup> <a name="precisionHorz" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz"></a>
+##### `precisionHorz`<sup>Required</sup> <a name="precisionHorz" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionHorz"></a>
 
 ```typescript
 public readonly precisionHorz: number;
@@ -3066,7 +3066,7 @@ public readonly precisionHorz: number;
 
 ---
 
-##### `precisionVert`<sup>Required</sup> <a name="precisionVert" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert"></a>
+##### `precisionVert`<sup>Required</sup> <a name="precisionVert" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.precisionVert"></a>
 
 ```typescript
 public readonly precisionVert: number;
@@ -3076,7 +3076,7 @@ public readonly precisionVert: number;
 
 ---
 
-##### `preference`<sup>Required</sup> <a name="preference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference"></a>
+##### `preference`<sup>Required</sup> <a name="preference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.preference"></a>
 
 ```typescript
 public readonly preference: number;
@@ -3086,7 +3086,7 @@ public readonly preference: number;
 
 ---
 
-##### `priority`<sup>Required</sup> <a name="priority" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority"></a>
+##### `priority`<sup>Required</sup> <a name="priority" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.priority"></a>
 
 ```typescript
 public readonly priority: number;
@@ -3096,7 +3096,7 @@ public readonly priority: number;
 
 ---
 
-##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol"></a>
+##### `protocol`<sup>Required</sup> <a name="protocol" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.protocol"></a>
 
 ```typescript
 public readonly protocol: number;
@@ -3106,7 +3106,7 @@ public readonly protocol: number;
 
 ---
 
-##### `publicKey`<sup>Required</sup> <a name="publicKey" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey"></a>
+##### `publicKey`<sup>Required</sup> <a name="publicKey" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.publicKey"></a>
 
 ```typescript
 public readonly publicKey: string;
@@ -3116,7 +3116,7 @@ public readonly publicKey: string;
 
 ---
 
-##### `regex`<sup>Required</sup> <a name="regex" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex"></a>
+##### `regex`<sup>Required</sup> <a name="regex" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.regex"></a>
 
 ```typescript
 public readonly regex: string;
@@ -3126,7 +3126,7 @@ public readonly regex: string;
 
 ---
 
-##### `replacement`<sup>Required</sup> <a name="replacement" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement"></a>
+##### `replacement`<sup>Required</sup> <a name="replacement" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.replacement"></a>
 
 ```typescript
 public readonly replacement: string;
@@ -3136,7 +3136,7 @@ public readonly replacement: string;
 
 ---
 
-##### `selector`<sup>Required</sup> <a name="selector" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector"></a>
+##### `selector`<sup>Required</sup> <a name="selector" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.selector"></a>
 
 ```typescript
 public readonly selector: number;
@@ -3146,7 +3146,7 @@ public readonly selector: number;
 
 ---
 
-##### `service`<sup>Required</sup> <a name="service" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service"></a>
+##### `service`<sup>Required</sup> <a name="service" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.service"></a>
 
 ```typescript
 public readonly service: string;
@@ -3156,7 +3156,7 @@ public readonly service: string;
 
 ---
 
-##### `size`<sup>Required</sup> <a name="size" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size"></a>
+##### `size`<sup>Required</sup> <a name="size" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.size"></a>
 
 ```typescript
 public readonly size: number;
@@ -3166,7 +3166,7 @@ public readonly size: number;
 
 ---
 
-##### `tag`<sup>Required</sup> <a name="tag" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag"></a>
+##### `tag`<sup>Required</sup> <a name="tag" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.tag"></a>
 
 ```typescript
 public readonly tag: string;
@@ -3176,7 +3176,7 @@ public readonly tag: string;
 
 ---
 
-##### `target`<sup>Required</sup> <a name="target" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target"></a>
+##### `target`<sup>Required</sup> <a name="target" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.target"></a>
 
 ```typescript
 public readonly target: string;
@@ -3186,7 +3186,7 @@ public readonly target: string;
 
 ---
 
-##### `type`<sup>Required</sup> <a name="type" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type"></a>
+##### `type`<sup>Required</sup> <a name="type" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.type"></a>
 
 ```typescript
 public readonly type: number;
@@ -3196,7 +3196,7 @@ public readonly type: number;
 
 ---
 
-##### `usage`<sup>Required</sup> <a name="usage" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage"></a>
+##### `usage`<sup>Required</sup> <a name="usage" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.usage"></a>
 
 ```typescript
 public readonly usage: number;
@@ -3206,7 +3206,7 @@ public readonly usage: number;
 
 ---
 
-##### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value"></a>
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.value"></a>
 
 ```typescript
 public readonly value: string;
@@ -3216,7 +3216,7 @@ public readonly value: string;
 
 ---
 
-##### `weight`<sup>Required</sup> <a name="weight" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight"></a>
+##### `weight`<sup>Required</sup> <a name="weight" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.weight"></a>
 
 ```typescript
 public readonly weight: number;
@@ -3226,43 +3226,43 @@ public readonly weight: number;
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordDataOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | DnsRecordData;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a>
 
 ---
 
 
-### DnsRecordSettingsOutputReference <a name="DnsRecordSettingsOutputReference" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference"></a>
+### DnsRecordSettingsOutputReference <a name="DnsRecordSettingsOutputReference" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference"></a>
 
-#### Initializers <a name="Initializers" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer"></a>
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer"></a>
 
 ```typescript
-import { dnsRecord } from '@cdktf/provider-cloudflare'
+import { dnsRecord } from '@cdktn/provider-cloudflare'
 
 new dnsRecord.DnsRecordSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
 ```
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktf.IInterpolatingParent</code> | The parent resource. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
 
 ---
 
-##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformResource"></a>
 
-- *Type:* cdktf.IInterpolatingParent
+- *Type:* cdktn.IInterpolatingParent
 
 The parent resource.
 
 ---
 
-##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
@@ -3274,152 +3274,152 @@ The attribute on the parent resource this class is referencing.
 
 | **Name** | **Description** |
 | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname">resetFlattenCname</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only">resetIpv4Only</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only">resetIpv6Only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname">resetFlattenCname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only">resetIpv4Only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only">resetIpv6Only</a></code> | *No description.* |
 
 ---
 
-##### `computeFqn` <a name="computeFqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn"></a>
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.computeFqn"></a>
 
 ```typescript
 public computeFqn(): string
 ```
 
-##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute"></a>
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute"></a>
 
 ```typescript
 public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute"></a>
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute"></a>
 
 ```typescript
 public getBooleanAttribute(terraformAttribute: string): IResolvable
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute"></a>
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute"></a>
 
 ```typescript
 public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getListAttribute` <a name="getListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute"></a>
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute"></a>
 
 ```typescript
 public getListAttribute(terraformAttribute: string): string[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute"></a>
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute"></a>
 
 ```typescript
 public getNumberAttribute(terraformAttribute: string): number
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute"></a>
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute"></a>
 
 ```typescript
 public getNumberListAttribute(terraformAttribute: string): number[]
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute"></a>
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute"></a>
 
 ```typescript
 public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringAttribute` <a name="getStringAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute"></a>
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute"></a>
 
 ```typescript
 public getStringAttribute(terraformAttribute: string): string
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute"></a>
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute"></a>
 
 ```typescript
 public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
 ```
 
-###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
 
 - *Type:* string
 
 ---
 
-##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute"></a>
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute"></a>
 
 ```typescript
 public interpolationForAttribute(property: string): IResolvable
 ```
 
-###### `property`<sup>Required</sup> <a name="property" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
 
 - *Type:* string
 
 ---
 
-##### `resolve` <a name="resolve" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve"></a>
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve"></a>
 
 ```typescript
 public resolve(_context: IResolveContext): any
@@ -3427,13 +3427,13 @@ public resolve(_context: IResolveContext): any
 
 Produce the Token's value at resolution time.
 
-###### `_context`<sup>Required</sup> <a name="_context" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve.parameter._context"></a>
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resolve.parameter._context"></a>
 
-- *Type:* cdktf.IResolveContext
+- *Type:* cdktn.IResolveContext
 
 ---
 
-##### `toString` <a name="toString" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString"></a>
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.toString"></a>
 
 ```typescript
 public toString(): string
@@ -3443,19 +3443,19 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
-##### `resetFlattenCname` <a name="resetFlattenCname" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname"></a>
+##### `resetFlattenCname` <a name="resetFlattenCname" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetFlattenCname"></a>
 
 ```typescript
 public resetFlattenCname(): void
 ```
 
-##### `resetIpv4Only` <a name="resetIpv4Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only"></a>
+##### `resetIpv4Only` <a name="resetIpv4Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv4Only"></a>
 
 ```typescript
 public resetIpv4Only(): void
 ```
 
-##### `resetIpv6Only` <a name="resetIpv6Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only"></a>
+##### `resetIpv6Only` <a name="resetIpv6Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.resetIpv6Only"></a>
 
 ```typescript
 public resetIpv6Only(): void
@@ -3466,19 +3466,19 @@ public resetIpv6Only(): void
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput">flattenCnameInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput">ipv4OnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput">ipv6OnlyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname">flattenCname</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only">ipv4Only</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only">ipv6Only</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput">flattenCnameInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput">ipv4OnlyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput">ipv6OnlyInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname">flattenCname</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only">ipv4Only</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only">ipv6Only</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | *No description.* |
 
 ---
 
-##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack"></a>
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.creationStack"></a>
 
 ```typescript
 public readonly creationStack: string[];
@@ -3492,7 +3492,7 @@ If this returns an empty array the stack will not be attached.
 
 ---
 
-##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn"></a>
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.fqn"></a>
 
 ```typescript
 public readonly fqn: string;
@@ -3502,73 +3502,73 @@ public readonly fqn: string;
 
 ---
 
-##### `flattenCnameInput`<sup>Optional</sup> <a name="flattenCnameInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput"></a>
+##### `flattenCnameInput`<sup>Optional</sup> <a name="flattenCnameInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCnameInput"></a>
 
 ```typescript
 public readonly flattenCnameInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `ipv4OnlyInput`<sup>Optional</sup> <a name="ipv4OnlyInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput"></a>
+##### `ipv4OnlyInput`<sup>Optional</sup> <a name="ipv4OnlyInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4OnlyInput"></a>
 
 ```typescript
 public readonly ipv4OnlyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `ipv6OnlyInput`<sup>Optional</sup> <a name="ipv6OnlyInput" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput"></a>
+##### `ipv6OnlyInput`<sup>Optional</sup> <a name="ipv6OnlyInput" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6OnlyInput"></a>
 
 ```typescript
 public readonly ipv6OnlyInput: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `flattenCname`<sup>Required</sup> <a name="flattenCname" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname"></a>
+##### `flattenCname`<sup>Required</sup> <a name="flattenCname" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.flattenCname"></a>
 
 ```typescript
 public readonly flattenCname: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `ipv4Only`<sup>Required</sup> <a name="ipv4Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only"></a>
+##### `ipv4Only`<sup>Required</sup> <a name="ipv4Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv4Only"></a>
 
 ```typescript
 public readonly ipv4Only: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `ipv6Only`<sup>Required</sup> <a name="ipv6Only" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only"></a>
+##### `ipv6Only`<sup>Required</sup> <a name="ipv6Only" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.ipv6Only"></a>
 
 ```typescript
 public readonly ipv6Only: boolean | IResolvable;
 ```
 
-- *Type:* boolean | cdktf.IResolvable
+- *Type:* boolean | cdktn.IResolvable
 
 ---
 
-##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue"></a>
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettingsOutputReference.property.internalValue"></a>
 
 ```typescript
 public readonly internalValue: IResolvable | DnsRecordSettings;
 ```
 
-- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a>
 
 ---
 

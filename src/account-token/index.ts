@@ -1,56 +1,56 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AccountTokenConfig extends cdktf.TerraformMetaArguments {
+export interface AccountTokenConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#account_id AccountToken#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#account_id AccountToken#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#condition AccountToken#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#condition AccountToken#condition}
   */
   readonly condition?: AccountTokenCondition;
   /**
   * The expiration time on or after which the JWT MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#expires_on AccountToken#expires_on}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#expires_on AccountToken#expires_on}
   */
   readonly expiresOn?: string;
   /**
   * Token name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#name AccountToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#name AccountToken#name}
   */
   readonly name: string;
   /**
   * The time before which the token MUST NOT be accepted for processing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#not_before AccountToken#not_before}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#not_before AccountToken#not_before}
   */
   readonly notBefore?: string;
   /**
   * Set of access policies assigned to the token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#policies AccountToken#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#policies AccountToken#policies}
   */
-  readonly policies: AccountTokenPolicies[] | cdktf.IResolvable;
+  readonly policies: AccountTokenPolicies[] | cdktn.IResolvable;
   /**
   * Status of the token.
   * Available values: "active", "disabled", "expired".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#status AccountToken#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#status AccountToken#status}
   */
   readonly status?: string;
 }
@@ -58,43 +58,43 @@ export interface AccountTokenConditionRequestIp {
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#in AccountToken#in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#in AccountToken#in}
   */
   readonly in?: string[];
   /**
   * List of IPv4/IPv6 CIDR addresses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#not_in AccountToken#not_in}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#not_in AccountToken#not_in}
   */
   readonly notIn?: string[];
 }
 
-export function accountTokenConditionRequestIpToTerraform(struct?: AccountTokenConditionRequestIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenConditionRequestIpToTerraform(struct?: AccountTokenConditionRequestIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.in),
-    not_in: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.notIn),
+    in: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.in),
+    not_in: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.notIn),
   }
 }
 
 
-export function accountTokenConditionRequestIpToHclTerraform(struct?: AccountTokenConditionRequestIp | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenConditionRequestIpToHclTerraform(struct?: AccountTokenConditionRequestIp | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     in: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.in),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.in),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     not_in: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.notIn),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.notIn),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -105,19 +105,19 @@ export function accountTokenConditionRequestIpToHclTerraform(struct?: AccountTok
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccountTokenConditionRequestIpOutputReference extends cdktf.ComplexObject {
+export class AccountTokenConditionRequestIpOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccountTokenConditionRequestIp | cdktf.IResolvable | undefined {
+  public get internalValue(): AccountTokenConditionRequestIp | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -134,14 +134,14 @@ export class AccountTokenConditionRequestIpOutputReference extends cdktf.Complex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccountTokenConditionRequestIp | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccountTokenConditionRequestIp | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._in = undefined;
       this._notIn = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -189,14 +189,14 @@ export interface AccountTokenCondition {
   /**
   * Client IP restrictions.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#request_ip AccountToken#request_ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#request_ip AccountToken#request_ip}
   */
   readonly requestIp?: AccountTokenConditionRequestIp;
 }
 
-export function accountTokenConditionToTerraform(struct?: AccountTokenCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenConditionToTerraform(struct?: AccountTokenCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -205,9 +205,9 @@ export function accountTokenConditionToTerraform(struct?: AccountTokenCondition 
 }
 
 
-export function accountTokenConditionToHclTerraform(struct?: AccountTokenCondition | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenConditionToHclTerraform(struct?: AccountTokenCondition | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -223,19 +223,19 @@ export function accountTokenConditionToHclTerraform(struct?: AccountTokenConditi
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccountTokenConditionOutputReference extends cdktf.ComplexObject {
+export class AccountTokenConditionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): AccountTokenCondition | cdktf.IResolvable | undefined {
+  public get internalValue(): AccountTokenCondition | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -248,13 +248,13 @@ export class AccountTokenConditionOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccountTokenCondition | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccountTokenCondition | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._requestIp.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -285,7 +285,7 @@ export interface AccountTokenPoliciesPermissionGroups {
   /**
   * Identifier of the permission group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#id AccountToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#id AccountToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -293,25 +293,25 @@ export interface AccountTokenPoliciesPermissionGroups {
   readonly id: string;
 }
 
-export function accountTokenPoliciesPermissionGroupsToTerraform(struct?: AccountTokenPoliciesPermissionGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenPoliciesPermissionGroupsToTerraform(struct?: AccountTokenPoliciesPermissionGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function accountTokenPoliciesPermissionGroupsToHclTerraform(struct?: AccountTokenPoliciesPermissionGroups | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenPoliciesPermissionGroupsToHclTerraform(struct?: AccountTokenPoliciesPermissionGroups | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -322,9 +322,9 @@ export function accountTokenPoliciesPermissionGroupsToHclTerraform(struct?: Acco
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccountTokenPoliciesPermissionGroupsOutputReference extends cdktf.ComplexObject {
+export class AccountTokenPoliciesPermissionGroupsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -332,11 +332,11 @@ export class AccountTokenPoliciesPermissionGroupsOutputReference extends cdktf.C
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccountTokenPoliciesPermissionGroups | cdktf.IResolvable | undefined {
+  public get internalValue(): AccountTokenPoliciesPermissionGroups | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -349,13 +349,13 @@ export class AccountTokenPoliciesPermissionGroupsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccountTokenPoliciesPermissionGroups | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccountTokenPoliciesPermissionGroups | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -380,15 +380,15 @@ export class AccountTokenPoliciesPermissionGroupsOutputReference extends cdktf.C
   }
 }
 
-export class AccountTokenPoliciesPermissionGroupsList extends cdktf.ComplexList {
-  public internalValue? : AccountTokenPoliciesPermissionGroups[] | cdktf.IResolvable
+export class AccountTokenPoliciesPermissionGroupsList extends cdktn.ComplexList {
+  public internalValue? : AccountTokenPoliciesPermissionGroups[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -404,56 +404,56 @@ export interface AccountTokenPolicies {
   * Allow or deny operations against the resources.
   * Available values: "allow", "deny".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#effect AccountToken#effect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#effect AccountToken#effect}
   */
   readonly effect: string;
   /**
   * A set of permission groups that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
   */
-  readonly permissionGroups: AccountTokenPoliciesPermissionGroups[] | cdktf.IResolvable;
+  readonly permissionGroups: AccountTokenPoliciesPermissionGroups[] | cdktn.IResolvable;
   /**
   * A json object representing the resources that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#resources AccountToken#resources}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#resources AccountToken#resources}
   */
   readonly resources: string;
 }
 
-export function accountTokenPoliciesToTerraform(struct?: AccountTokenPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenPoliciesToTerraform(struct?: AccountTokenPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    effect: cdktf.stringToTerraform(struct!.effect),
-    permission_groups: cdktf.listMapper(accountTokenPoliciesPermissionGroupsToTerraform, false)(struct!.permissionGroups),
-    resources: cdktf.stringToTerraform(struct!.resources),
+    effect: cdktn.stringToTerraform(struct!.effect),
+    permission_groups: cdktn.listMapper(accountTokenPoliciesPermissionGroupsToTerraform, false)(struct!.permissionGroups),
+    resources: cdktn.stringToTerraform(struct!.resources),
   }
 }
 
 
-export function accountTokenPoliciesToHclTerraform(struct?: AccountTokenPolicies | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function accountTokenPoliciesToHclTerraform(struct?: AccountTokenPolicies | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     effect: {
-      value: cdktf.stringToHclTerraform(struct!.effect),
+      value: cdktn.stringToHclTerraform(struct!.effect),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     permission_groups: {
-      value: cdktf.listMapperHcl(accountTokenPoliciesPermissionGroupsToHclTerraform, false)(struct!.permissionGroups),
+      value: cdktn.listMapperHcl(accountTokenPoliciesPermissionGroupsToHclTerraform, false)(struct!.permissionGroups),
       isBlock: true,
       type: "set",
       storageClassType: "AccountTokenPoliciesPermissionGroupsList",
     },
     resources: {
-      value: cdktf.stringToHclTerraform(struct!.resources),
+      value: cdktn.stringToHclTerraform(struct!.resources),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -464,9 +464,9 @@ export function accountTokenPoliciesToHclTerraform(struct?: AccountTokenPolicies
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AccountTokenPoliciesOutputReference extends cdktf.ComplexObject {
+export class AccountTokenPoliciesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -474,11 +474,11 @@ export class AccountTokenPoliciesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AccountTokenPolicies | cdktf.IResolvable | undefined {
+  public get internalValue(): AccountTokenPolicies | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -499,7 +499,7 @@ export class AccountTokenPoliciesOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AccountTokenPolicies | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AccountTokenPolicies | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -507,7 +507,7 @@ export class AccountTokenPoliciesOutputReference extends cdktf.ComplexObject {
       this._permissionGroups.internalValue = undefined;
       this._resources = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -538,7 +538,7 @@ export class AccountTokenPoliciesOutputReference extends cdktf.ComplexObject {
   public get permissionGroups() {
     return this._permissionGroups;
   }
-  public putPermissionGroups(value: AccountTokenPoliciesPermissionGroups[] | cdktf.IResolvable) {
+  public putPermissionGroups(value: AccountTokenPoliciesPermissionGroups[] | cdktn.IResolvable) {
     this._permissionGroups.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -560,15 +560,15 @@ export class AccountTokenPoliciesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class AccountTokenPoliciesList extends cdktf.ComplexList {
-  public internalValue? : AccountTokenPolicies[] | cdktf.IResolvable
+export class AccountTokenPoliciesList extends cdktn.ComplexList {
+  public internalValue? : AccountTokenPolicies[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -581,9 +581,9 @@ export class AccountTokenPoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token cloudflare_account_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token cloudflare_account_token}
 */
-export class AccountToken extends cdktf.TerraformResource {
+export class AccountToken extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -594,14 +594,14 @@ export class AccountToken extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AccountToken resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AccountToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountToken to import
-  * @param importFromId The id of the existing AccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountToken to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_token", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_account_token", importId: importFromId, provider });
       }
 
   // ===========
@@ -609,7 +609,7 @@ export class AccountToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/account_token cloudflare_account_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token cloudflare_account_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -620,7 +620,7 @@ export class AccountToken extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_account_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -743,7 +743,7 @@ export class AccountToken extends cdktf.TerraformResource {
   public get policies() {
     return this._policies;
   }
-  public putPolicies(value: AccountTokenPolicies[] | cdktf.IResolvable) {
+  public putPolicies(value: AccountTokenPolicies[] | cdktn.IResolvable) {
     this._policies.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -778,20 +778,20 @@ export class AccountToken extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       condition: accountTokenConditionToTerraform(this._condition.internalValue),
-      expires_on: cdktf.stringToTerraform(this._expiresOn),
-      name: cdktf.stringToTerraform(this._name),
-      not_before: cdktf.stringToTerraform(this._notBefore),
-      policies: cdktf.listMapper(accountTokenPoliciesToTerraform, false)(this._policies.internalValue),
-      status: cdktf.stringToTerraform(this._status),
+      expires_on: cdktn.stringToTerraform(this._expiresOn),
+      name: cdktn.stringToTerraform(this._name),
+      not_before: cdktn.stringToTerraform(this._notBefore),
+      policies: cdktn.listMapper(accountTokenPoliciesToTerraform, false)(this._policies.internalValue),
+      status: cdktn.stringToTerraform(this._status),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -803,31 +803,31 @@ export class AccountToken extends cdktf.TerraformResource {
         storageClassType: "AccountTokenCondition",
       },
       expires_on: {
-        value: cdktf.stringToHclTerraform(this._expiresOn),
+        value: cdktn.stringToHclTerraform(this._expiresOn),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       not_before: {
-        value: cdktf.stringToHclTerraform(this._notBefore),
+        value: cdktn.stringToHclTerraform(this._notBefore),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       policies: {
-        value: cdktf.listMapperHcl(accountTokenPoliciesToHclTerraform, false)(this._policies.internalValue),
+        value: cdktn.listMapperHcl(accountTokenPoliciesToHclTerraform, false)(this._policies.internalValue),
         isBlock: true,
         type: "set",
         storageClassType: "AccountTokenPoliciesList",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

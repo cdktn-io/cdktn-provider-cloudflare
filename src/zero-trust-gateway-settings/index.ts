@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustGatewaySettingsConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustGatewaySettingsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#account_id ZeroTrustGatewaySettings#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#account_id ZeroTrustGatewaySettings#account_id}
   */
   readonly accountId: string;
   /**
   * Specify account settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#settings ZeroTrustGatewaySettings#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#settings ZeroTrustGatewaySettings#settings}
   */
   readonly settings?: ZeroTrustGatewaySettingsSettings;
 }
@@ -27,30 +27,30 @@ export interface ZeroTrustGatewaySettingsSettingsActivityLog {
   /**
   * Specify whether to log activity.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustGatewaySettingsSettingsActivityLogToTerraform(struct?: ZeroTrustGatewaySettingsSettingsActivityLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsActivityLogToTerraform(struct?: ZeroTrustGatewaySettingsSettingsActivityLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsActivityLogToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsActivityLog | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsActivityLogToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsActivityLog | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -61,19 +61,19 @@ export function zeroTrustGatewaySettingsSettingsActivityLogToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsActivityLogOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsActivityLogOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsActivityLog | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsActivityLog | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -86,13 +86,13 @@ export class ZeroTrustGatewaySettingsSettingsActivityLogOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsActivityLog | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsActivityLog | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -104,11 +104,11 @@ export class ZeroTrustGatewaySettingsSettingsActivityLogOutputReference extends 
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -123,69 +123,69 @@ export interface ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings {
   /**
   * Specify whether to enable notifications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to include context information as query parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#include_context ZeroTrustGatewaySettings#include_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#include_context ZeroTrustGatewaySettings#include_context}
   */
-  readonly includeContext?: boolean | cdktf.IResolvable;
+  readonly includeContext?: boolean | cdktn.IResolvable;
   /**
   * Specify the message to show in the notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#msg ZeroTrustGatewaySettings#msg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#msg ZeroTrustGatewaySettings#msg}
   */
   readonly msg?: string;
   /**
   * Specify a URL that directs users to more information. If unset, the notification opens a block page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#support_url ZeroTrustGatewaySettings#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#support_url ZeroTrustGatewaySettings#support_url}
   */
   readonly supportUrl?: string;
 }
 
-export function zeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsToTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsToTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    include_context: cdktf.booleanToTerraform(struct!.includeContext),
-    msg: cdktf.stringToTerraform(struct!.msg),
-    support_url: cdktf.stringToTerraform(struct!.supportUrl),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    include_context: cdktn.booleanToTerraform(struct!.includeContext),
+    msg: cdktn.stringToTerraform(struct!.msg),
+    support_url: cdktn.stringToTerraform(struct!.supportUrl),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     include_context: {
-      value: cdktf.booleanToHclTerraform(struct!.includeContext),
+      value: cdktn.booleanToHclTerraform(struct!.includeContext),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     msg: {
-      value: cdktf.stringToHclTerraform(struct!.msg),
+      value: cdktn.stringToHclTerraform(struct!.msg),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     support_url: {
-      value: cdktf.stringToHclTerraform(struct!.supportUrl),
+      value: cdktn.stringToHclTerraform(struct!.supportUrl),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -196,19 +196,19 @@ export function zeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsToH
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -233,7 +233,7 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutput
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -242,7 +242,7 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutput
       this._msg = undefined;
       this._supportUrl = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -257,11 +257,11 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutput
   }
 
   // enabled - computed: true, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -273,11 +273,11 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsOutput
   }
 
   // include_context - computed: true, optional: true, required: false
-  private _includeContext?: boolean | cdktf.IResolvable; 
+  private _includeContext?: boolean | cdktn.IResolvable; 
   public get includeContext() {
     return this.getBooleanAttribute('include_context');
   }
-  public set includeContext(value: boolean | cdktf.IResolvable) {
+  public set includeContext(value: boolean | cdktn.IResolvable) {
     this._includeContext = value;
   }
   public resetIncludeContext() {
@@ -324,63 +324,63 @@ export interface ZeroTrustGatewaySettingsSettingsAntivirus {
   /**
   * Specify whether to enable anti-virus scanning on downloads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled_download_phase ZeroTrustGatewaySettings#enabled_download_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled_download_phase ZeroTrustGatewaySettings#enabled_download_phase}
   */
-  readonly enabledDownloadPhase?: boolean | cdktf.IResolvable;
+  readonly enabledDownloadPhase?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to enable anti-virus scanning on uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled_upload_phase ZeroTrustGatewaySettings#enabled_upload_phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled_upload_phase ZeroTrustGatewaySettings#enabled_upload_phase}
   */
-  readonly enabledUploadPhase?: boolean | cdktf.IResolvable;
+  readonly enabledUploadPhase?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to block requests for unscannable files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#fail_closed ZeroTrustGatewaySettings#fail_closed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#fail_closed ZeroTrustGatewaySettings#fail_closed}
   */
-  readonly failClosed?: boolean | cdktf.IResolvable;
+  readonly failClosed?: boolean | cdktn.IResolvable;
   /**
   * Configure the message the user's device shows during an antivirus scan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#notification_settings ZeroTrustGatewaySettings#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#notification_settings ZeroTrustGatewaySettings#notification_settings}
   */
   readonly notificationSettings?: ZeroTrustGatewaySettingsSettingsAntivirusNotificationSettings;
 }
 
-export function zeroTrustGatewaySettingsSettingsAntivirusToTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsAntivirusToTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled_download_phase: cdktf.booleanToTerraform(struct!.enabledDownloadPhase),
-    enabled_upload_phase: cdktf.booleanToTerraform(struct!.enabledUploadPhase),
-    fail_closed: cdktf.booleanToTerraform(struct!.failClosed),
+    enabled_download_phase: cdktn.booleanToTerraform(struct!.enabledDownloadPhase),
+    enabled_upload_phase: cdktn.booleanToTerraform(struct!.enabledUploadPhase),
+    fail_closed: cdktn.booleanToTerraform(struct!.failClosed),
     notification_settings: zeroTrustGatewaySettingsSettingsAntivirusNotificationSettingsToTerraform(struct!.notificationSettings),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsAntivirusToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirus | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsAntivirusToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsAntivirus | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled_download_phase: {
-      value: cdktf.booleanToHclTerraform(struct!.enabledDownloadPhase),
+      value: cdktn.booleanToHclTerraform(struct!.enabledDownloadPhase),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     enabled_upload_phase: {
-      value: cdktf.booleanToHclTerraform(struct!.enabledUploadPhase),
+      value: cdktn.booleanToHclTerraform(struct!.enabledUploadPhase),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fail_closed: {
-      value: cdktf.booleanToHclTerraform(struct!.failClosed),
+      value: cdktn.booleanToHclTerraform(struct!.failClosed),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -397,19 +397,19 @@ export function zeroTrustGatewaySettingsSettingsAntivirusToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsAntivirusOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsAntivirusOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsAntivirus | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsAntivirus | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -434,7 +434,7 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsAntivirus | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsAntivirus | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -443,7 +443,7 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusOutputReference extends cd
       this._failClosed = undefined;
       this._notificationSettings.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -458,11 +458,11 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusOutputReference extends cd
   }
 
   // enabled_download_phase - computed: true, optional: true, required: false
-  private _enabledDownloadPhase?: boolean | cdktf.IResolvable; 
+  private _enabledDownloadPhase?: boolean | cdktn.IResolvable; 
   public get enabledDownloadPhase() {
     return this.getBooleanAttribute('enabled_download_phase');
   }
-  public set enabledDownloadPhase(value: boolean | cdktf.IResolvable) {
+  public set enabledDownloadPhase(value: boolean | cdktn.IResolvable) {
     this._enabledDownloadPhase = value;
   }
   public resetEnabledDownloadPhase() {
@@ -474,11 +474,11 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusOutputReference extends cd
   }
 
   // enabled_upload_phase - computed: true, optional: true, required: false
-  private _enabledUploadPhase?: boolean | cdktf.IResolvable; 
+  private _enabledUploadPhase?: boolean | cdktn.IResolvable; 
   public get enabledUploadPhase() {
     return this.getBooleanAttribute('enabled_upload_phase');
   }
-  public set enabledUploadPhase(value: boolean | cdktf.IResolvable) {
+  public set enabledUploadPhase(value: boolean | cdktn.IResolvable) {
     this._enabledUploadPhase = value;
   }
   public resetEnabledUploadPhase() {
@@ -490,11 +490,11 @@ export class ZeroTrustGatewaySettingsSettingsAntivirusOutputReference extends cd
   }
 
   // fail_closed - computed: true, optional: true, required: false
-  private _failClosed?: boolean | cdktf.IResolvable; 
+  private _failClosed?: boolean | cdktn.IResolvable; 
   public get failClosed() {
     return this.getBooleanAttribute('fail_closed');
   }
-  public set failClosed(value: boolean | cdktf.IResolvable) {
+  public set failClosed(value: boolean | cdktn.IResolvable) {
     this._failClosed = value;
   }
   public resetFailClosed() {
@@ -525,213 +525,213 @@ export interface ZeroTrustGatewaySettingsSettingsBlockPage {
   /**
   * Specify the block page background color in `#rrggbb` format when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#background_color ZeroTrustGatewaySettings#background_color}
   */
   readonly backgroundColor?: string;
   /**
   * Specify whether to enable the custom block page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Specify the block page footer text when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#footer_text ZeroTrustGatewaySettings#footer_text}
   */
   readonly footerText?: string;
   /**
   * Specify the block page header text when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#header_text ZeroTrustGatewaySettings#header_text}
   */
   readonly headerText?: string;
   /**
   * Specify whether to append context to target_uri as query parameters. This applies only when the mode is redirect_uri.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#include_context ZeroTrustGatewaySettings#include_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#include_context ZeroTrustGatewaySettings#include_context}
   */
-  readonly includeContext?: boolean | cdktf.IResolvable;
+  readonly includeContext?: boolean | cdktn.IResolvable;
   /**
   * Specify the full URL to the logo file when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#logo_path ZeroTrustGatewaySettings#logo_path}
   */
   readonly logoPath?: string;
   /**
   * Specify the admin email for users to contact when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#mailto_address ZeroTrustGatewaySettings#mailto_address}
   */
   readonly mailtoAddress?: string;
   /**
   * Specify the subject line for emails created from the block page when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#mailto_subject ZeroTrustGatewaySettings#mailto_subject}
   */
   readonly mailtoSubject?: string;
   /**
   * Specify whether to redirect users to a Cloudflare-hosted block page or a customer-provided URI.
   * Available values: "", "customized_block_page", "redirect_uri".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
   */
   readonly mode?: string;
   /**
   * Specify the block page title when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#name ZeroTrustGatewaySettings#name}
   */
   readonly name?: string;
   /**
   * Indicate that this setting was shared via the Orgs API and read only for the current account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#read_only ZeroTrustGatewaySettings#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#read_only ZeroTrustGatewaySettings#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Indicate the account tag of the account that shared this setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#source_account ZeroTrustGatewaySettings#source_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#source_account ZeroTrustGatewaySettings#source_account}
   */
   readonly sourceAccount?: string;
   /**
   * Specify whether to suppress detailed information at the bottom of the block page when the mode is customized_block_page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#suppress_footer ZeroTrustGatewaySettings#suppress_footer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#suppress_footer ZeroTrustGatewaySettings#suppress_footer}
   */
-  readonly suppressFooter?: boolean | cdktf.IResolvable;
+  readonly suppressFooter?: boolean | cdktn.IResolvable;
   /**
   * Specify the URI to redirect users to when the mode is redirect_uri.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#target_uri ZeroTrustGatewaySettings#target_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#target_uri ZeroTrustGatewaySettings#target_uri}
   */
   readonly targetUri?: string;
   /**
   * Indicate the version number of the setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#version ZeroTrustGatewaySettings#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#version ZeroTrustGatewaySettings#version}
   */
   readonly version?: number;
 }
 
-export function zeroTrustGatewaySettingsSettingsBlockPageToTerraform(struct?: ZeroTrustGatewaySettingsSettingsBlockPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsBlockPageToTerraform(struct?: ZeroTrustGatewaySettingsSettingsBlockPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    background_color: cdktf.stringToTerraform(struct!.backgroundColor),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    footer_text: cdktf.stringToTerraform(struct!.footerText),
-    header_text: cdktf.stringToTerraform(struct!.headerText),
-    include_context: cdktf.booleanToTerraform(struct!.includeContext),
-    logo_path: cdktf.stringToTerraform(struct!.logoPath),
-    mailto_address: cdktf.stringToTerraform(struct!.mailtoAddress),
-    mailto_subject: cdktf.stringToTerraform(struct!.mailtoSubject),
-    mode: cdktf.stringToTerraform(struct!.mode),
-    name: cdktf.stringToTerraform(struct!.name),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    source_account: cdktf.stringToTerraform(struct!.sourceAccount),
-    suppress_footer: cdktf.booleanToTerraform(struct!.suppressFooter),
-    target_uri: cdktf.stringToTerraform(struct!.targetUri),
-    version: cdktf.numberToTerraform(struct!.version),
+    background_color: cdktn.stringToTerraform(struct!.backgroundColor),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    footer_text: cdktn.stringToTerraform(struct!.footerText),
+    header_text: cdktn.stringToTerraform(struct!.headerText),
+    include_context: cdktn.booleanToTerraform(struct!.includeContext),
+    logo_path: cdktn.stringToTerraform(struct!.logoPath),
+    mailto_address: cdktn.stringToTerraform(struct!.mailtoAddress),
+    mailto_subject: cdktn.stringToTerraform(struct!.mailtoSubject),
+    mode: cdktn.stringToTerraform(struct!.mode),
+    name: cdktn.stringToTerraform(struct!.name),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    source_account: cdktn.stringToTerraform(struct!.sourceAccount),
+    suppress_footer: cdktn.booleanToTerraform(struct!.suppressFooter),
+    target_uri: cdktn.stringToTerraform(struct!.targetUri),
+    version: cdktn.numberToTerraform(struct!.version),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsBlockPageToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsBlockPage | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsBlockPageToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsBlockPage | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     background_color: {
-      value: cdktf.stringToHclTerraform(struct!.backgroundColor),
+      value: cdktn.stringToHclTerraform(struct!.backgroundColor),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     footer_text: {
-      value: cdktf.stringToHclTerraform(struct!.footerText),
+      value: cdktn.stringToHclTerraform(struct!.footerText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     header_text: {
-      value: cdktf.stringToHclTerraform(struct!.headerText),
+      value: cdktn.stringToHclTerraform(struct!.headerText),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     include_context: {
-      value: cdktf.booleanToHclTerraform(struct!.includeContext),
+      value: cdktn.booleanToHclTerraform(struct!.includeContext),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     logo_path: {
-      value: cdktf.stringToHclTerraform(struct!.logoPath),
+      value: cdktn.stringToHclTerraform(struct!.logoPath),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mailto_address: {
-      value: cdktf.stringToHclTerraform(struct!.mailtoAddress),
+      value: cdktn.stringToHclTerraform(struct!.mailtoAddress),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mailto_subject: {
-      value: cdktf.stringToHclTerraform(struct!.mailtoSubject),
+      value: cdktn.stringToHclTerraform(struct!.mailtoSubject),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     name: {
-      value: cdktf.stringToHclTerraform(struct!.name),
+      value: cdktn.stringToHclTerraform(struct!.name),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_account: {
-      value: cdktf.stringToHclTerraform(struct!.sourceAccount),
+      value: cdktn.stringToHclTerraform(struct!.sourceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     suppress_footer: {
-      value: cdktf.booleanToHclTerraform(struct!.suppressFooter),
+      value: cdktn.booleanToHclTerraform(struct!.suppressFooter),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     target_uri: {
-      value: cdktf.stringToHclTerraform(struct!.targetUri),
+      value: cdktn.stringToHclTerraform(struct!.targetUri),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.numberToHclTerraform(struct!.version),
+      value: cdktn.numberToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -742,19 +742,19 @@ export function zeroTrustGatewaySettingsSettingsBlockPageToHclTerraform(struct?:
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsBlockPage | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsBlockPage | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -823,7 +823,7 @@ export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cd
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsBlockPage | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsBlockPage | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -843,7 +843,7 @@ export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cd
       this._targetUri = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -885,11 +885,11 @@ export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cd
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -933,11 +933,11 @@ export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cd
   }
 
   // include_context - computed: false, optional: true, required: false
-  private _includeContext?: boolean | cdktf.IResolvable; 
+  private _includeContext?: boolean | cdktn.IResolvable; 
   public get includeContext() {
     return this.getBooleanAttribute('include_context');
   }
-  public set includeContext(value: boolean | cdktf.IResolvable) {
+  public set includeContext(value: boolean | cdktn.IResolvable) {
     this._includeContext = value;
   }
   public resetIncludeContext() {
@@ -1029,11 +1029,11 @@ export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cd
   }
 
   // read_only - computed: true, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -1061,11 +1061,11 @@ export class ZeroTrustGatewaySettingsSettingsBlockPageOutputReference extends cd
   }
 
   // suppress_footer - computed: false, optional: true, required: false
-  private _suppressFooter?: boolean | cdktf.IResolvable; 
+  private _suppressFooter?: boolean | cdktn.IResolvable; 
   public get suppressFooter() {
     return this.getBooleanAttribute('suppress_footer');
   }
-  public set suppressFooter(value: boolean | cdktf.IResolvable) {
+  public set suppressFooter(value: boolean | cdktn.IResolvable) {
     this._suppressFooter = value;
   }
   public resetSuppressFooter() {
@@ -1113,30 +1113,30 @@ export interface ZeroTrustGatewaySettingsSettingsBodyScanning {
   * Specify the inspection mode as either `deep` or `shallow`.
   * Available values: "deep", "shallow".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#inspection_mode ZeroTrustGatewaySettings#inspection_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#inspection_mode ZeroTrustGatewaySettings#inspection_mode}
   */
   readonly inspectionMode?: string;
 }
 
-export function zeroTrustGatewaySettingsSettingsBodyScanningToTerraform(struct?: ZeroTrustGatewaySettingsSettingsBodyScanning | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsBodyScanningToTerraform(struct?: ZeroTrustGatewaySettingsSettingsBodyScanning | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    inspection_mode: cdktf.stringToTerraform(struct!.inspectionMode),
+    inspection_mode: cdktn.stringToTerraform(struct!.inspectionMode),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsBodyScanningToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsBodyScanning | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsBodyScanningToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsBodyScanning | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     inspection_mode: {
-      value: cdktf.stringToHclTerraform(struct!.inspectionMode),
+      value: cdktn.stringToHclTerraform(struct!.inspectionMode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1147,19 +1147,19 @@ export function zeroTrustGatewaySettingsSettingsBodyScanningToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsBodyScanningOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsBodyScanningOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsBodyScanning | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsBodyScanning | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1172,13 +1172,13 @@ export class ZeroTrustGatewaySettingsSettingsBodyScanningOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsBodyScanning | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsBodyScanning | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._inspectionMode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1209,43 +1209,43 @@ export interface ZeroTrustGatewaySettingsSettingsBrowserIsolation {
   /**
   * Specify whether to enable non-identity onramp support for Browser Isolation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#non_identity_enabled ZeroTrustGatewaySettings#non_identity_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#non_identity_enabled ZeroTrustGatewaySettings#non_identity_enabled}
   */
-  readonly nonIdentityEnabled?: boolean | cdktf.IResolvable;
+  readonly nonIdentityEnabled?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to enable Clientless Browser Isolation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#url_browser_isolation_enabled ZeroTrustGatewaySettings#url_browser_isolation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#url_browser_isolation_enabled ZeroTrustGatewaySettings#url_browser_isolation_enabled}
   */
-  readonly urlBrowserIsolationEnabled?: boolean | cdktf.IResolvable;
+  readonly urlBrowserIsolationEnabled?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustGatewaySettingsSettingsBrowserIsolationToTerraform(struct?: ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsBrowserIsolationToTerraform(struct?: ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    non_identity_enabled: cdktf.booleanToTerraform(struct!.nonIdentityEnabled),
-    url_browser_isolation_enabled: cdktf.booleanToTerraform(struct!.urlBrowserIsolationEnabled),
+    non_identity_enabled: cdktn.booleanToTerraform(struct!.nonIdentityEnabled),
+    url_browser_isolation_enabled: cdktn.booleanToTerraform(struct!.urlBrowserIsolationEnabled),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsBrowserIsolationToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsBrowserIsolationToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     non_identity_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.nonIdentityEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.nonIdentityEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     url_browser_isolation_enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.urlBrowserIsolationEnabled),
+      value: cdktn.booleanToHclTerraform(struct!.urlBrowserIsolationEnabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1256,19 +1256,19 @@ export function zeroTrustGatewaySettingsSettingsBrowserIsolationToHclTerraform(s
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1285,14 +1285,14 @@ export class ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference ext
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsBrowserIsolation | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._nonIdentityEnabled = undefined;
       this._urlBrowserIsolationEnabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1305,11 +1305,11 @@ export class ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference ext
   }
 
   // non_identity_enabled - computed: false, optional: true, required: false
-  private _nonIdentityEnabled?: boolean | cdktf.IResolvable; 
+  private _nonIdentityEnabled?: boolean | cdktn.IResolvable; 
   public get nonIdentityEnabled() {
     return this.getBooleanAttribute('non_identity_enabled');
   }
-  public set nonIdentityEnabled(value: boolean | cdktf.IResolvable) {
+  public set nonIdentityEnabled(value: boolean | cdktn.IResolvable) {
     this._nonIdentityEnabled = value;
   }
   public resetNonIdentityEnabled() {
@@ -1321,11 +1321,11 @@ export class ZeroTrustGatewaySettingsSettingsBrowserIsolationOutputReference ext
   }
 
   // url_browser_isolation_enabled - computed: false, optional: true, required: false
-  private _urlBrowserIsolationEnabled?: boolean | cdktf.IResolvable; 
+  private _urlBrowserIsolationEnabled?: boolean | cdktn.IResolvable; 
   public get urlBrowserIsolationEnabled() {
     return this.getBooleanAttribute('url_browser_isolation_enabled');
   }
-  public set urlBrowserIsolationEnabled(value: boolean | cdktf.IResolvable) {
+  public set urlBrowserIsolationEnabled(value: boolean | cdktn.IResolvable) {
     this._urlBrowserIsolationEnabled = value;
   }
   public resetUrlBrowserIsolationEnabled() {
@@ -1340,7 +1340,7 @@ export interface ZeroTrustGatewaySettingsSettingsCertificate {
   /**
   * Specify the UUID of the certificate used for interception. Ensure the certificate is available at the edge(previously called 'active'). A nil UUID directs Cloudflare to use the Root CA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1348,25 +1348,25 @@ export interface ZeroTrustGatewaySettingsSettingsCertificate {
   readonly id: string;
 }
 
-export function zeroTrustGatewaySettingsSettingsCertificateToTerraform(struct?: ZeroTrustGatewaySettingsSettingsCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsCertificateToTerraform(struct?: ZeroTrustGatewaySettingsSettingsCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
+    id: cdktn.stringToTerraform(struct!.id),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsCertificateToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsCertificateToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1377,19 +1377,19 @@ export function zeroTrustGatewaySettingsSettingsCertificateToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsCertificateOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1402,13 +1402,13 @@ export class ZeroTrustGatewaySettingsSettingsCertificateOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._id = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1436,70 +1436,70 @@ export interface ZeroTrustGatewaySettingsSettingsCustomCertificate {
   /**
   * Indicate the internal certificate status.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#binding_status ZeroTrustGatewaySettings#binding_status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#binding_status ZeroTrustGatewaySettings#binding_status}
   */
   readonly bindingStatus?: string;
   /**
   * Specify whether to enable a custom certificate authority for signing Gateway traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled: boolean | cdktf.IResolvable;
+  readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Specify the UUID of the certificate (ID from MTLS certificate store).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#id ZeroTrustGatewaySettings#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#updated_at ZeroTrustGatewaySettings#updated_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#updated_at ZeroTrustGatewaySettings#updated_at}
   */
   readonly updatedAt?: string;
 }
 
-export function zeroTrustGatewaySettingsSettingsCustomCertificateToTerraform(struct?: ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsCustomCertificateToTerraform(struct?: ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    binding_status: cdktf.stringToTerraform(struct!.bindingStatus),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    id: cdktf.stringToTerraform(struct!.id),
-    updated_at: cdktf.stringToTerraform(struct!.updatedAt),
+    binding_status: cdktn.stringToTerraform(struct!.bindingStatus),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    id: cdktn.stringToTerraform(struct!.id),
+    updated_at: cdktn.stringToTerraform(struct!.updatedAt),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsCustomCertificateToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsCustomCertificateToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     binding_status: {
-      value: cdktf.stringToHclTerraform(struct!.bindingStatus),
+      value: cdktn.stringToHclTerraform(struct!.bindingStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     updated_at: {
-      value: cdktf.stringToHclTerraform(struct!.updatedAt),
+      value: cdktn.stringToHclTerraform(struct!.updatedAt),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -1510,19 +1510,19 @@ export function zeroTrustGatewaySettingsSettingsCustomCertificateToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1547,7 +1547,7 @@ export class ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsCustomCertificate | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1556,7 +1556,7 @@ export class ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference ex
       this._id = undefined;
       this._updatedAt = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1587,11 +1587,11 @@ export class ZeroTrustGatewaySettingsSettingsCustomCertificateOutputReference ex
   }
 
   // enabled - computed: false, optional: false, required: true
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -1635,69 +1635,69 @@ export interface ZeroTrustGatewaySettingsSettingsExtendedEmailMatching {
   /**
   * Specify whether to match all variants of user emails (with + or . modifiers) used as criteria in Firewall policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Indicate that this setting was shared via the Orgs API and read only for the current account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#read_only ZeroTrustGatewaySettings#read_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#read_only ZeroTrustGatewaySettings#read_only}
   */
-  readonly readOnly?: boolean | cdktf.IResolvable;
+  readonly readOnly?: boolean | cdktn.IResolvable;
   /**
   * Indicate the account tag of the account that shared this setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#source_account ZeroTrustGatewaySettings#source_account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#source_account ZeroTrustGatewaySettings#source_account}
   */
   readonly sourceAccount?: string;
   /**
   * Indicate the version number of the setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#version ZeroTrustGatewaySettings#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#version ZeroTrustGatewaySettings#version}
   */
   readonly version?: number;
 }
 
-export function zeroTrustGatewaySettingsSettingsExtendedEmailMatchingToTerraform(struct?: ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsExtendedEmailMatchingToTerraform(struct?: ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    read_only: cdktf.booleanToTerraform(struct!.readOnly),
-    source_account: cdktf.stringToTerraform(struct!.sourceAccount),
-    version: cdktf.numberToTerraform(struct!.version),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    read_only: cdktn.booleanToTerraform(struct!.readOnly),
+    source_account: cdktn.stringToTerraform(struct!.sourceAccount),
+    version: cdktn.numberToTerraform(struct!.version),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsExtendedEmailMatchingToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsExtendedEmailMatchingToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     read_only: {
-      value: cdktf.booleanToHclTerraform(struct!.readOnly),
+      value: cdktn.booleanToHclTerraform(struct!.readOnly),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     source_account: {
-      value: cdktf.stringToHclTerraform(struct!.sourceAccount),
+      value: cdktn.stringToHclTerraform(struct!.sourceAccount),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     version: {
-      value: cdktf.numberToHclTerraform(struct!.version),
+      value: cdktn.numberToHclTerraform(struct!.version),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -1708,19 +1708,19 @@ export function zeroTrustGatewaySettingsSettingsExtendedEmailMatchingToHclTerraf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1745,7 +1745,7 @@ export class ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReferenc
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsExtendedEmailMatching | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1754,7 +1754,7 @@ export class ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReferenc
       this._sourceAccount = undefined;
       this._version = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1769,11 +1769,11 @@ export class ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReferenc
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -1785,11 +1785,11 @@ export class ZeroTrustGatewaySettingsSettingsExtendedEmailMatchingOutputReferenc
   }
 
   // read_only - computed: true, optional: true, required: false
-  private _readOnly?: boolean | cdktf.IResolvable; 
+  private _readOnly?: boolean | cdktn.IResolvable; 
   public get readOnly() {
     return this.getBooleanAttribute('read_only');
   }
-  public set readOnly(value: boolean | cdktf.IResolvable) {
+  public set readOnly(value: boolean | cdktn.IResolvable) {
     this._readOnly = value;
   }
   public resetReadOnly() {
@@ -1836,30 +1836,30 @@ export interface ZeroTrustGatewaySettingsSettingsFips {
   /**
   * Enforce cipher suites and TLS versions compliant with FIPS 140-2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#tls ZeroTrustGatewaySettings#tls}
   */
-  readonly tls?: boolean | cdktf.IResolvable;
+  readonly tls?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustGatewaySettingsSettingsFipsToTerraform(struct?: ZeroTrustGatewaySettingsSettingsFips | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsFipsToTerraform(struct?: ZeroTrustGatewaySettingsSettingsFips | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    tls: cdktf.booleanToTerraform(struct!.tls),
+    tls: cdktn.booleanToTerraform(struct!.tls),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsFipsToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsFips | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsFipsToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsFips | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     tls: {
-      value: cdktf.booleanToHclTerraform(struct!.tls),
+      value: cdktn.booleanToHclTerraform(struct!.tls),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1870,19 +1870,19 @@ export function zeroTrustGatewaySettingsSettingsFipsToHclTerraform(struct?: Zero
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsFipsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsFipsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsFips | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsFips | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1895,13 +1895,13 @@ export class ZeroTrustGatewaySettingsSettingsFipsOutputReference extends cdktf.C
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsFips | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsFips | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._tls = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1913,11 +1913,11 @@ export class ZeroTrustGatewaySettingsSettingsFipsOutputReference extends cdktf.C
   }
 
   // tls - computed: false, optional: true, required: false
-  private _tls?: boolean | cdktf.IResolvable; 
+  private _tls?: boolean | cdktn.IResolvable; 
   public get tls() {
     return this.getBooleanAttribute('tls');
   }
-  public set tls(value: boolean | cdktf.IResolvable) {
+  public set tls(value: boolean | cdktn.IResolvable) {
     this._tls = value;
   }
   public resetTls() {
@@ -1932,30 +1932,30 @@ export interface ZeroTrustGatewaySettingsSettingsHostSelector {
   /**
   * Specify whether to enable filtering via hosts for egress policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustGatewaySettingsSettingsHostSelectorToTerraform(struct?: ZeroTrustGatewaySettingsSettingsHostSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsHostSelectorToTerraform(struct?: ZeroTrustGatewaySettingsSettingsHostSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsHostSelectorToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsHostSelector | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsHostSelectorToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsHostSelector | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1966,19 +1966,19 @@ export function zeroTrustGatewaySettingsSettingsHostSelectorToHclTerraform(struc
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsHostSelector | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsHostSelector | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1991,13 +1991,13 @@ export class ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference extends
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsHostSelector | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsHostSelector | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2009,11 +2009,11 @@ export class ZeroTrustGatewaySettingsSettingsHostSelectorOutputReference extends
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2029,30 +2029,30 @@ export interface ZeroTrustGatewaySettingsSettingsInspection {
   * Define the proxy inspection mode.   1. static: Gateway applies static inspection to HTTP on TCP(80). With TLS decryption on, Gateway inspects HTTPS traffic on TCP(443) and UDP(443).   2. dynamic: Gateway applies protocol detection to inspect HTTP and HTTPS traffic on any port. TLS decryption must remain on to inspect HTTPS traffic.
   * Available values: "static", "dynamic".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#mode ZeroTrustGatewaySettings#mode}
   */
   readonly mode?: string;
 }
 
-export function zeroTrustGatewaySettingsSettingsInspectionToTerraform(struct?: ZeroTrustGatewaySettingsSettingsInspection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsInspectionToTerraform(struct?: ZeroTrustGatewaySettingsSettingsInspection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    mode: cdktf.stringToTerraform(struct!.mode),
+    mode: cdktn.stringToTerraform(struct!.mode),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsInspectionToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsInspection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsInspectionToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsInspection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     mode: {
-      value: cdktf.stringToHclTerraform(struct!.mode),
+      value: cdktn.stringToHclTerraform(struct!.mode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2063,19 +2063,19 @@ export function zeroTrustGatewaySettingsSettingsInspectionToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsInspectionOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsInspectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsInspection | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsInspection | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2088,13 +2088,13 @@ export class ZeroTrustGatewaySettingsSettingsInspectionOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsInspection | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsInspection | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._mode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2125,30 +2125,30 @@ export interface ZeroTrustGatewaySettingsSettingsProtocolDetection {
   /**
   * Specify whether to detect protocols from the initial bytes of client traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustGatewaySettingsSettingsProtocolDetectionToTerraform(struct?: ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsProtocolDetectionToTerraform(struct?: ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsProtocolDetectionToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsProtocolDetectionToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2159,19 +2159,19 @@ export function zeroTrustGatewaySettingsSettingsProtocolDetectionToHclTerraform(
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2184,13 +2184,13 @@ export class ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference ex
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsProtocolDetection | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2202,11 +2202,11 @@ export class ZeroTrustGatewaySettingsSettingsProtocolDetectionOutputReference ex
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2221,44 +2221,44 @@ export interface ZeroTrustGatewaySettingsSettingsSandbox {
   /**
   * Specify whether to enable the sandbox.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Specify the action to take when the system cannot scan the file.
   * Available values: "allow", "block".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#fallback_action ZeroTrustGatewaySettings#fallback_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#fallback_action ZeroTrustGatewaySettings#fallback_action}
   */
   readonly fallbackAction?: string;
 }
 
-export function zeroTrustGatewaySettingsSettingsSandboxToTerraform(struct?: ZeroTrustGatewaySettingsSettingsSandbox | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsSandboxToTerraform(struct?: ZeroTrustGatewaySettingsSettingsSandbox | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    fallback_action: cdktf.stringToTerraform(struct!.fallbackAction),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    fallback_action: cdktn.stringToTerraform(struct!.fallbackAction),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsSandboxToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsSandbox | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsSandboxToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsSandbox | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     fallback_action: {
-      value: cdktf.stringToHclTerraform(struct!.fallbackAction),
+      value: cdktn.stringToHclTerraform(struct!.fallbackAction),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -2269,19 +2269,19 @@ export function zeroTrustGatewaySettingsSettingsSandboxToHclTerraform(struct?: Z
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsSandboxOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsSandboxOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsSandbox | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsSandbox | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2298,14 +2298,14 @@ export class ZeroTrustGatewaySettingsSettingsSandboxOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsSandbox | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsSandbox | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
       this._fallbackAction = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2318,11 +2318,11 @@ export class ZeroTrustGatewaySettingsSettingsSandboxOutputReference extends cdkt
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2353,30 +2353,30 @@ export interface ZeroTrustGatewaySettingsSettingsTlsDecrypt {
   /**
   * Specify whether to inspect encrypted HTTP traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#enabled ZeroTrustGatewaySettings#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
 }
 
-export function zeroTrustGatewaySettingsSettingsTlsDecryptToTerraform(struct?: ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsTlsDecryptToTerraform(struct?: ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
   }
 }
 
 
-export function zeroTrustGatewaySettingsSettingsTlsDecryptToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsTlsDecryptToHclTerraform(struct?: ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -2387,19 +2387,19 @@ export function zeroTrustGatewaySettingsSettingsTlsDecryptToHclTerraform(struct?
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsTlsDecryptOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsTlsDecryptOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2412,13 +2412,13 @@ export class ZeroTrustGatewaySettingsSettingsTlsDecryptOutputReference extends c
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettingsTlsDecrypt | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._enabled = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2430,11 +2430,11 @@ export class ZeroTrustGatewaySettingsSettingsTlsDecryptOutputReference extends c
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -2449,92 +2449,92 @@ export interface ZeroTrustGatewaySettingsSettings {
   /**
   * Specify activity log settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#activity_log ZeroTrustGatewaySettings#activity_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#activity_log ZeroTrustGatewaySettings#activity_log}
   */
   readonly activityLog?: ZeroTrustGatewaySettingsSettingsActivityLog;
   /**
   * Specify anti-virus settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#antivirus ZeroTrustGatewaySettings#antivirus}
   */
   readonly antivirus?: ZeroTrustGatewaySettingsSettingsAntivirus;
   /**
   * Specify block page layout settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#block_page ZeroTrustGatewaySettings#block_page}
   */
   readonly blockPage?: ZeroTrustGatewaySettingsSettingsBlockPage;
   /**
   * Specify the DLP inspection mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#body_scanning ZeroTrustGatewaySettings#body_scanning}
   */
   readonly bodyScanning?: ZeroTrustGatewaySettingsSettingsBodyScanning;
   /**
   * Specify Clientless Browser Isolation settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#browser_isolation ZeroTrustGatewaySettings#browser_isolation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#browser_isolation ZeroTrustGatewaySettings#browser_isolation}
   */
   readonly browserIsolation?: ZeroTrustGatewaySettingsSettingsBrowserIsolation;
   /**
   * Specify certificate settings for Gateway TLS interception. If unset, the Cloudflare Root CA handles interception.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#certificate ZeroTrustGatewaySettings#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#certificate ZeroTrustGatewaySettings#certificate}
   */
   readonly certificate?: ZeroTrustGatewaySettingsSettingsCertificate;
   /**
   * Specify custom certificate settings for BYO-PKI. This field is deprecated; use `certificate` instead.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#custom_certificate ZeroTrustGatewaySettings#custom_certificate}
   */
   readonly customCertificate?: ZeroTrustGatewaySettingsSettingsCustomCertificate;
   /**
   * Configures user email settings for firewall policies. When you enable this, the system standardizes email addresses in the identity portion of the rule to match extended email variants in firewall policies. When you disable this setting, the system matches email addresses exactly as you provide them. Enable this setting if your email uses `.` or `+` modifiers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#extended_email_matching ZeroTrustGatewaySettings#extended_email_matching}
   */
   readonly extendedEmailMatching?: ZeroTrustGatewaySettingsSettingsExtendedEmailMatching;
   /**
   * Specify FIPS settings.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#fips ZeroTrustGatewaySettings#fips}
   */
   readonly fips?: ZeroTrustGatewaySettingsSettingsFips;
   /**
   * Enable host selection in egress policies.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#host_selector ZeroTrustGatewaySettings#host_selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#host_selector ZeroTrustGatewaySettings#host_selector}
   */
   readonly hostSelector?: ZeroTrustGatewaySettingsSettingsHostSelector;
   /**
   * Define the proxy inspection mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#inspection ZeroTrustGatewaySettings#inspection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#inspection ZeroTrustGatewaySettings#inspection}
   */
   readonly inspection?: ZeroTrustGatewaySettingsSettingsInspection;
   /**
   * Specify whether to detect protocols from the initial bytes of client traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#protocol_detection ZeroTrustGatewaySettings#protocol_detection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#protocol_detection ZeroTrustGatewaySettings#protocol_detection}
   */
   readonly protocolDetection?: ZeroTrustGatewaySettingsSettingsProtocolDetection;
   /**
   * Specify whether to enable the sandbox.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#sandbox ZeroTrustGatewaySettings#sandbox}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#sandbox ZeroTrustGatewaySettings#sandbox}
   */
   readonly sandbox?: ZeroTrustGatewaySettingsSettingsSandbox;
   /**
   * Specify whether to inspect encrypted HTTP traffic.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#tls_decrypt ZeroTrustGatewaySettings#tls_decrypt}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#tls_decrypt ZeroTrustGatewaySettings#tls_decrypt}
   */
   readonly tlsDecrypt?: ZeroTrustGatewaySettingsSettingsTlsDecrypt;
 }
 
-export function zeroTrustGatewaySettingsSettingsToTerraform(struct?: ZeroTrustGatewaySettingsSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsToTerraform(struct?: ZeroTrustGatewaySettingsSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -2556,9 +2556,9 @@ export function zeroTrustGatewaySettingsSettingsToTerraform(struct?: ZeroTrustGa
 }
 
 
-export function zeroTrustGatewaySettingsSettingsToHclTerraform(struct?: ZeroTrustGatewaySettingsSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustGatewaySettingsSettingsToHclTerraform(struct?: ZeroTrustGatewaySettingsSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -2652,19 +2652,19 @@ export function zeroTrustGatewaySettingsSettingsToHclTerraform(struct?: ZeroTrus
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustGatewaySettingsSettingsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustGatewaySettingsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZeroTrustGatewaySettingsSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustGatewaySettingsSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -2729,7 +2729,7 @@ export class ZeroTrustGatewaySettingsSettingsOutputReference extends cdktf.Compl
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustGatewaySettingsSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustGatewaySettingsSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -2748,7 +2748,7 @@ export class ZeroTrustGatewaySettingsSettingsOutputReference extends cdktf.Compl
       this._sandbox.internalValue = undefined;
       this._tlsDecrypt.internalValue = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -2998,9 +2998,9 @@ export class ZeroTrustGatewaySettingsSettingsOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings}
 */
-export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
+export class ZeroTrustGatewaySettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -3011,14 +3011,14 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustGatewaySettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustGatewaySettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustGatewaySettings to import
-  * @param importFromId The id of the existing ZeroTrustGatewaySettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustGatewaySettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustGatewaySettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_gateway_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_gateway_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -3026,7 +3026,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_gateway_settings cloudflare_zero_trust_gateway_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3037,7 +3037,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_gateway_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -3106,7 +3106,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       settings: zeroTrustGatewaySettingsSettingsToTerraform(this._settings.internalValue),
     };
   }
@@ -3114,7 +3114,7 @@ export class ZeroTrustGatewaySettings extends cdktf.TerraformResource {
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

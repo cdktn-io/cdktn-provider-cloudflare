@@ -1,54 +1,54 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SsoConnectorConfig extends cdktf.TerraformMetaArguments {
+export interface SsoConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
   */
   readonly accountId: string;
   /**
   * Begin the verification process after creation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
   */
-  readonly beginVerification?: boolean | cdktf.IResolvable;
+  readonly beginVerification?: boolean | cdktn.IResolvable;
   /**
   * Email domain of the new SSO connector
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
   */
   readonly emailDomain: string;
   /**
   * SSO Connector enabled state
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Controls the display of FedRAMP language to the user during SSO login
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
   */
-  readonly useFedrampLanguage?: boolean | cdktf.IResolvable;
+  readonly useFedrampLanguage?: boolean | cdktn.IResolvable;
 }
 export interface SsoConnectorVerification {
 }
 
 export function ssoConnectorVerificationToTerraform(struct?: SsoConnectorVerification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -57,8 +57,8 @@ export function ssoConnectorVerificationToTerraform(struct?: SsoConnectorVerific
 
 
 export function ssoConnectorVerificationToHclTerraform(struct?: SsoConnectorVerification): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -66,14 +66,14 @@ export function ssoConnectorVerificationToHclTerraform(struct?: SsoConnectorVeri
   return attrs;
 }
 
-export class SsoConnectorVerificationOutputReference extends cdktf.ComplexObject {
+export class SsoConnectorVerificationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -104,9 +104,9 @@ export class SsoConnectorVerificationOutputReference extends cdktf.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector}
 */
-export class SsoConnector extends cdktf.TerraformResource {
+export class SsoConnector extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -117,14 +117,14 @@ export class SsoConnector extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SsoConnector resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SsoConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoConnector to import
-  * @param importFromId The id of the existing SsoConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsoConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoConnector to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_sso_connector", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_sso_connector", importId: importFromId, provider });
       }
 
   // ===========
@@ -132,7 +132,7 @@ export class SsoConnector extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/sso_connector cloudflare_sso_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +143,7 @@ export class SsoConnector extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_sso_connector',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -179,11 +179,11 @@ export class SsoConnector extends cdktf.TerraformResource {
   }
 
   // begin_verification - computed: true, optional: true, required: false
-  private _beginVerification?: boolean | cdktf.IResolvable; 
+  private _beginVerification?: boolean | cdktn.IResolvable; 
   public get beginVerification() {
     return this.getBooleanAttribute('begin_verification');
   }
-  public set beginVerification(value: boolean | cdktf.IResolvable) {
+  public set beginVerification(value: boolean | cdktn.IResolvable) {
     this._beginVerification = value;
   }
   public resetBeginVerification() {
@@ -213,11 +213,11 @@ export class SsoConnector extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -239,11 +239,11 @@ export class SsoConnector extends cdktf.TerraformResource {
   }
 
   // use_fedramp_language - computed: true, optional: true, required: false
-  private _useFedrampLanguage?: boolean | cdktf.IResolvable; 
+  private _useFedrampLanguage?: boolean | cdktn.IResolvable; 
   public get useFedrampLanguage() {
     return this.getBooleanAttribute('use_fedramp_language');
   }
-  public set useFedrampLanguage(value: boolean | cdktf.IResolvable) {
+  public set useFedrampLanguage(value: boolean | cdktn.IResolvable) {
     this._useFedrampLanguage = value;
   }
   public resetUseFedrampLanguage() {
@@ -266,42 +266,42 @@ export class SsoConnector extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      begin_verification: cdktf.booleanToTerraform(this._beginVerification),
-      email_domain: cdktf.stringToTerraform(this._emailDomain),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      use_fedramp_language: cdktf.booleanToTerraform(this._useFedrampLanguage),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      begin_verification: cdktn.booleanToTerraform(this._beginVerification),
+      email_domain: cdktn.stringToTerraform(this._emailDomain),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      use_fedramp_language: cdktn.booleanToTerraform(this._useFedrampLanguage),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       begin_verification: {
-        value: cdktf.booleanToHclTerraform(this._beginVerification),
+        value: cdktn.booleanToHclTerraform(this._beginVerification),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       email_domain: {
-        value: cdktf.stringToHclTerraform(this._emailDomain),
+        value: cdktn.stringToHclTerraform(this._emailDomain),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       use_fedramp_language: {
-        value: cdktf.booleanToHclTerraform(this._useFedrampLanguage),
+        value: cdktn.booleanToHclTerraform(this._useFedrampLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -1,47 +1,47 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface EmailSecurityBlockSenderConfig extends cdktf.TerraformMetaArguments {
+export interface EmailSecurityBlockSenderConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}
   */
   readonly comments?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}
   */
-  readonly isRegex: boolean | cdktf.IResolvable;
+  readonly isRegex: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}
   */
   readonly pattern: string;
   /**
   * Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
   */
   readonly patternType: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}
 */
-export class EmailSecurityBlockSender extends cdktf.TerraformResource {
+export class EmailSecurityBlockSender extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -52,14 +52,14 @@ export class EmailSecurityBlockSender extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a EmailSecurityBlockSender resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a EmailSecurityBlockSender resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailSecurityBlockSender to import
-  * @param importFromId The id of the existing EmailSecurityBlockSender that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailSecurityBlockSender that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailSecurityBlockSender to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_block_sender", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_email_security_block_sender", importId: importFromId, provider });
       }
 
   // ===========
@@ -67,7 +67,7 @@ export class EmailSecurityBlockSender extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -78,7 +78,7 @@ export class EmailSecurityBlockSender extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_email_security_block_sender',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -140,11 +140,11 @@ export class EmailSecurityBlockSender extends cdktf.TerraformResource {
   }
 
   // is_regex - computed: false, optional: false, required: true
-  private _isRegex?: boolean | cdktf.IResolvable; 
+  private _isRegex?: boolean | cdktn.IResolvable; 
   public get isRegex() {
     return this.getBooleanAttribute('is_regex');
   }
-  public set isRegex(value: boolean | cdktf.IResolvable) {
+  public set isRegex(value: boolean | cdktn.IResolvable) {
     this._isRegex = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -189,42 +189,42 @@ export class EmailSecurityBlockSender extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      comments: cdktf.stringToTerraform(this._comments),
-      is_regex: cdktf.booleanToTerraform(this._isRegex),
-      pattern: cdktf.stringToTerraform(this._pattern),
-      pattern_type: cdktf.stringToTerraform(this._patternType),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      comments: cdktn.stringToTerraform(this._comments),
+      is_regex: cdktn.booleanToTerraform(this._isRegex),
+      pattern: cdktn.stringToTerraform(this._pattern),
+      pattern_type: cdktn.stringToTerraform(this._patternType),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       comments: {
-        value: cdktf.stringToHclTerraform(this._comments),
+        value: cdktn.stringToHclTerraform(this._comments),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       is_regex: {
-        value: cdktf.booleanToHclTerraform(this._isRegex),
+        value: cdktn.booleanToHclTerraform(this._isRegex),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       pattern: {
-        value: cdktf.stringToHclTerraform(this._pattern),
+        value: cdktn.stringToHclTerraform(this._pattern),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       pattern_type: {
-        value: cdktf.stringToHclTerraform(this._patternType),
+        value: cdktn.stringToHclTerraform(this._patternType),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

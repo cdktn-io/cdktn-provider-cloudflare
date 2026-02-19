@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WebAnalyticsSiteConfig extends cdktf.TerraformMetaArguments {
+export interface WebAnalyticsSiteConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
   */
   readonly accountId: string;
   /**
   * If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
   */
-  readonly autoInstall?: boolean | cdktf.IResolvable;
+  readonly autoInstall?: boolean | cdktn.IResolvable;
   /**
   * Enables or disables RUM. This option can be used only when auto_install is set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The hostname to use for gray-clouded sites.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
   */
   readonly host?: string;
   /**
   * If enabled, the JavaScript snippet will not be injected for visitors from the EU.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
   */
-  readonly lite?: boolean | cdktf.IResolvable;
+  readonly lite?: boolean | cdktn.IResolvable;
   /**
   * The zone identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
   */
   readonly zoneTag?: string;
 }
@@ -53,8 +53,8 @@ export interface WebAnalyticsSiteRules {
 }
 
 export function webAnalyticsSiteRulesToTerraform(struct?: WebAnalyticsSiteRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -63,8 +63,8 @@ export function webAnalyticsSiteRulesToTerraform(struct?: WebAnalyticsSiteRules)
 
 
 export function webAnalyticsSiteRulesToHclTerraform(struct?: WebAnalyticsSiteRules): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -72,7 +72,7 @@ export function webAnalyticsSiteRulesToHclTerraform(struct?: WebAnalyticsSiteRul
   return attrs;
 }
 
-export class WebAnalyticsSiteRulesOutputReference extends cdktf.ComplexObject {
+export class WebAnalyticsSiteRulesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -81,7 +81,7 @@ export class WebAnalyticsSiteRulesOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -136,14 +136,14 @@ export class WebAnalyticsSiteRulesOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class WebAnalyticsSiteRulesList extends cdktf.ComplexList {
+export class WebAnalyticsSiteRulesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -158,8 +158,8 @@ export interface WebAnalyticsSiteRuleset {
 }
 
 export function webAnalyticsSiteRulesetToTerraform(struct?: WebAnalyticsSiteRuleset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -168,8 +168,8 @@ export function webAnalyticsSiteRulesetToTerraform(struct?: WebAnalyticsSiteRule
 
 
 export function webAnalyticsSiteRulesetToHclTerraform(struct?: WebAnalyticsSiteRuleset): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -177,14 +177,14 @@ export function webAnalyticsSiteRulesetToHclTerraform(struct?: WebAnalyticsSiteR
   return attrs;
 }
 
-export class WebAnalyticsSiteRulesetOutputReference extends cdktf.ComplexObject {
+export class WebAnalyticsSiteRulesetOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -225,9 +225,9 @@ export class WebAnalyticsSiteRulesetOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}
 */
-export class WebAnalyticsSite extends cdktf.TerraformResource {
+export class WebAnalyticsSite extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -238,14 +238,14 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WebAnalyticsSite resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WebAnalyticsSite resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WebAnalyticsSite to import
-  * @param importFromId The id of the existing WebAnalyticsSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WebAnalyticsSite that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WebAnalyticsSite to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_web_analytics_site", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_web_analytics_site", importId: importFromId, provider });
       }
 
   // ===========
@@ -253,7 +253,7 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/web_analytics_site cloudflare_web_analytics_site} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -264,7 +264,7 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_web_analytics_site',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -301,11 +301,11 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
   }
 
   // auto_install - computed: false, optional: true, required: false
-  private _autoInstall?: boolean | cdktf.IResolvable; 
+  private _autoInstall?: boolean | cdktn.IResolvable; 
   public get autoInstall() {
     return this.getBooleanAttribute('auto_install');
   }
-  public set autoInstall(value: boolean | cdktf.IResolvable) {
+  public set autoInstall(value: boolean | cdktn.IResolvable) {
     this._autoInstall = value;
   }
   public resetAutoInstall() {
@@ -322,11 +322,11 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -359,11 +359,11 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
   }
 
   // lite - computed: false, optional: true, required: false
-  private _lite?: boolean | cdktf.IResolvable; 
+  private _lite?: boolean | cdktn.IResolvable; 
   public get lite() {
     return this.getBooleanAttribute('lite');
   }
-  public set lite(value: boolean | cdktf.IResolvable) {
+  public set lite(value: boolean | cdktn.IResolvable) {
     this._lite = value;
   }
   public resetLite() {
@@ -423,49 +423,49 @@ export class WebAnalyticsSite extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      auto_install: cdktf.booleanToTerraform(this._autoInstall),
-      enabled: cdktf.booleanToTerraform(this._enabled),
-      host: cdktf.stringToTerraform(this._host),
-      lite: cdktf.booleanToTerraform(this._lite),
-      zone_tag: cdktf.stringToTerraform(this._zoneTag),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      auto_install: cdktn.booleanToTerraform(this._autoInstall),
+      enabled: cdktn.booleanToTerraform(this._enabled),
+      host: cdktn.stringToTerraform(this._host),
+      lite: cdktn.booleanToTerraform(this._lite),
+      zone_tag: cdktn.stringToTerraform(this._zoneTag),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_install: {
-        value: cdktf.booleanToHclTerraform(this._autoInstall),
+        value: cdktn.booleanToHclTerraform(this._autoInstall),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled: {
-        value: cdktf.booleanToHclTerraform(this._enabled),
+        value: cdktn.booleanToHclTerraform(this._enabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       lite: {
-        value: cdktf.booleanToHclTerraform(this._lite),
+        value: cdktn.booleanToHclTerraform(this._lite),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone_tag: {
-        value: cdktf.stringToHclTerraform(this._zoneTag),
+        value: cdktn.stringToHclTerraform(this._zoneTag),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,36 +1,36 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_tiered_cache
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface RegionalTieredCacheConfig extends cdktf.TerraformMetaArguments {
+export interface RegionalTieredCacheConfig extends cdktn.TerraformMetaArguments {
   /**
   * Value of the Regional Tiered Cache zone setting.
   * Available values: "on", "off".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache#value RegionalTieredCache#value}
   */
   readonly value?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache#zone_id RegionalTieredCache#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache}
 */
-export class RegionalTieredCache extends cdktf.TerraformResource {
+export class RegionalTieredCache extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -41,14 +41,14 @@ export class RegionalTieredCache extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a RegionalTieredCache resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a RegionalTieredCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the RegionalTieredCache to import
-  * @param importFromId The id of the existing RegionalTieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_tiered_cache#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing RegionalTieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the RegionalTieredCache to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_regional_tiered_cache", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_regional_tiered_cache", importId: importFromId, provider });
       }
 
   // ===========
@@ -56,7 +56,7 @@ export class RegionalTieredCache extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/regional_tiered_cache cloudflare_regional_tiered_cache} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -67,7 +67,7 @@ export class RegionalTieredCache extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_regional_tiered_cache',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -136,21 +136,21 @@ export class RegionalTieredCache extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      value: cdktf.stringToTerraform(this._value),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      value: cdktn.stringToTerraform(this._value),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       value: {
-        value: cdktf.stringToHclTerraform(this._value),
+        value: cdktn.stringToHclTerraform(this._value),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

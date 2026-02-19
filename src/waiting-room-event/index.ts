@@ -1,125 +1,125 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WaitingRoomEventConfig extends cdktf.TerraformMetaArguments {
+export interface WaitingRoomEventConfig extends cdktn.TerraformMetaArguments {
   /**
   * If set, the event will override the waiting room's `custom_page_html` property while it is active. If null, the event will inherit it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#custom_page_html WaitingRoomEvent#custom_page_html}
   */
   readonly customPageHtml?: string;
   /**
   * A note that you can use to add more details about the event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#description WaitingRoomEvent#description}
   */
   readonly description?: string;
   /**
   * If set, the event will override the waiting room's `disable_session_renewal` property while it is active. If null, the event will inherit it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#disable_session_renewal WaitingRoomEvent#disable_session_renewal}
   */
-  readonly disableSessionRenewal?: boolean | cdktf.IResolvable;
+  readonly disableSessionRenewal?: boolean | cdktn.IResolvable;
   /**
   * An ISO 8601 timestamp that marks the end of the event.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#event_end_time WaitingRoomEvent#event_end_time}
   */
   readonly eventEndTime: string;
   /**
   * An ISO 8601 timestamp that marks the start of the event. At this time, queued users will be processed with the event's configuration. The start time must be at least one minute before `event_end_time`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#event_start_time WaitingRoomEvent#event_start_time}
   */
   readonly eventStartTime: string;
   /**
   * A unique name to identify the event. Only alphanumeric characters, hyphens and underscores are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#name WaitingRoomEvent#name}
   */
   readonly name: string;
   /**
   * If set, the event will override the waiting room's `new_users_per_minute` property while it is active. If null, the event will inherit it. This can only be set if the event's `total_active_users` property is also set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#new_users_per_minute WaitingRoomEvent#new_users_per_minute}
   */
   readonly newUsersPerMinute?: number;
   /**
   * An ISO 8601 timestamp that marks when to begin queueing all users before the event starts. The prequeue must start at least five minutes before `event_start_time`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#prequeue_start_time WaitingRoomEvent#prequeue_start_time}
   */
   readonly prequeueStartTime?: string;
   /**
   * If set, the event will override the waiting room's `queueing_method` property while it is active. If null, the event will inherit it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#queueing_method WaitingRoomEvent#queueing_method}
   */
   readonly queueingMethod?: string;
   /**
   * If set, the event will override the waiting room's `session_duration` property while it is active. If null, the event will inherit it.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#session_duration WaitingRoomEvent#session_duration}
   */
   readonly sessionDuration?: number;
   /**
   * If enabled, users in the prequeue will be shuffled randomly at the `event_start_time`. Requires that `prequeue_start_time` is not null. This is useful for situations when many users will join the event prequeue at the same time and you want to shuffle them to ensure fairness. Naturally, it makes the most sense to enable this feature when the `queueing_method` during the event respects ordering such as **fifo**, or else the shuffling may be unnecessary.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#shuffle_at_event_start WaitingRoomEvent#shuffle_at_event_start}
   */
-  readonly shuffleAtEventStart?: boolean | cdktf.IResolvable;
+  readonly shuffleAtEventStart?: boolean | cdktn.IResolvable;
   /**
   * Suspends or allows an event. If set to `true`, the event is ignored and traffic will be handled based on the waiting room configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#suspended WaitingRoomEvent#suspended}
   */
-  readonly suspended?: boolean | cdktf.IResolvable;
+  readonly suspended?: boolean | cdktn.IResolvable;
   /**
   * If set, the event will override the waiting room's `total_active_users` property while it is active. If null, the event will inherit it. This can only be set if the event's `new_users_per_minute` property is also set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#total_active_users WaitingRoomEvent#total_active_users}
   */
   readonly totalActiveUsers?: number;
   /**
   * If set, the event will override the waiting room's `turnstile_action` property while it is active. If null, the event will inherit it.
   * Available values: "log", "infinite_queue".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#turnstile_action WaitingRoomEvent#turnstile_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#turnstile_action WaitingRoomEvent#turnstile_action}
   */
   readonly turnstileAction?: string;
   /**
   * If set, the event will override the waiting room's `turnstile_mode` property while it is active. If null, the event will inherit it.
   * Available values: "off", "invisible", "visible_non_interactive", "visible_managed".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#turnstile_mode WaitingRoomEvent#turnstile_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#turnstile_mode WaitingRoomEvent#turnstile_mode}
   */
   readonly turnstileMode?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#waiting_room_id WaitingRoomEvent#waiting_room_id}
   */
   readonly waitingRoomId: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#zone_id WaitingRoomEvent#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event cloudflare_waiting_room_event}
 */
-export class WaitingRoomEvent extends cdktf.TerraformResource {
+export class WaitingRoomEvent extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -130,14 +130,14 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WaitingRoomEvent resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WaitingRoomEvent resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoomEvent to import
-  * @param importFromId The id of the existing WaitingRoomEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoomEvent that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoomEvent to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_waiting_room_event", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_waiting_room_event", importId: importFromId, provider });
       }
 
   // ===========
@@ -145,7 +145,7 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room_event cloudflare_waiting_room_event} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room_event',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -228,11 +228,11 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
   }
 
   // disable_session_renewal - computed: false, optional: true, required: false
-  private _disableSessionRenewal?: boolean | cdktf.IResolvable; 
+  private _disableSessionRenewal?: boolean | cdktn.IResolvable; 
   public get disableSessionRenewal() {
     return this.getBooleanAttribute('disable_session_renewal');
   }
-  public set disableSessionRenewal(value: boolean | cdktf.IResolvable) {
+  public set disableSessionRenewal(value: boolean | cdktn.IResolvable) {
     this._disableSessionRenewal = value;
   }
   public resetDisableSessionRenewal() {
@@ -357,11 +357,11 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
   }
 
   // shuffle_at_event_start - computed: true, optional: true, required: false
-  private _shuffleAtEventStart?: boolean | cdktf.IResolvable; 
+  private _shuffleAtEventStart?: boolean | cdktn.IResolvable; 
   public get shuffleAtEventStart() {
     return this.getBooleanAttribute('shuffle_at_event_start');
   }
-  public set shuffleAtEventStart(value: boolean | cdktf.IResolvable) {
+  public set shuffleAtEventStart(value: boolean | cdktn.IResolvable) {
     this._shuffleAtEventStart = value;
   }
   public resetShuffleAtEventStart() {
@@ -373,11 +373,11 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
   }
 
   // suspended - computed: true, optional: true, required: false
-  private _suspended?: boolean | cdktf.IResolvable; 
+  private _suspended?: boolean | cdktn.IResolvable; 
   public get suspended() {
     return this.getBooleanAttribute('suspended');
   }
-  public set suspended(value: boolean | cdktf.IResolvable) {
+  public set suspended(value: boolean | cdktn.IResolvable) {
     this._suspended = value;
   }
   public resetSuspended() {
@@ -468,126 +468,126 @@ export class WaitingRoomEvent extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_page_html: cdktf.stringToTerraform(this._customPageHtml),
-      description: cdktf.stringToTerraform(this._description),
-      disable_session_renewal: cdktf.booleanToTerraform(this._disableSessionRenewal),
-      event_end_time: cdktf.stringToTerraform(this._eventEndTime),
-      event_start_time: cdktf.stringToTerraform(this._eventStartTime),
-      name: cdktf.stringToTerraform(this._name),
-      new_users_per_minute: cdktf.numberToTerraform(this._newUsersPerMinute),
-      prequeue_start_time: cdktf.stringToTerraform(this._prequeueStartTime),
-      queueing_method: cdktf.stringToTerraform(this._queueingMethod),
-      session_duration: cdktf.numberToTerraform(this._sessionDuration),
-      shuffle_at_event_start: cdktf.booleanToTerraform(this._shuffleAtEventStart),
-      suspended: cdktf.booleanToTerraform(this._suspended),
-      total_active_users: cdktf.numberToTerraform(this._totalActiveUsers),
-      turnstile_action: cdktf.stringToTerraform(this._turnstileAction),
-      turnstile_mode: cdktf.stringToTerraform(this._turnstileMode),
-      waiting_room_id: cdktf.stringToTerraform(this._waitingRoomId),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      custom_page_html: cdktn.stringToTerraform(this._customPageHtml),
+      description: cdktn.stringToTerraform(this._description),
+      disable_session_renewal: cdktn.booleanToTerraform(this._disableSessionRenewal),
+      event_end_time: cdktn.stringToTerraform(this._eventEndTime),
+      event_start_time: cdktn.stringToTerraform(this._eventStartTime),
+      name: cdktn.stringToTerraform(this._name),
+      new_users_per_minute: cdktn.numberToTerraform(this._newUsersPerMinute),
+      prequeue_start_time: cdktn.stringToTerraform(this._prequeueStartTime),
+      queueing_method: cdktn.stringToTerraform(this._queueingMethod),
+      session_duration: cdktn.numberToTerraform(this._sessionDuration),
+      shuffle_at_event_start: cdktn.booleanToTerraform(this._shuffleAtEventStart),
+      suspended: cdktn.booleanToTerraform(this._suspended),
+      total_active_users: cdktn.numberToTerraform(this._totalActiveUsers),
+      turnstile_action: cdktn.stringToTerraform(this._turnstileAction),
+      turnstile_mode: cdktn.stringToTerraform(this._turnstileMode),
+      waiting_room_id: cdktn.stringToTerraform(this._waitingRoomId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_page_html: {
-        value: cdktf.stringToHclTerraform(this._customPageHtml),
+        value: cdktn.stringToHclTerraform(this._customPageHtml),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_session_renewal: {
-        value: cdktf.booleanToHclTerraform(this._disableSessionRenewal),
+        value: cdktn.booleanToHclTerraform(this._disableSessionRenewal),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       event_end_time: {
-        value: cdktf.stringToHclTerraform(this._eventEndTime),
+        value: cdktn.stringToHclTerraform(this._eventEndTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       event_start_time: {
-        value: cdktf.stringToHclTerraform(this._eventStartTime),
+        value: cdktn.stringToHclTerraform(this._eventStartTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       new_users_per_minute: {
-        value: cdktf.numberToHclTerraform(this._newUsersPerMinute),
+        value: cdktn.numberToHclTerraform(this._newUsersPerMinute),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       prequeue_start_time: {
-        value: cdktf.stringToHclTerraform(this._prequeueStartTime),
+        value: cdktn.stringToHclTerraform(this._prequeueStartTime),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queueing_method: {
-        value: cdktf.stringToHclTerraform(this._queueingMethod),
+        value: cdktn.stringToHclTerraform(this._queueingMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       session_duration: {
-        value: cdktf.numberToHclTerraform(this._sessionDuration),
+        value: cdktn.numberToHclTerraform(this._sessionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       shuffle_at_event_start: {
-        value: cdktf.booleanToHclTerraform(this._shuffleAtEventStart),
+        value: cdktn.booleanToHclTerraform(this._shuffleAtEventStart),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       suspended: {
-        value: cdktf.booleanToHclTerraform(this._suspended),
+        value: cdktn.booleanToHclTerraform(this._suspended),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       total_active_users: {
-        value: cdktf.numberToHclTerraform(this._totalActiveUsers),
+        value: cdktn.numberToHclTerraform(this._totalActiveUsers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       turnstile_action: {
-        value: cdktf.stringToHclTerraform(this._turnstileAction),
+        value: cdktn.stringToHclTerraform(this._turnstileAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       turnstile_mode: {
-        value: cdktf.stringToHclTerraform(this._turnstileMode),
+        value: cdktn.stringToHclTerraform(this._turnstileMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       waiting_room_id: {
-        value: cdktf.stringToHclTerraform(this._waitingRoomId),
+        value: cdktn.stringToHclTerraform(this._waitingRoomId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

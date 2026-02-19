@@ -1,82 +1,82 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DnsRecordConfig extends cdktf.TerraformMetaArguments {
+export interface DnsRecordConfig extends cdktn.TerraformMetaArguments {
   /**
   * Comments or notes about the DNS record. This field has no effect on DNS responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#comment DnsRecord#comment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#comment DnsRecord#comment}
   */
   readonly comment?: string;
   /**
   * A valid IPv4 address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#content DnsRecord#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#content DnsRecord#content}
   */
   readonly content?: string;
   /**
   * Components of a CAA record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#data DnsRecord#data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#data DnsRecord#data}
   */
   readonly data?: DnsRecordData;
   /**
   * DNS record name (or @ for the zone apex) in Punycode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#name DnsRecord#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#name DnsRecord#name}
   */
   readonly name: string;
   /**
   * Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#priority DnsRecord#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#priority DnsRecord#priority}
   */
   readonly priority?: number;
   /**
   * Whether the record is receiving the performance and security benefits of Cloudflare.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#proxied DnsRecord#proxied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#proxied DnsRecord#proxied}
   */
-  readonly proxied?: boolean | cdktf.IResolvable;
+  readonly proxied?: boolean | cdktn.IResolvable;
   /**
   * Settings for the DNS record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#settings DnsRecord#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#settings DnsRecord#settings}
   */
   readonly settings?: DnsRecordSettings;
   /**
   * Custom tags for the DNS record. This field has no effect on DNS responses.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#tags DnsRecord#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#tags DnsRecord#tags}
   */
   readonly tags?: string[];
   /**
   * Time To Live (TTL) of the DNS record in seconds. Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ttl DnsRecord#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ttl DnsRecord#ttl}
   */
   readonly ttl: number;
   /**
   * Record type.
   * Available values: "A", "AAAA", "CNAME", "MX", "NS", "OPENPGPKEY", "PTR", "TXT", "CAA", "CERT", "DNSKEY", "DS", "HTTPS", "LOC", "NAPTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "URI".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#type DnsRecord#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#type DnsRecord#type}
   */
   readonly type: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
   */
   readonly zoneId: string;
 }
@@ -84,487 +84,487 @@ export interface DnsRecordData {
   /**
   * Algorithm.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
   */
   readonly algorithm?: number;
   /**
   * Altitude of location in meters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#altitude DnsRecord#altitude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#altitude DnsRecord#altitude}
   */
   readonly altitude?: number;
   /**
   * Certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#certificate DnsRecord#certificate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#certificate DnsRecord#certificate}
   */
   readonly certificate?: string;
   /**
   * Digest.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#digest DnsRecord#digest}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#digest DnsRecord#digest}
   */
   readonly digest?: string;
   /**
   * Digest Type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
   */
   readonly digestType?: number;
   /**
   * Fingerprint.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
   */
   readonly fingerprint?: string;
   /**
   * Flags for the CAA record.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#flags DnsRecord#flags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#flags DnsRecord#flags}
   */
   readonly flags?: { [key: string]: any };
   /**
   * Key Tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
   */
   readonly keyTag?: number;
   /**
   * Degrees of latitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
   */
   readonly latDegrees?: number;
   /**
   * Latitude direction.
   * Available values: "N", "S".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
   */
   readonly latDirection?: string;
   /**
   * Minutes of latitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
   */
   readonly latMinutes?: number;
   /**
   * Seconds of latitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
   */
   readonly latSeconds?: number;
   /**
   * Degrees of longitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
   */
   readonly longDegrees?: number;
   /**
   * Longitude direction.
   * Available values: "E", "W".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
   */
   readonly longDirection?: string;
   /**
   * Minutes of longitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
   */
   readonly longMinutes?: number;
   /**
   * Seconds of longitude.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
   */
   readonly longSeconds?: number;
   /**
   * Matching Type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
   */
   readonly matchingType?: number;
   /**
   * Order.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#order DnsRecord#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#order DnsRecord#order}
   */
   readonly order?: number;
   /**
   * The port of the service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#port DnsRecord#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#port DnsRecord#port}
   */
   readonly port?: number;
   /**
   * Horizontal precision of location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
   */
   readonly precisionHorz?: number;
   /**
   * Vertical precision of location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
   */
   readonly precisionVert?: number;
   /**
   * Preference.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#preference DnsRecord#preference}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#preference DnsRecord#preference}
   */
   readonly preference?: number;
   /**
   * Priority.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#priority DnsRecord#priority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#priority DnsRecord#priority}
   */
   readonly priority?: number;
   /**
   * Protocol.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#protocol DnsRecord#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#protocol DnsRecord#protocol}
   */
   readonly protocol?: number;
   /**
   * Public Key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#public_key DnsRecord#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#public_key DnsRecord#public_key}
   */
   readonly publicKey?: string;
   /**
   * Regex.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#regex DnsRecord#regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#regex DnsRecord#regex}
   */
   readonly regex?: string;
   /**
   * Replacement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#replacement DnsRecord#replacement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#replacement DnsRecord#replacement}
   */
   readonly replacement?: string;
   /**
   * Selector.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#selector DnsRecord#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#selector DnsRecord#selector}
   */
   readonly selector?: number;
   /**
   * Service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#service DnsRecord#service}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#service DnsRecord#service}
   */
   readonly service?: string;
   /**
   * Size of location in meters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#size DnsRecord#size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#size DnsRecord#size}
   */
   readonly size?: number;
   /**
   * Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#tag DnsRecord#tag}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#tag DnsRecord#tag}
   */
   readonly tag?: string;
   /**
   * Target.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#target DnsRecord#target}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#target DnsRecord#target}
   */
   readonly target?: string;
   /**
   * Type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#type DnsRecord#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#type DnsRecord#type}
   */
   readonly type?: number;
   /**
   * Usage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#usage DnsRecord#usage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#usage DnsRecord#usage}
   */
   readonly usage?: number;
   /**
   * Value of the record. This field's semantics depend on the chosen tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#value DnsRecord#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#value DnsRecord#value}
   */
   readonly value?: string;
   /**
   * The record weight.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#weight DnsRecord#weight}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#weight DnsRecord#weight}
   */
   readonly weight?: number;
 }
 
-export function dnsRecordDataToTerraform(struct?: DnsRecordData | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordDataToTerraform(struct?: DnsRecordData | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    algorithm: cdktf.numberToTerraform(struct!.algorithm),
-    altitude: cdktf.numberToTerraform(struct!.altitude),
-    certificate: cdktf.stringToTerraform(struct!.certificate),
-    digest: cdktf.stringToTerraform(struct!.digest),
-    digest_type: cdktf.numberToTerraform(struct!.digestType),
-    fingerprint: cdktf.stringToTerraform(struct!.fingerprint),
-    flags: cdktf.hashMapper(cdktf.anyToTerraform)(struct!.flags),
-    key_tag: cdktf.numberToTerraform(struct!.keyTag),
-    lat_degrees: cdktf.numberToTerraform(struct!.latDegrees),
-    lat_direction: cdktf.stringToTerraform(struct!.latDirection),
-    lat_minutes: cdktf.numberToTerraform(struct!.latMinutes),
-    lat_seconds: cdktf.numberToTerraform(struct!.latSeconds),
-    long_degrees: cdktf.numberToTerraform(struct!.longDegrees),
-    long_direction: cdktf.stringToTerraform(struct!.longDirection),
-    long_minutes: cdktf.numberToTerraform(struct!.longMinutes),
-    long_seconds: cdktf.numberToTerraform(struct!.longSeconds),
-    matching_type: cdktf.numberToTerraform(struct!.matchingType),
-    order: cdktf.numberToTerraform(struct!.order),
-    port: cdktf.numberToTerraform(struct!.port),
-    precision_horz: cdktf.numberToTerraform(struct!.precisionHorz),
-    precision_vert: cdktf.numberToTerraform(struct!.precisionVert),
-    preference: cdktf.numberToTerraform(struct!.preference),
-    priority: cdktf.numberToTerraform(struct!.priority),
-    protocol: cdktf.numberToTerraform(struct!.protocol),
-    public_key: cdktf.stringToTerraform(struct!.publicKey),
-    regex: cdktf.stringToTerraform(struct!.regex),
-    replacement: cdktf.stringToTerraform(struct!.replacement),
-    selector: cdktf.numberToTerraform(struct!.selector),
-    service: cdktf.stringToTerraform(struct!.service),
-    size: cdktf.numberToTerraform(struct!.size),
-    tag: cdktf.stringToTerraform(struct!.tag),
-    target: cdktf.stringToTerraform(struct!.target),
-    type: cdktf.numberToTerraform(struct!.type),
-    usage: cdktf.numberToTerraform(struct!.usage),
-    value: cdktf.stringToTerraform(struct!.value),
-    weight: cdktf.numberToTerraform(struct!.weight),
+    algorithm: cdktn.numberToTerraform(struct!.algorithm),
+    altitude: cdktn.numberToTerraform(struct!.altitude),
+    certificate: cdktn.stringToTerraform(struct!.certificate),
+    digest: cdktn.stringToTerraform(struct!.digest),
+    digest_type: cdktn.numberToTerraform(struct!.digestType),
+    fingerprint: cdktn.stringToTerraform(struct!.fingerprint),
+    flags: cdktn.hashMapper(cdktn.anyToTerraform)(struct!.flags),
+    key_tag: cdktn.numberToTerraform(struct!.keyTag),
+    lat_degrees: cdktn.numberToTerraform(struct!.latDegrees),
+    lat_direction: cdktn.stringToTerraform(struct!.latDirection),
+    lat_minutes: cdktn.numberToTerraform(struct!.latMinutes),
+    lat_seconds: cdktn.numberToTerraform(struct!.latSeconds),
+    long_degrees: cdktn.numberToTerraform(struct!.longDegrees),
+    long_direction: cdktn.stringToTerraform(struct!.longDirection),
+    long_minutes: cdktn.numberToTerraform(struct!.longMinutes),
+    long_seconds: cdktn.numberToTerraform(struct!.longSeconds),
+    matching_type: cdktn.numberToTerraform(struct!.matchingType),
+    order: cdktn.numberToTerraform(struct!.order),
+    port: cdktn.numberToTerraform(struct!.port),
+    precision_horz: cdktn.numberToTerraform(struct!.precisionHorz),
+    precision_vert: cdktn.numberToTerraform(struct!.precisionVert),
+    preference: cdktn.numberToTerraform(struct!.preference),
+    priority: cdktn.numberToTerraform(struct!.priority),
+    protocol: cdktn.numberToTerraform(struct!.protocol),
+    public_key: cdktn.stringToTerraform(struct!.publicKey),
+    regex: cdktn.stringToTerraform(struct!.regex),
+    replacement: cdktn.stringToTerraform(struct!.replacement),
+    selector: cdktn.numberToTerraform(struct!.selector),
+    service: cdktn.stringToTerraform(struct!.service),
+    size: cdktn.numberToTerraform(struct!.size),
+    tag: cdktn.stringToTerraform(struct!.tag),
+    target: cdktn.stringToTerraform(struct!.target),
+    type: cdktn.numberToTerraform(struct!.type),
+    usage: cdktn.numberToTerraform(struct!.usage),
+    value: cdktn.stringToTerraform(struct!.value),
+    weight: cdktn.numberToTerraform(struct!.weight),
   }
 }
 
 
-export function dnsRecordDataToHclTerraform(struct?: DnsRecordData | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordDataToHclTerraform(struct?: DnsRecordData | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     algorithm: {
-      value: cdktf.numberToHclTerraform(struct!.algorithm),
+      value: cdktn.numberToHclTerraform(struct!.algorithm),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     altitude: {
-      value: cdktf.numberToHclTerraform(struct!.altitude),
+      value: cdktn.numberToHclTerraform(struct!.altitude),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     certificate: {
-      value: cdktf.stringToHclTerraform(struct!.certificate),
+      value: cdktn.stringToHclTerraform(struct!.certificate),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     digest: {
-      value: cdktf.stringToHclTerraform(struct!.digest),
+      value: cdktn.stringToHclTerraform(struct!.digest),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     digest_type: {
-      value: cdktf.numberToHclTerraform(struct!.digestType),
+      value: cdktn.numberToHclTerraform(struct!.digestType),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     fingerprint: {
-      value: cdktf.stringToHclTerraform(struct!.fingerprint),
+      value: cdktn.stringToHclTerraform(struct!.fingerprint),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     flags: {
-      value: cdktf.hashMapperHcl(cdktf.anyToHclTerraform)(struct!.flags),
+      value: cdktn.hashMapperHcl(cdktn.anyToHclTerraform)(struct!.flags),
       isBlock: false,
       type: "map",
       storageClassType: "anyMap",
     },
     key_tag: {
-      value: cdktf.numberToHclTerraform(struct!.keyTag),
+      value: cdktn.numberToHclTerraform(struct!.keyTag),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lat_degrees: {
-      value: cdktf.numberToHclTerraform(struct!.latDegrees),
+      value: cdktn.numberToHclTerraform(struct!.latDegrees),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lat_direction: {
-      value: cdktf.stringToHclTerraform(struct!.latDirection),
+      value: cdktn.stringToHclTerraform(struct!.latDirection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     lat_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.latMinutes),
+      value: cdktn.numberToHclTerraform(struct!.latMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     lat_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.latSeconds),
+      value: cdktn.numberToHclTerraform(struct!.latSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     long_degrees: {
-      value: cdktf.numberToHclTerraform(struct!.longDegrees),
+      value: cdktn.numberToHclTerraform(struct!.longDegrees),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     long_direction: {
-      value: cdktf.stringToHclTerraform(struct!.longDirection),
+      value: cdktn.stringToHclTerraform(struct!.longDirection),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     long_minutes: {
-      value: cdktf.numberToHclTerraform(struct!.longMinutes),
+      value: cdktn.numberToHclTerraform(struct!.longMinutes),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     long_seconds: {
-      value: cdktf.numberToHclTerraform(struct!.longSeconds),
+      value: cdktn.numberToHclTerraform(struct!.longSeconds),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     matching_type: {
-      value: cdktf.numberToHclTerraform(struct!.matchingType),
+      value: cdktn.numberToHclTerraform(struct!.matchingType),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     order: {
-      value: cdktf.numberToHclTerraform(struct!.order),
+      value: cdktn.numberToHclTerraform(struct!.order),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     precision_horz: {
-      value: cdktf.numberToHclTerraform(struct!.precisionHorz),
+      value: cdktn.numberToHclTerraform(struct!.precisionHorz),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     precision_vert: {
-      value: cdktf.numberToHclTerraform(struct!.precisionVert),
+      value: cdktn.numberToHclTerraform(struct!.precisionVert),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     preference: {
-      value: cdktf.numberToHclTerraform(struct!.preference),
+      value: cdktn.numberToHclTerraform(struct!.preference),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     priority: {
-      value: cdktf.numberToHclTerraform(struct!.priority),
+      value: cdktn.numberToHclTerraform(struct!.priority),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     protocol: {
-      value: cdktf.numberToHclTerraform(struct!.protocol),
+      value: cdktn.numberToHclTerraform(struct!.protocol),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     public_key: {
-      value: cdktf.stringToHclTerraform(struct!.publicKey),
+      value: cdktn.stringToHclTerraform(struct!.publicKey),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     regex: {
-      value: cdktf.stringToHclTerraform(struct!.regex),
+      value: cdktn.stringToHclTerraform(struct!.regex),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     replacement: {
-      value: cdktf.stringToHclTerraform(struct!.replacement),
+      value: cdktn.stringToHclTerraform(struct!.replacement),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     selector: {
-      value: cdktf.numberToHclTerraform(struct!.selector),
+      value: cdktn.numberToHclTerraform(struct!.selector),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     service: {
-      value: cdktf.stringToHclTerraform(struct!.service),
+      value: cdktn.stringToHclTerraform(struct!.service),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     size: {
-      value: cdktf.numberToHclTerraform(struct!.size),
+      value: cdktn.numberToHclTerraform(struct!.size),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     tag: {
-      value: cdktf.stringToHclTerraform(struct!.tag),
+      value: cdktn.stringToHclTerraform(struct!.tag),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     target: {
-      value: cdktf.stringToHclTerraform(struct!.target),
+      value: cdktn.stringToHclTerraform(struct!.target),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     type: {
-      value: cdktf.numberToHclTerraform(struct!.type),
+      value: cdktn.numberToHclTerraform(struct!.type),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     usage: {
-      value: cdktf.numberToHclTerraform(struct!.usage),
+      value: cdktn.numberToHclTerraform(struct!.usage),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     value: {
-      value: cdktf.stringToHclTerraform(struct!.value),
+      value: cdktn.stringToHclTerraform(struct!.value),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     weight: {
-      value: cdktf.numberToHclTerraform(struct!.weight),
+      value: cdktn.numberToHclTerraform(struct!.weight),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -575,19 +575,19 @@ export function dnsRecordDataToHclTerraform(struct?: DnsRecordData | cdktf.IReso
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
+export class DnsRecordDataOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DnsRecordData | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordData | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -740,7 +740,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordData | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordData | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -781,7 +781,7 @@ export class DnsRecordDataOutputReference extends cdktf.ComplexObject {
       this._value = undefined;
       this._weight = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1407,56 +1407,56 @@ export interface DnsRecordSettings {
   /**
   * If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
   */
-  readonly flattenCname?: boolean | cdktf.IResolvable;
+  readonly flattenCname?: boolean | cdktn.IResolvable;
   /**
   * When enabled, only A records will be generated, and AAAA records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
   */
-  readonly ipv4Only?: boolean | cdktf.IResolvable;
+  readonly ipv4Only?: boolean | cdktn.IResolvable;
   /**
   * When enabled, only AAAA records will be generated, and A records will not be created. This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
   */
-  readonly ipv6Only?: boolean | cdktf.IResolvable;
+  readonly ipv6Only?: boolean | cdktn.IResolvable;
 }
 
-export function dnsRecordSettingsToTerraform(struct?: DnsRecordSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSettingsToTerraform(struct?: DnsRecordSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    flatten_cname: cdktf.booleanToTerraform(struct!.flattenCname),
-    ipv4_only: cdktf.booleanToTerraform(struct!.ipv4Only),
-    ipv6_only: cdktf.booleanToTerraform(struct!.ipv6Only),
+    flatten_cname: cdktn.booleanToTerraform(struct!.flattenCname),
+    ipv4_only: cdktn.booleanToTerraform(struct!.ipv4Only),
+    ipv6_only: cdktn.booleanToTerraform(struct!.ipv6Only),
   }
 }
 
 
-export function dnsRecordSettingsToHclTerraform(struct?: DnsRecordSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dnsRecordSettingsToHclTerraform(struct?: DnsRecordSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     flatten_cname: {
-      value: cdktf.booleanToHclTerraform(struct!.flattenCname),
+      value: cdktn.booleanToHclTerraform(struct!.flattenCname),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ipv4_only: {
-      value: cdktf.booleanToHclTerraform(struct!.ipv4Only),
+      value: cdktn.booleanToHclTerraform(struct!.ipv4Only),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     ipv6_only: {
-      value: cdktf.booleanToHclTerraform(struct!.ipv6Only),
+      value: cdktn.booleanToHclTerraform(struct!.ipv6Only),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -1467,19 +1467,19 @@ export function dnsRecordSettingsToHclTerraform(struct?: DnsRecordSettings | cdk
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
+export class DnsRecordSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DnsRecordSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): DnsRecordSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -1500,7 +1500,7 @@ export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DnsRecordSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DnsRecordSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -1508,7 +1508,7 @@ export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
       this._ipv4Only = undefined;
       this._ipv6Only = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -1522,11 +1522,11 @@ export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
   }
 
   // flatten_cname - computed: true, optional: true, required: false
-  private _flattenCname?: boolean | cdktf.IResolvable; 
+  private _flattenCname?: boolean | cdktn.IResolvable; 
   public get flattenCname() {
     return this.getBooleanAttribute('flatten_cname');
   }
-  public set flattenCname(value: boolean | cdktf.IResolvable) {
+  public set flattenCname(value: boolean | cdktn.IResolvable) {
     this._flattenCname = value;
   }
   public resetFlattenCname() {
@@ -1538,11 +1538,11 @@ export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
   }
 
   // ipv4_only - computed: true, optional: true, required: false
-  private _ipv4Only?: boolean | cdktf.IResolvable; 
+  private _ipv4Only?: boolean | cdktn.IResolvable; 
   public get ipv4Only() {
     return this.getBooleanAttribute('ipv4_only');
   }
-  public set ipv4Only(value: boolean | cdktf.IResolvable) {
+  public set ipv4Only(value: boolean | cdktn.IResolvable) {
     this._ipv4Only = value;
   }
   public resetIpv4Only() {
@@ -1554,11 +1554,11 @@ export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
   }
 
   // ipv6_only - computed: true, optional: true, required: false
-  private _ipv6Only?: boolean | cdktf.IResolvable; 
+  private _ipv6Only?: boolean | cdktn.IResolvable; 
   public get ipv6Only() {
     return this.getBooleanAttribute('ipv6_only');
   }
-  public set ipv6Only(value: boolean | cdktf.IResolvable) {
+  public set ipv6Only(value: boolean | cdktn.IResolvable) {
     this._ipv6Only = value;
   }
   public resetIpv6Only() {
@@ -1571,9 +1571,9 @@ export class DnsRecordSettingsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record cloudflare_dns_record}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record cloudflare_dns_record}
 */
-export class DnsRecord extends cdktf.TerraformResource {
+export class DnsRecord extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -1584,14 +1584,14 @@ export class DnsRecord extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DnsRecord resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DnsRecord resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsRecord to import
-  * @param importFromId The id of the existing DnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsRecord that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsRecord to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_record", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_dns_record", importId: importFromId, provider });
       }
 
   // ===========
@@ -1599,7 +1599,7 @@ export class DnsRecord extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/dns_record cloudflare_dns_record} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_record cloudflare_dns_record} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1610,7 +1610,7 @@ export class DnsRecord extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_dns_record',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1746,11 +1746,11 @@ export class DnsRecord extends cdktf.TerraformResource {
   }
 
   // proxied - computed: true, optional: true, required: false
-  private _proxied?: boolean | cdktf.IResolvable; 
+  private _proxied?: boolean | cdktn.IResolvable; 
   public get proxied() {
     return this.getBooleanAttribute('proxied');
   }
-  public set proxied(value: boolean | cdktf.IResolvable) {
+  public set proxied(value: boolean | cdktn.IResolvable) {
     this._proxied = value;
   }
   public resetProxied() {
@@ -1780,7 +1780,7 @@ export class DnsRecord extends cdktf.TerraformResource {
   // tags - computed: true, optional: true, required: false
   private _tags?: string[]; 
   public get tags() {
-    return cdktf.Fn.tolist(this.getListAttribute('tags'));
+    return cdktn.Fn.tolist(this.getListAttribute('tags'));
   }
   public set tags(value: string[]) {
     this._tags = value;
@@ -1843,30 +1843,30 @@ export class DnsRecord extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      comment: cdktf.stringToTerraform(this._comment),
-      content: cdktf.stringToTerraform(this._content),
+      comment: cdktn.stringToTerraform(this._comment),
+      content: cdktn.stringToTerraform(this._content),
       data: dnsRecordDataToTerraform(this._data.internalValue),
-      name: cdktf.stringToTerraform(this._name),
-      priority: cdktf.numberToTerraform(this._priority),
-      proxied: cdktf.booleanToTerraform(this._proxied),
+      name: cdktn.stringToTerraform(this._name),
+      priority: cdktn.numberToTerraform(this._priority),
+      proxied: cdktn.booleanToTerraform(this._proxied),
       settings: dnsRecordSettingsToTerraform(this._settings.internalValue),
-      tags: cdktf.listMapper(cdktf.stringToTerraform, false)(this._tags),
-      ttl: cdktf.numberToTerraform(this._ttl),
-      type: cdktf.stringToTerraform(this._type),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      tags: cdktn.listMapper(cdktn.stringToTerraform, false)(this._tags),
+      ttl: cdktn.numberToTerraform(this._ttl),
+      type: cdktn.stringToTerraform(this._type),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       comment: {
-        value: cdktf.stringToHclTerraform(this._comment),
+        value: cdktn.stringToHclTerraform(this._comment),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       content: {
-        value: cdktf.stringToHclTerraform(this._content),
+        value: cdktn.stringToHclTerraform(this._content),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -1878,19 +1878,19 @@ export class DnsRecord extends cdktf.TerraformResource {
         storageClassType: "DnsRecordData",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       priority: {
-        value: cdktf.numberToHclTerraform(this._priority),
+        value: cdktn.numberToHclTerraform(this._priority),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       proxied: {
-        value: cdktf.booleanToHclTerraform(this._proxied),
+        value: cdktn.booleanToHclTerraform(this._proxied),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -1902,25 +1902,25 @@ export class DnsRecord extends cdktf.TerraformResource {
         storageClassType: "DnsRecordSettings",
       },
       tags: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._tags),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._tags),
         isBlock: false,
         type: "set",
         storageClassType: "stringList",
       },
       ttl: {
-        value: cdktf.numberToHclTerraform(this._ttl),
+        value: cdktn.numberToHclTerraform(this._ttl),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,99 +1,99 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HealthcheckConfig extends cdktf.TerraformMetaArguments {
+export interface HealthcheckConfig extends cdktn.TerraformMetaArguments {
   /**
   * The hostname or IP address of the origin server to run health checks on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#address Healthcheck#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#address Healthcheck#address}
   */
   readonly address: string;
   /**
   * A list of regions from which to run health checks. Null means Cloudflare will pick a default region.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#check_regions Healthcheck#check_regions}
   */
   readonly checkRegions?: string[];
   /**
   * The number of consecutive fails required from a health check before changing the health to unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#consecutive_fails Healthcheck#consecutive_fails}
   */
   readonly consecutiveFails?: number;
   /**
   * The number of consecutive successes required from a health check before changing the health to healthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#consecutive_successes Healthcheck#consecutive_successes}
   */
   readonly consecutiveSuccesses?: number;
   /**
   * A human-readable description of the health check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#description Healthcheck#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#description Healthcheck#description}
   */
   readonly description?: string;
   /**
   * Parameters specific to an HTTP or HTTPS health check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#http_config Healthcheck#http_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#http_config Healthcheck#http_config}
   */
   readonly httpConfig?: HealthcheckHttpConfig;
   /**
   * The interval between each health check. Shorter intervals may give quicker notifications if the origin status changes, but will increase load on the origin as we check from multiple locations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#interval Healthcheck#interval}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#interval Healthcheck#interval}
   */
   readonly interval?: number;
   /**
   * A short name to identify the health check. Only alphanumeric characters, hyphens and underscores are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#name Healthcheck#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#name Healthcheck#name}
   */
   readonly name: string;
   /**
   * The number of retries to attempt in case of a timeout before marking the origin as unhealthy. Retries are attempted immediately.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#retries Healthcheck#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#retries Healthcheck#retries}
   */
   readonly retries?: number;
   /**
   * If suspended, no health checks are sent to the origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#suspended Healthcheck#suspended}
   */
-  readonly suspended?: boolean | cdktf.IResolvable;
+  readonly suspended?: boolean | cdktn.IResolvable;
   /**
   * Parameters specific to TCP health check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#tcp_config Healthcheck#tcp_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#tcp_config Healthcheck#tcp_config}
   */
   readonly tcpConfig?: HealthcheckTcpConfig;
   /**
   * The timeout (in seconds) before marking the health check as failed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#timeout Healthcheck#timeout}
   */
   readonly timeout?: number;
   /**
   * The protocol to use for the health check. Currently supported protocols are 'HTTP', 'HTTPS' and 'TCP'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#type Healthcheck#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#type Healthcheck#type}
   */
   readonly type?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#zone_id Healthcheck#zone_id}
   */
   readonly zoneId: string;
 }
@@ -101,122 +101,122 @@ export interface HealthcheckHttpConfig {
   /**
   * Do not validate the certificate when the health check uses HTTPS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#allow_insecure Healthcheck#allow_insecure}
   */
-  readonly allowInsecure?: boolean | cdktf.IResolvable;
+  readonly allowInsecure?: boolean | cdktn.IResolvable;
   /**
   * A case-insensitive sub-string to look for in the response body. If this string is not found, the origin will be marked as unhealthy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#expected_body Healthcheck#expected_body}
   */
   readonly expectedBody?: string;
   /**
   * The expected HTTP response codes (e.g. "200") or code ranges (e.g. "2xx" for all codes starting with 2) of the health check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#expected_codes Healthcheck#expected_codes}
   */
   readonly expectedCodes?: string[];
   /**
   * Follow redirects if the origin returns a 3xx status code.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#follow_redirects Healthcheck#follow_redirects}
   */
-  readonly followRedirects?: boolean | cdktf.IResolvable;
+  readonly followRedirects?: boolean | cdktn.IResolvable;
   /**
   * The HTTP request headers to send in the health check. It is recommended you set a Host header by default. The User-Agent header cannot be overridden.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#header Healthcheck#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#header Healthcheck#header}
   */
-  readonly header?: { [key: string]: string[] } | cdktf.IResolvable;
+  readonly header?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * The HTTP method to use for the health check.
   * Available values: "GET", "HEAD".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#method Healthcheck#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#method Healthcheck#method}
   */
   readonly method?: string;
   /**
   * The endpoint path to health check against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#path Healthcheck#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#path Healthcheck#path}
   */
   readonly path?: string;
   /**
   * Port number to connect to for the health check. Defaults to 80 if type is HTTP or 443 if type is HTTPS.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#port Healthcheck#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#port Healthcheck#port}
   */
   readonly port?: number;
 }
 
-export function healthcheckHttpConfigToTerraform(struct?: HealthcheckHttpConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcheckHttpConfigToTerraform(struct?: HealthcheckHttpConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    allow_insecure: cdktf.booleanToTerraform(struct!.allowInsecure),
-    expected_body: cdktf.stringToTerraform(struct!.expectedBody),
-    expected_codes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.expectedCodes),
-    follow_redirects: cdktf.booleanToTerraform(struct!.followRedirects),
-    header: cdktf.hashMapper(cdktf.listMapper(cdktf.stringToTerraform, false))(struct!.header),
-    method: cdktf.stringToTerraform(struct!.method),
-    path: cdktf.stringToTerraform(struct!.path),
-    port: cdktf.numberToTerraform(struct!.port),
+    allow_insecure: cdktn.booleanToTerraform(struct!.allowInsecure),
+    expected_body: cdktn.stringToTerraform(struct!.expectedBody),
+    expected_codes: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.expectedCodes),
+    follow_redirects: cdktn.booleanToTerraform(struct!.followRedirects),
+    header: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(struct!.header),
+    method: cdktn.stringToTerraform(struct!.method),
+    path: cdktn.stringToTerraform(struct!.path),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
-export function healthcheckHttpConfigToHclTerraform(struct?: HealthcheckHttpConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcheckHttpConfigToHclTerraform(struct?: HealthcheckHttpConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     allow_insecure: {
-      value: cdktf.booleanToHclTerraform(struct!.allowInsecure),
+      value: cdktn.booleanToHclTerraform(struct!.allowInsecure),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     expected_body: {
-      value: cdktf.stringToHclTerraform(struct!.expectedBody),
+      value: cdktn.stringToHclTerraform(struct!.expectedBody),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     expected_codes: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.expectedCodes),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.expectedCodes),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     follow_redirects: {
-      value: cdktf.booleanToHclTerraform(struct!.followRedirects),
+      value: cdktn.booleanToHclTerraform(struct!.followRedirects),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     header: {
-      value: cdktf.hashMapperHcl(cdktf.listMapperHcl(cdktf.stringToHclTerraform, false))(struct!.header),
+      value: cdktn.hashMapperHcl(cdktn.listMapperHcl(cdktn.stringToHclTerraform, false))(struct!.header),
       isBlock: false,
       type: "map",
       storageClassType: "stringListMap",
     },
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -227,19 +227,19 @@ export function healthcheckHttpConfigToHclTerraform(struct?: HealthcheckHttpConf
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HealthcheckHttpConfigOutputReference extends cdktf.ComplexObject {
+export class HealthcheckHttpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HealthcheckHttpConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): HealthcheckHttpConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -280,7 +280,7 @@ export class HealthcheckHttpConfigOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HealthcheckHttpConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HealthcheckHttpConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -293,7 +293,7 @@ export class HealthcheckHttpConfigOutputReference extends cdktf.ComplexObject {
       this._path = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -312,11 +312,11 @@ export class HealthcheckHttpConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // allow_insecure - computed: true, optional: true, required: false
-  private _allowInsecure?: boolean | cdktf.IResolvable; 
+  private _allowInsecure?: boolean | cdktn.IResolvable; 
   public get allowInsecure() {
     return this.getBooleanAttribute('allow_insecure');
   }
-  public set allowInsecure(value: boolean | cdktf.IResolvable) {
+  public set allowInsecure(value: boolean | cdktn.IResolvable) {
     this._allowInsecure = value;
   }
   public resetAllowInsecure() {
@@ -360,11 +360,11 @@ export class HealthcheckHttpConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // follow_redirects - computed: true, optional: true, required: false
-  private _followRedirects?: boolean | cdktf.IResolvable; 
+  private _followRedirects?: boolean | cdktn.IResolvable; 
   public get followRedirects() {
     return this.getBooleanAttribute('follow_redirects');
   }
-  public set followRedirects(value: boolean | cdktf.IResolvable) {
+  public set followRedirects(value: boolean | cdktn.IResolvable) {
     this._followRedirects = value;
   }
   public resetFollowRedirects() {
@@ -376,11 +376,11 @@ export class HealthcheckHttpConfigOutputReference extends cdktf.ComplexObject {
   }
 
   // header - computed: true, optional: true, required: false
-  private _header?: { [key: string]: string[] } | cdktf.IResolvable; 
+  private _header?: { [key: string]: string[] } | cdktn.IResolvable; 
   public get header() {
     return this.interpolationForAttribute('header');
   }
-  public set header(value: { [key: string]: string[] } | cdktf.IResolvable) {
+  public set header(value: { [key: string]: string[] } | cdktn.IResolvable) {
     this._header = value;
   }
   public resetHeader() {
@@ -444,43 +444,43 @@ export interface HealthcheckTcpConfig {
   * The TCP connection method to use for the health check.
   * Available values: "connection_established".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#method Healthcheck#method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#method Healthcheck#method}
   */
   readonly method?: string;
   /**
   * Port number to connect to for the health check. Defaults to 80.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#port Healthcheck#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#port Healthcheck#port}
   */
   readonly port?: number;
 }
 
-export function healthcheckTcpConfigToTerraform(struct?: HealthcheckTcpConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcheckTcpConfigToTerraform(struct?: HealthcheckTcpConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    method: cdktf.stringToTerraform(struct!.method),
-    port: cdktf.numberToTerraform(struct!.port),
+    method: cdktn.stringToTerraform(struct!.method),
+    port: cdktn.numberToTerraform(struct!.port),
   }
 }
 
 
-export function healthcheckTcpConfigToHclTerraform(struct?: HealthcheckTcpConfig | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function healthcheckTcpConfigToHclTerraform(struct?: HealthcheckTcpConfig | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     method: {
-      value: cdktf.stringToHclTerraform(struct!.method),
+      value: cdktn.stringToHclTerraform(struct!.method),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -491,19 +491,19 @@ export function healthcheckTcpConfigToHclTerraform(struct?: HealthcheckTcpConfig
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HealthcheckTcpConfigOutputReference extends cdktf.ComplexObject {
+export class HealthcheckTcpConfigOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HealthcheckTcpConfig | cdktf.IResolvable | undefined {
+  public get internalValue(): HealthcheckTcpConfig | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -520,14 +520,14 @@ export class HealthcheckTcpConfigOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HealthcheckTcpConfig | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HealthcheckTcpConfig | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._method = undefined;
       this._port = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -573,9 +573,9 @@ export class HealthcheckTcpConfigOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck cloudflare_healthcheck}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck}
 */
-export class Healthcheck extends cdktf.TerraformResource {
+export class Healthcheck extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -586,14 +586,14 @@ export class Healthcheck extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Healthcheck resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Healthcheck resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Healthcheck to import
-  * @param importFromId The id of the existing Healthcheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Healthcheck that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Healthcheck to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_healthcheck", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_healthcheck", importId: importFromId, provider });
       }
 
   // ===========
@@ -601,7 +601,7 @@ export class Healthcheck extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/healthcheck cloudflare_healthcheck} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/healthcheck cloudflare_healthcheck} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -612,7 +612,7 @@ export class Healthcheck extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_healthcheck',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -807,11 +807,11 @@ export class Healthcheck extends cdktf.TerraformResource {
   }
 
   // suspended - computed: true, optional: true, required: false
-  private _suspended?: boolean | cdktf.IResolvable; 
+  private _suspended?: boolean | cdktn.IResolvable; 
   public get suspended() {
     return this.getBooleanAttribute('suspended');
   }
-  public set suspended(value: boolean | cdktf.IResolvable) {
+  public set suspended(value: boolean | cdktn.IResolvable) {
     this._suspended = value;
   }
   public resetSuspended() {
@@ -889,51 +889,51 @@ export class Healthcheck extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      address: cdktf.stringToTerraform(this._address),
-      check_regions: cdktf.listMapper(cdktf.stringToTerraform, false)(this._checkRegions),
-      consecutive_fails: cdktf.numberToTerraform(this._consecutiveFails),
-      consecutive_successes: cdktf.numberToTerraform(this._consecutiveSuccesses),
-      description: cdktf.stringToTerraform(this._description),
+      address: cdktn.stringToTerraform(this._address),
+      check_regions: cdktn.listMapper(cdktn.stringToTerraform, false)(this._checkRegions),
+      consecutive_fails: cdktn.numberToTerraform(this._consecutiveFails),
+      consecutive_successes: cdktn.numberToTerraform(this._consecutiveSuccesses),
+      description: cdktn.stringToTerraform(this._description),
       http_config: healthcheckHttpConfigToTerraform(this._httpConfig.internalValue),
-      interval: cdktf.numberToTerraform(this._interval),
-      name: cdktf.stringToTerraform(this._name),
-      retries: cdktf.numberToTerraform(this._retries),
-      suspended: cdktf.booleanToTerraform(this._suspended),
+      interval: cdktn.numberToTerraform(this._interval),
+      name: cdktn.stringToTerraform(this._name),
+      retries: cdktn.numberToTerraform(this._retries),
+      suspended: cdktn.booleanToTerraform(this._suspended),
       tcp_config: healthcheckTcpConfigToTerraform(this._tcpConfig.internalValue),
-      timeout: cdktf.numberToTerraform(this._timeout),
-      type: cdktf.stringToTerraform(this._type),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      timeout: cdktn.numberToTerraform(this._timeout),
+      type: cdktn.stringToTerraform(this._type),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       address: {
-        value: cdktf.stringToHclTerraform(this._address),
+        value: cdktn.stringToHclTerraform(this._address),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       check_regions: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._checkRegions),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._checkRegions),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       consecutive_fails: {
-        value: cdktf.numberToHclTerraform(this._consecutiveFails),
+        value: cdktn.numberToHclTerraform(this._consecutiveFails),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       consecutive_successes: {
-        value: cdktf.numberToHclTerraform(this._consecutiveSuccesses),
+        value: cdktn.numberToHclTerraform(this._consecutiveSuccesses),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -945,25 +945,25 @@ export class Healthcheck extends cdktf.TerraformResource {
         storageClassType: "HealthcheckHttpConfig",
       },
       interval: {
-        value: cdktf.numberToHclTerraform(this._interval),
+        value: cdktn.numberToHclTerraform(this._interval),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       retries: {
-        value: cdktf.numberToHclTerraform(this._retries),
+        value: cdktn.numberToHclTerraform(this._retries),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       suspended: {
-        value: cdktf.booleanToHclTerraform(this._suspended),
+        value: cdktn.booleanToHclTerraform(this._suspended),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -975,19 +975,19 @@ export class Healthcheck extends cdktf.TerraformResource {
         storageClassType: "HealthcheckTcpConfig",
       },
       timeout: {
-        value: cdktf.numberToHclTerraform(this._timeout),
+        value: cdktn.numberToHclTerraform(this._timeout),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

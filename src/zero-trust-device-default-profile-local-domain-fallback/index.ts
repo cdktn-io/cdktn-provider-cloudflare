@@ -1,80 +1,80 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustDeviceDefaultProfileLocalDomainFallbackConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#account_id ZeroTrustDeviceDefaultProfileLocalDomainFallback#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#account_id ZeroTrustDeviceDefaultProfileLocalDomainFallback#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#domains ZeroTrustDeviceDefaultProfileLocalDomainFallback#domains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#domains ZeroTrustDeviceDefaultProfileLocalDomainFallback#domains}
   */
-  readonly domains: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains[] | cdktf.IResolvable;
+  readonly domains: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains[] | cdktn.IResolvable;
 }
 export interface ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains {
   /**
   * A description of the fallback domain, displayed in the client UI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#description ZeroTrustDeviceDefaultProfileLocalDomainFallback#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#description ZeroTrustDeviceDefaultProfileLocalDomainFallback#description}
   */
   readonly description?: string;
   /**
   * A list of IP addresses to handle domain resolution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#dns_server ZeroTrustDeviceDefaultProfileLocalDomainFallback#dns_server}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#dns_server ZeroTrustDeviceDefaultProfileLocalDomainFallback#dns_server}
   */
   readonly dnsServer?: string[];
   /**
   * The domain suffix to match when resolving locally.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#suffix ZeroTrustDeviceDefaultProfileLocalDomainFallback#suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#suffix ZeroTrustDeviceDefaultProfileLocalDomainFallback#suffix}
   */
   readonly suffix: string;
 }
 
-export function zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToTerraform(struct?: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToTerraform(struct?: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    description: cdktf.stringToTerraform(struct!.description),
-    dns_server: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.dnsServer),
-    suffix: cdktf.stringToTerraform(struct!.suffix),
+    description: cdktn.stringToTerraform(struct!.description),
+    dns_server: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.dnsServer),
+    suffix: cdktn.stringToTerraform(struct!.suffix),
   }
 }
 
 
-export function zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToHclTerraform(struct?: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToHclTerraform(struct?: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     description: {
-      value: cdktf.stringToHclTerraform(struct!.description),
+      value: cdktn.stringToHclTerraform(struct!.description),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     dns_server: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.dnsServer),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.dnsServer),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     suffix: {
-      value: cdktf.stringToHclTerraform(struct!.suffix),
+      value: cdktn.stringToHclTerraform(struct!.suffix),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -85,9 +85,9 @@ export function zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToHclTerr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -95,11 +95,11 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputRefere
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,7 +120,7 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputRefere
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -128,7 +128,7 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputRefere
       this._dnsServer = undefined;
       this._suffix = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -187,15 +187,15 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsOutputRefere
   }
 }
 
-export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains[] | cdktf.IResolvable
+export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -208,9 +208,9 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback}
 */
-export class ZeroTrustDeviceDefaultProfileLocalDomainFallback extends cdktf.TerraformResource {
+export class ZeroTrustDeviceDefaultProfileLocalDomainFallback extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -221,14 +221,14 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallback extends cdktf.Terr
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustDeviceDefaultProfileLocalDomainFallback resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustDeviceDefaultProfileLocalDomainFallback resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDeviceDefaultProfileLocalDomainFallback to import
-  * @param importFromId The id of the existing ZeroTrustDeviceDefaultProfileLocalDomainFallback that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDeviceDefaultProfileLocalDomainFallback that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDeviceDefaultProfileLocalDomainFallback to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_device_default_profile_local_domain_fallback", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_device_default_profile_local_domain_fallback", importId: importFromId, provider });
       }
 
   // ===========
@@ -236,7 +236,7 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallback extends cdktf.Terr
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_device_default_profile_local_domain_fallback cloudflare_zero_trust_device_default_profile_local_domain_fallback} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -247,7 +247,7 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallback extends cdktf.Terr
       terraformResourceType: 'cloudflare_zero_trust_device_default_profile_local_domain_fallback',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -284,7 +284,7 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallback extends cdktf.Terr
   public get domains() {
     return this._domains;
   }
-  public putDomains(value: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains[] | cdktf.IResolvable) {
+  public putDomains(value: ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomains[] | cdktn.IResolvable) {
     this._domains.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -303,21 +303,21 @@ export class ZeroTrustDeviceDefaultProfileLocalDomainFallback extends cdktf.Terr
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      domains: cdktf.listMapper(zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToTerraform, false)(this._domains.internalValue),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      domains: cdktn.listMapper(zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToTerraform, false)(this._domains.internalValue),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       domains: {
-        value: cdktf.listMapperHcl(zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToHclTerraform, false)(this._domains.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsToHclTerraform, false)(this._domains.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustDeviceDefaultProfileLocalDomainFallbackDomainsList",

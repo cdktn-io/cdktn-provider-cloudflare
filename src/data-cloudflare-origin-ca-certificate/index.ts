@@ -1,25 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareOriginCaCertificateConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareOriginCaCertificateConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate#certificate_id DataCloudflareOriginCaCertificate#certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate#certificate_id DataCloudflareOriginCaCertificate#certificate_id}
   */
   readonly certificateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate#filter DataCloudflareOriginCaCertificate#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate#filter DataCloudflareOriginCaCertificate#filter}
   */
   readonly filter?: DataCloudflareOriginCaCertificateFilter;
 }
@@ -27,56 +27,56 @@ export interface DataCloudflareOriginCaCertificateFilter {
   /**
   * Limit to the number of records returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate#limit DataCloudflareOriginCaCertificate#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate#limit DataCloudflareOriginCaCertificate#limit}
   */
   readonly limit?: number;
   /**
   * Offset the results
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate#offset DataCloudflareOriginCaCertificate#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate#offset DataCloudflareOriginCaCertificate#offset}
   */
   readonly offset?: number;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate#zone_id DataCloudflareOriginCaCertificate#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate#zone_id DataCloudflareOriginCaCertificate#zone_id}
   */
   readonly zoneId: string;
 }
 
-export function dataCloudflareOriginCaCertificateFilterToTerraform(struct?: DataCloudflareOriginCaCertificateFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareOriginCaCertificateFilterToTerraform(struct?: DataCloudflareOriginCaCertificateFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    limit: cdktf.numberToTerraform(struct!.limit),
-    offset: cdktf.numberToTerraform(struct!.offset),
-    zone_id: cdktf.stringToTerraform(struct!.zoneId),
+    limit: cdktn.numberToTerraform(struct!.limit),
+    offset: cdktn.numberToTerraform(struct!.offset),
+    zone_id: cdktn.stringToTerraform(struct!.zoneId),
   }
 }
 
 
-export function dataCloudflareOriginCaCertificateFilterToHclTerraform(struct?: DataCloudflareOriginCaCertificateFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareOriginCaCertificateFilterToHclTerraform(struct?: DataCloudflareOriginCaCertificateFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     limit: {
-      value: cdktf.numberToHclTerraform(struct!.limit),
+      value: cdktn.numberToHclTerraform(struct!.limit),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     offset: {
-      value: cdktf.numberToHclTerraform(struct!.offset),
+      value: cdktn.numberToHclTerraform(struct!.offset),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     zone_id: {
-      value: cdktf.stringToHclTerraform(struct!.zoneId),
+      value: cdktn.stringToHclTerraform(struct!.zoneId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -87,19 +87,19 @@ export function dataCloudflareOriginCaCertificateFilterToHclTerraform(struct?: D
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareOriginCaCertificateFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareOriginCaCertificateFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareOriginCaCertificateFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareOriginCaCertificateFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -120,7 +120,7 @@ export class DataCloudflareOriginCaCertificateFilterOutputReference extends cdkt
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareOriginCaCertificateFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareOriginCaCertificateFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -128,7 +128,7 @@ export class DataCloudflareOriginCaCertificateFilterOutputReference extends cdkt
       this._offset = undefined;
       this._zoneId = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -188,9 +188,9 @@ export class DataCloudflareOriginCaCertificateFilterOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate}
 */
-export class DataCloudflareOriginCaCertificate extends cdktf.TerraformDataSource {
+export class DataCloudflareOriginCaCertificate extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -201,14 +201,14 @@ export class DataCloudflareOriginCaCertificate extends cdktf.TerraformDataSource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareOriginCaCertificate resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareOriginCaCertificate resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareOriginCaCertificate to import
-  * @param importFromId The id of the existing DataCloudflareOriginCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareOriginCaCertificate that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareOriginCaCertificate to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_origin_ca_certificate", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_origin_ca_certificate", importId: importFromId, provider });
       }
 
   // ===========
@@ -216,7 +216,7 @@ export class DataCloudflareOriginCaCertificate extends cdktf.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/origin_ca_certificate cloudflare_origin_ca_certificate} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -227,7 +227,7 @@ export class DataCloudflareOriginCaCertificate extends cdktf.TerraformDataSource
       terraformResourceType: 'cloudflare_origin_ca_certificate',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -319,7 +319,7 @@ export class DataCloudflareOriginCaCertificate extends cdktf.TerraformDataSource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_id: cdktf.stringToTerraform(this._certificateId),
+      certificate_id: cdktn.stringToTerraform(this._certificateId),
       filter: dataCloudflareOriginCaCertificateFilterToTerraform(this._filter.internalValue),
     };
   }
@@ -327,7 +327,7 @@ export class DataCloudflareOriginCaCertificate extends cdktf.TerraformDataSource
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_id: {
-        value: cdktf.stringToHclTerraform(this._certificateId),
+        value: cdktn.stringToHclTerraform(this._certificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

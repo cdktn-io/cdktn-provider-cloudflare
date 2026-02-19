@@ -1,45 +1,45 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface UserConfig extends cdktf.TerraformMetaArguments {
+export interface UserConfig extends cdktn.TerraformMetaArguments {
   /**
   * The country in which the user lives.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user#country User#country}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user#country User#country}
   */
   readonly country?: string;
   /**
   * User's first name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user#first_name User#first_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user#first_name User#first_name}
   */
   readonly firstName?: string;
   /**
   * User's last name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user#last_name User#last_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user#last_name User#last_name}
   */
   readonly lastName?: string;
   /**
   * User's telephone number
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user#telephone User#telephone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user#telephone User#telephone}
   */
   readonly telephone?: string;
   /**
   * The zipcode or postal code where the user lives.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user#zipcode User#zipcode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user#zipcode User#zipcode}
   */
   readonly zipcode?: string;
 }
@@ -47,8 +47,8 @@ export interface UserOrganizations {
 }
 
 export function userOrganizationsToTerraform(struct?: UserOrganizations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -57,8 +57,8 @@ export function userOrganizationsToTerraform(struct?: UserOrganizations): any {
 
 
 export function userOrganizationsToHclTerraform(struct?: UserOrganizations): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -66,7 +66,7 @@ export function userOrganizationsToHclTerraform(struct?: UserOrganizations): any
   return attrs;
 }
 
-export class UserOrganizationsOutputReference extends cdktf.ComplexObject {
+export class UserOrganizationsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -75,7 +75,7 @@ export class UserOrganizationsOutputReference extends cdktf.ComplexObject {
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -120,14 +120,14 @@ export class UserOrganizationsOutputReference extends cdktf.ComplexObject {
   }
 }
 
-export class UserOrganizationsList extends cdktf.ComplexList {
+export class UserOrganizationsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -140,9 +140,9 @@ export class UserOrganizationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user cloudflare_user}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user cloudflare_user}
 */
-export class User extends cdktf.TerraformResource {
+export class User extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -153,14 +153,14 @@ export class User extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a User resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a User resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the User to import
-  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing User that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the User to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_user", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_user", importId: importFromId, provider });
       }
 
   // ===========
@@ -168,7 +168,7 @@ export class User extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/user cloudflare_user} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/user cloudflare_user} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +179,7 @@ export class User extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_user',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -333,42 +333,42 @@ export class User extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      country: cdktf.stringToTerraform(this._country),
-      first_name: cdktf.stringToTerraform(this._firstName),
-      last_name: cdktf.stringToTerraform(this._lastName),
-      telephone: cdktf.stringToTerraform(this._telephone),
-      zipcode: cdktf.stringToTerraform(this._zipcode),
+      country: cdktn.stringToTerraform(this._country),
+      first_name: cdktn.stringToTerraform(this._firstName),
+      last_name: cdktn.stringToTerraform(this._lastName),
+      telephone: cdktn.stringToTerraform(this._telephone),
+      zipcode: cdktn.stringToTerraform(this._zipcode),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       country: {
-        value: cdktf.stringToHclTerraform(this._country),
+        value: cdktn.stringToHclTerraform(this._country),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       first_name: {
-        value: cdktf.stringToHclTerraform(this._firstName),
+        value: cdktn.stringToHclTerraform(this._firstName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       last_name: {
-        value: cdktf.stringToHclTerraform(this._lastName),
+        value: cdktn.stringToHclTerraform(this._lastName),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       telephone: {
-        value: cdktf.stringToHclTerraform(this._telephone),
+        value: cdktn.stringToHclTerraform(this._telephone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zipcode: {
-        value: cdktf.stringToHclTerraform(this._zipcode),
+        value: cdktn.stringToHclTerraform(this._zipcode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

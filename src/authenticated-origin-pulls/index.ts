@@ -1,31 +1,25 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface AuthenticatedOriginPullsConfig extends cdktf.TerraformMetaArguments {
+export interface AuthenticatedOriginPullsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls#config AuthenticatedOriginPulls#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls#config AuthenticatedOriginPulls#config}
   */
-  readonly config: AuthenticatedOriginPullsConfigA[] | cdktf.IResolvable;
-  /**
-  * The hostname on the origin for which the client certificate uploaded will be used.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls#hostname AuthenticatedOriginPulls#hostname}
-  */
-  readonly hostname?: string;
+  readonly config: AuthenticatedOriginPullsConfigA[] | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls#zone_id AuthenticatedOriginPulls#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls#zone_id AuthenticatedOriginPulls#zone_id}
   */
   readonly zoneId: string;
 }
@@ -33,56 +27,56 @@ export interface AuthenticatedOriginPullsConfigA {
   /**
   * Certificate identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls#cert_id AuthenticatedOriginPulls#cert_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls#cert_id AuthenticatedOriginPulls#cert_id}
   */
   readonly certId?: string;
   /**
   * Indicates whether hostname-level authenticated origin pulls is enabled. A null value voids the association.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls#enabled AuthenticatedOriginPulls#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls#enabled AuthenticatedOriginPulls#enabled}
   */
-  readonly enabled?: boolean | cdktf.IResolvable;
+  readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The hostname on the origin for which the client certificate uploaded will be used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls#hostname AuthenticatedOriginPulls#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls#hostname AuthenticatedOriginPulls#hostname}
   */
   readonly hostname?: string;
 }
 
-export function authenticatedOriginPullsConfigAToTerraform(struct?: AuthenticatedOriginPullsConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function authenticatedOriginPullsConfigAToTerraform(struct?: AuthenticatedOriginPullsConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    cert_id: cdktf.stringToTerraform(struct!.certId),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
-    hostname: cdktf.stringToTerraform(struct!.hostname),
+    cert_id: cdktn.stringToTerraform(struct!.certId),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
   }
 }
 
 
-export function authenticatedOriginPullsConfigAToHclTerraform(struct?: AuthenticatedOriginPullsConfigA | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function authenticatedOriginPullsConfigAToHclTerraform(struct?: AuthenticatedOriginPullsConfigA | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     cert_id: {
-      value: cdktf.stringToHclTerraform(struct!.certId),
+      value: cdktn.stringToHclTerraform(struct!.certId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,9 +87,9 @@ export function authenticatedOriginPullsConfigAToHclTerraform(struct?: Authentic
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class AuthenticatedOriginPullsConfigAOutputReference extends cdktf.ComplexObject {
+export class AuthenticatedOriginPullsConfigAOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -103,11 +97,11 @@ export class AuthenticatedOriginPullsConfigAOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): AuthenticatedOriginPullsConfigA | cdktf.IResolvable | undefined {
+  public get internalValue(): AuthenticatedOriginPullsConfigA | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -128,7 +122,7 @@ export class AuthenticatedOriginPullsConfigAOutputReference extends cdktf.Comple
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: AuthenticatedOriginPullsConfigA | cdktf.IResolvable | undefined) {
+  public set internalValue(value: AuthenticatedOriginPullsConfigA | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -136,7 +130,7 @@ export class AuthenticatedOriginPullsConfigAOutputReference extends cdktf.Comple
       this._enabled = undefined;
       this._hostname = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,11 +160,11 @@ export class AuthenticatedOriginPullsConfigAOutputReference extends cdktf.Comple
   }
 
   // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
+  private _enabled?: boolean | cdktn.IResolvable; 
   public get enabled() {
     return this.getBooleanAttribute('enabled');
   }
-  public set enabled(value: boolean | cdktf.IResolvable) {
+  public set enabled(value: boolean | cdktn.IResolvable) {
     this._enabled = value;
   }
   public resetEnabled() {
@@ -198,15 +192,15 @@ export class AuthenticatedOriginPullsConfigAOutputReference extends cdktf.Comple
   }
 }
 
-export class AuthenticatedOriginPullsConfigAList extends cdktf.ComplexList {
-  public internalValue? : AuthenticatedOriginPullsConfigA[] | cdktf.IResolvable
+export class AuthenticatedOriginPullsConfigAList extends cdktn.ComplexList {
+  public internalValue? : AuthenticatedOriginPullsConfigA[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -219,9 +213,9 @@ export class AuthenticatedOriginPullsConfigAList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls}
 */
-export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
+export class AuthenticatedOriginPulls extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -232,14 +226,14 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a AuthenticatedOriginPulls resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a AuthenticatedOriginPulls resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AuthenticatedOriginPulls to import
-  * @param importFromId The id of the existing AuthenticatedOriginPulls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AuthenticatedOriginPulls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AuthenticatedOriginPulls to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_authenticated_origin_pulls", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_authenticated_origin_pulls", importId: importFromId, provider });
       }
 
   // ===========
@@ -247,7 +241,7 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/authenticated_origin_pulls cloudflare_authenticated_origin_pulls} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -258,7 +252,7 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_authenticated_origin_pulls',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -270,7 +264,6 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
       forEach: config.forEach
     });
     this._config.internalValue = config.config;
-    this._hostname = config.hostname;
     this._zoneId = config.zoneId;
   }
 
@@ -308,7 +301,7 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
   public get config() {
     return this._config;
   }
-  public putConfig(value: AuthenticatedOriginPullsConfigA[] | cdktf.IResolvable) {
+  public putConfig(value: AuthenticatedOriginPullsConfigA[] | cdktn.IResolvable) {
     this._config.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -331,20 +324,9 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
     return this.getStringAttribute('expires_on');
   }
 
-  // hostname - computed: false, optional: true, required: false
-  private _hostname?: string; 
+  // hostname - computed: true, optional: false, required: false
   public get hostname() {
     return this.getStringAttribute('hostname');
-  }
-  public set hostname(value: string) {
-    this._hostname = value;
-  }
-  public resetHostname() {
-    this._hostname = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hostnameInput() {
-    return this._hostname;
   }
 
   // id - computed: true, optional: false, required: false
@@ -401,28 +383,21 @@ export class AuthenticatedOriginPulls extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      config: cdktf.listMapper(authenticatedOriginPullsConfigAToTerraform, false)(this._config.internalValue),
-      hostname: cdktf.stringToTerraform(this._hostname),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      config: cdktn.listMapper(authenticatedOriginPullsConfigAToTerraform, false)(this._config.internalValue),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       config: {
-        value: cdktf.listMapperHcl(authenticatedOriginPullsConfigAToHclTerraform, false)(this._config.internalValue),
+        value: cdktn.listMapperHcl(authenticatedOriginPullsConfigAToHclTerraform, false)(this._config.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "AuthenticatedOriginPullsConfigAList",
       },
-      hostname: {
-        value: cdktf.stringToHclTerraform(this._hostname),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "string",
-      },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

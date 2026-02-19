@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZeroTrustAccessMtlsHostnameSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface ZeroTrustAccessMtlsHostnameSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings#account_id ZeroTrustAccessMtlsHostnameSettings#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings#account_id ZeroTrustAccessMtlsHostnameSettings#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings#settings ZeroTrustAccessMtlsHostnameSettings#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings#settings ZeroTrustAccessMtlsHostnameSettings#settings}
   */
-  readonly settings: ZeroTrustAccessMtlsHostnameSettingsSettings[] | cdktf.IResolvable;
+  readonly settings: ZeroTrustAccessMtlsHostnameSettingsSettings[] | cdktn.IResolvable;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings#zone_id ZeroTrustAccessMtlsHostnameSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings#zone_id ZeroTrustAccessMtlsHostnameSettings#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -33,56 +33,56 @@ export interface ZeroTrustAccessMtlsHostnameSettingsSettings {
   /**
   * Request client certificates for this hostname in China. Can only be set to true if this zone is china network enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings#china_network ZeroTrustAccessMtlsHostnameSettings#china_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings#china_network ZeroTrustAccessMtlsHostnameSettings#china_network}
   */
-  readonly chinaNetwork: boolean | cdktf.IResolvable;
+  readonly chinaNetwork: boolean | cdktn.IResolvable;
   /**
   * Client Certificate Forwarding is a feature that takes the client cert provided by the eyeball to the edge, and forwards it to the origin as a HTTP header to allow logging on the origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings#client_certificate_forwarding ZeroTrustAccessMtlsHostnameSettings#client_certificate_forwarding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings#client_certificate_forwarding ZeroTrustAccessMtlsHostnameSettings#client_certificate_forwarding}
   */
-  readonly clientCertificateForwarding: boolean | cdktf.IResolvable;
+  readonly clientCertificateForwarding: boolean | cdktn.IResolvable;
   /**
   * The hostname that these settings apply to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings#hostname ZeroTrustAccessMtlsHostnameSettings#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings#hostname ZeroTrustAccessMtlsHostnameSettings#hostname}
   */
   readonly hostname: string;
 }
 
-export function zeroTrustAccessMtlsHostnameSettingsSettingsToTerraform(struct?: ZeroTrustAccessMtlsHostnameSettingsSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessMtlsHostnameSettingsSettingsToTerraform(struct?: ZeroTrustAccessMtlsHostnameSettingsSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    china_network: cdktf.booleanToTerraform(struct!.chinaNetwork),
-    client_certificate_forwarding: cdktf.booleanToTerraform(struct!.clientCertificateForwarding),
-    hostname: cdktf.stringToTerraform(struct!.hostname),
+    china_network: cdktn.booleanToTerraform(struct!.chinaNetwork),
+    client_certificate_forwarding: cdktn.booleanToTerraform(struct!.clientCertificateForwarding),
+    hostname: cdktn.stringToTerraform(struct!.hostname),
   }
 }
 
 
-export function zeroTrustAccessMtlsHostnameSettingsSettingsToHclTerraform(struct?: ZeroTrustAccessMtlsHostnameSettingsSettings | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zeroTrustAccessMtlsHostnameSettingsSettingsToHclTerraform(struct?: ZeroTrustAccessMtlsHostnameSettingsSettings | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     china_network: {
-      value: cdktf.booleanToHclTerraform(struct!.chinaNetwork),
+      value: cdktn.booleanToHclTerraform(struct!.chinaNetwork),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     client_certificate_forwarding: {
-      value: cdktf.booleanToHclTerraform(struct!.clientCertificateForwarding),
+      value: cdktn.booleanToHclTerraform(struct!.clientCertificateForwarding),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     hostname: {
-      value: cdktf.stringToHclTerraform(struct!.hostname),
+      value: cdktn.stringToHclTerraform(struct!.hostname),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -93,9 +93,9 @@ export function zeroTrustAccessMtlsHostnameSettingsSettingsToHclTerraform(struct
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends cdktf.ComplexObject {
+export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -103,11 +103,11 @@ export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends 
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): ZeroTrustAccessMtlsHostnameSettingsSettings | cdktf.IResolvable | undefined {
+  public get internalValue(): ZeroTrustAccessMtlsHostnameSettingsSettings | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -128,7 +128,7 @@ export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZeroTrustAccessMtlsHostnameSettingsSettings | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZeroTrustAccessMtlsHostnameSettingsSettings | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -136,7 +136,7 @@ export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends 
       this._clientCertificateForwarding = undefined;
       this._hostname = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -150,11 +150,11 @@ export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends 
   }
 
   // china_network - computed: false, optional: false, required: true
-  private _chinaNetwork?: boolean | cdktf.IResolvable; 
+  private _chinaNetwork?: boolean | cdktn.IResolvable; 
   public get chinaNetwork() {
     return this.getBooleanAttribute('china_network');
   }
-  public set chinaNetwork(value: boolean | cdktf.IResolvable) {
+  public set chinaNetwork(value: boolean | cdktn.IResolvable) {
     this._chinaNetwork = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -163,11 +163,11 @@ export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends 
   }
 
   // client_certificate_forwarding - computed: false, optional: false, required: true
-  private _clientCertificateForwarding?: boolean | cdktf.IResolvable; 
+  private _clientCertificateForwarding?: boolean | cdktn.IResolvable; 
   public get clientCertificateForwarding() {
     return this.getBooleanAttribute('client_certificate_forwarding');
   }
-  public set clientCertificateForwarding(value: boolean | cdktf.IResolvable) {
+  public set clientCertificateForwarding(value: boolean | cdktn.IResolvable) {
     this._clientCertificateForwarding = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -189,15 +189,15 @@ export class ZeroTrustAccessMtlsHostnameSettingsSettingsOutputReference extends 
   }
 }
 
-export class ZeroTrustAccessMtlsHostnameSettingsSettingsList extends cdktf.ComplexList {
-  public internalValue? : ZeroTrustAccessMtlsHostnameSettingsSettings[] | cdktf.IResolvable
+export class ZeroTrustAccessMtlsHostnameSettingsSettingsList extends cdktn.ComplexList {
+  public internalValue? : ZeroTrustAccessMtlsHostnameSettingsSettings[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -210,9 +210,9 @@ export class ZeroTrustAccessMtlsHostnameSettingsSettingsList extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings}
 */
-export class ZeroTrustAccessMtlsHostnameSettings extends cdktf.TerraformResource {
+export class ZeroTrustAccessMtlsHostnameSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -223,14 +223,14 @@ export class ZeroTrustAccessMtlsHostnameSettings extends cdktf.TerraformResource
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZeroTrustAccessMtlsHostnameSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZeroTrustAccessMtlsHostnameSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustAccessMtlsHostnameSettings to import
-  * @param importFromId The id of the existing ZeroTrustAccessMtlsHostnameSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustAccessMtlsHostnameSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustAccessMtlsHostnameSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_mtls_hostname_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zero_trust_access_mtls_hostname_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -238,7 +238,7 @@ export class ZeroTrustAccessMtlsHostnameSettings extends cdktf.TerraformResource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_mtls_hostname_settings cloudflare_zero_trust_access_mtls_hostname_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +249,7 @@ export class ZeroTrustAccessMtlsHostnameSettings extends cdktf.TerraformResource
       terraformResourceType: 'cloudflare_zero_trust_access_mtls_hostname_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -305,7 +305,7 @@ export class ZeroTrustAccessMtlsHostnameSettings extends cdktf.TerraformResource
   public get settings() {
     return this._settings;
   }
-  public putSettings(value: ZeroTrustAccessMtlsHostnameSettingsSettings[] | cdktf.IResolvable) {
+  public putSettings(value: ZeroTrustAccessMtlsHostnameSettingsSettings[] | cdktn.IResolvable) {
     this._settings.internalValue = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -335,28 +335,28 @@ export class ZeroTrustAccessMtlsHostnameSettings extends cdktf.TerraformResource
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      settings: cdktf.listMapper(zeroTrustAccessMtlsHostnameSettingsSettingsToTerraform, false)(this._settings.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      settings: cdktn.listMapper(zeroTrustAccessMtlsHostnameSettingsSettingsToTerraform, false)(this._settings.internalValue),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       settings: {
-        value: cdktf.listMapperHcl(zeroTrustAccessMtlsHostnameSettingsSettingsToHclTerraform, false)(this._settings.internalValue),
+        value: cdktn.listMapperHcl(zeroTrustAccessMtlsHostnameSettingsSettingsToHclTerraform, false)(this._settings.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "ZeroTrustAccessMtlsHostnameSettingsSettingsList",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

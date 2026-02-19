@@ -1,33 +1,33 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
+export interface WaitingRoomConfig extends cdktn.TerraformMetaArguments {
   /**
   * Only available for the Waiting Room Advanced subscription. Additional hostname and path combinations to which this waiting room will be applied. There is an implied wildcard at the end of the path. The hostname and path combination must be unique to this and all other waiting rooms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#additional_routes WaitingRoom#additional_routes}
   */
-  readonly additionalRoutes?: WaitingRoomAdditionalRoutes[] | cdktf.IResolvable;
+  readonly additionalRoutes?: WaitingRoomAdditionalRoutes[] | cdktn.IResolvable;
   /**
   * Configures cookie attributes for the waiting room cookie. This encrypted cookie stores a user's status in the waiting room, such as queue position.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#cookie_attributes WaitingRoom#cookie_attributes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#cookie_attributes WaitingRoom#cookie_attributes}
   */
   readonly cookieAttributes?: WaitingRoomCookieAttributes;
   /**
   * Appends a '_' + a custom suffix to the end of Cloudflare Waiting Room's cookie name(__cf_waitingroom). If `cookie_suffix` is "abcd", the cookie name will be `__cf_waitingroom_abcd`. This field is required if using `additional_routes`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#cookie_suffix WaitingRoom#cookie_suffix}
   */
   readonly cookieSuffix?: string;
   /**
@@ -41,38 +41,38 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 
   * To view the full list of variables, look at the `cfWaitingRoom` object described under the `json_response_enabled` property in other Waiting Room API calls.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#custom_page_html WaitingRoom#custom_page_html}
   */
   readonly customPageHtml?: string;
   /**
   * The language of the default page template. If no default_template_language is provided, then `en-US` (English) will be used.
   * Available values: "en-US", "es-ES", "de-DE", "fr-FR", "it-IT", "ja-JP", "ko-KR", "pt-BR", "zh-CN", "zh-TW", "nl-NL", "pl-PL", "id-ID", "tr-TR", "ar-EG", "ru-RU", "fa-IR", "bg-BG", "hr-HR", "cs-CZ", "da-DK", "fi-FI", "lt-LT", "ms-MY", "nb-NO", "ro-RO", "el-GR", "he-IL", "hi-IN", "hu-HU", "sr-BA", "sk-SK", "sl-SI", "sv-SE", "tl-PH", "th-TH", "uk-UA", "vi-VN".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#default_template_language WaitingRoom#default_template_language}
   */
   readonly defaultTemplateLanguage?: string;
   /**
   * A note that you can use to add more details about the waiting room.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#description WaitingRoom#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#description WaitingRoom#description}
   */
   readonly description?: string;
   /**
   * Only available for the Waiting Room Advanced subscription. Disables automatic renewal of session cookies. If `true`, an accepted user will have session_duration minutes to browse the site. After that, they will have to go through the waiting room again. If `false`, a user's session cookie will be automatically renewed on every request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#disable_session_renewal WaitingRoom#disable_session_renewal}
   */
-  readonly disableSessionRenewal?: boolean | cdktf.IResolvable;
+  readonly disableSessionRenewal?: boolean | cdktn.IResolvable;
   /**
   * A list of enabled origin commands.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#enabled_origin_commands WaitingRoom#enabled_origin_commands}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#enabled_origin_commands WaitingRoom#enabled_origin_commands}
   */
   readonly enabledOriginCommands?: string[];
   /**
   * The host name to which the waiting room will be applied (no wildcards). Please do not include the scheme (http:// or https://). The host and path combination must be unique.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#host WaitingRoom#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#host WaitingRoom#host}
   */
   readonly host: string;
   /**
@@ -168,33 +168,33 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 		}
   * 	}
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#json_response_enabled WaitingRoom#json_response_enabled}
   */
-  readonly jsonResponseEnabled?: boolean | cdktf.IResolvable;
+  readonly jsonResponseEnabled?: boolean | cdktn.IResolvable;
   /**
   * A unique name to identify the waiting room. Only alphanumeric characters, hyphens and underscores are allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#name WaitingRoom#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#name WaitingRoom#name}
   */
   readonly name: string;
   /**
   * Sets the number of new users that will be let into the route every minute. This value is used as baseline for the number of users that are let in per minute. So it is possible that there is a little more or little less traffic coming to the route based on the traffic patterns at that time around the world.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#new_users_per_minute WaitingRoom#new_users_per_minute}
   */
   readonly newUsersPerMinute: number;
   /**
   * Sets the path within the host to enable the waiting room on. The waiting room will be enabled for all subpaths as well. If there are two waiting rooms on the same subpath, the waiting room for the most specific path will be chosen. Wildcards and query parameters are not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#path WaitingRoom#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#path WaitingRoom#path}
   */
   readonly path?: string;
   /**
   * If queue_all is `true`, all the traffic that is coming to a route will be sent to the waiting room. No new traffic can get to the route once this field is set and estimated time will become unavailable.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#queue_all WaitingRoom#queue_all}
   */
-  readonly queueAll?: boolean | cdktf.IResolvable;
+  readonly queueAll?: boolean | cdktn.IResolvable;
   /**
   * Sets the queueing method used by the waiting room. Changing this parameter from the **default** queueing method is only available for the Waiting Room Advanced subscription. Regardless of the queueing method, if `queue_all` is enabled or an event is prequeueing, users in the waiting room will not be accepted to the origin. These users will always see a waiting room page that refreshes automatically. The valid queueing methods are:
   * 1. `fifo` **(default)**: First-In-First-Out queue where customers gain access in the order they arrived.
@@ -203,32 +203,32 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * 4. `reject`: Users will be immediately rejected from the waiting room. As a result, no users will reach the origin website while this is enabled. This can be used if you wish to reject all traffic while performing maintenance, block traffic during a specified period of time (an event), or block traffic while events are not occurring. Consider a waiting room used for vaccine distribution that only allows traffic during sign-up events, and otherwise blocks all traffic. For this case, the waiting room uses `reject`, and its events override this with `fifo`, `random`, or `passthrough`. When this queueing method is enabled and neither `queueAll` is enabled nor an event is prequeueing, the waiting room page **will not refresh automatically**.
   * Available values: "fifo", "random", "passthrough", "reject".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#queueing_method WaitingRoom#queueing_method}
   */
   readonly queueingMethod?: string;
   /**
   * HTTP status code returned to a user while in the queue.
   * Available values: 200, 202, 429.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#queueing_status_code WaitingRoom#queueing_status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#queueing_status_code WaitingRoom#queueing_status_code}
   */
   readonly queueingStatusCode?: number;
   /**
   * Lifetime of a cookie (in minutes) set by Cloudflare for users who get access to the route. If a user is not seen by Cloudflare again in that time period, they will be treated as a new user that visits the route.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#session_duration WaitingRoom#session_duration}
   */
   readonly sessionDuration?: number;
   /**
   * Suspends or allows traffic going to the waiting room. If set to `true`, the traffic will not go to the waiting room.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#suspended WaitingRoom#suspended}
   */
-  readonly suspended?: boolean | cdktf.IResolvable;
+  readonly suspended?: boolean | cdktn.IResolvable;
   /**
   * Sets the total number of active user sessions on the route at a point in time. A route is a combination of host and path on which a waiting room is available. This value is used as a baseline for the total number of active user sessions on the route. It is possible to have a situation where there are more or less active users sessions on the route based on the traffic patterns at that time around the world.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#total_active_users WaitingRoom#total_active_users}
   */
   readonly totalActiveUsers: number;
   /**
@@ -239,7 +239,7 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * origin. `infinite_queue` requires Advanced Waiting Room.
   * Available values: "log", "infinite_queue".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#turnstile_action WaitingRoom#turnstile_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#turnstile_action WaitingRoom#turnstile_action}
   */
   readonly turnstileAction?: string;
   /**
@@ -250,13 +250,13 @@ export interface WaitingRoomConfig extends cdktf.TerraformMetaArguments {
   * `off` or `invisible` requires Advanced Waiting Room.
   * Available values: "off", "invisible", "visible_non_interactive", "visible_managed".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#turnstile_mode WaitingRoom#turnstile_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#turnstile_mode WaitingRoom#turnstile_mode}
   */
   readonly turnstileMode?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#zone_id WaitingRoom#zone_id}
   */
   readonly zoneId: string;
 }
@@ -264,43 +264,43 @@ export interface WaitingRoomAdditionalRoutes {
   /**
   * The hostname to which this waiting room will be applied (no wildcards). The hostname must be the primary domain, subdomain, or custom hostname (if using SSL for SaaS) of this zone. Please do not include the scheme (http:// or https://).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#host WaitingRoom#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#host WaitingRoom#host}
   */
   readonly host?: string;
   /**
   * Sets the path within the host to enable the waiting room on. The waiting room will be enabled for all subpaths as well. If there are two waiting rooms on the same subpath, the waiting room for the most specific path will be chosen. Wildcards and query parameters are not supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#path WaitingRoom#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#path WaitingRoom#path}
   */
   readonly path?: string;
 }
 
-export function waitingRoomAdditionalRoutesToTerraform(struct?: WaitingRoomAdditionalRoutes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waitingRoomAdditionalRoutesToTerraform(struct?: WaitingRoomAdditionalRoutes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    host: cdktf.stringToTerraform(struct!.host),
-    path: cdktf.stringToTerraform(struct!.path),
+    host: cdktn.stringToTerraform(struct!.host),
+    path: cdktn.stringToTerraform(struct!.path),
   }
 }
 
 
-export function waitingRoomAdditionalRoutesToHclTerraform(struct?: WaitingRoomAdditionalRoutes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waitingRoomAdditionalRoutesToHclTerraform(struct?: WaitingRoomAdditionalRoutes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     path: {
-      value: cdktf.stringToHclTerraform(struct!.path),
+      value: cdktn.stringToHclTerraform(struct!.path),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -311,9 +311,9 @@ export function waitingRoomAdditionalRoutesToHclTerraform(struct?: WaitingRoomAd
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaitingRoomAdditionalRoutesOutputReference extends cdktf.ComplexObject {
+export class WaitingRoomAdditionalRoutesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -321,11 +321,11 @@ export class WaitingRoomAdditionalRoutesOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): WaitingRoomAdditionalRoutes | cdktf.IResolvable | undefined {
+  public get internalValue(): WaitingRoomAdditionalRoutes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -342,14 +342,14 @@ export class WaitingRoomAdditionalRoutesOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaitingRoomAdditionalRoutes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaitingRoomAdditionalRoutes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._host = undefined;
       this._path = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -394,15 +394,15 @@ export class WaitingRoomAdditionalRoutesOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class WaitingRoomAdditionalRoutesList extends cdktf.ComplexList {
-  public internalValue? : WaitingRoomAdditionalRoutes[] | cdktf.IResolvable
+export class WaitingRoomAdditionalRoutesList extends cdktn.ComplexList {
+  public internalValue? : WaitingRoomAdditionalRoutes[] | cdktn.IResolvable
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -418,44 +418,44 @@ export interface WaitingRoomCookieAttributes {
   * Configures the SameSite attribute on the waiting room cookie. Value `auto` will be translated to `lax` or `none` depending if **Always Use HTTPS** is enabled. Note that when using value `none`, the secure attribute cannot be set to `never`.
   * Available values: "auto", "lax", "none", "strict".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#samesite WaitingRoom#samesite}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#samesite WaitingRoom#samesite}
   */
   readonly samesite?: string;
   /**
   * Configures the Secure attribute on the waiting room cookie. Value `always` indicates that the Secure attribute will be set in the Set-Cookie header, `never` indicates that the Secure attribute will not be set, and `auto` will set the Secure attribute depending if **Always Use HTTPS** is enabled.
   * Available values: "auto", "always", "never".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#secure WaitingRoom#secure}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#secure WaitingRoom#secure}
   */
   readonly secure?: string;
 }
 
-export function waitingRoomCookieAttributesToTerraform(struct?: WaitingRoomCookieAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waitingRoomCookieAttributesToTerraform(struct?: WaitingRoomCookieAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    samesite: cdktf.stringToTerraform(struct!.samesite),
-    secure: cdktf.stringToTerraform(struct!.secure),
+    samesite: cdktn.stringToTerraform(struct!.samesite),
+    secure: cdktn.stringToTerraform(struct!.secure),
   }
 }
 
 
-export function waitingRoomCookieAttributesToHclTerraform(struct?: WaitingRoomCookieAttributes | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function waitingRoomCookieAttributesToHclTerraform(struct?: WaitingRoomCookieAttributes | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     samesite: {
-      value: cdktf.stringToHclTerraform(struct!.samesite),
+      value: cdktn.stringToHclTerraform(struct!.samesite),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     secure: {
-      value: cdktf.stringToHclTerraform(struct!.secure),
+      value: cdktn.stringToHclTerraform(struct!.secure),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -466,19 +466,19 @@ export function waitingRoomCookieAttributesToHclTerraform(struct?: WaitingRoomCo
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class WaitingRoomCookieAttributesOutputReference extends cdktf.ComplexObject {
+export class WaitingRoomCookieAttributesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): WaitingRoomCookieAttributes | cdktf.IResolvable | undefined {
+  public get internalValue(): WaitingRoomCookieAttributes | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -495,14 +495,14 @@ export class WaitingRoomCookieAttributesOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: WaitingRoomCookieAttributes | cdktf.IResolvable | undefined) {
+  public set internalValue(value: WaitingRoomCookieAttributes | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._samesite = undefined;
       this._secure = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -548,9 +548,9 @@ export class WaitingRoomCookieAttributesOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room cloudflare_waiting_room}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room cloudflare_waiting_room}
 */
-export class WaitingRoom extends cdktf.TerraformResource {
+export class WaitingRoom extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -561,14 +561,14 @@ export class WaitingRoom extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a WaitingRoom resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a WaitingRoom resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the WaitingRoom to import
-  * @param importFromId The id of the existing WaitingRoom that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing WaitingRoom that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the WaitingRoom to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_waiting_room", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_waiting_room", importId: importFromId, provider });
       }
 
   // ===========
@@ -576,7 +576,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/waiting_room cloudflare_waiting_room} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/waiting_room cloudflare_waiting_room} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -587,7 +587,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_waiting_room',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -631,7 +631,7 @@ export class WaitingRoom extends cdktf.TerraformResource {
   public get additionalRoutes() {
     return this._additionalRoutes;
   }
-  public putAdditionalRoutes(value: WaitingRoomAdditionalRoutes[] | cdktf.IResolvable) {
+  public putAdditionalRoutes(value: WaitingRoomAdditionalRoutes[] | cdktn.IResolvable) {
     this._additionalRoutes.internalValue = value;
   }
   public resetAdditionalRoutes() {
@@ -728,11 +728,11 @@ export class WaitingRoom extends cdktf.TerraformResource {
   }
 
   // disable_session_renewal - computed: true, optional: true, required: false
-  private _disableSessionRenewal?: boolean | cdktf.IResolvable; 
+  private _disableSessionRenewal?: boolean | cdktn.IResolvable; 
   public get disableSessionRenewal() {
     return this.getBooleanAttribute('disable_session_renewal');
   }
-  public set disableSessionRenewal(value: boolean | cdktf.IResolvable) {
+  public set disableSessionRenewal(value: boolean | cdktn.IResolvable) {
     this._disableSessionRenewal = value;
   }
   public resetDisableSessionRenewal() {
@@ -778,11 +778,11 @@ export class WaitingRoom extends cdktf.TerraformResource {
   }
 
   // json_response_enabled - computed: true, optional: true, required: false
-  private _jsonResponseEnabled?: boolean | cdktf.IResolvable; 
+  private _jsonResponseEnabled?: boolean | cdktn.IResolvable; 
   public get jsonResponseEnabled() {
     return this.getBooleanAttribute('json_response_enabled');
   }
-  public set jsonResponseEnabled(value: boolean | cdktf.IResolvable) {
+  public set jsonResponseEnabled(value: boolean | cdktn.IResolvable) {
     this._jsonResponseEnabled = value;
   }
   public resetJsonResponseEnabled() {
@@ -851,11 +851,11 @@ export class WaitingRoom extends cdktf.TerraformResource {
   }
 
   // queue_all - computed: true, optional: true, required: false
-  private _queueAll?: boolean | cdktf.IResolvable; 
+  private _queueAll?: boolean | cdktn.IResolvable; 
   public get queueAll() {
     return this.getBooleanAttribute('queue_all');
   }
-  public set queueAll(value: boolean | cdktf.IResolvable) {
+  public set queueAll(value: boolean | cdktn.IResolvable) {
     this._queueAll = value;
   }
   public resetQueueAll() {
@@ -915,11 +915,11 @@ export class WaitingRoom extends cdktf.TerraformResource {
   }
 
   // suspended - computed: true, optional: true, required: false
-  private _suspended?: boolean | cdktf.IResolvable; 
+  private _suspended?: boolean | cdktn.IResolvable; 
   public get suspended() {
     return this.getBooleanAttribute('suspended');
   }
-  public set suspended(value: boolean | cdktf.IResolvable) {
+  public set suspended(value: boolean | cdktn.IResolvable) {
     this._suspended = value;
   }
   public resetSuspended() {
@@ -994,35 +994,35 @@ export class WaitingRoom extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      additional_routes: cdktf.listMapper(waitingRoomAdditionalRoutesToTerraform, false)(this._additionalRoutes.internalValue),
+      additional_routes: cdktn.listMapper(waitingRoomAdditionalRoutesToTerraform, false)(this._additionalRoutes.internalValue),
       cookie_attributes: waitingRoomCookieAttributesToTerraform(this._cookieAttributes.internalValue),
-      cookie_suffix: cdktf.stringToTerraform(this._cookieSuffix),
-      custom_page_html: cdktf.stringToTerraform(this._customPageHtml),
-      default_template_language: cdktf.stringToTerraform(this._defaultTemplateLanguage),
-      description: cdktf.stringToTerraform(this._description),
-      disable_session_renewal: cdktf.booleanToTerraform(this._disableSessionRenewal),
-      enabled_origin_commands: cdktf.listMapper(cdktf.stringToTerraform, false)(this._enabledOriginCommands),
-      host: cdktf.stringToTerraform(this._host),
-      json_response_enabled: cdktf.booleanToTerraform(this._jsonResponseEnabled),
-      name: cdktf.stringToTerraform(this._name),
-      new_users_per_minute: cdktf.numberToTerraform(this._newUsersPerMinute),
-      path: cdktf.stringToTerraform(this._path),
-      queue_all: cdktf.booleanToTerraform(this._queueAll),
-      queueing_method: cdktf.stringToTerraform(this._queueingMethod),
-      queueing_status_code: cdktf.numberToTerraform(this._queueingStatusCode),
-      session_duration: cdktf.numberToTerraform(this._sessionDuration),
-      suspended: cdktf.booleanToTerraform(this._suspended),
-      total_active_users: cdktf.numberToTerraform(this._totalActiveUsers),
-      turnstile_action: cdktf.stringToTerraform(this._turnstileAction),
-      turnstile_mode: cdktf.stringToTerraform(this._turnstileMode),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      cookie_suffix: cdktn.stringToTerraform(this._cookieSuffix),
+      custom_page_html: cdktn.stringToTerraform(this._customPageHtml),
+      default_template_language: cdktn.stringToTerraform(this._defaultTemplateLanguage),
+      description: cdktn.stringToTerraform(this._description),
+      disable_session_renewal: cdktn.booleanToTerraform(this._disableSessionRenewal),
+      enabled_origin_commands: cdktn.listMapper(cdktn.stringToTerraform, false)(this._enabledOriginCommands),
+      host: cdktn.stringToTerraform(this._host),
+      json_response_enabled: cdktn.booleanToTerraform(this._jsonResponseEnabled),
+      name: cdktn.stringToTerraform(this._name),
+      new_users_per_minute: cdktn.numberToTerraform(this._newUsersPerMinute),
+      path: cdktn.stringToTerraform(this._path),
+      queue_all: cdktn.booleanToTerraform(this._queueAll),
+      queueing_method: cdktn.stringToTerraform(this._queueingMethod),
+      queueing_status_code: cdktn.numberToTerraform(this._queueingStatusCode),
+      session_duration: cdktn.numberToTerraform(this._sessionDuration),
+      suspended: cdktn.booleanToTerraform(this._suspended),
+      total_active_users: cdktn.numberToTerraform(this._totalActiveUsers),
+      turnstile_action: cdktn.stringToTerraform(this._turnstileAction),
+      turnstile_mode: cdktn.stringToTerraform(this._turnstileMode),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       additional_routes: {
-        value: cdktf.listMapperHcl(waitingRoomAdditionalRoutesToHclTerraform, false)(this._additionalRoutes.internalValue),
+        value: cdktn.listMapperHcl(waitingRoomAdditionalRoutesToHclTerraform, false)(this._additionalRoutes.internalValue),
         isBlock: true,
         type: "list",
         storageClassType: "WaitingRoomAdditionalRoutesList",
@@ -1034,121 +1034,121 @@ export class WaitingRoom extends cdktf.TerraformResource {
         storageClassType: "WaitingRoomCookieAttributes",
       },
       cookie_suffix: {
-        value: cdktf.stringToHclTerraform(this._cookieSuffix),
+        value: cdktn.stringToHclTerraform(this._cookieSuffix),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       custom_page_html: {
-        value: cdktf.stringToHclTerraform(this._customPageHtml),
+        value: cdktn.stringToHclTerraform(this._customPageHtml),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       default_template_language: {
-        value: cdktf.stringToHclTerraform(this._defaultTemplateLanguage),
+        value: cdktn.stringToHclTerraform(this._defaultTemplateLanguage),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       description: {
-        value: cdktf.stringToHclTerraform(this._description),
+        value: cdktn.stringToHclTerraform(this._description),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       disable_session_renewal: {
-        value: cdktf.booleanToHclTerraform(this._disableSessionRenewal),
+        value: cdktn.booleanToHclTerraform(this._disableSessionRenewal),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       enabled_origin_commands: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._enabledOriginCommands),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._enabledOriginCommands),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
       },
       host: {
-        value: cdktf.stringToHclTerraform(this._host),
+        value: cdktn.stringToHclTerraform(this._host),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       json_response_enabled: {
-        value: cdktf.booleanToHclTerraform(this._jsonResponseEnabled),
+        value: cdktn.booleanToHclTerraform(this._jsonResponseEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       new_users_per_minute: {
-        value: cdktf.numberToHclTerraform(this._newUsersPerMinute),
+        value: cdktn.numberToHclTerraform(this._newUsersPerMinute),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       path: {
-        value: cdktf.stringToHclTerraform(this._path),
+        value: cdktn.stringToHclTerraform(this._path),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queue_all: {
-        value: cdktf.booleanToHclTerraform(this._queueAll),
+        value: cdktn.booleanToHclTerraform(this._queueAll),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       queueing_method: {
-        value: cdktf.stringToHclTerraform(this._queueingMethod),
+        value: cdktn.stringToHclTerraform(this._queueingMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       queueing_status_code: {
-        value: cdktf.numberToHclTerraform(this._queueingStatusCode),
+        value: cdktn.numberToHclTerraform(this._queueingStatusCode),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       session_duration: {
-        value: cdktf.numberToHclTerraform(this._sessionDuration),
+        value: cdktn.numberToHclTerraform(this._sessionDuration),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       suspended: {
-        value: cdktf.booleanToHclTerraform(this._suspended),
+        value: cdktn.booleanToHclTerraform(this._suspended),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       total_active_users: {
-        value: cdktf.numberToHclTerraform(this._totalActiveUsers),
+        value: cdktn.numberToHclTerraform(this._totalActiveUsers),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       turnstile_action: {
-        value: cdktf.stringToHclTerraform(this._turnstileAction),
+        value: cdktn.stringToHclTerraform(this._turnstileAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       turnstile_mode: {
-        value: cdktf.stringToHclTerraform(this._turnstileMode),
+        value: cdktn.stringToHclTerraform(this._turnstileMode),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,86 +1,86 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface BotManagementConfig extends cdktf.TerraformMetaArguments {
+export interface BotManagementConfig extends cdktn.TerraformMetaArguments {
   /**
   * Enable rule to block AI Scrapers and Crawlers. Please note the value `only_on_ad_pages` is currently not available for Enterprise customers.
   * Available values: "block", "disabled", "only_on_ad_pages".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#ai_bots_protection BotManagement#ai_bots_protection}
   */
   readonly aiBotsProtection?: string;
   /**
   * Automatically update to the newest bot detection models created by Cloudflare as they are released. [Learn more.](https://developers.cloudflare.com/bots/reference/machine-learning-models#model-versions-and-release-notes)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#auto_update_model BotManagement#auto_update_model}
   */
-  readonly autoUpdateModel?: boolean | cdktf.IResolvable;
+  readonly autoUpdateModel?: boolean | cdktn.IResolvable;
   /**
   * Indicates that the bot management cookie can be placed on end user devices accessing the site. Defaults to true
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#bm_cookie_enabled BotManagement#bm_cookie_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#bm_cookie_enabled BotManagement#bm_cookie_enabled}
   */
-  readonly bmCookieEnabled?: boolean | cdktf.IResolvable;
+  readonly bmCookieEnabled?: boolean | cdktn.IResolvable;
   /**
   * Specifies the Robots Access Control License variant to use.
   * Available values: "off", "policy_only".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#cf_robots_variant BotManagement#cf_robots_variant}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#cf_robots_variant BotManagement#cf_robots_variant}
   */
   readonly cfRobotsVariant?: string;
   /**
   * Enable rule to punish AI Scrapers and Crawlers via a link maze.
   * Available values: "enabled", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#crawler_protection BotManagement#crawler_protection}
   */
   readonly crawlerProtection?: string;
   /**
   * Use lightweight, invisible JavaScript detections to improve Bot Management. [Learn more about JavaScript Detections](https://developers.cloudflare.com/bots/reference/javascript-detections/).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#enable_js BotManagement#enable_js}
   */
-  readonly enableJs?: boolean | cdktf.IResolvable;
+  readonly enableJs?: boolean | cdktn.IResolvable;
   /**
   * Whether to enable Bot Fight Mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#fight_mode BotManagement#fight_mode}
   */
-  readonly fightMode?: boolean | cdktf.IResolvable;
+  readonly fightMode?: boolean | cdktn.IResolvable;
   /**
   * Enable cloudflare managed robots.txt. If an existing robots.txt is detected, then managed robots.txt will be prepended to the existing robots.txt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#is_robots_txt_managed BotManagement#is_robots_txt_managed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#is_robots_txt_managed BotManagement#is_robots_txt_managed}
   */
-  readonly isRobotsTxtManaged?: boolean | cdktf.IResolvable;
+  readonly isRobotsTxtManaged?: boolean | cdktn.IResolvable;
   /**
   * Whether to optimize Super Bot Fight Mode protections for Wordpress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#optimize_wordpress BotManagement#optimize_wordpress}
   */
-  readonly optimizeWordpress?: boolean | cdktf.IResolvable;
+  readonly optimizeWordpress?: boolean | cdktn.IResolvable;
   /**
   * Super Bot Fight Mode (SBFM) action to take on definitely automated requests.
   * Available values: "allow", "block", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#sbfm_definitely_automated BotManagement#sbfm_definitely_automated}
   */
   readonly sbfmDefinitelyAutomated?: string;
   /**
   * Super Bot Fight Mode (SBFM) action to take on likely automated requests.
   * Available values: "allow", "block", "managed_challenge".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#sbfm_likely_automated BotManagement#sbfm_likely_automated}
   */
   readonly sbfmLikelyAutomated?: string;
   /**
@@ -88,26 +88,26 @@ export interface BotManagementConfig extends cdktf.TerraformMetaArguments {
   * Enable if static resources on your application need bot protection.
   * Note: Static resource protection can also result in legitimate traffic being blocked.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#sbfm_static_resource_protection BotManagement#sbfm_static_resource_protection}
   */
-  readonly sbfmStaticResourceProtection?: boolean | cdktf.IResolvable;
+  readonly sbfmStaticResourceProtection?: boolean | cdktn.IResolvable;
   /**
   * Super Bot Fight Mode (SBFM) action to take on verified bots requests.
   * Available values: "allow", "block".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#sbfm_verified_bots BotManagement#sbfm_verified_bots}
   */
   readonly sbfmVerifiedBots?: string;
   /**
   * Whether to disable tracking the highest bot score for a session in the Bot Management cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#suppress_session_score BotManagement#suppress_session_score}
   */
-  readonly suppressSessionScore?: boolean | cdktf.IResolvable;
+  readonly suppressSessionScore?: boolean | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#zone_id BotManagement#zone_id}
   */
   readonly zoneId: string;
 }
@@ -115,8 +115,8 @@ export interface BotManagementStaleZoneConfiguration {
 }
 
 export function botManagementStaleZoneConfigurationToTerraform(struct?: BotManagementStaleZoneConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -125,8 +125,8 @@ export function botManagementStaleZoneConfigurationToTerraform(struct?: BotManag
 
 
 export function botManagementStaleZoneConfigurationToHclTerraform(struct?: BotManagementStaleZoneConfiguration): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -134,14 +134,14 @@ export function botManagementStaleZoneConfigurationToHclTerraform(struct?: BotMa
   return attrs;
 }
 
-export class BotManagementStaleZoneConfigurationOutputReference extends cdktf.ComplexObject {
+export class BotManagementStaleZoneConfigurationOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -197,9 +197,9 @@ export class BotManagementStaleZoneConfigurationOutputReference extends cdktf.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management cloudflare_bot_management}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management cloudflare_bot_management}
 */
-export class BotManagement extends cdktf.TerraformResource {
+export class BotManagement extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -210,14 +210,14 @@ export class BotManagement extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a BotManagement resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a BotManagement resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the BotManagement to import
-  * @param importFromId The id of the existing BotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing BotManagement that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the BotManagement to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_bot_management", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_bot_management", importId: importFromId, provider });
       }
 
   // ===========
@@ -225,7 +225,7 @@ export class BotManagement extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/bot_management cloudflare_bot_management} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/bot_management cloudflare_bot_management} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -236,7 +236,7 @@ export class BotManagement extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_bot_management',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -285,11 +285,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // auto_update_model - computed: true, optional: true, required: false
-  private _autoUpdateModel?: boolean | cdktf.IResolvable; 
+  private _autoUpdateModel?: boolean | cdktn.IResolvable; 
   public get autoUpdateModel() {
     return this.getBooleanAttribute('auto_update_model');
   }
-  public set autoUpdateModel(value: boolean | cdktf.IResolvable) {
+  public set autoUpdateModel(value: boolean | cdktn.IResolvable) {
     this._autoUpdateModel = value;
   }
   public resetAutoUpdateModel() {
@@ -301,11 +301,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // bm_cookie_enabled - computed: true, optional: true, required: false
-  private _bmCookieEnabled?: boolean | cdktf.IResolvable; 
+  private _bmCookieEnabled?: boolean | cdktn.IResolvable; 
   public get bmCookieEnabled() {
     return this.getBooleanAttribute('bm_cookie_enabled');
   }
-  public set bmCookieEnabled(value: boolean | cdktf.IResolvable) {
+  public set bmCookieEnabled(value: boolean | cdktn.IResolvable) {
     this._bmCookieEnabled = value;
   }
   public resetBmCookieEnabled() {
@@ -349,11 +349,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // enable_js - computed: true, optional: true, required: false
-  private _enableJs?: boolean | cdktf.IResolvable; 
+  private _enableJs?: boolean | cdktn.IResolvable; 
   public get enableJs() {
     return this.getBooleanAttribute('enable_js');
   }
-  public set enableJs(value: boolean | cdktf.IResolvable) {
+  public set enableJs(value: boolean | cdktn.IResolvable) {
     this._enableJs = value;
   }
   public resetEnableJs() {
@@ -365,11 +365,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // fight_mode - computed: true, optional: true, required: false
-  private _fightMode?: boolean | cdktf.IResolvable; 
+  private _fightMode?: boolean | cdktn.IResolvable; 
   public get fightMode() {
     return this.getBooleanAttribute('fight_mode');
   }
-  public set fightMode(value: boolean | cdktf.IResolvable) {
+  public set fightMode(value: boolean | cdktn.IResolvable) {
     this._fightMode = value;
   }
   public resetFightMode() {
@@ -386,11 +386,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // is_robots_txt_managed - computed: true, optional: true, required: false
-  private _isRobotsTxtManaged?: boolean | cdktf.IResolvable; 
+  private _isRobotsTxtManaged?: boolean | cdktn.IResolvable; 
   public get isRobotsTxtManaged() {
     return this.getBooleanAttribute('is_robots_txt_managed');
   }
-  public set isRobotsTxtManaged(value: boolean | cdktf.IResolvable) {
+  public set isRobotsTxtManaged(value: boolean | cdktn.IResolvable) {
     this._isRobotsTxtManaged = value;
   }
   public resetIsRobotsTxtManaged() {
@@ -402,11 +402,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // optimize_wordpress - computed: true, optional: true, required: false
-  private _optimizeWordpress?: boolean | cdktf.IResolvable; 
+  private _optimizeWordpress?: boolean | cdktn.IResolvable; 
   public get optimizeWordpress() {
     return this.getBooleanAttribute('optimize_wordpress');
   }
-  public set optimizeWordpress(value: boolean | cdktf.IResolvable) {
+  public set optimizeWordpress(value: boolean | cdktn.IResolvable) {
     this._optimizeWordpress = value;
   }
   public resetOptimizeWordpress() {
@@ -450,11 +450,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // sbfm_static_resource_protection - computed: true, optional: true, required: false
-  private _sbfmStaticResourceProtection?: boolean | cdktf.IResolvable; 
+  private _sbfmStaticResourceProtection?: boolean | cdktn.IResolvable; 
   public get sbfmStaticResourceProtection() {
     return this.getBooleanAttribute('sbfm_static_resource_protection');
   }
-  public set sbfmStaticResourceProtection(value: boolean | cdktf.IResolvable) {
+  public set sbfmStaticResourceProtection(value: boolean | cdktn.IResolvable) {
     this._sbfmStaticResourceProtection = value;
   }
   public resetSbfmStaticResourceProtection() {
@@ -488,11 +488,11 @@ export class BotManagement extends cdktf.TerraformResource {
   }
 
   // suppress_session_score - computed: true, optional: true, required: false
-  private _suppressSessionScore?: boolean | cdktf.IResolvable; 
+  private _suppressSessionScore?: boolean | cdktn.IResolvable; 
   public get suppressSessionScore() {
     return this.getBooleanAttribute('suppress_session_score');
   }
-  public set suppressSessionScore(value: boolean | cdktf.IResolvable) {
+  public set suppressSessionScore(value: boolean | cdktn.IResolvable) {
     this._suppressSessionScore = value;
   }
   public resetSuppressSessionScore() {
@@ -527,112 +527,112 @@ export class BotManagement extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      ai_bots_protection: cdktf.stringToTerraform(this._aiBotsProtection),
-      auto_update_model: cdktf.booleanToTerraform(this._autoUpdateModel),
-      bm_cookie_enabled: cdktf.booleanToTerraform(this._bmCookieEnabled),
-      cf_robots_variant: cdktf.stringToTerraform(this._cfRobotsVariant),
-      crawler_protection: cdktf.stringToTerraform(this._crawlerProtection),
-      enable_js: cdktf.booleanToTerraform(this._enableJs),
-      fight_mode: cdktf.booleanToTerraform(this._fightMode),
-      is_robots_txt_managed: cdktf.booleanToTerraform(this._isRobotsTxtManaged),
-      optimize_wordpress: cdktf.booleanToTerraform(this._optimizeWordpress),
-      sbfm_definitely_automated: cdktf.stringToTerraform(this._sbfmDefinitelyAutomated),
-      sbfm_likely_automated: cdktf.stringToTerraform(this._sbfmLikelyAutomated),
-      sbfm_static_resource_protection: cdktf.booleanToTerraform(this._sbfmStaticResourceProtection),
-      sbfm_verified_bots: cdktf.stringToTerraform(this._sbfmVerifiedBots),
-      suppress_session_score: cdktf.booleanToTerraform(this._suppressSessionScore),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      ai_bots_protection: cdktn.stringToTerraform(this._aiBotsProtection),
+      auto_update_model: cdktn.booleanToTerraform(this._autoUpdateModel),
+      bm_cookie_enabled: cdktn.booleanToTerraform(this._bmCookieEnabled),
+      cf_robots_variant: cdktn.stringToTerraform(this._cfRobotsVariant),
+      crawler_protection: cdktn.stringToTerraform(this._crawlerProtection),
+      enable_js: cdktn.booleanToTerraform(this._enableJs),
+      fight_mode: cdktn.booleanToTerraform(this._fightMode),
+      is_robots_txt_managed: cdktn.booleanToTerraform(this._isRobotsTxtManaged),
+      optimize_wordpress: cdktn.booleanToTerraform(this._optimizeWordpress),
+      sbfm_definitely_automated: cdktn.stringToTerraform(this._sbfmDefinitelyAutomated),
+      sbfm_likely_automated: cdktn.stringToTerraform(this._sbfmLikelyAutomated),
+      sbfm_static_resource_protection: cdktn.booleanToTerraform(this._sbfmStaticResourceProtection),
+      sbfm_verified_bots: cdktn.stringToTerraform(this._sbfmVerifiedBots),
+      suppress_session_score: cdktn.booleanToTerraform(this._suppressSessionScore),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       ai_bots_protection: {
-        value: cdktf.stringToHclTerraform(this._aiBotsProtection),
+        value: cdktn.stringToHclTerraform(this._aiBotsProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       auto_update_model: {
-        value: cdktf.booleanToHclTerraform(this._autoUpdateModel),
+        value: cdktn.booleanToHclTerraform(this._autoUpdateModel),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       bm_cookie_enabled: {
-        value: cdktf.booleanToHclTerraform(this._bmCookieEnabled),
+        value: cdktn.booleanToHclTerraform(this._bmCookieEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       cf_robots_variant: {
-        value: cdktf.stringToHclTerraform(this._cfRobotsVariant),
+        value: cdktn.stringToHclTerraform(this._cfRobotsVariant),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       crawler_protection: {
-        value: cdktf.stringToHclTerraform(this._crawlerProtection),
+        value: cdktn.stringToHclTerraform(this._crawlerProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       enable_js: {
-        value: cdktf.booleanToHclTerraform(this._enableJs),
+        value: cdktn.booleanToHclTerraform(this._enableJs),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       fight_mode: {
-        value: cdktf.booleanToHclTerraform(this._fightMode),
+        value: cdktn.booleanToHclTerraform(this._fightMode),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       is_robots_txt_managed: {
-        value: cdktf.booleanToHclTerraform(this._isRobotsTxtManaged),
+        value: cdktn.booleanToHclTerraform(this._isRobotsTxtManaged),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       optimize_wordpress: {
-        value: cdktf.booleanToHclTerraform(this._optimizeWordpress),
+        value: cdktn.booleanToHclTerraform(this._optimizeWordpress),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sbfm_definitely_automated: {
-        value: cdktf.stringToHclTerraform(this._sbfmDefinitelyAutomated),
+        value: cdktn.stringToHclTerraform(this._sbfmDefinitelyAutomated),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sbfm_likely_automated: {
-        value: cdktf.stringToHclTerraform(this._sbfmLikelyAutomated),
+        value: cdktn.stringToHclTerraform(this._sbfmLikelyAutomated),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       sbfm_static_resource_protection: {
-        value: cdktf.booleanToHclTerraform(this._sbfmStaticResourceProtection),
+        value: cdktn.booleanToHclTerraform(this._sbfmStaticResourceProtection),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       sbfm_verified_bots: {
-        value: cdktf.stringToHclTerraform(this._sbfmVerifiedBots),
+        value: cdktn.stringToHclTerraform(this._sbfmVerifiedBots),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       suppress_session_score: {
-        value: cdktf.booleanToHclTerraform(this._suppressSessionScore),
+        value: cdktn.booleanToHclTerraform(this._suppressSessionScore),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

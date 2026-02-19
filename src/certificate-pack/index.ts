@@ -1,61 +1,61 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface CertificatePackConfig extends cdktf.TerraformMetaArguments {
+export interface CertificatePackConfig extends cdktn.TerraformMetaArguments {
   /**
   * Certificate Authority selected for the order.  For information on any certificate authority specific details or restrictions [see this page for more details.](https://developers.cloudflare.com/ssl/reference/certificate-authorities)
   * Available values: "google", "lets_encrypt", "ssl_com".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
   */
   readonly certificateAuthority: string;
   /**
   * Whether or not to add Cloudflare Branding for the order.  This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
   */
-  readonly cloudflareBranding?: boolean | cdktf.IResolvable;
+  readonly cloudflareBranding?: boolean | cdktn.IResolvable;
   /**
   * Comma separated list of valid host names for the certificate packs. Must contain the zone apex, may not contain more than 50 hosts, and may not be empty.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
   */
-  readonly hosts: string[];
+  readonly hosts?: string[];
   /**
   * Type of certificate pack.
   * Available values: "advanced".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#type CertificatePack#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#type CertificatePack#type}
   */
   readonly type: string;
   /**
   * Validation Method selected for the order.
   * Available values: "txt", "http", "email".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
   */
   readonly validationMethod: string;
   /**
   * Validity Days selected for the order.
   * Available values: 14, 30, 90, 365.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
   */
   readonly validityDays: number;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
   */
   readonly zoneId: string;
 }
@@ -63,8 +63,8 @@ export interface CertificatePackCertificatesGeoRestrictions {
 }
 
 export function certificatePackCertificatesGeoRestrictionsToTerraform(struct?: CertificatePackCertificatesGeoRestrictions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -73,8 +73,8 @@ export function certificatePackCertificatesGeoRestrictionsToTerraform(struct?: C
 
 
 export function certificatePackCertificatesGeoRestrictionsToHclTerraform(struct?: CertificatePackCertificatesGeoRestrictions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -82,14 +82,14 @@ export function certificatePackCertificatesGeoRestrictionsToHclTerraform(struct?
   return attrs;
 }
 
-export class CertificatePackCertificatesGeoRestrictionsOutputReference extends cdktf.ComplexObject {
+export class CertificatePackCertificatesGeoRestrictionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -117,8 +117,8 @@ export interface CertificatePackCertificates {
 }
 
 export function certificatePackCertificatesToTerraform(struct?: CertificatePackCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -127,8 +127,8 @@ export function certificatePackCertificatesToTerraform(struct?: CertificatePackC
 
 
 export function certificatePackCertificatesToHclTerraform(struct?: CertificatePackCertificates): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -136,7 +136,7 @@ export function certificatePackCertificatesToHclTerraform(struct?: CertificatePa
   return attrs;
 }
 
-export class CertificatePackCertificatesOutputReference extends cdktf.ComplexObject {
+export class CertificatePackCertificatesOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -145,7 +145,7 @@ export class CertificatePackCertificatesOutputReference extends cdktf.ComplexObj
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -226,14 +226,14 @@ export class CertificatePackCertificatesOutputReference extends cdktf.ComplexObj
   }
 }
 
-export class CertificatePackCertificatesList extends cdktf.ComplexList {
+export class CertificatePackCertificatesList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -248,8 +248,8 @@ export interface CertificatePackValidationErrors {
 }
 
 export function certificatePackValidationErrorsToTerraform(struct?: CertificatePackValidationErrors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -258,8 +258,8 @@ export function certificatePackValidationErrorsToTerraform(struct?: CertificateP
 
 
 export function certificatePackValidationErrorsToHclTerraform(struct?: CertificatePackValidationErrors): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -267,7 +267,7 @@ export function certificatePackValidationErrorsToHclTerraform(struct?: Certifica
   return attrs;
 }
 
-export class CertificatePackValidationErrorsOutputReference extends cdktf.ComplexObject {
+export class CertificatePackValidationErrorsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -276,7 +276,7 @@ export class CertificatePackValidationErrorsOutputReference extends cdktf.Comple
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -301,14 +301,14 @@ export class CertificatePackValidationErrorsOutputReference extends cdktf.Comple
   }
 }
 
-export class CertificatePackValidationErrorsList extends cdktf.ComplexList {
+export class CertificatePackValidationErrorsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -323,8 +323,8 @@ export interface CertificatePackValidationRecords {
 }
 
 export function certificatePackValidationRecordsToTerraform(struct?: CertificatePackValidationRecords): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -333,8 +333,8 @@ export function certificatePackValidationRecordsToTerraform(struct?: Certificate
 
 
 export function certificatePackValidationRecordsToHclTerraform(struct?: CertificatePackValidationRecords): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -342,7 +342,7 @@ export function certificatePackValidationRecordsToHclTerraform(struct?: Certific
   return attrs;
 }
 
-export class CertificatePackValidationRecordsOutputReference extends cdktf.ComplexObject {
+export class CertificatePackValidationRecordsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -351,7 +351,7 @@ export class CertificatePackValidationRecordsOutputReference extends cdktf.Compl
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -396,14 +396,14 @@ export class CertificatePackValidationRecordsOutputReference extends cdktf.Compl
   }
 }
 
-export class CertificatePackValidationRecordsList extends cdktf.ComplexList {
+export class CertificatePackValidationRecordsList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -416,9 +416,9 @@ export class CertificatePackValidationRecordsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack cloudflare_certificate_pack}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack}
 */
-export class CertificatePack extends cdktf.TerraformResource {
+export class CertificatePack extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -429,14 +429,14 @@ export class CertificatePack extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a CertificatePack resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a CertificatePack resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CertificatePack to import
-  * @param importFromId The id of the existing CertificatePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CertificatePack that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CertificatePack to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_certificate_pack", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_certificate_pack", importId: importFromId, provider });
       }
 
   // ===========
@@ -444,7 +444,7 @@ export class CertificatePack extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/certificate_pack cloudflare_certificate_pack} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -455,7 +455,7 @@ export class CertificatePack extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_certificate_pack',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -499,11 +499,11 @@ export class CertificatePack extends cdktf.TerraformResource {
   }
 
   // cloudflare_branding - computed: false, optional: true, required: false
-  private _cloudflareBranding?: boolean | cdktf.IResolvable; 
+  private _cloudflareBranding?: boolean | cdktn.IResolvable; 
   public get cloudflareBranding() {
     return this.getBooleanAttribute('cloudflare_branding');
   }
-  public set cloudflareBranding(value: boolean | cdktf.IResolvable) {
+  public set cloudflareBranding(value: boolean | cdktn.IResolvable) {
     this._cloudflareBranding = value;
   }
   public resetCloudflareBranding() {
@@ -514,13 +514,16 @@ export class CertificatePack extends cdktf.TerraformResource {
     return this._cloudflareBranding;
   }
 
-  // hosts - computed: false, optional: false, required: true
+  // hosts - computed: true, optional: true, required: false
   private _hosts?: string[]; 
   public get hosts() {
-    return this.getListAttribute('hosts');
+    return cdktn.Fn.tolist(this.getListAttribute('hosts'));
   }
   public set hosts(value: string[]) {
     this._hosts = value;
+  }
+  public resetHosts() {
+    this._hosts = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hostsInput() {
@@ -612,56 +615,56 @@ export class CertificatePack extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      certificate_authority: cdktf.stringToTerraform(this._certificateAuthority),
-      cloudflare_branding: cdktf.booleanToTerraform(this._cloudflareBranding),
-      hosts: cdktf.listMapper(cdktf.stringToTerraform, false)(this._hosts),
-      type: cdktf.stringToTerraform(this._type),
-      validation_method: cdktf.stringToTerraform(this._validationMethod),
-      validity_days: cdktf.numberToTerraform(this._validityDays),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      certificate_authority: cdktn.stringToTerraform(this._certificateAuthority),
+      cloudflare_branding: cdktn.booleanToTerraform(this._cloudflareBranding),
+      hosts: cdktn.listMapper(cdktn.stringToTerraform, false)(this._hosts),
+      type: cdktn.stringToTerraform(this._type),
+      validation_method: cdktn.stringToTerraform(this._validationMethod),
+      validity_days: cdktn.numberToTerraform(this._validityDays),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       certificate_authority: {
-        value: cdktf.stringToHclTerraform(this._certificateAuthority),
+        value: cdktn.stringToHclTerraform(this._certificateAuthority),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       cloudflare_branding: {
-        value: cdktf.booleanToHclTerraform(this._cloudflareBranding),
+        value: cdktn.booleanToHclTerraform(this._cloudflareBranding),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       hosts: {
-        value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(this._hosts),
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._hosts),
         isBlock: false,
-        type: "list",
+        type: "set",
         storageClassType: "stringList",
       },
       type: {
-        value: cdktf.stringToHclTerraform(this._type),
+        value: cdktn.stringToHclTerraform(this._type),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validation_method: {
-        value: cdktf.stringToHclTerraform(this._validationMethod),
+        value: cdktn.stringToHclTerraform(this._validationMethod),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validity_days: {
-        value: cdktf.numberToHclTerraform(this._validityDays),
+        value: cdktn.numberToHclTerraform(this._validityDays),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

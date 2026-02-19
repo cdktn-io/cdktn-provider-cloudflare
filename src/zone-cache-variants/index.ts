@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ZoneCacheVariantsConfig extends cdktf.TerraformMetaArguments {
+export interface ZoneCacheVariantsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Value of the zone setting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#value ZoneCacheVariants#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#value ZoneCacheVariants#value}
   */
   readonly value: ZoneCacheVariantsValue;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#zone_id ZoneCacheVariants#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#zone_id ZoneCacheVariants#zone_id}
   */
   readonly zoneId: string;
 }
@@ -29,160 +29,160 @@ export interface ZoneCacheVariantsValue {
   /**
   * List of strings with the MIME types of all the variants that should be served for avif.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#avif ZoneCacheVariants#avif}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#avif ZoneCacheVariants#avif}
   */
   readonly avif?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for bmp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#bmp ZoneCacheVariants#bmp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#bmp ZoneCacheVariants#bmp}
   */
   readonly bmp?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for gif.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#gif ZoneCacheVariants#gif}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#gif ZoneCacheVariants#gif}
   */
   readonly gif?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for jp2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#jp2 ZoneCacheVariants#jp2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jp2 ZoneCacheVariants#jp2}
   */
   readonly jp2?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for jpeg.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#jpeg ZoneCacheVariants#jpeg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jpeg ZoneCacheVariants#jpeg}
   */
   readonly jpeg?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for jpg.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#jpg ZoneCacheVariants#jpg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jpg ZoneCacheVariants#jpg}
   */
   readonly jpg?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for jpg2.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#jpg2 ZoneCacheVariants#jpg2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jpg2 ZoneCacheVariants#jpg2}
   */
   readonly jpg2?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for png.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#png ZoneCacheVariants#png}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#png ZoneCacheVariants#png}
   */
   readonly png?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for tif.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#tif ZoneCacheVariants#tif}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#tif ZoneCacheVariants#tif}
   */
   readonly tif?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for tiff.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#tiff ZoneCacheVariants#tiff}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#tiff ZoneCacheVariants#tiff}
   */
   readonly tiff?: string[];
   /**
   * List of strings with the MIME types of all the variants that should be served for webp.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#webp ZoneCacheVariants#webp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#webp ZoneCacheVariants#webp}
   */
   readonly webp?: string[];
 }
 
-export function zoneCacheVariantsValueToTerraform(struct?: ZoneCacheVariantsValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zoneCacheVariantsValueToTerraform(struct?: ZoneCacheVariantsValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    avif: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.avif),
-    bmp: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.bmp),
-    gif: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.gif),
-    jp2: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jp2),
-    jpeg: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jpeg),
-    jpg: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jpg),
-    jpg2: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.jpg2),
-    png: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.png),
-    tif: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tif),
-    tiff: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.tiff),
-    webp: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.webp),
+    avif: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.avif),
+    bmp: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.bmp),
+    gif: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.gif),
+    jp2: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jp2),
+    jpeg: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jpeg),
+    jpg: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jpg),
+    jpg2: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.jpg2),
+    png: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.png),
+    tif: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tif),
+    tiff: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.tiff),
+    webp: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.webp),
   }
 }
 
 
-export function zoneCacheVariantsValueToHclTerraform(struct?: ZoneCacheVariantsValue | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function zoneCacheVariantsValueToHclTerraform(struct?: ZoneCacheVariantsValue | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     avif: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.avif),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.avif),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     bmp: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.bmp),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.bmp),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     gif: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.gif),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.gif),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jp2: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jp2),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jp2),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jpeg: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jpeg),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jpeg),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jpg: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jpg),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jpg),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     jpg2: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.jpg2),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.jpg2),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     png: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.png),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.png),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tif: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tif),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tif),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     tiff: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.tiff),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.tiff),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
     },
     webp: {
-      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.webp),
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.webp),
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
@@ -193,19 +193,19 @@ export function zoneCacheVariantsValueToHclTerraform(struct?: ZoneCacheVariantsV
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class ZoneCacheVariantsValueOutputReference extends cdktf.ComplexObject {
+export class ZoneCacheVariantsValueOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): ZoneCacheVariantsValue | cdktf.IResolvable | undefined {
+  public get internalValue(): ZoneCacheVariantsValue | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -258,7 +258,7 @@ export class ZoneCacheVariantsValueOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: ZoneCacheVariantsValue | cdktf.IResolvable | undefined) {
+  public set internalValue(value: ZoneCacheVariantsValue | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -274,7 +274,7 @@ export class ZoneCacheVariantsValueOutputReference extends cdktf.ComplexObject {
       this._tiff = undefined;
       this._webp = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -473,9 +473,9 @@ export class ZoneCacheVariantsValueOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}
 */
-export class ZoneCacheVariants extends cdktf.TerraformResource {
+export class ZoneCacheVariants extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -486,14 +486,14 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ZoneCacheVariants resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ZoneCacheVariants resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneCacheVariants to import
-  * @param importFromId The id of the existing ZoneCacheVariants that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneCacheVariants that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneCacheVariants to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_cache_variants", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_cache_variants", importId: importFromId, provider });
       }
 
   // ===========
@@ -501,7 +501,7 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -512,7 +512,7 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_zone_cache_variants',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -579,7 +579,7 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       value: zoneCacheVariantsValueToTerraform(this._value.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
@@ -592,7 +592,7 @@ export class ZoneCacheVariants extends cdktf.TerraformResource {
         storageClassType: "ZoneCacheVariantsValue",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,17 +1,17 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield_schema_validation_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_schema_validation_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ApiShieldSchemaValidationSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface ApiShieldSchemaValidationSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The default mitigation action used when there is no mitigation action defined on the operation
   * 
@@ -23,7 +23,7 @@ export interface ApiShieldSchemaValidationSettingsConfig extends cdktf.Terraform
   * A special value of of `none` will skip running schema validation entirely for the request when there is no mitigation action defined on the operation
   * Available values: "none", "log", "block".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield_schema_validation_settings#validation_default_mitigation_action ApiShieldSchemaValidationSettings#validation_default_mitigation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_schema_validation_settings#validation_default_mitigation_action ApiShieldSchemaValidationSettings#validation_default_mitigation_action}
   */
   readonly validationDefaultMitigationAction: string;
   /**
@@ -35,21 +35,21 @@ export interface ApiShieldSchemaValidationSettingsConfig extends cdktf.Terraform
   * To clear any override, use the special value `disable_override` or `null`
   * Available values: "none", "disable_override".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield_schema_validation_settings#validation_override_mitigation_action ApiShieldSchemaValidationSettings#validation_override_mitigation_action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_schema_validation_settings#validation_override_mitigation_action ApiShieldSchemaValidationSettings#validation_override_mitigation_action}
   */
   readonly validationOverrideMitigationAction?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield_schema_validation_settings#zone_id ApiShieldSchemaValidationSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_schema_validation_settings#zone_id ApiShieldSchemaValidationSettings#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings}
 */
-export class ApiShieldSchemaValidationSettings extends cdktf.TerraformResource {
+export class ApiShieldSchemaValidationSettings extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -60,14 +60,14 @@ export class ApiShieldSchemaValidationSettings extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a ApiShieldSchemaValidationSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a ApiShieldSchemaValidationSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ApiShieldSchemaValidationSettings to import
-  * @param importFromId The id of the existing ApiShieldSchemaValidationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield_schema_validation_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ApiShieldSchemaValidationSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_schema_validation_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ApiShieldSchemaValidationSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield_schema_validation_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_api_shield_schema_validation_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -75,7 +75,7 @@ export class ApiShieldSchemaValidationSettings extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/api_shield_schema_validation_settings cloudflare_api_shield_schema_validation_settings} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -86,7 +86,7 @@ export class ApiShieldSchemaValidationSettings extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_api_shield_schema_validation_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -159,28 +159,28 @@ export class ApiShieldSchemaValidationSettings extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      validation_default_mitigation_action: cdktf.stringToTerraform(this._validationDefaultMitigationAction),
-      validation_override_mitigation_action: cdktf.stringToTerraform(this._validationOverrideMitigationAction),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      validation_default_mitigation_action: cdktn.stringToTerraform(this._validationDefaultMitigationAction),
+      validation_override_mitigation_action: cdktn.stringToTerraform(this._validationOverrideMitigationAction),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       validation_default_mitigation_action: {
-        value: cdktf.stringToHclTerraform(this._validationDefaultMitigationAction),
+        value: cdktn.stringToHclTerraform(this._validationDefaultMitigationAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validation_override_mitigation_action: {
-        value: cdktf.stringToHclTerraform(this._validationOverrideMitigationAction),
+        value: cdktn.stringToHclTerraform(this._validationOverrideMitigationAction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

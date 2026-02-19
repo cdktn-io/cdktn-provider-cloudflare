@@ -1,41 +1,41 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflarePageShieldConnectionsListConfig extends cdktn.TerraformMetaArguments {
   /**
   * The direction used to sort returned connections.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#direction DataCloudflarePageShieldConnectionsList#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#direction DataCloudflarePageShieldConnectionsList#direction}
   */
   readonly direction?: string;
   /**
   * When true, excludes connections seen in a `/cdn-cgi` path from the returned connections. The default value is true.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#exclude_cdn_cgi DataCloudflarePageShieldConnectionsList#exclude_cdn_cgi}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#exclude_cdn_cgi DataCloudflarePageShieldConnectionsList#exclude_cdn_cgi}
   */
-  readonly excludeCdnCgi?: boolean | cdktf.IResolvable;
+  readonly excludeCdnCgi?: boolean | cdktn.IResolvable;
   /**
   * Excludes connections whose URL contains one of the URL-encoded URLs separated by commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#exclude_urls DataCloudflarePageShieldConnectionsList#exclude_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#exclude_urls DataCloudflarePageShieldConnectionsList#exclude_urls}
   */
   readonly excludeUrls?: string;
   /**
   * Export the list of connections as a file, limited to 50000 entries.
   * Available values: "csv".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#export DataCloudflarePageShieldConnectionsList#export}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#export DataCloudflarePageShieldConnectionsList#export}
   */
   readonly export?: string;
   /**
@@ -44,20 +44,20 @@ export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.Ter
   * Wildcards are supported at the start and end of each hostname to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#hosts DataCloudflarePageShieldConnectionsList#hosts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#hosts DataCloudflarePageShieldConnectionsList#hosts}
   */
   readonly hosts?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#max_items DataCloudflarePageShieldConnectionsList#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#max_items DataCloudflarePageShieldConnectionsList#max_items}
   */
   readonly maxItems?: number;
   /**
   * The field used to sort returned connections.
   * Available values: "first_seen_at", "last_seen_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#order_by DataCloudflarePageShieldConnectionsList#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#order_by DataCloudflarePageShieldConnectionsList#order_by}
   */
   readonly orderBy?: string;
   /**
@@ -67,7 +67,7 @@ export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.Ter
   * with the applied filters in a single page. This feature is best-effort and it may only work for zones with
   * a low number of connections
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#page DataCloudflarePageShieldConnectionsList#page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#page DataCloudflarePageShieldConnectionsList#page}
   */
   readonly page?: string;
   /**
@@ -76,37 +76,37 @@ export interface DataCloudflarePageShieldConnectionsListConfig extends cdktf.Ter
   * Wildcards are supported at the start and end of each page URL to support starts with, ends with
   * and contains. If no wildcards are used, results will be filtered by exact match
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#page_url DataCloudflarePageShieldConnectionsList#page_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#page_url DataCloudflarePageShieldConnectionsList#page_url}
   */
   readonly pageUrl?: string;
   /**
   * The number of results per page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#per_page DataCloudflarePageShieldConnectionsList#per_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#per_page DataCloudflarePageShieldConnectionsList#per_page}
   */
   readonly perPage?: number;
   /**
   * When true, malicious connections appear first in the returned connections.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#prioritize_malicious DataCloudflarePageShieldConnectionsList#prioritize_malicious}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#prioritize_malicious DataCloudflarePageShieldConnectionsList#prioritize_malicious}
   */
-  readonly prioritizeMalicious?: boolean | cdktf.IResolvable;
+  readonly prioritizeMalicious?: boolean | cdktn.IResolvable;
   /**
   * Filters the returned connections using a comma-separated list of connection statuses. Accepted values: `active`, `infrequent`, and `inactive`. The default value is `active`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#status DataCloudflarePageShieldConnectionsList#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#status DataCloudflarePageShieldConnectionsList#status}
   */
   readonly status?: string;
   /**
   * Includes connections whose URL contain one or more URL-encoded URLs separated by commas.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#urls DataCloudflarePageShieldConnectionsList#urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#urls DataCloudflarePageShieldConnectionsList#urls}
   */
   readonly urls?: string;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#zone_id DataCloudflarePageShieldConnectionsList#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#zone_id DataCloudflarePageShieldConnectionsList#zone_id}
   */
   readonly zoneId: string;
 }
@@ -114,8 +114,8 @@ export interface DataCloudflarePageShieldConnectionsListResult {
 }
 
 export function dataCloudflarePageShieldConnectionsListResultToTerraform(struct?: DataCloudflarePageShieldConnectionsListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -124,8 +124,8 @@ export function dataCloudflarePageShieldConnectionsListResultToTerraform(struct?
 
 
 export function dataCloudflarePageShieldConnectionsListResultToHclTerraform(struct?: DataCloudflarePageShieldConnectionsListResult): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -133,7 +133,7 @@ export function dataCloudflarePageShieldConnectionsListResultToHclTerraform(stru
   return attrs;
 }
 
-export class DataCloudflarePageShieldConnectionsListResultOutputReference extends cdktf.ComplexObject {
+export class DataCloudflarePageShieldConnectionsListResultOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -142,7 +142,7 @@ export class DataCloudflarePageShieldConnectionsListResultOutputReference extend
   * @param complexObjectIndex the index of this item in the list
   * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
@@ -227,14 +227,14 @@ export class DataCloudflarePageShieldConnectionsListResultOutputReference extend
   }
 }
 
-export class DataCloudflarePageShieldConnectionsListResultList extends cdktf.ComplexList {
+export class DataCloudflarePageShieldConnectionsListResultList extends cdktn.ComplexList {
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -247,9 +247,9 @@ export class DataCloudflarePageShieldConnectionsListResultList extends cdktf.Com
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list}
 */
-export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformDataSource {
+export class DataCloudflarePageShieldConnectionsList extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -260,14 +260,14 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflarePageShieldConnectionsList resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflarePageShieldConnectionsList resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePageShieldConnectionsList to import
-  * @param importFromId The id of the existing DataCloudflarePageShieldConnectionsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePageShieldConnectionsList that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePageShieldConnectionsList to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_page_shield_connections_list", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_page_shield_connections_list", importId: importFromId, provider });
       }
 
   // ===========
@@ -275,7 +275,7 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/page_shield_connections_list cloudflare_page_shield_connections_list} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -286,7 +286,7 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
       terraformResourceType: 'cloudflare_page_shield_connections_list',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -334,11 +334,11 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
   }
 
   // exclude_cdn_cgi - computed: false, optional: true, required: false
-  private _excludeCdnCgi?: boolean | cdktf.IResolvable; 
+  private _excludeCdnCgi?: boolean | cdktn.IResolvable; 
   public get excludeCdnCgi() {
     return this.getBooleanAttribute('exclude_cdn_cgi');
   }
-  public set excludeCdnCgi(value: boolean | cdktf.IResolvable) {
+  public set excludeCdnCgi(value: boolean | cdktn.IResolvable) {
     this._excludeCdnCgi = value;
   }
   public resetExcludeCdnCgi() {
@@ -478,11 +478,11 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
   }
 
   // prioritize_malicious - computed: false, optional: true, required: false
-  private _prioritizeMalicious?: boolean | cdktf.IResolvable; 
+  private _prioritizeMalicious?: boolean | cdktn.IResolvable; 
   public get prioritizeMalicious() {
     return this.getBooleanAttribute('prioritize_malicious');
   }
-  public set prioritizeMalicious(value: boolean | cdktf.IResolvable) {
+  public set prioritizeMalicious(value: boolean | cdktn.IResolvable) {
     this._prioritizeMalicious = value;
   }
   public resetPrioritizeMalicious() {
@@ -550,105 +550,105 @@ export class DataCloudflarePageShieldConnectionsList extends cdktf.TerraformData
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      direction: cdktf.stringToTerraform(this._direction),
-      exclude_cdn_cgi: cdktf.booleanToTerraform(this._excludeCdnCgi),
-      exclude_urls: cdktf.stringToTerraform(this._excludeUrls),
-      export: cdktf.stringToTerraform(this._export),
-      hosts: cdktf.stringToTerraform(this._hosts),
-      max_items: cdktf.numberToTerraform(this._maxItems),
-      order_by: cdktf.stringToTerraform(this._orderBy),
-      page: cdktf.stringToTerraform(this._page),
-      page_url: cdktf.stringToTerraform(this._pageUrl),
-      per_page: cdktf.numberToTerraform(this._perPage),
-      prioritize_malicious: cdktf.booleanToTerraform(this._prioritizeMalicious),
-      status: cdktf.stringToTerraform(this._status),
-      urls: cdktf.stringToTerraform(this._urls),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      direction: cdktn.stringToTerraform(this._direction),
+      exclude_cdn_cgi: cdktn.booleanToTerraform(this._excludeCdnCgi),
+      exclude_urls: cdktn.stringToTerraform(this._excludeUrls),
+      export: cdktn.stringToTerraform(this._export),
+      hosts: cdktn.stringToTerraform(this._hosts),
+      max_items: cdktn.numberToTerraform(this._maxItems),
+      order_by: cdktn.stringToTerraform(this._orderBy),
+      page: cdktn.stringToTerraform(this._page),
+      page_url: cdktn.stringToTerraform(this._pageUrl),
+      per_page: cdktn.numberToTerraform(this._perPage),
+      prioritize_malicious: cdktn.booleanToTerraform(this._prioritizeMalicious),
+      status: cdktn.stringToTerraform(this._status),
+      urls: cdktn.stringToTerraform(this._urls),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       direction: {
-        value: cdktf.stringToHclTerraform(this._direction),
+        value: cdktn.stringToHclTerraform(this._direction),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       exclude_cdn_cgi: {
-        value: cdktf.booleanToHclTerraform(this._excludeCdnCgi),
+        value: cdktn.booleanToHclTerraform(this._excludeCdnCgi),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       exclude_urls: {
-        value: cdktf.stringToHclTerraform(this._excludeUrls),
+        value: cdktn.stringToHclTerraform(this._excludeUrls),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       export: {
-        value: cdktf.stringToHclTerraform(this._export),
+        value: cdktn.stringToHclTerraform(this._export),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       hosts: {
-        value: cdktf.stringToHclTerraform(this._hosts),
+        value: cdktn.stringToHclTerraform(this._hosts),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       max_items: {
-        value: cdktf.numberToHclTerraform(this._maxItems),
+        value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       order_by: {
-        value: cdktf.stringToHclTerraform(this._orderBy),
+        value: cdktn.stringToHclTerraform(this._orderBy),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page: {
-        value: cdktf.stringToHclTerraform(this._page),
+        value: cdktn.stringToHclTerraform(this._page),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       page_url: {
-        value: cdktf.stringToHclTerraform(this._pageUrl),
+        value: cdktn.stringToHclTerraform(this._pageUrl),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       per_page: {
-        value: cdktf.numberToHclTerraform(this._perPage),
+        value: cdktn.numberToHclTerraform(this._perPage),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       prioritize_malicious: {
-        value: cdktf.booleanToHclTerraform(this._prioritizeMalicious),
+        value: cdktn.booleanToHclTerraform(this._prioritizeMalicious),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       status: {
-        value: cdktf.stringToHclTerraform(this._status),
+        value: cdktn.stringToHclTerraform(this._status),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       urls: {
-        value: cdktf.stringToHclTerraform(this._urls),
+        value: cdktn.stringToHclTerraform(this._urls),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

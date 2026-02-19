@@ -1,54 +1,54 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface SchemaValidationSchemasConfig extends cdktf.TerraformMetaArguments {
+export interface SchemaValidationSchemasConfig extends cdktn.TerraformMetaArguments {
   /**
   * The kind of the schema
   * Available values: "openapi_v3".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
   */
   readonly kind: string;
   /**
   * A human-readable name for the schema
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
   */
   readonly name: string;
   /**
   * The raw schema, e.g., the OpenAPI schema, either as JSON or YAML
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
   */
   readonly source: string;
   /**
   * An indicator if this schema is enabled
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
   */
-  readonly validationEnabled: boolean | cdktf.IResolvable;
+  readonly validationEnabled: boolean | cdktn.IResolvable;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
   */
   readonly zoneId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}
 */
-export class SchemaValidationSchemas extends cdktf.TerraformResource {
+export class SchemaValidationSchemas extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -59,14 +59,14 @@ export class SchemaValidationSchemas extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a SchemaValidationSchemas resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a SchemaValidationSchemas resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SchemaValidationSchemas to import
-  * @param importFromId The id of the existing SchemaValidationSchemas that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SchemaValidationSchemas that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SchemaValidationSchemas to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_schema_validation_schemas", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_schema_validation_schemas", importId: importFromId, provider });
       }
 
   // ===========
@@ -74,7 +74,7 @@ export class SchemaValidationSchemas extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -85,7 +85,7 @@ export class SchemaValidationSchemas extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_schema_validation_schemas',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -162,11 +162,11 @@ export class SchemaValidationSchemas extends cdktf.TerraformResource {
   }
 
   // validation_enabled - computed: false, optional: false, required: true
-  private _validationEnabled?: boolean | cdktf.IResolvable; 
+  private _validationEnabled?: boolean | cdktn.IResolvable; 
   public get validationEnabled() {
     return this.getBooleanAttribute('validation_enabled');
   }
-  public set validationEnabled(value: boolean | cdktf.IResolvable) {
+  public set validationEnabled(value: boolean | cdktn.IResolvable) {
     this._validationEnabled = value;
   }
   // Temporarily expose input value. Use with caution.
@@ -193,42 +193,42 @@ export class SchemaValidationSchemas extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      kind: cdktf.stringToTerraform(this._kind),
-      name: cdktf.stringToTerraform(this._name),
-      source: cdktf.stringToTerraform(this._source),
-      validation_enabled: cdktf.booleanToTerraform(this._validationEnabled),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      kind: cdktn.stringToTerraform(this._kind),
+      name: cdktn.stringToTerraform(this._name),
+      source: cdktn.stringToTerraform(this._source),
+      validation_enabled: cdktn.booleanToTerraform(this._validationEnabled),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       kind: {
-        value: cdktf.stringToHclTerraform(this._kind),
+        value: cdktn.stringToHclTerraform(this._kind),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       source: {
-        value: cdktf.stringToHclTerraform(this._source),
+        value: cdktn.stringToHclTerraform(this._source),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       validation_enabled: {
-        value: cdktf.booleanToHclTerraform(this._validationEnabled),
+        value: cdktn.booleanToHclTerraform(this._validationEnabled),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

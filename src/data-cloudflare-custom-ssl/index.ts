@@ -1,31 +1,31 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareCustomSslConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareCustomSslConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl#custom_certificate_id DataCloudflareCustomSsl#custom_certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl#custom_certificate_id DataCloudflareCustomSsl#custom_certificate_id}
   */
   readonly customCertificateId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl#filter DataCloudflareCustomSsl#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl#filter DataCloudflareCustomSsl#filter}
   */
   readonly filter?: DataCloudflareCustomSslFilter;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl#zone_id DataCloudflareCustomSsl#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl#zone_id DataCloudflareCustomSsl#zone_id}
   */
   readonly zoneId: string;
 }
@@ -34,44 +34,44 @@ export interface DataCloudflareCustomSslFilter {
   * Whether to match all search requirements or at least one (any).
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl#match DataCloudflareCustomSsl#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl#match DataCloudflareCustomSsl#match}
   */
   readonly match?: string;
   /**
   * Status of the zone's custom SSL.
   * Available values: "active", "expired", "deleted", "pending", "initializing".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl#status DataCloudflareCustomSsl#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl#status DataCloudflareCustomSsl#status}
   */
   readonly status?: string;
 }
 
-export function dataCloudflareCustomSslFilterToTerraform(struct?: DataCloudflareCustomSslFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareCustomSslFilterToTerraform(struct?: DataCloudflareCustomSslFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    match: cdktf.stringToTerraform(struct!.match),
-    status: cdktf.stringToTerraform(struct!.status),
+    match: cdktn.stringToTerraform(struct!.match),
+    status: cdktn.stringToTerraform(struct!.status),
   }
 }
 
 
-export function dataCloudflareCustomSslFilterToHclTerraform(struct?: DataCloudflareCustomSslFilter | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function dataCloudflareCustomSslFilterToHclTerraform(struct?: DataCloudflareCustomSslFilter | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     match: {
-      value: cdktf.stringToHclTerraform(struct!.match),
+      value: cdktn.stringToHclTerraform(struct!.match),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     status: {
-      value: cdktf.stringToHclTerraform(struct!.status),
+      value: cdktn.stringToHclTerraform(struct!.status),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -82,19 +82,19 @@ export function dataCloudflareCustomSslFilterToHclTerraform(struct?: DataCloudfl
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class DataCloudflareCustomSslFilterOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareCustomSslFilterOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): DataCloudflareCustomSslFilter | cdktf.IResolvable | undefined {
+  public get internalValue(): DataCloudflareCustomSslFilter | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -111,14 +111,14 @@ export class DataCloudflareCustomSslFilterOutputReference extends cdktf.ComplexO
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataCloudflareCustomSslFilter | cdktf.IResolvable | undefined) {
+  public set internalValue(value: DataCloudflareCustomSslFilter | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
       this._match = undefined;
       this._status = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -166,8 +166,8 @@ export interface DataCloudflareCustomSslGeoRestrictions {
 }
 
 export function dataCloudflareCustomSslGeoRestrictionsToTerraform(struct?: DataCloudflareCustomSslGeoRestrictions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -176,8 +176,8 @@ export function dataCloudflareCustomSslGeoRestrictionsToTerraform(struct?: DataC
 
 
 export function dataCloudflareCustomSslGeoRestrictionsToHclTerraform(struct?: DataCloudflareCustomSslGeoRestrictions): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -185,14 +185,14 @@ export function dataCloudflareCustomSslGeoRestrictionsToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataCloudflareCustomSslGeoRestrictionsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareCustomSslGeoRestrictionsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -220,8 +220,8 @@ export interface DataCloudflareCustomSslKeylessServerTunnel {
 }
 
 export function dataCloudflareCustomSslKeylessServerTunnelToTerraform(struct?: DataCloudflareCustomSslKeylessServerTunnel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -230,8 +230,8 @@ export function dataCloudflareCustomSslKeylessServerTunnelToTerraform(struct?: D
 
 
 export function dataCloudflareCustomSslKeylessServerTunnelToHclTerraform(struct?: DataCloudflareCustomSslKeylessServerTunnel): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -239,14 +239,14 @@ export function dataCloudflareCustomSslKeylessServerTunnelToHclTerraform(struct?
   return attrs;
 }
 
-export class DataCloudflareCustomSslKeylessServerTunnelOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareCustomSslKeylessServerTunnelOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -279,8 +279,8 @@ export interface DataCloudflareCustomSslKeylessServer {
 }
 
 export function dataCloudflareCustomSslKeylessServerToTerraform(struct?: DataCloudflareCustomSslKeylessServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -289,8 +289,8 @@ export function dataCloudflareCustomSslKeylessServerToTerraform(struct?: DataClo
 
 
 export function dataCloudflareCustomSslKeylessServerToHclTerraform(struct?: DataCloudflareCustomSslKeylessServer): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -298,14 +298,14 @@ export function dataCloudflareCustomSslKeylessServerToHclTerraform(struct?: Data
   return attrs;
 }
 
-export class DataCloudflareCustomSslKeylessServerOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareCustomSslKeylessServerOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -377,9 +377,9 @@ export class DataCloudflareCustomSslKeylessServerOutputReference extends cdktf.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl}
 */
-export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
+export class DataCloudflareCustomSsl extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -390,14 +390,14 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareCustomSsl resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareCustomSsl resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCustomSsl to import
-  * @param importFromId The id of the existing DataCloudflareCustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCustomSsl that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCustomSsl to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_custom_ssl", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_custom_ssl", importId: importFromId, provider });
       }
 
   // ===========
@@ -405,7 +405,7 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_ssl cloudflare_custom_ssl} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -416,7 +416,7 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_custom_ssl',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -554,16 +554,16 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      custom_certificate_id: cdktf.stringToTerraform(this._customCertificateId),
+      custom_certificate_id: cdktn.stringToTerraform(this._customCertificateId),
       filter: dataCloudflareCustomSslFilterToTerraform(this._filter.internalValue),
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       custom_certificate_id: {
-        value: cdktf.stringToHclTerraform(this._customCertificateId),
+        value: cdktn.stringToHclTerraform(this._customCertificateId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -575,7 +575,7 @@ export class DataCloudflareCustomSsl extends cdktf.TerraformDataSource {
         storageClassType: "DataCloudflareCustomSslFilter",
       },
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,27 +1,27 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_live_input
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareStreamLiveInputConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareStreamLiveInputConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_live_input#account_id DataCloudflareStreamLiveInput#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input#account_id DataCloudflareStreamLiveInput#account_id}
   */
   readonly accountId: string;
   /**
   * A unique identifier for a live input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_live_input#live_input_identifier DataCloudflareStreamLiveInput#live_input_identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input#live_input_identifier DataCloudflareStreamLiveInput#live_input_identifier}
   */
   readonly liveInputIdentifier: string;
 }
@@ -29,8 +29,8 @@ export interface DataCloudflareStreamLiveInputRecording {
 }
 
 export function dataCloudflareStreamLiveInputRecordingToTerraform(struct?: DataCloudflareStreamLiveInputRecording): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -39,8 +39,8 @@ export function dataCloudflareStreamLiveInputRecordingToTerraform(struct?: DataC
 
 
 export function dataCloudflareStreamLiveInputRecordingToHclTerraform(struct?: DataCloudflareStreamLiveInputRecording): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -48,14 +48,14 @@ export function dataCloudflareStreamLiveInputRecordingToHclTerraform(struct?: Da
   return attrs;
 }
 
-export class DataCloudflareStreamLiveInputRecordingOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamLiveInputRecordingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -103,8 +103,8 @@ export interface DataCloudflareStreamLiveInputRtmps {
 }
 
 export function dataCloudflareStreamLiveInputRtmpsToTerraform(struct?: DataCloudflareStreamLiveInputRtmps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -113,8 +113,8 @@ export function dataCloudflareStreamLiveInputRtmpsToTerraform(struct?: DataCloud
 
 
 export function dataCloudflareStreamLiveInputRtmpsToHclTerraform(struct?: DataCloudflareStreamLiveInputRtmps): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -122,14 +122,14 @@ export function dataCloudflareStreamLiveInputRtmpsToHclTerraform(struct?: DataCl
   return attrs;
 }
 
-export class DataCloudflareStreamLiveInputRtmpsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamLiveInputRtmpsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -162,8 +162,8 @@ export interface DataCloudflareStreamLiveInputRtmpsPlayback {
 }
 
 export function dataCloudflareStreamLiveInputRtmpsPlaybackToTerraform(struct?: DataCloudflareStreamLiveInputRtmpsPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -172,8 +172,8 @@ export function dataCloudflareStreamLiveInputRtmpsPlaybackToTerraform(struct?: D
 
 
 export function dataCloudflareStreamLiveInputRtmpsPlaybackToHclTerraform(struct?: DataCloudflareStreamLiveInputRtmpsPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -181,14 +181,14 @@ export function dataCloudflareStreamLiveInputRtmpsPlaybackToHclTerraform(struct?
   return attrs;
 }
 
-export class DataCloudflareStreamLiveInputRtmpsPlaybackOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamLiveInputRtmpsPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -221,8 +221,8 @@ export interface DataCloudflareStreamLiveInputSrt {
 }
 
 export function dataCloudflareStreamLiveInputSrtToTerraform(struct?: DataCloudflareStreamLiveInputSrt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -231,8 +231,8 @@ export function dataCloudflareStreamLiveInputSrtToTerraform(struct?: DataCloudfl
 
 
 export function dataCloudflareStreamLiveInputSrtToHclTerraform(struct?: DataCloudflareStreamLiveInputSrt): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -240,14 +240,14 @@ export function dataCloudflareStreamLiveInputSrtToHclTerraform(struct?: DataClou
   return attrs;
 }
 
-export class DataCloudflareStreamLiveInputSrtOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamLiveInputSrtOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -285,8 +285,8 @@ export interface DataCloudflareStreamLiveInputSrtPlayback {
 }
 
 export function dataCloudflareStreamLiveInputSrtPlaybackToTerraform(struct?: DataCloudflareStreamLiveInputSrtPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -295,8 +295,8 @@ export function dataCloudflareStreamLiveInputSrtPlaybackToTerraform(struct?: Dat
 
 
 export function dataCloudflareStreamLiveInputSrtPlaybackToHclTerraform(struct?: DataCloudflareStreamLiveInputSrtPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -304,14 +304,14 @@ export function dataCloudflareStreamLiveInputSrtPlaybackToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataCloudflareStreamLiveInputSrtPlaybackOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamLiveInputSrtPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -349,8 +349,8 @@ export interface DataCloudflareStreamLiveInputWebRtc {
 }
 
 export function dataCloudflareStreamLiveInputWebRtcToTerraform(struct?: DataCloudflareStreamLiveInputWebRtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -359,8 +359,8 @@ export function dataCloudflareStreamLiveInputWebRtcToTerraform(struct?: DataClou
 
 
 export function dataCloudflareStreamLiveInputWebRtcToHclTerraform(struct?: DataCloudflareStreamLiveInputWebRtc): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -368,14 +368,14 @@ export function dataCloudflareStreamLiveInputWebRtcToHclTerraform(struct?: DataC
   return attrs;
 }
 
-export class DataCloudflareStreamLiveInputWebRtcOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamLiveInputWebRtcOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -403,8 +403,8 @@ export interface DataCloudflareStreamLiveInputWebRtcPlayback {
 }
 
 export function dataCloudflareStreamLiveInputWebRtcPlaybackToTerraform(struct?: DataCloudflareStreamLiveInputWebRtcPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -413,8 +413,8 @@ export function dataCloudflareStreamLiveInputWebRtcPlaybackToTerraform(struct?: 
 
 
 export function dataCloudflareStreamLiveInputWebRtcPlaybackToHclTerraform(struct?: DataCloudflareStreamLiveInputWebRtcPlayback): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -422,14 +422,14 @@ export function dataCloudflareStreamLiveInputWebRtcPlaybackToHclTerraform(struct
   return attrs;
 }
 
-export class DataCloudflareStreamLiveInputWebRtcPlaybackOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareStreamLiveInputWebRtcPlaybackOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -455,9 +455,9 @@ export class DataCloudflareStreamLiveInputWebRtcPlaybackOutputReference extends 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_live_input cloudflare_stream_live_input}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input cloudflare_stream_live_input}
 */
-export class DataCloudflareStreamLiveInput extends cdktf.TerraformDataSource {
+export class DataCloudflareStreamLiveInput extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -468,14 +468,14 @@ export class DataCloudflareStreamLiveInput extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareStreamLiveInput resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareStreamLiveInput resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareStreamLiveInput to import
-  * @param importFromId The id of the existing DataCloudflareStreamLiveInput that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_live_input#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareStreamLiveInput that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareStreamLiveInput to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream_live_input", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_stream_live_input", importId: importFromId, provider });
       }
 
   // ===========
@@ -483,7 +483,7 @@ export class DataCloudflareStreamLiveInput extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream_live_input cloudflare_stream_live_input} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -494,7 +494,7 @@ export class DataCloudflareStreamLiveInput extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_stream_live_input',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -617,21 +617,21 @@ export class DataCloudflareStreamLiveInput extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      live_input_identifier: cdktf.stringToTerraform(this._liveInputIdentifier),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      live_input_identifier: cdktn.stringToTerraform(this._liveInputIdentifier),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       live_input_identifier: {
-        value: cdktf.stringToHclTerraform(this._liveInputIdentifier),
+        value: cdktn.stringToHclTerraform(this._liveInputIdentifier),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

@@ -1,43 +1,45 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface HyperdriveConfigConfig extends cdktf.TerraformMetaArguments {
+export interface HyperdriveConfigConfig extends cdktn.TerraformMetaArguments {
   /**
   * Define configurations using a unique string identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#account_id HyperdriveConfig#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#caching HyperdriveConfig#caching}
   */
   readonly caching?: HyperdriveConfigCaching;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#mtls HyperdriveConfig#mtls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#mtls HyperdriveConfig#mtls}
   */
   readonly mtls?: HyperdriveConfigMtls;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
+  * The name of the Hyperdrive configuration. Used to identify the configuration in the Cloudflare dashboard and API.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#name HyperdriveConfig#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#origin HyperdriveConfig#origin}
   */
   readonly origin: HyperdriveConfigOrigin;
   /**
   * The (soft) maximum number of connections the Hyperdrive is allowed to make to the origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#origin_connection_limit HyperdriveConfig#origin_connection_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#origin_connection_limit HyperdriveConfig#origin_connection_limit}
   */
   readonly originConnectionLimit?: number;
 }
@@ -45,56 +47,56 @@ export interface HyperdriveConfigCaching {
   /**
   * Set to true to disable caching of SQL responses. Default is false.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#disabled HyperdriveConfig#disabled}
   */
-  readonly disabled?: boolean | cdktf.IResolvable;
+  readonly disabled?: boolean | cdktn.IResolvable;
   /**
-  * Specify the maximum duration items should persist in the cache. Not returned if set to the default (60).
+  * Specify the maximum duration (in seconds) items should persist in the cache. Defaults to 60 seconds if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#max_age HyperdriveConfig#max_age}
   */
   readonly maxAge?: number;
   /**
-  * Specify the number of seconds the cache may serve a stale response. Omitted if set to the default (15).
+  * Specify the number of seconds the cache may serve a stale response. Defaults to 15 seconds if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#stale_while_revalidate HyperdriveConfig#stale_while_revalidate}
   */
   readonly staleWhileRevalidate?: number;
 }
 
-export function hyperdriveConfigCachingToTerraform(struct?: HyperdriveConfigCaching | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hyperdriveConfigCachingToTerraform(struct?: HyperdriveConfigCaching | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    disabled: cdktf.booleanToTerraform(struct!.disabled),
-    max_age: cdktf.numberToTerraform(struct!.maxAge),
-    stale_while_revalidate: cdktf.numberToTerraform(struct!.staleWhileRevalidate),
+    disabled: cdktn.booleanToTerraform(struct!.disabled),
+    max_age: cdktn.numberToTerraform(struct!.maxAge),
+    stale_while_revalidate: cdktn.numberToTerraform(struct!.staleWhileRevalidate),
   }
 }
 
 
-export function hyperdriveConfigCachingToHclTerraform(struct?: HyperdriveConfigCaching | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hyperdriveConfigCachingToHclTerraform(struct?: HyperdriveConfigCaching | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     disabled: {
-      value: cdktf.booleanToHclTerraform(struct!.disabled),
+      value: cdktn.booleanToHclTerraform(struct!.disabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     max_age: {
-      value: cdktf.numberToHclTerraform(struct!.maxAge),
+      value: cdktn.numberToHclTerraform(struct!.maxAge),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     stale_while_revalidate: {
-      value: cdktf.numberToHclTerraform(struct!.staleWhileRevalidate),
+      value: cdktn.numberToHclTerraform(struct!.staleWhileRevalidate),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
@@ -105,19 +107,19 @@ export function hyperdriveConfigCachingToHclTerraform(struct?: HyperdriveConfigC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HyperdriveConfigCachingOutputReference extends cdktf.ComplexObject {
+export class HyperdriveConfigCachingOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HyperdriveConfigCaching | cdktf.IResolvable | undefined {
+  public get internalValue(): HyperdriveConfigCaching | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -138,7 +140,7 @@ export class HyperdriveConfigCachingOutputReference extends cdktf.ComplexObject 
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HyperdriveConfigCaching | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HyperdriveConfigCaching | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -146,7 +148,7 @@ export class HyperdriveConfigCachingOutputReference extends cdktf.ComplexObject 
       this._maxAge = undefined;
       this._staleWhileRevalidate = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -160,11 +162,11 @@ export class HyperdriveConfigCachingOutputReference extends cdktf.ComplexObject 
   }
 
   // disabled - computed: true, optional: true, required: false
-  private _disabled?: boolean | cdktf.IResolvable; 
+  private _disabled?: boolean | cdktn.IResolvable; 
   public get disabled() {
     return this.getBooleanAttribute('disabled');
   }
-  public set disabled(value: boolean | cdktf.IResolvable) {
+  public set disabled(value: boolean | cdktn.IResolvable) {
     this._disabled = value;
   }
   public resetDisabled() {
@@ -211,56 +213,56 @@ export interface HyperdriveConfigMtls {
   /**
   * Define CA certificate ID obtained after uploading CA cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#ca_certificate_id HyperdriveConfig#ca_certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#ca_certificate_id HyperdriveConfig#ca_certificate_id}
   */
   readonly caCertificateId?: string;
   /**
   * Define mTLS certificate ID obtained after uploading client cert.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#mtls_certificate_id HyperdriveConfig#mtls_certificate_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#mtls_certificate_id HyperdriveConfig#mtls_certificate_id}
   */
   readonly mtlsCertificateId?: string;
   /**
   * Set SSL mode to 'require', 'verify-ca', or 'verify-full' to verify the CA.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#sslmode HyperdriveConfig#sslmode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#sslmode HyperdriveConfig#sslmode}
   */
   readonly sslmode?: string;
 }
 
-export function hyperdriveConfigMtlsToTerraform(struct?: HyperdriveConfigMtls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hyperdriveConfigMtlsToTerraform(struct?: HyperdriveConfigMtls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    ca_certificate_id: cdktf.stringToTerraform(struct!.caCertificateId),
-    mtls_certificate_id: cdktf.stringToTerraform(struct!.mtlsCertificateId),
-    sslmode: cdktf.stringToTerraform(struct!.sslmode),
+    ca_certificate_id: cdktn.stringToTerraform(struct!.caCertificateId),
+    mtls_certificate_id: cdktn.stringToTerraform(struct!.mtlsCertificateId),
+    sslmode: cdktn.stringToTerraform(struct!.sslmode),
   }
 }
 
 
-export function hyperdriveConfigMtlsToHclTerraform(struct?: HyperdriveConfigMtls | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hyperdriveConfigMtlsToHclTerraform(struct?: HyperdriveConfigMtls | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     ca_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.caCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.caCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     mtls_certificate_id: {
-      value: cdktf.stringToHclTerraform(struct!.mtlsCertificateId),
+      value: cdktn.stringToHclTerraform(struct!.mtlsCertificateId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     sslmode: {
-      value: cdktf.stringToHclTerraform(struct!.sslmode),
+      value: cdktn.stringToHclTerraform(struct!.sslmode),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -271,19 +273,19 @@ export function hyperdriveConfigMtlsToHclTerraform(struct?: HyperdriveConfigMtls
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HyperdriveConfigMtlsOutputReference extends cdktf.ComplexObject {
+export class HyperdriveConfigMtlsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HyperdriveConfigMtls | cdktf.IResolvable | undefined {
+  public get internalValue(): HyperdriveConfigMtls | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -304,7 +306,7 @@ export class HyperdriveConfigMtlsOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HyperdriveConfigMtls | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HyperdriveConfigMtls | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -312,7 +314,7 @@ export class HyperdriveConfigMtlsOutputReference extends cdktf.ComplexObject {
       this._mtlsCertificateId = undefined;
       this._sslmode = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -377,122 +379,122 @@ export interface HyperdriveConfigOrigin {
   /**
   * Defines the Client ID of the Access token to use when connecting to the origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#access_client_id HyperdriveConfig#access_client_id}
   */
   readonly accessClientId?: string;
   /**
   * Defines the Client Secret of the Access Token to use when connecting to the origin database. The API never returns this write-only value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#access_client_secret HyperdriveConfig#access_client_secret}
   */
   readonly accessClientSecret?: string;
   /**
   * Set the name of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#database HyperdriveConfig#database}
   */
   readonly database: string;
   /**
   * Defines the host (hostname or IP) of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#host HyperdriveConfig#host}
   */
   readonly host: string;
   /**
   * Set the password needed to access your origin database. The API never returns this write-only value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#password HyperdriveConfig#password}
   */
   readonly password: string;
   /**
-  * Defines the port (default: 5432 for Postgres) of your origin database.
+  * Defines the port of your origin database. Defaults to 5432 for PostgreSQL or 3306 for MySQL if not specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#port HyperdriveConfig#port}
   */
   readonly port?: number;
   /**
   * Specifies the URL scheme used to connect to your origin database.
   * Available values: "postgres", "postgresql", "mysql".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#scheme HyperdriveConfig#scheme}
   */
   readonly scheme: string;
   /**
   * Set the user of your origin database.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#user HyperdriveConfig#user}
   */
   readonly user: string;
 }
 
-export function hyperdriveConfigOriginToTerraform(struct?: HyperdriveConfigOrigin | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hyperdriveConfigOriginToTerraform(struct?: HyperdriveConfigOrigin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    access_client_id: cdktf.stringToTerraform(struct!.accessClientId),
-    access_client_secret: cdktf.stringToTerraform(struct!.accessClientSecret),
-    database: cdktf.stringToTerraform(struct!.database),
-    host: cdktf.stringToTerraform(struct!.host),
-    password: cdktf.stringToTerraform(struct!.password),
-    port: cdktf.numberToTerraform(struct!.port),
-    scheme: cdktf.stringToTerraform(struct!.scheme),
-    user: cdktf.stringToTerraform(struct!.user),
+    access_client_id: cdktn.stringToTerraform(struct!.accessClientId),
+    access_client_secret: cdktn.stringToTerraform(struct!.accessClientSecret),
+    database: cdktn.stringToTerraform(struct!.database),
+    host: cdktn.stringToTerraform(struct!.host),
+    password: cdktn.stringToTerraform(struct!.password),
+    port: cdktn.numberToTerraform(struct!.port),
+    scheme: cdktn.stringToTerraform(struct!.scheme),
+    user: cdktn.stringToTerraform(struct!.user),
   }
 }
 
 
-export function hyperdriveConfigOriginToHclTerraform(struct?: HyperdriveConfigOrigin | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function hyperdriveConfigOriginToHclTerraform(struct?: HyperdriveConfigOrigin | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     access_client_id: {
-      value: cdktf.stringToHclTerraform(struct!.accessClientId),
+      value: cdktn.stringToHclTerraform(struct!.accessClientId),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     access_client_secret: {
-      value: cdktf.stringToHclTerraform(struct!.accessClientSecret),
+      value: cdktn.stringToHclTerraform(struct!.accessClientSecret),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     database: {
-      value: cdktf.stringToHclTerraform(struct!.database),
+      value: cdktn.stringToHclTerraform(struct!.database),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     host: {
-      value: cdktf.stringToHclTerraform(struct!.host),
+      value: cdktn.stringToHclTerraform(struct!.host),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     password: {
-      value: cdktf.stringToHclTerraform(struct!.password),
+      value: cdktn.stringToHclTerraform(struct!.password),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     port: {
-      value: cdktf.numberToHclTerraform(struct!.port),
+      value: cdktn.numberToHclTerraform(struct!.port),
       isBlock: false,
       type: "simple",
       storageClassType: "number",
     },
     scheme: {
-      value: cdktf.stringToHclTerraform(struct!.scheme),
+      value: cdktn.stringToHclTerraform(struct!.scheme),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     user: {
-      value: cdktf.stringToHclTerraform(struct!.user),
+      value: cdktn.stringToHclTerraform(struct!.user),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -503,19 +505,19 @@ export function hyperdriveConfigOriginToHclTerraform(struct?: HyperdriveConfigOr
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class HyperdriveConfigOriginOutputReference extends cdktf.ComplexObject {
+export class HyperdriveConfigOriginOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): HyperdriveConfigOrigin | cdktf.IResolvable | undefined {
+  public get internalValue(): HyperdriveConfigOrigin | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -556,7 +558,7 @@ export class HyperdriveConfigOriginOutputReference extends cdktf.ComplexObject {
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: HyperdriveConfigOrigin | cdktf.IResolvable | undefined) {
+  public set internalValue(value: HyperdriveConfigOrigin | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -569,7 +571,7 @@ export class HyperdriveConfigOriginOutputReference extends cdktf.ComplexObject {
       this._scheme = undefined;
       this._user = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -702,9 +704,9 @@ export class HyperdriveConfigOriginOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config}
 */
-export class HyperdriveConfig extends cdktf.TerraformResource {
+export class HyperdriveConfig extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -715,14 +717,14 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a HyperdriveConfig resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a HyperdriveConfig resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the HyperdriveConfig to import
-  * @param importFromId The id of the existing HyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing HyperdriveConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the HyperdriveConfig to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_hyperdrive_config", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_hyperdrive_config", importId: importFromId, provider });
       }
 
   // ===========
@@ -730,7 +732,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hyperdrive_config cloudflare_hyperdrive_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -741,7 +743,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_hyperdrive_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -872,19 +874,19 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
+      account_id: cdktn.stringToTerraform(this._accountId),
       caching: hyperdriveConfigCachingToTerraform(this._caching.internalValue),
       mtls: hyperdriveConfigMtlsToTerraform(this._mtls.internalValue),
-      name: cdktf.stringToTerraform(this._name),
+      name: cdktn.stringToTerraform(this._name),
       origin: hyperdriveConfigOriginToTerraform(this._origin.internalValue),
-      origin_connection_limit: cdktf.numberToTerraform(this._originConnectionLimit),
+      origin_connection_limit: cdktn.numberToTerraform(this._originConnectionLimit),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -902,7 +904,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
         storageClassType: "HyperdriveConfigMtls",
       },
       name: {
-        value: cdktf.stringToHclTerraform(this._name),
+        value: cdktn.stringToHclTerraform(this._name),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -914,7 +916,7 @@ export class HyperdriveConfig extends cdktf.TerraformResource {
         storageClassType: "HyperdriveConfigOrigin",
       },
       origin_connection_limit: {
-        value: cdktf.numberToHclTerraform(this._originConnectionLimit),
+        value: cdktn.numberToHclTerraform(this._originConnectionLimit),
         isBlock: false,
         type: "simple",
         storageClassType: "number",

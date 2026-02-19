@@ -1,21 +1,21 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dns_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface DataCloudflareZoneDnsSettingsConfig extends cdktf.TerraformMetaArguments {
+export interface DataCloudflareZoneDnsSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dns_settings#zone_id DataCloudflareZoneDnsSettings#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings#zone_id DataCloudflareZoneDnsSettings#zone_id}
   */
   readonly zoneId: string;
 }
@@ -23,8 +23,8 @@ export interface DataCloudflareZoneDnsSettingsInternalDns {
 }
 
 export function dataCloudflareZoneDnsSettingsInternalDnsToTerraform(struct?: DataCloudflareZoneDnsSettingsInternalDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -33,8 +33,8 @@ export function dataCloudflareZoneDnsSettingsInternalDnsToTerraform(struct?: Dat
 
 
 export function dataCloudflareZoneDnsSettingsInternalDnsToHclTerraform(struct?: DataCloudflareZoneDnsSettingsInternalDns): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -42,14 +42,14 @@ export function dataCloudflareZoneDnsSettingsInternalDnsToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataCloudflareZoneDnsSettingsInternalDnsOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZoneDnsSettingsInternalDnsOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -77,8 +77,8 @@ export interface DataCloudflareZoneDnsSettingsNameservers {
 }
 
 export function dataCloudflareZoneDnsSettingsNameserversToTerraform(struct?: DataCloudflareZoneDnsSettingsNameservers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -87,8 +87,8 @@ export function dataCloudflareZoneDnsSettingsNameserversToTerraform(struct?: Dat
 
 
 export function dataCloudflareZoneDnsSettingsNameserversToHclTerraform(struct?: DataCloudflareZoneDnsSettingsNameservers): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -96,14 +96,14 @@ export function dataCloudflareZoneDnsSettingsNameserversToHclTerraform(struct?: 
   return attrs;
 }
 
-export class DataCloudflareZoneDnsSettingsNameserversOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZoneDnsSettingsNameserversOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -136,8 +136,8 @@ export interface DataCloudflareZoneDnsSettingsSoa {
 }
 
 export function dataCloudflareZoneDnsSettingsSoaToTerraform(struct?: DataCloudflareZoneDnsSettingsSoa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
@@ -146,8 +146,8 @@ export function dataCloudflareZoneDnsSettingsSoaToTerraform(struct?: DataCloudfl
 
 
 export function dataCloudflareZoneDnsSettingsSoaToHclTerraform(struct?: DataCloudflareZoneDnsSettingsSoa): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
@@ -155,14 +155,14 @@ export function dataCloudflareZoneDnsSettingsSoaToHclTerraform(struct?: DataClou
   return attrs;
 }
 
-export class DataCloudflareZoneDnsSettingsSoaOutputReference extends cdktf.ComplexObject {
+export class DataCloudflareZoneDnsSettingsSoaOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
@@ -218,9 +218,9 @@ export class DataCloudflareZoneDnsSettingsSoaOutputReference extends cdktf.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings}
 */
-export class DataCloudflareZoneDnsSettings extends cdktf.TerraformDataSource {
+export class DataCloudflareZoneDnsSettings extends cdktn.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
@@ -231,14 +231,14 @@ export class DataCloudflareZoneDnsSettings extends cdktf.TerraformDataSource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a DataCloudflareZoneDnsSettings resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a DataCloudflareZoneDnsSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZoneDnsSettings to import
-  * @param importFromId The id of the existing DataCloudflareZoneDnsSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dns_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZoneDnsSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZoneDnsSettings to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_dns_settings", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_zone_dns_settings", importId: importFromId, provider });
       }
 
   // ===========
@@ -246,7 +246,7 @@ export class DataCloudflareZoneDnsSettings extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_dns_settings cloudflare_zone_dns_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,7 +257,7 @@ export class DataCloudflareZoneDnsSettings extends cdktf.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone_dns_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -342,14 +342,14 @@ export class DataCloudflareZoneDnsSettings extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      zone_id: cdktf.stringToTerraform(this._zoneId),
+      zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       zone_id: {
-        value: cdktf.stringToHclTerraform(this._zoneId),
+        value: cdktn.stringToHclTerraform(this._zoneId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

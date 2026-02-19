@@ -1,51 +1,51 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface MagicTransitConnectorConfig extends cdktf.TerraformMetaArguments {
+export interface MagicTransitConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#account_id MagicTransitConnector#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#account_id MagicTransitConnector#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#activated MagicTransitConnector#activated}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#activated MagicTransitConnector#activated}
   */
-  readonly activated?: boolean | cdktf.IResolvable;
+  readonly activated?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#device MagicTransitConnector#device}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#device MagicTransitConnector#device}
   */
   readonly device: MagicTransitConnectorDevice;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#interrupt_window_duration_hours MagicTransitConnector#interrupt_window_duration_hours}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#interrupt_window_duration_hours MagicTransitConnector#interrupt_window_duration_hours}
   */
   readonly interruptWindowDurationHours?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#interrupt_window_hour_of_day MagicTransitConnector#interrupt_window_hour_of_day}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#interrupt_window_hour_of_day MagicTransitConnector#interrupt_window_hour_of_day}
   */
   readonly interruptWindowHourOfDay?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#notes MagicTransitConnector#notes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#notes MagicTransitConnector#notes}
   */
   readonly notes?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#timezone MagicTransitConnector#timezone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#timezone MagicTransitConnector#timezone}
   */
   readonly timezone?: string;
 }
 export interface MagicTransitConnectorDevice {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#id MagicTransitConnector#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#id MagicTransitConnector#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -54,48 +54,48 @@ export interface MagicTransitConnectorDevice {
   /**
   * Set to true to provision a license key for this connector. Only used during resource creation. This is a write-only field that will not be stored in state.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#provision_license MagicTransitConnector#provision_license}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#provision_license MagicTransitConnector#provision_license}
   */
-  readonly provisionLicense?: boolean | cdktf.IResolvable;
+  readonly provisionLicense?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#serial_number MagicTransitConnector#serial_number}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#serial_number MagicTransitConnector#serial_number}
   */
   readonly serialNumber?: string;
 }
 
-export function magicTransitConnectorDeviceToTerraform(struct?: MagicTransitConnectorDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitConnectorDeviceToTerraform(struct?: MagicTransitConnectorDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
-    id: cdktf.stringToTerraform(struct!.id),
-    provision_license: cdktf.booleanToTerraform(struct!.provisionLicense),
-    serial_number: cdktf.stringToTerraform(struct!.serialNumber),
+    id: cdktn.stringToTerraform(struct!.id),
+    provision_license: cdktn.booleanToTerraform(struct!.provisionLicense),
+    serial_number: cdktn.stringToTerraform(struct!.serialNumber),
   }
 }
 
 
-export function magicTransitConnectorDeviceToHclTerraform(struct?: MagicTransitConnectorDevice | cdktf.IResolvable): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
+export function magicTransitConnectorDeviceToHclTerraform(struct?: MagicTransitConnectorDevice | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
     id: {
-      value: cdktf.stringToHclTerraform(struct!.id),
+      value: cdktn.stringToHclTerraform(struct!.id),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
     },
     provision_license: {
-      value: cdktf.booleanToHclTerraform(struct!.provisionLicense),
+      value: cdktn.booleanToHclTerraform(struct!.provisionLicense),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
     },
     serial_number: {
-      value: cdktf.stringToHclTerraform(struct!.serialNumber),
+      value: cdktn.stringToHclTerraform(struct!.serialNumber),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -106,19 +106,19 @@ export function magicTransitConnectorDeviceToHclTerraform(struct?: MagicTransitC
   return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
-export class MagicTransitConnectorDeviceOutputReference extends cdktf.ComplexObject {
+export class MagicTransitConnectorDeviceOutputReference extends cdktn.ComplexObject {
   private isEmptyObject = false;
-  private resolvableValue?: cdktf.IResolvable;
+  private resolvableValue?: cdktn.IResolvable;
 
   /**
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute, false);
   }
 
-  public get internalValue(): MagicTransitConnectorDevice | cdktf.IResolvable | undefined {
+  public get internalValue(): MagicTransitConnectorDevice | cdktn.IResolvable | undefined {
     if (this.resolvableValue) {
       return this.resolvableValue;
     }
@@ -139,7 +139,7 @@ export class MagicTransitConnectorDeviceOutputReference extends cdktf.ComplexObj
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: MagicTransitConnectorDevice | cdktf.IResolvable | undefined) {
+  public set internalValue(value: MagicTransitConnectorDevice | cdktn.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
@@ -147,7 +147,7 @@ export class MagicTransitConnectorDeviceOutputReference extends cdktf.ComplexObj
       this._provisionLicense = undefined;
       this._serialNumber = undefined;
     }
-    else if (cdktf.Tokenization.isResolvable(value)) {
+    else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
       this.resolvableValue = value;
     }
@@ -177,11 +177,11 @@ export class MagicTransitConnectorDeviceOutputReference extends cdktf.ComplexObj
   }
 
   // provision_license - computed: false, optional: true, required: false
-  private _provisionLicense?: boolean | cdktf.IResolvable; 
+  private _provisionLicense?: boolean | cdktn.IResolvable; 
   public get provisionLicense() {
     return this.getBooleanAttribute('provision_license');
   }
-  public set provisionLicense(value: boolean | cdktf.IResolvable) {
+  public set provisionLicense(value: boolean | cdktn.IResolvable) {
     this._provisionLicense = value;
   }
   public resetProvisionLicense() {
@@ -210,9 +210,9 @@ export class MagicTransitConnectorDeviceOutputReference extends cdktf.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector}
 */
-export class MagicTransitConnector extends cdktf.TerraformResource {
+export class MagicTransitConnector extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -223,14 +223,14 @@ export class MagicTransitConnector extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a MagicTransitConnector resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a MagicTransitConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicTransitConnector to import
-  * @param importFromId The id of the existing MagicTransitConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicTransitConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicTransitConnector to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_transit_connector", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_magic_transit_connector", importId: importFromId, provider });
       }
 
   // ===========
@@ -238,7 +238,7 @@ export class MagicTransitConnector extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/magic_transit_connector cloudflare_magic_transit_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -249,7 +249,7 @@ export class MagicTransitConnector extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_magic_transit_connector',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -287,11 +287,11 @@ export class MagicTransitConnector extends cdktf.TerraformResource {
   }
 
   // activated - computed: true, optional: true, required: false
-  private _activated?: boolean | cdktf.IResolvable; 
+  private _activated?: boolean | cdktn.IResolvable; 
   public get activated() {
     return this.getBooleanAttribute('activated');
   }
-  public set activated(value: boolean | cdktf.IResolvable) {
+  public set activated(value: boolean | cdktn.IResolvable) {
     this._activated = value;
   }
   public resetActivated() {
@@ -395,26 +395,26 @@ export class MagicTransitConnector extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      activated: cdktf.booleanToTerraform(this._activated),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      activated: cdktn.booleanToTerraform(this._activated),
       device: magicTransitConnectorDeviceToTerraform(this._device.internalValue),
-      interrupt_window_duration_hours: cdktf.numberToTerraform(this._interruptWindowDurationHours),
-      interrupt_window_hour_of_day: cdktf.numberToTerraform(this._interruptWindowHourOfDay),
-      notes: cdktf.stringToTerraform(this._notes),
-      timezone: cdktf.stringToTerraform(this._timezone),
+      interrupt_window_duration_hours: cdktn.numberToTerraform(this._interruptWindowDurationHours),
+      interrupt_window_hour_of_day: cdktn.numberToTerraform(this._interruptWindowHourOfDay),
+      notes: cdktn.stringToTerraform(this._notes),
+      timezone: cdktn.stringToTerraform(this._timezone),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       activated: {
-        value: cdktf.booleanToHclTerraform(this._activated),
+        value: cdktn.booleanToHclTerraform(this._activated),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
@@ -426,25 +426,25 @@ export class MagicTransitConnector extends cdktf.TerraformResource {
         storageClassType: "MagicTransitConnectorDevice",
       },
       interrupt_window_duration_hours: {
-        value: cdktf.numberToHclTerraform(this._interruptWindowDurationHours),
+        value: cdktn.numberToHclTerraform(this._interruptWindowDurationHours),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       interrupt_window_hour_of_day: {
-        value: cdktf.numberToHclTerraform(this._interruptWindowHourOfDay),
+        value: cdktn.numberToHclTerraform(this._interruptWindowHourOfDay),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
       },
       notes: {
-        value: cdktf.stringToHclTerraform(this._notes),
+        value: cdktn.stringToHclTerraform(this._notes),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       timezone: {
-        value: cdktf.stringToHclTerraform(this._timezone),
+        value: cdktn.stringToHclTerraform(this._timezone),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

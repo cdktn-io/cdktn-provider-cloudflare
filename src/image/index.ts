@@ -1,39 +1,39 @@
 /**
- * Copyright (c) HashiCorp, Inc.
+ * Copyright IBM Corp. 2021, 2026
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
-import * as cdktf from 'cdktf';
+import * as cdktn from 'cdktn';
 
 // Configuration
 
-export interface ImageConfig extends cdktf.TerraformMetaArguments {
+export interface ImageConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#account_id Image#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#account_id Image#account_id}
   */
   readonly accountId: string;
   /**
   * Can set the creator field with an internal user ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#creator Image#creator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#creator Image#creator}
   */
   readonly creator?: string;
   /**
   * An image binary data. Only needed when type is uploading a file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#file Image#file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#file Image#file}
   */
   readonly file?: string;
   /**
   * An optional custom unique identifier for your image.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#id Image#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#id Image#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -42,27 +42,27 @@ export interface ImageConfig extends cdktf.TerraformMetaArguments {
   /**
   * User modifiable key-value store. Can use used for keeping references to another system of record for managing images.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#metadata Image#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#metadata Image#metadata}
   */
   readonly metadata?: string;
   /**
   * Indicates whether the image requires a signature token for the access.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#require_signed_urls Image#require_signed_urls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#require_signed_urls Image#require_signed_urls}
   */
-  readonly requireSignedUrls?: boolean | cdktf.IResolvable;
+  readonly requireSignedUrls?: boolean | cdktn.IResolvable;
   /**
   * A URL to fetch an image from origin. Only needed when type is uploading from a URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#url Image#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#url Image#url}
   */
   readonly url?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image cloudflare_image}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image cloudflare_image}
 */
-export class Image extends cdktf.TerraformResource {
+export class Image extends cdktn.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
@@ -73,14 +73,14 @@ export class Image extends cdktf.TerraformResource {
   // STATIC Methods
   // ==============
   /**
-  * Generates CDKTF code for importing a Image resource upon running "cdktf plan <stack-name>"
+  * Generates CDKTN code for importing a Image resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Image to import
-  * @param importFromId The id of the existing Image that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Image that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Image to import is found
   */
-  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
-        return new cdktf.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_image", importId: importFromId, provider });
+  public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
+        return new cdktn.ImportableResource(scope, importToId, { terraformResourceType: "cloudflare_image", importId: importFromId, provider });
       }
 
   // ===========
@@ -88,7 +88,7 @@ export class Image extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.14.0/docs/resources/image cloudflare_image} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/image cloudflare_image} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -99,7 +99,7 @@ export class Image extends cdktf.TerraformResource {
       terraformResourceType: 'cloudflare_image',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.14.0',
+        providerVersion: '5.17.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -208,11 +208,11 @@ export class Image extends cdktf.TerraformResource {
   }
 
   // require_signed_urls - computed: true, optional: true, required: false
-  private _requireSignedUrls?: boolean | cdktf.IResolvable; 
+  private _requireSignedUrls?: boolean | cdktn.IResolvable; 
   public get requireSignedUrls() {
     return this.getBooleanAttribute('require_signed_urls');
   }
-  public set requireSignedUrls(value: boolean | cdktf.IResolvable) {
+  public set requireSignedUrls(value: boolean | cdktn.IResolvable) {
     this._requireSignedUrls = value;
   }
   public resetRequireSignedUrls() {
@@ -255,56 +255,56 @@ export class Image extends cdktf.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
-      account_id: cdktf.stringToTerraform(this._accountId),
-      creator: cdktf.stringToTerraform(this._creator),
-      file: cdktf.stringToTerraform(this._file),
-      id: cdktf.stringToTerraform(this._id),
-      metadata: cdktf.stringToTerraform(this._metadata),
-      require_signed_urls: cdktf.booleanToTerraform(this._requireSignedUrls),
-      url: cdktf.stringToTerraform(this._url),
+      account_id: cdktn.stringToTerraform(this._accountId),
+      creator: cdktn.stringToTerraform(this._creator),
+      file: cdktn.stringToTerraform(this._file),
+      id: cdktn.stringToTerraform(this._id),
+      metadata: cdktn.stringToTerraform(this._metadata),
+      require_signed_urls: cdktn.booleanToTerraform(this._requireSignedUrls),
+      url: cdktn.stringToTerraform(this._url),
     };
   }
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
       account_id: {
-        value: cdktf.stringToHclTerraform(this._accountId),
+        value: cdktn.stringToHclTerraform(this._accountId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       creator: {
-        value: cdktf.stringToHclTerraform(this._creator),
+        value: cdktn.stringToHclTerraform(this._creator),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       file: {
-        value: cdktf.stringToHclTerraform(this._file),
+        value: cdktn.stringToHclTerraform(this._file),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       id: {
-        value: cdktf.stringToHclTerraform(this._id),
+        value: cdktn.stringToHclTerraform(this._id),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       metadata: {
-        value: cdktf.stringToHclTerraform(this._metadata),
+        value: cdktn.stringToHclTerraform(this._metadata),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
       },
       require_signed_urls: {
-        value: cdktf.booleanToHclTerraform(this._requireSignedUrls),
+        value: cdktn.booleanToHclTerraform(this._requireSignedUrls),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
       },
       url: {
-        value: cdktf.stringToHclTerraform(this._url),
+        value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
