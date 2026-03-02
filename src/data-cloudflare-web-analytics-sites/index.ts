@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_sites
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_sites
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +15,20 @@ export interface DataCloudflareWebAnalyticsSitesConfig extends cdktn.TerraformMe
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_sites#account_id DataCloudflareWebAnalyticsSites#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_sites#account_id DataCloudflareWebAnalyticsSites#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_sites#max_items DataCloudflareWebAnalyticsSites#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_sites#max_items DataCloudflareWebAnalyticsSites#max_items}
   */
   readonly maxItems?: number;
   /**
   * The property used to sort the list of results.
   * Available values: "host", "created".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_sites#order_by DataCloudflareWebAnalyticsSites#order_by}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_sites#order_by DataCloudflareWebAnalyticsSites#order_by}
   */
   readonly orderBy?: string;
 }
@@ -320,7 +320,7 @@ export class DataCloudflareWebAnalyticsSitesResultList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites}
 */
 export class DataCloudflareWebAnalyticsSites extends cdktn.TerraformDataSource {
 
@@ -336,7 +336,7 @@ export class DataCloudflareWebAnalyticsSites extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareWebAnalyticsSites resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWebAnalyticsSites to import
-  * @param importFromId The id of the existing DataCloudflareWebAnalyticsSites that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_sites#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWebAnalyticsSites that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_sites#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWebAnalyticsSites to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -348,7 +348,7 @@ export class DataCloudflareWebAnalyticsSites extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/web_analytics_sites cloudflare_web_analytics_sites} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -359,7 +359,7 @@ export class DataCloudflareWebAnalyticsSites extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_web_analytics_sites',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

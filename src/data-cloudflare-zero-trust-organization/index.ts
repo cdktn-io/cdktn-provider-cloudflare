@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareZeroTrustOrganizationConfig extends cdktn.Terrafo
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization#account_id DataCloudflareZeroTrustOrganization#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization#account_id DataCloudflareZeroTrustOrganization#account_id}
   */
   readonly accountId?: string;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization#zone_id DataCloudflareZeroTrustOrganization#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization#zone_id DataCloudflareZeroTrustOrganization#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -158,9 +158,68 @@ export class DataCloudflareZeroTrustOrganizationLoginDesignOutputReference exten
     return this.getStringAttribute('text_color');
   }
 }
+export interface DataCloudflareZeroTrustOrganizationMfaConfig {
+}
+
+export function dataCloudflareZeroTrustOrganizationMfaConfigToTerraform(struct?: DataCloudflareZeroTrustOrganizationMfaConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustOrganizationMfaConfigToHclTerraform(struct?: DataCloudflareZeroTrustOrganizationMfaConfig): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustOrganizationMfaConfigOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustOrganizationMfaConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustOrganizationMfaConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allowed_authenticators - computed: true, optional: false, required: false
+  public get allowedAuthenticators() {
+    return this.getListAttribute('allowed_authenticators');
+  }
+
+  // session_duration - computed: true, optional: false, required: false
+  public get sessionDuration() {
+    return this.getStringAttribute('session_duration');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization}
 */
 export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSource {
 
@@ -176,7 +235,7 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataCloudflareZeroTrustOrganization resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustOrganization to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustOrganization that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustOrganization to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -188,7 +247,7 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_organization cloudflare_zero_trust_organization} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +258,7 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
       terraformResourceType: 'cloudflare_zero_trust_organization',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -274,6 +333,22 @@ export class DataCloudflareZeroTrustOrganization extends cdktn.TerraformDataSour
   private _loginDesign = new DataCloudflareZeroTrustOrganizationLoginDesignOutputReference(this, "login_design");
   public get loginDesign() {
     return this._loginDesign;
+  }
+
+  // mfa_config - computed: true, optional: false, required: false
+  private _mfaConfig = new DataCloudflareZeroTrustOrganizationMfaConfigOutputReference(this, "mfa_config");
+  public get mfaConfig() {
+    return this._mfaConfig;
+  }
+
+  // mfa_configuration_allowed - computed: true, optional: false, required: false
+  public get mfaConfigurationAllowed() {
+    return this.getBooleanAttribute('mfa_configuration_allowed');
+  }
+
+  // mfa_required_for_all_apps - computed: true, optional: false, required: false
+  public get mfaRequiredForAllApps() {
+    return this.getBooleanAttribute('mfa_required_for_all_apps');
   }
 
   // name - computed: true, optional: false, required: false

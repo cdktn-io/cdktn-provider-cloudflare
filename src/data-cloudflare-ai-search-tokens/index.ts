@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_tokens
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareAiSearchTokensConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
   */
   readonly maxItems?: number;
 }
@@ -74,24 +74,9 @@ export class DataCloudflareAiSearchTokensResultOutputReference extends cdktn.Com
     }
   }
 
-  // account_id - computed: true, optional: false, required: false
-  public get accountId() {
-    return this.getStringAttribute('account_id');
-  }
-
-  // account_tag - computed: true, optional: false, required: false
-  public get accountTag() {
-    return this.getStringAttribute('account_tag');
-  }
-
   // cf_api_id - computed: true, optional: false, required: false
   public get cfApiId() {
     return this.getStringAttribute('cf_api_id');
-  }
-
-  // cf_api_key - computed: true, optional: false, required: false
-  public get cfApiKey() {
-    return this.getStringAttribute('cf_api_key');
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -133,11 +118,6 @@ export class DataCloudflareAiSearchTokensResultOutputReference extends cdktn.Com
   public get name() {
     return this.getStringAttribute('name');
   }
-
-  // synced_at - computed: true, optional: false, required: false
-  public get syncedAt() {
-    return this.getStringAttribute('synced_at');
-  }
 }
 
 export class DataCloudflareAiSearchTokensResultList extends cdktn.ComplexList {
@@ -160,7 +140,7 @@ export class DataCloudflareAiSearchTokensResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}
 */
 export class DataCloudflareAiSearchTokens extends cdktn.TerraformDataSource {
 
@@ -176,7 +156,7 @@ export class DataCloudflareAiSearchTokens extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAiSearchTokens resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAiSearchTokens to import
-  * @param importFromId The id of the existing DataCloudflareAiSearchTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAiSearchTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_tokens#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAiSearchTokens to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -188,7 +168,7 @@ export class DataCloudflareAiSearchTokens extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -199,7 +179,7 @@ export class DataCloudflareAiSearchTokens extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_ai_search_tokens',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

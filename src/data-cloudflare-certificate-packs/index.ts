@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,22 +13,29 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareCertificatePacksConfig extends cdktn.TerraformMetaArguments {
   /**
+  * Specify the deployment environment for the certificate packs.
+  * Available values: "staging", "production".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#deploy DataCloudflareCertificatePacks#deploy}
+  */
+  readonly deploy?: string;
+  /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
   */
   readonly maxItems?: number;
   /**
   * Include Certificate Packs of all statuses, not just active ones.
   * Available values: "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
   */
   readonly status?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
   */
   readonly zoneId: string;
 }
@@ -217,6 +224,116 @@ export class DataCloudflareCertificatePacksResultCertificatesList extends cdktn.
     return new DataCloudflareCertificatePacksResultCertificatesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataCloudflareCertificatePacksResultDcvDelegationRecords {
+}
+
+export function dataCloudflareCertificatePacksResultDcvDelegationRecordsToTerraform(struct?: DataCloudflareCertificatePacksResultDcvDelegationRecords): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareCertificatePacksResultDcvDelegationRecordsToHclTerraform(struct?: DataCloudflareCertificatePacksResultDcvDelegationRecords): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareCertificatePacksResultDcvDelegationRecords | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareCertificatePacksResultDcvDelegationRecords | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cname - computed: true, optional: false, required: false
+  public get cname() {
+    return this.getStringAttribute('cname');
+  }
+
+  // cname_target - computed: true, optional: false, required: false
+  public get cnameTarget() {
+    return this.getStringAttribute('cname_target');
+  }
+
+  // emails - computed: true, optional: false, required: false
+  public get emails() {
+    return this.getListAttribute('emails');
+  }
+
+  // http_body - computed: true, optional: false, required: false
+  public get httpBody() {
+    return this.getStringAttribute('http_body');
+  }
+
+  // http_url - computed: true, optional: false, required: false
+  public get httpUrl() {
+    return this.getStringAttribute('http_url');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
+  }
+
+  // txt_name - computed: true, optional: false, required: false
+  public get txtName() {
+    return this.getStringAttribute('txt_name');
+  }
+
+  // txt_value - computed: true, optional: false, required: false
+  public get txtValue() {
+    return this.getStringAttribute('txt_value');
+  }
+}
+
+export class DataCloudflareCertificatePacksResultDcvDelegationRecordsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference {
+    return new DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataCloudflareCertificatePacksResultValidationErrors {
 }
 
@@ -343,6 +460,16 @@ export class DataCloudflareCertificatePacksResultValidationRecordsOutputReferenc
     }
   }
 
+  // cname - computed: true, optional: false, required: false
+  public get cname() {
+    return this.getStringAttribute('cname');
+  }
+
+  // cname_target - computed: true, optional: false, required: false
+  public get cnameTarget() {
+    return this.getStringAttribute('cname_target');
+  }
+
   // emails - computed: true, optional: false, required: false
   public get emails() {
     return this.getListAttribute('emails');
@@ -356,6 +483,11 @@ export class DataCloudflareCertificatePacksResultValidationRecordsOutputReferenc
   // http_url - computed: true, optional: false, required: false
   public get httpUrl() {
     return this.getStringAttribute('http_url');
+  }
+
+  // status - computed: true, optional: false, required: false
+  public get status() {
+    return this.getStringAttribute('status');
   }
 
   // txt_name - computed: true, optional: false, required: false
@@ -454,6 +586,12 @@ export class DataCloudflareCertificatePacksResultOutputReference extends cdktn.C
     return this.getBooleanAttribute('cloudflare_branding');
   }
 
+  // dcv_delegation_records - computed: true, optional: false, required: false
+  private _dcvDelegationRecords = new DataCloudflareCertificatePacksResultDcvDelegationRecordsList(this, "dcv_delegation_records", false);
+  public get dcvDelegationRecords() {
+    return this._dcvDelegationRecords;
+  }
+
   // hosts - computed: true, optional: false, required: false
   public get hosts() {
     return cdktn.Fn.tolist(this.getListAttribute('hosts'));
@@ -522,7 +660,7 @@ export class DataCloudflareCertificatePacksResultList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}
 */
 export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
 
@@ -538,7 +676,7 @@ export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareCertificatePacks resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCertificatePacks to import
-  * @param importFromId The id of the existing DataCloudflareCertificatePacks that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCertificatePacks that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCertificatePacks to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -550,7 +688,7 @@ export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs cloudflare_certificate_packs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs cloudflare_certificate_packs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -561,7 +699,7 @@ export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_certificate_packs',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -572,6 +710,7 @@ export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._deploy = config.deploy;
     this._maxItems = config.maxItems;
     this._status = config.status;
     this._zoneId = config.zoneId;
@@ -580,6 +719,22 @@ export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
   // ==========
   // ATTRIBUTES
   // ==========
+
+  // deploy - computed: false, optional: true, required: false
+  private _deploy?: string; 
+  public get deploy() {
+    return this.getStringAttribute('deploy');
+  }
+  public set deploy(value: string) {
+    this._deploy = value;
+  }
+  public resetDeploy() {
+    this._deploy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deployInput() {
+    return this._deploy;
+  }
 
   // max_items - computed: false, optional: true, required: false
   private _maxItems?: number; 
@@ -638,6 +793,7 @@ export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      deploy: cdktn.stringToTerraform(this._deploy),
       max_items: cdktn.numberToTerraform(this._maxItems),
       status: cdktn.stringToTerraform(this._status),
       zone_id: cdktn.stringToTerraform(this._zoneId),
@@ -646,6 +802,12 @@ export class DataCloudflareCertificatePacks extends cdktn.TerraformDataSource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      deploy: {
+        value: cdktn.stringToHclTerraform(this._deploy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       max_items: {
         value: cdktn.numberToHclTerraform(this._maxItems),
         isBlock: false,

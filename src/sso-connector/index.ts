@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,31 @@ export interface SsoConnectorConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
   */
   readonly accountId: string;
   /**
   * Begin the verification process after creation
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
   */
   readonly beginVerification?: boolean | cdktn.IResolvable;
   /**
   * Email domain of the new SSO connector
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
   */
   readonly emailDomain: string;
   /**
   * SSO Connector enabled state
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Controls the display of FedRAMP language to the user during SSO login
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
   */
   readonly useFedrampLanguage?: boolean | cdktn.IResolvable;
 }
@@ -104,7 +104,7 @@ export class SsoConnectorVerificationOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector cloudflare_sso_connector}
 */
 export class SsoConnector extends cdktn.TerraformResource {
 
@@ -120,7 +120,7 @@ export class SsoConnector extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SsoConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SsoConnector to import
-  * @param importFromId The id of the existing SsoConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SsoConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SsoConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -132,7 +132,7 @@ export class SsoConnector extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/sso_connector cloudflare_sso_connector} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector cloudflare_sso_connector} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -143,7 +143,7 @@ export class SsoConnector extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_sso_connector',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +15,20 @@ export interface AccountSubscriptionConfig extends cdktn.TerraformMetaArguments 
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
   */
   readonly accountId: string;
   /**
   * How often the subscription is renewed automatically.
   * Available values: "weekly", "monthly", "quarterly", "yearly".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
   */
   readonly frequency?: string;
   /**
   * The rate plan applied to the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
   */
   readonly ratePlan?: AccountSubscriptionRatePlan;
 }
@@ -36,7 +36,7 @@ export interface AccountSubscriptionRatePlan {
   /**
   * The ID of the rate plan.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#id AccountSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#id AccountSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -45,7 +45,7 @@ export interface AccountSubscriptionRatePlan {
   /**
   * The scope that this rate plan applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#scope AccountSubscription#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#scope AccountSubscription#scope}
   */
   readonly scope?: string;
 }
@@ -193,7 +193,7 @@ export class AccountSubscriptionRatePlanOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription cloudflare_account_subscription}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription cloudflare_account_subscription}
 */
 export class AccountSubscription extends cdktn.TerraformResource {
 
@@ -209,7 +209,7 @@ export class AccountSubscription extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountSubscription to import
-  * @param importFromId The id of the existing AccountSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -221,7 +221,7 @@ export class AccountSubscription extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_subscription cloudflare_account_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription cloudflare_account_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -232,7 +232,7 @@ export class AccountSubscription extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_account_subscription',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

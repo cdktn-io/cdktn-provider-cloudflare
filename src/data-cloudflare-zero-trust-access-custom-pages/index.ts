@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_custom_pages
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_pages
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareZeroTrustAccessCustomPagesConfig extends cdktn.Te
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_custom_pages#account_id DataCloudflareZeroTrustAccessCustomPages#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_pages#account_id DataCloudflareZeroTrustAccessCustomPages#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_custom_pages#max_items DataCloudflareZeroTrustAccessCustomPages#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_pages#max_items DataCloudflareZeroTrustAccessCustomPages#max_items}
   */
   readonly maxItems?: number;
 }
@@ -117,7 +117,7 @@ export class DataCloudflareZeroTrustAccessCustomPagesResultList extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_custom_pages cloudflare_zero_trust_access_custom_pages}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_pages cloudflare_zero_trust_access_custom_pages}
 */
 export class DataCloudflareZeroTrustAccessCustomPages extends cdktn.TerraformDataSource {
 
@@ -133,7 +133,7 @@ export class DataCloudflareZeroTrustAccessCustomPages extends cdktn.TerraformDat
   * Generates CDKTN code for importing a DataCloudflareZeroTrustAccessCustomPages resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustAccessCustomPages to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessCustomPages that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_custom_pages#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustAccessCustomPages that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_pages#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustAccessCustomPages to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -145,7 +145,7 @@ export class DataCloudflareZeroTrustAccessCustomPages extends cdktn.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_access_custom_pages cloudflare_zero_trust_access_custom_pages} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_pages cloudflare_zero_trust_access_custom_pages} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,7 +156,7 @@ export class DataCloudflareZeroTrustAccessCustomPages extends cdktn.TerraformDat
       terraformResourceType: 'cloudflare_zero_trust_access_custom_pages',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

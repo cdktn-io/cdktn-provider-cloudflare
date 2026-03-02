@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareStreamConfig extends cdktn.TerraformMetaArguments
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
   */
   readonly accountId: string;
   /**
   * A Cloudflare-generated unique identifier for a media item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
   */
   readonly identifier: string;
 }
@@ -318,7 +318,7 @@ export class DataCloudflareStreamWatermarkOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream cloudflare_stream}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream}
 */
 export class DataCloudflareStream extends cdktn.TerraformDataSource {
 
@@ -334,7 +334,7 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareStream to import
-  * @param importFromId The id of the existing DataCloudflareStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -346,7 +346,7 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/stream cloudflare_stream} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +357,7 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_stream',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

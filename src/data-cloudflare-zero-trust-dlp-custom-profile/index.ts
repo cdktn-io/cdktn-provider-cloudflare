@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustDlpCustomProfileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_profile#account_id DataCloudflareZeroTrustDlpCustomProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile#account_id DataCloudflareZeroTrustDlpCustomProfile#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_profile#profile_id DataCloudflareZeroTrustDlpCustomProfile#profile_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile#profile_id DataCloudflareZeroTrustDlpCustomProfile#profile_id}
   */
   readonly profileId: string;
 }
@@ -384,6 +384,11 @@ export class DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference exten
     return this.getStringAttribute('created_at');
   }
 
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
   // enabled - computed: true, optional: false, required: false
   public get enabled() {
     return this.getBooleanAttribute('enabled');
@@ -455,9 +460,334 @@ export class DataCloudflareZeroTrustDlpCustomProfileEntriesList extends cdktn.Co
     return new DataCloudflareZeroTrustDlpCustomProfileEntriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidence {
+}
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidenceToTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidence): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidenceToHclTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidence): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidenceOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidence | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidence | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // ai_context_available - computed: true, optional: false, required: false
+  public get aiContextAvailable() {
+    return this.getBooleanAttribute('ai_context_available');
+  }
+
+  // available - computed: true, optional: false, required: false
+  public get available() {
+    return this.getBooleanAttribute('available');
+  }
+}
+export interface DataCloudflareZeroTrustDlpCustomProfileSharedEntriesPattern {
+}
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesPatternToTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesPattern): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesPatternToHclTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesPattern): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustDlpCustomProfileSharedEntriesPatternOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustDlpCustomProfileSharedEntriesPattern | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesPattern | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // regex - computed: true, optional: false, required: false
+  public get regex() {
+    return this.getStringAttribute('regex');
+  }
+
+  // validation - computed: true, optional: false, required: false
+  public get validation() {
+    return this.getStringAttribute('validation');
+  }
+}
+export interface DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariant {
+}
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariantToTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariant): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariantToHclTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariant): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariantOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariant | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariant | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // topic_type - computed: true, optional: false, required: false
+  public get topicType() {
+    return this.getStringAttribute('topic_type');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+}
+export interface DataCloudflareZeroTrustDlpCustomProfileSharedEntries {
+}
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesToTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntries): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustDlpCustomProfileSharedEntriesToHclTerraform(struct?: DataCloudflareZeroTrustDlpCustomProfileSharedEntries): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustDlpCustomProfileSharedEntriesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustDlpCustomProfileSharedEntries | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustDlpCustomProfileSharedEntries | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // case_sensitive - computed: true, optional: false, required: false
+  public get caseSensitive() {
+    return this.getBooleanAttribute('case_sensitive');
+  }
+
+  // confidence - computed: true, optional: false, required: false
+  private _confidence = new DataCloudflareZeroTrustDlpCustomProfileSharedEntriesConfidenceOutputReference(this, "confidence");
+  public get confidence() {
+    return this._confidence;
+  }
+
+  // created_at - computed: true, optional: false, required: false
+  public get createdAt() {
+    return this.getStringAttribute('created_at');
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // enabled - computed: true, optional: false, required: false
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+
+  // pattern - computed: true, optional: false, required: false
+  private _pattern = new DataCloudflareZeroTrustDlpCustomProfileSharedEntriesPatternOutputReference(this, "pattern");
+  public get pattern() {
+    return this._pattern;
+  }
+
+  // profile_id - computed: true, optional: false, required: false
+  public get profileId() {
+    return this.getStringAttribute('profile_id');
+  }
+
+  // secret - computed: true, optional: false, required: false
+  public get secret() {
+    return this.getBooleanAttribute('secret');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // updated_at - computed: true, optional: false, required: false
+  public get updatedAt() {
+    return this.getStringAttribute('updated_at');
+  }
+
+  // variant - computed: true, optional: false, required: false
+  private _variant = new DataCloudflareZeroTrustDlpCustomProfileSharedEntriesVariantOutputReference(this, "variant");
+  public get variant() {
+    return this._variant;
+  }
+
+  // word_list - computed: true, optional: false, required: false
+  public get wordList() {
+    return this.getStringAttribute('word_list');
+  }
+}
+
+export class DataCloudflareZeroTrustDlpCustomProfileSharedEntriesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareZeroTrustDlpCustomProfileSharedEntriesOutputReference {
+    return new DataCloudflareZeroTrustDlpCustomProfileSharedEntriesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile}
 */
 export class DataCloudflareZeroTrustDlpCustomProfile extends cdktn.TerraformDataSource {
 
@@ -473,7 +803,7 @@ export class DataCloudflareZeroTrustDlpCustomProfile extends cdktn.TerraformData
   * Generates CDKTN code for importing a DataCloudflareZeroTrustDlpCustomProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDlpCustomProfile to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDlpCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDlpCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDlpCustomProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -485,7 +815,7 @@ export class DataCloudflareZeroTrustDlpCustomProfile extends cdktn.TerraformData
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_profile cloudflare_zero_trust_dlp_custom_profile} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -496,7 +826,7 @@ export class DataCloudflareZeroTrustDlpCustomProfile extends cdktn.TerraformData
       terraformResourceType: 'cloudflare_zero_trust_dlp_custom_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -596,6 +926,12 @@ export class DataCloudflareZeroTrustDlpCustomProfile extends cdktn.TerraformData
   // Temporarily expose input value. Use with caution.
   public get profileIdInput() {
     return this._profileId;
+  }
+
+  // shared_entries - computed: true, optional: false, required: false
+  private _sharedEntries = new DataCloudflareZeroTrustDlpCustomProfileSharedEntriesList(this, "shared_entries", false);
+  public get sharedEntries() {
+    return this._sharedEntries;
   }
 
   // type - computed: true, optional: false, required: false

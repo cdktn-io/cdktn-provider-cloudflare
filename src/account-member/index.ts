@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,31 +15,33 @@ export interface AccountMemberConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#account_id AccountMember#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#account_id AccountMember#account_id}
   */
   readonly accountId: string;
   /**
   * The contact email address of the user.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#email AccountMember#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#email AccountMember#email}
   */
   readonly email: string;
   /**
   * Array of policies associated with this member.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#policies AccountMember#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#policies AccountMember#policies}
   */
   readonly policies?: AccountMemberPolicies[] | cdktn.IResolvable;
   /**
   * Set of roles associated with this member.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#roles AccountMember#roles}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#roles AccountMember#roles}
   */
   readonly roles?: string[];
   /**
+  * Status of the member invitation. If not provided during creation, defaults to 'pending'.
+  * Changing from 'accepted' back to 'pending' will trigger a replacement of the member resource in Terraform.
   * Available values: "accepted", "pending".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#status AccountMember#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#status AccountMember#status}
   */
   readonly status?: string;
 }
@@ -47,7 +49,7 @@ export interface AccountMemberPoliciesPermissionGroups {
   /**
   * Identifier of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#id AccountMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#id AccountMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -155,7 +157,7 @@ export interface AccountMemberPoliciesResourceGroups {
   /**
   * Identifier of the group.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#id AccountMember#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#id AccountMember#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -264,19 +266,19 @@ export interface AccountMemberPolicies {
   * Allow or deny operations against the resources.
   * Available values: "allow", "deny".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#access AccountMember#access}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#access AccountMember#access}
   */
   readonly access: string;
   /**
   * A set of permission groups that are specified to the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
   */
   readonly permissionGroups: AccountMemberPoliciesPermissionGroups[] | cdktn.IResolvable;
   /**
   * A list of resource groups that the policy applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
   */
   readonly resourceGroups: AccountMemberPoliciesResourceGroups[] | cdktn.IResolvable;
 }
@@ -515,7 +517,7 @@ export class AccountMemberUserOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member cloudflare_account_member}
 */
 export class AccountMember extends cdktn.TerraformResource {
 
@@ -531,7 +533,7 @@ export class AccountMember extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AccountMember resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AccountMember to import
-  * @param importFromId The id of the existing AccountMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AccountMember that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AccountMember to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -543,7 +545,7 @@ export class AccountMember extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_member cloudflare_account_member} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_member cloudflare_account_member} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -554,7 +556,7 @@ export class AccountMember extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_account_member',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

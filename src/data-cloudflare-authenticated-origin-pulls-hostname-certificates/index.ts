@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareAuthenticatedOriginPullsHostnameCertificatesConfi
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
   */
   readonly maxItems?: number;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
   */
   readonly zoneId: string;
 }
@@ -76,49 +76,14 @@ export class DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOut
     }
   }
 
-  // cert_id - computed: true, optional: false, required: false
-  public get certId() {
-    return this.getStringAttribute('cert_id');
-  }
-
-  // cert_status - computed: true, optional: false, required: false
-  public get certStatus() {
-    return this.getStringAttribute('cert_status');
-  }
-
-  // cert_updated_at - computed: true, optional: false, required: false
-  public get certUpdatedAt() {
-    return this.getStringAttribute('cert_updated_at');
-  }
-
-  // cert_uploaded_on - computed: true, optional: false, required: false
-  public get certUploadedOn() {
-    return this.getStringAttribute('cert_uploaded_on');
-  }
-
   // certificate - computed: true, optional: false, required: false
   public get certificate() {
     return this.getStringAttribute('certificate');
   }
 
-  // created_at - computed: true, optional: false, required: false
-  public get createdAt() {
-    return this.getStringAttribute('created_at');
-  }
-
-  // enabled - computed: true, optional: false, required: false
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-
   // expires_on - computed: true, optional: false, required: false
   public get expiresOn() {
     return this.getStringAttribute('expires_on');
-  }
-
-  // hostname - computed: true, optional: false, required: false
-  public get hostname() {
-    return this.getStringAttribute('hostname');
   }
 
   // id - computed: true, optional: false, required: false
@@ -129,11 +94,6 @@ export class DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOut
   // issuer - computed: true, optional: false, required: false
   public get issuer() {
     return this.getStringAttribute('issuer');
-  }
-
-  // private_key - computed: true, optional: false, required: false
-  public get privateKey() {
-    return this.getStringAttribute('private_key');
   }
 
   // serial_number - computed: true, optional: false, required: false
@@ -151,9 +111,9 @@ export class DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOut
     return this.getStringAttribute('status');
   }
 
-  // updated_at - computed: true, optional: false, required: false
-  public get updatedAt() {
-    return this.getStringAttribute('updated_at');
+  // uploaded_on - computed: true, optional: false, required: false
+  public get uploadedOn() {
+    return this.getStringAttribute('uploaded_on');
   }
 }
 
@@ -177,7 +137,7 @@ export class DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}
 */
 export class DataCloudflareAuthenticatedOriginPullsHostnameCertificates extends cdktn.TerraformDataSource {
 
@@ -193,7 +153,7 @@ export class DataCloudflareAuthenticatedOriginPullsHostnameCertificates extends 
   * Generates CDKTN code for importing a DataCloudflareAuthenticatedOriginPullsHostnameCertificates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAuthenticatedOriginPullsHostnameCertificates to import
-  * @param importFromId The id of the existing DataCloudflareAuthenticatedOriginPullsHostnameCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAuthenticatedOriginPullsHostnameCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAuthenticatedOriginPullsHostnameCertificates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -205,7 +165,7 @@ export class DataCloudflareAuthenticatedOriginPullsHostnameCertificates extends 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -216,7 +176,7 @@ export class DataCloudflareAuthenticatedOriginPullsHostnameCertificates extends 
       terraformResourceType: 'cloudflare_authenticated_origin_pulls_hostname_certificates',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

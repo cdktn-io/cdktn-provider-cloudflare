@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumers
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareQueueConsumersAConfig extends cdktn.TerraformMeta
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers#account_id DataCloudflareQueueConsumersA#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumers#account_id DataCloudflareQueueConsumersA#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers#max_items DataCloudflareQueueConsumersA#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumers#max_items DataCloudflareQueueConsumersA#max_items}
   */
   readonly maxItems?: number;
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers#queue_id DataCloudflareQueueConsumersA#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumers#queue_id DataCloudflareQueueConsumersA#queue_id}
   */
   readonly queueId: string;
 }
@@ -171,14 +171,14 @@ export class DataCloudflareQueueConsumersResultOutputReference extends cdktn.Com
     return this.getStringAttribute('created_on');
   }
 
-  // queue_id - computed: true, optional: false, required: false
-  public get queueId() {
-    return this.getStringAttribute('queue_id');
+  // dead_letter_queue - computed: true, optional: false, required: false
+  public get deadLetterQueue() {
+    return this.getStringAttribute('dead_letter_queue');
   }
 
-  // script - computed: true, optional: false, required: false
-  public get script() {
-    return this.getStringAttribute('script');
+  // queue_name - computed: true, optional: false, required: false
+  public get queueName() {
+    return this.getStringAttribute('queue_name');
   }
 
   // script_name - computed: true, optional: false, required: false
@@ -218,7 +218,7 @@ export class DataCloudflareQueueConsumersResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumers cloudflare_queue_consumers}
 */
 export class DataCloudflareQueueConsumersA extends cdktn.TerraformDataSource {
 
@@ -234,7 +234,7 @@ export class DataCloudflareQueueConsumersA extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareQueueConsumersA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareQueueConsumersA to import
-  * @param importFromId The id of the existing DataCloudflareQueueConsumersA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareQueueConsumersA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumers#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareQueueConsumersA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -246,7 +246,7 @@ export class DataCloudflareQueueConsumersA extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue_consumers cloudflare_queue_consumers} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,7 +257,7 @@ export class DataCloudflareQueueConsumersA extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_queue_consumers',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

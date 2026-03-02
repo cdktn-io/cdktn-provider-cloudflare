@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareAiSearchTokenConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#account_id DataCloudflareAiSearchToken#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#account_id DataCloudflareAiSearchToken#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#id DataCloudflareAiSearchToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#id DataCloudflareAiSearchToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -26,7 +26,7 @@ export interface DataCloudflareAiSearchTokenConfig extends cdktn.TerraformMetaAr
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}
 */
 export class DataCloudflareAiSearchToken extends cdktn.TerraformDataSource {
 
@@ -42,7 +42,7 @@ export class DataCloudflareAiSearchToken extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAiSearchToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAiSearchToken to import
-  * @param importFromId The id of the existing DataCloudflareAiSearchToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAiSearchToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAiSearchToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -54,7 +54,7 @@ export class DataCloudflareAiSearchToken extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token cloudflare_ai_search_token} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -65,7 +65,7 @@ export class DataCloudflareAiSearchToken extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_ai_search_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -97,19 +97,9 @@ export class DataCloudflareAiSearchToken extends cdktn.TerraformDataSource {
     return this._accountId;
   }
 
-  // account_tag - computed: true, optional: false, required: false
-  public get accountTag() {
-    return this.getStringAttribute('account_tag');
-  }
-
   // cf_api_id - computed: true, optional: false, required: false
   public get cfApiId() {
     return this.getStringAttribute('cf_api_id');
-  }
-
-  // cf_api_key - computed: true, optional: false, required: false
-  public get cfApiKey() {
-    return this.getStringAttribute('cf_api_key');
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -158,11 +148,6 @@ export class DataCloudflareAiSearchToken extends cdktn.TerraformDataSource {
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
-  }
-
-  // synced_at - computed: true, optional: false, required: false
-  public get syncedAt() {
-    return this.getStringAttribute('synced_at');
   }
 
   // =========

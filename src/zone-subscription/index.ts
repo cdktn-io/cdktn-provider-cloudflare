@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -17,19 +17,19 @@ export interface ZoneSubscriptionConfig extends cdktn.TerraformMetaArguments {
   * Available values: "weekly", "monthly", "quarterly", "yearly".
   * Note: Some plans may not support frequency configuration and will return "not-applicable".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription#frequency ZoneSubscription#frequency}
   */
   readonly frequency?: string;
   /**
   * The rate plan applied to the subscription.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription#rate_plan ZoneSubscription#rate_plan}
   */
   readonly ratePlan?: ZoneSubscriptionRatePlan;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription#zone_id ZoneSubscription#zone_id}
   */
   readonly zoneId: string;
 }
@@ -38,7 +38,7 @@ export interface ZoneSubscriptionRatePlan {
   * The ID of the rate plan.
   * Available values: "free", "lite", "pro", "pro_plus", "business", "enterprise", "partners_free", "partners_pro", "partners_business", "partners_enterprise", "partners_ent".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription#id ZoneSubscription#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription#id ZoneSubscription#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -47,7 +47,7 @@ export interface ZoneSubscriptionRatePlan {
   /**
   * The scope that this rate plan applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription#scope ZoneSubscription#scope}
   */
   readonly scope?: string;
 }
@@ -195,7 +195,7 @@ export class ZoneSubscriptionRatePlanOutputReference extends cdktn.ComplexObject
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription cloudflare_zone_subscription}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription cloudflare_zone_subscription}
 */
 export class ZoneSubscription extends cdktn.TerraformResource {
 
@@ -211,7 +211,7 @@ export class ZoneSubscription extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZoneSubscription resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZoneSubscription to import
-  * @param importFromId The id of the existing ZoneSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZoneSubscription that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZoneSubscription to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -223,7 +223,7 @@ export class ZoneSubscription extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_subscription cloudflare_zone_subscription} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -234,7 +234,7 @@ export class ZoneSubscription extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zone_subscription',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

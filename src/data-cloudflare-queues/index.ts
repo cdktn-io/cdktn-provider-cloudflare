@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queues
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queues
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareQueuesConfig extends cdktn.TerraformMetaArguments
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queues#account_id DataCloudflareQueues#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queues#account_id DataCloudflareQueues#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queues#max_items DataCloudflareQueues#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queues#max_items DataCloudflareQueues#max_items}
   */
   readonly maxItems?: number;
 }
@@ -165,14 +165,14 @@ export class DataCloudflareQueuesResultConsumersOutputReference extends cdktn.Co
     return this.getStringAttribute('created_on');
   }
 
-  // queue_id - computed: true, optional: false, required: false
-  public get queueId() {
-    return this.getStringAttribute('queue_id');
+  // dead_letter_queue - computed: true, optional: false, required: false
+  public get deadLetterQueue() {
+    return this.getStringAttribute('dead_letter_queue');
   }
 
-  // script - computed: true, optional: false, required: false
-  public get script() {
-    return this.getStringAttribute('script');
+  // queue_name - computed: true, optional: false, required: false
+  public get queueName() {
+    return this.getStringAttribute('queue_name');
   }
 
   // script_name - computed: true, optional: false, required: false
@@ -484,7 +484,7 @@ export class DataCloudflareQueuesResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queues cloudflare_queues}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queues cloudflare_queues}
 */
 export class DataCloudflareQueues extends cdktn.TerraformDataSource {
 
@@ -500,7 +500,7 @@ export class DataCloudflareQueues extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareQueues resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareQueues to import
-  * @param importFromId The id of the existing DataCloudflareQueues that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queues#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareQueues that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queues#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareQueues to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -512,7 +512,7 @@ export class DataCloudflareQueues extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/queues cloudflare_queues} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queues cloudflare_queues} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -523,7 +523,7 @@ export class DataCloudflareQueues extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_queues',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

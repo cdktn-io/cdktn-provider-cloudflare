@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,25 +13,25 @@ import * as cdktn from 'cdktn';
 
 export interface AiSearchTokenConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}
   */
   readonly accountId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}
   */
   readonly cfApiId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}
   */
   readonly cfApiKey: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token#name AiSearchToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#name AiSearchToken#name}
   */
   readonly name: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token cloudflare_ai_search_token}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token cloudflare_ai_search_token}
 */
 export class AiSearchToken extends cdktn.TerraformResource {
 
@@ -47,7 +47,7 @@ export class AiSearchToken extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AiSearchToken resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AiSearchToken to import
-  * @param importFromId The id of the existing AiSearchToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AiSearchToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AiSearchToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -59,7 +59,7 @@ export class AiSearchToken extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token cloudflare_ai_search_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -70,7 +70,7 @@ export class AiSearchToken extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_ai_search_token',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -102,11 +102,6 @@ export class AiSearchToken extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
-  }
-
-  // account_tag - computed: true, optional: false, required: false
-  public get accountTag() {
-    return this.getStringAttribute('account_tag');
   }
 
   // cf_api_id - computed: false, optional: false, required: true
@@ -181,11 +176,6 @@ export class AiSearchToken extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
-  }
-
-  // synced_at - computed: true, optional: false, required: false
-  public get syncedAt() {
-    return this.getStringAttribute('synced_at');
   }
 
   // =========

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_domain
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/pages_domain
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface PagesDomainConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
   */
   readonly accountId: string;
   /**
   * The domain name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_domain#name PagesDomain#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/pages_domain#name PagesDomain#name}
   */
   readonly name: string;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
   */
   readonly projectName: string;
 }
@@ -166,7 +166,7 @@ export class PagesDomainVerificationDataOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_domain cloudflare_pages_domain}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/pages_domain cloudflare_pages_domain}
 */
 export class PagesDomain extends cdktn.TerraformResource {
 
@@ -182,7 +182,7 @@ export class PagesDomain extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a PagesDomain resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the PagesDomain to import
-  * @param importFromId The id of the existing PagesDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing PagesDomain that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the PagesDomain to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -194,7 +194,7 @@ export class PagesDomain extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/pages_domain cloudflare_pages_domain} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/pages_domain cloudflare_pages_domain} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -205,7 +205,7 @@ export class PagesDomain extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_pages_domain',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

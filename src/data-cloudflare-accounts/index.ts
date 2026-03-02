@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/accounts
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/accounts
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,19 +16,19 @@ export interface DataCloudflareAccountsConfig extends cdktn.TerraformMetaArgumen
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/accounts#direction DataCloudflareAccounts#direction}
   */
   readonly direction?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/accounts#max_items DataCloudflareAccounts#max_items}
   */
   readonly maxItems?: number;
   /**
   * Name of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/accounts#name DataCloudflareAccounts#name}
   */
   readonly name?: string;
 }
@@ -254,7 +254,7 @@ export class DataCloudflareAccountsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/accounts cloudflare_accounts}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/accounts cloudflare_accounts}
 */
 export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
 
@@ -270,7 +270,7 @@ export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAccounts resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAccounts to import
-  * @param importFromId The id of the existing DataCloudflareAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAccounts that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/accounts#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAccounts to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -282,7 +282,7 @@ export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/accounts cloudflare_accounts} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/accounts cloudflare_accounts} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -293,7 +293,7 @@ export class DataCloudflareAccounts extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_accounts',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

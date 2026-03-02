@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_cache_variants
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataCloudflareZoneCacheVariantsConfig extends cdktn.TerraformMe
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_cache_variants#zone_id DataCloudflareZoneCacheVariants#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants#zone_id DataCloudflareZoneCacheVariants#zone_id}
   */
   readonly zoneId: string;
 }
@@ -125,7 +125,7 @@ export class DataCloudflareZoneCacheVariantsValueOutputReference extends cdktn.C
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants}
 */
 export class DataCloudflareZoneCacheVariants extends cdktn.TerraformDataSource {
 
@@ -141,7 +141,7 @@ export class DataCloudflareZoneCacheVariants extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareZoneCacheVariants resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZoneCacheVariants to import
-  * @param importFromId The id of the existing DataCloudflareZoneCacheVariants that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZoneCacheVariants that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZoneCacheVariants to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -153,7 +153,7 @@ export class DataCloudflareZoneCacheVariants extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_cache_variants cloudflare_zone_cache_variants} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -164,7 +164,7 @@ export class DataCloudflareZoneCacheVariants extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone_cache_variants',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
