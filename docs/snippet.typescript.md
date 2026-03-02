@@ -4,7 +4,7 @@
 
 ### Snippet <a name="Snippet" id="@cdktn/provider-cloudflare.snippet.Snippet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet cloudflare_snippet}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet cloudflare_snippet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippet.Snippet.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the Snippet to import.
 
 The id of the existing Snippet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,9 +842,9 @@ const snippetConfig: snippet.SnippetConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.files">files</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles">SnippetFiles</a>[]</code> | The list of files belonging to the snippet. |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetMetadata">SnippetMetadata</a></code> | Metadata about the snippet. |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.snippetName">snippetName</a></code> | <code>string</code> | The identifying name of the snippet. |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The unique ID of the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.metadata">metadata</a></code> | <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetMetadata">SnippetMetadata</a></code> | Provide metadata about the snippet. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.snippetName">snippetName</a></code> | <code>string</code> | Identify the snippet. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Use this field to specify the unique ID of the zone. |
 
 ---
 
@@ -928,7 +928,7 @@ public readonly files: IResolvable | SnippetFiles[];
 
 The list of files belonging to the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#files Snippet#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#files Snippet#files}
 
 ---
 
@@ -940,9 +940,9 @@ public readonly metadata: SnippetMetadata;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.snippet.SnippetMetadata">SnippetMetadata</a>
 
-Metadata about the snippet.
+Provide metadata about the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#metadata Snippet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#metadata Snippet#metadata}
 
 ---
 
@@ -954,9 +954,9 @@ public readonly snippetName: string;
 
 - *Type:* string
 
-The identifying name of the snippet.
+Identify the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
 
 ---
 
@@ -968,9 +968,9 @@ public readonly zoneId: string;
 
 - *Type:* string
 
-The unique ID of the zone.
+Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#zone_id Snippet#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#zone_id Snippet#zone_id}
 
 ---
 
@@ -988,8 +988,8 @@ const snippetFiles: snippet.SnippetFiles = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#content Snippet#content}. |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#name Snippet#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.content">content</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#content Snippet#content}. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#name Snippet#name}. |
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly content: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#content Snippet#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#content Snippet#content}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#name Snippet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#name Snippet#name}.
 
 ---
 
@@ -1031,7 +1031,7 @@ const snippetMetadata: snippet.SnippetMetadata = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetMetadata.property.mainModule">mainModule</a></code> | <code>string</code> | Name of the file that contains the main module of the snippet. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetMetadata.property.mainModule">mainModule</a></code> | <code>string</code> | Specify the name of the file that contains the main module of the snippet. |
 
 ---
 
@@ -1043,9 +1043,9 @@ public readonly mainModule: string;
 
 - *Type:* string
 
-Name of the file that contains the main module of the snippet.
+Specify the name of the file that contains the main module of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet#main_module Snippet#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet#main_module Snippet#main_module}
 
 ---
 

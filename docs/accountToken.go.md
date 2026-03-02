@@ -4,7 +4,7 @@
 
 ### AccountToken <a name="AccountToken" id="@cdktn/provider-cloudflare.accountToken.AccountToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token cloudflare_account_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token cloudflare_account_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountToken.AccountToken.Initializer"></a>
 
@@ -543,7 +543,7 @@ The construct id used in the generated config for the AccountToken to import.
 
 The id of the existing AccountToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -977,7 +977,7 @@ RequestIp AccountTokenConditionRequestIp
 
 Client IP restrictions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#request_ip AccountToken#request_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#request_ip AccountToken#request_ip}
 
 ---
 
@@ -1013,7 +1013,7 @@ In *[]*string
 
 List of IPv4/IPv6 CIDR addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#in AccountToken#in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#in AccountToken#in}
 
 ---
 
@@ -1027,7 +1027,7 @@ NotIn *[]*string
 
 List of IPv4/IPv6 CIDR addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#not_in AccountToken#not_in}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#not_in AccountToken#not_in}
 
 ---
 
@@ -1070,7 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountt
 | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.name">Name</a></code> | <code>*string</code> | Token name. |
 | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.policies">Policies</a></code> | <code>interface{}</code> | Set of access policies assigned to the token. |
-| <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#condition AccountToken#condition}. |
+| <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.condition">Condition</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#condition AccountToken#condition}. |
 | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.expiresOn">ExpiresOn</a></code> | <code>*string</code> | The expiration time on or after which the JWT MUST NOT be accepted for processing. |
 | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.notBefore">NotBefore</a></code> | <code>*string</code> | The time before which the token MUST NOT be accepted for processing. |
 | <code><a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenConfig.property.status">Status</a></code> | <code>*string</code> | Status of the token. Available values: "active", "disabled", "expired". |
@@ -1157,7 +1157,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#account_id AccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#account_id AccountToken#account_id}
 
 ---
 
@@ -1171,7 +1171,7 @@ Name *string
 
 Token name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#name AccountToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#name AccountToken#name}
 
 ---
 
@@ -1185,7 +1185,7 @@ Policies interface{}
 
 Set of access policies assigned to the token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#policies AccountToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#policies AccountToken#policies}
 
 ---
 
@@ -1197,7 +1197,7 @@ Condition AccountTokenCondition
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.accountToken.AccountTokenCondition">AccountTokenCondition</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#condition AccountToken#condition}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#condition AccountToken#condition}.
 
 ---
 
@@ -1211,7 +1211,7 @@ ExpiresOn *string
 
 The expiration time on or after which the JWT MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#expires_on AccountToken#expires_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#expires_on AccountToken#expires_on}
 
 ---
 
@@ -1225,7 +1225,7 @@ NotBefore *string
 
 The time before which the token MUST NOT be accepted for processing.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#not_before AccountToken#not_before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#not_before AccountToken#not_before}
 
 ---
 
@@ -1239,7 +1239,7 @@ Status *string
 
 Status of the token. Available values: "active", "disabled", "expired".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#status AccountToken#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#status AccountToken#status}
 
 ---
 
@@ -1277,7 +1277,7 @@ Effect *string
 
 Allow or deny operations against the resources. Available values: "allow", "deny".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#effect AccountToken#effect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#effect AccountToken#effect}
 
 ---
 
@@ -1291,7 +1291,7 @@ PermissionGroups interface{}
 
 A set of permission groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#permission_groups AccountToken#permission_groups}
 
 ---
 
@@ -1305,7 +1305,7 @@ Resources *string
 
 A json object representing the resources that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#resources AccountToken#resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#resources AccountToken#resources}
 
 ---
 
@@ -1339,7 +1339,7 @@ Id *string
 
 Identifier of the permission group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/account_token#id AccountToken#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_token#id AccountToken#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

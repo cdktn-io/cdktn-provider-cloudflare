@@ -4,7 +4,7 @@
 
 ### DataCloudflareCallsSfuApps <a name="DataCloudflareCallsSfuApps" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApps.DataCloudflareCallsSfuApps"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_apps cloudflare_calls_sfu_apps}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApps.DataCloudflareCallsSfuApps.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareCallsSfuApps
 
 The id of the existing DataCloudflareCallsSfuApps that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/calls_sfu_apps#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_apps#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -728,7 +728,7 @@ public readonly accountId: string;
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/calls_sfu_apps#account_id DataCloudflareCallsSfuApps#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_apps#account_id DataCloudflareCallsSfuApps#account_id}
 
 ---
 
@@ -742,7 +742,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/calls_sfu_apps#max_items DataCloudflareCallsSfuApps#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_apps#max_items DataCloudflareCallsSfuApps#max_items}
 
 ---
 

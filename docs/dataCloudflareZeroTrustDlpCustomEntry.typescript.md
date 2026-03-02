@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDlpCustomEntry <a name="DataCloudflareZeroTrustDlpCustomEntry" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_entry cloudflare_zero_trust_dlp_custom_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDlp
 
 The id of the existing DataCloudflareZeroTrustDlpCustomEntry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_entry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_entry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -418,6 +418,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.caseSensitive">caseSensitive</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.confidence">confidence</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfidenceOutputReference">DataCloudflareZeroTrustDlpCustomEntryConfidenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -583,6 +584,16 @@ public readonly confidence: DataCloudflareZeroTrustDlpCustomEntryConfidenceOutpu
 
 ```typescript
 public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntry.property.description"></a>
+
+```typescript
+public readonly description: string;
 ```
 
 - *Type:* string
@@ -801,8 +812,8 @@ const dataCloudflareZeroTrustDlpCustomEntryConfig: dataCloudflareZeroTrustDlpCus
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_entry#account_id DataCloudflareZeroTrustDlpCustomEntry#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfig.property.entryId">entryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_entry#entry_id DataCloudflareZeroTrustDlpCustomEntry#entry_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_entry#account_id DataCloudflareZeroTrustDlpCustomEntry#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpCustomEntry.DataCloudflareZeroTrustDlpCustomEntryConfig.property.entryId">entryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_entry#entry_id DataCloudflareZeroTrustDlpCustomEntry#entry_id}. |
 
 ---
 
@@ -884,7 +895,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_entry#account_id DataCloudflareZeroTrustDlpCustomEntry#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_entry#account_id DataCloudflareZeroTrustDlpCustomEntry#account_id}.
 
 ---
 
@@ -896,7 +907,7 @@ public readonly entryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_custom_entry#entry_id DataCloudflareZeroTrustDlpCustomEntry#entry_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_custom_entry#entry_id DataCloudflareZeroTrustDlpCustomEntry#entry_id}.
 
 ---
 

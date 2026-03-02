@@ -4,7 +4,7 @@
 
 ### DataCloudflareZoneHold <a name="DataCloudflareZoneHold" id="@cdktn/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_hold cloudflare_zone_hold}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZoneHold.DataCloudflareZoneHold.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_hold#zone_id DataCloudflareZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_hold#zone_id DataCloudflareZoneHold#zone_id}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataCloudflareZoneHold to 
 
 The id of the existing DataCloudflareZoneHold that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_hold#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_hold#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -842,7 +842,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zone_hold#zone_id DataCloudflareZoneHold#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_hold#zone_id DataCloudflareZoneHold#zone_id}
 
 ---
 

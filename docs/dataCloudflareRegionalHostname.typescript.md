@@ -4,7 +4,7 @@
 
 ### DataCloudflareRegionalHostname <a name="DataCloudflareRegionalHostname" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/regional_hostname cloudflare_regional_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname cloudflare_regional_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareRegionalHost
 
 The id of the existing DataCloudflareRegionalHostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/regional_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -756,7 +756,7 @@ DNS hostname to be regionalized, must be a subdomain of the zone.
 
 Wildcards are supported for one level, e.g `*.example.com`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/regional_hostname#hostname DataCloudflareRegionalHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#hostname DataCloudflareRegionalHostname#hostname}
 
 ---
 
@@ -770,7 +770,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/regional_hostname#zone_id DataCloudflareRegionalHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#zone_id DataCloudflareRegionalHostname#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### StreamLiveInput <a name="StreamLiveInput" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input cloudflare_stream_live_input}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer"></a>
 
@@ -24,6 +24,7 @@ streamLiveInput.StreamLiveInput(
   account_id: str,
   default_creator: str = None,
   delete_recording_after_days: typing.Union[int, float] = None,
+  enabled: bool | IResolvable = None,
   live_input_identifier: str = None,
   meta: str = None,
   recording: StreamLiveInputRecording = None
@@ -44,6 +45,7 @@ streamLiveInput.StreamLiveInput(
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.defaultCreator">default_creator</a></code> | <code>str</code> | Sets the creator ID asssociated with this live input. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.deleteRecordingAfterDays">delete_recording_after_days</a></code> | <code>typing.Union[int, float]</code> | Indicates the number of days after which the live inputs recordings will be deleted. |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the live input is enabled and can accept streams. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.liveInputIdentifier">live_input_identifier</a></code> | <code>str</code> | A unique identifier for a live input. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing live inputs. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.recording">recording</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecording">StreamLiveInputRecording</a></code> | Records the input to a Cloudflare Stream video. |
@@ -116,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
 
 ---
 
@@ -126,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Sets the creator ID asssociated with this live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
 
 ---
 
@@ -138,7 +140,17 @@ Indicates the number of days after which the live inputs recordings will be dele
 
 When a stream completes and the recording is ready, the value is used to calculate a scheduled deletion date for that recording. Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.Initializer.parameter.enabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether the live input is enabled and can accept streams.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#enabled StreamLiveInput#enabled}
 
 ---
 
@@ -148,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A unique identifier for a live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
 
 ---
 
@@ -158,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user modifiable key-value store used to reference other systems of record for managing live inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
 
 ---
 
@@ -170,7 +182,7 @@ Records the input to a Cloudflare Stream video.
 
 Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
 
 ---
 
@@ -205,6 +217,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.putRecording">put_recording</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetDefaultCreator">reset_default_creator</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetDeleteRecordingAfterDays">reset_delete_recording_after_days</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetLiveInputIdentifier">reset_live_input_identifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetMeta">reset_meta</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetRecording">reset_recording</a></code> | *No description.* |
@@ -579,7 +592,7 @@ Lists the origins allowed to display videos created with this input.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. An empty array allows videos to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
 
 ---
 
@@ -589,7 +602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Disables reporting the number of live viewers when this property is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
 
 ---
 
@@ -602,7 +615,7 @@ Specifies the recording behavior for the live input.
 Set this value to `off` to prevent a recording. Set the value to `automatic` to begin a recording and transition to on-demand after Stream Live stops receiving input.
 Available values: "off", "automatic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
 
 ---
 
@@ -614,7 +627,7 @@ Indicates if a video using the live input has the `requireSignedURLs` property s
 
 Also enforces access controls on any video recording of the livestream with the live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
 
 ---
 
@@ -626,7 +639,7 @@ Determines the amount of time a live input configured in `automatic` mode should
 
 `0` is recommended for most use cases and indicates the platform default should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
 
 ---
 
@@ -640,6 +653,12 @@ def reset_default_creator() -> None
 
 ```python
 def reset_delete_recording_after_days() -> None
+```
+
+##### `reset_enabled` <a name="reset_enabled" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetEnabled"></a>
+
+```python
+def reset_enabled() -> None
 ```
 
 ##### `reset_live_input_identifier` <a name="reset_live_input_identifier" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.resetLiveInputIdentifier"></a>
@@ -774,7 +793,7 @@ The construct id used in the generated config for the StreamLiveInput to import.
 
 The id of the existing StreamLiveInput that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -818,12 +837,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.defaultCreatorInput">default_creator_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.deleteRecordingAfterDaysInput">delete_recording_after_days_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.liveInputIdentifierInput">live_input_identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.metaInput">meta_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.recordingInput">recording_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecording">StreamLiveInputRecording</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.defaultCreator">default_creator</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.deleteRecordingAfterDays">delete_recording_after_days</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.liveInputIdentifier">live_input_identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.meta">meta</a></code> | <code>str</code> | *No description.* |
 
@@ -1111,6 +1132,16 @@ delete_recording_after_days_input: typing.Union[int, float]
 
 ---
 
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.enabledInput"></a>
+
+```python
+enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `live_input_identifier_input`<sup>Optional</sup> <a name="live_input_identifier_input" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.liveInputIdentifierInput"></a>
 
 ```python
@@ -1168,6 +1199,16 @@ delete_recording_after_days: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInput.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1229,6 +1270,7 @@ streamLiveInput.StreamLiveInputConfig(
   account_id: str,
   default_creator: str = None,
   delete_recording_after_days: typing.Union[int, float] = None,
+  enabled: bool | IResolvable = None,
   live_input_identifier: str = None,
   meta: str = None,
   recording: StreamLiveInputRecording = None
@@ -1249,6 +1291,7 @@ streamLiveInput.StreamLiveInputConfig(
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.defaultCreator">default_creator</a></code> | <code>str</code> | Sets the creator ID asssociated with this live input. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.deleteRecordingAfterDays">delete_recording_after_days</a></code> | <code>typing.Union[int, float]</code> | Indicates the number of days after which the live inputs recordings will be deleted. |
+| <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the live input is enabled and can accept streams. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.liveInputIdentifier">live_input_identifier</a></code> | <code>str</code> | A unique identifier for a live input. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing live inputs. |
 | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.recording">recording</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputRecording">StreamLiveInputRecording</a></code> | Records the input to a Cloudflare Stream video. |
@@ -1335,7 +1378,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#account_id StreamLiveInput#account_id}
 
 ---
 
@@ -1349,7 +1392,7 @@ default_creator: str
 
 Sets the creator ID asssociated with this live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#default_creator StreamLiveInput#default_creator}
 
 ---
 
@@ -1365,7 +1408,21 @@ Indicates the number of days after which the live inputs recordings will be dele
 
 When a stream completes and the recording is ready, the value is used to calculate a scheduled deletion date for that recording. Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#delete_recording_after_days StreamLiveInput#delete_recording_after_days}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.streamLiveInput.StreamLiveInputConfig.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates whether the live input is enabled and can accept streams.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#enabled StreamLiveInput#enabled}
 
 ---
 
@@ -1379,7 +1436,7 @@ live_input_identifier: str
 
 A unique identifier for a live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#live_input_identifier StreamLiveInput#live_input_identifier}
 
 ---
 
@@ -1393,7 +1450,7 @@ meta: str
 
 A user modifiable key-value store used to reference other systems of record for managing live inputs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#meta StreamLiveInput#meta}
 
 ---
 
@@ -1409,7 +1466,7 @@ Records the input to a Cloudflare Stream video.
 
 Behavior depends on the mode. In most cases, the video will initially be viewable as a live video and transition to on-demand after a condition is satisfied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#recording StreamLiveInput#recording}
 
 ---
 
@@ -1453,7 +1510,7 @@ Lists the origins allowed to display videos created with this input.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. An empty array allows videos to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#allowed_origins StreamLiveInput#allowed_origins}
 
 ---
 
@@ -1467,7 +1524,7 @@ hide_live_viewer_count: bool | IResolvable
 
 Disables reporting the number of live viewers when this property is set to `true`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#hide_live_viewer_count StreamLiveInput#hide_live_viewer_count}
 
 ---
 
@@ -1484,7 +1541,7 @@ Specifies the recording behavior for the live input.
 Set this value to `off` to prevent a recording. Set the value to `automatic` to begin a recording and transition to on-demand after Stream Live stops receiving input.
 Available values: "off", "automatic".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#mode StreamLiveInput#mode}
 
 ---
 
@@ -1500,7 +1557,7 @@ Indicates if a video using the live input has the `requireSignedURLs` property s
 
 Also enforces access controls on any video recording of the livestream with the live input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#require_signed_urls StreamLiveInput#require_signed_urls}
 
 ---
 
@@ -1516,7 +1573,7 @@ Determines the amount of time a live input configured in `automatic` mode should
 
 `0` is recommended for most use cases and indicates the platform default should be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_live_input#timeout_seconds StreamLiveInput#timeout_seconds}
 
 ---
 

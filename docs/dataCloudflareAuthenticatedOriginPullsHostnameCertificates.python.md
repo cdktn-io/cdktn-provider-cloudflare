@@ -4,7 +4,7 @@
 
 ### DataCloudflareAuthenticatedOriginPullsHostnameCertificates <a name="DataCloudflareAuthenticatedOriginPullsHostnameCertificates" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates cloudflare_authenticated_origin_pulls_hostname_certificates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificates.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
 
 ---
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareAuthenticate
 
 The id of the existing DataCloudflareAuthenticatedOriginPullsHostnameCertificates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,7 +852,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#zone_id DataCloudflareAuthenticatedOriginPullsHostnameCertificates#zone_id}
 
 ---
 
@@ -866,7 +866,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_hostname_certificates#max_items DataCloudflareAuthenticatedOriginPullsHostnameCertificates#max_items}
 
 ---
 
@@ -1297,22 +1297,14 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certId">cert_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certificate">certificate</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certStatus">cert_status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certUpdatedAt">cert_updated_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certUploadedOn">cert_uploaded_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.hostname">hostname</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.issuer">issuer</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.privateKey">private_key</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.serialNumber">serial_number</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.signature">signature</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.uploadedOn">uploaded_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResult">DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResult</a></code> | *No description.* |
 
 ---
@@ -1341,16 +1333,6 @@ fqn: str
 
 ---
 
-##### `cert_id`<sup>Required</sup> <a name="cert_id" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certId"></a>
-
-```python
-cert_id: str
-```
-
-- *Type:* str
-
----
-
 ##### `certificate`<sup>Required</sup> <a name="certificate" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certificate"></a>
 
 ```python
@@ -1361,70 +1343,10 @@ certificate: str
 
 ---
 
-##### `cert_status`<sup>Required</sup> <a name="cert_status" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certStatus"></a>
-
-```python
-cert_status: str
-```
-
-- *Type:* str
-
----
-
-##### `cert_updated_at`<sup>Required</sup> <a name="cert_updated_at" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certUpdatedAt"></a>
-
-```python
-cert_updated_at: str
-```
-
-- *Type:* str
-
----
-
-##### `cert_uploaded_on`<sup>Required</sup> <a name="cert_uploaded_on" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.certUploadedOn"></a>
-
-```python
-cert_uploaded_on: str
-```
-
-- *Type:* str
-
----
-
-##### `created_at`<sup>Required</sup> <a name="created_at" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.createdAt"></a>
-
-```python
-created_at: str
-```
-
-- *Type:* str
-
----
-
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.enabled"></a>
-
-```python
-enabled: IResolvable
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
 ##### `expires_on`<sup>Required</sup> <a name="expires_on" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.expiresOn"></a>
 
 ```python
 expires_on: str
-```
-
-- *Type:* str
-
----
-
-##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.hostname"></a>
-
-```python
-hostname: str
 ```
 
 - *Type:* str
@@ -1445,16 +1367,6 @@ id: str
 
 ```python
 issuer: str
-```
-
-- *Type:* str
-
----
-
-##### `private_key`<sup>Required</sup> <a name="private_key" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.privateKey"></a>
-
-```python
-private_key: str
 ```
 
 - *Type:* str
@@ -1491,10 +1403,10 @@ status: str
 
 ---
 
-##### `updated_at`<sup>Required</sup> <a name="updated_at" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.updatedAt"></a>
+##### `uploaded_on`<sup>Required</sup> <a name="uploaded_on" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsHostnameCertificates.DataCloudflareAuthenticatedOriginPullsHostnameCertificatesResultOutputReference.property.uploadedOn"></a>
 
 ```python
-updated_at: str
+uploaded_on: str
 ```
 
 - *Type:* str

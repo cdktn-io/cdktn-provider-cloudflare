@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountRole <a name="DataCloudflareAccountRole" id="@cdktn/provider-cloudflare.dataCloudflareAccountRole.DataCloudflareAccountRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_role cloudflare_account_role}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_role cloudflare_account_role}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountRole.DataCloudflareAccountRole.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareAccountRole 
 
 The id of the existing DataCloudflareAccountRole that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_role#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_role#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -754,7 +754,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_role#account_id DataCloudflareAccountRole#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_role#account_id DataCloudflareAccountRole#account_id}
 
 ---
 
@@ -768,7 +768,7 @@ public readonly roleId: string;
 
 Role identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/account_role#role_id DataCloudflareAccountRole#role_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_role#role_id DataCloudflareAccountRole#role_id}
 
 ---
 

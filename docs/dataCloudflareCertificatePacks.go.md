@@ -4,7 +4,7 @@
 
 ### DataCloudflareCertificatePacks <a name="DataCloudflareCertificatePacks" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs cloudflare_certificate_packs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.resetDeploy">ResetDeploy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.resetMaxItems">ResetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.resetStatus">ResetStatus</a></code> | *No description.* |
 
@@ -286,6 +287,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetDeploy` <a name="ResetDeploy" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.resetDeploy"></a>
+
+```go
+func ResetDeploy()
+```
+
 ##### `ResetMaxItems` <a name="ResetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.resetMaxItems"></a>
 
 ```go
@@ -401,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareCertificateP
 
 The id of the existing DataCloudflareCertificatePacks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -430,9 +437,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.result">Result</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultList">DataCloudflareCertificatePacksResultList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.deployInput">DeployInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.maxItemsInput">MaxItemsInput</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.statusInput">StatusInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.deploy">Deploy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.maxItems">MaxItems</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
@@ -571,6 +580,16 @@ func Result() DataCloudflareCertificatePacksResultList
 
 ---
 
+##### `DeployInput`<sup>Optional</sup> <a name="DeployInput" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.deployInput"></a>
+
+```go
+func DeployInput() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `MaxItemsInput`<sup>Optional</sup> <a name="MaxItemsInput" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.maxItemsInput"></a>
 
 ```go
@@ -595,6 +614,16 @@ func StatusInput() *string
 
 ```go
 func ZoneIdInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Deploy`<sup>Required</sup> <a name="Deploy" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacks.property.deploy"></a>
+
+```go
+func Deploy() *string
 ```
 
 - *Type:* *string
@@ -667,6 +696,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ZoneId: *string,
+	Deploy: *string,
 	MaxItems: *f64,
 	Status: *string,
 }
@@ -684,6 +714,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.deploy">Deploy</a></code> | <code>*string</code> | Specify the deployment environment for the certificate packs. Available values: "staging", "production". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.status">Status</a></code> | <code>*string</code> | Include Certificate Packs of all statuses, not just active ones. Available values: "all". |
 
@@ -769,7 +800,21 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#zone_id DataCloudflareCertificatePacks#zone_id}
+
+---
+
+##### `Deploy`<sup>Optional</sup> <a name="Deploy" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksConfig.property.deploy"></a>
+
+```go
+Deploy *string
+```
+
+- *Type:* *string
+
+Specify the deployment environment for the certificate packs. Available values: "staging", "production".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#deploy DataCloudflareCertificatePacks#deploy}
 
 ---
 
@@ -783,7 +828,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#max_items DataCloudflareCertificatePacks#max_items}
 
 ---
 
@@ -797,7 +842,7 @@ Status *string
 
 Include Certificate Packs of all statuses, not just active ones. Available values: "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/certificate_packs#status DataCloudflareCertificatePacks#status}
 
 ---
 
@@ -835,6 +880,19 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecertificatepacks"
 
 &datacloudflarecertificatepacks.DataCloudflareCertificatePacksResultCertificatesGeoRestrictions {
+
+}
+```
+
+
+### DataCloudflareCertificatePacksResultDcvDelegationRecords <a name="DataCloudflareCertificatePacksResultDcvDelegationRecords" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecords"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecords.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecertificatepacks"
+
+&datacloudflarecertificatepacks.DataCloudflareCertificatePacksResultDcvDelegationRecords {
 
 }
 ```
@@ -1676,6 +1734,510 @@ func InternalValue() DataCloudflareCertificatePacksResultCertificates
 ---
 
 
+### DataCloudflareCertificatePacksResultDcvDelegationRecordsList <a name="DataCloudflareCertificatePacksResultDcvDelegationRecordsList" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecertificatepacks"
+
+datacloudflarecertificatepacks.NewDataCloudflareCertificatePacksResultDcvDelegationRecordsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCertificatePacksResultDcvDelegationRecordsList
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `Get` <a name="Get" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.get"></a>
+
+```go
+func Get(index *f64) DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.get.parameter.index"></a>
+
+- *Type:* *f64
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+
+### DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference <a name="DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecertificatepacks"
+
+datacloudflarecertificatepacks.NewDataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>*f64</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>*bool</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* *f64
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* *bool
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.cname">Cname</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.cnameTarget">CnameTarget</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.emails">Emails</a></code> | <code>*[]*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.httpBody">HttpBody</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.httpUrl">HttpUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.txtName">TxtName</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.txtValue">TxtValue</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecords">DataCloudflareCertificatePacksResultDcvDelegationRecords</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Cname`<sup>Required</sup> <a name="Cname" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.cname"></a>
+
+```go
+func Cname() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CnameTarget`<sup>Required</sup> <a name="CnameTarget" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.cnameTarget"></a>
+
+```go
+func CnameTarget() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Emails`<sup>Required</sup> <a name="Emails" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.emails"></a>
+
+```go
+func Emails() *[]*string
+```
+
+- *Type:* *[]*string
+
+---
+
+##### `HttpBody`<sup>Required</sup> <a name="HttpBody" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.httpBody"></a>
+
+```go
+func HttpBody() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `HttpUrl`<sup>Required</sup> <a name="HttpUrl" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.httpUrl"></a>
+
+```go
+func HttpUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.status"></a>
+
+```go
+func Status() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TxtName`<sup>Required</sup> <a name="TxtName" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.txtName"></a>
+
+```go
+func TxtName() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `TxtValue`<sup>Required</sup> <a name="TxtValue" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.txtValue"></a>
+
+```go
+func TxtValue() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareCertificatePacksResultDcvDelegationRecords
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecords">DataCloudflareCertificatePacksResultDcvDelegationRecords</a>
+
+---
+
+
 ### DataCloudflareCertificatePacksResultList <a name="DataCloudflareCertificatePacksResultList" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultList"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultList.Initializer"></a>
@@ -2056,6 +2618,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.certificateAuthority">CertificateAuthority</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.certificates">Certificates</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultCertificatesList">DataCloudflareCertificatePacksResultCertificatesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.cloudflareBranding">CloudflareBranding</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.dcvDelegationRecords">DcvDelegationRecords</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList">DataCloudflareCertificatePacksResultDcvDelegationRecordsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.hosts">Hosts</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.primaryCertificate">PrimaryCertificate</a></code> | <code>*string</code> | *No description.* |
@@ -2120,6 +2683,16 @@ func CloudflareBranding() IResolvable
 ```
 
 - *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable
+
+---
+
+##### `DcvDelegationRecords`<sup>Required</sup> <a name="DcvDelegationRecords" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultOutputReference.property.dcvDelegationRecords"></a>
+
+```go
+func DcvDelegationRecords() DataCloudflareCertificatePacksResultDcvDelegationRecordsList
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultDcvDelegationRecordsList">DataCloudflareCertificatePacksResultDcvDelegationRecordsList</a>
 
 ---
 
@@ -3028,9 +3601,12 @@ Returns a reversible string representation.
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.cname">Cname</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.cnameTarget">CnameTarget</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.emails">Emails</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.httpBody">HttpBody</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.httpUrl">HttpUrl</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.txtName">TxtName</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.txtValue">TxtValue</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecords">DataCloudflareCertificatePacksResultValidationRecords</a></code> | *No description.* |
@@ -3061,6 +3637,26 @@ func Fqn() *string
 
 ---
 
+##### `Cname`<sup>Required</sup> <a name="Cname" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.cname"></a>
+
+```go
+func Cname() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `CnameTarget`<sup>Required</sup> <a name="CnameTarget" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.cnameTarget"></a>
+
+```go
+func CnameTarget() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Emails`<sup>Required</sup> <a name="Emails" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.emails"></a>
 
 ```go
@@ -3085,6 +3681,16 @@ func HttpBody() *string
 
 ```go
 func HttpUrl() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktn/provider-cloudflare.dataCloudflareCertificatePacks.DataCloudflareCertificatePacksResultValidationRecordsOutputReference.property.status"></a>
+
+```go
+func Status() *string
 ```
 
 - *Type:* *string

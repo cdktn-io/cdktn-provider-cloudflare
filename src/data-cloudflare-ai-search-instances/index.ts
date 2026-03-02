@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instances
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareAiSearchInstancesConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances#account_id DataCloudflareAiSearchInstances#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instances#account_id DataCloudflareAiSearchInstances#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances#max_items DataCloudflareAiSearchInstances#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instances#max_items DataCloudflareAiSearchInstances#max_items}
   */
   readonly maxItems?: number;
   /**
   * Search by id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances#search DataCloudflareAiSearchInstances#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instances#search DataCloudflareAiSearchInstances#search}
   */
   readonly search?: string;
 }
@@ -271,6 +271,11 @@ export class DataCloudflareAiSearchInstancesResultPublicEndpointParamsMcpOutputR
     }
   }
 
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
   // disabled - computed: true, optional: false, required: false
   public get disabled() {
     return this.getBooleanAttribute('disabled');
@@ -475,6 +480,60 @@ export class DataCloudflareAiSearchInstancesResultPublicEndpointParamsOutputRefe
   private _searchEndpoint = new DataCloudflareAiSearchInstancesResultPublicEndpointParamsSearchEndpointOutputReference(this, "search_endpoint");
   public get searchEndpoint() {
     return this._searchEndpoint;
+  }
+}
+export interface DataCloudflareAiSearchInstancesResultRetrievalOptions {
+}
+
+export function dataCloudflareAiSearchInstancesResultRetrievalOptionsToTerraform(struct?: DataCloudflareAiSearchInstancesResultRetrievalOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareAiSearchInstancesResultRetrievalOptionsToHclTerraform(struct?: DataCloudflareAiSearchInstancesResultRetrievalOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareAiSearchInstancesResultRetrievalOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareAiSearchInstancesResultRetrievalOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareAiSearchInstancesResultRetrievalOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // keyword_match_mode - computed: true, optional: false, required: false
+  public get keywordMatchMode() {
+    return this.getStringAttribute('keyword_match_mode');
   }
 }
 export interface DataCloudflareAiSearchInstancesResultSourceParamsWebCrawlerParseOptions {
@@ -803,16 +862,6 @@ export class DataCloudflareAiSearchInstancesResultOutputReference extends cdktn.
     }
   }
 
-  // account_id - computed: true, optional: false, required: false
-  public get accountId() {
-    return this.getStringAttribute('account_id');
-  }
-
-  // account_tag - computed: true, optional: false, required: false
-  public get accountTag() {
-    return this.getStringAttribute('account_tag');
-  }
-
   // ai_gateway_id - computed: true, optional: false, required: false
   public get aiGatewayId() {
     return this.getStringAttribute('ai_gateway_id');
@@ -831,11 +880,6 @@ export class DataCloudflareAiSearchInstancesResultOutputReference extends cdktn.
   // cache_threshold - computed: true, optional: false, required: false
   public get cacheThreshold() {
     return this.getStringAttribute('cache_threshold');
-  }
-
-  // chunk - computed: true, optional: false, required: false
-  public get chunk() {
-    return this.getBooleanAttribute('chunk');
   }
 
   // chunk_overlap - computed: true, optional: false, required: false
@@ -874,9 +918,9 @@ export class DataCloudflareAiSearchInstancesResultOutputReference extends cdktn.
     return this.getBooleanAttribute('enable');
   }
 
-  // engine_version - computed: true, optional: false, required: false
-  public get engineVersion() {
-    return this.getNumberAttribute('engine_version');
+  // fusion_method - computed: true, optional: false, required: false
+  public get fusionMethod() {
+    return this.getStringAttribute('fusion_method');
   }
 
   // hybrid_search_enabled - computed: true, optional: false, required: false
@@ -887,11 +931,6 @@ export class DataCloudflareAiSearchInstancesResultOutputReference extends cdktn.
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
-  }
-
-  // internal_id - computed: true, optional: false, required: false
-  public get internalId() {
-    return this.getStringAttribute('internal_id');
   }
 
   // last_activity - computed: true, optional: false, required: false
@@ -946,6 +985,12 @@ export class DataCloudflareAiSearchInstancesResultOutputReference extends cdktn.
     return this.getStringAttribute('reranking_model');
   }
 
+  // retrieval_options - computed: true, optional: false, required: false
+  private _retrievalOptions = new DataCloudflareAiSearchInstancesResultRetrievalOptionsOutputReference(this, "retrieval_options");
+  public get retrievalOptions() {
+    return this._retrievalOptions;
+  }
+
   // rewrite_model - computed: true, optional: false, required: false
   public get rewriteModel() {
     return this.getStringAttribute('rewrite_model');
@@ -977,31 +1022,6 @@ export class DataCloudflareAiSearchInstancesResultOutputReference extends cdktn.
     return this.getStringAttribute('status');
   }
 
-  // summarization - computed: true, optional: false, required: false
-  public get summarization() {
-    return this.getBooleanAttribute('summarization');
-  }
-
-  // summarization_model - computed: true, optional: false, required: false
-  public get summarizationModel() {
-    return this.getStringAttribute('summarization_model');
-  }
-
-  // system_prompt_aisearch - computed: true, optional: false, required: false
-  public get systemPromptAisearch() {
-    return this.getStringAttribute('system_prompt_aisearch');
-  }
-
-  // system_prompt_index_summarization - computed: true, optional: false, required: false
-  public get systemPromptIndexSummarization() {
-    return this.getStringAttribute('system_prompt_index_summarization');
-  }
-
-  // system_prompt_rewrite_query - computed: true, optional: false, required: false
-  public get systemPromptRewriteQuery() {
-    return this.getStringAttribute('system_prompt_rewrite_query');
-  }
-
   // token_id - computed: true, optional: false, required: false
   public get tokenId() {
     return this.getStringAttribute('token_id');
@@ -1010,11 +1030,6 @@ export class DataCloudflareAiSearchInstancesResultOutputReference extends cdktn.
   // type - computed: true, optional: false, required: false
   public get type() {
     return this.getStringAttribute('type');
-  }
-
-  // vectorize_active_namespace - computed: true, optional: false, required: false
-  public get vectorizeActiveNamespace() {
-    return this.getStringAttribute('vectorize_active_namespace');
   }
 
   // vectorize_name - computed: true, optional: false, required: false
@@ -1043,7 +1058,7 @@ export class DataCloudflareAiSearchInstancesResultList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances}
 */
 export class DataCloudflareAiSearchInstances extends cdktn.TerraformDataSource {
 
@@ -1059,7 +1074,7 @@ export class DataCloudflareAiSearchInstances extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAiSearchInstances resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAiSearchInstances to import
-  * @param importFromId The id of the existing DataCloudflareAiSearchInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAiSearchInstances that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instances#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAiSearchInstances to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1071,7 +1086,7 @@ export class DataCloudflareAiSearchInstances extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_instances cloudflare_ai_search_instances} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1082,7 +1097,7 @@ export class DataCloudflareAiSearchInstances extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_ai_search_instances',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

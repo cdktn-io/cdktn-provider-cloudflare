@@ -4,7 +4,7 @@
 
 ### Zone <a name="Zone" id="@cdktn/provider-cloudflare.zone.Zone"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone cloudflare_zone}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone cloudflare_zone}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zone.Zone.Initializer"></a>
 
@@ -523,7 +523,7 @@ The construct id used in the generated config for the Zone to import.
 
 The id of the existing Zone that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,7 +1054,7 @@ public readonly id: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#id Zone#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#id Zone#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1082,7 +1082,7 @@ const zoneConfig: zone.ZoneConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.account">account</a></code> | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneAccount">ZoneAccount</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#account Zone#account}. |
+| <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.account">account</a></code> | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneAccount">ZoneAccount</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#account Zone#account}. |
 | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.name">name</a></code> | <code>string</code> | The domain name. |
 | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.paused">paused</a></code> | <code>boolean \| cdktn.IResolvable</code> | Indicates whether the zone is only using Cloudflare DNS services. |
 | <code><a href="#@cdktn/provider-cloudflare.zone.ZoneConfig.property.type">type</a></code> | <code>string</code> | A full zone implies that DNS is hosted with Cloudflare. |
@@ -1168,7 +1168,7 @@ public readonly account: ZoneAccount;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zone.ZoneAccount">ZoneAccount</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#account Zone#account}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#account Zone#account}.
 
 ---
 
@@ -1182,7 +1182,9 @@ public readonly name: string;
 
 The domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#name Zone#name}
+Per [RFC 1035](https://datatracker.ietf.org/doc/html/rfc1035#section-2.3.4) the overall zone name can be up to 253 characters, with each segment ("label") not exceeding 63 characters.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#name Zone#name}
 
 ---
 
@@ -1200,7 +1202,7 @@ A
 true value means the zone will not receive security or performance
 benefits.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#paused Zone#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#paused Zone#paused}
 
 ---
 
@@ -1218,7 +1220,7 @@ A partial zone is
 typically a partner-hosted zone or a CNAME setup.
 Available values: "full", "partial", "secondary", "internal".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#type Zone#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#type Zone#type}
 
 ---
 
@@ -1232,7 +1234,7 @@ public readonly vanityNameServers: string[];
 
 An array of domains used for custom name servers. This is only available for Business and Enterprise plans.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone#vanity_name_servers Zone#vanity_name_servers}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### FirewallRule <a name="FirewallRule" id="@cdktn/provider-cloudflare.firewallRule.FirewallRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer"></a>
 
@@ -39,7 +39,7 @@ firewallRule.FirewallRule(
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.action">action</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleAction">FirewallRuleAction</a></code> | The action to perform when the threshold of matched traffic within the configured period is exceeded. |
-| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 
 ---
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The action to perform when the threshold of matched traffic within the configured period is exceeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#action FirewallRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#action FirewallRule#action}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
 
 ---
 
@@ -529,7 +529,7 @@ def put_action(
 
 The action to perform. Available values: "simulate", "ban", "challenge", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#mode FirewallRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#mode FirewallRule#mode}
 
 ---
 
@@ -542,7 +542,7 @@ A custom content type and reponse to return when the threshold is exceeded.
 The custom response configured in this object will override the custom error for the zone. This object is optional.
 Notes: If you omit this object, Cloudflare will use the default HTML error page. If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone challenge pages and you should not provide the "response" object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#response FirewallRule#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#response FirewallRule#response}
 
 ---
 
@@ -555,7 +555,7 @@ The time in seconds during which Cloudflare will perform the mitigation action.
 Must be an integer value greater than or equal to the period.
 Notes: If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone's Challenge Passage time and you should not provide this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
 
 ---
 
@@ -576,7 +576,7 @@ def put_filter(
 
 An informative summary of the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#description FirewallRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#description FirewallRule#description}
 
 ---
 
@@ -586,7 +586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#expression FirewallRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#expression FirewallRule#expression}
 
 ---
 
@@ -596,7 +596,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When true, indicates that the filter is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#paused FirewallRule#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#paused FirewallRule#paused}
 
 ---
 
@@ -606,7 +606,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A short reference tag. Allows you to select related filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#ref FirewallRule#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#ref FirewallRule#ref}
 
 ---
 
@@ -724,7 +724,7 @@ The construct id used in the generated config for the FirewallRule to import.
 
 The id of the existing FirewallRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1085,7 +1085,7 @@ mode: str
 
 The action to perform. Available values: "simulate", "ban", "challenge", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#mode FirewallRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#mode FirewallRule#mode}
 
 ---
 
@@ -1102,7 +1102,7 @@ A custom content type and reponse to return when the threshold is exceeded.
 The custom response configured in this object will override the custom error for the zone. This object is optional.
 Notes: If you omit this object, Cloudflare will use the default HTML error page. If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone challenge pages and you should not provide the "response" object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#response FirewallRule#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#response FirewallRule#response}
 
 ---
 
@@ -1119,7 +1119,7 @@ The time in seconds during which Cloudflare will perform the mitigation action.
 Must be an integer value greater than or equal to the period.
 Notes: If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone's Challenge Passage time and you should not provide this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
 
 ---
 
@@ -1155,7 +1155,7 @@ body: str
 
 The response body to return. The value must conform to the configured content type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#body FirewallRule#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#body FirewallRule#body}
 
 ---
 
@@ -1169,7 +1169,7 @@ content_type: str
 
 The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
 
 ---
 
@@ -1206,7 +1206,7 @@ firewallRule.FirewallRuleConfig(
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.action">action</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleAction">FirewallRuleAction</a></code> | The action to perform when the threshold of matched traffic within the configured period is exceeded. |
-| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 
 ---
@@ -1291,7 +1291,7 @@ action: FirewallRuleAction
 
 The action to perform when the threshold of matched traffic within the configured period is exceeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#action FirewallRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#action FirewallRule#action}
 
 ---
 
@@ -1303,7 +1303,7 @@ filter: FirewallRuleFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
 
 ---
 
@@ -1317,7 +1317,7 @@ zone_id: str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
 
 ---
 
@@ -1357,7 +1357,7 @@ description: str
 
 An informative summary of the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#description FirewallRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#description FirewallRule#description}
 
 ---
 
@@ -1371,7 +1371,7 @@ expression: str
 
 The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#expression FirewallRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#expression FirewallRule#expression}
 
 ---
 
@@ -1385,7 +1385,7 @@ paused: bool | IResolvable
 
 When true, indicates that the filter is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#paused FirewallRule#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#paused FirewallRule#paused}
 
 ---
 
@@ -1399,7 +1399,7 @@ ref: str
 
 A short reference tag. Allows you to select related filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#ref FirewallRule#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#ref FirewallRule#ref}
 
 ---
 
@@ -1652,7 +1652,7 @@ def put_response(
 
 The response body to return. The value must conform to the configured content type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#body FirewallRule#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#body FirewallRule#body}
 
 ---
 
@@ -1662,7 +1662,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
 
 ---
 

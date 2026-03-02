@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDlpPredefinedEntries <a name="DataCloudflareZeroTrustDlpPredefinedEntries" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntries"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entries cloudflare_zero_trust_dlp_predefined_entries}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entries cloudflare_zero_trust_dlp_predefined_entries}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntries.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDlp
 
 The id of the existing DataCloudflareZeroTrustDlpPredefinedEntries that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entries#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entries#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +643,7 @@ const dataCloudflareZeroTrustDlpPredefinedEntriesConfig: dataCloudflareZeroTrust
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entries#account_id DataCloudflareZeroTrustDlpPredefinedEntries#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entries#account_id DataCloudflareZeroTrustDlpPredefinedEntries#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -726,7 +726,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entries#account_id DataCloudflareZeroTrustDlpPredefinedEntries#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entries#account_id DataCloudflareZeroTrustDlpPredefinedEntries#account_id}.
 
 ---
 
@@ -740,7 +740,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_dlp_predefined_entries#max_items DataCloudflareZeroTrustDlpPredefinedEntries#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_predefined_entries#max_items DataCloudflareZeroTrustDlpPredefinedEntries#max_items}
 
 ---
 
@@ -1441,6 +1441,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.caseSensitive">caseSensitive</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.confidence">confidence</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultConfidenceOutputReference">DataCloudflareZeroTrustDlpPredefinedEntriesResultConfidenceOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.createdAt">createdAt</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -1504,6 +1505,16 @@ public readonly confidence: DataCloudflareZeroTrustDlpPredefinedEntriesResultCon
 
 ```typescript
 public readonly createdAt: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpPredefinedEntries.DataCloudflareZeroTrustDlpPredefinedEntriesResultOutputReference.property.description"></a>
+
+```typescript
+public readonly description: string;
 ```
 
 - *Type:* string

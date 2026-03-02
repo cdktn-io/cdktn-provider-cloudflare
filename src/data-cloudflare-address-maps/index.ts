@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_maps
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_maps
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareAddressMapsConfig extends cdktn.TerraformMetaArgu
   /**
   * Identifier of a Cloudflare account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_maps#account_id DataCloudflareAddressMaps#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_maps#account_id DataCloudflareAddressMaps#account_id}
   */
   readonly accountId: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_maps#max_items DataCloudflareAddressMaps#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_maps#max_items DataCloudflareAddressMaps#max_items}
   */
   readonly maxItems?: number;
 }
@@ -137,7 +137,7 @@ export class DataCloudflareAddressMapsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_maps cloudflare_address_maps}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_maps cloudflare_address_maps}
 */
 export class DataCloudflareAddressMaps extends cdktn.TerraformDataSource {
 
@@ -153,7 +153,7 @@ export class DataCloudflareAddressMaps extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareAddressMaps resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareAddressMaps to import
-  * @param importFromId The id of the existing DataCloudflareAddressMaps that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_maps#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareAddressMaps that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_maps#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareAddressMaps to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -165,7 +165,7 @@ export class DataCloudflareAddressMaps extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/address_maps cloudflare_address_maps} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_maps cloudflare_address_maps} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -176,7 +176,7 @@ export class DataCloudflareAddressMaps extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_address_maps',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

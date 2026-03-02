@@ -4,7 +4,7 @@
 
 ### ZoneCacheVariants <a name="ZoneCacheVariants" id="@cdktn/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants cloudflare_zone_cache_variants}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants.Initializer"></a>
 
@@ -502,7 +502,7 @@ The construct id used in the generated config for the ZoneCacheVariants to impor
 
 The id of the existing ZoneCacheVariants that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,7 +890,7 @@ Value ZoneCacheVariantsValue
 
 Value of the zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#value ZoneCacheVariants#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#value ZoneCacheVariants#value}
 
 ---
 
@@ -904,7 +904,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#zone_id ZoneCacheVariants#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#zone_id ZoneCacheVariants#zone_id}
 
 ---
 
@@ -958,7 +958,7 @@ Avif *[]*string
 
 List of strings with the MIME types of all the variants that should be served for avif.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#avif ZoneCacheVariants#avif}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#avif ZoneCacheVariants#avif}
 
 ---
 
@@ -972,7 +972,7 @@ Bmp *[]*string
 
 List of strings with the MIME types of all the variants that should be served for bmp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#bmp ZoneCacheVariants#bmp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#bmp ZoneCacheVariants#bmp}
 
 ---
 
@@ -986,7 +986,7 @@ Gif *[]*string
 
 List of strings with the MIME types of all the variants that should be served for gif.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#gif ZoneCacheVariants#gif}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#gif ZoneCacheVariants#gif}
 
 ---
 
@@ -1000,7 +1000,7 @@ Jp2 *[]*string
 
 List of strings with the MIME types of all the variants that should be served for jp2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jp2 ZoneCacheVariants#jp2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#jp2 ZoneCacheVariants#jp2}
 
 ---
 
@@ -1014,7 +1014,7 @@ Jpeg *[]*string
 
 List of strings with the MIME types of all the variants that should be served for jpeg.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jpeg ZoneCacheVariants#jpeg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#jpeg ZoneCacheVariants#jpeg}
 
 ---
 
@@ -1028,7 +1028,7 @@ Jpg *[]*string
 
 List of strings with the MIME types of all the variants that should be served for jpg.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jpg ZoneCacheVariants#jpg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#jpg ZoneCacheVariants#jpg}
 
 ---
 
@@ -1042,7 +1042,7 @@ Jpg2 *[]*string
 
 List of strings with the MIME types of all the variants that should be served for jpg2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#jpg2 ZoneCacheVariants#jpg2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#jpg2 ZoneCacheVariants#jpg2}
 
 ---
 
@@ -1056,7 +1056,7 @@ Png *[]*string
 
 List of strings with the MIME types of all the variants that should be served for png.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#png ZoneCacheVariants#png}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#png ZoneCacheVariants#png}
 
 ---
 
@@ -1070,7 +1070,7 @@ Tif *[]*string
 
 List of strings with the MIME types of all the variants that should be served for tif.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#tif ZoneCacheVariants#tif}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#tif ZoneCacheVariants#tif}
 
 ---
 
@@ -1084,7 +1084,7 @@ Tiff *[]*string
 
 List of strings with the MIME types of all the variants that should be served for tiff.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#tiff ZoneCacheVariants#tiff}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#tiff ZoneCacheVariants#tiff}
 
 ---
 
@@ -1098,7 +1098,7 @@ Webp *[]*string
 
 List of strings with the MIME types of all the variants that should be served for webp.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_variants#webp ZoneCacheVariants#webp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_variants#webp ZoneCacheVariants#webp}
 
 ---
 

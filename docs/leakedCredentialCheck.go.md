@@ -4,7 +4,7 @@
 
 ### LeakedCredentialCheck <a name="LeakedCredentialCheck" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the LeakedCredentialCheck to i
 
 The id of the existing LeakedCredentialCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -851,7 +851,7 @@ ZoneId *string
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
 
 ---
 
@@ -865,7 +865,7 @@ Enabled interface{}
 
 Determines whether or not Leaked Credential Checks are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareSnippet <a name="DataCloudflareSnippet" id="@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet cloudflare_snippet}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet cloudflare_snippet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer"></a>
 
@@ -37,8 +37,8 @@ dataCloudflareSnippet.DataCloudflareSnippet(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer.parameter.snippetName">snippet_name</a></code> | <code>str</code> | The identifying name of the snippet. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer.parameter.snippetName">snippet_name</a></code> | <code>str</code> | Identify the snippet. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippet.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Use this field to specify the unique ID of the zone. |
 
 ---
 
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-The identifying name of the snippet.
+Identify the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet#snippet_name DataCloudflareSnippet#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet#snippet_name DataCloudflareSnippet#snippet_name}
 
 ---
 
@@ -116,9 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The unique ID of the zone.
+Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet#zone_id DataCloudflareSnippet#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet#zone_id DataCloudflareSnippet#zone_id}
 
 ---
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the DataCloudflareSnippet to i
 
 The id of the existing DataCloudflareSnippet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -771,8 +771,8 @@ dataCloudflareSnippet.DataCloudflareSnippetConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippetConfig.property.snippetName">snippet_name</a></code> | <code>str</code> | The identifying name of the snippet. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippetConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippetConfig.property.snippetName">snippet_name</a></code> | <code>str</code> | Identify the snippet. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippet.DataCloudflareSnippetConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Use this field to specify the unique ID of the zone. |
 
 ---
 
@@ -854,9 +854,9 @@ snippet_name: str
 
 - *Type:* str
 
-The identifying name of the snippet.
+Identify the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet#snippet_name DataCloudflareSnippet#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet#snippet_name DataCloudflareSnippet#snippet_name}
 
 ---
 
@@ -868,9 +868,9 @@ zone_id: str
 
 - *Type:* str
 
-The unique ID of the zone.
+Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet#zone_id DataCloudflareSnippet#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet#zone_id DataCloudflareSnippet#zone_id}
 
 ---
 

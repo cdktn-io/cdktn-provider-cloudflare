@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface ContentScanningExpressionConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}
   */
   readonly body: ContentScanningExpressionBody[] | cdktn.IResolvable;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
   */
   readonly zoneId: string;
 }
@@ -27,7 +27,7 @@ export interface ContentScanningExpressionBody {
   /**
   * Defines the ruleset expression to use in matching content objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
   */
   readonly payload: string;
 }
@@ -140,7 +140,7 @@ export class ContentScanningExpressionBodyList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}
 */
 export class ContentScanningExpression extends cdktn.TerraformResource {
 
@@ -156,7 +156,7 @@ export class ContentScanningExpression extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ContentScanningExpression resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ContentScanningExpression to import
-  * @param importFromId The id of the existing ContentScanningExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ContentScanningExpression that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ContentScanningExpression to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -168,7 +168,7 @@ export class ContentScanningExpression extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -179,7 +179,7 @@ export class ContentScanningExpression extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_content_scanning_expression',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

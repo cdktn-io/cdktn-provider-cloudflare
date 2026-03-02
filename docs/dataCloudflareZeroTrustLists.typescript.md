@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustLists <a name="DataCloudflareZeroTrustLists" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_lists cloudflare_zero_trust_lists}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustLists.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustLis
 
 The id of the existing DataCloudflareZeroTrustLists that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_lists#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -672,7 +672,7 @@ const dataCloudflareZeroTrustListsConfig: dataCloudflareZeroTrustLists.DataCloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustLists.DataCloudflareZeroTrustListsConfig.property.type">type</a></code> | <code>string</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE". |
 
@@ -756,7 +756,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_lists#account_id DataCloudflareZeroTrustLists#account_id}.
 
 ---
 
@@ -770,7 +770,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_lists#max_items DataCloudflareZeroTrustLists#max_items}
 
 ---
 
@@ -784,7 +784,7 @@ public readonly type: string;
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_lists#type DataCloudflareZeroTrustLists#type}
 
 ---
 

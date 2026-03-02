@@ -4,7 +4,7 @@
 
 ### CustomSsl <a name="CustomSsl" id="@cdktn/provider-cloudflare.customSsl.CustomSsl"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl cloudflare_custom_ssl}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.Initializer"></a>
 
@@ -76,6 +76,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.putGeoRestrictions">PutGeoRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetBundleMethod">ResetBundleMethod</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetDeploy">ResetDeploy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetGeoRestrictions">ResetGeoRestrictions</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetPolicy">ResetPolicy</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.resetType">ResetType</a></code> | *No description.* |
@@ -409,6 +410,12 @@ func PutGeoRestrictions(value CustomSslGeoRestrictions)
 func ResetBundleMethod()
 ```
 
+##### `ResetDeploy` <a name="ResetDeploy" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.resetDeploy"></a>
+
+```go
+func ResetDeploy()
+```
+
 ##### `ResetGeoRestrictions` <a name="ResetGeoRestrictions" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.resetGeoRestrictions"></a>
 
 ```go
@@ -530,7 +537,7 @@ The construct id used in the generated config for the CustomSsl to import.
 
 The id of the existing CustomSsl that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -567,12 +574,14 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.issuer">Issuer</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.keylessServer">KeylessServer</a></code> | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslKeylessServerOutputReference">CustomSslKeylessServerOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.modifiedOn">ModifiedOn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.policyRestrictions">PolicyRestrictions</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.priority">Priority</a></code> | <code>*f64</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.signature">Signature</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.uploadedOn">UploadedOn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.bundleMethodInput">BundleMethodInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.certificateInput">CertificateInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.deployInput">DeployInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.geoRestrictionsInput">GeoRestrictionsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.policyInput">PolicyInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.privateKeyInput">PrivateKeyInput</a></code> | <code>*string</code> | *No description.* |
@@ -580,6 +589,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.bundleMethod">BundleMethod</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.certificate">Certificate</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.deploy">Deploy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.policy">Policy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.privateKey">PrivateKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSsl.property.type">Type</a></code> | <code>*string</code> | *No description.* |
@@ -799,6 +809,16 @@ func ModifiedOn() *string
 
 ---
 
+##### `PolicyRestrictions`<sup>Required</sup> <a name="PolicyRestrictions" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.property.policyRestrictions"></a>
+
+```go
+func PolicyRestrictions() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `Priority`<sup>Required</sup> <a name="Priority" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.property.priority"></a>
 
 ```go
@@ -853,6 +873,16 @@ func BundleMethodInput() *string
 
 ```go
 func CertificateInput() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `DeployInput`<sup>Optional</sup> <a name="DeployInput" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.property.deployInput"></a>
+
+```go
+func DeployInput() *string
 ```
 
 - *Type:* *string
@@ -923,6 +953,16 @@ func BundleMethod() *string
 
 ```go
 func Certificate() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Deploy`<sup>Required</sup> <a name="Deploy" id="@cdktn/provider-cloudflare.customSsl.CustomSsl.property.deploy"></a>
+
+```go
+func Deploy() *string
 ```
 
 - *Type:* *string
@@ -1008,6 +1048,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customss
 	PrivateKey: *string,
 	ZoneId: *string,
 	BundleMethod: *string,
+	Deploy: *string,
 	GeoRestrictions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.customSsl.CustomSslGeoRestrictions,
 	Policy: *string,
 	Type: *string,
@@ -1029,6 +1070,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customss
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.privateKey">PrivateKey</a></code> | <code>*string</code> | The zone's private key. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.bundleMethod">BundleMethod</a></code> | <code>*string</code> | A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. |
+| <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.deploy">Deploy</a></code> | <code>*string</code> | The environment to deploy the certificate to. Available values: "staging", "production". |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.geoRestrictions">GeoRestrictions</a></code> | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslGeoRestrictions">CustomSslGeoRestrictions</a></code> | Specify the region where your private key can be held locally for optimal TLS performance. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.policy">Policy</a></code> | <code>*string</code> | Specify the policy that determines the region where your private key will be held locally. |
 | <code><a href="#@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.type">Type</a></code> | <code>*string</code> | The type 'legacy_custom' enables support for legacy clients which do not include SNI in the TLS handshake. |
@@ -1115,7 +1157,7 @@ Certificate *string
 
 The zone's SSL certificate or certificate and the intermediate(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#certificate CustomSsl#certificate}
 
 ---
 
@@ -1129,7 +1171,7 @@ PrivateKey *string
 
 The zone's private key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#private_key CustomSsl#private_key}
 
 ---
 
@@ -1143,7 +1185,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#zone_id CustomSsl#zone_id}
 
 ---
 
@@ -1160,7 +1202,21 @@ A ubiquitous bundle has the highest probability of being verified everywhere, ev
 An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
 Available values: "ubiquitous", "optimal", "force".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#bundle_method CustomSsl#bundle_method}
+
+---
+
+##### `Deploy`<sup>Optional</sup> <a name="Deploy" id="@cdktn/provider-cloudflare.customSsl.CustomSslConfig.property.deploy"></a>
+
+```go
+Deploy *string
+```
+
+- *Type:* *string
+
+The environment to deploy the certificate to. Available values: "staging", "production".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#deploy CustomSsl#deploy}
 
 ---
 
@@ -1176,7 +1232,7 @@ Specify the region where your private key can be held locally for optimal TLS pe
 
 HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Options allow distribution to only to U.S. data centers, only to E.U. data centers, or only to highest security data centers. Default distribution is to all Cloudflare datacenters, for optimal performance.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#geo_restrictions CustomSsl#geo_restrictions}
 
 ---
 
@@ -1191,8 +1247,9 @@ Policy *string
 Specify the policy that determines the region where your private key will be held locally.
 
 HTTPS connections to any excluded data center will still be fully encrypted, but will incur some latency while Keyless SSL is used to complete the handshake with the nearest allowed data center. Any combination of countries, specified by their two letter country code (https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2#Officially_assigned_code_elements) can be chosen, such as 'country: IN', as well as 'region: EU' which refers to the EU region. If there are too few data centers satisfying the policy, it will be rejected.
+Note: The API accepts this field as either "policy" or "policy_restrictions" in requests. Responses return this field as "policy_restrictions".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#policy CustomSsl#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#policy CustomSsl#policy}
 
 ---
 
@@ -1208,7 +1265,7 @@ The type 'legacy_custom' enables support for legacy clients which do not include
 
 Available values: "legacy_custom", "sni_custom".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#type CustomSsl#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#type CustomSsl#type}
 
 ---
 
@@ -1242,7 +1299,7 @@ Label *string
 
 Available values: "us", "eu", "highest_security".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/custom_ssl#label CustomSsl#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/custom_ssl#label CustomSsl#label}
 
 ---
 

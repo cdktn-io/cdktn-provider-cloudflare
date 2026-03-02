@@ -4,7 +4,7 @@
 
 ### DnsZoneTransfersOutgoing <a name="DnsZoneTransfersOutgoing" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing cloudflare_dns_zone_transfers_outgoing}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer"></a>
 
@@ -40,7 +40,7 @@ dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing(
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer.parameter.name">name</a></code> | <code>str</code> | Zone name. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer.parameter.peers">peers</a></code> | <code>typing.List[str]</code> | A list of peer tags. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoing.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Zone name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of peer tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}.
 
 ---
 
@@ -625,7 +625,7 @@ The construct id used in the generated config for the DnsZoneTransfersOutgoing t
 
 The id of the existing DnsZoneTransfersOutgoing that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +975,7 @@ dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.name">name</a></code> | <code>str</code> | Zone name. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.peers">peers</a></code> | <code>typing.List[str]</code> | A list of peer tags. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersOutgoing.DnsZoneTransfersOutgoingConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}. |
 
 ---
 
@@ -1059,7 +1059,7 @@ name: str
 
 Zone name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#name DnsZoneTransfersOutgoing#name}
 
 ---
 
@@ -1073,7 +1073,7 @@ peers: typing.List[str]
 
 A list of peer tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#peers DnsZoneTransfersOutgoing#peers}
 
 ---
 
@@ -1085,7 +1085,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_outgoing#zone_id DnsZoneTransfersOutgoing#zone_id}.
 
 ---
 

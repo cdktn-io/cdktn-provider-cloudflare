@@ -4,7 +4,7 @@
 
 ### ZeroTrustAccessKeyConfiguration <a name="ZeroTrustAccessKeyConfiguration" id="@cdktn/provider-cloudflare.zeroTrustAccessKeyConfiguration.ZeroTrustAccessKeyConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessKeyConfiguration.ZeroTrustAccessKeyConfiguration.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ZeroTrustAccessKeyConfigur
 
 The id of the existing ZeroTrustAccessKeyConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_key_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_key_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,7 +867,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_key_configuration#account_id ZeroTrustAccessKeyConfiguration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_key_configuration#account_id ZeroTrustAccessKeyConfiguration#account_id}
 
 ---
 
@@ -881,7 +881,7 @@ public readonly keyRotationIntervalDays: number;
 
 The number of days between key rotations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zero_trust_access_key_configuration#key_rotation_interval_days ZeroTrustAccessKeyConfiguration#key_rotation_interval_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_access_key_configuration#key_rotation_interval_days ZeroTrustAccessKeyConfiguration#key_rotation_interval_days}
 
 ---
 

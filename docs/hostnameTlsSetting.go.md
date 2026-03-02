@@ -4,7 +4,7 @@
 
 ### HostnameTlsSetting <a name="HostnameTlsSetting" id="@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting cloudflare_hostname_tls_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSetting.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the HostnameTlsSetting to impo
 
 The id of the existing HostnameTlsSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -850,8 +850,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hostname
 | <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.hostname">Hostname</a></code> | <code>*string</code> | The hostname for which the tls settings are set. |
-| <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.settingId">SettingId</a></code> | <code>*string</code> | The TLS Setting name. Available values: "ciphers", "min_tls_version", "http2". |
-| <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.value">Value</a></code> | <code>*map[string]interface{}</code> | The tls setting value. |
+| <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.settingId">SettingId</a></code> | <code>*string</code> | The TLS Setting name. |
+| <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.value">Value</a></code> | <code>*map[string]interface{}</code> | The TLS setting value. |
 | <code><a href="#@cdktn/provider-cloudflare.hostnameTlsSetting.HostnameTlsSettingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 
 ---
@@ -936,7 +936,7 @@ Hostname *string
 
 The hostname for which the tls settings are set.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting#hostname HostnameTlsSetting#hostname}
 
 ---
 
@@ -948,9 +948,16 @@ SettingId *string
 
 - *Type:* *string
 
-The TLS Setting name. Available values: "ciphers", "min_tls_version", "http2".
+The TLS Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
+The value type depends on the setting:
+
+* `ciphers`: value is an array of cipher suite strings (e.g., `["ECDHE-RSA-AES128-GCM-SHA256", "AES128-GCM-SHA256"]`)
+* `min_tls_version`: value is a TLS version string (`"1.0"`, `"1.1"`, `"1.2"`, or `"1.3"`)
+* `http2`: value is `"on"` or `"off"`
+  Available values: "ciphers", "min_tls_version", "http2".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting#setting_id HostnameTlsSetting#setting_id}
 
 ---
 
@@ -962,9 +969,16 @@ Value *map[string]interface{}
 
 - *Type:* *map[string]interface{}
 
-The tls setting value.
+The TLS setting value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
+The type depends on the `setting_id` used in the request path:
+
+* `ciphers`: an array of allowed cipher suite strings in BoringSSL format (e.g., `["ECDHE-RSA-AES128-GCM-SHA256", "AES128-GCM-SHA256"]`)
+* `min_tls_version`: a string indicating the minimum TLS version — one of `"1.0"`, `"1.1"`, `"1.2"`, or `"1.3"` (e.g., `"1.2"`)
+* `http2`: a string indicating whether HTTP/2 is enabled — `"on"` or `"off"` (e.g., `"on"`)
+  Available values: "1.0", "1.1", "1.2", "1.3", "on", "off".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting#value HostnameTlsSetting#value}
 
 ---
 
@@ -978,7 +992,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/hostname_tls_setting#zone_id HostnameTlsSetting#zone_id}
 
 ---
 

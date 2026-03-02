@@ -4,7 +4,7 @@
 
 ### TieredCache <a name="TieredCache" id="@cdktn/provider-cloudflare.tieredCache.TieredCache"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/tiered_cache cloudflare_tiered_cache}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tieredCache.TieredCache.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Enable or disable the Smart Tiered Cache. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/tiered_cache#value TieredCache#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/tiered_cache#value TieredCache#value}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
 
 ---
 
@@ -615,7 +615,7 @@ The construct id used in the generated config for the TieredCache to import.
 
 The id of the existing TieredCache that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/tiered_cache#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1003,7 +1003,7 @@ value: str
 
 Enable or disable the Smart Tiered Cache. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/tiered_cache#value TieredCache#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/tiered_cache#value TieredCache#value}
 
 ---
 
@@ -1017,7 +1017,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/tiered_cache#zone_id TieredCache#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareAuthenticatedOriginPullsCertificate <a name="DataCloudflareAuthenticatedOriginPullsCertificate" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_certificate cloudflare_authenticated_origin_pulls_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareAuthenticate
 
 The id of the existing DataCloudflareAuthenticatedOriginPullsCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -416,11 +416,10 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.certificate">certificate</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.expiresOn">expiresOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.issuer">issuer</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.privateKey">privateKey</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.serialNumber">serialNumber</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.signature">signature</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.uploadedOn">uploadedOn</a></code> | <code>string</code> | *No description.* |
@@ -563,16 +562,6 @@ public readonly certificate: string;
 
 ---
 
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.enabled"></a>
-
-```typescript
-public readonly enabled: IResolvable;
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
 ##### `expiresOn`<sup>Required</sup> <a name="expiresOn" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.expiresOn"></a>
 
 ```typescript
@@ -603,10 +592,10 @@ public readonly issuer: string;
 
 ---
 
-##### `privateKey`<sup>Required</sup> <a name="privateKey" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.privateKey"></a>
+##### `serialNumber`<sup>Required</sup> <a name="serialNumber" id="@cdktn/provider-cloudflare.dataCloudflareAuthenticatedOriginPullsCertificate.DataCloudflareAuthenticatedOriginPullsCertificate.property.serialNumber"></a>
 
 ```typescript
-public readonly privateKey: string;
+public readonly serialNumber: string;
 ```
 
 - *Type:* string
@@ -809,7 +798,7 @@ public readonly certificateId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificate#certificate_id DataCloudflareAuthenticatedOriginPullsCertificate#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_certificate#certificate_id DataCloudflareAuthenticatedOriginPullsCertificate#certificate_id}
 
 ---
 
@@ -823,7 +812,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/authenticated_origin_pulls_certificate#zone_id DataCloudflareAuthenticatedOriginPullsCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/authenticated_origin_pulls_certificate#zone_id DataCloudflareAuthenticatedOriginPullsCertificate#zone_id}
 
 ---
 

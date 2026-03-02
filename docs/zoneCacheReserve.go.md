@@ -4,7 +4,7 @@
 
 ### ZoneCacheReserve <a name="ZoneCacheReserve" id="@cdktn/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve cloudflare_zone_cache_reserve}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneCacheReserve.ZoneCacheReserve.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ZoneCacheReserve to import
 
 The id of the existing ZoneCacheReserve that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -884,7 +884,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve#zone_id ZoneCacheReserve#zone_id}
 
 ---
 
@@ -898,7 +898,7 @@ Value *string
 
 Value of the Cache Reserve zone setting. Available values: "on", "off".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zone_cache_reserve#value ZoneCacheReserve#value}
 
 ---
 

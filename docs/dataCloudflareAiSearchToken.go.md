@@ -4,7 +4,7 @@
 
 ### DataCloudflareAiSearchToken <a name="DataCloudflareAiSearchToken" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token cloudflare_ai_search_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareAiSearchToke
 
 The id of the existing DataCloudflareAiSearchToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -415,9 +415,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.forEach">ForEach</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.accountTag">AccountTag</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.cfApiId">CfApiId</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.cfApiKey">CfApiKey</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.createdBy">CreatedBy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.enabled">Enabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
@@ -425,7 +423,6 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.modifiedAt">ModifiedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.modifiedBy">ModifiedBy</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.name">Name</a></code> | <code>*string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.syncedAt">SyncedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.accountIdInput">AccountIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.idInput">IdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.accountId">AccountId</a></code> | <code>*string</code> | *No description.* |
@@ -555,30 +552,10 @@ func Provider() TerraformProvider
 
 ---
 
-##### `AccountTag`<sup>Required</sup> <a name="AccountTag" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.accountTag"></a>
-
-```go
-func AccountTag() *string
-```
-
-- *Type:* *string
-
----
-
 ##### `CfApiId`<sup>Required</sup> <a name="CfApiId" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.cfApiId"></a>
 
 ```go
 func CfApiId() *string
-```
-
-- *Type:* *string
-
----
-
-##### `CfApiKey`<sup>Required</sup> <a name="CfApiKey" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.cfApiKey"></a>
-
-```go
-func CfApiKey() *string
 ```
 
 - *Type:* *string
@@ -649,16 +626,6 @@ func ModifiedBy() *string
 
 ```go
 func Name() *string
-```
-
-- *Type:* *string
-
----
-
-##### `SyncedAt`<sup>Required</sup> <a name="SyncedAt" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchToken.property.syncedAt"></a>
-
-```go
-func SyncedAt() *string
 ```
 
 - *Type:* *string
@@ -756,8 +723,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchTokenConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchTokenConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#account_id DataCloudflareAiSearchToken#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#id DataCloudflareAiSearchToken#id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchTokenConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#account_id DataCloudflareAiSearchToken#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchToken.DataCloudflareAiSearchTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#id DataCloudflareAiSearchToken#id}. |
 
 ---
 
@@ -839,7 +806,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#account_id DataCloudflareAiSearchToken#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#account_id DataCloudflareAiSearchToken#account_id}.
 
 ---
 
@@ -851,7 +818,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ai_search_token#id DataCloudflareAiSearchToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ai_search_token#id DataCloudflareAiSearchToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

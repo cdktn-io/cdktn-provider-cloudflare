@@ -4,7 +4,7 @@
 
 ### DataCloudflareSnippetList <a name="DataCloudflareSnippetList" id="@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet_list cloudflare_snippet_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet_list cloudflare_snippet_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetList.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareSnippetList 
 
 The id of the existing DataCloudflareSnippetList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +643,7 @@ const dataCloudflareSnippetListConfig: dataCloudflareSnippetList.DataCloudflareS
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The unique ID of the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Use this field to specify the unique ID of the zone. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSnippetList.DataCloudflareSnippetListConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -726,9 +726,9 @@ public readonly zoneId: string;
 
 - *Type:* string
 
-The unique ID of the zone.
+Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet_list#zone_id DataCloudflareSnippetList#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet_list#zone_id DataCloudflareSnippetList#zone_id}
 
 ---
 
@@ -742,7 +742,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/snippet_list#max_items DataCloudflareSnippetList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/snippet_list#max_items DataCloudflareSnippetList#max_items}
 
 ---
 

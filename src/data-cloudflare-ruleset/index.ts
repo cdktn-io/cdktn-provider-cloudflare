@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareRulesetConfig extends cdktn.TerraformMetaArgument
   /**
   * The unique ID of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
   */
   readonly accountId?: string;
   /**
   * The unique ID of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -30,13 +30,13 @@ export interface DataCloudflareRulesetConfig extends cdktn.TerraformMetaArgument
   /**
   * The unique ID of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
   */
   readonly rulesetId?: string;
   /**
   * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -1423,6 +1423,65 @@ export class DataCloudflareRulesetRulesActionParametersHeadersMap extends cdktn.
     return new DataCloudflareRulesetRulesActionParametersHeadersOutputReference(this.terraformResource, this.terraformAttribute, key);
   }
 }
+export interface DataCloudflareRulesetRulesActionParametersImmutable {
+}
+
+export function dataCloudflareRulesetRulesActionParametersImmutableToTerraform(struct?: DataCloudflareRulesetRulesActionParametersImmutable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersImmutableToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersImmutable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersImmutableOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersImmutable | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersImmutable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+}
 export interface DataCloudflareRulesetRulesActionParametersMatchedData {
 }
 
@@ -1475,6 +1534,370 @@ export class DataCloudflareRulesetRulesActionParametersMatchedDataOutputReferenc
   // public_key - computed: true, optional: false, required: false
   public get publicKey() {
     return this.getStringAttribute('public_key');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersMaxAge {
+}
+
+export function dataCloudflareRulesetRulesActionParametersMaxAgeToTerraform(struct?: DataCloudflareRulesetRulesActionParametersMaxAge): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersMaxAgeToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersMaxAge): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersMaxAgeOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersMaxAge | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersMaxAge | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersMustRevalidate {
+}
+
+export function dataCloudflareRulesetRulesActionParametersMustRevalidateToTerraform(struct?: DataCloudflareRulesetRulesActionParametersMustRevalidate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersMustRevalidateToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersMustRevalidate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersMustRevalidateOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersMustRevalidate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersMustRevalidate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersMustUnderstand {
+}
+
+export function dataCloudflareRulesetRulesActionParametersMustUnderstandToTerraform(struct?: DataCloudflareRulesetRulesActionParametersMustUnderstand): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersMustUnderstandToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersMustUnderstand): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersMustUnderstandOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersMustUnderstand | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersMustUnderstand | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersNoCache {
+}
+
+export function dataCloudflareRulesetRulesActionParametersNoCacheToTerraform(struct?: DataCloudflareRulesetRulesActionParametersNoCache): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersNoCacheToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersNoCache): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersNoCacheOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersNoCache | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersNoCache | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+
+  // qualifiers - computed: true, optional: false, required: false
+  public get qualifiers() {
+    return this.getListAttribute('qualifiers');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersNoStore {
+}
+
+export function dataCloudflareRulesetRulesActionParametersNoStoreToTerraform(struct?: DataCloudflareRulesetRulesActionParametersNoStore): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersNoStoreToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersNoStore): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersNoStoreOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersNoStore | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersNoStore | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersNoTransform {
+}
+
+export function dataCloudflareRulesetRulesActionParametersNoTransformToTerraform(struct?: DataCloudflareRulesetRulesActionParametersNoTransform): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersNoTransformToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersNoTransform): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersNoTransformOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersNoTransform | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersNoTransform | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
   }
 }
 export interface DataCloudflareRulesetRulesActionParametersOrigin {
@@ -1797,6 +2220,188 @@ export class DataCloudflareRulesetRulesActionParametersOverridesOutputReference 
     return this.getStringAttribute('sensitivity_level');
   }
 }
+export interface DataCloudflareRulesetRulesActionParametersPrivate {
+}
+
+export function dataCloudflareRulesetRulesActionParametersPrivateToTerraform(struct?: DataCloudflareRulesetRulesActionParametersPrivate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersPrivateToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersPrivate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersPrivateOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersPrivate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersPrivate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+
+  // qualifiers - computed: true, optional: false, required: false
+  public get qualifiers() {
+    return this.getListAttribute('qualifiers');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersProxyRevalidate {
+}
+
+export function dataCloudflareRulesetRulesActionParametersProxyRevalidateToTerraform(struct?: DataCloudflareRulesetRulesActionParametersProxyRevalidate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersProxyRevalidateToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersProxyRevalidate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersProxyRevalidateOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersProxyRevalidate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersProxyRevalidate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersPublic {
+}
+
+export function dataCloudflareRulesetRulesActionParametersPublicToTerraform(struct?: DataCloudflareRulesetRulesActionParametersPublic): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersPublicToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersPublic): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersPublicOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersPublic | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersPublic | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+}
 export interface DataCloudflareRulesetRulesActionParametersRawResponseFields {
 }
 
@@ -2096,6 +2701,70 @@ export class DataCloudflareRulesetRulesActionParametersResponseFieldsList extend
     return new DataCloudflareRulesetRulesActionParametersResponseFieldsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataCloudflareRulesetRulesActionParametersSMaxage {
+}
+
+export function dataCloudflareRulesetRulesActionParametersSMaxageToTerraform(struct?: DataCloudflareRulesetRulesActionParametersSMaxage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersSMaxageToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersSMaxage): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersSMaxageOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersSMaxage | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersSMaxage | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+}
 export interface DataCloudflareRulesetRulesActionParametersServeStale {
 }
 
@@ -2202,6 +2871,134 @@ export class DataCloudflareRulesetRulesActionParametersSniOutputReference extend
   // value - computed: true, optional: false, required: false
   public get value() {
     return this.getStringAttribute('value');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersStaleIfError {
+}
+
+export function dataCloudflareRulesetRulesActionParametersStaleIfErrorToTerraform(struct?: DataCloudflareRulesetRulesActionParametersStaleIfError): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersStaleIfErrorToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersStaleIfError): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersStaleIfErrorOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersStaleIfError | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersStaleIfError | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getNumberAttribute('value');
+  }
+}
+export interface DataCloudflareRulesetRulesActionParametersStaleWhileRevalidate {
+}
+
+export function dataCloudflareRulesetRulesActionParametersStaleWhileRevalidateToTerraform(struct?: DataCloudflareRulesetRulesActionParametersStaleWhileRevalidate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareRulesetRulesActionParametersStaleWhileRevalidateToHclTerraform(struct?: DataCloudflareRulesetRulesActionParametersStaleWhileRevalidate): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareRulesetRulesActionParametersStaleWhileRevalidateOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareRulesetRulesActionParametersStaleWhileRevalidate | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareRulesetRulesActionParametersStaleWhileRevalidate | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // cloudflare_only - computed: true, optional: false, required: false
+  public get cloudflareOnly() {
+    return this.getBooleanAttribute('cloudflare_only');
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getNumberAttribute('value');
   }
 }
 export interface DataCloudflareRulesetRulesActionParametersTransformedRequestFields {
@@ -2609,6 +3406,11 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
     return this.getBooleanAttribute('email_obfuscation');
   }
 
+  // expression - computed: true, optional: false, required: false
+  public get expression() {
+    return this.getStringAttribute('expression');
+  }
+
   // fonts - computed: true, optional: false, required: false
   public get fonts() {
     return this.getBooleanAttribute('fonts');
@@ -2647,6 +3449,12 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
     return this.getStringAttribute('id');
   }
 
+  // immutable - computed: true, optional: false, required: false
+  private _immutable = new DataCloudflareRulesetRulesActionParametersImmutableOutputReference(this, "immutable");
+  public get immutable() {
+    return this._immutable;
+  }
+
   // increment - computed: true, optional: false, required: false
   public get increment() {
     return this.getNumberAttribute('increment');
@@ -2658,9 +3466,50 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
     return this._matchedData;
   }
 
+  // max_age - computed: true, optional: false, required: false
+  private _maxAge = new DataCloudflareRulesetRulesActionParametersMaxAgeOutputReference(this, "max_age");
+  public get maxAge() {
+    return this._maxAge;
+  }
+
   // mirage - computed: true, optional: false, required: false
   public get mirage() {
     return this.getBooleanAttribute('mirage');
+  }
+
+  // must_revalidate - computed: true, optional: false, required: false
+  private _mustRevalidate = new DataCloudflareRulesetRulesActionParametersMustRevalidateOutputReference(this, "must_revalidate");
+  public get mustRevalidate() {
+    return this._mustRevalidate;
+  }
+
+  // must_understand - computed: true, optional: false, required: false
+  private _mustUnderstand = new DataCloudflareRulesetRulesActionParametersMustUnderstandOutputReference(this, "must_understand");
+  public get mustUnderstand() {
+    return this._mustUnderstand;
+  }
+
+  // no_cache - computed: true, optional: false, required: false
+  private _noCache = new DataCloudflareRulesetRulesActionParametersNoCacheOutputReference(this, "no_cache");
+  public get noCache() {
+    return this._noCache;
+  }
+
+  // no_store - computed: true, optional: false, required: false
+  private _noStore = new DataCloudflareRulesetRulesActionParametersNoStoreOutputReference(this, "no_store");
+  public get noStore() {
+    return this._noStore;
+  }
+
+  // no_transform - computed: true, optional: false, required: false
+  private _noTransform = new DataCloudflareRulesetRulesActionParametersNoTransformOutputReference(this, "no_transform");
+  public get noTransform() {
+    return this._noTransform;
+  }
+
+  // operation - computed: true, optional: false, required: false
+  public get operation() {
+    return this.getStringAttribute('operation');
   }
 
   // opportunistic_encryption - computed: true, optional: false, required: false
@@ -2700,9 +3549,27 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
     return this.getStringAttribute('polish');
   }
 
+  // private - computed: true, optional: false, required: false
+  private _private = new DataCloudflareRulesetRulesActionParametersPrivateOutputReference(this, "private");
+  public get private() {
+    return this._private;
+  }
+
   // products - computed: true, optional: false, required: false
   public get products() {
     return this.getListAttribute('products');
+  }
+
+  // proxy_revalidate - computed: true, optional: false, required: false
+  private _proxyRevalidate = new DataCloudflareRulesetRulesActionParametersProxyRevalidateOutputReference(this, "proxy_revalidate");
+  public get proxyRevalidate() {
+    return this._proxyRevalidate;
+  }
+
+  // public - computed: true, optional: false, required: false
+  private _public = new DataCloudflareRulesetRulesActionParametersPublicOutputReference(this, "public");
+  public get public() {
+    return this._public;
   }
 
   // raw_response_fields - computed: true, optional: false, required: false
@@ -2770,6 +3637,12 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
     return this.getListAttribute('rulesets');
   }
 
+  // s_maxage - computed: true, optional: false, required: false
+  private _sMaxage = new DataCloudflareRulesetRulesActionParametersSMaxageOutputReference(this, "s_maxage");
+  public get sMaxage() {
+    return this._sMaxage;
+  }
+
   // security_level - computed: true, optional: false, required: false
   public get securityLevel() {
     return this.getStringAttribute('security_level');
@@ -2797,9 +3670,36 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
     return this.getStringAttribute('ssl');
   }
 
+  // stale_if_error - computed: true, optional: false, required: false
+  private _staleIfError = new DataCloudflareRulesetRulesActionParametersStaleIfErrorOutputReference(this, "stale_if_error");
+  public get staleIfError() {
+    return this._staleIfError;
+  }
+
+  // stale_while_revalidate - computed: true, optional: false, required: false
+  private _staleWhileRevalidate = new DataCloudflareRulesetRulesActionParametersStaleWhileRevalidateOutputReference(this, "stale_while_revalidate");
+  public get staleWhileRevalidate() {
+    return this._staleWhileRevalidate;
+  }
+
   // status_code - computed: true, optional: false, required: false
   public get statusCode() {
     return this.getNumberAttribute('status_code');
+  }
+
+  // strip_etags - computed: true, optional: false, required: false
+  public get stripEtags() {
+    return this.getBooleanAttribute('strip_etags');
+  }
+
+  // strip_last_modified - computed: true, optional: false, required: false
+  public get stripLastModified() {
+    return this.getBooleanAttribute('strip_last_modified');
+  }
+
+  // strip_set_cookie - computed: true, optional: false, required: false
+  public get stripSetCookie() {
+    return this.getBooleanAttribute('strip_set_cookie');
   }
 
   // sxg - computed: true, optional: false, required: false
@@ -2817,6 +3717,11 @@ export class DataCloudflareRulesetRulesActionParametersOutputReference extends c
   private _uri = new DataCloudflareRulesetRulesActionParametersUriOutputReference(this, "uri");
   public get uri() {
     return this._uri;
+  }
+
+  // values - computed: true, optional: false, required: false
+  public get values() {
+    return this.getListAttribute('values');
   }
 }
 export interface DataCloudflareRulesetRulesExposedCredentialCheck {
@@ -3152,7 +4057,7 @@ export class DataCloudflareRulesetRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset cloudflare_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset cloudflare_ruleset}
 */
 export class DataCloudflareRuleset extends cdktn.TerraformDataSource {
 
@@ -3168,7 +4073,7 @@ export class DataCloudflareRuleset extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareRuleset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRuleset to import
-  * @param importFromId The id of the existing DataCloudflareRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRuleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRuleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -3180,7 +4085,7 @@ export class DataCloudflareRuleset extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/ruleset cloudflare_ruleset} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset cloudflare_ruleset} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -3191,7 +4096,7 @@ export class DataCloudflareRuleset extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.17.0',
+        providerVersion: '5.18.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

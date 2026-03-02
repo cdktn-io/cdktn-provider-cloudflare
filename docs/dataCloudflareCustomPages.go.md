@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomPages <a name="DataCloudflareCustomPages" id="@cdktn/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_pages cloudflare_custom_pages}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_pages cloudflare_custom_pages}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomPages.DataCloudflareCustomPages.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareCustomPages 
 
 The id of the existing DataCloudflareCustomPages that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_pages#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_pages#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -846,7 +846,7 @@ Identifier *string
 
 Error Page Types Available values: "1000_errors", "500_errors", "basic_challenge", "country_challenge", "ip_block", "managed_challenge", "ratelimit_block", "under_attack", "waf_block", "waf_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_pages#identifier DataCloudflareCustomPages#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_pages#identifier DataCloudflareCustomPages#identifier}
 
 ---
 
@@ -860,7 +860,7 @@ AccountId *string
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_pages#account_id DataCloudflareCustomPages#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_pages#account_id DataCloudflareCustomPages#account_id}
 
 ---
 
@@ -874,7 +874,7 @@ ZoneId *string
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/custom_pages#zone_id DataCloudflareCustomPages#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_pages#zone_id DataCloudflareCustomPages#zone_id}
 
 ---
 
