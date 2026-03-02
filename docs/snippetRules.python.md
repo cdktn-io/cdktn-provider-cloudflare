@@ -4,7 +4,7 @@
 
 ### SnippetRules <a name="SnippetRules" id="@cdktn/provider-cloudflare.snippetRules.SnippetRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules cloudflare_snippet_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer"></a>
 
@@ -37,8 +37,8 @@ snippetRules.SnippetRules(
 | <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>]</code> | A list of snippet rules. |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>]</code> | Lists snippet rules. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRules.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Use this field to specify the unique ID of the zone. |
 
 ---
 
@@ -106,9 +106,9 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>]
 
-A list of snippet rules.
+Lists snippet rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#rules SnippetRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#rules SnippetRules#rules}
 
 ---
 
@@ -116,9 +116,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-The unique ID of the zone.
+Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
 
 ---
 
@@ -630,7 +630,7 @@ The construct id used in the generated config for the SnippetRules to import.
 
 The id of the existing SnippetRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -900,8 +900,8 @@ snippetRules.SnippetRulesConfig(
 | <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>]</code> | A list of snippet rules. |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The unique ID of the zone. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>]</code> | Lists snippet rules. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Use this field to specify the unique ID of the zone. |
 
 ---
 
@@ -983,9 +983,9 @@ rules: IResolvable | typing.List[SnippetRulesRules]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules">SnippetRulesRules</a>]
 
-A list of snippet rules.
+Lists snippet rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#rules SnippetRules#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#rules SnippetRules#rules}
 
 ---
 
@@ -997,9 +997,9 @@ zone_id: str
 
 - *Type:* str
 
-The unique ID of the zone.
+Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#zone_id SnippetRules#zone_id}
 
 ---
 
@@ -1022,10 +1022,10 @@ snippetRules.SnippetRulesRules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">expression</a></code> | <code>str</code> | The expression defining which traffic will match the rule. |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName">snippet_name</a></code> | <code>str</code> | The identifying name of the snippet. |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">description</a></code> | <code>str</code> | An informative description of the rule. |
-| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the rule should be executed. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.expression">expression</a></code> | <code>str</code> | Define the expression that determines which traffic matches the rule. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.snippetName">snippet_name</a></code> | <code>str</code> | Identify the snippet. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.description">description</a></code> | <code>str</code> | Provide an informative description of the rule. |
+| <code><a href="#@cdktn/provider-cloudflare.snippetRules.SnippetRulesRules.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicate whether to execute the rule. |
 
 ---
 
@@ -1037,9 +1037,9 @@ expression: str
 
 - *Type:* str
 
-The expression defining which traffic will match the rule.
+Define the expression that determines which traffic matches the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#expression SnippetRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#expression SnippetRules#expression}
 
 ---
 
@@ -1051,9 +1051,9 @@ snippet_name: str
 
 - *Type:* str
 
-The identifying name of the snippet.
+Identify the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#snippet_name SnippetRules#snippet_name}
 
 ---
 
@@ -1065,9 +1065,9 @@ description: str
 
 - *Type:* str
 
-An informative description of the rule.
+Provide an informative description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#description SnippetRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#description SnippetRules#description}
 
 ---
 
@@ -1079,9 +1079,9 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Whether the rule should be executed.
+Indicate whether to execute the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/snippet_rules#enabled SnippetRules#enabled}
 
 ---
 

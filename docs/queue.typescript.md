@@ -4,7 +4,7 @@
 
 ### Queue <a name="Queue" id="@cdktn/provider-cloudflare.queue.Queue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue cloudflare_queue}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue cloudflare_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.Queue.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the Queue to import.
 
 The id of the existing Queue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,8 +880,8 @@ const queueConfig: queue.QueueConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.accountId">accountId</a></code> | <code>string</code> | A Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName">queueName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#queue_name Queue#queue_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName">queueName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -965,7 +965,7 @@ public readonly accountId: string;
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#account_id Queue#account_id}
 
 ---
 
@@ -977,7 +977,7 @@ public readonly queueName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#queue_name Queue#queue_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -989,7 +989,7 @@ public readonly settings: QueueSettings;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly deliveryDelay: number;
 
 Number of seconds to delay delivery of all messages to consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
 
 ---
 
@@ -1070,7 +1070,7 @@ public readonly deliveryPaused: boolean | IResolvable;
 
 Indicates if message delivery to consumers is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
 
 ---
 
@@ -1084,7 +1084,7 @@ public readonly messageRetentionPeriod: number;
 
 Number of seconds after which an unconsumed message will be delayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
 
 ---
 
@@ -1469,8 +1469,8 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.consumerId">consumerId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.queueId">queueId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.script">script</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.deadLetterQueue">deadLetterQueue</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.queueName">queueName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.scriptName">scriptName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersSettingsOutputReference">QueueConsumersSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
@@ -1522,20 +1522,20 @@ public readonly createdOn: string;
 
 ---
 
-##### `queueId`<sup>Required</sup> <a name="queueId" id="@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.queueId"></a>
+##### `deadLetterQueue`<sup>Required</sup> <a name="deadLetterQueue" id="@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.deadLetterQueue"></a>
 
 ```typescript
-public readonly queueId: string;
+public readonly deadLetterQueue: string;
 ```
 
 - *Type:* string
 
 ---
 
-##### `script`<sup>Required</sup> <a name="script" id="@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.script"></a>
+##### `queueName`<sup>Required</sup> <a name="queueName" id="@cdktn/provider-cloudflare.queue.QueueConsumersOutputReference.property.queueName"></a>
 
 ```typescript
-public readonly script: string;
+public readonly queueName: string;
 ```
 
 - *Type:* string

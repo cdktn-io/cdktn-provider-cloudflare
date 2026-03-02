@@ -4,7 +4,7 @@
 
 ### AddressMap <a name="AddressMap" id="@cdktn/provider-cloudflare.addressMap.AddressMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map cloudflare_address_map}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map cloudflare_address_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.addressMap.AddressMap.Initializer"></a>
 
@@ -537,7 +537,7 @@ The construct id used in the generated config for the AddressMap to import.
 
 The id of the existing AddressMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -958,7 +958,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/addressm
 | <code><a href="#@cdktn/provider-cloudflare.addressMap.AddressMapConfig.property.defaultSni">DefaultSni</a></code> | <code>*string</code> | If you have legacy TLS clients which do not send the TLS server name indicator, then you can specify one default SNI on the map. |
 | <code><a href="#@cdktn/provider-cloudflare.addressMap.AddressMapConfig.property.description">Description</a></code> | <code>*string</code> | An optional description field which may be used to describe the types of IPs or zones on the map. |
 | <code><a href="#@cdktn/provider-cloudflare.addressMap.AddressMapConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | Whether the Address Map is enabled or not. |
-| <code><a href="#@cdktn/provider-cloudflare.addressMap.AddressMapConfig.property.ips">Ips</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#ips AddressMap#ips}. |
+| <code><a href="#@cdktn/provider-cloudflare.addressMap.AddressMapConfig.property.ips">Ips</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#ips AddressMap#ips}. |
 | <code><a href="#@cdktn/provider-cloudflare.addressMap.AddressMapConfig.property.memberships">Memberships</a></code> | <code>interface{}</code> | Zones and Accounts which will be assigned IPs on this Address Map. |
 
 ---
@@ -1043,7 +1043,7 @@ AccountId *string
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#account_id AddressMap#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#account_id AddressMap#account_id}
 
 ---
 
@@ -1059,7 +1059,7 @@ If you have legacy TLS clients which do not send the TLS server name indicator, 
 
 If Cloudflare receives a TLS handshake from a client without an SNI, it will respond with the default SNI on those IPs. The default SNI can be any valid zone or subdomain owned by the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#default_sni AddressMap#default_sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#default_sni AddressMap#default_sni}
 
 ---
 
@@ -1073,7 +1073,7 @@ Description *string
 
 An optional description field which may be used to describe the types of IPs or zones on the map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#description AddressMap#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#description AddressMap#description}
 
 ---
 
@@ -1089,7 +1089,7 @@ Whether the Address Map is enabled or not.
 
 Cloudflare's DNS will not respond with IP addresses on an Address Map until the map is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#enabled AddressMap#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#enabled AddressMap#enabled}
 
 ---
 
@@ -1101,7 +1101,7 @@ Ips *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#ips AddressMap#ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#ips AddressMap#ips}.
 
 ---
 
@@ -1117,7 +1117,7 @@ Zones and Accounts which will be assigned IPs on this Address Map.
 
 A zone membership will take priority over an account membership.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#memberships AddressMap#memberships}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#memberships AddressMap#memberships}
 
 ---
 
@@ -1153,7 +1153,7 @@ Identifier *string
 
 The identifier for the membership (eg. a zone or account tag).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#identifier AddressMap#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#identifier AddressMap#identifier}
 
 ---
 
@@ -1167,7 +1167,7 @@ Kind *string
 
 The type of the membership. Available values: "zone", "account".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/address_map#kind AddressMap#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/address_map#kind AddressMap#kind}
 
 ---
 

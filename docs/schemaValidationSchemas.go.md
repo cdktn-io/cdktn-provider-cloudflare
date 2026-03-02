@@ -4,7 +4,7 @@
 
 ### SchemaValidationSchemas <a name="SchemaValidationSchemas" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_schemas cloudflare_schema_validation_schemas}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.schemaValidationSchemas.SchemaValidationSchemas.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the SchemaValidationSchemas to
 
 The id of the existing SchemaValidationSchemas that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_schemas#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -949,7 +949,7 @@ Kind *string
 
 The kind of the schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_schemas#kind SchemaValidationSchemas#kind}
 
 ---
 
@@ -963,7 +963,7 @@ Name *string
 
 A human-readable name for the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_schemas#name SchemaValidationSchemas#name}
 
 ---
 
@@ -977,7 +977,7 @@ Source *string
 
 The raw schema, e.g., the OpenAPI schema, either as JSON or YAML.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_schemas#source SchemaValidationSchemas#source}
 
 ---
 
@@ -991,7 +991,7 @@ ValidationEnabled interface{}
 
 An indicator if this schema is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_schemas#validation_enabled SchemaValidationSchemas#validation_enabled}
 
 ---
 
@@ -1005,7 +1005,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_schemas#zone_id SchemaValidationSchemas#zone_id}
 
 ---
 

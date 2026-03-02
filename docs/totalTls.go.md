@@ -4,7 +4,7 @@
 
 ### TotalTls <a name="TotalTls" id="@cdktn/provider-cloudflare.totalTls.TotalTls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/total_tls cloudflare_total_tls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls cloudflare_total_tls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.totalTls.TotalTls.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the TotalTls to import.
 
 The id of the existing TotalTls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -897,7 +897,7 @@ Enabled interface{}
 
 If enabled, Total TLS will order a hostname specific TLS certificate for any proxied A, AAAA, or CNAME record in your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/total_tls#enabled TotalTls#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls#enabled TotalTls#enabled}
 
 ---
 
@@ -911,7 +911,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls#zone_id TotalTls#zone_id}
 
 ---
 
@@ -925,7 +925,7 @@ CertificateAuthority *string
 
 The Certificate Authority that Total TLS certificates will be issued through. Available values: "google", "lets_encrypt", "ssl_com".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/total_tls#certificate_authority TotalTls#certificate_authority}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Ruleset <a name="Ruleset" id="@cdktn/provider-cloudflare.ruleset.Ruleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset cloudflare_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset cloudflare_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.Ruleset.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 The kind of the ruleset. Available values: "managed", "custom", "root", "zone".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#kind Ruleset#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#kind Ruleset#kind}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The human-readable name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -138,9 +138,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The phase of the ruleset.
 
-Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
+Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#phase Ruleset#phase}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#account_id Ruleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#account_id Ruleset#account_id}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative description of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The list of rules in the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
 
 ---
 
@@ -720,7 +720,7 @@ The construct id used in the generated config for the Ruleset to import.
 
 The id of the existing Ruleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1228,7 +1228,7 @@ kind: str
 
 The kind of the ruleset. Available values: "managed", "custom", "root", "zone".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#kind Ruleset#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#kind Ruleset#kind}
 
 ---
 
@@ -1242,7 +1242,7 @@ name: str
 
 The human-readable name of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -1256,9 +1256,9 @@ phase: str
 
 The phase of the ruleset.
 
-Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
+Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#phase Ruleset#phase}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#phase Ruleset#phase}
 
 ---
 
@@ -1272,7 +1272,7 @@ account_id: str
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#account_id Ruleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#account_id Ruleset#account_id}
 
 ---
 
@@ -1286,7 +1286,7 @@ description: str
 
 An informative description of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1300,7 +1300,7 @@ rules: IResolvable | typing.List[RulesetRules]
 
 The list of rules in the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -1314,7 +1314,7 @@ zone_id: str
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
 
 ---
 
@@ -1364,9 +1364,9 @@ action: str
 
 The action to perform when the rule matches.
 
-Available values: "block", "challenge", "compress_response", "ddos_dynamic", "execute", "force_connection_close", "js_challenge", "log", "log_custom_field", "managed_challenge", "redirect", "rewrite", "route", "score", "serve_error", "set_cache_settings", "set_config", "skip".
+Available values: "block", "challenge", "compress_response", "ddos_dynamic", "execute", "force_connection_close", "js_challenge", "log", "log_custom_field", "managed_challenge", "redirect", "rewrite", "route", "score", "serve_error", "set_cache_control", "set_cache_settings", "set_cache_tags", "set_config", "skip".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -1380,7 +1380,7 @@ expression: str
 
 The expression defining which traffic will match the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -1394,7 +1394,7 @@ action_parameters: RulesetRulesActionParameters
 
 The parameters configuring the rule's action.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
 
 ---
 
@@ -1408,7 +1408,7 @@ description: str
 
 An informative description of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#description Ruleset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#description Ruleset#description}
 
 ---
 
@@ -1422,7 +1422,7 @@ enabled: bool | IResolvable
 
 Whether the rule should be executed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -1436,7 +1436,7 @@ exposed_credential_check: RulesetRulesExposedCredentialCheck
 
 Configuration for exposed credential checking.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
 
 ---
 
@@ -1450,7 +1450,7 @@ logging: RulesetRulesLogging
 
 An object configuring the rule's logging behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#logging Ruleset#logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#logging Ruleset#logging}
 
 ---
 
@@ -1464,7 +1464,7 @@ ratelimit: RulesetRulesRatelimit
 
 An object configuring the rule's rate limit behavior.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
 
 ---
 
@@ -1478,7 +1478,7 @@ ref: str
 
 The reference of the rule (the rule's ID by default).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ref Ruleset#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ref Ruleset#ref}
 
 ---
 
@@ -1508,6 +1508,7 @@ ruleset.RulesetRulesActionParameters(
   disable_zaraz: bool | IResolvable = None,
   edge_ttl: RulesetRulesActionParametersEdgeTtl = None,
   email_obfuscation: bool | IResolvable = None,
+  expression: str = None,
   fonts: bool | IResolvable = None,
   from_list: RulesetRulesActionParametersFromListStruct = None,
   from_value: RulesetRulesActionParametersFromValue = None,
@@ -1515,9 +1516,17 @@ ruleset.RulesetRulesActionParameters(
   host_header: str = None,
   hotlink_protection: bool | IResolvable = None,
   id: str = None,
+  immutable: RulesetRulesActionParametersImmutable = None,
   increment: typing.Union[int, float] = None,
   matched_data: RulesetRulesActionParametersMatchedData = None,
+  max_age: RulesetRulesActionParametersMaxAge = None,
   mirage: bool | IResolvable = None,
+  must_revalidate: RulesetRulesActionParametersMustRevalidate = None,
+  must_understand: RulesetRulesActionParametersMustUnderstand = None,
+  no_cache: RulesetRulesActionParametersNoCache = None,
+  no_store: RulesetRulesActionParametersNoStore = None,
+  no_transform: RulesetRulesActionParametersNoTransform = None,
+  operation: str = None,
   opportunistic_encryption: bool | IResolvable = None,
   origin: RulesetRulesActionParametersOrigin = None,
   origin_cache_control: bool | IResolvable = None,
@@ -1525,7 +1534,10 @@ ruleset.RulesetRulesActionParameters(
   overrides: RulesetRulesActionParametersOverrides = None,
   phases: typing.List[str] = None,
   polish: str = None,
+  private: RulesetRulesActionParametersPrivate = None,
   products: typing.List[str] = None,
+  proxy_revalidate: RulesetRulesActionParametersProxyRevalidate = None,
+  public: RulesetRulesActionParametersPublic = None,
   raw_response_fields: IResolvable | typing.List[RulesetRulesActionParametersRawResponseFields] = None,
   read_timeout: typing.Union[int, float] = None,
   request_body_buffering: str = None,
@@ -1541,12 +1553,19 @@ ruleset.RulesetRulesActionParameters(
   security_level: str = None,
   server_side_excludes: bool | IResolvable = None,
   serve_stale: RulesetRulesActionParametersServeStale = None,
+  s_maxage: RulesetRulesActionParametersSMaxage = None,
   sni: RulesetRulesActionParametersSni = None,
   ssl: str = None,
+  stale_if_error: RulesetRulesActionParametersStaleIfError = None,
+  stale_while_revalidate: RulesetRulesActionParametersStaleWhileRevalidate = None,
   status_code: typing.Union[int, float] = None,
+  strip_etags: bool | IResolvable = None,
+  strip_last_modified: bool | IResolvable = None,
+  strip_set_cookie: bool | IResolvable = None,
   sxg: bool | IResolvable = None,
   transformed_request_fields: IResolvable | typing.List[RulesetRulesActionParametersTransformedRequestFields] = None,
-  uri: RulesetRulesActionParametersUri = None
+  uri: RulesetRulesActionParametersUri = None,
+  values: typing.List[str] = None
 )
 ```
 
@@ -1572,6 +1591,7 @@ ruleset.RulesetRulesActionParameters(
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.disableZaraz">disable_zaraz</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to disable Zaraz. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.edgeTtl">edge_ttl</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a></code> | How long the Cloudflare edge network should cache the response. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.emailObfuscation">email_obfuscation</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Email Obfuscation. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.expression">expression</a></code> | <code>str</code> | An expression to generate cache tags for set_cache_tags action. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fonts">fonts</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Cloudflare Fonts. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromList">from_list</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a></code> | A redirect based on a bulk list lookup. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.fromValue">from_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | A redirect based on the request properties. |
@@ -1579,9 +1599,17 @@ ruleset.RulesetRulesActionParameters(
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hostHeader">host_header</a></code> | <code>str</code> | A value to rewrite the HTTP host header to. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.hotlinkProtection">hotlink_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Hotlink Protection. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.id">id</a></code> | <code>str</code> | The ID of the ruleset to execute. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.immutable">immutable</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable">RulesetRulesActionParametersImmutable</a></code> | Set the immutable cache control directive. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.increment">increment</a></code> | <code>typing.Union[int, float]</code> | A delta to change the score by, which can be either positive or negative. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.matchedData">matched_data</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a></code> | The configuration to use for matched data logging. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.maxAge">max_age</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge">RulesetRulesActionParametersMaxAge</a></code> | Set the max-age cache control directive. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mirage">mirage</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Mirage. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mustRevalidate">must_revalidate</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate">RulesetRulesActionParametersMustRevalidate</a></code> | Set the must-revalidate cache control directive. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mustUnderstand">must_understand</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand">RulesetRulesActionParametersMustUnderstand</a></code> | Set the must-understand cache control directive. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.noCache">no_cache</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache">RulesetRulesActionParametersNoCache</a></code> | Set the no-cache cache control directive. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.noStore">no_store</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore">RulesetRulesActionParametersNoStore</a></code> | Set the no-store cache control directive. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.noTransform">no_transform</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform">RulesetRulesActionParametersNoTransform</a></code> | Set the no-transform cache control directive. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.operation">operation</a></code> | <code>str</code> | The operation to perform for set_cache_tags action. Available values: "set", "add", "remove". |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.opportunisticEncryption">opportunistic_encryption</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Opportunistic Encryption. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOrigin">RulesetRulesActionParametersOrigin</a></code> | An origin to route to. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.originCacheControl">origin_cache_control</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether Cloudflare will aim to strictly adhere to RFC 7234. |
@@ -1589,7 +1617,10 @@ ruleset.RulesetRulesActionParameters(
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.overrides">overrides</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | A set of overrides to apply to the target ruleset. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.phases">phases</a></code> | <code>typing.List[str]</code> | A list of phases to skip the execution of. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.polish">polish</a></code> | <code>str</code> | The Polish level to configure. Available values: "off", "lossless", "lossy", "webp". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.private">private</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate">RulesetRulesActionParametersPrivate</a></code> | Set the private cache control directive. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.products">products</a></code> | <code>typing.List[str]</code> | A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.proxyRevalidate">proxy_revalidate</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate">RulesetRulesActionParametersProxyRevalidate</a></code> | Set the proxy-revalidate cache control directive. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.public">public</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic">RulesetRulesActionParametersPublic</a></code> | Set the public cache control directive. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.rawResponseFields">raw_response_fields</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>]</code> | The raw response fields to log. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.readTimeout">read_timeout</a></code> | <code>typing.Union[int, float]</code> | A timeout value between two successive read operations to use for your origin server. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.requestBodyBuffering">request_body_buffering</a></code> | <code>str</code> | The request body buffering mode to configure. Available values: "none", "standard", "full". |
@@ -1605,12 +1636,19 @@ ruleset.RulesetRulesActionParameters(
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.securityLevel">security_level</a></code> | <code>str</code> | The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack". |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serverSideExcludes">server_side_excludes</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Server-Side Excludes. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.serveStale">serve_stale</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a></code> | When to serve stale content from cache. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sMaxage">s_maxage</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage">RulesetRulesActionParametersSMaxage</a></code> | Set the s-maxage cache control directive. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sni">sni</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a></code> | A Server Name Indication (SNI) override. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.ssl">ssl</a></code> | <code>str</code> | The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.staleIfError">stale_if_error</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError">RulesetRulesActionParametersStaleIfError</a></code> | Set the stale-if-error cache control directive. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.staleWhileRevalidate">stale_while_revalidate</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate">RulesetRulesActionParametersStaleWhileRevalidate</a></code> | Set the stale-while-revalidate cache control directive. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | The status code to use for the error. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.stripEtags">strip_etags</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to strip the ETag header from the response. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.stripLastModified">strip_last_modified</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to strip the Last-Modified header from the response. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.stripSetCookie">strip_set_cookie</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to strip the Set-Cookie header from the response. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sxg">sxg</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to enable Signed Exchanges (SXG). |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.transformedRequestFields">transformed_request_fields</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>]</code> | The transformed request fields to log. |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.uri">uri</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | A URI rewrite. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.values">values</a></code> | <code>typing.List[str]</code> | The cache tag values for set_cache_tags action. |
 
 ---
 
@@ -1624,7 +1662,7 @@ additional_cacheable_ports: typing.List[typing.Union[int, float]]
 
 A list of additional ports that caching should be enabled on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
 
 ---
 
@@ -1638,7 +1676,7 @@ algorithms: IResolvable | typing.List[RulesetRulesActionParametersAlgorithms]
 
 Custom order for compression algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
 
 ---
 
@@ -1652,7 +1690,7 @@ asset_name: str
 
 The name of a custom asset to serve as the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
 
 ---
 
@@ -1666,7 +1704,7 @@ automatic_https_rewrites: bool | IResolvable
 
 Whether to enable Automatic HTTPS Rewrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
 
 ---
 
@@ -1680,7 +1718,7 @@ autominify: RulesetRulesActionParametersAutominify
 
 Which file extensions to minify automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#autominify Ruleset#autominify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#autominify Ruleset#autominify}
 
 ---
 
@@ -1694,7 +1732,7 @@ bic: bool | IResolvable
 
 Whether to enable Browser Integrity Check (BIC).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#bic Ruleset#bic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#bic Ruleset#bic}
 
 ---
 
@@ -1710,7 +1748,7 @@ How long client browsers should cache the response.
 
 Cloudflare cache purge will not purge content cached on client browsers, so high browser TTLs may lead to stale content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
 
 ---
 
@@ -1726,7 +1764,7 @@ Whether the request's response from the origin is eligible for caching.
 
 Caching itself will still depend on the cache control header and your other caching configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache Ruleset#cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache Ruleset#cache}
 
 ---
 
@@ -1740,7 +1778,7 @@ cache_key: RulesetRulesActionParametersCacheKey
 
 Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
 
 ---
 
@@ -1754,7 +1792,7 @@ cache_reserve: RulesetRulesActionParametersCacheReserve
 
 Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
 
 ---
 
@@ -1768,7 +1806,7 @@ content: str
 
 The response content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -1782,7 +1820,7 @@ content_type: str
 
 The content type header to set with the error response. Available values: "application/json", "text/html", "text/plain", "text/xml".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -1796,7 +1834,7 @@ cookie_fields: IResolvable | typing.List[RulesetRulesActionParametersCookieField
 
 The cookie fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
 
 ---
 
@@ -1810,7 +1848,7 @@ disable_apps: bool | IResolvable
 
 Whether to disable Cloudflare Apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
 
 ---
 
@@ -1824,7 +1862,7 @@ disable_rum: bool | IResolvable
 
 Whether to disable Real User Monitoring (RUM).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
 
 ---
 
@@ -1838,7 +1876,7 @@ disable_zaraz: bool | IResolvable
 
 Whether to disable Zaraz.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
 
 ---
 
@@ -1852,7 +1890,7 @@ edge_ttl: RulesetRulesActionParametersEdgeTtl
 
 How long the Cloudflare edge network should cache the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
 
 ---
 
@@ -1866,7 +1904,21 @@ email_obfuscation: bool | IResolvable
 
 Whether to enable Email Obfuscation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+
+---
+
+##### `expression`<sup>Optional</sup> <a name="expression" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+An expression to generate cache tags for set_cache_tags action.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -1880,7 +1932,7 @@ fonts: bool | IResolvable
 
 Whether to enable Cloudflare Fonts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#fonts Ruleset#fonts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#fonts Ruleset#fonts}
 
 ---
 
@@ -1894,7 +1946,7 @@ from_list: RulesetRulesActionParametersFromListStruct
 
 A redirect based on a bulk list lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#from_list Ruleset#from_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#from_list Ruleset#from_list}
 
 ---
 
@@ -1908,7 +1960,7 @@ from_value: RulesetRulesActionParametersFromValue
 
 A redirect based on the request properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#from_value Ruleset#from_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#from_value Ruleset#from_value}
 
 ---
 
@@ -1922,7 +1974,7 @@ headers: IResolvable | typing.Mapping[RulesetRulesActionParametersHeaders]
 
 A map of headers to rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#headers Ruleset#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#headers Ruleset#headers}
 
 ---
 
@@ -1936,7 +1988,7 @@ host_header: str
 
 A value to rewrite the HTTP host header to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#host_header Ruleset#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#host_header Ruleset#host_header}
 
 ---
 
@@ -1950,7 +2002,7 @@ hotlink_protection: bool | IResolvable
 
 Whether to enable Hotlink Protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
 
 ---
 
@@ -1964,10 +2016,24 @@ id: str
 
 The ID of the ruleset to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.immutable"></a>
+
+```python
+immutable: RulesetRulesActionParametersImmutable
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable">RulesetRulesActionParametersImmutable</a>
+
+Set the immutable cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#immutable Ruleset#immutable}
 
 ---
 
@@ -1981,7 +2047,7 @@ increment: typing.Union[int, float]
 
 A delta to change the score by, which can be either positive or negative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#increment Ruleset#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#increment Ruleset#increment}
 
 ---
 
@@ -1995,7 +2061,21 @@ matched_data: RulesetRulesActionParametersMatchedData
 
 The configuration to use for matched data logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
+
+---
+
+##### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.maxAge"></a>
+
+```python
+max_age: RulesetRulesActionParametersMaxAge
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge">RulesetRulesActionParametersMaxAge</a>
+
+Set the max-age cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#max_age Ruleset#max_age}
 
 ---
 
@@ -2009,7 +2089,91 @@ mirage: bool | IResolvable
 
 Whether to enable Mirage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mirage Ruleset#mirage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mirage Ruleset#mirage}
+
+---
+
+##### `must_revalidate`<sup>Optional</sup> <a name="must_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mustRevalidate"></a>
+
+```python
+must_revalidate: RulesetRulesActionParametersMustRevalidate
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate">RulesetRulesActionParametersMustRevalidate</a>
+
+Set the must-revalidate cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
+
+---
+
+##### `must_understand`<sup>Optional</sup> <a name="must_understand" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.mustUnderstand"></a>
+
+```python
+must_understand: RulesetRulesActionParametersMustUnderstand
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand">RulesetRulesActionParametersMustUnderstand</a>
+
+Set the must-understand cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#must_understand Ruleset#must_understand}
+
+---
+
+##### `no_cache`<sup>Optional</sup> <a name="no_cache" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.noCache"></a>
+
+```python
+no_cache: RulesetRulesActionParametersNoCache
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache">RulesetRulesActionParametersNoCache</a>
+
+Set the no-cache cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#no_cache Ruleset#no_cache}
+
+---
+
+##### `no_store`<sup>Optional</sup> <a name="no_store" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.noStore"></a>
+
+```python
+no_store: RulesetRulesActionParametersNoStore
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore">RulesetRulesActionParametersNoStore</a>
+
+Set the no-store cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#no_store Ruleset#no_store}
+
+---
+
+##### `no_transform`<sup>Optional</sup> <a name="no_transform" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.noTransform"></a>
+
+```python
+no_transform: RulesetRulesActionParametersNoTransform
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform">RulesetRulesActionParametersNoTransform</a>
+
+Set the no-transform cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#no_transform Ruleset#no_transform}
+
+---
+
+##### `operation`<sup>Optional</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform for set_cache_tags action. Available values: "set", "add", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -2023,7 +2187,7 @@ opportunistic_encryption: bool | IResolvable
 
 Whether to enable Opportunistic Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
 
 ---
 
@@ -2037,7 +2201,7 @@ origin: RulesetRulesActionParametersOrigin
 
 An origin to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#origin Ruleset#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#origin Ruleset#origin}
 
 ---
 
@@ -2051,7 +2215,7 @@ origin_cache_control: bool | IResolvable
 
 Whether Cloudflare will aim to strictly adhere to RFC 7234.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
 
 ---
 
@@ -2065,7 +2229,7 @@ origin_error_page_passthru: bool | IResolvable
 
 Whether to generate Cloudflare error pages for issues from the origin server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
 
 ---
 
@@ -2079,7 +2243,7 @@ overrides: RulesetRulesActionParametersOverrides
 
 A set of overrides to apply to the target ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#overrides Ruleset#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#overrides Ruleset#overrides}
 
 ---
 
@@ -2094,9 +2258,9 @@ phases: typing.List[str]
 A list of phases to skip the execution of.
 
 This option is incompatible with the rulesets option.
-Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
+Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#phases Ruleset#phases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#phases Ruleset#phases}
 
 ---
 
@@ -2110,7 +2274,21 @@ polish: str
 
 The Polish level to configure. Available values: "off", "lossless", "lossy", "webp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#polish Ruleset#polish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#polish Ruleset#polish}
+
+---
+
+##### `private`<sup>Optional</sup> <a name="private" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.private"></a>
+
+```python
+private: RulesetRulesActionParametersPrivate
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate">RulesetRulesActionParametersPrivate</a>
+
+Set the private cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#private Ruleset#private}
 
 ---
 
@@ -2124,7 +2302,35 @@ products: typing.List[str]
 
 A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#products Ruleset#products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#products Ruleset#products}
+
+---
+
+##### `proxy_revalidate`<sup>Optional</sup> <a name="proxy_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.proxyRevalidate"></a>
+
+```python
+proxy_revalidate: RulesetRulesActionParametersProxyRevalidate
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate">RulesetRulesActionParametersProxyRevalidate</a>
+
+Set the proxy-revalidate cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
+
+---
+
+##### `public`<sup>Optional</sup> <a name="public" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.public"></a>
+
+```python
+public: RulesetRulesActionParametersPublic
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic">RulesetRulesActionParametersPublic</a>
+
+Set the public cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#public Ruleset#public}
 
 ---
 
@@ -2138,7 +2344,7 @@ raw_response_fields: IResolvable | typing.List[RulesetRulesActionParametersRawRe
 
 The raw response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
 
 ---
 
@@ -2154,7 +2360,7 @@ A timeout value between two successive read operations to use for your origin se
 
 Historically, the timeout value between two read options from Cloudflare to an origin server is 100 seconds. If you are attempting to reduce HTTP 524 errors because of timeouts from an origin server, try increasing this timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
 
 ---
 
@@ -2168,7 +2374,7 @@ request_body_buffering: str
 
 The request body buffering mode to configure. Available values: "none", "standard", "full".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
 
 ---
 
@@ -2182,7 +2388,7 @@ request_fields: IResolvable | typing.List[RulesetRulesActionParametersRequestFie
 
 The raw request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
 
 ---
 
@@ -2198,7 +2404,7 @@ Whether Cloudflare should respect strong ETag (entity tag) headers.
 
 If false, Cloudflare converts strong ETag headers to weak ETag headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
 
 ---
 
@@ -2212,7 +2418,7 @@ response: RulesetRulesActionParametersResponse
 
 The response to show when the block is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#response Ruleset#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#response Ruleset#response}
 
 ---
 
@@ -2226,7 +2432,7 @@ response_body_buffering: str
 
 The response body buffering mode to configure. Available values: "none", "standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
 
 ---
 
@@ -2240,7 +2446,7 @@ response_fields: IResolvable | typing.List[RulesetRulesActionParametersResponseF
 
 The transformed response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
 
 ---
 
@@ -2254,7 +2460,7 @@ rocket_loader: bool | IResolvable
 
 Whether to enable Rocket Loader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
 
 ---
 
@@ -2270,7 +2476,7 @@ A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execu
 
 This option is incompatible with the ruleset option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -2284,7 +2490,7 @@ ruleset: str
 
 A ruleset to skip the execution of. This option is incompatible with the rulesets option. Available values: "current".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
 
 ---
 
@@ -2300,7 +2506,7 @@ A list of ruleset IDs to skip the execution of.
 
 This option is incompatible with the ruleset and phases options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
 
 ---
 
@@ -2314,7 +2520,7 @@ security_level: str
 
 The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#security_level Ruleset#security_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#security_level Ruleset#security_level}
 
 ---
 
@@ -2328,7 +2534,7 @@ server_side_excludes: bool | IResolvable
 
 Whether to enable Server-Side Excludes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
 
 ---
 
@@ -2342,7 +2548,21 @@ serve_stale: RulesetRulesActionParametersServeStale
 
 When to serve stale content from cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+
+---
+
+##### `s_maxage`<sup>Optional</sup> <a name="s_maxage" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.sMaxage"></a>
+
+```python
+s_maxage: RulesetRulesActionParametersSMaxage
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage">RulesetRulesActionParametersSMaxage</a>
+
+Set the s-maxage cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
 
 ---
 
@@ -2356,7 +2576,7 @@ sni: RulesetRulesActionParametersSni
 
 A Server Name Indication (SNI) override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sni Ruleset#sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sni Ruleset#sni}
 
 ---
 
@@ -2370,7 +2590,35 @@ ssl: str
 
 The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ssl Ruleset#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ssl Ruleset#ssl}
+
+---
+
+##### `stale_if_error`<sup>Optional</sup> <a name="stale_if_error" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.staleIfError"></a>
+
+```python
+stale_if_error: RulesetRulesActionParametersStaleIfError
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError">RulesetRulesActionParametersStaleIfError</a>
+
+Set the stale-if-error cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
+
+---
+
+##### `stale_while_revalidate`<sup>Optional</sup> <a name="stale_while_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.staleWhileRevalidate"></a>
+
+```python
+stale_while_revalidate: RulesetRulesActionParametersStaleWhileRevalidate
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate">RulesetRulesActionParametersStaleWhileRevalidate</a>
+
+Set the stale-while-revalidate cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
 
 ---
 
@@ -2384,7 +2632,49 @@ status_code: typing.Union[int, float]
 
 The status code to use for the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code Ruleset#status_code}
+
+---
+
+##### `strip_etags`<sup>Optional</sup> <a name="strip_etags" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.stripEtags"></a>
+
+```python
+strip_etags: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to strip the ETag header from the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
+
+---
+
+##### `strip_last_modified`<sup>Optional</sup> <a name="strip_last_modified" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.stripLastModified"></a>
+
+```python
+strip_last_modified: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to strip the Last-Modified header from the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
+
+---
+
+##### `strip_set_cookie`<sup>Optional</sup> <a name="strip_set_cookie" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.stripSetCookie"></a>
+
+```python
+strip_set_cookie: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to strip the Set-Cookie header from the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
 
 ---
 
@@ -2398,7 +2688,7 @@ sxg: bool | IResolvable
 
 Whether to enable Signed Exchanges (SXG).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sxg Ruleset#sxg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sxg Ruleset#sxg}
 
 ---
 
@@ -2412,7 +2702,7 @@ transformed_request_fields: IResolvable | typing.List[RulesetRulesActionParamete
 
 The transformed request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
 
 ---
 
@@ -2426,7 +2716,21 @@ uri: RulesetRulesActionParametersUri
 
 A URI rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#uri Ruleset#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#uri Ruleset#uri}
+
+---
+
+##### `values`<sup>Optional</sup> <a name="values" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The cache tag values for set_cache_tags action.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#values Ruleset#values}
 
 ---
 
@@ -2460,7 +2764,7 @@ name: str
 
 Name of the compression algorithm to enable. Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -2498,7 +2802,7 @@ css: bool | IResolvable
 
 Whether to minify CSS files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#css Ruleset#css}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#css Ruleset#css}
 
 ---
 
@@ -2512,7 +2816,7 @@ html: bool | IResolvable
 
 Whether to minify HTML files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#html Ruleset#html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#html Ruleset#html}
 
 ---
 
@@ -2526,7 +2830,7 @@ js: bool | IResolvable
 
 Whether to minify JavaScript files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#js Ruleset#js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#js Ruleset#js}
 
 ---
 
@@ -2562,7 +2866,7 @@ mode: str
 
 The browser TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -2576,7 +2880,7 @@ default: typing.Union[int, float]
 
 The browser TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -2616,7 +2920,7 @@ cache_by_device_type: bool | IResolvable
 
 Whether to separate cached content based on the visitor's device type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
 
 ---
 
@@ -2630,7 +2934,7 @@ cache_deception_armor: bool | IResolvable
 
 Whether to protect from web cache deception attacks, while allowing static assets to be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
 
 ---
 
@@ -2644,7 +2948,7 @@ custom_key: RulesetRulesActionParametersCacheKeyCustomKey
 
 Which components of the request are included or excluded from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
 
 ---
 
@@ -2658,7 +2962,7 @@ ignore_query_strings_order: bool | IResolvable
 
 Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
 
 ---
 
@@ -2700,7 +3004,7 @@ cookie: RulesetRulesActionParametersCacheKeyCustomKeyCookie
 
 Which cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cookie Ruleset#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cookie Ruleset#cookie}
 
 ---
 
@@ -2714,7 +3018,7 @@ header: RulesetRulesActionParametersCacheKeyCustomKeyHeader
 
 Which headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#header Ruleset#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#header Ruleset#header}
 
 ---
 
@@ -2728,7 +3032,7 @@ host: RulesetRulesActionParametersCacheKeyCustomKeyHost
 
 How to use the host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -2742,7 +3046,7 @@ query_string: RulesetRulesActionParametersCacheKeyCustomKeyQueryString
 
 Which query string parameters to include in or exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#query_string Ruleset#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#query_string Ruleset#query_string}
 
 ---
 
@@ -2756,7 +3060,7 @@ user: RulesetRulesActionParametersCacheKeyCustomKeyUser
 
 How to use characteristics of the request user agent in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#user Ruleset#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#user Ruleset#user}
 
 ---
 
@@ -2794,7 +3098,7 @@ A list of cookies to check for the presence of.
 
 The presence of these cookies is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -2808,7 +3112,7 @@ include: typing.List[str]
 
 A list of cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -2850,7 +3154,7 @@ A list of headers to check for the presence of.
 
 The presence of these headers is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -2866,7 +3170,7 @@ A mapping of header names to a list of values.
 
 If a header is present in the request and contains any of the values provided, its value is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#contains Ruleset#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#contains Ruleset#contains}
 
 ---
 
@@ -2880,7 +3184,7 @@ exclude_origin: bool | IResolvable
 
 Whether to exclude the origin header in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
 
 ---
 
@@ -2894,7 +3198,7 @@ include: typing.List[str]
 
 A list of headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -2928,7 +3232,7 @@ resolved: bool | IResolvable
 
 Whether to use the resolved host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#resolved Ruleset#resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#resolved Ruleset#resolved}
 
 ---
 
@@ -2964,7 +3268,7 @@ exclude: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude
 
 Which query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#exclude Ruleset#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#exclude Ruleset#exclude}
 
 ---
 
@@ -2978,7 +3282,7 @@ include: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude
 
 Which query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -3014,7 +3318,7 @@ all: bool | IResolvable
 
 Whether to exclude all query string parameters from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -3028,7 +3332,7 @@ list: typing.List[str]
 
 A list of query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -3064,7 +3368,7 @@ all: bool | IResolvable
 
 Whether to include all query string parameters in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -3078,7 +3382,7 @@ list: typing.List[str]
 
 A list of query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -3116,7 +3420,7 @@ device_type: bool | IResolvable
 
 Whether to use the user agent's device type in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#device_type Ruleset#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#device_type Ruleset#device_type}
 
 ---
 
@@ -3130,7 +3434,7 @@ geo: bool | IResolvable
 
 Whether to use the user agents's country in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#geo Ruleset#geo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#geo Ruleset#geo}
 
 ---
 
@@ -3144,7 +3448,7 @@ lang: bool | IResolvable
 
 Whether to use the user agent's language in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#lang Ruleset#lang}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#lang Ruleset#lang}
 
 ---
 
@@ -3182,7 +3486,7 @@ Whether Cache Reserve is enabled.
 
 If this is true and a request meets eligibility criteria, Cloudflare will write the resource to Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#eligible Ruleset#eligible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#eligible Ruleset#eligible}
 
 ---
 
@@ -3196,7 +3500,7 @@ minimum_file_size: typing.Union[int, float]
 
 The minimum file size eligible for storage in Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
 
 ---
 
@@ -3230,7 +3534,7 @@ name: str
 
 The name of the cookie.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3268,7 +3572,7 @@ mode: str
 
 The edge TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -3282,7 +3586,7 @@ default: typing.Union[int, float]
 
 The edge TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -3296,7 +3600,7 @@ status_code_ttl: IResolvable | typing.List[RulesetRulesActionParametersEdgeTtlSt
 
 A list of TTLs to apply to specific status codes or status code ranges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
 
 ---
 
@@ -3336,7 +3640,7 @@ The time to cache the response for (in seconds).
 
 A value of 0 is equivalent to setting the cache control header with the value "no-cache". A value of -1 is equivalent to setting the cache control header with the value of "no-store".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3350,7 +3654,7 @@ status_code: typing.Union[int, float]
 
 A single status code to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3364,7 +3668,7 @@ status_code_range: RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRan
 
 A range of status codes to apply the TTL to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
 
 ---
 
@@ -3400,7 +3704,7 @@ from: typing.Union[int, float]
 
 The lower bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#from Ruleset#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#from Ruleset#from}
 
 ---
 
@@ -3414,7 +3718,7 @@ to: typing.Union[int, float]
 
 The upper bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#to Ruleset#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#to Ruleset#to}
 
 ---
 
@@ -3450,7 +3754,7 @@ key: str
 
 An expression that evaluates to the list lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#key Ruleset#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#key Ruleset#key}
 
 ---
 
@@ -3464,7 +3768,7 @@ name: str
 
 The name of the list to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -3502,7 +3806,7 @@ target_url: RulesetRulesActionParametersFromValueTargetUrl
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#target_url Ruleset#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#target_url Ruleset#target_url}
 
 ---
 
@@ -3516,7 +3820,7 @@ preserve_query_string: bool | IResolvable
 
 Whether to keep the query string of the original request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
 
 ---
 
@@ -3530,7 +3834,7 @@ status_code: typing.Union[int, float]
 
 The status code to use for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -3566,7 +3870,7 @@ expression: str
 
 An expression that evaluates to a URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3580,7 +3884,7 @@ value: str
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -3618,7 +3922,7 @@ operation: str
 
 The operation to perform on the header. Available values: "add", "set", "remove".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#operation Ruleset#operation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -3632,7 +3936,7 @@ expression: str
 
 An expression that evaluates to a value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -3646,7 +3950,57 @@ value: str
 
 A static value for the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
+
+---
+
+### RulesetRulesActionParametersImmutable <a name="RulesetRulesActionParametersImmutable" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersImmutable(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -3680,7 +4034,339 @@ public_key: str
 
 The public key to encrypt matched data logs with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#public_key Ruleset#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#public_key Ruleset#public_key}
+
+---
+
+### RulesetRulesActionParametersMaxAge <a name="RulesetRulesActionParametersMaxAge" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersMaxAge(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge.property.value">value</a></code> | <code>typing.Union[int, float]</code> | The value for the directive in seconds. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
+
+---
+
+### RulesetRulesActionParametersMustRevalidate <a name="RulesetRulesActionParametersMustRevalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersMustRevalidate(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+### RulesetRulesActionParametersMustUnderstand <a name="RulesetRulesActionParametersMustUnderstand" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersMustUnderstand(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+### RulesetRulesActionParametersNoCache <a name="RulesetRulesActionParametersNoCache" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersNoCache(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  qualifiers: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache.property.qualifiers">qualifiers</a></code> | <code>typing.List[str]</code> | The qualifiers for the directive. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `qualifiers`<sup>Optional</sup> <a name="qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache.property.qualifiers"></a>
+
+```python
+qualifiers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The qualifiers for the directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+
+---
+
+### RulesetRulesActionParametersNoStore <a name="RulesetRulesActionParametersNoStore" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersNoStore(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+### RulesetRulesActionParametersNoTransform <a name="RulesetRulesActionParametersNoTransform" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersNoTransform(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -3716,7 +4402,7 @@ host: str
 
 A resolved host to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -3730,7 +4416,7 @@ port: typing.Union[int, float]
 
 A destination port to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#port Ruleset#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#port Ruleset#port}
 
 ---
 
@@ -3772,7 +4458,7 @@ action: str
 
 An action to override all rules with. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -3786,7 +4472,7 @@ categories: IResolvable | typing.List[RulesetRulesActionParametersOverridesCateg
 
 A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#categories Ruleset#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#categories Ruleset#categories}
 
 ---
 
@@ -3800,7 +4486,7 @@ enabled: bool | IResolvable
 
 Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -3814,7 +4500,7 @@ rules: IResolvable | typing.List[RulesetRulesActionParametersOverridesRules]
 
 A list of rule-level overrides. This option has the highest precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -3831,7 +4517,7 @@ A sensitivity level to set for all rules.
 This option has lower precedence than rule and category overrides and is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -3871,7 +4557,7 @@ category: str
 
 The name of the category to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#category Ruleset#category}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#category Ruleset#category}
 
 ---
 
@@ -3885,7 +4571,7 @@ action: str
 
 The action to override rules in the category with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -3899,7 +4585,7 @@ enabled: bool | IResolvable
 
 Whether to enable execution of rules in the category.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -3916,7 +4602,7 @@ The sensitivity level to use for rules in the category.
 This option is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
 
 ---
 
@@ -3958,7 +4644,7 @@ id: str
 
 The ID of the rule to override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -3975,7 +4661,7 @@ action: str
 
 The action to override the rule with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -3989,7 +4675,7 @@ enabled: bool | IResolvable
 
 Whether to enable execution of the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4003,7 +4689,7 @@ score_threshold: typing.Union[int, float]
 
 The score threshold to use for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
 
 ---
 
@@ -4020,7 +4706,173 @@ The sensitivity level to use for the rule.
 This option is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+
+---
+
+### RulesetRulesActionParametersPrivate <a name="RulesetRulesActionParametersPrivate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersPrivate(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  qualifiers: typing.List[str] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate.property.qualifiers">qualifiers</a></code> | <code>typing.List[str]</code> | The qualifiers for the directive. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `qualifiers`<sup>Optional</sup> <a name="qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate.property.qualifiers"></a>
+
+```python
+qualifiers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The qualifiers for the directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+
+---
+
+### RulesetRulesActionParametersProxyRevalidate <a name="RulesetRulesActionParametersProxyRevalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersProxyRevalidate(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+### RulesetRulesActionParametersPublic <a name="RulesetRulesActionParametersPublic" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersPublic(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -4056,7 +4908,7 @@ name: str
 
 The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4070,7 +4922,7 @@ preserve_duplicates: bool | IResolvable
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -4104,7 +4956,7 @@ name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4142,7 +4994,7 @@ content: str
 
 The content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -4156,7 +5008,7 @@ content_type: str
 
 The type of the content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -4170,7 +5022,7 @@ status_code: typing.Union[int, float]
 
 The status code to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -4206,7 +5058,7 @@ name: str
 
 The name of the response header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4220,7 +5072,7 @@ preserve_duplicates: bool | IResolvable
 
 Whether to log duplicate values of the same header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
 
 ---
 
@@ -4254,7 +5106,73 @@ disable_stale_while_updating: bool | IResolvable
 
 Whether Cloudflare should disable serving stale content while getting the latest content from the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+
+---
+
+### RulesetRulesActionParametersSMaxage <a name="RulesetRulesActionParametersSMaxage" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersSMaxage(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage.property.value">value</a></code> | <code>typing.Union[int, float]</code> | The value for the directive in seconds. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4288,7 +5206,139 @@ value: str
 
 A value to override the SNI to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
+
+---
+
+### RulesetRulesActionParametersStaleIfError <a name="RulesetRulesActionParametersStaleIfError" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersStaleIfError(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError.property.value">value</a></code> | <code>typing.Union[int, float]</code> | The value for the directive in seconds. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
+
+---
+
+### RulesetRulesActionParametersStaleWhileRevalidate <a name="RulesetRulesActionParametersStaleWhileRevalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersStaleWhileRevalidate(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate.property.operation">operation</a></code> | <code>str</code> | The operation to perform. Available values: "set", "remove". |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether to apply the directive only to Cloudflare's cache. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate.property.value">value</a></code> | <code>typing.Union[int, float]</code> | The value for the directive in seconds. |
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+##### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4322,7 +5372,7 @@ name: str
 
 The name of the header.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -4358,7 +5408,7 @@ path: RulesetRulesActionParametersUriPath
 
 A URI path rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#path Ruleset#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#path Ruleset#path}
 
 ---
 
@@ -4372,7 +5422,7 @@ query: RulesetRulesActionParametersUriQuery
 
 A URI query rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#query Ruleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#query Ruleset#query}
 
 ---
 
@@ -4408,7 +5458,7 @@ expression: str
 
 An expression that evaluates to a value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -4422,7 +5472,7 @@ value: str
 
 A value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4458,7 +5508,7 @@ expression: str
 
 An expression that evaluates to a value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -4472,7 +5522,7 @@ value: str
 
 A value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -4508,7 +5558,7 @@ password_expression: str
 
 An expression that selects the password used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
 
 ---
 
@@ -4522,7 +5572,7 @@ username_expression: str
 
 An expression that selects the user ID used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
 
 ---
 
@@ -4556,7 +5606,7 @@ enabled: bool | IResolvable
 
 Whether to generate a log when the rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -4604,7 +5654,7 @@ characteristics: typing.List[str]
 
 Characteristics of the request on which the rate limit counter will be incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
 
 ---
 
@@ -4618,7 +5668,7 @@ period: typing.Union[int, float]
 
 Period in seconds over which the counter is being incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#period Ruleset#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#period Ruleset#period}
 
 ---
 
@@ -4634,7 +5684,7 @@ An expression that defines when the rate limit counter should be incremented.
 
 It defaults to the same as the rule's expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
 
 ---
 
@@ -4648,7 +5698,7 @@ mitigation_timeout: typing.Union[int, float]
 
 Period of time in seconds after which the action will be disabled following its first execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
 
 ---
 
@@ -4662,7 +5712,7 @@ requests_per_period: typing.Union[int, float]
 
 The threshold of requests per period after which the action will be executed for the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
 
 ---
 
@@ -4676,7 +5726,7 @@ requests_to_origin: bool | IResolvable
 
 Whether counting is only performed when an origin is reached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
 
 ---
 
@@ -4690,7 +5740,7 @@ score_per_period: typing.Union[int, float]
 
 The score threshold per period for which the action will be executed the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
 
 ---
 
@@ -4704,7 +5754,7 @@ score_response_header_name: str
 
 A response header name provided by the origin, which contains the score to increment rate limit counter with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
 
 ---
 
@@ -7169,7 +8219,7 @@ A list of cookies to check for the presence of.
 
 The presence of these cookies is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -7179,7 +8229,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -7202,7 +8252,7 @@ A list of headers to check for the presence of.
 
 The presence of these headers is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
 
 ---
 
@@ -7214,7 +8264,7 @@ A mapping of header names to a list of values.
 
 If a header is present in the request and contains any of the values provided, its value is included in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#contains Ruleset#contains}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#contains Ruleset#contains}
 
 ---
 
@@ -7224,7 +8274,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to exclude the origin header in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
 
 ---
 
@@ -7234,7 +8284,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -7252,7 +8302,7 @@ def put_host(
 
 Whether to use the resolved host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#resolved Ruleset#resolved}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#resolved Ruleset#resolved}
 
 ---
 
@@ -7271,7 +8321,7 @@ def put_query_string(
 
 Which query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#exclude Ruleset#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#exclude Ruleset#exclude}
 
 ---
 
@@ -7281,7 +8331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Which query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#include Ruleset#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#include Ruleset#include}
 
 ---
 
@@ -7301,7 +8351,7 @@ def put_user(
 
 Whether to use the user agent's device type in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#device_type Ruleset#device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#device_type Ruleset#device_type}
 
 ---
 
@@ -7311,7 +8361,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to use the user agents's country in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#geo Ruleset#geo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#geo Ruleset#geo}
 
 ---
 
@@ -7321,7 +8371,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to use the user agent's language in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#lang Ruleset#lang}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#lang Ruleset#lang}
 
 ---
 
@@ -8422,7 +9472,7 @@ def put_exclude(
 
 Whether to exclude all query string parameters from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -8432,7 +9482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of query string parameters to exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -8451,7 +9501,7 @@ def put_include(
 
 Whether to include all query string parameters in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#all Ruleset#all}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#all Ruleset#all}
 
 ---
 
@@ -8461,7 +9511,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of query string parameters to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#list Ruleset#list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#list Ruleset#list}
 
 ---
 
@@ -9179,7 +10229,7 @@ def put_custom_key(
 
 Which cookies to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cookie Ruleset#cookie}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cookie Ruleset#cookie}
 
 ---
 
@@ -9189,7 +10239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Which headers to include in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#header Ruleset#header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#header Ruleset#header}
 
 ---
 
@@ -9199,7 +10249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How to use the host in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -9209,7 +10259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Which query string parameters to include in or exclude from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#query_string Ruleset#query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#query_string Ruleset#query_string}
 
 ---
 
@@ -9219,7 +10269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How to use characteristics of the request user agent in the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#user Ruleset#user}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#user Ruleset#user}
 
 ---
 
@@ -10997,7 +12047,7 @@ def put_status_code_range(
 
 The lower bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#from Ruleset#from}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#from Ruleset#from}
 
 ---
 
@@ -11007,7 +12057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The upper bound of the range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#to Ruleset#to}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#to Ruleset#to}
 
 ---
 
@@ -12031,7 +13081,7 @@ def put_target_url(
 
 An expression that evaluates to a URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -12041,7 +13091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -13021,6 +14071,331 @@ internal_value: IResolvable | RulesetRulesActionParametersHeaders
 ---
 
 
+### RulesetRulesActionParametersImmutableOutputReference <a name="RulesetRulesActionParametersImmutableOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersImmutableOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable">RulesetRulesActionParametersImmutable</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersImmutable
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable">RulesetRulesActionParametersImmutable</a>
+
+---
+
+
 ### RulesetRulesActionParametersMatchedDataOutputReference <a name="RulesetRulesActionParametersMatchedDataOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference.Initializer"></a>
@@ -13313,6 +14688,2014 @@ internal_value: IResolvable | RulesetRulesActionParametersMatchedData
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a>
+
+---
+
+
+### RulesetRulesActionParametersMaxAgeOutputReference <a name="RulesetRulesActionParametersMaxAgeOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersMaxAgeOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge">RulesetRulesActionParametersMaxAge</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.valueInput"></a>
+
+```python
+value_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersMaxAge
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge">RulesetRulesActionParametersMaxAge</a>
+
+---
+
+
+### RulesetRulesActionParametersMustRevalidateOutputReference <a name="RulesetRulesActionParametersMustRevalidateOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersMustRevalidateOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate">RulesetRulesActionParametersMustRevalidate</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersMustRevalidate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate">RulesetRulesActionParametersMustRevalidate</a>
+
+---
+
+
+### RulesetRulesActionParametersMustUnderstandOutputReference <a name="RulesetRulesActionParametersMustUnderstandOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersMustUnderstandOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand">RulesetRulesActionParametersMustUnderstand</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersMustUnderstand
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand">RulesetRulesActionParametersMustUnderstand</a>
+
+---
+
+
+### RulesetRulesActionParametersNoCacheOutputReference <a name="RulesetRulesActionParametersNoCacheOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersNoCacheOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.resetQualifiers">reset_qualifiers</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+##### `reset_qualifiers` <a name="reset_qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.resetQualifiers"></a>
+
+```python
+def reset_qualifiers() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.qualifiersInput">qualifiers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.qualifiers">qualifiers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache">RulesetRulesActionParametersNoCache</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `qualifiers_input`<sup>Optional</sup> <a name="qualifiers_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.qualifiersInput"></a>
+
+```python
+qualifiers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `qualifiers`<sup>Required</sup> <a name="qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.qualifiers"></a>
+
+```python
+qualifiers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersNoCache
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache">RulesetRulesActionParametersNoCache</a>
+
+---
+
+
+### RulesetRulesActionParametersNoStoreOutputReference <a name="RulesetRulesActionParametersNoStoreOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersNoStoreOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore">RulesetRulesActionParametersNoStore</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersNoStore
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore">RulesetRulesActionParametersNoStore</a>
+
+---
+
+
+### RulesetRulesActionParametersNoTransformOutputReference <a name="RulesetRulesActionParametersNoTransformOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersNoTransformOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform">RulesetRulesActionParametersNoTransform</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersNoTransform
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform">RulesetRulesActionParametersNoTransform</a>
 
 ---
 
@@ -13712,15 +17095,28 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putFromList">put_from_list</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putFromValue">put_from_value</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putHeaders">put_headers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putImmutable">put_immutable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMatchedData">put_matched_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMaxAge">put_max_age</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustRevalidate">put_must_revalidate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustUnderstand">put_must_understand</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoCache">put_no_cache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoStore">put_no_store</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoTransform">put_no_transform</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOrigin">put_origin</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putOverrides">put_overrides</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPrivate">put_private</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putProxyRevalidate">put_proxy_revalidate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPublic">put_public</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putRawResponseFields">put_raw_response_fields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putRequestFields">put_request_fields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putResponse">put_response</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putResponseFields">put_response_fields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putServeStale">put_serve_stale</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putSMaxage">put_s_maxage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putSni">put_sni</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleIfError">put_stale_if_error</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleWhileRevalidate">put_stale_while_revalidate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putTransformedRequestFields">put_transformed_request_fields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putUri">put_uri</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetAdditionalCacheablePorts">reset_additional_cacheable_ports</a></code> | *No description.* |
@@ -13741,6 +17137,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetDisableZaraz">reset_disable_zaraz</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetEdgeTtl">reset_edge_ttl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetEmailObfuscation">reset_email_obfuscation</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetExpression">reset_expression</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetFonts">reset_fonts</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetFromList">reset_from_list</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetFromValue">reset_from_value</a></code> | *No description.* |
@@ -13748,9 +17145,17 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetHostHeader">reset_host_header</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetHotlinkProtection">reset_hotlink_protection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetImmutable">reset_immutable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetIncrement">reset_increment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMatchedData">reset_matched_data</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMaxAge">reset_max_age</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMirage">reset_mirage</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMustRevalidate">reset_must_revalidate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMustUnderstand">reset_must_understand</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetNoCache">reset_no_cache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetNoStore">reset_no_store</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetNoTransform">reset_no_transform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOperation">reset_operation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOpportunisticEncryption">reset_opportunistic_encryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOrigin">reset_origin</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOriginCacheControl">reset_origin_cache_control</a></code> | *No description.* |
@@ -13758,7 +17163,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOverrides">reset_overrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPhases">reset_phases</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPolish">reset_polish</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPrivate">reset_private</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetProducts">reset_products</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetProxyRevalidate">reset_proxy_revalidate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPublic">reset_public</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetRawResponseFields">reset_raw_response_fields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetReadTimeout">reset_read_timeout</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetRequestBodyBuffering">reset_request_body_buffering</a></code> | *No description.* |
@@ -13774,12 +17182,19 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSecurityLevel">reset_security_level</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetServerSideExcludes">reset_server_side_excludes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetServeStale">reset_serve_stale</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSMaxage">reset_s_maxage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSni">reset_sni</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSsl">reset_ssl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStaleIfError">reset_stale_if_error</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStaleWhileRevalidate">reset_stale_while_revalidate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStatusCode">reset_status_code</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStripEtags">reset_strip_etags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStripLastModified">reset_strip_last_modified</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStripSetCookie">reset_strip_set_cookie</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSxg">reset_sxg</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetTransformedRequestFields">reset_transformed_request_fields</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetUri">reset_uri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetValues">reset_values</a></code> | *No description.* |
 
 ---
 
@@ -13985,7 +17400,7 @@ def put_autominify(
 
 Whether to minify CSS files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#css Ruleset#css}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#css Ruleset#css}
 
 ---
 
@@ -13995,7 +17410,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to minify HTML files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#html Ruleset#html}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#html Ruleset#html}
 
 ---
 
@@ -14005,7 +17420,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to minify JavaScript files.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#js Ruleset#js}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#js Ruleset#js}
 
 ---
 
@@ -14024,7 +17439,7 @@ def put_browser_ttl(
 
 The browser TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -14034,7 +17449,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The browser TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -14055,7 +17470,7 @@ def put_cache_key(
 
 Whether to separate cached content based on the visitor's device type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
 
 ---
 
@@ -14065,7 +17480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to protect from web cache deception attacks, while allowing static assets to be cached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
 
 ---
 
@@ -14075,7 +17490,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Which components of the request are included or excluded from the cache key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
 
 ---
 
@@ -14085,7 +17500,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
 
 ---
 
@@ -14106,7 +17521,7 @@ Whether Cache Reserve is enabled.
 
 If this is true and a request meets eligibility criteria, Cloudflare will write the resource to Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#eligible Ruleset#eligible}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#eligible Ruleset#eligible}
 
 ---
 
@@ -14116,7 +17531,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The minimum file size eligible for storage in Cache Reserve.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
 
 ---
 
@@ -14150,7 +17565,7 @@ def put_edge_ttl(
 
 The edge TTL mode. Available values: "respect_origin", "bypass_by_default", "override_origin".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mode Ruleset#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mode Ruleset#mode}
 
 ---
 
@@ -14160,7 +17575,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The edge TTL (in seconds) if you choose the "override_origin" mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#default Ruleset#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#default Ruleset#default}
 
 ---
 
@@ -14170,7 +17585,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of TTLs to apply to specific status codes or status code ranges.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
 
 ---
 
@@ -14189,7 +17604,7 @@ def put_from_list(
 
 An expression that evaluates to the list lookup key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#key Ruleset#key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#key Ruleset#key}
 
 ---
 
@@ -14199,7 +17614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the list to match against.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#name Ruleset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#name Ruleset#name}
 
 ---
 
@@ -14219,7 +17634,7 @@ def put_from_value(
 
 A URL to redirect the request to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#target_url Ruleset#target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#target_url Ruleset#target_url}
 
 ---
 
@@ -14229,7 +17644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to keep the query string of the original request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
 
 ---
 
@@ -14239,7 +17654,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The status code to use for the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -14257,6 +17672,35 @@ def put_headers(
 
 ---
 
+##### `put_immutable` <a name="put_immutable" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putImmutable"></a>
+
+```python
+def put_immutable(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putImmutable.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putImmutable.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
 ##### `put_matched_data` <a name="put_matched_data" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMatchedData"></a>
 
 ```python
@@ -14271,7 +17715,203 @@ def put_matched_data(
 
 The public key to encrypt matched data logs with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#public_key Ruleset#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#public_key Ruleset#public_key}
+
+---
+
+##### `put_max_age` <a name="put_max_age" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMaxAge"></a>
+
+```python
+def put_max_age(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMaxAge.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMaxAge.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+###### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMaxAge.parameter.value"></a>
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
+
+---
+
+##### `put_must_revalidate` <a name="put_must_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustRevalidate"></a>
+
+```python
+def put_must_revalidate(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustRevalidate.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustRevalidate.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `put_must_understand` <a name="put_must_understand" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustUnderstand"></a>
+
+```python
+def put_must_understand(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustUnderstand.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putMustUnderstand.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `put_no_cache` <a name="put_no_cache" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoCache"></a>
+
+```python
+def put_no_cache(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  qualifiers: typing.List[str] = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoCache.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoCache.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+###### `qualifiers`<sup>Optional</sup> <a name="qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoCache.parameter.qualifiers"></a>
+
+- *Type:* typing.List[str]
+
+The qualifiers for the directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+
+---
+
+##### `put_no_store` <a name="put_no_store" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoStore"></a>
+
+```python
+def put_no_store(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoStore.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoStore.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `put_no_transform` <a name="put_no_transform" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoTransform"></a>
+
+```python
+def put_no_transform(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoTransform.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putNoTransform.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -14290,7 +17930,7 @@ def put_origin(
 
 A resolved host to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#host Ruleset#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#host Ruleset#host}
 
 ---
 
@@ -14300,7 +17940,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A destination port to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#port Ruleset#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#port Ruleset#port}
 
 ---
 
@@ -14322,7 +17962,7 @@ def put_overrides(
 
 An action to override all rules with. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#action Ruleset#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#action Ruleset#action}
 
 ---
 
@@ -14332,7 +17972,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#categories Ruleset#categories}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#categories Ruleset#categories}
 
 ---
 
@@ -14342,7 +17982,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -14352,7 +17992,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of rule-level overrides. This option has the highest precedence.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -14365,7 +18005,105 @@ A sensitivity level to set for all rules.
 This option has lower precedence than rule and category overrides and is only applicable for DDoS phases.
 Available values: "default", "medium", "low", "eoff".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+
+---
+
+##### `put_private` <a name="put_private" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPrivate"></a>
+
+```python
+def put_private(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  qualifiers: typing.List[str] = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPrivate.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPrivate.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+###### `qualifiers`<sup>Optional</sup> <a name="qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPrivate.parameter.qualifiers"></a>
+
+- *Type:* typing.List[str]
+
+The qualifiers for the directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+
+---
+
+##### `put_proxy_revalidate` <a name="put_proxy_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putProxyRevalidate"></a>
+
+```python
+def put_proxy_revalidate(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putProxyRevalidate.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putProxyRevalidate.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+##### `put_public` <a name="put_public" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPublic"></a>
+
+```python
+def put_public(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPublic.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putPublic.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
 
 ---
 
@@ -14413,7 +18151,7 @@ def put_response(
 
 The content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -14423,7 +18161,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The type of the content to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -14433,7 +18171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The status code to return.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code Ruleset#status_code}
 
 ---
 
@@ -14465,7 +18203,47 @@ def put_serve_stale(
 
 Whether Cloudflare should disable serving stale content while getting the latest content from the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+
+---
+
+##### `put_s_maxage` <a name="put_s_maxage" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putSMaxage"></a>
+
+```python
+def put_s_maxage(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putSMaxage.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putSMaxage.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+###### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putSMaxage.parameter.value"></a>
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -14483,7 +18261,87 @@ def put_sni(
 
 A value to override the SNI to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
+
+---
+
+##### `put_stale_if_error` <a name="put_stale_if_error" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleIfError"></a>
+
+```python
+def put_stale_if_error(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleIfError.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleIfError.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+###### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleIfError.parameter.value"></a>
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
+
+---
+
+##### `put_stale_while_revalidate` <a name="put_stale_while_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleWhileRevalidate"></a>
+
+```python
+def put_stale_while_revalidate(
+  operation: str,
+  cloudflare_only: bool | IResolvable = None,
+  value: typing.Union[int, float] = None
+) -> None
+```
+
+###### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleWhileRevalidate.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform. Available values: "set", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
+
+---
+
+###### `cloudflare_only`<sup>Optional</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleWhileRevalidate.parameter.cloudflareOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to apply the directive only to Cloudflare's cache.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+
+---
+
+###### `value`<sup>Optional</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.putStaleWhileRevalidate.parameter.value"></a>
+
+- *Type:* typing.Union[int, float]
+
+The value for the directive in seconds.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -14516,7 +18374,7 @@ def put_uri(
 
 A URI path rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#path Ruleset#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#path Ruleset#path}
 
 ---
 
@@ -14526,7 +18384,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A URI query rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#query Ruleset#query}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#query Ruleset#query}
 
 ---
 
@@ -14638,6 +18496,12 @@ def reset_edge_ttl() -> None
 def reset_email_obfuscation() -> None
 ```
 
+##### `reset_expression` <a name="reset_expression" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetExpression"></a>
+
+```python
+def reset_expression() -> None
+```
+
 ##### `reset_fonts` <a name="reset_fonts" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetFonts"></a>
 
 ```python
@@ -14680,6 +18544,12 @@ def reset_hotlink_protection() -> None
 def reset_id() -> None
 ```
 
+##### `reset_immutable` <a name="reset_immutable" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetImmutable"></a>
+
+```python
+def reset_immutable() -> None
+```
+
 ##### `reset_increment` <a name="reset_increment" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetIncrement"></a>
 
 ```python
@@ -14692,10 +18562,52 @@ def reset_increment() -> None
 def reset_matched_data() -> None
 ```
 
+##### `reset_max_age` <a name="reset_max_age" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMaxAge"></a>
+
+```python
+def reset_max_age() -> None
+```
+
 ##### `reset_mirage` <a name="reset_mirage" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMirage"></a>
 
 ```python
 def reset_mirage() -> None
+```
+
+##### `reset_must_revalidate` <a name="reset_must_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMustRevalidate"></a>
+
+```python
+def reset_must_revalidate() -> None
+```
+
+##### `reset_must_understand` <a name="reset_must_understand" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetMustUnderstand"></a>
+
+```python
+def reset_must_understand() -> None
+```
+
+##### `reset_no_cache` <a name="reset_no_cache" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetNoCache"></a>
+
+```python
+def reset_no_cache() -> None
+```
+
+##### `reset_no_store` <a name="reset_no_store" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetNoStore"></a>
+
+```python
+def reset_no_store() -> None
+```
+
+##### `reset_no_transform` <a name="reset_no_transform" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetNoTransform"></a>
+
+```python
+def reset_no_transform() -> None
+```
+
+##### `reset_operation` <a name="reset_operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOperation"></a>
+
+```python
+def reset_operation() -> None
 ```
 
 ##### `reset_opportunistic_encryption` <a name="reset_opportunistic_encryption" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetOpportunisticEncryption"></a>
@@ -14740,10 +18652,28 @@ def reset_phases() -> None
 def reset_polish() -> None
 ```
 
+##### `reset_private` <a name="reset_private" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPrivate"></a>
+
+```python
+def reset_private() -> None
+```
+
 ##### `reset_products` <a name="reset_products" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetProducts"></a>
 
 ```python
 def reset_products() -> None
+```
+
+##### `reset_proxy_revalidate` <a name="reset_proxy_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetProxyRevalidate"></a>
+
+```python
+def reset_proxy_revalidate() -> None
+```
+
+##### `reset_public` <a name="reset_public" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetPublic"></a>
+
+```python
+def reset_public() -> None
 ```
 
 ##### `reset_raw_response_fields` <a name="reset_raw_response_fields" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetRawResponseFields"></a>
@@ -14836,6 +18766,12 @@ def reset_server_side_excludes() -> None
 def reset_serve_stale() -> None
 ```
 
+##### `reset_s_maxage` <a name="reset_s_maxage" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSMaxage"></a>
+
+```python
+def reset_s_maxage() -> None
+```
+
 ##### `reset_sni` <a name="reset_sni" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSni"></a>
 
 ```python
@@ -14848,10 +18784,40 @@ def reset_sni() -> None
 def reset_ssl() -> None
 ```
 
+##### `reset_stale_if_error` <a name="reset_stale_if_error" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStaleIfError"></a>
+
+```python
+def reset_stale_if_error() -> None
+```
+
+##### `reset_stale_while_revalidate` <a name="reset_stale_while_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStaleWhileRevalidate"></a>
+
+```python
+def reset_stale_while_revalidate() -> None
+```
+
 ##### `reset_status_code` <a name="reset_status_code" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStatusCode"></a>
 
 ```python
 def reset_status_code() -> None
+```
+
+##### `reset_strip_etags` <a name="reset_strip_etags" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStripEtags"></a>
+
+```python
+def reset_strip_etags() -> None
+```
+
+##### `reset_strip_last_modified` <a name="reset_strip_last_modified" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStripLastModified"></a>
+
+```python
+def reset_strip_last_modified() -> None
+```
+
+##### `reset_strip_set_cookie` <a name="reset_strip_set_cookie" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetStripSetCookie"></a>
+
+```python
+def reset_strip_set_cookie() -> None
 ```
 
 ##### `reset_sxg` <a name="reset_sxg" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetSxg"></a>
@@ -14872,6 +18838,12 @@ def reset_transformed_request_fields() -> None
 def reset_uri() -> None
 ```
 
+##### `reset_values` <a name="reset_values" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.resetValues"></a>
+
+```python
+def reset_values() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -14889,15 +18861,28 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromList">from_list</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStructOutputReference">RulesetRulesActionParametersFromListStructOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromValue">from_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValueOutputReference">RulesetRulesActionParametersFromValueOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersHeadersMap">RulesetRulesActionParametersHeadersMap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.immutable">immutable</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference">RulesetRulesActionParametersImmutableOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.matchedData">matched_data</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference">RulesetRulesActionParametersMatchedDataOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.maxAge">max_age</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference">RulesetRulesActionParametersMaxAgeOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustRevalidate">must_revalidate</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference">RulesetRulesActionParametersMustRevalidateOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustUnderstand">must_understand</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference">RulesetRulesActionParametersMustUnderstandOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noCache">no_cache</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference">RulesetRulesActionParametersNoCacheOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noStore">no_store</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference">RulesetRulesActionParametersNoStoreOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noTransform">no_transform</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference">RulesetRulesActionParametersNoTransformOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.origin">origin</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOriginOutputReference">RulesetRulesActionParametersOriginOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overrides">overrides</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference">RulesetRulesActionParametersOverridesOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.private">private</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference">RulesetRulesActionParametersPrivateOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.proxyRevalidate">proxy_revalidate</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference">RulesetRulesActionParametersProxyRevalidateOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.public">public</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference">RulesetRulesActionParametersPublicOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rawResponseFields">raw_response_fields</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFieldsList">RulesetRulesActionParametersRawResponseFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.requestFields">request_fields</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersRequestFieldsList">RulesetRulesActionParametersRequestFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.response">response</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseOutputReference">RulesetRulesActionParametersResponseOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.responseFields">response_fields</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersResponseFieldsList">RulesetRulesActionParametersResponseFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serveStale">serve_stale</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStaleOutputReference">RulesetRulesActionParametersServeStaleOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sMaxage">s_maxage</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference">RulesetRulesActionParametersSMaxageOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sni">sni</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference">RulesetRulesActionParametersSniOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleIfError">stale_if_error</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference">RulesetRulesActionParametersStaleIfErrorOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleWhileRevalidate">stale_while_revalidate</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference">RulesetRulesActionParametersStaleWhileRevalidateOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.transformedRequestFields">transformed_request_fields</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFieldsList">RulesetRulesActionParametersTransformedRequestFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uri">uri</a></code> | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUriOutputReference">RulesetRulesActionParametersUriOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePortsInput">additional_cacheable_ports_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
@@ -14918,6 +18903,7 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZarazInput">disable_zaraz_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.edgeTtlInput">edge_ttl_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersEdgeTtl">RulesetRulesActionParametersEdgeTtl</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscationInput">email_obfuscation_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.expressionInput">expression_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fontsInput">fonts_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromListInput">from_list_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromListStruct">RulesetRulesActionParametersFromListStruct</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fromValueInput">from_value_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersFromValue">RulesetRulesActionParametersFromValue</a></code> | *No description.* |
@@ -14925,9 +18911,17 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hostHeaderInput">host_header_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtectionInput">hotlink_protection_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.immutableInput">immutable_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable">RulesetRulesActionParametersImmutable</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.incrementInput">increment_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.matchedDataInput">matched_data_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedData">RulesetRulesActionParametersMatchedData</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.maxAgeInput">max_age_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge">RulesetRulesActionParametersMaxAge</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirageInput">mirage_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustRevalidateInput">must_revalidate_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate">RulesetRulesActionParametersMustRevalidate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustUnderstandInput">must_understand_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand">RulesetRulesActionParametersMustUnderstand</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noCacheInput">no_cache_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache">RulesetRulesActionParametersNoCache</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noStoreInput">no_store_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore">RulesetRulesActionParametersNoStore</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noTransformInput">no_transform_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform">RulesetRulesActionParametersNoTransform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryptionInput">opportunistic_encryption_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControlInput">origin_cache_control_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthruInput">origin_error_page_passthru_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -14935,7 +18929,10 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.overridesInput">overrides_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverrides">RulesetRulesActionParametersOverrides</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.phasesInput">phases_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.polishInput">polish_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.privateInput">private_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate">RulesetRulesActionParametersPrivate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.productsInput">products_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.proxyRevalidateInput">proxy_revalidate_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate">RulesetRulesActionParametersProxyRevalidate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.publicInput">public_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic">RulesetRulesActionParametersPublic</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.rawResponseFieldsInput">raw_response_fields_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersRawResponseFields">RulesetRulesActionParametersRawResponseFields</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.readTimeoutInput">read_timeout_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.requestBodyBufferingInput">request_body_buffering_input</a></code> | <code>str</code> | *No description.* |
@@ -14951,12 +18948,19 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.securityLevelInput">security_level_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludesInput">server_side_excludes_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serveStaleInput">serve_stale_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersServeStale">RulesetRulesActionParametersServeStale</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sMaxageInput">s_maxage_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage">RulesetRulesActionParametersSMaxage</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sniInput">sni_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sslInput">ssl_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleIfErrorInput">stale_if_error_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError">RulesetRulesActionParametersStaleIfError</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleWhileRevalidateInput">stale_while_revalidate_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate">RulesetRulesActionParametersStaleWhileRevalidate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.statusCodeInput">status_code_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripEtagsInput">strip_etags_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripLastModifiedInput">strip_last_modified_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripSetCookieInput">strip_set_cookie_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxgInput">sxg_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.transformedRequestFieldsInput">transformed_request_fields_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersTransformedRequestFields">RulesetRulesActionParametersTransformedRequestFields</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.uriInput">uri_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.valuesInput">values_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.additionalCacheablePorts">additional_cacheable_ports</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.assetName">asset_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.automaticHttpsRewrites">automatic_https_rewrites</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -14968,12 +18972,14 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableRum">disable_rum</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.disableZaraz">disable_zaraz</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.emailObfuscation">email_obfuscation</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.expression">expression</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fonts">fonts</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hostHeader">host_header</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.hotlinkProtection">hotlink_protection</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.increment">increment</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirage">mirage</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.opportunisticEncryption">opportunistic_encryption</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originCacheControl">origin_cache_control</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.originErrorPagePassthru">origin_error_page_passthru</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
@@ -14992,7 +18998,11 @@ def reset_uri() -> None
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.serverSideExcludes">server_side_excludes</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.ssl">ssl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripEtags">strip_etags</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripLastModified">strip_last_modified</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripSetCookie">strip_set_cookie</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxg">sxg</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.values">values</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParameters">RulesetRulesActionParameters</a></code> | *No description.* |
 
 ---
@@ -15121,6 +19131,16 @@ headers: RulesetRulesActionParametersHeadersMap
 
 ---
 
+##### `immutable`<sup>Required</sup> <a name="immutable" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.immutable"></a>
+
+```python
+immutable: RulesetRulesActionParametersImmutableOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutableOutputReference">RulesetRulesActionParametersImmutableOutputReference</a>
+
+---
+
 ##### `matched_data`<sup>Required</sup> <a name="matched_data" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.matchedData"></a>
 
 ```python
@@ -15128,6 +19148,66 @@ matched_data: RulesetRulesActionParametersMatchedDataOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMatchedDataOutputReference">RulesetRulesActionParametersMatchedDataOutputReference</a>
+
+---
+
+##### `max_age`<sup>Required</sup> <a name="max_age" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.maxAge"></a>
+
+```python
+max_age: RulesetRulesActionParametersMaxAgeOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAgeOutputReference">RulesetRulesActionParametersMaxAgeOutputReference</a>
+
+---
+
+##### `must_revalidate`<sup>Required</sup> <a name="must_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustRevalidate"></a>
+
+```python
+must_revalidate: RulesetRulesActionParametersMustRevalidateOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidateOutputReference">RulesetRulesActionParametersMustRevalidateOutputReference</a>
+
+---
+
+##### `must_understand`<sup>Required</sup> <a name="must_understand" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustUnderstand"></a>
+
+```python
+must_understand: RulesetRulesActionParametersMustUnderstandOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstandOutputReference">RulesetRulesActionParametersMustUnderstandOutputReference</a>
+
+---
+
+##### `no_cache`<sup>Required</sup> <a name="no_cache" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noCache"></a>
+
+```python
+no_cache: RulesetRulesActionParametersNoCacheOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCacheOutputReference">RulesetRulesActionParametersNoCacheOutputReference</a>
+
+---
+
+##### `no_store`<sup>Required</sup> <a name="no_store" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noStore"></a>
+
+```python
+no_store: RulesetRulesActionParametersNoStoreOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStoreOutputReference">RulesetRulesActionParametersNoStoreOutputReference</a>
+
+---
+
+##### `no_transform`<sup>Required</sup> <a name="no_transform" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noTransform"></a>
+
+```python
+no_transform: RulesetRulesActionParametersNoTransformOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransformOutputReference">RulesetRulesActionParametersNoTransformOutputReference</a>
 
 ---
 
@@ -15148,6 +19228,36 @@ overrides: RulesetRulesActionParametersOverridesOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesOutputReference">RulesetRulesActionParametersOverridesOutputReference</a>
+
+---
+
+##### `private`<sup>Required</sup> <a name="private" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.private"></a>
+
+```python
+private: RulesetRulesActionParametersPrivateOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference">RulesetRulesActionParametersPrivateOutputReference</a>
+
+---
+
+##### `proxy_revalidate`<sup>Required</sup> <a name="proxy_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.proxyRevalidate"></a>
+
+```python
+proxy_revalidate: RulesetRulesActionParametersProxyRevalidateOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference">RulesetRulesActionParametersProxyRevalidateOutputReference</a>
+
+---
+
+##### `public`<sup>Required</sup> <a name="public" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.public"></a>
+
+```python
+public: RulesetRulesActionParametersPublicOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference">RulesetRulesActionParametersPublicOutputReference</a>
 
 ---
 
@@ -15201,6 +19311,16 @@ serve_stale: RulesetRulesActionParametersServeStaleOutputReference
 
 ---
 
+##### `s_maxage`<sup>Required</sup> <a name="s_maxage" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sMaxage"></a>
+
+```python
+s_maxage: RulesetRulesActionParametersSMaxageOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference">RulesetRulesActionParametersSMaxageOutputReference</a>
+
+---
+
 ##### `sni`<sup>Required</sup> <a name="sni" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sni"></a>
 
 ```python
@@ -15208,6 +19328,26 @@ sni: RulesetRulesActionParametersSniOutputReference
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference">RulesetRulesActionParametersSniOutputReference</a>
+
+---
+
+##### `stale_if_error`<sup>Required</sup> <a name="stale_if_error" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleIfError"></a>
+
+```python
+stale_if_error: RulesetRulesActionParametersStaleIfErrorOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference">RulesetRulesActionParametersStaleIfErrorOutputReference</a>
+
+---
+
+##### `stale_while_revalidate`<sup>Required</sup> <a name="stale_while_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleWhileRevalidate"></a>
+
+```python
+stale_while_revalidate: RulesetRulesActionParametersStaleWhileRevalidateOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference">RulesetRulesActionParametersStaleWhileRevalidateOutputReference</a>
 
 ---
 
@@ -15411,6 +19551,16 @@ email_obfuscation_input: bool | IResolvable
 
 ---
 
+##### `expression_input`<sup>Optional</sup> <a name="expression_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.expressionInput"></a>
+
+```python
+expression_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `fonts_input`<sup>Optional</sup> <a name="fonts_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fontsInput"></a>
 
 ```python
@@ -15481,6 +19631,16 @@ id_input: str
 
 ---
 
+##### `immutable_input`<sup>Optional</sup> <a name="immutable_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.immutableInput"></a>
+
+```python
+immutable_input: IResolvable | RulesetRulesActionParametersImmutable
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable">RulesetRulesActionParametersImmutable</a>
+
+---
+
 ##### `increment_input`<sup>Optional</sup> <a name="increment_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.incrementInput"></a>
 
 ```python
@@ -15501,6 +19661,16 @@ matched_data_input: IResolvable | RulesetRulesActionParametersMatchedData
 
 ---
 
+##### `max_age_input`<sup>Optional</sup> <a name="max_age_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.maxAgeInput"></a>
+
+```python
+max_age_input: IResolvable | RulesetRulesActionParametersMaxAge
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge">RulesetRulesActionParametersMaxAge</a>
+
+---
+
 ##### `mirage_input`<sup>Optional</sup> <a name="mirage_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mirageInput"></a>
 
 ```python
@@ -15508,6 +19678,66 @@ mirage_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `must_revalidate_input`<sup>Optional</sup> <a name="must_revalidate_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustRevalidateInput"></a>
+
+```python
+must_revalidate_input: IResolvable | RulesetRulesActionParametersMustRevalidate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate">RulesetRulesActionParametersMustRevalidate</a>
+
+---
+
+##### `must_understand_input`<sup>Optional</sup> <a name="must_understand_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.mustUnderstandInput"></a>
+
+```python
+must_understand_input: IResolvable | RulesetRulesActionParametersMustUnderstand
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand">RulesetRulesActionParametersMustUnderstand</a>
+
+---
+
+##### `no_cache_input`<sup>Optional</sup> <a name="no_cache_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noCacheInput"></a>
+
+```python
+no_cache_input: IResolvable | RulesetRulesActionParametersNoCache
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache">RulesetRulesActionParametersNoCache</a>
+
+---
+
+##### `no_store_input`<sup>Optional</sup> <a name="no_store_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noStoreInput"></a>
+
+```python
+no_store_input: IResolvable | RulesetRulesActionParametersNoStore
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore">RulesetRulesActionParametersNoStore</a>
+
+---
+
+##### `no_transform_input`<sup>Optional</sup> <a name="no_transform_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.noTransformInput"></a>
+
+```python
+no_transform_input: IResolvable | RulesetRulesActionParametersNoTransform
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform">RulesetRulesActionParametersNoTransform</a>
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -15581,6 +19811,16 @@ polish_input: str
 
 ---
 
+##### `private_input`<sup>Optional</sup> <a name="private_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.privateInput"></a>
+
+```python
+private_input: IResolvable | RulesetRulesActionParametersPrivate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate">RulesetRulesActionParametersPrivate</a>
+
+---
+
 ##### `products_input`<sup>Optional</sup> <a name="products_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.productsInput"></a>
 
 ```python
@@ -15588,6 +19828,26 @@ products_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
+
+---
+
+##### `proxy_revalidate_input`<sup>Optional</sup> <a name="proxy_revalidate_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.proxyRevalidateInput"></a>
+
+```python
+proxy_revalidate_input: IResolvable | RulesetRulesActionParametersProxyRevalidate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate">RulesetRulesActionParametersProxyRevalidate</a>
+
+---
+
+##### `public_input`<sup>Optional</sup> <a name="public_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.publicInput"></a>
+
+```python
+public_input: IResolvable | RulesetRulesActionParametersPublic
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic">RulesetRulesActionParametersPublic</a>
 
 ---
 
@@ -15741,6 +20001,16 @@ serve_stale_input: IResolvable | RulesetRulesActionParametersServeStale
 
 ---
 
+##### `s_maxage_input`<sup>Optional</sup> <a name="s_maxage_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sMaxageInput"></a>
+
+```python
+s_maxage_input: IResolvable | RulesetRulesActionParametersSMaxage
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage">RulesetRulesActionParametersSMaxage</a>
+
+---
+
 ##### `sni_input`<sup>Optional</sup> <a name="sni_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sniInput"></a>
 
 ```python
@@ -15761,6 +20031,26 @@ ssl_input: str
 
 ---
 
+##### `stale_if_error_input`<sup>Optional</sup> <a name="stale_if_error_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleIfErrorInput"></a>
+
+```python
+stale_if_error_input: IResolvable | RulesetRulesActionParametersStaleIfError
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError">RulesetRulesActionParametersStaleIfError</a>
+
+---
+
+##### `stale_while_revalidate_input`<sup>Optional</sup> <a name="stale_while_revalidate_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.staleWhileRevalidateInput"></a>
+
+```python
+stale_while_revalidate_input: IResolvable | RulesetRulesActionParametersStaleWhileRevalidate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate">RulesetRulesActionParametersStaleWhileRevalidate</a>
+
+---
+
 ##### `status_code_input`<sup>Optional</sup> <a name="status_code_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.statusCodeInput"></a>
 
 ```python
@@ -15768,6 +20058,36 @@ status_code_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `strip_etags_input`<sup>Optional</sup> <a name="strip_etags_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripEtagsInput"></a>
+
+```python
+strip_etags_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `strip_last_modified_input`<sup>Optional</sup> <a name="strip_last_modified_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripLastModifiedInput"></a>
+
+```python
+strip_last_modified_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `strip_set_cookie_input`<sup>Optional</sup> <a name="strip_set_cookie_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripSetCookieInput"></a>
+
+```python
+strip_set_cookie_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -15798,6 +20118,16 @@ uri_input: IResolvable | RulesetRulesActionParametersUri
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersUri">RulesetRulesActionParametersUri</a>
+
+---
+
+##### `values_input`<sup>Optional</sup> <a name="values_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.valuesInput"></a>
+
+```python
+values_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -15911,6 +20241,16 @@ email_obfuscation: bool | IResolvable
 
 ---
 
+##### `expression`<sup>Required</sup> <a name="expression" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.expression"></a>
+
+```python
+expression: str
+```
+
+- *Type:* str
+
+---
+
 ##### `fonts`<sup>Required</sup> <a name="fonts" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.fonts"></a>
 
 ```python
@@ -15968,6 +20308,16 @@ mirage: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
 
 ---
 
@@ -16151,6 +20501,36 @@ status_code: typing.Union[int, float]
 
 ---
 
+##### `strip_etags`<sup>Required</sup> <a name="strip_etags" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripEtags"></a>
+
+```python
+strip_etags: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `strip_last_modified`<sup>Required</sup> <a name="strip_last_modified" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripLastModified"></a>
+
+```python
+strip_last_modified: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `strip_set_cookie`<sup>Required</sup> <a name="strip_set_cookie" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.stripSetCookie"></a>
+
+```python
+strip_set_cookie: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `sxg`<sup>Required</sup> <a name="sxg" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.sxg"></a>
 
 ```python
@@ -16158,6 +20538,16 @@ sxg: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `values`<sup>Required</sup> <a name="values" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOutputReference.property.values"></a>
+
+```python
+values: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -17792,6 +22182,1010 @@ internal_value: IResolvable | RulesetRulesActionParametersOverridesRules
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersOverridesRules">RulesetRulesActionParametersOverridesRules</a>
+
+---
+
+
+### RulesetRulesActionParametersPrivateOutputReference <a name="RulesetRulesActionParametersPrivateOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersPrivateOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.resetQualifiers">reset_qualifiers</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+##### `reset_qualifiers` <a name="reset_qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.resetQualifiers"></a>
+
+```python
+def reset_qualifiers() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.qualifiersInput">qualifiers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.qualifiers">qualifiers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate">RulesetRulesActionParametersPrivate</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `qualifiers_input`<sup>Optional</sup> <a name="qualifiers_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.qualifiersInput"></a>
+
+```python
+qualifiers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `qualifiers`<sup>Required</sup> <a name="qualifiers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.qualifiers"></a>
+
+```python
+qualifiers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivateOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersPrivate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate">RulesetRulesActionParametersPrivate</a>
+
+---
+
+
+### RulesetRulesActionParametersProxyRevalidateOutputReference <a name="RulesetRulesActionParametersProxyRevalidateOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate">RulesetRulesActionParametersProxyRevalidate</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidateOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersProxyRevalidate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate">RulesetRulesActionParametersProxyRevalidate</a>
+
+---
+
+
+### RulesetRulesActionParametersPublicOutputReference <a name="RulesetRulesActionParametersPublicOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersPublicOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic">RulesetRulesActionParametersPublic</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublicOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersPublic
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic">RulesetRulesActionParametersPublic</a>
 
 ---
 
@@ -19955,6 +25349,360 @@ internal_value: IResolvable | RulesetRulesActionParametersServeStale
 ---
 
 
+### RulesetRulesActionParametersSMaxageOutputReference <a name="RulesetRulesActionParametersSMaxageOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersSMaxageOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage">RulesetRulesActionParametersSMaxage</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.valueInput"></a>
+
+```python
+value_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxageOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersSMaxage
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage">RulesetRulesActionParametersSMaxage</a>
+
+---
+
+
 ### RulesetRulesActionParametersSniOutputReference <a name="RulesetRulesActionParametersSniOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSniOutputReference.Initializer"></a>
@@ -20247,6 +25995,714 @@ internal_value: IResolvable | RulesetRulesActionParametersSni
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSni">RulesetRulesActionParametersSni</a>
+
+---
+
+
+### RulesetRulesActionParametersStaleIfErrorOutputReference <a name="RulesetRulesActionParametersStaleIfErrorOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError">RulesetRulesActionParametersStaleIfError</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.valueInput"></a>
+
+```python
+value_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfErrorOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersStaleIfError
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError">RulesetRulesActionParametersStaleIfError</a>
+
+---
+
+
+### RulesetRulesActionParametersStaleWhileRevalidateOutputReference <a name="RulesetRulesActionParametersStaleWhileRevalidateOutputReference" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import ruleset
+
+ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.resetCloudflareOnly">reset_cloudflare_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.resetValue">reset_value</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_cloudflare_only` <a name="reset_cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.resetCloudflareOnly"></a>
+
+```python
+def reset_cloudflare_only() -> None
+```
+
+##### `reset_value` <a name="reset_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.resetValue"></a>
+
+```python
+def reset_value() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.cloudflareOnlyInput">cloudflare_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.operationInput">operation_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.valueInput">value_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.cloudflareOnly">cloudflare_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.operation">operation</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.value">value</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate">RulesetRulesActionParametersStaleWhileRevalidate</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `cloudflare_only_input`<sup>Optional</sup> <a name="cloudflare_only_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.cloudflareOnlyInput"></a>
+
+```python
+cloudflare_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation_input`<sup>Optional</sup> <a name="operation_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.operationInput"></a>
+
+```python
+operation_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `value_input`<sup>Optional</sup> <a name="value_input" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.valueInput"></a>
+
+```python
+value_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `cloudflare_only`<sup>Required</sup> <a name="cloudflare_only" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.cloudflareOnly"></a>
+
+```python
+cloudflare_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `operation`<sup>Required</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.operation"></a>
+
+```python
+operation: str
+```
+
+- *Type:* str
+
+---
+
+##### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.value"></a>
+
+```python
+value: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidateOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | RulesetRulesActionParametersStaleWhileRevalidate
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate">RulesetRulesActionParametersStaleWhileRevalidate</a>
 
 ---
 
@@ -20984,7 +27440,7 @@ def put_path(
 
 An expression that evaluates to a value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -20994,7 +27450,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A value to rewrite the URI path to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -21013,7 +27469,7 @@ def put_query(
 
 An expression that evaluates to a value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#expression Ruleset#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -21023,7 +27479,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A value to rewrite the URI query to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#value Ruleset#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#value Ruleset#value}
 
 ---
 
@@ -22865,6 +29321,7 @@ def put_action_parameters(
   disable_zaraz: bool | IResolvable = None,
   edge_ttl: RulesetRulesActionParametersEdgeTtl = None,
   email_obfuscation: bool | IResolvable = None,
+  expression: str = None,
   fonts: bool | IResolvable = None,
   from_list: RulesetRulesActionParametersFromListStruct = None,
   from_value: RulesetRulesActionParametersFromValue = None,
@@ -22872,9 +29329,17 @@ def put_action_parameters(
   host_header: str = None,
   hotlink_protection: bool | IResolvable = None,
   id: str = None,
+  immutable: RulesetRulesActionParametersImmutable = None,
   increment: typing.Union[int, float] = None,
   matched_data: RulesetRulesActionParametersMatchedData = None,
+  max_age: RulesetRulesActionParametersMaxAge = None,
   mirage: bool | IResolvable = None,
+  must_revalidate: RulesetRulesActionParametersMustRevalidate = None,
+  must_understand: RulesetRulesActionParametersMustUnderstand = None,
+  no_cache: RulesetRulesActionParametersNoCache = None,
+  no_store: RulesetRulesActionParametersNoStore = None,
+  no_transform: RulesetRulesActionParametersNoTransform = None,
+  operation: str = None,
   opportunistic_encryption: bool | IResolvable = None,
   origin: RulesetRulesActionParametersOrigin = None,
   origin_cache_control: bool | IResolvable = None,
@@ -22882,7 +29347,10 @@ def put_action_parameters(
   overrides: RulesetRulesActionParametersOverrides = None,
   phases: typing.List[str] = None,
   polish: str = None,
+  private: RulesetRulesActionParametersPrivate = None,
   products: typing.List[str] = None,
+  proxy_revalidate: RulesetRulesActionParametersProxyRevalidate = None,
+  public: RulesetRulesActionParametersPublic = None,
   raw_response_fields: IResolvable | typing.List[RulesetRulesActionParametersRawResponseFields] = None,
   read_timeout: typing.Union[int, float] = None,
   request_body_buffering: str = None,
@@ -22898,12 +29366,19 @@ def put_action_parameters(
   security_level: str = None,
   server_side_excludes: bool | IResolvable = None,
   serve_stale: RulesetRulesActionParametersServeStale = None,
+  s_maxage: RulesetRulesActionParametersSMaxage = None,
   sni: RulesetRulesActionParametersSni = None,
   ssl: str = None,
+  stale_if_error: RulesetRulesActionParametersStaleIfError = None,
+  stale_while_revalidate: RulesetRulesActionParametersStaleWhileRevalidate = None,
   status_code: typing.Union[int, float] = None,
+  strip_etags: bool | IResolvable = None,
+  strip_last_modified: bool | IResolvable = None,
+  strip_set_cookie: bool | IResolvable = None,
   sxg: bool | IResolvable = None,
   transformed_request_fields: IResolvable | typing.List[RulesetRulesActionParametersTransformedRequestFields] = None,
-  uri: RulesetRulesActionParametersUri = None
+  uri: RulesetRulesActionParametersUri = None,
+  values: typing.List[str] = None
 ) -> None
 ```
 
@@ -22913,7 +29388,7 @@ def put_action_parameters(
 
 A list of additional ports that caching should be enabled on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
 
 ---
 
@@ -22923,7 +29398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Custom order for compression algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
 
 ---
 
@@ -22933,7 +29408,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of a custom asset to serve as the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
 
 ---
 
@@ -22943,7 +29418,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Automatic HTTPS Rewrites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
 
 ---
 
@@ -22953,7 +29428,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Which file extensions to minify automatically.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#autominify Ruleset#autominify}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#autominify Ruleset#autominify}
 
 ---
 
@@ -22963,7 +29438,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Browser Integrity Check (BIC).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#bic Ruleset#bic}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#bic Ruleset#bic}
 
 ---
 
@@ -22975,7 +29450,7 @@ How long client browsers should cache the response.
 
 Cloudflare cache purge will not purge content cached on client browsers, so high browser TTLs may lead to stale content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
 
 ---
 
@@ -22987,7 +29462,7 @@ Whether the request's response from the origin is eligible for caching.
 
 Caching itself will still depend on the cache control header and your other caching configurations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache Ruleset#cache}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache Ruleset#cache}
 
 ---
 
@@ -22997,7 +29472,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
 
 ---
 
@@ -23007,7 +29482,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
 
 ---
 
@@ -23017,7 +29492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The response content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content Ruleset#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content Ruleset#content}
 
 ---
 
@@ -23027,7 +29502,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The content type header to set with the error response. Available values: "application/json", "text/html", "text/plain", "text/xml".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#content_type Ruleset#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#content_type Ruleset#content_type}
 
 ---
 
@@ -23037,7 +29512,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The cookie fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
 
 ---
 
@@ -23047,7 +29522,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to disable Cloudflare Apps.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
 
 ---
 
@@ -23057,7 +29532,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to disable Real User Monitoring (RUM).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
 
 ---
 
@@ -23067,7 +29542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to disable Zaraz.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
 
 ---
 
@@ -23077,7 +29552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How long the Cloudflare edge network should cache the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
 
 ---
 
@@ -23087,7 +29562,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Email Obfuscation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+
+---
+
+###### `expression`<sup>Optional</sup> <a name="expression" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.expression"></a>
+
+- *Type:* str
+
+An expression to generate cache tags for set_cache_tags action.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#expression Ruleset#expression}
 
 ---
 
@@ -23097,7 +29582,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Cloudflare Fonts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#fonts Ruleset#fonts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#fonts Ruleset#fonts}
 
 ---
 
@@ -23107,7 +29592,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A redirect based on a bulk list lookup.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#from_list Ruleset#from_list}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#from_list Ruleset#from_list}
 
 ---
 
@@ -23117,7 +29602,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A redirect based on the request properties.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#from_value Ruleset#from_value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#from_value Ruleset#from_value}
 
 ---
 
@@ -23127,7 +29612,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A map of headers to rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#headers Ruleset#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#headers Ruleset#headers}
 
 ---
 
@@ -23137,7 +29622,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A value to rewrite the HTTP host header to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#host_header Ruleset#host_header}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#host_header Ruleset#host_header}
 
 ---
 
@@ -23147,7 +29632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Hotlink Protection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
 
 ---
 
@@ -23157,10 +29642,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The ID of the ruleset to execute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#id Ruleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#id Ruleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+###### `immutable`<sup>Optional</sup> <a name="immutable" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.immutable"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersImmutable">RulesetRulesActionParametersImmutable</a>
+
+Set the immutable cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#immutable Ruleset#immutable}
 
 ---
 
@@ -23170,7 +29665,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A delta to change the score by, which can be either positive or negative.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#increment Ruleset#increment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#increment Ruleset#increment}
 
 ---
 
@@ -23180,7 +29675,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The configuration to use for matched data logging.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
+
+---
+
+###### `max_age`<sup>Optional</sup> <a name="max_age" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.maxAge"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMaxAge">RulesetRulesActionParametersMaxAge</a>
+
+Set the max-age cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#max_age Ruleset#max_age}
 
 ---
 
@@ -23190,7 +29695,67 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Mirage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mirage Ruleset#mirage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mirage Ruleset#mirage}
+
+---
+
+###### `must_revalidate`<sup>Optional</sup> <a name="must_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.mustRevalidate"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustRevalidate">RulesetRulesActionParametersMustRevalidate</a>
+
+Set the must-revalidate cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
+
+---
+
+###### `must_understand`<sup>Optional</sup> <a name="must_understand" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.mustUnderstand"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersMustUnderstand">RulesetRulesActionParametersMustUnderstand</a>
+
+Set the must-understand cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#must_understand Ruleset#must_understand}
+
+---
+
+###### `no_cache`<sup>Optional</sup> <a name="no_cache" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.noCache"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoCache">RulesetRulesActionParametersNoCache</a>
+
+Set the no-cache cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#no_cache Ruleset#no_cache}
+
+---
+
+###### `no_store`<sup>Optional</sup> <a name="no_store" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.noStore"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoStore">RulesetRulesActionParametersNoStore</a>
+
+Set the no-store cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#no_store Ruleset#no_store}
+
+---
+
+###### `no_transform`<sup>Optional</sup> <a name="no_transform" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.noTransform"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersNoTransform">RulesetRulesActionParametersNoTransform</a>
+
+Set the no-transform cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#no_transform Ruleset#no_transform}
+
+---
+
+###### `operation`<sup>Optional</sup> <a name="operation" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.operation"></a>
+
+- *Type:* str
+
+The operation to perform for set_cache_tags action. Available values: "set", "add", "remove".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#operation Ruleset#operation}
 
 ---
 
@@ -23200,7 +29765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Opportunistic Encryption.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
 
 ---
 
@@ -23210,7 +29775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An origin to route to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#origin Ruleset#origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#origin Ruleset#origin}
 
 ---
 
@@ -23220,7 +29785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether Cloudflare will aim to strictly adhere to RFC 7234.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
 
 ---
 
@@ -23230,7 +29795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to generate Cloudflare error pages for issues from the origin server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
 
 ---
 
@@ -23240,7 +29805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A set of overrides to apply to the target ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#overrides Ruleset#overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#overrides Ruleset#overrides}
 
 ---
 
@@ -23251,9 +29816,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 A list of phases to skip the execution of.
 
 This option is incompatible with the rulesets option.
-Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
+Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#phases Ruleset#phases}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#phases Ruleset#phases}
 
 ---
 
@@ -23263,7 +29828,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Polish level to configure. Available values: "off", "lossless", "lossy", "webp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#polish Ruleset#polish}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#polish Ruleset#polish}
+
+---
+
+###### `private`<sup>Optional</sup> <a name="private" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.private"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPrivate">RulesetRulesActionParametersPrivate</a>
+
+Set the private cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#private Ruleset#private}
 
 ---
 
@@ -23273,7 +29848,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of legacy security products to skip the execution of. Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#products Ruleset#products}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#products Ruleset#products}
+
+---
+
+###### `proxy_revalidate`<sup>Optional</sup> <a name="proxy_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.proxyRevalidate"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersProxyRevalidate">RulesetRulesActionParametersProxyRevalidate</a>
+
+Set the proxy-revalidate cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
+
+---
+
+###### `public`<sup>Optional</sup> <a name="public" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.public"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersPublic">RulesetRulesActionParametersPublic</a>
+
+Set the public cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#public Ruleset#public}
 
 ---
 
@@ -23283,7 +29878,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The raw response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
 
 ---
 
@@ -23295,7 +29890,7 @@ A timeout value between two successive read operations to use for your origin se
 
 Historically, the timeout value between two read options from Cloudflare to an origin server is 100 seconds. If you are attempting to reduce HTTP 524 errors because of timeouts from an origin server, try increasing this timeout value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
 
 ---
 
@@ -23305,7 +29900,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The request body buffering mode to configure. Available values: "none", "standard", "full".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
 
 ---
 
@@ -23315,7 +29910,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The raw request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
 
 ---
 
@@ -23327,7 +29922,7 @@ Whether Cloudflare should respect strong ETag (entity tag) headers.
 
 If false, Cloudflare converts strong ETag headers to weak ETag headers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
 
 ---
 
@@ -23337,7 +29932,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The response to show when the block is applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#response Ruleset#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#response Ruleset#response}
 
 ---
 
@@ -23347,7 +29942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The response body buffering mode to configure. Available values: "none", "standard".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
 
 ---
 
@@ -23357,7 +29952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The transformed response fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
 
 ---
 
@@ -23367,7 +29962,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Rocket Loader.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
 
 ---
 
@@ -23379,7 +29974,7 @@ A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execu
 
 This option is incompatible with the ruleset option.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rules Ruleset#rules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rules Ruleset#rules}
 
 ---
 
@@ -23389,7 +29984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A ruleset to skip the execution of. This option is incompatible with the rulesets option. Available values: "current".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
 
 ---
 
@@ -23401,7 +29996,7 @@ A list of ruleset IDs to skip the execution of.
 
 This option is incompatible with the ruleset and phases options.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
 
 ---
 
@@ -23411,7 +30006,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Security Level to configure. Available values: "off", "essentially_off", "low", "medium", "high", "under_attack".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#security_level Ruleset#security_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#security_level Ruleset#security_level}
 
 ---
 
@@ -23421,7 +30016,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Server-Side Excludes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
 
 ---
 
@@ -23431,7 +30026,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When to serve stale content from cache.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+
+---
+
+###### `s_maxage`<sup>Optional</sup> <a name="s_maxage" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.sMaxage"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersSMaxage">RulesetRulesActionParametersSMaxage</a>
+
+Set the s-maxage cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
 
 ---
 
@@ -23441,7 +30046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A Server Name Indication (SNI) override.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sni Ruleset#sni}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sni Ruleset#sni}
 
 ---
 
@@ -23451,7 +30056,27 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The SSL level to configure. Available values: "off", "flexible", "full", "strict", "origin_pull".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#ssl Ruleset#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#ssl Ruleset#ssl}
+
+---
+
+###### `stale_if_error`<sup>Optional</sup> <a name="stale_if_error" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.staleIfError"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleIfError">RulesetRulesActionParametersStaleIfError</a>
+
+Set the stale-if-error cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
+
+---
+
+###### `stale_while_revalidate`<sup>Optional</sup> <a name="stale_while_revalidate" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.staleWhileRevalidate"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.ruleset.RulesetRulesActionParametersStaleWhileRevalidate">RulesetRulesActionParametersStaleWhileRevalidate</a>
+
+Set the stale-while-revalidate cache control directive.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
 
 ---
 
@@ -23461,7 +30086,37 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The status code to use for the error.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#status_code Ruleset#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#status_code Ruleset#status_code}
+
+---
+
+###### `strip_etags`<sup>Optional</sup> <a name="strip_etags" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.stripEtags"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to strip the ETag header from the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
+
+---
+
+###### `strip_last_modified`<sup>Optional</sup> <a name="strip_last_modified" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.stripLastModified"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to strip the Last-Modified header from the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
+
+---
+
+###### `strip_set_cookie`<sup>Optional</sup> <a name="strip_set_cookie" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.stripSetCookie"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether to strip the Set-Cookie header from the response.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
 
 ---
 
@@ -23471,7 +30126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to enable Signed Exchanges (SXG).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#sxg Ruleset#sxg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#sxg Ruleset#sxg}
 
 ---
 
@@ -23481,7 +30136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The transformed request fields to log.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
 
 ---
 
@@ -23491,7 +30146,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A URI rewrite.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#uri Ruleset#uri}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#uri Ruleset#uri}
+
+---
+
+###### `values`<sup>Optional</sup> <a name="values" id="@cdktn/provider-cloudflare.ruleset.RulesetRulesOutputReference.putActionParameters.parameter.values"></a>
+
+- *Type:* typing.List[str]
+
+The cache tag values for set_cache_tags action.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#values Ruleset#values}
 
 ---
 
@@ -23510,7 +30175,7 @@ def put_exposed_credential_check(
 
 An expression that selects the password used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
 
 ---
 
@@ -23520,7 +30185,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An expression that selects the user ID used in the credentials check.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
 
 ---
 
@@ -23538,7 +30203,7 @@ def put_logging(
 
 Whether to generate a log when the rule matches.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#enabled Ruleset#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#enabled Ruleset#enabled}
 
 ---
 
@@ -23563,7 +30228,7 @@ def put_ratelimit(
 
 Characteristics of the request on which the rate limit counter will be incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
 
 ---
 
@@ -23573,7 +30238,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Period in seconds over which the counter is being incremented.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#period Ruleset#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#period Ruleset#period}
 
 ---
 
@@ -23585,7 +30250,7 @@ An expression that defines when the rate limit counter should be incremented.
 
 It defaults to the same as the rule's expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
 
 ---
 
@@ -23595,7 +30260,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Period of time in seconds after which the action will be disabled following its first execution.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
 
 ---
 
@@ -23605,7 +30270,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The threshold of requests per period after which the action will be executed for the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
 
 ---
 
@@ -23615,7 +30280,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether counting is only performed when an origin is reached.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
 
 ---
 
@@ -23625,7 +30290,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The score threshold per period for which the action will be executed the first time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
 
 ---
 
@@ -23635,7 +30300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A response header name provided by the origin, which contains the score to increment rate limit counter with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
 
 ---
 

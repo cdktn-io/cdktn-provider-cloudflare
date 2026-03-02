@@ -4,7 +4,7 @@
 
 ### DataCloudflareDcvDelegation <a name="DataCloudflareDcvDelegation" id="@cdktn/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dcv_delegation cloudflare_dcv_delegation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareDcvDelegation.DataCloudflareDcvDelegation.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareDcvDelegatio
 
 The id of the existing DataCloudflareDcvDelegation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dcv_delegation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -698,7 +698,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/dcv_delegation#zone_id DataCloudflareDcvDelegation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dcv_delegation#zone_id DataCloudflareDcvDelegation#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareTotalTls <a name="DataCloudflareTotalTls" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/total_tls cloudflare_total_tls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/total_tls cloudflare_total_tls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareTotalTls to 
 
 The id of the existing DataCloudflareTotalTls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/total_tls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/total_tls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -740,7 +740,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.17.0/docs/data-sources/total_tls#zone_id DataCloudflareTotalTls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/total_tls#zone_id DataCloudflareTotalTls#zone_id}
 
 ---
 
