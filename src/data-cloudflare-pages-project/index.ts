@@ -379,7 +379,7 @@ export class DataCloudflarePagesProjectCanonicalDeploymentEnvVarsMap extends cdk
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -712,7 +712,7 @@ export class DataCloudflarePagesProjectCanonicalDeploymentStagesList extends cdk
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 
@@ -925,7 +925,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsMap ext
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -998,7 +998,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDa
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1066,7 +1066,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersMap exten
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1139,7 +1139,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesMap ex
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1212,7 +1212,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectName
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1290,7 +1290,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsMap extend
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1363,7 +1363,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBinding
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1436,7 +1436,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesMap e
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1563,7 +1563,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesM
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1690,7 +1690,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersMap
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1768,7 +1768,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsMap exte
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1851,7 +1851,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewServicesMap exten
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -1924,7 +1924,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindings
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2171,7 +2171,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsMap 
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2244,7 +2244,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngin
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2312,7 +2312,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionBrowsersMap ex
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2385,7 +2385,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesMap
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2458,7 +2458,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectN
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2536,7 +2536,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsMap ext
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2609,7 +2609,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBind
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2682,7 +2682,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesMa
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2809,7 +2809,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificat
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -2936,7 +2936,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducers
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3014,7 +3014,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsMap e
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3097,7 +3097,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionServicesMap ex
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3170,7 +3170,7 @@ export class DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindi
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -3691,7 +3691,7 @@ export class DataCloudflarePagesProjectLatestDeploymentEnvVarsMap extends cdktn.
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
@@ -4024,7 +4024,7 @@ export class DataCloudflarePagesProjectLatestDeploymentStagesList extends cdktn.
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
     super(terraformResource, terraformAttribute, wrapsSet)
   }
 

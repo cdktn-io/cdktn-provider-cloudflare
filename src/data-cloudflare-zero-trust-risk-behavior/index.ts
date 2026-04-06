@@ -94,7 +94,7 @@ export class DataCloudflareZeroTrustRiskBehaviorBehaviorsMap extends cdktn.Compl
   * @param terraformResource The parent resource
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
-  constructor(protected terraformResource: cdktn.IInterpolatingParent, protected terraformAttribute: string) {
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
     super(terraformResource, terraformAttribute)
   }
 
