@@ -4,7 +4,7 @@
 
 ### DataCloudflareResourceGroup <a name="DataCloudflareResourceGroup" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/resource_group cloudflare_resource_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/resource_group cloudflare_resource_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer"></a>
 
@@ -21,8 +21,8 @@ dataCloudflareResourceGroup.DataCloudflareResourceGroup(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  resource_group_id: str
+  resource_group_id: str,
+  account_id: str = None
 )
 ```
 
@@ -37,8 +37,8 @@ dataCloudflareResourceGroup.DataCloudflareResourceGroup(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.resourceGroupId">resource_group_id</a></code> | <code>str</code> | Resource Group identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 
 ---
 
@@ -102,23 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/resource_group#account_id DataCloudflareResourceGroup#account_id}
-
----
-
 ##### `resource_group_id`<sup>Required</sup> <a name="resource_group_id" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.resourceGroupId"></a>
 
 - *Type:* str
 
 Resource Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/resource_group#resource_group_id DataCloudflareResourceGroup#resource_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/resource_group#resource_group_id DataCloudflareResourceGroup#resource_group_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/resource_group#account_id DataCloudflareResourceGroup#account_id}
 
 ---
 
@@ -144,6 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -387,6 +388,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroup.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -501,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareResourceGrou
 
 The id of the existing DataCloudflareResourceGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/resource_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/resource_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,8 +784,8 @@ dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  resource_group_id: str
+  resource_group_id: str,
+  account_id: str = None
 )
 ```
 
@@ -793,8 +800,8 @@ dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.resourceGroupId">resource_group_id</a></code> | <code>str</code> | Resource Group identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
 
 ---
 
@@ -868,20 +875,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/resource_group#account_id DataCloudflareResourceGroup#account_id}
-
----
-
 ##### `resource_group_id`<sup>Required</sup> <a name="resource_group_id" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.resourceGroupId"></a>
 
 ```python
@@ -892,7 +885,21 @@ resource_group_id: str
 
 Resource Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/resource_group#resource_group_id DataCloudflareResourceGroup#resource_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/resource_group#resource_group_id DataCloudflareResourceGroup#resource_group_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareResourceGroup.DataCloudflareResourceGroupConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/resource_group#account_id DataCloudflareResourceGroup#account_id}
 
 ---
 

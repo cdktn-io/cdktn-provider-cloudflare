@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreamKey <a name="DataCloudflareStreamKey" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_key cloudflare_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_key cloudflare_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer"></a>
 
@@ -21,7 +21,7 @@ dataCloudflareStreamKey.DataCloudflareStreamKey(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str
+  account_id: str = None
 )
 ```
 
@@ -100,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
 
 ---
 
@@ -132,6 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -375,6 +376,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +496,7 @@ The construct id used in the generated config for the DataCloudflareStreamKey to
 
 The id of the existing DataCloudflareStreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -519,6 +526,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.created">created</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.keyId">key_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 
@@ -666,6 +674,16 @@ id: str
 
 ---
 
+##### `key_id`<sup>Required</sup> <a name="key_id" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.keyId"></a>
+
+```python
+key_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountIdInput"></a>
 
 ```python
@@ -721,7 +739,7 @@ dataCloudflareStreamKey.DataCloudflareStreamKeyConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str
+  account_id: str = None
 )
 ```
 
@@ -810,7 +828,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKeyConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKeyConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -820,7 +838,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
 
 ---
 

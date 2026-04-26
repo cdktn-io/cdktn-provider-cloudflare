@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,14 +15,14 @@ export interface DataCloudflareTurnstileWidgetsConfig extends cdktn.TerraformMet
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets#account_id DataCloudflareTurnstileWidgets#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets#account_id DataCloudflareTurnstileWidgets#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
   * Direction to order widgets.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets#direction DataCloudflareTurnstileWidgets#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets#direction DataCloudflareTurnstileWidgets#direction}
   */
   readonly direction?: string;
   /**
@@ -36,20 +36,20 @@ export interface DataCloudflareTurnstileWidgetsConfig extends cdktn.TerraformMet
   * Returns 400 Bad Request if the field is unsupported or format is invalid.
   * An empty filter value returns all results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets#filter DataCloudflareTurnstileWidgets#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets#filter DataCloudflareTurnstileWidgets#filter}
   */
   readonly filter?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets#max_items DataCloudflareTurnstileWidgets#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets#max_items DataCloudflareTurnstileWidgets#max_items}
   */
   readonly maxItems?: number;
   /**
   * Field to order widgets by.
   * Available values: "id", "sitekey", "name", "created_on", "modified_on".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets#order DataCloudflareTurnstileWidgets#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets#order DataCloudflareTurnstileWidgets#order}
   */
   readonly order?: string;
 }
@@ -185,7 +185,7 @@ export class DataCloudflareTurnstileWidgetsResultList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets}
 */
 export class DataCloudflareTurnstileWidgets extends cdktn.TerraformDataSource {
 
@@ -201,7 +201,7 @@ export class DataCloudflareTurnstileWidgets extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareTurnstileWidgets resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareTurnstileWidgets to import
-  * @param importFromId The id of the existing DataCloudflareTurnstileWidgets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareTurnstileWidgets that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareTurnstileWidgets to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -213,18 +213,18 @@ export class DataCloudflareTurnstileWidgets extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/turnstile_widgets cloudflare_turnstile_widgets} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareTurnstileWidgetsConfig
+  * @param options DataCloudflareTurnstileWidgetsConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareTurnstileWidgetsConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareTurnstileWidgetsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_turnstile_widgets',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -246,13 +246,16 @@ export class DataCloudflareTurnstileWidgets extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {

@@ -4,14 +4,14 @@
 
 ### StreamWebhook <a name="StreamWebhook" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.Initializer"></a>
 
 ```typescript
 import { streamWebhook } from '@cdktn/provider-cloudflare'
 
-new streamWebhook.StreamWebhook(scope: Construct, id: string, config: StreamWebhookConfig)
+new streamWebhook.StreamWebhook(scope: Construct, id: string, config?: StreamWebhookConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhookConfig">StreamWebhookConfig</a>
 
@@ -74,6 +74,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetNotificationUrl">resetNotificationUrl</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +388,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
+##### `resetNotificationUrl` <a name="resetNotificationUrl" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetNotificationUrl"></a>
+
+```typescript
+public resetNotificationUrl(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +503,7 @@ The construct id used in the generated config for the StreamWebhook to import.
 
 The id of the existing StreamWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -519,6 +533,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.modified">modified</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.secret">secret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.notificationUrlInput">notificationUrlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
@@ -665,6 +681,26 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 ```
 
 - *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `modified`<sup>Required</sup> <a name="modified" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.modified"></a>
+
+```typescript
+public readonly modified: string;
+```
+
+- *Type:* string
+
+---
+
+##### `secret`<sup>Required</sup> <a name="secret" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.property.secret"></a>
+
+```typescript
+public readonly secret: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -824,7 +860,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhookConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhookConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -834,11 +870,11 @@ public readonly accountId: string;
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
 
 ---
 
-##### `notificationUrl`<sup>Required</sup> <a name="notificationUrl" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhookConfig.property.notificationUrl"></a>
+##### `notificationUrl`<sup>Optional</sup> <a name="notificationUrl" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhookConfig.property.notificationUrl"></a>
 
 ```typescript
 public readonly notificationUrl: string;
@@ -848,7 +884,7 @@ public readonly notificationUrl: string;
 
 The URL where webhooks will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
 
 ---
 

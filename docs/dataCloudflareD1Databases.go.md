@@ -4,7 +4,7 @@
 
 ### DataCloudflareD1Databases <a name="DataCloudflareD1Databases" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases cloudflare_d1_databases}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_databases cloudflare_d1_databases}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesConfig">DataCloudflareD1DatabasesConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.resetMaxItems">ResetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.resetName">ResetName</a></code> | *No description.* |
 
@@ -286,6 +287,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 ##### `ResetMaxItems` <a name="ResetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1Databases.resetMaxItems"></a>
 
 ```go
@@ -401,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareD1Databases 
 
 The id of the existing DataCloudflareD1Databases that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_databases#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -759,7 +766,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -769,7 +776,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases#account_id DataCloudflareD1Databases#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_databases#account_id DataCloudflareD1Databases#account_id}
 
 ---
 
@@ -783,7 +790,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases#max_items DataCloudflareD1Databases#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_databases#max_items DataCloudflareD1Databases#max_items}
 
 ---
 
@@ -797,7 +804,7 @@ Name *string
 
 a database name to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_databases#name DataCloudflareD1Databases#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_databases#name DataCloudflareD1Databases#name}
 
 ---
 
@@ -1195,6 +1202,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.createdAt">CreatedAt</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.id">Id</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.jurisdiction">Jurisdiction</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.uuid">Uuid</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.version">Version</a></code> | <code>*string</code> | *No description.* |
@@ -1240,6 +1248,16 @@ func CreatedAt() *string
 
 ```go
 func Id() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Jurisdiction`<sup>Required</sup> <a name="Jurisdiction" id="@cdktn/provider-cloudflare.dataCloudflareD1Databases.DataCloudflareD1DatabasesResultOutputReference.property.jurisdiction"></a>
+
+```go
+func Jurisdiction() *string
 ```
 
 - *Type:* *string

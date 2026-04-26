@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_connector
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_connector
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataCloudflareMagicTransitConnectorConfig extends cdktn.Terrafo
   /**
   * Account identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_connector#account_id DataCloudflareMagicTransitConnector#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_connector#account_id DataCloudflareMagicTransitConnector#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_connector#connector_id DataCloudflareMagicTransitConnector#connector_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_connector#connector_id DataCloudflareMagicTransitConnector#connector_id}
   */
   readonly connectorId: string;
 }
@@ -84,7 +84,7 @@ export class DataCloudflareMagicTransitConnectorDeviceOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector}
 */
 export class DataCloudflareMagicTransitConnector extends cdktn.TerraformDataSource {
 
@@ -100,7 +100,7 @@ export class DataCloudflareMagicTransitConnector extends cdktn.TerraformDataSour
   * Generates CDKTN code for importing a DataCloudflareMagicTransitConnector resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicTransitConnector to import
-  * @param importFromId The id of the existing DataCloudflareMagicTransitConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_connector#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicTransitConnector that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_connector#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicTransitConnector to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -112,7 +112,7 @@ export class DataCloudflareMagicTransitConnector extends cdktn.TerraformDataSour
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_transit_connector cloudflare_magic_transit_connector} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -123,7 +123,7 @@ export class DataCloudflareMagicTransitConnector extends cdktn.TerraformDataSour
       terraformResourceType: 'cloudflare_magic_transit_connector',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -142,13 +142,16 @@ export class DataCloudflareMagicTransitConnector extends cdktn.TerraformDataSour
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
@@ -184,9 +187,19 @@ export class DataCloudflareMagicTransitConnector extends cdktn.TerraformDataSour
     return this.getStringAttribute('id');
   }
 
+  // interrupt_window_days_of_week - computed: true, optional: false, required: false
+  public get interruptWindowDaysOfWeek() {
+    return this.getListAttribute('interrupt_window_days_of_week');
+  }
+
   // interrupt_window_duration_hours - computed: true, optional: false, required: false
   public get interruptWindowDurationHours() {
     return this.getNumberAttribute('interrupt_window_duration_hours');
+  }
+
+  // interrupt_window_embargo_dates - computed: true, optional: false, required: false
+  public get interruptWindowEmbargoDates() {
+    return this.getListAttribute('interrupt_window_embargo_dates');
   }
 
   // interrupt_window_hour_of_day - computed: true, optional: false, required: false

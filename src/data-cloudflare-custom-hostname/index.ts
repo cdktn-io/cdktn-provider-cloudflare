@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,38 +15,152 @@ export interface DataCloudflareCustomHostnameConfig extends cdktn.TerraformMetaA
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#custom_hostname_id DataCloudflareCustomHostname#custom_hostname_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#custom_hostname_id DataCloudflareCustomHostname#custom_hostname_id}
   */
   readonly customHostnameId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}
   */
   readonly filter?: DataCloudflareCustomHostnameFilter;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#zone_id DataCloudflareCustomHostname#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#zone_id DataCloudflareCustomHostname#zone_id}
   */
-  readonly zoneId: string;
+  readonly zoneId?: string;
+}
+export interface DataCloudflareCustomHostnameFilterHostname {
+  /**
+  * Filters hostnames by a substring match on the hostname value. This parameter cannot be used with the 'id' parameter.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#contain DataCloudflareCustomHostname#contain}
+  */
+  readonly contain?: string;
+}
+
+export function dataCloudflareCustomHostnameFilterHostnameToTerraform(struct?: DataCloudflareCustomHostnameFilterHostname | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    contain: cdktn.stringToTerraform(struct!.contain),
+  }
+}
+
+
+export function dataCloudflareCustomHostnameFilterHostnameToHclTerraform(struct?: DataCloudflareCustomHostnameFilterHostname | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    contain: {
+      value: cdktn.stringToHclTerraform(struct!.contain),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class DataCloudflareCustomHostnameFilterHostnameOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareCustomHostnameFilterHostname | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._contain !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.contain = this._contain;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareCustomHostnameFilterHostname | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._contain = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._contain = value.contain;
+    }
+  }
+
+  // contain - computed: false, optional: true, required: false
+  private _contain?: string; 
+  public get contain() {
+    return this.getStringAttribute('contain');
+  }
+  public set contain(value: string) {
+    this._contain = value;
+  }
+  public resetContain() {
+    this._contain = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get containInput() {
+    return this._contain;
+  }
 }
 export interface DataCloudflareCustomHostnameFilter {
+  /**
+  * Filter by the certificate authority that issued the SSL certificate.
+  * Available values: "google", "lets_encrypt", "ssl_com".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#certificate_authority DataCloudflareCustomHostname#certificate_authority}
+  */
+  readonly certificateAuthority?: string;
+  /**
+  * Filter by custom origin server name.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#custom_origin_server DataCloudflareCustomHostname#custom_origin_server}
+  */
+  readonly customOriginServer?: string;
   /**
   * Direction to order hostnames.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#direction DataCloudflareCustomHostname#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#direction DataCloudflareCustomHostname#direction}
   */
   readonly direction?: string;
   /**
-  * Fully qualified domain name to match against. This parameter cannot be used with the 'id' parameter.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#hostname DataCloudflareCustomHostname#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#hostname DataCloudflareCustomHostname#hostname}
   */
-  readonly hostname?: string;
+  readonly hostname?: DataCloudflareCustomHostnameFilterHostname;
+  /**
+  * Filter by the hostname's activation status.
+  * Available values: "active", "pending", "active_redeploying", "moved", "pending_deletion", "deleted", "pending_blocked", "pending_migration", "pending_provisioned", "test_pending", "test_active", "test_active_apex", "test_blocked", "test_failed", "provisioned", "blocked".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#hostname_status DataCloudflareCustomHostname#hostname_status}
+  */
+  readonly hostnameStatus?: string;
   /**
   * Hostname ID to match against. This ID was generated and returned during the initial custom_hostname creation. This parameter cannot be used with the 'hostname' parameter.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#id DataCloudflareCustomHostname#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#id DataCloudflareCustomHostname#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -56,16 +170,29 @@ export interface DataCloudflareCustomHostnameFilter {
   * Field to order hostnames by.
   * Available values: "ssl", "ssl_status".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#order DataCloudflareCustomHostname#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#order DataCloudflareCustomHostname#order}
   */
   readonly order?: string;
   /**
   * Whether to filter hostnames based on if they have SSL enabled.
   * Available values: 0, 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#ssl DataCloudflareCustomHostname#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#ssl DataCloudflareCustomHostname#ssl}
   */
   readonly ssl?: number;
+  /**
+  * Filter by SSL certificate status.
+  * Available values: "initializing", "pending_validation", "deleted", "pending_issuance", "pending_deployment", "pending_deletion", "pending_expiration", "expired", "active", "initializing_timed_out", "validation_timed_out", "issuance_timed_out", "deployment_timed_out", "deletion_timed_out", "pending_cleanup", "staging_deployment", "staging_active", "deactivating", "inactive", "backup_issued", "holding_deployment".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#ssl_status DataCloudflareCustomHostname#ssl_status}
+  */
+  readonly sslStatus?: string;
+  /**
+  * Filter by whether the custom hostname is a wildcard hostname.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#wildcard DataCloudflareCustomHostname#wildcard}
+  */
+  readonly wildcard?: boolean | cdktn.IResolvable;
 }
 
 export function dataCloudflareCustomHostnameFilterToTerraform(struct?: DataCloudflareCustomHostnameFilter | cdktn.IResolvable): any {
@@ -74,11 +201,16 @@ export function dataCloudflareCustomHostnameFilterToTerraform(struct?: DataCloud
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    certificate_authority: cdktn.stringToTerraform(struct!.certificateAuthority),
+    custom_origin_server: cdktn.stringToTerraform(struct!.customOriginServer),
     direction: cdktn.stringToTerraform(struct!.direction),
-    hostname: cdktn.stringToTerraform(struct!.hostname),
+    hostname: dataCloudflareCustomHostnameFilterHostnameToTerraform(struct!.hostname),
+    hostname_status: cdktn.stringToTerraform(struct!.hostnameStatus),
     id: cdktn.stringToTerraform(struct!.id),
     order: cdktn.stringToTerraform(struct!.order),
     ssl: cdktn.numberToTerraform(struct!.ssl),
+    ssl_status: cdktn.stringToTerraform(struct!.sslStatus),
+    wildcard: cdktn.booleanToTerraform(struct!.wildcard),
   }
 }
 
@@ -89,6 +221,18 @@ export function dataCloudflareCustomHostnameFilterToHclTerraform(struct?: DataCl
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    certificate_authority: {
+      value: cdktn.stringToHclTerraform(struct!.certificateAuthority),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    custom_origin_server: {
+      value: cdktn.stringToHclTerraform(struct!.customOriginServer),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
     direction: {
       value: cdktn.stringToHclTerraform(struct!.direction),
       isBlock: false,
@@ -96,7 +240,13 @@ export function dataCloudflareCustomHostnameFilterToHclTerraform(struct?: DataCl
       storageClassType: "string",
     },
     hostname: {
-      value: cdktn.stringToHclTerraform(struct!.hostname),
+      value: dataCloudflareCustomHostnameFilterHostnameToHclTerraform(struct!.hostname),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "DataCloudflareCustomHostnameFilterHostname",
+    },
+    hostname_status: {
+      value: cdktn.stringToHclTerraform(struct!.hostnameStatus),
       isBlock: false,
       type: "simple",
       storageClassType: "string",
@@ -118,6 +268,18 @@ export function dataCloudflareCustomHostnameFilterToHclTerraform(struct?: DataCl
       isBlock: false,
       type: "simple",
       storageClassType: "number",
+    },
+    ssl_status: {
+      value: cdktn.stringToHclTerraform(struct!.sslStatus),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    wildcard: {
+      value: cdktn.booleanToHclTerraform(struct!.wildcard),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
     },
   };
 
@@ -143,13 +305,25 @@ export class DataCloudflareCustomHostnameFilterOutputReference extends cdktn.Com
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._certificateAuthority !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.certificateAuthority = this._certificateAuthority;
+    }
+    if (this._customOriginServer !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.customOriginServer = this._customOriginServer;
+    }
     if (this._direction !== undefined) {
       hasAnyValues = true;
       internalValueResult.direction = this._direction;
     }
-    if (this._hostname !== undefined) {
+    if (this._hostname?.internalValue !== undefined) {
       hasAnyValues = true;
-      internalValueResult.hostname = this._hostname;
+      internalValueResult.hostname = this._hostname?.internalValue;
+    }
+    if (this._hostnameStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.hostnameStatus = this._hostnameStatus;
     }
     if (this._id !== undefined) {
       hasAnyValues = true;
@@ -163,6 +337,14 @@ export class DataCloudflareCustomHostnameFilterOutputReference extends cdktn.Com
       hasAnyValues = true;
       internalValueResult.ssl = this._ssl;
     }
+    if (this._sslStatus !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.sslStatus = this._sslStatus;
+    }
+    if (this._wildcard !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.wildcard = this._wildcard;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -170,11 +352,16 @@ export class DataCloudflareCustomHostnameFilterOutputReference extends cdktn.Com
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._certificateAuthority = undefined;
+      this._customOriginServer = undefined;
       this._direction = undefined;
-      this._hostname = undefined;
+      this._hostname.internalValue = undefined;
+      this._hostnameStatus = undefined;
       this._id = undefined;
       this._order = undefined;
       this._ssl = undefined;
+      this._sslStatus = undefined;
+      this._wildcard = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -183,12 +370,49 @@ export class DataCloudflareCustomHostnameFilterOutputReference extends cdktn.Com
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._certificateAuthority = value.certificateAuthority;
+      this._customOriginServer = value.customOriginServer;
       this._direction = value.direction;
-      this._hostname = value.hostname;
+      this._hostname.internalValue = value.hostname;
+      this._hostnameStatus = value.hostnameStatus;
       this._id = value.id;
       this._order = value.order;
       this._ssl = value.ssl;
+      this._sslStatus = value.sslStatus;
+      this._wildcard = value.wildcard;
     }
+  }
+
+  // certificate_authority - computed: false, optional: true, required: false
+  private _certificateAuthority?: string; 
+  public get certificateAuthority() {
+    return this.getStringAttribute('certificate_authority');
+  }
+  public set certificateAuthority(value: string) {
+    this._certificateAuthority = value;
+  }
+  public resetCertificateAuthority() {
+    this._certificateAuthority = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get certificateAuthorityInput() {
+    return this._certificateAuthority;
+  }
+
+  // custom_origin_server - computed: false, optional: true, required: false
+  private _customOriginServer?: string; 
+  public get customOriginServer() {
+    return this.getStringAttribute('custom_origin_server');
+  }
+  public set customOriginServer(value: string) {
+    this._customOriginServer = value;
+  }
+  public resetCustomOriginServer() {
+    this._customOriginServer = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get customOriginServerInput() {
+    return this._customOriginServer;
   }
 
   // direction - computed: false, optional: true, required: false
@@ -208,19 +432,35 @@ export class DataCloudflareCustomHostnameFilterOutputReference extends cdktn.Com
   }
 
   // hostname - computed: false, optional: true, required: false
-  private _hostname?: string; 
+  private _hostname = new DataCloudflareCustomHostnameFilterHostnameOutputReference(this, "hostname");
   public get hostname() {
-    return this.getStringAttribute('hostname');
+    return this._hostname;
   }
-  public set hostname(value: string) {
-    this._hostname = value;
+  public putHostname(value: DataCloudflareCustomHostnameFilterHostname) {
+    this._hostname.internalValue = value;
   }
   public resetHostname() {
-    this._hostname = undefined;
+    this._hostname.internalValue = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get hostnameInput() {
-    return this._hostname;
+    return this._hostname.internalValue;
+  }
+
+  // hostname_status - computed: false, optional: true, required: false
+  private _hostnameStatus?: string; 
+  public get hostnameStatus() {
+    return this.getStringAttribute('hostname_status');
+  }
+  public set hostnameStatus(value: string) {
+    this._hostnameStatus = value;
+  }
+  public resetHostnameStatus() {
+    this._hostnameStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get hostnameStatusInput() {
+    return this._hostnameStatus;
   }
 
   // id - computed: false, optional: true, required: false
@@ -269,6 +509,38 @@ export class DataCloudflareCustomHostnameFilterOutputReference extends cdktn.Com
   // Temporarily expose input value. Use with caution.
   public get sslInput() {
     return this._ssl;
+  }
+
+  // ssl_status - computed: false, optional: true, required: false
+  private _sslStatus?: string; 
+  public get sslStatus() {
+    return this.getStringAttribute('ssl_status');
+  }
+  public set sslStatus(value: string) {
+    this._sslStatus = value;
+  }
+  public resetSslStatus() {
+    this._sslStatus = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get sslStatusInput() {
+    return this._sslStatus;
+  }
+
+  // wildcard - computed: false, optional: true, required: false
+  private _wildcard?: boolean | cdktn.IResolvable; 
+  public get wildcard() {
+    return this.getBooleanAttribute('wildcard');
+  }
+  public set wildcard(value: boolean | cdktn.IResolvable) {
+    this._wildcard = value;
+  }
+  public resetWildcard() {
+    this._wildcard = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get wildcardInput() {
+    return this._wildcard;
   }
 }
 export interface DataCloudflareCustomHostnameOwnershipVerification {
@@ -918,7 +1190,7 @@ export class DataCloudflareCustomHostnameSslOutputReference extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname cloudflare_custom_hostname}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname cloudflare_custom_hostname}
 */
 export class DataCloudflareCustomHostname extends cdktn.TerraformDataSource {
 
@@ -934,7 +1206,7 @@ export class DataCloudflareCustomHostname extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareCustomHostname resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCustomHostname to import
-  * @param importFromId The id of the existing DataCloudflareCustomHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCustomHostname that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCustomHostname to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -946,18 +1218,18 @@ export class DataCloudflareCustomHostname extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname cloudflare_custom_hostname} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname cloudflare_custom_hostname} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareCustomHostnameConfig
+  * @param options DataCloudflareCustomHostnameConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareCustomHostnameConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareCustomHostnameConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_custom_hostname',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1068,13 +1340,16 @@ export class DataCloudflareCustomHostname extends cdktn.TerraformDataSource {
     return this.getListAttribute('verification_errors');
   }
 
-  // zone_id - computed: false, optional: false, required: true
+  // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
   public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {

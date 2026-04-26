@@ -4,7 +4,7 @@
 
 ### DnsRecord <a name="DnsRecord" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record cloudflare_dns_record}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record cloudflare_dns_record}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer"></a>
 
@@ -24,14 +24,15 @@ dnsRecord.DnsRecord(
   name: str,
   ttl: typing.Union[int, float],
   type: str,
-  zone_id: str,
   comment: str = None,
   content: str = None,
   data: DnsRecordData = None,
   priority: typing.Union[int, float] = None,
+  private_routing: bool | IResolvable = None,
   proxied: bool | IResolvable = None,
   settings: DnsRecordSettings = None,
-  tags: typing.List[str] = None
+  tags: typing.List[str] = None,
+  zone_id: str = None
 )
 ```
 
@@ -49,14 +50,15 @@ dnsRecord.DnsRecord(
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.name">name</a></code> | <code>str</code> | DNS record name (or @ for the zone apex) in Punycode. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Time To Live (TTL) of the DNS record in seconds. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.type">type</a></code> | <code>str</code> | Record type. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.content">content</a></code> | <code>str</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.data">data</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | Components of a CAA record. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.privateRouting">private_routing</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables private network routing to the origin. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.proxied">proxied</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the record is receiving the performance and security benefits of Cloudflare. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | Settings for the DNS record. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.tags">tags</a></code> | <code>typing.List[str]</code> | Custom tags for the DNS record. This field has no effect on DNS responses. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -126,7 +128,7 @@ Must be unique amongst siblings in the same scope
 
 DNS record name (or @ for the zone apex) in Punycode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#name DnsRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#name DnsRecord#name}
 
 ---
 
@@ -138,7 +140,7 @@ Time To Live (TTL) of the DNS record in seconds.
 
 Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#ttl DnsRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#ttl DnsRecord#ttl}
 
 ---
 
@@ -150,17 +152,7 @@ Record type.
 
 Available values: "A", "AAAA", "CNAME", "MX", "NS", "OPENPGPKEY", "PTR", "TXT", "CAA", "CERT", "DNSKEY", "DS", "HTTPS", "LOC", "NAPTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "URI".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#type DnsRecord#type}
-
----
-
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
@@ -170,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#comment DnsRecord#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#comment DnsRecord#comment}
 
 ---
 
@@ -180,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#content DnsRecord#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#content DnsRecord#content}
 
 ---
 
@@ -190,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Components of a CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#data DnsRecord#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#data DnsRecord#data}
 
 ---
 
@@ -200,7 +192,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#priority DnsRecord#priority}
+
+---
+
+##### `private_routing`<sup>Optional</sup> <a name="private_routing" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.privateRouting"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Enables private network routing to the origin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#private_routing DnsRecord#private_routing}
 
 ---
 
@@ -210,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#proxied DnsRecord#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#proxied DnsRecord#proxied}
 
 ---
 
@@ -220,7 +222,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Settings for the DNS record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#settings DnsRecord#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#settings DnsRecord#settings}
 
 ---
 
@@ -230,7 +232,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#tags DnsRecord#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#tags DnsRecord#tags}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
 
 ---
 
@@ -268,9 +280,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetContent">reset_content</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetData">reset_data</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetPriority">reset_priority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetPrivateRouting">reset_private_routing</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetProxied">reset_proxied</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetSettings">reset_settings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetTags">reset_tags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -671,7 +685,7 @@ def put_data(
 
 Algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
 
 ---
 
@@ -681,7 +695,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Altitude of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#altitude DnsRecord#altitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#altitude DnsRecord#altitude}
 
 ---
 
@@ -691,7 +705,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#certificate DnsRecord#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#certificate DnsRecord#certificate}
 
 ---
 
@@ -701,7 +715,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Digest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#digest DnsRecord#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#digest DnsRecord#digest}
 
 ---
 
@@ -711,7 +725,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Digest Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
 
 ---
 
@@ -721,7 +735,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
 
 ---
 
@@ -731,7 +745,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Flags for the CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#flags DnsRecord#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#flags DnsRecord#flags}
 
 ---
 
@@ -741,7 +755,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Key Tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
 
 ---
 
@@ -751,7 +765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Degrees of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
 
 ---
 
@@ -761,7 +775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Latitude direction. Available values: "N", "S".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
 
 ---
 
@@ -771,7 +785,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Minutes of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
 
 ---
 
@@ -781,7 +795,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Seconds of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
 
 ---
 
@@ -791,7 +805,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Degrees of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
 
 ---
 
@@ -801,7 +815,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Longitude direction. Available values: "E", "W".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
 
 ---
 
@@ -811,7 +825,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Minutes of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
 
 ---
 
@@ -821,7 +835,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Seconds of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
 
 ---
 
@@ -831,7 +845,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Matching Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
 
 ---
 
@@ -841,7 +855,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#order DnsRecord#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#order DnsRecord#order}
 
 ---
 
@@ -851,7 +865,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The port of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#port DnsRecord#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#port DnsRecord#port}
 
 ---
 
@@ -861,7 +875,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Horizontal precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
 
 ---
 
@@ -871,7 +885,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Vertical precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
 
 ---
 
@@ -881,7 +895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#preference DnsRecord#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#preference DnsRecord#preference}
 
 ---
 
@@ -891,7 +905,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
@@ -901,7 +915,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#protocol DnsRecord#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#protocol DnsRecord#protocol}
 
 ---
 
@@ -911,7 +925,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#public_key DnsRecord#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#public_key DnsRecord#public_key}
 
 ---
 
@@ -921,7 +935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#regex DnsRecord#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#regex DnsRecord#regex}
 
 ---
 
@@ -931,7 +945,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Replacement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#replacement DnsRecord#replacement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#replacement DnsRecord#replacement}
 
 ---
 
@@ -941,7 +955,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#selector DnsRecord#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#selector DnsRecord#selector}
 
 ---
 
@@ -951,7 +965,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#service DnsRecord#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#service DnsRecord#service}
 
 ---
 
@@ -961,7 +975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Size of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#size DnsRecord#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#size DnsRecord#size}
 
 ---
 
@@ -971,7 +985,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#tag DnsRecord#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#tag DnsRecord#tag}
 
 ---
 
@@ -981,7 +995,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#target DnsRecord#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#target DnsRecord#target}
 
 ---
 
@@ -991,7 +1005,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
@@ -1001,7 +1015,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#usage DnsRecord#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#usage DnsRecord#usage}
 
 ---
 
@@ -1011,7 +1025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Value of the record. This field's semantics depend on the chosen tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#value DnsRecord#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#value DnsRecord#value}
 
 ---
 
@@ -1021,7 +1035,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The record weight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#weight DnsRecord#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#weight DnsRecord#weight}
 
 ---
 
@@ -1041,7 +1055,7 @@ def put_settings(
 
 If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
 
 ---
 
@@ -1053,7 +1067,7 @@ When enabled, only A records will be generated, and AAAA records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
 
 ---
 
@@ -1065,7 +1079,7 @@ When enabled, only AAAA records will be generated, and A records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
 
 ---
 
@@ -1093,6 +1107,12 @@ def reset_data() -> None
 def reset_priority() -> None
 ```
 
+##### `reset_private_routing` <a name="reset_private_routing" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetPrivateRouting"></a>
+
+```python
+def reset_private_routing() -> None
+```
+
 ##### `reset_proxied` <a name="reset_proxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetProxied"></a>
 
 ```python
@@ -1109,6 +1129,12 @@ def reset_settings() -> None
 
 ```python
 def reset_tags() -> None
+```
+
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -1225,7 +1251,7 @@ The construct id used in the generated config for the DnsRecord to import.
 
 The id of the existing DnsRecord that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1269,6 +1295,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.dataInput">data_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priorityInput">priority_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.privateRoutingInput">private_routing_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput">proxied_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.settingsInput">settings_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tagsInput">tags_input</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -1279,6 +1306,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.content">content</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.privateRouting">private_routing</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxied">proxied</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.tags">tags</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -1569,6 +1597,16 @@ priority_input: typing.Union[int, float]
 
 ---
 
+##### `private_routing_input`<sup>Optional</sup> <a name="private_routing_input" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.privateRoutingInput"></a>
+
+```python
+private_routing_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `proxied_input`<sup>Optional</sup> <a name="proxied_input" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxiedInput"></a>
 
 ```python
@@ -1669,6 +1707,16 @@ priority: typing.Union[int, float]
 
 ---
 
+##### `private_routing`<sup>Required</sup> <a name="private_routing" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.privateRouting"></a>
+
+```python
+private_routing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `proxied`<sup>Required</sup> <a name="proxied" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecord.property.proxied"></a>
 
 ```python
@@ -1757,14 +1805,15 @@ dnsRecord.DnsRecordConfig(
   name: str,
   ttl: typing.Union[int, float],
   type: str,
-  zone_id: str,
   comment: str = None,
   content: str = None,
   data: DnsRecordData = None,
   priority: typing.Union[int, float] = None,
+  private_routing: bool | IResolvable = None,
   proxied: bool | IResolvable = None,
   settings: DnsRecordSettings = None,
-  tags: typing.List[str] = None
+  tags: typing.List[str] = None,
+  zone_id: str = None
 )
 ```
 
@@ -1782,14 +1831,15 @@ dnsRecord.DnsRecordConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.name">name</a></code> | <code>str</code> | DNS record name (or @ for the zone apex) in Punycode. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.ttl">ttl</a></code> | <code>typing.Union[int, float]</code> | Time To Live (TTL) of the DNS record in seconds. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.type">type</a></code> | <code>str</code> | Record type. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.comment">comment</a></code> | <code>str</code> | Comments or notes about the DNS record. This field has no effect on DNS responses. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.content">content</a></code> | <code>str</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.data">data</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordData">DnsRecordData</a></code> | Components of a CAA record. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.priority">priority</a></code> | <code>typing.Union[int, float]</code> | Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.privateRouting">private_routing</a></code> | <code>bool \| cdktn.IResolvable</code> | Enables private network routing to the origin. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.proxied">proxied</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether the record is receiving the performance and security benefits of Cloudflare. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordSettings">DnsRecordSettings</a></code> | Settings for the DNS record. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.tags">tags</a></code> | <code>typing.List[str]</code> | Custom tags for the DNS record. This field has no effect on DNS responses. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1873,7 +1923,7 @@ name: str
 
 DNS record name (or @ for the zone apex) in Punycode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#name DnsRecord#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#name DnsRecord#name}
 
 ---
 
@@ -1889,7 +1939,7 @@ Time To Live (TTL) of the DNS record in seconds.
 
 Setting to 1 means 'automatic'. Value must be between 60 and 86400, with the minimum reduced to 30 for Enterprise zones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#ttl DnsRecord#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#ttl DnsRecord#ttl}
 
 ---
 
@@ -1905,21 +1955,7 @@ Record type.
 
 Available values: "A", "AAAA", "CNAME", "MX", "NS", "OPENPGPKEY", "PTR", "TXT", "CAA", "CERT", "DNSKEY", "DS", "HTTPS", "LOC", "NAPTR", "SMIMEA", "SRV", "SSHFP", "SVCB", "TLSA", "URI".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#type DnsRecord#type}
-
----
-
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
@@ -1933,7 +1969,7 @@ comment: str
 
 Comments or notes about the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#comment DnsRecord#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#comment DnsRecord#comment}
 
 ---
 
@@ -1947,7 +1983,7 @@ content: str
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#content DnsRecord#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#content DnsRecord#content}
 
 ---
 
@@ -1961,7 +1997,7 @@ data: DnsRecordData
 
 Components of a CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#data DnsRecord#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#data DnsRecord#data}
 
 ---
 
@@ -1975,7 +2011,21 @@ priority: typing.Union[int, float]
 
 Required for MX, SRV and URI records; unused by other record types. Records with lower priorities are preferred.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#priority DnsRecord#priority}
+
+---
+
+##### `private_routing`<sup>Optional</sup> <a name="private_routing" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.privateRouting"></a>
+
+```python
+private_routing: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Enables private network routing to the origin.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#private_routing DnsRecord#private_routing}
 
 ---
 
@@ -1989,7 +2039,7 @@ proxied: bool | IResolvable
 
 Whether the record is receiving the performance and security benefits of Cloudflare.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#proxied DnsRecord#proxied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#proxied DnsRecord#proxied}
 
 ---
 
@@ -2003,7 +2053,7 @@ settings: DnsRecordSettings
 
 Settings for the DNS record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#settings DnsRecord#settings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#settings DnsRecord#settings}
 
 ---
 
@@ -2017,7 +2067,21 @@ tags: typing.List[str]
 
 Custom tags for the DNS record. This field has no effect on DNS responses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#tags DnsRecord#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#tags DnsRecord#tags}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dnsRecord.DnsRecordConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#zone_id DnsRecord#zone_id}
 
 ---
 
@@ -2121,7 +2185,7 @@ algorithm: typing.Union[int, float]
 
 Algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#algorithm DnsRecord#algorithm}
 
 ---
 
@@ -2135,7 +2199,7 @@ altitude: typing.Union[int, float]
 
 Altitude of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#altitude DnsRecord#altitude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#altitude DnsRecord#altitude}
 
 ---
 
@@ -2149,7 +2213,7 @@ certificate: str
 
 Certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#certificate DnsRecord#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#certificate DnsRecord#certificate}
 
 ---
 
@@ -2163,7 +2227,7 @@ digest: str
 
 Digest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#digest DnsRecord#digest}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#digest DnsRecord#digest}
 
 ---
 
@@ -2177,7 +2241,7 @@ digest_type: typing.Union[int, float]
 
 Digest Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#digest_type DnsRecord#digest_type}
 
 ---
 
@@ -2191,7 +2255,7 @@ fingerprint: str
 
 Fingerprint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#fingerprint DnsRecord#fingerprint}
 
 ---
 
@@ -2205,7 +2269,7 @@ flags: typing.Mapping[typing.Any]
 
 Flags for the CAA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#flags DnsRecord#flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#flags DnsRecord#flags}
 
 ---
 
@@ -2219,7 +2283,7 @@ key_tag: typing.Union[int, float]
 
 Key Tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#key_tag DnsRecord#key_tag}
 
 ---
 
@@ -2233,7 +2297,7 @@ lat_degrees: typing.Union[int, float]
 
 Degrees of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_degrees DnsRecord#lat_degrees}
 
 ---
 
@@ -2247,7 +2311,7 @@ lat_direction: str
 
 Latitude direction. Available values: "N", "S".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_direction DnsRecord#lat_direction}
 
 ---
 
@@ -2261,7 +2325,7 @@ lat_minutes: typing.Union[int, float]
 
 Minutes of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_minutes DnsRecord#lat_minutes}
 
 ---
 
@@ -2275,7 +2339,7 @@ lat_seconds: typing.Union[int, float]
 
 Seconds of latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#lat_seconds DnsRecord#lat_seconds}
 
 ---
 
@@ -2289,7 +2353,7 @@ long_degrees: typing.Union[int, float]
 
 Degrees of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_degrees DnsRecord#long_degrees}
 
 ---
 
@@ -2303,7 +2367,7 @@ long_direction: str
 
 Longitude direction. Available values: "E", "W".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_direction DnsRecord#long_direction}
 
 ---
 
@@ -2317,7 +2381,7 @@ long_minutes: typing.Union[int, float]
 
 Minutes of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_minutes DnsRecord#long_minutes}
 
 ---
 
@@ -2331,7 +2395,7 @@ long_seconds: typing.Union[int, float]
 
 Seconds of longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#long_seconds DnsRecord#long_seconds}
 
 ---
 
@@ -2345,7 +2409,7 @@ matching_type: typing.Union[int, float]
 
 Matching Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#matching_type DnsRecord#matching_type}
 
 ---
 
@@ -2359,7 +2423,7 @@ order: typing.Union[int, float]
 
 Order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#order DnsRecord#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#order DnsRecord#order}
 
 ---
 
@@ -2373,7 +2437,7 @@ port: typing.Union[int, float]
 
 The port of the service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#port DnsRecord#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#port DnsRecord#port}
 
 ---
 
@@ -2387,7 +2451,7 @@ precision_horz: typing.Union[int, float]
 
 Horizontal precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#precision_horz DnsRecord#precision_horz}
 
 ---
 
@@ -2401,7 +2465,7 @@ precision_vert: typing.Union[int, float]
 
 Vertical precision of location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#precision_vert DnsRecord#precision_vert}
 
 ---
 
@@ -2415,7 +2479,7 @@ preference: typing.Union[int, float]
 
 Preference.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#preference DnsRecord#preference}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#preference DnsRecord#preference}
 
 ---
 
@@ -2429,7 +2493,7 @@ priority: typing.Union[int, float]
 
 Priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#priority DnsRecord#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#priority DnsRecord#priority}
 
 ---
 
@@ -2443,7 +2507,7 @@ protocol: typing.Union[int, float]
 
 Protocol.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#protocol DnsRecord#protocol}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#protocol DnsRecord#protocol}
 
 ---
 
@@ -2457,7 +2521,7 @@ public_key: str
 
 Public Key.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#public_key DnsRecord#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#public_key DnsRecord#public_key}
 
 ---
 
@@ -2471,7 +2535,7 @@ regex: str
 
 Regex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#regex DnsRecord#regex}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#regex DnsRecord#regex}
 
 ---
 
@@ -2485,7 +2549,7 @@ replacement: str
 
 Replacement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#replacement DnsRecord#replacement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#replacement DnsRecord#replacement}
 
 ---
 
@@ -2499,7 +2563,7 @@ selector: typing.Union[int, float]
 
 Selector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#selector DnsRecord#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#selector DnsRecord#selector}
 
 ---
 
@@ -2513,7 +2577,7 @@ service: str
 
 Service.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#service DnsRecord#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#service DnsRecord#service}
 
 ---
 
@@ -2527,7 +2591,7 @@ size: typing.Union[int, float]
 
 Size of location in meters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#size DnsRecord#size}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#size DnsRecord#size}
 
 ---
 
@@ -2541,7 +2605,7 @@ tag: str
 
 Name of the property controlled by this record (e.g.: issue, issuewild, iodef).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#tag DnsRecord#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#tag DnsRecord#tag}
 
 ---
 
@@ -2555,7 +2619,7 @@ target: str
 
 Target.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#target DnsRecord#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#target DnsRecord#target}
 
 ---
 
@@ -2569,7 +2633,7 @@ type: typing.Union[int, float]
 
 Type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#type DnsRecord#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#type DnsRecord#type}
 
 ---
 
@@ -2583,7 +2647,7 @@ usage: typing.Union[int, float]
 
 Usage.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#usage DnsRecord#usage}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#usage DnsRecord#usage}
 
 ---
 
@@ -2597,7 +2661,7 @@ value: str
 
 Value of the record. This field's semantics depend on the chosen tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#value DnsRecord#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#value DnsRecord#value}
 
 ---
 
@@ -2611,7 +2675,7 @@ weight: typing.Union[int, float]
 
 The record weight.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#weight DnsRecord#weight}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#weight DnsRecord#weight}
 
 ---
 
@@ -2649,7 +2713,7 @@ flatten_cname: bool | IResolvable
 
 If enabled, causes the CNAME record to be resolved externally and the resulting address records (e.g., A and AAAA) to be returned instead of the CNAME record itself. This setting is unavailable for proxied records, since they are always flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#flatten_cname DnsRecord#flatten_cname}
 
 ---
 
@@ -2665,7 +2729,7 @@ When enabled, only A records will be generated, and AAAA records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#ipv4_only DnsRecord#ipv4_only}
 
 ---
 
@@ -2681,7 +2745,7 @@ When enabled, only AAAA records will be generated, and A records will not be cre
 
 This setting is intended for exceptional cases. Note that this option only applies to proxied records and it has no effect on whether Cloudflare communicates with the origin using IPv4 or IPv6.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_record#ipv6_only DnsRecord#ipv6_only}
 
 ---
 

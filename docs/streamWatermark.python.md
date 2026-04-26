@@ -4,7 +4,7 @@
 
 ### StreamWatermarkA <a name="StreamWatermarkA" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer"></a>
 
@@ -21,14 +21,14 @@ streamWatermark.StreamWatermarkA(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  file: str,
+  account_id: str = None,
   identifier: str = None,
   name: str = None,
   opacity: typing.Union[int, float] = None,
   padding: typing.Union[int, float] = None,
   position: str = None,
-  scale: typing.Union[int, float] = None
+  scale: typing.Union[int, float] = None,
+  url: str = None
 )
 ```
 
@@ -44,13 +44,13 @@ streamWatermark.StreamWatermarkA(
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.file">file</a></code> | <code>str</code> | The image file to upload. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | The unique identifier for a watermark profile. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.name">name</a></code> | <code>str</code> | A short description of the watermark profile. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.opacity">opacity</a></code> | <code>typing.Union[int, float]</code> | The translucency of the image. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.padding">padding</a></code> | <code>typing.Union[int, float]</code> | The whitespace between the adjacent edges (determined by position) of the video and the image. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.position">position</a></code> | <code>str</code> | The location of the image. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.scale">scale</a></code> | <code>typing.Union[int, float]</code> | The size of the image relative to the overall size of the video. |
+| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.url">url</a></code> | <code>str</code> | URL of the watermark image to copy. |
 
 ---
 
@@ -114,23 +114,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#account_id StreamWatermarkA#account_id}
-
----
-
-##### `file`<sup>Required</sup> <a name="file" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.file"></a>
-
-- *Type:* str
-
-The image file to upload.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#file StreamWatermarkA#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#account_id StreamWatermarkA#account_id}
 
 ---
 
@@ -140,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique identifier for a watermark profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#identifier StreamWatermarkA#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#identifier StreamWatermarkA#identifier}
 
 ---
 
@@ -150,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A short description of the watermark profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#name StreamWatermarkA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#name StreamWatermarkA#name}
 
 ---
 
@@ -162,7 +152,7 @@ The translucency of the image.
 
 A value of `0.0` makes the image completely transparent, and `1.0` makes the image completely opaque. Note that if the image is already semi-transparent, setting this to `1.0` will not make the image completely opaque.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#opacity StreamWatermarkA#opacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#opacity StreamWatermarkA#opacity}
 
 ---
 
@@ -174,7 +164,7 @@ The whitespace between the adjacent edges (determined by position) of the video 
 
 `0.0` indicates no padding, and `1.0` indicates a fully padded video width or length, as determined by the algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#padding StreamWatermarkA#padding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#padding StreamWatermarkA#padding}
 
 ---
 
@@ -186,7 +176,7 @@ The location of the image.
 
 Valid positions are: `upperRight`, `upperLeft`, `lowerLeft`, `lowerRight`, and `center`. Note that `center` ignores the `padding` parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#position StreamWatermarkA#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#position StreamWatermarkA#position}
 
 ---
 
@@ -198,7 +188,17 @@ The size of the image relative to the overall size of the video.
 
 This parameter will adapt to horizontal and vertical videos automatically. `0.0` indicates no scaling (use the size of the image as-is), and `1.0 `fills the entire video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#scale StreamWatermarkA#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#scale StreamWatermarkA#scale}
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.url"></a>
+
+- *Type:* str
+
+URL of the watermark image to copy.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#url StreamWatermarkA#url}
 
 ---
 
@@ -230,12 +230,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetIdentifier">reset_identifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetOpacity">reset_opacity</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetPadding">reset_padding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetPosition">reset_position</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetScale">reset_scale</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetUrl">reset_url</a></code> | *No description.* |
 
 ---
 
@@ -587,6 +589,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_identifier` <a name="reset_identifier" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetIdentifier"></a>
 
 ```python
@@ -621,6 +629,12 @@ def reset_position() -> None
 
 ```python
 def reset_scale() -> None
+```
+
+##### `reset_url` <a name="reset_url" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetUrl"></a>
+
+```python
+def reset_url() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -737,7 +751,7 @@ The construct id used in the generated config for the StreamWatermarkA to import
 
 The id of the existing StreamWatermarkA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,21 +788,21 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.width">width</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.fileInput">file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.opacityInput">opacity_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.paddingInput">padding_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.positionInput">position_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.scaleInput">scale_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.urlInput">url_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.file">file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.identifier">identifier</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.opacity">opacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.padding">padding</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.position">position</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.scale">scale</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.url">url</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -1004,16 +1018,6 @@ account_id_input: str
 
 ---
 
-##### `file_input`<sup>Optional</sup> <a name="file_input" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.fileInput"></a>
-
-```python
-file_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `identifier_input`<sup>Optional</sup> <a name="identifier_input" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.identifierInput"></a>
 
 ```python
@@ -1074,20 +1078,20 @@ scale_input: typing.Union[int, float]
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.accountId"></a>
+##### `url_input`<sup>Optional</sup> <a name="url_input" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.urlInput"></a>
 
 ```python
-account_id: str
+url_input: str
 ```
 
 - *Type:* str
 
 ---
 
-##### `file`<sup>Required</sup> <a name="file" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.file"></a>
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.accountId"></a>
 
 ```python
-file: str
+account_id: str
 ```
 
 - *Type:* str
@@ -1154,6 +1158,16 @@ scale: typing.Union[int, float]
 
 ---
 
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1189,14 +1203,14 @@ streamWatermark.StreamWatermarkAConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  file: str,
+  account_id: str = None,
   identifier: str = None,
   name: str = None,
   opacity: typing.Union[int, float] = None,
   padding: typing.Union[int, float] = None,
   position: str = None,
-  scale: typing.Union[int, float] = None
+  scale: typing.Union[int, float] = None,
+  url: str = None
 )
 ```
 
@@ -1212,13 +1226,13 @@ streamWatermark.StreamWatermarkAConfig(
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.file">file</a></code> | <code>str</code> | The image file to upload. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.identifier">identifier</a></code> | <code>str</code> | The unique identifier for a watermark profile. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.name">name</a></code> | <code>str</code> | A short description of the watermark profile. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.opacity">opacity</a></code> | <code>typing.Union[int, float]</code> | The translucency of the image. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.padding">padding</a></code> | <code>typing.Union[int, float]</code> | The whitespace between the adjacent edges (determined by position) of the video and the image. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.position">position</a></code> | <code>str</code> | The location of the image. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.scale">scale</a></code> | <code>typing.Union[int, float]</code> | The size of the image relative to the overall size of the video. |
+| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.url">url</a></code> | <code>str</code> | URL of the watermark image to copy. |
 
 ---
 
@@ -1292,7 +1306,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1302,21 +1316,7 @@ account_id: str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#account_id StreamWatermarkA#account_id}
-
----
-
-##### `file`<sup>Required</sup> <a name="file" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.file"></a>
-
-```python
-file: str
-```
-
-- *Type:* str
-
-The image file to upload.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#file StreamWatermarkA#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#account_id StreamWatermarkA#account_id}
 
 ---
 
@@ -1330,7 +1330,7 @@ identifier: str
 
 The unique identifier for a watermark profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#identifier StreamWatermarkA#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#identifier StreamWatermarkA#identifier}
 
 ---
 
@@ -1344,7 +1344,7 @@ name: str
 
 A short description of the watermark profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#name StreamWatermarkA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#name StreamWatermarkA#name}
 
 ---
 
@@ -1360,7 +1360,7 @@ The translucency of the image.
 
 A value of `0.0` makes the image completely transparent, and `1.0` makes the image completely opaque. Note that if the image is already semi-transparent, setting this to `1.0` will not make the image completely opaque.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#opacity StreamWatermarkA#opacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#opacity StreamWatermarkA#opacity}
 
 ---
 
@@ -1376,7 +1376,7 @@ The whitespace between the adjacent edges (determined by position) of the video 
 
 `0.0` indicates no padding, and `1.0` indicates a fully padded video width or length, as determined by the algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#padding StreamWatermarkA#padding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#padding StreamWatermarkA#padding}
 
 ---
 
@@ -1392,7 +1392,7 @@ The location of the image.
 
 Valid positions are: `upperRight`, `upperLeft`, `lowerLeft`, `lowerRight`, and `center`. Note that `center` ignores the `padding` parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#position StreamWatermarkA#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#position StreamWatermarkA#position}
 
 ---
 
@@ -1408,7 +1408,21 @@ The size of the image relative to the overall size of the video.
 
 This parameter will adapt to horizontal and vertical videos automatically. `0.0` indicates no scaling (use the size of the image as-is), and `1.0 `fills the entire video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_watermark#scale StreamWatermarkA#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#scale StreamWatermarkA#scale}
+
+---
+
+##### `url`<sup>Optional</sup> <a name="url" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+URL of the watermark image to copy.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_watermark#url StreamWatermarkA#url}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareListItemsA <a name="DataCloudflareListItemsA" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items cloudflare_list_items}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items cloudflare_list_items}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer"></a>
 
@@ -21,8 +21,8 @@ dataCloudflareListItems.DataCloudflareListItemsA(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   list_id: str,
+  account_id: str = None,
   max_items: typing.Union[int, float] = None,
   per_page: typing.Union[int, float] = None,
   search: str = None
@@ -40,8 +40,8 @@ dataCloudflareListItems.DataCloudflareListItemsA(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Amount of results to include in each paginated response. A non-negative 32 bit integer. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.search">search</a></code> | <code>str</code> | A search query to filter returned items. |
@@ -108,23 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-The Account ID for this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
-
----
-
 ##### `list_id`<sup>Required</sup> <a name="list_id" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.listId"></a>
 
 - *Type:* str
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+The Account ID for this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Amount of results to include in each paginated response. A non-negative 32 bit integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
 
 ---
 
@@ -156,7 +156,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
 
 ---
 
@@ -182,6 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.resetMaxItems">reset_max_items</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.resetPerPage">reset_per_page</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.resetSearch">reset_search</a></code> | *No description.* |
@@ -428,6 +429,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_max_items` <a name="reset_max_items" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsA.resetMaxItems"></a>
 
 ```python
@@ -560,7 +567,7 @@ The construct id used in the generated config for the DataCloudflareListItemsA t
 
 The id of the existing DataCloudflareListItemsA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -869,8 +876,8 @@ dataCloudflareListItems.DataCloudflareListItemsAConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   list_id: str,
+  account_id: str = None,
   max_items: typing.Union[int, float] = None,
   per_page: typing.Union[int, float] = None,
   search: str = None
@@ -888,8 +895,8 @@ dataCloudflareListItems.DataCloudflareListItemsAConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Amount of results to include in each paginated response. A non-negative 32 bit integer. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.search">search</a></code> | <code>str</code> | A search query to filter returned items. |
@@ -966,20 +973,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-The Account ID for this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
-
----
-
 ##### `list_id`<sup>Required</sup> <a name="list_id" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.listId"></a>
 
 ```python
@@ -990,7 +983,21 @@ list_id: str
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#list_id DataCloudflareListItemsA#list_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItems.DataCloudflareListItemsAConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+The Account ID for this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#account_id DataCloudflareListItemsA#account_id}
 
 ---
 
@@ -1004,7 +1011,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#max_items DataCloudflareListItemsA#max_items}
 
 ---
 
@@ -1018,7 +1025,7 @@ per_page: typing.Union[int, float]
 
 Amount of results to include in each paginated response. A non-negative 32 bit integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#per_page DataCloudflareListItemsA#per_page}
 
 ---
 
@@ -1034,7 +1041,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_items#search DataCloudflareListItemsA#search}
 
 ---
 

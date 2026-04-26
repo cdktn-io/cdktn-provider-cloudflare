@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_tiered_cache
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_tiered_cache
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareRegionalTieredCacheConfig extends cdktn.Terraform
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_tiered_cache#zone_id DataCloudflareRegionalTieredCache#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_tiered_cache#zone_id DataCloudflareRegionalTieredCache#zone_id}
   */
-  readonly zoneId: string;
+  readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_tiered_cache cloudflare_regional_tiered_cache}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_tiered_cache cloudflare_regional_tiered_cache}
 */
 export class DataCloudflareRegionalTieredCache extends cdktn.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataCloudflareRegionalTieredCache extends cdktn.TerraformDataSource
   * Generates CDKTN code for importing a DataCloudflareRegionalTieredCache resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRegionalTieredCache to import
-  * @param importFromId The id of the existing DataCloudflareRegionalTieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_tiered_cache#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRegionalTieredCache that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_tiered_cache#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRegionalTieredCache to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,18 +49,18 @@ export class DataCloudflareRegionalTieredCache extends cdktn.TerraformDataSource
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_tiered_cache cloudflare_regional_tiered_cache} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_tiered_cache cloudflare_regional_tiered_cache} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareRegionalTieredCacheConfig
+  * @param options DataCloudflareRegionalTieredCacheConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareRegionalTieredCacheConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareRegionalTieredCacheConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_regional_tiered_cache',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -98,13 +98,16 @@ export class DataCloudflareRegionalTieredCache extends cdktn.TerraformDataSource
     return this.getStringAttribute('value');
   }
 
-  // zone_id - computed: false, optional: false, required: true
+  // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
   public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {

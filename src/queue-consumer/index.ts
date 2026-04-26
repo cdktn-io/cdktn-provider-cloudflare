@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,33 +15,33 @@ export interface QueueConsumerConfig extends cdktn.TerraformMetaArguments {
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#account_id QueueConsumer#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#dead_letter_queue QueueConsumer#dead_letter_queue}
   */
   readonly deadLetterQueue?: string;
   /**
   * A Resource identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#queue_id QueueConsumer#queue_id}
   */
   readonly queueId: string;
   /**
   * Name of a Worker
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#script_name QueueConsumer#script_name}
   */
   readonly scriptName?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#settings QueueConsumer#settings}
   */
   readonly settings?: QueueConsumerSettings;
   /**
   * Available values: "worker", "http_pull".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#type QueueConsumer#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#type QueueConsumer#type}
   */
   readonly type: string;
 }
@@ -49,37 +49,37 @@ export interface QueueConsumerSettings {
   /**
   * The maximum number of messages to include in a batch.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#batch_size QueueConsumer#batch_size}
   */
   readonly batchSize?: number;
   /**
   * Maximum number of concurrent consumers that may consume from this Queue. Set to `null` to automatically opt in to the platform's maximum (recommended).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#max_concurrency QueueConsumer#max_concurrency}
   */
   readonly maxConcurrency?: number;
   /**
   * The maximum number of retries
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#max_retries QueueConsumer#max_retries}
   */
   readonly maxRetries?: number;
   /**
   * The number of milliseconds to wait for a batch to fill up before attempting to deliver it
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#max_wait_time_ms QueueConsumer#max_wait_time_ms}
   */
   readonly maxWaitTimeMs?: number;
   /**
   * The number of seconds to delay before making the message available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#retry_delay QueueConsumer#retry_delay}
   */
   readonly retryDelay?: number;
   /**
   * The number of milliseconds that a message is exclusively leased. After the timeout, the message becomes available for another attempt.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#visibility_timeout_ms QueueConsumer#visibility_timeout_ms}
   */
   readonly visibilityTimeoutMs?: number;
 }
@@ -220,7 +220,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     }
   }
 
-  // batch_size - computed: false, optional: true, required: false
+  // batch_size - computed: true, optional: true, required: false
   private _batchSize?: number; 
   public get batchSize() {
     return this.getNumberAttribute('batch_size');
@@ -236,7 +236,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     return this._batchSize;
   }
 
-  // max_concurrency - computed: false, optional: true, required: false
+  // max_concurrency - computed: true, optional: true, required: false
   private _maxConcurrency?: number; 
   public get maxConcurrency() {
     return this.getNumberAttribute('max_concurrency');
@@ -252,7 +252,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     return this._maxConcurrency;
   }
 
-  // max_retries - computed: false, optional: true, required: false
+  // max_retries - computed: true, optional: true, required: false
   private _maxRetries?: number; 
   public get maxRetries() {
     return this.getNumberAttribute('max_retries');
@@ -268,7 +268,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     return this._maxRetries;
   }
 
-  // max_wait_time_ms - computed: false, optional: true, required: false
+  // max_wait_time_ms - computed: true, optional: true, required: false
   private _maxWaitTimeMs?: number; 
   public get maxWaitTimeMs() {
     return this.getNumberAttribute('max_wait_time_ms');
@@ -284,7 +284,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     return this._maxWaitTimeMs;
   }
 
-  // retry_delay - computed: false, optional: true, required: false
+  // retry_delay - computed: true, optional: true, required: false
   private _retryDelay?: number; 
   public get retryDelay() {
     return this.getNumberAttribute('retry_delay');
@@ -300,7 +300,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
     return this._retryDelay;
   }
 
-  // visibility_timeout_ms - computed: false, optional: true, required: false
+  // visibility_timeout_ms - computed: true, optional: true, required: false
   private _visibilityTimeoutMs?: number; 
   public get visibilityTimeoutMs() {
     return this.getNumberAttribute('visibility_timeout_ms');
@@ -318,7 +318,7 @@ export class QueueConsumerSettingsOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer cloudflare_queue_consumer}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer cloudflare_queue_consumer}
 */
 export class QueueConsumer extends cdktn.TerraformResource {
 
@@ -334,7 +334,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a QueueConsumer resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QueueConsumer to import
-  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QueueConsumer that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QueueConsumer to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -346,7 +346,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/queue_consumer cloudflare_queue_consumer} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +357,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_queue_consumer',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -380,13 +380,16 @@ export class QueueConsumer extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
@@ -437,7 +440,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
     return this.getStringAttribute('queue_name');
   }
 
-  // script_name - computed: false, optional: true, required: false
+  // script_name - computed: true, optional: true, required: false
   private _scriptName?: string; 
   public get scriptName() {
     return this.getStringAttribute('script_name');
@@ -453,7 +456,7 @@ export class QueueConsumer extends cdktn.TerraformResource {
     return this._scriptName;
   }
 
-  // settings - computed: false, optional: true, required: false
+  // settings - computed: true, optional: true, required: false
   private _settings = new QueueConsumerSettingsOutputReference(this, "settings");
   public get settings() {
     return this._settings;

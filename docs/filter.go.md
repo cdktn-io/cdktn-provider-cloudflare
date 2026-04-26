@@ -4,7 +4,7 @@
 
 ### Filter <a name="Filter" id="@cdktn/provider-cloudflare.filter.Filter"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter cloudflare_filter}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter cloudflare_filter}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.filter.Filter.Initializer"></a>
 
@@ -79,6 +79,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.filter.Filter.resetExpression">ResetExpression</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.filter.Filter.resetPaused">ResetPaused</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.filter.Filter.resetRef">ResetRef</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.filter.Filter.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -427,6 +428,12 @@ func ResetPaused()
 func ResetRef()
 ```
 
+##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.filter.Filter.resetZoneId"></a>
+
+```go
+func ResetZoneId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -530,7 +537,7 @@ The construct id used in the generated config for the Filter to import.
 
 The id of the existing Filter that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,7 +911,7 @@ Description *string
 
 An informative summary of the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#description Filter#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#description Filter#description}
 
 ---
 
@@ -918,7 +925,7 @@ Expression *string
 
 The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#expression Filter#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#expression Filter#expression}
 
 ---
 
@@ -932,7 +939,7 @@ Paused interface{}
 
 When true, indicates that the filter is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#paused Filter#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#paused Filter#paused}
 
 ---
 
@@ -946,7 +953,7 @@ Ref *string
 
 A short reference tag. Allows you to select related filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#ref Filter#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#ref Filter#ref}
 
 ---
 
@@ -966,11 +973,11 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/filter"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Body: interface{},
-	ZoneId: *string,
 	Description: *string,
 	Expression: *string,
 	Paused: interface{},
 	Ref: *string,
+	ZoneId: *string,
 }
 ```
 
@@ -985,12 +992,12 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/filter"
 | <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.body">Body</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#body Filter#body}. |
-| <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Defines an identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.body">Body</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#body Filter#body}. |
 | <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.description">Description</a></code> | <code>*string</code> | An informative summary of the filter. |
 | <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.expression">Expression</a></code> | <code>*string</code> | The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/). |
 | <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.paused">Paused</a></code> | <code>interface{}</code> | When true, indicates that the filter is currently paused. |
 | <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.ref">Ref</a></code> | <code>*string</code> | A short reference tag. Allows you to select related filters. |
+| <code><a href="#@cdktn/provider-cloudflare.filter.FilterConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Defines an identifier. |
 
 ---
 
@@ -1072,21 +1079,7 @@ Body interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#body Filter#body}.
-
----
-
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.filter.FilterConfig.property.zoneId"></a>
-
-```go
-ZoneId *string
-```
-
-- *Type:* *string
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#zone_id Filter#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#body Filter#body}.
 
 ---
 
@@ -1100,7 +1093,7 @@ Description *string
 
 An informative summary of the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#description Filter#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#description Filter#description}
 
 ---
 
@@ -1114,7 +1107,7 @@ Expression *string
 
 The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#expression Filter#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#expression Filter#expression}
 
 ---
 
@@ -1128,7 +1121,7 @@ Paused interface{}
 
 When true, indicates that the filter is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#paused Filter#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#paused Filter#paused}
 
 ---
 
@@ -1142,7 +1135,21 @@ Ref *string
 
 A short reference tag. Allows you to select related filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/filter#ref Filter#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#ref Filter#ref}
+
+---
+
+##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.filter.FilterConfig.property.zoneId"></a>
+
+```go
+ZoneId *string
+```
+
+- *Type:* *string
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/filter#zone_id Filter#zone_id}
 
 ---
 

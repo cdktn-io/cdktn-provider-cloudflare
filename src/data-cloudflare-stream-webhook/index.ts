@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_webhook
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_webhook
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareStreamWebhookConfig extends cdktn.TerraformMetaAr
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_webhook#account_id DataCloudflareStreamWebhook#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_webhook#account_id DataCloudflareStreamWebhook#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_webhook cloudflare_stream_webhook}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_webhook cloudflare_stream_webhook}
 */
 export class DataCloudflareStreamWebhook extends cdktn.TerraformDataSource {
 
@@ -37,7 +37,7 @@ export class DataCloudflareStreamWebhook extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareStreamWebhook resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareStreamWebhook to import
-  * @param importFromId The id of the existing DataCloudflareStreamWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_webhook#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareStreamWebhook that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_webhook#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareStreamWebhook to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -49,18 +49,18 @@ export class DataCloudflareStreamWebhook extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_webhook cloudflare_stream_webhook} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_webhook cloudflare_stream_webhook} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareStreamWebhookConfig
+  * @param options DataCloudflareStreamWebhookConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareStreamWebhookConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareStreamWebhookConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_stream_webhook',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -78,7 +78,7 @@ export class DataCloudflareStreamWebhook extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
@@ -86,9 +86,27 @@ export class DataCloudflareStreamWebhook extends cdktn.TerraformDataSource {
   public set accountId(value: string) {
     this._accountId = value;
   }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
+  }
+
+  // modified - computed: true, optional: false, required: false
+  public get modified() {
+    return this.getStringAttribute('modified');
+  }
+
+  // notification_url - computed: true, optional: false, required: false
+  public get notificationUrl() {
+    return this.getStringAttribute('notification_url');
+  }
+
+  // secret - computed: true, optional: false, required: false
+  public get secret() {
+    return this.getStringAttribute('secret');
   }
 
   // =========

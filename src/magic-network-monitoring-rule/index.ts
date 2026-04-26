@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,48 +13,76 @@ import * as cdktn from 'cdktn';
 
 export interface MagicNetworkMonitoringRuleConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#account_id MagicNetworkMonitoringRule#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#account_id MagicNetworkMonitoringRule#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
   * Toggle on if you would like Cloudflare to automatically advertise the IP Prefixes within the rule via Magic Transit when the rule is triggered. Only available for users of Magic Transit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#automatic_advertisement MagicNetworkMonitoringRule#automatic_advertisement}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#automatic_advertisement MagicNetworkMonitoringRule#automatic_advertisement}
   */
-  readonly automaticAdvertisement?: boolean | cdktn.IResolvable;
+  readonly automaticAdvertisement: boolean | cdktn.IResolvable;
   /**
   * The number of bits per second for the rule. When this value is exceeded for the set duration, an alert notification is sent. Minimum of 1 and no maximum.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#bandwidth MagicNetworkMonitoringRule#bandwidth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#bandwidth_threshold MagicNetworkMonitoringRule#bandwidth_threshold}
   */
-  readonly bandwidth?: number;
+  readonly bandwidthThreshold?: number;
   /**
   * The amount of time that the rule threshold must be exceeded to send an alert notification. The final value must be equivalent to one of the following 8 values ["1m","5m","10m","15m","20m","30m","45m","60m"].
   * Available values: "1m", "5m", "10m", "15m", "20m", "30m", "45m", "60m".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#duration MagicNetworkMonitoringRule#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#duration MagicNetworkMonitoringRule#duration}
   */
   readonly duration?: string;
   /**
   * The name of the rule. Must be unique. Supports characters A-Z, a-z, 0-9, underscore (_), dash (-), period (.), and tilde (~). You can’t have a space in the rule name. Max 256 characters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#name MagicNetworkMonitoringRule#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#name MagicNetworkMonitoringRule#name}
   */
   readonly name: string;
   /**
   * The number of packets per second for the rule. When this value is exceeded for the set duration, an alert notification is sent. Minimum of 1 and no maximum.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#packet_threshold MagicNetworkMonitoringRule#packet_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#packet_threshold MagicNetworkMonitoringRule#packet_threshold}
   */
   readonly packetThreshold?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#prefixes MagicNetworkMonitoringRule#prefixes}
+  * Prefix match type to be applied for a prefix auto advertisement when using an advanced_ddos rule.
+  * Available values: "exact", "subnet", "supernet".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#prefix_match MagicNetworkMonitoringRule#prefix_match}
   */
-  readonly prefixes?: string[];
+  readonly prefixMatch?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#prefixes MagicNetworkMonitoringRule#prefixes}
+  */
+  readonly prefixes: string[];
+  /**
+  * MNM rule type.
+  * Available values: "threshold", "zscore", "advanced_ddos".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#type MagicNetworkMonitoringRule#type}
+  */
+  readonly type: string;
+  /**
+  * Level of sensitivity set for zscore rules.
+  * Available values: "low", "medium", "high".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#zscore_sensitivity MagicNetworkMonitoringRule#zscore_sensitivity}
+  */
+  readonly zscoreSensitivity?: string;
+  /**
+  * Target of the zscore rule analysis.
+  * Available values: "bits", "packets".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#zscore_target MagicNetworkMonitoringRule#zscore_target}
+  */
+  readonly zscoreTarget?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule}
 */
 export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
 
@@ -70,7 +98,7 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a MagicNetworkMonitoringRule resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the MagicNetworkMonitoringRule to import
-  * @param importFromId The id of the existing MagicNetworkMonitoringRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing MagicNetworkMonitoringRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the MagicNetworkMonitoringRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -82,7 +110,7 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/magic_network_monitoring_rule cloudflare_magic_network_monitoring_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -93,7 +121,7 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_magic_network_monitoring_rule',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -106,18 +134,22 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
     });
     this._accountId = config.accountId;
     this._automaticAdvertisement = config.automaticAdvertisement;
-    this._bandwidth = config.bandwidth;
+    this._bandwidthThreshold = config.bandwidthThreshold;
     this._duration = config.duration;
     this._name = config.name;
     this._packetThreshold = config.packetThreshold;
+    this._prefixMatch = config.prefixMatch;
     this._prefixes = config.prefixes;
+    this._type = config.type;
+    this._zscoreSensitivity = config.zscoreSensitivity;
+    this._zscoreTarget = config.zscoreTarget;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
@@ -125,12 +157,15 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
   public set accountId(value: string) {
     this._accountId = value;
   }
+  public resetAccountId() {
+    this._accountId = undefined;
+  }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
     return this._accountId;
   }
 
-  // automatic_advertisement - computed: false, optional: true, required: false
+  // automatic_advertisement - computed: false, optional: false, required: true
   private _automaticAdvertisement?: boolean | cdktn.IResolvable; 
   public get automaticAdvertisement() {
     return this.getBooleanAttribute('automatic_advertisement');
@@ -138,33 +173,25 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
   public set automaticAdvertisement(value: boolean | cdktn.IResolvable) {
     this._automaticAdvertisement = value;
   }
-  public resetAutomaticAdvertisement() {
-    this._automaticAdvertisement = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get automaticAdvertisementInput() {
     return this._automaticAdvertisement;
   }
 
-  // bandwidth - computed: false, optional: true, required: false
-  private _bandwidth?: number; 
-  public get bandwidth() {
-    return this.getNumberAttribute('bandwidth');
-  }
-  public set bandwidth(value: number) {
-    this._bandwidth = value;
-  }
-  public resetBandwidth() {
-    this._bandwidth = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get bandwidthInput() {
-    return this._bandwidth;
-  }
-
-  // bandwidth_threshold - computed: true, optional: false, required: false
+  // bandwidth_threshold - computed: false, optional: true, required: false
+  private _bandwidthThreshold?: number; 
   public get bandwidthThreshold() {
     return this.getNumberAttribute('bandwidth_threshold');
+  }
+  public set bandwidthThreshold(value: number) {
+    this._bandwidthThreshold = value;
+  }
+  public resetBandwidthThreshold() {
+    this._bandwidthThreshold = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get bandwidthThresholdInput() {
+    return this._bandwidthThreshold;
   }
 
   // duration - computed: true, optional: true, required: false
@@ -217,12 +244,23 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
     return this._packetThreshold;
   }
 
-  // prefix_match - computed: true, optional: false, required: false
+  // prefix_match - computed: false, optional: true, required: false
+  private _prefixMatch?: string; 
   public get prefixMatch() {
     return this.getStringAttribute('prefix_match');
   }
+  public set prefixMatch(value: string) {
+    this._prefixMatch = value;
+  }
+  public resetPrefixMatch() {
+    this._prefixMatch = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get prefixMatchInput() {
+    return this._prefixMatch;
+  }
 
-  // prefixes - computed: false, optional: true, required: false
+  // prefixes - computed: false, optional: false, required: true
   private _prefixes?: string[]; 
   public get prefixes() {
     return this.getListAttribute('prefixes');
@@ -230,27 +268,54 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
   public set prefixes(value: string[]) {
     this._prefixes = value;
   }
-  public resetPrefixes() {
-    this._prefixes = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get prefixesInput() {
     return this._prefixes;
   }
 
-  // type - computed: true, optional: false, required: false
+  // type - computed: false, optional: false, required: true
+  private _type?: string; 
   public get type() {
     return this.getStringAttribute('type');
   }
+  public set type(value: string) {
+    this._type = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
 
-  // zscore_sensitivity - computed: true, optional: false, required: false
+  // zscore_sensitivity - computed: false, optional: true, required: false
+  private _zscoreSensitivity?: string; 
   public get zscoreSensitivity() {
     return this.getStringAttribute('zscore_sensitivity');
   }
+  public set zscoreSensitivity(value: string) {
+    this._zscoreSensitivity = value;
+  }
+  public resetZscoreSensitivity() {
+    this._zscoreSensitivity = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zscoreSensitivityInput() {
+    return this._zscoreSensitivity;
+  }
 
-  // zscore_target - computed: true, optional: false, required: false
+  // zscore_target - computed: false, optional: true, required: false
+  private _zscoreTarget?: string; 
   public get zscoreTarget() {
     return this.getStringAttribute('zscore_target');
+  }
+  public set zscoreTarget(value: string) {
+    this._zscoreTarget = value;
+  }
+  public resetZscoreTarget() {
+    this._zscoreTarget = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get zscoreTargetInput() {
+    return this._zscoreTarget;
   }
 
   // =========
@@ -261,11 +326,15 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
       automatic_advertisement: cdktn.booleanToTerraform(this._automaticAdvertisement),
-      bandwidth: cdktn.numberToTerraform(this._bandwidth),
+      bandwidth_threshold: cdktn.numberToTerraform(this._bandwidthThreshold),
       duration: cdktn.stringToTerraform(this._duration),
       name: cdktn.stringToTerraform(this._name),
       packet_threshold: cdktn.numberToTerraform(this._packetThreshold),
+      prefix_match: cdktn.stringToTerraform(this._prefixMatch),
       prefixes: cdktn.listMapper(cdktn.stringToTerraform, false)(this._prefixes),
+      type: cdktn.stringToTerraform(this._type),
+      zscore_sensitivity: cdktn.stringToTerraform(this._zscoreSensitivity),
+      zscore_target: cdktn.stringToTerraform(this._zscoreTarget),
     };
   }
 
@@ -283,8 +352,8 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "boolean",
       },
-      bandwidth: {
-        value: cdktn.numberToHclTerraform(this._bandwidth),
+      bandwidth_threshold: {
+        value: cdktn.numberToHclTerraform(this._bandwidthThreshold),
         isBlock: false,
         type: "simple",
         storageClassType: "number",
@@ -307,11 +376,35 @@ export class MagicNetworkMonitoringRule extends cdktn.TerraformResource {
         type: "simple",
         storageClassType: "number",
       },
+      prefix_match: {
+        value: cdktn.stringToHclTerraform(this._prefixMatch),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       prefixes: {
         value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._prefixes),
         isBlock: false,
         type: "list",
         storageClassType: "stringList",
+      },
+      type: {
+        value: cdktn.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zscore_sensitivity: {
+        value: cdktn.stringToHclTerraform(this._zscoreSensitivity),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      zscore_target: {
+        value: cdktn.stringToHclTerraform(this._zscoreTarget),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
       },
     };
 
