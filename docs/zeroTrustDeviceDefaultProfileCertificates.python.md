@@ -4,7 +4,7 @@
 
 ### ZeroTrustDeviceDefaultProfileCertificates <a name="ZeroTrustDeviceDefaultProfileCertificates" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates cloudflare_zero_trust_device_default_profile_certificates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer"></a>
 
@@ -22,7 +22,7 @@ zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertifica
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   enabled: bool | IResolvable,
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -38,7 +38,7 @@ zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertifica
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current status of the device policy certificate provisioning feature for WARP clients. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}. |
 
 ---
 
@@ -108,15 +108,15 @@ Must be unique amongst siblings in the same scope
 
 The current status of the device policy certificate provisioning feature for WARP clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates#enabled ZeroTrustDeviceDefaultProfileCertificates#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates#enabled ZeroTrustDeviceDefaultProfileCertificates#enabled}
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer.parameter.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}.
 
 ---
 
@@ -148,6 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -499,6 +500,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificates.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -613,7 +620,7 @@ The construct id used in the generated config for the ZeroTrustDeviceDefaultProf
 
 The id of the existing ZeroTrustDeviceDefaultProfileCertificates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -868,7 +875,7 @@ zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertifica
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   enabled: bool | IResolvable,
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -884,7 +891,7 @@ zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertifica
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | The current status of the device policy certificate provisioning feature for WARP clients. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}. |
 
 ---
 
@@ -968,11 +975,11 @@ enabled: bool | IResolvable
 
 The current status of the device policy certificate provisioning feature for WARP clients.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates#enabled ZeroTrustDeviceDefaultProfileCertificates#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates#enabled ZeroTrustDeviceDefaultProfileCertificates#enabled}
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceDefaultProfileCertificates.ZeroTrustDeviceDefaultProfileCertificatesConfig.property.zoneId"></a>
 
 ```python
 zone_id: str
@@ -980,7 +987,7 @@ zone_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_device_default_profile_certificates#zone_id ZeroTrustDeviceDefaultProfileCertificates#zone_id}.
 
 ---
 

@@ -4,14 +4,14 @@
 
 ### DataCloudflareStreams <a name="DataCloudflareStreams" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams cloudflare_streams}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams cloudflare_streams}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer"></a>
 
 ```typescript
 import { dataCloudflareStreams } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareStreams.DataCloudflareStreams(scope: Construct, id: string, config: DataCloudflareStreamsConfig)
+new dataCloudflareStreams.DataCloudflareStreams(scope: Construct, id: string, config?: DataCloudflareStreamsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig">DataCloudflareStreamsConfig</a>
 
@@ -68,11 +68,18 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetAfter">resetAfter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetAsc">resetAsc</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetBefore">resetBefore</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetCreator">resetCreator</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetEnd">resetEnd</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetIncludeCounts">resetIncludeCounts</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetLimit">resetLimit</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetLiveInputId">resetLiveInputId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetMaxItems">resetMaxItems</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetSearch">resetSearch</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetStart">resetStart</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetStatus">resetStatus</a></code> | *No description.* |
@@ -294,10 +301,28 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
+##### `resetAfter` <a name="resetAfter" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetAfter"></a>
+
+```typescript
+public resetAfter(): void
+```
+
 ##### `resetAsc` <a name="resetAsc" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetAsc"></a>
 
 ```typescript
 public resetAsc(): void
+```
+
+##### `resetBefore` <a name="resetBefore" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetBefore"></a>
+
+```typescript
+public resetBefore(): void
 ```
 
 ##### `resetCreator` <a name="resetCreator" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetCreator"></a>
@@ -312,16 +337,40 @@ public resetCreator(): void
 public resetEnd(): void
 ```
 
+##### `resetId` <a name="resetId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetId"></a>
+
+```typescript
+public resetId(): void
+```
+
 ##### `resetIncludeCounts` <a name="resetIncludeCounts" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetIncludeCounts"></a>
 
 ```typescript
 public resetIncludeCounts(): void
 ```
 
+##### `resetLimit` <a name="resetLimit" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetLimit"></a>
+
+```typescript
+public resetLimit(): void
+```
+
+##### `resetLiveInputId` <a name="resetLiveInputId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetLiveInputId"></a>
+
+```typescript
+public resetLiveInputId(): void
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetMaxItems"></a>
 
 ```typescript
 public resetMaxItems(): void
+```
+
+##### `resetName` <a name="resetName" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetName"></a>
+
+```typescript
+public resetName(): void
 ```
 
 ##### `resetSearch` <a name="resetSearch" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.resetSearch"></a>
@@ -457,7 +506,7 @@ The construct id used in the generated config for the DataCloudflareStreams to i
 
 The id of the existing DataCloudflareStreams that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -487,22 +536,34 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.result">result</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultList">DataCloudflareStreamsResultList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.afterInput">afterInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.ascInput">ascInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.beforeInput">beforeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.creatorInput">creatorInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.endInput">endInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.includeCountsInput">includeCountsInput</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.limitInput">limitInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.liveInputIdInput">liveInputIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.maxItemsInput">maxItemsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.searchInput">searchInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.startInput">startInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.statusInput">statusInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.videoNameInput">videoNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.after">after</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.asc">asc</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.before">before</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.creator">creator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.end">end</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.includeCounts">includeCounts</a></code> | <code>boolean \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.limit">limit</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.liveInputId">liveInputId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.maxItems">maxItems</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.search">search</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.start">start</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.status">status</a></code> | <code>string</code> | *No description.* |
@@ -653,6 +714,16 @@ public readonly accountIdInput: string;
 
 ---
 
+##### `afterInput`<sup>Optional</sup> <a name="afterInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.afterInput"></a>
+
+```typescript
+public readonly afterInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `ascInput`<sup>Optional</sup> <a name="ascInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.ascInput"></a>
 
 ```typescript
@@ -660,6 +731,16 @@ public readonly ascInput: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `beforeInput`<sup>Optional</sup> <a name="beforeInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.beforeInput"></a>
+
+```typescript
+public readonly beforeInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -683,6 +764,16 @@ public readonly endInput: string;
 
 ---
 
+##### `idInput`<sup>Optional</sup> <a name="idInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.idInput"></a>
+
+```typescript
+public readonly idInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `includeCountsInput`<sup>Optional</sup> <a name="includeCountsInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.includeCountsInput"></a>
 
 ```typescript
@@ -693,6 +784,26 @@ public readonly includeCountsInput: boolean | IResolvable;
 
 ---
 
+##### `limitInput`<sup>Optional</sup> <a name="limitInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.limitInput"></a>
+
+```typescript
+public readonly limitInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `liveInputIdInput`<sup>Optional</sup> <a name="liveInputIdInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.liveInputIdInput"></a>
+
+```typescript
+public readonly liveInputIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `maxItemsInput`<sup>Optional</sup> <a name="maxItemsInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.maxItemsInput"></a>
 
 ```typescript
@@ -700,6 +811,16 @@ public readonly maxItemsInput: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -763,6 +884,16 @@ public readonly accountId: string;
 
 ---
 
+##### `after`<sup>Required</sup> <a name="after" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.after"></a>
+
+```typescript
+public readonly after: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `asc`<sup>Required</sup> <a name="asc" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.asc"></a>
 
 ```typescript
@@ -770,6 +901,16 @@ public readonly asc: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktn.IResolvable
+
+---
+
+##### `before`<sup>Required</sup> <a name="before" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.before"></a>
+
+```typescript
+public readonly before: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -793,6 +934,16 @@ public readonly end: string;
 
 ---
 
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `includeCounts`<sup>Required</sup> <a name="includeCounts" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.includeCounts"></a>
 
 ```typescript
@@ -803,6 +954,26 @@ public readonly includeCounts: boolean | IResolvable;
 
 ---
 
+##### `limit`<sup>Required</sup> <a name="limit" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.limit"></a>
+
+```typescript
+public readonly limit: number;
+```
+
+- *Type:* number
+
+---
+
+##### `liveInputId`<sup>Required</sup> <a name="liveInputId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.liveInputId"></a>
+
+```typescript
+public readonly liveInputId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `maxItems`<sup>Required</sup> <a name="maxItems" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.maxItems"></a>
 
 ```typescript
@@ -810,6 +981,16 @@ public readonly maxItems: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreams.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -905,11 +1086,17 @@ const dataCloudflareStreamsConfig: dataCloudflareStreams.DataCloudflareStreamsCo
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.after">after</a></code> | <code>string</code> | Alias for 'start'. Returns videos created after this date/time (RFC 3339 format). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.asc">asc</a></code> | <code>boolean \| cdktn.IResolvable</code> | Lists videos in ascending order of creation. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.before">before</a></code> | <code>string</code> | Alias for 'end'. Returns videos created before this date/time (RFC 3339 format). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.creator">creator</a></code> | <code>string</code> | A user-defined identifier for the media creator. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.end">end</a></code> | <code>string</code> | Lists videos created before the specified date. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.id">id</a></code> | <code>string</code> | Filter by video ID(s). Can be a single ID or a comma-separated list of IDs. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.includeCounts">includeCounts</a></code> | <code>boolean \| cdktn.IResolvable</code> | Includes the total number of videos associated with the submitted query parameters. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.limit">limit</a></code> | <code>number</code> | Maximum number of videos to return (default 1000, max 1000). |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.liveInputId">liveInputId</a></code> | <code>string</code> | Filter by live input ID to find videos associated with a specific live stream. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.name">name</a></code> | <code>string</code> | Filter by video name/UID(s). Can be a single name or a comma-separated list. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.search">search</a></code> | <code>string</code> | Provides a partial word match of the `name` key in the `meta` field. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.start">start</a></code> | <code>string</code> | Lists videos created after the specified date. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.status">status</a></code> | <code>string</code> | Specifies the processing status for all quality levels for a video. Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress". |
@@ -988,7 +1175,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -998,7 +1185,21 @@ public readonly accountId: string;
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#account_id DataCloudflareStreams#account_id}
+
+---
+
+##### `after`<sup>Optional</sup> <a name="after" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.after"></a>
+
+```typescript
+public readonly after: string;
+```
+
+- *Type:* string
+
+Alias for 'start'. Returns videos created after this date/time (RFC 3339 format).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#after DataCloudflareStreams#after}
 
 ---
 
@@ -1012,7 +1213,21 @@ public readonly asc: boolean | IResolvable;
 
 Lists videos in ascending order of creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#asc DataCloudflareStreams#asc}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#asc DataCloudflareStreams#asc}
+
+---
+
+##### `before`<sup>Optional</sup> <a name="before" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.before"></a>
+
+```typescript
+public readonly before: string;
+```
+
+- *Type:* string
+
+Alias for 'end'. Returns videos created before this date/time (RFC 3339 format).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#before DataCloudflareStreams#before}
 
 ---
 
@@ -1026,7 +1241,7 @@ public readonly creator: string;
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#creator DataCloudflareStreams#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#creator DataCloudflareStreams#creator}
 
 ---
 
@@ -1040,7 +1255,24 @@ public readonly end: string;
 
 Lists videos created before the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#end DataCloudflareStreams#end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#end DataCloudflareStreams#end}
+
+---
+
+##### `id`<sup>Optional</sup> <a name="id" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+Filter by video ID(s). Can be a single ID or a comma-separated list of IDs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#id DataCloudflareStreams#id}
+
+Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
 
 ---
 
@@ -1054,7 +1286,35 @@ public readonly includeCounts: boolean | IResolvable;
 
 Includes the total number of videos associated with the submitted query parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#include_counts DataCloudflareStreams#include_counts}
+
+---
+
+##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.limit"></a>
+
+```typescript
+public readonly limit: number;
+```
+
+- *Type:* number
+
+Maximum number of videos to return (default 1000, max 1000).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#limit DataCloudflareStreams#limit}
+
+---
+
+##### `liveInputId`<sup>Optional</sup> <a name="liveInputId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.liveInputId"></a>
+
+```typescript
+public readonly liveInputId: string;
+```
+
+- *Type:* string
+
+Filter by live input ID to find videos associated with a specific live stream.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#live_input_id DataCloudflareStreams#live_input_id}
 
 ---
 
@@ -1068,7 +1328,21 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#max_items DataCloudflareStreams#max_items}
+
+---
+
+##### `name`<sup>Optional</sup> <a name="name" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+Filter by video name/UID(s). Can be a single name or a comma-separated list.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#name DataCloudflareStreams#name}
 
 ---
 
@@ -1084,7 +1358,7 @@ Provides a partial word match of the `name` key in the `meta` field.
 
 Slow for medium to large video libraries. May be unavailable for very large libraries.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#search DataCloudflareStreams#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#search DataCloudflareStreams#search}
 
 ---
 
@@ -1098,7 +1372,7 @@ public readonly start: string;
 
 Lists videos created after the specified date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#start DataCloudflareStreams#start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#start DataCloudflareStreams#start}
 
 ---
 
@@ -1112,7 +1386,7 @@ public readonly status: string;
 
 Specifies the processing status for all quality levels for a video. Available values: "pendingupload", "downloading", "queued", "inprogress", "ready", "error", "live-inprogress".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#status DataCloudflareStreams#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#status DataCloudflareStreams#status}
 
 ---
 
@@ -1126,7 +1400,7 @@ public readonly type: string;
 
 Specifies whether the video is `vod` or `live`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#type DataCloudflareStreams#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#type DataCloudflareStreams#type}
 
 ---
 
@@ -1140,7 +1414,7 @@ public readonly videoName: string;
 
 Provides a fast, exact string match on the `name` key in the `meta` field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/streams#video_name DataCloudflareStreams#video_name}
 
 ---
 
@@ -1174,6 +1448,17 @@ const dataCloudflareStreamsResultInput: dataCloudflareStreams.DataCloudflareStre
 import { dataCloudflareStreams } from '@cdktn/provider-cloudflare'
 
 const dataCloudflareStreamsResultPlayback: dataCloudflareStreams.DataCloudflareStreamsResultPlayback = { ... }
+```
+
+
+### DataCloudflareStreamsResultPublicDetails <a name="DataCloudflareStreamsResultPublicDetails" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetails"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetails.Initializer"></a>
+
+```typescript
+import { dataCloudflareStreams } from '@cdktn/provider-cloudflare'
+
+const dataCloudflareStreamsResultPublicDetails: dataCloudflareStreams.DataCloudflareStreamsResultPublicDetails = { ... }
 ```
 
 
@@ -1850,16 +2135,19 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.allowedOrigins">allowedOrigins</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.clippedFrom">clippedFrom</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.created">created</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.creator">creator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.duration">duration</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.input">input</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultInputOutputReference">DataCloudflareStreamsResultInputOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.liveInput">liveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.maxDurationSeconds">maxDurationSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.maxSizeBytes">maxSizeBytes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.meta">meta</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.modified">modified</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.playback">playback</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPlaybackOutputReference">DataCloudflareStreamsResultPlaybackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.preview">preview</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.publicDetails">publicDetails</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference">DataCloudflareStreamsResultPublicDetailsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.readyToStream">readyToStream</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.readyToStreamAt">readyToStreamAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.requireSignedUrls">requireSignedUrls</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -1907,6 +2195,16 @@ public readonly allowedOrigins: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `clippedFrom`<sup>Required</sup> <a name="clippedFrom" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.clippedFrom"></a>
+
+```typescript
+public readonly clippedFrom: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1970,6 +2268,16 @@ public readonly maxDurationSeconds: number;
 
 ---
 
+##### `maxSizeBytes`<sup>Required</sup> <a name="maxSizeBytes" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.maxSizeBytes"></a>
+
+```typescript
+public readonly maxSizeBytes: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `meta`<sup>Required</sup> <a name="meta" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.meta"></a>
 
 ```typescript
@@ -2007,6 +2315,16 @@ public readonly preview: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `publicDetails`<sup>Required</sup> <a name="publicDetails" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultOutputReference.property.publicDetails"></a>
+
+```typescript
+public readonly publicDetails: DataCloudflareStreamsResultPublicDetailsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference">DataCloudflareStreamsResultPublicDetailsOutputReference</a>
 
 ---
 
@@ -2408,6 +2726,310 @@ public readonly internalValue: DataCloudflareStreamsResultPlayback;
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPlayback">DataCloudflareStreamsResultPlayback</a>
+
+---
+
+
+### DataCloudflareStreamsResultPublicDetailsOutputReference <a name="DataCloudflareStreamsResultPublicDetailsOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareStreams } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.channelLink">channelLink</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.logo">logo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.mediaId">mediaId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.shareLink">shareLink</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.title">title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetails">DataCloudflareStreamsResultPublicDetails</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `channelLink`<sup>Required</sup> <a name="channelLink" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.channelLink"></a>
+
+```typescript
+public readonly channelLink: string;
+```
+
+- *Type:* string
+
+---
+
+##### `logo`<sup>Required</sup> <a name="logo" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.logo"></a>
+
+```typescript
+public readonly logo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mediaId`<sup>Required</sup> <a name="mediaId" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.mediaId"></a>
+
+```typescript
+public readonly mediaId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `shareLink`<sup>Required</sup> <a name="shareLink" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.shareLink"></a>
+
+```typescript
+public readonly shareLink: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetailsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataCloudflareStreamsResultPublicDetails;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStreams.DataCloudflareStreamsResultPublicDetails">DataCloudflareStreamsResultPublicDetails</a>
 
 ---
 

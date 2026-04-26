@@ -4,7 +4,7 @@
 
 ### DataCloudflareLeakedCredentialCheckRule <a name="DataCloudflareLeakedCredentialCheckRule" id="@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRule.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRule.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRule.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRule.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRule.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareLeakedCreden
 
 The id of the existing DataCloudflareLeakedCredentialCheckRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/leaked_credential_check_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/leaked_credential_check_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,11 +750,11 @@ public readonly detectionId: string;
 
 Defines the unique ID for this custom detection.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/leaked_credential_check_rule#detection_id DataCloudflareLeakedCredentialCheckRule#detection_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/leaked_credential_check_rule#detection_id DataCloudflareLeakedCredentialCheckRule#detection_id}
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRuleConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareLeakedCredentialCheckRule.DataCloudflareLeakedCredentialCheckRuleConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -757,7 +764,7 @@ public readonly zoneId: string;
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/leaked_credential_check_rule#zone_id DataCloudflareLeakedCredentialCheckRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/leaked_credential_check_rule#zone_id DataCloudflareLeakedCredentialCheckRule#zone_id}
 
 ---
 

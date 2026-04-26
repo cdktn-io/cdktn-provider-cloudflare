@@ -4,7 +4,7 @@
 
 ### DataCloudflareNotificationPolicies <a name="DataCloudflareNotificationPolicies" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policies cloudflare_notification_policies}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/notification_policies cloudflare_notification_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.Initializer"></a>
 
@@ -21,7 +21,7 @@ dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   max_items: typing.Union[int, float] = None
 )
 ```
@@ -102,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 The account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policies#account_id DataCloudflareNotificationPolicies#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/notification_policies#account_id DataCloudflareNotificationPolicies#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policies#max_items DataCloudflareNotificationPolicies#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/notification_policies#max_items DataCloudflareNotificationPolicies#max_items}
 
 ---
 
@@ -144,6 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.resetMaxItems">reset_max_items</a></code> | *No description.* |
 
 ---
@@ -388,6 +389,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_max_items` <a name="reset_max_items" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPolicies.resetMaxItems"></a>
 
 ```python
@@ -508,7 +515,7 @@ The construct id used in the generated config for the DataCloudflareNotification
 
 The id of the existing DataCloudflareNotificationPolicies that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policies#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/notification_policies#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -751,7 +758,7 @@ dataCloudflareNotificationPolicies.DataCloudflareNotificationPoliciesConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   max_items: typing.Union[int, float] = None
 )
 ```
@@ -842,7 +849,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPoliciesConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareNotificationPolicies.DataCloudflareNotificationPoliciesConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -852,7 +859,7 @@ account_id: str
 
 The account id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policies#account_id DataCloudflareNotificationPolicies#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/notification_policies#account_id DataCloudflareNotificationPolicies#account_id}
 
 ---
 
@@ -866,7 +873,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/notification_policies#max_items DataCloudflareNotificationPolicies#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/notification_policies#max_items DataCloudflareNotificationPolicies#max_items}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareRuleset <a name="DataCloudflareRuleset" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset cloudflare_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset cloudflare_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRuleset.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -135,7 +135,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 The unique ID of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
 
 ---
 
@@ -145,7 +145,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
 
 ---
 
@@ -556,7 +556,7 @@ The construct id used in the generated config for the DataCloudflareRuleset to i
 
 The id of the existing DataCloudflareRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1014,7 +1014,7 @@ account_id: str
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
 
 ---
 
@@ -1028,7 +1028,7 @@ id: str
 
 The unique ID of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1045,7 +1045,7 @@ ruleset_id: str
 
 The unique ID of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
 
 ---
 
@@ -1059,7 +1059,7 @@ zone_id: str
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
 
 ---
 
@@ -11598,6 +11598,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.cacheKey">cache_key</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersCacheKeyOutputReference">DataCloudflareRulesetRulesActionParametersCacheKeyOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.cacheReserve">cache_reserve</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersCacheReserveOutputReference">DataCloudflareRulesetRulesActionParametersCacheReserveOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.content">content</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.contentConverter">content_converter</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.contentType">content_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.cookieFields">cookie_fields</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersCookieFieldsList">DataCloudflareRulesetRulesActionParametersCookieFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.disableApps">disable_apps</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -11637,6 +11638,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.public">public</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersPublicOutputReference">DataCloudflareRulesetRulesActionParametersPublicOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.rawResponseFields">raw_response_fields</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersRawResponseFieldsList">DataCloudflareRulesetRulesActionParametersRawResponseFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.readTimeout">read_timeout</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.redirectsForAiTraining">redirects_for_ai_training</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.requestBodyBuffering">request_body_buffering</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.requestFields">request_fields</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersRequestFieldsList">DataCloudflareRulesetRulesActionParametersRequestFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.respectStrongEtags">respect_strong_etags</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -11798,6 +11800,16 @@ content: str
 ```
 
 - *Type:* str
+
+---
+
+##### `content_converter`<sup>Required</sup> <a name="content_converter" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.contentConverter"></a>
+
+```python
+content_converter: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 
@@ -12188,6 +12200,16 @@ read_timeout: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `redirects_for_ai_training`<sup>Required</sup> <a name="redirects_for_ai_training" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.redirectsForAiTraining"></a>
+
+```python
+redirects_for_ai_training: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreamDownload <a name="DataCloudflareStreamDownload" id="@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_download cloudflare_stream_download}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_download cloudflare_stream_download}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownload.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareStreamDownlo
 
 The id of the existing DataCloudflareStreamDownload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_download#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_download#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -619,8 +626,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccountId: *string,
 	Identifier: *string,
+	AccountId: *string,
 }
 ```
 
@@ -635,8 +642,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.identifier">Identifier</a></code> | <code>*string</code> | A Cloudflare-generated unique identifier for a media item. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 
 ---
 
@@ -710,20 +717,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.accountId"></a>
-
-```go
-AccountId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_download#account_id DataCloudflareStreamDownload#account_id}
-
----
-
 ##### `Identifier`<sup>Required</sup> <a name="Identifier" id="@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.identifier"></a>
 
 ```go
@@ -734,7 +727,21 @@ Identifier *string
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_download#identifier DataCloudflareStreamDownload#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_download#identifier DataCloudflareStreamDownload#identifier}
+
+---
+
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamDownload.DataCloudflareStreamDownloadConfig.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_download#account_id DataCloudflareStreamDownload#account_id}
 
 ---
 

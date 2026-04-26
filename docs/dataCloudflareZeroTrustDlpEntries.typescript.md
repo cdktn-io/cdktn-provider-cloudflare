@@ -4,14 +4,14 @@
 
 ### DataCloudflareZeroTrustDlpEntries <a name="DataCloudflareZeroTrustDlpEntries" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_entries cloudflare_zero_trust_dlp_entries}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.Initializer"></a>
 
 ```typescript
 import { dataCloudflareZeroTrustDlpEntries } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries(scope: Construct, id: string, config: DataCloudflareZeroTrustDlpEntriesConfig)
+new dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries(scope: Construct, id: string, config?: DataCloudflareZeroTrustDlpEntriesConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig">DataCloudflareZeroTrustDlpEntriesConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 
 ---
@@ -285,6 +286,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntries.resetMaxItems"></a>
 
 ```typescript
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDlp
 
 The id of the existing DataCloudflareZeroTrustDlpEntries that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_entries#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_entries#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +650,7 @@ const dataCloudflareZeroTrustDlpEntriesConfig: dataCloudflareZeroTrustDlpEntries
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_entries#account_id DataCloudflareZeroTrustDlpEntries#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_entries#account_id DataCloudflareZeroTrustDlpEntries#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -718,7 +725,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpEntries.DataCloudflareZeroTrustDlpEntriesConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -726,7 +733,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_entries#account_id DataCloudflareZeroTrustDlpEntries#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_entries#account_id DataCloudflareZeroTrustDlpEntries#account_id}.
 
 ---
 
@@ -740,7 +747,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_dlp_entries#max_items DataCloudflareZeroTrustDlpEntries#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_dlp_entries#max_items DataCloudflareZeroTrustDlpEntries#max_items}
 
 ---
 

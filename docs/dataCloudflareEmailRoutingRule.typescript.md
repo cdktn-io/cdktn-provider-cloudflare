@@ -4,14 +4,14 @@
 
 ### DataCloudflareEmailRoutingRule <a name="DataCloudflareEmailRoutingRule" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule cloudflare_email_routing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.Initializer"></a>
 
 ```typescript
 import { dataCloudflareEmailRoutingRule } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule(scope: Construct, id: string, config: DataCloudflareEmailRoutingRuleConfig)
+new dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule(scope: Construct, id: string, config?: DataCloudflareEmailRoutingRuleConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig">DataCloudflareEmailRoutingRuleConfig</a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.putFilter">putFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.resetRuleIdentifier">resetRuleIdentifier</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -311,6 +312,12 @@ public resetFilter(): void
 public resetRuleIdentifier(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRule.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -414,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareEmailRouting
 
 The id of the existing DataCloudflareEmailRoutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,9 +769,9 @@ const dataCloudflareEmailRoutingRuleConfig: dataCloudflareEmailRoutingRule.DataC
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter">DataCloudflareEmailRoutingRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter">DataCloudflareEmailRoutingRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.ruleIdentifier">ruleIdentifier</a></code> | <code>string</code> | Routing rule identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -838,20 +845,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule#zone_id DataCloudflareEmailRoutingRule#zone_id}
-
----
-
 ##### `filter`<sup>Optional</sup> <a name="filter" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.filter"></a>
 
 ```typescript
@@ -860,7 +853,7 @@ public readonly filter: DataCloudflareEmailRoutingRuleFilter;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleFilter">DataCloudflareEmailRoutingRuleFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule#filter DataCloudflareEmailRoutingRule#filter}.
 
 ---
 
@@ -874,7 +867,21 @@ public readonly ruleIdentifier: string;
 
 Routing rule identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule#rule_identifier DataCloudflareEmailRoutingRule#rule_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule#rule_identifier DataCloudflareEmailRoutingRule#rule_identifier}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRule.DataCloudflareEmailRoutingRuleConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule#zone_id DataCloudflareEmailRoutingRule#zone_id}
 
 ---
 
@@ -906,7 +913,7 @@ public readonly enabled: boolean | IResolvable;
 
 Filter by enabled routing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_rule#enabled DataCloudflareEmailRoutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_rule#enabled DataCloudflareEmailRoutingRule#enabled}
 
 ---
 

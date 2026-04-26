@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustGatewayPacfile <a name="DataCloudflareZeroTrustGatewayPacfile" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfile.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfile.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfile.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfile.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfile.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfile.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustGat
 
 The id of the existing DataCloudflareZeroTrustGatewayPacfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_pacfile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_pacfile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -713,8 +720,8 @@ const dataCloudflareZeroTrustGatewayPacfileConfig: dataCloudflareZeroTrustGatewa
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_pacfile#account_id DataCloudflareZeroTrustGatewayPacfile#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.pacfileId">pacfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_pacfile#pacfile_id DataCloudflareZeroTrustGatewayPacfile#pacfile_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.pacfileId">pacfileId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_pacfile#pacfile_id DataCloudflareZeroTrustGatewayPacfile#pacfile_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_pacfile#account_id DataCloudflareZeroTrustGatewayPacfile#account_id}. |
 
 ---
 
@@ -788,18 +795,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_pacfile#account_id DataCloudflareZeroTrustGatewayPacfile#account_id}.
-
----
-
 ##### `pacfileId`<sup>Required</sup> <a name="pacfileId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.pacfileId"></a>
 
 ```typescript
@@ -808,7 +803,19 @@ public readonly pacfileId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_gateway_pacfile#pacfile_id DataCloudflareZeroTrustGatewayPacfile#pacfile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_pacfile#pacfile_id DataCloudflareZeroTrustGatewayPacfile#pacfile_id}.
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustGatewayPacfile.DataCloudflareZeroTrustGatewayPacfileConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_gateway_pacfile#account_id DataCloudflareZeroTrustGatewayPacfile#account_id}.
 
 ---
 

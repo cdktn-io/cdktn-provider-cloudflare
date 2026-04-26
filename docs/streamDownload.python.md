@@ -4,7 +4,7 @@
 
 ### StreamDownload <a name="StreamDownload" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download cloudflare_stream_download}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_download cloudflare_stream_download}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer"></a>
 
@@ -21,8 +21,8 @@ streamDownload.StreamDownload(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  identifier: str
+  identifier: str,
+  account_id: str = None
 )
 ```
 
@@ -37,8 +37,8 @@ streamDownload.StreamDownload(
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -102,23 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download#account_id StreamDownload#account_id}
-
----
-
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.identifier"></a>
 
 - *Type:* str
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download#identifier StreamDownload#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_download#identifier StreamDownload#identifier}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_download#account_id StreamDownload#account_id}
 
 ---
 
@@ -150,6 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -501,6 +502,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -615,7 +622,7 @@ The construct id used in the generated config for the StreamDownload to import.
 
 The id of the existing StreamDownload that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_download#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -645,6 +652,8 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.audio">audio</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference">StreamDownloadAudioOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.default">default</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference">StreamDownloadDefaultOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
@@ -794,6 +803,26 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `audio`<sup>Required</sup> <a name="audio" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.audio"></a>
+
+```python
+audio: StreamDownloadAudioOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference">StreamDownloadAudioOutputReference</a>
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.default"></a>
+
+```python
+default: StreamDownloadDefaultOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference">StreamDownloadDefaultOutputReference</a>
+
+---
+
 ##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktn/provider-cloudflare.streamDownload.StreamDownload.property.accountIdInput"></a>
 
 ```python
@@ -854,6 +883,17 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### StreamDownloadAudio <a name="StreamDownloadAudio" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudio"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudio.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import stream_download
+
+streamDownload.StreamDownloadAudio()
+```
+
+
 ### StreamDownloadConfig <a name="StreamDownloadConfig" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.Initializer"></a>
@@ -869,8 +909,8 @@ streamDownload.StreamDownloadConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  identifier: str
+  identifier: str,
+  account_id: str = None
 )
 ```
 
@@ -885,8 +925,8 @@ streamDownload.StreamDownloadConfig(
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -960,20 +1000,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download#account_id StreamDownload#account_id}
-
----
-
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.identifier"></a>
 
 ```python
@@ -984,7 +1010,647 @@ identifier: str
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_download#identifier StreamDownload#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_download#identifier StreamDownload#identifier}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_download#account_id StreamDownload#account_id}
+
+---
+
+### StreamDownloadDefault <a name="StreamDownloadDefault" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefault"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefault.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import stream_download
+
+streamDownload.StreamDownloadDefault()
+```
+
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### StreamDownloadAudioOutputReference <a name="StreamDownloadAudioOutputReference" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import stream_download
+
+streamDownload.StreamDownloadAudioOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.percentComplete">percent_complete</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudio">StreamDownloadAudio</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `percent_complete`<sup>Required</sup> <a name="percent_complete" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.percentComplete"></a>
+
+```python
+percent_complete: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.status"></a>
+
+```python
+status: str
+```
+
+- *Type:* str
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudioOutputReference.property.internalValue"></a>
+
+```python
+internal_value: StreamDownloadAudio
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadAudio">StreamDownloadAudio</a>
+
+---
+
+
+### StreamDownloadDefaultOutputReference <a name="StreamDownloadDefaultOutputReference" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import stream_download
+
+streamDownload.StreamDownloadDefaultOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.percentComplete">percent_complete</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.status">status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.url">url</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefault">StreamDownloadDefault</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `percent_complete`<sup>Required</sup> <a name="percent_complete" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.percentComplete"></a>
+
+```python
+percent_complete: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.status"></a>
+
+```python
+status: str
+```
+
+- *Type:* str
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.url"></a>
+
+```python
+url: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefaultOutputReference.property.internalValue"></a>
+
+```python
+internal_value: StreamDownloadDefault
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamDownload.StreamDownloadDefault">StreamDownloadDefault</a>
 
 ---
 

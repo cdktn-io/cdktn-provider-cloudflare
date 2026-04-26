@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountSubscription <a name="DataCloudflareAccountSubscription" id="@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_subscription cloudflare_account_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_subscription cloudflare_account_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscriptionConfig">DataCloudflareAccountSubscriptionConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscription.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareAccountSubsc
 
 The id of the existing DataCloudflareAccountSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -774,7 +781,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscriptionConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountSubscription.DataCloudflareAccountSubscriptionConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -784,7 +791,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_subscription#account_id DataCloudflareAccountSubscription#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_subscription#account_id DataCloudflareAccountSubscription#account_id}
 
 ---
 

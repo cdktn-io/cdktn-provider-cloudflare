@@ -4,7 +4,7 @@
 
 ### DataCloudflareLoadBalancer <a name="DataCloudflareLoadBalancer" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer cloudflare_load_balancer}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer.Initializer"></a>
 
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer.resetPopPools">ResetPopPools</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer.resetRegionPools">ResetRegionPools</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -298,6 +299,12 @@ func ResetPopPools()
 func ResetRegionPools()
 ```
 
+##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancer.resetZoneId"></a>
+
+```go
+func ResetZoneId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -401,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareLoadBalancer
 
 The id of the existing DataCloudflareLoadBalancer that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -911,9 +918,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	LoadBalancerId: *string,
-	ZoneId: *string,
 	PopPools: interface{},
 	RegionPools: interface{},
+	ZoneId: *string,
 }
 ```
 
@@ -928,10 +935,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.loadBalancerId">LoadBalancerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.loadBalancerId">LoadBalancerId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.popPools">PopPools</a></code> | <code>interface{}</code> | Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (ordered by their failover priority) for the PoP (datacenter). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.regionPools">RegionPools</a></code> | <code>interface{}</code> | A mapping of region codes to a list of pool IDs (ordered by their failover priority) for the given region. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}. |
 
 ---
 
@@ -1013,19 +1020,7 @@ LoadBalancerId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}.
-
----
-
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.zoneId"></a>
-
-```go
-ZoneId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#load_balancer_id DataCloudflareLoadBalancer#load_balancer_id}.
 
 ---
 
@@ -1041,7 +1036,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
 
 ---
 
@@ -1057,7 +1052,19 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#region_pools DataCloudflareLoadBalancer#region_pools}
+
+---
+
+##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancer.DataCloudflareLoadBalancerConfig.property.zoneId"></a>
+
+```go
+ZoneId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#zone_id DataCloudflareLoadBalancer#zone_id}.
 
 ---
 
@@ -1145,7 +1152,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#pop_pools DataCloudflareLoadBalancer#pop_pools}
 
 ---
 
@@ -1220,7 +1227,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
 
 ---
 
@@ -1256,7 +1263,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancer#drain_duration DataCloudflareLoadBalancer#drain_duration}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiShieldOperation <a name="DataCloudflareApiShieldOperation" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer"></a>
 
@@ -21,10 +21,10 @@ dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   feature: typing.List[str] = None,
   filter: DataCloudflareApiShieldOperationFilter = None,
-  operation_id: str = None
+  operation_id: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -39,10 +39,10 @@ dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.feature">feature</a></code> | <code>typing.List[str]</code> | Add feature(s) to the results. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.operationId">operation_id</a></code> | <code>str</code> | UUID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -106,16 +106,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
-
----
-
 ##### `feature`<sup>Optional</sup> <a name="feature" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.feature"></a>
 
 - *Type:* typing.List[str]
@@ -124,7 +114,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -132,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
 
 ---
 
@@ -142,7 +132,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
 
 ---
 
@@ -172,6 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetFeature">reset_feature</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetOperationId">reset_operation_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -434,7 +435,7 @@ def put_filter(
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
 
 ---
 
@@ -444,7 +445,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter results to only include endpoints containing this pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
 
 ---
 
@@ -456,7 +457,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -466,7 +467,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter results to only include the specified hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
 
 ---
 
@@ -476,7 +477,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter results to only include the specified HTTP methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
 
 ---
 
@@ -489,7 +490,7 @@ Field to order by.
 When requesting a feature, the feature keys are available for ordering as well, e.g., `thresholds.suggested_threshold`.
 Available values: "method", "host", "endpoint", "thresholds.$key".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
 
 ---
 
@@ -509,6 +510,12 @@ def reset_filter() -> None
 
 ```python
 def reset_operation_id() -> None
+```
+
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -625,7 +632,7 @@ The construct id used in the generated config for the DataCloudflareApiShieldOpe
 
 The id of the existing DataCloudflareApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -967,10 +974,10 @@ dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   feature: typing.List[str] = None,
   filter: DataCloudflareApiShieldOperationFilter = None,
-  operation_id: str = None
+  operation_id: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -985,10 +992,10 @@ dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.feature">feature</a></code> | <code>typing.List[str]</code> | Add feature(s) to the results. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.operationId">operation_id</a></code> | <code>str</code> | UUID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1062,20 +1069,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
-
----
-
 ##### `feature`<sup>Optional</sup> <a name="feature" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.feature"></a>
 
 ```python
@@ -1088,7 +1081,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -1100,7 +1093,7 @@ filter: DataCloudflareApiShieldOperationFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
 
 ---
 
@@ -1114,7 +1107,21 @@ operation_id: str
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
 
 ---
 
@@ -1301,7 +1308,7 @@ direction: str
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
 
 ---
 
@@ -1315,7 +1322,7 @@ endpoint: str
 
 Filter results to only include endpoints containing this pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
 
 ---
 
@@ -1331,7 +1338,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -1345,7 +1352,7 @@ host: typing.List[str]
 
 Filter results to only include the specified hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
 
 ---
 
@@ -1359,7 +1366,7 @@ method: typing.List[str]
 
 Filter results to only include the specified HTTP methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
 
 ---
 
@@ -1376,7 +1383,7 @@ Field to order by.
 When requesting a feature, the feature keys are available for ordering as well, e.g., `thresholds.suggested_threshold`.
 Available values: "method", "host", "endpoint", "thresholds.$key".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
 
 ---
 

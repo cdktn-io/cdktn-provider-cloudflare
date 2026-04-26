@@ -4,7 +4,7 @@
 
 ### DataCloudflareBotManagement <a name="DataCloudflareBotManagement" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/bot_management cloudflare_bot_management}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/bot_management cloudflare_bot_management}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagementConfig">DataCloudflareBotManagementConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.resetZoneId"></a>
+
+```go
+func ResetZoneId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareBotManagemen
 
 The id of the existing DataCloudflareBotManagement that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/bot_management#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/bot_management#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -419,6 +426,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.autoUpdateModel">AutoUpdateModel</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.bmCookieEnabled">BmCookieEnabled</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.cfRobotsVariant">CfRobotsVariant</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.contentBotsProtection">ContentBotsProtection</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.crawlerProtection">CrawlerProtection</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.enableJs">EnableJs</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.fightMode">FightMode</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IResolvable</code> | *No description.* |
@@ -593,6 +601,16 @@ func BmCookieEnabled() IResolvable
 
 ```go
 func CfRobotsVariant() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `ContentBotsProtection`<sup>Required</sup> <a name="ContentBotsProtection" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagement.property.contentBotsProtection"></a>
+
+```go
+func ContentBotsProtection() *string
 ```
 
 - *Type:* *string
@@ -873,7 +891,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagementConfig.property.zoneId"></a>
+##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareBotManagement.DataCloudflareBotManagementConfig.property.zoneId"></a>
 
 ```go
 ZoneId *string
@@ -883,7 +901,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/bot_management#zone_id DataCloudflareBotManagement#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/bot_management#zone_id DataCloudflareBotManagement#zone_id}
 
 ---
 

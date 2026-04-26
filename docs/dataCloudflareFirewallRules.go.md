@@ -4,7 +4,7 @@
 
 ### DataCloudflareFirewallRules <a name="DataCloudflareFirewallRules" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules cloudflare_firewall_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules cloudflare_firewall_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig">DataCloudflareFirewallRulesConfig</a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.resetMaxItems">ResetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.resetPaused">ResetPaused</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -319,6 +320,12 @@ func ResetMaxItems()
 func ResetPaused()
 ```
 
+##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRules.resetZoneId"></a>
+
+```go
+func ResetZoneId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -422,7 +429,7 @@ The construct id used in the generated config for the DataCloudflareFirewallRule
 
 The id of the existing DataCloudflareFirewallRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,12 +760,12 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	ZoneId: *string,
 	Action: *string,
 	Description: *string,
 	Id: *string,
 	MaxItems: *f64,
 	Paused: interface{},
+	ZoneId: *string,
 }
 ```
 
@@ -773,12 +780,12 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.action">Action</a></code> | <code>*string</code> | The action to search for. Must be an exact match. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.description">Description</a></code> | <code>*string</code> | A case-insensitive string to find in the description. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.id">Id</a></code> | <code>*string</code> | The unique identifier of the firewall rule. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.paused">Paused</a></code> | <code>interface{}</code> | When true, indicates that the firewall rule is currently paused. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Defines an identifier. |
 
 ---
 
@@ -852,20 +859,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.zoneId"></a>
-
-```go
-ZoneId *string
-```
-
-- *Type:* *string
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules#zone_id DataCloudflareFirewallRules#zone_id}
-
----
-
 ##### `Action`<sup>Optional</sup> <a name="Action" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.action"></a>
 
 ```go
@@ -876,7 +869,7 @@ Action *string
 
 The action to search for. Must be an exact match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules#action DataCloudflareFirewallRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules#action DataCloudflareFirewallRules#action}
 
 ---
 
@@ -890,7 +883,7 @@ Description *string
 
 A case-insensitive string to find in the description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules#description DataCloudflareFirewallRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules#description DataCloudflareFirewallRules#description}
 
 ---
 
@@ -904,7 +897,7 @@ Id *string
 
 The unique identifier of the firewall rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules#id DataCloudflareFirewallRules#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules#id DataCloudflareFirewallRules#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -921,7 +914,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules#max_items DataCloudflareFirewallRules#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules#max_items DataCloudflareFirewallRules#max_items}
 
 ---
 
@@ -935,7 +928,21 @@ Paused interface{}
 
 When true, indicates that the firewall rule is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rules#paused DataCloudflareFirewallRules#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules#paused DataCloudflareFirewallRules#paused}
+
+---
+
+##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRules.DataCloudflareFirewallRulesConfig.property.zoneId"></a>
+
+```go
+ZoneId *string
+```
+
+- *Type:* *string
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rules#zone_id DataCloudflareFirewallRules#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkerVersions <a name="DataCloudflareWorkerVersions" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker_versions cloudflare_worker_versions}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_versions cloudflare_worker_versions}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 
 ---
@@ -285,6 +286,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersions.resetMaxItems"></a>
 
 ```typescript
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareWorkerVersio
 
 The id of the existing DataCloudflareWorkerVersions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker_versions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_versions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -665,8 +672,8 @@ const dataCloudflareWorkerVersionsConfig: dataCloudflareWorkerVersions.DataCloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.workerId">workerId</a></code> | <code>string</code> | Identifier for the Worker, which can be ID or name. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -741,20 +748,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker_versions#account_id DataCloudflareWorkerVersions#account_id}
-
----
-
 ##### `workerId`<sup>Required</sup> <a name="workerId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.workerId"></a>
 
 ```typescript
@@ -765,7 +758,21 @@ public readonly workerId: string;
 
 Identifier for the Worker, which can be ID or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker_versions#worker_id DataCloudflareWorkerVersions#worker_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_versions#worker_id DataCloudflareWorkerVersions#worker_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_versions#account_id DataCloudflareWorkerVersions#account_id}
 
 ---
 
@@ -779,7 +786,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/worker_versions#max_items DataCloudflareWorkerVersions#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/worker_versions#max_items DataCloudflareWorkerVersions#max_items}
 
 ---
 
@@ -879,6 +886,17 @@ const dataCloudflareWorkerVersionsResultBindingsOutboundWorker: dataCloudflareWo
 import { dataCloudflareWorkerVersions } from '@cdktn/provider-cloudflare'
 
 const dataCloudflareWorkerVersionsResultBindingsSimple: dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsSimple = { ... }
+```
+
+
+### DataCloudflareWorkerVersionsResultContainers <a name="DataCloudflareWorkerVersionsResultContainers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainers"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainers.Initializer"></a>
+
+```typescript
+import { dataCloudflareWorkerVersions } from '@cdktn/provider-cloudflare'
+
+const dataCloudflareWorkerVersionsResultContainers: dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainers = { ... }
 ```
 
 
@@ -3189,15 +3207,20 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.algorithm">algorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.allowedDestinationAddresses">allowedDestinationAddresses</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.allowedSenderAddresses">allowedSenderAddresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.appId">appId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.bucketName">bucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.certificateId">certificateId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.className">className</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.databaseId">databaseId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.dataset">dataset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.destinationAddress">destinationAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.dispatchNamespace">dispatchNamespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.environment">environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.format">format</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.indexName">indexName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.instanceName">instanceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.json">json</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.keyBase64">keyBase64</a></code> | <code>string</code> | *No description.* |
@@ -3205,6 +3228,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.namespaceId">namespaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.networkId">networkId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.oldName">oldName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.outbound">outbound</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutboundOutputReference">DataCloudflareWorkerVersionsResultBindingsOutboundOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.part">part</a></code> | <code>string</code> | *No description.* |
@@ -3213,9 +3237,11 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.scriptName">scriptName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.secretName">secretName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.serviceId">serviceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.simple">simple</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsSimpleOutputReference">DataCloudflareWorkerVersionsResultBindingsSimpleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.storeId">storeId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.text">text</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.tunnelId">tunnelId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.usages">usages</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.versionId">versionId</a></code> | <code>string</code> | *No description.* |
@@ -3278,6 +3304,16 @@ public readonly allowedSenderAddresses: string[];
 
 ---
 
+##### `appId`<sup>Required</sup> <a name="appId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.appId"></a>
+
+```typescript
+public readonly appId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `bucketName`<sup>Required</sup> <a name="bucketName" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.bucketName"></a>
 
 ```typescript
@@ -3308,6 +3344,16 @@ public readonly className: string;
 
 ---
 
+##### `databaseId`<sup>Required</sup> <a name="databaseId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.databaseId"></a>
+
+```typescript
+public readonly databaseId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `dataset`<sup>Required</sup> <a name="dataset" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.dataset"></a>
 
 ```typescript
@@ -3322,6 +3368,26 @@ public readonly dataset: string;
 
 ```typescript
 public readonly destinationAddress: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dispatchNamespace`<sup>Required</sup> <a name="dispatchNamespace" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.dispatchNamespace"></a>
+
+```typescript
+public readonly dispatchNamespace: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entrypoint`<sup>Required</sup> <a name="entrypoint" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.entrypoint"></a>
+
+```typescript
+public readonly entrypoint: string;
 ```
 
 - *Type:* string
@@ -3362,6 +3428,16 @@ public readonly id: string;
 
 ```typescript
 public readonly indexName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `instanceName`<sup>Required</sup> <a name="instanceName" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.instanceName"></a>
+
+```typescript
+public readonly instanceName: string;
 ```
 
 - *Type:* string
@@ -3432,6 +3508,16 @@ public readonly namespace: string;
 
 ```typescript
 public readonly namespaceId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `networkId`<sup>Required</sup> <a name="networkId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.networkId"></a>
+
+```typescript
+public readonly networkId: string;
 ```
 
 - *Type:* string
@@ -3518,6 +3604,16 @@ public readonly service: string;
 
 ---
 
+##### `serviceId`<sup>Required</sup> <a name="serviceId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.serviceId"></a>
+
+```typescript
+public readonly serviceId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `simple`<sup>Required</sup> <a name="simple" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.simple"></a>
 
 ```typescript
@@ -3542,6 +3638,16 @@ public readonly storeId: string;
 
 ```typescript
 public readonly text: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tunnelId`<sup>Required</sup> <a name="tunnelId" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsOutputReference.property.tunnelId"></a>
+
+```typescript
+public readonly tunnelId: string;
 ```
 
 - *Type:* string
@@ -3870,6 +3976,433 @@ public readonly internalValue: DataCloudflareWorkerVersionsResultBindingsSimple;
 ---
 
 
+### DataCloudflareWorkerVersionsResultContainersList <a name="DataCloudflareWorkerVersionsResultContainersList" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.Initializer"></a>
+
+```typescript
+import { dataCloudflareWorkerVersions } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.get"></a>
+
+```typescript
+public get(index: number): DataCloudflareWorkerVersionsResultContainersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataCloudflareWorkerVersionsResultContainersOutputReference <a name="DataCloudflareWorkerVersionsResultContainersOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareWorkerVersions } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.className">className</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainers">DataCloudflareWorkerVersionsResultContainers</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `className`<sup>Required</sup> <a name="className" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.className"></a>
+
+```typescript
+public readonly className: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataCloudflareWorkerVersionsResultContainers;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainers">DataCloudflareWorkerVersionsResultContainers</a>
+
+---
+
+
 ### DataCloudflareWorkerVersionsResultLimitsOutputReference <a name="DataCloudflareWorkerVersionsResultLimitsOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference.Initializer"></a>
@@ -4081,6 +4614,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference.property.cpuMs">cpuMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference.property.subrequests">subrequests</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimits">DataCloudflareWorkerVersionsResultLimits</a></code> | *No description.* |
 
 ---
@@ -4113,6 +4647,16 @@ public readonly fqn: string;
 
 ```typescript
 public readonly cpuMs: number;
+```
+
+- *Type:* number
+
+---
+
+##### `subrequests`<sup>Required</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference.property.subrequests"></a>
+
+```typescript
+public readonly subrequests: number;
 ```
 
 - *Type:* number
@@ -7543,17 +8087,20 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.bindings">bindings</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultBindingsList">DataCloudflareWorkerVersionsResultBindingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.compatibilityDate">compatibilityDate</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.compatibilityFlags">compatibilityFlags</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.containers">containers</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList">DataCloudflareWorkerVersionsResultContainersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultLimitsOutputReference">DataCloudflareWorkerVersionsResultLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.mainModule">mainModule</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.mainScriptBase64">mainScriptBase64</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.migrations">migrations</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultMigrationsOutputReference">DataCloudflareWorkerVersionsResultMigrationsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.migrationTag">migrationTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.modules">modules</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultModulesList">DataCloudflareWorkerVersionsResultModulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.number">number</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.placement">placement</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultPlacementOutputReference">DataCloudflareWorkerVersionsResultPlacementOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.startupTimeMs">startupTimeMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.urls">urls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.usageModel">usageModel</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResult">DataCloudflareWorkerVersionsResult</a></code> | *No description.* |
 
@@ -7633,6 +8180,16 @@ public readonly compatibilityFlags: string[];
 
 ---
 
+##### `containers`<sup>Required</sup> <a name="containers" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.containers"></a>
+
+```typescript
+public readonly containers: DataCloudflareWorkerVersionsResultContainersList;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultContainersList">DataCloudflareWorkerVersionsResultContainersList</a>
+
+---
+
 ##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.createdOn"></a>
 
 ```typescript
@@ -7693,6 +8250,16 @@ public readonly migrations: DataCloudflareWorkerVersionsResultMigrationsOutputRe
 
 ---
 
+##### `migrationTag`<sup>Required</sup> <a name="migrationTag" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.migrationTag"></a>
+
+```typescript
+public readonly migrationTag: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `modules`<sup>Required</sup> <a name="modules" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.modules"></a>
 
 ```typescript
@@ -7740,6 +8307,16 @@ public readonly startupTimeMs: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `urls`<sup>Required</sup> <a name="urls" id="@cdktn/provider-cloudflare.dataCloudflareWorkerVersions.DataCloudflareWorkerVersionsResultOutputReference.property.urls"></a>
+
+```typescript
+public readonly urls: string[];
+```
+
+- *Type:* string[]
 
 ---
 

@@ -4,14 +4,14 @@
 
 ### DataCloudflareEmailRoutingAddresses <a name="DataCloudflareEmailRoutingAddresses" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses cloudflare_email_routing_addresses}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.Initializer"></a>
 
 ```typescript
 import { dataCloudflareEmailRoutingAddresses } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses(scope: Construct, id: string, config: DataCloudflareEmailRoutingAddressesConfig)
+new dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses(scope: Construct, id: string, config?: DataCloudflareEmailRoutingAddressesConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesConfig">DataCloudflareEmailRoutingAddressesConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.resetDirection">resetDirection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.resetVerified">resetVerified</a></code> | *No description.* |
@@ -287,6 +288,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetDirection` <a name="resetDirection" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddresses.resetDirection"></a>
 
 ```typescript
@@ -408,7 +415,7 @@ The construct id used in the generated config for the DataCloudflareEmailRouting
 
 The id of the existing DataCloudflareEmailRoutingAddresses that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_addresses#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,7 +785,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingAddresses.DataCloudflareEmailRoutingAddressesConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -788,7 +795,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_addresses#account_id DataCloudflareEmailRoutingAddresses#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses#account_id DataCloudflareEmailRoutingAddresses#account_id}
 
 ---
 
@@ -802,7 +809,7 @@ public readonly direction: string;
 
 Sorts results in an ascending or descending order. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_addresses#direction DataCloudflareEmailRoutingAddresses#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses#direction DataCloudflareEmailRoutingAddresses#direction}
 
 ---
 
@@ -816,7 +823,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_addresses#max_items DataCloudflareEmailRoutingAddresses#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses#max_items DataCloudflareEmailRoutingAddresses#max_items}
 
 ---
 
@@ -830,7 +837,7 @@ public readonly verified: boolean | IResolvable;
 
 Filter by verified destination addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_addresses#verified DataCloudflareEmailRoutingAddresses#verified}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_addresses#verified DataCloudflareEmailRoutingAddresses#verified}
 
 ---
 

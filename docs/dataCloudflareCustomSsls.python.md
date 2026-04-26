@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomSsls <a name="DataCloudflareCustomSsls" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer"></a>
 
@@ -21,10 +21,10 @@ dataCloudflareCustomSsls.DataCloudflareCustomSsls(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   match: str = None,
   max_items: typing.Union[int, float] = None,
-  status: str = None
+  status: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -39,10 +39,10 @@ dataCloudflareCustomSsls.DataCloudflareCustomSsls(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.match">match</a></code> | <code>str</code> | Whether to match all search requirements or at least one (any). Available values: "any", "all". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.status">status</a></code> | <code>str</code> | Status of the zone's custom SSL. Available values: "active", "expired", "deleted", "pending", "initializing". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -106,23 +106,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
-
----
-
 ##### `match`<sup>Optional</sup> <a name="match" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.match"></a>
 
 - *Type:* str
 
 Whether to match all search requirements or at least one (any). Available values: "any", "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
 
 ---
 
@@ -132,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
 
 ---
 
@@ -142,7 +132,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Status of the zone's custom SSL. Available values: "active", "expired", "deleted", "pending", "initializing".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
 
 ---
 
@@ -171,6 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.resetMatch">reset_match</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.resetMaxItems">reset_max_items</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.resetStatus">reset_status</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -432,6 +433,12 @@ def reset_max_items() -> None
 def reset_status() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSsls.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -546,7 +553,7 @@ The construct id used in the generated config for the DataCloudflareCustomSsls t
 
 The id of the existing DataCloudflareCustomSsls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,10 +840,10 @@ dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   match: str = None,
   max_items: typing.Union[int, float] = None,
-  status: str = None
+  status: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -851,10 +858,10 @@ dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.match">match</a></code> | <code>str</code> | Whether to match all search requirements or at least one (any). Available values: "any", "all". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.status">status</a></code> | <code>str</code> | Status of the zone's custom SSL. Available values: "active", "expired", "deleted", "pending", "initializing". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -928,20 +935,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
-
----
-
 ##### `match`<sup>Optional</sup> <a name="match" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.match"></a>
 
 ```python
@@ -952,7 +945,7 @@ match: str
 
 Whether to match all search requirements or at least one (any). Available values: "any", "all".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
 
 ---
 
@@ -966,7 +959,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
 
 ---
 
@@ -980,7 +973,21 @@ status: str
 
 Status of the zone's custom SSL. Available values: "active", "expired", "deleted", "pending", "initializing".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
 
 ---
 
@@ -2410,6 +2417,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.bundleMethod">bundle_method</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.customCsrId">custom_csr_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.expiresOn">expires_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.geoRestrictions">geo_restrictions</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultGeoRestrictionsOutputReference">DataCloudflareCustomSslsResultGeoRestrictionsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.hosts">hosts</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -2455,6 +2463,16 @@ fqn: str
 
 ```python
 bundle_method: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_csr_id`<sup>Required</sup> <a name="custom_csr_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomSsls.DataCloudflareCustomSslsResultOutputReference.property.customCsrId"></a>
+
+```python
+custom_csr_id: str
 ```
 
 - *Type:* str

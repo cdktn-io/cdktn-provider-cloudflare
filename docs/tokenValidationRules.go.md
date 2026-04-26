@@ -4,7 +4,7 @@
 
 ### TokenValidationRules <a name="TokenValidationRules" id="@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules.putPosition">PutPosition</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules.putSelector">PutSelector</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules.resetPosition">ResetPosition</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -419,6 +420,12 @@ func PutSelector(value TokenValidationRulesSelector)
 func ResetPosition()
 ```
 
+##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules.resetZoneId"></a>
+
+```go
+func ResetZoneId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -522,7 +529,7 @@ The construct id used in the generated config for the TokenValidationRules to im
 
 The id of the existing TokenValidationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,8 +954,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenval
 	Expression: *string,
 	Selector: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.tokenValidationRules.TokenValidationRulesSelector,
 	Title: *string,
-	ZoneId: *string,
 	Position: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.tokenValidationRules.TokenValidationRulesPosition,
+	ZoneId: *string,
 }
 ```
 
@@ -969,8 +976,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenval
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.expression">Expression</a></code> | <code>*string</code> | Rule expression. Requests that fail to match this expression will be subject to `action`. |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.selector">Selector</a></code> | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesSelector">TokenValidationRulesSelector</a></code> | Select operations covered by this rule. |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.title">Title</a></code> | <code>*string</code> | A human-readable name for the rule. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.position">Position</a></code> | <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesPosition">TokenValidationRulesPosition</a></code> | Update rule order among zone rules. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 
 ---
 
@@ -1054,7 +1061,7 @@ Action *string
 
 Action to take on requests that match operations included in `selector` and fail `expression`. Available values: "log", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#action TokenValidationRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#action TokenValidationRules#action}
 
 ---
 
@@ -1068,7 +1075,7 @@ Description *string
 
 A human-readable description that gives more details than `title`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#description TokenValidationRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#description TokenValidationRules#description}
 
 ---
 
@@ -1082,7 +1089,7 @@ Enabled interface{}
 
 Toggle rule on or off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
 
 ---
 
@@ -1098,7 +1105,7 @@ Rule expression. Requests that fail to match this expression will be subject to 
 
 For details on expressions, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
 
 ---
 
@@ -1114,7 +1121,7 @@ Select operations covered by this rule.
 
 For details on selectors, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
 
 ---
 
@@ -1128,21 +1135,7 @@ Title *string
 
 A human-readable name for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#title TokenValidationRules#title}
-
----
-
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.zoneId"></a>
-
-```go
-ZoneId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#title TokenValidationRules#title}
 
 ---
 
@@ -1156,7 +1149,21 @@ Position TokenValidationRulesPosition
 
 Update rule order among zone rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#position TokenValidationRules#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#position TokenValidationRules#position}
+
+---
+
+##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRulesConfig.property.zoneId"></a>
+
+```go
+ZoneId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
 
 ---
 
@@ -1194,7 +1201,7 @@ After *string
 
 Move rule to after rule with this ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#after TokenValidationRules#after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#after TokenValidationRules#after}
 
 ---
 
@@ -1208,7 +1215,7 @@ Before *string
 
 Move rule to before rule with this ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#before TokenValidationRules#before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#before TokenValidationRules#before}
 
 ---
 
@@ -1222,7 +1229,7 @@ Index *f64
 
 Move rule to this position.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#index TokenValidationRules#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#index TokenValidationRules#index}
 
 ---
 
@@ -1258,7 +1265,7 @@ Exclude interface{}
 
 Ignore operations that were otherwise included by `include`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#exclude TokenValidationRules#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#exclude TokenValidationRules#exclude}
 
 ---
 
@@ -1272,7 +1279,7 @@ Include interface{}
 
 Select all matching operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#include TokenValidationRules#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#include TokenValidationRules#include}
 
 ---
 
@@ -1306,7 +1313,7 @@ OperationIds *[]*string
 
 Excluded operation IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#operation_ids TokenValidationRules#operation_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#operation_ids TokenValidationRules#operation_ids}
 
 ---
 
@@ -1340,7 +1347,7 @@ Host *[]*string
 
 Included hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/token_validation_rules#host TokenValidationRules#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/token_validation_rules#host TokenValidationRules#host}
 
 ---
 

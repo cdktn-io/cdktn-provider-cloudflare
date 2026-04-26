@@ -4,7 +4,7 @@
 
 ### AiSearchToken <a name="AiSearchToken" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token cloudflare_ai_search_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token cloudflare_ai_search_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer"></a>
 
@@ -21,10 +21,11 @@ aiSearchToken.AiSearchToken(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   cf_api_id: str,
   cf_api_key: str,
-  name: str
+  name: str,
+  account_id: str = None,
+  legacy: bool | IResolvable = None
 )
 ```
 
@@ -39,10 +40,11 @@ aiSearchToken.AiSearchToken(
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.cfApiId">cf_api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.cfApiKey">cf_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#name AiSearchToken#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.cfApiId">cf_api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.cfApiKey">cf_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#name AiSearchToken#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.legacy">legacy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#legacy AiSearchToken#legacy}. |
 
 ---
 
@@ -106,19 +108,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}.
-
----
-
 ##### `cf_api_id`<sup>Required</sup> <a name="cf_api_id" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.cfApiId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}.
 
 ---
 
@@ -126,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}.
 
 ---
 
@@ -134,7 +128,23 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#name AiSearchToken#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#name AiSearchToken#name}.
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}.
+
+---
+
+##### `legacy`<sup>Optional</sup> <a name="legacy" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer.parameter.legacy"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#legacy AiSearchToken#legacy}.
 
 ---
 
@@ -166,6 +176,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.resetLegacy">reset_legacy</a></code> | *No description.* |
 
 ---
 
@@ -517,6 +529,18 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
+##### `reset_legacy` <a name="reset_legacy" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.resetLegacy"></a>
+
+```python
+def reset_legacy() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -631,7 +655,7 @@ The construct id used in the generated config for the AiSearchToken to import.
 
 The id of the existing AiSearchToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -665,16 +689,17 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.createdBy">created_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.enabled">enabled</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.id">id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.legacy">legacy</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.modifiedAt">modified_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.modifiedBy">modified_by</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.cfApiIdInput">cf_api_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.cfApiKeyInput">cf_api_key_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.legacyInput">legacy_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.cfApiId">cf_api_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.cfApiKey">cf_api_key</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.legacy">legacy</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.name">name</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -861,16 +886,6 @@ id: str
 
 ---
 
-##### `legacy`<sup>Required</sup> <a name="legacy" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.legacy"></a>
-
-```python
-legacy: IResolvable
-```
-
-- *Type:* cdktn.IResolvable
-
----
-
 ##### `modified_at`<sup>Required</sup> <a name="modified_at" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.modifiedAt"></a>
 
 ```python
@@ -921,6 +936,16 @@ cf_api_key_input: str
 
 ---
 
+##### `legacy_input`<sup>Optional</sup> <a name="legacy_input" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.legacyInput"></a>
+
+```python
+legacy_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `name_input`<sup>Optional</sup> <a name="name_input" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.nameInput"></a>
 
 ```python
@@ -958,6 +983,16 @@ cf_api_key: str
 ```
 
 - *Type:* str
+
+---
+
+##### `legacy`<sup>Required</sup> <a name="legacy" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.property.legacy"></a>
+
+```python
+legacy: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -1006,10 +1041,11 @@ aiSearchToken.AiSearchTokenConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   cf_api_id: str,
   cf_api_key: str,
-  name: str
+  name: str,
+  account_id: str = None,
+  legacy: bool | IResolvable = None
 )
 ```
 
@@ -1024,10 +1060,11 @@ aiSearchToken.AiSearchTokenConfig(
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.cfApiId">cf_api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.cfApiKey">cf_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}. |
-| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#name AiSearchToken#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.cfApiId">cf_api_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.cfApiKey">cf_api_key</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#name AiSearchToken#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.legacy">legacy</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#legacy AiSearchToken#legacy}. |
 
 ---
 
@@ -1101,18 +1138,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}.
-
----
-
 ##### `cf_api_id`<sup>Required</sup> <a name="cf_api_id" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.cfApiId"></a>
 
 ```python
@@ -1121,7 +1146,7 @@ cf_api_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_id AiSearchToken#cf_api_id}.
 
 ---
 
@@ -1133,7 +1158,7 @@ cf_api_key: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#cf_api_key AiSearchToken#cf_api_key}.
 
 ---
 
@@ -1145,7 +1170,31 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/ai_search_token#name AiSearchToken#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#name AiSearchToken#name}.
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#account_id AiSearchToken#account_id}.
+
+---
+
+##### `legacy`<sup>Optional</sup> <a name="legacy" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.property.legacy"></a>
+
+```python
+legacy: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/ai_search_token#legacy AiSearchToken#legacy}.
 
 ---
 

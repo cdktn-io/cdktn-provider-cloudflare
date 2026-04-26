@@ -4,14 +4,14 @@
 
 ### DataCloudflareZeroTrustDevicePostureIntegrations <a name="DataCloudflareZeroTrustDevicePostureIntegrations" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_posture_integrations cloudflare_zero_trust_device_posture_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.Initializer"></a>
 
 ```typescript
 import { dataCloudflareZeroTrustDevicePostureIntegrations } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations(scope: Construct, id: string, config: DataCloudflareZeroTrustDevicePostureIntegrationsConfig)
+new dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations(scope: Construct, id: string, config?: DataCloudflareZeroTrustDevicePostureIntegrationsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig">DataCloudflareZeroTrustDevicePostureIntegrationsConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 
 ---
@@ -285,6 +286,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrations.resetMaxItems"></a>
 
 ```typescript
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDev
 
 The id of the existing DataCloudflareZeroTrustDevicePostureIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_posture_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_posture_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +650,7 @@ const dataCloudflareZeroTrustDevicePostureIntegrationsConfig: dataCloudflareZero
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_posture_integrations#account_id DataCloudflareZeroTrustDevicePostureIntegrations#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_posture_integrations#account_id DataCloudflareZeroTrustDevicePostureIntegrations#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -718,7 +725,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDevicePostureIntegrations.DataCloudflareZeroTrustDevicePostureIntegrationsConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -726,7 +733,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_posture_integrations#account_id DataCloudflareZeroTrustDevicePostureIntegrations#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_posture_integrations#account_id DataCloudflareZeroTrustDevicePostureIntegrations#account_id}.
 
 ---
 
@@ -740,7 +747,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_posture_integrations#max_items DataCloudflareZeroTrustDevicePostureIntegrations#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_posture_integrations#max_items DataCloudflareZeroTrustDevicePostureIntegrations#max_items}
 
 ---
 

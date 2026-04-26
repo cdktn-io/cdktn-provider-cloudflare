@@ -4,7 +4,7 @@
 
 ### SchemaValidationSettings <a name="SchemaValidationSettings" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer"></a>
 
@@ -22,8 +22,8 @@ schemaValidationSettings.SchemaValidationSettings(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   validation_default_mitigation_action: str,
-  zone_id: str,
-  validation_override_mitigation_action: str = None
+  validation_override_mitigation_action: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -39,8 +39,8 @@ schemaValidationSettings.SchemaValidationSettings(
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.validationDefaultMitigationAction">validation_default_mitigation_action</a></code> | <code>str</code> | The default mitigation action used Mitigation actions are as follows:. |
-| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.validationOverrideMitigationAction">validation_override_mitigation_action</a></code> | <code>str</code> | When set, this overrides both zone level and operation level mitigation actions. |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -116,17 +116,7 @@ The default mitigation action used Mitigation actions are as follows:.
   * `"none"` - skip running schema validation
     Available values: "none", "log", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
-
----
-
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
 
 ---
 
@@ -141,7 +131,17 @@ When set, this overrides both zone level and operation level mitigation actions.
   * `null` - clears any existing override
     Available values: "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
 
 ---
 
@@ -174,6 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.resetValidationOverrideMitigationAction">reset_validation_override_mitigation_action</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -531,6 +532,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def reset_validation_override_mitigation_action() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -645,7 +652,7 @@ The construct id used in the generated config for the SchemaValidationSettings t
 
 The id of the existing SchemaValidationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -922,8 +929,8 @@ schemaValidationSettings.SchemaValidationSettingsConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   validation_default_mitigation_action: str,
-  zone_id: str,
-  validation_override_mitigation_action: str = None
+  validation_override_mitigation_action: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -939,8 +946,8 @@ schemaValidationSettings.SchemaValidationSettingsConfig(
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.validationDefaultMitigationAction">validation_default_mitigation_action</a></code> | <code>str</code> | The default mitigation action used Mitigation actions are as follows:. |
-| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.validationOverrideMitigationAction">validation_override_mitigation_action</a></code> | <code>str</code> | When set, this overrides both zone level and operation level mitigation actions. |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1030,21 +1037,7 @@ The default mitigation action used Mitigation actions are as follows:.
   * `"none"` - skip running schema validation
     Available values: "none", "log", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
-
----
-
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
 
 ---
 
@@ -1063,7 +1056,21 @@ When set, this overrides both zone level and operation level mitigation actions.
   * `null` - clears any existing override
     Available values: "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
 
 ---
 

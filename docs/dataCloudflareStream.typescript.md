@@ -4,7 +4,7 @@
 
 ### DataCloudflareStream <a name="DataCloudflareStream" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream cloudflare_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareStream to im
 
 The id of the existing DataCloudflareStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -416,16 +423,19 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.allowedOrigins">allowedOrigins</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.clippedFrom">clippedFrom</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.created">created</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.creator">creator</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.duration">duration</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.input">input</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamInputOutputReference">DataCloudflareStreamInputOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.liveInput">liveInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.maxDurationSeconds">maxDurationSeconds</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.maxSizeBytes">maxSizeBytes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.meta">meta</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.modified">modified</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.playback">playback</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPlaybackOutputReference">DataCloudflareStreamPlaybackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.preview">preview</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.publicDetails">publicDetails</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference">DataCloudflareStreamPublicDetailsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.readyToStream">readyToStream</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.readyToStreamAt">readyToStreamAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.requireSignedUrls">requireSignedUrls</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
@@ -577,6 +587,16 @@ public readonly allowedOrigins: string[];
 
 ---
 
+##### `clippedFrom`<sup>Required</sup> <a name="clippedFrom" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.clippedFrom"></a>
+
+```typescript
+public readonly clippedFrom: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `created`<sup>Required</sup> <a name="created" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.created"></a>
 
 ```typescript
@@ -637,6 +657,16 @@ public readonly maxDurationSeconds: number;
 
 ---
 
+##### `maxSizeBytes`<sup>Required</sup> <a name="maxSizeBytes" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.maxSizeBytes"></a>
+
+```typescript
+public readonly maxSizeBytes: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `meta`<sup>Required</sup> <a name="meta" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.meta"></a>
 
 ```typescript
@@ -674,6 +704,16 @@ public readonly preview: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `publicDetails`<sup>Required</sup> <a name="publicDetails" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStream.property.publicDetails"></a>
+
+```typescript
+public readonly publicDetails: DataCloudflareStreamPublicDetailsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference">DataCloudflareStreamPublicDetailsOutputReference</a>
 
 ---
 
@@ -878,8 +918,8 @@ const dataCloudflareStreamConfig: dataCloudflareStream.DataCloudflareStreamConfi
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.identifier">identifier</a></code> | <code>string</code> | A Cloudflare-generated unique identifier for a media item. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier tag. |
 
 ---
 
@@ -953,20 +993,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-The account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
-
----
-
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.identifier"></a>
 
 ```typescript
@@ -977,7 +1003,21 @@ public readonly identifier: string;
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+The account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
 
 ---
 
@@ -1000,6 +1040,17 @@ const dataCloudflareStreamInput: dataCloudflareStream.DataCloudflareStreamInput 
 import { dataCloudflareStream } from '@cdktn/provider-cloudflare'
 
 const dataCloudflareStreamPlayback: dataCloudflareStream.DataCloudflareStreamPlayback = { ... }
+```
+
+
+### DataCloudflareStreamPublicDetails <a name="DataCloudflareStreamPublicDetails" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetails"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetails.Initializer"></a>
+
+```typescript
+import { dataCloudflareStream } from '@cdktn/provider-cloudflare'
+
+const dataCloudflareStreamPublicDetails: dataCloudflareStream.DataCloudflareStreamPublicDetails = { ... }
 ```
 
 
@@ -1565,6 +1616,310 @@ public readonly internalValue: DataCloudflareStreamPlayback;
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPlayback">DataCloudflareStreamPlayback</a>
+
+---
+
+
+### DataCloudflareStreamPublicDetailsOutputReference <a name="DataCloudflareStreamPublicDetailsOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareStream } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.channelLink">channelLink</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.logo">logo</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.mediaId">mediaId</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.shareLink">shareLink</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.title">title</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetails">DataCloudflareStreamPublicDetails</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `channelLink`<sup>Required</sup> <a name="channelLink" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.channelLink"></a>
+
+```typescript
+public readonly channelLink: string;
+```
+
+- *Type:* string
+
+---
+
+##### `logo`<sup>Required</sup> <a name="logo" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.logo"></a>
+
+```typescript
+public readonly logo: string;
+```
+
+- *Type:* string
+
+---
+
+##### `mediaId`<sup>Required</sup> <a name="mediaId" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.mediaId"></a>
+
+```typescript
+public readonly mediaId: number;
+```
+
+- *Type:* number
+
+---
+
+##### `shareLink`<sup>Required</sup> <a name="shareLink" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.shareLink"></a>
+
+```typescript
+public readonly shareLink: string;
+```
+
+- *Type:* string
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.title"></a>
+
+```typescript
+public readonly title: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetailsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataCloudflareStreamPublicDetails;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStream.DataCloudflareStreamPublicDetails">DataCloudflareStreamPublicDetails</a>
 
 ---
 

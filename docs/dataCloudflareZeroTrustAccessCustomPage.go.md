@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessCustomPage <a name="DataCloudflareZeroTrustAccessCustomPage" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_custom_page cloudflare_zero_trust_access_custom_page}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPage.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPage.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPage.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPage.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPage.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPage.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessCustomPage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_custom_page#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -674,8 +681,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccountId: *string,
 	CustomPageId: *string,
+	AccountId: *string,
 }
 ```
 
@@ -690,8 +697,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.customPageId">CustomPageId</a></code> | <code>*string</code> | UUID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 
 ---
 
@@ -765,20 +772,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.accountId"></a>
-
-```go
-AccountId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_page#account_id DataCloudflareZeroTrustAccessCustomPage#account_id}
-
----
-
 ##### `CustomPageId`<sup>Required</sup> <a name="CustomPageId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.customPageId"></a>
 
 ```go
@@ -789,7 +782,21 @@ CustomPageId *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_custom_page#custom_page_id DataCloudflareZeroTrustAccessCustomPage#custom_page_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_custom_page#custom_page_id DataCloudflareZeroTrustAccessCustomPage#custom_page_id}
+
+---
+
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessCustomPage.DataCloudflareZeroTrustAccessCustomPageConfig.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_custom_page#account_id DataCloudflareZeroTrustAccessCustomPage#account_id}
 
 ---
 

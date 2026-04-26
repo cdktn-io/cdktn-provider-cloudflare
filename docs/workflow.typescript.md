@@ -4,7 +4,7 @@
 
 ### Workflow <a name="Workflow" id="@cdktn/provider-cloudflare.workflow.Workflow"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow cloudflare_workflow}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow cloudflare_workflow}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.Workflow.Initializer"></a>
 
@@ -74,6 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.putLimits">putLimits</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.resetLimits">resetLimits</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +389,30 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `putLimits` <a name="putLimits" id="@cdktn/provider-cloudflare.workflow.Workflow.putLimits"></a>
+
+```typescript
+public putLimits(value: WorkflowLimits): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.workflow.Workflow.putLimits.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
+
+---
+
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.workflow.Workflow.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
+##### `resetLimits` <a name="resetLimits" id="@cdktn/provider-cloudflare.workflow.Workflow.resetLimits"></a>
+
+```typescript
+public resetLimits(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +516,7 @@ The construct id used in the generated config for the Workflow to import.
 
 The id of the existing Workflow that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -523,6 +550,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.instances">instances</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference">WorkflowInstancesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.isDeleted">isDeleted</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference">WorkflowLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.modifiedOn">modifiedOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.terminatorRunning">terminatorRunning</a></code> | <code>number</code> | *No description.* |
@@ -530,6 +558,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.versionId">versionId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.classNameInput">classNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.limitsInput">limitsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.scriptNameInput">scriptNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.workflowNameInput">workflowNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.Workflow.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
@@ -721,6 +750,16 @@ public readonly isDeleted: number;
 
 ---
 
+##### `limits`<sup>Required</sup> <a name="limits" id="@cdktn/provider-cloudflare.workflow.Workflow.property.limits"></a>
+
+```typescript
+public readonly limits: WorkflowLimitsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference">WorkflowLimitsOutputReference</a>
+
+---
+
 ##### `modifiedOn`<sup>Required</sup> <a name="modifiedOn" id="@cdktn/provider-cloudflare.workflow.Workflow.property.modifiedOn"></a>
 
 ```typescript
@@ -788,6 +827,16 @@ public readonly classNameInput: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `limitsInput`<sup>Optional</sup> <a name="limitsInput" id="@cdktn/provider-cloudflare.workflow.Workflow.property.limitsInput"></a>
+
+```typescript
+public readonly limitsInput: IResolvable | WorkflowLimits;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
 
 ---
 
@@ -892,10 +941,11 @@ const workflowConfig: workflow.WorkflowConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#account_id Workflow#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">className</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#class_name Workflow#class_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#script_name Workflow#script_name}. |
-| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">workflowName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className">className</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#class_name Workflow#class_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.scriptName">scriptName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#script_name Workflow#script_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.workflowName">workflowName</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#workflow_name Workflow#workflow_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#account_id Workflow#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#limits Workflow#limits}. |
 
 ---
 
@@ -969,18 +1019,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#account_id Workflow#account_id}.
-
----
-
 ##### `className`<sup>Required</sup> <a name="className" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.className"></a>
 
 ```typescript
@@ -989,7 +1027,7 @@ public readonly className: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#class_name Workflow#class_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#class_name Workflow#class_name}.
 
 ---
 
@@ -1001,7 +1039,7 @@ public readonly scriptName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#script_name Workflow#script_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#script_name Workflow#script_name}.
 
 ---
 
@@ -1013,7 +1051,31 @@ public readonly workflowName: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#workflow_name Workflow#workflow_name}.
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#account_id Workflow#account_id}.
+
+---
+
+##### `limits`<sup>Optional</sup> <a name="limits" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.property.limits"></a>
+
+```typescript
+public readonly limits: WorkflowLimits;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#limits Workflow#limits}.
 
 ---
 
@@ -1027,6 +1089,36 @@ import { workflow } from '@cdktn/provider-cloudflare'
 const workflowInstances: workflow.WorkflowInstances = { ... }
 ```
 
+
+### WorkflowLimits <a name="WorkflowLimits" id="@cdktn/provider-cloudflare.workflow.WorkflowLimits"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowLimits.Initializer"></a>
+
+```typescript
+import { workflow } from '@cdktn/provider-cloudflare'
+
+const workflowLimits: workflow.WorkflowLimits = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps">steps</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#steps Workflow#steps}. |
+
+---
+
+##### `steps`<sup>Optional</sup> <a name="steps" id="@cdktn/provider-cloudflare.workflow.WorkflowLimits.property.steps"></a>
+
+```typescript
+public readonly steps: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workflow#steps Workflow#steps}.
+
+---
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -1363,6 +1455,284 @@ public readonly internalValue: WorkflowInstances;
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workflow.WorkflowInstances">WorkflowInstances</a>
+
+---
+
+
+### WorkflowLimitsOutputReference <a name="WorkflowLimitsOutputReference" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.Initializer"></a>
+
+```typescript
+import { workflow } from '@cdktn/provider-cloudflare'
+
+new workflow.WorkflowLimitsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.resetSteps">resetSteps</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `resetSteps` <a name="resetSteps" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.resetSteps"></a>
+
+```typescript
+public resetSteps(): void
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.stepsInput">stepsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.steps">steps</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `stepsInput`<sup>Optional</sup> <a name="stepsInput" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.stepsInput"></a>
+
+```typescript
+public readonly stepsInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `steps`<sup>Required</sup> <a name="steps" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.steps"></a>
+
+```typescript
+public readonly steps: number;
+```
+
+- *Type:* number
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkflowLimits;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workflow.WorkflowLimits">WorkflowLimits</a>
 
 ---
 

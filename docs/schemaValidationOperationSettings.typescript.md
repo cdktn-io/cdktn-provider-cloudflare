@@ -4,7 +4,7 @@
 
 ### SchemaValidationOperationSettings <a name="SchemaValidationOperationSettings" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_operation_settings cloudflare_schema_validation_operation_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +387,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +496,7 @@ The construct id used in the generated config for the SchemaValidationOperationS
 
 The id of the existing SchemaValidationOperationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_operation_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_operation_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -863,7 +870,7 @@ When set, this applies a mitigation action to this operation.
   - `null` - clears any mitigation action
 Available values: "log", "block", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_operation_settings#mitigation_action SchemaValidationOperationSettings#mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_operation_settings#mitigation_action SchemaValidationOperationSettings#mitigation_action}
 
 ---
 
@@ -877,11 +884,11 @@ public readonly operationId: string;
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_operation_settings#operation_id SchemaValidationOperationSettings#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_operation_settings#operation_id SchemaValidationOperationSettings#operation_id}
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettingsConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettingsConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -891,7 +898,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/schema_validation_operation_settings#zone_id SchemaValidationOperationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/schema_validation_operation_settings#zone_id SchemaValidationOperationSettings#zone_id}
 
 ---
 

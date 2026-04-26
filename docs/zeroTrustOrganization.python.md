@@ -4,7 +4,7 @@
 
 ### ZeroTrustOrganization <a name="ZeroTrustOrganization" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization cloudflare_zero_trust_organization}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer"></a>
 
@@ -33,6 +33,7 @@ zeroTrustOrganization.ZeroTrustOrganization(
   mfa_config: ZeroTrustOrganizationMfaConfig = None,
   mfa_configuration_allowed: bool | IResolvable = None,
   mfa_required_for_all_apps: bool | IResolvable = None,
+  mfa_ssh_piv_key_requirements: ZeroTrustOrganizationMfaSshPivKeyRequirements = None,
   name: str = None,
   session_duration: str = None,
   ui_read_only_toggle_reason: str = None,
@@ -57,14 +58,15 @@ zeroTrustOrganization.ZeroTrustOrganization(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.allowAuthenticateViaWarp">allow_authenticate_via_warp</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, users can authenticate via WARP for any application in your organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.authDomain">auth_domain</a></code> | <code>str</code> | The unique subdomain assigned to your Zero Trust organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.autoRedirectToIdentity">auto_redirect_to_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to `true`, users skip the identity provider selection step during login. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.customPages">custom_pages</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages">ZeroTrustOrganizationCustomPages</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.customPages">custom_pages</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages">ZeroTrustOrganizationCustomPages</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.denyUnmatchedRequests">deny_unmatched_requests</a></code> | <code>bool \| cdktn.IResolvable</code> | Determines whether to deny all requests to Cloudflare-protected resources that lack an associated Access application. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.denyUnmatchedRequestsExemptedZoneNames">deny_unmatched_requests_exempted_zone_names</a></code> | <code>typing.List[str]</code> | Contains zone names to exempt from the `deny_unmatched_requests` feature. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.isUiReadOnly">is_ui_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Lock all settings as Read-Only in the Dashboard, regardless of user permission. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.loginDesign">login_design</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign">ZeroTrustOrganizationLoginDesign</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.loginDesign">login_design</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign">ZeroTrustOrganizationLoginDesign</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.mfaConfig">mfa_config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig">ZeroTrustOrganizationMfaConfig</a></code> | Configures multi-factor authentication (MFA) settings for an organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.mfaConfigurationAllowed">mfa_configuration_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if this organization can enforce multi-factor authentication (MFA) requirements at the application and policy level. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.mfaRequiredForAllApps">mfa_required_for_all_apps</a></code> | <code>bool \| cdktn.IResolvable</code> | Determines whether global MFA settings apply to applications by default. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.mfaSshPivKeyRequirements">mfa_ssh_piv_key_requirements</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a></code> | Configures SSH PIV key requirements for MFA using hardware security keys. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of your Zero Trust organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.sessionDuration">session_duration</a></code> | <code>str</code> | The amount of time that tokens issued for applications will be valid. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.uiReadOnlyToggleReason">ui_read_only_toggle_reason</a></code> | <code>str</code> | A description of the reason why the UI read only field is being toggled. |
@@ -140,7 +142,7 @@ Must be unique amongst siblings in the same scope
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
 
 ---
 
@@ -152,7 +154,7 @@ When set to true, users can authenticate via WARP for any application in your or
 
 Application settings will take precedence over this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
 
 ---
 
@@ -162,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique subdomain assigned to your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
 
 ---
 
@@ -172,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When set to `true`, users skip the identity provider selection step during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
 
 ---
 
@@ -180,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages">ZeroTrustOrganizationCustomPages</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}.
 
 ---
 
@@ -192,7 +194,7 @@ Determines whether to deny all requests to Cloudflare-protected resources that l
 
 If enabled, you must explicitly configure an Access application and policy to allow traffic to your Cloudflare-protected resources. For domains you want to be public across all subdomains, add the domain to the `deny_unmatched_requests_exempted_zone_names` array.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#deny_unmatched_requests ZeroTrustOrganization#deny_unmatched_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#deny_unmatched_requests ZeroTrustOrganization#deny_unmatched_requests}
 
 ---
 
@@ -204,7 +206,7 @@ Contains zone names to exempt from the `deny_unmatched_requests` feature.
 
 Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#deny_unmatched_requests_exempted_zone_names ZeroTrustOrganization#deny_unmatched_requests_exempted_zone_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#deny_unmatched_requests_exempted_zone_names ZeroTrustOrganization#deny_unmatched_requests_exempted_zone_names}
 
 ---
 
@@ -216,7 +218,7 @@ Lock all settings as Read-Only in the Dashboard, regardless of user permission.
 
 Updates may only be made via the API or Terraform for this account when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
 
 ---
 
@@ -224,7 +226,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign">ZeroTrustOrganizationLoginDesign</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}.
 
 ---
 
@@ -234,7 +236,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configures multi-factor authentication (MFA) settings for an organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#mfa_config ZeroTrustOrganization#mfa_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_config ZeroTrustOrganization#mfa_config}
 
 ---
 
@@ -244,7 +246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates if this organization can enforce multi-factor authentication (MFA) requirements at the application and policy level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#mfa_configuration_allowed ZeroTrustOrganization#mfa_configuration_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_configuration_allowed ZeroTrustOrganization#mfa_configuration_allowed}
 
 ---
 
@@ -256,7 +258,17 @@ Determines whether global MFA settings apply to applications by default.
 
 The organization must have MFA enabled with at least one authentication method and a session duration configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#mfa_required_for_all_apps ZeroTrustOrganization#mfa_required_for_all_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_required_for_all_apps ZeroTrustOrganization#mfa_required_for_all_apps}
+
+---
+
+##### `mfa_ssh_piv_key_requirements`<sup>Optional</sup> <a name="mfa_ssh_piv_key_requirements" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer.parameter.mfaSshPivKeyRequirements"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a>
+
+Configures SSH PIV key requirements for MFA using hardware security keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_ssh_piv_key_requirements ZeroTrustOrganization#mfa_ssh_piv_key_requirements}
 
 ---
 
@@ -266,7 +278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
 
 ---
 
@@ -278,7 +290,7 @@ The amount of time that tokens issued for applications will be valid.
 
 Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
 
 ---
 
@@ -288,7 +300,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A description of the reason why the UI read only field is being toggled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
 
 ---
 
@@ -300,7 +312,7 @@ The amount of time a user seat is inactive before it expires.
 
 When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count.  Minimum value for this setting is 1 month (730h). Must be in the format `300ms` or `2h45m`. Valid time units are: `ns`, `us` (or `µs`), `ms`, `s`, `m`, `h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
 
 ---
 
@@ -312,7 +324,7 @@ The amount of time that tokens issued for applications will be valid.
 
 Must be in the format `30m` or `2h45m`. Valid time units are: m, h.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
 
 ---
 
@@ -322,7 +334,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
 
 ---
 
@@ -357,6 +369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putCustomPages">put_custom_pages</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putLoginDesign">put_login_design</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaConfig">put_mfa_config</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaSshPivKeyRequirements">put_mfa_ssh_piv_key_requirements</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetAllowAuthenticateViaWarp">reset_allow_authenticate_via_warp</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetAuthDomain">reset_auth_domain</a></code> | *No description.* |
@@ -369,6 +382,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetMfaConfig">reset_mfa_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetMfaConfigurationAllowed">reset_mfa_configuration_allowed</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetMfaRequiredForAllApps">reset_mfa_required_for_all_apps</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetMfaSshPivKeyRequirements">reset_mfa_ssh_piv_key_requirements</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetSessionDuration">reset_session_duration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetUiReadOnlyToggleReason">reset_ui_read_only_toggle_reason</a></code> | *No description.* |
@@ -741,7 +755,7 @@ def put_custom_pages(
 
 The uid of the custom page to use when a user is denied access after failing a non-identity rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
 
 ---
 
@@ -751,7 +765,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The uid of the custom page to use when a user is denied access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
 
 ---
 
@@ -773,7 +787,7 @@ def put_login_design(
 
 The background color on your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
 
 ---
 
@@ -783,7 +797,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The text at the bottom of your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
 
 ---
 
@@ -793,7 +807,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The text at the top of your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
 
 ---
 
@@ -803,7 +817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The URL of the logo on your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
 
 ---
 
@@ -813,7 +827,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The text color on your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
 
 ---
 
@@ -822,6 +836,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 ```python
 def put_mfa_config(
   allowed_authenticators: typing.List[str] = None,
+  amr_matching_session_duration: str = None,
+  required_aaguids: str = None,
   session_duration: str = None
 ) -> None
 ```
@@ -832,7 +848,29 @@ def put_mfa_config(
 
 Lists the MFA methods that users can authenticate with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#allowed_authenticators ZeroTrustOrganization#allowed_authenticators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#allowed_authenticators ZeroTrustOrganization#allowed_authenticators}
+
+---
+
+###### `amr_matching_session_duration`<sup>Optional</sup> <a name="amr_matching_session_duration" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaConfig.parameter.amrMatchingSessionDuration"></a>
+
+- *Type:* str
+
+Allows a user to skip MFA via Authentication Method Reference (AMR) matching when the AMR claim provided by the IdP the user used to authenticate contains "mfa".
+
+Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#amr_matching_session_duration ZeroTrustOrganization#amr_matching_session_duration}
+
+---
+
+###### `required_aaguids`<sup>Optional</sup> <a name="required_aaguids" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaConfig.parameter.requiredAaguids"></a>
+
+- *Type:* str
+
+Specifies a Cloudflare List of required FIDO2 authenticator device AAGUIDs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#required_aaguids ZeroTrustOrganization#required_aaguids}
 
 ---
 
@@ -844,7 +882,77 @@ Defines the duration of an MFA session.
 
 Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+
+---
+
+##### `put_mfa_ssh_piv_key_requirements` <a name="put_mfa_ssh_piv_key_requirements" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaSshPivKeyRequirements"></a>
+
+```python
+def put_mfa_ssh_piv_key_requirements(
+  pin_policy: str = None,
+  require_fips_device: bool | IResolvable = None,
+  ssh_key_size: typing.List[typing.Union[int, float]] = None,
+  ssh_key_type: typing.List[str] = None,
+  touch_policy: str = None
+) -> None
+```
+
+###### `pin_policy`<sup>Optional</sup> <a name="pin_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaSshPivKeyRequirements.parameter.pinPolicy"></a>
+
+- *Type:* str
+
+Defines when a PIN is required to use the SSH key.
+
+Valid values: `never` (no PIN required), `once` (PIN required once per session), `always` (PIN required for each use).
+Available values: "never", "once", "always".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#pin_policy ZeroTrustOrganization#pin_policy}
+
+---
+
+###### `require_fips_device`<sup>Optional</sup> <a name="require_fips_device" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaSshPivKeyRequirements.parameter.requireFipsDevice"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Requires the SSH PIV key to be stored on a FIPS 140-2 Level 1 or higher validated device.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#require_fips_device ZeroTrustOrganization#require_fips_device}
+
+---
+
+###### `ssh_key_size`<sup>Optional</sup> <a name="ssh_key_size" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaSshPivKeyRequirements.parameter.sshKeySize"></a>
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+Specifies the allowed SSH key sizes in bits.
+
+Valid sizes depend on key type. Ed25519 has a fixed key size and does not accept this parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#ssh_key_size ZeroTrustOrganization#ssh_key_size}
+
+---
+
+###### `ssh_key_type`<sup>Optional</sup> <a name="ssh_key_type" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaSshPivKeyRequirements.parameter.sshKeyType"></a>
+
+- *Type:* typing.List[str]
+
+Specifies the allowed SSH key types. Valid values are `ecdsa`, `ed25519`, and `rsa`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#ssh_key_type ZeroTrustOrganization#ssh_key_type}
+
+---
+
+###### `touch_policy`<sup>Optional</sup> <a name="touch_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.putMfaSshPivKeyRequirements.parameter.touchPolicy"></a>
+
+- *Type:* str
+
+Defines when physical touch is required to use the SSH key.
+
+Valid values: `never` (no touch required), `always` (touch required for each use), `cached` (touch cached for 15 seconds).
+Available values: "never", "always", "cached".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#touch_policy ZeroTrustOrganization#touch_policy}
 
 ---
 
@@ -918,6 +1026,12 @@ def reset_mfa_configuration_allowed() -> None
 
 ```python
 def reset_mfa_required_for_all_apps() -> None
+```
+
+##### `reset_mfa_ssh_piv_key_requirements` <a name="reset_mfa_ssh_piv_key_requirements" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetMfaSshPivKeyRequirements"></a>
+
+```python
+def reset_mfa_ssh_piv_key_requirements() -> None
 ```
 
 ##### `reset_name` <a name="reset_name" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.resetName"></a>
@@ -1070,7 +1184,7 @@ The construct id used in the generated config for the ZeroTrustOrganization to i
 
 The id of the existing ZeroTrustOrganization that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1103,6 +1217,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.customPages">custom_pages</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPagesOutputReference">ZeroTrustOrganizationCustomPagesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.loginDesign">login_design</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesignOutputReference">ZeroTrustOrganizationLoginDesignOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaConfig">mfa_config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference">ZeroTrustOrganizationMfaConfigOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaSshPivKeyRequirements">mfa_ssh_piv_key_requirements</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference">ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.allowAuthenticateViaWarpInput">allow_authenticate_via_warp_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.authDomainInput">auth_domain_input</a></code> | <code>str</code> | *No description.* |
@@ -1115,6 +1230,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaConfigInput">mfa_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig">ZeroTrustOrganizationMfaConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaConfigurationAllowedInput">mfa_configuration_allowed_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaRequiredForAllAppsInput">mfa_required_for_all_apps_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaSshPivKeyRequirementsInput">mfa_ssh_piv_key_requirements_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.sessionDurationInput">session_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.uiReadOnlyToggleReasonInput">ui_read_only_toggle_reason_input</a></code> | <code>str</code> | *No description.* |
@@ -1311,6 +1427,16 @@ mfa_config: ZeroTrustOrganizationMfaConfigOutputReference
 
 ---
 
+##### `mfa_ssh_piv_key_requirements`<sup>Required</sup> <a name="mfa_ssh_piv_key_requirements" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaSshPivKeyRequirements"></a>
+
+```python
+mfa_ssh_piv_key_requirements: ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference">ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference</a>
+
+---
+
 ##### `account_id_input`<sup>Optional</sup> <a name="account_id_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.accountIdInput"></a>
 
 ```python
@@ -1428,6 +1554,16 @@ mfa_required_for_all_apps_input: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `mfa_ssh_piv_key_requirements_input`<sup>Optional</sup> <a name="mfa_ssh_piv_key_requirements_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.property.mfaSshPivKeyRequirementsInput"></a>
+
+```python
+mfa_ssh_piv_key_requirements_input: IResolvable | ZeroTrustOrganizationMfaSshPivKeyRequirements
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a>
 
 ---
 
@@ -1688,6 +1824,7 @@ zeroTrustOrganization.ZeroTrustOrganizationConfig(
   mfa_config: ZeroTrustOrganizationMfaConfig = None,
   mfa_configuration_allowed: bool | IResolvable = None,
   mfa_required_for_all_apps: bool | IResolvable = None,
+  mfa_ssh_piv_key_requirements: ZeroTrustOrganizationMfaSshPivKeyRequirements = None,
   name: str = None,
   session_duration: str = None,
   ui_read_only_toggle_reason: str = None,
@@ -1712,14 +1849,15 @@ zeroTrustOrganization.ZeroTrustOrganizationConfig(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.allowAuthenticateViaWarp">allow_authenticate_via_warp</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to true, users can authenticate via WARP for any application in your organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.authDomain">auth_domain</a></code> | <code>str</code> | The unique subdomain assigned to your Zero Trust organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.autoRedirectToIdentity">auto_redirect_to_identity</a></code> | <code>bool \| cdktn.IResolvable</code> | When set to `true`, users skip the identity provider selection step during login. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.customPages">custom_pages</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages">ZeroTrustOrganizationCustomPages</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.customPages">custom_pages</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages">ZeroTrustOrganizationCustomPages</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.denyUnmatchedRequests">deny_unmatched_requests</a></code> | <code>bool \| cdktn.IResolvable</code> | Determines whether to deny all requests to Cloudflare-protected resources that lack an associated Access application. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.denyUnmatchedRequestsExemptedZoneNames">deny_unmatched_requests_exempted_zone_names</a></code> | <code>typing.List[str]</code> | Contains zone names to exempt from the `deny_unmatched_requests` feature. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.isUiReadOnly">is_ui_read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Lock all settings as Read-Only in the Dashboard, regardless of user permission. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.loginDesign">login_design</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign">ZeroTrustOrganizationLoginDesign</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.loginDesign">login_design</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign">ZeroTrustOrganizationLoginDesign</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.mfaConfig">mfa_config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig">ZeroTrustOrganizationMfaConfig</a></code> | Configures multi-factor authentication (MFA) settings for an organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.mfaConfigurationAllowed">mfa_configuration_allowed</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates if this organization can enforce multi-factor authentication (MFA) requirements at the application and policy level. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.mfaRequiredForAllApps">mfa_required_for_all_apps</a></code> | <code>bool \| cdktn.IResolvable</code> | Determines whether global MFA settings apply to applications by default. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.mfaSshPivKeyRequirements">mfa_ssh_piv_key_requirements</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a></code> | Configures SSH PIV key requirements for MFA using hardware security keys. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.name">name</a></code> | <code>str</code> | The name of your Zero Trust organization. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.sessionDuration">session_duration</a></code> | <code>str</code> | The amount of time that tokens issued for applications will be valid. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.uiReadOnlyToggleReason">ui_read_only_toggle_reason</a></code> | <code>str</code> | A description of the reason why the UI read only field is being toggled. |
@@ -1809,7 +1947,7 @@ account_id: str
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#account_id ZeroTrustOrganization#account_id}
 
 ---
 
@@ -1825,7 +1963,7 @@ When set to true, users can authenticate via WARP for any application in your or
 
 Application settings will take precedence over this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#allow_authenticate_via_warp ZeroTrustOrganization#allow_authenticate_via_warp}
 
 ---
 
@@ -1839,7 +1977,7 @@ auth_domain: str
 
 The unique subdomain assigned to your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#auth_domain ZeroTrustOrganization#auth_domain}
 
 ---
 
@@ -1853,7 +1991,7 @@ auto_redirect_to_identity: bool | IResolvable
 
 When set to `true`, users skip the identity provider selection step during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#auto_redirect_to_identity ZeroTrustOrganization#auto_redirect_to_identity}
 
 ---
 
@@ -1865,7 +2003,7 @@ custom_pages: ZeroTrustOrganizationCustomPages
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages">ZeroTrustOrganizationCustomPages</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#custom_pages ZeroTrustOrganization#custom_pages}.
 
 ---
 
@@ -1881,7 +2019,7 @@ Determines whether to deny all requests to Cloudflare-protected resources that l
 
 If enabled, you must explicitly configure an Access application and policy to allow traffic to your Cloudflare-protected resources. For domains you want to be public across all subdomains, add the domain to the `deny_unmatched_requests_exempted_zone_names` array.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#deny_unmatched_requests ZeroTrustOrganization#deny_unmatched_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#deny_unmatched_requests ZeroTrustOrganization#deny_unmatched_requests}
 
 ---
 
@@ -1897,7 +2035,7 @@ Contains zone names to exempt from the `deny_unmatched_requests` feature.
 
 Requests to a subdomain in an exempted zone will block unauthenticated traffic by default if there is a configured Access application and policy that matches the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#deny_unmatched_requests_exempted_zone_names ZeroTrustOrganization#deny_unmatched_requests_exempted_zone_names}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#deny_unmatched_requests_exempted_zone_names ZeroTrustOrganization#deny_unmatched_requests_exempted_zone_names}
 
 ---
 
@@ -1913,7 +2051,7 @@ Lock all settings as Read-Only in the Dashboard, regardless of user permission.
 
 Updates may only be made via the API or Terraform for this account when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#is_ui_read_only ZeroTrustOrganization#is_ui_read_only}
 
 ---
 
@@ -1925,7 +2063,7 @@ login_design: ZeroTrustOrganizationLoginDesign
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign">ZeroTrustOrganizationLoginDesign</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#login_design ZeroTrustOrganization#login_design}.
 
 ---
 
@@ -1939,7 +2077,7 @@ mfa_config: ZeroTrustOrganizationMfaConfig
 
 Configures multi-factor authentication (MFA) settings for an organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#mfa_config ZeroTrustOrganization#mfa_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_config ZeroTrustOrganization#mfa_config}
 
 ---
 
@@ -1953,7 +2091,7 @@ mfa_configuration_allowed: bool | IResolvable
 
 Indicates if this organization can enforce multi-factor authentication (MFA) requirements at the application and policy level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#mfa_configuration_allowed ZeroTrustOrganization#mfa_configuration_allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_configuration_allowed ZeroTrustOrganization#mfa_configuration_allowed}
 
 ---
 
@@ -1969,7 +2107,21 @@ Determines whether global MFA settings apply to applications by default.
 
 The organization must have MFA enabled with at least one authentication method and a session duration configured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#mfa_required_for_all_apps ZeroTrustOrganization#mfa_required_for_all_apps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_required_for_all_apps ZeroTrustOrganization#mfa_required_for_all_apps}
+
+---
+
+##### `mfa_ssh_piv_key_requirements`<sup>Optional</sup> <a name="mfa_ssh_piv_key_requirements" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.property.mfaSshPivKeyRequirements"></a>
+
+```python
+mfa_ssh_piv_key_requirements: ZeroTrustOrganizationMfaSshPivKeyRequirements
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a>
+
+Configures SSH PIV key requirements for MFA using hardware security keys.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#mfa_ssh_piv_key_requirements ZeroTrustOrganization#mfa_ssh_piv_key_requirements}
 
 ---
 
@@ -1983,7 +2135,7 @@ name: str
 
 The name of your Zero Trust organization.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#name ZeroTrustOrganization#name}
 
 ---
 
@@ -1999,7 +2151,7 @@ The amount of time that tokens issued for applications will be valid.
 
 Must be in the format `300ms` or `2h45m`. Valid time units are: ns, us (or µs), ms, s, m, h.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
 
 ---
 
@@ -2013,7 +2165,7 @@ ui_read_only_toggle_reason: str
 
 A description of the reason why the UI read only field is being toggled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#ui_read_only_toggle_reason ZeroTrustOrganization#ui_read_only_toggle_reason}
 
 ---
 
@@ -2029,7 +2181,7 @@ The amount of time a user seat is inactive before it expires.
 
 When the user seat exceeds the set time of inactivity, the user is removed as an active seat and no longer counts against your Teams seat count.  Minimum value for this setting is 1 month (730h). Must be in the format `300ms` or `2h45m`. Valid time units are: `ns`, `us` (or `µs`), `ms`, `s`, `m`, `h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#user_seat_expiration_inactive_time ZeroTrustOrganization#user_seat_expiration_inactive_time}
 
 ---
 
@@ -2045,7 +2197,7 @@ The amount of time that tokens issued for applications will be valid.
 
 Must be in the format `30m` or `2h45m`. Valid time units are: m, h.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#warp_auth_session_duration ZeroTrustOrganization#warp_auth_session_duration}
 
 ---
 
@@ -2059,7 +2211,7 @@ zone_id: str
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#zone_id ZeroTrustOrganization#zone_id}
 
 ---
 
@@ -2095,7 +2247,7 @@ forbidden: str
 
 The uid of the custom page to use when a user is denied access after failing a non-identity rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#forbidden ZeroTrustOrganization#forbidden}
 
 ---
 
@@ -2109,7 +2261,7 @@ identity_denied: str
 
 The uid of the custom page to use when a user is denied access.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#identity_denied ZeroTrustOrganization#identity_denied}
 
 ---
 
@@ -2151,7 +2303,7 @@ background_color: str
 
 The background color on your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#background_color ZeroTrustOrganization#background_color}
 
 ---
 
@@ -2165,7 +2317,7 @@ footer_text: str
 
 The text at the bottom of your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#footer_text ZeroTrustOrganization#footer_text}
 
 ---
 
@@ -2179,7 +2331,7 @@ header_text: str
 
 The text at the top of your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#header_text ZeroTrustOrganization#header_text}
 
 ---
 
@@ -2193,7 +2345,7 @@ logo_path: str
 
 The URL of the logo on your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#logo_path ZeroTrustOrganization#logo_path}
 
 ---
 
@@ -2207,7 +2359,7 @@ text_color: str
 
 The text color on your login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#text_color ZeroTrustOrganization#text_color}
 
 ---
 
@@ -2220,6 +2372,8 @@ from cdktn_provider_cloudflare import zero_trust_organization
 
 zeroTrustOrganization.ZeroTrustOrganizationMfaConfig(
   allowed_authenticators: typing.List[str] = None,
+  amr_matching_session_duration: str = None,
+  required_aaguids: str = None,
   session_duration: str = None
 )
 ```
@@ -2229,6 +2383,8 @@ zeroTrustOrganization.ZeroTrustOrganizationMfaConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig.property.allowedAuthenticators">allowed_authenticators</a></code> | <code>typing.List[str]</code> | Lists the MFA methods that users can authenticate with. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig.property.amrMatchingSessionDuration">amr_matching_session_duration</a></code> | <code>str</code> | Allows a user to skip MFA via Authentication Method Reference (AMR) matching when the AMR claim provided by the IdP the user used to authenticate contains "mfa". |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig.property.requiredAaguids">required_aaguids</a></code> | <code>str</code> | Specifies a Cloudflare List of required FIDO2 authenticator device AAGUIDs. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig.property.sessionDuration">session_duration</a></code> | <code>str</code> | Defines the duration of an MFA session. |
 
 ---
@@ -2243,7 +2399,37 @@ allowed_authenticators: typing.List[str]
 
 Lists the MFA methods that users can authenticate with.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#allowed_authenticators ZeroTrustOrganization#allowed_authenticators}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#allowed_authenticators ZeroTrustOrganization#allowed_authenticators}
+
+---
+
+##### `amr_matching_session_duration`<sup>Optional</sup> <a name="amr_matching_session_duration" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig.property.amrMatchingSessionDuration"></a>
+
+```python
+amr_matching_session_duration: str
+```
+
+- *Type:* str
+
+Allows a user to skip MFA via Authentication Method Reference (AMR) matching when the AMR claim provided by the IdP the user used to authenticate contains "mfa".
+
+Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#amr_matching_session_duration ZeroTrustOrganization#amr_matching_session_duration}
+
+---
+
+##### `required_aaguids`<sup>Optional</sup> <a name="required_aaguids" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig.property.requiredAaguids"></a>
+
+```python
+required_aaguids: str
+```
+
+- *Type:* str
+
+Specifies a Cloudflare List of required FIDO2 authenticator device AAGUIDs.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#required_aaguids ZeroTrustOrganization#required_aaguids}
 
 ---
 
@@ -2259,7 +2445,113 @@ Defines the duration of an MFA session.
 
 Must be in minutes (m) or hours (h). Minimum: 0m. Maximum: 720h (30 days). Examples:`5m` or `24h`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#session_duration ZeroTrustOrganization#session_duration}
+
+---
+
+### ZeroTrustOrganizationMfaSshPivKeyRequirements <a name="ZeroTrustOrganizationMfaSshPivKeyRequirements" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import zero_trust_organization
+
+zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements(
+  pin_policy: str = None,
+  require_fips_device: bool | IResolvable = None,
+  ssh_key_size: typing.List[typing.Union[int, float]] = None,
+  ssh_key_type: typing.List[str] = None,
+  touch_policy: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.pinPolicy">pin_policy</a></code> | <code>str</code> | Defines when a PIN is required to use the SSH key. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.requireFipsDevice">require_fips_device</a></code> | <code>bool \| cdktn.IResolvable</code> | Requires the SSH PIV key to be stored on a FIPS 140-2 Level 1 or higher validated device. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.sshKeySize">ssh_key_size</a></code> | <code>typing.List[typing.Union[int, float]]</code> | Specifies the allowed SSH key sizes in bits. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.sshKeyType">ssh_key_type</a></code> | <code>typing.List[str]</code> | Specifies the allowed SSH key types. Valid values are `ecdsa`, `ed25519`, and `rsa`. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.touchPolicy">touch_policy</a></code> | <code>str</code> | Defines when physical touch is required to use the SSH key. |
+
+---
+
+##### `pin_policy`<sup>Optional</sup> <a name="pin_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.pinPolicy"></a>
+
+```python
+pin_policy: str
+```
+
+- *Type:* str
+
+Defines when a PIN is required to use the SSH key.
+
+Valid values: `never` (no PIN required), `once` (PIN required once per session), `always` (PIN required for each use).
+Available values: "never", "once", "always".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#pin_policy ZeroTrustOrganization#pin_policy}
+
+---
+
+##### `require_fips_device`<sup>Optional</sup> <a name="require_fips_device" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.requireFipsDevice"></a>
+
+```python
+require_fips_device: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Requires the SSH PIV key to be stored on a FIPS 140-2 Level 1 or higher validated device.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#require_fips_device ZeroTrustOrganization#require_fips_device}
+
+---
+
+##### `ssh_key_size`<sup>Optional</sup> <a name="ssh_key_size" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.sshKeySize"></a>
+
+```python
+ssh_key_size: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+Specifies the allowed SSH key sizes in bits.
+
+Valid sizes depend on key type. Ed25519 has a fixed key size and does not accept this parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#ssh_key_size ZeroTrustOrganization#ssh_key_size}
+
+---
+
+##### `ssh_key_type`<sup>Optional</sup> <a name="ssh_key_type" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.sshKeyType"></a>
+
+```python
+ssh_key_type: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Specifies the allowed SSH key types. Valid values are `ecdsa`, `ed25519`, and `rsa`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#ssh_key_type ZeroTrustOrganization#ssh_key_type}
+
+---
+
+##### `touch_policy`<sup>Optional</sup> <a name="touch_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.property.touchPolicy"></a>
+
+```python
+touch_policy: str
+```
+
+- *Type:* str
+
+Defines when physical touch is required to use the SSH key.
+
+Valid values: `never` (no touch required), `always` (touch required for each use), `cached` (touch cached for 15 seconds).
+Available values: "never", "always", "cached".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_organization#touch_policy ZeroTrustOrganization#touch_policy}
 
 ---
 
@@ -3070,6 +3362,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resetAllowedAuthenticators">reset_allowed_authenticators</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resetAmrMatchingSessionDuration">reset_amr_matching_session_duration</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resetRequiredAaguids">reset_required_aaguids</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resetSessionDuration">reset_session_duration</a></code> | *No description.* |
 
 ---
@@ -3252,6 +3546,18 @@ Returns a reversible string representation.
 def reset_allowed_authenticators() -> None
 ```
 
+##### `reset_amr_matching_session_duration` <a name="reset_amr_matching_session_duration" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resetAmrMatchingSessionDuration"></a>
+
+```python
+def reset_amr_matching_session_duration() -> None
+```
+
+##### `reset_required_aaguids` <a name="reset_required_aaguids" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resetRequiredAaguids"></a>
+
+```python
+def reset_required_aaguids() -> None
+```
+
 ##### `reset_session_duration` <a name="reset_session_duration" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.resetSessionDuration"></a>
 
 ```python
@@ -3266,8 +3572,12 @@ def reset_session_duration() -> None
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.allowedAuthenticatorsInput">allowed_authenticators_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.amrMatchingSessionDurationInput">amr_matching_session_duration_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.requiredAaguidsInput">required_aaguids_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.sessionDurationInput">session_duration_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.allowedAuthenticators">allowed_authenticators</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.amrMatchingSessionDuration">amr_matching_session_duration</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.requiredAaguids">required_aaguids</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.sessionDuration">session_duration</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig">ZeroTrustOrganizationMfaConfig</a></code> | *No description.* |
 
@@ -3307,6 +3617,26 @@ allowed_authenticators_input: typing.List[str]
 
 ---
 
+##### `amr_matching_session_duration_input`<sup>Optional</sup> <a name="amr_matching_session_duration_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.amrMatchingSessionDurationInput"></a>
+
+```python
+amr_matching_session_duration_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `required_aaguids_input`<sup>Optional</sup> <a name="required_aaguids_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.requiredAaguidsInput"></a>
+
+```python
+required_aaguids_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `session_duration_input`<sup>Optional</sup> <a name="session_duration_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.sessionDurationInput"></a>
 
 ```python
@@ -3327,6 +3657,26 @@ allowed_authenticators: typing.List[str]
 
 ---
 
+##### `amr_matching_session_duration`<sup>Required</sup> <a name="amr_matching_session_duration" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.amrMatchingSessionDuration"></a>
+
+```python
+amr_matching_session_duration: str
+```
+
+- *Type:* str
+
+---
+
+##### `required_aaguids`<sup>Required</sup> <a name="required_aaguids" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.requiredAaguids"></a>
+
+```python
+required_aaguids: str
+```
+
+- *Type:* str
+
+---
+
 ##### `session_duration`<sup>Required</sup> <a name="session_duration" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.property.sessionDuration"></a>
 
 ```python
@@ -3344,6 +3694,425 @@ internal_value: IResolvable | ZeroTrustOrganizationMfaConfig
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig">ZeroTrustOrganizationMfaConfig</a>
+
+---
+
+
+### ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference <a name="ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import zero_trust_organization
+
+zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetPinPolicy">reset_pin_policy</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetRequireFipsDevice">reset_require_fips_device</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetSshKeySize">reset_ssh_key_size</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetSshKeyType">reset_ssh_key_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetTouchPolicy">reset_touch_policy</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_pin_policy` <a name="reset_pin_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetPinPolicy"></a>
+
+```python
+def reset_pin_policy() -> None
+```
+
+##### `reset_require_fips_device` <a name="reset_require_fips_device" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetRequireFipsDevice"></a>
+
+```python
+def reset_require_fips_device() -> None
+```
+
+##### `reset_ssh_key_size` <a name="reset_ssh_key_size" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetSshKeySize"></a>
+
+```python
+def reset_ssh_key_size() -> None
+```
+
+##### `reset_ssh_key_type` <a name="reset_ssh_key_type" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetSshKeyType"></a>
+
+```python
+def reset_ssh_key_type() -> None
+```
+
+##### `reset_touch_policy` <a name="reset_touch_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.resetTouchPolicy"></a>
+
+```python
+def reset_touch_policy() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.pinPolicyInput">pin_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.requireFipsDeviceInput">require_fips_device_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeySizeInput">ssh_key_size_input</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeyTypeInput">ssh_key_type_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.touchPolicyInput">touch_policy_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.pinPolicy">pin_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.requireFipsDevice">require_fips_device</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeySize">ssh_key_size</a></code> | <code>typing.List[typing.Union[int, float]]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeyType">ssh_key_type</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.touchPolicy">touch_policy</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `pin_policy_input`<sup>Optional</sup> <a name="pin_policy_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.pinPolicyInput"></a>
+
+```python
+pin_policy_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `require_fips_device_input`<sup>Optional</sup> <a name="require_fips_device_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.requireFipsDeviceInput"></a>
+
+```python
+require_fips_device_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `ssh_key_size_input`<sup>Optional</sup> <a name="ssh_key_size_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeySizeInput"></a>
+
+```python
+ssh_key_size_input: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `ssh_key_type_input`<sup>Optional</sup> <a name="ssh_key_type_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeyTypeInput"></a>
+
+```python
+ssh_key_type_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `touch_policy_input`<sup>Optional</sup> <a name="touch_policy_input" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.touchPolicyInput"></a>
+
+```python
+touch_policy_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `pin_policy`<sup>Required</sup> <a name="pin_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.pinPolicy"></a>
+
+```python
+pin_policy: str
+```
+
+- *Type:* str
+
+---
+
+##### `require_fips_device`<sup>Required</sup> <a name="require_fips_device" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.requireFipsDevice"></a>
+
+```python
+require_fips_device: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `ssh_key_size`<sup>Required</sup> <a name="ssh_key_size" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeySize"></a>
+
+```python
+ssh_key_size: typing.List[typing.Union[int, float]]
+```
+
+- *Type:* typing.List[typing.Union[int, float]]
+
+---
+
+##### `ssh_key_type`<sup>Required</sup> <a name="ssh_key_type" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.sshKeyType"></a>
+
+```python
+ssh_key_type: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `touch_policy`<sup>Required</sup> <a name="touch_policy" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.touchPolicy"></a>
+
+```python
+touch_policy: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | ZeroTrustOrganizationMfaSshPivKeyRequirements
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements">ZeroTrustOrganizationMfaSshPivKeyRequirements</a>
 
 ---
 

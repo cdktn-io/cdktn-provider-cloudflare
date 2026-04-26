@@ -4,7 +4,7 @@
 
 ### WebAnalyticsSite <a name="WebAnalyticsSite" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site cloudflare_web_analytics_site}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer"></a>
 
@@ -21,7 +21,7 @@ webAnalyticsSite.WebAnalyticsSite(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   auto_install: bool | IResolvable = None,
   enabled: bool | IResolvable = None,
   host: str = None,
@@ -110,13 +110,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Enables or disables RUM. This option can be used only when auto_install is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The hostname to use for gray-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If enabled, the JavaScript snippet will not be injected for visitors from the EU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 
 ---
 
@@ -198,6 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetAutoInstall">reset_auto_install</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetHost">reset_host</a></code> | *No description.* |
@@ -554,6 +555,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_auto_install` <a name="reset_auto_install" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSite.resetAutoInstall"></a>
 
 ```python
@@ -698,7 +705,7 @@ The construct id used in the generated config for the WebAnalyticsSite to import
 
 The id of the existing WebAnalyticsSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1117,7 +1124,7 @@ webAnalyticsSite.WebAnalyticsSiteConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   auto_install: bool | IResolvable = None,
   enabled: bool | IResolvable = None,
   host: str = None,
@@ -1216,7 +1223,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.webAnalyticsSite.WebAnalyticsSiteConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1226,7 +1233,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#account_id WebAnalyticsSite#account_id}
 
 ---
 
@@ -1240,7 +1247,7 @@ auto_install: bool | IResolvable
 
 If enabled, the JavaScript snippet is automatically injected for orange-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#auto_install WebAnalyticsSite#auto_install}
 
 ---
 
@@ -1254,7 +1261,7 @@ enabled: bool | IResolvable
 
 Enables or disables RUM. This option can be used only when auto_install is set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#enabled WebAnalyticsSite#enabled}
 
 ---
 
@@ -1268,7 +1275,7 @@ host: str
 
 The hostname to use for gray-clouded sites.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#host WebAnalyticsSite#host}
 
 ---
 
@@ -1282,7 +1289,7 @@ lite: bool | IResolvable
 
 If enabled, the JavaScript snippet will not be injected for visitors from the EU.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#lite WebAnalyticsSite#lite}
 
 ---
 
@@ -1296,7 +1303,7 @@ zone_tag: str
 
 The zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_site#zone_tag WebAnalyticsSite#zone_tag}
 
 ---
 

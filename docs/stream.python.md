@@ -4,7 +4,7 @@
 
 ### Stream <a name="Stream" id="@cdktn/provider-cloudflare.stream.Stream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream cloudflare_stream}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream cloudflare_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.Stream.Initializer"></a>
 
@@ -21,15 +21,17 @@ stream.Stream(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   allowed_origins: typing.List[str] = None,
   creator: str = None,
   identifier: str = None,
   max_duration_seconds: typing.Union[int, float] = None,
   meta: str = None,
+  public_details: StreamPublicDetails = None,
   require_signed_urls: bool | IResolvable = None,
   scheduled_deletion: str = None,
   thumbnail_timestamp_pct: typing.Union[int, float] = None,
+  uid: str = None,
   upload_expiry: str = None
 )
 ```
@@ -51,9 +53,11 @@ stream.Stream(
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The maximum duration in seconds for a video upload. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing videos. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.publicDetails">public_details</a></code> | <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a></code> | Public details for the video including title, share link, channel link, and logo. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.requireSignedUrls">require_signed_urls</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the video can be a accessed using the UID. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.scheduledDeletion">scheduled_deletion</a></code> | <code>str</code> | Indicates the date and time at which the video will be deleted. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.thumbnailTimestampPct">thumbnail_timestamp_pct</a></code> | <code>typing.Union[int, float]</code> | The timestamp for a thumbnail image calculated as a percentage value of the video's duration. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.uid">uid</a></code> | <code>str</code> | The unique identifier for the video. Can be used to verify the video being updated. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.uploadExpiry">upload_expiry</a></code> | <code>str</code> | The date and time when the video upload URL is no longer valid for direct user uploads. |
 
 ---
@@ -118,13 +122,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#account_id Stream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#account_id Stream#account_id}
 
 ---
 
@@ -136,7 +140,7 @@ Lists the origins allowed to display the video.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. Empty arrays allow the video to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
 
 ---
 
@@ -146,7 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#creator Stream#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#creator Stream#creator}
 
 ---
 
@@ -156,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#identifier Stream#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#identifier Stream#identifier}
 
 ---
 
@@ -168,7 +172,7 @@ The maximum duration in seconds for a video upload.
 
 Can be set for a video that is not yet uploaded to limit its duration. Uploads that exceed the specified duration will fail during processing. A value of `-1` means the value is unknown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
 
 ---
 
@@ -178,7 +182,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A user modifiable key-value store used to reference other systems of record for managing videos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#meta Stream#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#meta Stream#meta}
+
+---
+
+##### `public_details`<sup>Optional</sup> <a name="public_details" id="@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.publicDetails"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a>
+
+Public details for the video including title, share link, channel link, and logo.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#public_details Stream#public_details}
 
 ---
 
@@ -190,7 +204,7 @@ Indicates whether the video can be a accessed using the UID.
 
 When set to `true`, a signed token must be generated with a signing key to view the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
 
 ---
 
@@ -202,7 +216,7 @@ Indicates the date and time at which the video will be deleted.
 
 Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
 
 ---
 
@@ -214,7 +228,17 @@ The timestamp for a thumbnail image calculated as a percentage value of the vide
 
 To convert from a second-wise timestamp to a percentage, divide the desired timestamp by the total duration of the video.  If this value is not set, the default thumbnail image is taken from 0s of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+
+---
+
+##### `uid`<sup>Optional</sup> <a name="uid" id="@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.uid"></a>
+
+- *Type:* str
+
+The unique identifier for the video. Can be used to verify the video being updated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#uid Stream#uid}
 
 ---
 
@@ -224,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The date and time when the video upload URL is no longer valid for direct user uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
 
 ---
 
@@ -256,14 +280,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.putPublicDetails">put_public_details</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetAllowedOrigins">reset_allowed_origins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetCreator">reset_creator</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetIdentifier">reset_identifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetMaxDurationSeconds">reset_max_duration_seconds</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetMeta">reset_meta</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetPublicDetails">reset_public_details</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetRequireSignedUrls">reset_require_signed_urls</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetScheduledDeletion">reset_scheduled_deletion</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetThumbnailTimestampPct">reset_thumbnail_timestamp_pct</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetUid">reset_uid</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetUploadExpiry">reset_upload_expiry</a></code> | *No description.* |
 
 ---
@@ -616,6 +644,55 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_public_details` <a name="put_public_details" id="@cdktn/provider-cloudflare.stream.Stream.putPublicDetails"></a>
+
+```python
+def put_public_details(
+  channel_link: str = None,
+  logo: str = None,
+  share_link: str = None,
+  title: str = None
+) -> None
+```
+
+###### `channel_link`<sup>Optional</sup> <a name="channel_link" id="@cdktn/provider-cloudflare.stream.Stream.putPublicDetails.parameter.channelLink"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#channel_link Stream#channel_link}.
+
+---
+
+###### `logo`<sup>Optional</sup> <a name="logo" id="@cdktn/provider-cloudflare.stream.Stream.putPublicDetails.parameter.logo"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#logo Stream#logo}.
+
+---
+
+###### `share_link`<sup>Optional</sup> <a name="share_link" id="@cdktn/provider-cloudflare.stream.Stream.putPublicDetails.parameter.shareLink"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#share_link Stream#share_link}.
+
+---
+
+###### `title`<sup>Optional</sup> <a name="title" id="@cdktn/provider-cloudflare.stream.Stream.putPublicDetails.parameter.title"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#title Stream#title}.
+
+---
+
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.stream.Stream.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_allowed_origins` <a name="reset_allowed_origins" id="@cdktn/provider-cloudflare.stream.Stream.resetAllowedOrigins"></a>
 
 ```python
@@ -646,6 +723,12 @@ def reset_max_duration_seconds() -> None
 def reset_meta() -> None
 ```
 
+##### `reset_public_details` <a name="reset_public_details" id="@cdktn/provider-cloudflare.stream.Stream.resetPublicDetails"></a>
+
+```python
+def reset_public_details() -> None
+```
+
 ##### `reset_require_signed_urls` <a name="reset_require_signed_urls" id="@cdktn/provider-cloudflare.stream.Stream.resetRequireSignedUrls"></a>
 
 ```python
@@ -662,6 +745,12 @@ def reset_scheduled_deletion() -> None
 
 ```python
 def reset_thumbnail_timestamp_pct() -> None
+```
+
+##### `reset_uid` <a name="reset_uid" id="@cdktn/provider-cloudflare.stream.Stream.resetUid"></a>
+
+```python
+def reset_uid() -> None
 ```
 
 ##### `reset_upload_expiry` <a name="reset_upload_expiry" id="@cdktn/provider-cloudflare.stream.Stream.resetUploadExpiry"></a>
@@ -784,7 +873,7 @@ The construct id used in the generated config for the Stream to import.
 
 The id of the existing Stream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,19 +903,21 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.clippedFrom">clipped_from</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.created">created</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.duration">duration</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.input">input</a></code> | <code><a href="#@cdktn/provider-cloudflare.stream.StreamInputOutputReference">StreamInputOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.liveInput">live_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.maxSizeBytes">max_size_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.modified">modified</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.playback">playback</a></code> | <code><a href="#@cdktn/provider-cloudflare.stream.StreamPlaybackOutputReference">StreamPlaybackOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.preview">preview</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.publicDetails">public_details</a></code> | <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference">StreamPublicDetailsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.readyToStream">ready_to_stream</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.readyToStreamAt">ready_to_stream_at</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.size">size</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.status">status</a></code> | <code><a href="#@cdktn/provider-cloudflare.stream.StreamStatusOutputReference">StreamStatusOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.thumbnail">thumbnail</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.uploaded">uploaded</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.watermark">watermark</a></code> | <code><a href="#@cdktn/provider-cloudflare.stream.StreamWatermarkOutputReference">StreamWatermarkOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
@@ -835,9 +926,11 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.identifierInput">identifier_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.maxDurationSecondsInput">max_duration_seconds_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.metaInput">meta_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.publicDetailsInput">public_details_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.requireSignedUrlsInput">require_signed_urls_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.scheduledDeletionInput">scheduled_deletion_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.thumbnailTimestampPctInput">thumbnail_timestamp_pct_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.uidInput">uid_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.uploadExpiryInput">upload_expiry_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.allowedOrigins">allowed_origins</a></code> | <code>typing.List[str]</code> | *No description.* |
@@ -848,6 +941,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.requireSignedUrls">require_signed_urls</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.scheduledDeletion">scheduled_deletion</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.thumbnailTimestampPct">thumbnail_timestamp_pct</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.uid">uid</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.property.uploadExpiry">upload_expiry</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -994,6 +1088,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `clipped_from`<sup>Required</sup> <a name="clipped_from" id="@cdktn/provider-cloudflare.stream.Stream.property.clippedFrom"></a>
+
+```python
+clipped_from: str
+```
+
+- *Type:* str
+
+---
+
 ##### `created`<sup>Required</sup> <a name="created" id="@cdktn/provider-cloudflare.stream.Stream.property.created"></a>
 
 ```python
@@ -1034,6 +1138,16 @@ live_input: str
 
 ---
 
+##### `max_size_bytes`<sup>Required</sup> <a name="max_size_bytes" id="@cdktn/provider-cloudflare.stream.Stream.property.maxSizeBytes"></a>
+
+```python
+max_size_bytes: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `modified`<sup>Required</sup> <a name="modified" id="@cdktn/provider-cloudflare.stream.Stream.property.modified"></a>
 
 ```python
@@ -1061,6 +1175,16 @@ preview: str
 ```
 
 - *Type:* str
+
+---
+
+##### `public_details`<sup>Required</sup> <a name="public_details" id="@cdktn/provider-cloudflare.stream.Stream.property.publicDetails"></a>
+
+```python
+public_details: StreamPublicDetailsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference">StreamPublicDetailsOutputReference</a>
 
 ---
 
@@ -1108,16 +1232,6 @@ status: StreamStatusOutputReference
 
 ```python
 thumbnail: str
-```
-
-- *Type:* str
-
----
-
-##### `uid`<sup>Required</sup> <a name="uid" id="@cdktn/provider-cloudflare.stream.Stream.property.uid"></a>
-
-```python
-uid: str
 ```
 
 - *Type:* str
@@ -1204,6 +1318,16 @@ meta_input: str
 
 ---
 
+##### `public_details_input`<sup>Optional</sup> <a name="public_details_input" id="@cdktn/provider-cloudflare.stream.Stream.property.publicDetailsInput"></a>
+
+```python
+public_details_input: IResolvable | StreamPublicDetails
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a>
+
+---
+
 ##### `require_signed_urls_input`<sup>Optional</sup> <a name="require_signed_urls_input" id="@cdktn/provider-cloudflare.stream.Stream.property.requireSignedUrlsInput"></a>
 
 ```python
@@ -1231,6 +1355,16 @@ thumbnail_timestamp_pct_input: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `uid_input`<sup>Optional</sup> <a name="uid_input" id="@cdktn/provider-cloudflare.stream.Stream.property.uidInput"></a>
+
+```python
+uid_input: str
+```
+
+- *Type:* str
 
 ---
 
@@ -1334,6 +1468,16 @@ thumbnail_timestamp_pct: typing.Union[int, float]
 
 ---
 
+##### `uid`<sup>Required</sup> <a name="uid" id="@cdktn/provider-cloudflare.stream.Stream.property.uid"></a>
+
+```python
+uid: str
+```
+
+- *Type:* str
+
+---
+
 ##### `upload_expiry`<sup>Required</sup> <a name="upload_expiry" id="@cdktn/provider-cloudflare.stream.Stream.property.uploadExpiry"></a>
 
 ```python
@@ -1379,15 +1523,17 @@ stream.StreamConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   allowed_origins: typing.List[str] = None,
   creator: str = None,
   identifier: str = None,
   max_duration_seconds: typing.Union[int, float] = None,
   meta: str = None,
+  public_details: StreamPublicDetails = None,
   require_signed_urls: bool | IResolvable = None,
   scheduled_deletion: str = None,
   thumbnail_timestamp_pct: typing.Union[int, float] = None,
+  uid: str = None,
   upload_expiry: str = None
 )
 ```
@@ -1409,9 +1555,11 @@ stream.StreamConfig(
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.identifier">identifier</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.maxDurationSeconds">max_duration_seconds</a></code> | <code>typing.Union[int, float]</code> | The maximum duration in seconds for a video upload. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.meta">meta</a></code> | <code>str</code> | A user modifiable key-value store used to reference other systems of record for managing videos. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.publicDetails">public_details</a></code> | <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a></code> | Public details for the video including title, share link, channel link, and logo. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.requireSignedUrls">require_signed_urls</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates whether the video can be a accessed using the UID. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.scheduledDeletion">scheduled_deletion</a></code> | <code>str</code> | Indicates the date and time at which the video will be deleted. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.thumbnailTimestampPct">thumbnail_timestamp_pct</a></code> | <code>typing.Union[int, float]</code> | The timestamp for a thumbnail image calculated as a percentage value of the video's duration. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.uid">uid</a></code> | <code>str</code> | The unique identifier for the video. Can be used to verify the video being updated. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.StreamConfig.property.uploadExpiry">upload_expiry</a></code> | <code>str</code> | The date and time when the video upload URL is no longer valid for direct user uploads. |
 
 ---
@@ -1486,7 +1634,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.stream.StreamConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.stream.StreamConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1496,7 +1644,7 @@ account_id: str
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#account_id Stream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#account_id Stream#account_id}
 
 ---
 
@@ -1512,7 +1660,7 @@ Lists the origins allowed to display the video.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. Empty arrays allow the video to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
 
 ---
 
@@ -1526,7 +1674,7 @@ creator: str
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#creator Stream#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#creator Stream#creator}
 
 ---
 
@@ -1540,7 +1688,7 @@ identifier: str
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#identifier Stream#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#identifier Stream#identifier}
 
 ---
 
@@ -1556,7 +1704,7 @@ The maximum duration in seconds for a video upload.
 
 Can be set for a video that is not yet uploaded to limit its duration. Uploads that exceed the specified duration will fail during processing. A value of `-1` means the value is unknown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
 
 ---
 
@@ -1570,7 +1718,21 @@ meta: str
 
 A user modifiable key-value store used to reference other systems of record for managing videos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#meta Stream#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#meta Stream#meta}
+
+---
+
+##### `public_details`<sup>Optional</sup> <a name="public_details" id="@cdktn/provider-cloudflare.stream.StreamConfig.property.publicDetails"></a>
+
+```python
+public_details: StreamPublicDetails
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a>
+
+Public details for the video including title, share link, channel link, and logo.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#public_details Stream#public_details}
 
 ---
 
@@ -1586,7 +1748,7 @@ Indicates whether the video can be a accessed using the UID.
 
 When set to `true`, a signed token must be generated with a signing key to view the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
 
 ---
 
@@ -1602,7 +1764,7 @@ Indicates the date and time at which the video will be deleted.
 
 Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
 
 ---
 
@@ -1618,7 +1780,21 @@ The timestamp for a thumbnail image calculated as a percentage value of the vide
 
 To convert from a second-wise timestamp to a percentage, divide the desired timestamp by the total duration of the video.  If this value is not set, the default thumbnail image is taken from 0s of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+
+---
+
+##### `uid`<sup>Optional</sup> <a name="uid" id="@cdktn/provider-cloudflare.stream.StreamConfig.property.uid"></a>
+
+```python
+uid: str
+```
+
+- *Type:* str
+
+The unique identifier for the video. Can be used to verify the video being updated.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#uid Stream#uid}
 
 ---
 
@@ -1632,7 +1808,7 @@ upload_expiry: str
 
 The date and time when the video upload URL is no longer valid for direct user uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
 
 ---
 
@@ -1657,6 +1833,80 @@ from cdktn_provider_cloudflare import stream
 stream.StreamPlayback()
 ```
 
+
+### StreamPublicDetails <a name="StreamPublicDetails" id="@cdktn/provider-cloudflare.stream.StreamPublicDetails"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.stream.StreamPublicDetails.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import stream
+
+stream.StreamPublicDetails(
+  channel_link: str = None,
+  logo: str = None,
+  share_link: str = None,
+  title: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.channelLink">channel_link</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#channel_link Stream#channel_link}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.logo">logo</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#logo Stream#logo}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.shareLink">share_link</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#share_link Stream#share_link}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.title">title</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#title Stream#title}. |
+
+---
+
+##### `channel_link`<sup>Optional</sup> <a name="channel_link" id="@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.channelLink"></a>
+
+```python
+channel_link: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#channel_link Stream#channel_link}.
+
+---
+
+##### `logo`<sup>Optional</sup> <a name="logo" id="@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.logo"></a>
+
+```python
+logo: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#logo Stream#logo}.
+
+---
+
+##### `share_link`<sup>Optional</sup> <a name="share_link" id="@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.shareLink"></a>
+
+```python
+share_link: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#share_link Stream#share_link}.
+
+---
+
+##### `title`<sup>Optional</sup> <a name="title" id="@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.title"></a>
+
+```python
+title: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream#title Stream#title}.
+
+---
 
 ### StreamStatus <a name="StreamStatus" id="@cdktn/provider-cloudflare.stream.StreamStatus"></a>
 
@@ -2270,6 +2520,396 @@ internal_value: StreamPlayback
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.stream.StreamPlayback">StreamPlayback</a>
+
+---
+
+
+### StreamPublicDetailsOutputReference <a name="StreamPublicDetailsOutputReference" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import stream
+
+stream.StreamPublicDetailsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetChannelLink">reset_channel_link</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetLogo">reset_logo</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetShareLink">reset_share_link</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetTitle">reset_title</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_channel_link` <a name="reset_channel_link" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetChannelLink"></a>
+
+```python
+def reset_channel_link() -> None
+```
+
+##### `reset_logo` <a name="reset_logo" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetLogo"></a>
+
+```python
+def reset_logo() -> None
+```
+
+##### `reset_share_link` <a name="reset_share_link" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetShareLink"></a>
+
+```python
+def reset_share_link() -> None
+```
+
+##### `reset_title` <a name="reset_title" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.resetTitle"></a>
+
+```python
+def reset_title() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.channelLinkInput">channel_link_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.logoInput">logo_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.shareLinkInput">share_link_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.titleInput">title_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.channelLink">channel_link</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.logo">logo</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.shareLink">share_link</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.title">title</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `channel_link_input`<sup>Optional</sup> <a name="channel_link_input" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.channelLinkInput"></a>
+
+```python
+channel_link_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `logo_input`<sup>Optional</sup> <a name="logo_input" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.logoInput"></a>
+
+```python
+logo_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `share_link_input`<sup>Optional</sup> <a name="share_link_input" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.shareLinkInput"></a>
+
+```python
+share_link_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `title_input`<sup>Optional</sup> <a name="title_input" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.titleInput"></a>
+
+```python
+title_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `channel_link`<sup>Required</sup> <a name="channel_link" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.channelLink"></a>
+
+```python
+channel_link: str
+```
+
+- *Type:* str
+
+---
+
+##### `logo`<sup>Required</sup> <a name="logo" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.logo"></a>
+
+```python
+logo: str
+```
+
+- *Type:* str
+
+---
+
+##### `share_link`<sup>Required</sup> <a name="share_link" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.shareLink"></a>
+
+```python
+share_link: str
+```
+
+- *Type:* str
+
+---
+
+##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.title"></a>
+
+```python
+title: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | StreamPublicDetails
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails">StreamPublicDetails</a>
 
 ---
 

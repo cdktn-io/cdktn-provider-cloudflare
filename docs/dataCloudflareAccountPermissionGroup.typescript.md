@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountPermissionGroup <a name="DataCloudflareAccountPermissionGroup" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_permission_group cloudflare_account_permission_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_permission_group cloudflare_account_permission_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroup.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareAccountPermi
 
 The id of the existing DataCloudflareAccountPermissionGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_permission_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_permission_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -658,8 +665,8 @@ const dataCloudflareAccountPermissionGroupConfig: dataCloudflareAccountPermissio
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.permissionGroupId">permissionGroupId</a></code> | <code>string</code> | Permission Group identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
 
 ---
 
@@ -733,20 +740,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
-
----
-
 ##### `permissionGroupId`<sup>Required</sup> <a name="permissionGroupId" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.permissionGroupId"></a>
 
 ```typescript
@@ -757,7 +750,21 @@ public readonly permissionGroupId: string;
 
 Permission Group identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_permission_group#permission_group_id DataCloudflareAccountPermissionGroup#permission_group_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountPermissionGroup.DataCloudflareAccountPermissionGroupConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_permission_group#account_id DataCloudflareAccountPermissionGroup#account_id}
 
 ---
 

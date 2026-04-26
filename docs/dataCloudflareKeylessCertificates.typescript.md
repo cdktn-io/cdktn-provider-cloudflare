@@ -4,14 +4,14 @@
 
 ### DataCloudflareKeylessCertificates <a name="DataCloudflareKeylessCertificates" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/keyless_certificates cloudflare_keyless_certificates}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/keyless_certificates cloudflare_keyless_certificates}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.Initializer"></a>
 
 ```typescript
 import { dataCloudflareKeylessCertificates } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates(scope: Construct, id: string, config: DataCloudflareKeylessCertificatesConfig)
+new dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates(scope: Construct, id: string, config?: DataCloudflareKeylessCertificatesConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig">DataCloudflareKeylessCertificatesConfig</a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.resetMaxItems">resetMaxItems</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -291,6 +292,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetMaxItems(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificates.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareKeylessCerti
 
 The id of the existing DataCloudflareKeylessCertificates that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/keyless_certificates#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/keyless_certificates#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,8 +650,8 @@ const dataCloudflareKeylessCertificatesConfig: dataCloudflareKeylessCertificates
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -718,20 +725,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/keyless_certificates#zone_id DataCloudflareKeylessCertificates#zone_id}
-
----
-
 ##### `maxItems`<sup>Optional</sup> <a name="maxItems" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.maxItems"></a>
 
 ```typescript
@@ -742,7 +735,21 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/keyless_certificates#max_items DataCloudflareKeylessCertificates#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/keyless_certificates#max_items DataCloudflareKeylessCertificates#max_items}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareKeylessCertificates.DataCloudflareKeylessCertificatesConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/keyless_certificates#zone_id DataCloudflareKeylessCertificates#zone_id}
 
 ---
 

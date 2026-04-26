@@ -4,7 +4,7 @@
 
 ### AccountSubscription <a name="AccountSubscription" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscription"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription cloudflare_account_subscription}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_subscription cloudflare_account_subscription}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.accountSubscription.AccountSubscriptionConfig">AccountSubscriptionConfig</a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.putRatePlan">PutRatePlan</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.resetFrequency">ResetFrequency</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.resetRatePlan">ResetRatePlan</a></code> | *No description.* |
 
@@ -401,6 +402,12 @@ func PutRatePlan(value AccountSubscriptionRatePlan)
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 ##### `ResetFrequency` <a name="ResetFrequency" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscription.resetFrequency"></a>
 
 ```go
@@ -516,7 +523,7 @@ The construct id used in the generated config for the AccountSubscription to imp
 
 The id of the existing AccountSubscription that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_subscription#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +958,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.accountSubscription.AccountSubscriptionConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -961,7 +968,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_subscription#account_id AccountSubscription#account_id}
 
 ---
 
@@ -975,7 +982,7 @@ Frequency *string
 
 How often the subscription is renewed automatically. Available values: "weekly", "monthly", "quarterly", "yearly".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_subscription#frequency AccountSubscription#frequency}
 
 ---
 
@@ -989,7 +996,7 @@ RatePlan AccountSubscriptionRatePlan
 
 The rate plan applied to the subscription.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_subscription#rate_plan AccountSubscription#rate_plan}
 
 ---
 
@@ -1025,7 +1032,7 @@ Id *string
 
 The ID of the rate plan.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#id AccountSubscription#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_subscription#id AccountSubscription#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1042,7 +1049,7 @@ Scope *string
 
 The scope that this rate plan applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/account_subscription#scope AccountSubscription#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/account_subscription#scope AccountSubscription#scope}
 
 ---
 

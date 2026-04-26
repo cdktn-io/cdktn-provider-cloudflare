@@ -4,7 +4,7 @@
 
 ### DataCloudflareAddressMap <a name="DataCloudflareAddressMap" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_map cloudflare_address_map}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map cloudflare_address_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer"></a>
 
@@ -21,8 +21,8 @@ dataCloudflareAddressMap.DataCloudflareAddressMap(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  address_map_id: str
+  address_map_id: str,
+  account_id: str = None
 )
 ```
 
@@ -37,8 +37,8 @@ dataCloudflareAddressMap.DataCloudflareAddressMap(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier of a Cloudflare account. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.addressMapId">address_map_id</a></code> | <code>str</code> | Identifier of an Address Map. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier of a Cloudflare account. |
 
 ---
 
@@ -102,23 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier of a Cloudflare account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
-
----
-
 ##### `address_map_id`<sup>Required</sup> <a name="address_map_id" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.addressMapId"></a>
 
 - *Type:* str
 
 Identifier of an Address Map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier of a Cloudflare account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
 
 ---
 
@@ -144,6 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -387,6 +388,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -501,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareAddressMap t
 
 The id of the existing DataCloudflareAddressMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,8 +850,8 @@ dataCloudflareAddressMap.DataCloudflareAddressMapConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  address_map_id: str
+  address_map_id: str,
+  account_id: str = None
 )
 ```
 
@@ -859,8 +866,8 @@ dataCloudflareAddressMap.DataCloudflareAddressMapConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier of a Cloudflare account. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.addressMapId">address_map_id</a></code> | <code>str</code> | Identifier of an Address Map. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier of a Cloudflare account. |
 
 ---
 
@@ -934,20 +941,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier of a Cloudflare account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
-
----
-
 ##### `address_map_id`<sup>Required</sup> <a name="address_map_id" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.addressMapId"></a>
 
 ```python
@@ -958,7 +951,21 @@ address_map_id: str
 
 Identifier of an Address Map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMapConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier of a Cloudflare account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
 
 ---
 

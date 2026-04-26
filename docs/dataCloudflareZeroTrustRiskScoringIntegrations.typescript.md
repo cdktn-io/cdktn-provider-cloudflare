@@ -4,14 +4,14 @@
 
 ### DataCloudflareZeroTrustRiskScoringIntegrations <a name="DataCloudflareZeroTrustRiskScoringIntegrations" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_risk_scoring_integrations cloudflare_zero_trust_risk_scoring_integrations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.Initializer"></a>
 
 ```typescript
 import { dataCloudflareZeroTrustRiskScoringIntegrations } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations(scope: Construct, id: string, config: DataCloudflareZeroTrustRiskScoringIntegrationsConfig)
+new dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations(scope: Construct, id: string, config?: DataCloudflareZeroTrustRiskScoringIntegrationsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig">DataCloudflareZeroTrustRiskScoringIntegrationsConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 
 ---
@@ -285,6 +286,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrations.resetMaxItems"></a>
 
 ```typescript
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustRis
 
 The id of the existing DataCloudflareZeroTrustRiskScoringIntegrations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integrations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_risk_scoring_integrations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +650,7 @@ const dataCloudflareZeroTrustRiskScoringIntegrationsConfig: dataCloudflareZeroTr
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integrations#account_id DataCloudflareZeroTrustRiskScoringIntegrations#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_risk_scoring_integrations#account_id DataCloudflareZeroTrustRiskScoringIntegrations#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -718,7 +725,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustRiskScoringIntegrations.DataCloudflareZeroTrustRiskScoringIntegrationsConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -726,7 +733,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integrations#account_id DataCloudflareZeroTrustRiskScoringIntegrations#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_risk_scoring_integrations#account_id DataCloudflareZeroTrustRiskScoringIntegrations#account_id}.
 
 ---
 
@@ -740,7 +747,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_risk_scoring_integrations#max_items DataCloudflareZeroTrustRiskScoringIntegrations#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_risk_scoring_integrations#max_items DataCloudflareZeroTrustRiskScoringIntegrations#max_items}
 
 ---
 

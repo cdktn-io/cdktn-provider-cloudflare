@@ -4,14 +4,14 @@
 
 ### DataCloudflareFirewallRule <a name="DataCloudflareFirewallRule" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rule cloudflare_firewall_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rule cloudflare_firewall_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.Initializer"></a>
 
 ```typescript
 import { dataCloudflareFirewallRule } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareFirewallRule.DataCloudflareFirewallRule(scope: Construct, id: string, config: DataCloudflareFirewallRuleConfig)
+new dataCloudflareFirewallRule.DataCloudflareFirewallRule(scope: Construct, id: string, config?: DataCloudflareFirewallRuleConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig">DataCloudflareFirewallRuleConfig</a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.resetRuleId">resetRuleId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -291,6 +292,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetRuleId(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRule.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareFirewallRule
 
 The id of the existing DataCloudflareFirewallRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -709,8 +716,8 @@ const dataCloudflareFirewallRuleConfig: dataCloudflareFirewallRule.DataCloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.ruleId">ruleId</a></code> | <code>string</code> | The unique identifier of the firewall rule. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Defines an identifier. |
 
 ---
 
@@ -784,20 +791,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rule#zone_id DataCloudflareFirewallRule#zone_id}
-
----
-
 ##### `ruleId`<sup>Optional</sup> <a name="ruleId" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.ruleId"></a>
 
 ```typescript
@@ -808,7 +801,21 @@ public readonly ruleId: string;
 
 The unique identifier of the firewall rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/firewall_rule#rule_id DataCloudflareFirewallRule#rule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rule#rule_id DataCloudflareFirewallRule#rule_id}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareFirewallRule.DataCloudflareFirewallRuleConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/firewall_rule#zone_id DataCloudflareFirewallRule#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareListItem <a name="DataCloudflareListItem" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item cloudflare_list_item}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item cloudflare_list_item}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer"></a>
 
@@ -21,9 +21,9 @@ dataCloudflareListItem.DataCloudflareListItem(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   item_id: str,
-  list_id: str
+  list_id: str,
+  account_id: str = None
 )
 ```
 
@@ -38,9 +38,9 @@ dataCloudflareListItem.DataCloudflareListItem(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.itemId">item_id</a></code> | <code>str</code> | Defines the unique ID of the item in the List. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 
 ---
 
@@ -104,23 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-The Account ID for this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item#account_id DataCloudflareListItem#account_id}
-
----
-
 ##### `item_id`<sup>Required</sup> <a name="item_id" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.itemId"></a>
 
 - *Type:* str
 
 Defines the unique ID of the item in the List.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item#item_id DataCloudflareListItem#item_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item#item_id DataCloudflareListItem#item_id}
 
 ---
 
@@ -130,7 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item#list_id DataCloudflareListItem#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item#list_id DataCloudflareListItem#list_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+The Account ID for this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item#account_id DataCloudflareListItem#account_id}
 
 ---
 
@@ -156,6 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -399,6 +400,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItem.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -513,7 +520,7 @@ The construct id used in the generated config for the DataCloudflareListItem to 
 
 The id of the existing DataCloudflareListItem that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,9 +862,9 @@ dataCloudflareListItem.DataCloudflareListItemConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   item_id: str,
-  list_id: str
+  list_id: str,
+  account_id: str = None
 )
 ```
 
@@ -872,9 +879,9 @@ dataCloudflareListItem.DataCloudflareListItemConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.itemId">item_id</a></code> | <code>str</code> | Defines the unique ID of the item in the List. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.listId">list_id</a></code> | <code>str</code> | The unique ID of the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 
 ---
 
@@ -948,20 +955,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-The Account ID for this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item#account_id DataCloudflareListItem#account_id}
-
----
-
 ##### `item_id`<sup>Required</sup> <a name="item_id" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.itemId"></a>
 
 ```python
@@ -972,7 +965,7 @@ item_id: str
 
 Defines the unique ID of the item in the List.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item#item_id DataCloudflareListItem#item_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item#item_id DataCloudflareListItem#item_id}
 
 ---
 
@@ -986,7 +979,21 @@ list_id: str
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list_item#list_id DataCloudflareListItem#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item#list_id DataCloudflareListItem#list_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareListItem.DataCloudflareListItemConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+The Account ID for this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list_item#account_id DataCloudflareListItem#account_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### NotificationPolicyWebhooks <a name="NotificationPolicyWebhooks" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks cloudflare_notification_policy_webhooks}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer"></a>
 
@@ -21,9 +21,9 @@ notificationPolicyWebhooks.NotificationPolicyWebhooks(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   name: str,
   url: str,
+  account_id: str = None,
   secret: str = None
 )
 ```
@@ -39,9 +39,9 @@ notificationPolicyWebhooks.NotificationPolicyWebhooks(
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account id. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the webhook destination. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.url">url</a></code> | <code>str</code> | The POST endpoint to call when dispatching a notification. |
+| <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account id. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.secret">secret</a></code> | <code>str</code> | Optional secret that will be passed in the `cf-webhook-auth` header when dispatching generic webhook notifications or formatted for supported destinations. |
 
 ---
@@ -106,16 +106,6 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-The account id.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.name"></a>
 
 - *Type:* str
@@ -124,7 +114,7 @@ The name of the webhook destination.
 
 This will be included in the request body when you receive a webhook notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
 
 ---
 
@@ -134,7 +124,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The POST endpoint to call when dispatching a notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+The account id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
 
 ---
 
@@ -146,7 +146,7 @@ Optional secret that will be passed in the `cf-webhook-auth` header when dispatc
 
 Secrets are not returned in any API response body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
 
 ---
 
@@ -178,6 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.resetSecret">reset_secret</a></code> | *No description.* |
 
 ---
@@ -530,6 +531,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_secret` <a name="reset_secret" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooks.resetSecret"></a>
 
 ```python
@@ -650,7 +657,7 @@ The construct id used in the generated config for the NotificationPolicyWebhooks
 
 The id of the existing NotificationPolicyWebhooks that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1003,9 +1010,9 @@ notificationPolicyWebhooks.NotificationPolicyWebhooksConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   name: str,
   url: str,
+  account_id: str = None,
   secret: str = None
 )
 ```
@@ -1021,9 +1028,9 @@ notificationPolicyWebhooks.NotificationPolicyWebhooksConfig(
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.accountId">account_id</a></code> | <code>str</code> | The account id. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.name">name</a></code> | <code>str</code> | The name of the webhook destination. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.url">url</a></code> | <code>str</code> | The POST endpoint to call when dispatching a notification. |
+| <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.accountId">account_id</a></code> | <code>str</code> | The account id. |
 | <code><a href="#@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.secret">secret</a></code> | <code>str</code> | Optional secret that will be passed in the `cf-webhook-auth` header when dispatching generic webhook notifications or formatted for supported destinations. |
 
 ---
@@ -1098,20 +1105,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-The account id.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.name"></a>
 
 ```python
@@ -1124,7 +1117,7 @@ The name of the webhook destination.
 
 This will be included in the request body when you receive a webhook notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#name NotificationPolicyWebhooks#name}
 
 ---
 
@@ -1138,7 +1131,21 @@ url: str
 
 The POST endpoint to call when dispatching a notification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#url NotificationPolicyWebhooks#url}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.notificationPolicyWebhooks.NotificationPolicyWebhooksConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+The account id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#account_id NotificationPolicyWebhooks#account_id}
 
 ---
 
@@ -1154,7 +1161,7 @@ Optional secret that will be passed in the `cf-webhook-auth` header when dispatc
 
 Secrets are not returned in any API response body.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/notification_policy_webhooks#secret NotificationPolicyWebhooks#secret}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflarePageShieldCookiesList <a name="DataCloudflarePageShieldCookiesList" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list cloudflare_page_shield_cookies_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer"></a>
 
@@ -21,7 +21,6 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   direction: str = None,
   domain: str = None,
   export: str = None,
@@ -36,7 +35,8 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList(
   per_page: typing.Union[int, float] = None,
   same_site: str = None,
   secure: bool | IResolvable = None,
-  type: str = None
+  type: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -51,7 +51,6 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.direction">direction</a></code> | <code>str</code> | The direction used to sort returned cookies.' Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.domain">domain</a></code> | <code>str</code> | Filters the returned cookies that match the specified domain attribute. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.export">export</a></code> | <code>str</code> | Export the list of cookies as a file, limited to 50000 entries. Available values: "csv". |
@@ -67,6 +66,7 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.sameSite">same_site</a></code> | <code>str</code> | Filters the returned cookies that match the specified same_site attribute Available values: "lax", "strict", "none". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.secure">secure</a></code> | <code>bool \| cdktn.IResolvable</code> | Filters the returned cookies that are set with Secure. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.type">type</a></code> | <code>str</code> | Filters the returned cookies that match the specified type attribute Available values: "first_party", "unknown". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -130,23 +130,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#zone_id DataCloudflarePageShieldCookiesList#zone_id}
-
----
-
 ##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.direction"></a>
 
 - *Type:* str
 
 The direction used to sort returned cookies.' Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#direction DataCloudflarePageShieldCookiesList#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#direction DataCloudflarePageShieldCookiesList#direction}
 
 ---
 
@@ -156,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filters the returned cookies that match the specified domain attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#domain DataCloudflarePageShieldCookiesList#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#domain DataCloudflarePageShieldCookiesList#domain}
 
 ---
 
@@ -166,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Export the list of cookies as a file, limited to 50000 entries. Available values: "csv".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#export DataCloudflarePageShieldCookiesList#export}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#export DataCloudflarePageShieldCookiesList#export}
 
 ---
 
@@ -179,7 +169,7 @@ Includes cookies that match one or more URL-encoded hostnames separated by comma
 Wildcards are supported at the start and end of each hostname to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#hosts DataCloudflarePageShieldCookiesList#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#hosts DataCloudflarePageShieldCookiesList#hosts}
 
 ---
 
@@ -189,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filters the returned cookies that are set with HttpOnly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#http_only DataCloudflarePageShieldCookiesList#http_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#http_only DataCloudflarePageShieldCookiesList#http_only}
 
 ---
 
@@ -199,7 +189,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#max_items DataCloudflarePageShieldCookiesList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#max_items DataCloudflarePageShieldCookiesList#max_items}
 
 ---
 
@@ -212,7 +202,7 @@ Filters the returned cookies that match the specified name.
 Wildcards are supported at the start and end to support starts with, ends with
 and contains. e.g. session*
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#name DataCloudflarePageShieldCookiesList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#name DataCloudflarePageShieldCookiesList#name}
 
 ---
 
@@ -222,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The field used to sort returned cookies. Available values: "first_seen_at", "last_seen_at".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#order_by DataCloudflarePageShieldCookiesList#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#order_by DataCloudflarePageShieldCookiesList#order_by}
 
 ---
 
@@ -236,7 +226,7 @@ We additionally support a special value "all". When "all" is used, the API will 
 with the applied filters in a single page. This feature is best-effort and it may only work for zones with
 a low number of cookies
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#page DataCloudflarePageShieldCookiesList#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#page DataCloudflarePageShieldCookiesList#page}
 
 ---
 
@@ -249,7 +239,7 @@ Includes connections that match one or more page URLs (separated by commas) wher
 Wildcards are supported at the start and end of each page URL to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#page_url DataCloudflarePageShieldCookiesList#page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#page_url DataCloudflarePageShieldCookiesList#page_url}
 
 ---
 
@@ -259,7 +249,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filters the returned cookies that match the specified path attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#path DataCloudflarePageShieldCookiesList#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#path DataCloudflarePageShieldCookiesList#path}
 
 ---
 
@@ -269,7 +259,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#per_page DataCloudflarePageShieldCookiesList#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#per_page DataCloudflarePageShieldCookiesList#per_page}
 
 ---
 
@@ -279,7 +269,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filters the returned cookies that match the specified same_site attribute Available values: "lax", "strict", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#same_site DataCloudflarePageShieldCookiesList#same_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#same_site DataCloudflarePageShieldCookiesList#same_site}
 
 ---
 
@@ -289,7 +279,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filters the returned cookies that are set with Secure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#secure DataCloudflarePageShieldCookiesList#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#secure DataCloudflarePageShieldCookiesList#secure}
 
 ---
 
@@ -299,7 +289,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filters the returned cookies that match the specified type attribute Available values: "first_party", "unknown".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#type DataCloudflarePageShieldCookiesList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#type DataCloudflarePageShieldCookiesList#type}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#zone_id DataCloudflarePageShieldCookiesList#zone_id}
 
 ---
 
@@ -340,6 +340,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.resetSameSite">reset_same_site</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.resetSecure">reset_secure</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.resetType">reset_type</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -673,6 +674,12 @@ def reset_secure() -> None
 def reset_type() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesList.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -787,7 +794,7 @@ The construct id used in the generated config for the DataCloudflarePageShieldCo
 
 The id of the existing DataCloudflarePageShieldCookiesList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1338,7 +1345,6 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   direction: str = None,
   domain: str = None,
   export: str = None,
@@ -1353,7 +1359,8 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig(
   per_page: typing.Union[int, float] = None,
   same_site: str = None,
   secure: bool | IResolvable = None,
-  type: str = None
+  type: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -1368,7 +1375,6 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.direction">direction</a></code> | <code>str</code> | The direction used to sort returned cookies.' Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.domain">domain</a></code> | <code>str</code> | Filters the returned cookies that match the specified domain attribute. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.export">export</a></code> | <code>str</code> | Export the list of cookies as a file, limited to 50000 entries. Available values: "csv". |
@@ -1384,6 +1390,7 @@ dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.sameSite">same_site</a></code> | <code>str</code> | Filters the returned cookies that match the specified same_site attribute Available values: "lax", "strict", "none". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.secure">secure</a></code> | <code>bool \| cdktn.IResolvable</code> | Filters the returned cookies that are set with Secure. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.type">type</a></code> | <code>str</code> | Filters the returned cookies that match the specified type attribute Available values: "first_party", "unknown". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1457,20 +1464,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#zone_id DataCloudflarePageShieldCookiesList#zone_id}
-
----
-
 ##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.direction"></a>
 
 ```python
@@ -1481,7 +1474,7 @@ direction: str
 
 The direction used to sort returned cookies.' Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#direction DataCloudflarePageShieldCookiesList#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#direction DataCloudflarePageShieldCookiesList#direction}
 
 ---
 
@@ -1495,7 +1488,7 @@ domain: str
 
 Filters the returned cookies that match the specified domain attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#domain DataCloudflarePageShieldCookiesList#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#domain DataCloudflarePageShieldCookiesList#domain}
 
 ---
 
@@ -1509,7 +1502,7 @@ export: str
 
 Export the list of cookies as a file, limited to 50000 entries. Available values: "csv".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#export DataCloudflarePageShieldCookiesList#export}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#export DataCloudflarePageShieldCookiesList#export}
 
 ---
 
@@ -1526,7 +1519,7 @@ Includes cookies that match one or more URL-encoded hostnames separated by comma
 Wildcards are supported at the start and end of each hostname to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#hosts DataCloudflarePageShieldCookiesList#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#hosts DataCloudflarePageShieldCookiesList#hosts}
 
 ---
 
@@ -1540,7 +1533,7 @@ http_only: bool | IResolvable
 
 Filters the returned cookies that are set with HttpOnly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#http_only DataCloudflarePageShieldCookiesList#http_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#http_only DataCloudflarePageShieldCookiesList#http_only}
 
 ---
 
@@ -1554,7 +1547,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#max_items DataCloudflarePageShieldCookiesList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#max_items DataCloudflarePageShieldCookiesList#max_items}
 
 ---
 
@@ -1571,7 +1564,7 @@ Filters the returned cookies that match the specified name.
 Wildcards are supported at the start and end to support starts with, ends with
 and contains. e.g. session*
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#name DataCloudflarePageShieldCookiesList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#name DataCloudflarePageShieldCookiesList#name}
 
 ---
 
@@ -1585,7 +1578,7 @@ order_by: str
 
 The field used to sort returned cookies. Available values: "first_seen_at", "last_seen_at".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#order_by DataCloudflarePageShieldCookiesList#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#order_by DataCloudflarePageShieldCookiesList#order_by}
 
 ---
 
@@ -1603,7 +1596,7 @@ We additionally support a special value "all". When "all" is used, the API will 
 with the applied filters in a single page. This feature is best-effort and it may only work for zones with
 a low number of cookies
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#page DataCloudflarePageShieldCookiesList#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#page DataCloudflarePageShieldCookiesList#page}
 
 ---
 
@@ -1620,7 +1613,7 @@ Includes connections that match one or more page URLs (separated by commas) wher
 Wildcards are supported at the start and end of each page URL to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#page_url DataCloudflarePageShieldCookiesList#page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#page_url DataCloudflarePageShieldCookiesList#page_url}
 
 ---
 
@@ -1634,7 +1627,7 @@ path: str
 
 Filters the returned cookies that match the specified path attribute.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#path DataCloudflarePageShieldCookiesList#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#path DataCloudflarePageShieldCookiesList#path}
 
 ---
 
@@ -1648,7 +1641,7 @@ per_page: typing.Union[int, float]
 
 The number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#per_page DataCloudflarePageShieldCookiesList#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#per_page DataCloudflarePageShieldCookiesList#per_page}
 
 ---
 
@@ -1662,7 +1655,7 @@ same_site: str
 
 Filters the returned cookies that match the specified same_site attribute Available values: "lax", "strict", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#same_site DataCloudflarePageShieldCookiesList#same_site}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#same_site DataCloudflarePageShieldCookiesList#same_site}
 
 ---
 
@@ -1676,7 +1669,7 @@ secure: bool | IResolvable
 
 Filters the returned cookies that are set with Secure.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#secure DataCloudflarePageShieldCookiesList#secure}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#secure DataCloudflarePageShieldCookiesList#secure}
 
 ---
 
@@ -1690,7 +1683,21 @@ type: str
 
 Filters the returned cookies that match the specified type attribute Available values: "first_party", "unknown".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_cookies_list#type DataCloudflarePageShieldCookiesList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#type DataCloudflarePageShieldCookiesList#type}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldCookiesList.DataCloudflarePageShieldCookiesListConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_cookies_list#zone_id DataCloudflarePageShieldCookiesList#zone_id}
 
 ---
 

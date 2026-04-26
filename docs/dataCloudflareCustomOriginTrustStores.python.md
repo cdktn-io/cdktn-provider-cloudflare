@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomOriginTrustStores <a name="DataCloudflareCustomOriginTrustStores" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores cloudflare_custom_origin_trust_stores}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores cloudflare_custom_origin_trust_stores}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer"></a>
 
@@ -21,10 +21,10 @@ dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   limit: typing.Union[int, float] = None,
   max_items: typing.Union[int, float] = None,
-  offset: typing.Union[int, float] = None
+  offset: typing.Union[int, float] = None,
+  zone_id: str = None
 )
 ```
 
@@ -39,10 +39,10 @@ dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.limit">limit</a></code> | <code>typing.Union[int, float]</code> | Limit to the number of records returned. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.offset">offset</a></code> | <code>typing.Union[int, float]</code> | Offset the results. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -106,23 +106,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#zone_id DataCloudflareCustomOriginTrustStores#zone_id}
-
----
-
 ##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.limit"></a>
 
 - *Type:* typing.Union[int, float]
 
 Limit to the number of records returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#limit DataCloudflareCustomOriginTrustStores#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#limit DataCloudflareCustomOriginTrustStores#limit}
 
 ---
 
@@ -132,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#max_items DataCloudflareCustomOriginTrustStores#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#max_items DataCloudflareCustomOriginTrustStores#max_items}
 
 ---
 
@@ -142,7 +132,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Offset the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#offset DataCloudflareCustomOriginTrustStores#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#offset DataCloudflareCustomOriginTrustStores#offset}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#zone_id DataCloudflareCustomOriginTrustStores#zone_id}
 
 ---
 
@@ -171,6 +171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.resetLimit">reset_limit</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.resetMaxItems">reset_max_items</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.resetOffset">reset_offset</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -432,6 +433,12 @@ def reset_max_items() -> None
 def reset_offset() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -546,7 +553,7 @@ The construct id used in the generated config for the DataCloudflareCustomOrigin
 
 The id of the existing DataCloudflareCustomOriginTrustStores that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -833,10 +840,10 @@ dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfi
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   limit: typing.Union[int, float] = None,
   max_items: typing.Union[int, float] = None,
-  offset: typing.Union[int, float] = None
+  offset: typing.Union[int, float] = None,
+  zone_id: str = None
 )
 ```
 
@@ -851,10 +858,10 @@ dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfi
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.limit">limit</a></code> | <code>typing.Union[int, float]</code> | Limit to the number of records returned. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.offset">offset</a></code> | <code>typing.Union[int, float]</code> | Offset the results. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -928,20 +935,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#zone_id DataCloudflareCustomOriginTrustStores#zone_id}
-
----
-
 ##### `limit`<sup>Optional</sup> <a name="limit" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.limit"></a>
 
 ```python
@@ -952,7 +945,7 @@ limit: typing.Union[int, float]
 
 Limit to the number of records returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#limit DataCloudflareCustomOriginTrustStores#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#limit DataCloudflareCustomOriginTrustStores#limit}
 
 ---
 
@@ -966,7 +959,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#max_items DataCloudflareCustomOriginTrustStores#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#max_items DataCloudflareCustomOriginTrustStores#max_items}
 
 ---
 
@@ -980,7 +973,21 @@ offset: typing.Union[int, float]
 
 Offset the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_origin_trust_stores#offset DataCloudflareCustomOriginTrustStores#offset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#offset DataCloudflareCustomOriginTrustStores#offset}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_origin_trust_stores#zone_id DataCloudflareCustomOriginTrustStores#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareStreamCaptionLanguage <a name="DataCloudflareStreamCaptionLanguage" id="@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_caption_language cloudflare_stream_caption_language}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguage.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareStreamCaptio
 
 The id of the existing DataCloudflareStreamCaptionLanguage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_caption_language#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -680,9 +687,9 @@ const dataCloudflareStreamCaptionLanguageConfig: dataCloudflareStreamCaptionLang
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.identifier">identifier</a></code> | <code>string</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.language">language</a></code> | <code>string</code> | The language tag in BCP 47 format. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -756,20 +763,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language#account_id DataCloudflareStreamCaptionLanguage#account_id}
-
----
-
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.identifier"></a>
 
 ```typescript
@@ -780,7 +773,7 @@ public readonly identifier: string;
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language#identifier DataCloudflareStreamCaptionLanguage#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_caption_language#identifier DataCloudflareStreamCaptionLanguage#identifier}
 
 ---
 
@@ -794,7 +787,21 @@ public readonly language: string;
 
 The language tag in BCP 47 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_caption_language#language DataCloudflareStreamCaptionLanguage#language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_caption_language#language DataCloudflareStreamCaptionLanguage#language}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamCaptionLanguage.DataCloudflareStreamCaptionLanguageConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_caption_language#account_id DataCloudflareStreamCaptionLanguage#account_id}
 
 ---
 

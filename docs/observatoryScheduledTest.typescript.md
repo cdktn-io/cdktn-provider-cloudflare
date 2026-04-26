@@ -4,7 +4,7 @@
 
 ### ObservatoryScheduledTest <a name="ObservatoryScheduledTest" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.Initializer"></a>
 
@@ -74,6 +74,9 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.resetFrequency">resetFrequency</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.resetRegion">resetRegion</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -386,6 +389,24 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetFrequency` <a name="resetFrequency" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.resetFrequency"></a>
+
+```typescript
+public resetFrequency(): void
+```
+
+##### `resetRegion` <a name="resetRegion" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.resetRegion"></a>
+
+```typescript
+public resetRegion(): void
+```
+
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +510,7 @@ The construct id used in the generated config for the ObservatoryScheduledTest t
 
 The id of the existing ObservatoryScheduledTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -519,13 +540,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.frequency">frequency</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.id">id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.schedule">schedule</a></code> | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestScheduleOutputReference">ObservatoryScheduledTestScheduleOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.test">test</a></code> | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestTestOutputReference">ObservatoryScheduledTestTestOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.frequencyInput">frequencyInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.frequency">frequency</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.region">region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.url">url</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
 
@@ -673,30 +696,10 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `frequency`<sup>Required</sup> <a name="frequency" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.frequency"></a>
-
-```typescript
-public readonly frequency: string;
-```
-
-- *Type:* string
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.id"></a>
 
 ```typescript
 public readonly id: string;
-```
-
-- *Type:* string
-
----
-
-##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.region"></a>
-
-```typescript
-public readonly region: string;
 ```
 
 - *Type:* string
@@ -723,6 +726,26 @@ public readonly test: ObservatoryScheduledTestTestOutputReference;
 
 ---
 
+##### `frequencyInput`<sup>Optional</sup> <a name="frequencyInput" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.frequencyInput"></a>
+
+```typescript
+public readonly frequencyInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `regionInput`<sup>Optional</sup> <a name="regionInput" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.regionInput"></a>
+
+```typescript
+public readonly regionInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `urlInput`<sup>Optional</sup> <a name="urlInput" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.urlInput"></a>
 
 ```typescript
@@ -737,6 +760,26 @@ public readonly urlInput: string;
 
 ```typescript
 public readonly zoneIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `frequency`<sup>Required</sup> <a name="frequency" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.frequency"></a>
+
+```typescript
+public readonly frequency: string;
+```
+
+- *Type:* string
+
+---
+
+##### `region`<sup>Required</sup> <a name="region" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTest.property.region"></a>
+
+```typescript
+public readonly region: string;
 ```
 
 - *Type:* string
@@ -805,6 +848,8 @@ const observatoryScheduledTestConfig: observatoryScheduledTest.ObservatorySchedu
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.url">url</a></code> | <code>string</code> | A URL. |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.frequency">frequency</a></code> | <code>string</code> | The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans. |
+| <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.region">region</a></code> | <code>string</code> | A test region. |
 | <code><a href="#@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
@@ -889,11 +934,41 @@ public readonly url: string;
 
 A URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.zoneId"></a>
+##### `frequency`<sup>Optional</sup> <a name="frequency" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.frequency"></a>
+
+```typescript
+public readonly frequency: string;
+```
+
+- *Type:* string
+
+The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
+
+---
+
+##### `region`<sup>Optional</sup> <a name="region" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.region"></a>
+
+```typescript
+public readonly region: string;
+```
+
+- *Type:* string
+
+A test region.
+
+Available values: "asia-east1", "asia-northeast1", "asia-northeast2", "asia-south1", "asia-southeast1", "australia-southeast1", "europe-north1", "europe-southwest1", "europe-west1", "europe-west2", "europe-west3", "europe-west4", "europe-west8", "europe-west9", "me-west1", "southamerica-east1", "us-central1", "us-east1", "us-east4", "us-south1", "us-west1".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.observatoryScheduledTest.ObservatoryScheduledTestConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -903,7 +978,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
 
 ---
 

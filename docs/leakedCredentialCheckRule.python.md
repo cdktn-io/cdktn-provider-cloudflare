@@ -4,7 +4,7 @@
 
 ### LeakedCredentialCheckRule <a name="LeakedCredentialCheckRule" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule cloudflare_leaked_credential_check_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer"></a>
 
@@ -21,9 +21,9 @@ leakedCredentialCheckRule.LeakedCredentialCheckRule(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   password: str = None,
-  username: str = None
+  username: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -38,9 +38,9 @@ leakedCredentialCheckRule.LeakedCredentialCheckRule(
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.password">password</a></code> | <code>str</code> | Defines ehe ruleset expression to use in matching the password in a request. |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.username">username</a></code> | <code>str</code> | Defines the ruleset expression to use in matching the username in a request. |
+| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 
 ---
 
@@ -104,23 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
-
----
-
 ##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.password"></a>
 
 - *Type:* str
 
 Defines ehe ruleset expression to use in matching the password in a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
 
 ---
 
@@ -130,7 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Defines the ruleset expression to use in matching the username in a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
 
 ---
 
@@ -164,6 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.resetPassword">reset_password</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.resetUsername">reset_username</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -527,6 +528,12 @@ def reset_password() -> None
 def reset_username() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRule.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -641,7 +648,7 @@ The construct id used in the generated config for the LeakedCredentialCheckRule 
 
 The id of the existing LeakedCredentialCheckRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,9 +935,9 @@ leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   password: str = None,
-  username: str = None
+  username: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -945,9 +952,9 @@ leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig(
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.password">password</a></code> | <code>str</code> | Defines ehe ruleset expression to use in matching the password in a request. |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.username">username</a></code> | <code>str</code> | Defines the ruleset expression to use in matching the username in a request. |
+| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 
 ---
 
@@ -1021,20 +1028,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
-
----
-
 ##### `password`<sup>Optional</sup> <a name="password" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.password"></a>
 
 ```python
@@ -1045,7 +1038,7 @@ password: str
 
 Defines ehe ruleset expression to use in matching the password in a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#password LeakedCredentialCheckRule#password}
 
 ---
 
@@ -1059,7 +1052,21 @@ username: str
 
 Defines the ruleset expression to use in matching the username in a request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#username LeakedCredentialCheckRule#username}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.leakedCredentialCheckRule.LeakedCredentialCheckRuleConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/leaked_credential_check_rule#zone_id LeakedCredentialCheckRule#zone_id}
 
 ---
 

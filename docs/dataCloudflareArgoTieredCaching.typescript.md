@@ -4,14 +4,14 @@
 
 ### DataCloudflareArgoTieredCaching <a name="DataCloudflareArgoTieredCaching" id="@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/argo_tiered_caching cloudflare_argo_tiered_caching}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.Initializer"></a>
 
 ```typescript
 import { dataCloudflareArgoTieredCaching } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching(scope: Construct, id: string, config: DataCloudflareArgoTieredCachingConfig)
+new dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching(scope: Construct, id: string, config?: DataCloudflareArgoTieredCachingConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCachingConfig">DataCloudflareArgoTieredCachingConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCaching.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareArgoTieredCa
 
 The id of the existing DataCloudflareArgoTieredCaching that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/argo_tiered_caching#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +728,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCachingConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareArgoTieredCaching.DataCloudflareArgoTieredCachingConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -731,7 +738,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/argo_tiered_caching#zone_id DataCloudflareArgoTieredCaching#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/argo_tiered_caching#zone_id DataCloudflareArgoTieredCaching#zone_id}
 
 ---
 

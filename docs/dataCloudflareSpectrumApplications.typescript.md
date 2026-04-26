@@ -4,14 +4,14 @@
 
 ### DataCloudflareSpectrumApplications <a name="DataCloudflareSpectrumApplications" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_applications cloudflare_spectrum_applications}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications cloudflare_spectrum_applications}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.Initializer"></a>
 
 ```typescript
 import { dataCloudflareSpectrumApplications } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications(scope: Construct, id: string, config: DataCloudflareSpectrumApplicationsConfig)
+new dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications(scope: Construct, id: string, config?: DataCloudflareSpectrumApplicationsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig">DataCloudflareSpectrumApplicationsConfig</a>
 
@@ -71,6 +71,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.resetDirection">resetDirection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.resetOrder">resetOrder</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -305,6 +306,12 @@ public resetMaxItems(): void
 public resetOrder(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -408,7 +415,7 @@ The construct id used in the generated config for the DataCloudflareSpectrumAppl
 
 The id of the existing DataCloudflareSpectrumApplications that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_applications#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -701,10 +708,10 @@ const dataCloudflareSpectrumApplicationsConfig: dataCloudflareSpectrumApplicatio
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Zone identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.direction">direction</a></code> | <code>string</code> | Sets the direction by which results are ordered. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.order">order</a></code> | <code>string</code> | Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Zone identifier. |
 
 ---
 
@@ -778,20 +785,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Zone identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
-
----
-
 ##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.direction"></a>
 
 ```typescript
@@ -802,7 +795,7 @@ public readonly direction: string;
 
 Sets the direction by which results are ordered. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
 
 ---
 
@@ -816,7 +809,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
 
 ---
 
@@ -830,7 +823,21 @@ public readonly order: string;
 
 Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplicationsConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Zone identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
 
 ---
 

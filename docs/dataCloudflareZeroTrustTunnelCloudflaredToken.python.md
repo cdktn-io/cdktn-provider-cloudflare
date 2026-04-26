@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustTunnelCloudflaredToken <a name="DataCloudflareZeroTrustTunnelCloudflaredToken" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflared_token cloudflare_zero_trust_tunnel_cloudflared_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer"></a>
 
@@ -21,8 +21,8 @@ dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloud
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  tunnel_id: str
+  tunnel_id: str,
+  account_id: str = None
 )
 ```
 
@@ -37,8 +37,8 @@ dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.tunnelId">tunnel_id</a></code> | <code>str</code> | UUID of the tunnel. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 
 ---
 
@@ -102,23 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Cloudflare account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#account_id DataCloudflareZeroTrustTunnelCloudflaredToken#account_id}
-
----
-
 ##### `tunnel_id`<sup>Required</sup> <a name="tunnel_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.tunnelId"></a>
 
 - *Type:* str
 
 UUID of the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#tunnel_id DataCloudflareZeroTrustTunnelCloudflaredToken#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#tunnel_id DataCloudflareZeroTrustTunnelCloudflaredToken#tunnel_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Cloudflare account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#account_id DataCloudflareZeroTrustTunnelCloudflaredToken#account_id}
 
 ---
 
@@ -144,6 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -387,6 +388,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredToken.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -501,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustTun
 
 The id of the existing DataCloudflareZeroTrustTunnelCloudflaredToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -744,8 +751,8 @@ dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloud
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  tunnel_id: str
+  tunnel_id: str,
+  account_id: str = None
 )
 ```
 
@@ -760,8 +767,8 @@ dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.tunnelId">tunnel_id</a></code> | <code>str</code> | UUID of the tunnel. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 
 ---
 
@@ -835,20 +842,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Cloudflare account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#account_id DataCloudflareZeroTrustTunnelCloudflaredToken#account_id}
-
----
-
 ##### `tunnel_id`<sup>Required</sup> <a name="tunnel_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.tunnelId"></a>
 
 ```python
@@ -859,7 +852,21 @@ tunnel_id: str
 
 UUID of the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#tunnel_id DataCloudflareZeroTrustTunnelCloudflaredToken#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#tunnel_id DataCloudflareZeroTrustTunnelCloudflaredToken#tunnel_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredToken.DataCloudflareZeroTrustTunnelCloudflaredTokenConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Cloudflare account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_tunnel_cloudflared_token#account_id DataCloudflareZeroTrustTunnelCloudflaredToken#account_id}
 
 ---
 

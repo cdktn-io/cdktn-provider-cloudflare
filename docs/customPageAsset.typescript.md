@@ -1,0 +1,1014 @@
+# `customPageAsset` Submodule <a name="`customPageAsset` Submodule" id="@cdktn/provider-cloudflare.customPageAsset"></a>
+
+## Constructs <a name="Constructs" id="Constructs"></a>
+
+### CustomPageAsset <a name="CustomPageAsset" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset"></a>
+
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/custom_page_asset cloudflare_custom_page_asset}.
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer"></a>
+
+```typescript
+import { customPageAsset } from '@cdktn/provider-cloudflare'
+
+new customPageAsset.CustomPageAsset(scope: Construct, id: string, config: CustomPageAssetConfig)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer.parameter.id">id</a></code> | <code>string</code> | The scoped construct ID. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer.parameter.config">config</a></code> | <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig">CustomPageAssetConfig</a></code> | *No description.* |
+
+---
+
+##### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer.parameter.id"></a>
+
+- *Type:* string
+
+The scoped construct ID.
+
+Must be unique amongst siblings in the same scope
+
+---
+
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer.parameter.config"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig">CustomPageAssetConfig</a>
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toString">toString</a></code> | Returns a string representation of this construct. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.with">with</a></code> | Applies one or more mixins to this construct. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.addOverride">addOverride</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.overrideLogicalId">overrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.resetOverrideLogicalId">resetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toHclTerraform">toHclTerraform</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toMetadata">toMetadata</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toTerraform">toTerraform</a></code> | Adds this resource to the terraform JSON output. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.addMoveTarget">addMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.hasResourceMove">hasResourceMove</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.importFrom">importFrom</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.resetZoneId">resetZoneId</a></code> | *No description.* |
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Returns a string representation of this construct.
+
+##### `with` <a name="with" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.with"></a>
+
+```typescript
+public with(mixins: ...IMixin[]): IConstruct
+```
+
+Applies one or more mixins to this construct.
+
+Mixins are applied in order. The list of constructs is captured at the
+start of the call, so constructs added by a mixin will not be visited.
+Use multiple `with()` calls if subsequent mixins should apply to added
+constructs.
+
+###### `mixins`<sup>Required</sup> <a name="mixins" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.with.parameter.mixins"></a>
+
+- *Type:* ...constructs.IMixin[]
+
+The mixins to apply.
+
+---
+
+##### `addOverride` <a name="addOverride" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.addOverride"></a>
+
+```typescript
+public addOverride(path: string, value: any): void
+```
+
+###### `path`<sup>Required</sup> <a name="path" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.addOverride.parameter.path"></a>
+
+- *Type:* string
+
+---
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.addOverride.parameter.value"></a>
+
+- *Type:* any
+
+---
+
+##### `overrideLogicalId` <a name="overrideLogicalId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.overrideLogicalId"></a>
+
+```typescript
+public overrideLogicalId(newLogicalId: string): void
+```
+
+Overrides the auto-generated logical ID with a specific ID.
+
+###### `newLogicalId`<sup>Required</sup> <a name="newLogicalId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.overrideLogicalId.parameter.newLogicalId"></a>
+
+- *Type:* string
+
+The new logical ID to use for this stack element.
+
+---
+
+##### `resetOverrideLogicalId` <a name="resetOverrideLogicalId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.resetOverrideLogicalId"></a>
+
+```typescript
+public resetOverrideLogicalId(): void
+```
+
+Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `toHclTerraform` <a name="toHclTerraform" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toHclTerraform"></a>
+
+```typescript
+public toHclTerraform(): any
+```
+
+##### `toMetadata` <a name="toMetadata" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toMetadata"></a>
+
+```typescript
+public toMetadata(): any
+```
+
+##### `toTerraform` <a name="toTerraform" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.toTerraform"></a>
+
+```typescript
+public toTerraform(): any
+```
+
+Adds this resource to the terraform JSON output.
+
+##### `addMoveTarget` <a name="addMoveTarget" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.addMoveTarget"></a>
+
+```typescript
+public addMoveTarget(moveTarget: string): void
+```
+
+Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.addMoveTarget.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The string move target that will correspond to this resource.
+
+---
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `hasResourceMove` <a name="hasResourceMove" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.hasResourceMove"></a>
+
+```typescript
+public hasResourceMove(): TerraformResourceMoveByTarget | TerraformResourceMoveById
+```
+
+##### `importFrom` <a name="importFrom" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.importFrom"></a>
+
+```typescript
+public importFrom(id: string, provider?: TerraformProvider): void
+```
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.importFrom.parameter.id"></a>
+
+- *Type:* string
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.importFrom.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.interpolationForAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `moveFromId` <a name="moveFromId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveFromId"></a>
+
+```typescript
+public moveFromId(id: string): void
+```
+
+Move the resource corresponding to "id" to this resource.
+
+Note that the resource being moved from must be marked as moved using it's instance function.
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveFromId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource being moved from, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `moveTo` <a name="moveTo" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveTo"></a>
+
+```typescript
+public moveTo(moveTarget: string, index?: string | number): void
+```
+
+Moves this resource to the target resource given by moveTarget.
+
+###### `moveTarget`<sup>Required</sup> <a name="moveTarget" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveTo.parameter.moveTarget"></a>
+
+- *Type:* string
+
+The previously set user defined string set by .addMoveTarget() corresponding to the resource to move to.
+
+---
+
+###### `index`<sup>Optional</sup> <a name="index" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveTo.parameter.index"></a>
+
+- *Type:* string | number
+
+Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
+
+---
+
+##### `moveToId` <a name="moveToId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveToId"></a>
+
+```typescript
+public moveToId(id: string): void
+```
+
+Moves this resource to the resource corresponding to "id".
+
+###### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.moveToId.parameter.id"></a>
+
+- *Type:* string
+
+Full id of resource to move to, e.g. "aws_s3_bucket.example".
+
+---
+
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
+#### Static Functions <a name="Static Functions" id="Static Functions"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isTerraformResource">isTerraformResource</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.generateConfigForImport">generateConfigForImport</a></code> | Generates CDKTN code for importing a CustomPageAsset resource upon running "cdktn plan <stack-name>". |
+
+---
+
+##### `isConstruct` <a name="isConstruct" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isConstruct"></a>
+
+```typescript
+import { customPageAsset } from '@cdktn/provider-cloudflare'
+
+customPageAsset.CustomPageAsset.isConstruct(x: any)
+```
+
+Checks if `x` is a construct.
+
+Use this method instead of `instanceof` to properly detect `Construct`
+instances, even when the construct library is symlinked.
+
+Explanation: in JavaScript, multiple copies of the `constructs` library on
+disk are seen as independent, completely different libraries. As a
+consequence, the class `Construct` in each copy of the `constructs` library
+is seen as a different class, and an instance of one class will not test as
+`instanceof` the other class. `npm install` will not create installations
+like this, but users may manually symlink construct libraries together or
+use a monorepo tool: in those cases, multiple copies of the `constructs`
+library can be accidentally installed, and `instanceof` will behave
+unpredictably. It is safest to avoid using `instanceof`, and using
+this type-testing method instead.
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isConstruct.parameter.x"></a>
+
+- *Type:* any
+
+Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isTerraformElement"></a>
+
+```typescript
+import { customPageAsset } from '@cdktn/provider-cloudflare'
+
+customPageAsset.CustomPageAsset.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isTerraformResource"></a>
+
+```typescript
+import { customPageAsset } from '@cdktn/provider-cloudflare'
+
+customPageAsset.CustomPageAsset.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `generateConfigForImport` <a name="generateConfigForImport" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.generateConfigForImport"></a>
+
+```typescript
+import { customPageAsset } from '@cdktn/provider-cloudflare'
+
+customPageAsset.CustomPageAsset.generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: TerraformProvider)
+```
+
+Generates CDKTN code for importing a CustomPageAsset resource upon running "cdktn plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the CustomPageAsset to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing CustomPageAsset that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/custom_page_asset#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* cdktn.TerraformProvider
+
+? Optional instance of the provider where the CustomPageAsset to import is found.
+
+---
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.node">node</a></code> | <code>constructs.Node</code> | The tree node. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.cdktfStack">cdktfStack</a></code> | <code>cdktn.TerraformStack</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.friendlyUniqueId">friendlyUniqueId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktn.TerraformProviderGeneratorMetadata</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.lastUpdated">lastUpdated</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.sizeBytes">sizeBytes</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.urlInput">urlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.zoneIdInput">zoneIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.description">description</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.url">url</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.zoneId">zoneId</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `node`<sup>Required</sup> <a name="node" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.node"></a>
+
+```typescript
+public readonly node: Node;
+```
+
+- *Type:* constructs.Node
+
+The tree node.
+
+---
+
+##### `cdktfStack`<sup>Required</sup> <a name="cdktfStack" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.cdktfStack"></a>
+
+```typescript
+public readonly cdktfStack: TerraformStack;
+```
+
+- *Type:* cdktn.TerraformStack
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `friendlyUniqueId`<sup>Required</sup> <a name="friendlyUniqueId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.friendlyUniqueId"></a>
+
+```typescript
+public readonly friendlyUniqueId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformMetaArguments`<sup>Required</sup> <a name="terraformMetaArguments" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.terraformMetaArguments"></a>
+
+```typescript
+public readonly terraformMetaArguments: {[ key: string ]: any};
+```
+
+- *Type:* {[ key: string ]: any}
+
+---
+
+##### `terraformResourceType`<sup>Required</sup> <a name="terraformResourceType" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.terraformResourceType"></a>
+
+```typescript
+public readonly terraformResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+##### `terraformGeneratorMetadata`<sup>Optional</sup> <a name="terraformGeneratorMetadata" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.terraformGeneratorMetadata"></a>
+
+```typescript
+public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
+```
+
+- *Type:* cdktn.TerraformProviderGeneratorMetadata
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.count"></a>
+
+```typescript
+public readonly count: number | TerraformCount;
+```
+
+- *Type:* number | cdktn.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
+```
+
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `id`<sup>Required</sup> <a name="id" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.id"></a>
+
+```typescript
+public readonly id: string;
+```
+
+- *Type:* string
+
+---
+
+##### `lastUpdated`<sup>Required</sup> <a name="lastUpdated" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.lastUpdated"></a>
+
+```typescript
+public readonly lastUpdated: string;
+```
+
+- *Type:* string
+
+---
+
+##### `sizeBytes`<sup>Required</sup> <a name="sizeBytes" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.sizeBytes"></a>
+
+```typescript
+public readonly sizeBytes: number;
+```
+
+- *Type:* number
+
+---
+
+##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.accountIdInput"></a>
+
+```typescript
+public readonly accountIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `descriptionInput`<sup>Optional</sup> <a name="descriptionInput" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.descriptionInput"></a>
+
+```typescript
+public readonly descriptionInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `nameInput`<sup>Optional</sup> <a name="nameInput" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.nameInput"></a>
+
+```typescript
+public readonly nameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `urlInput`<sup>Optional</sup> <a name="urlInput" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.urlInput"></a>
+
+```typescript
+public readonly urlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `zoneIdInput`<sup>Optional</sup> <a name="zoneIdInput" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.zoneIdInput"></a>
+
+```typescript
+public readonly zoneIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+---
+
+#### Constants <a name="Constants" id="Constants"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.tfResourceType">tfResourceType</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `tfResourceType`<sup>Required</sup> <a name="tfResourceType" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.property.tfResourceType"></a>
+
+```typescript
+public readonly tfResourceType: string;
+```
+
+- *Type:* string
+
+---
+
+## Structs <a name="Structs" id="Structs"></a>
+
+### CustomPageAssetConfig <a name="CustomPageAssetConfig" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.Initializer"></a>
+
+```typescript
+import { customPageAsset } from '@cdktn/provider-cloudflare'
+
+const customPageAssetConfig: customPageAsset.CustomPageAssetConfig = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.connection">connection</a></code> | <code>cdktn.SSHProvisionerConnection \| cdktn.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.count">count</a></code> | <code>number \| cdktn.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.dependsOn">dependsOn</a></code> | <code>cdktn.ITerraformDependable[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.forEach">forEach</a></code> | <code>cdktn.ITerraformIterator</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.description">description</a></code> | <code>string</code> | A short description of the custom asset. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.name">name</a></code> | <code>string</code> | The unique name of the custom asset. Can only contain letters (A-Z, a-z), numbers (0-9), and underscores (_). |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.url">url</a></code> | <code>string</code> | The URL where the asset content is fetched from. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.accountId">accountId</a></code> | <code>string</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.zoneId">zoneId</a></code> | <code>string</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
+
+---
+
+##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.connection"></a>
+
+```typescript
+public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnection;
+```
+
+- *Type:* cdktn.SSHProvisionerConnection | cdktn.WinrmProvisionerConnection
+
+---
+
+##### `count`<sup>Optional</sup> <a name="count" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.count"></a>
+
+```typescript
+public readonly count: number | TerraformCount;
+```
+
+- *Type:* number | cdktn.TerraformCount
+
+---
+
+##### `dependsOn`<sup>Optional</sup> <a name="dependsOn" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.dependsOn"></a>
+
+```typescript
+public readonly dependsOn: ITerraformDependable[];
+```
+
+- *Type:* cdktn.ITerraformDependable[]
+
+---
+
+##### `forEach`<sup>Optional</sup> <a name="forEach" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.forEach"></a>
+
+```typescript
+public readonly forEach: ITerraformIterator;
+```
+
+- *Type:* cdktn.ITerraformIterator
+
+---
+
+##### `lifecycle`<sup>Optional</sup> <a name="lifecycle" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.lifecycle"></a>
+
+```typescript
+public readonly lifecycle: TerraformResourceLifecycle;
+```
+
+- *Type:* cdktn.TerraformResourceLifecycle
+
+---
+
+##### `provider`<sup>Optional</sup> <a name="provider" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.provider"></a>
+
+```typescript
+public readonly provider: TerraformProvider;
+```
+
+- *Type:* cdktn.TerraformProvider
+
+---
+
+##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.provisioners"></a>
+
+```typescript
+public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner)[];
+```
+
+- *Type:* cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner[]
+
+---
+
+##### `description`<sup>Required</sup> <a name="description" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.description"></a>
+
+```typescript
+public readonly description: string;
+```
+
+- *Type:* string
+
+A short description of the custom asset.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/custom_page_asset#description CustomPageAsset#description}
+
+---
+
+##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.name"></a>
+
+```typescript
+public readonly name: string;
+```
+
+- *Type:* string
+
+The unique name of the custom asset. Can only contain letters (A-Z, a-z), numbers (0-9), and underscores (_).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/custom_page_asset#name CustomPageAsset#name}
+
+---
+
+##### `url`<sup>Required</sup> <a name="url" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.url"></a>
+
+```typescript
+public readonly url: string;
+```
+
+- *Type:* string
+
+The URL where the asset content is fetched from.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/custom_page_asset#url CustomPageAsset#url}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/custom_page_asset#account_id CustomPageAsset#account_id}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAssetConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/custom_page_asset#zone_id CustomPageAsset#zone_id}
+
+---
+
+
+

@@ -4,14 +4,14 @@
 
 ### DataCloudflareZeroTrustList <a name="DataCloudflareZeroTrustList" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list cloudflare_zero_trust_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list cloudflare_zero_trust_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.Initializer"></a>
 
 ```typescript
 import { dataCloudflareZeroTrustList } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareZeroTrustList.DataCloudflareZeroTrustList(scope: Construct, id: string, config: DataCloudflareZeroTrustListConfig)
+new dataCloudflareZeroTrustList.DataCloudflareZeroTrustList(scope: Construct, id: string, config?: DataCloudflareZeroTrustListConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig">DataCloudflareZeroTrustListConfig</a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.putFilter">putFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.resetListId">resetListId</a></code> | *No description.* |
 
@@ -299,6 +300,12 @@ public putFilter(value: DataCloudflareZeroTrustListFilter): void
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetFilter` <a name="resetFilter" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustList.resetFilter"></a>
 
 ```typescript
@@ -414,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustLis
 
 The id of the existing DataCloudflareZeroTrustList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -762,8 +769,8 @@ const dataCloudflareZeroTrustListConfig: dataCloudflareZeroTrustList.DataCloudfl
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter">DataCloudflareZeroTrustListFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter">DataCloudflareZeroTrustListFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.listId">listId</a></code> | <code>string</code> | Identify the API resource with a UUID. |
 
 ---
@@ -838,7 +845,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -846,7 +853,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list#account_id DataCloudflareZeroTrustList#account_id}.
 
 ---
 
@@ -858,7 +865,7 @@ public readonly filter: DataCloudflareZeroTrustListFilter;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter">DataCloudflareZeroTrustListFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list#filter DataCloudflareZeroTrustList#filter}.
 
 ---
 
@@ -872,7 +879,7 @@ public readonly listId: string;
 
 Identify the API resource with a UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list#list_id DataCloudflareZeroTrustList#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list#list_id DataCloudflareZeroTrustList#list_id}
 
 ---
 
@@ -890,7 +897,7 @@ const dataCloudflareZeroTrustListFilter: dataCloudflareZeroTrustList.DataCloudfl
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.type">type</a></code> | <code>string</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustList.DataCloudflareZeroTrustListFilter.property.type">type</a></code> | <code>string</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID". |
 
 ---
 
@@ -902,9 +909,9 @@ public readonly type: string;
 
 - *Type:* string
 
-Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE".
+Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_list#type DataCloudflareZeroTrustList#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_list#type DataCloudflareZeroTrustList#type}
 
 ---
 

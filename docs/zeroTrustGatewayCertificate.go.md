@@ -4,7 +4,7 @@
 
 ### ZeroTrustGatewayCertificate <a name="ZeroTrustGatewayCertificate" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_certificate cloudflare_zero_trust_gateway_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig">ZeroTrustGatewayCertificateConfig</a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.resetActivate">ResetActivate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.resetValidityPeriodDays">ResetValidityPeriodDays</a></code> | *No description.* |
 
@@ -388,6 +389,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 ##### `ResetActivate` <a name="ResetActivate" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificate.resetActivate"></a>
 
 ```go
@@ -503,7 +510,7 @@ The construct id used in the generated config for the ZeroTrustGatewayCertificat
 
 The id of the existing ZeroTrustGatewayCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -928,7 +935,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.activate">Activate</a></code> | <code>interface{}</code> | Whether to activate the certificate on Cloudflare's edge. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.validityPeriodDays">ValidityPeriodDays</a></code> | <code>*f64</code> | Sets the certificate validity period in days (range: 1-10,950 days / ~30 years). |
 
@@ -1004,7 +1011,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.zeroTrustGatewayCertificate.ZeroTrustGatewayCertificateConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -1012,7 +1019,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_certificate#account_id ZeroTrustGatewayCertificate#account_id}.
 
 ---
 
@@ -1028,7 +1035,7 @@ Whether to activate the certificate on Cloudflare's edge.
 
 When true, the certificate will be activated. When false, the certificate will be deactivated at the edge. This is a Terraform-only field and does not appear in the API response. Monitor `binding_status` for the activation status. Once a certificate is activated, you may use the certificate to intercept traffic
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_certificate#activate ZeroTrustGatewayCertificate#activate}
 
 ---
 
@@ -1044,7 +1051,7 @@ Sets the certificate validity period in days (range: 1-10,950 days / ~30 years).
 
 Defaults to 1,825 days (5 years). **Important**: This field is only settable during the certificate creation.  Certificates becomes immutable after creation - use the `/activate` and `/deactivate` endpoints to manage certificate lifecycle.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_certificate#validity_period_days ZeroTrustGatewayCertificate#validity_period_days}
 
 ---
 

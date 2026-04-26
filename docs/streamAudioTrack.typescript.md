@@ -4,7 +4,7 @@
 
 ### StreamAudioTrack <a name="StreamAudioTrack" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAudioIdentifier">resetAudioIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetDefault">resetDefault</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetLabel">resetLabel</a></code> | *No description.* |
@@ -389,6 +390,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetAudioIdentifier` <a name="resetAudioIdentifier" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAudioIdentifier"></a>
 
 ```typescript
@@ -510,7 +517,7 @@ The construct id used in the generated config for the StreamAudioTrack to import
 
 The id of the existing StreamAudioTrack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_audio_track#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -540,6 +547,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.audio">audio</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList">StreamAudioTrackAudioList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.status">status</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.uid">uid</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
@@ -697,6 +705,16 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `audio`<sup>Required</sup> <a name="audio" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.audio"></a>
+
+```typescript
+public readonly audio: StreamAudioTrackAudioList;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList">StreamAudioTrackAudioList</a>
+
+---
+
 ##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.property.status"></a>
 
 ```typescript
@@ -837,6 +855,17 @@ public readonly tfResourceType: string;
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### StreamAudioTrackAudio <a name="StreamAudioTrackAudio" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudio"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudio.Initializer"></a>
+
+```typescript
+import { streamAudioTrack } from '@cdktn/provider-cloudflare'
+
+const streamAudioTrackAudio: streamAudioTrack.StreamAudioTrackAudio = { ... }
+```
+
+
 ### StreamAudioTrackConfig <a name="StreamAudioTrackConfig" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.Initializer"></a>
@@ -858,8 +887,8 @@ const streamAudioTrackConfig: streamAudioTrack.StreamAudioTrackConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.identifier">identifier</a></code> | <code>string</code> | A Cloudflare-generated unique identifier for a media item. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.accountId">accountId</a></code> | <code>string</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.audioIdentifier">audioIdentifier</a></code> | <code>string</code> | The unique identifier for an additional audio track. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.default">default</a></code> | <code>boolean \| cdktn.IResolvable</code> | Denotes whether the audio track will be played by default in a player. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.label">label</a></code> | <code>string</code> | A string to uniquely identify the track amongst other audio track labels for the specified video. |
@@ -936,20 +965,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-The account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
-
----
-
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.identifier"></a>
 
 ```typescript
@@ -960,7 +975,21 @@ public readonly identifier: string;
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+The account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
 
 ---
 
@@ -974,7 +1003,7 @@ public readonly audioIdentifier: string;
 
 The unique identifier for an additional audio track.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
 
 ---
 
@@ -988,7 +1017,7 @@ public readonly default: boolean | IResolvable;
 
 Denotes whether the audio track will be played by default in a player.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_audio_track#default StreamAudioTrack#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track#default StreamAudioTrack#default}
 
 ---
 
@@ -1002,7 +1031,468 @@ public readonly label: string;
 
 A string to uniquely identify the track amongst other audio track labels for the specified video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/stream_audio_track#label StreamAudioTrack#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_audio_track#label StreamAudioTrack#label}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### StreamAudioTrackAudioList <a name="StreamAudioTrackAudioList" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer"></a>
+
+```typescript
+import { streamAudioTrack } from '@cdktn/provider-cloudflare'
+
+new streamAudioTrack.StreamAudioTrackAudioList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.get"></a>
+
+```typescript
+public get(index: number): StreamAudioTrackAudioOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### StreamAudioTrackAudioOutputReference <a name="StreamAudioTrackAudioOutputReference" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer"></a>
+
+```typescript
+import { streamAudioTrack } from '@cdktn/provider-cloudflare'
+
+new streamAudioTrack.StreamAudioTrackAudioOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.default">default</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.label">label</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.status">status</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.uid">uid</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudio">StreamAudioTrackAudio</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.default"></a>
+
+```typescript
+public readonly default: IResolvable;
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `label`<sup>Required</sup> <a name="label" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.label"></a>
+
+```typescript
+public readonly label: string;
+```
+
+- *Type:* string
+
+---
+
+##### `status`<sup>Required</sup> <a name="status" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.status"></a>
+
+```typescript
+public readonly status: string;
+```
+
+- *Type:* string
+
+---
+
+##### `uid`<sup>Required</sup> <a name="uid" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.uid"></a>
+
+```typescript
+public readonly uid: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: StreamAudioTrackAudio;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudio">StreamAudioTrackAudio</a>
 
 ---
 

@@ -4,14 +4,14 @@
 
 ### DataCloudflareFilters <a name="DataCloudflareFilters" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters cloudflare_filters}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters cloudflare_filters}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.Initializer"></a>
 
 ```typescript
 import { dataCloudflareFilters } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareFilters.DataCloudflareFilters(scope: Construct, id: string, config: DataCloudflareFiltersConfig)
+new dataCloudflareFilters.DataCloudflareFilters(scope: Construct, id: string, config?: DataCloudflareFiltersConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig">DataCloudflareFiltersConfig</a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.resetPaused">resetPaused</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.resetRef">resetRef</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -326,6 +327,12 @@ public resetPaused(): void
 public resetRef(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFilters.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -429,7 +436,7 @@ The construct id used in the generated config for the DataCloudflareFilters to i
 
 The id of the existing DataCloudflareFilters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -788,13 +795,13 @@ const dataCloudflareFiltersConfig: dataCloudflareFilters.DataCloudflareFiltersCo
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.description">description</a></code> | <code>string</code> | A case-insensitive string to find in the description. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.expression">expression</a></code> | <code>string</code> | A case-insensitive string to find in the expression. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.id">id</a></code> | <code>string</code> | The unique identifier of the filter. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.paused">paused</a></code> | <code>boolean \| cdktn.IResolvable</code> | When true, indicates that the filter is currently paused. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.ref">ref</a></code> | <code>string</code> | The filter ref (a short reference tag) to search for. Must be an exact match. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Defines an identifier. |
 
 ---
 
@@ -868,20 +875,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#zone_id DataCloudflareFilters#zone_id}
-
----
-
 ##### `description`<sup>Optional</sup> <a name="description" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.description"></a>
 
 ```typescript
@@ -892,7 +885,7 @@ public readonly description: string;
 
 A case-insensitive string to find in the description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#description DataCloudflareFilters#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#description DataCloudflareFilters#description}
 
 ---
 
@@ -906,7 +899,7 @@ public readonly expression: string;
 
 A case-insensitive string to find in the expression.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#expression DataCloudflareFilters#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#expression DataCloudflareFilters#expression}
 
 ---
 
@@ -920,7 +913,7 @@ public readonly id: string;
 
 The unique identifier of the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#id DataCloudflareFilters#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#id DataCloudflareFilters#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -937,7 +930,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#max_items DataCloudflareFilters#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#max_items DataCloudflareFilters#max_items}
 
 ---
 
@@ -951,7 +944,7 @@ public readonly paused: boolean | IResolvable;
 
 When true, indicates that the filter is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#paused DataCloudflareFilters#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#paused DataCloudflareFilters#paused}
 
 ---
 
@@ -965,7 +958,21 @@ public readonly ref: string;
 
 The filter ref (a short reference tag) to search for. Must be an exact match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/filters#ref DataCloudflareFilters#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#ref DataCloudflareFilters#ref}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareFilters.DataCloudflareFiltersConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/filters#zone_id DataCloudflareFilters#zone_id}
 
 ---
 

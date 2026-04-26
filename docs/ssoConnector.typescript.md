@@ -4,7 +4,7 @@
 
 ### SsoConnector <a name="SsoConnector" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector cloudflare_sso_connector}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector cloudflare_sso_connector}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnector.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnector.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnector.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnector.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnector.resetBeginVerification">resetBeginVerification</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnector.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnector.resetUseFedrampLanguage">resetUseFedrampLanguage</a></code> | *No description.* |
@@ -389,6 +390,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetBeginVerification` <a name="resetBeginVerification" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.resetBeginVerification"></a>
 
 ```typescript
@@ -510,7 +517,7 @@ The construct id used in the generated config for the SsoConnector to import.
 
 The id of the existing SsoConnector that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -880,8 +887,8 @@ const ssoConnectorConfig: ssoConnector.SsoConnectorConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.emailDomain">emailDomain</a></code> | <code>string</code> | Email domain of the new SSO connector. |
+| <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.beginVerification">beginVerification</a></code> | <code>boolean \| cdktn.IResolvable</code> | Begin the verification process after creation. |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | SSO Connector enabled state. |
 | <code><a href="#@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.useFedrampLanguage">useFedrampLanguage</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls the display of FedRAMP language to the user during SSO login. |
@@ -958,20 +965,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
-
----
-
 ##### `emailDomain`<sup>Required</sup> <a name="emailDomain" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.emailDomain"></a>
 
 ```typescript
@@ -982,7 +975,21 @@ public readonly emailDomain: string;
 
 Email domain of the new SSO connector.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector#email_domain SsoConnector#email_domain}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector#account_id SsoConnector#account_id}
 
 ---
 
@@ -996,7 +1003,7 @@ public readonly beginVerification: boolean | IResolvable;
 
 Begin the verification process after creation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector#begin_verification SsoConnector#begin_verification}
 
 ---
 
@@ -1010,7 +1017,7 @@ public readonly enabled: boolean | IResolvable;
 
 SSO Connector enabled state.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector#enabled SsoConnector#enabled}
 
 ---
 
@@ -1024,7 +1031,7 @@ public readonly useFedrampLanguage: boolean | IResolvable;
 
 Controls the display of FedRAMP language to the user during SSO login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/sso_connector#use_fedramp_language SsoConnector#use_fedramp_language}
 
 ---
 

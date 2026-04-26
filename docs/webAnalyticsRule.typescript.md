@@ -4,7 +4,7 @@
 
 ### WebAnalyticsRule <a name="WebAnalyticsRule" id="@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule cloudflare_web_analytics_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.resetHost">resetHost</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.resetInclusive">resetInclusive</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.resetIsPaused">resetIsPaused</a></code> | *No description.* |
@@ -390,6 +391,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetHost` <a name="resetHost" id="@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRule.resetHost"></a>
 
 ```typescript
@@ -517,7 +524,7 @@ The construct id used in the generated config for the WebAnalyticsRule to import
 
 The id of the existing WebAnalyticsRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -898,12 +905,12 @@ const webAnalyticsRuleConfig: webAnalyticsRule.WebAnalyticsRuleConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.rulesetId">rulesetId</a></code> | <code>string</code> | The Web Analytics ruleset identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.host">host</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}. |
+| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.host">host</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}. |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.inclusive">inclusive</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the rule includes or excludes traffic from being measured. |
 | <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.isPaused">isPaused</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether the rule is paused or not. |
-| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.paths">paths</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}. |
+| <code><a href="#@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.paths">paths</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}. |
 
 ---
 
@@ -977,20 +984,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
-
----
-
 ##### `rulesetId`<sup>Required</sup> <a name="rulesetId" id="@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.rulesetId"></a>
 
 ```typescript
@@ -1001,7 +994,21 @@ public readonly rulesetId: string;
 
 The Web Analytics ruleset identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#ruleset_id WebAnalyticsRule#ruleset_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.webAnalyticsRule.WebAnalyticsRuleConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#account_id WebAnalyticsRule#account_id}
 
 ---
 
@@ -1013,7 +1020,7 @@ public readonly host: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#host WebAnalyticsRule#host}.
 
 ---
 
@@ -1027,7 +1034,7 @@ public readonly inclusive: boolean | IResolvable;
 
 Whether the rule includes or excludes traffic from being measured.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#inclusive WebAnalyticsRule#inclusive}
 
 ---
 
@@ -1041,7 +1048,7 @@ public readonly isPaused: boolean | IResolvable;
 
 Whether the rule is paused or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#is_paused WebAnalyticsRule#is_paused}
 
 ---
 
@@ -1053,7 +1060,7 @@ public readonly paths: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/web_analytics_rule#paths WebAnalyticsRule#paths}.
 
 ---
 

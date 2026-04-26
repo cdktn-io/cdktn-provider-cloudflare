@@ -4,7 +4,7 @@
 
 ### DataCloudflareLogpullRetention <a name="DataCloudflareLogpullRetention" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetentionConfig">DataCloudflareLogpullRetentionConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.resetZoneId"></a>
+
+```go
+func ResetZoneId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareLogpullReten
 
 The id of the existing DataCloudflareLogpullRetention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpull_retention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/logpull_retention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -708,7 +715,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetentionConfig.property.zoneId"></a>
+##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetentionConfig.property.zoneId"></a>
 
 ```go
 ZoneId *string
@@ -718,7 +725,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpull_retention#zone_id DataCloudflareLogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/logpull_retention#zone_id DataCloudflareLogpullRetention#zone_id}
 
 ---
 

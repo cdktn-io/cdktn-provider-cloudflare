@@ -4,14 +4,14 @@
 
 ### ZeroTrustNetworkHostnameRoute <a name="ZeroTrustNetworkHostnameRoute" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_network_hostname_route cloudflare_zero_trust_network_hostname_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.Initializer"></a>
 
 ```typescript
 import { zeroTrustNetworkHostnameRoute } from '@cdktn/provider-cloudflare'
 
-new zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute(scope: Construct, id: string, config: ZeroTrustNetworkHostnameRouteConfig)
+new zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute(scope: Construct, id: string, config?: ZeroTrustNetworkHostnameRouteConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRouteConfig">ZeroTrustNetworkHostnameRouteConfig</a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.resetComment">resetComment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.resetHostname">resetHostname</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.resetTunnelId">resetTunnelId</a></code> | *No description.* |
@@ -389,6 +390,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetComment` <a name="resetComment" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRoute.resetComment"></a>
 
 ```typescript
@@ -510,7 +517,7 @@ The construct id used in the generated config for the ZeroTrustNetworkHostnameRo
 
 The id of the existing ZeroTrustNetworkHostnameRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_network_hostname_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_network_hostname_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -935,7 +942,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRouteConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustNetworkHostnameRoute.ZeroTrustNetworkHostnameRouteConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -945,7 +952,7 @@ public readonly accountId: string;
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_network_hostname_route#account_id ZeroTrustNetworkHostnameRoute#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_network_hostname_route#account_id ZeroTrustNetworkHostnameRoute#account_id}
 
 ---
 
@@ -959,7 +966,7 @@ public readonly comment: string;
 
 An optional description of the hostname route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_network_hostname_route#comment ZeroTrustNetworkHostnameRoute#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_network_hostname_route#comment ZeroTrustNetworkHostnameRoute#comment}
 
 ---
 
@@ -973,7 +980,7 @@ public readonly hostname: string;
 
 The hostname of the route.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_network_hostname_route#hostname ZeroTrustNetworkHostnameRoute#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_network_hostname_route#hostname ZeroTrustNetworkHostnameRoute#hostname}
 
 ---
 
@@ -987,7 +994,7 @@ public readonly tunnelId: string;
 
 UUID of the tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_network_hostname_route#tunnel_id ZeroTrustNetworkHostnameRoute#tunnel_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_network_hostname_route#tunnel_id ZeroTrustNetworkHostnameRoute#tunnel_id}
 
 ---
 

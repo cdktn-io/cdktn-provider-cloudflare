@@ -4,7 +4,7 @@
 
 ### DnsZoneTransfersIncoming <a name="DnsZoneTransfersIncoming" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.Initializer"></a>
 
@@ -75,6 +75,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.resetAutoRefreshSeconds">resetAutoRefreshSeconds</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -393,6 +394,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetAutoRefreshSeconds(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncoming.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +503,7 @@ The construct id used in the generated config for the DnsZoneTransfersIncoming t
 
 The id of the existing DnsZoneTransfersIncoming that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -857,8 +864,8 @@ const dnsZoneTransfersIncomingConfig: dnsZoneTransfersIncoming.DnsZoneTransfersI
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.name">name</a></code> | <code>string</code> | Zone name. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.peers">peers</a></code> | <code>string[]</code> | A list of peer tags. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.autoRefreshSeconds">autoRefreshSeconds</a></code> | <code>number</code> | How often should a secondary zone auto refresh regardless of DNS NOTIFY. Not applicable for primary zones. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}. |
 
 ---
 
@@ -942,7 +949,7 @@ public readonly name: string;
 
 Zone name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_incoming#name DnsZoneTransfersIncoming#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_incoming#name DnsZoneTransfersIncoming#name}
 
 ---
 
@@ -956,19 +963,7 @@ public readonly peers: string[];
 
 A list of peer tags.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_incoming#peers DnsZoneTransfersIncoming#peers}
-
----
-
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_incoming#peers DnsZoneTransfersIncoming#peers}
 
 ---
 
@@ -982,7 +977,19 @@ public readonly autoRefreshSeconds: number;
 
 How often should a secondary zone auto refresh regardless of DNS NOTIFY. Not applicable for primary zones.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/dns_zone_transfers_incoming#auto_refresh_seconds DnsZoneTransfersIncoming#auto_refresh_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_incoming#auto_refresh_seconds DnsZoneTransfersIncoming#auto_refresh_seconds}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dnsZoneTransfersIncoming.DnsZoneTransfersIncomingConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/dns_zone_transfers_incoming#zone_id DnsZoneTransfersIncoming#zone_id}.
 
 ---
 

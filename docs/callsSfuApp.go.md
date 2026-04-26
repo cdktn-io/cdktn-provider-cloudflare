@@ -4,7 +4,7 @@
 
 ### CallsSfuApp <a name="CallsSfuApp" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_sfu_app cloudflare_calls_sfu_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig">CallsSfuAppConfig</a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.resetAppId">ResetAppId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.resetName">ResetName</a></code> | *No description.* |
 
@@ -388,6 +389,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 ##### `ResetAppId` <a name="ResetAppId" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.resetAppId"></a>
 
 ```go
@@ -503,7 +510,7 @@ The construct id used in the generated config for the CallsSfuApp to import.
 
 The id of the existing CallsSfuApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,7 +923,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -926,7 +933,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_sfu_app#account_id CallsSfuApp#account_id}
 
 ---
 
@@ -940,7 +947,7 @@ AppId *string
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_sfu_app#app_id CallsSfuApp#app_id}
 
 ---
 
@@ -954,7 +961,7 @@ Name *string
 
 A short description of Calls app, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_sfu_app#name CallsSfuApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_sfu_app#name CallsSfuApp#name}
 
 ---
 

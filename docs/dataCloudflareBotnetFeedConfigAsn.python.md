@@ -4,7 +4,7 @@
 
 ### DataCloudflareBotnetFeedConfigAsn <a name="DataCloudflareBotnetFeedConfigAsn" id="@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/botnet_feed_config_asn cloudflare_botnet_feed_config_asn}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.Initializer"></a>
 
@@ -21,7 +21,7 @@ dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str
+  account_id: str = None
 )
 ```
 
@@ -100,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
 
 ---
 
@@ -132,6 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -375,6 +376,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsn.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -489,7 +496,7 @@ The construct id used in the generated config for the DataCloudflareBotnetFeedCo
 
 The id of the existing DataCloudflareBotnetFeedConfigAsn that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/botnet_feed_config_asn#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/botnet_feed_config_asn#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -710,7 +717,7 @@ dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsnConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str
+  account_id: str = None
 )
 ```
 
@@ -799,7 +806,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsnConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareBotnetFeedConfigAsn.DataCloudflareBotnetFeedConfigAsnConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -809,7 +816,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/botnet_feed_config_asn#account_id DataCloudflareBotnetFeedConfigAsn#account_id}
 
 ---
 

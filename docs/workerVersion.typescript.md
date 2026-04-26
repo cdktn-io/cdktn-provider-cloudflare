@@ -4,7 +4,7 @@
 
 ### WorkerVersion <a name="WorkerVersion" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version cloudflare_worker_version}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version cloudflare_worker_version}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.Initializer"></a>
 
@@ -77,15 +77,18 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putAnnotations">putAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putAssets">putAssets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putBindings">putBindings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putContainers">putContainers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putLimits">putLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putMigrations">putMigrations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putModules">putModules</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putPlacement">putPlacement</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetAnnotations">resetAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetAssets">resetAssets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetBindings">resetBindings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetCompatibilityDate">resetCompatibilityDate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetCompatibilityFlags">resetCompatibilityFlags</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetContainers">resetContainers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetLimits">resetLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetMainModule">resetMainModule</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetMigrations">resetMigrations</a></code> | *No description.* |
@@ -440,6 +443,18 @@ public putBindings(value: IResolvable | WorkerVersionBindings[]): void
 
 ---
 
+##### `putContainers` <a name="putContainers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putContainers"></a>
+
+```typescript
+public putContainers(value: IResolvable | WorkerVersionContainers[]): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putContainers.parameter.value"></a>
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>[]
+
+---
+
 ##### `putLimits` <a name="putLimits" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.putLimits"></a>
 
 ```typescript
@@ -488,6 +503,12 @@ public putPlacement(value: WorkerVersionPlacement): void
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetAnnotations` <a name="resetAnnotations" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetAnnotations"></a>
 
 ```typescript
@@ -516,6 +537,12 @@ public resetCompatibilityDate(): void
 
 ```typescript
 public resetCompatibilityFlags(): void
+```
+
+##### `resetContainers` <a name="resetContainers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetContainers"></a>
+
+```typescript
+public resetContainers(): void
 ```
 
 ##### `resetLimits` <a name="resetLimits" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.resetLimits"></a>
@@ -657,7 +684,7 @@ The construct id used in the generated config for the WorkerVersion to import.
 
 The id of the existing WorkerVersion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,22 +717,26 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotationsOutputReference">WorkerVersionAnnotationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.assets">assets</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssetsOutputReference">WorkerVersionAssetsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.bindings">bindings</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsList">WorkerVersionBindingsList</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.containers">containers</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList">WorkerVersionContainersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.createdOn">createdOn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference">WorkerVersionLimitsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.mainScriptBase64">mainScriptBase64</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.migrations">migrations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsOutputReference">WorkerVersionMigrationsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.migrationTag">migrationTag</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.modules">modules</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionModulesList">WorkerVersionModulesList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.number">number</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.placement">placement</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionPlacementOutputReference">WorkerVersionPlacementOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.source">source</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.startupTimeMs">startupTimeMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.urls">urls</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.annotationsInput">annotationsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotations">WorkerVersionAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.assetsInput">assetsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssets">WorkerVersionAssets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.bindingsInput">bindingsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings">WorkerVersionBindings</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.compatibilityDateInput">compatibilityDateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.compatibilityFlagsInput">compatibilityFlagsInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.containersInput">containersInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.limitsInput">limitsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits">WorkerVersionLimits</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.mainModuleInput">mainModuleInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.migrationsInput">migrationsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrations">WorkerVersionMigrations</a></code> | *No description.* |
@@ -894,6 +925,16 @@ public readonly bindings: WorkerVersionBindingsList;
 
 ---
 
+##### `containers`<sup>Required</sup> <a name="containers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.containers"></a>
+
+```typescript
+public readonly containers: WorkerVersionContainersList;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList">WorkerVersionContainersList</a>
+
+---
+
 ##### `createdOn`<sup>Required</sup> <a name="createdOn" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.createdOn"></a>
 
 ```typescript
@@ -944,6 +985,16 @@ public readonly migrations: WorkerVersionMigrationsOutputReference;
 
 ---
 
+##### `migrationTag`<sup>Required</sup> <a name="migrationTag" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.migrationTag"></a>
+
+```typescript
+public readonly migrationTag: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `modules`<sup>Required</sup> <a name="modules" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.modules"></a>
 
 ```typescript
@@ -991,6 +1042,16 @@ public readonly startupTimeMs: number;
 ```
 
 - *Type:* number
+
+---
+
+##### `urls`<sup>Required</sup> <a name="urls" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.urls"></a>
+
+```typescript
+public readonly urls: string[];
+```
+
+- *Type:* string[]
 
 ---
 
@@ -1051,6 +1112,16 @@ public readonly compatibilityFlagsInput: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `containersInput`<sup>Optional</sup> <a name="containersInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersion.property.containersInput"></a>
+
+```typescript
+public readonly containersInput: IResolvable | WorkerVersionContainers[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>[]
 
 ---
 
@@ -1218,8 +1289,8 @@ const workerVersionAnnotations: workerVersion.WorkerVersionAnnotations = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotations.property.workersMessage">workersMessage</a></code> | <code>string</code> | Human-readable message about the version. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotations.property.workersTag">workersTag</a></code> | <code>string</code> | User-provided identifier for the version. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotations.property.workersMessage">workersMessage</a></code> | <code>string</code> | Human-readable message about the version. Truncated to 1000 bytes if longer. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotations.property.workersTag">workersTag</a></code> | <code>string</code> | User-provided identifier for the version. Maximum 100 bytes. |
 
 ---
 
@@ -1231,9 +1302,9 @@ public readonly workersMessage: string;
 
 - *Type:* string
 
-Human-readable message about the version.
+Human-readable message about the version. Truncated to 1000 bytes if longer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#workers_message WorkerVersion#workers_message}
 
 ---
 
@@ -1245,9 +1316,9 @@ public readonly workersTag: string;
 
 - *Type:* string
 
-User-provided identifier for the version.
+User-provided identifier for the version. Maximum 100 bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#workers_tag WorkerVersion#workers_tag}
 
 ---
 
@@ -1281,7 +1352,7 @@ public readonly config: WorkerVersionAssetsConfig;
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#config WorkerVersion#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#config WorkerVersion#config}
 
 ---
 
@@ -1295,7 +1366,7 @@ public readonly directory: string;
 
 Path to the directory containing asset files to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#directory WorkerVersion#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#directory WorkerVersion#directory}
 
 ---
 
@@ -1309,7 +1380,7 @@ public readonly jwt: string;
 
 Token provided upon successful upload of all files from a registered manifest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#jwt WorkerVersion#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#jwt WorkerVersion#jwt}
 
 ---
 
@@ -1343,7 +1414,7 @@ public readonly htmlHandling: string;
 
 Determines the redirects and rewrites of requests for HTML content. Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#html_handling WorkerVersion#html_handling}
 
 ---
 
@@ -1359,7 +1430,7 @@ Determines the response when a request does not match a static asset, and there 
 
 Available values: "none", "404-page", "single-page-application".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#not_found_handling WorkerVersion#not_found_handling}
 
 ---
 
@@ -1375,7 +1446,7 @@ When a boolean true, requests will always invoke the Worker script.
 
 Otherwise, attempt to serve an asset matching the request, falling back to the Worker script. When a list of strings, contains path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either '/' or '!/'. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#run_worker_first WorkerVersion#run_worker_first}
 
 ---
 
@@ -1398,21 +1469,27 @@ const workerVersionBindings: workerVersion.WorkerVersionBindings = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.algorithm">algorithm</a></code> | <code>string</code> | Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm). |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.allowedDestinationAddresses">allowedDestinationAddresses</a></code> | <code>string[]</code> | List of allowed destination addresses. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.allowedSenderAddresses">allowedSenderAddresses</a></code> | <code>string[]</code> | List of allowed sender addresses. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.appId">appId</a></code> | <code>string</code> | ID of the Flagship app to bind to for feature flag evaluation. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.bucketName">bucketName</a></code> | <code>string</code> | R2 bucket to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.certificateId">certificateId</a></code> | <code>string</code> | Identifier of the certificate to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.className">className</a></code> | <code>string</code> | The exported class name of the Durable Object. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.databaseId">databaseId</a></code> | <code>string</code> | Identifier of the D1 database to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.dataset">dataset</a></code> | <code>string</code> | The name of the dataset to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.destinationAddress">destinationAddress</a></code> | <code>string</code> | Destination address for the email. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.dispatchNamespace">dispatchNamespace</a></code> | <code>string</code> | The dispatch namespace the Durable Object script belongs to. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.entrypoint">entrypoint</a></code> | <code>string</code> | Entrypoint to invoke on the target Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.environment">environment</a></code> | <code>string</code> | The environment of the script_name to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.format">format</a></code> | <code>string</code> | Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format). Available values: "raw", "pkcs8", "spki", "jwk". |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.id">id</a></code> | <code>string</code> | Identifier of the D1 database to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.indexName">indexName</a></code> | <code>string</code> | Name of the Vectorize index to bind to. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.instanceName">instanceName</a></code> | <code>string</code> | The user-chosen instance name. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.json">json</a></code> | <code>string</code> | JSON data to use. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp". |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp", "fedramp-high". |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.keyBase64">keyBase64</a></code> | <code>string</code> | Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki". |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.keyJwk">keyJwk</a></code> | <code>string</code> | Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk". |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.namespace">namespace</a></code> | <code>string</code> | The name of the dispatch namespace. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.namespace">namespace</a></code> | <code>string</code> | The namespace the instance belongs to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.namespaceId">namespaceId</a></code> | <code>string</code> | Namespace identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.networkId">networkId</a></code> | <code>string</code> | Identifier of the network to bind to. Only "cf1:network" is currently supported. Mutually exclusive with tunnel_id. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.oldName">oldName</a></code> | <code>string</code> | The old name of the inherited binding. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.outbound">outbound</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutbound">WorkerVersionBindingsOutbound</a></code> | Outbound worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.part">part</a></code> | <code>string</code> | The name of the file containing the data content. Only accepted for `service worker syntax` Workers. |
@@ -1421,9 +1498,11 @@ const workerVersionBindings: workerVersion.WorkerVersionBindings = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.scriptName">scriptName</a></code> | <code>string</code> | The script where the Durable Object is defined, if it is external to this Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.secretName">secretName</a></code> | <code>string</code> | Name of the secret in the store. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.service">service</a></code> | <code>string</code> | Name of Worker to bind to. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.serviceId">serviceId</a></code> | <code>string</code> | Identifier of the VPC service to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.simple">simple</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsSimple">WorkerVersionBindingsSimple</a></code> | The rate limit configuration. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.storeId">storeId</a></code> | <code>string</code> | ID of the store containing the secret. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.text">text</a></code> | <code>string</code> | The text value to use. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.tunnelId">tunnelId</a></code> | <code>string</code> | UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.usages">usages</a></code> | <code>string[]</code> | Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages). |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.versionId">versionId</a></code> | <code>string</code> | Identifier for the version to inherit the binding from, which can be the version ID or the literal "latest" to inherit from the latest version. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.workflowName">workflowName</a></code> | <code>string</code> | Name of the Workflow to bind to. |
@@ -1440,7 +1519,7 @@ public readonly name: string;
 
 A JavaScript variable name for the binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -1454,9 +1533,9 @@ public readonly type: string;
 
 The kind of resource that the binding provides.
 
-Available values: "ai", "analytics_engine", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "ratelimit", "r2_bucket", "secret_text", "send_email", "service", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow", "wasm_module".
+Available values: "ai", "ai_search", "ai_search_namespace", "analytics_engine", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "media", "mtls_certificate", "plain_text", "pipelines", "queue", "ratelimit", "r2_bucket", "secret_text", "send_email", "service", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "flagship", "secret_key", "workflow", "wasm_module", "vpc_service", "vpc_network".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#type WorkerVersion#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#type WorkerVersion#type}
 
 ---
 
@@ -1470,7 +1549,7 @@ public readonly algorithm: string;
 
 Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#algorithm WorkerVersion#algorithm}
 
 ---
 
@@ -1484,7 +1563,7 @@ public readonly allowedDestinationAddresses: string[];
 
 List of allowed destination addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#allowed_destination_addresses WorkerVersion#allowed_destination_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#allowed_destination_addresses WorkerVersion#allowed_destination_addresses}
 
 ---
 
@@ -1498,7 +1577,21 @@ public readonly allowedSenderAddresses: string[];
 
 List of allowed sender addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#allowed_sender_addresses WorkerVersion#allowed_sender_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#allowed_sender_addresses WorkerVersion#allowed_sender_addresses}
+
+---
+
+##### `appId`<sup>Optional</sup> <a name="appId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.appId"></a>
+
+```typescript
+public readonly appId: string;
+```
+
+- *Type:* string
+
+ID of the Flagship app to bind to for feature flag evaluation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#app_id WorkerVersion#app_id}
 
 ---
 
@@ -1512,7 +1605,7 @@ public readonly bucketName: string;
 
 R2 bucket to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#bucket_name WorkerVersion#bucket_name}
 
 ---
 
@@ -1526,7 +1619,7 @@ public readonly certificateId: string;
 
 Identifier of the certificate to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#certificate_id WorkerVersion#certificate_id}
 
 ---
 
@@ -1540,7 +1633,21 @@ public readonly className: string;
 
 The exported class name of the Durable Object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#class_name WorkerVersion#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#class_name WorkerVersion#class_name}
+
+---
+
+##### `databaseId`<sup>Optional</sup> <a name="databaseId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.databaseId"></a>
+
+```typescript
+public readonly databaseId: string;
+```
+
+- *Type:* string
+
+Identifier of the D1 database to bind to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#database_id WorkerVersion#database_id}
 
 ---
 
@@ -1554,7 +1661,7 @@ public readonly dataset: string;
 
 The name of the dataset to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#dataset WorkerVersion#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#dataset WorkerVersion#dataset}
 
 ---
 
@@ -1568,7 +1675,35 @@ public readonly destinationAddress: string;
 
 Destination address for the email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#destination_address WorkerVersion#destination_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#destination_address WorkerVersion#destination_address}
+
+---
+
+##### `dispatchNamespace`<sup>Optional</sup> <a name="dispatchNamespace" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.dispatchNamespace"></a>
+
+```typescript
+public readonly dispatchNamespace: string;
+```
+
+- *Type:* string
+
+The dispatch namespace the Durable Object script belongs to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#dispatch_namespace WorkerVersion#dispatch_namespace}
+
+---
+
+##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.entrypoint"></a>
+
+```typescript
+public readonly entrypoint: string;
+```
+
+- *Type:* string
+
+Entrypoint to invoke on the target Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#entrypoint WorkerVersion#entrypoint}
 
 ---
 
@@ -1582,7 +1717,7 @@ public readonly environment: string;
 
 The environment of the script_name to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#environment WorkerVersion#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#environment WorkerVersion#environment}
 
 ---
 
@@ -1596,7 +1731,7 @@ public readonly format: string;
 
 Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format). Available values: "raw", "pkcs8", "spki", "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#format WorkerVersion#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#format WorkerVersion#format}
 
 ---
 
@@ -1610,7 +1745,7 @@ public readonly id: string;
 
 Identifier of the D1 database to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#id WorkerVersion#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#id WorkerVersion#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1627,7 +1762,23 @@ public readonly indexName: string;
 
 Name of the Vectorize index to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#index_name WorkerVersion#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#index_name WorkerVersion#index_name}
+
+---
+
+##### `instanceName`<sup>Optional</sup> <a name="instanceName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.instanceName"></a>
+
+```typescript
+public readonly instanceName: string;
+```
+
+- *Type:* string
+
+The user-chosen instance name.
+
+Must exist at deploy time. The worker can search, chat, update, and manage items/jobs on this instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#instance_name WorkerVersion#instance_name}
 
 ---
 
@@ -1641,7 +1792,7 @@ public readonly json: string;
 
 JSON data to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#json WorkerVersion#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#json WorkerVersion#json}
 
 ---
 
@@ -1653,9 +1804,9 @@ public readonly jurisdiction: string;
 
 - *Type:* string
 
-The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp".
+The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp", "fedramp-high".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#jurisdiction WorkerVersion#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#jurisdiction WorkerVersion#jurisdiction}
 
 ---
 
@@ -1669,7 +1820,7 @@ public readonly keyBase64: string;
 
 Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#key_base64 WorkerVersion#key_base64}
 
 ---
 
@@ -1683,7 +1834,7 @@ public readonly keyJwk: string;
 
 Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#key_jwk WorkerVersion#key_jwk}
 
 ---
 
@@ -1695,9 +1846,11 @@ public readonly namespace: string;
 
 - *Type:* string
 
-The name of the dispatch namespace.
+The namespace the instance belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#namespace WorkerVersion#namespace}
+Defaults to "default" if omitted. Customers who don't use namespaces can simply omit this field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#namespace WorkerVersion#namespace}
 
 ---
 
@@ -1711,7 +1864,21 @@ public readonly namespaceId: string;
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#namespace_id WorkerVersion#namespace_id}
+
+---
+
+##### `networkId`<sup>Optional</sup> <a name="networkId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.networkId"></a>
+
+```typescript
+public readonly networkId: string;
+```
+
+- *Type:* string
+
+Identifier of the network to bind to. Only "cf1:network" is currently supported. Mutually exclusive with tunnel_id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#network_id WorkerVersion#network_id}
 
 ---
 
@@ -1727,7 +1894,7 @@ The old name of the inherited binding.
 
 If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#old_name WorkerVersion#old_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#old_name WorkerVersion#old_name}
 
 ---
 
@@ -1741,7 +1908,7 @@ public readonly outbound: WorkerVersionBindingsOutbound;
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#outbound WorkerVersion#outbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#outbound WorkerVersion#outbound}
 
 ---
 
@@ -1755,7 +1922,7 @@ public readonly part: string;
 
 The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#part WorkerVersion#part}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#part WorkerVersion#part}
 
 ---
 
@@ -1769,7 +1936,7 @@ public readonly pipeline: string;
 
 Name of the Pipeline to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#pipeline WorkerVersion#pipeline}
 
 ---
 
@@ -1783,7 +1950,7 @@ public readonly queueName: string;
 
 Name of the Queue to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#queue_name WorkerVersion#queue_name}
 
 ---
 
@@ -1797,7 +1964,7 @@ public readonly scriptName: string;
 
 The script where the Durable Object is defined, if it is external to this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#script_name WorkerVersion#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#script_name WorkerVersion#script_name}
 
 ---
 
@@ -1811,7 +1978,7 @@ public readonly secretName: string;
 
 Name of the secret in the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#secret_name WorkerVersion#secret_name}
 
 ---
 
@@ -1825,7 +1992,21 @@ public readonly service: string;
 
 Name of Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#service WorkerVersion#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#service WorkerVersion#service}
+
+---
+
+##### `serviceId`<sup>Optional</sup> <a name="serviceId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.serviceId"></a>
+
+```typescript
+public readonly serviceId: string;
+```
+
+- *Type:* string
+
+Identifier of the VPC service to bind to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#service_id WorkerVersion#service_id}
 
 ---
 
@@ -1839,7 +2020,7 @@ public readonly simple: WorkerVersionBindingsSimple;
 
 The rate limit configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#simple WorkerVersion#simple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#simple WorkerVersion#simple}
 
 ---
 
@@ -1853,7 +2034,7 @@ public readonly storeId: string;
 
 ID of the store containing the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#store_id WorkerVersion#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#store_id WorkerVersion#store_id}
 
 ---
 
@@ -1867,7 +2048,21 @@ public readonly text: string;
 
 The text value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#text WorkerVersion#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#text WorkerVersion#text}
+
+---
+
+##### `tunnelId`<sup>Optional</sup> <a name="tunnelId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings.property.tunnelId"></a>
+
+```typescript
+public readonly tunnelId: string;
+```
+
+- *Type:* string
+
+UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#tunnel_id WorkerVersion#tunnel_id}
 
 ---
 
@@ -1881,7 +2076,7 @@ public readonly usages: string[];
 
 Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#usages WorkerVersion#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#usages WorkerVersion#usages}
 
 ---
 
@@ -1897,7 +2092,7 @@ Identifier for the version to inherit the binding from, which can be the version
 
 Defaults to inheriting the binding from the latest version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#version_id WorkerVersion#version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#version_id WorkerVersion#version_id}
 
 ---
 
@@ -1911,7 +2106,7 @@ public readonly workflowName: string;
 
 Name of the Workflow to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#workflow_name WorkerVersion#workflow_name}
 
 ---
 
@@ -1944,7 +2139,7 @@ public readonly params: IResolvable | WorkerVersionBindingsOutboundParams[];
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#params WorkerVersion#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#params WorkerVersion#params}
 
 ---
 
@@ -1958,7 +2153,7 @@ public readonly worker: WorkerVersionBindingsOutboundWorker;
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#worker WorkerVersion#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#worker WorkerVersion#worker}
 
 ---
 
@@ -1990,7 +2185,7 @@ public readonly name: string;
 
 Name of the parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -2024,7 +2219,7 @@ public readonly entrypoint: string;
 
 Entrypoint to invoke on the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#entrypoint WorkerVersion#entrypoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#entrypoint WorkerVersion#entrypoint}
 
 ---
 
@@ -2038,7 +2233,7 @@ public readonly environment: string;
 
 Environment of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#environment WorkerVersion#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#environment WorkerVersion#environment}
 
 ---
 
@@ -2052,7 +2247,7 @@ public readonly service: string;
 
 Name of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#service WorkerVersion#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#service WorkerVersion#service}
 
 ---
 
@@ -2085,7 +2280,7 @@ public readonly limit: number;
 
 The limit (requests per period).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#limit WorkerVersion#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#limit WorkerVersion#limit}
 
 ---
 
@@ -2099,7 +2294,7 @@ public readonly period: number;
 
 The period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#period WorkerVersion#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#period WorkerVersion#period}
 
 ---
 
@@ -2124,13 +2319,14 @@ const workerVersionConfig: workerVersion.WorkerVersionConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.workerId">workerId</a></code> | <code>string</code> | Identifier for the Worker, which can be ID or name. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAnnotations">WorkerVersionAnnotations</a></code> | Metadata about the version. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.assets">assets</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionAssets">WorkerVersionAssets</a></code> | Configuration for assets within a Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.bindings">bindings</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindings">WorkerVersionBindings</a>[]</code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.compatibilityDate">compatibilityDate</a></code> | <code>string</code> | Date indicating targeted support in the Workers runtime. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.compatibilityFlags">compatibilityFlags</a></code> | <code>string[]</code> | Flags that enable or disable certain features in the Workers runtime. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.containers">containers</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>[]</code> | List of containers attached to a Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.limits">limits</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits">WorkerVersionLimits</a></code> | Resource limits enforced at runtime. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.mainModule">mainModule</a></code> | <code>string</code> | The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler). |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.migrations">migrations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrations">WorkerVersionMigrations</a></code> | Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed. |
@@ -2210,20 +2406,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
-
----
-
 ##### `workerId`<sup>Required</sup> <a name="workerId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.workerId"></a>
 
 ```typescript
@@ -2234,7 +2416,21 @@ public readonly workerId: string;
 
 Identifier for the Worker, which can be ID or name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#worker_id WorkerVersion#worker_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#account_id WorkerVersion#account_id}
 
 ---
 
@@ -2248,7 +2444,7 @@ public readonly annotations: WorkerVersionAnnotations;
 
 Metadata about the version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#annotations WorkerVersion#annotations}
 
 ---
 
@@ -2266,7 +2462,7 @@ Configuration for assets within a Worker.
 [`_redirects`](https://developers.cloudflare.com/workers/static-assets/redirects/) files should be
 included as modules named `_headers` and `_redirects` with content type `text/plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#assets WorkerVersion#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#assets WorkerVersion#assets}
 
 ---
 
@@ -2280,7 +2476,7 @@ public readonly bindings: IResolvable | WorkerVersionBindings[];
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#bindings WorkerVersion#bindings}
 
 ---
 
@@ -2296,7 +2492,7 @@ Date indicating targeted support in the Workers runtime.
 
 Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#compatibility_date WorkerVersion#compatibility_date}
 
 ---
 
@@ -2312,7 +2508,23 @@ Flags that enable or disable certain features in the Workers runtime.
 
 Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#compatibility_flags WorkerVersion#compatibility_flags}
+
+---
+
+##### `containers`<sup>Optional</sup> <a name="containers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionConfig.property.containers"></a>
+
+```typescript
+public readonly containers: IResolvable | WorkerVersionContainers[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>[]
+
+List of containers attached to a Worker.
+
+Containers can only be attached to Durable Object classes of this Worker script.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#containers WorkerVersion#containers}
 
 ---
 
@@ -2326,7 +2538,7 @@ public readonly limits: WorkerVersionLimits;
 
 Resource limits enforced at runtime.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#limits WorkerVersion#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#limits WorkerVersion#limits}
 
 ---
 
@@ -2340,7 +2552,7 @@ public readonly mainModule: string;
 
 The name of the main module in the `modules` array (e.g. the name of the module that exports a `fetch` handler).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#main_module WorkerVersion#main_module}
 
 ---
 
@@ -2354,7 +2566,7 @@ public readonly migrations: WorkerVersionMigrations;
 
 Migrations for Durable Objects associated with the version. Migrations are applied when the version is deployed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#migrations WorkerVersion#migrations}
 
 ---
 
@@ -2373,7 +2585,7 @@ This includes [`_headers`](https://developers.cloudflare.com/workers/static-asse
 [Static Assets](https://developers.cloudflare.com/workers/static-assets/). `_headers` and `_redirects` files should be 
 included as modules named `_headers` and `_redirects` with content type `text/plain`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#modules WorkerVersion#modules}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#modules WorkerVersion#modules}
 
 ---
 
@@ -2387,7 +2599,7 @@ public readonly placement: WorkerVersionPlacement;
 
 Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode='smart' for Smart Placement, or one of region/hostname/host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#placement WorkerVersion#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#placement WorkerVersion#placement}
 
 ---
 
@@ -2401,7 +2613,39 @@ public readonly usageModel: string;
 
 Usage model for the version. Available values: "standard", "bundled", "unbound".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#usage_model WorkerVersion#usage_model}
+
+---
+
+### WorkerVersionContainers <a name="WorkerVersionContainers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers.Initializer"></a>
+
+```typescript
+import { workerVersion } from '@cdktn/provider-cloudflare'
+
+const workerVersionContainers: workerVersion.WorkerVersionContainers = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers.property.className">className</a></code> | <code>string</code> | Select which Durable Object class should get this container attached. |
+
+---
+
+##### `className`<sup>Required</sup> <a name="className" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers.property.className"></a>
+
+```typescript
+public readonly className: string;
+```
+
+- *Type:* string
+
+Select which Durable Object class should get this container attached.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#class_name WorkerVersion#class_name}
 
 ---
 
@@ -2420,10 +2664,11 @@ const workerVersionLimits: workerVersion.WorkerVersionLimits = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits.property.cpuMs">cpuMs</a></code> | <code>number</code> | CPU time limit in milliseconds. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits.property.subrequests">subrequests</a></code> | <code>number</code> | Subrequest limit per request. |
 
 ---
 
-##### `cpuMs`<sup>Required</sup> <a name="cpuMs" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits.property.cpuMs"></a>
+##### `cpuMs`<sup>Optional</sup> <a name="cpuMs" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits.property.cpuMs"></a>
 
 ```typescript
 public readonly cpuMs: number;
@@ -2433,7 +2678,21 @@ public readonly cpuMs: number;
 
 CPU time limit in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#cpu_ms WorkerVersion#cpu_ms}
+
+---
+
+##### `subrequests`<sup>Optional</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits.property.subrequests"></a>
+
+```typescript
+public readonly subrequests: number;
+```
+
+- *Type:* number
+
+Subrequest limit per request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#subrequests WorkerVersion#subrequests}
 
 ---
 
@@ -2472,7 +2731,7 @@ public readonly deletedClasses: string[];
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
 
 ---
 
@@ -2486,7 +2745,7 @@ public readonly newClasses: string[];
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
 
 ---
 
@@ -2500,7 +2759,7 @@ public readonly newSqliteClasses: string[];
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
 
 ---
 
@@ -2514,7 +2773,7 @@ public readonly newTag: string;
 
 Tag to set as the latest migration tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#new_tag WorkerVersion#new_tag}
 
 ---
 
@@ -2530,7 +2789,7 @@ Tag used to verify against the latest migration tag for this Worker.
 
 If they don't match, the upload is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#old_tag WorkerVersion#old_tag}
 
 ---
 
@@ -2544,7 +2803,7 @@ public readonly renamedClasses: IResolvable | WorkerVersionMigrationsRenamedClas
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
 
 ---
 
@@ -2558,7 +2817,7 @@ public readonly steps: IResolvable | WorkerVersionMigrationsSteps[];
 
 Migrations to apply in order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#steps WorkerVersion#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#steps WorkerVersion#steps}
 
 ---
 
@@ -2572,7 +2831,7 @@ public readonly transferredClasses: IResolvable | WorkerVersionMigrationsTransfe
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
 
 ---
 
@@ -2590,8 +2849,8 @@ const workerVersionMigrationsRenamedClasses: workerVersion.WorkerVersionMigratio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsRenamedClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2603,7 +2862,7 @@ public readonly from: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2615,7 +2874,7 @@ public readonly to: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2651,7 +2910,7 @@ public readonly deletedClasses: string[];
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#deleted_classes WorkerVersion#deleted_classes}
 
 ---
 
@@ -2665,7 +2924,7 @@ public readonly newClasses: string[];
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#new_classes WorkerVersion#new_classes}
 
 ---
 
@@ -2679,7 +2938,7 @@ public readonly newSqliteClasses: string[];
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#new_sqlite_classes WorkerVersion#new_sqlite_classes}
 
 ---
 
@@ -2693,7 +2952,7 @@ public readonly renamedClasses: IResolvable | WorkerVersionMigrationsStepsRename
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#renamed_classes WorkerVersion#renamed_classes}
 
 ---
 
@@ -2707,7 +2966,7 @@ public readonly transferredClasses: IResolvable | WorkerVersionMigrationsStepsTr
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#transferred_classes WorkerVersion#transferred_classes}
 
 ---
 
@@ -2725,8 +2984,8 @@ const workerVersionMigrationsStepsRenamedClasses: workerVersion.WorkerVersionMig
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsRenamedClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2738,7 +2997,7 @@ public readonly from: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2750,7 +3009,7 @@ public readonly to: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2768,9 +3027,9 @@ const workerVersionMigrationsStepsTransferredClasses: workerVersion.WorkerVersio
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.fromScript">fromScript</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.fromScript">fromScript</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsStepsTransferredClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2782,7 +3041,7 @@ public readonly from: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2794,7 +3053,7 @@ public readonly fromScript: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
 
 ---
 
@@ -2806,7 +3065,7 @@ public readonly to: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2824,9 +3083,9 @@ const workerVersionMigrationsTransferredClasses: workerVersion.WorkerVersionMigr
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.fromScript">fromScript</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
-| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.from">from</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.fromScript">fromScript</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from_script WorkerVersion#from_script}. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionMigrationsTransferredClasses.property.to">to</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}. |
 
 ---
 
@@ -2838,7 +3097,7 @@ public readonly from: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from WorkerVersion#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from WorkerVersion#from}.
 
 ---
 
@@ -2850,7 +3109,7 @@ public readonly fromScript: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#from_script WorkerVersion#from_script}.
 
 ---
 
@@ -2862,7 +3121,7 @@ public readonly to: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#to WorkerVersion#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#to WorkerVersion#to}.
 
 ---
 
@@ -2897,7 +3156,7 @@ public readonly contentType: string;
 
 The content type of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#content_type WorkerVersion#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#content_type WorkerVersion#content_type}
 
 ---
 
@@ -2911,7 +3170,7 @@ public readonly name: string;
 
 The name of the module.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#name WorkerVersion#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#name WorkerVersion#name}
 
 ---
 
@@ -2925,7 +3184,7 @@ public readonly contentBase64: string;
 
 The base64-encoded module content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#content_base64 WorkerVersion#content_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#content_base64 WorkerVersion#content_base64}
 
 ---
 
@@ -2939,7 +3198,7 @@ public readonly contentFile: string;
 
 The file path of the module content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#content_file WorkerVersion#content_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#content_file WorkerVersion#content_file}
 
 ---
 
@@ -2975,7 +3234,7 @@ public readonly host: string;
 
 TCP host and port for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#host WorkerVersion#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#host WorkerVersion#host}
 
 ---
 
@@ -2989,7 +3248,7 @@ public readonly hostname: string;
 
 HTTP hostname for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#hostname WorkerVersion#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#hostname WorkerVersion#hostname}
 
 ---
 
@@ -3003,7 +3262,7 @@ public readonly mode: string;
 
 Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Available values: "smart", "targeted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#mode WorkerVersion#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#mode WorkerVersion#mode}
 
 ---
 
@@ -3017,7 +3276,7 @@ public readonly region: string;
 
 Cloud region for targeted placement in format 'provider:region'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#region WorkerVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#region WorkerVersion#region}
 
 ---
 
@@ -3031,7 +3290,7 @@ public readonly target: IResolvable | WorkerVersionPlacementTarget[];
 
 Array of placement targets (currently limited to single target).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#target WorkerVersion#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#target WorkerVersion#target}
 
 ---
 
@@ -3065,7 +3324,7 @@ public readonly host: string;
 
 TCP host:port for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#host WorkerVersion#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#host WorkerVersion#host}
 
 ---
 
@@ -3079,7 +3338,7 @@ public readonly hostname: string;
 
 HTTP hostname for targeted placement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#hostname WorkerVersion#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#hostname WorkerVersion#hostname}
 
 ---
 
@@ -3093,7 +3352,7 @@ public readonly region: string;
 
 Cloud region in format 'provider:region'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker_version#region WorkerVersion#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker_version#region WorkerVersion#region}
 
 ---
 
@@ -5464,21 +5723,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAlgorithm">resetAlgorithm</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAllowedDestinationAddresses">resetAllowedDestinationAddresses</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAllowedSenderAddresses">resetAllowedSenderAddresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAppId">resetAppId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetBucketName">resetBucketName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetCertificateId">resetCertificateId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetClassName">resetClassName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDatabaseId">resetDatabaseId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDataset">resetDataset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDestinationAddress">resetDestinationAddress</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDispatchNamespace">resetDispatchNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetEntrypoint">resetEntrypoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetEnvironment">resetEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetFormat">resetFormat</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetIndexName">resetIndexName</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetInstanceName">resetInstanceName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetJson">resetJson</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetJurisdiction">resetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetKeyBase64">resetKeyBase64</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetKeyJwk">resetKeyJwk</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetNamespace">resetNamespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetNamespaceId">resetNamespaceId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetNetworkId">resetNetworkId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetOldName">resetOldName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetOutbound">resetOutbound</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetPart">resetPart</a></code> | *No description.* |
@@ -5487,9 +5752,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetScriptName">resetScriptName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetSecretName">resetSecretName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetService">resetService</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetServiceId">resetServiceId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetSimple">resetSimple</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetStoreId">resetStoreId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetText">resetText</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetTunnelId">resetTunnelId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetUsages">resetUsages</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetVersionId">resetVersionId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetWorkflowName">resetWorkflowName</a></code> | *No description.* |
@@ -5688,6 +5955,12 @@ public resetAllowedDestinationAddresses(): void
 public resetAllowedSenderAddresses(): void
 ```
 
+##### `resetAppId` <a name="resetAppId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetAppId"></a>
+
+```typescript
+public resetAppId(): void
+```
+
 ##### `resetBucketName` <a name="resetBucketName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetBucketName"></a>
 
 ```typescript
@@ -5706,6 +5979,12 @@ public resetCertificateId(): void
 public resetClassName(): void
 ```
 
+##### `resetDatabaseId` <a name="resetDatabaseId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDatabaseId"></a>
+
+```typescript
+public resetDatabaseId(): void
+```
+
 ##### `resetDataset` <a name="resetDataset" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDataset"></a>
 
 ```typescript
@@ -5716,6 +5995,18 @@ public resetDataset(): void
 
 ```typescript
 public resetDestinationAddress(): void
+```
+
+##### `resetDispatchNamespace` <a name="resetDispatchNamespace" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetDispatchNamespace"></a>
+
+```typescript
+public resetDispatchNamespace(): void
+```
+
+##### `resetEntrypoint` <a name="resetEntrypoint" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetEntrypoint"></a>
+
+```typescript
+public resetEntrypoint(): void
 ```
 
 ##### `resetEnvironment` <a name="resetEnvironment" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetEnvironment"></a>
@@ -5740,6 +6031,12 @@ public resetId(): void
 
 ```typescript
 public resetIndexName(): void
+```
+
+##### `resetInstanceName` <a name="resetInstanceName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetInstanceName"></a>
+
+```typescript
+public resetInstanceName(): void
 ```
 
 ##### `resetJson` <a name="resetJson" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetJson"></a>
@@ -5776,6 +6073,12 @@ public resetNamespace(): void
 
 ```typescript
 public resetNamespaceId(): void
+```
+
+##### `resetNetworkId` <a name="resetNetworkId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetNetworkId"></a>
+
+```typescript
+public resetNetworkId(): void
 ```
 
 ##### `resetOldName` <a name="resetOldName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetOldName"></a>
@@ -5826,6 +6129,12 @@ public resetSecretName(): void
 public resetService(): void
 ```
 
+##### `resetServiceId` <a name="resetServiceId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetServiceId"></a>
+
+```typescript
+public resetServiceId(): void
+```
+
 ##### `resetSimple` <a name="resetSimple" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetSimple"></a>
 
 ```typescript
@@ -5842,6 +6151,12 @@ public resetStoreId(): void
 
 ```typescript
 public resetText(): void
+```
+
+##### `resetTunnelId` <a name="resetTunnelId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetTunnelId"></a>
+
+```typescript
+public resetTunnelId(): void
 ```
 
 ##### `resetUsages` <a name="resetUsages" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.resetUsages"></a>
@@ -5874,15 +6189,20 @@ public resetWorkflowName(): void
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.algorithmInput">algorithmInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedDestinationAddressesInput">allowedDestinationAddressesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedSenderAddressesInput">allowedSenderAddressesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.appIdInput">appIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.bucketNameInput">bucketNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.certificateIdInput">certificateIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.classNameInput">classNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.databaseIdInput">databaseIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.datasetInput">datasetInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.destinationAddressInput">destinationAddressInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.dispatchNamespaceInput">dispatchNamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.entrypointInput">entrypointInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.environmentInput">environmentInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.formatInput">formatInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.indexNameInput">indexNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.instanceNameInput">instanceNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jsonInput">jsonInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jurisdictionInput">jurisdictionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyBase64Input">keyBase64Input</a></code> | <code>string</code> | *No description.* |
@@ -5890,6 +6210,7 @@ public resetWorkflowName(): void
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespaceIdInput">namespaceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespaceInput">namespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.networkIdInput">networkIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldNameInput">oldNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.outboundInput">outboundInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutbound">WorkerVersionBindingsOutbound</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.partInput">partInput</a></code> | <code>string</code> | *No description.* |
@@ -5897,10 +6218,12 @@ public resetWorkflowName(): void
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.queueNameInput">queueNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.scriptNameInput">scriptNameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.secretNameInput">secretNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.serviceIdInput">serviceIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.serviceInput">serviceInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.simpleInput">simpleInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsSimple">WorkerVersionBindingsSimple</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.storeIdInput">storeIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.textInput">textInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.tunnelIdInput">tunnelIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.usagesInput">usagesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.versionIdInput">versionIdInput</a></code> | <code>string</code> | *No description.* |
@@ -5908,15 +6231,20 @@ public resetWorkflowName(): void
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.algorithm">algorithm</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedDestinationAddresses">allowedDestinationAddresses</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.allowedSenderAddresses">allowedSenderAddresses</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.appId">appId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.bucketName">bucketName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.certificateId">certificateId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.className">className</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.databaseId">databaseId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.dataset">dataset</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.destinationAddress">destinationAddress</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.dispatchNamespace">dispatchNamespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.entrypoint">entrypoint</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.environment">environment</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.format">format</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.indexName">indexName</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.instanceName">instanceName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.json">json</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.keyBase64">keyBase64</a></code> | <code>string</code> | *No description.* |
@@ -5924,6 +6252,7 @@ public resetWorkflowName(): void
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespace">namespace</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.namespaceId">namespaceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.networkId">networkId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldName">oldName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.part">part</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.pipeline">pipeline</a></code> | <code>string</code> | *No description.* |
@@ -5931,8 +6260,10 @@ public resetWorkflowName(): void
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.scriptName">scriptName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.secretName">secretName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.service">service</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.serviceId">serviceId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.storeId">storeId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.text">text</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.tunnelId">tunnelId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.type">type</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.usages">usages</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.versionId">versionId</a></code> | <code>string</code> | *No description.* |
@@ -6015,6 +6346,16 @@ public readonly allowedSenderAddressesInput: string[];
 
 ---
 
+##### `appIdInput`<sup>Optional</sup> <a name="appIdInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.appIdInput"></a>
+
+```typescript
+public readonly appIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `bucketNameInput`<sup>Optional</sup> <a name="bucketNameInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.bucketNameInput"></a>
 
 ```typescript
@@ -6045,6 +6386,16 @@ public readonly classNameInput: string;
 
 ---
 
+##### `databaseIdInput`<sup>Optional</sup> <a name="databaseIdInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.databaseIdInput"></a>
+
+```typescript
+public readonly databaseIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `datasetInput`<sup>Optional</sup> <a name="datasetInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.datasetInput"></a>
 
 ```typescript
@@ -6059,6 +6410,26 @@ public readonly datasetInput: string;
 
 ```typescript
 public readonly destinationAddressInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dispatchNamespaceInput`<sup>Optional</sup> <a name="dispatchNamespaceInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.dispatchNamespaceInput"></a>
+
+```typescript
+public readonly dispatchNamespaceInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entrypointInput`<sup>Optional</sup> <a name="entrypointInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.entrypointInput"></a>
+
+```typescript
+public readonly entrypointInput: string;
 ```
 
 - *Type:* string
@@ -6099,6 +6470,16 @@ public readonly idInput: string;
 
 ```typescript
 public readonly indexNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `instanceNameInput`<sup>Optional</sup> <a name="instanceNameInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.instanceNameInput"></a>
+
+```typescript
+public readonly instanceNameInput: string;
 ```
 
 - *Type:* string
@@ -6175,6 +6556,16 @@ public readonly namespaceInput: string;
 
 ---
 
+##### `networkIdInput`<sup>Optional</sup> <a name="networkIdInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.networkIdInput"></a>
+
+```typescript
+public readonly networkIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `oldNameInput`<sup>Optional</sup> <a name="oldNameInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldNameInput"></a>
 
 ```typescript
@@ -6245,6 +6636,16 @@ public readonly secretNameInput: string;
 
 ---
 
+##### `serviceIdInput`<sup>Optional</sup> <a name="serviceIdInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.serviceIdInput"></a>
+
+```typescript
+public readonly serviceIdInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `serviceInput`<sup>Optional</sup> <a name="serviceInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.serviceInput"></a>
 
 ```typescript
@@ -6279,6 +6680,16 @@ public readonly storeIdInput: string;
 
 ```typescript
 public readonly textInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tunnelIdInput`<sup>Optional</sup> <a name="tunnelIdInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.tunnelIdInput"></a>
+
+```typescript
+public readonly tunnelIdInput: string;
 ```
 
 - *Type:* string
@@ -6355,6 +6766,16 @@ public readonly allowedSenderAddresses: string[];
 
 ---
 
+##### `appId`<sup>Required</sup> <a name="appId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.appId"></a>
+
+```typescript
+public readonly appId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `bucketName`<sup>Required</sup> <a name="bucketName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.bucketName"></a>
 
 ```typescript
@@ -6385,6 +6806,16 @@ public readonly className: string;
 
 ---
 
+##### `databaseId`<sup>Required</sup> <a name="databaseId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.databaseId"></a>
+
+```typescript
+public readonly databaseId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `dataset`<sup>Required</sup> <a name="dataset" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.dataset"></a>
 
 ```typescript
@@ -6399,6 +6830,26 @@ public readonly dataset: string;
 
 ```typescript
 public readonly destinationAddress: string;
+```
+
+- *Type:* string
+
+---
+
+##### `dispatchNamespace`<sup>Required</sup> <a name="dispatchNamespace" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.dispatchNamespace"></a>
+
+```typescript
+public readonly dispatchNamespace: string;
+```
+
+- *Type:* string
+
+---
+
+##### `entrypoint`<sup>Required</sup> <a name="entrypoint" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.entrypoint"></a>
+
+```typescript
+public readonly entrypoint: string;
 ```
 
 - *Type:* string
@@ -6439,6 +6890,16 @@ public readonly id: string;
 
 ```typescript
 public readonly indexName: string;
+```
+
+- *Type:* string
+
+---
+
+##### `instanceName`<sup>Required</sup> <a name="instanceName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.instanceName"></a>
+
+```typescript
+public readonly instanceName: string;
 ```
 
 - *Type:* string
@@ -6515,6 +6976,16 @@ public readonly namespaceId: string;
 
 ---
 
+##### `networkId`<sup>Required</sup> <a name="networkId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.networkId"></a>
+
+```typescript
+public readonly networkId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `oldName`<sup>Required</sup> <a name="oldName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.oldName"></a>
 
 ```typescript
@@ -6585,6 +7056,16 @@ public readonly service: string;
 
 ---
 
+##### `serviceId`<sup>Required</sup> <a name="serviceId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.serviceId"></a>
+
+```typescript
+public readonly serviceId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `storeId`<sup>Required</sup> <a name="storeId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.storeId"></a>
 
 ```typescript
@@ -6599,6 +7080,16 @@ public readonly storeId: string;
 
 ```typescript
 public readonly text: string;
+```
+
+- *Type:* string
+
+---
+
+##### `tunnelId`<sup>Required</sup> <a name="tunnelId" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionBindingsOutputReference.property.tunnelId"></a>
+
+```typescript
+public readonly tunnelId: string;
 ```
 
 - *Type:* string
@@ -6949,6 +7440,455 @@ public readonly internalValue: IResolvable | WorkerVersionBindingsSimple;
 ---
 
 
+### WorkerVersionContainersList <a name="WorkerVersionContainersList" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer"></a>
+
+```typescript
+import { workerVersion } from '@cdktn/provider-cloudflare'
+
+new workerVersion.WorkerVersionContainersList(terraformResource: IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer.parameter.wrapsSet">wrapsSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `wrapsSet`<sup>Required</sup> <a name="wrapsSet" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.Initializer.parameter.wrapsSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.allWithMapKey">allWithMapKey</a></code> | Creating an iterator for this complex list. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.get">get</a></code> | *No description.* |
+
+---
+
+##### `allWithMapKey` <a name="allWithMapKey" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.allWithMapKey"></a>
+
+```typescript
+public allWithMapKey(mapKeyAttributeName: string): DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* string
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.get"></a>
+
+```typescript
+public get(index: number): WorkerVersionContainersOutputReference
+```
+
+###### `index`<sup>Required</sup> <a name="index" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.get.parameter.index"></a>
+
+- *Type:* number
+
+the index of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>[]</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersList.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkerVersionContainers[];
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>[]
+
+---
+
+
+### WorkerVersionContainersOutputReference <a name="WorkerVersionContainersOutputReference" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer"></a>
+
+```typescript
+import { workerVersion } from '@cdktn/provider-cloudflare'
+
+new workerVersion.WorkerVersionContainersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.complexObjectIndex">complexObjectIndex</a></code> | <code>number</code> | the index of this item in the list. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.complexObjectIsFromSet">complexObjectIsFromSet</a></code> | <code>boolean</code> | whether the list is wrapping a set (will add tolist() to be able to access an item via an index). |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectIndex`<sup>Required</sup> <a name="complexObjectIndex" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.complexObjectIndex"></a>
+
+- *Type:* number
+
+the index of this item in the list.
+
+---
+
+##### `complexObjectIsFromSet`<sup>Required</sup> <a name="complexObjectIsFromSet" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.Initializer.parameter.complexObjectIsFromSet"></a>
+
+- *Type:* boolean
+
+whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.classNameInput">classNameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.className">className</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `classNameInput`<sup>Optional</sup> <a name="classNameInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.classNameInput"></a>
+
+```typescript
+public readonly classNameInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `className`<sup>Required</sup> <a name="className" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.className"></a>
+
+```typescript
+public readonly className: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | WorkerVersionContainers;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionContainers">WorkerVersionContainers</a>
+
+---
+
+
 ### WorkerVersionLimitsOutputReference <a name="WorkerVersionLimitsOutputReference" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.Initializer"></a>
@@ -6999,6 +7939,8 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.resetCpuMs">resetCpuMs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.resetSubrequests">resetSubrequests</a></code> | *No description.* |
 
 ---
 
@@ -7152,6 +8094,18 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetCpuMs` <a name="resetCpuMs" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.resetCpuMs"></a>
+
+```typescript
+public resetCpuMs(): void
+```
+
+##### `resetSubrequests` <a name="resetSubrequests" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.resetSubrequests"></a>
+
+```typescript
+public resetSubrequests(): void
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7160,7 +8114,9 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.cpuMsInput">cpuMsInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.subrequestsInput">subrequestsInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.cpuMs">cpuMs</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.subrequests">subrequests</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimits">WorkerVersionLimits</a></code> | *No description.* |
 
 ---
@@ -7199,10 +8155,30 @@ public readonly cpuMsInput: number;
 
 ---
 
+##### `subrequestsInput`<sup>Optional</sup> <a name="subrequestsInput" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.subrequestsInput"></a>
+
+```typescript
+public readonly subrequestsInput: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `cpuMs`<sup>Required</sup> <a name="cpuMs" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.cpuMs"></a>
 
 ```typescript
 public readonly cpuMs: number;
+```
+
+- *Type:* number
+
+---
+
+##### `subrequests`<sup>Required</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.workerVersion.WorkerVersionLimitsOutputReference.property.subrequests"></a>
+
+```typescript
+public readonly subrequests: number;
 ```
 
 - *Type:* number

@@ -4,14 +4,14 @@
 
 ### DataCloudflareStreamKey <a name="DataCloudflareStreamKey" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_key cloudflare_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_key cloudflare_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer"></a>
 
 ```typescript
 import { dataCloudflareStreamKey } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareStreamKey.DataCloudflareStreamKey(scope: Construct, id: string, config: DataCloudflareStreamKeyConfig)
+new dataCloudflareStreamKey.DataCloudflareStreamKey(scope: Construct, id: string, config?: DataCloudflareStreamKeyConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKeyConfig">DataCloudflareStreamKeyConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareStreamKey to
 
 The id of the existing DataCloudflareStreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -417,6 +424,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.created">created</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.id">id</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.keyId">keyId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
 
@@ -564,6 +572,16 @@ public readonly id: string;
 
 ---
 
+##### `keyId`<sup>Required</sup> <a name="keyId" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.keyId"></a>
+
+```typescript
+public readonly keyId: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `accountIdInput`<sup>Optional</sup> <a name="accountIdInput" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKey.property.accountIdInput"></a>
 
 ```typescript
@@ -699,7 +717,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKeyConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareStreamKey.DataCloudflareStreamKeyConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -709,7 +727,7 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream_key#account_id DataCloudflareStreamKey#account_id}
 
 ---
 

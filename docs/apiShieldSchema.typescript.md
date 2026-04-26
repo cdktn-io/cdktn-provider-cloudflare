@@ -4,7 +4,7 @@
 
 ### ApiShieldSchema <a name="ApiShieldSchema" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema cloudflare_api_shield_schema}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.Initializer"></a>
 
@@ -77,6 +77,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetSchemaId">resetSchemaId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetValidationEnabled">resetValidationEnabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -407,6 +408,12 @@ public resetSchemaId(): void
 public resetValidationEnabled(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchema.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -510,7 +517,7 @@ The construct id used in the generated config for the ApiShieldSchema to import.
 
 The id of the existing ApiShieldSchema that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,10 +911,10 @@ const apiShieldSchemaConfig: apiShieldSchema.ApiShieldSchemaConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.file">file</a></code> | <code>string</code> | Schema file bytes. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.kind">kind</a></code> | <code>string</code> | Kind of schema Available values: "openapi_v3". |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.name">name</a></code> | <code>string</code> | Name of the schema. |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.schemaId">schemaId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.validationEnabled">validationEnabled</a></code> | <code>string</code> | Flag whether schema is enabled for validation. Available values: "true", "false". |
+| <code><a href="#@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -991,7 +998,7 @@ public readonly file: string;
 
 Schema file bytes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#file ApiShieldSchema#file}
 
 ---
 
@@ -1005,21 +1012,7 @@ public readonly kind: string;
 
 Kind of schema Available values: "openapi_v3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
-
----
-
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#kind ApiShieldSchema#kind}
 
 ---
 
@@ -1033,7 +1026,7 @@ public readonly name: string;
 
 Name of the schema.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#name ApiShieldSchema#name}
 
 ---
 
@@ -1045,7 +1038,7 @@ public readonly schemaId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#schema_id ApiShieldSchema#schema_id}.
 
 ---
 
@@ -1059,7 +1052,21 @@ public readonly validationEnabled: string;
 
 Flag whether schema is enabled for validation. Available values: "true", "false".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#validation_enabled ApiShieldSchema#validation_enabled}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.apiShieldSchema.ApiShieldSchemaConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/api_shield_schema#zone_id ApiShieldSchema#zone_id}
 
 ---
 

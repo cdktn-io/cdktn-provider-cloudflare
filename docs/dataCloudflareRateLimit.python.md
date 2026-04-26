@@ -4,7 +4,7 @@
 
 ### DataCloudflareRateLimit <a name="DataCloudflareRateLimit" id="@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limit cloudflare_rate_limit}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit cloudflare_rate_limit}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.Initializer"></a>
 
@@ -22,7 +22,7 @@ dataCloudflareRateLimit.DataCloudflareRateLimit(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   rate_limit_id: str,
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -108,17 +108,17 @@ Must be unique amongst siblings in the same scope
 
 Defines the unique identifier of the rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.Initializer.parameter.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
 
 ---
 
@@ -144,6 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -387,6 +388,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimit.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -501,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareRateLimit to
 
 The id of the existing DataCloudflareRateLimit that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limit#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +862,7 @@ dataCloudflareRateLimit.DataCloudflareRateLimitConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   rate_limit_id: str,
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -955,11 +962,11 @@ rate_limit_id: str
 
 Defines the unique identifier of the rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimitConfig.property.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRateLimit.DataCloudflareRateLimitConfig.property.zoneId"></a>
 
 ```python
 zone_id: str
@@ -969,7 +976,7 @@ zone_id: str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
 
 ---
 

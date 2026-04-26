@@ -4,7 +4,7 @@
 
 ### EmailRoutingDns <a name="EmailRoutingDns" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_dns cloudflare_email_routing_dns}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDns.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Domain of your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
 
 ---
 
@@ -622,7 +622,7 @@ The construct id used in the generated config for the EmailRoutingDns to import.
 
 The id of the existing EmailRoutingDns that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_dns#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1109,7 +1109,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_dns#zone_id EmailRoutingDns#zone_id}
 
 ---
 
@@ -1123,7 +1123,7 @@ name: str
 
 Domain of your zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/email_routing_dns#name EmailRoutingDns#name}
 
 ---
 
@@ -3835,6 +3835,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference.property.page">page</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference.property.totalCount">total_count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference.property.totalPages">total_pages</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfo">EmailRoutingDnsResultInfo</a></code> | *No description.* |
 
 ---
@@ -3897,6 +3898,16 @@ per_page: typing.Union[int, float]
 
 ```python
 total_count: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `total_pages`<sup>Required</sup> <a name="total_pages" id="@cdktn/provider-cloudflare.emailRoutingDns.EmailRoutingDnsResultInfoOutputReference.property.totalPages"></a>
+
+```python
+total_pages: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]

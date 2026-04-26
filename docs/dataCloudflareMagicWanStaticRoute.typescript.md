@@ -4,7 +4,7 @@
 
 ### DataCloudflareMagicWanStaticRoute <a name="DataCloudflareMagicWanStaticRoute" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_wan_static_route cloudflare_magic_wan_static_route}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRoute.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareMagicWanStat
 
 The id of the existing DataCloudflareMagicWanStaticRoute that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_wan_static_route#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -647,8 +654,8 @@ const dataCloudflareMagicWanStaticRouteConfig: dataCloudflareMagicWanStaticRoute
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.routeId">routeId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -722,20 +729,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_wan_static_route#account_id DataCloudflareMagicWanStaticRoute#account_id}
-
----
-
 ##### `routeId`<sup>Required</sup> <a name="routeId" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.routeId"></a>
 
 ```typescript
@@ -746,7 +739,21 @@ public readonly routeId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/magic_wan_static_route#route_id DataCloudflareMagicWanStaticRoute#route_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_wan_static_route#route_id DataCloudflareMagicWanStaticRoute#route_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanStaticRoute.DataCloudflareMagicWanStaticRouteConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/magic_wan_static_route#account_id DataCloudflareMagicWanStaticRoute#account_id}
 
 ---
 

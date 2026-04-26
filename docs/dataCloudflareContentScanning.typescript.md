@@ -4,14 +4,14 @@
 
 ### DataCloudflareContentScanning <a name="DataCloudflareContentScanning" id="@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning cloudflare_content_scanning}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning cloudflare_content_scanning}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.Initializer"></a>
 
 ```typescript
 import { dataCloudflareContentScanning } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareContentScanning.DataCloudflareContentScanning(scope: Construct, id: string, config: DataCloudflareContentScanningConfig)
+new dataCloudflareContentScanning.DataCloudflareContentScanning(scope: Construct, id: string, config?: DataCloudflareContentScanningConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanningConfig">DataCloudflareContentScanningConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanning.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareContentScann
 
 The id of the existing DataCloudflareContentScanning that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,7 +706,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanningConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareContentScanning.DataCloudflareContentScanningConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -709,7 +716,7 @@ public readonly zoneId: string;
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning#zone_id DataCloudflareContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning#zone_id DataCloudflareContentScanning#zone_id}
 
 ---
 

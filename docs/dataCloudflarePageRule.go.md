@@ -4,7 +4,7 @@
 
 ### DataCloudflarePageRule <a name="DataCloudflarePageRule" id="@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_rule cloudflare_page_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_rule cloudflare_page_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRule.resetZoneId"></a>
+
+```go
+func ResetZoneId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflarePageRule to 
 
 The id of the existing DataCloudflarePageRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -775,11 +782,11 @@ PageruleId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_rule#pagerule_id DataCloudflarePageRule#pagerule_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_rule#pagerule_id DataCloudflarePageRule#pagerule_id}
 
 ---
 
-##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRuleConfig.property.zoneId"></a>
+##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.dataCloudflarePageRule.DataCloudflarePageRuleConfig.property.zoneId"></a>
 
 ```go
 ZoneId *string
@@ -789,7 +796,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_rule#zone_id DataCloudflarePageRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_rule#zone_id DataCloudflarePageRule#zone_id}
 
 ---
 

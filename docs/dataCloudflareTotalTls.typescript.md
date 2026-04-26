@@ -4,14 +4,14 @@
 
 ### DataCloudflareTotalTls <a name="DataCloudflareTotalTls" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/total_tls cloudflare_total_tls}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/total_tls cloudflare_total_tls}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.Initializer"></a>
 
 ```typescript
 import { dataCloudflareTotalTls } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareTotalTls.DataCloudflareTotalTls(scope: Construct, id: string, config: DataCloudflareTotalTlsConfig)
+new dataCloudflareTotalTls.DataCloudflareTotalTls(scope: Construct, id: string, config?: DataCloudflareTotalTlsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTlsConfig">DataCloudflareTotalTlsConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTls.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareTotalTls to 
 
 The id of the existing DataCloudflareTotalTls that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/total_tls#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/total_tls#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -721,7 +728,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTlsConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareTotalTls.DataCloudflareTotalTlsConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -731,7 +738,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/total_tls#zone_id DataCloudflareTotalTls#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/total_tls#zone_id DataCloudflareTotalTls#zone_id}
 
 ---
 

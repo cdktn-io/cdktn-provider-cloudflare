@@ -4,14 +4,14 @@
 
 ### DataCloudflareZoneLockdowns <a name="DataCloudflareZoneLockdowns" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns cloudflare_zone_lockdowns}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.Initializer"></a>
 
 ```typescript
 import { dataCloudflareZoneLockdowns } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns(scope: Construct, id: string, config: DataCloudflareZoneLockdownsConfig)
+new dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns(scope: Construct, id: string, config?: DataCloudflareZoneLockdownsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig">DataCloudflareZoneLockdownsConfig</a>
 
@@ -78,6 +78,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.resetModifiedOn">resetModifiedOn</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.resetPriority">resetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.resetUriSearch">resetUriSearch</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -354,6 +355,12 @@ public resetPriority(): void
 public resetUriSearch(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdowns.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -457,7 +464,7 @@ The construct id used in the generated config for the DataCloudflareZoneLockdown
 
 The id of the existing DataCloudflareZoneLockdowns that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -904,7 +911,6 @@ const dataCloudflareZoneLockdownsConfig: dataCloudflareZoneLockdowns.DataCloudfl
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.createdOn">createdOn</a></code> | <code>string</code> | The timestamp of when the rule was created. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.description">description</a></code> | <code>string</code> | A string to search for in the description of existing rules. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.descriptionSearch">descriptionSearch</a></code> | <code>string</code> | A string to search for in the description of existing rules. |
@@ -915,6 +921,7 @@ const dataCloudflareZoneLockdownsConfig: dataCloudflareZoneLockdowns.DataCloudfl
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.modifiedOn">modifiedOn</a></code> | <code>string</code> | The timestamp of when the rule was last modified. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.priority">priority</a></code> | <code>number</code> | The priority of the rule to control the processing order. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.uriSearch">uriSearch</a></code> | <code>string</code> | A single URI to search for in the list of URLs of existing rules. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Defines an identifier. |
 
 ---
 
@@ -988,20 +995,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#zone_id DataCloudflareZoneLockdowns#zone_id}
-
----
-
 ##### `createdOn`<sup>Optional</sup> <a name="createdOn" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.createdOn"></a>
 
 ```typescript
@@ -1012,7 +1005,7 @@ public readonly createdOn: string;
 
 The timestamp of when the rule was created.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#created_on DataCloudflareZoneLockdowns#created_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#created_on DataCloudflareZoneLockdowns#created_on}
 
 ---
 
@@ -1026,7 +1019,7 @@ public readonly description: string;
 
 A string to search for in the description of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#description DataCloudflareZoneLockdowns#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#description DataCloudflareZoneLockdowns#description}
 
 ---
 
@@ -1040,7 +1033,7 @@ public readonly descriptionSearch: string;
 
 A string to search for in the description of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#description_search DataCloudflareZoneLockdowns#description_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#description_search DataCloudflareZoneLockdowns#description_search}
 
 ---
 
@@ -1054,7 +1047,7 @@ public readonly ip: string;
 
 A single IP address to search for in existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#ip DataCloudflareZoneLockdowns#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#ip DataCloudflareZoneLockdowns#ip}
 
 ---
 
@@ -1068,7 +1061,7 @@ public readonly ipRangeSearch: string;
 
 A single IP address range to search for in existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#ip_range_search DataCloudflareZoneLockdowns#ip_range_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#ip_range_search DataCloudflareZoneLockdowns#ip_range_search}
 
 ---
 
@@ -1082,7 +1075,7 @@ public readonly ipSearch: string;
 
 A single IP address to search for in existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#ip_search DataCloudflareZoneLockdowns#ip_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#ip_search DataCloudflareZoneLockdowns#ip_search}
 
 ---
 
@@ -1096,7 +1089,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#max_items DataCloudflareZoneLockdowns#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#max_items DataCloudflareZoneLockdowns#max_items}
 
 ---
 
@@ -1110,7 +1103,7 @@ public readonly modifiedOn: string;
 
 The timestamp of when the rule was last modified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#modified_on DataCloudflareZoneLockdowns#modified_on}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#modified_on DataCloudflareZoneLockdowns#modified_on}
 
 ---
 
@@ -1126,7 +1119,7 @@ The priority of the rule to control the processing order.
 
 A lower number indicates higher priority. If not provided, any rules with a configured priority will be processed before rules without a priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#priority DataCloudflareZoneLockdowns#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#priority DataCloudflareZoneLockdowns#priority}
 
 ---
 
@@ -1140,7 +1133,21 @@ public readonly uriSearch: string;
 
 A single URI to search for in the list of URLs of existing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zone_lockdowns#uri_search DataCloudflareZoneLockdowns#uri_search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#uri_search DataCloudflareZoneLockdowns#uri_search}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareZoneLockdowns.DataCloudflareZoneLockdownsConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zone_lockdowns#zone_id DataCloudflareZoneLockdowns#zone_id}
 
 ---
 

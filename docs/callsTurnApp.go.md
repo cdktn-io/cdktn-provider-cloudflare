@@ -4,7 +4,7 @@
 
 ### CallsTurnApp <a name="CallsTurnApp" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnAppConfig">CallsTurnAppConfig</a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetKeyId">ResetKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetName">ResetName</a></code> | *No description.* |
 
@@ -388,6 +389,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 ##### `ResetKeyId` <a name="ResetKeyId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetKeyId"></a>
 
 ```go
@@ -503,7 +510,7 @@ The construct id used in the generated config for the CallsTurnApp to import.
 
 The id of the existing CallsTurnApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,7 +923,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnAppConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnAppConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -926,7 +933,7 @@ AccountId *string
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
 
 ---
 
@@ -940,7 +947,7 @@ KeyId *string
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
 
 ---
 
@@ -954,7 +961,7 @@ Name *string
 
 A short description of a TURN key, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
 
 ---
 

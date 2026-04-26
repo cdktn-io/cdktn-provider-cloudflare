@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustAccessKeyConfiguration <a name="DataCloudflareZeroTrustAccessKeyConfiguration" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_key_configuration cloudflare_zero_trust_access_key_configuration}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.Initializer"></a>
 
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfigurationConfig">DataCloudflareZeroTrustAccessKeyConfigurationConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfiguration.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustAcc
 
 The id of the existing DataCloudflareZeroTrustAccessKeyConfiguration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_key_configuration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_key_configuration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -730,7 +737,7 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfigurationConfig.property.accountId"></a>
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustAccessKeyConfiguration.DataCloudflareZeroTrustAccessKeyConfigurationConfig.property.accountId"></a>
 
 ```go
 AccountId *string
@@ -740,7 +747,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_access_key_configuration#account_id DataCloudflareZeroTrustAccessKeyConfiguration#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_access_key_configuration#account_id DataCloudflareZeroTrustAccessKeyConfiguration#account_id}
 
 ---
 

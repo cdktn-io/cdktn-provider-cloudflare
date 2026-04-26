@@ -4,7 +4,7 @@
 
 ### R2BucketLock <a name="R2BucketLock" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock cloudflare_r2_bucket_lock}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer"></a>
 
@@ -21,8 +21,8 @@ r2BucketLock.R2BucketLock(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   bucket_name: str,
+  account_id: str = None,
   jurisdiction: str = None,
   rules: IResolvable | typing.List[R2BucketLockRules] = None
 )
@@ -39,10 +39,10 @@ r2BucketLock.R2BucketLock(
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.bucketName">bucket_name</a></code> | <code>str</code> | Name of the bucket. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.jurisdiction">jurisdiction</a></code> | <code>str</code> | Jurisdiction of the bucket. |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules">R2BucketLockRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules">R2BucketLockRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}. |
 
 ---
 
@@ -106,23 +106,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
-
----
-
 ##### `bucket_name`<sup>Required</sup> <a name="bucket_name" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.bucketName"></a>
 
 - *Type:* str
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules">R2BucketLockRules</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
 
 ---
 
@@ -173,6 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.putRules">put_rules</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.resetJurisdiction">reset_jurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.resetRules">reset_rules</a></code> | *No description.* |
 
@@ -540,6 +541,12 @@ def put_rules(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_jurisdiction` <a name="reset_jurisdiction" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLock.resetJurisdiction"></a>
 
 ```python
@@ -666,7 +673,7 @@ The construct id used in the generated config for the R2BucketLock to import.
 
 The id of the existing R2BucketLock that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -964,8 +971,8 @@ r2BucketLock.R2BucketLockConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   bucket_name: str,
+  account_id: str = None,
   jurisdiction: str = None,
   rules: IResolvable | typing.List[R2BucketLockRules] = None
 )
@@ -982,10 +989,10 @@ r2BucketLock.R2BucketLockConfig(
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.accountId">account_id</a></code> | <code>str</code> | Account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.bucketName">bucket_name</a></code> | <code>str</code> | Name of the bucket. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.accountId">account_id</a></code> | <code>str</code> | Account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.jurisdiction">jurisdiction</a></code> | <code>str</code> | Jurisdiction of the bucket. |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules">R2BucketLockRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.rules">rules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules">R2BucketLockRules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}. |
 
 ---
 
@@ -1059,20 +1066,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
-
----
-
 ##### `bucket_name`<sup>Required</sup> <a name="bucket_name" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.bucketName"></a>
 
 ```python
@@ -1083,7 +1076,21 @@ bucket_name: str
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#bucket_name R2BucketLock#bucket_name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#account_id R2BucketLock#account_id}
 
 ---
 
@@ -1097,7 +1104,7 @@ jurisdiction: str
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#jurisdiction R2BucketLock#jurisdiction}
 
 ---
 
@@ -1109,7 +1116,7 @@ rules: IResolvable | typing.List[R2BucketLockRules]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRules">R2BucketLockRules</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#rules R2BucketLock#rules}.
 
 ---
 
@@ -1149,7 +1156,7 @@ condition: R2BucketLockRulesCondition
 
 Condition to apply a lock rule to an object for how long in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#condition R2BucketLock#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#condition R2BucketLock#condition}
 
 ---
 
@@ -1163,7 +1170,7 @@ enabled: bool | IResolvable
 
 Whether or not this rule is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#enabled R2BucketLock#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#enabled R2BucketLock#enabled}
 
 ---
 
@@ -1177,7 +1184,7 @@ id: str
 
 Unique identifier for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#id R2BucketLock#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#id R2BucketLock#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1194,7 +1201,7 @@ prefix: str
 
 Rule will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#prefix R2BucketLock#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#prefix R2BucketLock#prefix}
 
 ---
 
@@ -1217,8 +1224,8 @@ r2BucketLock.R2BucketLockRulesCondition(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.type">type</a></code> | <code>str</code> | Available values: "Age", "Date", "Indefinite". |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.date">date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}. |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.maxAgeSeconds">max_age_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.date">date</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLock.R2BucketLockRulesCondition.property.maxAgeSeconds">max_age_seconds</a></code> | <code>typing.Union[int, float]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}. |
 
 ---
 
@@ -1232,7 +1239,7 @@ type: str
 
 Available values: "Age", "Date", "Indefinite".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}
 
 ---
 
@@ -1244,7 +1251,7 @@ date: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}.
 
 ---
 
@@ -1256,7 +1263,7 @@ max_age_seconds: typing.Union[int, float]
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}.
 
 ---
 
@@ -2052,7 +2059,7 @@ def put_condition(
 
 Available values: "Age", "Date", "Indefinite".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#type R2BucketLock#type}
 
 ---
 
@@ -2060,7 +2067,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#date R2BucketLock#date}.
 
 ---
 
@@ -2068,7 +2075,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* typing.Union[int, float]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_bucket_lock#max_age_seconds R2BucketLock#max_age_seconds}.
 
 ---
 

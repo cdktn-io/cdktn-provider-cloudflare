@@ -4,7 +4,7 @@
 
 ### ZeroTrustTunnelCloudflaredVirtualNetwork <a name="ZeroTrustTunnelCloudflaredVirtualNetwork" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network cloudflare_zero_trust_tunnel_cloudflared_virtual_network}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer"></a>
 
@@ -21,8 +21,8 @@ zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwor
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   name: str,
+  account_id: str = None,
   comment: str = None,
   is_default: bool | IResolvable = None,
   is_default_network: bool | IResolvable = None
@@ -40,8 +40,8 @@ zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwor
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.name">name</a></code> | <code>str</code> | A user-friendly name for the virtual network. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.comment">comment</a></code> | <code>str</code> | Optional remark describing the virtual network. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.isDefault">is_default</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, this virtual network is the default for the account. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.isDefaultNetwork">is_default_network</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, this virtual network is the default for the account. |
@@ -108,23 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Cloudflare account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#account_id ZeroTrustTunnelCloudflaredVirtualNetwork#account_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 A user-friendly name for the virtual network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#name ZeroTrustTunnelCloudflaredVirtualNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#name ZeroTrustTunnelCloudflaredVirtualNetwork#name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Cloudflare account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#account_id ZeroTrustTunnelCloudflaredVirtualNetwork#account_id}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Optional remark describing the virtual network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#comment ZeroTrustTunnelCloudflaredVirtualNetwork#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#comment ZeroTrustTunnelCloudflaredVirtualNetwork#comment}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If `true`, this virtual network is the default for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default ZeroTrustTunnelCloudflaredVirtualNetwork#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default ZeroTrustTunnelCloudflaredVirtualNetwork#is_default}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If `true`, this virtual network is the default for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default_network ZeroTrustTunnelCloudflaredVirtualNetwork#is_default_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default_network ZeroTrustTunnelCloudflaredVirtualNetwork#is_default_network}
 
 ---
 
@@ -186,6 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.resetIsDefault">reset_is_default</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.resetIsDefaultNetwork">reset_is_default_network</a></code> | *No description.* |
@@ -540,6 +541,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_comment` <a name="reset_comment" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwork.resetComment"></a>
 
 ```python
@@ -672,7 +679,7 @@ The construct id used in the generated config for the ZeroTrustTunnelCloudflared
 
 The id of the existing ZeroTrustTunnelCloudflaredVirtualNetwork that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1025,8 +1032,8 @@ zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwor
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   name: str,
+  account_id: str = None,
   comment: str = None,
   is_default: bool | IResolvable = None,
   is_default_network: bool | IResolvable = None
@@ -1044,8 +1051,8 @@ zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetwor
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.name">name</a></code> | <code>str</code> | A user-friendly name for the virtual network. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.comment">comment</a></code> | <code>str</code> | Optional remark describing the virtual network. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.isDefault">is_default</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, this virtual network is the default for the account. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.isDefaultNetwork">is_default_network</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, this virtual network is the default for the account. |
@@ -1122,20 +1129,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Cloudflare account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#account_id ZeroTrustTunnelCloudflaredVirtualNetwork#account_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.name"></a>
 
 ```python
@@ -1146,7 +1139,21 @@ name: str
 
 A user-friendly name for the virtual network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#name ZeroTrustTunnelCloudflaredVirtualNetwork#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#name ZeroTrustTunnelCloudflaredVirtualNetwork#name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredVirtualNetwork.ZeroTrustTunnelCloudflaredVirtualNetworkConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Cloudflare account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#account_id ZeroTrustTunnelCloudflaredVirtualNetwork#account_id}
 
 ---
 
@@ -1160,7 +1167,7 @@ comment: str
 
 Optional remark describing the virtual network.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#comment ZeroTrustTunnelCloudflaredVirtualNetwork#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#comment ZeroTrustTunnelCloudflaredVirtualNetwork#comment}
 
 ---
 
@@ -1174,7 +1181,7 @@ is_default: bool | IResolvable
 
 If `true`, this virtual network is the default for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default ZeroTrustTunnelCloudflaredVirtualNetwork#is_default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default ZeroTrustTunnelCloudflaredVirtualNetwork#is_default}
 
 ---
 
@@ -1188,7 +1195,7 @@ is_default_network: bool | IResolvable
 
 If `true`, this virtual network is the default for the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default_network ZeroTrustTunnelCloudflaredVirtualNetwork#is_default_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_tunnel_cloudflared_virtual_network#is_default_network ZeroTrustTunnelCloudflaredVirtualNetwork#is_default_network}
 
 ---
 

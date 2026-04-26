@@ -4,7 +4,7 @@
 
 ### DataCloudflareQueue <a name="DataCloudflareQueue" id="@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue cloudflare_queue}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/queue cloudflare_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueue.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareQueue to imp
 
 The id of the existing DataCloudflareQueue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -724,8 +731,8 @@ const dataCloudflareQueueConfig: dataCloudflareQueue.DataCloudflareQueueConfig =
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.accountId">accountId</a></code> | <code>string</code> | A Resource identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.queueId">queueId</a></code> | <code>string</code> | A Resource identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.accountId">accountId</a></code> | <code>string</code> | A Resource identifier. |
 
 ---
 
@@ -799,20 +806,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-A Resource identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
-
----
-
 ##### `queueId`<sup>Required</sup> <a name="queueId" id="@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.queueId"></a>
 
 ```typescript
@@ -823,7 +816,21 @@ public readonly queueId: string;
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/queue#queue_id DataCloudflareQueue#queue_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareQueue.DataCloudflareQueueConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+A Resource identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/queue#account_id DataCloudflareQueue#account_id}
 
 ---
 

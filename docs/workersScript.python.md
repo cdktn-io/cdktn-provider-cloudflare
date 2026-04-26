@@ -4,7 +4,7 @@
 
 ### WorkersScript <a name="WorkersScript" id="@cdktn/provider-cloudflare.workersScript.WorkersScript"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script cloudflare_workers_script}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script cloudflare_workers_script}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer"></a>
 
@@ -21,8 +21,9 @@ workersScript.WorkersScript(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   script_name: str,
+  account_id: str = None,
+  annotations: WorkersScriptAnnotations = None,
   assets: WorkersScriptAssets = None,
   bindings: IResolvable | typing.List[WorkersScriptBindings] = None,
   body_part: str = None,
@@ -56,8 +57,9 @@ workersScript.WorkersScript(
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a></code> | Annotations for the version created by this upload. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.assets">assets</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a></code> | Configuration for assets within a Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.bindings">bindings</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.bodyPart">body_part</a></code> | <code>str</code> | Name of the uploaded file that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker. |
@@ -140,23 +142,33 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#account_id WorkersScript#account_id}
-
----
-
 ##### `script_name`<sup>Required</sup> <a name="script_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.scriptName"></a>
 
 - *Type:* str
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#account_id WorkersScript#account_id}
+
+---
+
+##### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.Initializer.parameter.annotations"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a>
+
+Annotations for the version created by this upload.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#annotations WorkersScript#annotations}
 
 ---
 
@@ -166,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#assets WorkersScript#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#assets WorkersScript#assets}
 
 ---
 
@@ -176,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#bindings WorkersScript#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#bindings WorkersScript#bindings}
 
 ---
 
@@ -186,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the uploaded file that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#body_part WorkersScript#body_part}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#body_part WorkersScript#body_part}
 
 ---
 
@@ -198,7 +210,7 @@ Date indicating targeted support in the Workers runtime.
 
 Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
 
 ---
 
@@ -210,7 +222,7 @@ Flags that enable or disable certain features in the Workers runtime.
 
 Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
 
 ---
 
@@ -220,7 +232,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Module or Service Worker contents of the Worker. Conflicts with `content_file`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content WorkersScript#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content WorkersScript#content}
 
 ---
 
@@ -232,7 +244,7 @@ Path to a file containing the Module or Service Worker contents of the Worker.
 
 Conflicts with `content`. Must be paired with `content_sha256`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content_file WorkersScript#content_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content_file WorkersScript#content_file}
 
 ---
 
@@ -244,7 +256,7 @@ SHA-256 hash of the Worker contents.
 
 Used to trigger updates when source code changes. Must be provided when `content_file` is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content_sha256 WorkersScript#content_sha256}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content_sha256 WorkersScript#content_sha256}
 
 ---
 
@@ -254,7 +266,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Content-Type of the Worker. Required if uploading a non-JavaScript Worker (e.g. "text/x-python").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content_type WorkersScript#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content_type WorkersScript#content_type}
 
 ---
 
@@ -264,7 +276,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
 
 ---
 
@@ -274,7 +286,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of binding types to keep from previous_upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
 
 ---
 
@@ -284,7 +296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Limits to apply for this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#limits WorkersScript#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#limits WorkersScript#limits}
 
 ---
 
@@ -294,7 +306,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether Logpush is turned on for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#logpush WorkersScript#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#logpush WorkersScript#logpush}
 
 ---
 
@@ -304,7 +316,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the uploaded file that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#main_module WorkersScript#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#main_module WorkersScript#main_module}
 
 ---
 
@@ -314,7 +326,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Migrations to apply for Durable Objects associated with this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#migrations WorkersScript#migrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#migrations WorkersScript#migrations}
 
 ---
 
@@ -324,7 +336,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#observability WorkersScript#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#observability WorkersScript#observability}
 
 ---
 
@@ -334,7 +346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode='smart' for Smart Placement, or one of region/hostname/host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#placement WorkersScript#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#placement WorkersScript#placement}
 
 ---
 
@@ -344,7 +356,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of Workers that will consume logs from the attached Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
 
 ---
 
@@ -354,7 +366,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Usage model for the Worker invocations. Available values: "standard", "bundled", "unbound".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
 
 ---
 
@@ -386,6 +398,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.putAnnotations">put_annotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.putAssets">put_assets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.putBindings">put_bindings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.putLimits">put_limits</a></code> | *No description.* |
@@ -393,6 +406,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.putObservability">put_observability</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.putPlacement">put_placement</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.putTailConsumers">put_tail_consumers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.resetAnnotations">reset_annotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.resetAssets">reset_assets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.resetBindings">reset_bindings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.resetBodyPart">reset_body_part</a></code> | *No description.* |
@@ -763,6 +778,35 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `put_annotations` <a name="put_annotations" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.putAnnotations"></a>
+
+```python
+def put_annotations(
+  workers_message: str = None,
+  workers_tag: str = None
+) -> None
+```
+
+###### `workers_message`<sup>Optional</sup> <a name="workers_message" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.putAnnotations.parameter.workersMessage"></a>
+
+- *Type:* str
+
+Human-readable message about the version. Truncated to 1000 bytes if longer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#workers_message WorkersScript#workers_message}
+
+---
+
+###### `workers_tag`<sup>Optional</sup> <a name="workers_tag" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.putAnnotations.parameter.workersTag"></a>
+
+- *Type:* str
+
+User-provided identifier for the version. Maximum 100 bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#workers_tag WorkersScript#workers_tag}
+
+---
+
 ##### `put_assets` <a name="put_assets" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.putAssets"></a>
 
 ```python
@@ -779,7 +823,7 @@ def put_assets(
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#config WorkersScript#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#config WorkersScript#config}
 
 ---
 
@@ -789,7 +833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Path to the directory containing asset files to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#directory WorkersScript#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#directory WorkersScript#directory}
 
 ---
 
@@ -799,7 +843,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Token provided upon successful upload of all files from a registered manifest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#jwt WorkersScript#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#jwt WorkersScript#jwt}
 
 ---
 
@@ -821,7 +865,8 @@ def put_bindings(
 
 ```python
 def put_limits(
-  cpu_ms: typing.Union[int, float] = None
+  cpu_ms: typing.Union[int, float] = None,
+  subrequests: typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -831,7 +876,17 @@ def put_limits(
 
 The amount of CPU time this Worker can use in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#cpu_ms WorkersScript#cpu_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#cpu_ms WorkersScript#cpu_ms}
+
+---
+
+###### `subrequests`<sup>Optional</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.putLimits.parameter.subrequests"></a>
+
+- *Type:* typing.Union[int, float]
+
+The number of subrequests this Worker can make per request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#subrequests WorkersScript#subrequests}
 
 ---
 
@@ -856,7 +911,7 @@ def put_migrations(
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
 
 ---
 
@@ -866,7 +921,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
 
 ---
 
@@ -876,7 +931,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
 
 ---
 
@@ -886,7 +941,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Tag to set as the latest migration tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
 
 ---
 
@@ -898,7 +953,7 @@ Tag used to verify against the latest migration tag for this Worker.
 
 If they don't match, the upload is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
 
 ---
 
@@ -908,7 +963,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
 
 ---
 
@@ -918,7 +973,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Migrations to apply in order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#steps WorkersScript#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#steps WorkersScript#steps}
 
 ---
 
@@ -928,7 +983,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
 
 ---
 
@@ -938,7 +993,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 def put_observability(
   enabled: bool | IResolvable,
   head_sampling_rate: typing.Union[int, float] = None,
-  logs: WorkersScriptObservabilityLogs = None
+  logs: WorkersScriptObservabilityLogs = None,
+  traces: WorkersScriptObservabilityTraces = None
 ) -> None
 ```
 
@@ -948,7 +1004,7 @@ def put_observability(
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#enabled WorkersScript#enabled}
 
 ---
 
@@ -958,7 +1014,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
 
 ---
 
@@ -968,7 +1024,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#logs WorkersScript#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#logs WorkersScript#logs}
+
+---
+
+###### `traces`<sup>Optional</sup> <a name="traces" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.putObservability.parameter.traces"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces">WorkersScriptObservabilityTraces</a>
+
+Trace settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#traces WorkersScript#traces}
 
 ---
 
@@ -986,7 +1052,7 @@ def put_placement(
 
 Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Available values: "smart", "targeted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#mode WorkersScript#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#mode WorkersScript#mode}
 
 ---
 
@@ -1003,6 +1069,18 @@ def put_tail_consumers(
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptTailConsumers">WorkersScriptTailConsumers</a>]
 
 ---
+
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
+##### `reset_annotations` <a name="reset_annotations" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.resetAnnotations"></a>
+
+```python
+def reset_annotations() -> None
+```
 
 ##### `reset_assets` <a name="reset_assets" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.resetAssets"></a>
 
@@ -1232,7 +1310,7 @@ The construct id used in the generated config for the WorkersScript to import.
 
 The id of the existing WorkersScript that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1262,6 +1340,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference">WorkersScriptAnnotationsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.assets">assets</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAssetsOutputReference">WorkersScriptAssetsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.bindings">bindings</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsList">WorkersScriptBindingsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
@@ -1283,6 +1362,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.startupTimeMs">startup_time_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.tailConsumers">tail_consumers</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptTailConsumersList">WorkersScriptTailConsumersList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.annotationsInput">annotations_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.assetsInput">assets_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.bindingsInput">bindings_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScript.property.bodyPartInput">body_part_input</a></code> | <code>str</code> | *No description.* |
@@ -1459,6 +1539,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 ```
 
 - *Type:* typing.List[cdktn.FileProvisioner | cdktn.LocalExecProvisioner | cdktn.RemoteExecProvisioner]
+
+---
+
+##### `annotations`<sup>Required</sup> <a name="annotations" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.property.annotations"></a>
+
+```python
+annotations: WorkersScriptAnnotationsOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference">WorkersScriptAnnotationsOutputReference</a>
 
 ---
 
@@ -1669,6 +1759,16 @@ account_id_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `annotations_input`<sup>Optional</sup> <a name="annotations_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScript.property.annotationsInput"></a>
+
+```python
+annotations_input: IResolvable | WorkersScriptAnnotations
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a>
 
 ---
 
@@ -2032,6 +2132,56 @@ tfResourceType: str
 
 ## Structs <a name="Structs" id="Structs"></a>
 
+### WorkersScriptAnnotations <a name="WorkersScriptAnnotations" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import workers_script
+
+workersScript.WorkersScriptAnnotations(
+  workers_message: str = None,
+  workers_tag: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations.property.workersMessage">workers_message</a></code> | <code>str</code> | Human-readable message about the version. Truncated to 1000 bytes if longer. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations.property.workersTag">workers_tag</a></code> | <code>str</code> | User-provided identifier for the version. Maximum 100 bytes. |
+
+---
+
+##### `workers_message`<sup>Optional</sup> <a name="workers_message" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations.property.workersMessage"></a>
+
+```python
+workers_message: str
+```
+
+- *Type:* str
+
+Human-readable message about the version. Truncated to 1000 bytes if longer.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#workers_message WorkersScript#workers_message}
+
+---
+
+##### `workers_tag`<sup>Optional</sup> <a name="workers_tag" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations.property.workersTag"></a>
+
+```python
+workers_tag: str
+```
+
+- *Type:* str
+
+User-provided identifier for the version. Maximum 100 bytes.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#workers_tag WorkersScript#workers_tag}
+
+---
+
 ### WorkersScriptAssets <a name="WorkersScriptAssets" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAssets"></a>
 
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAssets.Initializer"></a>
@@ -2066,7 +2216,7 @@ config: WorkersScriptAssetsConfig
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#config WorkersScript#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#config WorkersScript#config}
 
 ---
 
@@ -2080,7 +2230,7 @@ directory: str
 
 Path to the directory containing asset files to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#directory WorkersScript#directory}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#directory WorkersScript#directory}
 
 ---
 
@@ -2094,7 +2244,7 @@ jwt: str
 
 Token provided upon successful upload of all files from a registered manifest.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#jwt WorkersScript#jwt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#jwt WorkersScript#jwt}
 
 ---
 
@@ -2138,7 +2288,7 @@ headers: str
 
 The contents of a _headers file (used to attach custom headers on asset responses).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#headers WorkersScript#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#headers WorkersScript#headers}
 
 ---
 
@@ -2152,7 +2302,7 @@ html_handling: str
 
 Determines the redirects and rewrites of requests for HTML content. Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
 
 ---
 
@@ -2168,7 +2318,7 @@ Determines the response when a request does not match a static asset, and there 
 
 Available values: "none", "404-page", "single-page-application".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
 
 ---
 
@@ -2182,7 +2332,7 @@ redirects: str
 
 The contents of a _redirects file (used to apply redirects or proxy paths ahead of asset serving).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#redirects WorkersScript#redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#redirects WorkersScript#redirects}
 
 ---
 
@@ -2198,7 +2348,7 @@ When a boolean true, requests will always invoke the Worker script.
 
 Otherwise, attempt to serve an asset matching the request, falling back to the Worker script. When a list of strings, contains path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either '/' or '!/'. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
 
 ---
 
@@ -2214,7 +2364,7 @@ When true and the incoming request matches an asset, that will be served instead
 
 When false, requests will always invoke the Worker script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
 
 ---
 
@@ -2231,21 +2381,27 @@ workersScript.WorkersScriptBindings(
   algorithm: str = None,
   allowed_destination_addresses: typing.List[str] = None,
   allowed_sender_addresses: typing.List[str] = None,
+  app_id: str = None,
   bucket_name: str = None,
   certificate_id: str = None,
   class_name: str = None,
+  database_id: str = None,
   dataset: str = None,
   destination_address: str = None,
+  dispatch_namespace: str = None,
+  entrypoint: str = None,
   environment: str = None,
   format: str = None,
   id: str = None,
   index_name: str = None,
+  instance_name: str = None,
   json: str = None,
   jurisdiction: str = None,
   key_base64: str = None,
   key_jwk: str = None,
   namespace: str = None,
   namespace_id: str = None,
+  network_id: str = None,
   old_name: str = None,
   outbound: WorkersScriptBindingsOutbound = None,
   part: str = None,
@@ -2254,9 +2410,11 @@ workersScript.WorkersScriptBindings(
   script_name: str = None,
   secret_name: str = None,
   service: str = None,
+  service_id: str = None,
   simple: WorkersScriptBindingsSimple = None,
   store_id: str = None,
   text: str = None,
+  tunnel_id: str = None,
   usages: typing.List[str] = None,
   version_id: str = None,
   workflow_name: str = None
@@ -2272,21 +2430,27 @@ workersScript.WorkersScriptBindings(
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.algorithm">algorithm</a></code> | <code>str</code> | Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm). |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.allowedDestinationAddresses">allowed_destination_addresses</a></code> | <code>typing.List[str]</code> | List of allowed destination addresses. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.allowedSenderAddresses">allowed_sender_addresses</a></code> | <code>typing.List[str]</code> | List of allowed sender addresses. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.appId">app_id</a></code> | <code>str</code> | ID of the Flagship app to bind to for feature flag evaluation. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.bucketName">bucket_name</a></code> | <code>str</code> | R2 bucket to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.certificateId">certificate_id</a></code> | <code>str</code> | Identifier of the certificate to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.className">class_name</a></code> | <code>str</code> | The exported class name of the Durable Object. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.databaseId">database_id</a></code> | <code>str</code> | Identifier of the D1 database to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.dataset">dataset</a></code> | <code>str</code> | The name of the dataset to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.destinationAddress">destination_address</a></code> | <code>str</code> | Destination address for the email. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.dispatchNamespace">dispatch_namespace</a></code> | <code>str</code> | The dispatch namespace the Durable Object script belongs to. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.entrypoint">entrypoint</a></code> | <code>str</code> | Entrypoint to invoke on the target Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.environment">environment</a></code> | <code>str</code> | The environment of the script_name to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.format">format</a></code> | <code>str</code> | Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format). Available values: "raw", "pkcs8", "spki", "jwk". |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.id">id</a></code> | <code>str</code> | Identifier of the D1 database to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.indexName">index_name</a></code> | <code>str</code> | Name of the Vectorize index to bind to. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.instanceName">instance_name</a></code> | <code>str</code> | The user-chosen instance name. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.json">json</a></code> | <code>str</code> | JSON data to use. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.jurisdiction">jurisdiction</a></code> | <code>str</code> | The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp". |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.jurisdiction">jurisdiction</a></code> | <code>str</code> | The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp", "fedramp-high". |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.keyBase64">key_base64</a></code> | <code>str</code> | Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki". |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.keyJwk">key_jwk</a></code> | <code>str</code> | Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk". |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.namespace">namespace</a></code> | <code>str</code> | The name of the dispatch namespace. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.namespace">namespace</a></code> | <code>str</code> | The namespace the instance belongs to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.namespaceId">namespace_id</a></code> | <code>str</code> | Namespace identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.networkId">network_id</a></code> | <code>str</code> | Identifier of the network to bind to. Only "cf1:network" is currently supported. Mutually exclusive with tunnel_id. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.oldName">old_name</a></code> | <code>str</code> | The old name of the inherited binding. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.outbound">outbound</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a></code> | Outbound worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.part">part</a></code> | <code>str</code> | The name of the file containing the data content. Only accepted for `service worker syntax` Workers. |
@@ -2295,9 +2459,11 @@ workersScript.WorkersScriptBindings(
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.scriptName">script_name</a></code> | <code>str</code> | The script where the Durable Object is defined, if it is external to this Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.secretName">secret_name</a></code> | <code>str</code> | Name of the secret in the store. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.service">service</a></code> | <code>str</code> | Name of Worker to bind to. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.serviceId">service_id</a></code> | <code>str</code> | Identifier of the VPC service to bind to. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.simple">simple</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsSimple">WorkersScriptBindingsSimple</a></code> | A simple rate limit. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.storeId">store_id</a></code> | <code>str</code> | ID of the store containing the secret. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.text">text</a></code> | <code>str</code> | The text value to use. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.tunnelId">tunnel_id</a></code> | <code>str</code> | UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.usages">usages</a></code> | <code>typing.List[str]</code> | Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages). |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.versionId">version_id</a></code> | <code>str</code> | Identifier for the version to inherit the binding from, which can be the version ID or the literal "latest" to inherit from the latest version. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.workflowName">workflow_name</a></code> | <code>str</code> | Name of the Workflow to bind to. |
@@ -2314,7 +2480,7 @@ name: str
 
 A JavaScript variable name for the binding.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#name WorkersScript#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#name WorkersScript#name}
 
 ---
 
@@ -2328,9 +2494,9 @@ type: str
 
 The kind of resource that the binding provides.
 
-Available values: "ai", "analytics_engine", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "mtls_certificate", "plain_text", "pipelines", "queue", "r2_bucket", "secret_text", "send_email", "service", "tail_consumer", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow", "wasm_module".
+Available values: "ai", "ai_search", "ai_search_namespace", "analytics_engine", "assets", "browser", "d1", "data_blob", "dispatch_namespace", "durable_object_namespace", "hyperdrive", "inherit", "images", "json", "kv_namespace", "media", "mtls_certificate", "plain_text", "pipelines", "queue", "ratelimit", "r2_bucket", "secret_text", "send_email", "service", "text_blob", "vectorize", "version_metadata", "secrets_store_secret", "secret_key", "workflow", "wasm_module", "vpc_service", "vpc_network".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#type WorkersScript#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#type WorkersScript#type}
 
 ---
 
@@ -2344,7 +2510,7 @@ algorithm: str
 
 Algorithm-specific key parameters. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#algorithm).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#algorithm WorkersScript#algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#algorithm WorkersScript#algorithm}
 
 ---
 
@@ -2358,7 +2524,7 @@ allowed_destination_addresses: typing.List[str]
 
 List of allowed destination addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#allowed_destination_addresses WorkersScript#allowed_destination_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#allowed_destination_addresses WorkersScript#allowed_destination_addresses}
 
 ---
 
@@ -2372,7 +2538,21 @@ allowed_sender_addresses: typing.List[str]
 
 List of allowed sender addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#allowed_sender_addresses WorkersScript#allowed_sender_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#allowed_sender_addresses WorkersScript#allowed_sender_addresses}
+
+---
+
+##### `app_id`<sup>Optional</sup> <a name="app_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.appId"></a>
+
+```python
+app_id: str
+```
+
+- *Type:* str
+
+ID of the Flagship app to bind to for feature flag evaluation.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#app_id WorkersScript#app_id}
 
 ---
 
@@ -2386,7 +2566,7 @@ bucket_name: str
 
 R2 bucket to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#bucket_name WorkersScript#bucket_name}
 
 ---
 
@@ -2400,7 +2580,7 @@ certificate_id: str
 
 Identifier of the certificate to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#certificate_id WorkersScript#certificate_id}
 
 ---
 
@@ -2414,7 +2594,21 @@ class_name: str
 
 The exported class name of the Durable Object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#class_name WorkersScript#class_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#class_name WorkersScript#class_name}
+
+---
+
+##### `database_id`<sup>Optional</sup> <a name="database_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.databaseId"></a>
+
+```python
+database_id: str
+```
+
+- *Type:* str
+
+Identifier of the D1 database to bind to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#database_id WorkersScript#database_id}
 
 ---
 
@@ -2428,7 +2622,7 @@ dataset: str
 
 The name of the dataset to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#dataset WorkersScript#dataset}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#dataset WorkersScript#dataset}
 
 ---
 
@@ -2442,7 +2636,35 @@ destination_address: str
 
 Destination address for the email.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#destination_address WorkersScript#destination_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#destination_address WorkersScript#destination_address}
+
+---
+
+##### `dispatch_namespace`<sup>Optional</sup> <a name="dispatch_namespace" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.dispatchNamespace"></a>
+
+```python
+dispatch_namespace: str
+```
+
+- *Type:* str
+
+The dispatch namespace the Durable Object script belongs to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#dispatch_namespace WorkersScript#dispatch_namespace}
+
+---
+
+##### `entrypoint`<sup>Optional</sup> <a name="entrypoint" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.entrypoint"></a>
+
+```python
+entrypoint: str
+```
+
+- *Type:* str
+
+Entrypoint to invoke on the target Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#entrypoint WorkersScript#entrypoint}
 
 ---
 
@@ -2456,7 +2678,7 @@ environment: str
 
 The environment of the script_name to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#environment WorkersScript#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#environment WorkersScript#environment}
 
 ---
 
@@ -2470,7 +2692,7 @@ format: str
 
 Data format of the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#format). Available values: "raw", "pkcs8", "spki", "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#format WorkersScript#format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#format WorkersScript#format}
 
 ---
 
@@ -2484,7 +2706,7 @@ id: str
 
 Identifier of the D1 database to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#id WorkersScript#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#id WorkersScript#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -2501,7 +2723,23 @@ index_name: str
 
 Name of the Vectorize index to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#index_name WorkersScript#index_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#index_name WorkersScript#index_name}
+
+---
+
+##### `instance_name`<sup>Optional</sup> <a name="instance_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.instanceName"></a>
+
+```python
+instance_name: str
+```
+
+- *Type:* str
+
+The user-chosen instance name.
+
+Must exist at deploy time. The worker can search, chat, update, and manage items/jobs on this instance.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#instance_name WorkersScript#instance_name}
 
 ---
 
@@ -2515,7 +2753,7 @@ json: str
 
 JSON data to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#json WorkersScript#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#json WorkersScript#json}
 
 ---
 
@@ -2527,9 +2765,9 @@ jurisdiction: str
 
 - *Type:* str
 
-The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp".
+The [jurisdiction](https://developers.cloudflare.com/r2/reference/data-location/#jurisdictional-restrictions) of the R2 bucket. Available values: "eu", "fedramp", "fedramp-high".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#jurisdiction WorkersScript#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#jurisdiction WorkersScript#jurisdiction}
 
 ---
 
@@ -2543,7 +2781,7 @@ key_base64: str
 
 Base64-encoded key data. Required if `format` is "raw", "pkcs8", or "spki".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#key_base64 WorkersScript#key_base64}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#key_base64 WorkersScript#key_base64}
 
 ---
 
@@ -2557,7 +2795,7 @@ key_jwk: str
 
 Key data in [JSON Web Key](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#json_web_key) format. Required if `format` is "jwk".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#key_jwk WorkersScript#key_jwk}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#key_jwk WorkersScript#key_jwk}
 
 ---
 
@@ -2569,9 +2807,11 @@ namespace: str
 
 - *Type:* str
 
-The name of the dispatch namespace.
+The namespace the instance belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+Defaults to "default" if omitted. Customers who don't use namespaces can simply omit this field.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#namespace WorkersScript#namespace}
 
 ---
 
@@ -2585,7 +2825,21 @@ namespace_id: str
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#namespace_id WorkersScript#namespace_id}
+
+---
+
+##### `network_id`<sup>Optional</sup> <a name="network_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.networkId"></a>
+
+```python
+network_id: str
+```
+
+- *Type:* str
+
+Identifier of the network to bind to. Only "cf1:network" is currently supported. Mutually exclusive with tunnel_id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#network_id WorkersScript#network_id}
 
 ---
 
@@ -2601,7 +2855,7 @@ The old name of the inherited binding.
 
 If set, the binding will be renamed from `old_name` to `name` in the new version. If not set, the binding will keep the same name between versions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#old_name WorkersScript#old_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#old_name WorkersScript#old_name}
 
 ---
 
@@ -2615,7 +2869,7 @@ outbound: WorkersScriptBindingsOutbound
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#outbound WorkersScript#outbound}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#outbound WorkersScript#outbound}
 
 ---
 
@@ -2629,7 +2883,7 @@ part: str
 
 The name of the file containing the data content. Only accepted for `service worker syntax` Workers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#part WorkersScript#part}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#part WorkersScript#part}
 
 ---
 
@@ -2643,7 +2897,7 @@ pipeline: str
 
 Name of the Pipeline to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#pipeline WorkersScript#pipeline}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#pipeline WorkersScript#pipeline}
 
 ---
 
@@ -2657,7 +2911,7 @@ queue_name: str
 
 Name of the Queue to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#queue_name WorkersScript#queue_name}
 
 ---
 
@@ -2671,7 +2925,7 @@ script_name: str
 
 The script where the Durable Object is defined, if it is external to this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#script_name WorkersScript#script_name}
 
 ---
 
@@ -2685,7 +2939,7 @@ secret_name: str
 
 Name of the secret in the store.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#secret_name WorkersScript#secret_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#secret_name WorkersScript#secret_name}
 
 ---
 
@@ -2699,7 +2953,21 @@ service: str
 
 Name of Worker to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#service WorkersScript#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#service WorkersScript#service}
+
+---
+
+##### `service_id`<sup>Optional</sup> <a name="service_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.serviceId"></a>
+
+```python
+service_id: str
+```
+
+- *Type:* str
+
+Identifier of the VPC service to bind to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#service_id WorkersScript#service_id}
 
 ---
 
@@ -2713,7 +2981,7 @@ simple: WorkersScriptBindingsSimple
 
 A simple rate limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#simple WorkersScript#simple}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#simple WorkersScript#simple}
 
 ---
 
@@ -2727,7 +2995,7 @@ store_id: str
 
 ID of the store containing the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#store_id WorkersScript#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#store_id WorkersScript#store_id}
 
 ---
 
@@ -2741,7 +3009,21 @@ text: str
 
 The text value to use.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#text WorkersScript#text}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#text WorkersScript#text}
+
+---
+
+##### `tunnel_id`<sup>Optional</sup> <a name="tunnel_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings.property.tunnelId"></a>
+
+```python
+tunnel_id: str
+```
+
+- *Type:* str
+
+UUID of the Cloudflare Tunnel to bind to. Mutually exclusive with network_id.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#tunnel_id WorkersScript#tunnel_id}
 
 ---
 
@@ -2755,7 +3037,7 @@ usages: typing.List[str]
 
 Allowed operations with the key. [Learn more](https://developer.mozilla.org/en-US/docs/Web/API/SubtleCrypto/importKey#keyUsages).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#usages WorkersScript#usages}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#usages WorkersScript#usages}
 
 ---
 
@@ -2771,7 +3053,7 @@ Identifier for the version to inherit the binding from, which can be the version
 
 Defaults to inheriting the binding from the latest version.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#version_id WorkersScript#version_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#version_id WorkersScript#version_id}
 
 ---
 
@@ -2785,7 +3067,7 @@ workflow_name: str
 
 Name of the Workflow to bind to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#workflow_name WorkersScript#workflow_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#workflow_name WorkersScript#workflow_name}
 
 ---
 
@@ -2821,7 +3103,7 @@ params: typing.List[str]
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#params WorkersScript#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#params WorkersScript#params}
 
 ---
 
@@ -2835,7 +3117,7 @@ worker: WorkersScriptBindingsOutboundWorker
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#worker WorkersScript#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#worker WorkersScript#worker}
 
 ---
 
@@ -2871,7 +3153,7 @@ environment: str
 
 Environment of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#environment WorkersScript#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#environment WorkersScript#environment}
 
 ---
 
@@ -2885,7 +3167,7 @@ service: str
 
 Name of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#service WorkersScript#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#service WorkersScript#service}
 
 ---
 
@@ -2921,7 +3203,7 @@ limit: typing.Union[int, float]
 
 The rate limit value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#limit WorkersScript#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#limit WorkersScript#limit}
 
 ---
 
@@ -2935,7 +3217,7 @@ period: typing.Union[int, float]
 
 The rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#period WorkersScript#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#period WorkersScript#period}
 
 ---
 
@@ -2954,8 +3236,9 @@ workersScript.WorkersScriptConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   script_name: str,
+  account_id: str = None,
+  annotations: WorkersScriptAnnotations = None,
   assets: WorkersScriptAssets = None,
   bindings: IResolvable | typing.List[WorkersScriptBindings] = None,
   body_part: str = None,
@@ -2989,8 +3272,9 @@ workersScript.WorkersScriptConfig(
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.annotations">annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a></code> | Annotations for the version created by this upload. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.assets">assets</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAssets">WorkersScriptAssets</a></code> | Configuration for assets within a Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.bindings">bindings</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindings">WorkersScriptBindings</a>]</code> | List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.bodyPart">body_part</a></code> | <code>str</code> | Name of the uploaded file that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker. |
@@ -3083,20 +3367,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#account_id WorkersScript#account_id}
-
----
-
 ##### `script_name`<sup>Required</sup> <a name="script_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.scriptName"></a>
 
 ```python
@@ -3107,7 +3377,35 @@ script_name: str
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#script_name WorkersScript#script_name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#account_id WorkersScript#account_id}
+
+---
+
+##### `annotations`<sup>Optional</sup> <a name="annotations" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptConfig.property.annotations"></a>
+
+```python
+annotations: WorkersScriptAnnotations
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a>
+
+Annotations for the version created by this upload.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#annotations WorkersScript#annotations}
 
 ---
 
@@ -3121,7 +3419,7 @@ assets: WorkersScriptAssets
 
 Configuration for assets within a Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#assets WorkersScript#assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#assets WorkersScript#assets}
 
 ---
 
@@ -3135,7 +3433,7 @@ bindings: IResolvable | typing.List[WorkersScriptBindings]
 
 List of bindings attached to a Worker. You can find more about bindings on our docs: https://developers.cloudflare.com/workers/configuration/multipart-upload-metadata/#bindings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#bindings WorkersScript#bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#bindings WorkersScript#bindings}
 
 ---
 
@@ -3149,7 +3447,7 @@ body_part: str
 
 Name of the uploaded file that contains the script (e.g. the file adding a listener to the `fetch` event). Indicates a `service worker syntax` Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#body_part WorkersScript#body_part}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#body_part WorkersScript#body_part}
 
 ---
 
@@ -3165,7 +3463,7 @@ Date indicating targeted support in the Workers runtime.
 
 Backwards incompatible fixes to the runtime following this date will not affect this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#compatibility_date WorkersScript#compatibility_date}
 
 ---
 
@@ -3181,7 +3479,7 @@ Flags that enable or disable certain features in the Workers runtime.
 
 Used to enable upcoming features or opt in or out of specific changes not included in a `compatibility_date`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#compatibility_flags WorkersScript#compatibility_flags}
 
 ---
 
@@ -3195,7 +3493,7 @@ content: str
 
 Module or Service Worker contents of the Worker. Conflicts with `content_file`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content WorkersScript#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content WorkersScript#content}
 
 ---
 
@@ -3211,7 +3509,7 @@ Path to a file containing the Module or Service Worker contents of the Worker.
 
 Conflicts with `content`. Must be paired with `content_sha256`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content_file WorkersScript#content_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content_file WorkersScript#content_file}
 
 ---
 
@@ -3227,7 +3525,7 @@ SHA-256 hash of the Worker contents.
 
 Used to trigger updates when source code changes. Must be provided when `content_file` is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content_sha256 WorkersScript#content_sha256}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content_sha256 WorkersScript#content_sha256}
 
 ---
 
@@ -3241,7 +3539,7 @@ content_type: str
 
 Content-Type of the Worker. Required if uploading a non-JavaScript Worker (e.g. "text/x-python").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#content_type WorkersScript#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#content_type WorkersScript#content_type}
 
 ---
 
@@ -3255,7 +3553,7 @@ keep_assets: bool | IResolvable
 
 Retain assets which exist for a previously uploaded Worker version; used in lieu of providing a completion token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#keep_assets WorkersScript#keep_assets}
 
 ---
 
@@ -3269,7 +3567,7 @@ keep_bindings: typing.List[str]
 
 List of binding types to keep from previous_upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#keep_bindings WorkersScript#keep_bindings}
 
 ---
 
@@ -3283,7 +3581,7 @@ limits: WorkersScriptLimits
 
 Limits to apply for this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#limits WorkersScript#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#limits WorkersScript#limits}
 
 ---
 
@@ -3297,7 +3595,7 @@ logpush: bool | IResolvable
 
 Whether Logpush is turned on for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#logpush WorkersScript#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#logpush WorkersScript#logpush}
 
 ---
 
@@ -3311,7 +3609,7 @@ main_module: str
 
 Name of the uploaded file that contains the main module (e.g. the file exporting a `fetch` handler). Indicates a `module syntax` Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#main_module WorkersScript#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#main_module WorkersScript#main_module}
 
 ---
 
@@ -3325,7 +3623,7 @@ migrations: WorkersScriptMigrations
 
 Migrations to apply for Durable Objects associated with this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#migrations WorkersScript#migrations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#migrations WorkersScript#migrations}
 
 ---
 
@@ -3339,7 +3637,7 @@ observability: WorkersScriptObservability
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#observability WorkersScript#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#observability WorkersScript#observability}
 
 ---
 
@@ -3353,7 +3651,7 @@ placement: WorkersScriptPlacement
 
 Configuration for [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Specify mode='smart' for Smart Placement, or one of region/hostname/host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#placement WorkersScript#placement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#placement WorkersScript#placement}
 
 ---
 
@@ -3367,7 +3665,7 @@ tail_consumers: IResolvable | typing.List[WorkersScriptTailConsumers]
 
 List of Workers that will consume logs from the attached Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#tail_consumers WorkersScript#tail_consumers}
 
 ---
 
@@ -3381,7 +3679,7 @@ usage_model: str
 
 Usage model for the Worker invocations. Available values: "standard", "bundled", "unbound".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#usage_model WorkersScript#usage_model}
 
 ---
 
@@ -3393,7 +3691,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktn_provider_cloudflare import workers_script
 
 workersScript.WorkersScriptLimits(
-  cpu_ms: typing.Union[int, float] = None
+  cpu_ms: typing.Union[int, float] = None,
+  subrequests: typing.Union[int, float] = None
 )
 ```
 
@@ -3402,6 +3701,7 @@ workersScript.WorkersScriptLimits(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimits.property.cpuMs">cpu_ms</a></code> | <code>typing.Union[int, float]</code> | The amount of CPU time this Worker can use in milliseconds. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimits.property.subrequests">subrequests</a></code> | <code>typing.Union[int, float]</code> | The number of subrequests this Worker can make per request. |
 
 ---
 
@@ -3415,7 +3715,21 @@ cpu_ms: typing.Union[int, float]
 
 The amount of CPU time this Worker can use in milliseconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#cpu_ms WorkersScript#cpu_ms}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#cpu_ms WorkersScript#cpu_ms}
+
+---
+
+##### `subrequests`<sup>Optional</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptLimits.property.subrequests"></a>
+
+```python
+subrequests: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The number of subrequests this Worker can make per request.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#subrequests WorkersScript#subrequests}
 
 ---
 
@@ -3463,7 +3777,7 @@ deleted_classes: typing.List[str]
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
 
 ---
 
@@ -3477,7 +3791,7 @@ new_classes: typing.List[str]
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
 
 ---
 
@@ -3491,7 +3805,7 @@ new_sqlite_classes: typing.List[str]
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
 
 ---
 
@@ -3505,7 +3819,7 @@ new_tag: str
 
 Tag to set as the latest migration tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_tag WorkersScript#new_tag}
 
 ---
 
@@ -3521,7 +3835,7 @@ Tag used to verify against the latest migration tag for this Worker.
 
 If they don't match, the upload is rejected.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#old_tag WorkersScript#old_tag}
 
 ---
 
@@ -3535,7 +3849,7 @@ renamed_classes: IResolvable | typing.List[WorkersScriptMigrationsRenamedClasses
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
 
 ---
 
@@ -3549,7 +3863,7 @@ steps: IResolvable | typing.List[WorkersScriptMigrationsSteps]
 
 Migrations to apply in order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#steps WorkersScript#steps}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#steps WorkersScript#steps}
 
 ---
 
@@ -3563,7 +3877,7 @@ transferred_classes: IResolvable | typing.List[WorkersScriptMigrationsTransferre
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
 
 ---
 
@@ -3584,8 +3898,8 @@ workersScript.WorkersScriptMigrationsRenamedClasses(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsRenamedClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}. |
 
 ---
 
@@ -3597,7 +3911,7 @@ from: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}.
 
 ---
 
@@ -3609,7 +3923,7 @@ to: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}.
 
 ---
 
@@ -3651,7 +3965,7 @@ deleted_classes: typing.List[str]
 
 A list of classes to delete Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#deleted_classes WorkersScript#deleted_classes}
 
 ---
 
@@ -3665,7 +3979,7 @@ new_classes: typing.List[str]
 
 A list of classes to create Durable Object namespaces from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_classes WorkersScript#new_classes}
 
 ---
 
@@ -3679,7 +3993,7 @@ new_sqlite_classes: typing.List[str]
 
 A list of classes to create Durable Object namespaces with SQLite from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#new_sqlite_classes WorkersScript#new_sqlite_classes}
 
 ---
 
@@ -3693,7 +4007,7 @@ renamed_classes: IResolvable | typing.List[WorkersScriptMigrationsStepsRenamedCl
 
 A list of classes with Durable Object namespaces that were renamed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#renamed_classes WorkersScript#renamed_classes}
 
 ---
 
@@ -3707,7 +4021,7 @@ transferred_classes: IResolvable | typing.List[WorkersScriptMigrationsStepsTrans
 
 A list of transfers for Durable Object namespaces from a different Worker and class to a class defined in this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#transferred_classes WorkersScript#transferred_classes}
 
 ---
 
@@ -3728,8 +4042,8 @@ workersScript.WorkersScriptMigrationsStepsRenamedClasses(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsRenamedClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}. |
 
 ---
 
@@ -3741,7 +4055,7 @@ from: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}.
 
 ---
 
@@ -3753,7 +4067,7 @@ to: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}.
 
 ---
 
@@ -3775,9 +4089,9 @@ workersScript.WorkersScriptMigrationsStepsTransferredClasses(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses.property.fromScript">from_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from_script WorkersScript#from_script}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses.property.fromScript">from_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from_script WorkersScript#from_script}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsStepsTransferredClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}. |
 
 ---
 
@@ -3789,7 +4103,7 @@ from: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}.
 
 ---
 
@@ -3801,7 +4115,7 @@ from_script: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from_script WorkersScript#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from_script WorkersScript#from_script}.
 
 ---
 
@@ -3813,7 +4127,7 @@ to: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}.
 
 ---
 
@@ -3835,9 +4149,9 @@ workersScript.WorkersScriptMigrationsTransferredClasses(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses.property.fromScript">from_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from_script WorkersScript#from_script}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses.property.from">from</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses.property.fromScript">from_script</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from_script WorkersScript#from_script}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptMigrationsTransferredClasses.property.to">to</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}. |
 
 ---
 
@@ -3849,7 +4163,7 @@ from: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from WorkersScript#from}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from WorkersScript#from}.
 
 ---
 
@@ -3861,7 +4175,7 @@ from_script: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#from_script WorkersScript#from_script}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#from_script WorkersScript#from_script}.
 
 ---
 
@@ -3873,7 +4187,7 @@ to: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#to WorkersScript#to}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#to WorkersScript#to}.
 
 ---
 
@@ -3898,7 +4212,8 @@ from cdktn_provider_cloudflare import workers_script
 workersScript.WorkersScriptObservability(
   enabled: bool | IResolvable,
   head_sampling_rate: typing.Union[int, float] = None,
-  logs: WorkersScriptObservabilityLogs = None
+  logs: WorkersScriptObservabilityLogs = None,
+  traces: WorkersScriptObservabilityTraces = None
 )
 ```
 
@@ -3909,6 +4224,7 @@ workersScript.WorkersScriptObservability(
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservability.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether observability is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservability.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservability.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a></code> | Log settings for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservability.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces">WorkersScriptObservabilityTraces</a></code> | Trace settings for the Worker. |
 
 ---
 
@@ -3922,7 +4238,7 @@ enabled: bool | IResolvable
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#enabled WorkersScript#enabled}
 
 ---
 
@@ -3936,7 +4252,7 @@ head_sampling_rate: typing.Union[int, float]
 
 The sampling rate for incoming requests. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
 
 ---
 
@@ -3950,7 +4266,21 @@ logs: WorkersScriptObservabilityLogs
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#logs WorkersScript#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#logs WorkersScript#logs}
+
+---
+
+##### `traces`<sup>Optional</sup> <a name="traces" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservability.property.traces"></a>
+
+```python
+traces: WorkersScriptObservabilityTraces
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces">WorkersScriptObservabilityTraces</a>
+
+Trace settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#traces WorkersScript#traces}
 
 ---
 
@@ -3992,7 +4322,7 @@ enabled: bool | IResolvable
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#enabled WorkersScript#enabled}
 
 ---
 
@@ -4006,7 +4336,7 @@ invocation_logs: bool | IResolvable
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#invocation_logs WorkersScript#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#invocation_logs WorkersScript#invocation_logs}
 
 ---
 
@@ -4020,7 +4350,7 @@ destinations: typing.List[str]
 
 A list of destinations where logs will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#destinations WorkersScript#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#destinations WorkersScript#destinations}
 
 ---
 
@@ -4034,7 +4364,7 @@ head_sampling_rate: typing.Union[int, float]
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
 
 ---
 
@@ -4048,7 +4378,89 @@ persist: bool | IResolvable
 
 Whether log persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#persist WorkersScript#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#persist WorkersScript#persist}
+
+---
+
+### WorkersScriptObservabilityTraces <a name="WorkersScriptObservabilityTraces" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import workers_script
+
+workersScript.WorkersScriptObservabilityTraces(
+  destinations: typing.List[str] = None,
+  enabled: bool | IResolvable = None,
+  head_sampling_rate: typing.Union[int, float] = None,
+  persist: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | A list of destinations where traces will be exported to. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether traces are enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.persist">persist</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether trace persistence is enabled for the Worker. |
+
+---
+
+##### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.destinations"></a>
+
+```python
+destinations: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of destinations where traces will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#destinations WorkersScript#destinations}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether traces are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+
+---
+
+##### `head_sampling_rate`<sup>Optional</sup> <a name="head_sampling_rate" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.headSamplingRate"></a>
+
+```python
+head_sampling_rate: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+
+---
+
+##### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces.property.persist"></a>
+
+```python
+persist: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether trace persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#persist WorkersScript#persist}
 
 ---
 
@@ -4082,7 +4494,7 @@ mode: str
 
 Enables [Smart Placement](https://developers.cloudflare.com/workers/configuration/smart-placement). Available values: "smart", "targeted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#mode WorkersScript#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#mode WorkersScript#mode}
 
 ---
 
@@ -4131,7 +4543,7 @@ service: str
 
 Name of Worker that is to be the consumer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#service WorkersScript#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#service WorkersScript#service}
 
 ---
 
@@ -4145,7 +4557,7 @@ environment: str
 
 Optional environment if the Worker utilizes one.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#environment WorkersScript#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#environment WorkersScript#environment}
 
 ---
 
@@ -4159,11 +4571,354 @@ namespace: str
 
 Optional dispatch namespace the script belongs to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#namespace WorkersScript#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#namespace WorkersScript#namespace}
 
 ---
 
 ## Classes <a name="Classes" id="Classes"></a>
+
+### WorkersScriptAnnotationsOutputReference <a name="WorkersScriptAnnotationsOutputReference" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import workers_script
+
+workersScript.WorkersScriptAnnotationsOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.resetWorkersMessage">reset_workers_message</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.resetWorkersTag">reset_workers_tag</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_workers_message` <a name="reset_workers_message" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.resetWorkersMessage"></a>
+
+```python
+def reset_workers_message() -> None
+```
+
+##### `reset_workers_tag` <a name="reset_workers_tag" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.resetWorkersTag"></a>
+
+```python
+def reset_workers_tag() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersTriggeredBy">workers_triggered_by</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersMessageInput">workers_message_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersTagInput">workers_tag_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersMessage">workers_message</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersTag">workers_tag</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `workers_triggered_by`<sup>Required</sup> <a name="workers_triggered_by" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersTriggeredBy"></a>
+
+```python
+workers_triggered_by: str
+```
+
+- *Type:* str
+
+---
+
+##### `workers_message_input`<sup>Optional</sup> <a name="workers_message_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersMessageInput"></a>
+
+```python
+workers_message_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workers_tag_input`<sup>Optional</sup> <a name="workers_tag_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersTagInput"></a>
+
+```python
+workers_tag_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `workers_message`<sup>Required</sup> <a name="workers_message" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersMessage"></a>
+
+```python
+workers_message: str
+```
+
+- *Type:* str
+
+---
+
+##### `workers_tag`<sup>Required</sup> <a name="workers_tag" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.workersTag"></a>
+
+```python
+workers_tag: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotationsOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | WorkersScriptAnnotations
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptAnnotations">WorkersScriptAnnotations</a>
+
+---
+
 
 ### WorkersScriptAssetsConfigOutputReference <a name="WorkersScriptAssetsConfigOutputReference" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptAssetsConfigOutputReference"></a>
 
@@ -4864,7 +5619,7 @@ def put_config(
 
 The contents of a _headers file (used to attach custom headers on asset responses).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#headers WorkersScript#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#headers WorkersScript#headers}
 
 ---
 
@@ -4874,7 +5629,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Determines the redirects and rewrites of requests for HTML content. Available values: "auto-trailing-slash", "force-trailing-slash", "drop-trailing-slash", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#html_handling WorkersScript#html_handling}
 
 ---
 
@@ -4886,7 +5641,7 @@ Determines the response when a request does not match a static asset, and there 
 
 Available values: "none", "404-page", "single-page-application".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#not_found_handling WorkersScript#not_found_handling}
 
 ---
 
@@ -4896,7 +5651,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The contents of a _redirects file (used to apply redirects or proxy paths ahead of asset serving).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#redirects WorkersScript#redirects}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#redirects WorkersScript#redirects}
 
 ---
 
@@ -4908,7 +5663,7 @@ When a boolean true, requests will always invoke the Worker script.
 
 Otherwise, attempt to serve an asset matching the request, falling back to the Worker script. When a list of strings, contains path rules to control routing to either the Worker or assets. Glob (*) and negative (!) rules are supported. Rules must start with either '/' or '!/'. At least one non-negative rule must be provided, and negative rules have higher precedence than non-negative rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#run_worker_first WorkersScript#run_worker_first}
 
 ---
 
@@ -4920,7 +5675,7 @@ When true and the incoming request matches an asset, that will be served instead
 
 When false, requests will always invoke the Worker script.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#serve_directly WorkersScript#serve_directly}
 
 ---
 
@@ -5481,7 +6236,7 @@ def put_worker(
 
 Environment of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#environment WorkersScript#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#environment WorkersScript#environment}
 
 ---
 
@@ -5491,7 +6246,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#service WorkersScript#service}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#service WorkersScript#service}
 
 ---
 
@@ -6007,21 +6762,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetAlgorithm">reset_algorithm</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetAllowedDestinationAddresses">reset_allowed_destination_addresses</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetAllowedSenderAddresses">reset_allowed_sender_addresses</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetAppId">reset_app_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetBucketName">reset_bucket_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetCertificateId">reset_certificate_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetClassName">reset_class_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetDatabaseId">reset_database_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetDataset">reset_dataset</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetDestinationAddress">reset_destination_address</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetDispatchNamespace">reset_dispatch_namespace</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetEntrypoint">reset_entrypoint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetEnvironment">reset_environment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetFormat">reset_format</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetIndexName">reset_index_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetInstanceName">reset_instance_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetJson">reset_json</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetJurisdiction">reset_jurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetKeyBase64">reset_key_base64</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetKeyJwk">reset_key_jwk</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetNamespaceId">reset_namespace_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetNetworkId">reset_network_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetOldName">reset_old_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetOutbound">reset_outbound</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetPart">reset_part</a></code> | *No description.* |
@@ -6030,9 +6791,11 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetScriptName">reset_script_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetSecretName">reset_secret_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetService">reset_service</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetServiceId">reset_service_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetSimple">reset_simple</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetStoreId">reset_store_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetText">reset_text</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetTunnelId">reset_tunnel_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetUsages">reset_usages</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetVersionId">reset_version_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetWorkflowName">reset_workflow_name</a></code> | *No description.* |
@@ -6226,7 +6989,7 @@ def put_outbound(
 
 Pass information from the Dispatch Worker to the Outbound Worker through the parameters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#params WorkersScript#params}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#params WorkersScript#params}
 
 ---
 
@@ -6236,7 +6999,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Outbound worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#worker WorkersScript#worker}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#worker WorkersScript#worker}
 
 ---
 
@@ -6255,7 +7018,7 @@ def put_simple(
 
 The rate limit value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#limit WorkersScript#limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#limit WorkersScript#limit}
 
 ---
 
@@ -6265,7 +7028,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The rate limit period in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#period WorkersScript#period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#period WorkersScript#period}
 
 ---
 
@@ -6287,6 +7050,12 @@ def reset_allowed_destination_addresses() -> None
 def reset_allowed_sender_addresses() -> None
 ```
 
+##### `reset_app_id` <a name="reset_app_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetAppId"></a>
+
+```python
+def reset_app_id() -> None
+```
+
 ##### `reset_bucket_name` <a name="reset_bucket_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetBucketName"></a>
 
 ```python
@@ -6305,6 +7074,12 @@ def reset_certificate_id() -> None
 def reset_class_name() -> None
 ```
 
+##### `reset_database_id` <a name="reset_database_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetDatabaseId"></a>
+
+```python
+def reset_database_id() -> None
+```
+
 ##### `reset_dataset` <a name="reset_dataset" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetDataset"></a>
 
 ```python
@@ -6315,6 +7090,18 @@ def reset_dataset() -> None
 
 ```python
 def reset_destination_address() -> None
+```
+
+##### `reset_dispatch_namespace` <a name="reset_dispatch_namespace" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetDispatchNamespace"></a>
+
+```python
+def reset_dispatch_namespace() -> None
+```
+
+##### `reset_entrypoint` <a name="reset_entrypoint" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetEntrypoint"></a>
+
+```python
+def reset_entrypoint() -> None
 ```
 
 ##### `reset_environment` <a name="reset_environment" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetEnvironment"></a>
@@ -6339,6 +7126,12 @@ def reset_id() -> None
 
 ```python
 def reset_index_name() -> None
+```
+
+##### `reset_instance_name` <a name="reset_instance_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetInstanceName"></a>
+
+```python
+def reset_instance_name() -> None
 ```
 
 ##### `reset_json` <a name="reset_json" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetJson"></a>
@@ -6375,6 +7168,12 @@ def reset_namespace() -> None
 
 ```python
 def reset_namespace_id() -> None
+```
+
+##### `reset_network_id` <a name="reset_network_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetNetworkId"></a>
+
+```python
+def reset_network_id() -> None
 ```
 
 ##### `reset_old_name` <a name="reset_old_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetOldName"></a>
@@ -6425,6 +7224,12 @@ def reset_secret_name() -> None
 def reset_service() -> None
 ```
 
+##### `reset_service_id` <a name="reset_service_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetServiceId"></a>
+
+```python
+def reset_service_id() -> None
+```
+
 ##### `reset_simple` <a name="reset_simple" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetSimple"></a>
 
 ```python
@@ -6441,6 +7246,12 @@ def reset_store_id() -> None
 
 ```python
 def reset_text() -> None
+```
+
+##### `reset_tunnel_id` <a name="reset_tunnel_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetTunnelId"></a>
+
+```python
+def reset_tunnel_id() -> None
 ```
 
 ##### `reset_usages` <a name="reset_usages" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.resetUsages"></a>
@@ -6473,15 +7284,20 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.algorithmInput">algorithm_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.allowedDestinationAddressesInput">allowed_destination_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.allowedSenderAddressesInput">allowed_sender_addresses_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.appIdInput">app_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.bucketNameInput">bucket_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.certificateIdInput">certificate_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.classNameInput">class_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.databaseIdInput">database_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.datasetInput">dataset_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.destinationAddressInput">destination_address_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.dispatchNamespaceInput">dispatch_namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.entrypointInput">entrypoint_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.environmentInput">environment_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.formatInput">format_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.indexNameInput">index_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.instanceNameInput">instance_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.jsonInput">json_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.jurisdictionInput">jurisdiction_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.keyBase64Input">key_base64_input</a></code> | <code>str</code> | *No description.* |
@@ -6489,6 +7305,7 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.namespaceIdInput">namespace_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.networkIdInput">network_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.oldNameInput">old_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.outboundInput">outbound_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutbound">WorkersScriptBindingsOutbound</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.partInput">part_input</a></code> | <code>str</code> | *No description.* |
@@ -6496,10 +7313,12 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.queueNameInput">queue_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.scriptNameInput">script_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.secretNameInput">secret_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.serviceIdInput">service_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.serviceInput">service_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.simpleInput">simple_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsSimple">WorkersScriptBindingsSimple</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.storeIdInput">store_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.textInput">text_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.tunnelIdInput">tunnel_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.usagesInput">usages_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.versionIdInput">version_id_input</a></code> | <code>str</code> | *No description.* |
@@ -6507,15 +7326,20 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.algorithm">algorithm</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.allowedDestinationAddresses">allowed_destination_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.allowedSenderAddresses">allowed_sender_addresses</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.appId">app_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.bucketName">bucket_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.certificateId">certificate_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.className">class_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.databaseId">database_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.dataset">dataset</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.destinationAddress">destination_address</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.dispatchNamespace">dispatch_namespace</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.entrypoint">entrypoint</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.environment">environment</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.format">format</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.indexName">index_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.instanceName">instance_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.json">json</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.jurisdiction">jurisdiction</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.keyBase64">key_base64</a></code> | <code>str</code> | *No description.* |
@@ -6523,6 +7347,7 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.namespaceId">namespace_id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.networkId">network_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.oldName">old_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.part">part</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.pipeline">pipeline</a></code> | <code>str</code> | *No description.* |
@@ -6530,8 +7355,10 @@ def reset_workflow_name() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.scriptName">script_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.secretName">secret_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.service">service</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.serviceId">service_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.storeId">store_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.text">text</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.tunnelId">tunnel_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.usages">usages</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.versionId">version_id</a></code> | <code>str</code> | *No description.* |
@@ -6614,6 +7441,16 @@ allowed_sender_addresses_input: typing.List[str]
 
 ---
 
+##### `app_id_input`<sup>Optional</sup> <a name="app_id_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.appIdInput"></a>
+
+```python
+app_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `bucket_name_input`<sup>Optional</sup> <a name="bucket_name_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.bucketNameInput"></a>
 
 ```python
@@ -6644,6 +7481,16 @@ class_name_input: str
 
 ---
 
+##### `database_id_input`<sup>Optional</sup> <a name="database_id_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.databaseIdInput"></a>
+
+```python
+database_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `dataset_input`<sup>Optional</sup> <a name="dataset_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.datasetInput"></a>
 
 ```python
@@ -6658,6 +7505,26 @@ dataset_input: str
 
 ```python
 destination_address_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `dispatch_namespace_input`<sup>Optional</sup> <a name="dispatch_namespace_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.dispatchNamespaceInput"></a>
+
+```python
+dispatch_namespace_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `entrypoint_input`<sup>Optional</sup> <a name="entrypoint_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.entrypointInput"></a>
+
+```python
+entrypoint_input: str
 ```
 
 - *Type:* str
@@ -6698,6 +7565,16 @@ id_input: str
 
 ```python
 index_name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `instance_name_input`<sup>Optional</sup> <a name="instance_name_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.instanceNameInput"></a>
+
+```python
+instance_name_input: str
 ```
 
 - *Type:* str
@@ -6774,6 +7651,16 @@ namespace_input: str
 
 ---
 
+##### `network_id_input`<sup>Optional</sup> <a name="network_id_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.networkIdInput"></a>
+
+```python
+network_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `old_name_input`<sup>Optional</sup> <a name="old_name_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.oldNameInput"></a>
 
 ```python
@@ -6844,6 +7731,16 @@ secret_name_input: str
 
 ---
 
+##### `service_id_input`<sup>Optional</sup> <a name="service_id_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.serviceIdInput"></a>
+
+```python
+service_id_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `service_input`<sup>Optional</sup> <a name="service_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.serviceInput"></a>
 
 ```python
@@ -6878,6 +7775,16 @@ store_id_input: str
 
 ```python
 text_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `tunnel_id_input`<sup>Optional</sup> <a name="tunnel_id_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.tunnelIdInput"></a>
+
+```python
+tunnel_id_input: str
 ```
 
 - *Type:* str
@@ -6954,6 +7861,16 @@ allowed_sender_addresses: typing.List[str]
 
 ---
 
+##### `app_id`<sup>Required</sup> <a name="app_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.appId"></a>
+
+```python
+app_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `bucket_name`<sup>Required</sup> <a name="bucket_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.bucketName"></a>
 
 ```python
@@ -6984,6 +7901,16 @@ class_name: str
 
 ---
 
+##### `database_id`<sup>Required</sup> <a name="database_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.databaseId"></a>
+
+```python
+database_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `dataset`<sup>Required</sup> <a name="dataset" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.dataset"></a>
 
 ```python
@@ -6998,6 +7925,26 @@ dataset: str
 
 ```python
 destination_address: str
+```
+
+- *Type:* str
+
+---
+
+##### `dispatch_namespace`<sup>Required</sup> <a name="dispatch_namespace" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.dispatchNamespace"></a>
+
+```python
+dispatch_namespace: str
+```
+
+- *Type:* str
+
+---
+
+##### `entrypoint`<sup>Required</sup> <a name="entrypoint" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.entrypoint"></a>
+
+```python
+entrypoint: str
 ```
 
 - *Type:* str
@@ -7038,6 +7985,16 @@ id: str
 
 ```python
 index_name: str
+```
+
+- *Type:* str
+
+---
+
+##### `instance_name`<sup>Required</sup> <a name="instance_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.instanceName"></a>
+
+```python
+instance_name: str
 ```
 
 - *Type:* str
@@ -7114,6 +8071,16 @@ namespace_id: str
 
 ---
 
+##### `network_id`<sup>Required</sup> <a name="network_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.networkId"></a>
+
+```python
+network_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `old_name`<sup>Required</sup> <a name="old_name" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.oldName"></a>
 
 ```python
@@ -7184,6 +8151,16 @@ service: str
 
 ---
 
+##### `service_id`<sup>Required</sup> <a name="service_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.serviceId"></a>
+
+```python
+service_id: str
+```
+
+- *Type:* str
+
+---
+
 ##### `store_id`<sup>Required</sup> <a name="store_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.storeId"></a>
 
 ```python
@@ -7198,6 +8175,16 @@ store_id: str
 
 ```python
 text: str
+```
+
+- *Type:* str
+
+---
+
+##### `tunnel_id`<sup>Required</sup> <a name="tunnel_id" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptBindingsOutputReference.property.tunnelId"></a>
+
+```python
+tunnel_id: str
 ```
 
 - *Type:* str
@@ -7627,6 +8614,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.resetCpuMs">reset_cpu_ms</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.resetSubrequests">reset_subrequests</a></code> | *No description.* |
 
 ---
 
@@ -7808,6 +8796,12 @@ Returns a reversible string representation.
 def reset_cpu_ms() -> None
 ```
 
+##### `reset_subrequests` <a name="reset_subrequests" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.resetSubrequests"></a>
+
+```python
+def reset_subrequests() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -7816,7 +8810,9 @@ def reset_cpu_ms() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.cpuMsInput">cpu_ms_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.subrequestsInput">subrequests_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.cpuMs">cpu_ms</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.subrequests">subrequests</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptLimits">WorkersScriptLimits</a></code> | *No description.* |
 
 ---
@@ -7855,10 +8851,30 @@ cpu_ms_input: typing.Union[int, float]
 
 ---
 
+##### `subrequests_input`<sup>Optional</sup> <a name="subrequests_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.subrequestsInput"></a>
+
+```python
+subrequests_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
 ##### `cpu_ms`<sup>Required</sup> <a name="cpu_ms" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.cpuMs"></a>
 
 ```python
 cpu_ms: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `subrequests`<sup>Required</sup> <a name="subrequests" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptLimitsOutputReference.property.subrequests"></a>
+
+```python
+subrequests: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
@@ -12146,8 +13162,10 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putLogs">put_logs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putTraces">put_traces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.resetHeadSamplingRate">reset_head_sampling_rate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.resetLogs">reset_logs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.resetTraces">reset_traces</a></code> | *No description.* |
 
 ---
 
@@ -12341,7 +13359,7 @@ def put_logs(
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#enabled WorkersScript#enabled}
 
 ---
 
@@ -12351,7 +13369,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#invocation_logs WorkersScript#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#invocation_logs WorkersScript#invocation_logs}
 
 ---
 
@@ -12361,7 +13379,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of destinations where logs will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#destinations WorkersScript#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#destinations WorkersScript#destinations}
 
 ---
 
@@ -12371,7 +13389,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
 
 ---
 
@@ -12381,7 +13399,58 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether log persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_script#persist WorkersScript#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#persist WorkersScript#persist}
+
+---
+
+##### `put_traces` <a name="put_traces" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putTraces"></a>
+
+```python
+def put_traces(
+  destinations: typing.List[str] = None,
+  enabled: bool | IResolvable = None,
+  head_sampling_rate: typing.Union[int, float] = None,
+  persist: bool | IResolvable = None
+) -> None
+```
+
+###### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putTraces.parameter.destinations"></a>
+
+- *Type:* typing.List[str]
+
+A list of destinations where traces will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#destinations WorkersScript#destinations}
+
+---
+
+###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putTraces.parameter.enabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether traces are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#enabled WorkersScript#enabled}
+
+---
+
+###### `head_sampling_rate`<sup>Optional</sup> <a name="head_sampling_rate" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putTraces.parameter.headSamplingRate"></a>
+
+- *Type:* typing.Union[int, float]
+
+The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). Default is 1.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#head_sampling_rate WorkersScript#head_sampling_rate}
+
+---
+
+###### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.putTraces.parameter.persist"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether trace persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_script#persist WorkersScript#persist}
 
 ---
 
@@ -12397,6 +13466,12 @@ def reset_head_sampling_rate() -> None
 def reset_logs() -> None
 ```
 
+##### `reset_traces` <a name="reset_traces" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.resetTraces"></a>
+
+```python
+def reset_traces() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -12405,9 +13480,11 @@ def reset_logs() -> None
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityLogsOutputReference">WorkersScriptObservabilityLogsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference">WorkersScriptObservabilityTracesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.headSamplingRateInput">head_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.logsInput">logs_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityLogs">WorkersScriptObservabilityLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.tracesInput">traces_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces">WorkersScriptObservabilityTraces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a></code> | *No description.* |
@@ -12448,6 +13525,16 @@ logs: WorkersScriptObservabilityLogsOutputReference
 
 ---
 
+##### `traces`<sup>Required</sup> <a name="traces" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.traces"></a>
+
+```python
+traces: WorkersScriptObservabilityTracesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference">WorkersScriptObservabilityTracesOutputReference</a>
+
+---
+
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabledInput"></a>
 
 ```python
@@ -12478,6 +13565,16 @@ logs_input: IResolvable | WorkersScriptObservabilityLogs
 
 ---
 
+##### `traces_input`<sup>Optional</sup> <a name="traces_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.tracesInput"></a>
+
+```python
+traces_input: IResolvable | WorkersScriptObservabilityTraces
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces">WorkersScriptObservabilityTraces</a>
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityOutputReference.property.enabled"></a>
 
 ```python
@@ -12505,6 +13602,396 @@ internal_value: IResolvable | WorkersScriptObservability
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservability">WorkersScriptObservability</a>
+
+---
+
+
+### WorkersScriptObservabilityTracesOutputReference <a name="WorkersScriptObservabilityTracesOutputReference" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import workers_script
+
+workersScript.WorkersScriptObservabilityTracesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetDestinations">reset_destinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetHeadSamplingRate">reset_head_sampling_rate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetPersist">reset_persist</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_destinations` <a name="reset_destinations" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetDestinations"></a>
+
+```python
+def reset_destinations() -> None
+```
+
+##### `reset_enabled` <a name="reset_enabled" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetEnabled"></a>
+
+```python
+def reset_enabled() -> None
+```
+
+##### `reset_head_sampling_rate` <a name="reset_head_sampling_rate" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetHeadSamplingRate"></a>
+
+```python
+def reset_head_sampling_rate() -> None
+```
+
+##### `reset_persist` <a name="reset_persist" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.resetPersist"></a>
+
+```python
+def reset_persist() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.destinationsInput">destinations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.headSamplingRateInput">head_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.persistInput">persist_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.persist">persist</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces">WorkersScriptObservabilityTraces</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `destinations_input`<sup>Optional</sup> <a name="destinations_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.destinationsInput"></a>
+
+```python
+destinations_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.enabledInput"></a>
+
+```python
+enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `head_sampling_rate_input`<sup>Optional</sup> <a name="head_sampling_rate_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.headSamplingRateInput"></a>
+
+```python
+head_sampling_rate_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `persist_input`<sup>Optional</sup> <a name="persist_input" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.persistInput"></a>
+
+```python
+persist_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `destinations`<sup>Required</sup> <a name="destinations" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.destinations"></a>
+
+```python
+destinations: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `head_sampling_rate`<sup>Required</sup> <a name="head_sampling_rate" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.headSamplingRate"></a>
+
+```python
+head_sampling_rate: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `persist`<sup>Required</sup> <a name="persist" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.persist"></a>
+
+```python
+persist: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTracesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | WorkersScriptObservabilityTraces
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.workersScript.WorkersScriptObservabilityTraces">WorkersScriptObservabilityTraces</a>
 
 ---
 

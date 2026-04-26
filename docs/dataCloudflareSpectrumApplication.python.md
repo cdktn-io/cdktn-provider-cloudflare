@@ -4,7 +4,7 @@
 
 ### DataCloudflareSpectrumApplication <a name="DataCloudflareSpectrumApplication" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application cloudflare_spectrum_application}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer"></a>
 
@@ -21,9 +21,9 @@ dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   app_id: str = None,
-  filter: DataCloudflareSpectrumApplicationFilter = None
+  filter: DataCloudflareSpectrumApplicationFilter = None,
+  zone_id: str = None
 )
 ```
 
@@ -38,9 +38,9 @@ dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Zone identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | App identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Zone identifier. |
 
 ---
 
@@ -104,23 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Zone identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
-
----
-
 ##### `app_id`<sup>Optional</sup> <a name="app_id" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.appId"></a>
 
 - *Type:* str
 
 App identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
 
 ---
 
@@ -128,7 +118,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}.
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Zone identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
 
 ---
 
@@ -157,6 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.putFilter">put_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.resetAppId">reset_app_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.resetFilter">reset_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -415,7 +416,7 @@ def put_filter(
 
 Sets the direction by which results are ordered. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
 
 ---
 
@@ -425,7 +426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
 
 ---
 
@@ -439,6 +440,12 @@ def reset_app_id() -> None
 
 ```python
 def reset_filter() -> None
+```
+
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplication.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -555,7 +562,7 @@ The construct id used in the generated config for the DataCloudflareSpectrumAppl
 
 The id of the existing DataCloudflareSpectrumApplication that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -963,9 +970,9 @@ dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   app_id: str = None,
-  filter: DataCloudflareSpectrumApplicationFilter = None
+  filter: DataCloudflareSpectrumApplicationFilter = None,
+  zone_id: str = None
 )
 ```
 
@@ -980,9 +987,9 @@ dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Zone identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.appId">app_id</a></code> | <code>str</code> | App identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Zone identifier. |
 
 ---
 
@@ -1056,20 +1063,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Zone identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
-
----
-
 ##### `app_id`<sup>Optional</sup> <a name="app_id" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.appId"></a>
 
 ```python
@@ -1080,7 +1073,7 @@ app_id: str
 
 App identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#app_id DataCloudflareSpectrumApplication#app_id}
 
 ---
 
@@ -1092,7 +1085,21 @@ filter: DataCloudflareSpectrumApplicationFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationFilter">DataCloudflareSpectrumApplicationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#filter DataCloudflareSpectrumApplication#filter}.
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplication.DataCloudflareSpectrumApplicationConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Zone identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#zone_id DataCloudflareSpectrumApplication#zone_id}
 
 ---
 
@@ -1150,7 +1157,7 @@ direction: str
 
 Sets the direction by which results are ordered. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#direction DataCloudflareSpectrumApplication#direction}
 
 ---
 
@@ -1164,7 +1171,7 @@ order: str
 
 Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/spectrum_application#order DataCloudflareSpectrumApplication#order}
 
 ---
 

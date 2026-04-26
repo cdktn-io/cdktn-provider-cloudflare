@@ -4,14 +4,14 @@
 
 ### DataCloudflareAccountMembers <a name="DataCloudflareAccountMembers" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_members cloudflare_account_members}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_members cloudflare_account_members}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.Initializer"></a>
 
 ```typescript
 import { dataCloudflareAccountMembers } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareAccountMembers.DataCloudflareAccountMembers(scope: Construct, id: string, config: DataCloudflareAccountMembersConfig)
+new dataCloudflareAccountMembers.DataCloudflareAccountMembers(scope: Construct, id: string, config?: DataCloudflareAccountMembersConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig">DataCloudflareAccountMembersConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.resetDirection">resetDirection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.resetOrder">resetOrder</a></code> | *No description.* |
@@ -288,6 +289,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetDirection` <a name="resetDirection" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembers.resetDirection"></a>
 
 ```typescript
@@ -415,7 +422,7 @@ The construct id used in the generated config for the DataCloudflareAccountMembe
 
 The id of the existing DataCloudflareAccountMembers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_members#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_members#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +815,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountMembers.DataCloudflareAccountMembersConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -818,7 +825,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_members#account_id DataCloudflareAccountMembers#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_members#account_id DataCloudflareAccountMembers#account_id}
 
 ---
 
@@ -832,7 +839,7 @@ public readonly direction: string;
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_members#direction DataCloudflareAccountMembers#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_members#direction DataCloudflareAccountMembers#direction}
 
 ---
 
@@ -846,7 +853,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_members#max_items DataCloudflareAccountMembers#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_members#max_items DataCloudflareAccountMembers#max_items}
 
 ---
 
@@ -860,7 +867,7 @@ public readonly order: string;
 
 Field to order results by. Available values: "user.first_name", "user.last_name", "user.email", "status".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_members#order DataCloudflareAccountMembers#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_members#order DataCloudflareAccountMembers#order}
 
 ---
 
@@ -874,7 +881,7 @@ public readonly status: string;
 
 A member's status in the account. Available values: "accepted", "pending", "rejected".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_members#status DataCloudflareAccountMembers#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_members#status DataCloudflareAccountMembers#status}
 
 ---
 

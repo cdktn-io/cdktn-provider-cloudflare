@@ -4,7 +4,7 @@
 
 ### ConnectivityDirectoryService <a name="ConnectivityDirectoryService" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.Initializer"></a>
 
@@ -75,8 +75,13 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.putHost">putHost</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.putTlsSettings">putTlsSettings</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetAccountId">resetAccountId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetAppProtocol">resetAppProtocol</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetHttpPort">resetHttpPort</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetHttpsPort">resetHttpsPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetTcpPort">resetTcpPort</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetTlsSettings">resetTlsSettings</a></code> | *No description.* |
 
 ---
 
@@ -401,6 +406,30 @@ public putHost(value: ConnectivityDirectoryServiceHost): void
 
 ---
 
+##### `putTlsSettings` <a name="putTlsSettings" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.putTlsSettings"></a>
+
+```typescript
+public putTlsSettings(value: ConnectivityDirectoryServiceTlsSettings): void
+```
+
+###### `value`<sup>Required</sup> <a name="value" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.putTlsSettings.parameter.value"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings">ConnectivityDirectoryServiceTlsSettings</a>
+
+---
+
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
+##### `resetAppProtocol` <a name="resetAppProtocol" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetAppProtocol"></a>
+
+```typescript
+public resetAppProtocol(): void
+```
+
 ##### `resetHttpPort` <a name="resetHttpPort" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetHttpPort"></a>
 
 ```typescript
@@ -411,6 +440,18 @@ public resetHttpPort(): void
 
 ```typescript
 public resetHttpsPort(): void
+```
+
+##### `resetTcpPort` <a name="resetTcpPort" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetTcpPort"></a>
+
+```typescript
+public resetTcpPort(): void
+```
+
+##### `resetTlsSettings` <a name="resetTlsSettings" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.resetTlsSettings"></a>
+
+```typescript
+public resetTlsSettings(): void
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -516,7 +557,7 @@ The construct id used in the generated config for the ConnectivityDirectoryServi
 
 The id of the existing ConnectivityDirectoryService that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -550,17 +591,23 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.host">host</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostOutputReference">ConnectivityDirectoryServiceHostOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.serviceId">serviceId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tlsSettings">tlsSettings</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference">ConnectivityDirectoryServiceTlsSettingsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.updatedAt">updatedAt</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.accountIdInput">accountIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.appProtocolInput">appProtocolInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.hostInput">hostInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost">ConnectivityDirectoryServiceHost</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.httpPortInput">httpPortInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.httpsPortInput">httpsPortInput</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tcpPortInput">tcpPortInput</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tlsSettingsInput">tlsSettingsInput</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings">ConnectivityDirectoryServiceTlsSettings</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.typeInput">typeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.accountId">accountId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.appProtocol">appProtocol</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.httpPort">httpPort</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.httpsPort">httpsPort</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.name">name</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tcpPort">tcpPort</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.type">type</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -747,6 +794,16 @@ public readonly serviceId: string;
 
 ---
 
+##### `tlsSettings`<sup>Required</sup> <a name="tlsSettings" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tlsSettings"></a>
+
+```typescript
+public readonly tlsSettings: ConnectivityDirectoryServiceTlsSettingsOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference">ConnectivityDirectoryServiceTlsSettingsOutputReference</a>
+
+---
+
 ##### `updatedAt`<sup>Required</sup> <a name="updatedAt" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.updatedAt"></a>
 
 ```typescript
@@ -761,6 +818,16 @@ public readonly updatedAt: string;
 
 ```typescript
 public readonly accountIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `appProtocolInput`<sup>Optional</sup> <a name="appProtocolInput" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.appProtocolInput"></a>
+
+```typescript
+public readonly appProtocolInput: string;
 ```
 
 - *Type:* string
@@ -807,6 +874,26 @@ public readonly nameInput: string;
 
 ---
 
+##### `tcpPortInput`<sup>Optional</sup> <a name="tcpPortInput" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tcpPortInput"></a>
+
+```typescript
+public readonly tcpPortInput: number;
+```
+
+- *Type:* number
+
+---
+
+##### `tlsSettingsInput`<sup>Optional</sup> <a name="tlsSettingsInput" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tlsSettingsInput"></a>
+
+```typescript
+public readonly tlsSettingsInput: IResolvable | ConnectivityDirectoryServiceTlsSettings;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings">ConnectivityDirectoryServiceTlsSettings</a>
+
+---
+
 ##### `typeInput`<sup>Optional</sup> <a name="typeInput" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.typeInput"></a>
 
 ```typescript
@@ -821,6 +908,16 @@ public readonly typeInput: string;
 
 ```typescript
 public readonly accountId: string;
+```
+
+- *Type:* string
+
+---
+
+##### `appProtocol`<sup>Required</sup> <a name="appProtocol" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.appProtocol"></a>
+
+```typescript
+public readonly appProtocol: string;
 ```
 
 - *Type:* string
@@ -854,6 +951,16 @@ public readonly name: string;
 ```
 
 - *Type:* string
+
+---
+
+##### `tcpPort`<sup>Required</sup> <a name="tcpPort" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryService.property.tcpPort"></a>
+
+```typescript
+public readonly tcpPort: number;
+```
+
+- *Type:* number
 
 ---
 
@@ -908,12 +1015,15 @@ const connectivityDirectoryServiceConfig: connectivityDirectoryService.Connectiv
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.host">host</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost">ConnectivityDirectoryServiceHost</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.type">type</a></code> | <code>string</code> | Available values: "tcp", "http". |
 | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.host">host</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost">ConnectivityDirectoryServiceHost</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.name">name</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.type">type</a></code> | <code>string</code> | Available values: "http". |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.httpPort">httpPort</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.httpsPort">httpsPort</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.appProtocol">appProtocol</a></code> | <code>string</code> | Available values: "postgresql", "mysql". |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.httpPort">httpPort</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.httpsPort">httpsPort</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.tcpPort">tcpPort</a></code> | <code>number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#tcp_port ConnectivityDirectoryService#tcp_port}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.tlsSettings">tlsSettings</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings">ConnectivityDirectoryServiceTlsSettings</a></code> | TLS settings for a connectivity service. |
 
 ---
 
@@ -987,20 +1097,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Account identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#account_id ConnectivityDirectoryService#account_id}
-
----
-
 ##### `host`<sup>Required</sup> <a name="host" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.host"></a>
 
 ```typescript
@@ -1009,7 +1105,7 @@ public readonly host: ConnectivityDirectoryServiceHost;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost">ConnectivityDirectoryServiceHost</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}.
 
 ---
 
@@ -1021,7 +1117,7 @@ public readonly name: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}.
 
 ---
 
@@ -1033,9 +1129,37 @@ public readonly type: string;
 
 - *Type:* string
 
-Available values: "http".
+Available values: "tcp", "http".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#type ConnectivityDirectoryService#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#type ConnectivityDirectoryService#type}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Account identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#account_id ConnectivityDirectoryService#account_id}
+
+---
+
+##### `appProtocol`<sup>Optional</sup> <a name="appProtocol" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.appProtocol"></a>
+
+```typescript
+public readonly appProtocol: string;
+```
+
+- *Type:* string
+
+Available values: "postgresql", "mysql".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#app_protocol ConnectivityDirectoryService#app_protocol}
 
 ---
 
@@ -1047,7 +1171,7 @@ public readonly httpPort: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}.
 
 ---
 
@@ -1059,7 +1183,35 @@ public readonly httpsPort: number;
 
 - *Type:* number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}.
+
+---
+
+##### `tcpPort`<sup>Optional</sup> <a name="tcpPort" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.tcpPort"></a>
+
+```typescript
+public readonly tcpPort: number;
+```
+
+- *Type:* number
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#tcp_port ConnectivityDirectoryService#tcp_port}.
+
+---
+
+##### `tlsSettings`<sup>Optional</sup> <a name="tlsSettings" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceConfig.property.tlsSettings"></a>
+
+```typescript
+public readonly tlsSettings: ConnectivityDirectoryServiceTlsSettings;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings">ConnectivityDirectoryServiceTlsSettings</a>
+
+TLS settings for a connectivity service.
+
+If omitted, the default mode (`verify_full`) is used.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#tls_settings ConnectivityDirectoryService#tls_settings}
 
 ---
 
@@ -1077,11 +1229,11 @@ const connectivityDirectoryServiceHost: connectivityDirectoryService.Connectivit
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.hostname">hostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#hostname ConnectivityDirectoryService#hostname}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.ipv4">ipv4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#ipv4 ConnectivityDirectoryService#ipv4}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.ipv6">ipv6</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#ipv6 ConnectivityDirectoryService#ipv6}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.network">network</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork">ConnectivityDirectoryServiceHostNetwork</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#network ConnectivityDirectoryService#network}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.resolverNetwork">resolverNetwork</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork">ConnectivityDirectoryServiceHostResolverNetwork</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#resolver_network ConnectivityDirectoryService#resolver_network}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.hostname">hostname</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#hostname ConnectivityDirectoryService#hostname}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.ipv4">ipv4</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#ipv4 ConnectivityDirectoryService#ipv4}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.ipv6">ipv6</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#ipv6 ConnectivityDirectoryService#ipv6}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.network">network</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork">ConnectivityDirectoryServiceHostNetwork</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#network ConnectivityDirectoryService#network}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHost.property.resolverNetwork">resolverNetwork</a></code> | <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork">ConnectivityDirectoryServiceHostResolverNetwork</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#resolver_network ConnectivityDirectoryService#resolver_network}. |
 
 ---
 
@@ -1093,7 +1245,7 @@ public readonly hostname: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#hostname ConnectivityDirectoryService#hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#hostname ConnectivityDirectoryService#hostname}.
 
 ---
 
@@ -1105,7 +1257,7 @@ public readonly ipv4: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#ipv4 ConnectivityDirectoryService#ipv4}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#ipv4 ConnectivityDirectoryService#ipv4}.
 
 ---
 
@@ -1117,7 +1269,7 @@ public readonly ipv6: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#ipv6 ConnectivityDirectoryService#ipv6}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#ipv6 ConnectivityDirectoryService#ipv6}.
 
 ---
 
@@ -1129,7 +1281,7 @@ public readonly network: ConnectivityDirectoryServiceHostNetwork;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork">ConnectivityDirectoryServiceHostNetwork</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#network ConnectivityDirectoryService#network}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#network ConnectivityDirectoryService#network}.
 
 ---
 
@@ -1141,7 +1293,7 @@ public readonly resolverNetwork: ConnectivityDirectoryServiceHostResolverNetwork
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork">ConnectivityDirectoryServiceHostResolverNetwork</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#resolver_network ConnectivityDirectoryService#resolver_network}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#resolver_network ConnectivityDirectoryService#resolver_network}.
 
 ---
 
@@ -1159,7 +1311,7 @@ const connectivityDirectoryServiceHostNetwork: connectivityDirectoryService.Conn
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork.property.tunnelId">tunnelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostNetwork.property.tunnelId">tunnelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}. |
 
 ---
 
@@ -1171,7 +1323,7 @@ public readonly tunnelId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}.
 
 ---
 
@@ -1189,8 +1341,8 @@ const connectivityDirectoryServiceHostResolverNetwork: connectivityDirectoryServ
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork.property.tunnelId">tunnelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork.property.resolverIps">resolverIps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#resolver_ips ConnectivityDirectoryService#resolver_ips}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork.property.tunnelId">tunnelId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork.property.resolverIps">resolverIps</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#resolver_ips ConnectivityDirectoryService#resolver_ips}. |
 
 ---
 
@@ -1202,7 +1354,7 @@ public readonly tunnelId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}.
 
 ---
 
@@ -1214,7 +1366,43 @@ public readonly resolverIps: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/connectivity_directory_service#resolver_ips ConnectivityDirectoryService#resolver_ips}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#resolver_ips ConnectivityDirectoryService#resolver_ips}.
+
+---
+
+### ConnectivityDirectoryServiceTlsSettings <a name="ConnectivityDirectoryServiceTlsSettings" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings.Initializer"></a>
+
+```typescript
+import { connectivityDirectoryService } from '@cdktn/provider-cloudflare'
+
+const connectivityDirectoryServiceTlsSettings: connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings = { ... }
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings.property.certVerificationMode">certVerificationMode</a></code> | <code>string</code> | TLS certificate verification mode for the connection to the origin. |
+
+---
+
+##### `certVerificationMode`<sup>Required</sup> <a name="certVerificationMode" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings.property.certVerificationMode"></a>
+
+```typescript
+public readonly certVerificationMode: string;
+```
+
+- *Type:* string
+
+TLS certificate verification mode for the connection to the origin.
+
+`"verify_full"` — verify certificate chain and hostname (default)
+- `"verify_ca"` — verify certificate chain only, skip hostname check
+- `"disabled"` — do not verify the server certificate at all
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/connectivity_directory_service#cert_verification_mode ConnectivityDirectoryService#cert_verification_mode}
 
 ---
 
@@ -2207,6 +2395,277 @@ public readonly internalValue: IResolvable | ConnectivityDirectoryServiceHostRes
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceHostResolverNetwork">ConnectivityDirectoryServiceHostResolverNetwork</a>
+
+---
+
+
+### ConnectivityDirectoryServiceTlsSettingsOutputReference <a name="ConnectivityDirectoryServiceTlsSettingsOutputReference" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.Initializer"></a>
+
+```typescript
+import { connectivityDirectoryService } from '@cdktn/provider-cloudflare'
+
+new connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.certVerificationModeInput">certVerificationModeInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.certVerificationMode">certVerificationMode</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings">ConnectivityDirectoryServiceTlsSettings</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `certVerificationModeInput`<sup>Optional</sup> <a name="certVerificationModeInput" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.certVerificationModeInput"></a>
+
+```typescript
+public readonly certVerificationModeInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `certVerificationMode`<sup>Required</sup> <a name="certVerificationMode" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.certVerificationMode"></a>
+
+```typescript
+public readonly certVerificationMode: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettingsOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: IResolvable | ConnectivityDirectoryServiceTlsSettings;
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.connectivityDirectoryService.ConnectivityDirectoryServiceTlsSettings">ConnectivityDirectoryServiceTlsSettings</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ContentScanningExpression <a name="ContentScanningExpression" id="@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression cloudflare_content_scanning_expression}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer"></a>
 
@@ -22,7 +22,7 @@ contentScanningExpression.ContentScanningExpression(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   body: IResolvable | typing.List[ContentScanningExpressionBody],
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -37,7 +37,7 @@ contentScanningExpression.ContentScanningExpression(
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.body">body</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
+| <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.body">body</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 
 ---
@@ -106,17 +106,17 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
 
 ---
 
@@ -149,6 +149,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.putBody">put_body</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -514,6 +515,12 @@ def put_body(
 
 ---
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpression.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -628,7 +635,7 @@ The construct id used in the generated config for the ContentScanningExpression 
 
 The id of the existing ContentScanningExpression that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +915,7 @@ payload: str
 
 Defines the ruleset expression to use in matching content objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#payload ContentScanningExpression#payload}
 
 ---
 
@@ -928,7 +935,7 @@ contentScanningExpression.ContentScanningExpressionConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   body: IResolvable | typing.List[ContentScanningExpressionBody],
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -943,7 +950,7 @@ contentScanningExpression.ContentScanningExpressionConfig(
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">body</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
+| <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.body">body</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}. |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Defines an identifier. |
 
 ---
@@ -1026,11 +1033,11 @@ body: IResolvable | typing.List[ContentScanningExpressionBody]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionBody">ContentScanningExpressionBody</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#body ContentScanningExpression#body}.
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanningExpression.ContentScanningExpressionConfig.property.zoneId"></a>
 
 ```python
 zone_id: str
@@ -1040,7 +1047,7 @@ zone_id: str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/content_scanning_expression#zone_id ContentScanningExpression#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ZeroTrustGatewayPacfile <a name="ZeroTrustGatewayPacfile" id="@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile cloudflare_zero_trust_gateway_pacfile}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.resetSlug">ResetSlug</a></code> | *No description.* |
 
@@ -388,6 +389,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.resetAccountId"></a>
+
+```go
+func ResetAccountId()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfile.resetDescription"></a>
 
 ```go
@@ -503,7 +510,7 @@ The construct id used in the generated config for the ZeroTrustGatewayPacfile to
 
 The id of the existing ZeroTrustGatewayPacfile that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,9 +874,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	AccountId: *string,
 	Contents: *string,
 	Name: *string,
+	AccountId: *string,
 	Description: *string,
 	Slug: *string,
 }
@@ -886,9 +893,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile#account_id ZeroTrustGatewayPacfile#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.contents">Contents</a></code> | <code>*string</code> | Actual contents of the PAC file. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.name">Name</a></code> | <code>*string</code> | Name of the PAC file. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile#account_id ZeroTrustGatewayPacfile#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.description">Description</a></code> | <code>*string</code> | Detailed description of the PAC file. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.slug">Slug</a></code> | <code>*string</code> | URL-friendly version of the PAC file name. If not provided, it will be auto-generated. |
 
@@ -964,18 +971,6 @@ Provisioners *[]interface{}
 
 ---
 
-##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.accountId"></a>
-
-```go
-AccountId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile#account_id ZeroTrustGatewayPacfile#account_id}.
-
----
-
 ##### `Contents`<sup>Required</sup> <a name="Contents" id="@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.contents"></a>
 
 ```go
@@ -986,7 +981,7 @@ Contents *string
 
 Actual contents of the PAC file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile#contents ZeroTrustGatewayPacfile#contents}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile#contents ZeroTrustGatewayPacfile#contents}
 
 ---
 
@@ -1000,7 +995,19 @@ Name *string
 
 Name of the PAC file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile#name ZeroTrustGatewayPacfile#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile#name ZeroTrustGatewayPacfile#name}
+
+---
+
+##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.zeroTrustGatewayPacfile.ZeroTrustGatewayPacfileConfig.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile#account_id ZeroTrustGatewayPacfile#account_id}.
 
 ---
 
@@ -1014,7 +1021,7 @@ Description *string
 
 Detailed description of the PAC file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile#description ZeroTrustGatewayPacfile#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile#description ZeroTrustGatewayPacfile#description}
 
 ---
 
@@ -1028,7 +1035,7 @@ Slug *string
 
 URL-friendly version of the PAC file name. If not provided, it will be auto-generated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/zero_trust_gateway_pacfile#slug ZeroTrustGatewayPacfile#slug}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/zero_trust_gateway_pacfile#slug ZeroTrustGatewayPacfile#slug}
 
 ---
 

@@ -4,14 +4,14 @@
 
 ### DataCloudflareAccountTokens <a name="DataCloudflareAccountTokens" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_tokens cloudflare_account_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer"></a>
 
 ```typescript
 import { dataCloudflareAccountTokens } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareAccountTokens.DataCloudflareAccountTokens(scope: Construct, id: string, config: DataCloudflareAccountTokensConfig)
+new dataCloudflareAccountTokens.DataCloudflareAccountTokens(scope: Construct, id: string, config?: DataCloudflareAccountTokensConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig">DataCloudflareAccountTokensConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetDirection">resetDirection</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 
@@ -286,6 +287,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetDirection` <a name="resetDirection" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokens.resetDirection"></a>
 
 ```typescript
@@ -401,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -748,7 +755,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountTokens.DataCloudflareAccountTokensConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -758,7 +765,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_tokens#account_id DataCloudflareAccountTokens#account_id}
 
 ---
 
@@ -772,7 +779,7 @@ public readonly direction: string;
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_tokens#direction DataCloudflareAccountTokens#direction}
 
 ---
 
@@ -786,7 +793,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_tokens#max_items DataCloudflareAccountTokens#max_items}
 
 ---
 

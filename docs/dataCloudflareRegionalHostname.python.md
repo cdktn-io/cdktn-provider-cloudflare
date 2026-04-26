@@ -4,7 +4,7 @@
 
 ### DataCloudflareRegionalHostname <a name="DataCloudflareRegionalHostname" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname cloudflare_regional_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname cloudflare_regional_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.Initializer"></a>
 
@@ -22,7 +22,7 @@ dataCloudflareRegionalHostname.DataCloudflareRegionalHostname(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   hostname: str,
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -110,17 +110,17 @@ DNS hostname to be regionalized, must be a subdomain of the zone.
 
 Wildcards are supported for one level, e.g `*.example.com`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#hostname DataCloudflareRegionalHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname#hostname DataCloudflareRegionalHostname#hostname}
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.Initializer.parameter.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#zone_id DataCloudflareRegionalHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname#zone_id DataCloudflareRegionalHostname#zone_id}
 
 ---
 
@@ -146,6 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -389,6 +390,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostname.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -503,7 +510,7 @@ The construct id used in the generated config for the DataCloudflareRegionalHost
 
 The id of the existing DataCloudflareRegionalHostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -780,7 +787,7 @@ dataCloudflareRegionalHostname.DataCloudflareRegionalHostnameConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   hostname: str,
-  zone_id: str
+  zone_id: str = None
 )
 ```
 
@@ -882,11 +889,11 @@ DNS hostname to be regionalized, must be a subdomain of the zone.
 
 Wildcards are supported for one level, e.g `*.example.com`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#hostname DataCloudflareRegionalHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname#hostname DataCloudflareRegionalHostname#hostname}
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostnameConfig.property.zoneId"></a>
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostname.DataCloudflareRegionalHostnameConfig.property.zoneId"></a>
 
 ```python
 zone_id: str
@@ -896,7 +903,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/regional_hostname#zone_id DataCloudflareRegionalHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/regional_hostname#zone_id DataCloudflareRegionalHostname#zone_id}
 
 ---
 

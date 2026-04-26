@@ -4,7 +4,7 @@
 
 ### WorkersForPlatformsDispatchNamespace <a name="WorkersForPlatformsDispatchNamespace" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_for_platforms_dispatch_namespace cloudflare_workers_for_platforms_dispatch_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.Initializer"></a>
 
@@ -21,7 +21,7 @@ workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   name: str = None
 )
 ```
@@ -102,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_for_platforms_dispatch_namespace#account_id WorkersForPlatformsDispatchNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_for_platforms_dispatch_namespace#account_id WorkersForPlatformsDispatchNamespace#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the dispatch namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_for_platforms_dispatch_namespace#name WorkersForPlatformsDispatchNamespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_for_platforms_dispatch_namespace#name WorkersForPlatformsDispatchNamespace#name}
 
 ---
 
@@ -150,6 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.resetName">reset_name</a></code> | *No description.* |
 
 ---
@@ -502,6 +503,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 ##### `reset_name` <a name="reset_name" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespace.resetName"></a>
 
 ```python
@@ -622,7 +629,7 @@ The construct id used in the generated config for the WorkersForPlatformsDispatc
 
 The id of the existing WorkersForPlatformsDispatchNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_for_platforms_dispatch_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_for_platforms_dispatch_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -975,7 +982,7 @@ workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespaceConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
+  account_id: str = None,
   name: str = None
 )
 ```
@@ -1066,7 +1073,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespaceConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersForPlatformsDispatchNamespace.WorkersForPlatformsDispatchNamespaceConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1076,7 +1083,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_for_platforms_dispatch_namespace#account_id WorkersForPlatformsDispatchNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_for_platforms_dispatch_namespace#account_id WorkersForPlatformsDispatchNamespace#account_id}
 
 ---
 
@@ -1090,7 +1097,7 @@ name: str
 
 The name of the dispatch namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/workers_for_platforms_dispatch_namespace#name WorkersForPlatformsDispatchNamespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/workers_for_platforms_dispatch_namespace#name WorkersForPlatformsDispatchNamespace#name}
 
 ---
 

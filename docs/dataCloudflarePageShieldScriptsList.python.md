@@ -4,7 +4,7 @@
 
 ### DataCloudflarePageShieldScriptsList <a name="DataCloudflarePageShieldScriptsList" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list cloudflare_page_shield_scripts_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer"></a>
 
@@ -21,7 +21,6 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   direction: str = None,
   exclude_cdn_cgi: bool | IResolvable = None,
   exclude_duplicates: bool | IResolvable = None,
@@ -35,7 +34,8 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList(
   per_page: typing.Union[int, float] = None,
   prioritize_malicious: bool | IResolvable = None,
   status: str = None,
-  urls: str = None
+  urls: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -50,7 +50,6 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.direction">direction</a></code> | <code>str</code> | The direction used to sort returned scripts. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.excludeCdnCgi">exclude_cdn_cgi</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, excludes scripts seen in a `/cdn-cgi` path from the returned scripts. The default value is true. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.excludeDuplicates">exclude_duplicates</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, excludes duplicate scripts. |
@@ -65,6 +64,7 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.prioritizeMalicious">prioritize_malicious</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, malicious scripts appear first in the returned scripts. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.status">status</a></code> | <code>str</code> | Filters the returned scripts using a comma-separated list of scripts statuses. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.urls">urls</a></code> | <code>str</code> | Includes scripts whose URL contain one or more URL-encoded URLs separated by commas. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -128,23 +128,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#zone_id DataCloudflarePageShieldScriptsList#zone_id}
-
----
-
 ##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.direction"></a>
 
 - *Type:* str
 
 The direction used to sort returned scripts. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#direction DataCloudflarePageShieldScriptsList#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#direction DataCloudflarePageShieldScriptsList#direction}
 
 ---
 
@@ -154,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When true, excludes scripts seen in a `/cdn-cgi` path from the returned scripts. The default value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#exclude_cdn_cgi DataCloudflarePageShieldScriptsList#exclude_cdn_cgi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#exclude_cdn_cgi DataCloudflarePageShieldScriptsList#exclude_cdn_cgi}
 
 ---
 
@@ -168,7 +158,7 @@ We consider a script duplicate of another if their javascript
 content matches and they share the same url host and zone hostname. In such case, we return the most
 recent script for the URL host and zone hostname combination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#exclude_duplicates DataCloudflarePageShieldScriptsList#exclude_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#exclude_duplicates DataCloudflarePageShieldScriptsList#exclude_duplicates}
 
 ---
 
@@ -178,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Excludes scripts whose URL contains one of the URL-encoded URLs separated by commas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#exclude_urls DataCloudflarePageShieldScriptsList#exclude_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#exclude_urls DataCloudflarePageShieldScriptsList#exclude_urls}
 
 ---
 
@@ -188,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Export the list of scripts as a file, limited to 50000 entries. Available values: "csv".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#export DataCloudflarePageShieldScriptsList#export}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#export DataCloudflarePageShieldScriptsList#export}
 
 ---
 
@@ -201,7 +191,7 @@ Includes scripts that match one or more URL-encoded hostnames separated by comma
 Wildcards are supported at the start and end of each hostname to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#hosts DataCloudflarePageShieldScriptsList#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#hosts DataCloudflarePageShieldScriptsList#hosts}
 
 ---
 
@@ -211,7 +201,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#max_items DataCloudflarePageShieldScriptsList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#max_items DataCloudflarePageShieldScriptsList#max_items}
 
 ---
 
@@ -221,7 +211,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The field used to sort returned scripts. Available values: "first_seen_at", "last_seen_at".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#order_by DataCloudflarePageShieldScriptsList#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#order_by DataCloudflarePageShieldScriptsList#order_by}
 
 ---
 
@@ -235,7 +225,7 @@ We additionally support a special value "all". When "all" is used, the API will 
 with the applied filters in a single page. This feature is best-effort and it may only work for zones with
 a low number of scripts
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#page DataCloudflarePageShieldScriptsList#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#page DataCloudflarePageShieldScriptsList#page}
 
 ---
 
@@ -248,7 +238,7 @@ Includes scripts that match one or more page URLs (separated by commas) where th
 Wildcards are supported at the start and end of each page URL to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#page_url DataCloudflarePageShieldScriptsList#page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#page_url DataCloudflarePageShieldScriptsList#page_url}
 
 ---
 
@@ -258,7 +248,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#per_page DataCloudflarePageShieldScriptsList#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#per_page DataCloudflarePageShieldScriptsList#per_page}
 
 ---
 
@@ -268,7 +258,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When true, malicious scripts appear first in the returned scripts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#prioritize_malicious DataCloudflarePageShieldScriptsList#prioritize_malicious}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#prioritize_malicious DataCloudflarePageShieldScriptsList#prioritize_malicious}
 
 ---
 
@@ -280,7 +270,7 @@ Filters the returned scripts using a comma-separated list of scripts statuses.
 
 Accepted values: `active`, `infrequent`, and `inactive`. The default value is `active`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#status DataCloudflarePageShieldScriptsList#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#status DataCloudflarePageShieldScriptsList#status}
 
 ---
 
@@ -290,7 +280,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Includes scripts whose URL contain one or more URL-encoded URLs separated by commas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#urls DataCloudflarePageShieldScriptsList#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#urls DataCloudflarePageShieldScriptsList#urls}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#zone_id DataCloudflarePageShieldScriptsList#zone_id}
 
 ---
 
@@ -330,6 +330,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.resetPrioritizeMalicious">reset_prioritize_malicious</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.resetStatus">reset_status</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.resetUrls">reset_urls</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -657,6 +658,12 @@ def reset_status() -> None
 def reset_urls() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsList.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -771,7 +778,7 @@ The construct id used in the generated config for the DataCloudflarePageShieldSc
 
 The id of the existing DataCloudflarePageShieldScriptsList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1300,7 +1307,6 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   direction: str = None,
   exclude_cdn_cgi: bool | IResolvable = None,
   exclude_duplicates: bool | IResolvable = None,
@@ -1314,7 +1320,8 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig(
   per_page: typing.Union[int, float] = None,
   prioritize_malicious: bool | IResolvable = None,
   status: str = None,
-  urls: str = None
+  urls: str = None,
+  zone_id: str = None
 )
 ```
 
@@ -1329,7 +1336,6 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.direction">direction</a></code> | <code>str</code> | The direction used to sort returned scripts. Available values: "asc", "desc". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.excludeCdnCgi">exclude_cdn_cgi</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, excludes scripts seen in a `/cdn-cgi` path from the returned scripts. The default value is true. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.excludeDuplicates">exclude_duplicates</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, excludes duplicate scripts. |
@@ -1344,6 +1350,7 @@ dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.prioritizeMalicious">prioritize_malicious</a></code> | <code>bool \| cdktn.IResolvable</code> | When true, malicious scripts appear first in the returned scripts. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.status">status</a></code> | <code>str</code> | Filters the returned scripts using a comma-separated list of scripts statuses. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.urls">urls</a></code> | <code>str</code> | Includes scripts whose URL contain one or more URL-encoded URLs separated by commas. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1417,20 +1424,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#zone_id DataCloudflarePageShieldScriptsList#zone_id}
-
----
-
 ##### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.direction"></a>
 
 ```python
@@ -1441,7 +1434,7 @@ direction: str
 
 The direction used to sort returned scripts. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#direction DataCloudflarePageShieldScriptsList#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#direction DataCloudflarePageShieldScriptsList#direction}
 
 ---
 
@@ -1455,7 +1448,7 @@ exclude_cdn_cgi: bool | IResolvable
 
 When true, excludes scripts seen in a `/cdn-cgi` path from the returned scripts. The default value is true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#exclude_cdn_cgi DataCloudflarePageShieldScriptsList#exclude_cdn_cgi}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#exclude_cdn_cgi DataCloudflarePageShieldScriptsList#exclude_cdn_cgi}
 
 ---
 
@@ -1473,7 +1466,7 @@ We consider a script duplicate of another if their javascript
 content matches and they share the same url host and zone hostname. In such case, we return the most
 recent script for the URL host and zone hostname combination.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#exclude_duplicates DataCloudflarePageShieldScriptsList#exclude_duplicates}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#exclude_duplicates DataCloudflarePageShieldScriptsList#exclude_duplicates}
 
 ---
 
@@ -1487,7 +1480,7 @@ exclude_urls: str
 
 Excludes scripts whose URL contains one of the URL-encoded URLs separated by commas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#exclude_urls DataCloudflarePageShieldScriptsList#exclude_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#exclude_urls DataCloudflarePageShieldScriptsList#exclude_urls}
 
 ---
 
@@ -1501,7 +1494,7 @@ export: str
 
 Export the list of scripts as a file, limited to 50000 entries. Available values: "csv".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#export DataCloudflarePageShieldScriptsList#export}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#export DataCloudflarePageShieldScriptsList#export}
 
 ---
 
@@ -1518,7 +1511,7 @@ Includes scripts that match one or more URL-encoded hostnames separated by comma
 Wildcards are supported at the start and end of each hostname to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#hosts DataCloudflarePageShieldScriptsList#hosts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#hosts DataCloudflarePageShieldScriptsList#hosts}
 
 ---
 
@@ -1532,7 +1525,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#max_items DataCloudflarePageShieldScriptsList#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#max_items DataCloudflarePageShieldScriptsList#max_items}
 
 ---
 
@@ -1546,7 +1539,7 @@ order_by: str
 
 The field used to sort returned scripts. Available values: "first_seen_at", "last_seen_at".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#order_by DataCloudflarePageShieldScriptsList#order_by}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#order_by DataCloudflarePageShieldScriptsList#order_by}
 
 ---
 
@@ -1564,7 +1557,7 @@ We additionally support a special value "all". When "all" is used, the API will 
 with the applied filters in a single page. This feature is best-effort and it may only work for zones with
 a low number of scripts
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#page DataCloudflarePageShieldScriptsList#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#page DataCloudflarePageShieldScriptsList#page}
 
 ---
 
@@ -1581,7 +1574,7 @@ Includes scripts that match one or more page URLs (separated by commas) where th
 Wildcards are supported at the start and end of each page URL to support starts with, ends with
 and contains. If no wildcards are used, results will be filtered by exact match
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#page_url DataCloudflarePageShieldScriptsList#page_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#page_url DataCloudflarePageShieldScriptsList#page_url}
 
 ---
 
@@ -1595,7 +1588,7 @@ per_page: typing.Union[int, float]
 
 The number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#per_page DataCloudflarePageShieldScriptsList#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#per_page DataCloudflarePageShieldScriptsList#per_page}
 
 ---
 
@@ -1609,7 +1602,7 @@ prioritize_malicious: bool | IResolvable
 
 When true, malicious scripts appear first in the returned scripts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#prioritize_malicious DataCloudflarePageShieldScriptsList#prioritize_malicious}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#prioritize_malicious DataCloudflarePageShieldScriptsList#prioritize_malicious}
 
 ---
 
@@ -1625,7 +1618,7 @@ Filters the returned scripts using a comma-separated list of scripts statuses.
 
 Accepted values: `active`, `infrequent`, and `inactive`. The default value is `active`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#status DataCloudflarePageShieldScriptsList#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#status DataCloudflarePageShieldScriptsList#status}
 
 ---
 
@@ -1639,7 +1632,21 @@ urls: str
 
 Includes scripts whose URL contain one or more URL-encoded URLs separated by commas.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/page_shield_scripts_list#urls DataCloudflarePageShieldScriptsList#urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#urls DataCloudflarePageShieldScriptsList#urls}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflarePageShieldScriptsList.DataCloudflarePageShieldScriptsListConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/page_shield_scripts_list#zone_id DataCloudflarePageShieldScriptsList#zone_id}
 
 ---
 

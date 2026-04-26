@@ -4,14 +4,14 @@
 
 ### DataCloudflareEmailRoutingSettings <a name="DataCloudflareEmailRoutingSettings" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_settings cloudflare_email_routing_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_settings cloudflare_email_routing_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.Initializer"></a>
 
 ```typescript
 import { dataCloudflareEmailRoutingSettings } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings(scope: Construct, id: string, config: DataCloudflareEmailRoutingSettingsConfig)
+new dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings(scope: Construct, id: string, config?: DataCloudflareEmailRoutingSettingsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettingsConfig">DataCloudflareEmailRoutingSettingsConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettings.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareEmailRouting
 
 The id of the existing DataCloudflareEmailRoutingSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -765,7 +772,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettingsConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingSettings.DataCloudflareEmailRoutingSettingsConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -775,7 +782,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_settings#zone_id DataCloudflareEmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_settings#zone_id DataCloudflareEmailRoutingSettings#zone_id}
 
 ---
 

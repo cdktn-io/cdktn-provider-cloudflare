@@ -4,7 +4,7 @@
 
 ### DataCloudflareList <a name="DataCloudflareList" id="@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list cloudflare_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list cloudflare_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.resetSearch">resetSearch</a></code> | *No description.* |
 
 ---
@@ -285,6 +286,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetSearch` <a name="resetSearch" id="@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareList.resetSearch"></a>
 
 ```typescript
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareList to impo
 
 The id of the existing DataCloudflareList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -753,8 +760,8 @@ const dataCloudflareListConfig: dataCloudflareList.DataCloudflareListConfig = { 
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.accountId">accountId</a></code> | <code>string</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.listId">listId</a></code> | <code>string</code> | The unique ID of the list. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.accountId">accountId</a></code> | <code>string</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.search">search</a></code> | <code>string</code> | A search query to filter returned items. |
 
 ---
@@ -829,20 +836,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-The Account ID for this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
-
----
-
 ##### `listId`<sup>Required</sup> <a name="listId" id="@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.listId"></a>
 
 ```typescript
@@ -853,7 +846,21 @@ public readonly listId: string;
 
 The unique ID of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list#list_id DataCloudflareList#list_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareList.DataCloudflareListConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+The Account ID for this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list#account_id DataCloudflareList#account_id}
 
 ---
 
@@ -869,7 +876,7 @@ A search query to filter returned items.
 
 Its meaning depends on the list type: IP addresses must start with the provided string, hostnames and bulk redirects must contain the string, and ASNs must match the string exactly.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/list#search DataCloudflareList#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/list#search DataCloudflareList#search}
 
 ---
 

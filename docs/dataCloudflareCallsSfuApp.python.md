@@ -4,7 +4,7 @@
 
 ### DataCloudflareCallsSfuApp <a name="DataCloudflareCallsSfuApp" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_app cloudflare_calls_sfu_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_app cloudflare_calls_sfu_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer"></a>
 
@@ -21,8 +21,8 @@ dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  app_id: str
+  app_id: str,
+  account_id: str = None
 )
 ```
 
@@ -37,8 +37,8 @@ dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.appId">app_id</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a item. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 
 ---
 
@@ -102,23 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-The account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
-
----
-
 ##### `app_id`<sup>Required</sup> <a name="app_id" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.appId"></a>
 
 - *Type:* str
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+The account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
 
 ---
 
@@ -144,6 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -387,6 +388,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuApp.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -501,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareCallsSfuApp 
 
 The id of the existing DataCloudflareCallsSfuApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -777,8 +784,8 @@ dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
-  app_id: str
+  app_id: str,
+  account_id: str = None
 )
 ```
 
@@ -793,8 +800,8 @@ dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.appId">app_id</a></code> | <code>str</code> | A Cloudflare-generated unique identifier for a item. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.accountId">account_id</a></code> | <code>str</code> | The account identifier tag. |
 
 ---
 
@@ -868,20 +875,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-The account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
-
----
-
 ##### `app_id`<sup>Required</sup> <a name="app_id" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.appId"></a>
 
 ```python
@@ -892,7 +885,21 @@ app_id: str
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_app#app_id DataCloudflareCallsSfuApp#app_id}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareCallsSfuApp.DataCloudflareCallsSfuAppConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+The account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/calls_sfu_app#account_id DataCloudflareCallsSfuApp#account_id}
 
 ---
 

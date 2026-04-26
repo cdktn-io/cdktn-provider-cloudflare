@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDeviceSettings <a name="DataCloudflareZeroTrustDeviceSettings" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings cloudflare_zero_trust_device_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer"></a>
 
@@ -21,7 +21,7 @@ dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str
+  account_id: str = None
 )
 ```
 
@@ -36,7 +36,7 @@ dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
 
 ---
 
@@ -100,11 +100,11 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
 
 ---
 
@@ -130,6 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.getStringAttribute">get_string_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -373,6 +374,12 @@ def interpolation_for_attribute(
 
 ---
 
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettings.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -487,7 +494,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDev
 
 The id of the existing DataCloudflareZeroTrustDeviceSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -796,7 +803,7 @@ dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfi
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str
+  account_id: str = None
 )
 ```
 
@@ -811,7 +818,7 @@ dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfi
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}. |
 
 ---
 
@@ -885,7 +892,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.accountId"></a>
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceSettings.DataCloudflareZeroTrustDeviceSettingsConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -893,7 +900,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/zero_trust_device_settings#account_id DataCloudflareZeroTrustDeviceSettings#account_id}.
 
 ---
 

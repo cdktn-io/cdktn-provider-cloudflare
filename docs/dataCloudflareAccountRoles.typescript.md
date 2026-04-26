@@ -4,14 +4,14 @@
 
 ### DataCloudflareAccountRoles <a name="DataCloudflareAccountRoles" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_roles cloudflare_account_roles}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_roles cloudflare_account_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.Initializer"></a>
 
 ```typescript
 import { dataCloudflareAccountRoles } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareAccountRoles.DataCloudflareAccountRoles(scope: Construct, id: string, config: DataCloudflareAccountRolesConfig)
+new dataCloudflareAccountRoles.DataCloudflareAccountRoles(scope: Construct, id: string, config?: DataCloudflareAccountRolesConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesConfig">DataCloudflareAccountRolesConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.resetMaxItems">resetMaxItems</a></code> | *No description.* |
 
 ---
@@ -285,6 +286,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetMaxItems` <a name="resetMaxItems" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRoles.resetMaxItems"></a>
 
 ```typescript
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareAccountRoles
 
 The id of the existing DataCloudflareAccountRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -718,7 +725,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountRoles.DataCloudflareAccountRolesConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -728,7 +735,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_roles#account_id DataCloudflareAccountRoles#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_roles#account_id DataCloudflareAccountRoles#account_id}
 
 ---
 
@@ -742,7 +749,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_roles#max_items DataCloudflareAccountRoles#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_roles#max_items DataCloudflareAccountRoles#max_items}
 
 ---
 

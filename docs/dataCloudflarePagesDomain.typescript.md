@@ -4,7 +4,7 @@
 
 ### DataCloudflarePagesDomain <a name="DataCloudflarePagesDomain" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_domain cloudflare_pages_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_domain cloudflare_pages_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomain.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflarePagesDomain 
 
 The id of the existing DataCloudflarePagesDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -746,9 +753,9 @@ const dataCloudflarePagesDomainConfig: dataCloudflarePagesDomain.DataCloudflareP
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.domainName">domainName</a></code> | <code>string</code> | The domain name. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.projectName">projectName</a></code> | <code>string</code> | Name of the project. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -822,20 +829,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
-
----
-
 ##### `domainName`<sup>Required</sup> <a name="domainName" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.domainName"></a>
 
 ```typescript
@@ -846,7 +839,7 @@ public readonly domainName: string;
 
 The domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_domain#domain_name DataCloudflarePagesDomain#domain_name}
 
 ---
 
@@ -860,7 +853,21 @@ public readonly projectName: string;
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_domain#project_name DataCloudflarePagesDomain#project_name}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflarePagesDomain.DataCloudflarePagesDomainConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_domain#account_id DataCloudflarePagesDomain#account_id}
 
 ---
 

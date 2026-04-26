@@ -4,14 +4,14 @@
 
 ### DataCloudflareLogpullRetention <a name="DataCloudflareLogpullRetention" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/logpull_retention cloudflare_logpull_retention}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.Initializer"></a>
 
 ```typescript
 import { dataCloudflareLogpullRetention } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareLogpullRetention.DataCloudflareLogpullRetention(scope: Construct, id: string, config: DataCloudflareLogpullRetentionConfig)
+new dataCloudflareLogpullRetention.DataCloudflareLogpullRetention(scope: Construct, id: string, config?: DataCloudflareLogpullRetentionConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetentionConfig">DataCloudflareLogpullRetentionConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetention.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareLogpullReten
 
 The id of the existing DataCloudflareLogpullRetention that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpull_retention#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/logpull_retention#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -699,7 +706,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetentionConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareLogpullRetention.DataCloudflareLogpullRetentionConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -709,7 +716,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/logpull_retention#zone_id DataCloudflareLogpullRetention#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/logpull_retention#zone_id DataCloudflareLogpullRetention#zone_id}
 
 ---
 

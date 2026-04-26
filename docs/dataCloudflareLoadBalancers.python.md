@@ -4,7 +4,7 @@
 
 ### DataCloudflareLoadBalancers <a name="DataCloudflareLoadBalancers" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers cloudflare_load_balancers}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers cloudflare_load_balancers}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer"></a>
 
@@ -21,8 +21,8 @@ dataCloudflareLoadBalancers.DataCloudflareLoadBalancers(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
-  max_items: typing.Union[int, float] = None
+  max_items: typing.Union[int, float] = None,
+  zone_id: str = None
 )
 ```
 
@@ -37,8 +37,8 @@ dataCloudflareLoadBalancers.DataCloudflareLoadBalancers(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
 
 ---
 
@@ -102,21 +102,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
-
----
-
 ##### `max_items`<sup>Optional</sup> <a name="max_items" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.maxItems"></a>
 
 - *Type:* typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
 
 ---
 
@@ -143,6 +143,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.resetMaxItems">reset_max_items</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -392,6 +393,12 @@ def interpolation_for_attribute(
 def reset_max_items() -> None
 ```
 
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancers.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -506,7 +513,7 @@ The construct id used in the generated config for the DataCloudflareLoadBalancer
 
 The id of the existing DataCloudflareLoadBalancers that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -749,8 +756,8 @@ dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
-  max_items: typing.Union[int, float] = None
+  max_items: typing.Union[int, float] = None,
+  zone_id: str = None
 )
 ```
 
@@ -765,8 +772,8 @@ dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}. |
 
 ---
 
@@ -840,18 +847,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
-
----
-
 ##### `max_items`<sup>Optional</sup> <a name="max_items" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.maxItems"></a>
 
 ```python
@@ -862,7 +857,19 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#max_items DataCloudflareLoadBalancers#max_items}
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancers.DataCloudflareLoadBalancersConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#zone_id DataCloudflareLoadBalancers#zone_id}.
 
 ---
 
@@ -902,7 +909,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
 
 ---
 
@@ -918,7 +925,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
 
 ---
 
@@ -934,7 +941,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
 
 ---
 
@@ -1029,7 +1036,7 @@ A mapping of country codes to a list of pool IDs (ordered by their failover prio
 
 Any country not explicitly defined will fall back to using the corresponding region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#country_pools DataCloudflareLoadBalancers#country_pools}
 
 ---
 
@@ -1045,7 +1052,7 @@ Enterprise only: A mapping of Cloudflare PoP identifiers to a list of pool IDs (
 
 Any PoPs not explicitly defined will fall back to using the corresponding country_pool, then region_pool mapping if it exists else to default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#pop_pools DataCloudflareLoadBalancers#pop_pools}
 
 ---
 
@@ -1061,7 +1068,7 @@ A mapping of region codes to a list of pool IDs (ordered by their failover prior
 
 Any regions not explicitly defined will fall back to using default_pools.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#region_pools DataCloudflareLoadBalancers#region_pools}
 
 ---
 
@@ -1130,7 +1137,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
 
 ---
 
@@ -1166,7 +1173,7 @@ Configures the drain duration in seconds.
 
 This field is only used when session affinity is enabled on the load balancer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/load_balancers#drain_duration DataCloudflareLoadBalancers#drain_duration}
 
 ---
 

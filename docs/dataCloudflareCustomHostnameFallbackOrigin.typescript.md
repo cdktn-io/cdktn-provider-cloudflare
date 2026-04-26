@@ -4,14 +4,14 @@
 
 ### DataCloudflareCustomHostnameFallbackOrigin <a name="DataCloudflareCustomHostnameFallbackOrigin" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname_fallback_origin cloudflare_custom_hostname_fallback_origin}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.Initializer"></a>
 
 ```typescript
 import { dataCloudflareCustomHostnameFallbackOrigin } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin(scope: Construct, id: string, config: DataCloudflareCustomHostnameFallbackOriginConfig)
+new dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin(scope: Construct, id: string, config?: DataCloudflareCustomHostnameFallbackOriginConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOriginConfig">DataCloudflareCustomHostnameFallbackOriginConfig</a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOrigin.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareCustomHostna
 
 The id of the existing DataCloudflareCustomHostnameFallbackOrigin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname_fallback_origin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname_fallback_origin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -743,7 +750,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOriginConfig.property.zoneId"></a>
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostnameFallbackOrigin.DataCloudflareCustomHostnameFallbackOriginConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -753,7 +760,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname_fallback_origin#zone_id DataCloudflareCustomHostnameFallbackOrigin#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname_fallback_origin#zone_id DataCloudflareCustomHostnameFallbackOrigin#zone_id}
 
 ---
 

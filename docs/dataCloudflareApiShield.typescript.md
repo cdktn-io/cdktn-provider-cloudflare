@@ -4,14 +4,14 @@
 
 ### DataCloudflareApiShield <a name="DataCloudflareApiShield" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield cloudflare_api_shield}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield cloudflare_api_shield}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer"></a>
 
 ```typescript
 import { dataCloudflareApiShield } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareApiShield.DataCloudflareApiShield(scope: Construct, id: string, config: DataCloudflareApiShieldConfig)
+new dataCloudflareApiShield.DataCloudflareApiShield(scope: Construct, id: string, config?: DataCloudflareApiShieldConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig">DataCloudflareApiShieldConfig</a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.resetNormalize">resetNormalize</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -291,6 +292,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 public resetNormalize(): void
 ```
 
+##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShield.resetZoneId"></a>
+
+```typescript
+public resetZoneId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -394,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareApiShield to
 
 The id of the existing DataCloudflareApiShield that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -665,8 +672,8 @@ const dataCloudflareApiShieldConfig: dataCloudflareApiShield.DataCloudflareApiSh
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.normalize">normalize</a></code> | <code>boolean \| cdktn.IResolvable</code> | Ensures that the configuration is written or retrieved in normalized fashion. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -740,20 +747,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
-
----
-
 ##### `normalize`<sup>Optional</sup> <a name="normalize" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.normalize"></a>
 
 ```typescript
@@ -764,7 +757,21 @@ public readonly normalize: boolean | IResolvable;
 
 Ensures that the configuration is written or retrieved in normalized fashion.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/api_shield#normalize DataCloudflareApiShield#normalize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield#normalize DataCloudflareApiShield#normalize}
+
+---
+
+##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.dataCloudflareApiShield.DataCloudflareApiShieldConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/api_shield#zone_id DataCloudflareApiShield#zone_id}
 
 ---
 

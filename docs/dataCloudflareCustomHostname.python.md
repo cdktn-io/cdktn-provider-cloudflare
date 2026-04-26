@@ -4,7 +4,7 @@
 
 ### DataCloudflareCustomHostname <a name="DataCloudflareCustomHostname" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname cloudflare_custom_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname cloudflare_custom_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer"></a>
 
@@ -21,9 +21,9 @@ dataCloudflareCustomHostname.DataCloudflareCustomHostname(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   custom_hostname_id: str = None,
-  filter: DataCloudflareCustomHostnameFilter = None
+  filter: DataCloudflareCustomHostnameFilter = None,
+  zone_id: str = None
 )
 ```
 
@@ -38,9 +38,9 @@ dataCloudflareCustomHostname.DataCloudflareCustomHostname(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.customHostnameId">custom_hostname_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter">DataCloudflareCustomHostnameFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter">DataCloudflareCustomHostnameFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -104,23 +104,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#zone_id DataCloudflareCustomHostname#zone_id}
-
----
-
 ##### `custom_hostname_id`<sup>Optional</sup> <a name="custom_hostname_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.customHostnameId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#custom_hostname_id DataCloudflareCustomHostname#custom_hostname_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#custom_hostname_id DataCloudflareCustomHostname#custom_hostname_id}
 
 ---
 
@@ -128,7 +118,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter">DataCloudflareCustomHostnameFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}.
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#zone_id DataCloudflareCustomHostname#zone_id}
 
 ---
 
@@ -157,6 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter">put_filter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.resetCustomHostnameId">reset_custom_hostname_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.resetFilter">reset_filter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -404,13 +405,38 @@ def interpolation_for_attribute(
 
 ```python
 def put_filter(
+  certificate_authority: str = None,
+  custom_origin_server: str = None,
   direction: str = None,
-  hostname: str = None,
+  hostname: DataCloudflareCustomHostnameFilterHostname = None,
+  hostname_status: str = None,
   id: str = None,
   order: str = None,
-  ssl: typing.Union[int, float] = None
+  ssl: typing.Union[int, float] = None,
+  ssl_status: str = None,
+  wildcard: bool | IResolvable = None
 ) -> None
 ```
+
+###### `certificate_authority`<sup>Optional</sup> <a name="certificate_authority" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter.parameter.certificateAuthority"></a>
+
+- *Type:* str
+
+Filter by the certificate authority that issued the SSL certificate. Available values: "google", "lets_encrypt", "ssl_com".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#certificate_authority DataCloudflareCustomHostname#certificate_authority}
+
+---
+
+###### `custom_origin_server`<sup>Optional</sup> <a name="custom_origin_server" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter.parameter.customOriginServer"></a>
+
+- *Type:* str
+
+Filter by custom origin server name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#custom_origin_server DataCloudflareCustomHostname#custom_origin_server}
+
+---
 
 ###### `direction`<sup>Optional</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter.parameter.direction"></a>
 
@@ -418,17 +444,27 @@ def put_filter(
 
 Direction to order hostnames. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#direction DataCloudflareCustomHostname#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#direction DataCloudflareCustomHostname#direction}
 
 ---
 
 ###### `hostname`<sup>Optional</sup> <a name="hostname" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter.parameter.hostname"></a>
 
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname">DataCloudflareCustomHostnameFilterHostname</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#hostname DataCloudflareCustomHostname#hostname}.
+
+---
+
+###### `hostname_status`<sup>Optional</sup> <a name="hostname_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter.parameter.hostnameStatus"></a>
+
 - *Type:* str
 
-Fully qualified domain name to match against. This parameter cannot be used with the 'id' parameter.
+Filter by the hostname's activation status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#hostname DataCloudflareCustomHostname#hostname}
+Available values: "active", "pending", "active_redeploying", "moved", "pending_deletion", "deleted", "pending_blocked", "pending_migration", "pending_provisioned", "test_pending", "test_active", "test_active_apex", "test_blocked", "test_failed", "provisioned", "blocked".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#hostname_status DataCloudflareCustomHostname#hostname_status}
 
 ---
 
@@ -440,7 +476,7 @@ Hostname ID to match against.
 
 This ID was generated and returned during the initial custom_hostname creation. This parameter cannot be used with the 'hostname' parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#id DataCloudflareCustomHostname#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#id DataCloudflareCustomHostname#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -453,7 +489,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Field to order hostnames by. Available values: "ssl", "ssl_status".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#order DataCloudflareCustomHostname#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#order DataCloudflareCustomHostname#order}
 
 ---
 
@@ -463,7 +499,29 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether to filter hostnames based on if they have SSL enabled. Available values: 0, 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#ssl DataCloudflareCustomHostname#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#ssl DataCloudflareCustomHostname#ssl}
+
+---
+
+###### `ssl_status`<sup>Optional</sup> <a name="ssl_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter.parameter.sslStatus"></a>
+
+- *Type:* str
+
+Filter by SSL certificate status.
+
+Available values: "initializing", "pending_validation", "deleted", "pending_issuance", "pending_deployment", "pending_deletion", "pending_expiration", "expired", "active", "initializing_timed_out", "validation_timed_out", "issuance_timed_out", "deployment_timed_out", "deletion_timed_out", "pending_cleanup", "staging_deployment", "staging_active", "deactivating", "inactive", "backup_issued", "holding_deployment".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#ssl_status DataCloudflareCustomHostname#ssl_status}
+
+---
+
+###### `wildcard`<sup>Optional</sup> <a name="wildcard" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.putFilter.parameter.wildcard"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Filter by whether the custom hostname is a wildcard hostname.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#wildcard DataCloudflareCustomHostname#wildcard}
 
 ---
 
@@ -477,6 +535,12 @@ def reset_custom_hostname_id() -> None
 
 ```python
 def reset_filter() -> None
+```
+
+##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostname.resetZoneId"></a>
+
+```python
+def reset_zone_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -593,7 +657,7 @@ The construct id used in the generated config for the DataCloudflareCustomHostna
 
 The id of the existing DataCloudflareCustomHostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -968,9 +1032,9 @@ dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  zone_id: str,
   custom_hostname_id: str = None,
-  filter: DataCloudflareCustomHostnameFilter = None
+  filter: DataCloudflareCustomHostnameFilter = None,
+  zone_id: str = None
 )
 ```
 
@@ -985,9 +1049,9 @@ dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.customHostnameId">custom_hostname_id</a></code> | <code>str</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter">DataCloudflareCustomHostnameFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter">DataCloudflareCustomHostnameFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1061,20 +1125,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#zone_id DataCloudflareCustomHostname#zone_id}
-
----
-
 ##### `custom_hostname_id`<sup>Optional</sup> <a name="custom_hostname_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.customHostnameId"></a>
 
 ```python
@@ -1085,7 +1135,7 @@ custom_hostname_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#custom_hostname_id DataCloudflareCustomHostname#custom_hostname_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#custom_hostname_id DataCloudflareCustomHostname#custom_hostname_id}
 
 ---
 
@@ -1097,7 +1147,21 @@ filter: DataCloudflareCustomHostnameFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter">DataCloudflareCustomHostnameFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#filter DataCloudflareCustomHostname#filter}.
+
+---
+
+##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#zone_id DataCloudflareCustomHostname#zone_id}
 
 ---
 
@@ -1109,11 +1173,16 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktn_provider_cloudflare import data_cloudflare_custom_hostname
 
 dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter(
+  certificate_authority: str = None,
+  custom_origin_server: str = None,
   direction: str = None,
-  hostname: str = None,
+  hostname: DataCloudflareCustomHostnameFilterHostname = None,
+  hostname_status: str = None,
   id: str = None,
   order: str = None,
-  ssl: typing.Union[int, float] = None
+  ssl: typing.Union[int, float] = None,
+  ssl_status: str = None,
+  wildcard: bool | IResolvable = None
 )
 ```
 
@@ -1121,11 +1190,44 @@ dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.certificateAuthority">certificate_authority</a></code> | <code>str</code> | Filter by the certificate authority that issued the SSL certificate. Available values: "google", "lets_encrypt", "ssl_com". |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.customOriginServer">custom_origin_server</a></code> | <code>str</code> | Filter by custom origin server name. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.direction">direction</a></code> | <code>str</code> | Direction to order hostnames. Available values: "asc", "desc". |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.hostname">hostname</a></code> | <code>str</code> | Fully qualified domain name to match against. This parameter cannot be used with the 'id' parameter. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.hostname">hostname</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname">DataCloudflareCustomHostnameFilterHostname</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#hostname DataCloudflareCustomHostname#hostname}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.hostnameStatus">hostname_status</a></code> | <code>str</code> | Filter by the hostname's activation status. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.id">id</a></code> | <code>str</code> | Hostname ID to match against. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.order">order</a></code> | <code>str</code> | Field to order hostnames by. Available values: "ssl", "ssl_status". |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.ssl">ssl</a></code> | <code>typing.Union[int, float]</code> | Whether to filter hostnames based on if they have SSL enabled. Available values: 0, 1. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.sslStatus">ssl_status</a></code> | <code>str</code> | Filter by SSL certificate status. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.wildcard">wildcard</a></code> | <code>bool \| cdktn.IResolvable</code> | Filter by whether the custom hostname is a wildcard hostname. |
+
+---
+
+##### `certificate_authority`<sup>Optional</sup> <a name="certificate_authority" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.certificateAuthority"></a>
+
+```python
+certificate_authority: str
+```
+
+- *Type:* str
+
+Filter by the certificate authority that issued the SSL certificate. Available values: "google", "lets_encrypt", "ssl_com".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#certificate_authority DataCloudflareCustomHostname#certificate_authority}
+
+---
+
+##### `custom_origin_server`<sup>Optional</sup> <a name="custom_origin_server" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.customOriginServer"></a>
+
+```python
+custom_origin_server: str
+```
+
+- *Type:* str
+
+Filter by custom origin server name.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#custom_origin_server DataCloudflareCustomHostname#custom_origin_server}
 
 ---
 
@@ -1139,21 +1241,35 @@ direction: str
 
 Direction to order hostnames. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#direction DataCloudflareCustomHostname#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#direction DataCloudflareCustomHostname#direction}
 
 ---
 
 ##### `hostname`<sup>Optional</sup> <a name="hostname" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.hostname"></a>
 
 ```python
-hostname: str
+hostname: DataCloudflareCustomHostnameFilterHostname
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname">DataCloudflareCustomHostnameFilterHostname</a>
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#hostname DataCloudflareCustomHostname#hostname}.
+
+---
+
+##### `hostname_status`<sup>Optional</sup> <a name="hostname_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.hostnameStatus"></a>
+
+```python
+hostname_status: str
 ```
 
 - *Type:* str
 
-Fully qualified domain name to match against. This parameter cannot be used with the 'id' parameter.
+Filter by the hostname's activation status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#hostname DataCloudflareCustomHostname#hostname}
+Available values: "active", "pending", "active_redeploying", "moved", "pending_deletion", "deleted", "pending_blocked", "pending_migration", "pending_provisioned", "test_pending", "test_active", "test_active_apex", "test_blocked", "test_failed", "provisioned", "blocked".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#hostname_status DataCloudflareCustomHostname#hostname_status}
 
 ---
 
@@ -1169,7 +1285,7 @@ Hostname ID to match against.
 
 This ID was generated and returned during the initial custom_hostname creation. This parameter cannot be used with the 'hostname' parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#id DataCloudflareCustomHostname#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#id DataCloudflareCustomHostname#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1186,7 +1302,7 @@ order: str
 
 Field to order hostnames by. Available values: "ssl", "ssl_status".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#order DataCloudflareCustomHostname#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#order DataCloudflareCustomHostname#order}
 
 ---
 
@@ -1200,7 +1316,71 @@ ssl: typing.Union[int, float]
 
 Whether to filter hostnames based on if they have SSL enabled. Available values: 0, 1.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/custom_hostname#ssl DataCloudflareCustomHostname#ssl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#ssl DataCloudflareCustomHostname#ssl}
+
+---
+
+##### `ssl_status`<sup>Optional</sup> <a name="ssl_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.sslStatus"></a>
+
+```python
+ssl_status: str
+```
+
+- *Type:* str
+
+Filter by SSL certificate status.
+
+Available values: "initializing", "pending_validation", "deleted", "pending_issuance", "pending_deployment", "pending_deletion", "pending_expiration", "expired", "active", "initializing_timed_out", "validation_timed_out", "issuance_timed_out", "deployment_timed_out", "deletion_timed_out", "pending_cleanup", "staging_deployment", "staging_active", "deactivating", "inactive", "backup_issued", "holding_deployment".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#ssl_status DataCloudflareCustomHostname#ssl_status}
+
+---
+
+##### `wildcard`<sup>Optional</sup> <a name="wildcard" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter.property.wildcard"></a>
+
+```python
+wildcard: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Filter by whether the custom hostname is a wildcard hostname.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#wildcard DataCloudflareCustomHostname#wildcard}
+
+---
+
+### DataCloudflareCustomHostnameFilterHostname <a name="DataCloudflareCustomHostnameFilterHostname" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_custom_hostname
+
+dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname(
+  contain: str = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname.property.contain">contain</a></code> | <code>str</code> | Filters hostnames by a substring match on the hostname value. This parameter cannot be used with the 'id' parameter. |
+
+---
+
+##### `contain`<sup>Optional</sup> <a name="contain" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname.property.contain"></a>
+
+```python
+contain: str
+```
+
+- *Type:* str
+
+Filters hostnames by a substring match on the hostname value. This parameter cannot be used with the 'id' parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#contain DataCloudflareCustomHostname#contain}
 
 ---
 
@@ -1283,6 +1463,309 @@ dataCloudflareCustomHostname.DataCloudflareCustomHostnameSslValidationRecords()
 
 ## Classes <a name="Classes" id="Classes"></a>
 
+### DataCloudflareCustomHostnameFilterHostnameOutputReference <a name="DataCloudflareCustomHostnameFilterHostnameOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import data_cloudflare_custom_hostname
+
+dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.resetContain">reset_contain</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_contain` <a name="reset_contain" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.resetContain"></a>
+
+```python
+def reset_contain() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.containInput">contain_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.contain">contain</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname">DataCloudflareCustomHostnameFilterHostname</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `contain_input`<sup>Optional</sup> <a name="contain_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.containInput"></a>
+
+```python
+contain_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `contain`<sup>Required</sup> <a name="contain" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.contain"></a>
+
+```python
+contain: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | DataCloudflareCustomHostnameFilterHostname
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname">DataCloudflareCustomHostnameFilterHostname</a>
+
+---
+
+
 ### DataCloudflareCustomHostnameFilterOutputReference <a name="DataCloudflareCustomHostnameFilterOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference"></a>
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.Initializer"></a>
@@ -1336,11 +1819,17 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.putHostname">put_hostname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetCertificateAuthority">reset_certificate_authority</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetCustomOriginServer">reset_custom_origin_server</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetDirection">reset_direction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetHostname">reset_hostname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetHostnameStatus">reset_hostname_status</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetOrder">reset_order</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetSsl">reset_ssl</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetSslStatus">reset_ssl_status</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetWildcard">reset_wildcard</a></code> | *No description.* |
 
 ---
 
@@ -1516,6 +2005,36 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `put_hostname` <a name="put_hostname" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.putHostname"></a>
+
+```python
+def put_hostname(
+  contain: str = None
+) -> None
+```
+
+###### `contain`<sup>Optional</sup> <a name="contain" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.putHostname.parameter.contain"></a>
+
+- *Type:* str
+
+Filters hostnames by a substring match on the hostname value. This parameter cannot be used with the 'id' parameter.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/custom_hostname#contain DataCloudflareCustomHostname#contain}
+
+---
+
+##### `reset_certificate_authority` <a name="reset_certificate_authority" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetCertificateAuthority"></a>
+
+```python
+def reset_certificate_authority() -> None
+```
+
+##### `reset_custom_origin_server` <a name="reset_custom_origin_server" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetCustomOriginServer"></a>
+
+```python
+def reset_custom_origin_server() -> None
+```
+
 ##### `reset_direction` <a name="reset_direction" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetDirection"></a>
 
 ```python
@@ -1526,6 +2045,12 @@ def reset_direction() -> None
 
 ```python
 def reset_hostname() -> None
+```
+
+##### `reset_hostname_status` <a name="reset_hostname_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetHostnameStatus"></a>
+
+```python
+def reset_hostname_status() -> None
 ```
 
 ##### `reset_id` <a name="reset_id" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetId"></a>
@@ -1546,6 +2071,18 @@ def reset_order() -> None
 def reset_ssl() -> None
 ```
 
+##### `reset_ssl_status` <a name="reset_ssl_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetSslStatus"></a>
+
+```python
+def reset_ssl_status() -> None
+```
+
+##### `reset_wildcard` <a name="reset_wildcard" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.resetWildcard"></a>
+
+```python
+def reset_wildcard() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1553,16 +2090,26 @@ def reset_ssl() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostname">hostname</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference">DataCloudflareCustomHostnameFilterHostnameOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.certificateAuthorityInput">certificate_authority_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.customOriginServerInput">custom_origin_server_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.directionInput">direction_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostnameInput">hostname_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostnameInput">hostname_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname">DataCloudflareCustomHostnameFilterHostname</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostnameStatusInput">hostname_status_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.orderInput">order_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.sslInput">ssl_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.sslStatusInput">ssl_status_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.wildcardInput">wildcard_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.certificateAuthority">certificate_authority</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.customOriginServer">custom_origin_server</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.direction">direction</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostname">hostname</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostnameStatus">hostname_status</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.order">order</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.ssl">ssl</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.sslStatus">ssl_status</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.wildcard">wildcard</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilter">DataCloudflareCustomHostnameFilter</a></code> | *No description.* |
 
 ---
@@ -1591,6 +2138,36 @@ fqn: str
 
 ---
 
+##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostname"></a>
+
+```python
+hostname: DataCloudflareCustomHostnameFilterHostnameOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostnameOutputReference">DataCloudflareCustomHostnameFilterHostnameOutputReference</a>
+
+---
+
+##### `certificate_authority_input`<sup>Optional</sup> <a name="certificate_authority_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.certificateAuthorityInput"></a>
+
+```python
+certificate_authority_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_origin_server_input`<sup>Optional</sup> <a name="custom_origin_server_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.customOriginServerInput"></a>
+
+```python
+custom_origin_server_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `direction_input`<sup>Optional</sup> <a name="direction_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.directionInput"></a>
 
 ```python
@@ -1604,7 +2181,17 @@ direction_input: str
 ##### `hostname_input`<sup>Optional</sup> <a name="hostname_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostnameInput"></a>
 
 ```python
-hostname_input: str
+hostname_input: IResolvable | DataCloudflareCustomHostnameFilterHostname
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterHostname">DataCloudflareCustomHostnameFilterHostname</a>
+
+---
+
+##### `hostname_status_input`<sup>Optional</sup> <a name="hostname_status_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostnameStatusInput"></a>
+
+```python
+hostname_status_input: str
 ```
 
 - *Type:* str
@@ -1641,6 +2228,46 @@ ssl_input: typing.Union[int, float]
 
 ---
 
+##### `ssl_status_input`<sup>Optional</sup> <a name="ssl_status_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.sslStatusInput"></a>
+
+```python
+ssl_status_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `wildcard_input`<sup>Optional</sup> <a name="wildcard_input" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.wildcardInput"></a>
+
+```python
+wildcard_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `certificate_authority`<sup>Required</sup> <a name="certificate_authority" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.certificateAuthority"></a>
+
+```python
+certificate_authority: str
+```
+
+- *Type:* str
+
+---
+
+##### `custom_origin_server`<sup>Required</sup> <a name="custom_origin_server" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.customOriginServer"></a>
+
+```python
+custom_origin_server: str
+```
+
+- *Type:* str
+
+---
+
 ##### `direction`<sup>Required</sup> <a name="direction" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.direction"></a>
 
 ```python
@@ -1651,10 +2278,10 @@ direction: str
 
 ---
 
-##### `hostname`<sup>Required</sup> <a name="hostname" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostname"></a>
+##### `hostname_status`<sup>Required</sup> <a name="hostname_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.hostnameStatus"></a>
 
 ```python
-hostname: str
+hostname_status: str
 ```
 
 - *Type:* str
@@ -1688,6 +2315,26 @@ ssl: typing.Union[int, float]
 ```
 
 - *Type:* typing.Union[int, float]
+
+---
+
+##### `ssl_status`<sup>Required</sup> <a name="ssl_status" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.sslStatus"></a>
+
+```python
+ssl_status: str
+```
+
+- *Type:* str
+
+---
+
+##### `wildcard`<sup>Required</sup> <a name="wildcard" id="@cdktn/provider-cloudflare.dataCloudflareCustomHostname.DataCloudflareCustomHostnameFilterOutputReference.property.wildcard"></a>
+
+```python
+wildcard: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 

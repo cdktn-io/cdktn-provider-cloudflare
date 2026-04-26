@@ -4,7 +4,7 @@
 
 ### R2CustomDomain <a name="R2CustomDomain" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain cloudflare_r2_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.Initializer"></a>
 
@@ -74,6 +74,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
+| <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.resetCiphers">resetCiphers</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.resetJurisdiction">resetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.resetMinTls">resetMinTls</a></code> | *No description.* |
@@ -389,6 +390,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetCiphers` <a name="resetCiphers" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomain.resetCiphers"></a>
 
 ```typescript
@@ -510,7 +517,7 @@ The construct id used in the generated config for the R2CustomDomain to import.
 
 The id of the existing R2CustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -924,11 +931,11 @@ const r2CustomDomainConfig: r2CustomDomain.R2CustomDomainConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.accountId">accountId</a></code> | <code>string</code> | Account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.bucketName">bucketName</a></code> | <code>string</code> | Name of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.domain">domain</a></code> | <code>string</code> | Name of the custom domain to be added. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Whether to enable public bucket access at the custom domain. If undefined, the domain will be enabled. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Zone ID of the custom domain. |
+| <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.accountId">accountId</a></code> | <code>string</code> | Account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.ciphers">ciphers</a></code> | <code>string[]</code> | An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.jurisdiction">jurisdiction</a></code> | <code>string</code> | Jurisdiction of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.minTls">minTls</a></code> | <code>string</code> | Minimum TLS Version the custom domain will accept for incoming connections. |
@@ -1005,20 +1012,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
-
----
-
 ##### `bucketName`<sup>Required</sup> <a name="bucketName" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.bucketName"></a>
 
 ```typescript
@@ -1029,7 +1022,7 @@ public readonly bucketName: string;
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#bucket_name R2CustomDomain#bucket_name}
 
 ---
 
@@ -1043,7 +1036,7 @@ public readonly domain: string;
 
 Name of the custom domain to be added.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#domain R2CustomDomain#domain}
 
 ---
 
@@ -1057,7 +1050,7 @@ public readonly enabled: boolean | IResolvable;
 
 Whether to enable public bucket access at the custom domain. If undefined, the domain will be enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#enabled R2CustomDomain#enabled}
 
 ---
 
@@ -1071,7 +1064,21 @@ public readonly zoneId: string;
 
 Zone ID of the custom domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#zone_id R2CustomDomain#zone_id}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.r2CustomDomain.R2CustomDomainConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#account_id R2CustomDomain#account_id}
 
 ---
 
@@ -1085,7 +1092,7 @@ public readonly ciphers: string[];
 
 An allowlist of ciphers for TLS termination. These ciphers must be in the BoringSSL format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#ciphers R2CustomDomain#ciphers}
 
 ---
 
@@ -1099,7 +1106,7 @@ public readonly jurisdiction: string;
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#jurisdiction R2CustomDomain#jurisdiction}
 
 ---
 
@@ -1116,7 +1123,7 @@ Minimum TLS Version the custom domain will accept for incoming connections.
 If not set, defaults to 1.0.
 Available values: "1.0", "1.1", "1.2", "1.3".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/r2_custom_domain#min_tls R2CustomDomain#min_tls}
 
 ---
 

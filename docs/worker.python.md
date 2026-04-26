@@ -4,7 +4,7 @@
 
 ### Worker <a name="Worker" id="@cdktn/provider-cloudflare.worker.Worker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker cloudflare_worker}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker cloudflare_worker}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.Worker.Initializer"></a>
 
@@ -21,8 +21,8 @@ worker.Worker(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   name: str,
+  account_id: str = None,
   logpush: bool | IResolvable = None,
   observability: WorkerObservability = None,
   subdomain: WorkerSubdomain = None,
@@ -42,8 +42,8 @@ worker.Worker(
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.name">name</a></code> | <code>str</code> | Name of the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.logpush">logpush</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether logpush is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a></code> | Observability settings for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.subdomain">subdomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerSubdomain">WorkerSubdomain</a></code> | Subdomain settings for the Worker. |
@@ -112,23 +112,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#account_id Worker#account_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 Name of the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#name Worker#name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.worker.Worker.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#account_id Worker#account_id}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether logpush is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#logpush Worker#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#logpush Worker#logpush}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#observability Worker#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#observability Worker#observability}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Subdomain settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#subdomain Worker#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#subdomain Worker#subdomain}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Tags associated with the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#tags Worker#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#tags Worker#tags}
 
 ---
 
@@ -178,7 +178,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Other Workers that should consume logs from the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
 
 ---
 
@@ -213,6 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putObservability">put_observability</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putSubdomain">put_subdomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putTailConsumers">put_tail_consumers</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetLogpush">reset_logpush</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetObservability">reset_observability</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetSubdomain">reset_subdomain</a></code> | *No description.* |
@@ -575,7 +576,8 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 def put_observability(
   enabled: bool | IResolvable = None,
   head_sampling_rate: typing.Union[int, float] = None,
-  logs: WorkerObservabilityLogs = None
+  logs: WorkerObservabilityLogs = None,
+  traces: WorkerObservabilityTraces = None
 ) -> None
 ```
 
@@ -585,7 +587,7 @@ def put_observability(
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -595,7 +597,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -605,7 +607,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#logs Worker#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#logs Worker#logs}
+
+---
+
+###### `traces`<sup>Optional</sup> <a name="traces" id="@cdktn/provider-cloudflare.worker.Worker.putObservability.parameter.traces"></a>
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a>
+
+Trace settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#traces Worker#traces}
 
 ---
 
@@ -624,7 +636,7 @@ def put_subdomain(
 
 Whether the *.workers.dev subdomain is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -634,7 +646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
 
 ---
 
@@ -651,6 +663,12 @@ def put_tail_consumers(
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.worker.WorkerTailConsumers">WorkerTailConsumers</a>]
 
 ---
+
+##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.worker.Worker.resetAccountId"></a>
+
+```python
+def reset_account_id() -> None
+```
 
 ##### `reset_logpush` <a name="reset_logpush" id="@cdktn/provider-cloudflare.worker.Worker.resetLogpush"></a>
 
@@ -796,7 +814,7 @@ The construct id used in the generated config for the Worker to import.
 
 The id of the existing Worker that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -827,6 +845,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.createdOn">created_on</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.deployedOn">deployed_on</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference">WorkerObservabilityOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.property.references">references</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerReferencesOutputReference">WorkerReferencesOutputReference</a></code> | *No description.* |
@@ -993,6 +1012,16 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ```python
 created_on: str
+```
+
+- *Type:* str
+
+---
+
+##### `deployed_on`<sup>Required</sup> <a name="deployed_on" id="@cdktn/provider-cloudflare.worker.Worker.property.deployedOn"></a>
+
+```python
+deployed_on: str
 ```
 
 - *Type:* str
@@ -1204,8 +1233,8 @@ worker.WorkerConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
-  account_id: str,
   name: str,
+  account_id: str = None,
   logpush: bool | IResolvable = None,
   observability: WorkerObservability = None,
   subdomain: WorkerSubdomain = None,
@@ -1225,8 +1254,8 @@ worker.WorkerConfig(
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.name">name</a></code> | <code>str</code> | Name of the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.logpush">logpush</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether logpush is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.observability">observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a></code> | Observability settings for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.subdomain">subdomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerSubdomain">WorkerSubdomain</a></code> | Subdomain settings for the Worker. |
@@ -1305,20 +1334,6 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#account_id Worker#account_id}
-
----
-
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.name"></a>
 
 ```python
@@ -1329,7 +1344,21 @@ name: str
 
 Name of the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#name Worker#name}
+
+---
+
+##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#account_id Worker#account_id}
 
 ---
 
@@ -1343,7 +1372,7 @@ logpush: bool | IResolvable
 
 Whether logpush is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#logpush Worker#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#logpush Worker#logpush}
 
 ---
 
@@ -1357,7 +1386,7 @@ observability: WorkerObservability
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#observability Worker#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#observability Worker#observability}
 
 ---
 
@@ -1371,7 +1400,7 @@ subdomain: WorkerSubdomain
 
 Subdomain settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#subdomain Worker#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#subdomain Worker#subdomain}
 
 ---
 
@@ -1385,7 +1414,7 @@ tags: typing.List[str]
 
 Tags associated with the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#tags Worker#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#tags Worker#tags}
 
 ---
 
@@ -1399,7 +1428,7 @@ tail_consumers: IResolvable | typing.List[WorkerTailConsumers]
 
 Other Workers that should consume logs from the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
 
 ---
 
@@ -1413,7 +1442,8 @@ from cdktn_provider_cloudflare import worker
 worker.WorkerObservability(
   enabled: bool | IResolvable = None,
   head_sampling_rate: typing.Union[int, float] = None,
-  logs: WorkerObservabilityLogs = None
+  logs: WorkerObservabilityLogs = None,
+  traces: WorkerObservabilityTraces = None
 )
 ```
 
@@ -1424,6 +1454,7 @@ worker.WorkerObservability(
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether observability is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%). |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs">WorkerObservabilityLogs</a></code> | Log settings for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a></code> | Trace settings for the Worker. |
 
 ---
 
@@ -1437,7 +1468,7 @@ enabled: bool | IResolvable
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1451,7 +1482,7 @@ head_sampling_rate: typing.Union[int, float]
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1465,7 +1496,21 @@ logs: WorkerObservabilityLogs
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#logs Worker#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#logs Worker#logs}
+
+---
+
+##### `traces`<sup>Optional</sup> <a name="traces" id="@cdktn/provider-cloudflare.worker.WorkerObservability.property.traces"></a>
+
+```python
+traces: WorkerObservabilityTraces
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a>
+
+Trace settings for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#traces Worker#traces}
 
 ---
 
@@ -1477,9 +1522,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 from cdktn_provider_cloudflare import worker
 
 worker.WorkerObservabilityLogs(
+  destinations: typing.List[str] = None,
   enabled: bool | IResolvable = None,
   head_sampling_rate: typing.Union[int, float] = None,
-  invocation_logs: bool | IResolvable = None
+  invocation_logs: bool | IResolvable = None,
+  persist: bool | IResolvable = None
 )
 ```
 
@@ -1487,9 +1534,25 @@ worker.WorkerObservabilityLogs(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | A list of destinations where logs will be exported to. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether logs are enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%). |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.property.invocationLogs">invocation_logs</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.property.persist">persist</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether log persistence is enabled for the Worker. |
+
+---
+
+##### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.property.destinations"></a>
+
+```python
+destinations: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of destinations where logs will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -1503,7 +1566,7 @@ enabled: bool | IResolvable
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1517,7 +1580,7 @@ head_sampling_rate: typing.Union[int, float]
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1531,7 +1594,103 @@ invocation_logs: bool | IResolvable
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+
+---
+
+##### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs.property.persist"></a>
+
+```python
+persist: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether log persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#persist Worker#persist}
+
+---
+
+### WorkerObservabilityTraces <a name="WorkerObservabilityTraces" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import worker
+
+worker.WorkerObservabilityTraces(
+  destinations: typing.List[str] = None,
+  enabled: bool | IResolvable = None,
+  head_sampling_rate: typing.Union[int, float] = None,
+  persist: bool | IResolvable = None
+)
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | A list of destinations where traces will be exported to. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether traces are enabled for the Worker. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%). |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.persist">persist</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether trace persistence is enabled for the Worker. |
+
+---
+
+##### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.destinations"></a>
+
+```python
+destinations: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+A list of destinations where traces will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#destinations Worker#destinations}
+
+---
+
+##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether traces are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
+
+---
+
+##### `head_sampling_rate`<sup>Optional</sup> <a name="head_sampling_rate" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.headSamplingRate"></a>
+
+```python
+head_sampling_rate: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+
+---
+
+##### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces.property.persist"></a>
+
+```python
+persist: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether trace persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -1633,7 +1792,7 @@ enabled: bool | IResolvable
 
 Whether the *.workers.dev subdomain is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1647,7 +1806,7 @@ previews_enabled: bool | IResolvable
 
 Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
 
 ---
 
@@ -1681,7 +1840,7 @@ name: str
 
 Name of the consumer Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -1740,9 +1899,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetDestinations">reset_destinations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetHeadSamplingRate">reset_head_sampling_rate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetInvocationLogs">reset_invocation_logs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetPersist">reset_persist</a></code> | *No description.* |
 
 ---
 
@@ -1918,6 +2079,12 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_destinations` <a name="reset_destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetDestinations"></a>
+
+```python
+def reset_destinations() -> None
+```
+
 ##### `reset_enabled` <a name="reset_enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetEnabled"></a>
 
 ```python
@@ -1936,6 +2103,12 @@ def reset_head_sampling_rate() -> None
 def reset_invocation_logs() -> None
 ```
 
+##### `reset_persist` <a name="reset_persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.resetPersist"></a>
+
+```python
+def reset_persist() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -1943,12 +2116,16 @@ def reset_invocation_logs() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.destinationsInput">destinations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.headSamplingRateInput">head_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.invocationLogsInput">invocation_logs_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.persistInput">persist_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.invocationLogs">invocation_logs</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.persist">persist</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs">WorkerObservabilityLogs</a></code> | *No description.* |
 
 ---
@@ -1974,6 +2151,16 @@ fqn: str
 ```
 
 - *Type:* str
+
+---
+
+##### `destinations_input`<sup>Optional</sup> <a name="destinations_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.destinationsInput"></a>
+
+```python
+destinations_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
 
 ---
 
@@ -2007,6 +2194,26 @@ invocation_logs_input: bool | IResolvable
 
 ---
 
+##### `persist_input`<sup>Optional</sup> <a name="persist_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.persistInput"></a>
+
+```python
+persist_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `destinations`<sup>Required</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.destinations"></a>
+
+```python
+destinations: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.enabled"></a>
 
 ```python
@@ -2031,6 +2238,16 @@ head_sampling_rate: typing.Union[int, float]
 
 ```python
 invocation_logs: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `persist`<sup>Required</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference.property.persist"></a>
+
+```python
+persist: bool | IResolvable
 ```
 
 - *Type:* bool | cdktn.IResolvable
@@ -2102,9 +2319,11 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putLogs">put_logs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putTraces">put_traces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetHeadSamplingRate">reset_head_sampling_rate</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetLogs">reset_logs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetTraces">reset_traces</a></code> | *No description.* |
 
 ---
 
@@ -2284,11 +2503,23 @@ Returns a reversible string representation.
 
 ```python
 def put_logs(
+  destinations: typing.List[str] = None,
   enabled: bool | IResolvable = None,
   head_sampling_rate: typing.Union[int, float] = None,
-  invocation_logs: bool | IResolvable = None
+  invocation_logs: bool | IResolvable = None,
+  persist: bool | IResolvable = None
 ) -> None
 ```
+
+###### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putLogs.parameter.destinations"></a>
+
+- *Type:* typing.List[str]
+
+A list of destinations where logs will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#destinations Worker#destinations}
+
+---
 
 ###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putLogs.parameter.enabled"></a>
 
@@ -2296,7 +2527,7 @@ def put_logs(
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -2306,7 +2537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -2316,7 +2547,68 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+
+---
+
+###### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putLogs.parameter.persist"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether log persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#persist Worker#persist}
+
+---
+
+##### `put_traces` <a name="put_traces" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putTraces"></a>
+
+```python
+def put_traces(
+  destinations: typing.List[str] = None,
+  enabled: bool | IResolvable = None,
+  head_sampling_rate: typing.Union[int, float] = None,
+  persist: bool | IResolvable = None
+) -> None
+```
+
+###### `destinations`<sup>Optional</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putTraces.parameter.destinations"></a>
+
+- *Type:* typing.List[str]
+
+A list of destinations where traces will be exported to.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#destinations Worker#destinations}
+
+---
+
+###### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putTraces.parameter.enabled"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether traces are enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
+
+---
+
+###### `head_sampling_rate`<sup>Optional</sup> <a name="head_sampling_rate" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putTraces.parameter.headSamplingRate"></a>
+
+- *Type:* typing.Union[int, float]
+
+The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+
+---
+
+###### `persist`<sup>Optional</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.putTraces.parameter.persist"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Whether trace persistence is enabled for the Worker.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -2338,6 +2630,12 @@ def reset_head_sampling_rate() -> None
 def reset_logs() -> None
 ```
 
+##### `reset_traces` <a name="reset_traces" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.resetTraces"></a>
+
+```python
+def reset_traces() -> None
+```
+
 
 #### Properties <a name="Properties" id="Properties"></a>
 
@@ -2346,9 +2644,11 @@ def reset_logs() -> None
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.logs">logs</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogsOutputReference">WorkerObservabilityLogsOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.traces">traces</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference">WorkerObservabilityTracesOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.headSamplingRateInput">head_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.logsInput">logs_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityLogs">WorkerObservabilityLogs</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.tracesInput">traces_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a></code> | *No description.* |
@@ -2389,6 +2689,16 @@ logs: WorkerObservabilityLogsOutputReference
 
 ---
 
+##### `traces`<sup>Required</sup> <a name="traces" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.traces"></a>
+
+```python
+traces: WorkerObservabilityTracesOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference">WorkerObservabilityTracesOutputReference</a>
+
+---
+
 ##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.enabledInput"></a>
 
 ```python
@@ -2419,6 +2729,16 @@ logs_input: IResolvable | WorkerObservabilityLogs
 
 ---
 
+##### `traces_input`<sup>Optional</sup> <a name="traces_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.tracesInput"></a>
+
+```python
+traces_input: IResolvable | WorkerObservabilityTraces
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a>
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityOutputReference.property.enabled"></a>
 
 ```python
@@ -2446,6 +2766,396 @@ internal_value: IResolvable | WorkerObservability
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a>
+
+---
+
+
+### WorkerObservabilityTracesOutputReference <a name="WorkerObservabilityTracesOutputReference" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import worker
+
+worker.WorkerObservabilityTracesOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetDestinations">reset_destinations</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetEnabled">reset_enabled</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetHeadSamplingRate">reset_head_sampling_rate</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetPersist">reset_persist</a></code> | *No description.* |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `reset_destinations` <a name="reset_destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetDestinations"></a>
+
+```python
+def reset_destinations() -> None
+```
+
+##### `reset_enabled` <a name="reset_enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetEnabled"></a>
+
+```python
+def reset_enabled() -> None
+```
+
+##### `reset_head_sampling_rate` <a name="reset_head_sampling_rate" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetHeadSamplingRate"></a>
+
+```python
+def reset_head_sampling_rate() -> None
+```
+
+##### `reset_persist` <a name="reset_persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.resetPersist"></a>
+
+```python
+def reset_persist() -> None
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.destinationsInput">destinations_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.enabledInput">enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.headSamplingRateInput">head_sampling_rate_input</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.persistInput">persist_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.destinations">destinations</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.headSamplingRate">head_sampling_rate</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.persist">persist</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.internalValue">internal_value</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `destinations_input`<sup>Optional</sup> <a name="destinations_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.destinationsInput"></a>
+
+```python
+destinations_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enabled_input`<sup>Optional</sup> <a name="enabled_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.enabledInput"></a>
+
+```python
+enabled_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `head_sampling_rate_input`<sup>Optional</sup> <a name="head_sampling_rate_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.headSamplingRateInput"></a>
+
+```python
+head_sampling_rate_input: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `persist_input`<sup>Optional</sup> <a name="persist_input" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.persistInput"></a>
+
+```python
+persist_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `destinations`<sup>Required</sup> <a name="destinations" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.destinations"></a>
+
+```python
+destinations: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.enabled"></a>
+
+```python
+enabled: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `head_sampling_rate`<sup>Required</sup> <a name="head_sampling_rate" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.headSamplingRate"></a>
+
+```python
+head_sampling_rate: typing.Union[int, float]
+```
+
+- *Type:* typing.Union[int, float]
+
+---
+
+##### `persist`<sup>Required</sup> <a name="persist" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.persist"></a>
+
+```python
+persist: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.worker.WorkerObservabilityTracesOutputReference.property.internalValue"></a>
+
+```python
+internal_value: IResolvable | WorkerObservabilityTraces
+```
+
+- *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.worker.WorkerObservabilityTraces">WorkerObservabilityTraces</a>
 
 ---
 

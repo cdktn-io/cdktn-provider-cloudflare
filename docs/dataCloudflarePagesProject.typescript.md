@@ -4,7 +4,7 @@
 
 ### DataCloudflarePagesProject <a name="DataCloudflarePagesProject" id="@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_project cloudflare_pages_project}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_project cloudflare_pages_project}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.Initializer"></a>
 
@@ -68,6 +68,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -284,6 +285,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProject.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -387,7 +394,7 @@ The construct id used in the generated config for the DataCloudflarePagesProject
 
 The id of the existing DataCloudflarePagesProject that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -911,8 +918,8 @@ const dataCloudflarePagesProjectConfig: dataCloudflarePagesProject.DataCloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.projectName">projectName</a></code> | <code>string</code> | Name of the project. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -986,20 +993,6 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
-
----
-
 ##### `projectName`<sup>Required</sup> <a name="projectName" id="@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.projectName"></a>
 
 ```typescript
@@ -1010,7 +1003,21 @@ public readonly projectName: string;
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+
+---
+
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflarePagesProject.DataCloudflarePagesProjectConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
 
 ---
 

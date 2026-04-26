@@ -4,14 +4,14 @@
 
 ### DataCloudflareAccountToken <a name="DataCloudflareAccountToken" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token cloudflare_account_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_token cloudflare_account_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer"></a>
 
 ```typescript
 import { dataCloudflareAccountToken } from '@cdktn/provider-cloudflare'
 
-new dataCloudflareAccountToken.DataCloudflareAccountToken(scope: Construct, id: string, config: DataCloudflareAccountTokenConfig)
+new dataCloudflareAccountToken.DataCloudflareAccountToken(scope: Construct, id: string, config?: DataCloudflareAccountTokenConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.config"></a>
+##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig">DataCloudflareAccountTokenConfig</a>
 
@@ -69,6 +69,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.putFilter">putFilter</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.resetFilter">resetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.resetTokenId">resetTokenId</a></code> | *No description.* |
 
@@ -299,6 +300,12 @@ public putFilter(value: DataCloudflareAccountTokenFilter): void
 
 ---
 
+##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.resetAccountId"></a>
+
+```typescript
+public resetAccountId(): void
+```
+
 ##### `resetFilter` <a name="resetFilter" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.resetFilter"></a>
 
 ```typescript
@@ -414,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -807,7 +814,7 @@ const dataCloudflareAccountTokenConfig: dataCloudflareAccountToken.DataCloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.tokenId">tokenId</a></code> | <code>string</code> | Token identifier tag. |
 
 ---
@@ -882,7 +889,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.accountId"></a>
+##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -892,7 +899,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
 
 ---
 
@@ -904,7 +911,7 @@ public readonly filter: DataCloudflareAccountTokenFilter;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
 
 ---
 
@@ -918,7 +925,7 @@ public readonly tokenId: string;
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
 
 ---
 
@@ -950,7 +957,7 @@ public readonly direction: string;
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
 
 ---
 
