@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareStreamConfig extends cdktn.TerraformMetaArguments
   /**
   * The account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream#account_id DataCloudflareStream#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
   * A Cloudflare-generated unique identifier for a media item.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream#identifier DataCloudflareStream#identifier}
   */
   readonly identifier: string;
 }
@@ -141,6 +141,80 @@ export class DataCloudflareStreamPlaybackOutputReference extends cdktn.ComplexOb
   // hls - computed: true, optional: false, required: false
   public get hls() {
     return this.getStringAttribute('hls');
+  }
+}
+export interface DataCloudflareStreamPublicDetails {
+}
+
+export function dataCloudflareStreamPublicDetailsToTerraform(struct?: DataCloudflareStreamPublicDetails): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareStreamPublicDetailsToHclTerraform(struct?: DataCloudflareStreamPublicDetails): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareStreamPublicDetailsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareStreamPublicDetails | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareStreamPublicDetails | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // channel_link - computed: true, optional: false, required: false
+  public get channelLink() {
+    return this.getStringAttribute('channel_link');
+  }
+
+  // logo - computed: true, optional: false, required: false
+  public get logo() {
+    return this.getStringAttribute('logo');
+  }
+
+  // media_id - computed: true, optional: false, required: false
+  public get mediaId() {
+    return this.getNumberAttribute('media_id');
+  }
+
+  // share_link - computed: true, optional: false, required: false
+  public get shareLink() {
+    return this.getStringAttribute('share_link');
+  }
+
+  // title - computed: true, optional: false, required: false
+  public get title() {
+    return this.getStringAttribute('title');
   }
 }
 export interface DataCloudflareStreamStatus {
@@ -318,7 +392,7 @@ export class DataCloudflareStreamWatermarkOutputReference extends cdktn.ComplexO
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream cloudflare_stream}
 */
 export class DataCloudflareStream extends cdktn.TerraformDataSource {
 
@@ -334,7 +408,7 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareStream to import
-  * @param importFromId The id of the existing DataCloudflareStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -346,7 +420,7 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/stream cloudflare_stream} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/stream cloudflare_stream} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -357,7 +431,7 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_stream',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -376,13 +450,16 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
@@ -392,6 +469,11 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
   // allowed_origins - computed: true, optional: false, required: false
   public get allowedOrigins() {
     return this.getListAttribute('allowed_origins');
+  }
+
+  // clipped_from - computed: true, optional: false, required: false
+  public get clippedFrom() {
+    return this.getStringAttribute('clipped_from');
   }
 
   // created - computed: true, optional: false, required: false
@@ -438,6 +520,11 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
     return this.getNumberAttribute('max_duration_seconds');
   }
 
+  // max_size_bytes - computed: true, optional: false, required: false
+  public get maxSizeBytes() {
+    return this.getNumberAttribute('max_size_bytes');
+  }
+
   // meta - computed: true, optional: false, required: false
   public get meta() {
     return this.getStringAttribute('meta');
@@ -457,6 +544,12 @@ export class DataCloudflareStream extends cdktn.TerraformDataSource {
   // preview - computed: true, optional: false, required: false
   public get preview() {
     return this.getStringAttribute('preview');
+  }
+
+  // public_details - computed: true, optional: false, required: false
+  private _publicDetails = new DataCloudflareStreamPublicDetailsOutputReference(this, "public_details");
+  public get publicDetails() {
+    return this._publicDetails;
   }
 
   // ready_to_stream - computed: true, optional: false, required: false

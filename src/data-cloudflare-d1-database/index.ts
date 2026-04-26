@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataCloudflareD1DatabaseConfig extends cdktn.TerraformMetaArgum
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
   * D1 database identifier (UUID).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
   */
   readonly databaseId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}
   */
   readonly filter?: DataCloudflareD1DatabaseFilter;
 }
@@ -33,7 +33,7 @@ export interface DataCloudflareD1DatabaseFilter {
   /**
   * a database name to search for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
   */
   readonly name?: string;
 }
@@ -181,7 +181,7 @@ export class DataCloudflareD1DatabaseReadReplicationOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database cloudflare_d1_database}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database cloudflare_d1_database}
 */
 export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
 
@@ -197,7 +197,7 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareD1Database resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareD1Database to import
-  * @param importFromId The id of the existing DataCloudflareD1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareD1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareD1Database to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -209,18 +209,18 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareD1DatabaseConfig
+  * @param options DataCloudflareD1DatabaseConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareD1DatabaseConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareD1DatabaseConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_d1_database',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -240,13 +240,16 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
@@ -298,6 +301,11 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
   // id - computed: true, optional: false, required: false
   public get id() {
     return this.getStringAttribute('id');
+  }
+
+  // jurisdiction - computed: true, optional: false, required: false
+  public get jurisdiction() {
+    return this.getStringAttribute('jurisdiction');
   }
 
   // name - computed: true, optional: false, required: false

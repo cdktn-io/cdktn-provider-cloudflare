@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,17 +13,30 @@ import * as cdktn from 'cdktn';
 
 export interface ObservatoryScheduledTestConfig extends cdktn.TerraformMetaArguments {
   /**
+  * The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
+  */
+  readonly frequency?: string;
+  /**
+  * A test region.
+  * Available values: "asia-east1", "asia-northeast1", "asia-northeast2", "asia-south1", "asia-southeast1", "australia-southeast1", "europe-north1", "europe-southwest1", "europe-west1", "europe-west2", "europe-west3", "europe-west4", "europe-west8", "europe-west9", "me-west1", "southamerica-east1", "us-central1", "us-east1", "us-east4", "us-south1", "us-west1".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
+  */
+  readonly region?: string;
+  /**
   * A URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
   */
   readonly url: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
   */
-  readonly zoneId: string;
+  readonly zoneId?: string;
 }
 export interface ObservatoryScheduledTestSchedule {
 }
@@ -585,7 +598,7 @@ export class ObservatoryScheduledTestTestOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
 */
 export class ObservatoryScheduledTest extends cdktn.TerraformResource {
 
@@ -601,7 +614,7 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ObservatoryScheduledTest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservatoryScheduledTest to import
-  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservatoryScheduledTest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -613,7 +626,7 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -624,7 +637,7 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_observatory_scheduled_test',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -635,6 +648,8 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._frequency = config.frequency;
+    this._region = config.region;
     this._url = config.url;
     this._zoneId = config.zoneId;
   }
@@ -643,9 +658,20 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // frequency - computed: true, optional: false, required: false
+  // frequency - computed: true, optional: true, required: false
+  private _frequency?: string; 
   public get frequency() {
     return this.getStringAttribute('frequency');
+  }
+  public set frequency(value: string) {
+    this._frequency = value;
+  }
+  public resetFrequency() {
+    this._frequency = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get frequencyInput() {
+    return this._frequency;
   }
 
   // id - computed: true, optional: false, required: false
@@ -653,9 +679,20 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
     return this.getStringAttribute('id');
   }
 
-  // region - computed: true, optional: false, required: false
+  // region - computed: true, optional: true, required: false
+  private _region?: string; 
   public get region() {
     return this.getStringAttribute('region');
+  }
+  public set region(value: string) {
+    this._region = value;
+  }
+  public resetRegion() {
+    this._region = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get regionInput() {
+    return this._region;
   }
 
   // schedule - computed: true, optional: false, required: false
@@ -683,13 +720,16 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
     return this._url;
   }
 
-  // zone_id - computed: false, optional: false, required: true
+  // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
   public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {
@@ -702,6 +742,8 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      frequency: cdktn.stringToTerraform(this._frequency),
+      region: cdktn.stringToTerraform(this._region),
       url: cdktn.stringToTerraform(this._url),
       zone_id: cdktn.stringToTerraform(this._zoneId),
     };
@@ -709,6 +751,18 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
 
   protected synthesizeHclAttributes(): { [name: string]: any } {
     const attrs = {
+      frequency: {
+        value: cdktn.stringToHclTerraform(this._frequency),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      region: {
+        value: cdktn.stringToHclTerraform(this._region),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
       url: {
         value: cdktn.stringToHclTerraform(this._url),
         isBlock: false,

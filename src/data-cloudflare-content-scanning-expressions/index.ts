@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning_expressions
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,15 @@ export interface DataCloudflareContentScanningExpressionsConfig extends cdktn.Te
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning_expressions#max_items DataCloudflareContentScanningExpressions#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions#max_items DataCloudflareContentScanningExpressions#max_items}
   */
   readonly maxItems?: number;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning_expressions#zone_id DataCloudflareContentScanningExpressions#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions#zone_id DataCloudflareContentScanningExpressions#zone_id}
   */
-  readonly zoneId: string;
+  readonly zoneId?: string;
 }
 export interface DataCloudflareContentScanningExpressionsResult {
 }
@@ -107,7 +107,7 @@ export class DataCloudflareContentScanningExpressionsResultList extends cdktn.Co
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions}
 */
 export class DataCloudflareContentScanningExpressions extends cdktn.TerraformDataSource {
 
@@ -123,7 +123,7 @@ export class DataCloudflareContentScanningExpressions extends cdktn.TerraformDat
   * Generates CDKTN code for importing a DataCloudflareContentScanningExpressions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareContentScanningExpressions to import
-  * @param importFromId The id of the existing DataCloudflareContentScanningExpressions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning_expressions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareContentScanningExpressions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareContentScanningExpressions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -135,18 +135,18 @@ export class DataCloudflareContentScanningExpressions extends cdktn.TerraformDat
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/content_scanning_expressions cloudflare_content_scanning_expressions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareContentScanningExpressionsConfig
+  * @param options DataCloudflareContentScanningExpressionsConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareContentScanningExpressionsConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareContentScanningExpressionsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_content_scanning_expressions',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -187,13 +187,16 @@ export class DataCloudflareContentScanningExpressions extends cdktn.TerraformDat
     return this._result;
   }
 
-  // zone_id - computed: false, optional: false, required: true
+  // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
   public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {

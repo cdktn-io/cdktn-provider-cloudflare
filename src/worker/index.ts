@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,65 +15,77 @@ export interface WorkerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#account_id Worker#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#account_id Worker#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
   * Whether logpush is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#logpush Worker#logpush}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#logpush Worker#logpush}
   */
   readonly logpush?: boolean | cdktn.IResolvable;
   /**
   * Name of the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#name Worker#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#name Worker#name}
   */
   readonly name: string;
   /**
   * Observability settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#observability Worker#observability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#observability Worker#observability}
   */
   readonly observability?: WorkerObservability;
   /**
   * Subdomain settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#subdomain Worker#subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#subdomain Worker#subdomain}
   */
   readonly subdomain?: WorkerSubdomain;
   /**
   * Tags associated with the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#tags Worker#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#tags Worker#tags}
   */
   readonly tags?: string[];
   /**
   * Other Workers that should consume logs from the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
   */
   readonly tailConsumers?: WorkerTailConsumers[] | cdktn.IResolvable;
 }
 export interface WorkerObservabilityLogs {
   /**
+  * A list of destinations where logs will be exported to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#destinations Worker#destinations}
+  */
+  readonly destinations?: string[];
+  /**
   * Whether logs are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
   /**
   * Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
   */
   readonly invocationLogs?: boolean | cdktn.IResolvable;
+  /**
+  * Whether log persistence is enabled for the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#persist Worker#persist}
+  */
+  readonly persist?: boolean | cdktn.IResolvable;
 }
 
 export function workerObservabilityLogsToTerraform(struct?: WorkerObservabilityLogs | cdktn.IResolvable): any {
@@ -82,9 +94,11 @@ export function workerObservabilityLogsToTerraform(struct?: WorkerObservabilityL
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
     enabled: cdktn.booleanToTerraform(struct!.enabled),
     head_sampling_rate: cdktn.numberToTerraform(struct!.headSamplingRate),
     invocation_logs: cdktn.booleanToTerraform(struct!.invocationLogs),
+    persist: cdktn.booleanToTerraform(struct!.persist),
   }
 }
 
@@ -95,6 +109,12 @@ export function workerObservabilityLogsToHclTerraform(struct?: WorkerObservabili
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   const attrs = {
+    destinations: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
     enabled: {
       value: cdktn.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
@@ -109,6 +129,12 @@ export function workerObservabilityLogsToHclTerraform(struct?: WorkerObservabili
     },
     invocation_logs: {
       value: cdktn.booleanToHclTerraform(struct!.invocationLogs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    persist: {
+      value: cdktn.booleanToHclTerraform(struct!.persist),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -137,6 +163,10 @@ export class WorkerObservabilityLogsOutputReference extends cdktn.ComplexObject 
     }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._destinations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinations = this._destinations;
+    }
     if (this._enabled !== undefined) {
       hasAnyValues = true;
       internalValueResult.enabled = this._enabled;
@@ -149,6 +179,10 @@ export class WorkerObservabilityLogsOutputReference extends cdktn.ComplexObject 
       hasAnyValues = true;
       internalValueResult.invocationLogs = this._invocationLogs;
     }
+    if (this._persist !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.persist = this._persist;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -156,9 +190,11 @@ export class WorkerObservabilityLogsOutputReference extends cdktn.ComplexObject 
     if (value === undefined) {
       this.isEmptyObject = false;
       this.resolvableValue = undefined;
+      this._destinations = undefined;
       this._enabled = undefined;
       this._headSamplingRate = undefined;
       this._invocationLogs = undefined;
+      this._persist = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -167,10 +203,28 @@ export class WorkerObservabilityLogsOutputReference extends cdktn.ComplexObject 
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this.resolvableValue = undefined;
+      this._destinations = value.destinations;
       this._enabled = value.enabled;
       this._headSamplingRate = value.headSamplingRate;
       this._invocationLogs = value.invocationLogs;
+      this._persist = value.persist;
     }
+  }
+
+  // destinations - computed: true, optional: true, required: false
+  private _destinations?: string[]; 
+  public get destinations() {
+    return this.getListAttribute('destinations');
+  }
+  public set destinations(value: string[]) {
+    this._destinations = value;
+  }
+  public resetDestinations() {
+    this._destinations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationsInput() {
+    return this._destinations;
   }
 
   // enabled - computed: true, optional: true, required: false
@@ -220,26 +274,249 @@ export class WorkerObservabilityLogsOutputReference extends cdktn.ComplexObject 
   public get invocationLogsInput() {
     return this._invocationLogs;
   }
+
+  // persist - computed: true, optional: true, required: false
+  private _persist?: boolean | cdktn.IResolvable; 
+  public get persist() {
+    return this.getBooleanAttribute('persist');
+  }
+  public set persist(value: boolean | cdktn.IResolvable) {
+    this._persist = value;
+  }
+  public resetPersist() {
+    this._persist = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get persistInput() {
+    return this._persist;
+  }
+}
+export interface WorkerObservabilityTraces {
+  /**
+  * A list of destinations where traces will be exported to.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#destinations Worker#destinations}
+  */
+  readonly destinations?: string[];
+  /**
+  * Whether traces are enabled for the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
+  */
+  readonly enabled?: boolean | cdktn.IResolvable;
+  /**
+  * The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+  */
+  readonly headSamplingRate?: number;
+  /**
+  * Whether trace persistence is enabled for the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#persist Worker#persist}
+  */
+  readonly persist?: boolean | cdktn.IResolvable;
+}
+
+export function workerObservabilityTracesToTerraform(struct?: WorkerObservabilityTraces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
+    enabled: cdktn.booleanToTerraform(struct!.enabled),
+    head_sampling_rate: cdktn.numberToTerraform(struct!.headSamplingRate),
+    persist: cdktn.booleanToTerraform(struct!.persist),
+  }
+}
+
+
+export function workerObservabilityTracesToHclTerraform(struct?: WorkerObservabilityTraces | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    destinations: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.destinations),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enabled: {
+      value: cdktn.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    head_sampling_rate: {
+      value: cdktn.numberToHclTerraform(struct!.headSamplingRate),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    persist: {
+      value: cdktn.booleanToHclTerraform(struct!.persist),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkerObservabilityTracesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): WorkerObservabilityTraces | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._destinations !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.destinations = this._destinations;
+    }
+    if (this._enabled !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabled = this._enabled;
+    }
+    if (this._headSamplingRate !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.headSamplingRate = this._headSamplingRate;
+    }
+    if (this._persist !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.persist = this._persist;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkerObservabilityTraces | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._destinations = undefined;
+      this._enabled = undefined;
+      this._headSamplingRate = undefined;
+      this._persist = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._destinations = value.destinations;
+      this._enabled = value.enabled;
+      this._headSamplingRate = value.headSamplingRate;
+      this._persist = value.persist;
+    }
+  }
+
+  // destinations - computed: true, optional: true, required: false
+  private _destinations?: string[]; 
+  public get destinations() {
+    return this.getListAttribute('destinations');
+  }
+  public set destinations(value: string[]) {
+    this._destinations = value;
+  }
+  public resetDestinations() {
+    this._destinations = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get destinationsInput() {
+    return this._destinations;
+  }
+
+  // enabled - computed: true, optional: true, required: false
+  private _enabled?: boolean | cdktn.IResolvable; 
+  public get enabled() {
+    return this.getBooleanAttribute('enabled');
+  }
+  public set enabled(value: boolean | cdktn.IResolvable) {
+    this._enabled = value;
+  }
+  public resetEnabled() {
+    this._enabled = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledInput() {
+    return this._enabled;
+  }
+
+  // head_sampling_rate - computed: true, optional: true, required: false
+  private _headSamplingRate?: number; 
+  public get headSamplingRate() {
+    return this.getNumberAttribute('head_sampling_rate');
+  }
+  public set headSamplingRate(value: number) {
+    this._headSamplingRate = value;
+  }
+  public resetHeadSamplingRate() {
+    this._headSamplingRate = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get headSamplingRateInput() {
+    return this._headSamplingRate;
+  }
+
+  // persist - computed: true, optional: true, required: false
+  private _persist?: boolean | cdktn.IResolvable; 
+  public get persist() {
+    return this.getBooleanAttribute('persist');
+  }
+  public set persist(value: boolean | cdktn.IResolvable) {
+    this._persist = value;
+  }
+  public resetPersist() {
+    this._persist = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get persistInput() {
+    return this._persist;
+  }
 }
 export interface WorkerObservability {
   /**
   * Whether observability is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
   /**
   * Log settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#logs Worker#logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#logs Worker#logs}
   */
   readonly logs?: WorkerObservabilityLogs;
+  /**
+  * Trace settings for the Worker.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#traces Worker#traces}
+  */
+  readonly traces?: WorkerObservabilityTraces;
 }
 
 export function workerObservabilityToTerraform(struct?: WorkerObservability | cdktn.IResolvable): any {
@@ -251,6 +528,7 @@ export function workerObservabilityToTerraform(struct?: WorkerObservability | cd
     enabled: cdktn.booleanToTerraform(struct!.enabled),
     head_sampling_rate: cdktn.numberToTerraform(struct!.headSamplingRate),
     logs: workerObservabilityLogsToTerraform(struct!.logs),
+    traces: workerObservabilityTracesToTerraform(struct!.traces),
   }
 }
 
@@ -278,6 +556,12 @@ export function workerObservabilityToHclTerraform(struct?: WorkerObservability |
       isBlock: true,
       type: "struct",
       storageClassType: "WorkerObservabilityLogs",
+    },
+    traces: {
+      value: workerObservabilityTracesToHclTerraform(struct!.traces),
+      isBlock: true,
+      type: "struct",
+      storageClassType: "WorkerObservabilityTraces",
     },
   };
 
@@ -315,6 +599,10 @@ export class WorkerObservabilityOutputReference extends cdktn.ComplexObject {
       hasAnyValues = true;
       internalValueResult.logs = this._logs?.internalValue;
     }
+    if (this._traces?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.traces = this._traces?.internalValue;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -325,6 +613,7 @@ export class WorkerObservabilityOutputReference extends cdktn.ComplexObject {
       this._enabled = undefined;
       this._headSamplingRate = undefined;
       this._logs.internalValue = undefined;
+      this._traces.internalValue = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -336,6 +625,7 @@ export class WorkerObservabilityOutputReference extends cdktn.ComplexObject {
       this._enabled = value.enabled;
       this._headSamplingRate = value.headSamplingRate;
       this._logs.internalValue = value.logs;
+      this._traces.internalValue = value.traces;
     }
   }
 
@@ -385,6 +675,22 @@ export class WorkerObservabilityOutputReference extends cdktn.ComplexObject {
   // Temporarily expose input value. Use with caution.
   public get logsInput() {
     return this._logs.internalValue;
+  }
+
+  // traces - computed: true, optional: true, required: false
+  private _traces = new WorkerObservabilityTracesOutputReference(this, "traces");
+  public get traces() {
+    return this._traces;
+  }
+  public putTraces(value: WorkerObservabilityTraces) {
+    this._traces.internalValue = value;
+  }
+  public resetTraces() {
+    this._traces.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get tracesInput() {
+    return this._traces.internalValue;
   }
 }
 export interface WorkerReferencesDispatchNamespaceOutbounds {
@@ -910,13 +1216,13 @@ export interface WorkerSubdomain {
   /**
   * Whether the *.workers.dev subdomain is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#enabled Worker#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#enabled Worker#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
   */
   readonly previewsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1041,7 +1347,7 @@ export interface WorkerTailConsumers {
   /**
   * Name of the consumer Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#name Worker#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#name Worker#name}
   */
   readonly name: string;
 }
@@ -1154,7 +1460,7 @@ export class WorkerTailConsumersList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker cloudflare_worker}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker cloudflare_worker}
 */
 export class Worker extends cdktn.TerraformResource {
 
@@ -1170,7 +1476,7 @@ export class Worker extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Worker resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Worker to import
-  * @param importFromId The id of the existing Worker that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Worker that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Worker to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1182,7 +1488,7 @@ export class Worker extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/resources/worker cloudflare_worker} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/worker cloudflare_worker} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1193,7 +1499,7 @@ export class Worker extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_worker',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1217,13 +1523,16 @@ export class Worker extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {
@@ -1233,6 +1542,11 @@ export class Worker extends cdktn.TerraformResource {
   // created_on - computed: true, optional: false, required: false
   public get createdOn() {
     return this.getStringAttribute('created_on');
+  }
+
+  // deployed_on - computed: true, optional: false, required: false
+  public get deployedOn() {
+    return this.getStringAttribute('deployed_on');
   }
 
   // id - computed: true, optional: false, required: false

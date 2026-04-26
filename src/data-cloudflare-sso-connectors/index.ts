@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/sso_connectors
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareSsoConnectorsConfig extends cdktn.TerraformMetaAr
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/sso_connectors#account_id DataCloudflareSsoConnectors#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors#account_id DataCloudflareSsoConnectors#account_id}
   */
-  readonly accountId: string;
+  readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/sso_connectors#max_items DataCloudflareSsoConnectors#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors#max_items DataCloudflareSsoConnectors#max_items}
   */
   readonly maxItems?: number;
 }
@@ -192,7 +192,7 @@ export class DataCloudflareSsoConnectorsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/sso_connectors cloudflare_sso_connectors}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors cloudflare_sso_connectors}
 */
 export class DataCloudflareSsoConnectors extends cdktn.TerraformDataSource {
 
@@ -208,7 +208,7 @@ export class DataCloudflareSsoConnectors extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareSsoConnectors resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareSsoConnectors to import
-  * @param importFromId The id of the existing DataCloudflareSsoConnectors that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/sso_connectors#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareSsoConnectors that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareSsoConnectors to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -220,18 +220,18 @@ export class DataCloudflareSsoConnectors extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/sso_connectors cloudflare_sso_connectors} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareSsoConnectorsConfig
+  * @param options DataCloudflareSsoConnectorsConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareSsoConnectorsConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareSsoConnectorsConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_sso_connectors',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -250,13 +250,16 @@ export class DataCloudflareSsoConnectors extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: false, required: true
+  // account_id - computed: false, optional: true, required: false
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
+  }
+  public resetAccountId() {
+    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {

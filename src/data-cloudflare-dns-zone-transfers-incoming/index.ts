@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_incoming
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_incoming
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareDnsZoneTransfersIncomingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_incoming#zone_id DataCloudflareDnsZoneTransfersIncoming#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_incoming#zone_id DataCloudflareDnsZoneTransfersIncoming#zone_id}
   */
-  readonly zoneId: string;
+  readonly zoneId?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming}
 */
 export class DataCloudflareDnsZoneTransfersIncoming extends cdktn.TerraformDataSource {
 
@@ -35,7 +35,7 @@ export class DataCloudflareDnsZoneTransfersIncoming extends cdktn.TerraformDataS
   * Generates CDKTN code for importing a DataCloudflareDnsZoneTransfersIncoming resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareDnsZoneTransfersIncoming to import
-  * @param importFromId The id of the existing DataCloudflareDnsZoneTransfersIncoming that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareDnsZoneTransfersIncoming that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_incoming#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareDnsZoneTransfersIncoming to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -47,18 +47,18 @@ export class DataCloudflareDnsZoneTransfersIncoming extends cdktn.TerraformDataS
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/dns_zone_transfers_incoming cloudflare_dns_zone_transfers_incoming} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareDnsZoneTransfersIncomingConfig
+  * @param options DataCloudflareDnsZoneTransfersIncomingConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareDnsZoneTransfersIncomingConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareDnsZoneTransfersIncomingConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_dns_zone_transfers_incoming',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -116,13 +116,16 @@ export class DataCloudflareDnsZoneTransfersIncoming extends cdktn.TerraformDataS
     return this.getNumberAttribute('soa_serial');
   }
 
-  // zone_id - computed: false, optional: false, required: true
+  // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
   public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_catch_all
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,9 +15,9 @@ export interface DataCloudflareEmailRoutingCatchAllConfig extends cdktn.Terrafor
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_catch_all#zone_id DataCloudflareEmailRoutingCatchAll#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all#zone_id DataCloudflareEmailRoutingCatchAll#zone_id}
   */
-  readonly zoneId: string;
+  readonly zoneId?: string;
 }
 export interface DataCloudflareEmailRoutingCatchAllActions {
 }
@@ -176,7 +176,7 @@ export class DataCloudflareEmailRoutingCatchAllMatchersList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all}
 */
 export class DataCloudflareEmailRoutingCatchAll extends cdktn.TerraformDataSource {
 
@@ -192,7 +192,7 @@ export class DataCloudflareEmailRoutingCatchAll extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataCloudflareEmailRoutingCatchAll resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailRoutingCatchAll to import
-  * @param importFromId The id of the existing DataCloudflareEmailRoutingCatchAll that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailRoutingCatchAll that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailRoutingCatchAll to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -204,18 +204,18 @@ export class DataCloudflareEmailRoutingCatchAll extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.18.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/data-sources/email_routing_catch_all cloudflare_email_routing_catch_all} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataCloudflareEmailRoutingCatchAllConfig
+  * @param options DataCloudflareEmailRoutingCatchAllConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataCloudflareEmailRoutingCatchAllConfig) {
+  public constructor(scope: Construct, id: string, config: DataCloudflareEmailRoutingCatchAllConfig = {}) {
     super(scope, id, {
       terraformResourceType: 'cloudflare_email_routing_catch_all',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.18.0',
+        providerVersion: '5.19.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -265,13 +265,16 @@ export class DataCloudflareEmailRoutingCatchAll extends cdktn.TerraformDataSourc
     return this.getStringAttribute('tag');
   }
 
-  // zone_id - computed: false, optional: false, required: true
+  // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
     return this.getStringAttribute('zone_id');
   }
   public set zoneId(value: string) {
     this._zoneId = value;
+  }
+  public resetZoneId() {
+    this._zoneId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get zoneIdInput() {
