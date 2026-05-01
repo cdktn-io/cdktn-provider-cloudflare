@@ -4,7 +4,7 @@
 
 ### StreamKey <a name="StreamKey" id="@cdktn/provider-cloudflare.streamKey.StreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_key cloudflare_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_key cloudflare_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamKey.StreamKey.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the StreamKey to import.
 
 The id of the existing StreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -882,7 +882,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.0/docs/resources/stream_key#account_id StreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_key#account_id StreamKey#account_id}
 
 ---
 
