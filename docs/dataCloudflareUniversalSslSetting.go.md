@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareUniversalSslSetting.DataCloudflareUniversalSslSetting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareuniversalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareuniversalsslsetting"
 
 datacloudflareuniversalsslsetting.NewDataCloudflareUniversalSslSetting(scope Construct, id *string, config DataCloudflareUniversalSslSettingConfig) DataCloudflareUniversalSslSetting
 ```
@@ -305,7 +305,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareUniversalSslSetting.DataCloudflareUniversalSslSetting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareuniversalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareuniversalsslsetting"
 
 datacloudflareuniversalsslsetting.DataCloudflareUniversalSslSetting_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareUniversalSslSetting.DataCloudflareUniversalSslSetting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareuniversalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareuniversalsslsetting"
 
 datacloudflareuniversalsslsetting.DataCloudflareUniversalSslSetting_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflareuniversalsslsetting.DataCloudflareUniversalSslSetting_IsTerraformE
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareUniversalSslSetting.DataCloudflareUniversalSslSetting.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareuniversalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareuniversalsslsetting"
 
 datacloudflareuniversalsslsetting.DataCloudflareUniversalSslSetting_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflareuniversalsslsetting.DataCloudflareUniversalSslSetting_IsTerraformD
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareUniversalSslSetting.DataCloudflareUniversalSslSetting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareuniversalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareuniversalsslsetting"
 
 datacloudflareuniversalsslsetting.DataCloudflareUniversalSslSetting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareUniversalSslSetting.DataCloudflareUniversalSslSettingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareuniversalsslsetting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareuniversalsslsetting"
 
 &datacloudflareuniversalsslsetting.DataCloudflareUniversalSslSettingConfig {
 	Connection: interface{},

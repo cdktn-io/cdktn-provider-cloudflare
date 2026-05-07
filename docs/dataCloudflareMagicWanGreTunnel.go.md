@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.NewDataCloudflareMagicWanGreTunnel(scope Construct, id *string, config DataCloudflareMagicWanGreTunnelConfig) DataCloudflareMagicWanGreTunnel
 ```
@@ -305,7 +305,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnel.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnel_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnel.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnel_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnel_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnel.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnel_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnel_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnel.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnel_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -638,7 +638,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 &datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnelConfig {
 	Connection: interface{},
@@ -772,7 +772,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnel.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 &datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnelGreTunnel {
 
@@ -785,7 +785,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelBgp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 &datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnelGreTunnelBgp {
 
@@ -798,7 +798,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 &datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus {
 
@@ -811,7 +811,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelHealthCheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 &datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnelGreTunnelHealthCheck {
 
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 &datacloudflaremagicwangretunnel.DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTarget {
 
@@ -839,7 +839,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.NewDataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanGreTunnelGreTunnelBgpOutputReference
 ```
@@ -1121,7 +1121,7 @@ func InternalValue() DataCloudflareMagicWanGreTunnelGreTunnelBgp
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.NewDataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanGreTunnelGreTunnelBgpStatusOutputReference
 ```
@@ -1458,7 +1458,7 @@ func InternalValue() DataCloudflareMagicWanGreTunnelGreTunnelBgpStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.NewDataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckOutputReference
 ```
@@ -1762,7 +1762,7 @@ func InternalValue() DataCloudflareMagicWanGreTunnelGreTunnelHealthCheck
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.NewDataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTargetOutputReference
 ```
@@ -2033,7 +2033,7 @@ func InternalValue() DataCloudflareMagicWanGreTunnelGreTunnelHealthCheckTarget
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareMagicWanGreTunnel.DataCloudflareMagicWanGreTunnelGreTunnelOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaremagicwangretunnel"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaremagicwangretunnel"
 
 datacloudflaremagicwangretunnel.NewDataCloudflareMagicWanGreTunnelGreTunnelOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareMagicWanGreTunnelGreTunnelOutputReference
 ```

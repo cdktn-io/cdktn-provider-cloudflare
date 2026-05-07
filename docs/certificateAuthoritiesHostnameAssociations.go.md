@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificateauthoritieshostnameassociations"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/certificateauthoritieshostnameassociations"
 
 certificateauthoritieshostnameassociations.NewCertificateAuthoritiesHostnameAssociations(scope Construct, id *string, config CertificateAuthoritiesHostnameAssociationsConfig) CertificateAuthoritiesHostnameAssociations
 ```
@@ -414,7 +414,7 @@ func ResetMtlsCertificateId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociations.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificateauthoritieshostnameassociations"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/certificateauthoritieshostnameassociations"
 
 certificateauthoritieshostnameassociations.CertificateAuthoritiesHostnameAssociations_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificateauthoritieshostnameassociations"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/certificateauthoritieshostnameassociations"
 
 certificateauthoritieshostnameassociations.CertificateAuthoritiesHostnameAssociations_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ certificateauthoritieshostnameassociations.CertificateAuthoritiesHostnameAssocia
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociations.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificateauthoritieshostnameassociations"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/certificateauthoritieshostnameassociations"
 
 certificateauthoritieshostnameassociations.CertificateAuthoritiesHostnameAssociations_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ certificateauthoritieshostnameassociations.CertificateAuthoritiesHostnameAssocia
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificateauthoritieshostnameassociations"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/certificateauthoritieshostnameassociations"
 
 certificateauthoritieshostnameassociations.CertificateAuthoritiesHostnameAssociations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/certificateauthoritieshostnameassociations"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/certificateauthoritieshostnameassociations"
 
 &certificateauthoritieshostnameassociations.CertificateAuthoritiesHostnameAssociationsConfig {
 	Connection: interface{},

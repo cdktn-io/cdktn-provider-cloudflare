@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 queueconsumer.NewQueueConsumer(scope Construct, id *string, config QueueConsumerConfig) QueueConsumer
 ```
@@ -441,7 +441,7 @@ func ResetSettings()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 queueconsumer.QueueConsumer_IsConstruct(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 queueconsumer.QueueConsumer_IsTerraformElement(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ queueconsumer.QueueConsumer_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 queueconsumer.QueueConsumer_IsTerraformResource(x interface{}) *bool
 ```
@@ -501,7 +501,7 @@ queueconsumer.QueueConsumer_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumer.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 queueconsumer.QueueConsumer_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 &queueconsumer.QueueConsumerConfig {
 	Connection: interface{},
@@ -910,7 +910,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queuecon
 	AccountId: *string,
 	DeadLetterQueue: *string,
 	ScriptName: *string,
-	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.queueConsumer.QueueConsumerSettings,
+	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.queueConsumer.QueueConsumerSettings,
 }
 ```
 
@@ -1089,7 +1089,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 &queueconsumer.QueueConsumerSettings {
 	BatchSize: *f64,
@@ -1209,7 +1209,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queueConsumer.QueueConsumerSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/queueconsumer"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/queueconsumer"
 
 queueconsumer.NewQueueConsumerSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QueueConsumerSettingsOutputReference
 ```

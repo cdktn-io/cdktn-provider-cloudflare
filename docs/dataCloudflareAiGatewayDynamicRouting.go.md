@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRouting.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRouting(scope Construct, id *string, config DataCloudflareAiGatewayDynamicRoutingConfig) DataCloudflareAiGatewayDynamicRouting
 ```
@@ -305,7 +305,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRouting.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRouting_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRouting.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRouting_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRouting_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRouting.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRouting_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRouting_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRouting.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRouting_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -704,7 +704,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingConfig {
 	Connection: interface{},
@@ -851,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingDeployment.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingDeployment {
 
@@ -864,7 +864,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElements {
 
@@ -877,7 +877,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputs.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputs {
 
@@ -890,7 +890,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsFallback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsFallback {
 
@@ -903,7 +903,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsFalse.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsFalse {
 
@@ -916,7 +916,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsNext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsNext {
 
@@ -929,7 +929,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsSuccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsSuccess {
 
@@ -942,7 +942,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsTrue.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsTrue {
 
@@ -955,7 +955,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsProperties.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingElementsProperties {
 
@@ -968,7 +968,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingVersion.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 &datacloudflareaigatewaydynamicrouting.DataCloudflareAiGatewayDynamicRoutingVersion {
 
@@ -983,7 +983,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingDeploymentOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingDeploymentOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingDeploymentOutputReference
 ```
@@ -1265,7 +1265,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingDeployment
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAiGatewayDynamicRoutingElementsList
 ```
@@ -1414,7 +1414,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAiGatewayDynamicRoutingElementsOutputReference
 ```
@@ -1725,7 +1725,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElements
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsFallbackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsOutputsFallbackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingElementsOutputsFallbackOutputReference
 ```
@@ -1985,7 +1985,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElementsOutputsFallbac
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsFalseOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsOutputsFalseOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingElementsOutputsFalseOutputReference
 ```
@@ -2245,7 +2245,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElementsOutputsFalse
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsNextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsOutputsNextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingElementsOutputsNextOutputReference
 ```
@@ -2505,7 +2505,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElementsOutputsNext
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsOutputsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingElementsOutputsOutputReference
 ```
@@ -2820,7 +2820,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElementsOutputs
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsSuccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsOutputsSuccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingElementsOutputsSuccessOutputReference
 ```
@@ -3080,7 +3080,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElementsOutputsSuccess
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsOutputsTrueOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsOutputsTrueOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingElementsOutputsTrueOutputReference
 ```
@@ -3340,7 +3340,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElementsOutputsTrue
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingElementsPropertiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingElementsPropertiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingElementsPropertiesOutputReference
 ```
@@ -3688,7 +3688,7 @@ func InternalValue() DataCloudflareAiGatewayDynamicRoutingElementsProperties
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiGatewayDynamicRouting.DataCloudflareAiGatewayDynamicRoutingVersionOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaigatewaydynamicrouting"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaigatewaydynamicrouting"
 
 datacloudflareaigatewaydynamicrouting.NewDataCloudflareAiGatewayDynamicRoutingVersionOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiGatewayDynamicRoutingVersionOutputReference
 ```

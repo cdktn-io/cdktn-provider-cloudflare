@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.regionalTieredCache.RegionalTieredCache.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionaltieredcache"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionaltieredcache"
 
 regionaltieredcache.NewRegionalTieredCache(scope Construct, id *string, config RegionalTieredCacheConfig) RegionalTieredCache
 ```
@@ -407,7 +407,7 @@ func ResetValue()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.regionalTieredCache.RegionalTieredCache.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionaltieredcache"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionaltieredcache"
 
 regionaltieredcache.RegionalTieredCache_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.regionalTieredCache.RegionalTieredCache.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionaltieredcache"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionaltieredcache"
 
 regionaltieredcache.RegionalTieredCache_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ regionaltieredcache.RegionalTieredCache_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.regionalTieredCache.RegionalTieredCache.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionaltieredcache"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionaltieredcache"
 
 regionaltieredcache.RegionalTieredCache_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ regionaltieredcache.RegionalTieredCache_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.regionalTieredCache.RegionalTieredCache.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionaltieredcache"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionaltieredcache"
 
 regionaltieredcache.RegionalTieredCache_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -773,7 +773,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.regionalTieredCache.RegionalTieredCacheConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionaltieredcache"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionaltieredcache"
 
 &regionaltieredcache.RegionalTieredCacheConfig {
 	Connection: interface{},

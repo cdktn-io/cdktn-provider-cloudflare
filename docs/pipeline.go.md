@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 pipeline.NewPipeline(scope Construct, id *string, config PipelineConfig) Pipeline
 ```
@@ -407,7 +407,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.pipeline.Pipeline.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 pipeline.Pipeline_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.pipeline.Pipeline.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 pipeline.Pipeline_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ pipeline.Pipeline_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.pipeline.Pipeline.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 pipeline.Pipeline_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ pipeline.Pipeline_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.pipeline.Pipeline.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 pipeline.Pipeline_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -828,7 +828,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipeline.PipelineConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 &pipeline.PipelineConfig {
 	Connection: interface{},
@@ -978,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pipeline.PipelineTables.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 &pipeline.PipelineTables {
 
@@ -993,7 +993,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipeline.PipelineTablesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 pipeline.NewPipelineTablesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PipelineTablesList
 ```
@@ -1142,7 +1142,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipeline.PipelineTablesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pipeline"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline"
 
 pipeline.NewPipelineTablesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) PipelineTablesOutputReference
 ```

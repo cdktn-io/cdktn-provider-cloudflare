@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganization(scope Construct, id *string, config ZeroTrustOrganizationConfig) ZeroTrustOrganization
 ```
@@ -585,7 +585,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_IsConstruct(x interface{}) *bool
 ```
@@ -617,7 +617,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_IsTerraformElement(x interface{}) *bool
 ```
@@ -631,7 +631,7 @@ zerotrustorganization.ZeroTrustOrganization_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_IsTerraformResource(x interface{}) *bool
 ```
@@ -645,7 +645,7 @@ zerotrustorganization.ZeroTrustOrganization_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganization.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.ZeroTrustOrganization_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1292,7 +1292,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationConfig {
 	Connection: interface{},
@@ -1306,15 +1306,15 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 	AllowAuthenticateViaWarp: interface{},
 	AuthDomain: *string,
 	AutoRedirectToIdentity: interface{},
-	CustomPages: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustOrganization.ZeroTrustOrganizationCustomPages,
+	CustomPages: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustOrganization.ZeroTrustOrganizationCustomPages,
 	DenyUnmatchedRequests: interface{},
 	DenyUnmatchedRequestsExemptedZoneNames: *[]*string,
 	IsUiReadOnly: interface{},
-	LoginDesign: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign,
-	MfaConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig,
+	LoginDesign: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign,
+	MfaConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig,
 	MfaConfigurationAllowed: interface{},
 	MfaRequiredForAllApps: interface{},
-	MfaSshPivKeyRequirements: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements,
+	MfaSshPivKeyRequirements: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements,
 	Name: *string,
 	SessionDuration: *string,
 	UiReadOnlyToggleReason: *string,
@@ -1710,7 +1710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPages.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationCustomPages {
 	Forbidden: *string,
@@ -1760,7 +1760,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationLoginDesign {
 	BackgroundColor: *string,
@@ -1858,7 +1858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationMfaConfig {
 	AllowedAuthenticators: *[]*string,
@@ -1944,7 +1944,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirements.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 &zerotrustorganization.ZeroTrustOrganizationMfaSshPivKeyRequirements {
 	PinPolicy: *string,
@@ -2052,7 +2052,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationCustomPagesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganizationCustomPagesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustOrganizationCustomPagesOutputReference
 ```
@@ -2359,7 +2359,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationLoginDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganizationLoginDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustOrganizationLoginDesignOutputReference
 ```
@@ -2753,7 +2753,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganizationMfaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustOrganizationMfaConfigOutputReference
 ```
@@ -3118,7 +3118,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustOrganization.ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustorganization"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustorganization"
 
 zerotrustorganization.NewZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustOrganizationMfaSshPivKeyRequirementsOutputReference
 ```

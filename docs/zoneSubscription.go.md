@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 zonesubscription.NewZoneSubscription(scope Construct, id *string, config ZoneSubscriptionConfig) ZoneSubscription
 ```
@@ -427,7 +427,7 @@ func ResetRatePlan()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 zonesubscription.ZoneSubscription_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 zonesubscription.ZoneSubscription_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ zonesubscription.ZoneSubscription_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 zonesubscription.ZoneSubscription_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ zonesubscription.ZoneSubscription_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscription.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 zonesubscription.ZoneSubscription_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -848,7 +848,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscriptionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 &zonesubscription.ZoneSubscriptionConfig {
 	Connection: interface{},
@@ -860,7 +860,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubs
 	Provisioners: *[]interface{},
 	ZoneId: *string,
 	Frequency: *string,
-	RatePlan: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zoneSubscription.ZoneSubscriptionRatePlan,
+	RatePlan: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zoneSubscription.ZoneSubscriptionRatePlan,
 }
 ```
 
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlan.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 &zonesubscription.ZoneSubscriptionRatePlan {
 	Id: *string,
@@ -1056,7 +1056,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneSubscription.ZoneSubscriptionRatePlanOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonesubscription"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesubscription"
 
 zonesubscription.NewZoneSubscriptionRatePlanOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZoneSubscriptionRatePlanOutputReference
 ```

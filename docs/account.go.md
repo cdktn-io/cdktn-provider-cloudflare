@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.Account.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.NewAccount(scope Construct, id *string, config AccountConfig) Account
 ```
@@ -467,7 +467,7 @@ func ResetUnit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.account.Account.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.Account_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.account.Account.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.Account_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ account.Account_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.account.Account.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.Account_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ account.Account_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.account.Account.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.Account_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -888,7 +888,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 &account.AccountConfig {
 	Connection: interface{},
@@ -899,10 +899,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	ManagedBy: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.account.AccountManagedBy,
-	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.account.AccountSettings,
+	ManagedBy: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.account.AccountManagedBy,
+	Settings: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.account.AccountSettings,
 	Type: *string,
-	Unit: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.account.AccountUnit,
+	Unit: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.account.AccountUnit,
 }
 ```
 
@@ -1072,7 +1072,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountManagedBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 &account.AccountManagedBy {
 
@@ -1085,7 +1085,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 &account.AccountSettings {
 	AbuseContactEmail: *string,
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.account.AccountUnit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 &account.AccountUnit {
 	Id: *string,
@@ -1174,7 +1174,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.AccountManagedByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.NewAccountManagedByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountManagedByOutputReference
 ```
@@ -1445,7 +1445,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.AccountSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.NewAccountSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountSettingsOutputReference
 ```
@@ -1752,7 +1752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.account.AccountUnitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/account"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/account"
 
 account.NewAccountUnitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountUnitOutputReference
 ```

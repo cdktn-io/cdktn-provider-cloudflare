@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/aisearchtoken"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchtoken"
 
 aisearchtoken.NewAiSearchToken(scope Construct, id *string, config AiSearchTokenConfig) AiSearchToken
 ```
@@ -414,7 +414,7 @@ func ResetLegacy()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/aisearchtoken"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchtoken"
 
 aisearchtoken.AiSearchToken_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/aisearchtoken"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchtoken"
 
 aisearchtoken.AiSearchToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ aisearchtoken.AiSearchToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/aisearchtoken"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchtoken"
 
 aisearchtoken.AiSearchToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ aisearchtoken.AiSearchToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/aisearchtoken"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchtoken"
 
 aisearchtoken.AiSearchToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -879,7 +879,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.aiSearchToken.AiSearchTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/aisearchtoken"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/aisearchtoken"
 
 &aisearchtoken.AiSearchTokenConfig {
 	Connection: interface{},

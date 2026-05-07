@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.Workflow.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 workflow.NewWorkflow(scope Construct, id *string, config WorkflowConfig) Workflow
 ```
@@ -427,7 +427,7 @@ func ResetLimits()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.workflow.Workflow.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 workflow.Workflow_IsConstruct(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.workflow.Workflow.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ workflow.Workflow_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.workflow.Workflow.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ```
@@ -487,7 +487,7 @@ workflow.Workflow_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.workflow.Workflow.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 workflow.Workflow_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -925,7 +925,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 &workflow.WorkflowConfig {
 	Connection: interface{},
@@ -939,7 +939,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow
 	ScriptName: *string,
 	WorkflowName: *string,
 	AccountId: *string,
-	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.workflow.WorkflowLimits,
+	Limits: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.workflow.WorkflowLimits,
 }
 ```
 
@@ -1097,7 +1097,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowInstances.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 &workflow.WorkflowInstances {
 
@@ -1110,7 +1110,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.workflow.WorkflowLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 &workflow.WorkflowLimits {
 	Steps: *f64,
@@ -1144,7 +1144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowInstancesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 workflow.NewWorkflowInstancesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowInstancesOutputReference
 ```
@@ -1481,7 +1481,7 @@ func InternalValue() WorkflowInstances
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workflow.WorkflowLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/workflow"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/workflow"
 
 workflow.NewWorkflowLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) WorkflowLimitsOutputReference
 ```

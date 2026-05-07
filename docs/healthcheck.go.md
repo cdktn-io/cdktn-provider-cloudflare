@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.healthcheck.Healthcheck.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 healthcheck.NewHealthcheck(scope Construct, id *string, config HealthcheckConfig) Healthcheck
 ```
@@ -510,7 +510,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.healthcheck.Healthcheck.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 healthcheck.Healthcheck_IsConstruct(x interface{}) *bool
 ```
@@ -542,7 +542,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.healthcheck.Healthcheck.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 healthcheck.Healthcheck_IsTerraformElement(x interface{}) *bool
 ```
@@ -556,7 +556,7 @@ healthcheck.Healthcheck_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.healthcheck.Healthcheck.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 healthcheck.Healthcheck_IsTerraformResource(x interface{}) *bool
 ```
@@ -570,7 +570,7 @@ healthcheck.Healthcheck_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.healthcheck.Healthcheck.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 healthcheck.Healthcheck_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1162,7 +1162,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.healthcheck.HealthcheckConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 &healthcheck.HealthcheckConfig {
 	Connection: interface{},
@@ -1178,11 +1178,11 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthch
 	ConsecutiveFails: *f64,
 	ConsecutiveSuccesses: *f64,
 	Description: *string,
-	HttpConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.healthcheck.HealthcheckHttpConfig,
+	HttpConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.healthcheck.HealthcheckHttpConfig,
 	Interval: *f64,
 	Retries: *f64,
 	Suspended: interface{},
-	TcpConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.healthcheck.HealthcheckTcpConfig,
+	TcpConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.healthcheck.HealthcheckTcpConfig,
 	Timeout: *f64,
 	Type: *string,
 	ZoneId: *string,
@@ -1492,7 +1492,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.healthcheck.HealthcheckHttpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 &healthcheck.HealthcheckHttpConfig {
 	AllowInsecure: interface{},
@@ -1644,7 +1644,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.healthcheck.HealthcheckTcpConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 &healthcheck.HealthcheckTcpConfig {
 	Method: *string,
@@ -1696,7 +1696,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.healthcheck.HealthcheckHttpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 healthcheck.NewHealthcheckHttpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcheckHttpConfigOutputReference
 ```
@@ -2177,7 +2177,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.healthcheck.HealthcheckTcpConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/healthcheck"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/healthcheck"
 
 healthcheck.NewHealthcheckTcpConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HealthcheckTcpConfigOutputReference
 ```

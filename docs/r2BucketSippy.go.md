@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 r2bucketsippy.NewR2BucketSippy(scope Construct, id *string, config R2BucketSippyConfig) R2BucketSippy
 ```
@@ -454,7 +454,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 r2bucketsippy.R2BucketSippy_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 r2bucketsippy.R2BucketSippy_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ r2bucketsippy.R2BucketSippy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 r2bucketsippy.R2BucketSippy_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ r2bucketsippy.R2BucketSippy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 r2bucketsippy.R2BucketSippy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -864,7 +864,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 &r2bucketsippy.R2BucketSippyConfig {
 	Connection: interface{},
@@ -876,9 +876,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucket
 	Provisioners: *[]interface{},
 	BucketName: *string,
 	AccountId: *string,
-	Destination: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.r2BucketSippy.R2BucketSippyDestination,
+	Destination: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.r2BucketSippy.R2BucketSippyDestination,
 	Jurisdiction: *string,
-	Source: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.r2BucketSippy.R2BucketSippySource,
+	Source: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.r2BucketSippy.R2BucketSippySource,
 }
 ```
 
@@ -1046,7 +1046,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippyDestination.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 &r2bucketsippy.R2BucketSippyDestination {
 	AccessKeyId: *string,
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippySource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 &r2bucketsippy.R2BucketSippySource {
 	AccessKeyId: *string,
@@ -1272,7 +1272,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippyDestinationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 r2bucketsippy.NewR2BucketSippyDestinationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2BucketSippyDestinationOutputReference
 ```
@@ -1608,7 +1608,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketSippy.R2BucketSippySourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2bucketsippy"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2bucketsippy"
 
 r2bucketsippy.NewR2BucketSippySourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) R2BucketSippySourceOutputReference
 ```

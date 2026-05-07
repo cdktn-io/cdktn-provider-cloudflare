@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 streamaudiotrack.NewStreamAudioTrack(scope Construct, id *string, config StreamAudioTrackConfig) StreamAudioTrack
 ```
@@ -428,7 +428,7 @@ func ResetLabel()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 streamaudiotrack.StreamAudioTrack_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 streamaudiotrack.StreamAudioTrack_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ streamaudiotrack.StreamAudioTrack_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 streamaudiotrack.StreamAudioTrack_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ streamaudiotrack.StreamAudioTrack_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 streamaudiotrack.StreamAudioTrack_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -860,7 +860,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudio.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 &streamaudiotrack.StreamAudioTrackAudio {
 
@@ -873,7 +873,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamau
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 &streamaudiotrack.StreamAudioTrackConfig {
 	Connection: interface{},
@@ -1057,7 +1057,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 streamaudiotrack.NewStreamAudioTrackAudioList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StreamAudioTrackAudioList
 ```
@@ -1206,7 +1206,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackAudioOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/streamaudiotrack"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/streamaudiotrack"
 
 streamaudiotrack.NewStreamAudioTrackAudioOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) StreamAudioTrackAudioOutputReference
 ```

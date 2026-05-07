@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 authenticatedoriginpulls.NewAuthenticatedOriginPulls(scope Construct, id *string, config AuthenticatedOriginPullsConfig) AuthenticatedOriginPulls
 ```
@@ -413,7 +413,7 @@ func PutConfig(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_IsConstruct(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformElement(x interface{}) *bool
 ```
@@ -459,7 +459,7 @@ authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformElement(x interface
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformResource(x interface{}) *bool
 ```
@@ -473,7 +473,7 @@ authenticatedoriginpulls.AuthenticatedOriginPulls_IsTerraformResource(x interfac
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPulls.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 authenticatedoriginpulls.AuthenticatedOriginPulls_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -922,7 +922,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 &authenticatedoriginpulls.AuthenticatedOriginPullsConfig {
 	Connection: interface{},
@@ -1054,7 +1054,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 &authenticatedoriginpulls.AuthenticatedOriginPullsConfigA {
 	CertId: *string,
@@ -1122,7 +1122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 authenticatedoriginpulls.NewAuthenticatedOriginPullsConfigAList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AuthenticatedOriginPullsConfigAList
 ```
@@ -1282,7 +1282,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.authenticatedOriginPulls.AuthenticatedOriginPullsConfigAOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/authenticatedoriginpulls"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/authenticatedoriginpulls"
 
 authenticatedoriginpulls.NewAuthenticatedOriginPullsConfigAOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AuthenticatedOriginPullsConfigAOutputReference
 ```
