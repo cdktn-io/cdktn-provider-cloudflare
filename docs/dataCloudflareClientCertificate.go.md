@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 datacloudflareclientcertificate.NewDataCloudflareClientCertificate(scope Construct, id *string, config DataCloudflareClientCertificateConfig) DataCloudflareClientCertificate
 ```
@@ -332,7 +332,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificate.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 datacloudflareclientcertificate.DataCloudflareClientCertificate_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificate.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 datacloudflareclientcertificate.DataCloudflareClientCertificate_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datacloudflareclientcertificate.DataCloudflareClientCertificate_IsTerraformEleme
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificate.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 datacloudflareclientcertificate.DataCloudflareClientCertificate_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datacloudflareclientcertificate.DataCloudflareClientCertificate_IsTerraformDataS
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificate.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 datacloudflareclientcertificate.DataCloudflareClientCertificate_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -863,7 +863,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificateCertificateAuthority.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 &datacloudflareclientcertificate.DataCloudflareClientCertificateCertificateAuthority {
 
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificateConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 &datacloudflareclientcertificate.DataCloudflareClientCertificateConfig {
 	Connection: interface{},
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	ClientCertificateId: *string,
-	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.dataCloudflareClientCertificate.DataCloudflareClientCertificateFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.dataCloudflareClientCertificate.DataCloudflareClientCertificateFilter,
 	ZoneId: *string,
 }
 ```
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificateFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 &datacloudflareclientcertificate.DataCloudflareClientCertificateFilter {
 	Limit: *f64,
@@ -1092,7 +1092,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificateCertificateAuthorityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 datacloudflareclientcertificate.NewDataCloudflareClientCertificateCertificateAuthorityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareClientCertificateCertificateAuthorityOutputReference
 ```
@@ -1363,7 +1363,7 @@ func InternalValue() DataCloudflareClientCertificateCertificateAuthority
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareClientCertificate.DataCloudflareClientCertificateFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareclientcertificate"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareclientcertificate"
 
 datacloudflareclientcertificate.NewDataCloudflareClientCertificateFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareClientCertificateFilterOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstance.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstance(scope Construct, id *string, config DataCloudflareAiSearchInstanceConfig) DataCloudflareAiSearchInstance
 ```
@@ -332,7 +332,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstance.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.DataCloudflareAiSearchInstance_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstance.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.DataCloudflareAiSearchInstance_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datacloudflareaisearchinstance.DataCloudflareAiSearchInstance_IsTerraformElement
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstance.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.DataCloudflareAiSearchInstance_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datacloudflareaisearchinstance.DataCloudflareAiSearchInstance_IsTerraformDataSou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstance.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.DataCloudflareAiSearchInstance_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1072,7 +1072,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceConfig {
 	Connection: interface{},
@@ -1083,7 +1083,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceFilter,
 	Id: *string,
 }
 ```
@@ -1221,7 +1221,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceCustomMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceCustomMetadata {
 
@@ -1234,7 +1234,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceFilter {
 	Namespace: *string,
@@ -1314,7 +1314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceIndexingOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceIndexingOptions {
 
@@ -1327,7 +1327,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceIndexMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceIndexMethod {
 
@@ -1340,7 +1340,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceMetadata.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceMetadata {
 
@@ -1353,7 +1353,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceMetadataSearchForAgents.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceMetadataSearchForAgents {
 
@@ -1366,7 +1366,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstancePublicEndpointParams {
 
@@ -1379,7 +1379,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsChatCompletionsEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstancePublicEndpointParamsChatCompletionsEndpoint {
 
@@ -1392,7 +1392,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsMcp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstancePublicEndpointParamsMcp {
 
@@ -1405,7 +1405,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsRateLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstancePublicEndpointParamsRateLimit {
 
@@ -1418,7 +1418,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsSearchEndpoint.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstancePublicEndpointParamsSearchEndpoint {
 
@@ -1431,7 +1431,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceRetrievalOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceRetrievalOptions {
 
@@ -1444,7 +1444,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceRetrievalOptionsBoostBy.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceRetrievalOptionsBoostBy {
 
@@ -1457,7 +1457,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParams.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceSourceParams {
 
@@ -1470,7 +1470,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawler.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawler {
 
@@ -1483,7 +1483,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptions {
 
@@ -1496,7 +1496,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptions {
 
@@ -1509,7 +1509,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelector {
 
@@ -1522,7 +1522,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerStoreOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 &datacloudflareaisearchinstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerStoreOptions {
 
@@ -1537,7 +1537,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceCustomMetadataList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceCustomMetadataList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAiSearchInstanceCustomMetadataList
 ```
@@ -1686,7 +1686,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceCustomMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceCustomMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAiSearchInstanceCustomMetadataOutputReference
 ```
@@ -1975,7 +1975,7 @@ func InternalValue() DataCloudflareAiSearchInstanceCustomMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceFilterOutputReference
 ```
@@ -2340,7 +2340,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceIndexingOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceIndexingOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceIndexingOptionsOutputReference
 ```
@@ -2600,7 +2600,7 @@ func InternalValue() DataCloudflareAiSearchInstanceIndexingOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceIndexMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceIndexMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceIndexMethodOutputReference
 ```
@@ -2871,7 +2871,7 @@ func InternalValue() DataCloudflareAiSearchInstanceIndexMethod
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceMetadataOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceMetadataOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceMetadataOutputReference
 ```
@@ -3153,7 +3153,7 @@ func InternalValue() DataCloudflareAiSearchInstanceMetadata
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceMetadataSearchForAgentsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceMetadataSearchForAgentsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceMetadataSearchForAgentsOutputReference
 ```
@@ -3435,7 +3435,7 @@ func InternalValue() DataCloudflareAiSearchInstanceMetadataSearchForAgents
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsChatCompletionsEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstancePublicEndpointParamsChatCompletionsEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstancePublicEndpointParamsChatCompletionsEndpointOutputReference
 ```
@@ -3695,7 +3695,7 @@ func InternalValue() DataCloudflareAiSearchInstancePublicEndpointParamsChatCompl
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsMcpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstancePublicEndpointParamsMcpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstancePublicEndpointParamsMcpOutputReference
 ```
@@ -3966,7 +3966,7 @@ func InternalValue() DataCloudflareAiSearchInstancePublicEndpointParamsMcp
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstancePublicEndpointParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstancePublicEndpointParamsOutputReference
 ```
@@ -4281,7 +4281,7 @@ func InternalValue() DataCloudflareAiSearchInstancePublicEndpointParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsRateLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstancePublicEndpointParamsRateLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstancePublicEndpointParamsRateLimitOutputReference
 ```
@@ -4563,7 +4563,7 @@ func InternalValue() DataCloudflareAiSearchInstancePublicEndpointParamsRateLimit
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstancePublicEndpointParamsSearchEndpointOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstancePublicEndpointParamsSearchEndpointOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstancePublicEndpointParamsSearchEndpointOutputReference
 ```
@@ -4823,7 +4823,7 @@ func InternalValue() DataCloudflareAiSearchInstancePublicEndpointParamsSearchEnd
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceRetrievalOptionsBoostByList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceRetrievalOptionsBoostByList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAiSearchInstanceRetrievalOptionsBoostByList
 ```
@@ -4972,7 +4972,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceRetrievalOptionsBoostByOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceRetrievalOptionsBoostByOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAiSearchInstanceRetrievalOptionsBoostByOutputReference
 ```
@@ -5261,7 +5261,7 @@ func InternalValue() DataCloudflareAiSearchInstanceRetrievalOptionsBoostBy
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceRetrievalOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceRetrievalOptionsOutputReference
 ```
@@ -5532,7 +5532,7 @@ func InternalValue() DataCloudflareAiSearchInstanceRetrievalOptions
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceSourceParamsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceSourceParamsOutputReference
 ```
@@ -5836,7 +5836,7 @@ func InternalValue() DataCloudflareAiSearchInstanceSourceParams
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOptionsOutputReference
 ```
@@ -6140,7 +6140,7 @@ func InternalValue() DataCloudflareAiSearchInstanceSourceParamsWebCrawlerCrawlOp
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceSourceParamsWebCrawlerOutputReference
 ```
@@ -6433,7 +6433,7 @@ func InternalValue() DataCloudflareAiSearchInstanceSourceParamsWebCrawler
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorList
 ```
@@ -6582,7 +6582,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsContentSelectorOutputReference
 ```
@@ -6871,7 +6871,7 @@ func InternalValue() DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOp
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOptionsOutputReference
 ```
@@ -7175,7 +7175,7 @@ func InternalValue() DataCloudflareAiSearchInstanceSourceParamsWebCrawlerParseOp
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchInstance.DataCloudflareAiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareaisearchinstance"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareaisearchinstance"
 
 datacloudflareaisearchinstance.NewDataCloudflareAiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareAiSearchInstanceSourceParamsWebCrawlerStoreOptionsOutputReference
 ```

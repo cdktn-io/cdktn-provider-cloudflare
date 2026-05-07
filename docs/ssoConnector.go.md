@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 ssoconnector.NewSsoConnector(scope Construct, id *string, config SsoConnectorConfig) SsoConnector
 ```
@@ -428,7 +428,7 @@ func ResetUseFedrampLanguage()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 ssoconnector.SsoConnector_IsConstruct(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 ssoconnector.SsoConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ ssoconnector.SsoConnector_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 ssoconnector.SsoConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ ssoconnector.SsoConnector_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 ssoconnector.SsoConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -871,7 +871,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 &ssoconnector.SsoConnectorConfig {
 	Connection: interface{},
@@ -1053,7 +1053,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnectorVerification.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 &ssoconnector.SsoConnectorVerification {
 
@@ -1068,7 +1068,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconne
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.ssoConnector.SsoConnectorVerificationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/ssoconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/ssoconnector"
 
 ssoconnector.NewSsoConnectorVerificationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) SsoConnectorVerificationOutputReference
 ```

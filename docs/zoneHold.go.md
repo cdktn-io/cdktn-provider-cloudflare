@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneHold.ZoneHold.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonehold"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonehold"
 
 zonehold.NewZoneHold(scope Construct, id *string, config ZoneHoldConfig) ZoneHold
 ```
@@ -414,7 +414,7 @@ func ResetIncludeSubdomains()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zoneHold.ZoneHold.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonehold"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonehold"
 
 zonehold.ZoneHold_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zoneHold.ZoneHold.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonehold"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonehold"
 
 zonehold.ZoneHold_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ zonehold.ZoneHold_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zoneHold.ZoneHold.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonehold"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonehold"
 
 zonehold.ZoneHold_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ zonehold.ZoneHold_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zoneHold.ZoneHold.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonehold"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonehold"
 
 zonehold.ZoneHold_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -791,7 +791,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zoneHold.ZoneHoldConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zonehold"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonehold"
 
 &zonehold.ZoneHoldConfig {
 	Connection: interface{},

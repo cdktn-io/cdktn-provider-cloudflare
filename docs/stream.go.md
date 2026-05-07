@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.Stream.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.NewStream(scope Construct, id *string, config StreamConfig) Stream
 ```
@@ -497,7 +497,7 @@ func ResetUploadExpiry()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.stream.Stream.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.Stream_IsConstruct(x interface{}) *bool
 ```
@@ -529,7 +529,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.stream.Stream.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.Stream_IsTerraformElement(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ stream.Stream_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.stream.Stream.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.Stream_IsTerraformResource(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ stream.Stream_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.stream.Stream.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.Stream_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1226,7 +1226,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.stream.StreamConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 &stream.StreamConfig {
 	Connection: interface{},
@@ -1242,7 +1242,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
 	Identifier: *string,
 	MaxDurationSeconds: *f64,
 	Meta: *string,
-	PublicDetails: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.stream.StreamPublicDetails,
+	PublicDetails: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.stream.StreamPublicDetails,
 	RequireSignedUrls: interface{},
 	ScheduledDeletion: *string,
 	ThumbnailTimestampPct: *f64,
@@ -1530,7 +1530,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.stream.StreamInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 &stream.StreamInput {
 
@@ -1543,7 +1543,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.stream.StreamPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 &stream.StreamPlayback {
 
@@ -1556,7 +1556,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.stream.StreamPublicDetails.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 &stream.StreamPublicDetails {
 	ChannelLink: *string,
@@ -1630,7 +1630,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.stream.StreamStatus.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 &stream.StreamStatus {
 
@@ -1643,7 +1643,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.stream.StreamWatermark.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 &stream.StreamWatermark {
 
@@ -1658,7 +1658,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.StreamInputOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.NewStreamInputOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamInputOutputReference
 ```
@@ -1929,7 +1929,7 @@ func InternalValue() StreamInput
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.StreamPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.NewStreamPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamPlaybackOutputReference
 ```
@@ -2200,7 +2200,7 @@ func InternalValue() StreamPlayback
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.StreamPublicDetailsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.NewStreamPublicDetailsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamPublicDetailsOutputReference
 ```
@@ -2565,7 +2565,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.StreamStatusOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.NewStreamStatusOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamStatusOutputReference
 ```
@@ -2858,7 +2858,7 @@ func InternalValue() StreamStatus
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.StreamWatermarkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/stream"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/stream"
 
 stream.NewStreamWatermarkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) StreamWatermarkOutputReference
 ```

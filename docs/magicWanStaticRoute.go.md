@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRoute(scope Construct, id *string, config MagicWanStaticRouteConfig) MagicWanStaticRoute
 ```
@@ -434,7 +434,7 @@ func ResetWeight()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ magicwanstaticroute.MagicWanStaticRoute_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ magicwanstaticroute.MagicWanStaticRoute_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRoute.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 magicwanstaticroute.MagicWanStaticRoute_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -910,7 +910,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteConfig {
 	Connection: interface{},
@@ -925,7 +925,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwan
 	Prefix: *string,
 	Priority: *f64,
 	Description: *string,
-	Scope: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.magicWanStaticRoute.MagicWanStaticRouteScope,
+	Scope: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.magicWanStaticRoute.MagicWanStaticRouteScope,
 	Weight: *f64,
 }
 ```
@@ -1124,7 +1124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScope.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 &magicwanstaticroute.MagicWanStaticRouteScope {
 	ColoNames: *[]*string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicWanStaticRoute.MagicWanStaticRouteScopeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicwanstaticroute"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicwanstaticroute"
 
 magicwanstaticroute.NewMagicWanStaticRouteScopeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicWanStaticRouteScopeOutputReference
 ```

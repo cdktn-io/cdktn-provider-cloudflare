@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesList(scope Construct, id *string, config DataCloudflareTokenValidationRulesListConfig) DataCloudflareTokenValidationRulesList
 ```
@@ -361,7 +361,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesList.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesList_IsConstruct(x interface{}) *bool
 ```
@@ -393,7 +393,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesList.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesList_IsTerraformElement(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesList_Is
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesList.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesList_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesList_Is
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesList.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesList_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -837,7 +837,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 &datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesListConfig {
 	Connection: interface{},
@@ -1086,7 +1086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 &datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesListResult {
 
@@ -1099,7 +1099,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 &datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesListResultSelector {
 
@@ -1112,7 +1112,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelectorExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 &datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesListResultSelectorExclude {
 
@@ -1125,7 +1125,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelectorInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 &datacloudflaretokenvalidationruleslist.DataCloudflareTokenValidationRulesListResultSelectorInclude {
 
@@ -1140,7 +1140,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesListResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareTokenValidationRulesListResultList
 ```
@@ -1289,7 +1289,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesListResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareTokenValidationRulesListResultOutputReference
 ```
@@ -1655,7 +1655,7 @@ func InternalValue() DataCloudflareTokenValidationRulesListResult
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelectorExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesListResultSelectorExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareTokenValidationRulesListResultSelectorExcludeList
 ```
@@ -1804,7 +1804,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelectorExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesListResultSelectorExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareTokenValidationRulesListResultSelectorExcludeOutputReference
 ```
@@ -2082,7 +2082,7 @@ func InternalValue() DataCloudflareTokenValidationRulesListResultSelectorExclude
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelectorIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesListResultSelectorIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareTokenValidationRulesListResultSelectorIncludeList
 ```
@@ -2231,7 +2231,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelectorIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesListResultSelectorIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareTokenValidationRulesListResultSelectorIncludeOutputReference
 ```
@@ -2509,7 +2509,7 @@ func InternalValue() DataCloudflareTokenValidationRulesListResultSelectorInclude
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareTokenValidationRulesList.DataCloudflareTokenValidationRulesListResultSelectorOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflaretokenvalidationruleslist"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflaretokenvalidationruleslist"
 
 datacloudflaretokenvalidationruleslist.NewDataCloudflareTokenValidationRulesListResultSelectorOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareTokenValidationRulesListResultSelectorOutputReference
 ```

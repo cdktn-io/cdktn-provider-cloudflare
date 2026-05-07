@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectors.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.NewDataCloudflareZeroTrustTunnelWarpConnectors(scope Construct, id *string, config DataCloudflareZeroTrustTunnelWarpConnectorsConfig) DataCloudflareZeroTrustTunnelWarpConnectors
 ```
@@ -375,7 +375,7 @@ func ResetWasInactiveAt()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectors.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpConnectors_IsConstruct(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectors.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpConnectors_IsTerraformElement(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpCon
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectors.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpConnectors_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -435,7 +435,7 @@ datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpCon
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectors.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpConnectors_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectorsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 &datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpConnectorsConfig {
 	Connection: interface{},
@@ -1168,7 +1168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 &datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResult {
 
@@ -1181,7 +1181,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResultConnections.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 &datacloudflarezerotrusttunnelwarpconnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResultConnections {
 
@@ -1196,7 +1196,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.NewDataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsList
 ```
@@ -1345,7 +1345,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.NewDataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustTunnelWarpConnectorsResultConnectionsOutputReference
 ```
@@ -1700,7 +1700,7 @@ func InternalValue() DataCloudflareZeroTrustTunnelWarpConnectorsResultConnection
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.NewDataCloudflareZeroTrustTunnelWarpConnectorsResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustTunnelWarpConnectorsResultList
 ```
@@ -1849,7 +1849,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelWarpConnectors.DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelwarpconnectors"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelwarpconnectors"
 
 datacloudflarezerotrusttunnelwarpconnectors.NewDataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustTunnelWarpConnectorsResultOutputReference
 ```

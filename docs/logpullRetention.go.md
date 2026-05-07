@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpullretention"
 
 logpullretention.NewLogpullRetention(scope Construct, id *string, config LogpullRetentionConfig) LogpullRetention
 ```
@@ -407,7 +407,7 @@ func ResetFlag()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpullretention"
 
 logpullretention.LogpullRetention_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpullretention"
 
 logpullretention.LogpullRetention_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ logpullretention.LogpullRetention_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpullretention"
 
 logpullretention.LogpullRetention_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ logpullretention.LogpullRetention_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetention.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpullretention"
 
 logpullretention.LogpullRetention_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.logpullRetention.LogpullRetentionConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpullretention"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpullretention"
 
 &logpullretention.LogpullRetentionConfig {
 	Connection: interface{},

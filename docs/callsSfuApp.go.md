@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/callssfuapp"
 
 callssfuapp.NewCallsSfuApp(scope Construct, id *string, config CallsSfuAppConfig) CallsSfuApp
 ```
@@ -421,7 +421,7 @@ func ResetName()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/callssfuapp"
 
 callssfuapp.CallsSfuApp_IsConstruct(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/callssfuapp"
 
 callssfuapp.CallsSfuApp_IsTerraformElement(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ callssfuapp.CallsSfuApp_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/callssfuapp"
 
 callssfuapp.CallsSfuApp_IsTerraformResource(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ callssfuapp.CallsSfuApp_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuApp.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/callssfuapp"
 
 callssfuapp.CallsSfuApp_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -820,7 +820,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.callsSfuApp.CallsSfuAppConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/callssfuapp"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/callssfuapp"
 
 &callssfuapp.CallsSfuAppConfig {
 	Connection: interface{},

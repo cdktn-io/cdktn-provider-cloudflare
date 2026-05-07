@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.NewManagedTransforms(scope Construct, id *string, config ManagedTransformsConfig) ManagedTransforms
 ```
@@ -426,7 +426,7 @@ func PutManagedResponseHeaders(value interface{})
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.ManagedTransforms_IsConstruct(x interface{}) *bool
 ```
@@ -458,7 +458,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.ManagedTransforms_IsTerraformElement(x interface{}) *bool
 ```
@@ -472,7 +472,7 @@ managedtransforms.ManagedTransforms_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.ManagedTransforms_IsTerraformResource(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ managedtransforms.ManagedTransforms_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransforms.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.ManagedTransforms_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -792,7 +792,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 &managedtransforms.ManagedTransformsConfig {
 	Connection: interface{},
@@ -942,7 +942,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 &managedtransforms.ManagedTransformsManagedRequestHeaders {
 	Enabled: interface{},
@@ -995,7 +995,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 &managedtransforms.ManagedTransformsManagedResponseHeaders {
 	Enabled: interface{},
@@ -1050,7 +1050,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.NewManagedTransformsManagedRequestHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedTransformsManagedRequestHeadersList
 ```
@@ -1210,7 +1210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedRequestHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.NewManagedTransformsManagedRequestHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedTransformsManagedRequestHeadersOutputReference
 ```
@@ -1521,7 +1521,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.NewManagedTransformsManagedResponseHeadersList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ManagedTransformsManagedResponseHeadersList
 ```
@@ -1681,7 +1681,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.managedTransforms.ManagedTransformsManagedResponseHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/managedtransforms"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/managedtransforms"
 
 managedtransforms.NewManagedTransformsManagedResponseHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ManagedTransformsManagedResponseHeadersOutputReference
 ```

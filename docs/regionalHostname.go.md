@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionalhostname"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionalhostname"
 
 regionalhostname.NewRegionalHostname(scope Construct, id *string, config RegionalHostnameConfig) RegionalHostname
 ```
@@ -414,7 +414,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionalhostname"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionalhostname"
 
 regionalhostname.RegionalHostname_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionalhostname"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionalhostname"
 
 regionalhostname.RegionalHostname_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ regionalhostname.RegionalHostname_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionalhostname"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionalhostname"
 
 regionalhostname.RegionalHostname_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ regionalhostname.RegionalHostname_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionalhostname"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionalhostname"
 
 regionalhostname.RegionalHostname_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/regionalhostname"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/regionalhostname"
 
 &regionalhostname.RegionalHostnameConfig {
 	Connection: interface{},

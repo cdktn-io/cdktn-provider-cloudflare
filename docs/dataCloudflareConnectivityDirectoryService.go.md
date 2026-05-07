@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryService.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.NewDataCloudflareConnectivityDirectoryService(scope Construct, id *string, config DataCloudflareConnectivityDirectoryServiceConfig) DataCloudflareConnectivityDirectoryService
 ```
@@ -332,7 +332,7 @@ func ResetServiceId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryService.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryService_IsConstruct(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryService.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryService_IsTerraformElement(x interface{}) *bool
 ```
@@ -378,7 +378,7 @@ datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectorySe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryService.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryService_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -392,7 +392,7 @@ datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectorySe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryService.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryService_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -786,7 +786,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 &datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryServiceConfig {
 	Connection: interface{},
@@ -797,7 +797,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceFilter,
+	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceFilter,
 	ServiceId: *string,
 }
 ```
@@ -930,7 +930,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceFilter.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 &datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryServiceFilter {
 	Type: *string,
@@ -964,7 +964,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceHost.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 &datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryServiceHost {
 
@@ -977,7 +977,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceHostNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 &datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryServiceHostNetwork {
 
@@ -990,7 +990,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceHostResolverNetwork.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 &datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryServiceHostResolverNetwork {
 
@@ -1003,7 +1003,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceTlsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 &datacloudflareconnectivitydirectoryservice.DataCloudflareConnectivityDirectoryServiceTlsSettings {
 
@@ -1018,7 +1018,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceFilterOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.NewDataCloudflareConnectivityDirectoryServiceFilterOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareConnectivityDirectoryServiceFilterOutputReference
 ```
@@ -1296,7 +1296,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceHostNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.NewDataCloudflareConnectivityDirectoryServiceHostNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareConnectivityDirectoryServiceHostNetworkOutputReference
 ```
@@ -1556,7 +1556,7 @@ func InternalValue() DataCloudflareConnectivityDirectoryServiceHostNetwork
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.NewDataCloudflareConnectivityDirectoryServiceHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareConnectivityDirectoryServiceHostOutputReference
 ```
@@ -1860,7 +1860,7 @@ func InternalValue() DataCloudflareConnectivityDirectoryServiceHost
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceHostResolverNetworkOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.NewDataCloudflareConnectivityDirectoryServiceHostResolverNetworkOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareConnectivityDirectoryServiceHostResolverNetworkOutputReference
 ```
@@ -2131,7 +2131,7 @@ func InternalValue() DataCloudflareConnectivityDirectoryServiceHostResolverNetwo
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareConnectivityDirectoryService.DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflareconnectivitydirectoryservice"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareconnectivitydirectoryservice"
 
 datacloudflareconnectivitydirectoryservice.NewDataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareConnectivityDirectoryServiceTlsSettingsOutputReference
 ```

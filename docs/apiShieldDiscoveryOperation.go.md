@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.NewApiShieldDiscoveryOperation(scope Construct, id *string, config ApiShieldDiscoveryOperationConfig) ApiShieldDiscoveryOperation
 ```
@@ -414,7 +414,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ apishielddiscoveryoperation.ApiShieldDiscoveryOperation_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperation.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/apishielddiscoveryoperation"
 
 apishielddiscoveryoperation.ApiShieldDiscoveryOperation_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -780,7 +780,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.apiShieldDiscoveryOperation.ApiShieldDiscoveryOperationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/apishielddiscoveryoperation"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/apishielddiscoveryoperation"
 
 &apishielddiscoveryoperation.ApiShieldDiscoveryOperationConfig {
 	Connection: interface{},

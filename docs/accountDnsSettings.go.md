@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.NewAccountDnsSettings(scope Construct, id *string, config AccountDnsSettingsConfig) AccountDnsSettings
 ```
@@ -434,7 +434,7 @@ func ResetZoneDefaults()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.AccountDnsSettings_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.AccountDnsSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ accountdnssettings.AccountDnsSettings_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.AccountDnsSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ accountdnssettings.AccountDnsSettings_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.AccountDnsSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -789,7 +789,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 &accountdnssettings.AccountDnsSettingsConfig {
 	Connection: interface{},
@@ -801,7 +801,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountd
 	Provisioners: *[]interface{},
 	AccountId: *string,
 	EnforceDnsOnly: interface{},
-	ZoneDefaults: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.accountDnsSettings.AccountDnsSettingsZoneDefaults,
+	ZoneDefaults: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.accountDnsSettings.AccountDnsSettingsZoneDefaults,
 }
 ```
 
@@ -939,17 +939,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 &accountdnssettings.AccountDnsSettingsZoneDefaults {
 	FlattenAllCnames: interface{},
 	FoundationDns: interface{},
-	InternalDns: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDns,
+	InternalDns: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDns,
 	MultiProvider: interface{},
-	Nameservers: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers,
+	Nameservers: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers,
 	NsTtl: *f64,
 	SecondaryOverrides: interface{},
-	Soa: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoa,
+	Soa: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoa,
 	ZoneMode: *string,
 }
 ```
@@ -1103,7 +1103,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDns.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 &accountdnssettings.AccountDnsSettingsZoneDefaultsInternalDns {
 	ReferenceZoneId: *string,
@@ -1137,7 +1137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameservers.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 &accountdnssettings.AccountDnsSettingsZoneDefaultsNameservers {
 	Type: *string,
@@ -1171,7 +1171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoa.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 &accountdnssettings.AccountDnsSettingsZoneDefaultsSoa {
 	Expire: *f64,
@@ -1303,7 +1303,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsInternalDnsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.NewAccountDnsSettingsZoneDefaultsInternalDnsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsInternalDnsOutputReference
 ```
@@ -1581,7 +1581,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsNameserversOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.NewAccountDnsSettingsZoneDefaultsNameserversOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsNameserversOutputReference
 ```
@@ -1859,7 +1859,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.NewAccountDnsSettingsZoneDefaultsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsOutputReference
 ```
@@ -2408,7 +2408,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaultsSoaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/accountdnssettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/accountdnssettings"
 
 accountdnssettings.NewAccountDnsSettingsZoneDefaultsSoaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) AccountDnsSettingsZoneDefaultsSoaOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.NewTokenValidationConfig(scope Construct, id *string, config TokenValidationConfigConfig) TokenValidationConfig
 ```
@@ -420,7 +420,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.TokenValidationConfig_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.TokenValidationConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ tokenvalidationconfig.TokenValidationConfig_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.TokenValidationConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ tokenvalidationconfig.TokenValidationConfig_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.TokenValidationConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -874,7 +874,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 &tokenvalidationconfig.TokenValidationConfigConfig {
 	Connection: interface{},
@@ -884,7 +884,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenval
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Credentials: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.tokenValidationConfig.TokenValidationConfigCredentials,
+	Credentials: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.tokenValidationConfig.TokenValidationConfigCredentials,
 	Description: *string,
 	Title: *string,
 	TokenSources: *[]*string,
@@ -1064,7 +1064,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 &tokenvalidationconfig.TokenValidationConfigCredentials {
 	Keys: interface{},
@@ -1096,7 +1096,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 &tokenvalidationconfig.TokenValidationConfigCredentialsKeys {
 	Alg: *string,
@@ -1244,7 +1244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.NewTokenValidationConfigCredentialsKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) TokenValidationConfigCredentialsKeysList
 ```
@@ -1404,7 +1404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.NewTokenValidationConfigCredentialsKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) TokenValidationConfigCredentialsKeysOutputReference
 ```
@@ -1882,7 +1882,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/tokenvalidationconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/tokenvalidationconfig"
 
 tokenvalidationconfig.NewTokenValidationConfigCredentialsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) TokenValidationConfigCredentialsOutputReference
 ```

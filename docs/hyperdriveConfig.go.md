@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.NewHyperdriveConfig(scope Construct, id *string, config HyperdriveConfigConfig) HyperdriveConfig
 ```
@@ -467,7 +467,7 @@ func ResetOriginConnectionLimit()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.HyperdriveConfig_IsConstruct(x interface{}) *bool
 ```
@@ -499,7 +499,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.HyperdriveConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -513,7 +513,7 @@ hyperdriveconfig.HyperdriveConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.HyperdriveConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -527,7 +527,7 @@ hyperdriveconfig.HyperdriveConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.HyperdriveConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -921,7 +921,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCaching.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 &hyperdriveconfig.HyperdriveConfigCaching {
 	Disabled: interface{},
@@ -987,7 +987,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 &hyperdriveconfig.HyperdriveConfigConfig {
 	Connection: interface{},
@@ -998,10 +998,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdri
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Origin: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.hyperdriveConfig.HyperdriveConfigOrigin,
+	Origin: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.hyperdriveConfig.HyperdriveConfigOrigin,
 	AccountId: *string,
-	Caching: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.hyperdriveConfig.HyperdriveConfigCaching,
-	Mtls: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.hyperdriveConfig.HyperdriveConfigMtls,
+	Caching: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.hyperdriveConfig.HyperdriveConfigCaching,
+	Mtls: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.hyperdriveConfig.HyperdriveConfigMtls,
 	OriginConnectionLimit: *f64,
 }
 ```
@@ -1187,7 +1187,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtls.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 &hyperdriveconfig.HyperdriveConfigMtls {
 	CaCertificateId: *string,
@@ -1253,7 +1253,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOrigin.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 &hyperdriveconfig.HyperdriveConfigOrigin {
 	Database: *string,
@@ -1421,7 +1421,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigCachingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.NewHyperdriveConfigCachingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HyperdriveConfigCachingOutputReference
 ```
@@ -1757,7 +1757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigMtlsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.NewHyperdriveConfigMtlsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HyperdriveConfigMtlsOutputReference
 ```
@@ -2093,7 +2093,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.hyperdriveConfig.HyperdriveConfigOriginOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/hyperdriveconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/hyperdriveconfig"
 
 hyperdriveconfig.NewHyperdriveConfigOriginOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) HyperdriveConfigOriginOutputReference
 ```

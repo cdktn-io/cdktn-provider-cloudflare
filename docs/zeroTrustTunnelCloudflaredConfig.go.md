@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigA.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigA(scope Construct, id *string, config ZeroTrustTunnelCloudflaredConfigAConfig) ZeroTrustTunnelCloudflaredConfigA
 ```
@@ -434,7 +434,7 @@ func ResetSource()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigA.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigA_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigA.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigA_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigA_IsTerraformEl
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigA.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigA_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigA_IsTerraformRe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigA.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigA_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -844,7 +844,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigAConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 &zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigAConfig {
 	Connection: interface{},
@@ -856,7 +856,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 	Provisioners: *[]interface{},
 	TunnelId: *string,
 	AccountId: *string,
-	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfig,
+	Config: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfig,
 	Source: *string,
 }
 ```
@@ -1013,11 +1013,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 &zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigConfig {
 	Ingress: interface{},
-	OriginRequest: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequest,
+	OriginRequest: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequest,
 }
 ```
 
@@ -1063,12 +1063,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngress.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 &zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigConfigIngress {
 	Service: *string,
 	Hostname: *string,
-	OriginRequest: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest,
+	OriginRequest: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest,
 	Path: *string,
 }
 ```
@@ -1147,10 +1147,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 &zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest {
-	Access: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess,
+	Access: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess,
 	CaPool: *string,
 	ConnectTimeout: *f64,
 	DisableChunkedEncoding: interface{},
@@ -1415,7 +1415,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 &zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess {
 	AudTag: *[]*string,
@@ -1481,10 +1481,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 &zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequest {
-	Access: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess,
+	Access: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess,
 	CaPool: *string,
 	ConnectTimeout: *f64,
 	DisableChunkedEncoding: interface{},
@@ -1749,7 +1749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 &zerotrusttunnelcloudflaredconfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess {
 	AudTag: *[]*string,
@@ -1817,7 +1817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigConfigIngressList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustTunnelCloudflaredConfigConfigIngressList
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessOutputReference
 ```
@@ -2299,7 +2299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestOutputReference
 ```
@@ -2996,7 +2996,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustTunnelCloudflaredConfigConfigIngressOutputReference
 ```
@@ -3385,7 +3385,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessOutputReference
 ```
@@ -3707,7 +3707,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustTunnelCloudflaredConfigConfigOriginRequestOutputReference
 ```
@@ -4404,7 +4404,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustTunnelCloudflaredConfig.ZeroTrustTunnelCloudflaredConfigConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrusttunnelcloudflaredconfig"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrusttunnelcloudflaredconfig"
 
 zerotrusttunnelcloudflaredconfig.NewZeroTrustTunnelCloudflaredConfigConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustTunnelCloudflaredConfigConfigOutputReference
 ```

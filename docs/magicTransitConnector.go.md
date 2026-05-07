@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 magictransitconnector.NewMagicTransitConnector(scope Construct, id *string, config MagicTransitConnectorConfig) MagicTransitConnector
 ```
@@ -448,7 +448,7 @@ func ResetTimezone()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_IsConstruct(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_IsTerraformElement(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ magictransitconnector.MagicTransitConnector_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_IsTerraformResource(x interface{}) *bool
 ```
@@ -508,7 +508,7 @@ magictransitconnector.MagicTransitConnector_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnector.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 magictransitconnector.MagicTransitConnector_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -913,7 +913,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnectorConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 &magictransitconnector.MagicTransitConnectorConfig {
 	Connection: interface{},
@@ -924,7 +924,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictra
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	AccountId: *string,
-	Device: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.magicTransitConnector.MagicTransitConnectorDevice,
+	Device: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.magicTransitConnector.MagicTransitConnectorDevice,
 	Activated: interface{},
 	InterruptWindowDurationHours: *f64,
 	InterruptWindowHourOfDay: *f64,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDevice.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 &magictransitconnector.MagicTransitConnectorDevice {
 	Id: *string,
@@ -1184,7 +1184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitConnector.MagicTransitConnectorDeviceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magictransitconnector"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magictransitconnector"
 
 magictransitconnector.NewMagicTransitConnectorDeviceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) MagicTransitConnectorDeviceOutputReference
 ```

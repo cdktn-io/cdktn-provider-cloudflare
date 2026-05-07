@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2manageddomain"
 
 r2manageddomain.NewR2ManagedDomain(scope Construct, id *string, config R2ManagedDomainConfig) R2ManagedDomain
 ```
@@ -414,7 +414,7 @@ func ResetJurisdiction()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ r2manageddomain.R2ManagedDomain_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ r2manageddomain.R2ManagedDomain_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomain.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2manageddomain"
 
 r2manageddomain.R2ManagedDomain_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -813,7 +813,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.r2ManagedDomain.R2ManagedDomainConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/r2manageddomain"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/r2manageddomain"
 
 &r2manageddomain.R2ManagedDomainConfig {
 	Connection: interface{},

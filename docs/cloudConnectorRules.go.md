@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.NewCloudConnectorRules(scope Construct, id *string, config CloudConnectorRulesConfig) CloudConnectorRules
 ```
@@ -420,7 +420,7 @@ func ResetRules()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.CloudConnectorRules_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.CloudConnectorRules_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ cloudconnectorrules.CloudConnectorRules_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.CloudConnectorRules_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ cloudconnectorrules.CloudConnectorRules_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRules.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.CloudConnectorRules_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -764,7 +764,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 &cloudconnectorrules.CloudConnectorRulesConfig {
 	Connection: interface{},
@@ -896,13 +896,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 &cloudconnectorrules.CloudConnectorRulesRules {
 	Description: *string,
 	Enabled: interface{},
 	Expression: *string,
-	Parameters: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.cloudConnectorRules.CloudConnectorRulesRulesParameters,
+	Parameters: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.cloudConnectorRules.CloudConnectorRulesRulesParameters,
 	Provider: *string,
 }
 ```
@@ -988,7 +988,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParameters.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 &cloudconnectorrules.CloudConnectorRulesRulesParameters {
 	Host: *string,
@@ -1024,7 +1024,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.NewCloudConnectorRulesRulesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CloudConnectorRulesRulesList
 ```
@@ -1184,7 +1184,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.NewCloudConnectorRulesRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CloudConnectorRulesRulesOutputReference
 ```
@@ -1620,7 +1620,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudConnectorRules.CloudConnectorRulesRulesParametersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/cloudconnectorrules"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/cloudconnectorrules"
 
 cloudconnectorrules.NewCloudConnectorRulesRulesParametersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CloudConnectorRulesRulesParametersOutputReference
 ```

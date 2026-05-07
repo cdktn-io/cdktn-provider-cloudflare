@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 datacloudflarecustomorigintruststores.NewDataCloudflareCustomOriginTrustStores(scope Construct, id *string, config DataCloudflareCustomOriginTrustStoresConfig) DataCloudflareCustomOriginTrustStores
 ```
@@ -326,7 +326,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStores_IsConstruct(x interface{}) *bool
 ```
@@ -358,7 +358,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStores_IsTerraformElement(x interface{}) *bool
 ```
@@ -372,7 +372,7 @@ datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStores_IsTe
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStores_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -386,7 +386,7 @@ datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStores_IsTe
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStores.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStores_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -692,7 +692,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 &datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStoresConfig {
 	Connection: interface{},
@@ -858,7 +858,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 &datacloudflarecustomorigintruststores.DataCloudflareCustomOriginTrustStoresResult {
 
@@ -873,7 +873,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 datacloudflarecustomorigintruststores.NewDataCloudflareCustomOriginTrustStoresResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareCustomOriginTrustStoresResultList
 ```
@@ -1022,7 +1022,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareCustomOriginTrustStores.DataCloudflareCustomOriginTrustStoresResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarecustomorigintruststores"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarecustomorigintruststores"
 
 datacloudflarecustomorigintruststores.NewDataCloudflareCustomOriginTrustStoresResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareCustomOriginTrustStoresResultOutputReference
 ```

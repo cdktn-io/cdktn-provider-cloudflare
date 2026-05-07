@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customorigintruststore"
 
 customorigintruststore.NewCustomOriginTrustStore(scope Construct, id *string, config CustomOriginTrustStoreConfig) CustomOriginTrustStore
 ```
@@ -407,7 +407,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ customorigintruststore.CustomOriginTrustStore_IsTerraformElement(x interface{}) 
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ customorigintruststore.CustomOriginTrustStore_IsTerraformResource(x interface{})
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customorigintruststore"
 
 customorigintruststore.CustomOriginTrustStore_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -817,7 +817,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/customorigintruststore"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/customorigintruststore"
 
 &customorigintruststore.CustomOriginTrustStoreConfig {
 	Connection: interface{},

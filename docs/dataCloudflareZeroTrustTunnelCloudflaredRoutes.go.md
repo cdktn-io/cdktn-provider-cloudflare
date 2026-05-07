@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 datacloudflarezerotrusttunnelcloudflaredroutes.NewDataCloudflareZeroTrustTunnelCloudflaredRoutes(scope Construct, id *string, config DataCloudflareZeroTrustTunnelCloudflaredRoutesConfig) DataCloudflareZeroTrustTunnelCloudflaredRoutes
 ```
@@ -375,7 +375,7 @@ func ResetVirtualNetworkId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes_IsConstruct(x interface{}) *bool
 ```
@@ -407,7 +407,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes_IsTerraformElement(x interface{}) *bool
 ```
@@ -421,7 +421,7 @@ datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelClou
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -435,7 +435,7 @@ datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelClou
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelCloudflaredRoutes_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -895,7 +895,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 &datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelCloudflaredRoutesConfig {
 	Connection: interface{},
@@ -1173,7 +1173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutesResult.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 &datacloudflarezerotrusttunnelcloudflaredroutes.DataCloudflareZeroTrustTunnelCloudflaredRoutesResult {
 
@@ -1188,7 +1188,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutesResultList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 datacloudflarezerotrusttunnelcloudflaredroutes.NewDataCloudflareZeroTrustTunnelCloudflaredRoutesResultList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataCloudflareZeroTrustTunnelCloudflaredRoutesResultList
 ```
@@ -1337,7 +1337,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustTunnelCloudflaredRoutes.DataCloudflareZeroTrustTunnelCloudflaredRoutesResultOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarezerotrusttunnelcloudflaredroutes"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarezerotrusttunnelcloudflaredroutes"
 
 datacloudflarezerotrusttunnelcloudflaredroutes.NewDataCloudflareZeroTrustTunnelCloudflaredRoutesResultOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataCloudflareZeroTrustTunnelCloudflaredRoutesResultOutputReference
 ```

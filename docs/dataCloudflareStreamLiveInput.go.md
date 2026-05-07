@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInput(scope Construct, id *string, config DataCloudflareStreamLiveInputConfig) DataCloudflareStreamLiveInput
 ```
@@ -305,7 +305,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.DataCloudflareStreamLiveInput_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.DataCloudflareStreamLiveInput_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datacloudflarestreamliveinput.DataCloudflareStreamLiveInput_IsTerraformElement(x
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.DataCloudflareStreamLiveInput_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -365,7 +365,7 @@ datacloudflarestreamliveinput.DataCloudflareStreamLiveInput_IsTerraformDataSourc
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInput.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.DataCloudflareStreamLiveInput_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -770,7 +770,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputConfig {
 	Connection: interface{},
@@ -904,7 +904,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputRecording.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputRecording {
 
@@ -917,7 +917,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputRtmps.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputRtmps {
 
@@ -930,7 +930,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputRtmpsPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputRtmpsPlayback {
 
@@ -943,7 +943,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputSrt.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputSrt {
 
@@ -956,7 +956,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputSrtPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputSrtPlayback {
 
@@ -969,7 +969,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputWebRtc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputWebRtc {
 
@@ -982,7 +982,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputWebRtcPlayback.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 &datacloudflarestreamliveinput.DataCloudflareStreamLiveInputWebRtcPlayback {
 
@@ -997,7 +997,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/dataclou
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputRecordingOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInputRecordingOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareStreamLiveInputRecordingOutputReference
 ```
@@ -1301,7 +1301,7 @@ func InternalValue() DataCloudflareStreamLiveInputRecording
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputRtmpsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInputRtmpsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareStreamLiveInputRtmpsOutputReference
 ```
@@ -1572,7 +1572,7 @@ func InternalValue() DataCloudflareStreamLiveInputRtmps
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputRtmpsPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInputRtmpsPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareStreamLiveInputRtmpsPlaybackOutputReference
 ```
@@ -1843,7 +1843,7 @@ func InternalValue() DataCloudflareStreamLiveInputRtmpsPlayback
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputSrtOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInputSrtOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareStreamLiveInputSrtOutputReference
 ```
@@ -2125,7 +2125,7 @@ func InternalValue() DataCloudflareStreamLiveInputSrt
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputSrtPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInputSrtPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareStreamLiveInputSrtPlaybackOutputReference
 ```
@@ -2407,7 +2407,7 @@ func InternalValue() DataCloudflareStreamLiveInputSrtPlayback
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputWebRtcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInputWebRtcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareStreamLiveInputWebRtcOutputReference
 ```
@@ -2667,7 +2667,7 @@ func InternalValue() DataCloudflareStreamLiveInputWebRtc
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareStreamLiveInput.DataCloudflareStreamLiveInputWebRtcPlaybackOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/datacloudflarestreamliveinput"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflarestreamliveinput"
 
 datacloudflarestreamliveinput.NewDataCloudflareStreamLiveInputWebRtcPlaybackOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareStreamLiveInputWebRtcPlaybackOutputReference
 ```

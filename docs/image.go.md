@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.image.Image.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/image"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/image"
 
 image.NewImage(scope Construct, id *string, config ImageConfig) Image
 ```
@@ -442,7 +442,7 @@ func ResetUrl()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.image.Image.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/image"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/image"
 
 image.Image_IsConstruct(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.image.Image.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/image"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/image"
 
 image.Image_IsTerraformElement(x interface{}) *bool
 ```
@@ -488,7 +488,7 @@ image.Image_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.image.Image.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/image"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/image"
 
 image.Image_IsTerraformResource(x interface{}) *bool
 ```
@@ -502,7 +502,7 @@ image.Image_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.image.Image.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/image"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/image"
 
 image.Image_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -929,7 +929,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.image.ImageConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/image"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/image"
 
 &image.ImageConfig {
 	Connection: interface{},

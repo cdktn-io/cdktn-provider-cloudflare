@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntry.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.NewZeroTrustDlpPredefinedEntry(scope Construct, id *string, config ZeroTrustDlpPredefinedEntryConfig) ZeroTrustDlpPredefinedEntry
 ```
@@ -414,7 +414,7 @@ func ResetProfileId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntry.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntry_IsConstruct(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntry.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntry_IsTerraformElement(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntry_IsTerraformElement(x int
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntry.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntry_IsTerraformResource(x interface{}) *bool
 ```
@@ -474,7 +474,7 @@ zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntry_IsTerraformResource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntry.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntry_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -945,7 +945,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryConfidence.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 &zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntryConfidence {
 
@@ -958,7 +958,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 &zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntryConfig {
 	Connection: interface{},
@@ -1118,7 +1118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryPattern.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 &zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntryPattern {
 
@@ -1131,7 +1131,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryProfiles.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 &zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntryProfiles {
 
@@ -1144,7 +1144,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryVariant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 &zerotrustdlppredefinedentry.ZeroTrustDlpPredefinedEntryVariant {
 
@@ -1159,7 +1159,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryConfidenceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.NewZeroTrustDlpPredefinedEntryConfidenceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpPredefinedEntryConfidenceOutputReference
 ```
@@ -1430,7 +1430,7 @@ func InternalValue() ZeroTrustDlpPredefinedEntryConfidence
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryPatternOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.NewZeroTrustDlpPredefinedEntryPatternOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpPredefinedEntryPatternOutputReference
 ```
@@ -1701,7 +1701,7 @@ func InternalValue() ZeroTrustDlpPredefinedEntryPattern
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryProfilesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.NewZeroTrustDlpPredefinedEntryProfilesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustDlpPredefinedEntryProfilesList
 ```
@@ -1850,7 +1850,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryProfilesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.NewZeroTrustDlpPredefinedEntryProfilesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustDlpPredefinedEntryProfilesOutputReference
 ```
@@ -2139,7 +2139,7 @@ func InternalValue() ZeroTrustDlpPredefinedEntryProfiles
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpPredefinedEntry.ZeroTrustDlpPredefinedEntryVariantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustdlppredefinedentry"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustdlppredefinedentry"
 
 zerotrustdlppredefinedentry.NewZeroTrustDlpPredefinedEntryVariantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustDlpPredefinedEntryVariantOutputReference
 ```

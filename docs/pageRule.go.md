@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRule(scope Construct, id *string, config PageRuleConfig) PageRule
 ```
@@ -434,7 +434,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.pageRule.PageRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.PageRule_IsConstruct(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.pageRule.PageRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.PageRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ pagerule.PageRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.pageRule.PageRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.PageRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -494,7 +494,7 @@ pagerule.PageRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.pageRule.PageRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.PageRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -866,7 +866,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActions {
 	AlwaysUseHttps: interface{},
@@ -876,7 +876,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule
 	BypassCacheOnCookie: *string,
 	CacheByDeviceType: *string,
 	CacheDeceptionArmor: *string,
-	CacheKeyFields: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActionsCacheKeyFields,
+	CacheKeyFields: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActionsCacheKeyFields,
 	CacheLevel: *string,
 	CacheOnCookie: *string,
 	CacheTtlByStatus: *map[string]*string,
@@ -887,7 +887,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule
 	EdgeCacheTtl: *f64,
 	EmailObfuscation: *string,
 	ExplicitCacheControl: *string,
-	ForwardingUrl: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActionsForwardingUrl,
+	ForwardingUrl: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActionsForwardingUrl,
 	HostHeaderOverride: *string,
 	IpGeolocation: *string,
 	Mirage: *string,
@@ -1360,14 +1360,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFields.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActionsCacheKeyFields {
-	Cookie: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActionsCacheKeyFieldsCookie,
-	Header: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActionsCacheKeyFieldsHeader,
-	Host: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActionsCacheKeyFieldsHost,
-	QueryString: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActionsCacheKeyFieldsQueryString,
-	User: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActionsCacheKeyFieldsUser,
+	Cookie: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActionsCacheKeyFieldsCookie,
+	Header: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActionsCacheKeyFieldsHeader,
+	Host: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActionsCacheKeyFieldsHost,
+	QueryString: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActionsCacheKeyFieldsQueryString,
+	User: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActionsCacheKeyFieldsUser,
 }
 ```
 
@@ -1448,7 +1448,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActionsCacheKeyFieldsCookie {
 	CheckPresence: *[]*string,
@@ -1494,7 +1494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActionsCacheKeyFieldsHeader {
 	CheckPresence: *[]*string,
@@ -1554,7 +1554,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHost.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActionsCacheKeyFieldsHost {
 	Resolved: interface{},
@@ -1586,7 +1586,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActionsCacheKeyFieldsQueryString {
 	Exclude: *[]*string,
@@ -1632,7 +1632,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActionsCacheKeyFieldsUser {
 	DeviceType: interface{},
@@ -1692,7 +1692,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleActionsForwardingUrl {
 	StatusCode: *f64,
@@ -1738,7 +1738,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.pageRule.PageRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 &pagerule.PageRuleConfig {
 	Connection: interface{},
@@ -1748,7 +1748,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Actions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.pageRule.PageRuleActions,
+	Actions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.pageRule.PageRuleActions,
 	Target: *string,
 	Priority: *f64,
 	Status: *string,
@@ -1923,7 +1923,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookieOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsCacheKeyFieldsCookieOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsCacheKeyFieldsCookieOutputReference
 ```
@@ -2230,7 +2230,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsCacheKeyFieldsHeaderOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsCacheKeyFieldsHeaderOutputReference
 ```
@@ -2566,7 +2566,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHostOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsCacheKeyFieldsHostOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsCacheKeyFieldsHostOutputReference
 ```
@@ -2844,7 +2844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsCacheKeyFieldsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsCacheKeyFieldsOutputReference
 ```
@@ -3303,7 +3303,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryStringOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsCacheKeyFieldsQueryStringOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsCacheKeyFieldsQueryStringOutputReference
 ```
@@ -3610,7 +3610,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUserOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsCacheKeyFieldsUserOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsCacheKeyFieldsUserOutputReference
 ```
@@ -3946,7 +3946,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsForwardingUrlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsForwardingUrlOutputReference
 ```
@@ -4239,7 +4239,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageRule.PageRuleActionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/pagerule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagerule"
 
 pagerule.NewPageRuleActionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) PageRuleActionsOutputReference
 ```

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTarget.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.NewZeroTrustAccessInfrastructureTarget(scope Construct, id *string, config ZeroTrustAccessInfrastructureTargetConfig) ZeroTrustAccessInfrastructureTarget
 ```
@@ -420,7 +420,7 @@ func ResetAccountId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTarget.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTarget_IsConstruct(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTarget.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTarget_IsTerraformElement(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTarget_IsTerraf
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTarget.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTarget_IsTerraformResource(x interface{}) *bool
 ```
@@ -480,7 +480,7 @@ zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTarget_IsTerraf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTarget.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTarget_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -808,7 +808,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 &zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTargetConfig {
 	Connection: interface{},
@@ -819,7 +819,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
 	Hostname: *string,
-	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIp,
+	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIp,
 	AccountId: *string,
 }
 ```
@@ -963,11 +963,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 &zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTargetIp {
-	Ipv4: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4,
-	Ipv6: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv6,
+	Ipv4: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4,
+	Ipv6: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv6,
 }
 ```
 
@@ -1013,7 +1013,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 &zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTargetIpIpv4 {
 	IpAddr: *string,
@@ -1063,7 +1063,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv6.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 &zerotrustaccessinfrastructuretarget.ZeroTrustAccessInfrastructureTargetIpIpv6 {
 	IpAddr: *string,
@@ -1115,7 +1115,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.NewZeroTrustAccessInfrastructureTargetIpIpv4OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessInfrastructureTargetIpIpv4OutputReference
 ```
@@ -1422,7 +1422,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpIpv6OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.NewZeroTrustAccessInfrastructureTargetIpIpv6OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessInfrastructureTargetIpIpv6OutputReference
 ```
@@ -1729,7 +1729,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessInfrastructureTarget.ZeroTrustAccessInfrastructureTargetIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessinfrastructuretarget"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessinfrastructuretarget"
 
 zerotrustaccessinfrastructuretarget.NewZeroTrustAccessInfrastructureTargetIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessInfrastructureTargetIpOutputReference
 ```

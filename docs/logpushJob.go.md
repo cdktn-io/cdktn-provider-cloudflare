@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.logpushJob.LogpushJob.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 logpushjob.NewLogpushJob(scope Construct, id *string, config LogpushJobConfig) LogpushJob
 ```
@@ -511,7 +511,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.logpushJob.LogpushJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 logpushjob.LogpushJob_IsConstruct(x interface{}) *bool
 ```
@@ -543,7 +543,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.logpushJob.LogpushJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 logpushjob.LogpushJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -557,7 +557,7 @@ logpushjob.LogpushJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.logpushJob.LogpushJob.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 logpushjob.LogpushJob_IsTerraformResource(x interface{}) *bool
 ```
@@ -571,7 +571,7 @@ logpushjob.LogpushJob_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.logpushJob.LogpushJob.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 logpushjob.LogpushJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1174,7 +1174,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.logpushJob.LogpushJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 &logpushjob.LogpushJobConfig {
 	Connection: interface{},
@@ -1196,7 +1196,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushj
 	MaxUploadIntervalSeconds: *f64,
 	MaxUploadRecords: *f64,
 	Name: *string,
-	OutputOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.logpushJob.LogpushJobOutputOptions,
+	OutputOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.logpushJob.LogpushJobOutputOptions,
 	OwnershipChallenge: *string,
 	ZoneId: *string,
 }
@@ -1536,7 +1536,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.logpushJob.LogpushJobOutputOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 &logpushjob.LogpushJobOutputOptions {
 	BatchPrefix: *string,
@@ -1775,7 +1775,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.logpushJob.LogpushJobOutputOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/logpushjob"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/logpushjob"
 
 logpushjob.NewLogpushJobOutputOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) LogpushJobOutputOptionsOutputReference
 ```

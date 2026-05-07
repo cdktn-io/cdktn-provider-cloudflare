@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicNetworkMonitoringRule.MagicNetworkMonitoringRule.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicnetworkmonitoringrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicnetworkmonitoringrule"
 
 magicnetworkmonitoringrule.NewMagicNetworkMonitoringRule(scope Construct, id *string, config MagicNetworkMonitoringRuleConfig) MagicNetworkMonitoringRule
 ```
@@ -449,7 +449,7 @@ func ResetZscoreTarget()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.magicNetworkMonitoringRule.MagicNetworkMonitoringRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicnetworkmonitoringrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicnetworkmonitoringrule"
 
 magicnetworkmonitoringrule.MagicNetworkMonitoringRule_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.magicNetworkMonitoringRule.MagicNetworkMonitoringRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicnetworkmonitoringrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicnetworkmonitoringrule"
 
 magicnetworkmonitoringrule.MagicNetworkMonitoringRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ magicnetworkmonitoringrule.MagicNetworkMonitoringRule_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.magicNetworkMonitoringRule.MagicNetworkMonitoringRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicnetworkmonitoringrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicnetworkmonitoringrule"
 
 magicnetworkmonitoringrule.MagicNetworkMonitoringRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ magicnetworkmonitoringrule.MagicNetworkMonitoringRule_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.magicNetworkMonitoringRule.MagicNetworkMonitoringRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicnetworkmonitoringrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicnetworkmonitoringrule"
 
 magicnetworkmonitoringrule.MagicNetworkMonitoringRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -991,7 +991,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.magicNetworkMonitoringRule.MagicNetworkMonitoringRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/magicnetworkmonitoringrule"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/magicnetworkmonitoringrule"
 
 &magicnetworkmonitoringrule.MagicNetworkMonitoringRuleConfig {
 	Connection: interface{},

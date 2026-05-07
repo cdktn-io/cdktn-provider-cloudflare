@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/schemavalidationoperationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/schemavalidationoperationsettings"
 
 schemavalidationoperationsettings.NewSchemaValidationOperationSettings(scope Construct, id *string, config SchemaValidationOperationSettingsConfig) SchemaValidationOperationSettings
 ```
@@ -407,7 +407,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/schemavalidationoperationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/schemavalidationoperationsettings"
 
 schemavalidationoperationsettings.SchemaValidationOperationSettings_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/schemavalidationoperationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/schemavalidationoperationsettings"
 
 schemavalidationoperationsettings.SchemaValidationOperationSettings_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ schemavalidationoperationsettings.SchemaValidationOperationSettings_IsTerraformE
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/schemavalidationoperationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/schemavalidationoperationsettings"
 
 schemavalidationoperationsettings.SchemaValidationOperationSettings_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ schemavalidationoperationsettings.SchemaValidationOperationSettings_IsTerraformR
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettings.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/schemavalidationoperationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/schemavalidationoperationsettings"
 
 schemavalidationoperationsettings.SchemaValidationOperationSettings_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -762,7 +762,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.schemaValidationOperationSettings.SchemaValidationOperationSettingsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/schemavalidationoperationsettings"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/schemavalidationoperationsettings"
 
 &schemavalidationoperationsettings.SchemaValidationOperationSettingsConfig {
 	Connection: interface{},

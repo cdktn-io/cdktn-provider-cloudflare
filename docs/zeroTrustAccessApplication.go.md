@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplication(scope Construct, id *string, config ZeroTrustAccessApplicationConfig) ZeroTrustAccessApplication
 ```
@@ -810,7 +810,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplication.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.ZeroTrustAccessApplication_IsConstruct(x interface{}) *bool
 ```
@@ -842,7 +842,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplication.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.ZeroTrustAccessApplication_IsTerraformElement(x interface{}) *bool
 ```
@@ -856,7 +856,7 @@ zerotrustaccessapplication.ZeroTrustAccessApplication_IsTerraformElement(x inter
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplication.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.ZeroTrustAccessApplication_IsTerraformResource(x interface{}) *bool
 ```
@@ -870,7 +870,7 @@ zerotrustaccessapplication.ZeroTrustAccessApplication_IsTerraformResource(x inte
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplication.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.ZeroTrustAccessApplication_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -2001,7 +2001,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationConfig {
 	Connection: interface{},
@@ -2019,7 +2019,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 	AppLauncherVisible: interface{},
 	AutoRedirectToIdentity: interface{},
 	BgColor: *string,
-	CorsHeaders: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeaders,
+	CorsHeaders: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeaders,
 	CustomDenyMessage: *string,
 	CustomDenyUrl: *string,
 	CustomNonIdentityDenyUrl: *string,
@@ -2030,18 +2030,18 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 	FooterLinks: interface{},
 	HeaderBgColor: *string,
 	HttpOnlyCookieAttribute: interface{},
-	LandingPageDesign: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationLandingPageDesign,
+	LandingPageDesign: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationLandingPageDesign,
 	LogoUrl: *string,
-	MfaConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationMfaConfig,
+	MfaConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationMfaConfig,
 	Name: *string,
-	OauthConfiguration: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfiguration,
+	OauthConfiguration: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfiguration,
 	OptionsPreflightBypass: interface{},
 	PathCookieAttribute: interface{},
 	Policies: interface{},
 	ReadServiceTokensFromHeader: *string,
-	SaasApp: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasApp,
+	SaasApp: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasApp,
 	SameSiteCookieAttribute: *string,
-	ScimConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfig,
+	ScimConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfig,
 	SelfHostedDomains: *[]*string,
 	ServiceAuth401Redirect: interface{},
 	SessionDuration: *string,
@@ -2766,7 +2766,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationCorsHeaders {
 	AllowAllHeaders: interface{},
@@ -2912,7 +2912,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationDestinations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationDestinations {
 	Cidr: *string,
@@ -3060,7 +3060,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationFooterLinks.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationFooterLinks {
 	Name: *string,
@@ -3110,7 +3110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationLandingPageDesign.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationLandingPageDesign {
 	ButtonColor: *string,
@@ -3208,7 +3208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationMfaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationMfaConfig {
 	AllowedAuthenticators: *[]*string,
@@ -3274,12 +3274,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfiguration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationOauthConfiguration {
-	DynamicClientRegistration: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationDynamicClientRegistration,
+	DynamicClientRegistration: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationDynamicClientRegistration,
 	Enabled: interface{},
-	Grant: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationGrant,
+	Grant: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationGrant,
 }
 ```
 
@@ -3342,7 +3342,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationDynamicClientRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationOauthConfigurationDynamicClientRegistration {
 	AllowAnyOnLocalhost: interface{},
@@ -3426,7 +3426,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationGrant.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationOauthConfigurationGrant {
 	AccessTokenLifetime: *string,
@@ -3480,15 +3480,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPolicies {
-	ConnectionRules: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRules,
+	ConnectionRules: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRules,
 	Decision: *string,
 	Exclude: interface{},
 	Id: *string,
 	Include: interface{},
-	MfaConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesMfaConfig,
+	MfaConfig: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesMfaConfig,
 	Name: *string,
 	Precedence: *f64,
 	Require: interface{},
@@ -3654,11 +3654,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRules.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesConnectionRules {
-	Rdp: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesRdp,
-	Ssh: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesSsh,
+	Rdp: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesRdp,
+	Ssh: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesSsh,
 }
 ```
 
@@ -3704,7 +3704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesRdp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesConnectionRulesRdp {
 	AllowedClipboardLocalToRemoteFormats: *[]*string,
@@ -3754,7 +3754,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesSsh.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesConnectionRulesSsh {
 	Usernames: *[]*string,
@@ -3804,33 +3804,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExclude {
-	AnyValidServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken,
-	AuthContext: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthContext,
-	AuthMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthMethod,
-	AzureAd: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAzureAd,
-	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCertificate,
-	CommonName: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCommonName,
-	DevicePosture: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeDevicePosture,
-	Email: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmail,
-	EmailDomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailDomain,
-	EmailList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct,
-	Everyone: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEveryone,
-	ExternalEvaluation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation,
-	Geo: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGeo,
-	GithubOrganization: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization,
-	Group: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGroup,
-	Gsuite: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGsuite,
-	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIp,
-	IpList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpListStruct,
-	LinkedAppToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLinkedAppToken,
-	LoginMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLoginMethod,
-	Oidc: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOidc,
-	Okta: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOkta,
-	Saml: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeSaml,
-	ServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeServiceToken,
+	AnyValidServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken,
+	AuthContext: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthContext,
+	AuthMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthMethod,
+	AzureAd: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAzureAd,
+	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCertificate,
+	CommonName: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCommonName,
+	DevicePosture: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeDevicePosture,
+	Email: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmail,
+	EmailDomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailDomain,
+	EmailList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct,
+	Everyone: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEveryone,
+	ExternalEvaluation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation,
+	Geo: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGeo,
+	GithubOrganization: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization,
+	Group: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGroup,
+	Gsuite: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGsuite,
+	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIp,
+	IpList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpListStruct,
+	LinkedAppToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLinkedAppToken,
+	LoginMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLoginMethod,
+	Oidc: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOidc,
+	Okta: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOkta,
+	Saml: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeSaml,
+	ServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeServiceToken,
 }
 ```
 
@@ -4162,7 +4162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceToken {
 
@@ -4175,7 +4175,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeAuthContext {
 	AcId: *string,
@@ -4244,7 +4244,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeAuthMethod {
 	AuthMethod: *string,
@@ -4278,7 +4278,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeAzureAd {
 	Id: *string,
@@ -4331,7 +4331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeCertificate {
 
@@ -4344,7 +4344,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeCommonName {
 	CommonName: *string,
@@ -4378,7 +4378,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeDevicePosture {
 	IntegrationUid: *string,
@@ -4412,7 +4412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeEmail {
 	Email: *string,
@@ -4446,7 +4446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeEmailDomain {
 	Domain: *string,
@@ -4480,7 +4480,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeEmailListStruct {
 	Id: *string,
@@ -4517,7 +4517,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeEveryone {
 
@@ -4530,7 +4530,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -4580,7 +4580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeGeo {
 	CountryCode: *string,
@@ -4614,7 +4614,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeGithubOrganization {
 	IdentityProviderId: *string,
@@ -4680,7 +4680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeGroup {
 	Id: *string,
@@ -4717,7 +4717,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeGsuite {
 	Email: *string,
@@ -4767,7 +4767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeIp {
 	Ip: *string,
@@ -4801,7 +4801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeIpListStruct {
 	Id: *string,
@@ -4838,7 +4838,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLinkedAppToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeLinkedAppToken {
 	AppUid: *string,
@@ -4872,7 +4872,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLoginMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeLoginMethod {
 	Id: *string,
@@ -4909,7 +4909,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeOidc {
 	ClaimName: *string,
@@ -4975,7 +4975,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeOkta {
 	IdentityProviderId: *string,
@@ -5025,7 +5025,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeSaml {
 	AttributeName: *string,
@@ -5091,7 +5091,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesExcludeServiceToken {
 	TokenId: *string,
@@ -5125,33 +5125,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesInclude.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesInclude {
-	AnyValidServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken,
-	AuthContext: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthContext,
-	AuthMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthMethod,
-	AzureAd: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAzureAd,
-	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCertificate,
-	CommonName: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCommonName,
-	DevicePosture: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeDevicePosture,
-	Email: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmail,
-	EmailDomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailDomain,
-	EmailList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct,
-	Everyone: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEveryone,
-	ExternalEvaluation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation,
-	Geo: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGeo,
-	GithubOrganization: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization,
-	Group: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGroup,
-	Gsuite: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGsuite,
-	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIp,
-	IpList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpListStruct,
-	LinkedAppToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppToken,
-	LoginMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLoginMethod,
-	Oidc: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOidc,
-	Okta: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOkta,
-	Saml: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeSaml,
-	ServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeServiceToken,
+	AnyValidServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken,
+	AuthContext: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthContext,
+	AuthMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthMethod,
+	AzureAd: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAzureAd,
+	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCertificate,
+	CommonName: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCommonName,
+	DevicePosture: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeDevicePosture,
+	Email: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmail,
+	EmailDomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailDomain,
+	EmailList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct,
+	Everyone: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEveryone,
+	ExternalEvaluation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation,
+	Geo: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGeo,
+	GithubOrganization: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization,
+	Group: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGroup,
+	Gsuite: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGsuite,
+	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIp,
+	IpList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpListStruct,
+	LinkedAppToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppToken,
+	LoginMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLoginMethod,
+	Oidc: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOidc,
+	Okta: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOkta,
+	Saml: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeSaml,
+	ServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeServiceToken,
 }
 ```
 
@@ -5483,7 +5483,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceToken {
 
@@ -5496,7 +5496,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeAuthContext {
 	AcId: *string,
@@ -5565,7 +5565,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeAuthMethod {
 	AuthMethod: *string,
@@ -5599,7 +5599,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeAzureAd {
 	Id: *string,
@@ -5652,7 +5652,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeCertificate {
 
@@ -5665,7 +5665,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeCommonName {
 	CommonName: *string,
@@ -5699,7 +5699,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeDevicePosture {
 	IntegrationUid: *string,
@@ -5733,7 +5733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeEmail {
 	Email: *string,
@@ -5767,7 +5767,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeEmailDomain {
 	Domain: *string,
@@ -5801,7 +5801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeEmailListStruct {
 	Id: *string,
@@ -5838,7 +5838,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeEveryone {
 
@@ -5851,7 +5851,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluation {
 	EvaluateUrl: *string,
@@ -5901,7 +5901,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeGeo {
 	CountryCode: *string,
@@ -5935,7 +5935,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeGithubOrganization {
 	IdentityProviderId: *string,
@@ -6001,7 +6001,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeGroup {
 	Id: *string,
@@ -6038,7 +6038,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeGsuite {
 	Email: *string,
@@ -6088,7 +6088,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeIp {
 	Ip: *string,
@@ -6122,7 +6122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeIpListStruct {
 	Id: *string,
@@ -6159,7 +6159,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppToken {
 	AppUid: *string,
@@ -6193,7 +6193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLoginMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeLoginMethod {
 	Id: *string,
@@ -6230,7 +6230,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeOidc {
 	ClaimName: *string,
@@ -6296,7 +6296,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeOkta {
 	IdentityProviderId: *string,
@@ -6346,7 +6346,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeSaml {
 	AttributeName: *string,
@@ -6412,7 +6412,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesIncludeServiceToken {
 	TokenId: *string,
@@ -6446,7 +6446,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesMfaConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesMfaConfig {
 	AllowedAuthenticators: *[]*string,
@@ -6512,33 +6512,33 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequire.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequire {
-	AnyValidServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken,
-	AuthContext: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthContext,
-	AuthMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthMethod,
-	AzureAd: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAzureAd,
-	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCertificate,
-	CommonName: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCommonName,
-	DevicePosture: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireDevicePosture,
-	Email: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmail,
-	EmailDomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailDomain,
-	EmailList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailListStruct,
-	Everyone: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEveryone,
-	ExternalEvaluation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation,
-	Geo: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGeo,
-	GithubOrganization: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGithubOrganization,
-	Group: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGroup,
-	Gsuite: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGsuite,
-	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIp,
-	IpList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpListStruct,
-	LinkedAppToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLinkedAppToken,
-	LoginMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLoginMethod,
-	Oidc: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOidc,
-	Okta: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOkta,
-	Saml: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSaml,
-	ServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireServiceToken,
+	AnyValidServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken,
+	AuthContext: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthContext,
+	AuthMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthMethod,
+	AzureAd: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAzureAd,
+	Certificate: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCertificate,
+	CommonName: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCommonName,
+	DevicePosture: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireDevicePosture,
+	Email: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmail,
+	EmailDomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailDomain,
+	EmailList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailListStruct,
+	Everyone: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEveryone,
+	ExternalEvaluation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation,
+	Geo: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGeo,
+	GithubOrganization: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGithubOrganization,
+	Group: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGroup,
+	Gsuite: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGsuite,
+	Ip: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIp,
+	IpList: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpListStruct,
+	LinkedAppToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLinkedAppToken,
+	LoginMethod: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLoginMethod,
+	Oidc: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOidc,
+	Okta: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOkta,
+	Saml: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSaml,
+	ServiceToken: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireServiceToken,
 }
 ```
 
@@ -6870,7 +6870,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceToken {
 
@@ -6883,7 +6883,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthContext.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireAuthContext {
 	AcId: *string,
@@ -6952,7 +6952,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireAuthMethod {
 	AuthMethod: *string,
@@ -6986,7 +6986,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAzureAd.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireAzureAd {
 	Id: *string,
@@ -7039,7 +7039,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCertificate.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireCertificate {
 
@@ -7052,7 +7052,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCommonName.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireCommonName {
 	CommonName: *string,
@@ -7086,7 +7086,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireDevicePosture.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireDevicePosture {
 	IntegrationUid: *string,
@@ -7120,7 +7120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmail.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireEmail {
 	Email: *string,
@@ -7154,7 +7154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailDomain.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireEmailDomain {
 	Domain: *string,
@@ -7188,7 +7188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireEmailListStruct {
 	Id: *string,
@@ -7225,7 +7225,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEveryone.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireEveryone {
 
@@ -7238,7 +7238,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireExternalEvaluation {
 	EvaluateUrl: *string,
@@ -7288,7 +7288,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGeo.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireGeo {
 	CountryCode: *string,
@@ -7322,7 +7322,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGithubOrganization.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireGithubOrganization {
 	IdentityProviderId: *string,
@@ -7388,7 +7388,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGroup.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireGroup {
 	Id: *string,
@@ -7425,7 +7425,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGsuite.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireGsuite {
 	Email: *string,
@@ -7475,7 +7475,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireIp {
 	Ip: *string,
@@ -7509,7 +7509,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpListStruct.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireIpListStruct {
 	Id: *string,
@@ -7546,7 +7546,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLinkedAppToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireLinkedAppToken {
 	AppUid: *string,
@@ -7580,7 +7580,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLoginMethod.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireLoginMethod {
 	Id: *string,
@@ -7617,7 +7617,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOidc.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireOidc {
 	ClaimName: *string,
@@ -7683,7 +7683,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOkta.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireOkta {
 	IdentityProviderId: *string,
@@ -7733,7 +7733,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSaml.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireSaml {
 	AttributeName: *string,
@@ -7799,7 +7799,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireServiceToken.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationPoliciesRequireServiceToken {
 	TokenId: *string,
@@ -7833,7 +7833,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasApp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasApp {
 	AccessTokenLifetime: *string,
@@ -7846,12 +7846,12 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrus
 	DefaultRelayState: *string,
 	GrantTypes: *[]*string,
 	GroupFilterRegex: *string,
-	HybridAndImplicitOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions,
+	HybridAndImplicitOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions,
 	IdpEntityId: *string,
 	NameIdFormat: *string,
 	NameIdTransformJsonata: *string,
 	RedirectUris: *[]*string,
-	RefreshTokenOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptions,
+	RefreshTokenOptions: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptions,
 	SamlAttributeTransformJsonata: *string,
 	Scopes: *[]*string,
 	SpEntityId: *string,
@@ -8168,14 +8168,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributes.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasAppCustomAttributes {
 	FriendlyName: *string,
 	Name: *string,
 	NameFormat: *string,
 	Required: interface{},
-	Source: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSource,
+	Source: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSource,
 }
 ```
 
@@ -8264,7 +8264,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSource {
 	Name: *string,
@@ -8314,7 +8314,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdp.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdp {
 	IdpId: *string,
@@ -8364,13 +8364,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaims.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasAppCustomClaims {
 	Name: *string,
 	Required: interface{},
 	Scope: *string,
-	Source: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsSource,
+	Source: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsSource,
 }
 ```
 
@@ -8444,7 +8444,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsSource.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasAppCustomClaimsSource {
 	Name: *string,
@@ -8494,7 +8494,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptions {
 	ReturnAccessTokenFromAuthorizationEndpoint: interface{},
@@ -8544,7 +8544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptions {
 	Lifetime: *string,
@@ -8580,12 +8580,12 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationScimConfig {
 	IdpUid: *string,
 	RemoteUri: *string,
-	Authentication: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthentication,
+	Authentication: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthentication,
 	DeactivateOnDelete: interface{},
 	Enabled: interface{},
 	Mappings: interface{},
@@ -8698,7 +8698,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthentication.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationScimConfigAuthentication {
 	Scheme: *string,
@@ -8860,13 +8860,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappings.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationScimConfigMappings {
 	Schema: *string,
 	Enabled: interface{},
 	Filter: *string,
-	Operations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOperations,
+	Operations: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOperations,
 	Strictness: *string,
 	TransformJsonata: *string,
 }
@@ -8977,7 +8977,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOperations.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationScimConfigMappingsOperations {
 	Create: interface{},
@@ -9043,7 +9043,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteria.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 &zerotrustaccessapplication.ZeroTrustAccessApplicationTargetCriteria {
 	Port: *f64,
@@ -9111,7 +9111,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationCorsHeadersOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationCorsHeadersOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationCorsHeadersOutputReference
 ```
@@ -9592,7 +9592,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationDestinationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationDestinationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationDestinationsList
 ```
@@ -9752,7 +9752,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationDestinationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationDestinationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationDestinationsOutputReference
 ```
@@ -10251,7 +10251,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationFooterLinksList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationFooterLinksList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationFooterLinksList
 ```
@@ -10411,7 +10411,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationFooterLinksOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationFooterLinksOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationFooterLinksOutputReference
 ```
@@ -10722,7 +10722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationLandingPageDesignOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationLandingPageDesignOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationLandingPageDesignOutputReference
 ```
@@ -11116,7 +11116,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationMfaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationMfaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationMfaConfigOutputReference
 ```
@@ -11452,7 +11452,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationDynamicClientRegistrationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationOauthConfigurationDynamicClientRegistrationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationOauthConfigurationDynamicClientRegistrationOutputReference
 ```
@@ -11817,7 +11817,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationGrantOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationOauthConfigurationGrantOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationOauthConfigurationGrantOutputReference
 ```
@@ -12124,7 +12124,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationOauthConfigurationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationOauthConfigurationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationOauthConfigurationOutputReference
 ```
@@ -12486,7 +12486,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesConnectionRulesOutputReference
 ```
@@ -12819,7 +12819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesRdpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesConnectionRulesRdpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesConnectionRulesRdpOutputReference
 ```
@@ -13126,7 +13126,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesConnectionRulesSshOutputReference
 ```
@@ -13426,7 +13426,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeAnyValidServiceTokenOutputReference
 ```
@@ -13675,7 +13675,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeAuthContextOutputReference
 ```
@@ -13990,7 +13990,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeAuthMethodOutputReference
 ```
@@ -14261,7 +14261,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeAzureAdOutputReference
 ```
@@ -14554,7 +14554,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeCertificateOutputReference
 ```
@@ -14803,7 +14803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeCommonNameOutputReference
 ```
@@ -15074,7 +15074,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeDevicePostureOutputReference
 ```
@@ -15345,7 +15345,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeEmailDomainOutputReference
 ```
@@ -15616,7 +15616,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeEmailListStructOutputReference
 ```
@@ -15887,7 +15887,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeEmailOutputReference
 ```
@@ -16158,7 +16158,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeEveryoneOutputReference
 ```
@@ -16407,7 +16407,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeExternalEvaluationOutputReference
 ```
@@ -16700,7 +16700,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeGeoOutputReference
 ```
@@ -16971,7 +16971,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeGithubOrganizationOutputReference
 ```
@@ -17293,7 +17293,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeGroupOutputReference
 ```
@@ -17564,7 +17564,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeGsuiteOutputReference
 ```
@@ -17857,7 +17857,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeIpListStructOutputReference
 ```
@@ -18128,7 +18128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeIpOutputReference
 ```
@@ -18399,7 +18399,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeLinkedAppTokenOutputReference
 ```
@@ -18670,7 +18670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationPoliciesExcludeList
 ```
@@ -18830,7 +18830,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeLoginMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeLoginMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeLoginMethodOutputReference
 ```
@@ -19101,7 +19101,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeOidcOutputReference
 ```
@@ -19416,7 +19416,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeOktaOutputReference
 ```
@@ -19709,7 +19709,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationPoliciesExcludeOutputReference
 ```
@@ -20984,7 +20984,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeSamlOutputReference
 ```
@@ -21299,7 +21299,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesExcludeServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesExcludeServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesExcludeServiceTokenOutputReference
 ```
@@ -21570,7 +21570,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeAnyValidServiceTokenOutputReference
 ```
@@ -21819,7 +21819,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeAuthContextOutputReference
 ```
@@ -22134,7 +22134,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeAuthMethodOutputReference
 ```
@@ -22405,7 +22405,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeAzureAdOutputReference
 ```
@@ -22698,7 +22698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeCertificateOutputReference
 ```
@@ -22947,7 +22947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeCommonNameOutputReference
 ```
@@ -23218,7 +23218,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeDevicePostureOutputReference
 ```
@@ -23489,7 +23489,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeEmailDomainOutputReference
 ```
@@ -23760,7 +23760,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeEmailListStructOutputReference
 ```
@@ -24031,7 +24031,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeEmailOutputReference
 ```
@@ -24302,7 +24302,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeEveryoneOutputReference
 ```
@@ -24551,7 +24551,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeExternalEvaluationOutputReference
 ```
@@ -24844,7 +24844,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeGeoOutputReference
 ```
@@ -25115,7 +25115,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeGithubOrganizationOutputReference
 ```
@@ -25437,7 +25437,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeGroupOutputReference
 ```
@@ -25708,7 +25708,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeGsuiteOutputReference
 ```
@@ -26001,7 +26001,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeIpListStructOutputReference
 ```
@@ -26272,7 +26272,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeIpOutputReference
 ```
@@ -26543,7 +26543,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeLinkedAppTokenOutputReference
 ```
@@ -26814,7 +26814,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationPoliciesIncludeList
 ```
@@ -26974,7 +26974,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeLoginMethodOutputReference
 ```
@@ -27245,7 +27245,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeOidcOutputReference
 ```
@@ -27560,7 +27560,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeOktaOutputReference
 ```
@@ -27853,7 +27853,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationPoliciesIncludeOutputReference
 ```
@@ -29128,7 +29128,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeSamlOutputReference
 ```
@@ -29443,7 +29443,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesIncludeServiceTokenOutputReference
 ```
@@ -29714,7 +29714,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationPoliciesList
 ```
@@ -29874,7 +29874,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesMfaConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesMfaConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesMfaConfigOutputReference
 ```
@@ -30210,7 +30210,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationPoliciesOutputReference
 ```
@@ -30803,7 +30803,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireAnyValidServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireAnyValidServiceTokenOutputReference
 ```
@@ -31052,7 +31052,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthContextOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireAuthContextOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireAuthContextOutputReference
 ```
@@ -31367,7 +31367,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAuthMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireAuthMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireAuthMethodOutputReference
 ```
@@ -31638,7 +31638,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireAzureAdOutputReference
 ```
@@ -31931,7 +31931,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCertificateOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireCertificateOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireCertificateOutputReference
 ```
@@ -32180,7 +32180,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireCommonNameOutputReference
 ```
@@ -32451,7 +32451,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireDevicePostureOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireDevicePostureOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireDevicePostureOutputReference
 ```
@@ -32722,7 +32722,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailDomainOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireEmailDomainOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireEmailDomainOutputReference
 ```
@@ -32993,7 +32993,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireEmailListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireEmailListStructOutputReference
 ```
@@ -33264,7 +33264,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEmailOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireEmailOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireEmailOutputReference
 ```
@@ -33535,7 +33535,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireEveryoneOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireEveryoneOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireEveryoneOutputReference
 ```
@@ -33784,7 +33784,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireExternalEvaluationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireExternalEvaluationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireExternalEvaluationOutputReference
 ```
@@ -34077,7 +34077,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGeoOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireGeoOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireGeoOutputReference
 ```
@@ -34348,7 +34348,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGithubOrganizationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireGithubOrganizationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireGithubOrganizationOutputReference
 ```
@@ -34670,7 +34670,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGroupOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireGroupOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireGroupOutputReference
 ```
@@ -34941,7 +34941,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireGsuiteOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireGsuiteOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireGsuiteOutputReference
 ```
@@ -35234,7 +35234,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireIpListStructOutputReference
 ```
@@ -35505,7 +35505,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireIpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireIpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireIpOutputReference
 ```
@@ -35776,7 +35776,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLinkedAppTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireLinkedAppTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireLinkedAppTokenOutputReference
 ```
@@ -36047,7 +36047,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationPoliciesRequireList
 ```
@@ -36207,7 +36207,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireLoginMethodOutputReference
 ```
@@ -36478,7 +36478,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOidcOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireOidcOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireOidcOutputReference
 ```
@@ -36793,7 +36793,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOktaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireOktaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireOktaOutputReference
 ```
@@ -37086,7 +37086,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationPoliciesRequireOutputReference
 ```
@@ -38361,7 +38361,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireSamlOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireSamlOutputReference
 ```
@@ -38676,7 +38676,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationPoliciesRequireServiceTokenOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationPoliciesRequireServiceTokenOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationPoliciesRequireServiceTokenOutputReference
 ```
@@ -38947,7 +38947,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomAttributesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationSaasAppCustomAttributesList
 ```
@@ -39107,7 +39107,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationSaasAppCustomAttributesOutputReference
 ```
@@ -39532,7 +39532,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpList
 ```
@@ -39692,7 +39692,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationSaasAppCustomAttributesSourceNameByIdpOutputReference
 ```
@@ -40017,7 +40017,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppCustomAttributesSourceOutputReference
 ```
@@ -40337,7 +40337,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomClaimsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationSaasAppCustomClaimsList
 ```
@@ -40497,7 +40497,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationSaasAppCustomClaimsOutputReference
 ```
@@ -40893,7 +40893,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppCustomClaimsSourceOutputReference
 ```
@@ -41200,7 +41200,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppHybridAndImplicitOptionsOutputReference
 ```
@@ -41507,7 +41507,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppOutputReference
 ```
@@ -42421,7 +42421,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationSaasAppRefreshTokenOptionsOutputReference
 ```
@@ -42699,7 +42699,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationScimConfigAuthenticationOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationScimConfigAuthenticationOutputReference
 ```
@@ -43202,7 +43202,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationScimConfigMappingsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationScimConfigMappingsList
 ```
@@ -43362,7 +43362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationScimConfigMappingsOperationsOutputReference
 ```
@@ -43698,7 +43698,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigMappingsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationScimConfigMappingsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationScimConfigMappingsOutputReference
 ```
@@ -44145,7 +44145,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationScimConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationScimConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ZeroTrustAccessApplicationScimConfigOutputReference
 ```
@@ -44580,7 +44580,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteriaList.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationTargetCriteriaList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ZeroTrustAccessApplicationTargetCriteriaList
 ```
@@ -44740,7 +44740,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessApplication.ZeroTrustAccessApplicationTargetCriteriaOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/zerotrustaccessapplication"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrustaccessapplication"
 
 zerotrustaccessapplication.NewZeroTrustAccessApplicationTargetCriteriaOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ZeroTrustAccessApplicationTargetCriteriaOutputReference
 ```

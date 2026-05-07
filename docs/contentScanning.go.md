@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/contentscanning"
 
 contentscanning.NewContentScanning(scope Construct, id *string, config ContentScanningConfig) ContentScanning
 ```
@@ -407,7 +407,7 @@ func ResetZoneId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.isConstruct"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/contentscanning"
 
 contentscanning.ContentScanning_IsConstruct(x interface{}) *bool
 ```
@@ -439,7 +439,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/contentscanning"
 
 contentscanning.ContentScanning_IsTerraformElement(x interface{}) *bool
 ```
@@ -453,7 +453,7 @@ contentscanning.ContentScanning_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/contentscanning"
 
 contentscanning.ContentScanning_IsTerraformResource(x interface{}) *bool
 ```
@@ -467,7 +467,7 @@ contentscanning.ContentScanning_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/contentscanning"
 
 contentscanning.ContentScanning_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -751,7 +751,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.contentScanning.ContentScanningConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v14/contentscanning"
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/contentscanning"
 
 &contentscanning.ContentScanningConfig {
 	Connection: interface{},
