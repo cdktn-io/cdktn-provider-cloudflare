@@ -154,7 +154,7 @@ export class ZeroTrustRiskBehaviorBehaviorsMap extends cdktn.ComplexMap {
   * @param terraformAttribute The attribute on the parent resource this class is referencing
   */
   constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
-    super(terraformResource, terraformAttribute)
+    super(terraformResource, terraformAttribute);
   }
 
   /**
