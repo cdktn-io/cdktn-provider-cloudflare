@@ -4,7 +4,7 @@
 
 ### CustomOriginTrustStore <a name="CustomOriginTrustStore" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the CustomOriginTrustStore to 
 
 The id of the existing CustomOriginTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_origin_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,7 +843,7 @@ new CustomOriginTrustStoreConfig {
 | <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.certificate">Certificate</a></code> | <code>string</code> | The zone's SSL certificate or certificate and the intermediate(s). |
+| <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.certificate">Certificate</a></code> | <code>string</code> | The root CA certificate in PEM format. |
 | <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
@@ -926,9 +926,11 @@ public string Certificate { get; set; }
 
 - *Type:* string
 
-The zone's SSL certificate or certificate and the intermediate(s).
+The root CA certificate in PEM format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
+Only root CA certificates are accepted; intermediate and leaf certificates are not supported.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
 
 ---
 
@@ -942,7 +944,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ZeroTrustAccessIdentityProvider <a name="ZeroTrustAccessIdentityProvider" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider cloudflare_zero_trust_access_identity_provider}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer"></a>
 
@@ -25,6 +25,8 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider(
   name: str,
   type: str,
   account_id: str = None,
+  read_only: bool | IResolvable = None,
+  saml_certificate_set_id: str = None,
   scim_config: ZeroTrustAccessIdentityProviderScimConfig = None,
   zone_id: str = None
 )
@@ -45,6 +47,8 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the identity provider, shown to users on the login page. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.type">type</a></code> | <code>str</code> | The type of identity provider. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.readOnly">read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates that the identity provider is immutable and cannot be updated or deleted via the API. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.samlCertificateSetId">saml_certificate_set_id</a></code> | <code>str</code> | The UID of the SAML encryption certificate set assigned to this Identity Provider. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.scimConfig">scim_config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfig">ZeroTrustAccessIdentityProviderScimConfig</a></code> | The configuration settings for enabling a System for Cross-Domain Identity Management (SCIM) with the identity provider. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
@@ -118,7 +122,7 @@ The configuration parameters for the identity provider.
 
 To view the required parameters for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#config ZeroTrustAccessIdentityProvider#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#config ZeroTrustAccessIdentityProvider#config}
 
 ---
 
@@ -128,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the identity provider, shown to users on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#name ZeroTrustAccessIdentityProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#name ZeroTrustAccessIdentityProvider#name}
 
 ---
 
@@ -139,9 +143,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 The type of identity provider.
 
 To determine the value for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
-Available values: "onetimepin", "azureAD", "saml", "centrify", "facebook", "github", "google-apps", "google", "linkedin", "oidc", "okta", "onelogin", "pingone", "yandex".
+Available values: "onetimepin", "azureAD", "saml", "centrify", "facebook", "github", "google-apps", "google", "linkedin", "oidc", "okta", "onelogin", "pingone", "yandex", "cloudflare".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#type ZeroTrustAccessIdentityProvider#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#type ZeroTrustAccessIdentityProvider#type}
 
 ---
 
@@ -151,7 +155,30 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#account_id ZeroTrustAccessIdentityProvider#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#account_id ZeroTrustAccessIdentityProvider#account_id}
+
+---
+
+##### `read_only`<sup>Optional</sup> <a name="read_only" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.readOnly"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates that the identity provider is immutable and cannot be updated or deleted via the API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#read_only ZeroTrustAccessIdentityProvider#read_only}
+
+---
+
+##### `saml_certificate_set_id`<sup>Optional</sup> <a name="saml_certificate_set_id" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.Initializer.parameter.samlCertificateSetId"></a>
+
+- *Type:* str
+
+The UID of the SAML encryption certificate set assigned to this Identity Provider.
+
+Only present for SAML identity providers with encryption configured.
+Create a certificate set via POST to `/identity_providers/{id}/saml_certificate`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#saml_certificate_set_id ZeroTrustAccessIdentityProvider#saml_certificate_set_id}
 
 ---
 
@@ -161,7 +188,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The configuration settings for enabling a System for Cross-Domain Identity Management (SCIM) with the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#scim_config ZeroTrustAccessIdentityProvider#scim_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#scim_config ZeroTrustAccessIdentityProvider#scim_config}
 
 ---
 
@@ -171,7 +198,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#zone_id ZeroTrustAccessIdentityProvider#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#zone_id ZeroTrustAccessIdentityProvider#zone_id}
 
 ---
 
@@ -206,6 +233,8 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.putConfig">put_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.putScimConfig">put_scim_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetAccountId">reset_account_id</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetReadOnly">reset_read_only</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetSamlCertificateSetId">reset_saml_certificate_set_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetScimConfig">reset_scim_config</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
@@ -577,6 +606,7 @@ def put_config(
   directory_id: str = None,
   email_attribute_name: str = None,
   email_claim_name: str = None,
+  enable_encryption: bool | IResolvable = None,
   header_attributes: IResolvable | typing.List[ZeroTrustAccessIdentityProviderConfigHeaderAttributes] = None,
   idp_public_certs: typing.List[str] = None,
   issuer_url: str = None,
@@ -585,6 +615,7 @@ def put_config(
   ping_env_id: str = None,
   pkce_enabled: bool | IResolvable = None,
   prompt: str = None,
+  restrict_to_account_members: bool | IResolvable = None,
   scopes: typing.List[str] = None,
   sign_request: bool | IResolvable = None,
   sso_target_url: str = None,
@@ -599,7 +630,7 @@ def put_config(
 
 Your companies TLD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#apps_domain ZeroTrustAccessIdentityProvider#apps_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#apps_domain ZeroTrustAccessIdentityProvider#apps_domain}
 
 ---
 
@@ -609,7 +640,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A list of SAML attribute names that will be added to your signed JWT token and can be used in SAML policy rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#attributes ZeroTrustAccessIdentityProvider#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#attributes ZeroTrustAccessIdentityProvider#attributes}
 
 ---
 
@@ -619,7 +650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your okta authorization server id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#authorization_server_id ZeroTrustAccessIdentityProvider#authorization_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#authorization_server_id ZeroTrustAccessIdentityProvider#authorization_server_id}
 
 ---
 
@@ -629,7 +660,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The authorization_endpoint URL of your IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#auth_url ZeroTrustAccessIdentityProvider#auth_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#auth_url ZeroTrustAccessIdentityProvider#auth_url}
 
 ---
 
@@ -639,7 +670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your centrify account url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#centrify_account ZeroTrustAccessIdentityProvider#centrify_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#centrify_account ZeroTrustAccessIdentityProvider#centrify_account}
 
 ---
 
@@ -649,7 +680,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your centrify app id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#centrify_app_id ZeroTrustAccessIdentityProvider#centrify_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#centrify_app_id ZeroTrustAccessIdentityProvider#centrify_app_id}
 
 ---
 
@@ -659,7 +690,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The jwks_uri endpoint of your IdP to allow the IdP keys to sign the tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#certs_url ZeroTrustAccessIdentityProvider#certs_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#certs_url ZeroTrustAccessIdentityProvider#certs_url}
 
 ---
 
@@ -669,7 +700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Custom claims.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#claims ZeroTrustAccessIdentityProvider#claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#claims ZeroTrustAccessIdentityProvider#claims}
 
 ---
 
@@ -679,7 +710,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your OAuth Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#client_id ZeroTrustAccessIdentityProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#client_id ZeroTrustAccessIdentityProvider#client_id}
 
 ---
 
@@ -689,7 +720,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your OAuth Client Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#client_secret ZeroTrustAccessIdentityProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#client_secret ZeroTrustAccessIdentityProvider#client_secret}
 
 ---
 
@@ -699,7 +730,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Should Cloudflare try to load authentication contexts from your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#conditional_access_enabled ZeroTrustAccessIdentityProvider#conditional_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#conditional_access_enabled ZeroTrustAccessIdentityProvider#conditional_access_enabled}
 
 ---
 
@@ -709,7 +740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your Azure directory uuid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#directory_id ZeroTrustAccessIdentityProvider#directory_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#directory_id ZeroTrustAccessIdentityProvider#directory_id}
 
 ---
 
@@ -719,7 +750,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The attribute name for email in the SAML response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#email_attribute_name ZeroTrustAccessIdentityProvider#email_attribute_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#email_attribute_name ZeroTrustAccessIdentityProvider#email_attribute_name}
 
 ---
 
@@ -729,7 +760,28 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The claim name for email in the id_token response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#email_claim_name ZeroTrustAccessIdentityProvider#email_claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#email_claim_name ZeroTrustAccessIdentityProvider#email_claim_name}
+
+---
+
+###### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.putConfig.parameter.enableEncryption"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+Enable SAML assertion encryption.
+
+When enabled, the Identity Provider will encrypt
+SAML assertions using the certificate from the assigned certificate set.
+
+To enable encryption:
+
+1. Create a certificate set via POST to `/identity_providers/{id}/saml_certificate`
+2. Set this field to `true` and include `saml_certificate_set_id` in the PUT request
+3. Configure the public certificate in your external Identity Provider
+
+Note: Requires `saml_certificate_set_id` to be set when `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#enable_encryption ZeroTrustAccessIdentityProvider#enable_encryption}
 
 ---
 
@@ -739,7 +791,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Add a list of attribute names that will be returned in the response header from the Access callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#header_attributes ZeroTrustAccessIdentityProvider#header_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#header_attributes ZeroTrustAccessIdentityProvider#header_attributes}
 
 ---
 
@@ -749,7 +801,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 X509 certificate to verify the signature in the SAML authentication response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#idp_public_certs ZeroTrustAccessIdentityProvider#idp_public_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#idp_public_certs ZeroTrustAccessIdentityProvider#idp_public_certs}
 
 ---
 
@@ -759,7 +811,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 IdP Entity ID or Issuer URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#issuer_url ZeroTrustAccessIdentityProvider#issuer_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#issuer_url ZeroTrustAccessIdentityProvider#issuer_url}
 
 ---
 
@@ -769,7 +821,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your okta account url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#okta_account ZeroTrustAccessIdentityProvider#okta_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#okta_account ZeroTrustAccessIdentityProvider#okta_account}
 
 ---
 
@@ -779,7 +831,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your OneLogin account url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#onelogin_account ZeroTrustAccessIdentityProvider#onelogin_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#onelogin_account ZeroTrustAccessIdentityProvider#onelogin_account}
 
 ---
 
@@ -789,7 +841,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Your PingOne environment identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#ping_env_id ZeroTrustAccessIdentityProvider#ping_env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#ping_env_id ZeroTrustAccessIdentityProvider#ping_env_id}
 
 ---
 
@@ -799,7 +851,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Enable Proof Key for Code Exchange (PKCE).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#pkce_enabled ZeroTrustAccessIdentityProvider#pkce_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#pkce_enabled ZeroTrustAccessIdentityProvider#pkce_enabled}
 
 ---
 
@@ -812,7 +864,19 @@ Indicates the type of user interaction that is required.
 prompt=login forces the user to enter their credentials on that request, negating single-sign on. prompt=none is the opposite. It ensures that the user isn't presented with any interactive prompt. If the request can't be completed silently by using single-sign on, the Microsoft identity platform returns an interaction_required error. prompt=select_account interrupts single sign-on providing account selection experience listing all the accounts either in session or any remembered account or an option to choose to use a different account altogether.
 Available values: "login", "select_account", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#prompt ZeroTrustAccessIdentityProvider#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#prompt ZeroTrustAccessIdentityProvider#prompt}
+
+---
+
+###### `restrict_to_account_members`<sup>Optional</sup> <a name="restrict_to_account_members" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.putConfig.parameter.restrictToAccountMembers"></a>
+
+- *Type:* bool | cdktn.IResolvable
+
+When enabled, only users who are members of your Cloudflare account can authenticate through this identity provider.
+
+When disabled, any user with a Cloudflare account can authenticate, subject to your Access policies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#restrict_to_account_members ZeroTrustAccessIdentityProvider#restrict_to_account_members}
 
 ---
 
@@ -822,7 +886,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 OAuth scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#scopes ZeroTrustAccessIdentityProvider#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#scopes ZeroTrustAccessIdentityProvider#scopes}
 
 ---
 
@@ -834,7 +898,7 @@ Sign the SAML authentication request with Access credentials.
 
 To verify the signature, use the public key from the Access certs endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#sign_request ZeroTrustAccessIdentityProvider#sign_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#sign_request ZeroTrustAccessIdentityProvider#sign_request}
 
 ---
 
@@ -844,7 +908,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 URL to send the SAML authentication requests to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#sso_target_url ZeroTrustAccessIdentityProvider#sso_target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#sso_target_url ZeroTrustAccessIdentityProvider#sso_target_url}
 
 ---
 
@@ -854,7 +918,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Should Cloudflare try to load groups from your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#support_groups ZeroTrustAccessIdentityProvider#support_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#support_groups ZeroTrustAccessIdentityProvider#support_groups}
 
 ---
 
@@ -864,7 +928,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The token_endpoint URL of your IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#token_url ZeroTrustAccessIdentityProvider#token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#token_url ZeroTrustAccessIdentityProvider#token_url}
 
 ---
 
@@ -885,7 +949,7 @@ def put_scim_config(
 
 A flag to enable or disable SCIM for the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#enabled ZeroTrustAccessIdentityProvider#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#enabled ZeroTrustAccessIdentityProvider#enabled}
 
 ---
 
@@ -898,7 +962,7 @@ Indicates how a SCIM event updates a user identity used for policy evaluation.
 Use "automatic" to automatically update a user's identity and augment it with fields from the SCIM user resource. Use "reauth" to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With "reauth" identities will not contain fields from the SCIM user resource. With "no_action" identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 Available values: "automatic", "reauth", "no_action".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#identity_update_behavior ZeroTrustAccessIdentityProvider#identity_update_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#identity_update_behavior ZeroTrustAccessIdentityProvider#identity_update_behavior}
 
 ---
 
@@ -910,7 +974,7 @@ A flag to remove a user's seat in Zero Trust when they have been deprovisioned i
 
 This cannot be enabled unless user_deprovision is also enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#seat_deprovision ZeroTrustAccessIdentityProvider#seat_deprovision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#seat_deprovision ZeroTrustAccessIdentityProvider#seat_deprovision}
 
 ---
 
@@ -920,7 +984,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A flag to enable revoking a user's session in Access and Gateway when they have been deprovisioned in the Identity Provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#user_deprovision ZeroTrustAccessIdentityProvider#user_deprovision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#user_deprovision ZeroTrustAccessIdentityProvider#user_deprovision}
 
 ---
 
@@ -928,6 +992,18 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 ```python
 def reset_account_id() -> None
+```
+
+##### `reset_read_only` <a name="reset_read_only" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetReadOnly"></a>
+
+```python
+def reset_read_only() -> None
+```
+
+##### `reset_saml_certificate_set_id` <a name="reset_saml_certificate_set_id" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetSamlCertificateSetId"></a>
+
+```python
+def reset_saml_certificate_set_id() -> None
 ```
 
 ##### `reset_scim_config` <a name="reset_scim_config" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.resetScimConfig"></a>
@@ -1056,7 +1132,7 @@ The construct id used in the generated config for the ZeroTrustAccessIdentityPro
 
 The id of the existing ZeroTrustAccessIdentityProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1088,15 +1164,20 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.config">config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference">ZeroTrustAccessIdentityProviderConfigAOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.samlCertificateSet">saml_certificate_set</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference">ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.scimConfig">scim_config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfigOutputReference">ZeroTrustAccessIdentityProviderScimConfigOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.accountIdInput">account_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.configInput">config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA">ZeroTrustAccessIdentityProviderConfigA</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.readOnlyInput">read_only_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.samlCertificateSetIdInput">saml_certificate_set_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.scimConfigInput">scim_config_input</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfig">ZeroTrustAccessIdentityProviderScimConfig</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.typeInput">type_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.zoneIdInput">zone_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.accountId">account_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.name">name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.readOnly">read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.samlCertificateSetId">saml_certificate_set_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.type">type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.zoneId">zone_id</a></code> | <code>str</code> | *No description.* |
 
@@ -1264,6 +1345,16 @@ id: str
 
 ---
 
+##### `saml_certificate_set`<sup>Required</sup> <a name="saml_certificate_set" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.samlCertificateSet"></a>
+
+```python
+saml_certificate_set: ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference">ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference</a>
+
+---
+
 ##### `scim_config`<sup>Required</sup> <a name="scim_config" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.scimConfig"></a>
 
 ```python
@@ -1298,6 +1389,26 @@ config_input: IResolvable | ZeroTrustAccessIdentityProviderConfigA
 
 ```python
 name_input: str
+```
+
+- *Type:* str
+
+---
+
+##### `read_only_input`<sup>Optional</sup> <a name="read_only_input" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.readOnlyInput"></a>
+
+```python
+read_only_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `saml_certificate_set_id_input`<sup>Optional</sup> <a name="saml_certificate_set_id_input" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.samlCertificateSetIdInput"></a>
+
+```python
+saml_certificate_set_id_input: str
 ```
 
 - *Type:* str
@@ -1348,6 +1459,26 @@ account_id: str
 
 ```python
 name: str
+```
+
+- *Type:* str
+
+---
+
+##### `read_only`<sup>Required</sup> <a name="read_only" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.readOnly"></a>
+
+```python
+read_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
+##### `saml_certificate_set_id`<sup>Required</sup> <a name="saml_certificate_set_id" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProvider.property.samlCertificateSetId"></a>
+
+```python
+saml_certificate_set_id: str
 ```
 
 - *Type:* str
@@ -1413,6 +1544,8 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig(
   name: str,
   type: str,
   account_id: str = None,
+  read_only: bool | IResolvable = None,
+  saml_certificate_set_id: str = None,
   scim_config: ZeroTrustAccessIdentityProviderScimConfig = None,
   zone_id: str = None
 )
@@ -1433,6 +1566,8 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.name">name</a></code> | <code>str</code> | The name of the identity provider, shown to users on the login page. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.type">type</a></code> | <code>str</code> | The type of identity provider. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID to use for this endpoint. Mutually exclusive with the Zone ID. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.readOnly">read_only</a></code> | <code>bool \| cdktn.IResolvable</code> | Indicates that the identity provider is immutable and cannot be updated or deleted via the API. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.samlCertificateSetId">saml_certificate_set_id</a></code> | <code>str</code> | The UID of the SAML encryption certificate set assigned to this Identity Provider. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.scimConfig">scim_config</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfig">ZeroTrustAccessIdentityProviderScimConfig</a></code> | The configuration settings for enabling a System for Cross-Domain Identity Management (SCIM) with the identity provider. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.zoneId">zone_id</a></code> | <code>str</code> | The Zone ID to use for this endpoint. Mutually exclusive with the Account ID. |
 
@@ -1520,7 +1655,7 @@ The configuration parameters for the identity provider.
 
 To view the required parameters for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#config ZeroTrustAccessIdentityProvider#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#config ZeroTrustAccessIdentityProvider#config}
 
 ---
 
@@ -1534,7 +1669,7 @@ name: str
 
 The name of the identity provider, shown to users on the login page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#name ZeroTrustAccessIdentityProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#name ZeroTrustAccessIdentityProvider#name}
 
 ---
 
@@ -1549,9 +1684,9 @@ type: str
 The type of identity provider.
 
 To determine the value for a specific provider, refer to our [developer documentation](https://developers.cloudflare.com/cloudflare-one/identity/idp-integration/).
-Available values: "onetimepin", "azureAD", "saml", "centrify", "facebook", "github", "google-apps", "google", "linkedin", "oidc", "okta", "onelogin", "pingone", "yandex".
+Available values: "onetimepin", "azureAD", "saml", "centrify", "facebook", "github", "google-apps", "google", "linkedin", "oidc", "okta", "onelogin", "pingone", "yandex", "cloudflare".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#type ZeroTrustAccessIdentityProvider#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#type ZeroTrustAccessIdentityProvider#type}
 
 ---
 
@@ -1565,7 +1700,38 @@ account_id: str
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#account_id ZeroTrustAccessIdentityProvider#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#account_id ZeroTrustAccessIdentityProvider#account_id}
+
+---
+
+##### `read_only`<sup>Optional</sup> <a name="read_only" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.readOnly"></a>
+
+```python
+read_only: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Indicates that the identity provider is immutable and cannot be updated or deleted via the API.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#read_only ZeroTrustAccessIdentityProvider#read_only}
+
+---
+
+##### `saml_certificate_set_id`<sup>Optional</sup> <a name="saml_certificate_set_id" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfig.property.samlCertificateSetId"></a>
+
+```python
+saml_certificate_set_id: str
+```
+
+- *Type:* str
+
+The UID of the SAML encryption certificate set assigned to this Identity Provider.
+
+Only present for SAML identity providers with encryption configured.
+Create a certificate set via POST to `/identity_providers/{id}/saml_certificate`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#saml_certificate_set_id ZeroTrustAccessIdentityProvider#saml_certificate_set_id}
 
 ---
 
@@ -1579,7 +1745,7 @@ scim_config: ZeroTrustAccessIdentityProviderScimConfig
 
 The configuration settings for enabling a System for Cross-Domain Identity Management (SCIM) with the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#scim_config ZeroTrustAccessIdentityProvider#scim_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#scim_config ZeroTrustAccessIdentityProvider#scim_config}
 
 ---
 
@@ -1593,7 +1759,7 @@ zone_id: str
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#zone_id ZeroTrustAccessIdentityProvider#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#zone_id ZeroTrustAccessIdentityProvider#zone_id}
 
 ---
 
@@ -1619,6 +1785,7 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA(
   directory_id: str = None,
   email_attribute_name: str = None,
   email_claim_name: str = None,
+  enable_encryption: bool | IResolvable = None,
   header_attributes: IResolvable | typing.List[ZeroTrustAccessIdentityProviderConfigHeaderAttributes] = None,
   idp_public_certs: typing.List[str] = None,
   issuer_url: str = None,
@@ -1627,6 +1794,7 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA(
   ping_env_id: str = None,
   pkce_enabled: bool | IResolvable = None,
   prompt: str = None,
+  restrict_to_account_members: bool | IResolvable = None,
   scopes: typing.List[str] = None,
   sign_request: bool | IResolvable = None,
   sso_target_url: str = None,
@@ -1653,6 +1821,7 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.directoryId">directory_id</a></code> | <code>str</code> | Your Azure directory uuid. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.emailAttributeName">email_attribute_name</a></code> | <code>str</code> | The attribute name for email in the SAML response. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.emailClaimName">email_claim_name</a></code> | <code>str</code> | The claim name for email in the id_token response. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable SAML assertion encryption. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.headerAttributes">header_attributes</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigHeaderAttributes">ZeroTrustAccessIdentityProviderConfigHeaderAttributes</a>]</code> | Add a list of attribute names that will be returned in the response header from the Access callback. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.idpPublicCerts">idp_public_certs</a></code> | <code>typing.List[str]</code> | X509 certificate to verify the signature in the SAML authentication response. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.issuerUrl">issuer_url</a></code> | <code>str</code> | IdP Entity ID or Issuer URL. |
@@ -1661,6 +1830,7 @@ zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.pingEnvId">ping_env_id</a></code> | <code>str</code> | Your PingOne environment identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.pkceEnabled">pkce_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Enable Proof Key for Code Exchange (PKCE). |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.prompt">prompt</a></code> | <code>str</code> | Indicates the type of user interaction that is required. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.restrictToAccountMembers">restrict_to_account_members</a></code> | <code>bool \| cdktn.IResolvable</code> | When enabled, only users who are members of your Cloudflare account can authenticate through this identity provider. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | OAuth scopes. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.signRequest">sign_request</a></code> | <code>bool \| cdktn.IResolvable</code> | Sign the SAML authentication request with Access credentials. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.ssoTargetUrl">sso_target_url</a></code> | <code>str</code> | URL to send the SAML authentication requests to. |
@@ -1679,7 +1849,7 @@ apps_domain: str
 
 Your companies TLD.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#apps_domain ZeroTrustAccessIdentityProvider#apps_domain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#apps_domain ZeroTrustAccessIdentityProvider#apps_domain}
 
 ---
 
@@ -1693,7 +1863,7 @@ attributes: typing.List[str]
 
 A list of SAML attribute names that will be added to your signed JWT token and can be used in SAML policy rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#attributes ZeroTrustAccessIdentityProvider#attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#attributes ZeroTrustAccessIdentityProvider#attributes}
 
 ---
 
@@ -1707,7 +1877,7 @@ authorization_server_id: str
 
 Your okta authorization server id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#authorization_server_id ZeroTrustAccessIdentityProvider#authorization_server_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#authorization_server_id ZeroTrustAccessIdentityProvider#authorization_server_id}
 
 ---
 
@@ -1721,7 +1891,7 @@ auth_url: str
 
 The authorization_endpoint URL of your IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#auth_url ZeroTrustAccessIdentityProvider#auth_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#auth_url ZeroTrustAccessIdentityProvider#auth_url}
 
 ---
 
@@ -1735,7 +1905,7 @@ centrify_account: str
 
 Your centrify account url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#centrify_account ZeroTrustAccessIdentityProvider#centrify_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#centrify_account ZeroTrustAccessIdentityProvider#centrify_account}
 
 ---
 
@@ -1749,7 +1919,7 @@ centrify_app_id: str
 
 Your centrify app id.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#centrify_app_id ZeroTrustAccessIdentityProvider#centrify_app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#centrify_app_id ZeroTrustAccessIdentityProvider#centrify_app_id}
 
 ---
 
@@ -1763,7 +1933,7 @@ certs_url: str
 
 The jwks_uri endpoint of your IdP to allow the IdP keys to sign the tokens.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#certs_url ZeroTrustAccessIdentityProvider#certs_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#certs_url ZeroTrustAccessIdentityProvider#certs_url}
 
 ---
 
@@ -1777,7 +1947,7 @@ claims: typing.List[str]
 
 Custom claims.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#claims ZeroTrustAccessIdentityProvider#claims}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#claims ZeroTrustAccessIdentityProvider#claims}
 
 ---
 
@@ -1791,7 +1961,7 @@ client_id: str
 
 Your OAuth Client ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#client_id ZeroTrustAccessIdentityProvider#client_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#client_id ZeroTrustAccessIdentityProvider#client_id}
 
 ---
 
@@ -1805,7 +1975,7 @@ client_secret: str
 
 Your OAuth Client Secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#client_secret ZeroTrustAccessIdentityProvider#client_secret}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#client_secret ZeroTrustAccessIdentityProvider#client_secret}
 
 ---
 
@@ -1819,7 +1989,7 @@ conditional_access_enabled: bool | IResolvable
 
 Should Cloudflare try to load authentication contexts from your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#conditional_access_enabled ZeroTrustAccessIdentityProvider#conditional_access_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#conditional_access_enabled ZeroTrustAccessIdentityProvider#conditional_access_enabled}
 
 ---
 
@@ -1833,7 +2003,7 @@ directory_id: str
 
 Your Azure directory uuid.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#directory_id ZeroTrustAccessIdentityProvider#directory_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#directory_id ZeroTrustAccessIdentityProvider#directory_id}
 
 ---
 
@@ -1847,7 +2017,7 @@ email_attribute_name: str
 
 The attribute name for email in the SAML response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#email_attribute_name ZeroTrustAccessIdentityProvider#email_attribute_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#email_attribute_name ZeroTrustAccessIdentityProvider#email_attribute_name}
 
 ---
 
@@ -1861,7 +2031,32 @@ email_claim_name: str
 
 The claim name for email in the id_token response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#email_claim_name ZeroTrustAccessIdentityProvider#email_claim_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#email_claim_name ZeroTrustAccessIdentityProvider#email_claim_name}
+
+---
+
+##### `enable_encryption`<sup>Optional</sup> <a name="enable_encryption" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.enableEncryption"></a>
+
+```python
+enable_encryption: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+Enable SAML assertion encryption.
+
+When enabled, the Identity Provider will encrypt
+SAML assertions using the certificate from the assigned certificate set.
+
+To enable encryption:
+
+1. Create a certificate set via POST to `/identity_providers/{id}/saml_certificate`
+2. Set this field to `true` and include `saml_certificate_set_id` in the PUT request
+3. Configure the public certificate in your external Identity Provider
+
+Note: Requires `saml_certificate_set_id` to be set when `true`.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#enable_encryption ZeroTrustAccessIdentityProvider#enable_encryption}
 
 ---
 
@@ -1875,7 +2070,7 @@ header_attributes: IResolvable | typing.List[ZeroTrustAccessIdentityProviderConf
 
 Add a list of attribute names that will be returned in the response header from the Access callback.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#header_attributes ZeroTrustAccessIdentityProvider#header_attributes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#header_attributes ZeroTrustAccessIdentityProvider#header_attributes}
 
 ---
 
@@ -1889,7 +2084,7 @@ idp_public_certs: typing.List[str]
 
 X509 certificate to verify the signature in the SAML authentication response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#idp_public_certs ZeroTrustAccessIdentityProvider#idp_public_certs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#idp_public_certs ZeroTrustAccessIdentityProvider#idp_public_certs}
 
 ---
 
@@ -1903,7 +2098,7 @@ issuer_url: str
 
 IdP Entity ID or Issuer URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#issuer_url ZeroTrustAccessIdentityProvider#issuer_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#issuer_url ZeroTrustAccessIdentityProvider#issuer_url}
 
 ---
 
@@ -1917,7 +2112,7 @@ okta_account: str
 
 Your okta account url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#okta_account ZeroTrustAccessIdentityProvider#okta_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#okta_account ZeroTrustAccessIdentityProvider#okta_account}
 
 ---
 
@@ -1931,7 +2126,7 @@ onelogin_account: str
 
 Your OneLogin account url.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#onelogin_account ZeroTrustAccessIdentityProvider#onelogin_account}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#onelogin_account ZeroTrustAccessIdentityProvider#onelogin_account}
 
 ---
 
@@ -1945,7 +2140,7 @@ ping_env_id: str
 
 Your PingOne environment identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#ping_env_id ZeroTrustAccessIdentityProvider#ping_env_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#ping_env_id ZeroTrustAccessIdentityProvider#ping_env_id}
 
 ---
 
@@ -1959,7 +2154,7 @@ pkce_enabled: bool | IResolvable
 
 Enable Proof Key for Code Exchange (PKCE).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#pkce_enabled ZeroTrustAccessIdentityProvider#pkce_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#pkce_enabled ZeroTrustAccessIdentityProvider#pkce_enabled}
 
 ---
 
@@ -1976,7 +2171,23 @@ Indicates the type of user interaction that is required.
 prompt=login forces the user to enter their credentials on that request, negating single-sign on. prompt=none is the opposite. It ensures that the user isn't presented with any interactive prompt. If the request can't be completed silently by using single-sign on, the Microsoft identity platform returns an interaction_required error. prompt=select_account interrupts single sign-on providing account selection experience listing all the accounts either in session or any remembered account or an option to choose to use a different account altogether.
 Available values: "login", "select_account", "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#prompt ZeroTrustAccessIdentityProvider#prompt}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#prompt ZeroTrustAccessIdentityProvider#prompt}
+
+---
+
+##### `restrict_to_account_members`<sup>Optional</sup> <a name="restrict_to_account_members" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigA.property.restrictToAccountMembers"></a>
+
+```python
+restrict_to_account_members: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+When enabled, only users who are members of your Cloudflare account can authenticate through this identity provider.
+
+When disabled, any user with a Cloudflare account can authenticate, subject to your Access policies.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#restrict_to_account_members ZeroTrustAccessIdentityProvider#restrict_to_account_members}
 
 ---
 
@@ -1990,7 +2201,7 @@ scopes: typing.List[str]
 
 OAuth scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#scopes ZeroTrustAccessIdentityProvider#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#scopes ZeroTrustAccessIdentityProvider#scopes}
 
 ---
 
@@ -2006,7 +2217,7 @@ Sign the SAML authentication request with Access credentials.
 
 To verify the signature, use the public key from the Access certs endpoints.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#sign_request ZeroTrustAccessIdentityProvider#sign_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#sign_request ZeroTrustAccessIdentityProvider#sign_request}
 
 ---
 
@@ -2020,7 +2231,7 @@ sso_target_url: str
 
 URL to send the SAML authentication requests to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#sso_target_url ZeroTrustAccessIdentityProvider#sso_target_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#sso_target_url ZeroTrustAccessIdentityProvider#sso_target_url}
 
 ---
 
@@ -2034,7 +2245,7 @@ support_groups: bool | IResolvable
 
 Should Cloudflare try to load groups from your account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#support_groups ZeroTrustAccessIdentityProvider#support_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#support_groups ZeroTrustAccessIdentityProvider#support_groups}
 
 ---
 
@@ -2048,7 +2259,7 @@ token_url: str
 
 The token_endpoint URL of your IdP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#token_url ZeroTrustAccessIdentityProvider#token_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#token_url ZeroTrustAccessIdentityProvider#token_url}
 
 ---
 
@@ -2084,7 +2295,7 @@ attribute_name: str
 
 attribute name from the IDP.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#attribute_name ZeroTrustAccessIdentityProvider#attribute_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#attribute_name ZeroTrustAccessIdentityProvider#attribute_name}
 
 ---
 
@@ -2098,9 +2309,31 @@ header_name: str
 
 header that will be added on the request to the origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#header_name ZeroTrustAccessIdentityProvider#header_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#header_name ZeroTrustAccessIdentityProvider#header_name}
 
 ---
+
+### ZeroTrustAccessIdentityProviderSamlCertificateSet <a name="ZeroTrustAccessIdentityProviderSamlCertificateSet" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSet"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSet.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import zero_trust_access_identity_provider
+
+zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSet()
+```
+
+
+### ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate <a name="ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import zero_trust_access_identity_provider
+
+zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate()
+```
+
 
 ### ZeroTrustAccessIdentityProviderScimConfig <a name="ZeroTrustAccessIdentityProviderScimConfig" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderScimConfig"></a>
 
@@ -2138,7 +2371,7 @@ enabled: bool | IResolvable
 
 A flag to enable or disable SCIM for the identity provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#enabled ZeroTrustAccessIdentityProvider#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#enabled ZeroTrustAccessIdentityProvider#enabled}
 
 ---
 
@@ -2155,7 +2388,7 @@ Indicates how a SCIM event updates a user identity used for policy evaluation.
 Use "automatic" to automatically update a user's identity and augment it with fields from the SCIM user resource. Use "reauth" to force re-authentication on group membership updates, user identity update will only occur after successful re-authentication. With "reauth" identities will not contain fields from the SCIM user resource. With "no_action" identities will not be changed by SCIM updates in any way and users will not be prompted to reauthenticate.
 Available values: "automatic", "reauth", "no_action".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#identity_update_behavior ZeroTrustAccessIdentityProvider#identity_update_behavior}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#identity_update_behavior ZeroTrustAccessIdentityProvider#identity_update_behavior}
 
 ---
 
@@ -2171,7 +2404,7 @@ A flag to remove a user's seat in Zero Trust when they have been deprovisioned i
 
 This cannot be enabled unless user_deprovision is also enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#seat_deprovision ZeroTrustAccessIdentityProvider#seat_deprovision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#seat_deprovision ZeroTrustAccessIdentityProvider#seat_deprovision}
 
 ---
 
@@ -2185,7 +2418,7 @@ user_deprovision: bool | IResolvable
 
 A flag to enable revoking a user's session in Access and Gateway when they have been deprovisioned in the Identity Provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_access_identity_provider#user_deprovision ZeroTrustAccessIdentityProvider#user_deprovision}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_identity_provider#user_deprovision ZeroTrustAccessIdentityProvider#user_deprovision}
 
 ---
 
@@ -2259,6 +2492,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetDirectoryId">reset_directory_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetEmailAttributeName">reset_email_attribute_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetEmailClaimName">reset_email_claim_name</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetEnableEncryption">reset_enable_encryption</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetHeaderAttributes">reset_header_attributes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetIdpPublicCerts">reset_idp_public_certs</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetIssuerUrl">reset_issuer_url</a></code> | *No description.* |
@@ -2267,6 +2501,7 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetPingEnvId">reset_ping_env_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetPkceEnabled">reset_pkce_enabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetPrompt">reset_prompt</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetRestrictToAccountMembers">reset_restrict_to_account_members</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetScopes">reset_scopes</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetSignRequest">reset_sign_request</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetSsoTargetUrl">reset_sso_target_url</a></code> | *No description.* |
@@ -2545,6 +2780,12 @@ def reset_email_attribute_name() -> None
 def reset_email_claim_name() -> None
 ```
 
+##### `reset_enable_encryption` <a name="reset_enable_encryption" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetEnableEncryption"></a>
+
+```python
+def reset_enable_encryption() -> None
+```
+
 ##### `reset_header_attributes` <a name="reset_header_attributes" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetHeaderAttributes"></a>
 
 ```python
@@ -2591,6 +2832,12 @@ def reset_pkce_enabled() -> None
 
 ```python
 def reset_prompt() -> None
+```
+
+##### `reset_restrict_to_account_members` <a name="reset_restrict_to_account_members" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetRestrictToAccountMembers"></a>
+
+```python
+def reset_restrict_to_account_members() -> None
 ```
 
 ##### `reset_scopes` <a name="reset_scopes" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.resetScopes"></a>
@@ -2646,6 +2893,7 @@ def reset_token_url() -> None
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.directoryIdInput">directory_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.emailAttributeNameInput">email_attribute_name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.emailClaimNameInput">email_claim_name_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.enableEncryptionInput">enable_encryption_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.headerAttributesInput">header_attributes_input</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigHeaderAttributes">ZeroTrustAccessIdentityProviderConfigHeaderAttributes</a>]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.idpPublicCertsInput">idp_public_certs_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.issuerUrlInput">issuer_url_input</a></code> | <code>str</code> | *No description.* |
@@ -2654,6 +2902,7 @@ def reset_token_url() -> None
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.pingEnvIdInput">ping_env_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.pkceEnabledInput">pkce_enabled_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.promptInput">prompt_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.restrictToAccountMembersInput">restrict_to_account_members_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.scopesInput">scopes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.signRequestInput">sign_request_input</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.ssoTargetUrlInput">sso_target_url_input</a></code> | <code>str</code> | *No description.* |
@@ -2673,6 +2922,7 @@ def reset_token_url() -> None
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.directoryId">directory_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.emailAttributeName">email_attribute_name</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.emailClaimName">email_claim_name</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.enableEncryption">enable_encryption</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.idpPublicCerts">idp_public_certs</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.issuerUrl">issuer_url</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.oktaAccount">okta_account</a></code> | <code>str</code> | *No description.* |
@@ -2680,6 +2930,7 @@ def reset_token_url() -> None
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.pingEnvId">ping_env_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.pkceEnabled">pkce_enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.prompt">prompt</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.restrictToAccountMembers">restrict_to_account_members</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.scopes">scopes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.signRequest">sign_request</a></code> | <code>bool \| cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.ssoTargetUrl">sso_target_url</a></code> | <code>str</code> | *No description.* |
@@ -2873,6 +3124,16 @@ email_claim_name_input: str
 
 ---
 
+##### `enable_encryption_input`<sup>Optional</sup> <a name="enable_encryption_input" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.enableEncryptionInput"></a>
+
+```python
+enable_encryption_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `header_attributes_input`<sup>Optional</sup> <a name="header_attributes_input" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.headerAttributesInput"></a>
 
 ```python
@@ -2950,6 +3211,16 @@ prompt_input: str
 ```
 
 - *Type:* str
+
+---
+
+##### `restrict_to_account_members_input`<sup>Optional</sup> <a name="restrict_to_account_members_input" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.restrictToAccountMembersInput"></a>
+
+```python
+restrict_to_account_members_input: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3143,6 +3414,16 @@ email_claim_name: str
 
 ---
 
+##### `enable_encryption`<sup>Required</sup> <a name="enable_encryption" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.enableEncryption"></a>
+
+```python
+enable_encryption: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
+
+---
+
 ##### `idp_public_certs`<sup>Required</sup> <a name="idp_public_certs" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.idpPublicCerts"></a>
 
 ```python
@@ -3210,6 +3491,16 @@ prompt: str
 ```
 
 - *Type:* str
+
+---
+
+##### `restrict_to_account_members`<sup>Required</sup> <a name="restrict_to_account_members" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigAOutputReference.property.restrictToAccountMembers"></a>
+
+```python
+restrict_to_account_members: bool | IResolvable
+```
+
+- *Type:* bool | cdktn.IResolvable
 
 ---
 
@@ -3792,6 +4083,653 @@ internal_value: IResolvable | ZeroTrustAccessIdentityProviderConfigHeaderAttribu
 ```
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderConfigHeaderAttributes">ZeroTrustAccessIdentityProviderConfigHeaderAttributes</a>
+
+---
+
+
+### ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference <a name="ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import zero_trust_access_identity_provider
+
+zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.isCurrent">is_current</a></code> | <code>cdktn.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.notAfter">not_after</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.publicCertificate">public_certificate</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.uid">uid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate">ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `is_current`<sup>Required</sup> <a name="is_current" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.isCurrent"></a>
+
+```python
+is_current: IResolvable
+```
+
+- *Type:* cdktn.IResolvable
+
+---
+
+##### `not_after`<sup>Required</sup> <a name="not_after" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.notAfter"></a>
+
+```python
+not_after: str
+```
+
+- *Type:* str
+
+---
+
+##### `public_certificate`<sup>Required</sup> <a name="public_certificate" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.publicCertificate"></a>
+
+```python
+public_certificate: str
+```
+
+- *Type:* str
+
+---
+
+##### `uid`<sup>Required</sup> <a name="uid" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.uid"></a>
+
+```python
+uid: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate">ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificate</a>
+
+---
+
+
+### ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference <a name="ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.Initializer"></a>
+
+```python
+from cdktn_provider_cloudflare import zero_trust_access_identity_provider
+
+zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference(
+  terraform_resource: IInterpolatingParent,
+  terraform_attribute: str
+)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.Initializer.parameter.terraformResource">terraform_resource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.Initializer.parameter.terraformAttribute">terraform_attribute</a></code> | <code>str</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraform_resource`<sup>Required</sup> <a name="terraform_resource" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.computeFqn">compute_fqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getBooleanAttribute">get_boolean_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getBooleanMapAttribute">get_boolean_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getListAttribute">get_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberAttribute">get_number_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberListAttribute">get_number_list_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberMapAttribute">get_number_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getStringAttribute">get_string_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getStringMapAttribute">get_string_map_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `compute_fqn` <a name="compute_fqn" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.computeFqn"></a>
+
+```python
+def compute_fqn() -> str
+```
+
+##### `get_any_map_attribute` <a name="get_any_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getAnyMapAttribute"></a>
+
+```python
+def get_any_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Any]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_attribute` <a name="get_boolean_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getBooleanAttribute"></a>
+
+```python
+def get_boolean_attribute(
+  terraform_attribute: str
+) -> IResolvable
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_boolean_map_attribute` <a name="get_boolean_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getBooleanMapAttribute"></a>
+
+```python
+def get_boolean_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[bool]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_list_attribute` <a name="get_list_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getListAttribute"></a>
+
+```python
+def get_list_attribute(
+  terraform_attribute: str
+) -> typing.List[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_attribute` <a name="get_number_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberAttribute"></a>
+
+```python
+def get_number_attribute(
+  terraform_attribute: str
+) -> typing.Union[int, float]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_list_attribute` <a name="get_number_list_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberListAttribute"></a>
+
+```python
+def get_number_list_attribute(
+  terraform_attribute: str
+) -> typing.List[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_number_map_attribute` <a name="get_number_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberMapAttribute"></a>
+
+```python
+def get_number_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[typing.Union[int, float]]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_attribute` <a name="get_string_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getStringAttribute"></a>
+
+```python
+def get_string_attribute(
+  terraform_attribute: str
+) -> str
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `get_string_map_attribute` <a name="get_string_map_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getStringMapAttribute"></a>
+
+```python
+def get_string_map_attribute(
+  terraform_attribute: str
+) -> typing.Mapping[str]
+```
+
+###### `terraform_attribute`<sup>Required</sup> <a name="terraform_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* str
+
+---
+
+##### `interpolation_for_attribute` <a name="interpolation_for_attribute" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.interpolationForAttribute"></a>
+
+```python
+def interpolation_for_attribute(
+  property: str
+) -> IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* str
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.resolve"></a>
+
+```python
+def resolve(
+  _context: IResolveContext
+) -> typing.Any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `to_string` <a name="to_string" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.toString"></a>
+
+```python
+def to_string() -> str
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.createdAt">created_at</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.currentCertificate">current_certificate</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference">ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.previousCertificate">previous_certificate</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.uid">uid</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.updatedAt">updated_at</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSet">ZeroTrustAccessIdentityProviderSamlCertificateSet</a></code> | *No description.* |
+
+---
+
+##### `creation_stack`<sup>Required</sup> <a name="creation_stack" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.creationStack"></a>
+
+```python
+creation_stack: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.fqn"></a>
+
+```python
+fqn: str
+```
+
+- *Type:* str
+
+---
+
+##### `created_at`<sup>Required</sup> <a name="created_at" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.createdAt"></a>
+
+```python
+created_at: str
+```
+
+- *Type:* str
+
+---
+
+##### `current_certificate`<sup>Required</sup> <a name="current_certificate" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.currentCertificate"></a>
+
+```python
+current_certificate: ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference">ZeroTrustAccessIdentityProviderSamlCertificateSetCurrentCertificateOutputReference</a>
+
+---
+
+##### `previous_certificate`<sup>Required</sup> <a name="previous_certificate" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.previousCertificate"></a>
+
+```python
+previous_certificate: str
+```
+
+- *Type:* str
+
+---
+
+##### `uid`<sup>Required</sup> <a name="uid" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.uid"></a>
+
+```python
+uid: str
+```
+
+- *Type:* str
+
+---
+
+##### `updated_at`<sup>Required</sup> <a name="updated_at" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.updatedAt"></a>
+
+```python
+updated_at: str
+```
+
+- *Type:* str
+
+---
+
+##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSetOutputReference.property.internalValue"></a>
+
+```python
+internal_value: ZeroTrustAccessIdentityProviderSamlCertificateSet
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustAccessIdentityProvider.ZeroTrustAccessIdentityProviderSamlCertificateSet">ZeroTrustAccessIdentityProviderSamlCertificateSet</a>
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### TokenValidationRules <a name="TokenValidationRules" id="@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules cloudflare_token_validation_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationRules.TokenValidationRules.Initializer"></a>
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Action to take on requests that match operations included in `selector` and fail `expression`. Available values: "log", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#action TokenValidationRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#action TokenValidationRules#action}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A human-readable description that gives more details than `title`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#description TokenValidationRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#description TokenValidationRules#description}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Toggle rule on or off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
 
 ---
 
@@ -150,7 +150,7 @@ Rule expression. Requests that fail to match this expression will be subject to 
 
 For details on expressions, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
 
 ---
 
@@ -162,7 +162,7 @@ Select operations covered by this rule.
 
 For details on selectors, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A human-readable name for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#title TokenValidationRules#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#title TokenValidationRules#title}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Update rule order among zone rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#position TokenValidationRules#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#position TokenValidationRules#position}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
 
 ---
 
@@ -681,7 +681,7 @@ The construct id used in the generated config for the TokenValidationRules to im
 
 The id of the existing TokenValidationRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1213,7 +1213,7 @@ public java.lang.String getAction();
 
 Action to take on requests that match operations included in `selector` and fail `expression`. Available values: "log", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#action TokenValidationRules#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#action TokenValidationRules#action}
 
 ---
 
@@ -1227,7 +1227,7 @@ public java.lang.String getDescription();
 
 A human-readable description that gives more details than `title`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#description TokenValidationRules#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#description TokenValidationRules#description}
 
 ---
 
@@ -1241,7 +1241,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Toggle rule on or off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#enabled TokenValidationRules#enabled}
 
 ---
 
@@ -1257,7 +1257,7 @@ Rule expression. Requests that fail to match this expression will be subject to 
 
 For details on expressions, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#expression TokenValidationRules#expression}
 
 ---
 
@@ -1273,7 +1273,7 @@ Select operations covered by this rule.
 
 For details on selectors, see the [Cloudflare Docs](https://developers.cloudflare.com/api-shield/security/jwt-validation/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#selector TokenValidationRules#selector}
 
 ---
 
@@ -1287,7 +1287,7 @@ public java.lang.String getTitle();
 
 A human-readable name for the rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#title TokenValidationRules#title}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#title TokenValidationRules#title}
 
 ---
 
@@ -1301,7 +1301,7 @@ public TokenValidationRulesPosition getPosition();
 
 Update rule order among zone rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#position TokenValidationRules#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#position TokenValidationRules#position}
 
 ---
 
@@ -1315,7 +1315,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#zone_id TokenValidationRules#zone_id}
 
 ---
 
@@ -1353,7 +1353,7 @@ public java.lang.String getAfter();
 
 Move rule to after rule with this ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#after TokenValidationRules#after}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#after TokenValidationRules#after}
 
 ---
 
@@ -1367,7 +1367,7 @@ public java.lang.String getBefore();
 
 Move rule to before rule with this ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#before TokenValidationRules#before}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#before TokenValidationRules#before}
 
 ---
 
@@ -1381,7 +1381,7 @@ public java.lang.Number getIndex();
 
 Move rule to this position.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#index TokenValidationRules#index}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#index TokenValidationRules#index}
 
 ---
 
@@ -1417,7 +1417,7 @@ public IResolvable|java.util.List<TokenValidationRulesSelectorExclude> getExclud
 
 Ignore operations that were otherwise included by `include`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#exclude TokenValidationRules#exclude}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#exclude TokenValidationRules#exclude}
 
 ---
 
@@ -1431,7 +1431,7 @@ public IResolvable|java.util.List<TokenValidationRulesSelectorInclude> getInclud
 
 Select all matching operations.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#include TokenValidationRules#include}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#include TokenValidationRules#include}
 
 ---
 
@@ -1465,7 +1465,7 @@ public java.util.List<java.lang.String> getOperationIds();
 
 Excluded operation IDs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#operation_ids TokenValidationRules#operation_ids}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#operation_ids TokenValidationRules#operation_ids}
 
 ---
 
@@ -1499,7 +1499,7 @@ public java.util.List<java.lang.String> getHost();
 
 Included hostnames.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_rules#host TokenValidationRules#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_rules#host TokenValidationRules#host}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareRegistrarDomain <a name="DataCloudflareRegistrarDomain" id="@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain cloudflare_registrar_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/registrar_domain cloudflare_registrar_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain.Initializer"></a>
 
@@ -68,7 +68,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -285,12 +284,6 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomain.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -394,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareRegistrarDom
 
 The id of the existing DataCloudflareRegistrarDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/registrar_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -626,8 +619,8 @@ new DataCloudflareRegistrarDomainConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    string DomainName,
-    string AccountId = null
+    string AccountId,
+    string DomainName
 };
 ```
 
@@ -642,8 +635,8 @@ new DataCloudflareRegistrarDomainConfig {
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.domainName">DomainName</a></code> | <code>string</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.domainName">DomainName</a></code> | <code>string</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
 
 ---
 
@@ -717,6 +710,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
+
+---
+
 ##### `DomainName`<sup>Required</sup> <a name="DomainName" id="@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.domainName"></a>
 
 ```csharp
@@ -727,21 +734,7 @@ public string DomainName { get; set; }
 
 Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dataCloudflareRegistrarDomain.DataCloudflareRegistrarDomainConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/registrar_domain#account_id DataCloudflareRegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/registrar_domain#domain_name DataCloudflareRegistrarDomain#domain_name}
 
 ---
 

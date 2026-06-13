@@ -4,7 +4,7 @@
 
 ### DataCloudflareUser <a name="DataCloudflareUser" id="@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/user cloudflare_user}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/user cloudflare_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.Initializer"></a>
 
@@ -437,7 +437,7 @@ The construct id used in the generated config for the DataCloudflareUser to impo
 
 The id of the existing DataCloudflareUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -467,6 +467,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.betas">betas</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.country">country</a></code> | <code>java.lang.String</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.email">email</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.firstName">firstName</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.hasBusinessZones">hasBusinessZones</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.hasEnterpriseZones">hasEnterpriseZones</a></code> | <code>io.cdktn.cdktn.IResolvable</code> | *No description.* |
@@ -618,6 +619,16 @@ public java.util.List<java.lang.String> getBetas();
 
 ```java
 public java.lang.String getCountry();
+```
+
+- *Type:* java.lang.String
+
+---
+
+##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.email"></a>
+
+```java
+public java.lang.String getEmail();
 ```
 
 - *Type:* java.lang.String

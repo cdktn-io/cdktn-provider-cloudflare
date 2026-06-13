@@ -4,7 +4,7 @@
 
 ### DataCloudflareApiShieldOperation <a name="DataCloudflareApiShieldOperation" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.Initializer"></a>
 
@@ -72,6 +72,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetFeature">ResetFeature</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetFilter">ResetFilter</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetOperationId">ResetOperationId</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetWithSchemas">ResetWithSchemas</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
@@ -319,6 +320,12 @@ func ResetFilter()
 func ResetOperationId()
 ```
 
+##### `ResetWithSchemas` <a name="ResetWithSchemas" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetWithSchemas"></a>
+
+```go
+func ResetWithSchemas()
+```
+
 ##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.resetZoneId"></a>
 
 ```go
@@ -428,7 +435,7 @@ The construct id used in the generated config for the DataCloudflareApiShieldOpe
 
 The id of the existing DataCloudflareApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -463,12 +470,15 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.id">Id</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.lastUpdated">LastUpdated</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.method">Method</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.schemas">Schemas</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference">DataCloudflareApiShieldOperationSchemasOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.featureInput">FeatureInput</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.filterInput">FilterInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.operationIdInput">OperationIdInput</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.withSchemasInput">WithSchemasInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.zoneIdInput">ZoneIdInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.feature">Feature</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.operationId">OperationId</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.withSchemas">WithSchemas</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.zoneId">ZoneId</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -665,6 +675,16 @@ func Method() *string
 
 ---
 
+##### `Schemas`<sup>Required</sup> <a name="Schemas" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.schemas"></a>
+
+```go
+func Schemas() DataCloudflareApiShieldOperationSchemasOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference">DataCloudflareApiShieldOperationSchemasOutputReference</a>
+
+---
+
 ##### `FeatureInput`<sup>Optional</sup> <a name="FeatureInput" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.featureInput"></a>
 
 ```go
@@ -695,6 +715,16 @@ func OperationIdInput() *string
 
 ---
 
+##### `WithSchemasInput`<sup>Optional</sup> <a name="WithSchemasInput" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.withSchemasInput"></a>
+
+```go
+func WithSchemasInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `ZoneIdInput`<sup>Optional</sup> <a name="ZoneIdInput" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.zoneIdInput"></a>
 
 ```go
@@ -722,6 +752,16 @@ func OperationId() *string
 ```
 
 - *Type:* *string
+
+---
+
+##### `WithSchemas`<sup>Required</sup> <a name="WithSchemas" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperation.property.withSchemas"></a>
+
+```go
+func WithSchemas() interface{}
+```
+
+- *Type:* interface{}
 
 ---
 
@@ -773,6 +813,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dataclou
 	Feature: *[]*string,
 	Filter: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter,
 	OperationId: *string,
+	WithSchemas: interface{},
 	ZoneId: *string,
 }
 ```
@@ -789,8 +830,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.feature">Feature</a></code> | <code>*[]*string</code> | Add feature(s) to the results. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.operationId">OperationId</a></code> | <code>*string</code> | UUID. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.withSchemas">WithSchemas</a></code> | <code>interface{}</code> | When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
 
 ---
@@ -877,7 +919,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -889,7 +931,7 @@ Filter DataCloudflareApiShieldOperationFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationFilter">DataCloudflareApiShieldOperationFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#filter DataCloudflareApiShieldOperation#filter}.
 
 ---
 
@@ -903,7 +945,23 @@ OperationId *string
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#operation_id DataCloudflareApiShieldOperation#operation_id}
+
+---
+
+##### `WithSchemas`<sup>Optional</sup> <a name="WithSchemas" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationConfig.property.withSchemas"></a>
+
+```go
+WithSchemas interface{}
+```
+
+- *Type:* interface{}
+
+When true, includes OpenAPI schemas (both uploaded and learned) for the operation in the response.
+
+Due to the conversion overhead, this parameter is only supported on single-operation retrieval.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#with_schemas DataCloudflareApiShieldOperation#with_schemas}
 
 ---
 
@@ -917,7 +975,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#zone_id DataCloudflareApiShieldOperation#zone_id}
 
 ---
 
@@ -1130,7 +1188,7 @@ Direction *string
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#direction DataCloudflareApiShieldOperation#direction}
 
 ---
 
@@ -1144,7 +1202,7 @@ Endpoint *string
 
 Filter results to only include endpoints containing this pattern.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#endpoint DataCloudflareApiShieldOperation#endpoint}
 
 ---
 
@@ -1160,7 +1218,7 @@ Add feature(s) to the results.
 
 The feature name that is given here corresponds to the resulting feature object. Have a look at the top-level object description for more details on the specific meaning.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#feature DataCloudflareApiShieldOperation#feature}
 
 ---
 
@@ -1174,7 +1232,7 @@ Host *[]*string
 
 Filter results to only include the specified hosts.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#host DataCloudflareApiShieldOperation#host}
 
 ---
 
@@ -1188,7 +1246,7 @@ Method *[]*string
 
 Filter results to only include the specified HTTP methods.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#method DataCloudflareApiShieldOperation#method}
 
 ---
 
@@ -1205,9 +1263,48 @@ Field to order by.
 When requesting a feature, the feature keys are available for ordering as well, e.g., `thresholds.suggested_threshold`.
 Available values: "method", "host", "endpoint", "thresholds.$key".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_shield_operation#order DataCloudflareApiShieldOperation#order}
 
 ---
+
+### DataCloudflareApiShieldOperationSchemas <a name="DataCloudflareApiShieldOperationSchemas" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemas"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemas.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldoperation"
+
+&datacloudflareapishieldoperation.DataCloudflareApiShieldOperationSchemas {
+
+}
+```
+
+
+### DataCloudflareApiShieldOperationSchemasLearned <a name="DataCloudflareApiShieldOperationSchemasLearned" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearned"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearned.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldoperation"
+
+&datacloudflareapishieldoperation.DataCloudflareApiShieldOperationSchemasLearned {
+
+}
+```
+
+
+### DataCloudflareApiShieldOperationSchemasUploaded <a name="DataCloudflareApiShieldOperationSchemasUploaded" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploaded"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploaded.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldoperation"
+
+&datacloudflareapishieldoperation.DataCloudflareApiShieldOperationSchemasUploaded {
+
+}
+```
+
 
 ## Classes <a name="Classes" id="Classes"></a>
 
@@ -5307,6 +5404,819 @@ func InternalValue() interface{}
 ```
 
 - *Type:* interface{}
+
+---
+
+
+### DataCloudflareApiShieldOperationSchemasLearnedOutputReference <a name="DataCloudflareApiShieldOperationSchemasLearnedOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldoperation"
+
+datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationSchemasLearnedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationSchemasLearnedOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.parameters">Parameters</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMapList</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.requestBody">RequestBody</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearned">DataCloudflareApiShieldOperationSchemasLearned</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.parameters"></a>
+
+```go
+func Parameters() StringMapList
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMapList
+
+---
+
+##### `RequestBody`<sup>Required</sup> <a name="RequestBody" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.requestBody"></a>
+
+```go
+func RequestBody() StringMap
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareApiShieldOperationSchemasLearned
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearned">DataCloudflareApiShieldOperationSchemasLearned</a>
+
+---
+
+
+### DataCloudflareApiShieldOperationSchemasOutputReference <a name="DataCloudflareApiShieldOperationSchemasOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldoperation"
+
+datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationSchemasOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationSchemasOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.learned">Learned</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference">DataCloudflareApiShieldOperationSchemasLearnedOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.uploaded">Uploaded</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference">DataCloudflareApiShieldOperationSchemasUploadedOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemas">DataCloudflareApiShieldOperationSchemas</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Learned`<sup>Required</sup> <a name="Learned" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.learned"></a>
+
+```go
+func Learned() DataCloudflareApiShieldOperationSchemasLearnedOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasLearnedOutputReference">DataCloudflareApiShieldOperationSchemasLearnedOutputReference</a>
+
+---
+
+##### `Uploaded`<sup>Required</sup> <a name="Uploaded" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.uploaded"></a>
+
+```go
+func Uploaded() DataCloudflareApiShieldOperationSchemasUploadedOutputReference
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference">DataCloudflareApiShieldOperationSchemasUploadedOutputReference</a>
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareApiShieldOperationSchemas
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemas">DataCloudflareApiShieldOperationSchemas</a>
+
+---
+
+
+### DataCloudflareApiShieldOperationSchemasUploadedOutputReference <a name="DataCloudflareApiShieldOperationSchemasUploadedOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.Initializer"></a>
+
+```go
+import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/datacloudflareapishieldoperation"
+
+datacloudflareapishieldoperation.NewDataCloudflareApiShieldOperationSchemasUploadedOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) DataCloudflareApiShieldOperationSchemasUploadedOutputReference
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>*string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.computeFqn"></a>
+
+```go
+func ComputeFqn() *string
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getAnyMapAttribute"></a>
+
+```go
+func GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getBooleanAttribute"></a>
+
+```go
+func GetBooleanAttribute(terraformAttribute *string) IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getBooleanMapAttribute"></a>
+
+```go
+func GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getListAttribute"></a>
+
+```go
+func GetListAttribute(terraformAttribute *string) *[]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberAttribute"></a>
+
+```go
+func GetNumberAttribute(terraformAttribute *string) *f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberListAttribute"></a>
+
+```go
+func GetNumberListAttribute(terraformAttribute *string) *[]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberMapAttribute"></a>
+
+```go
+func GetNumberMapAttribute(terraformAttribute *string) *map[string]*f64
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getStringAttribute"></a>
+
+```go
+func GetStringAttribute(terraformAttribute *string) *string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getStringMapAttribute"></a>
+
+```go
+func GetStringMapAttribute(terraformAttribute *string) *map[string]*string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* *string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.interpolationForAttribute"></a>
+
+```go
+func InterpolationForAttribute(property *string) IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* *string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.resolve"></a>
+
+```go
+func Resolve(_context IResolveContext) interface{}
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.resolve.parameter._context"></a>
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.toString"></a>
+
+```go
+func ToString() *string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.creationStack">CreationStack</a></code> | <code>*[]*string</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.fqn">Fqn</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.parameters">Parameters</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMapList</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.requestBody">RequestBody</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.StringMap</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploaded">DataCloudflareApiShieldOperationSchemasUploaded</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.creationStack"></a>
+
+```go
+func CreationStack() *[]*string
+```
+
+- *Type:* *[]*string
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.fqn"></a>
+
+```go
+func Fqn() *string
+```
+
+- *Type:* *string
+
+---
+
+##### `Parameters`<sup>Required</sup> <a name="Parameters" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.parameters"></a>
+
+```go
+func Parameters() StringMapList
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMapList
+
+---
+
+##### `RequestBody`<sup>Required</sup> <a name="RequestBody" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.requestBody"></a>
+
+```go
+func RequestBody() StringMap
+```
+
+- *Type:* github.com/open-constructs/cdk-terrain-go/cdktn.StringMap
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploadedOutputReference.property.internalValue"></a>
+
+```go
+func InternalValue() DataCloudflareApiShieldOperationSchemasUploaded
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareApiShieldOperation.DataCloudflareApiShieldOperationSchemasUploaded">DataCloudflareApiShieldOperationSchemasUploaded</a>
 
 ---
 

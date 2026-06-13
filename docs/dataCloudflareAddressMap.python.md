@@ -4,7 +4,7 @@
 
 ### DataCloudflareAddressMap <a name="DataCloudflareAddressMap" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/address_map cloudflare_address_map}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/address_map cloudflare_address_map}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAddressMap.DataCloudflareAddressMap.Initializer"></a>
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier of an Address Map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
 
 ---
 
@@ -508,7 +508,7 @@ The construct id used in the generated config for the DataCloudflareAddressMap t
 
 The id of the existing DataCloudflareAddressMap that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/address_map#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/address_map#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ address_map_id: str
 
 Identifier of an Address Map.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/address_map#address_map_id DataCloudflareAddressMap#address_map_id}
 
 ---
 
@@ -965,7 +965,7 @@ account_id: str
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/address_map#account_id DataCloudflareAddressMap#account_id}
 
 ---
 

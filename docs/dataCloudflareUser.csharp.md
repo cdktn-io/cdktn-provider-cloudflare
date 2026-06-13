@@ -4,7 +4,7 @@
 
 ### DataCloudflareUser <a name="DataCloudflareUser" id="@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/user cloudflare_user}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/user cloudflare_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareUser to impo
 
 The id of the existing DataCloudflareUser that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -417,6 +417,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.betas">Betas</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.country">Country</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.email">Email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.firstName">FirstName</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.hasBusinessZones">HasBusinessZones</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.hasEnterpriseZones">HasEnterpriseZones</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
@@ -568,6 +569,16 @@ public string[] Betas { get; }
 
 ```csharp
 public string Country { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Email`<sup>Required</sup> <a name="Email" id="@cdktn/provider-cloudflare.dataCloudflareUser.DataCloudflareUser.property.email"></a>
+
+```csharp
+public string Email { get; }
 ```
 
 - *Type:* string

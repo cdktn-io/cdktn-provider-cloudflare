@@ -4,7 +4,7 @@
 
 ### DataCloudflareImageVariant <a name="DataCloudflareImageVariant" id="@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant cloudflare_image_variant}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant cloudflare_image_variant}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariant.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareImageVariant
 
 The id of the existing DataCloudflareImageVariant that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -654,7 +654,7 @@ const dataCloudflareImageVariantConfig: dataCloudflareImageVariant.DataCloudflar
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantConfig.property.variantId">variantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantConfig.property.variantId">variantId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareImageVariant.DataCloudflareImageVariantConfig.property.accountId">accountId</a></code> | <code>string</code> | Account identifier tag. |
 
 ---
@@ -737,7 +737,7 @@ public readonly variantId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}.
 
 ---
 
@@ -751,7 +751,7 @@ public readonly accountId: string;
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant#account_id DataCloudflareImageVariant#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#account_id DataCloudflareImageVariant#account_id}
 
 ---
 

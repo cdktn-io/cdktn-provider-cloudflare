@@ -4,7 +4,7 @@
 
 ### RegionalHostname <a name="RegionalHostname" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname cloudflare_regional_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/regional_hostname cloudflare_regional_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.resetRouting">resetRouting</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -394,12 +393,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public resetRouting(): void
 ```
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostname.resetZoneId"></a>
-
-```typescript
-public resetZoneId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -503,7 +496,7 @@ The construct id used in the generated config for the RegionalHostname to import
 
 The id of the existing RegionalHostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/regional_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -831,8 +824,8 @@ const regionalHostnameConfig: regionalHostname.RegionalHostnameConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.hostname">hostname</a></code> | <code>string</code> | DNS hostname to be regionalized, must be a subdomain of the zone. |
 | <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.regionKey">regionKey</a></code> | <code>string</code> | Identifying key for the region. |
-| <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.routing">routing</a></code> | <code>string</code> | Configure which routing method to use for the regional hostname. |
 | <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.routing">routing</a></code> | <code>string</code> | Configure which routing method to use for the regional hostname. |
 
 ---
 
@@ -918,7 +911,7 @@ DNS hostname to be regionalized, must be a subdomain of the zone.
 
 Wildcards are supported for one level, e.g `*.example.com`
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/regional_hostname#hostname RegionalHostname#hostname}
 
 ---
 
@@ -932,7 +925,21 @@ public readonly regionKey: string;
 
 Identifying key for the region.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/regional_hostname#region_key RegionalHostname#region_key}
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.zoneId"></a>
+
+```typescript
+public readonly zoneId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
 
 ---
 
@@ -946,21 +953,7 @@ public readonly routing: string;
 
 Configure which routing method to use for the regional hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname#routing RegionalHostname#routing}
-
----
-
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.regionalHostname.RegionalHostnameConfig.property.zoneId"></a>
-
-```typescript
-public readonly zoneId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/regional_hostname#zone_id RegionalHostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/regional_hostname#routing RegionalHostname#routing}
 
 ---
 

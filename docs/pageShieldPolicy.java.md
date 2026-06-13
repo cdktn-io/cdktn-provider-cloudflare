@@ -4,7 +4,7 @@
 
 ### PageShieldPolicy <a name="PageShieldPolicy" id="@cdktn/provider-cloudflare.pageShieldPolicy.PageShieldPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy cloudflare_page_shield_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pageShieldPolicy.PageShieldPolicy.Initializer"></a>
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 The action to take if the expression matches Available values: "allow", "log", "add_reporting_directives".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#action PageShieldPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#action PageShieldPolicy#action}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A description for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#description PageShieldPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#description PageShieldPolicy#description}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether the policy is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#enabled PageShieldPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#enabled PageShieldPolicy#enabled}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The expression which must match for the policy to be applied, using the Cloudflare Firewall rule expression syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#expression PageShieldPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#expression PageShieldPolicy#expression}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The policy which will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#value PageShieldPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#value PageShieldPolicy#value}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#zone_id PageShieldPolicy#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#zone_id PageShieldPolicy#zone_id}
 
 ---
 
@@ -620,7 +620,7 @@ The construct id used in the generated config for the PageShieldPolicy to import
 
 The id of the existing PageShieldPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1082,7 +1082,7 @@ public java.lang.String getAction();
 
 The action to take if the expression matches Available values: "allow", "log", "add_reporting_directives".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#action PageShieldPolicy#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#action PageShieldPolicy#action}
 
 ---
 
@@ -1096,7 +1096,7 @@ public java.lang.String getDescription();
 
 A description for the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#description PageShieldPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#description PageShieldPolicy#description}
 
 ---
 
@@ -1110,7 +1110,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Whether the policy is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#enabled PageShieldPolicy#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#enabled PageShieldPolicy#enabled}
 
 ---
 
@@ -1124,7 +1124,7 @@ public java.lang.String getExpression();
 
 The expression which must match for the policy to be applied, using the Cloudflare Firewall rule expression syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#expression PageShieldPolicy#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#expression PageShieldPolicy#expression}
 
 ---
 
@@ -1138,7 +1138,7 @@ public java.lang.String getValue();
 
 The policy which will be applied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#value PageShieldPolicy#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#value PageShieldPolicy#value}
 
 ---
 
@@ -1152,7 +1152,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/page_shield_policy#zone_id PageShieldPolicy#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/page_shield_policy#zone_id PageShieldPolicy#zone_id}
 
 ---
 
