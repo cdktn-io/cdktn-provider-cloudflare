@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lans
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_lans
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareMagicTransitSiteLansConfig extends cdktn.Terrafor
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lans#account_id DataCloudflareMagicTransitSiteLans#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_lans#account_id DataCloudflareMagicTransitSiteLans#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lans#max_items DataCloudflareMagicTransitSiteLans#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_lans#max_items DataCloudflareMagicTransitSiteLans#max_items}
   */
   readonly maxItems?: number;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lans#site_id DataCloudflareMagicTransitSiteLans#site_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_lans#site_id DataCloudflareMagicTransitSiteLans#site_id}
   */
   readonly siteId: string;
 }
@@ -37,7 +37,7 @@ export interface DataCloudflareMagicTransitSiteLansResultNat {
 export function dataCloudflareMagicTransitSiteLansResultNatToTerraform(struct?: DataCloudflareMagicTransitSiteLansResultNat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -47,7 +47,7 @@ export function dataCloudflareMagicTransitSiteLansResultNatToTerraform(struct?: 
 export function dataCloudflareMagicTransitSiteLansResultNatToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResultNat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -91,7 +91,7 @@ export interface DataCloudflareMagicTransitSiteLansResultRoutedSubnetsNat {
 export function dataCloudflareMagicTransitSiteLansResultRoutedSubnetsNatToTerraform(struct?: DataCloudflareMagicTransitSiteLansResultRoutedSubnetsNat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -101,7 +101,7 @@ export function dataCloudflareMagicTransitSiteLansResultRoutedSubnetsNatToTerraf
 export function dataCloudflareMagicTransitSiteLansResultRoutedSubnetsNatToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResultRoutedSubnetsNat): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -145,7 +145,7 @@ export interface DataCloudflareMagicTransitSiteLansResultRoutedSubnets {
 export function dataCloudflareMagicTransitSiteLansResultRoutedSubnetsToTerraform(struct?: DataCloudflareMagicTransitSiteLansResultRoutedSubnets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -155,7 +155,7 @@ export function dataCloudflareMagicTransitSiteLansResultRoutedSubnetsToTerraform
 export function dataCloudflareMagicTransitSiteLansResultRoutedSubnetsToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResultRoutedSubnets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -231,7 +231,7 @@ export interface DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRel
 export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRelayToTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRelay): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -241,7 +241,7 @@ export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRela
 export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRelayToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRelay): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -279,13 +279,98 @@ export class DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpRelayOu
     return this.getListAttribute('server_addresses');
   }
 }
+export interface DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptions {
+}
+
+export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptionsToTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptionsToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptions): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptionsOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptions | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptions | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // code - computed: true, optional: false, required: false
+  public get code() {
+    return this.getNumberAttribute('code');
+  }
+
+  // type - computed: true, optional: false, required: false
+  public get type() {
+    return this.getStringAttribute('type');
+  }
+
+  // value - computed: true, optional: false, required: false
+  public get value() {
+    return this.getStringAttribute('value');
+  }
+}
+
+export class DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptionsList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptionsOutputReference {
+    return new DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptionsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 export interface DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServer {
 }
 
 export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerToTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -295,7 +380,7 @@ export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServ
 export function dataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -326,6 +411,12 @@ export class DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerO
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // dhcp_options - computed: true, optional: false, required: false
+  private _dhcpOptions = new DataCloudflareMagicTransitSiteLansResultStaticAddressingDhcpServerDhcpOptionsList(this, "dhcp_options", false);
+  public get dhcpOptions() {
+    return this._dhcpOptions;
   }
 
   // dhcp_pool_end - computed: true, optional: false, required: false
@@ -360,7 +451,7 @@ export interface DataCloudflareMagicTransitSiteLansResultStaticAddressing {
 export function dataCloudflareMagicTransitSiteLansResultStaticAddressingToTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -370,7 +461,7 @@ export function dataCloudflareMagicTransitSiteLansResultStaticAddressingToTerraf
 export function dataCloudflareMagicTransitSiteLansResultStaticAddressingToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResultStaticAddressing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -436,7 +527,7 @@ export interface DataCloudflareMagicTransitSiteLansResult {
 export function dataCloudflareMagicTransitSiteLansResultToTerraform(struct?: DataCloudflareMagicTransitSiteLansResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -446,7 +537,7 @@ export function dataCloudflareMagicTransitSiteLansResultToTerraform(struct?: Dat
 export function dataCloudflareMagicTransitSiteLansResultToHclTerraform(struct?: DataCloudflareMagicTransitSiteLansResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -565,7 +656,7 @@ export class DataCloudflareMagicTransitSiteLansResultList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lans cloudflare_magic_transit_site_lans}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_lans cloudflare_magic_transit_site_lans}
 */
 export class DataCloudflareMagicTransitSiteLans extends cdktn.TerraformDataSource {
 
@@ -581,7 +672,7 @@ export class DataCloudflareMagicTransitSiteLans extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataCloudflareMagicTransitSiteLans resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareMagicTransitSiteLans to import
-  * @param importFromId The id of the existing DataCloudflareMagicTransitSiteLans that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lans#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareMagicTransitSiteLans that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_lans#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareMagicTransitSiteLans to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -593,7 +684,7 @@ export class DataCloudflareMagicTransitSiteLans extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/magic_transit_site_lans cloudflare_magic_transit_site_lans} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/magic_transit_site_lans cloudflare_magic_transit_site_lans} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -604,7 +695,7 @@ export class DataCloudflareMagicTransitSiteLans extends cdktn.TerraformDataSourc
       terraformResourceType: 'cloudflare_magic_transit_site_lans',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

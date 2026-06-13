@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,43 +15,43 @@ export interface WorkerConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#account_id Worker#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#account_id Worker#account_id}
   */
   readonly accountId?: string;
   /**
   * Whether logpush is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#logpush Worker#logpush}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#logpush Worker#logpush}
   */
   readonly logpush?: boolean | cdktn.IResolvable;
   /**
   * Name of the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#name Worker#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#name Worker#name}
   */
   readonly name: string;
   /**
   * Observability settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#observability Worker#observability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#observability Worker#observability}
   */
   readonly observability?: WorkerObservability;
   /**
   * Subdomain settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#subdomain Worker#subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#subdomain Worker#subdomain}
   */
   readonly subdomain?: WorkerSubdomain;
   /**
   * Tags associated with the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#tags Worker#tags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#tags Worker#tags}
   */
   readonly tags?: string[];
   /**
   * Other Workers that should consume logs from the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#tail_consumers Worker#tail_consumers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
   */
   readonly tailConsumers?: WorkerTailConsumers[] | cdktn.IResolvable;
 }
@@ -59,31 +59,31 @@ export interface WorkerObservabilityLogs {
   /**
   * A list of destinations where logs will be exported to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#destinations Worker#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#destinations Worker#destinations}
   */
   readonly destinations?: string[];
   /**
   * Whether logs are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#enabled Worker#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
   /**
   * Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#invocation_logs Worker#invocation_logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
   */
   readonly invocationLogs?: boolean | cdktn.IResolvable;
   /**
   * Whether log persistence is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#persist Worker#persist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#persist Worker#persist}
   */
   readonly persist?: boolean | cdktn.IResolvable;
 }
@@ -91,7 +91,7 @@ export interface WorkerObservabilityLogs {
 export function workerObservabilityLogsToTerraform(struct?: WorkerObservabilityLogs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
@@ -106,7 +106,7 @@ export function workerObservabilityLogsToTerraform(struct?: WorkerObservabilityL
 export function workerObservabilityLogsToHclTerraform(struct?: WorkerObservabilityLogs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destinations: {
@@ -295,39 +295,47 @@ export interface WorkerObservabilityTraces {
   /**
   * A list of destinations where traces will be exported to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#destinations Worker#destinations}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#destinations Worker#destinations}
   */
   readonly destinations?: string[];
   /**
   * Whether traces are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#enabled Worker#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
   /**
   * Whether trace persistence is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#persist Worker#persist}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#persist Worker#persist}
   */
   readonly persist?: boolean | cdktn.IResolvable;
+  /**
+  * Controls how inbound trace context (traceparent/tracestate) headers on incoming requests are handled. "authenticated" (default) honors inbound trace context only when accompanied by a valid trace auth token. "accept" unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled.
+  * Available values: "authenticated", "accept".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
+  */
+  readonly propagationPolicy?: string;
 }
 
 export function workerObservabilityTracesToTerraform(struct?: WorkerObservabilityTraces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     destinations: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.destinations),
     enabled: cdktn.booleanToTerraform(struct!.enabled),
     head_sampling_rate: cdktn.numberToTerraform(struct!.headSamplingRate),
     persist: cdktn.booleanToTerraform(struct!.persist),
+    propagation_policy: cdktn.stringToTerraform(struct!.propagationPolicy),
   }
 }
 
@@ -335,7 +343,7 @@ export function workerObservabilityTracesToTerraform(struct?: WorkerObservabilit
 export function workerObservabilityTracesToHclTerraform(struct?: WorkerObservabilityTraces | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     destinations: {
@@ -361,6 +369,12 @@ export function workerObservabilityTracesToHclTerraform(struct?: WorkerObservabi
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
+    },
+    propagation_policy: {
+      value: cdktn.stringToHclTerraform(struct!.propagationPolicy),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
     },
   };
 
@@ -402,6 +416,10 @@ export class WorkerObservabilityTracesOutputReference extends cdktn.ComplexObjec
       hasAnyValues = true;
       internalValueResult.persist = this._persist;
     }
+    if (this._propagationPolicy !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.propagationPolicy = this._propagationPolicy;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -413,6 +431,7 @@ export class WorkerObservabilityTracesOutputReference extends cdktn.ComplexObjec
       this._enabled = undefined;
       this._headSamplingRate = undefined;
       this._persist = undefined;
+      this._propagationPolicy = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -425,6 +444,7 @@ export class WorkerObservabilityTracesOutputReference extends cdktn.ComplexObjec
       this._enabled = value.enabled;
       this._headSamplingRate = value.headSamplingRate;
       this._persist = value.persist;
+      this._propagationPolicy = value.propagationPolicy;
     }
   }
 
@@ -491,30 +511,46 @@ export class WorkerObservabilityTracesOutputReference extends cdktn.ComplexObjec
   public get persistInput() {
     return this._persist;
   }
+
+  // propagation_policy - computed: true, optional: true, required: false
+  private _propagationPolicy?: string; 
+  public get propagationPolicy() {
+    return this.getStringAttribute('propagation_policy');
+  }
+  public set propagationPolicy(value: string) {
+    this._propagationPolicy = value;
+  }
+  public resetPropagationPolicy() {
+    this._propagationPolicy = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get propagationPolicyInput() {
+    return this._propagationPolicy;
+  }
 }
 export interface WorkerObservability {
   /**
   * Whether observability is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#enabled Worker#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
   */
   readonly headSamplingRate?: number;
   /**
   * Log settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#logs Worker#logs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#logs Worker#logs}
   */
   readonly logs?: WorkerObservabilityLogs;
   /**
   * Trace settings for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#traces Worker#traces}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#traces Worker#traces}
   */
   readonly traces?: WorkerObservabilityTraces;
 }
@@ -522,7 +558,7 @@ export interface WorkerObservability {
 export function workerObservabilityToTerraform(struct?: WorkerObservability | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -536,7 +572,7 @@ export function workerObservabilityToTerraform(struct?: WorkerObservability | cd
 export function workerObservabilityToHclTerraform(struct?: WorkerObservability | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -699,7 +735,7 @@ export interface WorkerReferencesDispatchNamespaceOutbounds {
 export function workerReferencesDispatchNamespaceOutboundsToTerraform(struct?: WorkerReferencesDispatchNamespaceOutbounds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -709,7 +745,7 @@ export function workerReferencesDispatchNamespaceOutboundsToTerraform(struct?: W
 export function workerReferencesDispatchNamespaceOutboundsToHclTerraform(struct?: WorkerReferencesDispatchNamespaceOutbounds): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -789,7 +825,7 @@ export interface WorkerReferencesDomains {
 export function workerReferencesDomainsToTerraform(struct?: WorkerReferencesDomains): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -799,7 +835,7 @@ export function workerReferencesDomainsToTerraform(struct?: WorkerReferencesDoma
 export function workerReferencesDomainsToHclTerraform(struct?: WorkerReferencesDomains): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -884,7 +920,7 @@ export interface WorkerReferencesDurableObjects {
 export function workerReferencesDurableObjectsToTerraform(struct?: WorkerReferencesDurableObjects): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -894,7 +930,7 @@ export function workerReferencesDurableObjectsToTerraform(struct?: WorkerReferen
 export function workerReferencesDurableObjectsToHclTerraform(struct?: WorkerReferencesDurableObjects): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -974,7 +1010,7 @@ export interface WorkerReferencesQueues {
 export function workerReferencesQueuesToTerraform(struct?: WorkerReferencesQueues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -984,7 +1020,7 @@ export function workerReferencesQueuesToTerraform(struct?: WorkerReferencesQueue
 export function workerReferencesQueuesToHclTerraform(struct?: WorkerReferencesQueues): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1059,7 +1095,7 @@ export interface WorkerReferencesWorkers {
 export function workerReferencesWorkersToTerraform(struct?: WorkerReferencesWorkers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1069,7 +1105,7 @@ export function workerReferencesWorkersToTerraform(struct?: WorkerReferencesWork
 export function workerReferencesWorkersToHclTerraform(struct?: WorkerReferencesWorkers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1139,7 +1175,7 @@ export interface WorkerReferences {
 export function workerReferencesToTerraform(struct?: WorkerReferences): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1149,7 +1185,7 @@ export function workerReferencesToTerraform(struct?: WorkerReferences): any {
 export function workerReferencesToHclTerraform(struct?: WorkerReferences): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1216,13 +1252,13 @@ export interface WorkerSubdomain {
   /**
   * Whether the *.workers.dev subdomain is enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#enabled Worker#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#previews_enabled Worker#previews_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
   */
   readonly previewsEnabled?: boolean | cdktn.IResolvable;
 }
@@ -1230,7 +1266,7 @@ export interface WorkerSubdomain {
 export function workerSubdomainToTerraform(struct?: WorkerSubdomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1242,7 +1278,7 @@ export function workerSubdomainToTerraform(struct?: WorkerSubdomain | cdktn.IRes
 export function workerSubdomainToHclTerraform(struct?: WorkerSubdomain | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1347,7 +1383,7 @@ export interface WorkerTailConsumers {
   /**
   * Name of the consumer Worker.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#name Worker#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#name Worker#name}
   */
   readonly name: string;
 }
@@ -1355,7 +1391,7 @@ export interface WorkerTailConsumers {
 export function workerTailConsumersToTerraform(struct?: WorkerTailConsumers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -1366,7 +1402,7 @@ export function workerTailConsumersToTerraform(struct?: WorkerTailConsumers | cd
 export function workerTailConsumersToHclTerraform(struct?: WorkerTailConsumers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -1460,7 +1496,7 @@ export class WorkerTailConsumersList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker cloudflare_worker}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker cloudflare_worker}
 */
 export class Worker extends cdktn.TerraformResource {
 
@@ -1476,7 +1512,7 @@ export class Worker extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Worker resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Worker to import
-  * @param importFromId The id of the existing Worker that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Worker that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Worker to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1488,7 +1524,7 @@ export class Worker extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/worker cloudflare_worker} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker cloudflare_worker} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1499,7 +1535,7 @@ export class Worker extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_worker',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_rooms
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/waiting_rooms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareWaitingRoomsConfig extends cdktn.TerraformMetaArg
   /**
   * The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_rooms#account_id DataCloudflareWaitingRooms#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/waiting_rooms#account_id DataCloudflareWaitingRooms#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/waiting_rooms#max_items DataCloudflareWaitingRooms#max_items}
   */
   readonly maxItems?: number;
   /**
   * The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/waiting_rooms#zone_id DataCloudflareWaitingRooms#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -37,7 +37,7 @@ export interface DataCloudflareWaitingRoomsResultAdditionalRoutes {
 export function dataCloudflareWaitingRoomsResultAdditionalRoutesToTerraform(struct?: DataCloudflareWaitingRoomsResultAdditionalRoutes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -47,7 +47,7 @@ export function dataCloudflareWaitingRoomsResultAdditionalRoutesToTerraform(stru
 export function dataCloudflareWaitingRoomsResultAdditionalRoutesToHclTerraform(struct?: DataCloudflareWaitingRoomsResultAdditionalRoutes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -117,7 +117,7 @@ export interface DataCloudflareWaitingRoomsResultCookieAttributes {
 export function dataCloudflareWaitingRoomsResultCookieAttributesToTerraform(struct?: DataCloudflareWaitingRoomsResultCookieAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -127,7 +127,7 @@ export function dataCloudflareWaitingRoomsResultCookieAttributesToTerraform(stru
 export function dataCloudflareWaitingRoomsResultCookieAttributesToHclTerraform(struct?: DataCloudflareWaitingRoomsResultCookieAttributes): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -176,7 +176,7 @@ export interface DataCloudflareWaitingRoomsResult {
 export function dataCloudflareWaitingRoomsResultToTerraform(struct?: DataCloudflareWaitingRoomsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -186,7 +186,7 @@ export function dataCloudflareWaitingRoomsResultToTerraform(struct?: DataCloudfl
 export function dataCloudflareWaitingRoomsResultToHclTerraform(struct?: DataCloudflareWaitingRoomsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -374,7 +374,7 @@ export class DataCloudflareWaitingRoomsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms}
 */
 export class DataCloudflareWaitingRooms extends cdktn.TerraformDataSource {
 
@@ -390,7 +390,7 @@ export class DataCloudflareWaitingRooms extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareWaitingRooms resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWaitingRooms to import
-  * @param importFromId The id of the existing DataCloudflareWaitingRooms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWaitingRooms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/waiting_rooms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWaitingRooms to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -402,7 +402,7 @@ export class DataCloudflareWaitingRooms extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/waiting_rooms cloudflare_waiting_rooms} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -413,7 +413,7 @@ export class DataCloudflareWaitingRooms extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_waiting_rooms',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,32 +15,32 @@ export interface DataCloudflareClientCertificatesConfig extends cdktn.TerraformM
   /**
   * Limit to the number of records returned.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates#limit DataCloudflareClientCertificates#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates#limit DataCloudflareClientCertificates#limit}
   */
   readonly limit?: number;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates#max_items DataCloudflareClientCertificates#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates#max_items DataCloudflareClientCertificates#max_items}
   */
   readonly maxItems?: number;
   /**
-  * Offset the results
+  * Offset the results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates#offset DataCloudflareClientCertificates#offset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates#offset DataCloudflareClientCertificates#offset}
   */
   readonly offset?: number;
   /**
   * Client Certitifcate Status to filter results by.
   * Available values: "all", "active", "pending_reactivation", "pending_revocation", "revoked".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates#status DataCloudflareClientCertificates#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates#status DataCloudflareClientCertificates#status}
   */
   readonly status?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates#zone_id DataCloudflareClientCertificates#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates#zone_id DataCloudflareClientCertificates#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -50,7 +50,7 @@ export interface DataCloudflareClientCertificatesResultCertificateAuthority {
 export function dataCloudflareClientCertificatesResultCertificateAuthorityToTerraform(struct?: DataCloudflareClientCertificatesResultCertificateAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -60,7 +60,7 @@ export function dataCloudflareClientCertificatesResultCertificateAuthorityToTerr
 export function dataCloudflareClientCertificatesResultCertificateAuthorityToHclTerraform(struct?: DataCloudflareClientCertificatesResultCertificateAuthority): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -109,7 +109,7 @@ export interface DataCloudflareClientCertificatesResult {
 export function dataCloudflareClientCertificatesResultToTerraform(struct?: DataCloudflareClientCertificatesResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -119,7 +119,7 @@ export function dataCloudflareClientCertificatesResultToTerraform(struct?: DataC
 export function dataCloudflareClientCertificatesResultToHclTerraform(struct?: DataCloudflareClientCertificatesResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -266,7 +266,7 @@ export class DataCloudflareClientCertificatesResultList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates cloudflare_client_certificates}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates cloudflare_client_certificates}
 */
 export class DataCloudflareClientCertificates extends cdktn.TerraformDataSource {
 
@@ -282,7 +282,7 @@ export class DataCloudflareClientCertificates extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataCloudflareClientCertificates resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareClientCertificates to import
-  * @param importFromId The id of the existing DataCloudflareClientCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareClientCertificates that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareClientCertificates to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -294,7 +294,7 @@ export class DataCloudflareClientCertificates extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/client_certificates cloudflare_client_certificates} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/client_certificates cloudflare_client_certificates} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -305,7 +305,7 @@ export class DataCloudflareClientCertificates extends cdktn.TerraformDataSource 
       terraformResourceType: 'cloudflare_client_certificates',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

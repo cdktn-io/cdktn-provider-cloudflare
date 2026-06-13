@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_config
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_tunnel_cloudflared_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareZeroTrustTunnelCloudflaredConfigAConfig extends c
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_config#account_id DataCloudflareZeroTrustTunnelCloudflaredConfigA#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_tunnel_cloudflared_config#account_id DataCloudflareZeroTrustTunnelCloudflaredConfigA#account_id}
   */
-  readonly accountId?: string;
+  readonly accountId: string;
   /**
   * UUID of the tunnel.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_config#tunnel_id DataCloudflareZeroTrustTunnelCloudflaredConfigA#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_tunnel_cloudflared_config#tunnel_id DataCloudflareZeroTrustTunnelCloudflaredConfigA#tunnel_id}
   */
   readonly tunnelId: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOrig
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessToTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOrigi
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccessToHclTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -95,7 +95,7 @@ export interface DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOrig
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -105,7 +105,7 @@ export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOrigi
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequestToHclTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressOriginRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -220,7 +220,7 @@ export interface DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngress {
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressToTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -230,7 +230,7 @@ export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressToTer
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngressToHclTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigIngress): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -311,7 +311,7 @@ export interface DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginReque
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -321,7 +321,7 @@ export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginReques
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccessToHclTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestAccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -375,7 +375,7 @@ export interface DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginReque
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestToTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -385,7 +385,7 @@ export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginReques
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequestToHclTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOriginRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -500,7 +500,7 @@ export interface DataCloudflareZeroTrustTunnelCloudflaredConfigConfig {
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigToTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -510,7 +510,7 @@ export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigToTerraform(
 export function dataCloudflareZeroTrustTunnelCloudflaredConfigConfigToHclTerraform(struct?: DataCloudflareZeroTrustTunnelCloudflaredConfigConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -557,7 +557,7 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigConfigOutputReference
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config}
 */
 export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktn.TerraformDataSource {
 
@@ -573,7 +573,7 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktn.Terra
   * Generates CDKTN code for importing a DataCloudflareZeroTrustTunnelCloudflaredConfigA resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustTunnelCloudflaredConfigA to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustTunnelCloudflaredConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustTunnelCloudflaredConfigA that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_tunnel_cloudflared_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustTunnelCloudflaredConfigA to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -585,7 +585,7 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktn.Terra
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_tunnel_cloudflared_config cloudflare_zero_trust_tunnel_cloudflared_config} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -596,7 +596,7 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktn.Terra
       terraformResourceType: 'cloudflare_zero_trust_tunnel_cloudflared_config',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -615,16 +615,13 @@ export class DataCloudflareZeroTrustTunnelCloudflaredConfigA extends cdktn.Terra
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: true, required: false
+  // account_id - computed: false, optional: false, required: true
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface AiGatewayDynamicRoutingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#account_id AiGatewayDynamicRouting#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#account_id AiGatewayDynamicRouting#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#elements AiGatewayDynamicRouting#elements}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#elements AiGatewayDynamicRouting#elements}
   */
   readonly elements: AiGatewayDynamicRoutingElements[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#gateway_id AiGatewayDynamicRouting#gateway_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#gateway_id AiGatewayDynamicRouting#gateway_id}
   */
   readonly gatewayId: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#name AiGatewayDynamicRouting#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#name AiGatewayDynamicRouting#name}
   */
   readonly name: string;
 }
@@ -35,7 +35,7 @@ export interface AiGatewayDynamicRoutingDeployment {
 export function aiGatewayDynamicRoutingDeploymentToTerraform(struct?: AiGatewayDynamicRoutingDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -45,7 +45,7 @@ export function aiGatewayDynamicRoutingDeploymentToTerraform(struct?: AiGatewayD
 export function aiGatewayDynamicRoutingDeploymentToHclTerraform(struct?: AiGatewayDynamicRoutingDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -95,7 +95,7 @@ export class AiGatewayDynamicRoutingDeploymentOutputReference extends cdktn.Comp
 }
 export interface AiGatewayDynamicRoutingElementsOutputsFallback {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
   */
   readonly elementId: string;
 }
@@ -103,7 +103,7 @@ export interface AiGatewayDynamicRoutingElementsOutputsFallback {
 export function aiGatewayDynamicRoutingElementsOutputsFallbackToTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsFallback | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     element_id: cdktn.stringToTerraform(struct!.elementId),
@@ -114,7 +114,7 @@ export function aiGatewayDynamicRoutingElementsOutputsFallbackToTerraform(struct
 export function aiGatewayDynamicRoutingElementsOutputsFallbackToHclTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsFallback | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     element_id: {
@@ -186,7 +186,7 @@ export class AiGatewayDynamicRoutingElementsOutputsFallbackOutputReference exten
 }
 export interface AiGatewayDynamicRoutingElementsOutputsFalse {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
   */
   readonly elementId: string;
 }
@@ -194,7 +194,7 @@ export interface AiGatewayDynamicRoutingElementsOutputsFalse {
 export function aiGatewayDynamicRoutingElementsOutputsFalseToTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsFalse | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     element_id: cdktn.stringToTerraform(struct!.elementId),
@@ -205,7 +205,7 @@ export function aiGatewayDynamicRoutingElementsOutputsFalseToTerraform(struct?: 
 export function aiGatewayDynamicRoutingElementsOutputsFalseToHclTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsFalse | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     element_id: {
@@ -277,7 +277,7 @@ export class AiGatewayDynamicRoutingElementsOutputsFalseOutputReference extends 
 }
 export interface AiGatewayDynamicRoutingElementsOutputsNext {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
   */
   readonly elementId: string;
 }
@@ -285,7 +285,7 @@ export interface AiGatewayDynamicRoutingElementsOutputsNext {
 export function aiGatewayDynamicRoutingElementsOutputsNextToTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsNext | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     element_id: cdktn.stringToTerraform(struct!.elementId),
@@ -296,7 +296,7 @@ export function aiGatewayDynamicRoutingElementsOutputsNextToTerraform(struct?: A
 export function aiGatewayDynamicRoutingElementsOutputsNextToHclTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsNext | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     element_id: {
@@ -368,7 +368,7 @@ export class AiGatewayDynamicRoutingElementsOutputsNextOutputReference extends c
 }
 export interface AiGatewayDynamicRoutingElementsOutputsSuccess {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
   */
   readonly elementId: string;
 }
@@ -376,7 +376,7 @@ export interface AiGatewayDynamicRoutingElementsOutputsSuccess {
 export function aiGatewayDynamicRoutingElementsOutputsSuccessToTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsSuccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     element_id: cdktn.stringToTerraform(struct!.elementId),
@@ -387,7 +387,7 @@ export function aiGatewayDynamicRoutingElementsOutputsSuccessToTerraform(struct?
 export function aiGatewayDynamicRoutingElementsOutputsSuccessToHclTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsSuccess | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     element_id: {
@@ -459,7 +459,7 @@ export class AiGatewayDynamicRoutingElementsOutputsSuccessOutputReference extend
 }
 export interface AiGatewayDynamicRoutingElementsOutputsTrue {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
   */
   readonly elementId: string;
 }
@@ -467,7 +467,7 @@ export interface AiGatewayDynamicRoutingElementsOutputsTrue {
 export function aiGatewayDynamicRoutingElementsOutputsTrueToTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsTrue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     element_id: cdktn.stringToTerraform(struct!.elementId),
@@ -478,7 +478,7 @@ export function aiGatewayDynamicRoutingElementsOutputsTrueToTerraform(struct?: A
 export function aiGatewayDynamicRoutingElementsOutputsTrueToHclTerraform(struct?: AiGatewayDynamicRoutingElementsOutputsTrue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     element_id: {
@@ -550,27 +550,27 @@ export class AiGatewayDynamicRoutingElementsOutputsTrueOutputReference extends c
 }
 export interface AiGatewayDynamicRoutingElementsOutputs {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#element_id AiGatewayDynamicRouting#element_id}
   */
   readonly elementId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#fallback AiGatewayDynamicRouting#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#fallback AiGatewayDynamicRouting#fallback}
   */
   readonly fallback?: AiGatewayDynamicRoutingElementsOutputsFallback;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#false AiGatewayDynamicRouting#false}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#false AiGatewayDynamicRouting#false}
   */
   readonly false?: AiGatewayDynamicRoutingElementsOutputsFalse;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#next AiGatewayDynamicRouting#next}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#next AiGatewayDynamicRouting#next}
   */
   readonly next?: AiGatewayDynamicRoutingElementsOutputsNext;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#success AiGatewayDynamicRouting#success}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#success AiGatewayDynamicRouting#success}
   */
   readonly success?: AiGatewayDynamicRoutingElementsOutputsSuccess;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#true AiGatewayDynamicRouting#true}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#true AiGatewayDynamicRouting#true}
   */
   readonly true?: AiGatewayDynamicRoutingElementsOutputsTrue;
 }
@@ -578,7 +578,7 @@ export interface AiGatewayDynamicRoutingElementsOutputs {
 export function aiGatewayDynamicRoutingElementsOutputsToTerraform(struct?: AiGatewayDynamicRoutingElementsOutputs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     element_id: cdktn.stringToTerraform(struct!.elementId),
@@ -594,7 +594,7 @@ export function aiGatewayDynamicRoutingElementsOutputsToTerraform(struct?: AiGat
 export function aiGatewayDynamicRoutingElementsOutputsToHclTerraform(struct?: AiGatewayDynamicRoutingElementsOutputs | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     element_id: {
@@ -809,41 +809,41 @@ export class AiGatewayDynamicRoutingElementsOutputsOutputReference extends cdktn
 }
 export interface AiGatewayDynamicRoutingElementsProperties {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#ai_gateway_dynamic_routing_provider AiGatewayDynamicRouting#ai_gateway_dynamic_routing_provider}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#ai_gateway_dynamic_routing_provider AiGatewayDynamicRouting#ai_gateway_dynamic_routing_provider}
   */
   readonly aiGatewayDynamicRoutingProvider?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#conditions AiGatewayDynamicRouting#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#conditions AiGatewayDynamicRouting#conditions}
   */
   readonly conditions?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#key AiGatewayDynamicRouting#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#key AiGatewayDynamicRouting#key}
   */
   readonly key?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#limit AiGatewayDynamicRouting#limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#limit AiGatewayDynamicRouting#limit}
   */
   readonly limit?: number;
   /**
   * Available values: "count", "cost".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#limit_type AiGatewayDynamicRouting#limit_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#limit_type AiGatewayDynamicRouting#limit_type}
   */
   readonly limitType?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#model AiGatewayDynamicRouting#model}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#model AiGatewayDynamicRouting#model}
   */
   readonly model?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#retries AiGatewayDynamicRouting#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#retries AiGatewayDynamicRouting#retries}
   */
   readonly retries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#timeout AiGatewayDynamicRouting#timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#timeout AiGatewayDynamicRouting#timeout}
   */
   readonly timeout?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#window AiGatewayDynamicRouting#window}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#window AiGatewayDynamicRouting#window}
   */
   readonly window?: number;
 }
@@ -851,7 +851,7 @@ export interface AiGatewayDynamicRoutingElementsProperties {
 export function aiGatewayDynamicRoutingElementsPropertiesToTerraform(struct?: AiGatewayDynamicRoutingElementsProperties | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ai_gateway_dynamic_routing_provider: cdktn.stringToTerraform(struct!.aiGatewayDynamicRoutingProvider),
@@ -870,7 +870,7 @@ export function aiGatewayDynamicRoutingElementsPropertiesToTerraform(struct?: Ai
 export function aiGatewayDynamicRoutingElementsPropertiesToHclTerraform(struct?: AiGatewayDynamicRoutingElementsProperties | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ai_gateway_dynamic_routing_provider: {
@@ -1169,24 +1169,24 @@ export class AiGatewayDynamicRoutingElementsPropertiesOutputReference extends cd
 }
 export interface AiGatewayDynamicRoutingElements {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#id AiGatewayDynamicRouting#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#id AiGatewayDynamicRouting#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#outputs AiGatewayDynamicRouting#outputs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#outputs AiGatewayDynamicRouting#outputs}
   */
   readonly outputs: AiGatewayDynamicRoutingElementsOutputs;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#properties AiGatewayDynamicRouting#properties}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#properties AiGatewayDynamicRouting#properties}
   */
   readonly properties?: AiGatewayDynamicRoutingElementsProperties;
   /**
   * Available values: "start", "conditional", "percentage", "rate", "model", "end".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#type AiGatewayDynamicRouting#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#type AiGatewayDynamicRouting#type}
   */
   readonly type: string;
 }
@@ -1194,7 +1194,7 @@ export interface AiGatewayDynamicRoutingElements {
 export function aiGatewayDynamicRoutingElementsToTerraform(struct?: AiGatewayDynamicRoutingElements | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -1208,7 +1208,7 @@ export function aiGatewayDynamicRoutingElementsToTerraform(struct?: AiGatewayDyn
 export function aiGatewayDynamicRoutingElementsToHclTerraform(struct?: AiGatewayDynamicRoutingElements | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -1384,7 +1384,7 @@ export interface AiGatewayDynamicRoutingRouteDeployment {
 export function aiGatewayDynamicRoutingRouteDeploymentToTerraform(struct?: AiGatewayDynamicRoutingRouteDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1394,7 +1394,7 @@ export function aiGatewayDynamicRoutingRouteDeploymentToTerraform(struct?: AiGat
 export function aiGatewayDynamicRoutingRouteDeploymentToHclTerraform(struct?: AiGatewayDynamicRoutingRouteDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1448,7 +1448,7 @@ export interface AiGatewayDynamicRoutingRouteElementsOutputsFallback {
 export function aiGatewayDynamicRoutingRouteElementsOutputsFallbackToTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsFallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1458,7 +1458,7 @@ export function aiGatewayDynamicRoutingRouteElementsOutputsFallbackToTerraform(s
 export function aiGatewayDynamicRoutingRouteElementsOutputsFallbackToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsFallback): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1502,7 +1502,7 @@ export interface AiGatewayDynamicRoutingRouteElementsOutputsFalse {
 export function aiGatewayDynamicRoutingRouteElementsOutputsFalseToTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsFalse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1512,7 +1512,7 @@ export function aiGatewayDynamicRoutingRouteElementsOutputsFalseToTerraform(stru
 export function aiGatewayDynamicRoutingRouteElementsOutputsFalseToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsFalse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1556,7 +1556,7 @@ export interface AiGatewayDynamicRoutingRouteElementsOutputsNext {
 export function aiGatewayDynamicRoutingRouteElementsOutputsNextToTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsNext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1566,7 +1566,7 @@ export function aiGatewayDynamicRoutingRouteElementsOutputsNextToTerraform(struc
 export function aiGatewayDynamicRoutingRouteElementsOutputsNextToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsNext): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1610,7 +1610,7 @@ export interface AiGatewayDynamicRoutingRouteElementsOutputsSuccess {
 export function aiGatewayDynamicRoutingRouteElementsOutputsSuccessToTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1620,7 +1620,7 @@ export function aiGatewayDynamicRoutingRouteElementsOutputsSuccessToTerraform(st
 export function aiGatewayDynamicRoutingRouteElementsOutputsSuccessToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsSuccess): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1664,7 +1664,7 @@ export interface AiGatewayDynamicRoutingRouteElementsOutputsTrue {
 export function aiGatewayDynamicRoutingRouteElementsOutputsTrueToTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsTrue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1674,7 +1674,7 @@ export function aiGatewayDynamicRoutingRouteElementsOutputsTrueToTerraform(struc
 export function aiGatewayDynamicRoutingRouteElementsOutputsTrueToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputsTrue): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1718,7 +1718,7 @@ export interface AiGatewayDynamicRoutingRouteElementsOutputs {
 export function aiGatewayDynamicRoutingRouteElementsOutputsToTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1728,7 +1728,7 @@ export function aiGatewayDynamicRoutingRouteElementsOutputsToTerraform(struct?: 
 export function aiGatewayDynamicRoutingRouteElementsOutputsToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElementsOutputs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1802,7 +1802,7 @@ export interface AiGatewayDynamicRoutingRouteElementsProperties {
 export function aiGatewayDynamicRoutingRouteElementsPropertiesToTerraform(struct?: AiGatewayDynamicRoutingRouteElementsProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1812,7 +1812,7 @@ export function aiGatewayDynamicRoutingRouteElementsPropertiesToTerraform(struct
 export function aiGatewayDynamicRoutingRouteElementsPropertiesToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElementsProperties): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1896,7 +1896,7 @@ export interface AiGatewayDynamicRoutingRouteElements {
 export function aiGatewayDynamicRoutingRouteElementsToTerraform(struct?: AiGatewayDynamicRoutingRouteElements): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1906,7 +1906,7 @@ export function aiGatewayDynamicRoutingRouteElementsToTerraform(struct?: AiGatew
 export function aiGatewayDynamicRoutingRouteElementsToHclTerraform(struct?: AiGatewayDynamicRoutingRouteElements): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1988,7 +1988,7 @@ export interface AiGatewayDynamicRoutingRouteVersion {
 export function aiGatewayDynamicRoutingRouteVersionToTerraform(struct?: AiGatewayDynamicRoutingRouteVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1998,7 +1998,7 @@ export function aiGatewayDynamicRoutingRouteVersionToTerraform(struct?: AiGatewa
 export function aiGatewayDynamicRoutingRouteVersionToHclTerraform(struct?: AiGatewayDynamicRoutingRouteVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2046,6 +2046,11 @@ export class AiGatewayDynamicRoutingRouteVersionOutputReference extends cdktn.Co
     return this.getStringAttribute('data');
   }
 
+  // is_valid - computed: true, optional: false, required: false
+  public get isValid() {
+    return this.getBooleanAttribute('is_valid');
+  }
+
   // version_id - computed: true, optional: false, required: false
   public get versionId() {
     return this.getStringAttribute('version_id');
@@ -2057,7 +2062,7 @@ export interface AiGatewayDynamicRoutingRoute {
 export function aiGatewayDynamicRoutingRouteToTerraform(struct?: AiGatewayDynamicRoutingRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2067,7 +2072,7 @@ export function aiGatewayDynamicRoutingRouteToTerraform(struct?: AiGatewayDynami
 export function aiGatewayDynamicRoutingRouteToHclTerraform(struct?: AiGatewayDynamicRoutingRoute): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2154,7 +2159,7 @@ export interface AiGatewayDynamicRoutingVersion {
 export function aiGatewayDynamicRoutingVersionToTerraform(struct?: AiGatewayDynamicRoutingVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2164,7 +2169,7 @@ export function aiGatewayDynamicRoutingVersionToTerraform(struct?: AiGatewayDyna
 export function aiGatewayDynamicRoutingVersionToHclTerraform(struct?: AiGatewayDynamicRoutingVersion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2212,6 +2217,11 @@ export class AiGatewayDynamicRoutingVersionOutputReference extends cdktn.Complex
     return this.getStringAttribute('data');
   }
 
+  // is_valid - computed: true, optional: false, required: false
+  public get isValid() {
+    return this.getBooleanAttribute('is_valid');
+  }
+
   // version_id - computed: true, optional: false, required: false
   public get versionId() {
     return this.getStringAttribute('version_id');
@@ -2219,7 +2229,7 @@ export class AiGatewayDynamicRoutingVersionOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing}
 */
 export class AiGatewayDynamicRouting extends cdktn.TerraformResource {
 
@@ -2235,7 +2245,7 @@ export class AiGatewayDynamicRouting extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a AiGatewayDynamicRouting resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AiGatewayDynamicRouting to import
-  * @param importFromId The id of the existing AiGatewayDynamicRouting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AiGatewayDynamicRouting that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AiGatewayDynamicRouting to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -2247,7 +2257,7 @@ export class AiGatewayDynamicRouting extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ai_gateway_dynamic_routing cloudflare_ai_gateway_dynamic_routing} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -2258,7 +2268,7 @@ export class AiGatewayDynamicRouting extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_ai_gateway_dynamic_routing',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

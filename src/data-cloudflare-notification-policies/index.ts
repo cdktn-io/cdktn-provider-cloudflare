@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policies
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policies
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareNotificationPoliciesConfig extends cdktn.Terrafor
   /**
   * The account id
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policies#account_id DataCloudflareNotificationPolicies#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policies#account_id DataCloudflareNotificationPolicies#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policies#max_items DataCloudflareNotificationPolicies#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policies#max_items DataCloudflareNotificationPolicies#max_items}
   */
   readonly maxItems?: number;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareNotificationPoliciesResultFilters {
 export function dataCloudflareNotificationPoliciesResultFiltersToTerraform(struct?: DataCloudflareNotificationPoliciesResultFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareNotificationPoliciesResultFiltersToTerraform(struc
 export function dataCloudflareNotificationPoliciesResultFiltersToHclTerraform(struct?: DataCloudflareNotificationPoliciesResultFilters): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -295,7 +295,7 @@ export interface DataCloudflareNotificationPoliciesResultMechanismsEmail {
 export function dataCloudflareNotificationPoliciesResultMechanismsEmailToTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanismsEmail): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -305,7 +305,7 @@ export function dataCloudflareNotificationPoliciesResultMechanismsEmailToTerrafo
 export function dataCloudflareNotificationPoliciesResultMechanismsEmailToHclTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanismsEmail): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -370,7 +370,7 @@ export interface DataCloudflareNotificationPoliciesResultMechanismsPagerduty {
 export function dataCloudflareNotificationPoliciesResultMechanismsPagerdutyToTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanismsPagerduty): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -380,7 +380,7 @@ export function dataCloudflareNotificationPoliciesResultMechanismsPagerdutyToTer
 export function dataCloudflareNotificationPoliciesResultMechanismsPagerdutyToHclTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanismsPagerduty): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -445,7 +445,7 @@ export interface DataCloudflareNotificationPoliciesResultMechanismsWebhooks {
 export function dataCloudflareNotificationPoliciesResultMechanismsWebhooksToTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanismsWebhooks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -455,7 +455,7 @@ export function dataCloudflareNotificationPoliciesResultMechanismsWebhooksToTerr
 export function dataCloudflareNotificationPoliciesResultMechanismsWebhooksToHclTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanismsWebhooks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -520,7 +520,7 @@ export interface DataCloudflareNotificationPoliciesResultMechanisms {
 export function dataCloudflareNotificationPoliciesResultMechanismsToTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanisms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -530,7 +530,7 @@ export function dataCloudflareNotificationPoliciesResultMechanismsToTerraform(st
 export function dataCloudflareNotificationPoliciesResultMechanismsToHclTerraform(struct?: DataCloudflareNotificationPoliciesResultMechanisms): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -587,7 +587,7 @@ export interface DataCloudflareNotificationPoliciesResult {
 export function dataCloudflareNotificationPoliciesResultToTerraform(struct?: DataCloudflareNotificationPoliciesResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -597,7 +597,7 @@ export function dataCloudflareNotificationPoliciesResultToTerraform(struct?: Dat
 export function dataCloudflareNotificationPoliciesResultToHclTerraform(struct?: DataCloudflareNotificationPoliciesResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -705,7 +705,7 @@ export class DataCloudflareNotificationPoliciesResultList extends cdktn.ComplexL
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policies cloudflare_notification_policies}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policies cloudflare_notification_policies}
 */
 export class DataCloudflareNotificationPolicies extends cdktn.TerraformDataSource {
 
@@ -721,7 +721,7 @@ export class DataCloudflareNotificationPolicies extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataCloudflareNotificationPolicies resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareNotificationPolicies to import
-  * @param importFromId The id of the existing DataCloudflareNotificationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policies#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareNotificationPolicies that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policies#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareNotificationPolicies to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -733,7 +733,7 @@ export class DataCloudflareNotificationPolicies extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/notification_policies cloudflare_notification_policies} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/notification_policies cloudflare_notification_policies} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -744,7 +744,7 @@ export class DataCloudflareNotificationPolicies extends cdktn.TerraformDataSourc
       terraformResourceType: 'cloudflare_notification_policies',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

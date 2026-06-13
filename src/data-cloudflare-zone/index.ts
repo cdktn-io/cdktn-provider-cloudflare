@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,13 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZoneConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#filter DataCloudflareZone#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#filter DataCloudflareZone#filter}
   */
   readonly filter?: DataCloudflareZoneFilter;
   /**
   * Identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#zone_id DataCloudflareZone#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#zone_id DataCloudflareZone#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -29,7 +29,7 @@ export interface DataCloudflareZoneAccount {
 export function dataCloudflareZoneAccountToTerraform(struct?: DataCloudflareZoneAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -39,7 +39,7 @@ export function dataCloudflareZoneAccountToTerraform(struct?: DataCloudflareZone
 export function dataCloudflareZoneAccountToHclTerraform(struct?: DataCloudflareZoneAccount): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -86,7 +86,7 @@ export interface DataCloudflareZoneFilterAccount {
   /**
   * Filter by an account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#id DataCloudflareZone#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#id DataCloudflareZone#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -103,7 +103,7 @@ export interface DataCloudflareZoneFilterAccount {
   *   * `ends_with_case_sensitive`
   *   * `contains_case_sensitive`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#name DataCloudflareZone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#name DataCloudflareZone#name}
   */
   readonly name?: string;
 }
@@ -111,7 +111,7 @@ export interface DataCloudflareZoneFilterAccount {
 export function dataCloudflareZoneFilterAccountToTerraform(struct?: DataCloudflareZoneFilterAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     id: cdktn.stringToTerraform(struct!.id),
@@ -123,7 +123,7 @@ export function dataCloudflareZoneFilterAccountToTerraform(struct?: DataCloudfla
 export function dataCloudflareZoneFilterAccountToHclTerraform(struct?: DataCloudflareZoneFilterAccount | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     id: {
@@ -226,21 +226,21 @@ export class DataCloudflareZoneFilterAccountOutputReference extends cdktn.Comple
 }
 export interface DataCloudflareZoneFilter {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#account DataCloudflareZone#account}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#account DataCloudflareZone#account}
   */
   readonly account?: DataCloudflareZoneFilterAccount;
   /**
   * Direction to order zones.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#direction DataCloudflareZone#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#direction DataCloudflareZone#direction}
   */
   readonly direction?: string;
   /**
   * Whether to match all search requirements or at least one (any).
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#match DataCloudflareZone#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#match DataCloudflareZone#match}
   */
   readonly match?: string;
   /**
@@ -254,29 +254,35 @@ export interface DataCloudflareZoneFilter {
   *   * `ends_with_case_sensitive`
   *   * `contains_case_sensitive`
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#name DataCloudflareZone#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#name DataCloudflareZone#name}
   */
   readonly name?: string;
   /**
   * Field to order zones by.
   * Available values: "name", "status", "account.id", "account.name", "plan.id".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#order DataCloudflareZone#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#order DataCloudflareZone#order}
   */
   readonly order?: string;
   /**
   * Specify a zone status to filter by.
   * Available values: "initializing", "pending", "active", "moved".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#status DataCloudflareZone#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#status DataCloudflareZone#status}
   */
   readonly status?: string;
+  /**
+  * Zone types to filter by. Multiple types can be specified as a comma-separated list (e.g., ?type=full,partial,secondary). When this parameter is not provided, zones with type "internal" are excluded from the results.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#type DataCloudflareZone#type}
+  */
+  readonly type?: string[];
 }
 
 export function dataCloudflareZoneFilterToTerraform(struct?: DataCloudflareZoneFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     account: dataCloudflareZoneFilterAccountToTerraform(struct!.account),
@@ -285,6 +291,7 @@ export function dataCloudflareZoneFilterToTerraform(struct?: DataCloudflareZoneF
     name: cdktn.stringToTerraform(struct!.name),
     order: cdktn.stringToTerraform(struct!.order),
     status: cdktn.stringToTerraform(struct!.status),
+    type: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.type),
   }
 }
 
@@ -292,7 +299,7 @@ export function dataCloudflareZoneFilterToTerraform(struct?: DataCloudflareZoneF
 export function dataCloudflareZoneFilterToHclTerraform(struct?: DataCloudflareZoneFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     account: {
@@ -330,6 +337,12 @@ export function dataCloudflareZoneFilterToHclTerraform(struct?: DataCloudflareZo
       isBlock: false,
       type: "simple",
       storageClassType: "string",
+    },
+    type: {
+      value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(struct!.type),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
     },
   };
 
@@ -379,6 +392,10 @@ export class DataCloudflareZoneFilterOutputReference extends cdktn.ComplexObject
       hasAnyValues = true;
       internalValueResult.status = this._status;
     }
+    if (this._type !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.type = this._type;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
@@ -392,6 +409,7 @@ export class DataCloudflareZoneFilterOutputReference extends cdktn.ComplexObject
       this._name = undefined;
       this._order = undefined;
       this._status = undefined;
+      this._type = undefined;
     }
     else if (cdktn.Tokenization.isResolvable(value)) {
       this.isEmptyObject = false;
@@ -406,6 +424,7 @@ export class DataCloudflareZoneFilterOutputReference extends cdktn.ComplexObject
       this._name = value.name;
       this._order = value.order;
       this._status = value.status;
+      this._type = value.type;
     }
   }
 
@@ -504,6 +523,22 @@ export class DataCloudflareZoneFilterOutputReference extends cdktn.ComplexObject
   public get statusInput() {
     return this._status;
   }
+
+  // type - computed: false, optional: true, required: false
+  private _type?: string[]; 
+  public get type() {
+    return this.getListAttribute('type');
+  }
+  public set type(value: string[]) {
+    this._type = value;
+  }
+  public resetType() {
+    this._type = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get typeInput() {
+    return this._type;
+  }
 }
 export interface DataCloudflareZoneMeta {
 }
@@ -511,7 +546,7 @@ export interface DataCloudflareZoneMeta {
 export function dataCloudflareZoneMetaToTerraform(struct?: DataCloudflareZoneMeta): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -521,7 +556,7 @@ export function dataCloudflareZoneMetaToTerraform(struct?: DataCloudflareZoneMet
 export function dataCloudflareZoneMetaToHclTerraform(struct?: DataCloudflareZoneMeta): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -595,7 +630,7 @@ export interface DataCloudflareZoneOwner {
 export function dataCloudflareZoneOwnerToTerraform(struct?: DataCloudflareZoneOwner): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -605,7 +640,7 @@ export function dataCloudflareZoneOwnerToTerraform(struct?: DataCloudflareZoneOw
 export function dataCloudflareZoneOwnerToHclTerraform(struct?: DataCloudflareZoneOwner): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -659,7 +694,7 @@ export interface DataCloudflareZonePlan {
 export function dataCloudflareZonePlanToTerraform(struct?: DataCloudflareZonePlan): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -669,7 +704,7 @@ export function dataCloudflareZonePlanToTerraform(struct?: DataCloudflareZonePla
 export function dataCloudflareZonePlanToHclTerraform(struct?: DataCloudflareZonePlan): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -758,7 +793,7 @@ export interface DataCloudflareZoneTenant {
 export function dataCloudflareZoneTenantToTerraform(struct?: DataCloudflareZoneTenant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -768,7 +803,7 @@ export function dataCloudflareZoneTenantToTerraform(struct?: DataCloudflareZoneT
 export function dataCloudflareZoneTenantToHclTerraform(struct?: DataCloudflareZoneTenant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -817,7 +852,7 @@ export interface DataCloudflareZoneTenantUnit {
 export function dataCloudflareZoneTenantUnitToTerraform(struct?: DataCloudflareZoneTenantUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -827,7 +862,7 @@ export function dataCloudflareZoneTenantUnitToTerraform(struct?: DataCloudflareZ
 export function dataCloudflareZoneTenantUnitToHclTerraform(struct?: DataCloudflareZoneTenantUnit): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -867,7 +902,7 @@ export class DataCloudflareZoneTenantUnitOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone cloudflare_zone}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone cloudflare_zone}
 */
 export class DataCloudflareZone extends cdktn.TerraformDataSource {
 
@@ -883,7 +918,7 @@ export class DataCloudflareZone extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareZone resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZone to import
-  * @param importFromId The id of the existing DataCloudflareZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZone that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZone to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -895,7 +930,7 @@ export class DataCloudflareZone extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zone cloudflare_zone} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zone cloudflare_zone} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -906,7 +941,7 @@ export class DataCloudflareZone extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_zone',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

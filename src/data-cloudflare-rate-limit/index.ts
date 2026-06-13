@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limit
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/rate_limit
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareRateLimitConfig extends cdktn.TerraformMetaArgume
   /**
   * Defines the unique identifier of the rate limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/rate_limit#rate_limit_id DataCloudflareRateLimit#rate_limit_id}
   */
   readonly rateLimitId: string;
   /**
   * Defines an identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/rate_limit#zone_id DataCloudflareRateLimit#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareRateLimitActionResponse {
 export function dataCloudflareRateLimitActionResponseToTerraform(struct?: DataCloudflareRateLimitActionResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareRateLimitActionResponseToTerraform(struct?: DataCl
 export function dataCloudflareRateLimitActionResponseToHclTerraform(struct?: DataCloudflareRateLimitActionResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -90,7 +90,7 @@ export interface DataCloudflareRateLimitAction {
 export function dataCloudflareRateLimitActionToTerraform(struct?: DataCloudflareRateLimitAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -100,7 +100,7 @@ export function dataCloudflareRateLimitActionToTerraform(struct?: DataCloudflare
 export function dataCloudflareRateLimitActionToHclTerraform(struct?: DataCloudflareRateLimitAction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -155,7 +155,7 @@ export interface DataCloudflareRateLimitBypass {
 export function dataCloudflareRateLimitBypassToTerraform(struct?: DataCloudflareRateLimitBypass): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -165,7 +165,7 @@ export function dataCloudflareRateLimitBypassToTerraform(struct?: DataCloudflare
 export function dataCloudflareRateLimitBypassToHclTerraform(struct?: DataCloudflareRateLimitBypass): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -235,7 +235,7 @@ export interface DataCloudflareRateLimitMatchHeaders {
 export function dataCloudflareRateLimitMatchHeadersToTerraform(struct?: DataCloudflareRateLimitMatchHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -245,7 +245,7 @@ export function dataCloudflareRateLimitMatchHeadersToTerraform(struct?: DataClou
 export function dataCloudflareRateLimitMatchHeadersToHclTerraform(struct?: DataCloudflareRateLimitMatchHeaders): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -320,7 +320,7 @@ export interface DataCloudflareRateLimitMatchRequest {
 export function dataCloudflareRateLimitMatchRequestToTerraform(struct?: DataCloudflareRateLimitMatchRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -330,7 +330,7 @@ export function dataCloudflareRateLimitMatchRequestToTerraform(struct?: DataClou
 export function dataCloudflareRateLimitMatchRequestToHclTerraform(struct?: DataCloudflareRateLimitMatchRequest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -384,7 +384,7 @@ export interface DataCloudflareRateLimitMatchResponse {
 export function dataCloudflareRateLimitMatchResponseToTerraform(struct?: DataCloudflareRateLimitMatchResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -394,7 +394,7 @@ export function dataCloudflareRateLimitMatchResponseToTerraform(struct?: DataClo
 export function dataCloudflareRateLimitMatchResponseToHclTerraform(struct?: DataCloudflareRateLimitMatchResponse): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -438,7 +438,7 @@ export interface DataCloudflareRateLimitMatch {
 export function dataCloudflareRateLimitMatchToTerraform(struct?: DataCloudflareRateLimitMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -448,7 +448,7 @@ export function dataCloudflareRateLimitMatchToTerraform(struct?: DataCloudflareR
 export function dataCloudflareRateLimitMatchToHclTerraform(struct?: DataCloudflareRateLimitMatch): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -501,7 +501,7 @@ export class DataCloudflareRateLimitMatchOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limit cloudflare_rate_limit}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/rate_limit cloudflare_rate_limit}
 */
 export class DataCloudflareRateLimit extends cdktn.TerraformDataSource {
 
@@ -517,7 +517,7 @@ export class DataCloudflareRateLimit extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareRateLimit resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareRateLimit to import
-  * @param importFromId The id of the existing DataCloudflareRateLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limit#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareRateLimit that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/rate_limit#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareRateLimit to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -529,7 +529,7 @@ export class DataCloudflareRateLimit extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/rate_limit cloudflare_rate_limit} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -540,7 +540,7 @@ export class DataCloudflareRateLimit extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_rate_limit',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

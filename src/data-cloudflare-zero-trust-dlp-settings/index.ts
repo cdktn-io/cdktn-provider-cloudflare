@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_settings
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_settings
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustDlpSettingsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_settings#account_id DataCloudflareZeroTrustDlpSettings#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_settings#account_id DataCloudflareZeroTrustDlpSettings#account_id}
   */
   readonly accountId: string;
 }
@@ -23,7 +23,7 @@ export interface DataCloudflareZeroTrustDlpSettingsPayloadLogging {
 export function dataCloudflareZeroTrustDlpSettingsPayloadLoggingToTerraform(struct?: DataCloudflareZeroTrustDlpSettingsPayloadLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -33,7 +33,7 @@ export function dataCloudflareZeroTrustDlpSettingsPayloadLoggingToTerraform(stru
 export function dataCloudflareZeroTrustDlpSettingsPayloadLoggingToHclTerraform(struct?: DataCloudflareZeroTrustDlpSettingsPayloadLogging): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -83,7 +83,7 @@ export class DataCloudflareZeroTrustDlpSettingsPayloadLoggingOutputReference ext
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_settings cloudflare_zero_trust_dlp_settings}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_settings cloudflare_zero_trust_dlp_settings}
 */
 export class DataCloudflareZeroTrustDlpSettings extends cdktn.TerraformDataSource {
 
@@ -99,7 +99,7 @@ export class DataCloudflareZeroTrustDlpSettings extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataCloudflareZeroTrustDlpSettings resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDlpSettings to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDlpSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_settings#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDlpSettings that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_settings#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDlpSettings to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -111,7 +111,7 @@ export class DataCloudflareZeroTrustDlpSettings extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dlp_settings cloudflare_zero_trust_dlp_settings} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_settings cloudflare_zero_trust_dlp_settings} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -122,7 +122,7 @@ export class DataCloudflareZeroTrustDlpSettings extends cdktn.TerraformDataSourc
       terraformResourceType: 'cloudflare_zero_trust_dlp_settings',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

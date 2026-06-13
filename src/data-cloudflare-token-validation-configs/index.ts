@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/token_validation_configs
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/token_validation_configs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareTokenValidationConfigsConfig extends cdktn.Terraf
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/token_validation_configs#max_items DataCloudflareTokenValidationConfigs#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/token_validation_configs#max_items DataCloudflareTokenValidationConfigs#max_items}
   */
   readonly maxItems?: number;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/token_validation_configs#zone_id DataCloudflareTokenValidationConfigs#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/token_validation_configs#zone_id DataCloudflareTokenValidationConfigs#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareTokenValidationConfigsResultCredentialsKeys {
 export function dataCloudflareTokenValidationConfigsResultCredentialsKeysToTerraform(struct?: DataCloudflareTokenValidationConfigsResultCredentialsKeys): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareTokenValidationConfigsResultCredentialsKeysToTerra
 export function dataCloudflareTokenValidationConfigsResultCredentialsKeysToHclTerraform(struct?: DataCloudflareTokenValidationConfigsResultCredentialsKeys): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -141,7 +141,7 @@ export interface DataCloudflareTokenValidationConfigsResultCredentials {
 export function dataCloudflareTokenValidationConfigsResultCredentialsToTerraform(struct?: DataCloudflareTokenValidationConfigsResultCredentials): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -151,7 +151,7 @@ export function dataCloudflareTokenValidationConfigsResultCredentialsToTerraform
 export function dataCloudflareTokenValidationConfigsResultCredentialsToHclTerraform(struct?: DataCloudflareTokenValidationConfigsResultCredentials): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -196,7 +196,7 @@ export interface DataCloudflareTokenValidationConfigsResult {
 export function dataCloudflareTokenValidationConfigsResultToTerraform(struct?: DataCloudflareTokenValidationConfigsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -206,7 +206,7 @@ export function dataCloudflareTokenValidationConfigsResultToTerraform(struct?: D
 export function dataCloudflareTokenValidationConfigsResultToHclTerraform(struct?: DataCloudflareTokenValidationConfigsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -303,7 +303,7 @@ export class DataCloudflareTokenValidationConfigsResultList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/token_validation_configs cloudflare_token_validation_configs}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/token_validation_configs cloudflare_token_validation_configs}
 */
 export class DataCloudflareTokenValidationConfigs extends cdktn.TerraformDataSource {
 
@@ -319,7 +319,7 @@ export class DataCloudflareTokenValidationConfigs extends cdktn.TerraformDataSou
   * Generates CDKTN code for importing a DataCloudflareTokenValidationConfigs resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareTokenValidationConfigs to import
-  * @param importFromId The id of the existing DataCloudflareTokenValidationConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/token_validation_configs#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareTokenValidationConfigs that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/token_validation_configs#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareTokenValidationConfigs to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -331,7 +331,7 @@ export class DataCloudflareTokenValidationConfigs extends cdktn.TerraformDataSou
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/token_validation_configs cloudflare_token_validation_configs} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/token_validation_configs cloudflare_token_validation_configs} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -342,7 +342,7 @@ export class DataCloudflareTokenValidationConfigs extends cdktn.TerraformDataSou
       terraformResourceType: 'cloudflare_token_validation_configs',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

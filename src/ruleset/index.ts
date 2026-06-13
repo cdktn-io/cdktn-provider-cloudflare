@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,45 +15,45 @@ export interface RulesetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The unique ID of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#account_id Ruleset#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#account_id Ruleset#account_id}
   */
   readonly accountId?: string;
   /**
   * An informative description of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#description Ruleset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#description Ruleset#description}
   */
   readonly description?: string;
   /**
   * The kind of the ruleset.
   * Available values: "managed", "custom", "root", "zone".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#kind Ruleset#kind}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#kind Ruleset#kind}
   */
   readonly kind: string;
   /**
   * The human-readable name of the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name: string;
   /**
   * The phase of the ruleset.
   * Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#phase Ruleset#phase}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#phase Ruleset#phase}
   */
   readonly phase: string;
   /**
   * The list of rules in the ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#rules Ruleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#rules Ruleset#rules}
   */
   readonly rules?: RulesetRules[] | cdktn.IResolvable;
   /**
   * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#zone_id Ruleset#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#zone_id Ruleset#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -62,7 +62,7 @@ export interface RulesetRulesActionParametersAlgorithms {
   * Name of the compression algorithm to enable.
   * Available values: "none", "auto", "default", "gzip", "brotli", "zstd".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name?: string;
 }
@@ -70,7 +70,7 @@ export interface RulesetRulesActionParametersAlgorithms {
 export function rulesetRulesActionParametersAlgorithmsToTerraform(struct?: RulesetRulesActionParametersAlgorithms | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -81,7 +81,7 @@ export function rulesetRulesActionParametersAlgorithmsToTerraform(struct?: Rules
 export function rulesetRulesActionParametersAlgorithmsToHclTerraform(struct?: RulesetRulesActionParametersAlgorithms | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -180,19 +180,19 @@ export interface RulesetRulesActionParametersAutominify {
   /**
   * Whether to minify CSS files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#css Ruleset#css}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#css Ruleset#css}
   */
   readonly css?: boolean | cdktn.IResolvable;
   /**
   * Whether to minify HTML files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#html Ruleset#html}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#html Ruleset#html}
   */
   readonly html?: boolean | cdktn.IResolvable;
   /**
   * Whether to minify JavaScript files.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#js Ruleset#js}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#js Ruleset#js}
   */
   readonly js?: boolean | cdktn.IResolvable;
 }
@@ -200,7 +200,7 @@ export interface RulesetRulesActionParametersAutominify {
 export function rulesetRulesActionParametersAutominifyToTerraform(struct?: RulesetRulesActionParametersAutominify | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     css: cdktn.booleanToTerraform(struct!.css),
@@ -213,7 +213,7 @@ export function rulesetRulesActionParametersAutominifyToTerraform(struct?: Rules
 export function rulesetRulesActionParametersAutominifyToHclTerraform(struct?: RulesetRulesActionParametersAutominify | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     css: {
@@ -346,14 +346,14 @@ export interface RulesetRulesActionParametersBrowserTtl {
   /**
   * The browser TTL (in seconds) if you choose the "override_origin" mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#default Ruleset#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#default Ruleset#default}
   */
   readonly default?: number;
   /**
   * The browser TTL mode.
   * Available values: "respect_origin", "bypass_by_default", "override_origin", "bypass".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#mode Ruleset#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#mode Ruleset#mode}
   */
   readonly mode: string;
 }
@@ -361,7 +361,7 @@ export interface RulesetRulesActionParametersBrowserTtl {
 export function rulesetRulesActionParametersBrowserTtlToTerraform(struct?: RulesetRulesActionParametersBrowserTtl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.numberToTerraform(struct!.default),
@@ -373,7 +373,7 @@ export function rulesetRulesActionParametersBrowserTtlToTerraform(struct?: Rules
 export function rulesetRulesActionParametersBrowserTtlToHclTerraform(struct?: RulesetRulesActionParametersBrowserTtl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -475,13 +475,13 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyCookie {
   /**
   * A list of cookies to check for the presence of. The presence of these cookies is included in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#check_presence Ruleset#check_presence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
   */
   readonly checkPresence?: string[];
   /**
   * A list of cookies to include in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#include Ruleset#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#include Ruleset#include}
   */
   readonly include?: string[];
 }
@@ -489,7 +489,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyCookie {
 export function rulesetRulesActionParametersCacheKeyCustomKeyCookieToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyCookie | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     check_presence: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.checkPresence),
@@ -501,7 +501,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyCookieToTerraform(s
 export function rulesetRulesActionParametersCacheKeyCustomKeyCookieToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyCookie | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     check_presence: {
@@ -606,25 +606,25 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyHeader {
   /**
   * A list of headers to check for the presence of. The presence of these headers is included in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#check_presence Ruleset#check_presence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#check_presence Ruleset#check_presence}
   */
   readonly checkPresence?: string[];
   /**
   * A mapping of header names to a list of values. If a header is present in the request and contains any of the values provided, its value is included in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#contains Ruleset#contains}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#contains Ruleset#contains}
   */
   readonly contains?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * Whether to exclude the origin header in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#exclude_origin Ruleset#exclude_origin}
   */
   readonly excludeOrigin?: boolean | cdktn.IResolvable;
   /**
   * A list of headers to include in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#include Ruleset#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#include Ruleset#include}
   */
   readonly include?: string[];
 }
@@ -632,7 +632,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyHeader {
 export function rulesetRulesActionParametersCacheKeyCustomKeyHeaderToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     check_presence: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.checkPresence),
@@ -646,7 +646,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyHeaderToTerraform(s
 export function rulesetRulesActionParametersCacheKeyCustomKeyHeaderToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyHeader | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     check_presence: {
@@ -807,7 +807,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyHost {
   /**
   * Whether to use the resolved host in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#resolved Ruleset#resolved}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#resolved Ruleset#resolved}
   */
   readonly resolved?: boolean | cdktn.IResolvable;
 }
@@ -815,7 +815,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyHost {
 export function rulesetRulesActionParametersCacheKeyCustomKeyHostToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyHost | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resolved: cdktn.booleanToTerraform(struct!.resolved),
@@ -826,7 +826,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyHostToTerraform(str
 export function rulesetRulesActionParametersCacheKeyCustomKeyHostToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyHost | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resolved: {
@@ -903,13 +903,13 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude
   /**
   * Whether to exclude all query string parameters from the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#all Ruleset#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#all Ruleset#all}
   */
   readonly all?: boolean | cdktn.IResolvable;
   /**
   * A list of query string parameters to exclude from the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#list Ruleset#list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#list Ruleset#list}
   */
   readonly list?: string[];
 }
@@ -917,7 +917,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude
 export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all: cdktn.booleanToTerraform(struct!.all),
@@ -929,7 +929,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeT
 export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all: {
@@ -1034,13 +1034,13 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude
   /**
   * Whether to include all query string parameters in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#all Ruleset#all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#all Ruleset#all}
   */
   readonly all?: boolean | cdktn.IResolvable;
   /**
   * A list of query string parameters to include in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#list Ruleset#list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#list Ruleset#list}
   */
   readonly list?: string[];
 }
@@ -1048,7 +1048,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude
 export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     all: cdktn.booleanToTerraform(struct!.all),
@@ -1060,7 +1060,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeT
 export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringIncludeToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     all: {
@@ -1165,13 +1165,13 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyQueryString {
   /**
   * Which query string parameters to exclude from the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#exclude Ruleset#exclude}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#exclude Ruleset#exclude}
   */
   readonly exclude?: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringExclude;
   /**
   * Which query string parameters to include in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#include Ruleset#include}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#include Ruleset#include}
   */
   readonly include?: RulesetRulesActionParametersCacheKeyCustomKeyQueryStringInclude;
 }
@@ -1179,7 +1179,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyQueryString {
 export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     exclude: rulesetRulesActionParametersCacheKeyCustomKeyQueryStringExcludeToTerraform(struct!.exclude),
@@ -1191,7 +1191,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringToTerraf
 export function rulesetRulesActionParametersCacheKeyCustomKeyQueryStringToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyQueryString | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     exclude: {
@@ -1296,19 +1296,19 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyUser {
   /**
   * Whether to use the user agent's device type in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#device_type Ruleset#device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#device_type Ruleset#device_type}
   */
   readonly deviceType?: boolean | cdktn.IResolvable;
   /**
   * Whether to use the user agents's country in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#geo Ruleset#geo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#geo Ruleset#geo}
   */
   readonly geo?: boolean | cdktn.IResolvable;
   /**
   * Whether to use the user agent's language in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#lang Ruleset#lang}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#lang Ruleset#lang}
   */
   readonly lang?: boolean | cdktn.IResolvable;
 }
@@ -1316,7 +1316,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKeyUser {
 export function rulesetRulesActionParametersCacheKeyCustomKeyUserToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     device_type: cdktn.booleanToTerraform(struct!.deviceType),
@@ -1329,7 +1329,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyUserToTerraform(str
 export function rulesetRulesActionParametersCacheKeyCustomKeyUserToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKeyUser | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     device_type: {
@@ -1462,31 +1462,31 @@ export interface RulesetRulesActionParametersCacheKeyCustomKey {
   /**
   * Which cookies to include in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cookie Ruleset#cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cookie Ruleset#cookie}
   */
   readonly cookie?: RulesetRulesActionParametersCacheKeyCustomKeyCookie;
   /**
   * Which headers to include in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#header Ruleset#header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#header Ruleset#header}
   */
   readonly header?: RulesetRulesActionParametersCacheKeyCustomKeyHeader;
   /**
   * How to use the host in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#host Ruleset#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#host Ruleset#host}
   */
   readonly host?: RulesetRulesActionParametersCacheKeyCustomKeyHost;
   /**
   * Which query string parameters to include in or exclude from the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#query_string Ruleset#query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#query_string Ruleset#query_string}
   */
   readonly queryString?: RulesetRulesActionParametersCacheKeyCustomKeyQueryString;
   /**
   * How to use characteristics of the request user agent in the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#user Ruleset#user}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#user Ruleset#user}
   */
   readonly user?: RulesetRulesActionParametersCacheKeyCustomKeyUser;
 }
@@ -1494,7 +1494,7 @@ export interface RulesetRulesActionParametersCacheKeyCustomKey {
 export function rulesetRulesActionParametersCacheKeyCustomKeyToTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKey | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cookie: rulesetRulesActionParametersCacheKeyCustomKeyCookieToTerraform(struct!.cookie),
@@ -1509,7 +1509,7 @@ export function rulesetRulesActionParametersCacheKeyCustomKeyToTerraform(struct?
 export function rulesetRulesActionParametersCacheKeyCustomKeyToHclTerraform(struct?: RulesetRulesActionParametersCacheKeyCustomKey | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cookie: {
@@ -1698,25 +1698,25 @@ export interface RulesetRulesActionParametersCacheKey {
   /**
   * Whether to separate cached content based on the visitor's device type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cache_by_device_type Ruleset#cache_by_device_type}
   */
   readonly cacheByDeviceType?: boolean | cdktn.IResolvable;
   /**
   * Whether to protect from web cache deception attacks, while allowing static assets to be cached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cache_deception_armor Ruleset#cache_deception_armor}
   */
   readonly cacheDeceptionArmor?: boolean | cdktn.IResolvable;
   /**
   * Which components of the request are included or excluded from the cache key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#custom_key Ruleset#custom_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#custom_key Ruleset#custom_key}
   */
   readonly customKey?: RulesetRulesActionParametersCacheKeyCustomKey;
   /**
   * Whether to treat requests with the same query parameters the same, regardless of the order those query parameters are in.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#ignore_query_strings_order Ruleset#ignore_query_strings_order}
   */
   readonly ignoreQueryStringsOrder?: boolean | cdktn.IResolvable;
 }
@@ -1724,7 +1724,7 @@ export interface RulesetRulesActionParametersCacheKey {
 export function rulesetRulesActionParametersCacheKeyToTerraform(struct?: RulesetRulesActionParametersCacheKey | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cache_by_device_type: cdktn.booleanToTerraform(struct!.cacheByDeviceType),
@@ -1738,7 +1738,7 @@ export function rulesetRulesActionParametersCacheKeyToTerraform(struct?: Ruleset
 export function rulesetRulesActionParametersCacheKeyToHclTerraform(struct?: RulesetRulesActionParametersCacheKey | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cache_by_device_type: {
@@ -1899,13 +1899,13 @@ export interface RulesetRulesActionParametersCacheReserve {
   /**
   * Whether Cache Reserve is enabled. If this is true and a request meets eligibility criteria, Cloudflare will write the resource to Cache Reserve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#eligible Ruleset#eligible}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#eligible Ruleset#eligible}
   */
   readonly eligible: boolean | cdktn.IResolvable;
   /**
   * The minimum file size eligible for storage in Cache Reserve.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#minimum_file_size Ruleset#minimum_file_size}
   */
   readonly minimumFileSize?: number;
 }
@@ -1913,7 +1913,7 @@ export interface RulesetRulesActionParametersCacheReserve {
 export function rulesetRulesActionParametersCacheReserveToTerraform(struct?: RulesetRulesActionParametersCacheReserve | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     eligible: cdktn.booleanToTerraform(struct!.eligible),
@@ -1925,7 +1925,7 @@ export function rulesetRulesActionParametersCacheReserveToTerraform(struct?: Rul
 export function rulesetRulesActionParametersCacheReserveToHclTerraform(struct?: RulesetRulesActionParametersCacheReserve | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     eligible: {
@@ -2027,7 +2027,7 @@ export interface RulesetRulesActionParametersCookieFields {
   /**
   * The name of the cookie.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name: string;
 }
@@ -2035,7 +2035,7 @@ export interface RulesetRulesActionParametersCookieFields {
 export function rulesetRulesActionParametersCookieFieldsToTerraform(struct?: RulesetRulesActionParametersCookieFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -2046,7 +2046,7 @@ export function rulesetRulesActionParametersCookieFieldsToTerraform(struct?: Rul
 export function rulesetRulesActionParametersCookieFieldsToHclTerraform(struct?: RulesetRulesActionParametersCookieFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -2142,13 +2142,13 @@ export interface RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange
   /**
   * The lower bound of the range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#from Ruleset#from}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#from Ruleset#from}
   */
   readonly from?: number;
   /**
   * The upper bound of the range.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#to Ruleset#to}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#to Ruleset#to}
   */
   readonly to?: number;
 }
@@ -2156,7 +2156,7 @@ export interface RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange
 export function rulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeToTerraform(struct?: RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     from: cdktn.numberToTerraform(struct!.from),
@@ -2168,7 +2168,7 @@ export function rulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeT
 export function rulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRangeToHclTerraform(struct?: RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     from: {
@@ -2273,19 +2273,19 @@ export interface RulesetRulesActionParametersEdgeTtlStatusCodeTtl {
   /**
   * A single status code to apply the TTL to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#status_code Ruleset#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#status_code Ruleset#status_code}
   */
   readonly statusCode?: number;
   /**
   * A range of status codes to apply the TTL to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#status_code_range Ruleset#status_code_range}
   */
   readonly statusCodeRange?: RulesetRulesActionParametersEdgeTtlStatusCodeTtlStatusCodeRange;
   /**
   * The time to cache the response for (in seconds). A value of 0 is equivalent to setting the cache control header with the value "no-cache". A value of -1 is equivalent to setting the cache control header with the value of "no-store".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value: number;
 }
@@ -2293,7 +2293,7 @@ export interface RulesetRulesActionParametersEdgeTtlStatusCodeTtl {
 export function rulesetRulesActionParametersEdgeTtlStatusCodeTtlToTerraform(struct?: RulesetRulesActionParametersEdgeTtlStatusCodeTtl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     status_code: cdktn.numberToTerraform(struct!.statusCode),
@@ -2306,7 +2306,7 @@ export function rulesetRulesActionParametersEdgeTtlStatusCodeTtlToTerraform(stru
 export function rulesetRulesActionParametersEdgeTtlStatusCodeTtlToHclTerraform(struct?: RulesetRulesActionParametersEdgeTtlStatusCodeTtl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     status_code: {
@@ -2458,20 +2458,20 @@ export interface RulesetRulesActionParametersEdgeTtl {
   /**
   * The edge TTL (in seconds) if you choose the "override_origin" mode.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#default Ruleset#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#default Ruleset#default}
   */
   readonly default?: number;
   /**
   * The edge TTL mode.
   * Available values: "respect_origin", "bypass_by_default", "override_origin".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#mode Ruleset#mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#mode Ruleset#mode}
   */
   readonly mode: string;
   /**
   * A list of TTLs to apply to specific status codes or status code ranges.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#status_code_ttl Ruleset#status_code_ttl}
   */
   readonly statusCodeTtl?: RulesetRulesActionParametersEdgeTtlStatusCodeTtl[] | cdktn.IResolvable;
 }
@@ -2479,7 +2479,7 @@ export interface RulesetRulesActionParametersEdgeTtl {
 export function rulesetRulesActionParametersEdgeTtlToTerraform(struct?: RulesetRulesActionParametersEdgeTtl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     default: cdktn.numberToTerraform(struct!.default),
@@ -2492,7 +2492,7 @@ export function rulesetRulesActionParametersEdgeTtlToTerraform(struct?: RulesetR
 export function rulesetRulesActionParametersEdgeTtlToHclTerraform(struct?: RulesetRulesActionParametersEdgeTtl | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     default: {
@@ -2622,13 +2622,13 @@ export interface RulesetRulesActionParametersFromListStruct {
   /**
   * An expression that evaluates to the list lookup key.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#key Ruleset#key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#key Ruleset#key}
   */
   readonly key: string;
   /**
   * The name of the list to match against.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name: string;
 }
@@ -2636,7 +2636,7 @@ export interface RulesetRulesActionParametersFromListStruct {
 export function rulesetRulesActionParametersFromListStructToTerraform(struct?: RulesetRulesActionParametersFromListStruct | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     key: cdktn.stringToTerraform(struct!.key),
@@ -2648,7 +2648,7 @@ export function rulesetRulesActionParametersFromListStructToTerraform(struct?: R
 export function rulesetRulesActionParametersFromListStructToHclTerraform(struct?: RulesetRulesActionParametersFromListStruct | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     key: {
@@ -2747,13 +2747,13 @@ export interface RulesetRulesActionParametersFromValueTargetUrl {
   /**
   * An expression that evaluates to a URL to redirect the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#expression Ruleset#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#expression Ruleset#expression}
   */
   readonly expression?: string;
   /**
   * A URL to redirect the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: string;
 }
@@ -2761,7 +2761,7 @@ export interface RulesetRulesActionParametersFromValueTargetUrl {
 export function rulesetRulesActionParametersFromValueTargetUrlToTerraform(struct?: RulesetRulesActionParametersFromValueTargetUrl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -2773,7 +2773,7 @@ export function rulesetRulesActionParametersFromValueTargetUrlToTerraform(struct
 export function rulesetRulesActionParametersFromValueTargetUrlToHclTerraform(struct?: RulesetRulesActionParametersFromValueTargetUrl): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -2868,19 +2868,19 @@ export interface RulesetRulesActionParametersFromValue {
   /**
   * Whether to keep the query string of the original request.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#preserve_query_string Ruleset#preserve_query_string}
   */
   readonly preserveQueryString?: boolean | cdktn.IResolvable;
   /**
   * The status code to use for the redirect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#status_code Ruleset#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#status_code Ruleset#status_code}
   */
   readonly statusCode?: number;
   /**
   * A URL to redirect the request to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#target_url Ruleset#target_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#target_url Ruleset#target_url}
   */
   readonly targetUrl: RulesetRulesActionParametersFromValueTargetUrl;
 }
@@ -2888,7 +2888,7 @@ export interface RulesetRulesActionParametersFromValue {
 export function rulesetRulesActionParametersFromValueToTerraform(struct?: RulesetRulesActionParametersFromValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     preserve_query_string: cdktn.booleanToTerraform(struct!.preserveQueryString),
@@ -2901,7 +2901,7 @@ export function rulesetRulesActionParametersFromValueToTerraform(struct?: Rulese
 export function rulesetRulesActionParametersFromValueToHclTerraform(struct?: RulesetRulesActionParametersFromValue | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     preserve_query_string: {
@@ -3031,20 +3031,20 @@ export interface RulesetRulesActionParametersHeaders {
   /**
   * An expression that evaluates to a value for the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#expression Ruleset#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#expression Ruleset#expression}
   */
   readonly expression?: string;
   /**
   * The operation to perform on the header.
   * Available values: "add", "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
   /**
   * A static value for the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: string;
 }
@@ -3052,7 +3052,7 @@ export interface RulesetRulesActionParametersHeaders {
 export function rulesetRulesActionParametersHeadersToTerraform(struct?: RulesetRulesActionParametersHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -3065,7 +3065,7 @@ export function rulesetRulesActionParametersHeadersToTerraform(struct?: RulesetR
 export function rulesetRulesActionParametersHeadersToHclTerraform(struct?: RulesetRulesActionParametersHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -3215,14 +3215,14 @@ export interface RulesetRulesActionParametersImmutable {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
 }
@@ -3230,7 +3230,7 @@ export interface RulesetRulesActionParametersImmutable {
 export function rulesetRulesActionParametersImmutableToTerraform(struct?: RulesetRulesActionParametersImmutable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -3242,7 +3242,7 @@ export function rulesetRulesActionParametersImmutableToTerraform(struct?: Rulese
 export function rulesetRulesActionParametersImmutableToHclTerraform(struct?: RulesetRulesActionParametersImmutable | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -3344,7 +3344,7 @@ export interface RulesetRulesActionParametersMatchedData {
   /**
   * The public key to encrypt matched data logs with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#public_key Ruleset#public_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#public_key Ruleset#public_key}
   */
   readonly publicKey: string;
 }
@@ -3352,7 +3352,7 @@ export interface RulesetRulesActionParametersMatchedData {
 export function rulesetRulesActionParametersMatchedDataToTerraform(struct?: RulesetRulesActionParametersMatchedData | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     public_key: cdktn.stringToTerraform(struct!.publicKey),
@@ -3363,7 +3363,7 @@ export function rulesetRulesActionParametersMatchedDataToTerraform(struct?: Rule
 export function rulesetRulesActionParametersMatchedDataToHclTerraform(struct?: RulesetRulesActionParametersMatchedData | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     public_key: {
@@ -3437,20 +3437,20 @@ export interface RulesetRulesActionParametersMaxAge {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
   /**
   * The value for the directive in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: number;
 }
@@ -3458,7 +3458,7 @@ export interface RulesetRulesActionParametersMaxAge {
 export function rulesetRulesActionParametersMaxAgeToTerraform(struct?: RulesetRulesActionParametersMaxAge | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -3471,7 +3471,7 @@ export function rulesetRulesActionParametersMaxAgeToTerraform(struct?: RulesetRu
 export function rulesetRulesActionParametersMaxAgeToHclTerraform(struct?: RulesetRulesActionParametersMaxAge | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -3601,14 +3601,14 @@ export interface RulesetRulesActionParametersMustRevalidate {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
 }
@@ -3616,7 +3616,7 @@ export interface RulesetRulesActionParametersMustRevalidate {
 export function rulesetRulesActionParametersMustRevalidateToTerraform(struct?: RulesetRulesActionParametersMustRevalidate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -3628,7 +3628,7 @@ export function rulesetRulesActionParametersMustRevalidateToTerraform(struct?: R
 export function rulesetRulesActionParametersMustRevalidateToHclTerraform(struct?: RulesetRulesActionParametersMustRevalidate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -3730,14 +3730,14 @@ export interface RulesetRulesActionParametersMustUnderstand {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
 }
@@ -3745,7 +3745,7 @@ export interface RulesetRulesActionParametersMustUnderstand {
 export function rulesetRulesActionParametersMustUnderstandToTerraform(struct?: RulesetRulesActionParametersMustUnderstand | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -3757,7 +3757,7 @@ export function rulesetRulesActionParametersMustUnderstandToTerraform(struct?: R
 export function rulesetRulesActionParametersMustUnderstandToHclTerraform(struct?: RulesetRulesActionParametersMustUnderstand | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -3859,20 +3859,20 @@ export interface RulesetRulesActionParametersNoCache {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
   /**
   * The qualifiers for the directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
   */
   readonly qualifiers?: string[];
 }
@@ -3880,7 +3880,7 @@ export interface RulesetRulesActionParametersNoCache {
 export function rulesetRulesActionParametersNoCacheToTerraform(struct?: RulesetRulesActionParametersNoCache | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -3893,7 +3893,7 @@ export function rulesetRulesActionParametersNoCacheToTerraform(struct?: RulesetR
 export function rulesetRulesActionParametersNoCacheToHclTerraform(struct?: RulesetRulesActionParametersNoCache | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -4023,14 +4023,14 @@ export interface RulesetRulesActionParametersNoStore {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
 }
@@ -4038,7 +4038,7 @@ export interface RulesetRulesActionParametersNoStore {
 export function rulesetRulesActionParametersNoStoreToTerraform(struct?: RulesetRulesActionParametersNoStore | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -4050,7 +4050,7 @@ export function rulesetRulesActionParametersNoStoreToTerraform(struct?: RulesetR
 export function rulesetRulesActionParametersNoStoreToHclTerraform(struct?: RulesetRulesActionParametersNoStore | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -4152,14 +4152,14 @@ export interface RulesetRulesActionParametersNoTransform {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
 }
@@ -4167,7 +4167,7 @@ export interface RulesetRulesActionParametersNoTransform {
 export function rulesetRulesActionParametersNoTransformToTerraform(struct?: RulesetRulesActionParametersNoTransform | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -4179,7 +4179,7 @@ export function rulesetRulesActionParametersNoTransformToTerraform(struct?: Rule
 export function rulesetRulesActionParametersNoTransformToHclTerraform(struct?: RulesetRulesActionParametersNoTransform | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -4281,13 +4281,13 @@ export interface RulesetRulesActionParametersOrigin {
   /**
   * A resolved host to route to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#host Ruleset#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#host Ruleset#host}
   */
   readonly host?: string;
   /**
   * A destination port to route to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#port Ruleset#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#port Ruleset#port}
   */
   readonly port?: number;
 }
@@ -4295,7 +4295,7 @@ export interface RulesetRulesActionParametersOrigin {
 export function rulesetRulesActionParametersOriginToTerraform(struct?: RulesetRulesActionParametersOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     host: cdktn.stringToTerraform(struct!.host),
@@ -4307,7 +4307,7 @@ export function rulesetRulesActionParametersOriginToTerraform(struct?: RulesetRu
 export function rulesetRulesActionParametersOriginToHclTerraform(struct?: RulesetRulesActionParametersOrigin | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     host: {
@@ -4412,26 +4412,26 @@ export interface RulesetRulesActionParametersOverridesCategories {
   /**
   * The action to override rules in the category with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#action Ruleset#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#action Ruleset#action}
   */
   readonly action?: string;
   /**
   * The name of the category to override.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#category Ruleset#category}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#category Ruleset#category}
   */
   readonly category: string;
   /**
   * Whether to enable execution of rules in the category.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#enabled Ruleset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#enabled Ruleset#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The sensitivity level to use for rules in the category. This option is only applicable for DDoS phases.
   * Available values: "default", "medium", "low", "eoff".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
   */
   readonly sensitivityLevel?: string;
 }
@@ -4439,7 +4439,7 @@ export interface RulesetRulesActionParametersOverridesCategories {
 export function rulesetRulesActionParametersOverridesCategoriesToTerraform(struct?: RulesetRulesActionParametersOverridesCategories | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -4453,7 +4453,7 @@ export function rulesetRulesActionParametersOverridesCategoriesToTerraform(struc
 export function rulesetRulesActionParametersOverridesCategoriesToHclTerraform(struct?: RulesetRulesActionParametersOverridesCategories | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -4633,19 +4633,19 @@ export interface RulesetRulesActionParametersOverridesRules {
   /**
   * The action to override the rule with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#action Ruleset#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#action Ruleset#action}
   */
   readonly action?: string;
   /**
   * Whether to enable execution of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#enabled Ruleset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#enabled Ruleset#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * The ID of the rule to override.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#id Ruleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#id Ruleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -4654,14 +4654,14 @@ export interface RulesetRulesActionParametersOverridesRules {
   /**
   * The score threshold to use for the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#score_threshold Ruleset#score_threshold}
   */
   readonly scoreThreshold?: number;
   /**
   * The sensitivity level to use for the rule. This option is only applicable for DDoS phases.
   * Available values: "default", "medium", "low", "eoff".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
   */
   readonly sensitivityLevel?: string;
 }
@@ -4669,7 +4669,7 @@ export interface RulesetRulesActionParametersOverridesRules {
 export function rulesetRulesActionParametersOverridesRulesToTerraform(struct?: RulesetRulesActionParametersOverridesRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -4684,7 +4684,7 @@ export function rulesetRulesActionParametersOverridesRulesToTerraform(struct?: R
 export function rulesetRulesActionParametersOverridesRulesToHclTerraform(struct?: RulesetRulesActionParametersOverridesRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -4892,32 +4892,32 @@ export interface RulesetRulesActionParametersOverrides {
   /**
   * An action to override all rules with. This option has lower precedence than rule and category overrides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#action Ruleset#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#action Ruleset#action}
   */
   readonly action?: string;
   /**
   * A list of category-level overrides. This option has the second-highest precedence after rule-level overrides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#categories Ruleset#categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#categories Ruleset#categories}
   */
   readonly categories?: RulesetRulesActionParametersOverridesCategories[] | cdktn.IResolvable;
   /**
   * Whether to enable execution of all rules. This option has lower precedence than rule and category overrides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#enabled Ruleset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#enabled Ruleset#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * A list of rule-level overrides. This option has the highest precedence.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#rules Ruleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#rules Ruleset#rules}
   */
   readonly rules?: RulesetRulesActionParametersOverridesRules[] | cdktn.IResolvable;
   /**
   * A sensitivity level to set for all rules. This option has lower precedence than rule and category overrides and is only applicable for DDoS phases.
   * Available values: "default", "medium", "low", "eoff".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#sensitivity_level Ruleset#sensitivity_level}
   */
   readonly sensitivityLevel?: string;
 }
@@ -4925,7 +4925,7 @@ export interface RulesetRulesActionParametersOverrides {
 export function rulesetRulesActionParametersOverridesToTerraform(struct?: RulesetRulesActionParametersOverrides | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -4940,7 +4940,7 @@ export function rulesetRulesActionParametersOverridesToTerraform(struct?: Rulese
 export function rulesetRulesActionParametersOverridesToHclTerraform(struct?: RulesetRulesActionParametersOverrides | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -5129,20 +5129,20 @@ export interface RulesetRulesActionParametersPrivate {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
   /**
   * The qualifiers for the directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#qualifiers Ruleset#qualifiers}
   */
   readonly qualifiers?: string[];
 }
@@ -5150,7 +5150,7 @@ export interface RulesetRulesActionParametersPrivate {
 export function rulesetRulesActionParametersPrivateToTerraform(struct?: RulesetRulesActionParametersPrivate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -5163,7 +5163,7 @@ export function rulesetRulesActionParametersPrivateToTerraform(struct?: RulesetR
 export function rulesetRulesActionParametersPrivateToHclTerraform(struct?: RulesetRulesActionParametersPrivate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -5293,14 +5293,14 @@ export interface RulesetRulesActionParametersProxyRevalidate {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
 }
@@ -5308,7 +5308,7 @@ export interface RulesetRulesActionParametersProxyRevalidate {
 export function rulesetRulesActionParametersProxyRevalidateToTerraform(struct?: RulesetRulesActionParametersProxyRevalidate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -5320,7 +5320,7 @@ export function rulesetRulesActionParametersProxyRevalidateToTerraform(struct?: 
 export function rulesetRulesActionParametersProxyRevalidateToHclTerraform(struct?: RulesetRulesActionParametersProxyRevalidate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -5422,14 +5422,14 @@ export interface RulesetRulesActionParametersPublic {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
 }
@@ -5437,7 +5437,7 @@ export interface RulesetRulesActionParametersPublic {
 export function rulesetRulesActionParametersPublicToTerraform(struct?: RulesetRulesActionParametersPublic | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -5449,7 +5449,7 @@ export function rulesetRulesActionParametersPublicToTerraform(struct?: RulesetRu
 export function rulesetRulesActionParametersPublicToHclTerraform(struct?: RulesetRulesActionParametersPublic | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -5551,13 +5551,13 @@ export interface RulesetRulesActionParametersRawResponseFields {
   /**
   * The name of the response header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name: string;
   /**
   * Whether to log duplicate values of the same header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
   */
   readonly preserveDuplicates?: boolean | cdktn.IResolvable;
 }
@@ -5565,7 +5565,7 @@ export interface RulesetRulesActionParametersRawResponseFields {
 export function rulesetRulesActionParametersRawResponseFieldsToTerraform(struct?: RulesetRulesActionParametersRawResponseFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5577,7 +5577,7 @@ export function rulesetRulesActionParametersRawResponseFieldsToTerraform(struct?
 export function rulesetRulesActionParametersRawResponseFieldsToHclTerraform(struct?: RulesetRulesActionParametersRawResponseFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5701,7 +5701,7 @@ export interface RulesetRulesActionParametersRequestFields {
   /**
   * The name of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name: string;
 }
@@ -5709,7 +5709,7 @@ export interface RulesetRulesActionParametersRequestFields {
 export function rulesetRulesActionParametersRequestFieldsToTerraform(struct?: RulesetRulesActionParametersRequestFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5720,7 +5720,7 @@ export function rulesetRulesActionParametersRequestFieldsToTerraform(struct?: Ru
 export function rulesetRulesActionParametersRequestFieldsToHclTerraform(struct?: RulesetRulesActionParametersRequestFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -5816,19 +5816,19 @@ export interface RulesetRulesActionParametersResponse {
   /**
   * The content to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#content Ruleset#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#content Ruleset#content}
   */
   readonly content: string;
   /**
   * The type of the content to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#content_type Ruleset#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#content_type Ruleset#content_type}
   */
   readonly contentType: string;
   /**
   * The status code to return.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#status_code Ruleset#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#status_code Ruleset#status_code}
   */
   readonly statusCode: number;
 }
@@ -5836,7 +5836,7 @@ export interface RulesetRulesActionParametersResponse {
 export function rulesetRulesActionParametersResponseToTerraform(struct?: RulesetRulesActionParametersResponse | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -5849,7 +5849,7 @@ export function rulesetRulesActionParametersResponseToTerraform(struct?: Ruleset
 export function rulesetRulesActionParametersResponseToHclTerraform(struct?: RulesetRulesActionParametersResponse | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -5973,13 +5973,13 @@ export interface RulesetRulesActionParametersResponseFields {
   /**
   * The name of the response header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name: string;
   /**
   * Whether to log duplicate values of the same header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#preserve_duplicates Ruleset#preserve_duplicates}
   */
   readonly preserveDuplicates?: boolean | cdktn.IResolvable;
 }
@@ -5987,7 +5987,7 @@ export interface RulesetRulesActionParametersResponseFields {
 export function rulesetRulesActionParametersResponseFieldsToTerraform(struct?: RulesetRulesActionParametersResponseFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -5999,7 +5999,7 @@ export function rulesetRulesActionParametersResponseFieldsToTerraform(struct?: R
 export function rulesetRulesActionParametersResponseFieldsToHclTerraform(struct?: RulesetRulesActionParametersResponseFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -6123,20 +6123,20 @@ export interface RulesetRulesActionParametersSMaxage {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
   /**
   * The value for the directive in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: number;
 }
@@ -6144,7 +6144,7 @@ export interface RulesetRulesActionParametersSMaxage {
 export function rulesetRulesActionParametersSMaxageToTerraform(struct?: RulesetRulesActionParametersSMaxage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -6157,7 +6157,7 @@ export function rulesetRulesActionParametersSMaxageToTerraform(struct?: RulesetR
 export function rulesetRulesActionParametersSMaxageToHclTerraform(struct?: RulesetRulesActionParametersSMaxage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -6287,7 +6287,7 @@ export interface RulesetRulesActionParametersServeStale {
   /**
   * Whether Cloudflare should disable serving stale content while getting the latest content from the origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#disable_stale_while_updating Ruleset#disable_stale_while_updating}
   */
   readonly disableStaleWhileUpdating?: boolean | cdktn.IResolvable;
 }
@@ -6295,7 +6295,7 @@ export interface RulesetRulesActionParametersServeStale {
 export function rulesetRulesActionParametersServeStaleToTerraform(struct?: RulesetRulesActionParametersServeStale | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     disable_stale_while_updating: cdktn.booleanToTerraform(struct!.disableStaleWhileUpdating),
@@ -6306,7 +6306,7 @@ export function rulesetRulesActionParametersServeStaleToTerraform(struct?: Rules
 export function rulesetRulesActionParametersServeStaleToHclTerraform(struct?: RulesetRulesActionParametersServeStale | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     disable_stale_while_updating: {
@@ -6383,7 +6383,7 @@ export interface RulesetRulesActionParametersSni {
   /**
   * A value to override the SNI to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value: string;
 }
@@ -6391,7 +6391,7 @@ export interface RulesetRulesActionParametersSni {
 export function rulesetRulesActionParametersSniToTerraform(struct?: RulesetRulesActionParametersSni | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     value: cdktn.stringToTerraform(struct!.value),
@@ -6402,7 +6402,7 @@ export function rulesetRulesActionParametersSniToTerraform(struct?: RulesetRules
 export function rulesetRulesActionParametersSniToHclTerraform(struct?: RulesetRulesActionParametersSni | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     value: {
@@ -6476,20 +6476,20 @@ export interface RulesetRulesActionParametersStaleIfError {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
   /**
   * The value for the directive in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: number;
 }
@@ -6497,7 +6497,7 @@ export interface RulesetRulesActionParametersStaleIfError {
 export function rulesetRulesActionParametersStaleIfErrorToTerraform(struct?: RulesetRulesActionParametersStaleIfError | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -6510,7 +6510,7 @@ export function rulesetRulesActionParametersStaleIfErrorToTerraform(struct?: Rul
 export function rulesetRulesActionParametersStaleIfErrorToHclTerraform(struct?: RulesetRulesActionParametersStaleIfError | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -6640,20 +6640,20 @@ export interface RulesetRulesActionParametersStaleWhileRevalidate {
   /**
   * Whether to apply the directive only to Cloudflare's cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cloudflare_only Ruleset#cloudflare_only}
   */
   readonly cloudflareOnly?: boolean | cdktn.IResolvable;
   /**
   * The operation to perform.
   * Available values: "set", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation: string;
   /**
   * The value for the directive in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: number;
 }
@@ -6661,7 +6661,7 @@ export interface RulesetRulesActionParametersStaleWhileRevalidate {
 export function rulesetRulesActionParametersStaleWhileRevalidateToTerraform(struct?: RulesetRulesActionParametersStaleWhileRevalidate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cloudflare_only: cdktn.booleanToTerraform(struct!.cloudflareOnly),
@@ -6674,7 +6674,7 @@ export function rulesetRulesActionParametersStaleWhileRevalidateToTerraform(stru
 export function rulesetRulesActionParametersStaleWhileRevalidateToHclTerraform(struct?: RulesetRulesActionParametersStaleWhileRevalidate | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cloudflare_only: {
@@ -6804,7 +6804,7 @@ export interface RulesetRulesActionParametersTransformedRequestFields {
   /**
   * The name of the header.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#name Ruleset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#name Ruleset#name}
   */
   readonly name: string;
 }
@@ -6812,7 +6812,7 @@ export interface RulesetRulesActionParametersTransformedRequestFields {
 export function rulesetRulesActionParametersTransformedRequestFieldsToTerraform(struct?: RulesetRulesActionParametersTransformedRequestFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -6823,7 +6823,7 @@ export function rulesetRulesActionParametersTransformedRequestFieldsToTerraform(
 export function rulesetRulesActionParametersTransformedRequestFieldsToHclTerraform(struct?: RulesetRulesActionParametersTransformedRequestFields | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -6919,13 +6919,13 @@ export interface RulesetRulesActionParametersUriPath {
   /**
   * An expression that evaluates to a value to rewrite the URI path to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#expression Ruleset#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#expression Ruleset#expression}
   */
   readonly expression?: string;
   /**
   * A value to rewrite the URI path to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: string;
 }
@@ -6933,7 +6933,7 @@ export interface RulesetRulesActionParametersUriPath {
 export function rulesetRulesActionParametersUriPathToTerraform(struct?: RulesetRulesActionParametersUriPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -6945,7 +6945,7 @@ export function rulesetRulesActionParametersUriPathToTerraform(struct?: RulesetR
 export function rulesetRulesActionParametersUriPathToHclTerraform(struct?: RulesetRulesActionParametersUriPath | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -7050,13 +7050,13 @@ export interface RulesetRulesActionParametersUriQuery {
   /**
   * An expression that evaluates to a value to rewrite the URI query to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#expression Ruleset#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#expression Ruleset#expression}
   */
   readonly expression?: string;
   /**
   * A value to rewrite the URI query to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#value Ruleset#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#value Ruleset#value}
   */
   readonly value?: string;
 }
@@ -7064,7 +7064,7 @@ export interface RulesetRulesActionParametersUriQuery {
 export function rulesetRulesActionParametersUriQueryToTerraform(struct?: RulesetRulesActionParametersUriQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     expression: cdktn.stringToTerraform(struct!.expression),
@@ -7076,7 +7076,7 @@ export function rulesetRulesActionParametersUriQueryToTerraform(struct?: Ruleset
 export function rulesetRulesActionParametersUriQueryToHclTerraform(struct?: RulesetRulesActionParametersUriQuery | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     expression: {
@@ -7181,13 +7181,13 @@ export interface RulesetRulesActionParametersUri {
   /**
   * A URI path rewrite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#path Ruleset#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#path Ruleset#path}
   */
   readonly path?: RulesetRulesActionParametersUriPath;
   /**
   * A URI query rewrite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#query Ruleset#query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#query Ruleset#query}
   */
   readonly query?: RulesetRulesActionParametersUriQuery;
 }
@@ -7195,7 +7195,7 @@ export interface RulesetRulesActionParametersUri {
 export function rulesetRulesActionParametersUriToTerraform(struct?: RulesetRulesActionParametersUri | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     path: rulesetRulesActionParametersUriPathToTerraform(struct!.path),
@@ -7207,7 +7207,7 @@ export function rulesetRulesActionParametersUriToTerraform(struct?: RulesetRules
 export function rulesetRulesActionParametersUriToHclTerraform(struct?: RulesetRulesActionParametersUri | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     path: {
@@ -7312,164 +7312,164 @@ export interface RulesetRulesActionParameters {
   /**
   * A list of additional ports that caching should be enabled on.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#additional_cacheable_ports Ruleset#additional_cacheable_ports}
   */
   readonly additionalCacheablePorts?: number[];
   /**
   * Custom order for compression algorithms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#algorithms Ruleset#algorithms}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#algorithms Ruleset#algorithms}
   */
   readonly algorithms?: RulesetRulesActionParametersAlgorithms[] | cdktn.IResolvable;
   /**
   * The name of a custom asset to serve as the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#asset_name Ruleset#asset_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#asset_name Ruleset#asset_name}
   */
   readonly assetName?: string;
   /**
   * Whether to enable Automatic HTTPS Rewrites.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#automatic_https_rewrites Ruleset#automatic_https_rewrites}
   */
   readonly automaticHttpsRewrites?: boolean | cdktn.IResolvable;
   /**
   * Which file extensions to minify automatically.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#autominify Ruleset#autominify}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#autominify Ruleset#autominify}
   */
   readonly autominify?: RulesetRulesActionParametersAutominify;
   /**
   * Whether to enable Browser Integrity Check (BIC).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#bic Ruleset#bic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#bic Ruleset#bic}
   */
   readonly bic?: boolean | cdktn.IResolvable;
   /**
   * How long client browsers should cache the response. Cloudflare cache purge will not purge content cached on client browsers, so high browser TTLs may lead to stale content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#browser_ttl Ruleset#browser_ttl}
   */
   readonly browserTtl?: RulesetRulesActionParametersBrowserTtl;
   /**
   * Whether the request's response from the origin is eligible for caching. Caching itself will still depend on the cache control header and your other caching configurations.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cache Ruleset#cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cache Ruleset#cache}
   */
   readonly cache?: boolean | cdktn.IResolvable;
   /**
   * Which components of the request are included in or excluded from the cache key Cloudflare uses to store the response in cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cache_key Ruleset#cache_key}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cache_key Ruleset#cache_key}
   */
   readonly cacheKey?: RulesetRulesActionParametersCacheKey;
   /**
   * Settings to determine whether the request's response from origin is eligible for Cache Reserve (requires a Cache Reserve add-on plan).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cache_reserve Ruleset#cache_reserve}
   */
   readonly cacheReserve?: RulesetRulesActionParametersCacheReserve;
   /**
   * The response content.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#content Ruleset#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#content Ruleset#content}
   */
   readonly content?: string;
   /**
   * Whether to enable content conversion (e.g., HTML to Markdown).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#content_converter Ruleset#content_converter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#content_converter Ruleset#content_converter}
   */
   readonly contentConverter?: boolean | cdktn.IResolvable;
   /**
   * The content type header to set with the error response.
   * Available values: "application/json", "text/html", "text/plain", "text/xml".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#content_type Ruleset#content_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#content_type Ruleset#content_type}
   */
   readonly contentType?: string;
   /**
   * The cookie fields to log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#cookie_fields Ruleset#cookie_fields}
   */
   readonly cookieFields?: RulesetRulesActionParametersCookieFields[] | cdktn.IResolvable;
   /**
   * Whether to disable Cloudflare Apps.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#disable_apps Ruleset#disable_apps}
   */
   readonly disableApps?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable Real User Monitoring (RUM).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#disable_rum Ruleset#disable_rum}
   */
   readonly disableRum?: boolean | cdktn.IResolvable;
   /**
   * Whether to disable Zaraz.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#disable_zaraz Ruleset#disable_zaraz}
   */
   readonly disableZaraz?: boolean | cdktn.IResolvable;
   /**
   * How long the Cloudflare edge network should cache the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#edge_ttl Ruleset#edge_ttl}
   */
   readonly edgeTtl?: RulesetRulesActionParametersEdgeTtl;
   /**
   * Whether to enable Email Obfuscation.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#email_obfuscation Ruleset#email_obfuscation}
   */
   readonly emailObfuscation?: boolean | cdktn.IResolvable;
   /**
   * An expression to generate cache tags for set_cache_tags action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#expression Ruleset#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#expression Ruleset#expression}
   */
   readonly expression?: string;
   /**
   * Whether to enable Cloudflare Fonts.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#fonts Ruleset#fonts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#fonts Ruleset#fonts}
   */
   readonly fonts?: boolean | cdktn.IResolvable;
   /**
   * A redirect based on a bulk list lookup.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#from_list Ruleset#from_list}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#from_list Ruleset#from_list}
   */
   readonly fromList?: RulesetRulesActionParametersFromListStruct;
   /**
   * A redirect based on the request properties.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#from_value Ruleset#from_value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#from_value Ruleset#from_value}
   */
   readonly fromValue?: RulesetRulesActionParametersFromValue;
   /**
   * A map of headers to rewrite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#headers Ruleset#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#headers Ruleset#headers}
   */
   readonly headers?: { [key: string]: RulesetRulesActionParametersHeaders } | cdktn.IResolvable;
   /**
   * A value to rewrite the HTTP host header to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#host_header Ruleset#host_header}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#host_header Ruleset#host_header}
   */
   readonly hostHeader?: string;
   /**
   * Whether to enable Hotlink Protection.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#hotlink_protection Ruleset#hotlink_protection}
   */
   readonly hotlinkProtection?: boolean | cdktn.IResolvable;
   /**
   * The ID of the ruleset to execute.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#id Ruleset#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#id Ruleset#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -7478,316 +7478,316 @@ export interface RulesetRulesActionParameters {
   /**
   * Set the immutable cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#immutable Ruleset#immutable}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#immutable Ruleset#immutable}
   */
   readonly immutable?: RulesetRulesActionParametersImmutable;
   /**
   * A delta to change the score by, which can be either positive or negative.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#increment Ruleset#increment}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#increment Ruleset#increment}
   */
   readonly increment?: number;
   /**
   * The configuration to use for matched data logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#matched_data Ruleset#matched_data}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#matched_data Ruleset#matched_data}
   */
   readonly matchedData?: RulesetRulesActionParametersMatchedData;
   /**
   * Set the max-age cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#max_age Ruleset#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#max_age Ruleset#max_age}
   */
   readonly maxAge?: RulesetRulesActionParametersMaxAge;
   /**
   * Whether to enable Mirage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#mirage Ruleset#mirage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#mirage Ruleset#mirage}
   */
   readonly mirage?: boolean | cdktn.IResolvable;
   /**
   * Set the must-revalidate cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#must_revalidate Ruleset#must_revalidate}
   */
   readonly mustRevalidate?: RulesetRulesActionParametersMustRevalidate;
   /**
   * Set the must-understand cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#must_understand Ruleset#must_understand}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#must_understand Ruleset#must_understand}
   */
   readonly mustUnderstand?: RulesetRulesActionParametersMustUnderstand;
   /**
   * Set the no-cache cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#no_cache Ruleset#no_cache}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#no_cache Ruleset#no_cache}
   */
   readonly noCache?: RulesetRulesActionParametersNoCache;
   /**
   * Set the no-store cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#no_store Ruleset#no_store}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#no_store Ruleset#no_store}
   */
   readonly noStore?: RulesetRulesActionParametersNoStore;
   /**
   * Set the no-transform cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#no_transform Ruleset#no_transform}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#no_transform Ruleset#no_transform}
   */
   readonly noTransform?: RulesetRulesActionParametersNoTransform;
   /**
   * The operation to perform for set_cache_tags action.
   * Available values: "set", "add", "remove".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#operation Ruleset#operation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#operation Ruleset#operation}
   */
   readonly operation?: string;
   /**
   * Whether to enable Opportunistic Encryption.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#opportunistic_encryption Ruleset#opportunistic_encryption}
   */
   readonly opportunisticEncryption?: boolean | cdktn.IResolvable;
   /**
   * An origin to route to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#origin Ruleset#origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#origin Ruleset#origin}
   */
   readonly origin?: RulesetRulesActionParametersOrigin;
   /**
   * Whether Cloudflare will aim to strictly adhere to RFC 7234.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#origin_cache_control Ruleset#origin_cache_control}
   */
   readonly originCacheControl?: boolean | cdktn.IResolvable;
   /**
   * Whether to generate Cloudflare error pages for issues from the origin server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#origin_error_page_passthru Ruleset#origin_error_page_passthru}
   */
   readonly originErrorPagePassthru?: boolean | cdktn.IResolvable;
   /**
   * A set of overrides to apply to the target ruleset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#overrides Ruleset#overrides}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#overrides Ruleset#overrides}
   */
   readonly overrides?: RulesetRulesActionParametersOverrides;
   /**
   * A list of phases to skip the execution of. This option is incompatible with the rulesets option.
   * Available values: "ddos_l4", "ddos_l7", "http_config_settings", "http_custom_errors", "http_log_custom_fields", "http_ratelimit", "http_request_cache_settings", "http_request_dynamic_redirect", "http_request_firewall_custom", "http_request_firewall_managed", "http_request_late_transform", "http_request_origin", "http_request_redirect", "http_request_sanitize", "http_request_sbfm", "http_request_transform", "http_response_cache_settings", "http_response_compression", "http_response_firewall_managed", "http_response_headers_transform", "magic_transit", "magic_transit_ids_managed", "magic_transit_managed", "magic_transit_ratelimit".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#phases Ruleset#phases}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#phases Ruleset#phases}
   */
   readonly phases?: string[];
   /**
   * The Polish level to configure.
   * Available values: "off", "lossless", "lossy", "webp".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#polish Ruleset#polish}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#polish Ruleset#polish}
   */
   readonly polish?: string;
   /**
   * Set the private cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#private Ruleset#private}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#private Ruleset#private}
   */
   readonly private?: RulesetRulesActionParametersPrivate;
   /**
   * A list of legacy security products to skip the execution of.
   * Available values: "bic", "hot", "rateLimit", "securityLevel", "uaBlock", "waf", "zoneLockdown".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#products Ruleset#products}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#products Ruleset#products}
   */
   readonly products?: string[];
   /**
   * Set the proxy-revalidate cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#proxy_revalidate Ruleset#proxy_revalidate}
   */
   readonly proxyRevalidate?: RulesetRulesActionParametersProxyRevalidate;
   /**
   * Set the public cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#public Ruleset#public}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#public Ruleset#public}
   */
   readonly public?: RulesetRulesActionParametersPublic;
   /**
   * The raw response fields to log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#raw_response_fields Ruleset#raw_response_fields}
   */
   readonly rawResponseFields?: RulesetRulesActionParametersRawResponseFields[] | cdktn.IResolvable;
   /**
   * A timeout value between two successive read operations to use for your origin server. Historically, the timeout value between two read options from Cloudflare to an origin server is 100 seconds. If you are attempting to reduce HTTP 524 errors because of timeouts from an origin server, try increasing this timeout value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#read_timeout Ruleset#read_timeout}
   */
   readonly readTimeout?: number;
   /**
   * Whether to redirect verified AI training crawlers to canonical URLs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#redirects_for_ai_training Ruleset#redirects_for_ai_training}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#redirects_for_ai_training Ruleset#redirects_for_ai_training}
   */
   readonly redirectsForAiTraining?: boolean | cdktn.IResolvable;
   /**
   * The request body buffering mode to configure.
   * Available values: "none", "standard", "full".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#request_body_buffering Ruleset#request_body_buffering}
   */
   readonly requestBodyBuffering?: string;
   /**
   * The raw request fields to log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#request_fields Ruleset#request_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#request_fields Ruleset#request_fields}
   */
   readonly requestFields?: RulesetRulesActionParametersRequestFields[] | cdktn.IResolvable;
   /**
   * Whether Cloudflare should respect strong ETag (entity tag) headers. If false, Cloudflare converts strong ETag headers to weak ETag headers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#respect_strong_etags Ruleset#respect_strong_etags}
   */
   readonly respectStrongEtags?: boolean | cdktn.IResolvable;
   /**
   * The response to show when the block is applied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#response Ruleset#response}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#response Ruleset#response}
   */
   readonly response?: RulesetRulesActionParametersResponse;
   /**
   * The response body buffering mode to configure.
   * Available values: "none", "standard".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#response_body_buffering Ruleset#response_body_buffering}
   */
   readonly responseBodyBuffering?: string;
   /**
   * The transformed response fields to log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#response_fields Ruleset#response_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#response_fields Ruleset#response_fields}
   */
   readonly responseFields?: RulesetRulesActionParametersResponseFields[] | cdktn.IResolvable;
   /**
   * Whether to enable Rocket Loader.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#rocket_loader Ruleset#rocket_loader}
   */
   readonly rocketLoader?: boolean | cdktn.IResolvable;
   /**
   * A mapping of ruleset IDs to a list of rule IDs in that ruleset to skip the execution of. This option is incompatible with the ruleset option.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#rules Ruleset#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#rules Ruleset#rules}
   */
   readonly rules?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * A ruleset to skip the execution of. This option is incompatible with the rulesets option.
   * Available values: "current".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#ruleset Ruleset#ruleset}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#ruleset Ruleset#ruleset}
   */
   readonly ruleset?: string;
   /**
   * A list of ruleset IDs to skip the execution of. This option is incompatible with the ruleset and phases options.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#rulesets Ruleset#rulesets}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#rulesets Ruleset#rulesets}
   */
   readonly rulesets?: string[];
   /**
   * Set the s-maxage cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#s_maxage Ruleset#s_maxage}
   */
   readonly sMaxage?: RulesetRulesActionParametersSMaxage;
   /**
   * The Security Level to configure.
   * Available values: "off", "essentially_off", "low", "medium", "high", "under_attack".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#security_level Ruleset#security_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#security_level Ruleset#security_level}
   */
   readonly securityLevel?: string;
   /**
   * When to serve stale content from cache.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#serve_stale Ruleset#serve_stale}
   */
   readonly serveStale?: RulesetRulesActionParametersServeStale;
   /**
   * Whether to enable Server-Side Excludes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#server_side_excludes Ruleset#server_side_excludes}
   */
   readonly serverSideExcludes?: boolean | cdktn.IResolvable;
   /**
   * A Server Name Indication (SNI) override.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#sni Ruleset#sni}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#sni Ruleset#sni}
   */
   readonly sni?: RulesetRulesActionParametersSni;
   /**
   * The SSL level to configure.
   * Available values: "off", "flexible", "full", "strict", "origin_pull".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#ssl Ruleset#ssl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#ssl Ruleset#ssl}
   */
   readonly ssl?: string;
   /**
   * Set the stale-if-error cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#stale_if_error Ruleset#stale_if_error}
   */
   readonly staleIfError?: RulesetRulesActionParametersStaleIfError;
   /**
   * Set the stale-while-revalidate cache control directive.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#stale_while_revalidate Ruleset#stale_while_revalidate}
   */
   readonly staleWhileRevalidate?: RulesetRulesActionParametersStaleWhileRevalidate;
   /**
   * The status code to use for the error.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#status_code Ruleset#status_code}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#status_code Ruleset#status_code}
   */
   readonly statusCode?: number;
   /**
   * Whether to strip the ETag header from the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#strip_etags Ruleset#strip_etags}
   */
   readonly stripEtags?: boolean | cdktn.IResolvable;
   /**
   * Whether to strip the Last-Modified header from the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#strip_last_modified Ruleset#strip_last_modified}
   */
   readonly stripLastModified?: boolean | cdktn.IResolvable;
   /**
   * Whether to strip the Set-Cookie header from the response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#strip_set_cookie Ruleset#strip_set_cookie}
   */
   readonly stripSetCookie?: boolean | cdktn.IResolvable;
   /**
   * Whether to enable Signed Exchanges (SXG).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#sxg Ruleset#sxg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#sxg Ruleset#sxg}
   */
   readonly sxg?: boolean | cdktn.IResolvable;
   /**
   * The transformed request fields to log.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#transformed_request_fields Ruleset#transformed_request_fields}
   */
   readonly transformedRequestFields?: RulesetRulesActionParametersTransformedRequestFields[] | cdktn.IResolvable;
   /**
   * A URI rewrite.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#uri Ruleset#uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#uri Ruleset#uri}
   */
   readonly uri?: RulesetRulesActionParametersUri;
   /**
   * The cache tag values for set_cache_tags action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#values Ruleset#values}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#values Ruleset#values}
   */
   readonly values?: string[];
 }
@@ -7795,7 +7795,7 @@ export interface RulesetRulesActionParameters {
 export function rulesetRulesActionParametersToTerraform(struct?: RulesetRulesActionParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     additional_cacheable_ports: cdktn.listMapper(cdktn.numberToTerraform, false)(struct!.additionalCacheablePorts),
@@ -7883,7 +7883,7 @@ export function rulesetRulesActionParametersToTerraform(struct?: RulesetRulesAct
 export function rulesetRulesActionParametersToHclTerraform(struct?: RulesetRulesActionParameters | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     additional_cacheable_ports: {
@@ -10116,13 +10116,13 @@ export interface RulesetRulesExposedCredentialCheck {
   /**
   * An expression that selects the password used in the credentials check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#password_expression Ruleset#password_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#password_expression Ruleset#password_expression}
   */
   readonly passwordExpression: string;
   /**
   * An expression that selects the user ID used in the credentials check.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#username_expression Ruleset#username_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#username_expression Ruleset#username_expression}
   */
   readonly usernameExpression: string;
 }
@@ -10130,7 +10130,7 @@ export interface RulesetRulesExposedCredentialCheck {
 export function rulesetRulesExposedCredentialCheckToTerraform(struct?: RulesetRulesExposedCredentialCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     password_expression: cdktn.stringToTerraform(struct!.passwordExpression),
@@ -10142,7 +10142,7 @@ export function rulesetRulesExposedCredentialCheckToTerraform(struct?: RulesetRu
 export function rulesetRulesExposedCredentialCheckToHclTerraform(struct?: RulesetRulesExposedCredentialCheck | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     password_expression: {
@@ -10241,7 +10241,7 @@ export interface RulesetRulesLogging {
   /**
   * Whether to generate a log when the rule matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#enabled Ruleset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#enabled Ruleset#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -10249,7 +10249,7 @@ export interface RulesetRulesLogging {
 export function rulesetRulesLoggingToTerraform(struct?: RulesetRulesLogging | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -10260,7 +10260,7 @@ export function rulesetRulesLoggingToTerraform(struct?: RulesetRulesLogging | cd
 export function rulesetRulesLoggingToHclTerraform(struct?: RulesetRulesLogging | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -10337,49 +10337,49 @@ export interface RulesetRulesRatelimit {
   /**
   * Characteristics of the request on which the rate limit counter will be incremented.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#characteristics Ruleset#characteristics}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#characteristics Ruleset#characteristics}
   */
   readonly characteristics: string[];
   /**
   * An expression that defines when the rate limit counter should be incremented. It defaults to the same as the rule's expression.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#counting_expression Ruleset#counting_expression}
   */
   readonly countingExpression?: string;
   /**
   * Period of time in seconds after which the action will be disabled following its first execution.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#mitigation_timeout Ruleset#mitigation_timeout}
   */
   readonly mitigationTimeout?: number;
   /**
   * Period in seconds over which the counter is being incremented.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#period Ruleset#period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#period Ruleset#period}
   */
   readonly period: number;
   /**
   * The threshold of requests per period after which the action will be executed for the first time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#requests_per_period Ruleset#requests_per_period}
   */
   readonly requestsPerPeriod?: number;
   /**
   * Whether counting is only performed when an origin is reached.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#requests_to_origin Ruleset#requests_to_origin}
   */
   readonly requestsToOrigin?: boolean | cdktn.IResolvable;
   /**
   * The score threshold per period for which the action will be executed the first time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#score_per_period Ruleset#score_per_period}
   */
   readonly scorePerPeriod?: number;
   /**
   * A response header name provided by the origin, which contains the score to increment rate limit counter with.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#score_response_header_name Ruleset#score_response_header_name}
   */
   readonly scoreResponseHeaderName?: string;
 }
@@ -10387,7 +10387,7 @@ export interface RulesetRulesRatelimit {
 export function rulesetRulesRatelimitToTerraform(struct?: RulesetRulesRatelimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     characteristics: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.characteristics),
@@ -10405,7 +10405,7 @@ export function rulesetRulesRatelimitToTerraform(struct?: RulesetRulesRatelimit 
 export function rulesetRulesRatelimitToHclTerraform(struct?: RulesetRulesRatelimit | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     characteristics: {
@@ -10673,55 +10673,55 @@ export interface RulesetRules {
   * The action to perform when the rule matches.
   * Available values: "block", "challenge", "compress_response", "ddos_dynamic", "execute", "force_connection_close", "js_challenge", "log", "log_custom_field", "managed_challenge", "redirect", "rewrite", "route", "score", "serve_error", "set_cache_control", "set_cache_settings", "set_cache_tags", "set_config", "skip".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#action Ruleset#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#action Ruleset#action}
   */
   readonly action: string;
   /**
   * The parameters configuring the rule's action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#action_parameters Ruleset#action_parameters}
   */
   readonly actionParameters?: RulesetRulesActionParameters;
   /**
   * An informative description of the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#description Ruleset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#description Ruleset#description}
   */
   readonly description?: string;
   /**
   * Whether the rule should be executed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#enabled Ruleset#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#enabled Ruleset#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Configuration for exposed credential checking.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#exposed_credential_check Ruleset#exposed_credential_check}
   */
   readonly exposedCredentialCheck?: RulesetRulesExposedCredentialCheck;
   /**
   * The expression defining which traffic will match the rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#expression Ruleset#expression}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#expression Ruleset#expression}
   */
   readonly expression: string;
   /**
   * An object configuring the rule's logging behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#logging Ruleset#logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#logging Ruleset#logging}
   */
   readonly logging?: RulesetRulesLogging;
   /**
   * An object configuring the rule's rate limit behavior.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#ratelimit Ruleset#ratelimit}
   */
   readonly ratelimit?: RulesetRulesRatelimit;
   /**
   * The reference of the rule (the rule's ID by default).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#ref Ruleset#ref}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#ref Ruleset#ref}
   */
   readonly ref?: string;
 }
@@ -10729,7 +10729,7 @@ export interface RulesetRules {
 export function rulesetRulesToTerraform(struct?: RulesetRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -10748,7 +10748,7 @@ export function rulesetRulesToTerraform(struct?: RulesetRules | cdktn.IResolvabl
 export function rulesetRulesToHclTerraform(struct?: RulesetRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -11068,7 +11068,7 @@ export class RulesetRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset cloudflare_ruleset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset cloudflare_ruleset}
 */
 export class Ruleset extends cdktn.TerraformResource {
 
@@ -11084,7 +11084,7 @@ export class Ruleset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Ruleset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Ruleset to import
-  * @param importFromId The id of the existing Ruleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Ruleset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Ruleset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -11096,7 +11096,7 @@ export class Ruleset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/ruleset cloudflare_ruleset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/ruleset cloudflare_ruleset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -11107,7 +11107,7 @@ export class Ruleset extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_ruleset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface SnippetConfig extends cdktn.TerraformMetaArguments {
   /**
   * The list of files belonging to the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#files Snippet#files}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#files Snippet#files}
   */
   readonly files: SnippetFiles[] | cdktn.IResolvable;
   /**
   * Provide metadata about the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#metadata Snippet#metadata}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#metadata Snippet#metadata}
   */
   readonly metadata: SnippetMetadata;
   /**
   * Identify the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#snippet_name Snippet#snippet_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
   */
   readonly snippetName: string;
   /**
   * Use this field to specify the unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#zone_id Snippet#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#zone_id Snippet#zone_id}
   */
   readonly zoneId?: string;
 }
 export interface SnippetFiles {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#content Snippet#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#content Snippet#content}
   */
   readonly content: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#name Snippet#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#name Snippet#name}
   */
   readonly name: string;
 }
@@ -51,7 +51,7 @@ export interface SnippetFiles {
 export function snippetFilesToTerraform(struct?: SnippetFiles | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     content: cdktn.stringToTerraform(struct!.content),
@@ -63,7 +63,7 @@ export function snippetFilesToTerraform(struct?: SnippetFiles | cdktn.IResolvabl
 export function snippetFilesToHclTerraform(struct?: SnippetFiles | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     content: {
@@ -184,7 +184,7 @@ export interface SnippetMetadata {
   /**
   * Specify the name of the file that contains the main module of the snippet.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#main_module Snippet#main_module}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#main_module Snippet#main_module}
   */
   readonly mainModule: string;
 }
@@ -192,7 +192,7 @@ export interface SnippetMetadata {
 export function snippetMetadataToTerraform(struct?: SnippetMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     main_module: cdktn.stringToTerraform(struct!.mainModule),
@@ -203,7 +203,7 @@ export function snippetMetadataToTerraform(struct?: SnippetMetadata | cdktn.IRes
 export function snippetMetadataToHclTerraform(struct?: SnippetMetadata | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     main_module: {
@@ -275,7 +275,7 @@ export class SnippetMetadataOutputReference extends cdktn.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet cloudflare_snippet}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet cloudflare_snippet}
 */
 export class Snippet extends cdktn.TerraformResource {
 
@@ -291,7 +291,7 @@ export class Snippet extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Snippet resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Snippet to import
-  * @param importFromId The id of the existing Snippet that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Snippet that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Snippet to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -303,7 +303,7 @@ export class Snippet extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/snippet cloudflare_snippet} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet cloudflare_snippet} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -314,7 +314,7 @@ export class Snippet extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_snippet',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -351,6 +351,11 @@ export class Snippet extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get filesInput() {
     return this._files.internalValue;
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
   }
 
   // metadata - computed: false, optional: false, required: true

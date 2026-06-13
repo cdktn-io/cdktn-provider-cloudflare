@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface ManagedTransformsConfig extends cdktn.TerraformMetaArguments {
   /**
   * The list of Managed Request Transforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#managed_request_headers ManagedTransforms#managed_request_headers}
   */
   readonly managedRequestHeaders: ManagedTransformsManagedRequestHeaders[] | cdktn.IResolvable;
   /**
   * The list of Managed Response Transforms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#managed_response_headers ManagedTransforms#managed_response_headers}
   */
   readonly managedResponseHeaders: ManagedTransformsManagedResponseHeaders[] | cdktn.IResolvable;
   /**
   * The unique ID of the zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#zone_id ManagedTransforms#zone_id}
   */
   readonly zoneId: string;
 }
@@ -35,13 +35,13 @@ export interface ManagedTransformsManagedRequestHeaders {
   /**
   * Whether the Managed Transform is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The human-readable identifier of the Managed Transform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#id ManagedTransforms#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#id ManagedTransforms#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,7 +52,7 @@ export interface ManagedTransformsManagedRequestHeaders {
 export function managedTransformsManagedRequestHeadersToTerraform(struct?: ManagedTransformsManagedRequestHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -64,7 +64,7 @@ export function managedTransformsManagedRequestHeadersToTerraform(struct?: Manag
 export function managedTransformsManagedRequestHeadersToHclTerraform(struct?: ManagedTransformsManagedRequestHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -185,13 +185,13 @@ export interface ManagedTransformsManagedResponseHeaders {
   /**
   * Whether the Managed Transform is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#enabled ManagedTransforms#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * The human-readable identifier of the Managed Transform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#id ManagedTransforms#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#id ManagedTransforms#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -202,7 +202,7 @@ export interface ManagedTransformsManagedResponseHeaders {
 export function managedTransformsManagedResponseHeadersToTerraform(struct?: ManagedTransformsManagedResponseHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -214,7 +214,7 @@ export function managedTransformsManagedResponseHeadersToTerraform(struct?: Mana
 export function managedTransformsManagedResponseHeadersToHclTerraform(struct?: ManagedTransformsManagedResponseHeaders | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -333,7 +333,7 @@ export class ManagedTransformsManagedResponseHeadersList extends cdktn.ComplexLi
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms cloudflare_managed_transforms}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms cloudflare_managed_transforms}
 */
 export class ManagedTransforms extends cdktn.TerraformResource {
 
@@ -349,7 +349,7 @@ export class ManagedTransforms extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ManagedTransforms resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ManagedTransforms to import
-  * @param importFromId The id of the existing ManagedTransforms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ManagedTransforms that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ManagedTransforms to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -361,7 +361,7 @@ export class ManagedTransforms extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/managed_transforms cloudflare_managed_transforms} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/managed_transforms cloudflare_managed_transforms} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -372,7 +372,7 @@ export class ManagedTransforms extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_managed_transforms',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

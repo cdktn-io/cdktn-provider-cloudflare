@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_tokens
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,13 +16,13 @@ export interface DataCloudflareApiTokensConfig extends cdktn.TerraformMetaArgume
   * Direction to order results.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_tokens#direction DataCloudflareApiTokens#direction}
   */
   readonly direction?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_tokens#max_items DataCloudflareApiTokens#max_items}
   */
   readonly maxItems?: number;
 }
@@ -32,7 +32,7 @@ export interface DataCloudflareApiTokensResultConditionRequestIp {
 export function dataCloudflareApiTokensResultConditionRequestIpToTerraform(struct?: DataCloudflareApiTokensResultConditionRequestIp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -42,7 +42,7 @@ export function dataCloudflareApiTokensResultConditionRequestIpToTerraform(struc
 export function dataCloudflareApiTokensResultConditionRequestIpToHclTerraform(struct?: DataCloudflareApiTokensResultConditionRequestIp): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -91,7 +91,7 @@ export interface DataCloudflareApiTokensResultCondition {
 export function dataCloudflareApiTokensResultConditionToTerraform(struct?: DataCloudflareApiTokensResultCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -101,7 +101,7 @@ export function dataCloudflareApiTokensResultConditionToTerraform(struct?: DataC
 export function dataCloudflareApiTokensResultConditionToHclTerraform(struct?: DataCloudflareApiTokensResultCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -146,7 +146,7 @@ export interface DataCloudflareApiTokensResultPoliciesPermissionGroupsMeta {
 export function dataCloudflareApiTokensResultPoliciesPermissionGroupsMetaToTerraform(struct?: DataCloudflareApiTokensResultPoliciesPermissionGroupsMeta): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -156,7 +156,7 @@ export function dataCloudflareApiTokensResultPoliciesPermissionGroupsMetaToTerra
 export function dataCloudflareApiTokensResultPoliciesPermissionGroupsMetaToHclTerraform(struct?: DataCloudflareApiTokensResultPoliciesPermissionGroupsMeta): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -205,7 +205,7 @@ export interface DataCloudflareApiTokensResultPoliciesPermissionGroups {
 export function dataCloudflareApiTokensResultPoliciesPermissionGroupsToTerraform(struct?: DataCloudflareApiTokensResultPoliciesPermissionGroups): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -215,7 +215,7 @@ export function dataCloudflareApiTokensResultPoliciesPermissionGroupsToTerraform
 export function dataCloudflareApiTokensResultPoliciesPermissionGroupsToHclTerraform(struct?: DataCloudflareApiTokensResultPoliciesPermissionGroups): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -291,7 +291,7 @@ export interface DataCloudflareApiTokensResultPolicies {
 export function dataCloudflareApiTokensResultPoliciesToTerraform(struct?: DataCloudflareApiTokensResultPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -301,7 +301,7 @@ export function dataCloudflareApiTokensResultPoliciesToTerraform(struct?: DataCl
 export function dataCloudflareApiTokensResultPoliciesToHclTerraform(struct?: DataCloudflareApiTokensResultPolicies): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -383,7 +383,7 @@ export interface DataCloudflareApiTokensResult {
 export function dataCloudflareApiTokensResultToTerraform(struct?: DataCloudflareApiTokensResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -393,7 +393,7 @@ export function dataCloudflareApiTokensResultToTerraform(struct?: DataCloudflare
 export function dataCloudflareApiTokensResultToHclTerraform(struct?: DataCloudflareApiTokensResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -501,7 +501,7 @@ export class DataCloudflareApiTokensResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens cloudflare_api_tokens}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_tokens cloudflare_api_tokens}
 */
 export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
 
@@ -517,7 +517,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareApiTokens resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareApiTokens to import
-  * @param importFromId The id of the existing DataCloudflareApiTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareApiTokens that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_tokens#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareApiTokens to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -529,7 +529,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/api_tokens cloudflare_api_tokens} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -540,7 +540,7 @@ export class DataCloudflareApiTokens extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_api_tokens',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

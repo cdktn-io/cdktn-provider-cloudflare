@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,15 +15,15 @@ export interface DataCloudflareLoadBalancerPoolConfig extends cdktn.TerraformMet
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool#account_id DataCloudflareLoadBalancerPool#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool#account_id DataCloudflareLoadBalancerPool#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool#filter DataCloudflareLoadBalancerPool#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool#filter DataCloudflareLoadBalancerPool#filter}
   */
   readonly filter?: DataCloudflareLoadBalancerPoolFilter;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool#pool_id DataCloudflareLoadBalancerPool#pool_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool#pool_id DataCloudflareLoadBalancerPool#pool_id}
   */
   readonly poolId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareLoadBalancerPoolFilter {
   /**
   * The ID of the Monitor to use for checking the health of origins within this pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool#monitor DataCloudflareLoadBalancerPool#monitor}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool#monitor DataCloudflareLoadBalancerPool#monitor}
   */
   readonly monitor?: string;
 }
@@ -39,7 +39,7 @@ export interface DataCloudflareLoadBalancerPoolFilter {
 export function dataCloudflareLoadBalancerPoolFilterToTerraform(struct?: DataCloudflareLoadBalancerPoolFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     monitor: cdktn.stringToTerraform(struct!.monitor),
@@ -50,7 +50,7 @@ export function dataCloudflareLoadBalancerPoolFilterToTerraform(struct?: DataClo
 export function dataCloudflareLoadBalancerPoolFilterToHclTerraform(struct?: DataCloudflareLoadBalancerPoolFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     monitor: {
@@ -129,7 +129,7 @@ export interface DataCloudflareLoadBalancerPoolLoadShedding {
 export function dataCloudflareLoadBalancerPoolLoadSheddingToTerraform(struct?: DataCloudflareLoadBalancerPoolLoadShedding): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -139,7 +139,7 @@ export function dataCloudflareLoadBalancerPoolLoadSheddingToTerraform(struct?: D
 export function dataCloudflareLoadBalancerPoolLoadSheddingToHclTerraform(struct?: DataCloudflareLoadBalancerPoolLoadShedding): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -198,7 +198,7 @@ export interface DataCloudflareLoadBalancerPoolNotificationFilterOrigin {
 export function dataCloudflareLoadBalancerPoolNotificationFilterOriginToTerraform(struct?: DataCloudflareLoadBalancerPoolNotificationFilterOrigin): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -208,7 +208,7 @@ export function dataCloudflareLoadBalancerPoolNotificationFilterOriginToTerrafor
 export function dataCloudflareLoadBalancerPoolNotificationFilterOriginToHclTerraform(struct?: DataCloudflareLoadBalancerPoolNotificationFilterOrigin): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -257,7 +257,7 @@ export interface DataCloudflareLoadBalancerPoolNotificationFilterPool {
 export function dataCloudflareLoadBalancerPoolNotificationFilterPoolToTerraform(struct?: DataCloudflareLoadBalancerPoolNotificationFilterPool): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -267,7 +267,7 @@ export function dataCloudflareLoadBalancerPoolNotificationFilterPoolToTerraform(
 export function dataCloudflareLoadBalancerPoolNotificationFilterPoolToHclTerraform(struct?: DataCloudflareLoadBalancerPoolNotificationFilterPool): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -316,7 +316,7 @@ export interface DataCloudflareLoadBalancerPoolNotificationFilter {
 export function dataCloudflareLoadBalancerPoolNotificationFilterToTerraform(struct?: DataCloudflareLoadBalancerPoolNotificationFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -326,7 +326,7 @@ export function dataCloudflareLoadBalancerPoolNotificationFilterToTerraform(stru
 export function dataCloudflareLoadBalancerPoolNotificationFilterToHclTerraform(struct?: DataCloudflareLoadBalancerPoolNotificationFilter): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -377,7 +377,7 @@ export interface DataCloudflareLoadBalancerPoolOriginSteering {
 export function dataCloudflareLoadBalancerPoolOriginSteeringToTerraform(struct?: DataCloudflareLoadBalancerPoolOriginSteering): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -387,7 +387,7 @@ export function dataCloudflareLoadBalancerPoolOriginSteeringToTerraform(struct?:
 export function dataCloudflareLoadBalancerPoolOriginSteeringToHclTerraform(struct?: DataCloudflareLoadBalancerPoolOriginSteering): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -431,7 +431,7 @@ export interface DataCloudflareLoadBalancerPoolOriginsHeader {
 export function dataCloudflareLoadBalancerPoolOriginsHeaderToTerraform(struct?: DataCloudflareLoadBalancerPoolOriginsHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -441,7 +441,7 @@ export function dataCloudflareLoadBalancerPoolOriginsHeaderToTerraform(struct?: 
 export function dataCloudflareLoadBalancerPoolOriginsHeaderToHclTerraform(struct?: DataCloudflareLoadBalancerPoolOriginsHeader): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -485,7 +485,7 @@ export interface DataCloudflareLoadBalancerPoolOrigins {
 export function dataCloudflareLoadBalancerPoolOriginsToTerraform(struct?: DataCloudflareLoadBalancerPoolOrigins): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -495,7 +495,7 @@ export function dataCloudflareLoadBalancerPoolOriginsToTerraform(struct?: DataCl
 export function dataCloudflareLoadBalancerPoolOriginsToHclTerraform(struct?: DataCloudflareLoadBalancerPoolOrigins): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -597,7 +597,7 @@ export class DataCloudflareLoadBalancerPoolOriginsList extends cdktn.ComplexList
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool}
 */
 export class DataCloudflareLoadBalancerPool extends cdktn.TerraformDataSource {
 
@@ -613,7 +613,7 @@ export class DataCloudflareLoadBalancerPool extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareLoadBalancerPool resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareLoadBalancerPool to import
-  * @param importFromId The id of the existing DataCloudflareLoadBalancerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareLoadBalancerPool that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareLoadBalancerPool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -625,7 +625,7 @@ export class DataCloudflareLoadBalancerPool extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/load_balancer_pool cloudflare_load_balancer_pool} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -636,7 +636,7 @@ export class DataCloudflareLoadBalancerPool extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_load_balancer_pool',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

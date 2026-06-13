@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface DataCloudflareImageVariantConfig extends cdktn.TerraformMetaArg
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant#account_id DataCloudflareImageVariant#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#account_id DataCloudflareImageVariant#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#variant_id DataCloudflareImageVariant#variant_id}
   */
   readonly variantId: string;
 }
@@ -29,7 +29,7 @@ export interface DataCloudflareImageVariantVariantOptions {
 export function dataCloudflareImageVariantVariantOptionsToTerraform(struct?: DataCloudflareImageVariantVariantOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -39,7 +39,7 @@ export function dataCloudflareImageVariantVariantOptionsToTerraform(struct?: Dat
 export function dataCloudflareImageVariantVariantOptionsToHclTerraform(struct?: DataCloudflareImageVariantVariantOptions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -98,7 +98,7 @@ export interface DataCloudflareImageVariantVariant {
 export function dataCloudflareImageVariantVariantToTerraform(struct?: DataCloudflareImageVariantVariant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -108,7 +108,7 @@ export function dataCloudflareImageVariantVariantToTerraform(struct?: DataCloudf
 export function dataCloudflareImageVariantVariantToHclTerraform(struct?: DataCloudflareImageVariantVariant): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -159,7 +159,7 @@ export class DataCloudflareImageVariantVariantOutputReference extends cdktn.Comp
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant cloudflare_image_variant}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant cloudflare_image_variant}
 */
 export class DataCloudflareImageVariant extends cdktn.TerraformDataSource {
 
@@ -175,7 +175,7 @@ export class DataCloudflareImageVariant extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareImageVariant resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareImageVariant to import
-  * @param importFromId The id of the existing DataCloudflareImageVariant that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareImageVariant that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareImageVariant to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -187,7 +187,7 @@ export class DataCloudflareImageVariant extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/image_variant cloudflare_image_variant} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/image_variant cloudflare_image_variant} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -198,7 +198,7 @@ export class DataCloudflareImageVariant extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_image_variant',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

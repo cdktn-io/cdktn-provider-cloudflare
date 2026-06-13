@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,27 +13,49 @@ import * as cdktn from 'cdktn';
 
 export interface EmailSecurityImpersonationRegistryConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Account Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry#account_id EmailSecurityImpersonationRegistry#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#account_id EmailSecurityImpersonationRegistry#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry#email EmailSecurityImpersonationRegistry#email}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#comments EmailSecurityImpersonationRegistry#comments}
+  */
+  readonly comments?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#directory_id EmailSecurityImpersonationRegistry#directory_id}
+  */
+  readonly directoryId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#directory_node_id EmailSecurityImpersonationRegistry#directory_node_id}
+  */
+  readonly directoryNodeId?: number;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#email EmailSecurityImpersonationRegistry#email}
   */
   readonly email: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry#is_email_regex EmailSecurityImpersonationRegistry#is_email_regex}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#external_directory_node_id EmailSecurityImpersonationRegistry#external_directory_node_id}
+  */
+  readonly externalDirectoryNodeId?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#is_email_regex EmailSecurityImpersonationRegistry#is_email_regex}
   */
   readonly isEmailRegex: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry#name EmailSecurityImpersonationRegistry#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#name EmailSecurityImpersonationRegistry#name}
   */
   readonly name: string;
+  /**
+  * Available values: "A1S_INTERNAL", "SNOOPY-CASB_OFFICE_365", "SNOOPY-OFFICE_365", "SNOOPY-GOOGLE_DIRECTORY".
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#provenance EmailSecurityImpersonationRegistry#provenance}
+  */
+  readonly provenance?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry}
 */
 export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource {
 
@@ -49,7 +71,7 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
   * Generates CDKTN code for importing a EmailSecurityImpersonationRegistry resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the EmailSecurityImpersonationRegistry to import
-  * @param importFromId The id of the existing EmailSecurityImpersonationRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing EmailSecurityImpersonationRegistry that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the EmailSecurityImpersonationRegistry to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +83,7 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_impersonation_registry cloudflare_email_security_impersonation_registry} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +94,7 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
       terraformResourceType: 'cloudflare_email_security_impersonation_registry',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -84,9 +106,14 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
       forEach: config.forEach
     });
     this._accountId = config.accountId;
+    this._comments = config.comments;
+    this._directoryId = config.directoryId;
+    this._directoryNodeId = config.directoryNodeId;
     this._email = config.email;
+    this._externalDirectoryNodeId = config.externalDirectoryNodeId;
     this._isEmailRegex = config.isEmailRegex;
     this._name = config.name;
+    this._provenance = config.provenance;
   }
 
   // ==========
@@ -109,9 +136,20 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
     return this._accountId;
   }
 
-  // comments - computed: true, optional: false, required: false
+  // comments - computed: false, optional: true, required: false
+  private _comments?: string; 
   public get comments() {
     return this.getStringAttribute('comments');
+  }
+  public set comments(value: string) {
+    this._comments = value;
+  }
+  public resetComments() {
+    this._comments = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get commentsInput() {
+    return this._comments;
   }
 
   // created_at - computed: true, optional: false, required: false
@@ -119,14 +157,36 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
     return this.getStringAttribute('created_at');
   }
 
-  // directory_id - computed: true, optional: false, required: false
+  // directory_id - computed: false, optional: true, required: false
+  private _directoryId?: number; 
   public get directoryId() {
     return this.getNumberAttribute('directory_id');
   }
+  public set directoryId(value: number) {
+    this._directoryId = value;
+  }
+  public resetDirectoryId() {
+    this._directoryId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryIdInput() {
+    return this._directoryId;
+  }
 
-  // directory_node_id - computed: true, optional: false, required: false
+  // directory_node_id - computed: false, optional: true, required: false
+  private _directoryNodeId?: number; 
   public get directoryNodeId() {
     return this.getNumberAttribute('directory_node_id');
+  }
+  public set directoryNodeId(value: number) {
+    this._directoryNodeId = value;
+  }
+  public resetDirectoryNodeId() {
+    this._directoryNodeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get directoryNodeIdInput() {
+    return this._directoryNodeId;
   }
 
   // email - computed: false, optional: false, required: true
@@ -142,14 +202,25 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
     return this._email;
   }
 
-  // external_directory_node_id - computed: true, optional: false, required: false
+  // external_directory_node_id - computed: false, optional: true, required: false
+  private _externalDirectoryNodeId?: string; 
   public get externalDirectoryNodeId() {
     return this.getStringAttribute('external_directory_node_id');
+  }
+  public set externalDirectoryNodeId(value: string) {
+    this._externalDirectoryNodeId = value;
+  }
+  public resetExternalDirectoryNodeId() {
+    this._externalDirectoryNodeId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get externalDirectoryNodeIdInput() {
+    return this._externalDirectoryNodeId;
   }
 
   // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getNumberAttribute('id');
+    return this.getStringAttribute('id');
   }
 
   // is_email_regex - computed: false, optional: false, required: true
@@ -170,6 +241,11 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
     return this.getStringAttribute('last_modified');
   }
 
+  // modified_at - computed: true, optional: false, required: false
+  public get modifiedAt() {
+    return this.getStringAttribute('modified_at');
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -183,9 +259,20 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
     return this._name;
   }
 
-  // provenance - computed: true, optional: false, required: false
+  // provenance - computed: false, optional: true, required: false
+  private _provenance?: string; 
   public get provenance() {
     return this.getStringAttribute('provenance');
+  }
+  public set provenance(value: string) {
+    this._provenance = value;
+  }
+  public resetProvenance() {
+    this._provenance = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get provenanceInput() {
+    return this._provenance;
   }
 
   // =========
@@ -195,9 +282,14 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
+      comments: cdktn.stringToTerraform(this._comments),
+      directory_id: cdktn.numberToTerraform(this._directoryId),
+      directory_node_id: cdktn.numberToTerraform(this._directoryNodeId),
       email: cdktn.stringToTerraform(this._email),
+      external_directory_node_id: cdktn.stringToTerraform(this._externalDirectoryNodeId),
       is_email_regex: cdktn.booleanToTerraform(this._isEmailRegex),
       name: cdktn.stringToTerraform(this._name),
+      provenance: cdktn.stringToTerraform(this._provenance),
     };
   }
 
@@ -209,8 +301,32 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
         type: "simple",
         storageClassType: "string",
       },
+      comments: {
+        value: cdktn.stringToHclTerraform(this._comments),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      directory_id: {
+        value: cdktn.numberToHclTerraform(this._directoryId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
+      directory_node_id: {
+        value: cdktn.numberToHclTerraform(this._directoryNodeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
+      },
       email: {
         value: cdktn.stringToHclTerraform(this._email),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      external_directory_node_id: {
+        value: cdktn.stringToHclTerraform(this._externalDirectoryNodeId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",
@@ -223,6 +339,12 @@ export class EmailSecurityImpersonationRegistry extends cdktn.TerraformResource 
       },
       name: {
         value: cdktn.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      provenance: {
+        value: cdktn.stringToHclTerraform(this._provenance),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

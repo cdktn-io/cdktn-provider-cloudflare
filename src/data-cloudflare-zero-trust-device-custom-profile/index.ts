@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_custom_profile
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_custom_profile
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,13 +13,93 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustDeviceCustomProfileConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_custom_profile#account_id DataCloudflareZeroTrustDeviceCustomProfile#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_custom_profile#account_id DataCloudflareZeroTrustDeviceCustomProfile#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_custom_profile#policy_id DataCloudflareZeroTrustDeviceCustomProfile#policy_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_custom_profile#policy_id DataCloudflareZeroTrustDeviceCustomProfile#policy_id}
   */
   readonly policyId: string;
+}
+export interface DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixes {
+}
+
+export function dataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixesToTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixesToHclTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixes): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixes | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixes | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // suffix - computed: true, optional: false, required: false
+  public get suffix() {
+    return this.getStringAttribute('suffix');
+  }
+}
+
+export class DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixesList extends cdktn.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixesOutputReference {
+    return new DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
 }
 export interface DataCloudflareZeroTrustDeviceCustomProfileExclude {
 }
@@ -27,7 +107,7 @@ export interface DataCloudflareZeroTrustDeviceCustomProfileExclude {
 export function dataCloudflareZeroTrustDeviceCustomProfileExcludeToTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileExclude): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -37,7 +117,7 @@ export function dataCloudflareZeroTrustDeviceCustomProfileExcludeToTerraform(str
 export function dataCloudflareZeroTrustDeviceCustomProfileExcludeToHclTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileExclude): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -112,7 +192,7 @@ export interface DataCloudflareZeroTrustDeviceCustomProfileFallbackDomains {
 export function dataCloudflareZeroTrustDeviceCustomProfileFallbackDomainsToTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileFallbackDomains): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -122,7 +202,7 @@ export function dataCloudflareZeroTrustDeviceCustomProfileFallbackDomainsToTerra
 export function dataCloudflareZeroTrustDeviceCustomProfileFallbackDomainsToHclTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileFallbackDomains): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -197,7 +277,7 @@ export interface DataCloudflareZeroTrustDeviceCustomProfileInclude {
 export function dataCloudflareZeroTrustDeviceCustomProfileIncludeToTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileInclude): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -207,7 +287,7 @@ export function dataCloudflareZeroTrustDeviceCustomProfileIncludeToTerraform(str
 export function dataCloudflareZeroTrustDeviceCustomProfileIncludeToHclTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileInclude): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -282,7 +362,7 @@ export interface DataCloudflareZeroTrustDeviceCustomProfileServiceModeV2 {
 export function dataCloudflareZeroTrustDeviceCustomProfileServiceModeV2ToTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileServiceModeV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -292,7 +372,7 @@ export function dataCloudflareZeroTrustDeviceCustomProfileServiceModeV2ToTerrafo
 export function dataCloudflareZeroTrustDeviceCustomProfileServiceModeV2ToHclTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileServiceModeV2): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -341,7 +421,7 @@ export interface DataCloudflareZeroTrustDeviceCustomProfileTargetTests {
 export function dataCloudflareZeroTrustDeviceCustomProfileTargetTestsToTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileTargetTests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -351,7 +431,7 @@ export function dataCloudflareZeroTrustDeviceCustomProfileTargetTestsToTerraform
 export function dataCloudflareZeroTrustDeviceCustomProfileTargetTestsToHclTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileTargetTests): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -415,9 +495,68 @@ export class DataCloudflareZeroTrustDeviceCustomProfileTargetTestsList extends c
     return new DataCloudflareZeroTrustDeviceCustomProfileTargetTestsOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworks {
+}
+
+export function dataCloudflareZeroTrustDeviceCustomProfileVirtualNetworksToTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworks): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+  }
+}
+
+
+export function dataCloudflareZeroTrustDeviceCustomProfileVirtualNetworksToHclTerraform(struct?: DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworks): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
+export class DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworksOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false);
+  }
+
+  public get internalValue(): DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworks | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworks | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allowed - computed: true, optional: false, required: false
+  public get allowed() {
+    return this.getListAttribute('allowed');
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile}
 */
 export class DataCloudflareZeroTrustDeviceCustomProfile extends cdktn.TerraformDataSource {
 
@@ -433,7 +572,7 @@ export class DataCloudflareZeroTrustDeviceCustomProfile extends cdktn.TerraformD
   * Generates CDKTN code for importing a DataCloudflareZeroTrustDeviceCustomProfile resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDeviceCustomProfile to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDeviceCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_custom_profile#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDeviceCustomProfile that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_custom_profile#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDeviceCustomProfile to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -445,7 +584,7 @@ export class DataCloudflareZeroTrustDeviceCustomProfile extends cdktn.TerraformD
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_custom_profile cloudflare_zero_trust_device_custom_profile} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -456,7 +595,7 @@ export class DataCloudflareZeroTrustDeviceCustomProfile extends cdktn.TerraformD
       terraformResourceType: 'cloudflare_zero_trust_device_custom_profile',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -529,6 +668,12 @@ export class DataCloudflareZeroTrustDeviceCustomProfile extends cdktn.TerraformD
   // disable_auto_fallback - computed: true, optional: false, required: false
   public get disableAutoFallback() {
     return this.getBooleanAttribute('disable_auto_fallback');
+  }
+
+  // dns_search_suffixes - computed: true, optional: false, required: false
+  private _dnsSearchSuffixes = new DataCloudflareZeroTrustDeviceCustomProfileDnsSearchSuffixesList(this, "dns_search_suffixes", false);
+  public get dnsSearchSuffixes() {
+    return this._dnsSearchSuffixes;
   }
 
   // enabled - computed: true, optional: false, required: false
@@ -642,6 +787,12 @@ export class DataCloudflareZeroTrustDeviceCustomProfile extends cdktn.TerraformD
   // tunnel_protocol - computed: true, optional: false, required: false
   public get tunnelProtocol() {
     return this.getStringAttribute('tunnel_protocol');
+  }
+
+  // virtual_networks - computed: true, optional: false, required: false
+  private _virtualNetworks = new DataCloudflareZeroTrustDeviceCustomProfileVirtualNetworksOutputReference(this, "virtual_networks");
+  public get virtualNetworks() {
+    return this._virtualNetworks;
   }
 
   // =========

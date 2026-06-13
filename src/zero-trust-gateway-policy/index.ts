@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,80 +13,80 @@ import * as cdktn from 'cdktn';
 
 export interface ZeroTrustGatewayPolicyConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#account_id ZeroTrustGatewayPolicy#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#account_id ZeroTrustGatewayPolicy#account_id}
   */
   readonly accountId?: string;
   /**
   * Specify the action to perform when the associated traffic, identity, and device posture expressions either absent or evaluate to `true`.
   * Available values: "on", "off", "allow", "block", "scan", "noscan", "safesearch", "ytrestricted", "isolate", "noisolate", "override", "l4_override", "egress", "resolve", "quarantine", "redirect".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
   */
   readonly action: string;
   /**
   * Specify the rule description.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#description ZeroTrustGatewayPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#description ZeroTrustGatewayPolicy#description}
   */
   readonly description?: string;
   /**
   * Specify the wirefilter expression used for device posture check. The API automatically formats and sanitizes expressions before storing them. To prevent Terraform state drift, use the formatted expression returned in the API response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#device_posture ZeroTrustGatewayPolicy#device_posture}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#device_posture ZeroTrustGatewayPolicy#device_posture}
   */
   readonly devicePosture?: string;
   /**
   * Specify whether the rule is enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Defines the expiration time stamp and default duration of a DNS policy. Takes precedence over the policy's `schedule` configuration, if any. This  does not apply to HTTP or network policies. Settable only for `dns` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#expiration ZeroTrustGatewayPolicy#expiration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#expiration ZeroTrustGatewayPolicy#expiration}
   */
   readonly expiration?: ZeroTrustGatewayPolicyExpiration;
   /**
   * Specify the protocol or layer to evaluate the traffic, identity, and device posture expressions. Can only contain a single value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#filters ZeroTrustGatewayPolicy#filters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#filters ZeroTrustGatewayPolicy#filters}
   */
   readonly filters?: string[];
   /**
   * Specify the wirefilter expression used for identity matching. The API automatically formats and sanitizes expressions before storing them. To prevent Terraform state drift, use the formatted expression returned in the API response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#identity ZeroTrustGatewayPolicy#identity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#identity ZeroTrustGatewayPolicy#identity}
   */
   readonly identity?: string;
   /**
   * Specify the rule name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#name ZeroTrustGatewayPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#name ZeroTrustGatewayPolicy#name}
   */
   readonly name: string;
   /**
   * Set the order of your rules. Lower values indicate higher precedence. At each processing phase, evaluate applicable rules in ascending order of this value. Refer to [Order of enforcement](http://developers.cloudflare.com/learning-paths/secure-internet-traffic/understand-policies/order-of-enforcement/#manage-precedence-with-terraform) to manage precedence via Terraform.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#precedence ZeroTrustGatewayPolicy#precedence}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#precedence ZeroTrustGatewayPolicy#precedence}
   */
   readonly precedence?: number;
   /**
   * Defines settings for this rule. Settings apply only to specific rule types and must use compatible selectors. If Terraform detects drift, confirm the setting supports your rule type and check whether the API modifies the value. Use API-returned values in your configuration to prevent drift.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#rule_settings ZeroTrustGatewayPolicy#rule_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#rule_settings ZeroTrustGatewayPolicy#rule_settings}
   */
   readonly ruleSettings?: ZeroTrustGatewayPolicyRuleSettings;
   /**
   * Defines the schedule for activating DNS policies. Settable only for `dns` and `dns_resolver` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#schedule ZeroTrustGatewayPolicy#schedule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#schedule ZeroTrustGatewayPolicy#schedule}
   */
   readonly schedule?: ZeroTrustGatewayPolicySchedule;
   /**
   * Specify the wirefilter expression used for traffic matching. The API automatically formats and sanitizes expressions before storing them. To prevent Terraform state drift, use the formatted expression returned in the API response.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#traffic ZeroTrustGatewayPolicy#traffic}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#traffic ZeroTrustGatewayPolicy#traffic}
   */
   readonly traffic?: string;
 }
@@ -94,13 +94,13 @@ export interface ZeroTrustGatewayPolicyExpiration {
   /**
   * Defines the default duration a policy active in minutes. Must set in order to use the `reset_expiration` endpoint on this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
   */
   readonly duration?: number;
   /**
   * Show the timestamp when the policy expires and stops applying.  The value must follow RFC 3339 and include a UTC offset.  The system accepts non-zero offsets but converts them to the equivalent UTC+00:00  value and returns timestamps with a trailing Z. Expiration policies ignore client  timezones and expire globally at the specified expires_at time.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#expires_at ZeroTrustGatewayPolicy#expires_at}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#expires_at ZeroTrustGatewayPolicy#expires_at}
   */
   readonly expiresAt: string;
 }
@@ -108,7 +108,7 @@ export interface ZeroTrustGatewayPolicyExpiration {
 export function zeroTrustGatewayPolicyExpirationToTerraform(struct?: ZeroTrustGatewayPolicyExpiration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.numberToTerraform(struct!.duration),
@@ -120,7 +120,7 @@ export function zeroTrustGatewayPolicyExpirationToTerraform(struct?: ZeroTrustGa
 export function zeroTrustGatewayPolicyExpirationToHclTerraform(struct?: ZeroTrustGatewayPolicyExpiration | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -227,7 +227,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsAuditSsh {
   /**
   * Enable SSH command logging.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#command_logging ZeroTrustGatewayPolicy#command_logging}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#command_logging ZeroTrustGatewayPolicy#command_logging}
   */
   readonly commandLogging?: boolean | cdktn.IResolvable;
 }
@@ -235,7 +235,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsAuditSsh {
 export function zeroTrustGatewayPolicyRuleSettingsAuditSshToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsAuditSsh | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     command_logging: cdktn.booleanToTerraform(struct!.commandLogging),
@@ -246,7 +246,7 @@ export function zeroTrustGatewayPolicyRuleSettingsAuditSshToTerraform(struct?: Z
 export function zeroTrustGatewayPolicyRuleSettingsAuditSshToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsAuditSsh | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     command_logging: {
@@ -324,85 +324,85 @@ export interface ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls {
   * Configure copy behavior. If set to remote_only, users cannot copy isolated content from the remote browser to the local clipboard. If this field is absent, copying remains enabled. Applies only when version == "v2".
   * Available values: "enabled", "disabled", "remote_only".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#copy ZeroTrustGatewayPolicy#copy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#copy ZeroTrustGatewayPolicy#copy}
   */
   readonly copy?: string;
   /**
   * Set to false to enable copy-pasting. Only applies when `version == "v1"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#dcp ZeroTrustGatewayPolicy#dcp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#dcp ZeroTrustGatewayPolicy#dcp}
   */
   readonly dcp?: boolean | cdktn.IResolvable;
   /**
   * Set to false to enable downloading. Only applies when `version == "v1"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#dd ZeroTrustGatewayPolicy#dd}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#dd ZeroTrustGatewayPolicy#dd}
   */
   readonly dd?: boolean | cdktn.IResolvable;
   /**
   * Set to false to enable keyboard usage. Only applies when `version == "v1"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#dk ZeroTrustGatewayPolicy#dk}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#dk ZeroTrustGatewayPolicy#dk}
   */
   readonly dk?: boolean | cdktn.IResolvable;
   /**
   * Configure download behavior. When set to remote_only, users can view downloads but cannot save them. If this field is absent, downloading remains enabled. Applies only when version == "v2".
   * Available values: "enabled", "disabled", "remote_only".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#download ZeroTrustGatewayPolicy#download}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#download ZeroTrustGatewayPolicy#download}
   */
   readonly download?: string;
   /**
   * Set to false to enable printing. Only applies when `version == "v1"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#dp ZeroTrustGatewayPolicy#dp}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#dp ZeroTrustGatewayPolicy#dp}
   */
   readonly dp?: boolean | cdktn.IResolvable;
   /**
   * Set to false to enable uploading. Only applies when `version == "v1"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#du ZeroTrustGatewayPolicy#du}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#du ZeroTrustGatewayPolicy#du}
   */
   readonly du?: boolean | cdktn.IResolvable;
   /**
   * Configure keyboard usage behavior. If this field is absent, keyboard usage remains enabled. Applies only when version == "v2".
   * Available values: "enabled", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#keyboard ZeroTrustGatewayPolicy#keyboard}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#keyboard ZeroTrustGatewayPolicy#keyboard}
   */
   readonly keyboard?: string;
   /**
   * Configure paste behavior. If set to remote_only, users cannot paste content from the local clipboard into isolated pages. If this field is absent, pasting remains enabled. Applies only when version == "v2".
   * Available values: "enabled", "disabled", "remote_only".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#paste ZeroTrustGatewayPolicy#paste}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#paste ZeroTrustGatewayPolicy#paste}
   */
   readonly paste?: string;
   /**
   * Configure print behavior. Default, Printing is enabled. Applies only when version == "v2".
   * Available values: "enabled", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#printing ZeroTrustGatewayPolicy#printing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#printing ZeroTrustGatewayPolicy#printing}
   */
   readonly printing?: string;
   /**
   * Configure upload behavior. If this field is absent, uploading remains enabled. Applies only when version == "v2".
   * Available values: "enabled", "disabled".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#upload ZeroTrustGatewayPolicy#upload}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#upload ZeroTrustGatewayPolicy#upload}
   */
   readonly upload?: string;
   /**
   * Indicate which version of the browser isolation controls should apply.
   * Available values: "v1", "v2".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#version ZeroTrustGatewayPolicy#version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#version ZeroTrustGatewayPolicy#version}
   */
   readonly version?: string;
   /**
   * Specify the watermark ID (UUID) to apply to the isolated browser session. When present, enables watermark rendering in the isolated browser.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#wm_id ZeroTrustGatewayPolicy#wm_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#wm_id ZeroTrustGatewayPolicy#wm_id}
   */
   readonly wmId?: string;
 }
@@ -410,7 +410,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls {
 export function zeroTrustGatewayPolicyRuleSettingsBisoAdminControlsToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     copy: cdktn.stringToTerraform(struct!.copy),
@@ -433,7 +433,7 @@ export function zeroTrustGatewayPolicyRuleSettingsBisoAdminControlsToTerraform(s
 export function zeroTrustGatewayPolicyRuleSettingsBisoAdminControlsToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     copy: {
@@ -846,13 +846,13 @@ export interface ZeroTrustGatewayPolicyRuleSettingsBlockPage {
   /**
   * Specify whether to pass the context information as query parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
   */
   readonly includeContext?: boolean | cdktn.IResolvable;
   /**
   * Specify the URI to which the user is redirected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
   */
   readonly targetUri: string;
 }
@@ -860,7 +860,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsBlockPage {
 export function zeroTrustGatewayPolicyRuleSettingsBlockPageToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsBlockPage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_context: cdktn.booleanToTerraform(struct!.includeContext),
@@ -872,7 +872,7 @@ export function zeroTrustGatewayPolicyRuleSettingsBlockPageToTerraform(struct?: 
 export function zeroTrustGatewayPolicyRuleSettingsBlockPageToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsBlockPage | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_context: {
@@ -974,13 +974,13 @@ export interface ZeroTrustGatewayPolicyRuleSettingsCheckSession {
   /**
   * Sets the required session freshness threshold. The API returns a normalized version of this value.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#duration ZeroTrustGatewayPolicy#duration}
   */
   readonly duration?: string;
   /**
   * Enable session enforcement.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#enforce ZeroTrustGatewayPolicy#enforce}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#enforce ZeroTrustGatewayPolicy#enforce}
   */
   readonly enforce?: boolean | cdktn.IResolvable;
 }
@@ -988,7 +988,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsCheckSession {
 export function zeroTrustGatewayPolicyRuleSettingsCheckSessionToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsCheckSession | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     duration: cdktn.stringToTerraform(struct!.duration),
@@ -1000,7 +1000,7 @@ export function zeroTrustGatewayPolicyRuleSettingsCheckSessionToTerraform(struct
 export function zeroTrustGatewayPolicyRuleSettingsCheckSessionToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsCheckSession | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     duration: {
@@ -1105,25 +1105,25 @@ export interface ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4 {
   /**
   * Specify the IPv4 address of the upstream resolver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
   */
   readonly ip: string;
   /**
   * Specify a port number to use for the upstream resolver. Defaults to 53 if unspecified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
   */
   readonly port?: number;
   /**
   * Indicate whether to connect to this resolver over a private network. Must set when vnet_id set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
   */
   readonly routeThroughPrivateNetwork?: boolean | cdktn.IResolvable;
   /**
   * Specify an optional virtual network for this resolver. Uses default virtual network id if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
   */
   readonly vnetId?: string;
 }
@@ -1131,7 +1131,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4 {
 export function zeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4ToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip: cdktn.stringToTerraform(struct!.ip),
@@ -1145,7 +1145,7 @@ export function zeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4ToTerraform(st
 export function zeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4ToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip: {
@@ -1325,25 +1325,25 @@ export interface ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6 {
   /**
   * Specify the IPv6 address of the upstream resolver.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
   */
   readonly ip: string;
   /**
   * Specify a port number to use for the upstream resolver. Defaults to 53 if unspecified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
   */
   readonly port?: number;
   /**
   * Indicate whether to connect to this resolver over a private network. Must set when vnet_id set.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#route_through_private_network ZeroTrustGatewayPolicy#route_through_private_network}
   */
   readonly routeThroughPrivateNetwork?: boolean | cdktn.IResolvable;
   /**
   * Specify an optional virtual network for this resolver. Uses default virtual network id if omitted.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#vnet_id ZeroTrustGatewayPolicy#vnet_id}
   */
   readonly vnetId?: string;
 }
@@ -1351,7 +1351,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6 {
 export function zeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6ToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip: cdktn.stringToTerraform(struct!.ip),
@@ -1365,7 +1365,7 @@ export function zeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6ToTerraform(st
 export function zeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6ToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip: {
@@ -1543,11 +1543,11 @@ export class ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6List extends cdkt
 }
 export interface ZeroTrustGatewayPolicyRuleSettingsDnsResolvers {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}
   */
   readonly ipv4?: ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4[] | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}
   */
   readonly ipv6?: ZeroTrustGatewayPolicyRuleSettingsDnsResolversIpv6[] | cdktn.IResolvable;
 }
@@ -1555,7 +1555,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsDnsResolvers {
 export function zeroTrustGatewayPolicyRuleSettingsDnsResolversToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsDnsResolvers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ipv4: cdktn.listMapper(zeroTrustGatewayPolicyRuleSettingsDnsResolversIpv4ToTerraform, false)(struct!.ipv4),
@@ -1567,7 +1567,7 @@ export function zeroTrustGatewayPolicyRuleSettingsDnsResolversToTerraform(struct
 export function zeroTrustGatewayPolicyRuleSettingsDnsResolversToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsDnsResolvers | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ipv4: {
@@ -1672,19 +1672,19 @@ export interface ZeroTrustGatewayPolicyRuleSettingsEgress {
   /**
   * Specify the IPv4 address to use for egress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ipv4 ZeroTrustGatewayPolicy#ipv4}
   */
   readonly ipv4?: string;
   /**
   * Specify the fallback IPv4 address to use for egress when the primary IPv4 fails. Set '0.0.0.0' to indicate local egress via WARP IPs.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ipv4_fallback ZeroTrustGatewayPolicy#ipv4_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ipv4_fallback ZeroTrustGatewayPolicy#ipv4_fallback}
   */
   readonly ipv4Fallback?: string;
   /**
   * Specify the IPv6 range to use for egress.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ipv6 ZeroTrustGatewayPolicy#ipv6}
   */
   readonly ipv6?: string;
 }
@@ -1692,7 +1692,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsEgress {
 export function zeroTrustGatewayPolicyRuleSettingsEgressToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsEgress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ipv4: cdktn.stringToTerraform(struct!.ipv4),
@@ -1705,7 +1705,7 @@ export function zeroTrustGatewayPolicyRuleSettingsEgressToTerraform(struct?: Zer
 export function zeroTrustGatewayPolicyRuleSettingsEgressToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsEgress | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ipv4: {
@@ -1838,7 +1838,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsForensicCopy {
   /**
   * Enable sending the copy to storage.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -1846,7 +1846,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsForensicCopy {
 export function zeroTrustGatewayPolicyRuleSettingsForensicCopyToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsForensicCopy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -1857,7 +1857,7 @@ export function zeroTrustGatewayPolicyRuleSettingsForensicCopyToTerraform(struct
 export function zeroTrustGatewayPolicyRuleSettingsForensicCopyToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsForensicCopy | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -1934,13 +1934,13 @@ export interface ZeroTrustGatewayPolicyRuleSettingsL4Override {
   /**
   * Defines the IPv4 or IPv6 address.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ip ZeroTrustGatewayPolicy#ip}
   */
   readonly ip?: string;
   /**
   * Defines a port number to use for TCP/UDP overrides.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#port ZeroTrustGatewayPolicy#port}
   */
   readonly port?: number;
 }
@@ -1948,7 +1948,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsL4Override {
 export function zeroTrustGatewayPolicyRuleSettingsL4OverrideToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsL4Override | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     ip: cdktn.stringToTerraform(struct!.ip),
@@ -1960,7 +1960,7 @@ export function zeroTrustGatewayPolicyRuleSettingsL4OverrideToTerraform(struct?:
 export function zeroTrustGatewayPolicyRuleSettingsL4OverrideToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsL4Override | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     ip: {
@@ -2065,25 +2065,25 @@ export interface ZeroTrustGatewayPolicyRuleSettingsNotificationSettings {
   /**
   * Enable notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether to pass the context information as query parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
   */
   readonly includeContext?: boolean | cdktn.IResolvable;
   /**
   * Customize the message shown in the notification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#msg ZeroTrustGatewayPolicy#msg}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#msg ZeroTrustGatewayPolicy#msg}
   */
   readonly msg?: string;
   /**
   * Defines an optional URL to direct users to additional information. If unset, the notification opens a block page.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#support_url ZeroTrustGatewayPolicy#support_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#support_url ZeroTrustGatewayPolicy#support_url}
   */
   readonly supportUrl?: string;
 }
@@ -2091,7 +2091,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsNotificationSettings {
 export function zeroTrustGatewayPolicyRuleSettingsNotificationSettingsToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsNotificationSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -2105,7 +2105,7 @@ export function zeroTrustGatewayPolicyRuleSettingsNotificationSettingsToTerrafor
 export function zeroTrustGatewayPolicyRuleSettingsNotificationSettingsToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsNotificationSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2266,7 +2266,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsPayloadLog {
   /**
   * Enable DLP payload logging for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#enabled ZeroTrustGatewayPolicy#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
 }
@@ -2274,7 +2274,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsPayloadLog {
 export function zeroTrustGatewayPolicyRuleSettingsPayloadLogToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsPayloadLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -2285,7 +2285,7 @@ export function zeroTrustGatewayPolicyRuleSettingsPayloadLogToTerraform(struct?:
 export function zeroTrustGatewayPolicyRuleSettingsPayloadLogToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsPayloadLog | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -2362,7 +2362,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsQuarantine {
   /**
   * Specify the types of files to sandbox.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#file_types ZeroTrustGatewayPolicy#file_types}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#file_types ZeroTrustGatewayPolicy#file_types}
   */
   readonly fileTypes?: string[];
 }
@@ -2370,7 +2370,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsQuarantine {
 export function zeroTrustGatewayPolicyRuleSettingsQuarantineToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsQuarantine | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     file_types: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.fileTypes),
@@ -2381,7 +2381,7 @@ export function zeroTrustGatewayPolicyRuleSettingsQuarantineToTerraform(struct?:
 export function zeroTrustGatewayPolicyRuleSettingsQuarantineToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsQuarantine | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     file_types: {
@@ -2458,19 +2458,19 @@ export interface ZeroTrustGatewayPolicyRuleSettingsRedirect {
   /**
   * Specify whether to pass the context information as query parameters.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#include_context ZeroTrustGatewayPolicy#include_context}
   */
   readonly includeContext?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to append the path and query parameters from the original request to target_uri.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#preserve_path_and_query ZeroTrustGatewayPolicy#preserve_path_and_query}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#preserve_path_and_query ZeroTrustGatewayPolicy#preserve_path_and_query}
   */
   readonly preservePathAndQuery?: boolean | cdktn.IResolvable;
   /**
   * Specify the URI to which the user is redirected.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#target_uri ZeroTrustGatewayPolicy#target_uri}
   */
   readonly targetUri: string;
 }
@@ -2478,7 +2478,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsRedirect {
 export function zeroTrustGatewayPolicyRuleSettingsRedirectToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsRedirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     include_context: cdktn.booleanToTerraform(struct!.includeContext),
@@ -2491,7 +2491,7 @@ export function zeroTrustGatewayPolicyRuleSettingsRedirectToTerraform(struct?: Z
 export function zeroTrustGatewayPolicyRuleSettingsRedirectToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsRedirect | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     include_context: {
@@ -2622,13 +2622,13 @@ export interface ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally {
   * Specify the fallback behavior to apply when the internal DNS response code differs from 'NOERROR' or when the response data contains only CNAME records for 'A' or 'AAAA' queries.
   * Available values: "none", "public_dns".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#fallback ZeroTrustGatewayPolicy#fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#fallback ZeroTrustGatewayPolicy#fallback}
   */
   readonly fallback?: string;
   /**
   * Specify the internal DNS view identifier to pass to the internal DNS service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#view_id ZeroTrustGatewayPolicy#view_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#view_id ZeroTrustGatewayPolicy#view_id}
   */
   readonly viewId?: string;
 }
@@ -2636,7 +2636,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally {
 export function zeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fallback: cdktn.stringToTerraform(struct!.fallback),
@@ -2648,7 +2648,7 @@ export function zeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyToTerrafor
 export function zeroTrustGatewayPolicyRuleSettingsResolveDnsInternallyToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fallback: {
@@ -2754,7 +2754,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsUntrustedCert {
   * Defines the action performed when an untrusted certificate seen. The default action an error with HTTP code 526.
   * Available values: "pass_through", "block", "error".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#action ZeroTrustGatewayPolicy#action}
   */
   readonly action?: string;
 }
@@ -2762,7 +2762,7 @@ export interface ZeroTrustGatewayPolicyRuleSettingsUntrustedCert {
 export function zeroTrustGatewayPolicyRuleSettingsUntrustedCertToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsUntrustedCert | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     action: cdktn.stringToTerraform(struct!.action),
@@ -2773,7 +2773,7 @@ export function zeroTrustGatewayPolicyRuleSettingsUntrustedCertToTerraform(struc
 export function zeroTrustGatewayPolicyRuleSettingsUntrustedCertToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettingsUntrustedCert | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     action: {
@@ -2850,157 +2850,157 @@ export interface ZeroTrustGatewayPolicyRuleSettings {
   /**
   * Add custom headers to allowed requests as key-value pairs. Use header names as keys that map to arrays of header values. Settable only for `http` rules with the action set to `allow`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#add_headers ZeroTrustGatewayPolicy#add_headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#add_headers ZeroTrustGatewayPolicy#add_headers}
   */
   readonly addHeaders?: { [key: string]: string[] } | cdktn.IResolvable;
   /**
   * Set to enable MSP children to bypass this rule. Only parent MSP accounts can set this. this rule. Settable for all types of rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#allow_child_bypass ZeroTrustGatewayPolicy#allow_child_bypass}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#allow_child_bypass ZeroTrustGatewayPolicy#allow_child_bypass}
   */
   readonly allowChildBypass?: boolean | cdktn.IResolvable;
   /**
   * Define the settings for the Audit SSH action. Settable only for `l4` rules with `audit_ssh` action.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#audit_ssh ZeroTrustGatewayPolicy#audit_ssh}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#audit_ssh ZeroTrustGatewayPolicy#audit_ssh}
   */
   readonly auditSsh?: ZeroTrustGatewayPolicyRuleSettingsAuditSsh;
   /**
   * Configure browser isolation behavior. Settable only for `http` rules with the action set to `isolate`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#biso_admin_controls ZeroTrustGatewayPolicy#biso_admin_controls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#biso_admin_controls ZeroTrustGatewayPolicy#biso_admin_controls}
   */
   readonly bisoAdminControls?: ZeroTrustGatewayPolicyRuleSettingsBisoAdminControls;
   /**
   * Configure custom block page settings. If missing or null, use the account settings. Settable only for `http` rules with the action set to `block`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#block_page ZeroTrustGatewayPolicy#block_page}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#block_page ZeroTrustGatewayPolicy#block_page}
   */
   readonly blockPage?: ZeroTrustGatewayPolicyRuleSettingsBlockPage;
   /**
   * Enable the custom block page. Settable only for `dns` rules with action `block`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#block_page_enabled ZeroTrustGatewayPolicy#block_page_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#block_page_enabled ZeroTrustGatewayPolicy#block_page_enabled}
   */
   readonly blockPageEnabled?: boolean | cdktn.IResolvable;
   /**
   * Explain why the rule blocks the request. The custom block page shows this text (if enabled). Settable only for `dns`, `l4`, and `http` rules when the action set to `block`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#block_reason ZeroTrustGatewayPolicy#block_reason}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#block_reason ZeroTrustGatewayPolicy#block_reason}
   */
   readonly blockReason?: string;
   /**
   * Set to enable MSP accounts to bypass their parent's rules. Only MSP child accounts can set this. Settable for all types of rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#bypass_parent_rule ZeroTrustGatewayPolicy#bypass_parent_rule}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#bypass_parent_rule ZeroTrustGatewayPolicy#bypass_parent_rule}
   */
   readonly bypassParentRule?: boolean | cdktn.IResolvable;
   /**
   * Configure session check behavior. Settable only for `l4` and `http` rules with the action set to `allow`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#check_session ZeroTrustGatewayPolicy#check_session}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#check_session ZeroTrustGatewayPolicy#check_session}
   */
   readonly checkSession?: ZeroTrustGatewayPolicyRuleSettingsCheckSession;
   /**
   * Configure custom resolvers to route queries that match the resolver policy. Unused with 'resolve_dns_through_cloudflare' or 'resolve_dns_internally' settings. DNS queries get routed to the address closest to their origin. Only valid when a rule's action set to 'resolve'. Settable only for `dns_resolver` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#dns_resolvers ZeroTrustGatewayPolicy#dns_resolvers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#dns_resolvers ZeroTrustGatewayPolicy#dns_resolvers}
   */
   readonly dnsResolvers?: ZeroTrustGatewayPolicyRuleSettingsDnsResolvers;
   /**
   * Configure how Gateway Proxy traffic egresses. You can enable this setting for rules with Egress actions and filters, or omit it to indicate local egress via WARP IPs. Settable only for `egress` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#egress ZeroTrustGatewayPolicy#egress}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#egress ZeroTrustGatewayPolicy#egress}
   */
   readonly egress?: ZeroTrustGatewayPolicyRuleSettingsEgress;
   /**
   * Configure whether a copy of the HTTP request will be sent to storage when the rule matches.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#forensic_copy ZeroTrustGatewayPolicy#forensic_copy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#forensic_copy ZeroTrustGatewayPolicy#forensic_copy}
   */
   readonly forensicCopy?: ZeroTrustGatewayPolicyRuleSettingsForensicCopy;
   /**
   * Ignore category matches at CNAME domains in a response. When off, evaluate categories in this rule against all CNAME domain categories in the response. Settable only for `dns` and `dns_resolver` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ignore_cname_category_matches ZeroTrustGatewayPolicy#ignore_cname_category_matches}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ignore_cname_category_matches ZeroTrustGatewayPolicy#ignore_cname_category_matches}
   */
   readonly ignoreCnameCategoryMatches?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to disable DNSSEC validation (for Allow actions) [INSECURE]. Settable only for `dns` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#insecure_disable_dnssec_validation ZeroTrustGatewayPolicy#insecure_disable_dnssec_validation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#insecure_disable_dnssec_validation ZeroTrustGatewayPolicy#insecure_disable_dnssec_validation}
   */
   readonly insecureDisableDnssecValidation?: boolean | cdktn.IResolvable;
   /**
   * Enable IPs in DNS resolver category blocks. The system blocks only domain name categories unless you enable this setting. Settable only for `dns` and `dns_resolver` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ip_categories ZeroTrustGatewayPolicy#ip_categories}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ip_categories ZeroTrustGatewayPolicy#ip_categories}
   */
   readonly ipCategories?: boolean | cdktn.IResolvable;
   /**
   * Indicates whether to include IPs in DNS resolver indicator feed blocks. Default, indicator feeds block only domain names. Settable only for `dns` and `dns_resolver` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#ip_indicator_feeds ZeroTrustGatewayPolicy#ip_indicator_feeds}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#ip_indicator_feeds ZeroTrustGatewayPolicy#ip_indicator_feeds}
   */
   readonly ipIndicatorFeeds?: boolean | cdktn.IResolvable;
   /**
   * Send matching traffic to the supplied destination IP address and port. Settable only for `l4` rules with the action set to `l4_override`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#l4override ZeroTrustGatewayPolicy#l4override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#l4override ZeroTrustGatewayPolicy#l4override}
   */
   readonly l4Override?: ZeroTrustGatewayPolicyRuleSettingsL4Override;
   /**
   * Configure a notification to display on the user's device when this rule matched. Settable for all types of rules with the action set to `block`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#notification_settings ZeroTrustGatewayPolicy#notification_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#notification_settings ZeroTrustGatewayPolicy#notification_settings}
   */
   readonly notificationSettings?: ZeroTrustGatewayPolicyRuleSettingsNotificationSettings;
   /**
   * Defines a hostname for override, for the matching DNS queries. Settable only for `dns` rules with the action set to `override`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#override_host ZeroTrustGatewayPolicy#override_host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#override_host ZeroTrustGatewayPolicy#override_host}
   */
   readonly overrideHost?: string;
   /**
   * Defines a an IP or set of IPs for overriding matched DNS queries. Settable only for `dns` rules with the action set to `override`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#override_ips ZeroTrustGatewayPolicy#override_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#override_ips ZeroTrustGatewayPolicy#override_ips}
   */
   readonly overrideIps?: string[];
   /**
   * Configure DLP payload logging. Settable only for `http` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#payload_log ZeroTrustGatewayPolicy#payload_log}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#payload_log ZeroTrustGatewayPolicy#payload_log}
   */
   readonly payloadLog?: ZeroTrustGatewayPolicyRuleSettingsPayloadLog;
   /**
   * Configure settings that apply to quarantine rules. Settable only for `http` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#quarantine ZeroTrustGatewayPolicy#quarantine}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#quarantine ZeroTrustGatewayPolicy#quarantine}
   */
   readonly quarantine?: ZeroTrustGatewayPolicyRuleSettingsQuarantine;
   /**
   * Apply settings to redirect rules. Settable only for `http` rules with the action set to `redirect`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#redirect ZeroTrustGatewayPolicy#redirect}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#redirect ZeroTrustGatewayPolicy#redirect}
   */
   readonly redirect?: ZeroTrustGatewayPolicyRuleSettingsRedirect;
   /**
   * Configure to forward the query to the internal DNS service, passing the specified 'view_id' as input. Not used when 'dns_resolvers' is specified or 'resolve_dns_through_cloudflare' is set. Only valid when a rule's action set to 'resolve'. Settable only for `dns_resolver` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#resolve_dns_internally ZeroTrustGatewayPolicy#resolve_dns_internally}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#resolve_dns_internally ZeroTrustGatewayPolicy#resolve_dns_internally}
   */
   readonly resolveDnsInternally?: ZeroTrustGatewayPolicyRuleSettingsResolveDnsInternally;
   /**
   * Enable to send queries that match the policy to Cloudflare's default 1.1.1.1 DNS resolver. Cannot set when 'dns_resolvers' specified or 'resolve_dns_internally' is set. Only valid when a rule's action set to 'resolve'. Settable only for `dns_resolver` rules.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#resolve_dns_through_cloudflare ZeroTrustGatewayPolicy#resolve_dns_through_cloudflare}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#resolve_dns_through_cloudflare ZeroTrustGatewayPolicy#resolve_dns_through_cloudflare}
   */
   readonly resolveDnsThroughCloudflare?: boolean | cdktn.IResolvable;
   /**
   * Configure behavior when an upstream certificate is invalid or an SSL error occurs. Settable only for `http` rules with the action set to `allow`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#untrusted_cert ZeroTrustGatewayPolicy#untrusted_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#untrusted_cert ZeroTrustGatewayPolicy#untrusted_cert}
   */
   readonly untrustedCert?: ZeroTrustGatewayPolicyRuleSettingsUntrustedCert;
 }
@@ -3008,7 +3008,7 @@ export interface ZeroTrustGatewayPolicyRuleSettings {
 export function zeroTrustGatewayPolicyRuleSettingsToTerraform(struct?: ZeroTrustGatewayPolicyRuleSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     add_headers: cdktn.hashMapper(cdktn.listMapper(cdktn.stringToTerraform, false))(struct!.addHeaders),
@@ -3044,7 +3044,7 @@ export function zeroTrustGatewayPolicyRuleSettingsToTerraform(struct?: ZeroTrust
 export function zeroTrustGatewayPolicyRuleSettingsToHclTerraform(struct?: ZeroTrustGatewayPolicyRuleSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     add_headers: {
@@ -3821,49 +3821,49 @@ export interface ZeroTrustGatewayPolicySchedule {
   /**
   * Specify the time intervals when the rule is active on Fridays, in the increasing order from 00:00-24:00.  If this parameter omitted, the rule is deactivated on Fridays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#fri ZeroTrustGatewayPolicy#fri}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#fri ZeroTrustGatewayPolicy#fri}
   */
   readonly fri?: string;
   /**
   * Specify the time intervals when the rule is active on Mondays, in the increasing order from 00:00-24:00(capped at maximum of 6 time splits). If this parameter omitted, the rule is deactivated on Mondays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#mon ZeroTrustGatewayPolicy#mon}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#mon ZeroTrustGatewayPolicy#mon}
   */
   readonly mon?: string;
   /**
   * Specify the time intervals when the rule is active on Saturdays, in the increasing order from 00:00-24:00.  If this parameter omitted, the rule is deactivated on Saturdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#sat ZeroTrustGatewayPolicy#sat}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#sat ZeroTrustGatewayPolicy#sat}
   */
   readonly sat?: string;
   /**
   * Specify the time intervals when the rule is active on Sundays, in the increasing order from 00:00-24:00. If this parameter omitted, the rule is deactivated on Sundays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#sun ZeroTrustGatewayPolicy#sun}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#sun ZeroTrustGatewayPolicy#sun}
   */
   readonly sun?: string;
   /**
   * Specify the time intervals when the rule is active on Thursdays, in the increasing order from 00:00-24:00. If this parameter omitted, the rule is deactivated on Thursdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#thu ZeroTrustGatewayPolicy#thu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#thu ZeroTrustGatewayPolicy#thu}
   */
   readonly thu?: string;
   /**
   * Specify the time zone for rule evaluation. When a [valid time zone city name](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones#List) is provided, Gateway always uses the current time for that time zone. When this parameter is omitted, Gateway uses the time zone determined from the user's IP address. Colo time zone is used when the user's IP address does not resolve to a location.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#time_zone ZeroTrustGatewayPolicy#time_zone}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#time_zone ZeroTrustGatewayPolicy#time_zone}
   */
   readonly timeZone?: string;
   /**
   * Specify the time intervals when the rule is active on Tuesdays, in the increasing order from 00:00-24:00. If this parameter omitted, the rule is deactivated on Tuesdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#tue ZeroTrustGatewayPolicy#tue}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#tue ZeroTrustGatewayPolicy#tue}
   */
   readonly tue?: string;
   /**
   * Specify the time intervals when the rule is active on Wednesdays, in the increasing order from 00:00-24:00. If this parameter omitted, the rule is deactivated on Wednesdays. API returns a formatted version of this string, which may cause Terraform drift if a unformatted value is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#wed ZeroTrustGatewayPolicy#wed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#wed ZeroTrustGatewayPolicy#wed}
   */
   readonly wed?: string;
 }
@@ -3871,7 +3871,7 @@ export interface ZeroTrustGatewayPolicySchedule {
 export function zeroTrustGatewayPolicyScheduleToTerraform(struct?: ZeroTrustGatewayPolicySchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     fri: cdktn.stringToTerraform(struct!.fri),
@@ -3889,7 +3889,7 @@ export function zeroTrustGatewayPolicyScheduleToTerraform(struct?: ZeroTrustGate
 export function zeroTrustGatewayPolicyScheduleToHclTerraform(struct?: ZeroTrustGatewayPolicySchedule | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     fri: {
@@ -4160,7 +4160,7 @@ export class ZeroTrustGatewayPolicyScheduleOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy}
 */
 export class ZeroTrustGatewayPolicy extends cdktn.TerraformResource {
 
@@ -4176,7 +4176,7 @@ export class ZeroTrustGatewayPolicy extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZeroTrustGatewayPolicy resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustGatewayPolicy to import
-  * @param importFromId The id of the existing ZeroTrustGatewayPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustGatewayPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustGatewayPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4188,7 +4188,7 @@ export class ZeroTrustGatewayPolicy extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_policy cloudflare_zero_trust_gateway_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4199,7 +4199,7 @@ export class ZeroTrustGatewayPolicy extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_gateway_policy',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
