@@ -4,7 +4,7 @@
 
 ### User <a name="User" id="@cdktn/provider-cloudflare.user.User"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user cloudflare_user}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user cloudflare_user}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.user.User.Initializer"></a>
 
@@ -524,7 +524,7 @@ The construct id used in the generated config for the User to import.
 
 The id of the existing User that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -555,6 +555,7 @@ Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflar
 | <code><a href="#@cdktn/provider-cloudflare.user.User.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.user.User.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.user.User.property.betas">Betas</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.user.User.property.email">Email</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.user.User.property.hasBusinessZones">HasBusinessZones</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.user.User.property.hasEnterpriseZones">HasEnterpriseZones</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.user.User.property.hasProZones">HasProZones</a></code> | <code>Io.Cdktn.IResolvable</code> | *No description.* |
@@ -725,6 +726,16 @@ public string[] Betas { get; }
 ```
 
 - *Type:* string[]
+
+---
+
+##### `Email`<sup>Required</sup> <a name="Email" id="@cdktn/provider-cloudflare.user.User.property.email"></a>
+
+```csharp
+public string Email { get; }
+```
+
+- *Type:* string
 
 ---
 
@@ -1050,7 +1061,7 @@ public string Country { get; set; }
 
 The country in which the user lives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user#country User#country}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user#country User#country}
 
 ---
 
@@ -1064,7 +1075,7 @@ public string FirstName { get; set; }
 
 User's first name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user#first_name User#first_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user#first_name User#first_name}
 
 ---
 
@@ -1078,7 +1089,7 @@ public string LastName { get; set; }
 
 User's last name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user#last_name User#last_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user#last_name User#last_name}
 
 ---
 
@@ -1092,7 +1103,7 @@ public string Telephone { get; set; }
 
 User's telephone number.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user#telephone User#telephone}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user#telephone User#telephone}
 
 ---
 
@@ -1106,7 +1117,7 @@ public string Zipcode { get; set; }
 
 The zipcode or postal code where the user lives.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/user#zipcode User#zipcode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user#zipcode User#zipcode}
 
 ---
 

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,23 +13,27 @@ import * as cdktn from 'cdktn';
 
 export interface WorkflowConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow#account_id Workflow#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#account_id Workflow#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow#class_name Workflow#class_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#class_name Workflow#class_name}
   */
   readonly className: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow#limits Workflow#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#limits Workflow#limits}
   */
   readonly limits?: WorkflowLimits;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow#script_name Workflow#script_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#schedules Workflow#schedules}
+  */
+  readonly schedules?: WorkflowSchedules[] | cdktn.IResolvable;
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#script_name Workflow#script_name}
   */
   readonly scriptName: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow#workflow_name Workflow#workflow_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#workflow_name Workflow#workflow_name}
   */
   readonly workflowName: string;
 }
@@ -39,7 +43,7 @@ export interface WorkflowInstances {
 export function workflowInstancesToTerraform(struct?: WorkflowInstances): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -49,7 +53,7 @@ export function workflowInstancesToTerraform(struct?: WorkflowInstances): any {
 export function workflowInstancesToHclTerraform(struct?: WorkflowInstances): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -102,6 +106,11 @@ export class WorkflowInstancesOutputReference extends cdktn.ComplexObject {
     return this.getNumberAttribute('queued');
   }
 
+  // rolling_back - computed: true, optional: false, required: false
+  public get rollingBack() {
+    return this.getNumberAttribute('rolling_back');
+  }
+
   // running - computed: true, optional: false, required: false
   public get running() {
     return this.getNumberAttribute('running');
@@ -124,7 +133,7 @@ export class WorkflowInstancesOutputReference extends cdktn.ComplexObject {
 }
 export interface WorkflowLimits {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow#steps Workflow#steps}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#steps Workflow#steps}
   */
   readonly steps?: number;
 }
@@ -132,7 +141,7 @@ export interface WorkflowLimits {
 export function workflowLimitsToTerraform(struct?: WorkflowLimits | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     steps: cdktn.numberToTerraform(struct!.steps),
@@ -143,7 +152,7 @@ export function workflowLimitsToTerraform(struct?: WorkflowLimits | cdktn.IResol
 export function workflowLimitsToHclTerraform(struct?: WorkflowLimits | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     steps: {
@@ -216,9 +225,122 @@ export class WorkflowLimitsOutputReference extends cdktn.ComplexObject {
     return this._steps;
   }
 }
+export interface WorkflowSchedules {
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#cron Workflow#cron}
+  */
+  readonly cron: string;
+}
+
+export function workflowSchedulesToTerraform(struct?: WorkflowSchedules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  return {
+    cron: cdktn.stringToTerraform(struct!.cron),
+  }
+}
+
+
+export function workflowSchedulesToHclTerraform(struct?: WorkflowSchedules | cdktn.IResolvable): any {
+  if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktn.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
+  }
+  const attrs = {
+    cron: {
+      value: cdktn.stringToHclTerraform(struct!.cron),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class WorkflowSchedulesOutputReference extends cdktn.ComplexObject {
+  private isEmptyObject = false;
+  private resolvableValue?: cdktn.IResolvable;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): WorkflowSchedules | cdktn.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._cron !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.cron = this._cron;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: WorkflowSchedules | cdktn.IResolvable | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._cron = undefined;
+    }
+    else if (cdktn.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._cron = value.cron;
+    }
+  }
+
+  // cron - computed: false, optional: false, required: true
+  private _cron?: string; 
+  public get cron() {
+    return this.getStringAttribute('cron');
+  }
+  public set cron(value: string) {
+    this._cron = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get cronInput() {
+    return this._cron;
+  }
+}
+
+export class WorkflowSchedulesList extends cdktn.ComplexList {
+  public internalValue? : WorkflowSchedules[] | cdktn.IResolvable
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(terraformResource: cdktn.IInterpolatingParent, terraformAttribute: string, wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet);
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): WorkflowSchedulesOutputReference {
+    return new WorkflowSchedulesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow}
 */
 export class Workflow extends cdktn.TerraformResource {
 
@@ -234,7 +356,7 @@ export class Workflow extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a Workflow resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Workflow to import
-  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Workflow that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Workflow to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -246,7 +368,7 @@ export class Workflow extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/workflow cloudflare_workflow} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workflow cloudflare_workflow} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -257,7 +379,7 @@ export class Workflow extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_workflow',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -271,6 +393,7 @@ export class Workflow extends cdktn.TerraformResource {
     this._accountId = config.accountId;
     this._className = config.className;
     this._limits.internalValue = config.limits;
+    this._schedules.internalValue = config.schedules;
     this._scriptName = config.scriptName;
     this._workflowName = config.workflowName;
   }
@@ -355,6 +478,22 @@ export class Workflow extends cdktn.TerraformResource {
     return this.getStringAttribute('name');
   }
 
+  // schedules - computed: false, optional: true, required: false
+  private _schedules = new WorkflowSchedulesList(this, "schedules", false);
+  public get schedules() {
+    return this._schedules;
+  }
+  public putSchedules(value: WorkflowSchedules[] | cdktn.IResolvable) {
+    this._schedules.internalValue = value;
+  }
+  public resetSchedules() {
+    this._schedules.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get schedulesInput() {
+    return this._schedules.internalValue;
+  }
+
   // script_name - computed: false, optional: false, required: true
   private _scriptName?: string; 
   public get scriptName() {
@@ -405,6 +544,7 @@ export class Workflow extends cdktn.TerraformResource {
       account_id: cdktn.stringToTerraform(this._accountId),
       class_name: cdktn.stringToTerraform(this._className),
       limits: workflowLimitsToTerraform(this._limits.internalValue),
+      schedules: cdktn.listMapper(workflowSchedulesToTerraform, false)(this._schedules.internalValue),
       script_name: cdktn.stringToTerraform(this._scriptName),
       workflow_name: cdktn.stringToTerraform(this._workflowName),
     };
@@ -429,6 +569,12 @@ export class Workflow extends cdktn.TerraformResource {
         isBlock: true,
         type: "struct",
         storageClassType: "WorkflowLimits",
+      },
+      schedules: {
+        value: cdktn.listMapperHcl(workflowSchedulesToHclTerraform, false)(this._schedules.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "WorkflowSchedulesList",
       },
       script_name: {
         value: cdktn.stringToHclTerraform(this._scriptName),

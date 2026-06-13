@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,26 +16,26 @@ export interface DataCloudflareCustomSslsConfig extends cdktn.TerraformMetaArgum
   * Whether to match all search requirements or at least one (any).
   * Available values: "any", "all".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls#match DataCloudflareCustomSsls#match}
   */
   readonly match?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls#max_items DataCloudflareCustomSsls#max_items}
   */
   readonly maxItems?: number;
   /**
   * Status of the zone's custom SSL.
   * Available values: "active", "expired", "deleted", "pending", "initializing".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls#status DataCloudflareCustomSsls#status}
   */
   readonly status?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls#zone_id DataCloudflareCustomSsls#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -45,7 +45,7 @@ export interface DataCloudflareCustomSslsResultGeoRestrictions {
 export function dataCloudflareCustomSslsResultGeoRestrictionsToTerraform(struct?: DataCloudflareCustomSslsResultGeoRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -55,7 +55,7 @@ export function dataCloudflareCustomSslsResultGeoRestrictionsToTerraform(struct?
 export function dataCloudflareCustomSslsResultGeoRestrictionsToHclTerraform(struct?: DataCloudflareCustomSslsResultGeoRestrictions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -99,7 +99,7 @@ export interface DataCloudflareCustomSslsResultKeylessServerTunnel {
 export function dataCloudflareCustomSslsResultKeylessServerTunnelToTerraform(struct?: DataCloudflareCustomSslsResultKeylessServerTunnel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -109,7 +109,7 @@ export function dataCloudflareCustomSslsResultKeylessServerTunnelToTerraform(str
 export function dataCloudflareCustomSslsResultKeylessServerTunnelToHclTerraform(struct?: DataCloudflareCustomSslsResultKeylessServerTunnel): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -158,7 +158,7 @@ export interface DataCloudflareCustomSslsResultKeylessServer {
 export function dataCloudflareCustomSslsResultKeylessServerToTerraform(struct?: DataCloudflareCustomSslsResultKeylessServer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -168,7 +168,7 @@ export function dataCloudflareCustomSslsResultKeylessServerToTerraform(struct?: 
 export function dataCloudflareCustomSslsResultKeylessServerToHclTerraform(struct?: DataCloudflareCustomSslsResultKeylessServer): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -258,7 +258,7 @@ export interface DataCloudflareCustomSslsResult {
 export function dataCloudflareCustomSslsResultToTerraform(struct?: DataCloudflareCustomSslsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -268,7 +268,7 @@ export function dataCloudflareCustomSslsResultToTerraform(struct?: DataCloudflar
 export function dataCloudflareCustomSslsResultToHclTerraform(struct?: DataCloudflareCustomSslsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -401,7 +401,7 @@ export class DataCloudflareCustomSslsResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls cloudflare_custom_ssls}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls cloudflare_custom_ssls}
 */
 export class DataCloudflareCustomSsls extends cdktn.TerraformDataSource {
 
@@ -417,7 +417,7 @@ export class DataCloudflareCustomSsls extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareCustomSsls resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareCustomSsls to import
-  * @param importFromId The id of the existing DataCloudflareCustomSsls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareCustomSsls that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareCustomSsls to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -429,7 +429,7 @@ export class DataCloudflareCustomSsls extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/custom_ssls cloudflare_custom_ssls} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -440,7 +440,7 @@ export class DataCloudflareCustomSsls extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_custom_ssls',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

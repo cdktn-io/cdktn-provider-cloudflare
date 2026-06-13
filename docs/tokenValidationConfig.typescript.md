@@ -4,7 +4,7 @@
 
 ### TokenValidationConfig <a name="TokenValidationConfig" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config cloudflare_token_validation_config}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config cloudflare_token_validation_config}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfig.Initializer"></a>
 
@@ -509,7 +509,7 @@ The construct id used in the generated config for the TokenValidationConfig to i
 
 The id of the existing TokenValidationConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -890,10 +890,10 @@ const tokenValidationConfigConfig: tokenValidationConfig.TokenValidationConfigCo
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.credentials">credentials</a></code> | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials">TokenValidationConfigCredentials</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#description TokenValidationConfig#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#title TokenValidationConfig#title}. |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.tokenSources">tokenSources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.credentials">credentials</a></code> | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials">TokenValidationConfigCredentials</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.description">description</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#description TokenValidationConfig#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#title TokenValidationConfig#title}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.tokenSources">tokenSources</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}. |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.tokenType">tokenType</a></code> | <code>string</code> | Available values: "JWT". |
 | <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
@@ -977,7 +977,7 @@ public readonly credentials: TokenValidationConfigCredentials;
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials">TokenValidationConfigCredentials</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#credentials TokenValidationConfig#credentials}.
 
 ---
 
@@ -989,7 +989,7 @@ public readonly description: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#description TokenValidationConfig#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#description TokenValidationConfig#description}.
 
 ---
 
@@ -1001,7 +1001,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#title TokenValidationConfig#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#title TokenValidationConfig#title}.
 
 ---
 
@@ -1013,7 +1013,7 @@ public readonly tokenSources: string[];
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#token_sources TokenValidationConfig#token_sources}.
 
 ---
 
@@ -1027,7 +1027,7 @@ public readonly tokenType: string;
 
 Available values: "JWT".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#token_type TokenValidationConfig#token_type}
 
 ---
 
@@ -1041,7 +1041,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#zone_id TokenValidationConfig#zone_id}
 
 ---
 
@@ -1059,7 +1059,7 @@ const tokenValidationConfigCredentials: tokenValidationConfig.TokenValidationCon
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials.property.keys">keys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys">TokenValidationConfigCredentialsKeys</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#keys TokenValidationConfig#keys}. |
+| <code><a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentials.property.keys">keys</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys">TokenValidationConfigCredentialsKeys</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}. |
 
 ---
 
@@ -1071,7 +1071,7 @@ public readonly keys: IResolvable | TokenValidationConfigCredentialsKeys[];
 
 - *Type:* cdktn.IResolvable | <a href="#@cdktn/provider-cloudflare.tokenValidationConfig.TokenValidationConfigCredentialsKeys">TokenValidationConfigCredentialsKeys</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#keys TokenValidationConfig#keys}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#keys TokenValidationConfig#keys}.
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly alg: string;
 
 Algorithm Available values: "RS256", "RS384", "RS512", "PS256", "PS384", "PS512", "ES256", "ES384".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#alg TokenValidationConfig#alg}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#alg TokenValidationConfig#alg}
 
 ---
 
@@ -1124,7 +1124,7 @@ public readonly kid: string;
 
 Key ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#kid TokenValidationConfig#kid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#kid TokenValidationConfig#kid}
 
 ---
 
@@ -1138,7 +1138,7 @@ public readonly kty: string;
 
 Key Type Available values: "RSA", "EC".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#kty TokenValidationConfig#kty}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#kty TokenValidationConfig#kty}
 
 ---
 
@@ -1152,7 +1152,7 @@ public readonly crv: string;
 
 Curve Available values: "P-256", "P-384".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#crv TokenValidationConfig#crv}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#crv TokenValidationConfig#crv}
 
 ---
 
@@ -1166,7 +1166,7 @@ public readonly e: string;
 
 RSA exponent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#e TokenValidationConfig#e}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#e TokenValidationConfig#e}
 
 ---
 
@@ -1180,7 +1180,7 @@ public readonly n: string;
 
 RSA modulus.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#n TokenValidationConfig#n}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#n TokenValidationConfig#n}
 
 ---
 
@@ -1194,7 +1194,7 @@ public readonly x: string;
 
 X EC coordinate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#x TokenValidationConfig#x}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#x TokenValidationConfig#x}
 
 ---
 
@@ -1208,7 +1208,7 @@ public readonly y: string;
 
 Y EC coordinate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/token_validation_config#y TokenValidationConfig#y}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/token_validation_config#y TokenValidationConfig#y}
 
 ---
 

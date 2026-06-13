@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dns_location
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dns_location
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,11 +13,11 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareZeroTrustDnsLocationConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dns_location#account_id DataCloudflareZeroTrustDnsLocation#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dns_location#account_id DataCloudflareZeroTrustDnsLocation#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dns_location#location_id DataCloudflareZeroTrustDnsLocation#location_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dns_location#location_id DataCloudflareZeroTrustDnsLocation#location_id}
   */
   readonly locationId: string;
 }
@@ -27,7 +27,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpointsDohNetworks {
 export function dataCloudflareZeroTrustDnsLocationEndpointsDohNetworksToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDohNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -37,7 +37,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsDohNetworksToTerrafor
 export function dataCloudflareZeroTrustDnsLocationEndpointsDohNetworksToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDohNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -102,7 +102,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpointsDoh {
 export function dataCloudflareZeroTrustDnsLocationEndpointsDohToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDoh): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -112,7 +112,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsDohToTerraform(struct
 export function dataCloudflareZeroTrustDnsLocationEndpointsDohToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDoh): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -167,7 +167,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpointsDotNetworks {
 export function dataCloudflareZeroTrustDnsLocationEndpointsDotNetworksToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDotNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -177,7 +177,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsDotNetworksToTerrafor
 export function dataCloudflareZeroTrustDnsLocationEndpointsDotNetworksToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDotNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -242,7 +242,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpointsDot {
 export function dataCloudflareZeroTrustDnsLocationEndpointsDotToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -252,7 +252,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsDotToTerraform(struct
 export function dataCloudflareZeroTrustDnsLocationEndpointsDotToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsDot): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -302,7 +302,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpointsIpv4 {
 export function dataCloudflareZeroTrustDnsLocationEndpointsIpv4ToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsIpv4): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -312,7 +312,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsIpv4ToTerraform(struc
 export function dataCloudflareZeroTrustDnsLocationEndpointsIpv4ToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsIpv4): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -356,7 +356,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpointsIpv6Networks {
 export function dataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsIpv6Networks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -366,7 +366,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksToTerrafo
 export function dataCloudflareZeroTrustDnsLocationEndpointsIpv6NetworksToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsIpv6Networks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -431,7 +431,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpointsIpv6 {
 export function dataCloudflareZeroTrustDnsLocationEndpointsIpv6ToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsIpv6): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -441,7 +441,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsIpv6ToTerraform(struc
 export function dataCloudflareZeroTrustDnsLocationEndpointsIpv6ToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpointsIpv6): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -491,7 +491,7 @@ export interface DataCloudflareZeroTrustDnsLocationEndpoints {
 export function dataCloudflareZeroTrustDnsLocationEndpointsToTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -501,7 +501,7 @@ export function dataCloudflareZeroTrustDnsLocationEndpointsToTerraform(struct?: 
 export function dataCloudflareZeroTrustDnsLocationEndpointsToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationEndpoints): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -564,7 +564,7 @@ export interface DataCloudflareZeroTrustDnsLocationNetworks {
 export function dataCloudflareZeroTrustDnsLocationNetworksToTerraform(struct?: DataCloudflareZeroTrustDnsLocationNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -574,7 +574,7 @@ export function dataCloudflareZeroTrustDnsLocationNetworksToTerraform(struct?: D
 export function dataCloudflareZeroTrustDnsLocationNetworksToHclTerraform(struct?: DataCloudflareZeroTrustDnsLocationNetworks): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -635,7 +635,7 @@ export class DataCloudflareZeroTrustDnsLocationNetworksList extends cdktn.Comple
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location}
 */
 export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSource {
 
@@ -651,7 +651,7 @@ export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSourc
   * Generates CDKTN code for importing a DataCloudflareZeroTrustDnsLocation resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareZeroTrustDnsLocation to import
-  * @param importFromId The id of the existing DataCloudflareZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareZeroTrustDnsLocation that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dns_location#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareZeroTrustDnsLocation to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -663,7 +663,7 @@ export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSourc
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dns_location cloudflare_zero_trust_dns_location} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -674,7 +674,7 @@ export class DataCloudflareZeroTrustDnsLocation extends cdktn.TerraformDataSourc
       terraformResourceType: 'cloudflare_zero_trust_dns_location',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

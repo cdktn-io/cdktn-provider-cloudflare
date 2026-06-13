@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface R2BucketLifecycleConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
   */
-  readonly accountId?: string;
+  readonly accountId: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
   */
   readonly bucketName: string;
   /**
   * Jurisdiction of the bucket
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
   */
   readonly jurisdiction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}
   */
   readonly rules?: R2BucketLifecycleRules[] | cdktn.IResolvable;
 }
 export interface R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge: number;
   /**
   * Available values: "Age".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -51,7 +51,7 @@ export interface R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition 
 export function r2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionToTerraform(struct?: R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     max_age: cdktn.numberToTerraform(struct!.maxAge),
@@ -63,7 +63,7 @@ export function r2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionTo
 export function r2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionToHclTerraform(struct?: R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     max_age: {
@@ -162,7 +162,7 @@ export interface R2BucketLifecycleRulesAbortMultipartUploadsTransition {
   /**
   * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition?: R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition;
 }
@@ -170,7 +170,7 @@ export interface R2BucketLifecycleRulesAbortMultipartUploadsTransition {
 export function r2BucketLifecycleRulesAbortMultipartUploadsTransitionToTerraform(struct?: R2BucketLifecycleRulesAbortMultipartUploadsTransition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: r2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionToTerraform(struct!.condition),
@@ -181,7 +181,7 @@ export function r2BucketLifecycleRulesAbortMultipartUploadsTransitionToTerraform
 export function r2BucketLifecycleRulesAbortMultipartUploadsTransitionToHclTerraform(struct?: R2BucketLifecycleRulesAbortMultipartUploadsTransition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -258,7 +258,7 @@ export interface R2BucketLifecycleRulesConditions {
   /**
   * Transitions will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
   */
   readonly prefix: string;
 }
@@ -266,7 +266,7 @@ export interface R2BucketLifecycleRulesConditions {
 export function r2BucketLifecycleRulesConditionsToTerraform(struct?: R2BucketLifecycleRulesConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     prefix: cdktn.stringToTerraform(struct!.prefix),
@@ -277,7 +277,7 @@ export function r2BucketLifecycleRulesConditionsToTerraform(struct?: R2BucketLif
 export function r2BucketLifecycleRulesConditionsToHclTerraform(struct?: R2BucketLifecycleRulesConditions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     prefix: {
@@ -349,17 +349,17 @@ export class R2BucketLifecycleRulesConditionsOutputReference extends cdktn.Compl
 }
 export interface R2BucketLifecycleRulesDeleteObjectsTransitionCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge?: number;
   /**
   * Available values: "Age", "Date".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -367,7 +367,7 @@ export interface R2BucketLifecycleRulesDeleteObjectsTransitionCondition {
 export function r2BucketLifecycleRulesDeleteObjectsTransitionConditionToTerraform(struct?: R2BucketLifecycleRulesDeleteObjectsTransitionCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     date: cdktn.stringToTerraform(struct!.date),
@@ -380,7 +380,7 @@ export function r2BucketLifecycleRulesDeleteObjectsTransitionConditionToTerrafor
 export function r2BucketLifecycleRulesDeleteObjectsTransitionConditionToHclTerraform(struct?: R2BucketLifecycleRulesDeleteObjectsTransitionCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     date: {
@@ -510,7 +510,7 @@ export interface R2BucketLifecycleRulesDeleteObjectsTransition {
   /**
   * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition?: R2BucketLifecycleRulesDeleteObjectsTransitionCondition;
 }
@@ -518,7 +518,7 @@ export interface R2BucketLifecycleRulesDeleteObjectsTransition {
 export function r2BucketLifecycleRulesDeleteObjectsTransitionToTerraform(struct?: R2BucketLifecycleRulesDeleteObjectsTransition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: r2BucketLifecycleRulesDeleteObjectsTransitionConditionToTerraform(struct!.condition),
@@ -529,7 +529,7 @@ export function r2BucketLifecycleRulesDeleteObjectsTransitionToTerraform(struct?
 export function r2BucketLifecycleRulesDeleteObjectsTransitionToHclTerraform(struct?: R2BucketLifecycleRulesDeleteObjectsTransition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -604,17 +604,17 @@ export class R2BucketLifecycleRulesDeleteObjectsTransitionOutputReference extend
 }
 export interface R2BucketLifecycleRulesStorageClassTransitionsCondition {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}
   */
   readonly date?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}
   */
   readonly maxAge?: number;
   /**
   * Available values: "Age", "Date".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
   */
   readonly type: string;
 }
@@ -622,7 +622,7 @@ export interface R2BucketLifecycleRulesStorageClassTransitionsCondition {
 export function r2BucketLifecycleRulesStorageClassTransitionsConditionToTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitionsCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     date: cdktn.stringToTerraform(struct!.date),
@@ -635,7 +635,7 @@ export function r2BucketLifecycleRulesStorageClassTransitionsConditionToTerrafor
 export function r2BucketLifecycleRulesStorageClassTransitionsConditionToHclTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitionsCondition | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     date: {
@@ -765,13 +765,13 @@ export interface R2BucketLifecycleRulesStorageClassTransitions {
   /**
   * Condition for lifecycle transitions to apply after an object reaches an age in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
   */
   readonly condition: R2BucketLifecycleRulesStorageClassTransitionsCondition;
   /**
   * Available values: "InfrequentAccess".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
   */
   readonly storageClass: string;
 }
@@ -779,7 +779,7 @@ export interface R2BucketLifecycleRulesStorageClassTransitions {
 export function r2BucketLifecycleRulesStorageClassTransitionsToTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     condition: r2BucketLifecycleRulesStorageClassTransitionsConditionToTerraform(struct!.condition),
@@ -791,7 +791,7 @@ export function r2BucketLifecycleRulesStorageClassTransitionsToTerraform(struct?
 export function r2BucketLifecycleRulesStorageClassTransitionsToHclTerraform(struct?: R2BucketLifecycleRulesStorageClassTransitions | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     condition: {
@@ -912,31 +912,31 @@ export interface R2BucketLifecycleRules {
   /**
   * Transition to abort ongoing multipart uploads.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
   */
   readonly abortMultipartUploadsTransition?: R2BucketLifecycleRulesAbortMultipartUploadsTransition;
   /**
   * Conditions that apply to all transitions of this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
   */
   readonly conditions: R2BucketLifecycleRulesConditions;
   /**
   * Transition to delete objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
   */
   readonly deleteObjectsTransition?: R2BucketLifecycleRulesDeleteObjectsTransition;
   /**
   * Whether or not this rule is in effect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
   */
   readonly enabled: boolean | cdktn.IResolvable;
   /**
   * Unique identifier for this rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -945,7 +945,7 @@ export interface R2BucketLifecycleRules {
   /**
   * Transitions to change the storage class of objects.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
   */
   readonly storageClassTransitions?: R2BucketLifecycleRulesStorageClassTransitions[] | cdktn.IResolvable;
 }
@@ -953,7 +953,7 @@ export interface R2BucketLifecycleRules {
 export function r2BucketLifecycleRulesToTerraform(struct?: R2BucketLifecycleRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     abort_multipart_uploads_transition: r2BucketLifecycleRulesAbortMultipartUploadsTransitionToTerraform(struct!.abortMultipartUploadsTransition),
@@ -969,7 +969,7 @@ export function r2BucketLifecycleRulesToTerraform(struct?: R2BucketLifecycleRule
 export function r2BucketLifecycleRulesToHclTerraform(struct?: R2BucketLifecycleRules | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     abort_multipart_uploads_transition: {
@@ -1197,7 +1197,7 @@ export class R2BucketLifecycleRulesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
 */
 export class R2BucketLifecycle extends cdktn.TerraformResource {
 
@@ -1213,7 +1213,7 @@ export class R2BucketLifecycle extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a R2BucketLifecycle resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2BucketLifecycle to import
-  * @param importFromId The id of the existing R2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2BucketLifecycle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -1225,7 +1225,7 @@ export class R2BucketLifecycle extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -1236,7 +1236,7 @@ export class R2BucketLifecycle extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_r2_bucket_lifecycle',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -1257,16 +1257,13 @@ export class R2BucketLifecycle extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: true, required: false
+  // account_id - computed: false, optional: false, required: true
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {

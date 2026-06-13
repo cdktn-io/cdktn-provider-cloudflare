@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,26 +15,26 @@ export interface ObservatoryScheduledTestConfig extends cdktn.TerraformMetaArgum
   /**
   * The frequency of the scheduled test. Defaults to WEEKLY for free plans, DAILY for paid plans.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test#frequency ObservatoryScheduledTest#frequency}
   */
   readonly frequency?: string;
   /**
   * A test region.
   * Available values: "asia-east1", "asia-northeast1", "asia-northeast2", "asia-south1", "asia-southeast1", "australia-southeast1", "europe-north1", "europe-southwest1", "europe-west1", "europe-west2", "europe-west3", "europe-west4", "europe-west8", "europe-west9", "me-west1", "southamerica-east1", "us-central1", "us-east1", "us-east4", "us-south1", "us-west1".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test#region ObservatoryScheduledTest#region}
   */
   readonly region?: string;
   /**
   * A URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test#url ObservatoryScheduledTest#url}
   */
   readonly url: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test#zone_id ObservatoryScheduledTest#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -44,7 +44,7 @@ export interface ObservatoryScheduledTestSchedule {
 export function observatoryScheduledTestScheduleToTerraform(struct?: ObservatoryScheduledTestSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -54,7 +54,7 @@ export function observatoryScheduledTestScheduleToTerraform(struct?: Observatory
 export function observatoryScheduledTestScheduleToHclTerraform(struct?: ObservatoryScheduledTestSchedule): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -108,7 +108,7 @@ export interface ObservatoryScheduledTestTestDesktopReportError {
 export function observatoryScheduledTestTestDesktopReportErrorToTerraform(struct?: ObservatoryScheduledTestTestDesktopReportError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -118,7 +118,7 @@ export function observatoryScheduledTestTestDesktopReportErrorToTerraform(struct
 export function observatoryScheduledTestTestDesktopReportErrorToHclTerraform(struct?: ObservatoryScheduledTestTestDesktopReportError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -172,7 +172,7 @@ export interface ObservatoryScheduledTestTestDesktopReport {
 export function observatoryScheduledTestTestDesktopReportToTerraform(struct?: ObservatoryScheduledTestTestDesktopReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -182,7 +182,7 @@ export function observatoryScheduledTestTestDesktopReportToTerraform(struct?: Ob
 export function observatoryScheduledTestTestDesktopReportToHclTerraform(struct?: ObservatoryScheduledTestTestDesktopReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -282,7 +282,7 @@ export interface ObservatoryScheduledTestTestMobileReportError {
 export function observatoryScheduledTestTestMobileReportErrorToTerraform(struct?: ObservatoryScheduledTestTestMobileReportError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -292,7 +292,7 @@ export function observatoryScheduledTestTestMobileReportErrorToTerraform(struct?
 export function observatoryScheduledTestTestMobileReportErrorToHclTerraform(struct?: ObservatoryScheduledTestTestMobileReportError): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -346,7 +346,7 @@ export interface ObservatoryScheduledTestTestMobileReport {
 export function observatoryScheduledTestTestMobileReportToTerraform(struct?: ObservatoryScheduledTestTestMobileReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -356,7 +356,7 @@ export function observatoryScheduledTestTestMobileReportToTerraform(struct?: Obs
 export function observatoryScheduledTestTestMobileReportToHclTerraform(struct?: ObservatoryScheduledTestTestMobileReport): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -456,7 +456,7 @@ export interface ObservatoryScheduledTestTestRegion {
 export function observatoryScheduledTestTestRegionToTerraform(struct?: ObservatoryScheduledTestTestRegion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -466,7 +466,7 @@ export function observatoryScheduledTestTestRegionToTerraform(struct?: Observato
 export function observatoryScheduledTestTestRegionToHclTerraform(struct?: ObservatoryScheduledTestTestRegion): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -515,7 +515,7 @@ export interface ObservatoryScheduledTestTest {
 export function observatoryScheduledTestTestToTerraform(struct?: ObservatoryScheduledTestTest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -525,7 +525,7 @@ export function observatoryScheduledTestTestToTerraform(struct?: ObservatorySche
 export function observatoryScheduledTestTestToHclTerraform(struct?: ObservatoryScheduledTestTest): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -598,7 +598,7 @@ export class ObservatoryScheduledTestTestOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test}
 */
 export class ObservatoryScheduledTest extends cdktn.TerraformResource {
 
@@ -614,7 +614,7 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ObservatoryScheduledTest resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ObservatoryScheduledTest to import
-  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ObservatoryScheduledTest that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ObservatoryScheduledTest to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -626,7 +626,7 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/observatory_scheduled_test cloudflare_observatory_scheduled_test} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -637,7 +637,7 @@ export class ObservatoryScheduledTest extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_observatory_scheduled_test',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

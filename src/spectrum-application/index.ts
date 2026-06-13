@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -16,78 +16,84 @@ export interface SpectrumApplicationConfig extends cdktn.TerraformMetaArguments 
   * Enables Argo Smart Routing for this application.
   * Notes: Only available for TCP applications with traffic_type set to "direct".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#argo_smart_routing SpectrumApplication#argo_smart_routing}
   */
   readonly argoSmartRouting?: boolean | cdktn.IResolvable;
   /**
   * The name and type of DNS record for the Spectrum application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#dns SpectrumApplication#dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#dns SpectrumApplication#dns}
   */
   readonly dns: SpectrumApplicationDns;
   /**
   * The anycast edge IP configuration for the hostname of this application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#edge_ips SpectrumApplication#edge_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#edge_ips SpectrumApplication#edge_ips}
   */
   readonly edgeIps?: SpectrumApplicationEdgeIps;
   /**
   * Enables IP Access Rules for this application.
   * Notes: Only available for TCP applications.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#ip_firewall SpectrumApplication#ip_firewall}
   */
   readonly ipFirewall?: boolean | cdktn.IResolvable;
   /**
   * List of origin IP addresses. Array may contain multiple IP addresses for load balancing.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#origin_direct SpectrumApplication#origin_direct}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#origin_direct SpectrumApplication#origin_direct}
   */
   readonly originDirect?: string[];
   /**
   * The name and type of DNS record for the Spectrum application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#origin_dns SpectrumApplication#origin_dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#origin_dns SpectrumApplication#origin_dns}
   */
   readonly originDns?: SpectrumApplicationOriginDns;
   /**
   * The destination port at the origin. Only specified in conjunction with origin_dns. May use an integer to specify a single origin port, for example `1000`, or a string to specify a range of origin ports, for example `"1000-2000"`.
   * Notes: If specifying a port range, the number of ports in the range must match the number of ports specified in the "protocol" field.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#origin_port SpectrumApplication#origin_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#origin_port SpectrumApplication#origin_port}
   */
   readonly originPort?: { [key: string]: any };
   /**
   * The port configuration at Cloudflare's edge. May specify a single port, for example `"tcp/1000"`, or a range of ports, for example `"tcp/1000-2000"`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#protocol SpectrumApplication#protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#protocol SpectrumApplication#protocol}
   */
   readonly protocol: string;
   /**
   * Enables Proxy Protocol to the origin. Refer to [Enable Proxy protocol](https://developers.cloudflare.com/spectrum/getting-started/proxy-protocol/) for implementation details on PROXY Protocol V1, PROXY Protocol V2, and Simple Proxy Protocol.
   * Available values: "off", "v1", "v2", "simple".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#proxy_protocol SpectrumApplication#proxy_protocol}
   */
   readonly proxyProtocol?: string;
   /**
   * The type of TLS termination associated with the application.
   * Available values: "off", "flexible", "full", "strict".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#tls SpectrumApplication#tls}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#tls SpectrumApplication#tls}
   */
   readonly tls?: string;
   /**
   * Determines how data travels from the edge to your origin. When set to "direct", Spectrum will send traffic directly to your origin, and the application's type is derived from the `protocol`. When set to "http" or "https", Spectrum will apply Cloudflare's HTTP/HTTPS features as it sends traffic to your origin, and the application type matches this property exactly.
   * Available values: "direct", "http", "https".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#traffic_type SpectrumApplication#traffic_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#traffic_type SpectrumApplication#traffic_type}
   */
   readonly trafficType?: string;
   /**
+  * Optional UUID of a virtual network for routing origin traffic through tunnel virtual networks.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#virtual_network_id SpectrumApplication#virtual_network_id}
+  */
+  readonly virtualNetworkId?: string;
+  /**
   * Zone identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#zone_id SpectrumApplication#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#zone_id SpectrumApplication#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -95,14 +101,14 @@ export interface SpectrumApplicationDns {
   /**
   * The name of the DNS record associated with the application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#name SpectrumApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#name SpectrumApplication#name}
   */
   readonly name?: string;
   /**
   * The type of DNS record associated with the application.
   * Available values: "CNAME", "ADDRESS".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#type SpectrumApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#type SpectrumApplication#type}
   */
   readonly type?: string;
 }
@@ -110,7 +116,7 @@ export interface SpectrumApplicationDns {
 export function spectrumApplicationDnsToTerraform(struct?: SpectrumApplicationDns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -122,7 +128,7 @@ export function spectrumApplicationDnsToTerraform(struct?: SpectrumApplicationDn
 export function spectrumApplicationDnsToHclTerraform(struct?: SpectrumApplicationDns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -228,20 +234,20 @@ export interface SpectrumApplicationEdgeIps {
   * The IP versions supported for inbound connections on Spectrum anycast IPs.
   * Available values: "all", "ipv4", "ipv6".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#connectivity SpectrumApplication#connectivity}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#connectivity SpectrumApplication#connectivity}
   */
   readonly connectivity?: string;
   /**
   * The array of customer owned IPs we broadcast via anycast for this hostname and application.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#ips SpectrumApplication#ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#ips SpectrumApplication#ips}
   */
   readonly ips?: string[];
   /**
   * The type of edge IP configuration specified. Dynamically allocated edge IPs use Spectrum anycast IPs in accordance with the connectivity you specify. Only valid with CNAME DNS names.
   * Available values: "dynamic", "static".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#type SpectrumApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#type SpectrumApplication#type}
   */
   readonly type?: string;
 }
@@ -249,7 +255,7 @@ export interface SpectrumApplicationEdgeIps {
 export function spectrumApplicationEdgeIpsToTerraform(struct?: SpectrumApplicationEdgeIps | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     connectivity: cdktn.stringToTerraform(struct!.connectivity),
@@ -262,7 +268,7 @@ export function spectrumApplicationEdgeIpsToTerraform(struct?: SpectrumApplicati
 export function spectrumApplicationEdgeIpsToHclTerraform(struct?: SpectrumApplicationEdgeIps | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     connectivity: {
@@ -395,20 +401,20 @@ export interface SpectrumApplicationOriginDns {
   /**
   * The name of the DNS record associated with the origin.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#name SpectrumApplication#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#name SpectrumApplication#name}
   */
   readonly name?: string;
   /**
   * The TTL of our resolution of your DNS record in seconds.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#ttl SpectrumApplication#ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#ttl SpectrumApplication#ttl}
   */
   readonly ttl?: number;
   /**
   * The type of DNS record associated with the origin. "" is used to specify a combination of A/AAAA records.
   * Available values: "", "A", "AAAA", "SRV".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#type SpectrumApplication#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#type SpectrumApplication#type}
   */
   readonly type?: string;
 }
@@ -416,7 +422,7 @@ export interface SpectrumApplicationOriginDns {
 export function spectrumApplicationOriginDnsToTerraform(struct?: SpectrumApplicationOriginDns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -429,7 +435,7 @@ export function spectrumApplicationOriginDnsToTerraform(struct?: SpectrumApplica
 export function spectrumApplicationOriginDnsToHclTerraform(struct?: SpectrumApplicationOriginDns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -560,7 +566,7 @@ export class SpectrumApplicationOriginDnsOutputReference extends cdktn.ComplexOb
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application cloudflare_spectrum_application}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application cloudflare_spectrum_application}
 */
 export class SpectrumApplication extends cdktn.TerraformResource {
 
@@ -576,7 +582,7 @@ export class SpectrumApplication extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a SpectrumApplication resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SpectrumApplication to import
-  * @param importFromId The id of the existing SpectrumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SpectrumApplication that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SpectrumApplication to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -588,7 +594,7 @@ export class SpectrumApplication extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/spectrum_application cloudflare_spectrum_application} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/spectrum_application cloudflare_spectrum_application} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -599,7 +605,7 @@ export class SpectrumApplication extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_spectrum_application',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -621,6 +627,7 @@ export class SpectrumApplication extends cdktn.TerraformResource {
     this._proxyProtocol = config.proxyProtocol;
     this._tls = config.tls;
     this._trafficType = config.trafficType;
+    this._virtualNetworkId = config.virtualNetworkId;
     this._zoneId = config.zoneId;
   }
 
@@ -813,6 +820,22 @@ export class SpectrumApplication extends cdktn.TerraformResource {
     return this._trafficType;
   }
 
+  // virtual_network_id - computed: false, optional: true, required: false
+  private _virtualNetworkId?: string; 
+  public get virtualNetworkId() {
+    return this.getStringAttribute('virtual_network_id');
+  }
+  public set virtualNetworkId(value: string) {
+    this._virtualNetworkId = value;
+  }
+  public resetVirtualNetworkId() {
+    this._virtualNetworkId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get virtualNetworkIdInput() {
+    return this._virtualNetworkId;
+  }
+
   // zone_id - computed: false, optional: true, required: false
   private _zoneId?: string; 
   public get zoneId() {
@@ -846,6 +869,7 @@ export class SpectrumApplication extends cdktn.TerraformResource {
       proxy_protocol: cdktn.stringToTerraform(this._proxyProtocol),
       tls: cdktn.stringToTerraform(this._tls),
       traffic_type: cdktn.stringToTerraform(this._trafficType),
+      virtual_network_id: cdktn.stringToTerraform(this._virtualNetworkId),
       zone_id: cdktn.stringToTerraform(this._zoneId),
     };
   }
@@ -914,6 +938,12 @@ export class SpectrumApplication extends cdktn.TerraformResource {
       },
       traffic_type: {
         value: cdktn.stringToHclTerraform(this._trafficType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      virtual_network_id: {
+        value: cdktn.stringToHclTerraform(this._virtualNetworkId),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

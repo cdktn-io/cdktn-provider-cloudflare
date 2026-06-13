@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_data_catalog
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_data_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareR2DataCatalogConfig extends cdktn.TerraformMetaAr
   /**
   * Use this to identify the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_data_catalog#account_id DataCloudflareR2DataCatalog#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_data_catalog#account_id DataCloudflareR2DataCatalog#account_id}
   */
   readonly accountId?: string;
   /**
   * Specifies the R2 bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_data_catalog#bucket_name DataCloudflareR2DataCatalog#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_data_catalog#bucket_name DataCloudflareR2DataCatalog#bucket_name}
   */
   readonly bucketName: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareR2DataCatalogMaintenanceConfigCompaction {
 export function dataCloudflareR2DataCatalogMaintenanceConfigCompactionToTerraform(struct?: DataCloudflareR2DataCatalogMaintenanceConfigCompaction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareR2DataCatalogMaintenanceConfigCompactionToTerrafor
 export function dataCloudflareR2DataCatalogMaintenanceConfigCompactionToHclTerraform(struct?: DataCloudflareR2DataCatalogMaintenanceConfigCompaction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -90,7 +90,7 @@ export interface DataCloudflareR2DataCatalogMaintenanceConfigSnapshotExpiration 
 export function dataCloudflareR2DataCatalogMaintenanceConfigSnapshotExpirationToTerraform(struct?: DataCloudflareR2DataCatalogMaintenanceConfigSnapshotExpiration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -100,7 +100,7 @@ export function dataCloudflareR2DataCatalogMaintenanceConfigSnapshotExpirationTo
 export function dataCloudflareR2DataCatalogMaintenanceConfigSnapshotExpirationToHclTerraform(struct?: DataCloudflareR2DataCatalogMaintenanceConfigSnapshotExpiration): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -154,7 +154,7 @@ export interface DataCloudflareR2DataCatalogMaintenanceConfig {
 export function dataCloudflareR2DataCatalogMaintenanceConfigToTerraform(struct?: DataCloudflareR2DataCatalogMaintenanceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -164,7 +164,7 @@ export function dataCloudflareR2DataCatalogMaintenanceConfigToTerraform(struct?:
 export function dataCloudflareR2DataCatalogMaintenanceConfigToHclTerraform(struct?: DataCloudflareR2DataCatalogMaintenanceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -211,7 +211,7 @@ export class DataCloudflareR2DataCatalogMaintenanceConfigOutputReference extends
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog}
 */
 export class DataCloudflareR2DataCatalog extends cdktn.TerraformDataSource {
 
@@ -227,7 +227,7 @@ export class DataCloudflareR2DataCatalog extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareR2DataCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareR2DataCatalog to import
-  * @param importFromId The id of the existing DataCloudflareR2DataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareR2DataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareR2DataCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -239,7 +239,7 @@ export class DataCloudflareR2DataCatalog extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_data_catalog cloudflare_r2_data_catalog} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +250,7 @@ export class DataCloudflareR2DataCatalog extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_r2_data_catalog',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,19 +13,19 @@ import * as cdktn from 'cdktn';
 
 export interface ZeroTrustGatewayLoggingConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#account_id ZeroTrustGatewayLogging#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#account_id ZeroTrustGatewayLogging#account_id}
   */
   readonly accountId: string;
   /**
   * Indicate whether to redact personally identifiable information from activity logging (PII fields include source IP, user email, user ID, device ID, URL, referrer, and user agent).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#redact_pii ZeroTrustGatewayLogging#redact_pii}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#redact_pii ZeroTrustGatewayLogging#redact_pii}
   */
   readonly redactPii?: boolean | cdktn.IResolvable;
   /**
   * Configure logging settings for each rule type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#settings_by_rule_type ZeroTrustGatewayLogging#settings_by_rule_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#settings_by_rule_type ZeroTrustGatewayLogging#settings_by_rule_type}
   */
   readonly settingsByRuleType?: ZeroTrustGatewayLoggingSettingsByRuleType;
 }
@@ -33,13 +33,13 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleTypeDns {
   /**
   * Specify whether to log all requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
   */
   readonly logAll?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to log only blocking requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
   */
   readonly logBlocks?: boolean | cdktn.IResolvable;
 }
@@ -47,7 +47,7 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleTypeDns {
 export function zeroTrustGatewayLoggingSettingsByRuleTypeDnsToTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleTypeDns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_all: cdktn.booleanToTerraform(struct!.logAll),
@@ -59,7 +59,7 @@ export function zeroTrustGatewayLoggingSettingsByRuleTypeDnsToTerraform(struct?:
 export function zeroTrustGatewayLoggingSettingsByRuleTypeDnsToHclTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleTypeDns | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_all: {
@@ -164,13 +164,13 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleTypeHttp {
   /**
   * Specify whether to log all requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
   */
   readonly logAll?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to log only blocking requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
   */
   readonly logBlocks?: boolean | cdktn.IResolvable;
 }
@@ -178,7 +178,7 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleTypeHttp {
 export function zeroTrustGatewayLoggingSettingsByRuleTypeHttpToTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleTypeHttp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_all: cdktn.booleanToTerraform(struct!.logAll),
@@ -190,7 +190,7 @@ export function zeroTrustGatewayLoggingSettingsByRuleTypeHttpToTerraform(struct?
 export function zeroTrustGatewayLoggingSettingsByRuleTypeHttpToHclTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleTypeHttp | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_all: {
@@ -295,13 +295,13 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleTypeL4 {
   /**
   * Specify whether to log all requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#log_all ZeroTrustGatewayLogging#log_all}
   */
   readonly logAll?: boolean | cdktn.IResolvable;
   /**
   * Specify whether to log only blocking requests to this service.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#log_blocks ZeroTrustGatewayLogging#log_blocks}
   */
   readonly logBlocks?: boolean | cdktn.IResolvable;
 }
@@ -309,7 +309,7 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleTypeL4 {
 export function zeroTrustGatewayLoggingSettingsByRuleTypeL4ToTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleTypeL4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     log_all: cdktn.booleanToTerraform(struct!.logAll),
@@ -321,7 +321,7 @@ export function zeroTrustGatewayLoggingSettingsByRuleTypeL4ToTerraform(struct?: 
 export function zeroTrustGatewayLoggingSettingsByRuleTypeL4ToHclTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleTypeL4 | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     log_all: {
@@ -426,19 +426,19 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleType {
   /**
   * Configure logging settings for DNS firewall.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#dns ZeroTrustGatewayLogging#dns}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#dns ZeroTrustGatewayLogging#dns}
   */
   readonly dns?: ZeroTrustGatewayLoggingSettingsByRuleTypeDns;
   /**
   * Configure logging settings for HTTP/HTTPS firewall.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#http ZeroTrustGatewayLogging#http}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#http ZeroTrustGatewayLogging#http}
   */
   readonly http?: ZeroTrustGatewayLoggingSettingsByRuleTypeHttp;
   /**
   * Configure logging settings for Network firewall.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#l4 ZeroTrustGatewayLogging#l4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#l4 ZeroTrustGatewayLogging#l4}
   */
   readonly l4?: ZeroTrustGatewayLoggingSettingsByRuleTypeL4;
 }
@@ -446,7 +446,7 @@ export interface ZeroTrustGatewayLoggingSettingsByRuleType {
 export function zeroTrustGatewayLoggingSettingsByRuleTypeToTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     dns: zeroTrustGatewayLoggingSettingsByRuleTypeDnsToTerraform(struct!.dns),
@@ -459,7 +459,7 @@ export function zeroTrustGatewayLoggingSettingsByRuleTypeToTerraform(struct?: Ze
 export function zeroTrustGatewayLoggingSettingsByRuleTypeToHclTerraform(struct?: ZeroTrustGatewayLoggingSettingsByRuleType | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     dns: {
@@ -590,7 +590,7 @@ export class ZeroTrustGatewayLoggingSettingsByRuleTypeOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging}
 */
 export class ZeroTrustGatewayLogging extends cdktn.TerraformResource {
 
@@ -606,7 +606,7 @@ export class ZeroTrustGatewayLogging extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZeroTrustGatewayLogging resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustGatewayLogging to import
-  * @param importFromId The id of the existing ZeroTrustGatewayLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustGatewayLogging that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustGatewayLogging to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -618,7 +618,7 @@ export class ZeroTrustGatewayLogging extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_gateway_logging cloudflare_zero_trust_gateway_logging} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -629,7 +629,7 @@ export class ZeroTrustGatewayLogging extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_gateway_logging',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

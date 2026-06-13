@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,56 +13,57 @@ import * as cdktn from 'cdktn';
 
 export interface DataCloudflareEmailSecurityTrustedDomainsConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Account Identifier
+  * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#account_id DataCloudflareEmailSecurityTrustedDomains#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#account_id DataCloudflareEmailSecurityTrustedDomains#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#filter DataCloudflareEmailSecurityTrustedDomains#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#filter DataCloudflareEmailSecurityTrustedDomains#filter}
   */
   readonly filter?: DataCloudflareEmailSecurityTrustedDomainsFilter;
   /**
-  * The unique identifier for the trusted domain.
+  * Trusted domain identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#trusted_domain_id DataCloudflareEmailSecurityTrustedDomains#trusted_domain_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#trusted_domain_id DataCloudflareEmailSecurityTrustedDomains#trusted_domain_id}
   */
-  readonly trustedDomainId?: number;
+  readonly trustedDomainId?: string;
 }
 export interface DataCloudflareEmailSecurityTrustedDomainsFilter {
   /**
   * The sorting direction.
   * Available values: "asc", "desc".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#direction DataCloudflareEmailSecurityTrustedDomains#direction}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#direction DataCloudflareEmailSecurityTrustedDomains#direction}
   */
   readonly direction?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#is_recent DataCloudflareEmailSecurityTrustedDomains#is_recent}
+  * Filter to show only recently registered domains that are trusted to prevent triggering Suspicious or Malicious dispositions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#is_recent DataCloudflareEmailSecurityTrustedDomains#is_recent}
   */
   readonly isRecent?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#is_similarity DataCloudflareEmailSecurityTrustedDomains#is_similarity}
+  * Filter to show only proximity domains (partner or approved domains with similar spelling to connected domains) that prevent Spoof dispositions.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#is_similarity DataCloudflareEmailSecurityTrustedDomains#is_similarity}
   */
   readonly isSimilarity?: boolean | cdktn.IResolvable;
   /**
-  * The field to sort by.
+  * Field to sort by.
   * Available values: "pattern", "created_at".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#order DataCloudflareEmailSecurityTrustedDomains#order}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#order DataCloudflareEmailSecurityTrustedDomains#order}
   */
   readonly order?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#pattern DataCloudflareEmailSecurityTrustedDomains#pattern}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#pattern DataCloudflareEmailSecurityTrustedDomains#pattern}
   */
   readonly pattern?: string;
   /**
-  * Allows searching in multiple properties of a record simultaneously.
-  * This parameter is intended for human users, not automation. Its exact
-  * behavior is intentionally left unspecified and is subject to change
-  * in the future.
+  * Search term for filtering records. Behavior may change.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#search DataCloudflareEmailSecurityTrustedDomains#search}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#search DataCloudflareEmailSecurityTrustedDomains#search}
   */
   readonly search?: string;
 }
@@ -70,7 +71,7 @@ export interface DataCloudflareEmailSecurityTrustedDomainsFilter {
 export function dataCloudflareEmailSecurityTrustedDomainsFilterToTerraform(struct?: DataCloudflareEmailSecurityTrustedDomainsFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     direction: cdktn.stringToTerraform(struct!.direction),
@@ -86,7 +87,7 @@ export function dataCloudflareEmailSecurityTrustedDomainsFilterToTerraform(struc
 export function dataCloudflareEmailSecurityTrustedDomainsFilterToHclTerraform(struct?: DataCloudflareEmailSecurityTrustedDomainsFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     direction: {
@@ -301,7 +302,7 @@ export class DataCloudflareEmailSecurityTrustedDomainsFilterOutputReference exte
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains}
 */
 export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDataSource {
 
@@ -317,7 +318,7 @@ export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDa
   * Generates CDKTN code for importing a DataCloudflareEmailSecurityTrustedDomains resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailSecurityTrustedDomains to import
-  * @param importFromId The id of the existing DataCloudflareEmailSecurityTrustedDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailSecurityTrustedDomains that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailSecurityTrustedDomains to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -329,7 +330,7 @@ export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDa
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_security_trusted_domains cloudflare_email_security_trusted_domains} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -340,7 +341,7 @@ export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDa
       terraformResourceType: 'cloudflare_email_security_trusted_domains',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -404,7 +405,7 @@ export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDa
 
   // id - computed: true, optional: false, required: false
   public get id() {
-    return this.getNumberAttribute('id');
+    return this.getStringAttribute('id');
   }
 
   // is_recent - computed: true, optional: false, required: false
@@ -427,17 +428,22 @@ export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDa
     return this.getStringAttribute('last_modified');
   }
 
+  // modified_at - computed: true, optional: false, required: false
+  public get modifiedAt() {
+    return this.getStringAttribute('modified_at');
+  }
+
   // pattern - computed: true, optional: false, required: false
   public get pattern() {
     return this.getStringAttribute('pattern');
   }
 
   // trusted_domain_id - computed: false, optional: true, required: false
-  private _trustedDomainId?: number; 
+  private _trustedDomainId?: string; 
   public get trustedDomainId() {
-    return this.getNumberAttribute('trusted_domain_id');
+    return this.getStringAttribute('trusted_domain_id');
   }
-  public set trustedDomainId(value: number) {
+  public set trustedDomainId(value: string) {
     this._trustedDomainId = value;
   }
   public resetTrustedDomainId() {
@@ -456,7 +462,7 @@ export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDa
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
       filter: dataCloudflareEmailSecurityTrustedDomainsFilterToTerraform(this._filter.internalValue),
-      trusted_domain_id: cdktn.numberToTerraform(this._trustedDomainId),
+      trusted_domain_id: cdktn.stringToTerraform(this._trustedDomainId),
     };
   }
 
@@ -475,10 +481,10 @@ export class DataCloudflareEmailSecurityTrustedDomains extends cdktn.TerraformDa
         storageClassType: "DataCloudflareEmailSecurityTrustedDomainsFilter",
       },
       trusted_domain_id: {
-        value: cdktn.numberToHclTerraform(this._trustedDomainId),
+        value: cdktn.stringToHclTerraform(this._trustedDomainId),
         isBlock: false,
         type: "simple",
-        storageClassType: "number",
+        storageClassType: "string",
       },
     };
 

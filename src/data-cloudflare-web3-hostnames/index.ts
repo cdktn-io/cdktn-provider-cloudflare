@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web3_hostnames
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/web3_hostnames
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareWeb3HostnamesConfig extends cdktn.TerraformMetaAr
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web3_hostnames#max_items DataCloudflareWeb3Hostnames#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/web3_hostnames#max_items DataCloudflareWeb3Hostnames#max_items}
   */
   readonly maxItems?: number;
   /**
   * Specify the identifier of the hostname.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web3_hostnames#zone_id DataCloudflareWeb3Hostnames#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/web3_hostnames#zone_id DataCloudflareWeb3Hostnames#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareWeb3HostnamesResult {
 export function dataCloudflareWeb3HostnamesResultToTerraform(struct?: DataCloudflareWeb3HostnamesResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareWeb3HostnamesResultToTerraform(struct?: DataCloudf
 export function dataCloudflareWeb3HostnamesResultToHclTerraform(struct?: DataCloudflareWeb3HostnamesResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -137,7 +137,7 @@ export class DataCloudflareWeb3HostnamesResultList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web3_hostnames cloudflare_web3_hostnames}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/web3_hostnames cloudflare_web3_hostnames}
 */
 export class DataCloudflareWeb3Hostnames extends cdktn.TerraformDataSource {
 
@@ -153,7 +153,7 @@ export class DataCloudflareWeb3Hostnames extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareWeb3Hostnames resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareWeb3Hostnames to import
-  * @param importFromId The id of the existing DataCloudflareWeb3Hostnames that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web3_hostnames#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareWeb3Hostnames that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/web3_hostnames#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareWeb3Hostnames to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -165,7 +165,7 @@ export class DataCloudflareWeb3Hostnames extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/web3_hostnames cloudflare_web3_hostnames} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/web3_hostnames cloudflare_web3_hostnames} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -176,7 +176,7 @@ export class DataCloudflareWeb3Hostnames extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_web3_hostnames',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

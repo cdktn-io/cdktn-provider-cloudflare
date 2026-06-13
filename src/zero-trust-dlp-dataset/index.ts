@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +13,7 @@ import * as cdktn from 'cdktn';
 
 export interface ZeroTrustDlpDatasetConfig extends cdktn.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#account_id ZeroTrustDlpDataset#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#account_id ZeroTrustDlpDataset#account_id}
   */
   readonly accountId?: string;
   /**
@@ -21,17 +21,17 @@ export interface ZeroTrustDlpDatasetConfig extends cdktn.TerraformMetaArguments 
   * Determines if the words should be matched in a case-sensitive manner
   * Cannot be set to false if `secret` is true or undefined
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#case_sensitive ZeroTrustDlpDataset#case_sensitive}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#case_sensitive ZeroTrustDlpDataset#case_sensitive}
   */
   readonly caseSensitive?: boolean | cdktn.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#dataset_id ZeroTrustDlpDataset#dataset_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#dataset_id ZeroTrustDlpDataset#dataset_id}
   */
   readonly datasetId?: string;
   /**
   * The description of the dataset.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#description ZeroTrustDlpDataset#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#description ZeroTrustDlpDataset#description}
   */
   readonly description?: string;
   /**
@@ -43,11 +43,11 @@ export interface ZeroTrustDlpDatasetConfig extends cdktn.TerraformMetaArguments 
   * Omitting this field provides the default value 0, which is interpreted
   * the same as 1.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#encoding_version ZeroTrustDlpDataset#encoding_version}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#encoding_version ZeroTrustDlpDataset#encoding_version}
   */
   readonly encodingVersion?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#name ZeroTrustDlpDataset#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#name ZeroTrustDlpDataset#name}
   */
   readonly name: string;
   /**
@@ -56,7 +56,7 @@ export interface ZeroTrustDlpDatasetConfig extends cdktn.TerraformMetaArguments 
   * If true, the response will include a secret to use with the EDM encoder.
   * If false, the response has no secret and the dataset is uploaded in plaintext.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#secret ZeroTrustDlpDataset#secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#secret ZeroTrustDlpDataset#secret}
   */
   readonly secret?: boolean | cdktn.IResolvable;
 }
@@ -66,7 +66,7 @@ export interface ZeroTrustDlpDatasetColumns {
 export function zeroTrustDlpDatasetColumnsToTerraform(struct?: ZeroTrustDlpDatasetColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -76,7 +76,7 @@ export function zeroTrustDlpDatasetColumnsToTerraform(struct?: ZeroTrustDlpDatas
 export function zeroTrustDlpDatasetColumnsToHclTerraform(struct?: ZeroTrustDlpDatasetColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -156,7 +156,7 @@ export interface ZeroTrustDlpDatasetDatasetColumns {
 export function zeroTrustDlpDatasetDatasetColumnsToTerraform(struct?: ZeroTrustDlpDatasetDatasetColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -166,7 +166,7 @@ export function zeroTrustDlpDatasetDatasetColumnsToTerraform(struct?: ZeroTrustD
 export function zeroTrustDlpDatasetDatasetColumnsToHclTerraform(struct?: ZeroTrustDlpDatasetDatasetColumns): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -246,7 +246,7 @@ export interface ZeroTrustDlpDatasetDatasetUploads {
 export function zeroTrustDlpDatasetDatasetUploadsToTerraform(struct?: ZeroTrustDlpDatasetDatasetUploads): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -256,7 +256,7 @@ export function zeroTrustDlpDatasetDatasetUploadsToTerraform(struct?: ZeroTrustD
 export function zeroTrustDlpDatasetDatasetUploadsToHclTerraform(struct?: ZeroTrustDlpDatasetDatasetUploads): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -331,7 +331,7 @@ export interface ZeroTrustDlpDatasetDataset {
 export function zeroTrustDlpDatasetDatasetToTerraform(struct?: ZeroTrustDlpDatasetDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -341,7 +341,7 @@ export function zeroTrustDlpDatasetDatasetToTerraform(struct?: ZeroTrustDlpDatas
 export function zeroTrustDlpDatasetDatasetToHclTerraform(struct?: ZeroTrustDlpDatasetDataset): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -442,7 +442,7 @@ export interface ZeroTrustDlpDatasetUploads {
 export function zeroTrustDlpDatasetUploadsToTerraform(struct?: ZeroTrustDlpDatasetUploads): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -452,7 +452,7 @@ export function zeroTrustDlpDatasetUploadsToTerraform(struct?: ZeroTrustDlpDatas
 export function zeroTrustDlpDatasetUploadsToHclTerraform(struct?: ZeroTrustDlpDatasetUploads): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -523,7 +523,7 @@ export class ZeroTrustDlpDatasetUploadsList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset}
 */
 export class ZeroTrustDlpDataset extends cdktn.TerraformResource {
 
@@ -539,7 +539,7 @@ export class ZeroTrustDlpDataset extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ZeroTrustDlpDataset resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ZeroTrustDlpDataset to import
-  * @param importFromId The id of the existing ZeroTrustDlpDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ZeroTrustDlpDataset that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ZeroTrustDlpDataset to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -551,7 +551,7 @@ export class ZeroTrustDlpDataset extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_dataset cloudflare_zero_trust_dlp_dataset} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -562,7 +562,7 @@ export class ZeroTrustDlpDataset extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_zero_trust_dlp_dataset',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

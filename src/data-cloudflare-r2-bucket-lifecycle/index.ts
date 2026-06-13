@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lifecycle
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareR2BucketLifecycleConfig extends cdktn.TerraformMe
   /**
   * Account ID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle#account_id DataCloudflareR2BucketLifecycle#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lifecycle#account_id DataCloudflareR2BucketLifecycle#account_id}
   */
-  readonly accountId?: string;
+  readonly accountId: string;
   /**
   * Name of the bucket.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle#bucket_name DataCloudflareR2BucketLifecycle#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lifecycle#bucket_name DataCloudflareR2BucketLifecycle#bucket_name}
   */
   readonly bucketName: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransi
 export function dataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionToTerraform(struct?: DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransit
 export function dataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionConditionToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -90,7 +90,7 @@ export interface DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransi
 export function dataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionToTerraform(struct?: DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -100,7 +100,7 @@ export function dataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransit
 export function dataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransitionToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRulesAbortMultipartUploadsTransition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -145,7 +145,7 @@ export interface DataCloudflareR2BucketLifecycleRulesConditions {
 export function dataCloudflareR2BucketLifecycleRulesConditionsToTerraform(struct?: DataCloudflareR2BucketLifecycleRulesConditions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -155,7 +155,7 @@ export function dataCloudflareR2BucketLifecycleRulesConditionsToTerraform(struct
 export function dataCloudflareR2BucketLifecycleRulesConditionsToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRulesConditions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -199,7 +199,7 @@ export interface DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionCond
 export function dataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionToTerraform(struct?: DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -209,7 +209,7 @@ export function dataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionCondi
 export function dataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionConditionToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -263,7 +263,7 @@ export interface DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransition {
 export function dataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionToTerraform(struct?: DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -273,7 +273,7 @@ export function dataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionToTer
 export function dataCloudflareR2BucketLifecycleRulesDeleteObjectsTransitionToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRulesDeleteObjectsTransition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -318,7 +318,7 @@ export interface DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCond
 export function dataCloudflareR2BucketLifecycleRulesStorageClassTransitionsConditionToTerraform(struct?: DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -328,7 +328,7 @@ export function dataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCondi
 export function dataCloudflareR2BucketLifecycleRulesStorageClassTransitionsConditionToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRulesStorageClassTransitionsCondition): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -382,7 +382,7 @@ export interface DataCloudflareR2BucketLifecycleRulesStorageClassTransitions {
 export function dataCloudflareR2BucketLifecycleRulesStorageClassTransitionsToTerraform(struct?: DataCloudflareR2BucketLifecycleRulesStorageClassTransitions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -392,7 +392,7 @@ export function dataCloudflareR2BucketLifecycleRulesStorageClassTransitionsToTer
 export function dataCloudflareR2BucketLifecycleRulesStorageClassTransitionsToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRulesStorageClassTransitions): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -463,7 +463,7 @@ export interface DataCloudflareR2BucketLifecycleRules {
 export function dataCloudflareR2BucketLifecycleRulesToTerraform(struct?: DataCloudflareR2BucketLifecycleRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -473,7 +473,7 @@ export function dataCloudflareR2BucketLifecycleRulesToTerraform(struct?: DataClo
 export function dataCloudflareR2BucketLifecycleRulesToHclTerraform(struct?: DataCloudflareR2BucketLifecycleRules): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -563,7 +563,7 @@ export class DataCloudflareR2BucketLifecycleRulesList extends cdktn.ComplexList 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}
 */
 export class DataCloudflareR2BucketLifecycle extends cdktn.TerraformDataSource {
 
@@ -579,7 +579,7 @@ export class DataCloudflareR2BucketLifecycle extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareR2BucketLifecycle resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareR2BucketLifecycle to import
-  * @param importFromId The id of the existing DataCloudflareR2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareR2BucketLifecycle that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareR2BucketLifecycle to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -591,7 +591,7 @@ export class DataCloudflareR2BucketLifecycle extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -602,7 +602,7 @@ export class DataCloudflareR2BucketLifecycle extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_r2_bucket_lifecycle',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -621,16 +621,13 @@ export class DataCloudflareR2BucketLifecycle extends cdktn.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: true, required: false
+  // account_id - computed: false, optional: false, required: true
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {

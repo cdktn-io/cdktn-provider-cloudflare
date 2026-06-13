@@ -4,7 +4,7 @@
 
 ### StreamCaptionLanguage <a name="StreamCaptionLanguage" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language cloudflare_stream_caption_language}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer"></a>
 
@@ -19,9 +19,9 @@ StreamCaptionLanguage.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .identifier(java.lang.String)
     .language(java.lang.String)
-//  .accountId(java.lang.String)
 //  .file(java.lang.String)
     .build();
 ```
@@ -37,9 +37,9 @@ StreamCaptionLanguage.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.identifier">identifier</a></code> | <code>java.lang.String</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.language">language</a></code> | <code>java.lang.String</code> | The language tag in BCP 47 format. |
-| <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.file">file</a></code> | <code>java.lang.String</code> | The WebVTT file containing the caption or subtitle content. |
 
 ---
@@ -104,13 +104,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#account_id StreamCaptionLanguage#account_id}
+
+---
+
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.identifier"></a>
 
 - *Type:* java.lang.String
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#identifier StreamCaptionLanguage#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#identifier StreamCaptionLanguage#identifier}
 
 ---
 
@@ -120,17 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The language tag in BCP 47 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#language StreamCaptionLanguage#language}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#account_id StreamCaptionLanguage#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#language StreamCaptionLanguage#language}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The WebVTT file containing the caption or subtitle content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#file StreamCaptionLanguage#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#file StreamCaptionLanguage#file}
 
 ---
 
@@ -172,7 +172,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.resetFile">resetFile</a></code> | *No description.* |
 
 ---
@@ -488,12 +487,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetFile` <a name="resetFile" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguage.resetFile"></a>
 
 ```java
@@ -603,7 +596,7 @@ The construct id used in the generated config for the StreamCaptionLanguage to i
 
 The id of the existing StreamCaptionLanguage that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,9 +927,9 @@ StreamCaptionLanguageConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .identifier(java.lang.String)
     .language(java.lang.String)
-//  .accountId(java.lang.String)
 //  .file(java.lang.String)
     .build();
 ```
@@ -952,9 +945,9 @@ StreamCaptionLanguageConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.identifier">identifier</a></code> | <code>java.lang.String</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.language">language</a></code> | <code>java.lang.String</code> | The language tag in BCP 47 format. |
-| <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.file">file</a></code> | <code>java.lang.String</code> | The WebVTT file containing the caption or subtitle content. |
 
 ---
@@ -1029,6 +1022,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#account_id StreamCaptionLanguage#account_id}
+
+---
+
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.identifier"></a>
 
 ```java
@@ -1039,7 +1046,7 @@ public java.lang.String getIdentifier();
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#identifier StreamCaptionLanguage#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#identifier StreamCaptionLanguage#identifier}
 
 ---
 
@@ -1053,21 +1060,7 @@ public java.lang.String getLanguage();
 
 The language tag in BCP 47 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#language StreamCaptionLanguage#language}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamCaptionLanguage.StreamCaptionLanguageConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#account_id StreamCaptionLanguage#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#language StreamCaptionLanguage#language}
 
 ---
 
@@ -1081,7 +1074,7 @@ public java.lang.String getFile();
 
 The WebVTT file containing the caption or subtitle content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/stream_caption_language#file StreamCaptionLanguage#file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_caption_language#file StreamCaptionLanguage#file}
 
 ---
 

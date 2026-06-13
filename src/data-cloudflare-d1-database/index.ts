@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,24 @@ export interface DataCloudflareD1DatabaseConfig extends cdktn.TerraformMetaArgum
   /**
   * Account identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
   */
   readonly accountId?: string;
   /**
   * D1 database identifier (UUID).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
   */
   readonly databaseId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}
+  * Comma-separated list of fields to include in the response. When omitted,
+  * all fields are returned.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#fields DataCloudflareD1Database#fields}
+  */
+  readonly fields?: string[];
+  /**
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}
   */
   readonly filter?: DataCloudflareD1DatabaseFilter;
 }
@@ -33,7 +40,7 @@ export interface DataCloudflareD1DatabaseFilter {
   /**
   * a database name to search for.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
   */
   readonly name?: string;
 }
@@ -41,7 +48,7 @@ export interface DataCloudflareD1DatabaseFilter {
 export function dataCloudflareD1DatabaseFilterToTerraform(struct?: DataCloudflareD1DatabaseFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     name: cdktn.stringToTerraform(struct!.name),
@@ -52,7 +59,7 @@ export function dataCloudflareD1DatabaseFilterToTerraform(struct?: DataCloudflar
 export function dataCloudflareD1DatabaseFilterToHclTerraform(struct?: DataCloudflareD1DatabaseFilter | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     name: {
@@ -131,7 +138,7 @@ export interface DataCloudflareD1DatabaseReadReplication {
 export function dataCloudflareD1DatabaseReadReplicationToTerraform(struct?: DataCloudflareD1DatabaseReadReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -141,7 +148,7 @@ export function dataCloudflareD1DatabaseReadReplicationToTerraform(struct?: Data
 export function dataCloudflareD1DatabaseReadReplicationToHclTerraform(struct?: DataCloudflareD1DatabaseReadReplication): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -181,7 +188,7 @@ export class DataCloudflareD1DatabaseReadReplicationOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database cloudflare_d1_database}
 */
 export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
 
@@ -197,7 +204,7 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareD1Database resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareD1Database to import
-  * @param importFromId The id of the existing DataCloudflareD1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareD1Database that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareD1Database to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -209,7 +216,7 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/d1_database cloudflare_d1_database} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database cloudflare_d1_database} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +227,7 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_d1_database',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -233,6 +240,7 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
     });
     this._accountId = config.accountId;
     this._databaseId = config.databaseId;
+    this._fields = config.fields;
     this._filter.internalValue = config.filter;
   }
 
@@ -275,6 +283,22 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get databaseIdInput() {
     return this._databaseId;
+  }
+
+  // fields - computed: false, optional: true, required: false
+  private _fields?: string[]; 
+  public get fields() {
+    return this.getListAttribute('fields');
+  }
+  public set fields(value: string[]) {
+    this._fields = value;
+  }
+  public resetFields() {
+    this._fields = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get fieldsInput() {
+    return this._fields;
   }
 
   // file_size - computed: true, optional: false, required: false
@@ -342,6 +366,7 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
     return {
       account_id: cdktn.stringToTerraform(this._accountId),
       database_id: cdktn.stringToTerraform(this._databaseId),
+      fields: cdktn.listMapper(cdktn.stringToTerraform, false)(this._fields),
       filter: dataCloudflareD1DatabaseFilterToTerraform(this._filter.internalValue),
     };
   }
@@ -359,6 +384,12 @@ export class DataCloudflareD1Database extends cdktn.TerraformDataSource {
         isBlock: false,
         type: "simple",
         storageClassType: "string",
+      },
+      fields: {
+        value: cdktn.listMapperHcl(cdktn.stringToHclTerraform, false)(this._fields),
+        isBlock: false,
+        type: "list",
+        storageClassType: "stringList",
       },
       filter: {
         value: dataCloudflareD1DatabaseFilterToHclTerraform(this._filter.internalValue),

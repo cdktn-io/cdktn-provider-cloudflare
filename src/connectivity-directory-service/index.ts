@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,33 +15,33 @@ export interface ConnectivityDirectoryServiceConfig extends cdktn.TerraformMetaA
   /**
   * Account identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#account_id ConnectivityDirectoryService#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#account_id ConnectivityDirectoryService#account_id}
   */
   readonly accountId?: string;
   /**
   * Available values: "postgresql", "mysql".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#app_protocol ConnectivityDirectoryService#app_protocol}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#app_protocol ConnectivityDirectoryService#app_protocol}
   */
   readonly appProtocol?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#host ConnectivityDirectoryService#host}
   */
   readonly host: ConnectivityDirectoryServiceHost;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#http_port ConnectivityDirectoryService#http_port}
   */
   readonly httpPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#https_port ConnectivityDirectoryService#https_port}
   */
   readonly httpsPort?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#name ConnectivityDirectoryService#name}
   */
   readonly name: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#tcp_port ConnectivityDirectoryService#tcp_port}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#tcp_port ConnectivityDirectoryService#tcp_port}
   */
   readonly tcpPort?: number;
   /**
@@ -49,19 +49,19 @@ export interface ConnectivityDirectoryServiceConfig extends cdktn.TerraformMetaA
   * 
   * If omitted, the default mode (`verify_full`) is used.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#tls_settings ConnectivityDirectoryService#tls_settings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#tls_settings ConnectivityDirectoryService#tls_settings}
   */
   readonly tlsSettings?: ConnectivityDirectoryServiceTlsSettings;
   /**
   * Available values: "tcp", "http".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#type ConnectivityDirectoryService#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#type ConnectivityDirectoryService#type}
   */
   readonly type: string;
 }
 export interface ConnectivityDirectoryServiceHostNetwork {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}
   */
   readonly tunnelId: string;
 }
@@ -69,7 +69,7 @@ export interface ConnectivityDirectoryServiceHostNetwork {
 export function connectivityDirectoryServiceHostNetworkToTerraform(struct?: ConnectivityDirectoryServiceHostNetwork | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     tunnel_id: cdktn.stringToTerraform(struct!.tunnelId),
@@ -80,7 +80,7 @@ export function connectivityDirectoryServiceHostNetworkToTerraform(struct?: Conn
 export function connectivityDirectoryServiceHostNetworkToHclTerraform(struct?: ConnectivityDirectoryServiceHostNetwork | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     tunnel_id: {
@@ -152,11 +152,11 @@ export class ConnectivityDirectoryServiceHostNetworkOutputReference extends cdkt
 }
 export interface ConnectivityDirectoryServiceHostResolverNetwork {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#resolver_ips ConnectivityDirectoryService#resolver_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#resolver_ips ConnectivityDirectoryService#resolver_ips}
   */
   readonly resolverIps?: string[];
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#tunnel_id ConnectivityDirectoryService#tunnel_id}
   */
   readonly tunnelId: string;
 }
@@ -164,7 +164,7 @@ export interface ConnectivityDirectoryServiceHostResolverNetwork {
 export function connectivityDirectoryServiceHostResolverNetworkToTerraform(struct?: ConnectivityDirectoryServiceHostResolverNetwork | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     resolver_ips: cdktn.listMapper(cdktn.stringToTerraform, false)(struct!.resolverIps),
@@ -176,7 +176,7 @@ export function connectivityDirectoryServiceHostResolverNetworkToTerraform(struc
 export function connectivityDirectoryServiceHostResolverNetworkToHclTerraform(struct?: ConnectivityDirectoryServiceHostResolverNetwork | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     resolver_ips: {
@@ -276,23 +276,23 @@ export class ConnectivityDirectoryServiceHostResolverNetworkOutputReference exte
 }
 export interface ConnectivityDirectoryServiceHost {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#hostname ConnectivityDirectoryService#hostname}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#hostname ConnectivityDirectoryService#hostname}
   */
   readonly hostname?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#ipv4 ConnectivityDirectoryService#ipv4}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#ipv4 ConnectivityDirectoryService#ipv4}
   */
   readonly ipv4?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#ipv6 ConnectivityDirectoryService#ipv6}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#ipv6 ConnectivityDirectoryService#ipv6}
   */
   readonly ipv6?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#network ConnectivityDirectoryService#network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#network ConnectivityDirectoryService#network}
   */
   readonly network?: ConnectivityDirectoryServiceHostNetwork;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#resolver_network ConnectivityDirectoryService#resolver_network}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#resolver_network ConnectivityDirectoryService#resolver_network}
   */
   readonly resolverNetwork?: ConnectivityDirectoryServiceHostResolverNetwork;
 }
@@ -300,7 +300,7 @@ export interface ConnectivityDirectoryServiceHost {
 export function connectivityDirectoryServiceHostToTerraform(struct?: ConnectivityDirectoryServiceHost | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     hostname: cdktn.stringToTerraform(struct!.hostname),
@@ -315,7 +315,7 @@ export function connectivityDirectoryServiceHostToTerraform(struct?: Connectivit
 export function connectivityDirectoryServiceHostToHclTerraform(struct?: ConnectivityDirectoryServiceHost | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     hostname: {
@@ -508,7 +508,7 @@ export interface ConnectivityDirectoryServiceTlsSettings {
   * - `"verify_ca"` — verify certificate chain only, skip hostname check
   * - `"disabled"` — do not verify the server certificate at all
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#cert_verification_mode ConnectivityDirectoryService#cert_verification_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#cert_verification_mode ConnectivityDirectoryService#cert_verification_mode}
   */
   readonly certVerificationMode: string;
 }
@@ -516,7 +516,7 @@ export interface ConnectivityDirectoryServiceTlsSettings {
 export function connectivityDirectoryServiceTlsSettingsToTerraform(struct?: ConnectivityDirectoryServiceTlsSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     cert_verification_mode: cdktn.stringToTerraform(struct!.certVerificationMode),
@@ -527,7 +527,7 @@ export function connectivityDirectoryServiceTlsSettingsToTerraform(struct?: Conn
 export function connectivityDirectoryServiceTlsSettingsToHclTerraform(struct?: ConnectivityDirectoryServiceTlsSettings | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     cert_verification_mode: {
@@ -599,7 +599,7 @@ export class ConnectivityDirectoryServiceTlsSettingsOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service}
 */
 export class ConnectivityDirectoryService extends cdktn.TerraformResource {
 
@@ -615,7 +615,7 @@ export class ConnectivityDirectoryService extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ConnectivityDirectoryService resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ConnectivityDirectoryService to import
-  * @param importFromId The id of the existing ConnectivityDirectoryService that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ConnectivityDirectoryService that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ConnectivityDirectoryService to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -627,7 +627,7 @@ export class ConnectivityDirectoryService extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/connectivity_directory_service cloudflare_connectivity_directory_service} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -638,7 +638,7 @@ export class ConnectivityDirectoryService extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_connectivity_directory_service',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

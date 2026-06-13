@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,31 @@ export interface DnsFirewallConfig extends cdktn.TerraformMetaArguments {
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#account_id DnsFirewall#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#account_id DnsFirewall#account_id}
   */
   readonly accountId?: string;
   /**
   * Attack mitigation settings
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#attack_mitigation DnsFirewall#attack_mitigation}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#attack_mitigation DnsFirewall#attack_mitigation}
   */
   readonly attackMitigation?: DnsFirewallAttackMitigation;
   /**
   * Whether to refuse to answer queries for the ANY type
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#deprecate_any_requests DnsFirewall#deprecate_any_requests}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#deprecate_any_requests DnsFirewall#deprecate_any_requests}
   */
   readonly deprecateAnyRequests?: boolean | cdktn.IResolvable;
   /**
+  * Number of IPv4 addresses to assign to the DNS Firewall cluster. Only used during cluster creation and cannot be changed later.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#dns_firewall_ip_count DnsFirewall#dns_firewall_ip_count}
+  */
+  readonly dnsFirewallIpCount?: number;
+  /**
   * Whether to forward client IP (resolver) subnet if no EDNS Client Subnet is sent
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#ecs_fallback DnsFirewall#ecs_fallback}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#ecs_fallback DnsFirewall#ecs_fallback}
   */
   readonly ecsFallback?: boolean | cdktn.IResolvable;
   /**
@@ -46,7 +52,7 @@ export interface DnsFirewallConfig extends cdktn.TerraformMetaArguments {
   * Cloudflare returns to clients. Cloudflare will always forward the TTL
   * value received from upstream nameservers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#maximum_cache_ttl DnsFirewall#maximum_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#maximum_cache_ttl DnsFirewall#maximum_cache_ttl}
   */
   readonly maximumCacheTtl?: number;
   /**
@@ -64,13 +70,13 @@ export interface DnsFirewallConfig extends cdktn.TerraformMetaArguments {
   * responses may be removed earlier for capacity or other operational
   * reasons.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#minimum_cache_ttl DnsFirewall#minimum_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#minimum_cache_ttl DnsFirewall#minimum_cache_ttl}
   */
   readonly minimumCacheTtl?: number;
   /**
   * DNS Firewall cluster name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#name DnsFirewall#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#name DnsFirewall#name}
   */
   readonly name: string;
   /**
@@ -81,23 +87,23 @@ export interface DnsFirewallConfig extends cdktn.TerraformMetaArguments {
   * Cloudflare returns to clients. Cloudflare will always forward the TTL
   * value received from upstream nameservers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#negative_cache_ttl DnsFirewall#negative_cache_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#negative_cache_ttl DnsFirewall#negative_cache_ttl}
   */
   readonly negativeCacheTtl?: number;
   /**
-  * Ratelimit in queries per second per datacenter (applies to DNS queries sent to the upstream nameservers configured on the cluster)
+  * Maximum number of DNS queries per second that will be forwarded to your upstream nameservers. The limit is enforced per server, where each server receives a fraction of the configured value. The actual aggregate rate for a data center may vary depending on how many servers are present. Responses served from cache do not count toward this limit. Set to null to disable rate limiting.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#ratelimit DnsFirewall#ratelimit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#ratelimit DnsFirewall#ratelimit}
   */
   readonly ratelimit?: number;
   /**
   * Number of retries for fetching DNS responses from upstream nameservers (not counting the initial attempt)
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#retries DnsFirewall#retries}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#retries DnsFirewall#retries}
   */
   readonly retries?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}
   */
   readonly upstreamIps: string[];
 }
@@ -105,13 +111,13 @@ export interface DnsFirewallAttackMitigation {
   /**
   * When enabled, automatically mitigate random-prefix attacks to protect upstream DNS servers
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#enabled DnsFirewall#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#enabled DnsFirewall#enabled}
   */
   readonly enabled?: boolean | cdktn.IResolvable;
   /**
   * Only mitigate attacks when upstream servers seem unhealthy
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#only_when_upstream_unhealthy DnsFirewall#only_when_upstream_unhealthy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#only_when_upstream_unhealthy DnsFirewall#only_when_upstream_unhealthy}
   */
   readonly onlyWhenUpstreamUnhealthy?: boolean | cdktn.IResolvable;
 }
@@ -119,7 +125,7 @@ export interface DnsFirewallAttackMitigation {
 export function dnsFirewallAttackMitigationToTerraform(struct?: DnsFirewallAttackMitigation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
     enabled: cdktn.booleanToTerraform(struct!.enabled),
@@ -131,7 +137,7 @@ export function dnsFirewallAttackMitigationToTerraform(struct?: DnsFirewallAttac
 export function dnsFirewallAttackMitigationToHclTerraform(struct?: DnsFirewallAttackMitigation | cdktn.IResolvable): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
     enabled: {
@@ -234,7 +240,7 @@ export class DnsFirewallAttackMitigationOutputReference extends cdktn.ComplexObj
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall cloudflare_dns_firewall}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall}
 */
 export class DnsFirewall extends cdktn.TerraformResource {
 
@@ -250,7 +256,7 @@ export class DnsFirewall extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a DnsFirewall resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DnsFirewall to import
-  * @param importFromId The id of the existing DnsFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DnsFirewall that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DnsFirewall to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -262,7 +268,7 @@ export class DnsFirewall extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/resources/dns_firewall cloudflare_dns_firewall} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +279,7 @@ export class DnsFirewall extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_dns_firewall',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -287,6 +293,7 @@ export class DnsFirewall extends cdktn.TerraformResource {
     this._accountId = config.accountId;
     this._attackMitigation.internalValue = config.attackMitigation;
     this._deprecateAnyRequests = config.deprecateAnyRequests;
+    this._dnsFirewallIpCount = config.dnsFirewallIpCount;
     this._ecsFallback = config.ecsFallback;
     this._maximumCacheTtl = config.maximumCacheTtl;
     this._minimumCacheTtl = config.minimumCacheTtl;
@@ -347,6 +354,22 @@ export class DnsFirewall extends cdktn.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get deprecateAnyRequestsInput() {
     return this._deprecateAnyRequests;
+  }
+
+  // dns_firewall_ip_count - computed: true, optional: true, required: false
+  private _dnsFirewallIpCount?: number; 
+  public get dnsFirewallIpCount() {
+    return this.getNumberAttribute('dns_firewall_ip_count');
+  }
+  public set dnsFirewallIpCount(value: number) {
+    this._dnsFirewallIpCount = value;
+  }
+  public resetDnsFirewallIpCount() {
+    this._dnsFirewallIpCount = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get dnsFirewallIpCountInput() {
+    return this._dnsFirewallIpCount;
   }
 
   // dns_firewall_ips - computed: true, optional: false, required: false
@@ -495,6 +518,7 @@ export class DnsFirewall extends cdktn.TerraformResource {
       account_id: cdktn.stringToTerraform(this._accountId),
       attack_mitigation: dnsFirewallAttackMitigationToTerraform(this._attackMitigation.internalValue),
       deprecate_any_requests: cdktn.booleanToTerraform(this._deprecateAnyRequests),
+      dns_firewall_ip_count: cdktn.numberToTerraform(this._dnsFirewallIpCount),
       ecs_fallback: cdktn.booleanToTerraform(this._ecsFallback),
       maximum_cache_ttl: cdktn.numberToTerraform(this._maximumCacheTtl),
       minimum_cache_ttl: cdktn.numberToTerraform(this._minimumCacheTtl),
@@ -525,6 +549,12 @@ export class DnsFirewall extends cdktn.TerraformResource {
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",
+      },
+      dns_firewall_ip_count: {
+        value: cdktn.numberToHclTerraform(this._dnsFirewallIpCount),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "number",
       },
       ecs_fallback: {
         value: cdktn.booleanToHclTerraform(this._ecsFallback),

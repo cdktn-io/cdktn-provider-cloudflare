@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pages_project
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pages_project
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflarePagesProjectConfig extends cdktn.TerraformMetaArg
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pages_project#account_id DataCloudflarePagesProject#account_id}
   */
   readonly accountId?: string;
   /**
   * Name of the project.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pages_project#project_name DataCloudflarePagesProject#project_name}
   */
   readonly projectName: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflarePagesProjectBuildConfig {
 export function dataCloudflarePagesProjectBuildConfigToTerraform(struct?: DataCloudflarePagesProjectBuildConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflarePagesProjectBuildConfigToTerraform(struct?: DataCl
 export function dataCloudflarePagesProjectBuildConfigToHclTerraform(struct?: DataCloudflarePagesProjectBuildConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -110,7 +110,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentBuildConfig {
 export function dataCloudflarePagesProjectCanonicalDeploymentBuildConfigToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentBuildConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -120,7 +120,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentBuildConfigToTerraf
 export function dataCloudflarePagesProjectCanonicalDeploymentBuildConfigToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentBuildConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -189,7 +189,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerM
 export function dataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -199,7 +199,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMe
 export function dataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadataToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -258,7 +258,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigger 
 export function dataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -268,7 +268,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerTo
 export function dataCloudflarePagesProjectCanonicalDeploymentDeploymentTriggerToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentDeploymentTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -318,7 +318,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentEnvVars {
 export function dataCloudflarePagesProjectCanonicalDeploymentEnvVarsToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -328,7 +328,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentEnvVarsToTerraform(
 export function dataCloudflarePagesProjectCanonicalDeploymentEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -396,7 +396,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentLatestStage {
 export function dataCloudflarePagesProjectCanonicalDeploymentLatestStageToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentLatestStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -406,7 +406,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentLatestStageToTerraf
 export function dataCloudflarePagesProjectCanonicalDeploymentLatestStageToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentLatestStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -465,7 +465,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentSourceConfig {
 export function dataCloudflarePagesProjectCanonicalDeploymentSourceConfigToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentSourceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -475,7 +475,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentSourceConfigToTerra
 export function dataCloudflarePagesProjectCanonicalDeploymentSourceConfigToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentSourceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -579,7 +579,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentSource {
 export function dataCloudflarePagesProjectCanonicalDeploymentSourceToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -589,7 +589,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentSourceToTerraform(s
 export function dataCloudflarePagesProjectCanonicalDeploymentSourceToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -639,7 +639,7 @@ export interface DataCloudflarePagesProjectCanonicalDeploymentStages {
 export function dataCloudflarePagesProjectCanonicalDeploymentStagesToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentStages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -649,7 +649,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentStagesToTerraform(s
 export function dataCloudflarePagesProjectCanonicalDeploymentStagesToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeploymentStages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -729,7 +729,7 @@ export interface DataCloudflarePagesProjectCanonicalDeployment {
 export function dataCloudflarePagesProjectCanonicalDeploymentToTerraform(struct?: DataCloudflarePagesProjectCanonicalDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -739,7 +739,7 @@ export function dataCloudflarePagesProjectCanonicalDeploymentToTerraform(struct?
 export function dataCloudflarePagesProjectCanonicalDeploymentToHclTerraform(struct?: DataCloudflarePagesProjectCanonicalDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -869,7 +869,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindings {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -879,7 +879,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsToTe
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewAiBindingsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewAiBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -942,7 +942,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngi
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -952,7 +952,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngin
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasetsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewAnalyticsEngineDatasets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1015,7 +1015,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsers {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1025,7 +1025,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersToTerr
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewBrowsersToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewBrowsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1083,7 +1083,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewD1Databases {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewD1Databases): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1093,7 +1093,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesToT
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewD1DatabasesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewD1Databases): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1156,7 +1156,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObject
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1166,7 +1166,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectN
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewDurableObjectNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1229,7 +1229,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVars {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1239,7 +1239,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsToTerra
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1307,7 +1307,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBin
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1317,7 +1317,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBind
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindingsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewHyperdriveBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1380,7 +1380,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces 
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1390,7 +1390,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesTo
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewKvNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1453,7 +1453,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewLimits {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewLimitsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1463,7 +1463,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewLimitsToTerraf
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewLimitsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1507,7 +1507,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertifica
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1517,7 +1517,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificat
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificatesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewMtlsCertificates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1580,7 +1580,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewPlacement {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewPlacementToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewPlacement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1590,7 +1590,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewPlacementToTer
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewPlacementToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewPlacement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1634,7 +1634,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducer
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1644,7 +1644,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducers
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducersToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewQueueProducers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1707,7 +1707,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewR2Buckets {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewR2Buckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1717,7 +1717,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsToTer
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewR2BucketsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewR2Buckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1785,7 +1785,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewServices {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewServicesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1795,7 +1795,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewServicesToTerr
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewServicesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1868,7 +1868,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBind
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1878,7 +1878,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindi
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindingsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreviewVectorizeBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -1941,7 +1941,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsPreview {
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreview): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -1951,7 +1951,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsPreviewToTerraform(st
 export function dataCloudflarePagesProjectDeploymentConfigsPreviewToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsPreview): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2115,7 +2115,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionAiBindings
 export function dataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionAiBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2125,7 +2125,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsT
 export function dataCloudflarePagesProjectDeploymentConfigsProductionAiBindingsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionAiBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2188,7 +2188,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsE
 export function dataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2198,7 +2198,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEn
 export function dataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasetsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionAnalyticsEngineDatasets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2261,7 +2261,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionBrowsers {
 export function dataCloudflarePagesProjectDeploymentConfigsProductionBrowsersToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionBrowsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2271,7 +2271,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionBrowsersToT
 export function dataCloudflarePagesProjectDeploymentConfigsProductionBrowsersToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionBrowsers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2329,7 +2329,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionD1Database
 export function dataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionD1Databases): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2339,7 +2339,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionD1Databases
 export function dataCloudflarePagesProjectDeploymentConfigsProductionD1DatabasesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionD1Databases): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2402,7 +2402,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionDurableObj
 export function dataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2412,7 +2412,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionDurableObje
 export function dataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionDurableObjectNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2475,7 +2475,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionEnvVars {
 export function dataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2485,7 +2485,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsToTe
 export function dataCloudflarePagesProjectDeploymentConfigsProductionEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2553,7 +2553,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionHyperdrive
 export function dataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2563,7 +2563,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveB
 export function dataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindingsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionHyperdriveBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2626,7 +2626,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespac
 export function dataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2636,7 +2636,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionKvNamespace
 export function dataCloudflarePagesProjectDeploymentConfigsProductionKvNamespacesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionKvNamespaces): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2699,7 +2699,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionLimits {
 export function dataCloudflarePagesProjectDeploymentConfigsProductionLimitsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2709,7 +2709,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionLimitsToTer
 export function dataCloudflarePagesProjectDeploymentConfigsProductionLimitsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionLimits): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2753,7 +2753,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertif
 export function dataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2763,7 +2763,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertifi
 export function dataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificatesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionMtlsCertificates): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2826,7 +2826,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionPlacement 
 export function dataCloudflarePagesProjectDeploymentConfigsProductionPlacementToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionPlacement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2836,7 +2836,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionPlacementTo
 export function dataCloudflarePagesProjectDeploymentConfigsProductionPlacementToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionPlacement): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2880,7 +2880,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionQueueProdu
 export function dataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2890,7 +2890,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionQueueProduc
 export function dataCloudflarePagesProjectDeploymentConfigsProductionQueueProducersToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionQueueProducers): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -2953,7 +2953,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionR2Buckets 
 export function dataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionR2Buckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -2963,7 +2963,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsTo
 export function dataCloudflarePagesProjectDeploymentConfigsProductionR2BucketsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionR2Buckets): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3031,7 +3031,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionServices {
 export function dataCloudflarePagesProjectDeploymentConfigsProductionServicesToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3041,7 +3041,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionServicesToT
 export function dataCloudflarePagesProjectDeploymentConfigsProductionServicesToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionServices): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3114,7 +3114,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeB
 export function dataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3124,7 +3124,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBi
 export function dataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindingsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProductionVectorizeBindings): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3187,7 +3187,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigsProduction {
 export function dataCloudflarePagesProjectDeploymentConfigsProductionToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProduction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3197,7 +3197,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsProductionToTerraform
 export function dataCloudflarePagesProjectDeploymentConfigsProductionToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigsProduction): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3361,7 +3361,7 @@ export interface DataCloudflarePagesProjectDeploymentConfigs {
 export function dataCloudflarePagesProjectDeploymentConfigsToTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3371,7 +3371,7 @@ export function dataCloudflarePagesProjectDeploymentConfigsToTerraform(struct?: 
 export function dataCloudflarePagesProjectDeploymentConfigsToHclTerraform(struct?: DataCloudflarePagesProjectDeploymentConfigs): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3422,7 +3422,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentBuildConfig {
 export function dataCloudflarePagesProjectLatestDeploymentBuildConfigToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentBuildConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3432,7 +3432,7 @@ export function dataCloudflarePagesProjectLatestDeploymentBuildConfigToTerraform
 export function dataCloudflarePagesProjectLatestDeploymentBuildConfigToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentBuildConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3501,7 +3501,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMeta
 export function dataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3511,7 +3511,7 @@ export function dataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetad
 export function dataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadataToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentDeploymentTriggerMetadata): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3570,7 +3570,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentDeploymentTrigger {
 export function dataCloudflarePagesProjectLatestDeploymentDeploymentTriggerToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentDeploymentTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3580,7 +3580,7 @@ export function dataCloudflarePagesProjectLatestDeploymentDeploymentTriggerToTer
 export function dataCloudflarePagesProjectLatestDeploymentDeploymentTriggerToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentDeploymentTrigger): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3630,7 +3630,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentEnvVars {
 export function dataCloudflarePagesProjectLatestDeploymentEnvVarsToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3640,7 +3640,7 @@ export function dataCloudflarePagesProjectLatestDeploymentEnvVarsToTerraform(str
 export function dataCloudflarePagesProjectLatestDeploymentEnvVarsToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentEnvVars): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3708,7 +3708,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentLatestStage {
 export function dataCloudflarePagesProjectLatestDeploymentLatestStageToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentLatestStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3718,7 +3718,7 @@ export function dataCloudflarePagesProjectLatestDeploymentLatestStageToTerraform
 export function dataCloudflarePagesProjectLatestDeploymentLatestStageToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentLatestStage): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3777,7 +3777,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentSourceConfig {
 export function dataCloudflarePagesProjectLatestDeploymentSourceConfigToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentSourceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3787,7 +3787,7 @@ export function dataCloudflarePagesProjectLatestDeploymentSourceConfigToTerrafor
 export function dataCloudflarePagesProjectLatestDeploymentSourceConfigToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentSourceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3891,7 +3891,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentSource {
 export function dataCloudflarePagesProjectLatestDeploymentSourceToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3901,7 +3901,7 @@ export function dataCloudflarePagesProjectLatestDeploymentSourceToTerraform(stru
 export function dataCloudflarePagesProjectLatestDeploymentSourceToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -3951,7 +3951,7 @@ export interface DataCloudflarePagesProjectLatestDeploymentStages {
 export function dataCloudflarePagesProjectLatestDeploymentStagesToTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentStages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -3961,7 +3961,7 @@ export function dataCloudflarePagesProjectLatestDeploymentStagesToTerraform(stru
 export function dataCloudflarePagesProjectLatestDeploymentStagesToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeploymentStages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4041,7 +4041,7 @@ export interface DataCloudflarePagesProjectLatestDeployment {
 export function dataCloudflarePagesProjectLatestDeploymentToTerraform(struct?: DataCloudflarePagesProjectLatestDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4051,7 +4051,7 @@ export function dataCloudflarePagesProjectLatestDeploymentToTerraform(struct?: D
 export function dataCloudflarePagesProjectLatestDeploymentToHclTerraform(struct?: DataCloudflarePagesProjectLatestDeployment): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4181,7 +4181,7 @@ export interface DataCloudflarePagesProjectSourceConfig {
 export function dataCloudflarePagesProjectSourceConfigToTerraform(struct?: DataCloudflarePagesProjectSourceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4191,7 +4191,7 @@ export function dataCloudflarePagesProjectSourceConfigToTerraform(struct?: DataC
 export function dataCloudflarePagesProjectSourceConfigToHclTerraform(struct?: DataCloudflarePagesProjectSourceConfig): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4295,7 +4295,7 @@ export interface DataCloudflarePagesProjectSource {
 export function dataCloudflarePagesProjectSourceToTerraform(struct?: DataCloudflarePagesProjectSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -4305,7 +4305,7 @@ export function dataCloudflarePagesProjectSourceToTerraform(struct?: DataCloudfl
 export function dataCloudflarePagesProjectSourceToHclTerraform(struct?: DataCloudflarePagesProjectSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -4351,7 +4351,7 @@ export class DataCloudflarePagesProjectSourceOutputReference extends cdktn.Compl
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pages_project cloudflare_pages_project}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pages_project cloudflare_pages_project}
 */
 export class DataCloudflarePagesProject extends cdktn.TerraformDataSource {
 
@@ -4367,7 +4367,7 @@ export class DataCloudflarePagesProject extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflarePagesProject resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePagesProject to import
-  * @param importFromId The id of the existing DataCloudflarePagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePagesProject that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pages_project#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePagesProject to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -4379,7 +4379,7 @@ export class DataCloudflarePagesProject extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/pages_project cloudflare_pages_project} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/pages_project cloudflare_pages_project} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -4390,7 +4390,7 @@ export class DataCloudflarePagesProject extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_pages_project',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

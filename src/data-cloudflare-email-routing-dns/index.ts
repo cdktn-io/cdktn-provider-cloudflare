@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_routing_dns
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_dns
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareEmailRoutingDnsConfig extends cdktn.TerraformMeta
   /**
   * Domain of your zone.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_routing_dns#subdomain DataCloudflareEmailRoutingDns#subdomain}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_dns#subdomain DataCloudflareEmailRoutingDns#subdomain}
   */
   readonly subdomain?: string;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_routing_dns#zone_id DataCloudflareEmailRoutingDns#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_dns#zone_id DataCloudflareEmailRoutingDns#zone_id}
   */
   readonly zoneId?: string;
 }
@@ -31,7 +31,7 @@ export interface DataCloudflareEmailRoutingDnsErrorsSource {
 export function dataCloudflareEmailRoutingDnsErrorsSourceToTerraform(struct?: DataCloudflareEmailRoutingDnsErrorsSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -41,7 +41,7 @@ export function dataCloudflareEmailRoutingDnsErrorsSourceToTerraform(struct?: Da
 export function dataCloudflareEmailRoutingDnsErrorsSourceToHclTerraform(struct?: DataCloudflareEmailRoutingDnsErrorsSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -85,7 +85,7 @@ export interface DataCloudflareEmailRoutingDnsErrors {
 export function dataCloudflareEmailRoutingDnsErrorsToTerraform(struct?: DataCloudflareEmailRoutingDnsErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -95,7 +95,7 @@ export function dataCloudflareEmailRoutingDnsErrorsToTerraform(struct?: DataClou
 export function dataCloudflareEmailRoutingDnsErrorsToHclTerraform(struct?: DataCloudflareEmailRoutingDnsErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -176,7 +176,7 @@ export interface DataCloudflareEmailRoutingDnsMessagesSource {
 export function dataCloudflareEmailRoutingDnsMessagesSourceToTerraform(struct?: DataCloudflareEmailRoutingDnsMessagesSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -186,7 +186,7 @@ export function dataCloudflareEmailRoutingDnsMessagesSourceToTerraform(struct?: 
 export function dataCloudflareEmailRoutingDnsMessagesSourceToHclTerraform(struct?: DataCloudflareEmailRoutingDnsMessagesSource): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -230,7 +230,7 @@ export interface DataCloudflareEmailRoutingDnsMessages {
 export function dataCloudflareEmailRoutingDnsMessagesToTerraform(struct?: DataCloudflareEmailRoutingDnsMessages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -240,7 +240,7 @@ export function dataCloudflareEmailRoutingDnsMessagesToTerraform(struct?: DataCl
 export function dataCloudflareEmailRoutingDnsMessagesToHclTerraform(struct?: DataCloudflareEmailRoutingDnsMessages): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -321,7 +321,7 @@ export interface DataCloudflareEmailRoutingDnsResultErrorsMissing {
 export function dataCloudflareEmailRoutingDnsResultErrorsMissingToTerraform(struct?: DataCloudflareEmailRoutingDnsResultErrorsMissing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -331,7 +331,7 @@ export function dataCloudflareEmailRoutingDnsResultErrorsMissingToTerraform(stru
 export function dataCloudflareEmailRoutingDnsResultErrorsMissingToHclTerraform(struct?: DataCloudflareEmailRoutingDnsResultErrorsMissing): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -395,7 +395,7 @@ export interface DataCloudflareEmailRoutingDnsResultErrors {
 export function dataCloudflareEmailRoutingDnsResultErrorsToTerraform(struct?: DataCloudflareEmailRoutingDnsResultErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -405,7 +405,7 @@ export function dataCloudflareEmailRoutingDnsResultErrorsToTerraform(struct?: Da
 export function dataCloudflareEmailRoutingDnsResultErrorsToHclTerraform(struct?: DataCloudflareEmailRoutingDnsResultErrors): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -476,7 +476,7 @@ export interface DataCloudflareEmailRoutingDnsResultRecord {
 export function dataCloudflareEmailRoutingDnsResultRecordToTerraform(struct?: DataCloudflareEmailRoutingDnsResultRecord): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -486,7 +486,7 @@ export function dataCloudflareEmailRoutingDnsResultRecordToTerraform(struct?: Da
 export function dataCloudflareEmailRoutingDnsResultRecordToHclTerraform(struct?: DataCloudflareEmailRoutingDnsResultRecord): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -571,7 +571,7 @@ export interface DataCloudflareEmailRoutingDnsResult {
 export function dataCloudflareEmailRoutingDnsResultToTerraform(struct?: DataCloudflareEmailRoutingDnsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -581,7 +581,7 @@ export function dataCloudflareEmailRoutingDnsResultToTerraform(struct?: DataClou
 export function dataCloudflareEmailRoutingDnsResultToHclTerraform(struct?: DataCloudflareEmailRoutingDnsResult): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -657,7 +657,7 @@ export interface DataCloudflareEmailRoutingDnsResultInfo {
 export function dataCloudflareEmailRoutingDnsResultInfoToTerraform(struct?: DataCloudflareEmailRoutingDnsResultInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   return {
   }
@@ -667,7 +667,7 @@ export function dataCloudflareEmailRoutingDnsResultInfoToTerraform(struct?: Data
 export function dataCloudflareEmailRoutingDnsResultInfoToHclTerraform(struct?: DataCloudflareEmailRoutingDnsResultInfo): any {
   if (!cdktn.canInspect(struct) || cdktn.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktn.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdktn.io/docs/concepts/resources#references");
   }
   const attrs = {
   };
@@ -727,7 +727,7 @@ export class DataCloudflareEmailRoutingDnsResultInfoOutputReference extends cdkt
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_routing_dns cloudflare_email_routing_dns}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns}
 */
 export class DataCloudflareEmailRoutingDns extends cdktn.TerraformDataSource {
 
@@ -743,7 +743,7 @@ export class DataCloudflareEmailRoutingDns extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflareEmailRoutingDns resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareEmailRoutingDns to import
-  * @param importFromId The id of the existing DataCloudflareEmailRoutingDns that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_routing_dns#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareEmailRoutingDns that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_dns#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareEmailRoutingDns to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -755,7 +755,7 @@ export class DataCloudflareEmailRoutingDns extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.19.1/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_dns cloudflare_email_routing_dns} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -766,7 +766,7 @@ export class DataCloudflareEmailRoutingDns extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_email_routing_dns',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.19.1',
+        providerVersion: '5.20.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
