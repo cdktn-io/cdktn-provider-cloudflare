@@ -4,7 +4,7 @@
 
 ### ZeroTrustDexTest <a name="ZeroTrustDexTest" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test cloudflare_zero_trust_dex_test}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer"></a>
 
@@ -19,11 +19,11 @@ ZeroTrustDexTest.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .data(ZeroTrustDexTestData)
     .enabled(java.lang.Boolean|IResolvable)
     .interval(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .description(java.lang.String)
 //  .targetPolicies(IResolvable|java.util.List<ZeroTrustDexTestTargetPolicies>)
     .build();
@@ -40,11 +40,11 @@ ZeroTrustDexTest.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.data">data</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestData">ZeroTrustDexTestData</a></code> | The configuration object which contains the details for the WARP client to conduct the test. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether or not the test is active. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.interval">interval</a></code> | <code>java.lang.String</code> | How often the test will run. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the DEX test. Must be unique. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Additional details about the test. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.targetPolicies">targetPolicies</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPolicies">ZeroTrustDexTestTargetPolicies</a>></code> | DEX rules targeted by this test. |
 
@@ -110,13 +110,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}.
+
+---
+
 ##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.data"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestData">ZeroTrustDexTestData</a>
 
 The configuration object which contains the details for the WARP client to conduct the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
 
 ---
 
@@ -126,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Determines whether or not the test is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
 
 ---
 
@@ -136,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 How often the test will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
 
 ---
 
@@ -146,15 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The name of the DEX test. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Additional details about the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
 
 ---
 
@@ -174,7 +174,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 DEX rules targeted by this test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#target_policies ZeroTrustDexTest#target_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#target_policies ZeroTrustDexTest#target_policies}
 
 ---
 
@@ -208,7 +208,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.putData">putData</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.putTargetPolicies">putTargetPolicies</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.resetTargetPolicies">resetTargetPolicies</a></code> | *No description.* |
 
@@ -549,12 +548,6 @@ public void putTargetPolicies(IResolvable|java.util.List<ZeroTrustDexTestTargetP
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTest.resetDescription"></a>
 
 ```java
@@ -670,7 +663,7 @@ The construct id used in the generated config for the ZeroTrustDexTest to import
 
 The id of the existing ZeroTrustDexTest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1067,11 +1060,11 @@ ZeroTrustDexTestConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .data(ZeroTrustDexTestData)
     .enabled(java.lang.Boolean|IResolvable)
     .interval(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .description(java.lang.String)
 //  .targetPolicies(IResolvable|java.util.List<ZeroTrustDexTestTargetPolicies>)
     .build();
@@ -1088,11 +1081,11 @@ ZeroTrustDexTestConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.data">data</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestData">ZeroTrustDexTestData</a></code> | The configuration object which contains the details for the WARP client to conduct the test. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.enabled">enabled</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Determines whether or not the test is active. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.interval">interval</a></code> | <code>java.lang.String</code> | How often the test will run. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the DEX test. Must be unique. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.description">description</a></code> | <code>java.lang.String</code> | Additional details about the test. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.targetPolicies">targetPolicies</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestTargetPolicies">ZeroTrustDexTestTargetPolicies</a>></code> | DEX rules targeted by this test. |
 
@@ -1168,6 +1161,18 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}.
+
+---
+
 ##### `data`<sup>Required</sup> <a name="data" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.data"></a>
 
 ```java
@@ -1178,7 +1183,7 @@ public ZeroTrustDexTestData getData();
 
 The configuration object which contains the details for the WARP client to conduct the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#data ZeroTrustDexTest#data}
 
 ---
 
@@ -1192,7 +1197,7 @@ public java.lang.Boolean|IResolvable getEnabled();
 
 Determines whether or not the test is active.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#enabled ZeroTrustDexTest#enabled}
 
 ---
 
@@ -1206,7 +1211,7 @@ public java.lang.String getInterval();
 
 How often the test will run.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#interval ZeroTrustDexTest#interval}
 
 ---
 
@@ -1220,19 +1225,7 @@ public java.lang.String getName();
 
 The name of the DEX test. Must be unique.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustDexTest.ZeroTrustDexTestConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#account_id ZeroTrustDexTest#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#name ZeroTrustDexTest#name}
 
 ---
 
@@ -1246,7 +1239,7 @@ public java.lang.String getDescription();
 
 Additional details about the test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#description ZeroTrustDexTest#description}
 
 ---
 
@@ -1260,7 +1253,7 @@ public IResolvable|java.util.List<ZeroTrustDexTestTargetPolicies> getTargetPolic
 
 DEX rules targeted by this test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#target_policies ZeroTrustDexTest#target_policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#target_policies ZeroTrustDexTest#target_policies}
 
 ---
 
@@ -1298,7 +1291,7 @@ public java.lang.String getHost();
 
 The desired endpoint to test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#host ZeroTrustDexTest#host}
 
 ---
 
@@ -1312,7 +1305,7 @@ public java.lang.String getKind();
 
 The type of test.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#kind ZeroTrustDexTest#kind}
 
 ---
 
@@ -1326,7 +1319,7 @@ public java.lang.String getMethod();
 
 The HTTP request method type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#method ZeroTrustDexTest#method}
 
 ---
 
@@ -1360,7 +1353,7 @@ public java.lang.String getId();
 
 The id of the DEX rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dex_test#id ZeroTrustDexTest#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dex_test#id ZeroTrustDexTest#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

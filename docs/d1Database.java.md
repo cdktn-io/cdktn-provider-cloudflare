@@ -4,7 +4,7 @@
 
 ### D1Database <a name="D1Database" id="@cdktn/provider-cloudflare.d1Database.D1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
@@ -19,8 +19,8 @@ D1Database.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .jurisdiction(java.lang.String)
 //  .primaryLocationHint(java.lang.String)
 //  .readReplication(D1DatabaseReadReplication)
@@ -38,8 +38,8 @@ D1Database.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | D1 database name. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | D1 database name. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Specify the location to restrict the D1 database to run and store data. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.primaryLocationHint">primaryLocationHint</a></code> | <code>java.lang.String</code> | Specify the region to create the D1 primary, if available. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.readReplication">readReplication</a></code> | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseReadReplication">D1DatabaseReadReplication</a></code> | Configuration for D1 read replication. |
@@ -106,23 +106,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#account_id D1Database#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
 
 D1 database name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#name D1Database#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.d1Database.D1Database.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#name D1Database#name}
 
 ---
 
@@ -135,7 +135,7 @@ Specify the location to restrict the D1 database to run and store data.
 If this option is present, the location hint is ignored.
 Available values: "eu", "fedramp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
 
 ---
 
@@ -148,7 +148,7 @@ Specify the region to create the D1 primary, if available.
 If this option is omitted, the D1 will be created as close as possible to the current user.
 Available values: "wnam", "enam", "weur", "eeur", "apac", "oc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configuration for D1 read replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#read_replication D1Database#read_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#read_replication D1Database#read_replication}
 
 ---
 
@@ -191,7 +191,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.putReadReplication">putReadReplication</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetJurisdiction">resetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetPrimaryLocationHint">resetPrimaryLocationHint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetReadReplication">resetReadReplication</a></code> | *No description.* |
@@ -521,12 +520,6 @@ public void putReadReplication(D1DatabaseReadReplication value)
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.d1Database.D1Database.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetJurisdiction` <a name="resetJurisdiction" id="@cdktn/provider-cloudflare.d1Database.D1Database.resetJurisdiction"></a>
 
 ```java
@@ -648,7 +641,7 @@ The construct id used in the generated config for the D1Database to import.
 
 The id of the existing D1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1034,8 +1027,8 @@ D1DatabaseConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .jurisdiction(java.lang.String)
 //  .primaryLocationHint(java.lang.String)
 //  .readReplication(D1DatabaseReadReplication)
@@ -1053,8 +1046,8 @@ D1DatabaseConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | D1 database name. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">name</a></code> | <code>java.lang.String</code> | D1 database name. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.jurisdiction">jurisdiction</a></code> | <code>java.lang.String</code> | Specify the location to restrict the D1 database to run and store data. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.primaryLocationHint">primaryLocationHint</a></code> | <code>java.lang.String</code> | Specify the region to create the D1 primary, if available. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.readReplication">readReplication</a></code> | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseReadReplication">D1DatabaseReadReplication</a></code> | Configuration for D1 read replication. |
@@ -1131,6 +1124,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#account_id D1Database#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.name"></a>
 
 ```java
@@ -1141,21 +1148,7 @@ public java.lang.String getName();
 
 D1 database name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#name D1Database#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#name D1Database#name}
 
 ---
 
@@ -1172,7 +1165,7 @@ Specify the location to restrict the D1 database to run and store data.
 If this option is present, the location hint is ignored.
 Available values: "eu", "fedramp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
 
 ---
 
@@ -1189,7 +1182,7 @@ Specify the region to create the D1 primary, if available.
 If this option is omitted, the D1 will be created as close as possible to the current user.
 Available values: "wnam", "enam", "weur", "eeur", "apac", "oc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 
@@ -1203,7 +1196,7 @@ public D1DatabaseReadReplication getReadReplication();
 
 Configuration for D1 read replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#read_replication D1Database#read_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#read_replication D1Database#read_replication}
 
 ---
 
@@ -1240,7 +1233,7 @@ The read replication mode for the database.
 Use 'auto' to create replicas and allow D1 automatically place them around the world, or 'disabled' to not use any database replicas (it can take a few hours for all replicas to be deleted).
 Available values: "auto", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#mode D1Database#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#mode D1Database#mode}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### Queue <a name="Queue" id="@cdktn/provider-cloudflare.queue.Queue"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue cloudflare_queue}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue cloudflare_queue}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.queue.Queue.Initializer"></a>
 
@@ -21,8 +21,8 @@ queue.Queue(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   queue_name: str,
-  account_id: str = None,
   settings: QueueSettings = None
 )
 ```
@@ -38,9 +38,9 @@ queue.Queue(
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.queueName">queue_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#queue_name Queue#queue_name}. |
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.queueName">queue_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -104,21 +104,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `queue_name`<sup>Required</sup> <a name="queue_name" id="@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.queueName"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#queue_name Queue#queue_name}.
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.accountId"></a>
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.accountId"></a>
 
 - *Type:* str
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#account_id Queue#account_id}
+
+---
+
+##### `queue_name`<sup>Required</sup> <a name="queue_name" id="@cdktn/provider-cloudflare.queue.Queue.Initializer.parameter.queueName"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -159,7 +159,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.putSettings">put_settings</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.queue.Queue.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.Queue.resetSettings">reset_settings</a></code> | *No description.* |
 
 ---
@@ -528,7 +527,7 @@ def put_settings(
 
 Number of seconds to delay delivery of all messages to consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
 
 ---
 
@@ -538,7 +537,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Indicates if message delivery to consumers is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
 
 ---
 
@@ -548,15 +547,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Number of seconds after which an unconsumed message will be delayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
 
 ---
-
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.queue.Queue.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
 
 ##### `reset_settings` <a name="reset_settings" id="@cdktn/provider-cloudflare.queue.Queue.resetSettings"></a>
 
@@ -678,7 +671,7 @@ The construct id used in the generated config for the Queue to import.
 
 The id of the existing Queue that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1042,8 +1035,8 @@ queue.QueueConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   queue_name: str,
-  account_id: str = None,
   settings: QueueSettings = None
 )
 ```
@@ -1059,9 +1052,9 @@ queue.QueueConfig(
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName">queue_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#queue_name Queue#queue_name}. |
 | <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.accountId">account_id</a></code> | <code>str</code> | A Resource identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#settings Queue#settings}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName">queue_name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#queue_name Queue#queue_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.queue.QueueConfig.property.settings">settings</a></code> | <code><a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#settings Queue#settings}. |
 
 ---
 
@@ -1135,19 +1128,7 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
-##### `queue_name`<sup>Required</sup> <a name="queue_name" id="@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName"></a>
-
-```python
-queue_name: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#queue_name Queue#queue_name}.
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.queue.QueueConfig.property.accountId"></a>
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.queue.QueueConfig.property.accountId"></a>
 
 ```python
 account_id: str
@@ -1157,7 +1138,19 @@ account_id: str
 
 A Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#account_id Queue#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#account_id Queue#account_id}
+
+---
+
+##### `queue_name`<sup>Required</sup> <a name="queue_name" id="@cdktn/provider-cloudflare.queue.QueueConfig.property.queueName"></a>
+
+```python
+queue_name: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#queue_name Queue#queue_name}.
 
 ---
 
@@ -1169,7 +1162,7 @@ settings: QueueSettings
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.queue.QueueSettings">QueueSettings</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#settings Queue#settings}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#settings Queue#settings}.
 
 ---
 
@@ -1240,7 +1233,7 @@ delivery_delay: typing.Union[int, float]
 
 Number of seconds to delay delivery of all messages to consumers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#delivery_delay Queue#delivery_delay}
 
 ---
 
@@ -1254,7 +1247,7 @@ delivery_paused: bool | IResolvable
 
 Indicates if message delivery to consumers is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#delivery_paused Queue#delivery_paused}
 
 ---
 
@@ -1268,7 +1261,7 @@ message_retention_period: typing.Union[int, float]
 
 Number of seconds after which an unconsumed message will be delayed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/queue#message_retention_period Queue#message_retention_period}
 
 ---
 

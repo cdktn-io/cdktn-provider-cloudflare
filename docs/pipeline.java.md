@@ -4,7 +4,7 @@
 
 ### Pipeline <a name="Pipeline" id="@cdktn/provider-cloudflare.pipeline.Pipeline"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline cloudflare_pipeline}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline cloudflare_pipeline}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer"></a>
 
@@ -19,9 +19,9 @@ Pipeline.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .name(java.lang.String)
     .sql(java.lang.String)
-//  .accountId(java.lang.String)
     .build();
 ```
 
@@ -36,9 +36,9 @@ Pipeline.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Specifies the public ID of the account. |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Specifies the name of the Pipeline. |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.sql">sql</a></code> | <code>java.lang.String</code> | Specifies SQL for the Pipeline processing flow. |
-| <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Specifies the public ID of the account. |
 
 ---
 
@@ -102,13 +102,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Specifies the public ID of the account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline#account_id Pipeline#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
 
 Specifies the name of the Pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline#name Pipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline#name Pipeline#name}
 
 ---
 
@@ -118,17 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specifies SQL for the Pipeline processing flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline#sql Pipeline#sql}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.pipeline.Pipeline.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Specifies the public ID of the account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline#account_id Pipeline#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline#sql Pipeline#sql}
 
 ---
 
@@ -160,7 +160,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.pipeline.Pipeline.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -475,12 +474,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.pipeline.Pipeline.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -584,7 +577,7 @@ The construct id used in the generated config for the Pipeline to import.
 
 The id of the existing Pipeline that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -926,9 +919,9 @@ PipelineConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .name(java.lang.String)
     .sql(java.lang.String)
-//  .accountId(java.lang.String)
     .build();
 ```
 
@@ -943,9 +936,9 @@ PipelineConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Specifies the public ID of the account. |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.name">name</a></code> | <code>java.lang.String</code> | Specifies the name of the Pipeline. |
 | <code><a href="#@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.sql">sql</a></code> | <code>java.lang.String</code> | Specifies SQL for the Pipeline processing flow. |
-| <code><a href="#@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Specifies the public ID of the account. |
 
 ---
 
@@ -1019,6 +1012,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Specifies the public ID of the account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline#account_id Pipeline#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.name"></a>
 
 ```java
@@ -1029,7 +1036,7 @@ public java.lang.String getName();
 
 Specifies the name of the Pipeline.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline#name Pipeline#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline#name Pipeline#name}
 
 ---
 
@@ -1043,21 +1050,7 @@ public java.lang.String getSql();
 
 Specifies SQL for the Pipeline processing flow.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline#sql Pipeline#sql}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.pipeline.PipelineConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Specifies the public ID of the account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pipeline#account_id Pipeline#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline#sql Pipeline#sql}
 
 ---
 

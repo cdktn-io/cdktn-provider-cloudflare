@@ -4,7 +4,7 @@
 
 ### R2Bucket <a name="R2Bucket" id="@cdktn/provider-cloudflare.r2Bucket.R2Bucket"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket cloudflare_r2_bucket}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2Bucket.R2Bucket.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2Bucket.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2Bucket.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2Bucket.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2Bucket.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2Bucket.resetJurisdiction">ResetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2Bucket.resetLocation">ResetLocation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2Bucket.resetStorageClass">ResetStorageClass</a></code> | *No description.* |
@@ -390,12 +389,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.r2Bucket.R2Bucket.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 ##### `ResetJurisdiction` <a name="ResetJurisdiction" id="@cdktn/provider-cloudflare.r2Bucket.R2Bucket.resetJurisdiction"></a>
 
 ```csharp
@@ -517,7 +510,7 @@ The construct id used in the generated config for the R2Bucket to import.
 
 The id of the existing R2Bucket that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -859,8 +852,8 @@ new R2BucketConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string AccountId,
     string Name,
-    string AccountId = null,
     string Jurisdiction = null,
     string Location = null,
     string StorageClass = null
@@ -878,8 +871,8 @@ new R2BucketConfig {
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">Name</a></code> | <code>string</code> | Name of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId">AccountId</a></code> | <code>string</code> | Account ID. |
+| <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.name">Name</a></code> | <code>string</code> | Name of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.jurisdiction">Jurisdiction</a></code> | <code>string</code> | Jurisdiction where objects in this bucket are guaranteed to be stored. Available values: "default", "eu", "fedramp". |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.location">Location</a></code> | <code>string</code> | Location of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.storageClass">StorageClass</a></code> | <code>string</code> | Storage class for newly uploaded objects, unless specified otherwise. Available values: "Standard", "InfrequentAccess". |
@@ -956,6 +949,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.name"></a>
 
 ```csharp
@@ -966,21 +973,7 @@ public string Name { get; set; }
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket#name R2Bucket#name}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.r2Bucket.R2BucketConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket#account_id R2Bucket#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket#name R2Bucket#name}
 
 ---
 
@@ -994,7 +987,7 @@ public string Jurisdiction { get; set; }
 
 Jurisdiction where objects in this bucket are guaranteed to be stored. Available values: "default", "eu", "fedramp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket#jurisdiction R2Bucket#jurisdiction}
 
 ---
 
@@ -1010,7 +1003,7 @@ Location of the bucket.
 
 Available values: "apac", "eeur", "enam", "weur", "wnam", "oc".  Note: `location` is only honored the first time a bucket with a given name is created. If you delete and recreate a bucket with the same name, the original bucket location will be used. It is also a best-effort, not a guarantee, of bucket location.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket#location R2Bucket#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket#location R2Bucket#location}
 
 ---
 
@@ -1024,7 +1017,7 @@ public string StorageClass { get; set; }
 
 Storage class for newly uploaded objects, unless specified otherwise. Available values: "Standard", "InfrequentAccess".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket#storage_class R2Bucket#storage_class}
 
 ---
 

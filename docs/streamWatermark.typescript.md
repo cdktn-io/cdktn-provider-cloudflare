@@ -4,14 +4,14 @@
 
 ### StreamWatermarkA <a name="StreamWatermarkA" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark cloudflare_stream_watermark}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer"></a>
 
 ```typescript
 import { streamWatermark } from '@cdktn/provider-cloudflare'
 
-new streamWatermark.StreamWatermarkA(scope: Construct, id: string, config?: StreamWatermarkAConfig)
+new streamWatermark.StreamWatermarkA(scope: Construct, id: string, config: StreamWatermarkAConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig">StreamWatermarkAConfig</a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetIdentifier">resetIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetName">resetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetOpacity">resetOpacity</a></code> | *No description.* |
@@ -394,12 +393,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetAccountId"></a>
-
-```typescript
-public resetAccountId(): void
-```
-
 ##### `resetIdentifier` <a name="resetIdentifier" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkA.resetIdentifier"></a>
 
 ```typescript
@@ -545,7 +538,7 @@ The construct id used in the generated config for the StreamWatermarkA to import
 
 The id of the existing StreamWatermarkA that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1084,7 +1077,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWatermark.StreamWatermarkAConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -1094,7 +1087,7 @@ public readonly accountId: string;
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#account_id StreamWatermarkA#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#account_id StreamWatermarkA#account_id}
 
 ---
 
@@ -1108,7 +1101,7 @@ public readonly identifier: string;
 
 The unique identifier for a watermark profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#identifier StreamWatermarkA#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#identifier StreamWatermarkA#identifier}
 
 ---
 
@@ -1122,7 +1115,7 @@ public readonly name: string;
 
 A short description of the watermark profile.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#name StreamWatermarkA#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#name StreamWatermarkA#name}
 
 ---
 
@@ -1138,7 +1131,7 @@ The translucency of the image.
 
 A value of `0.0` makes the image completely transparent, and `1.0` makes the image completely opaque. Note that if the image is already semi-transparent, setting this to `1.0` will not make the image completely opaque.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#opacity StreamWatermarkA#opacity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#opacity StreamWatermarkA#opacity}
 
 ---
 
@@ -1154,7 +1147,7 @@ The whitespace between the adjacent edges (determined by position) of the video 
 
 `0.0` indicates no padding, and `1.0` indicates a fully padded video width or length, as determined by the algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#padding StreamWatermarkA#padding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#padding StreamWatermarkA#padding}
 
 ---
 
@@ -1170,7 +1163,7 @@ The location of the image.
 
 Valid positions are: `upperRight`, `upperLeft`, `lowerLeft`, `lowerRight`, and `center`. Note that `center` ignores the `padding` parameter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#position StreamWatermarkA#position}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#position StreamWatermarkA#position}
 
 ---
 
@@ -1186,7 +1179,7 @@ The size of the image relative to the overall size of the video.
 
 This parameter will adapt to horizontal and vertical videos automatically. `0.0` indicates no scaling (use the size of the image as-is), and `1.0 `fills the entire video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#scale StreamWatermarkA#scale}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#scale StreamWatermarkA#scale}
 
 ---
 
@@ -1200,7 +1193,7 @@ public readonly url: string;
 
 URL of the watermark image to copy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_watermark#url StreamWatermarkA#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_watermark#url StreamWatermarkA#url}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### AccountMember <a name="AccountMember" id="@cdktn/provider-cloudflare.accountMember.AccountMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member cloudflare_account_member}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member cloudflare_account_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer"></a>
 
@@ -19,8 +19,8 @@ AccountMember.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .email(java.lang.String)
-//  .accountId(java.lang.String)
 //  .policies(IResolvable|java.util.List<AccountMemberPolicies>)
 //  .roles(java.util.List<java.lang.String>)
 //  .status(java.lang.String)
@@ -38,8 +38,8 @@ AccountMember.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.policies">policies</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberPolicies">AccountMemberPolicies</a>></code> | Array of policies associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Set of roles associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.status">status</a></code> | <code>java.lang.String</code> | Status of the member invitation. |
@@ -106,23 +106,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#account_id AccountMember#account_id}
+
+---
+
 ##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.email"></a>
 
 - *Type:* java.lang.String
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#email AccountMember#email}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#email AccountMember#email}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of policies associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#policies AccountMember#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#policies AccountMember#policies}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Set of roles associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#roles AccountMember#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#roles AccountMember#roles}
 
 ---
 
@@ -156,7 +156,7 @@ If not provided during creation, defaults to 'pending'.
 Changing from 'accepted' back to 'pending' will trigger a replacement of the member resource in Terraform.
 Available values: "accepted", "pending".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#status AccountMember#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 
@@ -189,7 +189,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.putPolicies">putPolicies</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetPolicies">resetPolicies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetRoles">resetRoles</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetStatus">resetStatus</a></code> | *No description.* |
@@ -519,12 +518,6 @@ public void putPolicies(IResolvable|java.util.List<AccountMemberPolicies> value)
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.accountMember.AccountMember.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetPolicies` <a name="resetPolicies" id="@cdktn/provider-cloudflare.accountMember.AccountMember.resetPolicies"></a>
 
 ```java
@@ -646,7 +639,7 @@ The construct id used in the generated config for the AccountMember to import.
 
 The id of the existing AccountMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,8 +981,8 @@ AccountMemberConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .email(java.lang.String)
-//  .accountId(java.lang.String)
 //  .policies(IResolvable|java.util.List<AccountMemberPolicies>)
 //  .roles(java.util.List<java.lang.String>)
 //  .status(java.lang.String)
@@ -1007,8 +1000,8 @@ AccountMemberConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.email">email</a></code> | <code>java.lang.String</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.policies">policies</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberPolicies">AccountMemberPolicies</a>></code> | Array of policies associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.roles">roles</a></code> | <code>java.util.List<java.lang.String></code> | Set of roles associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.status">status</a></code> | <code>java.lang.String</code> | Status of the member invitation. |
@@ -1085,6 +1078,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#account_id AccountMember#account_id}
+
+---
+
 ##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.email"></a>
 
 ```java
@@ -1095,21 +1102,7 @@ public java.lang.String getEmail();
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#email AccountMember#email}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#email AccountMember#email}
 
 ---
 
@@ -1123,7 +1116,7 @@ public IResolvable|java.util.List<AccountMemberPolicies> getPolicies();
 
 Array of policies associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#policies AccountMember#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#policies AccountMember#policies}
 
 ---
 
@@ -1137,7 +1130,7 @@ public java.util.List<java.lang.String> getRoles();
 
 Set of roles associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#roles AccountMember#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#roles AccountMember#roles}
 
 ---
 
@@ -1155,7 +1148,7 @@ If not provided during creation, defaults to 'pending'.
 Changing from 'accepted' back to 'pending' will trigger a replacement of the member resource in Terraform.
 Available values: "accepted", "pending".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#status AccountMember#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 
@@ -1193,7 +1186,7 @@ public java.lang.String getAccess();
 
 Allow or deny operations against the resources. Available values: "allow", "deny".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#access AccountMember#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#access AccountMember#access}
 
 ---
 
@@ -1207,7 +1200,7 @@ public IResolvable|java.util.List<AccountMemberPoliciesPermissionGroups> getPerm
 
 A set of permission groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
 
 ---
 
@@ -1221,7 +1214,7 @@ public IResolvable|java.util.List<AccountMemberPoliciesResourceGroups> getResour
 
 A list of resource groups that the policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
 
 ---
 
@@ -1255,7 +1248,7 @@ public java.lang.String getId();
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1292,7 +1285,7 @@ public java.lang.String getId();
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

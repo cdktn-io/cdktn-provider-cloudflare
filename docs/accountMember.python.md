@@ -4,7 +4,7 @@
 
 ### AccountMember <a name="AccountMember" id="@cdktn/provider-cloudflare.accountMember.AccountMember"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member cloudflare_account_member}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member cloudflare_account_member}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer"></a>
 
@@ -21,8 +21,8 @@ accountMember.AccountMember(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   email: str,
-  account_id: str = None,
   policies: IResolvable | typing.List[AccountMemberPolicies] = None,
   roles: typing.List[str] = None,
   status: str = None
@@ -40,8 +40,8 @@ accountMember.AccountMember(
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.email">email</a></code> | <code>str</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.email">email</a></code> | <code>str</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.policies">policies</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberPolicies">AccountMemberPolicies</a>]</code> | Array of policies associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.roles">roles</a></code> | <code>typing.List[str]</code> | Set of roles associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.status">status</a></code> | <code>str</code> | Status of the member invitation. |
@@ -108,23 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#account_id AccountMember#account_id}
+
+---
+
 ##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.email"></a>
 
 - *Type:* str
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#email AccountMember#email}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountMember.AccountMember.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#email AccountMember#email}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Array of policies associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#policies AccountMember#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#policies AccountMember#policies}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Set of roles associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#roles AccountMember#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#roles AccountMember#roles}
 
 ---
 
@@ -158,7 +158,7 @@ If not provided during creation, defaults to 'pending'.
 Changing from 'accepted' back to 'pending' will trigger a replacement of the member resource in Terraform.
 Available values: "accepted", "pending".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#status AccountMember#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 
@@ -191,7 +191,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.putPolicies">put_policies</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetPolicies">reset_policies</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetRoles">reset_roles</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMember.resetStatus">reset_status</a></code> | *No description.* |
@@ -560,12 +559,6 @@ def put_policies(
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.accountMember.AccountMember.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 ##### `reset_policies` <a name="reset_policies" id="@cdktn/provider-cloudflare.accountMember.AccountMember.resetPolicies"></a>
 
 ```python
@@ -698,7 +691,7 @@ The construct id used in the generated config for the AccountMember to import.
 
 The id of the existing AccountMember that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1040,8 +1033,8 @@ accountMember.AccountMemberConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   email: str,
-  account_id: str = None,
   policies: IResolvable | typing.List[AccountMemberPolicies] = None,
   roles: typing.List[str] = None,
   status: str = None
@@ -1059,8 +1052,8 @@ accountMember.AccountMemberConfig(
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.email">email</a></code> | <code>str</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.email">email</a></code> | <code>str</code> | The contact email address of the user. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.policies">policies</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberPolicies">AccountMemberPolicies</a>]</code> | Array of policies associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.roles">roles</a></code> | <code>typing.List[str]</code> | Set of roles associated with this member. |
 | <code><a href="#@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.status">status</a></code> | <code>str</code> | Status of the member invitation. |
@@ -1137,6 +1130,20 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#account_id AccountMember#account_id}
+
+---
+
 ##### `email`<sup>Required</sup> <a name="email" id="@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.email"></a>
 
 ```python
@@ -1147,21 +1154,7 @@ email: str
 
 The contact email address of the user.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#email AccountMember#email}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountMember.AccountMemberConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#account_id AccountMember#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#email AccountMember#email}
 
 ---
 
@@ -1175,7 +1168,7 @@ policies: IResolvable | typing.List[AccountMemberPolicies]
 
 Array of policies associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#policies AccountMember#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#policies AccountMember#policies}
 
 ---
 
@@ -1189,7 +1182,7 @@ roles: typing.List[str]
 
 Set of roles associated with this member.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#roles AccountMember#roles}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#roles AccountMember#roles}
 
 ---
 
@@ -1207,7 +1200,7 @@ If not provided during creation, defaults to 'pending'.
 Changing from 'accepted' back to 'pending' will trigger a replacement of the member resource in Terraform.
 Available values: "accepted", "pending".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#status AccountMember#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#status AccountMember#status}
 
 ---
 
@@ -1245,7 +1238,7 @@ access: str
 
 Allow or deny operations against the resources. Available values: "allow", "deny".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#access AccountMember#access}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#access AccountMember#access}
 
 ---
 
@@ -1259,7 +1252,7 @@ permission_groups: IResolvable | typing.List[AccountMemberPoliciesPermissionGrou
 
 A set of permission groups that are specified to the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#permission_groups AccountMember#permission_groups}
 
 ---
 
@@ -1273,7 +1266,7 @@ resource_groups: IResolvable | typing.List[AccountMemberPoliciesResourceGroups]
 
 A list of resource groups that the policy applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#resource_groups AccountMember#resource_groups}
 
 ---
 
@@ -1307,7 +1300,7 @@ id: str
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1344,7 +1337,7 @@ id: str
 
 Identifier of the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_member#id AccountMember#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_member#id AccountMember#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

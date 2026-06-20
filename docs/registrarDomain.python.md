@@ -4,7 +4,7 @@
 
 ### RegistrarDomain <a name="RegistrarDomain" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain cloudflare_registrar_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer"></a>
 
@@ -21,8 +21,8 @@ registrarDomain.RegistrarDomain(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   domain_name: str,
-  account_id: str = None,
   auto_renew: bool | IResolvable = None,
   locked: bool | IResolvable = None,
   privacy: bool | IResolvable = None
@@ -40,8 +40,8 @@ registrarDomain.RegistrarDomain(
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.domainName">domain_name</a></code> | <code>str</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.autoRenew">auto_renew</a></code> | <code>bool \| cdktn.IResolvable</code> | Auto-renew controls whether subscription is automatically renewed upon domain expiration. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Shows whether a registrar lock is in place for a domain. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.privacy">privacy</a></code> | <code>bool \| cdktn.IResolvable</code> | Privacy option controls redacting WHOIS information. |
@@ -108,23 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+
+---
+
 ##### `domain_name`<sup>Required</sup> <a name="domain_name" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.domainName"></a>
 
 - *Type:* str
 
 Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Auto-renew controls whether subscription is automatically renewed upon domain expiration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Shows whether a registrar lock is in place for a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Privacy option controls redacting WHOIS information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
 
 ---
 
@@ -186,7 +186,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.resetAutoRenew">reset_auto_renew</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.resetLocked">reset_locked</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.resetPrivacy">reset_privacy</a></code> | *No description.* |
@@ -541,12 +540,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 ##### `reset_auto_renew` <a name="reset_auto_renew" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomain.resetAutoRenew"></a>
 
 ```python
@@ -679,7 +672,7 @@ The construct id used in the generated config for the RegistrarDomain to import.
 
 The id of the existing RegistrarDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -999,8 +992,8 @@ registrarDomain.RegistrarDomainConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   domain_name: str,
-  account_id: str = None,
   auto_renew: bool | IResolvable = None,
   locked: bool | IResolvable = None,
   privacy: bool | IResolvable = None
@@ -1018,8 +1011,8 @@ registrarDomain.RegistrarDomainConfig(
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.domainName">domain_name</a></code> | <code>str</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.domainName">domain_name</a></code> | <code>str</code> | Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.autoRenew">auto_renew</a></code> | <code>bool \| cdktn.IResolvable</code> | Auto-renew controls whether subscription is automatically renewed upon domain expiration. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.locked">locked</a></code> | <code>bool \| cdktn.IResolvable</code> | Shows whether a registrar lock is in place for a domain. |
 | <code><a href="#@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.privacy">privacy</a></code> | <code>bool \| cdktn.IResolvable</code> | Privacy option controls redacting WHOIS information. |
@@ -1096,6 +1089,20 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+
+---
+
 ##### `domain_name`<sup>Required</sup> <a name="domain_name" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.domainName"></a>
 
 ```python
@@ -1106,21 +1113,7 @@ domain_name: str
 
 Fully qualified domain name (FQDN) including the extension (e.g., `example.com`, `mybrand.app`). The domain name uniquely identifies a registration — the same domain cannot be registered twice, making it a natural idempotency key for registration requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.registrarDomain.RegistrarDomainConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#account_id RegistrarDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#domain_name RegistrarDomain#domain_name}
 
 ---
 
@@ -1134,7 +1127,7 @@ auto_renew: bool | IResolvable
 
 Auto-renew controls whether subscription is automatically renewed upon domain expiration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#auto_renew RegistrarDomain#auto_renew}
 
 ---
 
@@ -1148,7 +1141,7 @@ locked: bool | IResolvable
 
 Shows whether a registrar lock is in place for a domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#locked RegistrarDomain#locked}
 
 ---
 
@@ -1162,7 +1155,7 @@ privacy: bool | IResolvable
 
 Privacy option controls redacting WHOIS information.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/registrar_domain#privacy RegistrarDomain#privacy}
 
 ---
 

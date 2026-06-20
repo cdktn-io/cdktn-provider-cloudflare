@@ -4,7 +4,7 @@
 
 ### ClientCertificate <a name="ClientCertificate" id="@cdktn/provider-cloudflare.clientCertificate.ClientCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate cloudflare_client_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate cloudflare_client_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer"></a>
 
@@ -21,8 +21,8 @@ ClientCertificate.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .csr(java.lang.String)
     .validityDays(java.lang.Number)
+    .zoneId(java.lang.String)
 //  .reactivate(java.lang.Boolean|IResolvable)
-//  .zoneId(java.lang.String)
     .build();
 ```
 
@@ -39,8 +39,8 @@ ClientCertificate.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.csr">csr</a></code> | <code>java.lang.String</code> | The Certificate Signing Request (CSR). Must be newline-encoded. |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.validityDays">validityDays</a></code> | <code>java.lang.Number</code> | The number of days the Client Certificate will be valid after the issued_on date. |
-| <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.reactivate">reactivate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}. |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.reactivate">reactivate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The Certificate Signing Request (CSR). Must be newline-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#csr ClientCertificate#csr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#csr ClientCertificate#csr}
 
 ---
 
@@ -120,7 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of days the Client Certificate will be valid after the issued_on date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#validity_days ClientCertificate#validity_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#validity_days ClientCertificate#validity_days}
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.zoneId"></a>
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#zone_id ClientCertificate#zone_id}
 
 ---
 
@@ -128,17 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}.
-
----
-
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.Initializer.parameter.zoneId"></a>
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#zone_id ClientCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}.
 
 ---
 
@@ -171,7 +171,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.resetReactivate">resetReactivate</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -492,12 +491,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetReactivate()
 ```
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.clientCertificate.ClientCertificate.resetZoneId"></a>
-
-```java
-public void resetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -601,7 +594,7 @@ The construct id used in the generated config for the ClientCertificate to impor
 
 The id of the existing ClientCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1089,8 +1082,8 @@ ClientCertificateConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .csr(java.lang.String)
     .validityDays(java.lang.Number)
+    .zoneId(java.lang.String)
 //  .reactivate(java.lang.Boolean|IResolvable)
-//  .zoneId(java.lang.String)
     .build();
 ```
 
@@ -1107,8 +1100,8 @@ ClientCertificateConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.csr">csr</a></code> | <code>java.lang.String</code> | The Certificate Signing Request (CSR). Must be newline-encoded. |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.validityDays">validityDays</a></code> | <code>java.lang.Number</code> | The number of days the Client Certificate will be valid after the issued_on date. |
-| <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.reactivate">reactivate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}. |
 | <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.reactivate">reactivate</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}. |
 
 ---
 
@@ -1192,7 +1185,7 @@ public java.lang.String getCsr();
 
 The Certificate Signing Request (CSR). Must be newline-encoded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#csr ClientCertificate#csr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#csr ClientCertificate#csr}
 
 ---
 
@@ -1206,7 +1199,21 @@ public java.lang.Number getValidityDays();
 
 The number of days the Client Certificate will be valid after the issued_on date.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#validity_days ClientCertificate#validity_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#validity_days ClientCertificate#validity_days}
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.zoneId"></a>
+
+```java
+public java.lang.String getZoneId();
+```
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#zone_id ClientCertificate#zone_id}
 
 ---
 
@@ -1218,21 +1225,7 @@ public java.lang.Boolean|IResolvable getReactivate();
 
 - *Type:* java.lang.Boolean|io.cdktn.cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}.
-
----
-
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.clientCertificate.ClientCertificateConfig.property.zoneId"></a>
-
-```java
-public java.lang.String getZoneId();
-```
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/client_certificate#zone_id ClientCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/client_certificate#reactivate ClientCertificate#reactivate}.
 
 ---
 

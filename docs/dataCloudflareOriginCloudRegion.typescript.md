@@ -4,7 +4,7 @@
 
 ### DataCloudflareOriginCloudRegion <a name="DataCloudflareOriginCloudRegion" id="@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegion"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_region cloudflare_origin_cloud_region}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_region cloudflare_origin_cloud_region}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegion.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareOriginCloudR
 
 The id of the existing DataCloudflareOriginCloudRegion that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_region#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_region#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -669,7 +669,7 @@ const dataCloudflareOriginCloudRegionConfig: dataCloudflareOriginCloudRegion.Dat
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegionConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegionConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegionConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegionConfig.property.originIp">originIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_region#origin_ip DataCloudflareOriginCloudRegion#origin_ip}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegionConfig.property.originIp">originIp</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_region#origin_ip DataCloudflareOriginCloudRegion#origin_ip}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareOriginCloudRegion.DataCloudflareOriginCloudRegionConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
@@ -752,7 +752,7 @@ public readonly originIp: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_region#origin_ip DataCloudflareOriginCloudRegion#origin_ip}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_region#origin_ip DataCloudflareOriginCloudRegion#origin_ip}.
 
 ---
 
@@ -766,7 +766,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_region#zone_id DataCloudflareOriginCloudRegion#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_region#zone_id DataCloudflareOriginCloudRegion#zone_id}
 
 ---
 

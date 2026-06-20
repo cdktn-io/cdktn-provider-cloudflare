@@ -4,7 +4,7 @@
 
 ### StreamWebhook <a name="StreamWebhook" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_webhook cloudflare_stream_webhook}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.Initializer"></a>
 
@@ -19,7 +19,7 @@ StreamWebhook.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .notificationUrl(java.lang.String)
     .build();
 ```
@@ -100,13 +100,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.Initializer.parameter.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The URL where webhooks will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
 
 ---
 
@@ -148,7 +148,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetNotificationUrl">resetNotificationUrl</a></code> | *No description.* |
 
 ---
@@ -464,12 +463,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetNotificationUrl` <a name="resetNotificationUrl" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhook.resetNotificationUrl"></a>
 
 ```java
@@ -579,7 +572,7 @@ The construct id used in the generated config for the StreamWebhook to import.
 
 The id of the existing StreamWebhook that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_webhook#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -855,7 +848,7 @@ StreamWebhookConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .notificationUrl(java.lang.String)
     .build();
 ```
@@ -946,7 +939,7 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhookConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamWebhook.StreamWebhookConfig.property.accountId"></a>
 
 ```java
 public java.lang.String getAccountId();
@@ -956,7 +949,7 @@ public java.lang.String getAccountId();
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_webhook#account_id StreamWebhook#account_id}
 
 ---
 
@@ -970,7 +963,7 @@ public java.lang.String getNotificationUrl();
 
 The URL where webhooks will be sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_webhook#notification_url StreamWebhook#notification_url}
 
 ---
 

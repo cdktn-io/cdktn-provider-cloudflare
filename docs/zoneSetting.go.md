@@ -4,7 +4,7 @@
 
 ### ZoneSetting <a name="ZoneSetting" id="@cdktn/provider-cloudflare.zoneSetting.ZoneSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zone_setting cloudflare_zone_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting cloudflare_zone_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneSetting.ZoneSetting.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSetting.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSetting.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSetting.resetEnabled">ResetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSetting.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -394,12 +393,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 func ResetEnabled()
 ```
 
-##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.zoneSetting.ZoneSetting.resetZoneId"></a>
-
-```go
-func ResetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -503,7 +496,7 @@ The construct id used in the generated config for the ZoneSetting to import.
 
 The id of the existing ZoneSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,8 +840,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesett
 	Provisioners: *[]interface{},
 	SettingId: *string,
 	Value: *map[string]interface{},
-	Enabled: interface{},
 	ZoneId: *string,
+	Enabled: interface{},
 }
 ```
 
@@ -865,8 +858,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zonesett
 | <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.settingId">SettingId</a></code> | <code>*string</code> | Setting name. |
 | <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.value">Value</a></code> | <code>*map[string]interface{}</code> | Current value of the zone setting. |
-| <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | ssl-recommender enrollment setting. |
 | <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.enabled">Enabled</a></code> | <code>interface{}</code> | ssl-recommender enrollment setting. |
 
 ---
 
@@ -950,7 +943,7 @@ SettingId *string
 
 Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
 
 ---
 
@@ -964,7 +957,21 @@ Value *map[string]interface{}
 
 Current value of the zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zone_setting#value ZoneSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#value ZoneSetting#value}
+
+---
+
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.zoneId"></a>
+
+```go
+ZoneId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
 
 ---
 
@@ -978,21 +985,7 @@ Enabled interface{}
 
 ssl-recommender enrollment setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
-
----
-
-##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.zoneSetting.ZoneSettingConfig.property.zoneId"></a>
-
-```go
-ZoneId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
 
 ---
 

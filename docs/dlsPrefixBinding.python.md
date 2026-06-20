@@ -4,7 +4,7 @@
 
 ### DlsPrefixBinding <a name="DlsPrefixBinding" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding cloudflare_dls_prefix_binding}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding cloudflare_dls_prefix_binding}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dlsPrefixBinding.DlsPrefixBinding.Initializer"></a>
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#account_id DlsPrefixBinding#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#account_id DlsPrefixBinding#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 IP prefix in CIDR notation to bind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#cidr DlsPrefixBinding#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#cidr DlsPrefixBinding#cidr}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The ID of the parent IP prefix that contains the CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#prefix_id DlsPrefixBinding#prefix_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#prefix_id DlsPrefixBinding#prefix_id}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Region key from managed regions (e.g., "us", "eu").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#region_key DlsPrefixBinding#region_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#region_key DlsPrefixBinding#region_key}
 
 ---
 
@@ -639,7 +639,7 @@ The construct id used in the generated config for the DlsPrefixBinding to import
 
 The id of the existing DlsPrefixBinding that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1053,7 +1053,7 @@ account_id: str
 
 Identifier of a Cloudflare account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#account_id DlsPrefixBinding#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#account_id DlsPrefixBinding#account_id}
 
 ---
 
@@ -1067,7 +1067,7 @@ cidr: str
 
 IP prefix in CIDR notation to bind.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#cidr DlsPrefixBinding#cidr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#cidr DlsPrefixBinding#cidr}
 
 ---
 
@@ -1081,7 +1081,7 @@ prefix_id: str
 
 The ID of the parent IP prefix that contains the CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#prefix_id DlsPrefixBinding#prefix_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#prefix_id DlsPrefixBinding#prefix_id}
 
 ---
 
@@ -1095,7 +1095,7 @@ region_key: str
 
 Region key from managed regions (e.g., "us", "eu").
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dls_prefix_binding#region_key DlsPrefixBinding#region_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dls_prefix_binding#region_key DlsPrefixBinding#region_key}
 
 ---
 

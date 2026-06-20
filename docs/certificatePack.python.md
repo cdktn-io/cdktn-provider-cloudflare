@@ -4,7 +4,7 @@
 
 ### CertificatePack <a name="CertificatePack" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack cloudflare_certificate_pack}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer"></a>
 
@@ -25,9 +25,9 @@ certificatePack.CertificatePack(
   type: str,
   validation_method: str,
   validity_days: typing.Union[int, float],
+  zone_id: str,
   cloudflare_branding: bool | IResolvable = None,
-  hosts: typing.List[str] = None,
-  zone_id: str = None
+  hosts: typing.List[str] = None
 )
 ```
 
@@ -46,9 +46,9 @@ certificatePack.CertificatePack(
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.type">type</a></code> | <code>str</code> | Type of certificate pack. Available values: "advanced". |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.validationMethod">validation_method</a></code> | <code>str</code> | Validation Method selected for the order. Available values: "txt", "http", "email". |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.validityDays">validity_days</a></code> | <code>typing.Union[int, float]</code> | Validity Days selected for the order. Available values: 14, 30, 90, 365. |
+| <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.cloudflareBranding">cloudflare_branding</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to add Cloudflare Branding for the order. |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.hosts">hosts</a></code> | <code>typing.List[str]</code> | Comma separated list of valid host names for the certificate packs. |
-| <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -121,7 +121,7 @@ Certificate Authority selected for the order.
 For information on any certificate authority specific details or restrictions [see this page for more details](https://developers.cloudflare.com/ssl/reference/certificate-authorities).
 Available values: "google", "lets_encrypt", "ssl_com".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
 
 ---
 
@@ -131,7 +131,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Type of certificate pack. Available values: "advanced".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#type CertificatePack#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#type CertificatePack#type}
 
 ---
 
@@ -141,7 +141,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Validation Method selected for the order. Available values: "txt", "http", "email".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
 
 ---
 
@@ -151,7 +151,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Validity Days selected for the order. Available values: 14, 30, 90, 365.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+
+---
+
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
 
 ---
 
@@ -163,7 +173,7 @@ Whether or not to add Cloudflare Branding for the order.
 
 This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
 
 ---
 
@@ -175,17 +185,7 @@ Comma separated list of valid host names for the certificate packs.
 
 Must contain the zone apex, may not contain more than 50 hosts, and may not be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
-
----
-
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
 
 ---
 
@@ -219,7 +219,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.resetCloudflareBranding">reset_cloudflare_branding</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.resetHosts">reset_hosts</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePack.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -583,12 +582,6 @@ def reset_cloudflare_branding() -> None
 def reset_hosts() -> None
 ```
 
-##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.certificatePack.CertificatePack.resetZoneId"></a>
-
-```python
-def reset_zone_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -703,7 +696,7 @@ The construct id used in the generated config for the CertificatePack to import.
 
 The id of the existing CertificatePack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1170,9 +1163,9 @@ certificatePack.CertificatePackConfig(
   type: str,
   validation_method: str,
   validity_days: typing.Union[int, float],
+  zone_id: str,
   cloudflare_branding: bool | IResolvable = None,
-  hosts: typing.List[str] = None,
-  zone_id: str = None
+  hosts: typing.List[str] = None
 )
 ```
 
@@ -1191,9 +1184,9 @@ certificatePack.CertificatePackConfig(
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.type">type</a></code> | <code>str</code> | Type of certificate pack. Available values: "advanced". |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.validationMethod">validation_method</a></code> | <code>str</code> | Validation Method selected for the order. Available values: "txt", "http", "email". |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.validityDays">validity_days</a></code> | <code>typing.Union[int, float]</code> | Validity Days selected for the order. Available values: 14, 30, 90, 365. |
+| <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.cloudflareBranding">cloudflare_branding</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not to add Cloudflare Branding for the order. |
 | <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.hosts">hosts</a></code> | <code>typing.List[str]</code> | Comma separated list of valid host names for the certificate packs. |
-| <code><a href="#@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1280,7 +1273,7 @@ Certificate Authority selected for the order.
 For information on any certificate authority specific details or restrictions [see this page for more details](https://developers.cloudflare.com/ssl/reference/certificate-authorities).
 Available values: "google", "lets_encrypt", "ssl_com".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#certificate_authority CertificatePack#certificate_authority}
 
 ---
 
@@ -1294,7 +1287,7 @@ type: str
 
 Type of certificate pack. Available values: "advanced".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#type CertificatePack#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#type CertificatePack#type}
 
 ---
 
@@ -1308,7 +1301,7 @@ validation_method: str
 
 Validation Method selected for the order. Available values: "txt", "http", "email".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#validation_method CertificatePack#validation_method}
 
 ---
 
@@ -1322,7 +1315,21 @@ validity_days: typing.Union[int, float]
 
 Validity Days selected for the order. Available values: 14, 30, 90, 365.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#validity_days CertificatePack#validity_days}
+
+---
+
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
 
 ---
 
@@ -1338,7 +1345,7 @@ Whether or not to add Cloudflare Branding for the order.
 
 This will add a subdomain of sni.cloudflaressl.com as the Common Name if set to true.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#cloudflare_branding CertificatePack#cloudflare_branding}
 
 ---
 
@@ -1354,21 +1361,7 @@ Comma separated list of valid host names for the certificate packs.
 
 Must contain the zone apex, may not contain more than 50 hosts, and may not be empty.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
-
----
-
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.certificatePack.CertificatePackConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/certificate_pack#zone_id CertificatePack#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_pack#hosts CertificatePack#hosts}
 
 ---
 

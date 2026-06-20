@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDlpSensitivityLevelOrder <a name="DataCloudflareZeroTrustDlpSensitivityLevelOrder" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order cloudflare_zero_trust_dlp_sensitivity_level_order}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer"></a>
 
@@ -35,8 +35,8 @@ DataCloudflareZeroTrustDlpSensitivityLevelOrder.Builder.create(Construct scope, 
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer.parameter.sensitivityGroupId">sensitivityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrder.Initializer.parameter.sensitivityGroupId">sensitivityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}. |
 
 ---
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}.
 
 ---
 
@@ -112,7 +112,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}.
 
 ---
 
@@ -457,7 +457,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDlp
 
 The id of the existing DataCloudflareZeroTrustDlpSensitivityLevelOrder that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -727,8 +727,8 @@ DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.property.sensitivityGroupId">sensitivityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityLevelOrder.DataCloudflareZeroTrustDlpSensitivityLevelOrderConfig.property.sensitivityGroupId">sensitivityGroupId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}. |
 
 ---
 
@@ -810,7 +810,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#account_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#account_id}.
 
 ---
 
@@ -822,7 +822,7 @@ public java.lang.String getSensitivityGroupId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_level_order#sensitivity_group_id DataCloudflareZeroTrustDlpSensitivityLevelOrder#sensitivity_group_id}.
 
 ---
 

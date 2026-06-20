@@ -4,7 +4,7 @@
 
 ### Web3Hostname <a name="Web3Hostname" id="@cdktn/provider-cloudflare.web3Hostname.Web3Hostname"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web3_hostname cloudflare_web3_hostname}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.web3Hostname.Web3Hostname.Initializer"></a>
 
@@ -76,7 +76,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3Hostname.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3Hostname.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3Hostname.resetDnslink">ResetDnslink</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3Hostname.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -401,12 +400,6 @@ func ResetDescription()
 func ResetDnslink()
 ```
 
-##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.web3Hostname.Web3Hostname.resetZoneId"></a>
-
-```go
-func ResetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -510,7 +503,7 @@ The construct id used in the generated config for the Web3Hostname to import.
 
 The id of the existing Web3Hostname that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web3_hostname#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -876,9 +869,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/web3host
 	Provisioners: *[]interface{},
 	Name: *string,
 	Target: *string,
+	ZoneId: *string,
 	Description: *string,
 	Dnslink: *string,
-	ZoneId: *string,
 }
 ```
 
@@ -895,9 +888,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/web3host
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.name">Name</a></code> | <code>*string</code> | Specify the hostname that points to the target gateway via CNAME. |
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.target">Target</a></code> | <code>*string</code> | Specify the target gateway of the hostname. Available values: "ethereum", "ipfs", "ipfs_universal_path". |
+| <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Specify the identifier of the hostname. |
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.description">Description</a></code> | <code>*string</code> | Specify an optional description of the hostname. |
 | <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.dnslink">Dnslink</a></code> | <code>*string</code> | Specify the DNSLink value used if the target is ipfs. |
-| <code><a href="#@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Specify the identifier of the hostname. |
 
 ---
 
@@ -981,7 +974,7 @@ Name *string
 
 Specify the hostname that points to the target gateway via CNAME.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/web3_hostname#name Web3Hostname#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web3_hostname#name Web3Hostname#name}
 
 ---
 
@@ -995,7 +988,21 @@ Target *string
 
 Specify the target gateway of the hostname. Available values: "ethereum", "ipfs", "ipfs_universal_path".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/web3_hostname#target Web3Hostname#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web3_hostname#target Web3Hostname#target}
+
+---
+
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.zoneId"></a>
+
+```go
+ZoneId *string
+```
+
+- *Type:* *string
+
+Specify the identifier of the hostname.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
 
 ---
 
@@ -1009,7 +1016,7 @@ Description *string
 
 Specify an optional description of the hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/web3_hostname#description Web3Hostname#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web3_hostname#description Web3Hostname#description}
 
 ---
 
@@ -1023,21 +1030,7 @@ Dnslink *string
 
 Specify the DNSLink value used if the target is ipfs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
-
----
-
-##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.web3Hostname.Web3HostnameConfig.property.zoneId"></a>
-
-```go
-ZoneId *string
-```
-
-- *Type:* *string
-
-Specify the identifier of the hostname.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/web3_hostname#zone_id Web3Hostname#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/web3_hostname#dnslink Web3Hostname#dnslink}
 
 ---
 

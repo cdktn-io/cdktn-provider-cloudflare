@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface ShareRecipientConfig extends cdktn.TerraformMetaArguments {
   /**
   * Account identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient#account_id ShareRecipient#account_id}
   */
   readonly accountId: string;
   /**
   * Organization identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient#organization_id ShareRecipient#organization_id}
   */
   readonly organizationId?: string;
   /**
   * The account that will receive the share.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient#recipient_account_id ShareRecipient#recipient_account_id}
   */
   readonly recipientAccountId?: string;
   /**
   * Share identifier tag.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient#share_id ShareRecipient#share_id}
   */
   readonly shareId: string;
 }
@@ -129,7 +129,7 @@ export class ShareRecipientResourcesList extends cdktn.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient cloudflare_share_recipient}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient cloudflare_share_recipient}
 */
 export class ShareRecipient extends cdktn.TerraformResource {
 
@@ -145,7 +145,7 @@ export class ShareRecipient extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a ShareRecipient resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the ShareRecipient to import
-  * @param importFromId The id of the existing ShareRecipient that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing ShareRecipient that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the ShareRecipient to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -157,7 +157,7 @@ export class ShareRecipient extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/share_recipient cloudflare_share_recipient} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/share_recipient cloudflare_share_recipient} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -168,7 +168,7 @@ export class ShareRecipient extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_share_recipient',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.20.0',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DataCloudflareGoogleTagGateway <a name="DataCloudflareGoogleTagGateway" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/google_tag_gateway cloudflare_google_tag_gateway}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/google_tag_gateway cloudflare_google_tag_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareGoogleTagGateway.DataCloudflareGoogleTagGateway.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/google_tag_gateway#zone_id DataCloudflareGoogleTagGateway#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/google_tag_gateway#zone_id DataCloudflareGoogleTagGateway#zone_id}
 
 ---
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the DataCloudflareGoogleTagGat
 
 The id of the existing DataCloudflareGoogleTagGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -864,7 +864,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/google_tag_gateway#zone_id DataCloudflareGoogleTagGateway#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/google_tag_gateway#zone_id DataCloudflareGoogleTagGateway#zone_id}
 
 ---
 

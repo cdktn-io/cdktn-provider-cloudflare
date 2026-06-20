@@ -4,7 +4,7 @@
 
 ### GoogleTagGateway <a name="GoogleTagGateway" id="@cdktn/provider-cloudflare.googleTagGateway.GoogleTagGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.googleTagGateway.GoogleTagGateway.Initializer"></a>
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Enables or disables Google Tag Gateway for this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
 
 ---
 
@@ -128,7 +128,7 @@ Specifies the endpoint path for proxying Google Tag Manager requests.
 
 Use an absolute path starting with '/', with no nested paths and alphanumeric characters only (e.g. /metrics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Hides the original client IP address from Google when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specify the Google Tag Manager container or measurement ID (e.g. GTM-XXXXXXX or G-XXXXXXXXXX).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
 
 ---
 
@@ -158,7 +158,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
 
 ---
 
@@ -168,7 +168,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Set up the associated Google Tag on the zone automatically when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
 
 ---
 
@@ -672,7 +672,7 @@ The construct id used in the generated config for the GoogleTagGateway to import
 
 The id of the existing GoogleTagGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1134,7 +1134,7 @@ enabled: bool | IResolvable
 
 Enables or disables Google Tag Gateway for this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
 
 ---
 
@@ -1150,7 +1150,7 @@ Specifies the endpoint path for proxying Google Tag Manager requests.
 
 Use an absolute path starting with '/', with no nested paths and alphanumeric characters only (e.g. /metrics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
 
 ---
 
@@ -1164,7 +1164,7 @@ hide_original_ip: bool | IResolvable
 
 Hides the original client IP address from Google when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
 
 ---
 
@@ -1178,7 +1178,7 @@ measurement_id: str
 
 Specify the Google Tag Manager container or measurement ID (e.g. GTM-XXXXXXX or G-XXXXXXXXXX).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
 
 ---
 
@@ -1192,7 +1192,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
 
 ---
 
@@ -1206,7 +1206,7 @@ set_up_tag: bool | IResolvable
 
 Set up the associated Google Tag on the zone automatically when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareD1Database <a name="DataCloudflareD1Database" id="@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1Database.Initializer"></a>
 
@@ -428,7 +428,7 @@ The construct id used in the generated config for the DataCloudflareD1Database t
 
 The id of the existing DataCloudflareD1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -824,7 +824,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Account identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.databaseId">DatabaseId</a></code> | <code>*string</code> | D1 database identifier (UUID). |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.fields">Fields</a></code> | <code>*[]*string</code> | Comma-separated list of fields to include in the response. When omitted, all fields are returned. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter">DataCloudflareD1DatabaseFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter">DataCloudflareD1DatabaseFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}. |
 
 ---
 
@@ -908,7 +908,7 @@ AccountId *string
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database#account_id DataCloudflareD1Database#account_id}
 
 ---
 
@@ -922,7 +922,7 @@ DatabaseId *string
 
 D1 database identifier (UUID).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database#database_id DataCloudflareD1Database#database_id}
 
 ---
 
@@ -936,7 +936,7 @@ Fields *[]*string
 
 Comma-separated list of fields to include in the response. When omitted, all fields are returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#fields DataCloudflareD1Database#fields}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database#fields DataCloudflareD1Database#fields}
 
 ---
 
@@ -948,7 +948,7 @@ Filter DataCloudflareD1DatabaseFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareD1Database.DataCloudflareD1DatabaseFilter">DataCloudflareD1DatabaseFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database#filter DataCloudflareD1Database#filter}.
 
 ---
 
@@ -982,7 +982,7 @@ Name *string
 
 a database name to search for.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/d1_database#name DataCloudflareD1Database#name}
 
 ---
 

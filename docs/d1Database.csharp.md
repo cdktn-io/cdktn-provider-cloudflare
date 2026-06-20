@@ -4,7 +4,7 @@
 
 ### D1Database <a name="D1Database" id="@cdktn/provider-cloudflare.d1Database.D1Database"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database cloudflare_d1_database}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database cloudflare_d1_database}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.d1Database.D1Database.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.putReadReplication">PutReadReplication</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetJurisdiction">ResetJurisdiction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetPrimaryLocationHint">ResetPrimaryLocationHint</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1Database.resetReadReplication">ResetReadReplication</a></code> | *No description.* |
@@ -403,12 +402,6 @@ private void PutReadReplication(D1DatabaseReadReplication Value)
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.d1Database.D1Database.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 ##### `ResetJurisdiction` <a name="ResetJurisdiction" id="@cdktn/provider-cloudflare.d1Database.D1Database.resetJurisdiction"></a>
 
 ```csharp
@@ -530,7 +523,7 @@ The construct id used in the generated config for the D1Database to import.
 
 The id of the existing D1Database that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,8 +909,8 @@ new D1DatabaseConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string AccountId,
     string Name,
-    string AccountId = null,
     string Jurisdiction = null,
     string PrimaryLocationHint = null,
     D1DatabaseReadReplication ReadReplication = null
@@ -935,8 +928,8 @@ new D1DatabaseConfig {
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">Name</a></code> | <code>string</code> | D1 database name. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId">AccountId</a></code> | <code>string</code> | Account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.name">Name</a></code> | <code>string</code> | D1 database name. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.jurisdiction">Jurisdiction</a></code> | <code>string</code> | Specify the location to restrict the D1 database to run and store data. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.primaryLocationHint">PrimaryLocationHint</a></code> | <code>string</code> | Specify the region to create the D1 primary, if available. |
 | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.readReplication">ReadReplication</a></code> | <code><a href="#@cdktn/provider-cloudflare.d1Database.D1DatabaseReadReplication">D1DatabaseReadReplication</a></code> | Configuration for D1 read replication. |
@@ -1013,6 +1006,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#account_id D1Database#account_id}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.name"></a>
 
 ```csharp
@@ -1023,21 +1030,7 @@ public string Name { get; set; }
 
 D1 database name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#name D1Database#name}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.d1Database.D1DatabaseConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#account_id D1Database#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#name D1Database#name}
 
 ---
 
@@ -1054,7 +1047,7 @@ Specify the location to restrict the D1 database to run and store data.
 If this option is present, the location hint is ignored.
 Available values: "eu", "fedramp".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#jurisdiction D1Database#jurisdiction}
 
 ---
 
@@ -1071,7 +1064,7 @@ Specify the region to create the D1 primary, if available.
 If this option is omitted, the D1 will be created as close as possible to the current user.
 Available values: "wnam", "enam", "weur", "eeur", "apac", "oc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#primary_location_hint D1Database#primary_location_hint}
 
 ---
 
@@ -1085,7 +1078,7 @@ public D1DatabaseReadReplication ReadReplication { get; set; }
 
 Configuration for D1 read replication.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#read_replication D1Database#read_replication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#read_replication D1Database#read_replication}
 
 ---
 
@@ -1122,7 +1115,7 @@ The read replication mode for the database.
 Use 'auto' to create replicas and allow D1 automatically place them around the world, or 'disabled' to not use any database replicas (it can take a few hours for all replicas to be deleted).
 Available values: "auto", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/d1_database#mode D1Database#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/d1_database#mode D1Database#mode}
 
 ---
 

@@ -93,6 +93,7 @@ export * as logpushJob from './logpush-job/index';
 export * as logpushOwnershipChallenge from './logpush-ownership-challenge/index';
 export * as magicNetworkMonitoringConfiguration from './magic-network-monitoring-configuration/index';
 export * as magicNetworkMonitoringRule from './magic-network-monitoring-rule/index';
+export * as magicTransitCf1Site from './magic-transit-cf1-site/index';
 export * as magicTransitConnector from './magic-transit-connector/index';
 export * as magicTransitSite from './magic-transit-site/index';
 export * as magicTransitSiteAcl from './magic-transit-site-acl/index';
@@ -111,6 +112,7 @@ export * as organization from './organization/index';
 export * as organizationProfile from './organization-profile/index';
 export * as originCaCertificate from './origin-ca-certificate/index';
 export * as originCloudRegion from './origin-cloud-region/index';
+export * as originTlsComplianceModes from './origin-tls-compliance-modes/index';
 export * as pageRule from './page-rule/index';
 export * as pageShieldPolicy from './page-shield-policy/index';
 export * as pagesDomain from './pages-domain/index';
@@ -249,6 +251,7 @@ export * as zeroTrustTunnelCloudflaredVirtualNetwork from './zero-trust-tunnel-c
 export * as zeroTrustTunnelWarpConnector from './zero-trust-tunnel-warp-connector/index';
 export * as zeroTrustTunnelWarpConnectorConfig from './zero-trust-tunnel-warp-connector-config/index';
 export * as zone from './zone/index';
+export * as zoneAutoOriginTlsKex from './zone-auto-origin-tls-kex/index';
 export * as zoneCacheReserve from './zone-cache-reserve/index';
 export * as zoneCacheVariants from './zone-cache-variants/index';
 export * as zoneDnsSettings from './zone-dns-settings/index';
@@ -414,6 +417,8 @@ export * as dataCloudflareLogpushJobs from './data-cloudflare-logpush-jobs/index
 export * as dataCloudflareMagicNetworkMonitoringConfiguration from './data-cloudflare-magic-network-monitoring-configuration/index';
 export * as dataCloudflareMagicNetworkMonitoringRule from './data-cloudflare-magic-network-monitoring-rule/index';
 export * as dataCloudflareMagicNetworkMonitoringRules from './data-cloudflare-magic-network-monitoring-rules/index';
+export * as dataCloudflareMagicTransitCf1Site from './data-cloudflare-magic-transit-cf1-site/index';
+export * as dataCloudflareMagicTransitCf1Sites from './data-cloudflare-magic-transit-cf1-sites/index';
 export * as dataCloudflareMagicTransitConnector from './data-cloudflare-magic-transit-connector/index';
 export * as dataCloudflareMagicTransitConnectors from './data-cloudflare-magic-transit-connectors/index';
 export * as dataCloudflareMagicTransitSite from './data-cloudflare-magic-transit-site/index';
@@ -446,6 +451,7 @@ export * as dataCloudflareOriginCaCertificate from './data-cloudflare-origin-ca-
 export * as dataCloudflareOriginCaCertificates from './data-cloudflare-origin-ca-certificates/index';
 export * as dataCloudflareOriginCloudRegion from './data-cloudflare-origin-cloud-region/index';
 export * as dataCloudflareOriginCloudRegions from './data-cloudflare-origin-cloud-regions/index';
+export * as dataCloudflareOriginTlsComplianceModes from './data-cloudflare-origin-tls-compliance-modes/index';
 export * as dataCloudflarePageRule from './data-cloudflare-page-rule/index';
 export * as dataCloudflarePageShieldConnections from './data-cloudflare-page-shield-connections/index';
 export * as dataCloudflarePageShieldConnectionsList from './data-cloudflare-page-shield-connections-list/index';
@@ -684,6 +690,7 @@ export * as dataCloudflareZeroTrustTunnelWarpConnectorConfig from './data-cloudf
 export * as dataCloudflareZeroTrustTunnelWarpConnectorToken from './data-cloudflare-zero-trust-tunnel-warp-connector-token/index';
 export * as dataCloudflareZeroTrustTunnelWarpConnectors from './data-cloudflare-zero-trust-tunnel-warp-connectors/index';
 export * as dataCloudflareZone from './data-cloudflare-zone/index';
+export * as dataCloudflareZoneAutoOriginTlsKex from './data-cloudflare-zone-auto-origin-tls-kex/index';
 export * as dataCloudflareZoneCacheReserve from './data-cloudflare-zone-cache-reserve/index';
 export * as dataCloudflareZoneCacheVariants from './data-cloudflare-zone-cache-variants/index';
 export * as dataCloudflareZoneDnsSettings from './data-cloudflare-zone-dns-settings/index';
