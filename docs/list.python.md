@@ -4,7 +4,7 @@
 
 ### List <a name="List" id="@cdktn/provider-cloudflare.list.List"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list cloudflare_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list cloudflare_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.list.List.Initializer"></a>
 
@@ -21,9 +21,9 @@ list.List(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   kind: str,
   name: str,
-  account_id: str = None,
   description: str = None,
   items: IResolvable | typing.List[ListItems] = None
 )
@@ -40,9 +40,9 @@ list.List(
 | <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.kind">kind</a></code> | <code>str</code> | The type of the list. |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.name">name</a></code> | <code>str</code> | An informative name for the list. Use this name in filter and rule expressions. |
-| <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.description">description</a></code> | <code>str</code> | An informative summary of the list. |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.Initializer.parameter.items">items</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.list.ListItems">ListItems</a>]</code> | The items in the list. If set, this overwrites all items in the list. Do not use with `cloudflare_list_item`. |
 
@@ -108,6 +108,16 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.list.List.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+The Account ID for this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#account_id List#account_id}
+
+---
+
 ##### `kind`<sup>Required</sup> <a name="kind" id="@cdktn/provider-cloudflare.list.List.Initializer.parameter.kind"></a>
 
 - *Type:* str
@@ -117,7 +127,7 @@ The type of the list.
 Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 Available values: "ip", "redirect", "hostname", "asn".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#kind List#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#kind List#kind}
 
 ---
 
@@ -127,17 +137,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative name for the list. Use this name in filter and rule expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#name List#name}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.list.List.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-The Account ID for this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#account_id List#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#name List#name}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative summary of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#description List#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#description List#description}
 
 ---
 
@@ -157,7 +157,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The items in the list. If set, this overwrites all items in the list. Do not use with `cloudflare_list_item`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#items List#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#items List#items}
 
 ---
 
@@ -190,7 +190,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.list.List.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.putItems">put_items</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.list.List.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.list.List.resetItems">reset_items</a></code> | *No description.* |
 
@@ -558,12 +557,6 @@ def put_items(
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.list.List.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-cloudflare.list.List.resetDescription"></a>
 
 ```python
@@ -690,7 +683,7 @@ The construct id used in the generated config for the List to import.
 
 The id of the existing List that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1065,9 +1058,9 @@ list.ListConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   kind: str,
   name: str,
-  account_id: str = None,
   description: str = None,
   items: IResolvable | typing.List[ListItems] = None
 )
@@ -1084,9 +1077,9 @@ list.ListConfig(
 | <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.kind">kind</a></code> | <code>str</code> | The type of the list. |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.name">name</a></code> | <code>str</code> | An informative name for the list. Use this name in filter and rule expressions. |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.accountId">account_id</a></code> | <code>str</code> | The Account ID for this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.description">description</a></code> | <code>str</code> | An informative summary of the list. |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListConfig.property.items">items</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.list.ListItems">ListItems</a>]</code> | The items in the list. If set, this overwrites all items in the list. Do not use with `cloudflare_list_item`. |
 
@@ -1162,6 +1155,20 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.list.ListConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+The Account ID for this resource.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#account_id List#account_id}
+
+---
+
 ##### `kind`<sup>Required</sup> <a name="kind" id="@cdktn/provider-cloudflare.list.ListConfig.property.kind"></a>
 
 ```python
@@ -1175,7 +1182,7 @@ The type of the list.
 Each type supports specific list items (IP addresses, ASNs, hostnames or redirects).
 Available values: "ip", "redirect", "hostname", "asn".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#kind List#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#kind List#kind}
 
 ---
 
@@ -1189,21 +1196,7 @@ name: str
 
 An informative name for the list. Use this name in filter and rule expressions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#name List#name}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.list.ListConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-The Account ID for this resource.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#account_id List#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#name List#name}
 
 ---
 
@@ -1217,7 +1210,7 @@ description: str
 
 An informative summary of the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#description List#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#description List#description}
 
 ---
 
@@ -1231,7 +1224,7 @@ items: IResolvable | typing.List[ListItems]
 
 The items in the list. If set, this overwrites all items in the list. Do not use with `cloudflare_list_item`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#items List#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#items List#items}
 
 ---
 
@@ -1273,7 +1266,7 @@ asn: typing.Union[int, float]
 
 A non-negative 32 bit integer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#asn List#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#asn List#asn}
 
 ---
 
@@ -1287,7 +1280,7 @@ comment: str
 
 An informative summary of the list item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#comment List#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#comment List#comment}
 
 ---
 
@@ -1301,7 +1294,7 @@ hostname: ListItemsHostname
 
 Valid characters for hostnames are ASCII(7) letters from a to z, the digits from 0 to 9, wildcards (*), and the hyphen (-).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#hostname List#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#hostname List#hostname}
 
 ---
 
@@ -1315,7 +1308,7 @@ ip: str
 
 An IPv4 address, an IPv4 CIDR, an IPv6 address, or an IPv6 CIDR.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#ip List#ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#ip List#ip}
 
 ---
 
@@ -1329,7 +1322,7 @@ redirect: ListItemsRedirect
 
 The definition of the redirect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#redirect List#redirect}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#redirect List#redirect}
 
 ---
 
@@ -1350,7 +1343,7 @@ list.ListItemsHostname(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsHostname.property.urlHostname">url_hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#url_hostname List#url_hostname}. |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsHostname.property.urlHostname">url_hostname</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#url_hostname List#url_hostname}. |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListItemsHostname.property.excludeExactHostname">exclude_exact_hostname</a></code> | <code>bool \| cdktn.IResolvable</code> | Only applies to wildcard hostnames (e.g., *.example.com). When true (default), only subdomains are blocked. When false, both the root domain and subdomains are blocked. |
 
 ---
@@ -1363,7 +1356,7 @@ url_hostname: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#url_hostname List#url_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#url_hostname List#url_hostname}.
 
 ---
 
@@ -1377,7 +1370,7 @@ exclude_exact_hostname: bool | IResolvable
 
 Only applies to wildcard hostnames (e.g., *.example.com). When true (default), only subdomains are blocked. When false, both the root domain and subdomains are blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#exclude_exact_hostname List#exclude_exact_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#exclude_exact_hostname List#exclude_exact_hostname}
 
 ---
 
@@ -1403,13 +1396,13 @@ list.ListItemsRedirect(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#source_url List#source_url}. |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.targetUrl">target_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#target_url List#target_url}. |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.includeSubdomains">include_subdomains</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#include_subdomains List#include_subdomains}. |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.preservePathSuffix">preserve_path_suffix</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}. |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.preserveQueryString">preserve_query_string</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#preserve_query_string List#preserve_query_string}. |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.sourceUrl">source_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#source_url List#source_url}. |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.targetUrl">target_url</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#target_url List#target_url}. |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.includeSubdomains">include_subdomains</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#include_subdomains List#include_subdomains}. |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.preservePathSuffix">preserve_path_suffix</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}. |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.preserveQueryString">preserve_query_string</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#preserve_query_string List#preserve_query_string}. |
 | <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.statusCode">status_code</a></code> | <code>typing.Union[int, float]</code> | Available values: 301, 302, 307, 308. |
-| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.subpathMatching">subpath_matching</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#subpath_matching List#subpath_matching}. |
+| <code><a href="#@cdktn/provider-cloudflare.list.ListItemsRedirect.property.subpathMatching">subpath_matching</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#subpath_matching List#subpath_matching}. |
 
 ---
 
@@ -1421,7 +1414,7 @@ source_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#source_url List#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#source_url List#source_url}.
 
 ---
 
@@ -1433,7 +1426,7 @@ target_url: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#target_url List#target_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#target_url List#target_url}.
 
 ---
 
@@ -1445,7 +1438,7 @@ include_subdomains: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#include_subdomains List#include_subdomains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#include_subdomains List#include_subdomains}.
 
 ---
 
@@ -1457,7 +1450,7 @@ preserve_path_suffix: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}.
 
 ---
 
@@ -1469,7 +1462,7 @@ preserve_query_string: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#preserve_query_string List#preserve_query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#preserve_query_string List#preserve_query_string}.
 
 ---
 
@@ -1483,7 +1476,7 @@ status_code: typing.Union[int, float]
 
 Available values: 301, 302, 307, 308.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#status_code List#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#status_code List#status_code}
 
 ---
 
@@ -1495,7 +1488,7 @@ subpath_matching: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#subpath_matching List#subpath_matching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#subpath_matching List#subpath_matching}.
 
 ---
 
@@ -2264,7 +2257,7 @@ def put_hostname(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#url_hostname List#url_hostname}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#url_hostname List#url_hostname}.
 
 ---
 
@@ -2274,7 +2267,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Only applies to wildcard hostnames (e.g., *.example.com). When true (default), only subdomains are blocked. When false, both the root domain and subdomains are blocked.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#exclude_exact_hostname List#exclude_exact_hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#exclude_exact_hostname List#exclude_exact_hostname}
 
 ---
 
@@ -2296,7 +2289,7 @@ def put_redirect(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#source_url List#source_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#source_url List#source_url}.
 
 ---
 
@@ -2304,7 +2297,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#target_url List#target_url}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#target_url List#target_url}.
 
 ---
 
@@ -2312,7 +2305,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#include_subdomains List#include_subdomains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#include_subdomains List#include_subdomains}.
 
 ---
 
@@ -2320,7 +2313,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#preserve_path_suffix List#preserve_path_suffix}.
 
 ---
 
@@ -2328,7 +2321,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#preserve_query_string List#preserve_query_string}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#preserve_query_string List#preserve_query_string}.
 
 ---
 
@@ -2338,7 +2331,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: 301, 302, 307, 308.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#status_code List#status_code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#status_code List#status_code}
 
 ---
 
@@ -2346,7 +2339,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/list#subpath_matching List#subpath_matching}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/list#subpath_matching List#subpath_matching}.
 
 ---
 

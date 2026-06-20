@@ -4,7 +4,7 @@
 
 ### MagicTransitSiteLan <a name="MagicTransitSiteLan" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan cloudflare_magic_transit_site_lan}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer"></a>
 
@@ -47,14 +47,14 @@ MagicTransitSiteLan.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.siteId">siteId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.bondId">bondId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.bondId">bondId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.haLink">haLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | mark true to use this LAN for HA probing. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.isBreakout">isBreakout</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | mark true to use this LAN for source-based breakout traffic. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.isPrioritized">isPrioritized</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | mark true to use this LAN for source-based prioritized traffic. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.nat">nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.routedSubnets">routedSubnets</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets">MagicTransitSiteLanRoutedSubnets</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.nat">nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.routedSubnets">routedSubnets</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets">MagicTransitSiteLanRoutedSubnets</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.staticAddressing">staticAddressing</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing">MagicTransitSiteLanStaticAddressing</a></code> | If the site is not configured in high availability mode, this configuration is optional (if omitted, use DHCP). |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLan.Initializer.parameter.vlanTag">vlanTag</a></code> | <code>java.lang.Number</code> | VLAN ID. Use zero for untagged. |
 
@@ -126,7 +126,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#account_id MagicTransitSiteLan#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#account_id MagicTransitSiteLan#account_id}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#site_id MagicTransitSiteLan#site_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#site_id MagicTransitSiteLan#site_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}.
 
 ---
 
@@ -156,7 +156,7 @@ mark true to use this LAN for HA probing.
 
 only works for site with HA turned on. only one LAN can be set as the ha_link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#ha_link MagicTransitSiteLan#ha_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#ha_link MagicTransitSiteLan#ha_link}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 mark true to use this LAN for source-based breakout traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#is_breakout MagicTransitSiteLan#is_breakout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#is_breakout MagicTransitSiteLan#is_breakout}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 mark true to use this LAN for source-based prioritized traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#is_prioritized MagicTransitSiteLan#is_prioritized}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#is_prioritized MagicTransitSiteLan#is_prioritized}
 
 ---
 
@@ -184,7 +184,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}.
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}.
 
 ---
 
@@ -208,7 +208,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets">MagicTransitSiteLanRoutedSubnets</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}.
 
 ---
 
@@ -220,7 +220,7 @@ If the site is not configured in high availability mode, this configuration is o
 
 However, if in high availability mode, static_address is required along with secondary and virtual address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#static_addressing MagicTransitSiteLan#static_addressing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#static_addressing MagicTransitSiteLan#static_addressing}
 
 ---
 
@@ -230,7 +230,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 VLAN ID. Use zero for untagged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#vlan_tag MagicTransitSiteLan#vlan_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#vlan_tag MagicTransitSiteLan#vlan_tag}
 
 ---
 
@@ -788,7 +788,7 @@ The construct id used in the generated config for the MagicTransitSiteLan to imp
 
 The id of the existing MagicTransitSiteLan that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1301,14 +1301,14 @@ MagicTransitSiteLanConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.siteId">siteId</a></code> | <code>java.lang.String</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.bondId">bondId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.bondId">bondId</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.haLink">haLink</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | mark true to use this LAN for HA probing. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.isBreakout">isBreakout</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | mark true to use this LAN for source-based breakout traffic. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.isPrioritized">isPrioritized</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | mark true to use this LAN for source-based prioritized traffic. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.nat">nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.routedSubnets">routedSubnets</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets">MagicTransitSiteLanRoutedSubnets</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.nat">nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.physport">physport</a></code> | <code>java.lang.Number</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.routedSubnets">routedSubnets</a></code> | <code>io.cdktn.cdktn.IResolvable\|java.util.List<<a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets">MagicTransitSiteLanRoutedSubnets</a>></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.staticAddressing">staticAddressing</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing">MagicTransitSiteLanStaticAddressing</a></code> | If the site is not configured in high availability mode, this configuration is optional (if omitted, use DHCP). |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanConfig.property.vlanTag">vlanTag</a></code> | <code>java.lang.Number</code> | VLAN ID. Use zero for untagged. |
 
@@ -1394,7 +1394,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#account_id MagicTransitSiteLan#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#account_id MagicTransitSiteLan#account_id}
 
 ---
 
@@ -1408,7 +1408,7 @@ public java.lang.String getSiteId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#site_id MagicTransitSiteLan#site_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#site_id MagicTransitSiteLan#site_id}
 
 ---
 
@@ -1420,7 +1420,7 @@ public java.lang.Number getBondId();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#bond_id MagicTransitSiteLan#bond_id}.
 
 ---
 
@@ -1436,7 +1436,7 @@ mark true to use this LAN for HA probing.
 
 only works for site with HA turned on. only one LAN can be set as the ha_link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#ha_link MagicTransitSiteLan#ha_link}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#ha_link MagicTransitSiteLan#ha_link}
 
 ---
 
@@ -1450,7 +1450,7 @@ public java.lang.Boolean|IResolvable getIsBreakout();
 
 mark true to use this LAN for source-based breakout traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#is_breakout MagicTransitSiteLan#is_breakout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#is_breakout MagicTransitSiteLan#is_breakout}
 
 ---
 
@@ -1464,7 +1464,7 @@ public java.lang.Boolean|IResolvable getIsPrioritized();
 
 mark true to use this LAN for source-based prioritized traffic.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#is_prioritized MagicTransitSiteLan#is_prioritized}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#is_prioritized MagicTransitSiteLan#is_prioritized}
 
 ---
 
@@ -1476,7 +1476,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#name MagicTransitSiteLan#name}.
 
 ---
 
@@ -1488,7 +1488,7 @@ public MagicTransitSiteLanNat getNat();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanNat">MagicTransitSiteLanNat</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
 
 ---
 
@@ -1500,7 +1500,7 @@ public java.lang.Number getPhysport();
 
 - *Type:* java.lang.Number
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#physport MagicTransitSiteLan#physport}.
 
 ---
 
@@ -1512,7 +1512,7 @@ public IResolvable|java.util.List<MagicTransitSiteLanRoutedSubnets> getRoutedSub
 
 - *Type:* io.cdktn.cdktn.IResolvable|java.util.List<<a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets">MagicTransitSiteLanRoutedSubnets</a>>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#routed_subnets MagicTransitSiteLan#routed_subnets}.
 
 ---
 
@@ -1528,7 +1528,7 @@ If the site is not configured in high availability mode, this configuration is o
 
 However, if in high availability mode, static_address is required along with secondary and virtual address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#static_addressing MagicTransitSiteLan#static_addressing}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#static_addressing MagicTransitSiteLan#static_addressing}
 
 ---
 
@@ -1542,7 +1542,7 @@ public java.lang.Number getVlanTag();
 
 VLAN ID. Use zero for untagged.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#vlan_tag MagicTransitSiteLan#vlan_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#vlan_tag MagicTransitSiteLan#vlan_tag}
 
 ---
 
@@ -1576,7 +1576,7 @@ public java.lang.String getStaticPrefix();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
 
 ---
 
@@ -1600,7 +1600,7 @@ MagicTransitSiteLanRoutedSubnets.builder()
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.nextHop">nextHop</a></code> | <code>java.lang.String</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.prefix">prefix</a></code> | <code>java.lang.String</code> | A valid CIDR notation representing an IP range. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.nat">nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat">MagicTransitSiteLanRoutedSubnetsNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnets.property.nat">nat</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat">MagicTransitSiteLanRoutedSubnetsNat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}. |
 
 ---
 
@@ -1614,7 +1614,7 @@ public java.lang.String getNextHop();
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#next_hop MagicTransitSiteLan#next_hop}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#next_hop MagicTransitSiteLan#next_hop}
 
 ---
 
@@ -1628,7 +1628,7 @@ public java.lang.String getPrefix();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#prefix MagicTransitSiteLan#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#prefix MagicTransitSiteLan#prefix}
 
 ---
 
@@ -1640,7 +1640,7 @@ public MagicTransitSiteLanRoutedSubnetsNat getNat();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanRoutedSubnetsNat">MagicTransitSiteLanRoutedSubnetsNat</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#nat MagicTransitSiteLan#nat}.
 
 ---
 
@@ -1674,7 +1674,7 @@ public java.lang.String getStaticPrefix();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#static_prefix MagicTransitSiteLan#static_prefix}
 
 ---
 
@@ -1699,8 +1699,8 @@ MagicTransitSiteLanStaticAddressing.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.address">address</a></code> | <code>java.lang.String</code> | A valid CIDR notation representing an IP range. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpRelay">dhcpRelay</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay">MagicTransitSiteLanStaticAddressingDhcpRelay</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpServer">dhcpServer</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer">MagicTransitSiteLanStaticAddressingDhcpServer</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpRelay">dhcpRelay</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay">MagicTransitSiteLanStaticAddressingDhcpRelay</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.dhcpServer">dhcpServer</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer">MagicTransitSiteLanStaticAddressingDhcpServer</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.secondaryAddress">secondaryAddress</a></code> | <code>java.lang.String</code> | A valid CIDR notation representing an IP range. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressing.property.virtualAddress">virtualAddress</a></code> | <code>java.lang.String</code> | A valid CIDR notation representing an IP range. |
 
@@ -1716,7 +1716,7 @@ public java.lang.String getAddress();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#address MagicTransitSiteLan#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#address MagicTransitSiteLan#address}
 
 ---
 
@@ -1728,7 +1728,7 @@ public MagicTransitSiteLanStaticAddressingDhcpRelay getDhcpRelay();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpRelay">MagicTransitSiteLanStaticAddressingDhcpRelay</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dhcp_relay MagicTransitSiteLan#dhcp_relay}.
 
 ---
 
@@ -1740,7 +1740,7 @@ public MagicTransitSiteLanStaticAddressingDhcpServer getDhcpServer();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer">MagicTransitSiteLanStaticAddressingDhcpServer</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dhcp_server MagicTransitSiteLan#dhcp_server}.
 
 ---
 
@@ -1754,7 +1754,7 @@ public java.lang.String getSecondaryAddress();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#secondary_address MagicTransitSiteLan#secondary_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#secondary_address MagicTransitSiteLan#secondary_address}
 
 ---
 
@@ -1768,7 +1768,7 @@ public java.lang.String getVirtualAddress();
 
 A valid CIDR notation representing an IP range.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#virtual_address MagicTransitSiteLan#virtual_address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#virtual_address MagicTransitSiteLan#virtual_address}
 
 ---
 
@@ -1802,7 +1802,7 @@ public java.util.List<java.lang.String> getServerAddresses();
 
 List of DHCP server IPs.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#server_addresses MagicTransitSiteLan#server_addresses}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#server_addresses MagicTransitSiteLan#server_addresses}
 
 ---
 
@@ -1831,7 +1831,7 @@ MagicTransitSiteLanStaticAddressingDhcpServer.builder()
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dhcpPoolEnd">dhcpPoolEnd</a></code> | <code>java.lang.String</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dhcpPoolStart">dhcpPoolStart</a></code> | <code>java.lang.String</code> | A valid IPv4 address. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dnsServer">dnsServer</a></code> | <code>java.lang.String</code> | A valid IPv4 address. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dnsServers">dnsServers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.dnsServers">dnsServers</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSiteLan.MagicTransitSiteLanStaticAddressingDhcpServer.property.reservations">reservations</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Mapping of MAC addresses to IP addresses. |
 
 ---
@@ -1846,7 +1846,7 @@ public IResolvable|java.util.List<MagicTransitSiteLanStaticAddressingDhcpServerD
 
 Optional list of custom DHCP options to include in DHCP responses. Only valid when DHCP server is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dhcp_options MagicTransitSiteLan#dhcp_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dhcp_options MagicTransitSiteLan#dhcp_options}
 
 ---
 
@@ -1860,7 +1860,7 @@ public java.lang.String getDhcpPoolEnd();
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dhcp_pool_end MagicTransitSiteLan#dhcp_pool_end}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dhcp_pool_end MagicTransitSiteLan#dhcp_pool_end}
 
 ---
 
@@ -1874,7 +1874,7 @@ public java.lang.String getDhcpPoolStart();
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dhcp_pool_start MagicTransitSiteLan#dhcp_pool_start}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dhcp_pool_start MagicTransitSiteLan#dhcp_pool_start}
 
 ---
 
@@ -1888,7 +1888,7 @@ public java.lang.String getDnsServer();
 
 A valid IPv4 address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dns_server MagicTransitSiteLan#dns_server}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dns_server MagicTransitSiteLan#dns_server}
 
 ---
 
@@ -1900,7 +1900,7 @@ public java.util.List<java.lang.String> getDnsServers();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#dns_servers MagicTransitSiteLan#dns_servers}.
 
 ---
 
@@ -1914,7 +1914,7 @@ public java.util.Map<java.lang.String, java.lang.String> getReservations();
 
 Mapping of MAC addresses to IP addresses.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#reservations MagicTransitSiteLan#reservations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#reservations MagicTransitSiteLan#reservations}
 
 ---
 
@@ -1954,7 +1954,7 @@ DHCP option number (1-254).
 
 Options 0 and 255 are reserved by RFC 2132. Options 3, 6, and 51 are not allowed because they conflict with connector-managed configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#code MagicTransitSiteLan#code}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#code MagicTransitSiteLan#code}
 
 ---
 
@@ -1971,7 +1971,7 @@ The type of the option value.
 text: a string (max 255 bytes). hex: colon-separated hex bytes (e.g. "01:04:aa:bb:cc", max 255 bytes). ip: an IPv4 address (e.g. "10.20.30.40"). byte: an unsigned integer 0-255 (1 byte). short: an unsigned integer 0-65535 (2 bytes). integer: an unsigned integer 0-4294967295 (4 bytes).
 Available values: "text", "hex", "ip", "byte", "short", "integer".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#type MagicTransitSiteLan#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#type MagicTransitSiteLan#type}
 
 ---
 
@@ -1985,7 +1985,7 @@ public java.lang.String getValue();
 
 The option value, interpreted according to the type field.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site_lan#value MagicTransitSiteLan#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site_lan#value MagicTransitSiteLan#value}
 
 ---
 

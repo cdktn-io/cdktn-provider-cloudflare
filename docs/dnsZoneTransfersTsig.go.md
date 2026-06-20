@@ -4,7 +4,7 @@
 
 ### DnsZoneTransfersTsig <a name="DnsZoneTransfersTsig" id="@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_tsig cloudflare_dns_zone_transfers_tsig}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsig.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsig.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsig.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsig.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsig.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsig.resetAccountId"></a>
-
-```go
-func ResetAccountId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the DnsZoneTransfersTsig to im
 
 The id of the existing DnsZoneTransfersTsig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_tsig#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_tsig#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -805,10 +798,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonet
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
+	AccountId: *string,
 	Algo: *string,
 	Name: *string,
 	Secret: *string,
-	AccountId: *string,
 }
 ```
 
@@ -823,10 +816,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnszonet
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_tsig#account_id DnsZoneTransfersTsig#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.algo">Algo</a></code> | <code>*string</code> | TSIG algorithm. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.name">Name</a></code> | <code>*string</code> | TSIG key name. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.secret">Secret</a></code> | <code>*string</code> | TSIG secret. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_tsig#account_id DnsZoneTransfersTsig#account_id}. |
 
 ---
 
@@ -900,6 +893,18 @@ Provisioners *[]interface{}
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_tsig#account_id DnsZoneTransfersTsig#account_id}.
+
+---
+
 ##### `Algo`<sup>Required</sup> <a name="Algo" id="@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.algo"></a>
 
 ```go
@@ -910,7 +915,7 @@ Algo *string
 
 TSIG algorithm.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_tsig#algo DnsZoneTransfersTsig#algo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_tsig#algo DnsZoneTransfersTsig#algo}
 
 ---
 
@@ -924,7 +929,7 @@ Name *string
 
 TSIG key name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_tsig#name DnsZoneTransfersTsig#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_tsig#name DnsZoneTransfersTsig#name}
 
 ---
 
@@ -938,19 +943,7 @@ Secret *string
 
 TSIG secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_tsig#secret DnsZoneTransfersTsig#secret}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dnsZoneTransfersTsig.DnsZoneTransfersTsigConfig.property.accountId"></a>
-
-```go
-AccountId *string
-```
-
-- *Type:* *string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_zone_transfers_tsig#account_id DnsZoneTransfersTsig#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_zone_transfers_tsig#secret DnsZoneTransfersTsig#secret}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ApiShieldOperation <a name="ApiShieldOperation" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetZoneId"></a>
-
-```csharp
-private void ResetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the ApiShieldOperation to impo
 
 The id of the existing ApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -852,7 +845,7 @@ new ApiShieldOperationConfig {
     string Endpoint,
     string Host,
     string Method,
-    string ZoneId = null
+    string ZoneId
 };
 ```
 
@@ -956,7 +949,7 @@ The endpoint which can contain path parameter templates in curly braces, each wi
 
 This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 
 ---
 
@@ -970,7 +963,7 @@ public string Host { get; set; }
 
 RFC3986-compliant host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 
 ---
 
@@ -984,11 +977,11 @@ public string Method { get; set; }
 
 The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 
 ---
 
-##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId"></a>
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId"></a>
 
 ```csharp
 public string ZoneId { get; set; }
@@ -998,7 +991,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 
 ---
 

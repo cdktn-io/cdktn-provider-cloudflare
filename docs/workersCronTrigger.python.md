@@ -4,7 +4,7 @@
 
 ### WorkersCronTrigger <a name="WorkersCronTrigger" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger cloudflare_workers_cron_trigger}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer"></a>
 
@@ -21,9 +21,9 @@ workersCronTrigger.WorkersCronTrigger(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   schedules: IResolvable | typing.List[WorkersCronTriggerSchedules],
-  script_name: str,
-  account_id: str = None
+  script_name: str
 )
 ```
 
@@ -38,9 +38,9 @@ workersCronTrigger.WorkersCronTrigger(
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules">WorkersCronTriggerSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules">WorkersCronTriggerSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 
 ---
 
@@ -104,11 +104,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+
+---
+
 ##### `schedules`<sup>Required</sup> <a name="schedules" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.schedules"></a>
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules">WorkersCronTriggerSchedules</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
 
 ---
 
@@ -118,17 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
 
 ---
 
@@ -161,7 +161,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.putSchedules">put_schedules</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -527,12 +526,6 @@ def put_schedules(
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTrigger.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -647,7 +640,7 @@ The construct id used in the generated config for the WorkersCronTrigger to impo
 
 The id of the existing WorkersCronTrigger that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -934,9 +927,9 @@ workersCronTrigger.WorkersCronTriggerConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   schedules: IResolvable | typing.List[WorkersCronTriggerSchedules],
-  script_name: str,
-  account_id: str = None
+  script_name: str
 )
 ```
 
@@ -951,9 +944,9 @@ workersCronTrigger.WorkersCronTriggerConfig(
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules">WorkersCronTriggerSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.schedules">schedules</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules">WorkersCronTriggerSchedules</a>]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.scriptName">script_name</a></code> | <code>str</code> | Name of the script, used in URLs and route configuration. |
 
 ---
 
@@ -1027,6 +1020,20 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+
+---
+
 ##### `schedules`<sup>Required</sup> <a name="schedules" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.schedules"></a>
 
 ```python
@@ -1035,7 +1042,7 @@ schedules: IResolvable | typing.List[WorkersCronTriggerSchedules]
 
 - *Type:* cdktn.IResolvable | typing.List[<a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules">WorkersCronTriggerSchedules</a>]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#schedules WorkersCronTrigger#schedules}.
 
 ---
 
@@ -1049,21 +1056,7 @@ script_name: str
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#account_id WorkersCronTrigger#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#script_name WorkersCronTrigger#script_name}
 
 ---
 
@@ -1083,7 +1076,7 @@ workersCronTrigger.WorkersCronTriggerSchedules(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules.property.cron">cron</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersCronTrigger.WorkersCronTriggerSchedules.property.cron">cron</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}. |
 
 ---
 
@@ -1095,7 +1088,7 @@ cron: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_cron_trigger#cron WorkersCronTrigger#cron}.
 
 ---
 

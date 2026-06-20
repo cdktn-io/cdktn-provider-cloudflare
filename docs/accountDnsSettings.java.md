@@ -4,7 +4,7 @@
 
 ### AccountDnsSettings <a name="AccountDnsSettings" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings cloudflare_account_dns_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer"></a>
 
@@ -19,7 +19,7 @@ AccountDnsSettings.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .enforceDnsOnly(java.lang.Boolean|IResolvable)
 //  .zoneDefaults(AccountDnsSettingsZoneDefaults)
     .build();
@@ -38,7 +38,7 @@ AccountDnsSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer.parameter.enforceDnsOnly">enforceDnsOnly</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When enabled, forces all proxied DNS records in the account to behave as DNS-only at the edge, regardless of each record's individual proxy setting. |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer.parameter.zoneDefaults">zoneDefaults</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults">AccountDnsSettingsZoneDefaults</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}. |
+| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer.parameter.zoneDefaults">zoneDefaults</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults">AccountDnsSettingsZoneDefaults</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}. |
 
 ---
 
@@ -102,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer.parameter.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ When enabled, forces all proxied DNS records in the account to behave as DNS-onl
 
 Note that this account-level override does not modify the records themselves; it only affects how they are served at the edge. See more on [Enforce DNS-only](https://developers.cloudflare.com/dns/proxy-status/enforce-dns-only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults">AccountDnsSettingsZoneDefaults</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}.
 
 ---
 
@@ -161,7 +161,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.putZoneDefaults">putZoneDefaults</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.resetEnforceDnsOnly">resetEnforceDnsOnly</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.resetZoneDefaults">resetZoneDefaults</a></code> | *No description.* |
 
@@ -490,12 +489,6 @@ public void putZoneDefaults(AccountDnsSettingsZoneDefaults value)
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetEnforceDnsOnly` <a name="resetEnforceDnsOnly" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettings.resetEnforceDnsOnly"></a>
 
 ```java
@@ -611,7 +604,7 @@ The construct id used in the generated config for the AccountDnsSettings to impo
 
 The id of the existing AccountDnsSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -887,7 +880,7 @@ AccountDnsSettingsConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .enforceDnsOnly(java.lang.Boolean|IResolvable)
 //  .zoneDefaults(AccountDnsSettingsZoneDefaults)
     .build();
@@ -906,7 +899,7 @@ AccountDnsSettingsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.property.enforceDnsOnly">enforceDnsOnly</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When enabled, forces all proxied DNS records in the account to behave as DNS-only at the edge, regardless of each record's individual proxy setting. |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.property.zoneDefaults">zoneDefaults</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults">AccountDnsSettingsZoneDefaults</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}. |
+| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.property.zoneDefaults">zoneDefaults</a></code> | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults">AccountDnsSettingsZoneDefaults</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}. |
 
 ---
 
@@ -980,7 +973,7 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsConfig.property.accountId"></a>
 
 ```java
 public java.lang.String getAccountId();
@@ -990,7 +983,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#account_id AccountDnsSettings#account_id}
 
 ---
 
@@ -1006,7 +999,7 @@ When enabled, forces all proxied DNS records in the account to behave as DNS-onl
 
 Note that this account-level override does not modify the records themselves; it only affects how they are served at the edge. See more on [Enforce DNS-only](https://developers.cloudflare.com/dns/proxy-status/enforce-dns-only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#enforce_dns_only AccountDnsSettings#enforce_dns_only}
 
 ---
 
@@ -1018,7 +1011,7 @@ public AccountDnsSettingsZoneDefaults getZoneDefaults();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.accountDnsSettings.AccountDnsSettingsZoneDefaults">AccountDnsSettingsZoneDefaults</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#zone_defaults AccountDnsSettings#zone_defaults}.
 
 ---
 
@@ -1070,7 +1063,7 @@ Whether to flatten all CNAME records in the zone.
 
 Note that, due to DNS limitations, a CNAME record at the zone apex will always be flattened.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#flatten_all_cnames AccountDnsSettings#flatten_all_cnames}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#flatten_all_cnames AccountDnsSettings#flatten_all_cnames}
 
 ---
 
@@ -1084,7 +1077,7 @@ public java.lang.Boolean|IResolvable getFoundationDns();
 
 Whether to enable Foundation DNS Advanced Nameservers on the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#foundation_dns AccountDnsSettings#foundation_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#foundation_dns AccountDnsSettings#foundation_dns}
 
 ---
 
@@ -1098,7 +1091,7 @@ public AccountDnsSettingsZoneDefaultsInternalDns getInternalDns();
 
 Settings for this internal zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#internal_dns AccountDnsSettings#internal_dns}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#internal_dns AccountDnsSettings#internal_dns}
 
 ---
 
@@ -1112,7 +1105,7 @@ public java.lang.Boolean|IResolvable getMultiProvider();
 
 Whether to enable multi-provider DNS, which causes Cloudflare to activate the zone even when non-Cloudflare NS records exist, and to respect NS records at the zone apex during outbound zone transfers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#multi_provider AccountDnsSettings#multi_provider}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#multi_provider AccountDnsSettings#multi_provider}
 
 ---
 
@@ -1126,7 +1119,7 @@ public AccountDnsSettingsZoneDefaultsNameservers getNameservers();
 
 Settings determining the nameservers through which the zone should be available.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#nameservers AccountDnsSettings#nameservers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#nameservers AccountDnsSettings#nameservers}
 
 ---
 
@@ -1140,7 +1133,7 @@ public java.lang.Number getNsTtl();
 
 The time to live (TTL) of the zone's nameserver (NS) records.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#ns_ttl AccountDnsSettings#ns_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#ns_ttl AccountDnsSettings#ns_ttl}
 
 ---
 
@@ -1154,7 +1147,7 @@ public java.lang.Boolean|IResolvable getSecondaryOverrides();
 
 Allows a Secondary DNS zone to use (proxied) override records and CNAME flattening at the zone apex.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#secondary_overrides AccountDnsSettings#secondary_overrides}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#secondary_overrides AccountDnsSettings#secondary_overrides}
 
 ---
 
@@ -1168,7 +1161,7 @@ public AccountDnsSettingsZoneDefaultsSoa getSoa();
 
 Components of the zone's SOA record.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#soa AccountDnsSettings#soa}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#soa AccountDnsSettings#soa}
 
 ---
 
@@ -1182,7 +1175,7 @@ public java.lang.String getZoneMode();
 
 Whether the zone mode is a regular or CDN/DNS only zone. Available values: "standard", "cdn_only", "dns_only".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#zone_mode AccountDnsSettings#zone_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#zone_mode AccountDnsSettings#zone_mode}
 
 ---
 
@@ -1216,7 +1209,7 @@ public java.lang.String getReferenceZoneId();
 
 The ID of the zone to fallback to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#reference_zone_id AccountDnsSettings#reference_zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#reference_zone_id AccountDnsSettings#reference_zone_id}
 
 ---
 
@@ -1250,7 +1243,7 @@ public java.lang.String getType();
 
 Nameserver type Available values: "cloudflare.standard", "cloudflare.standard.random", "custom.account", "custom.tenant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#type AccountDnsSettings#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#type AccountDnsSettings#type}
 
 ---
 
@@ -1296,7 +1289,7 @@ public java.lang.Number getExpire();
 
 Time in seconds of being unable to query the primary server after which secondary servers should stop serving the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#expire AccountDnsSettings#expire}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#expire AccountDnsSettings#expire}
 
 ---
 
@@ -1310,7 +1303,7 @@ public java.lang.Number getMinTtl();
 
 The time to live (TTL) for negative caching of records within the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#min_ttl AccountDnsSettings#min_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#min_ttl AccountDnsSettings#min_ttl}
 
 ---
 
@@ -1324,7 +1317,7 @@ public java.lang.String getMname();
 
 The primary nameserver, which may be used for outbound zone transfers. If null, a Cloudflare-assigned value will be used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#mname AccountDnsSettings#mname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#mname AccountDnsSettings#mname}
 
 ---
 
@@ -1338,7 +1331,7 @@ public java.lang.Number getRefresh();
 
 Time in seconds after which secondary servers should re-check the SOA record to see if the zone has been updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#refresh AccountDnsSettings#refresh}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#refresh AccountDnsSettings#refresh}
 
 ---
 
@@ -1352,7 +1345,7 @@ public java.lang.Number getRetry();
 
 Time in seconds after which secondary servers should retry queries after the primary server was unresponsive.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#retry AccountDnsSettings#retry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#retry AccountDnsSettings#retry}
 
 ---
 
@@ -1366,7 +1359,7 @@ public java.lang.String getRname();
 
 The email address of the zone administrator, with the first label representing the local part of the email address.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#rname AccountDnsSettings#rname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#rname AccountDnsSettings#rname}
 
 ---
 
@@ -1380,7 +1373,7 @@ public java.lang.Number getTtl();
 
 The time to live (TTL) of the SOA record itself.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings#ttl AccountDnsSettings#ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings#ttl AccountDnsSettings#ttl}
 
 ---
 

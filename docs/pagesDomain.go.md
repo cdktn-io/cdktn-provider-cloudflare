@@ -4,7 +4,7 @@
 
 ### PagesDomain <a name="PagesDomain" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain cloudflare_pages_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pages_domain cloudflare_pages_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomain.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomain.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomain.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomain.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomain.resetAccountId"></a>
-
-```go
-func ResetAccountId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the PagesDomain to import.
 
 The id of the existing PagesDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pages_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -860,9 +853,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagesdom
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
+	AccountId: *string,
 	Name: *string,
 	ProjectName: *string,
-	AccountId: *string,
 }
 ```
 
@@ -877,9 +870,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pagesdom
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.name">Name</a></code> | <code>*string</code> | The domain name. |
 | <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.projectName">ProjectName</a></code> | <code>*string</code> | Name of the project. |
-| <code><a href="#@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
 
 ---
 
@@ -953,6 +946,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.name"></a>
 
 ```go
@@ -963,7 +970,7 @@ Name *string
 
 The domain name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain#name PagesDomain#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pages_domain#name PagesDomain#name}
 
 ---
 
@@ -977,21 +984,7 @@ ProjectName *string
 
 Name of the project.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.pagesDomain.PagesDomainConfig.property.accountId"></a>
-
-```go
-AccountId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/pages_domain#account_id PagesDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pages_domain#project_name PagesDomain#project_name}
 
 ---
 

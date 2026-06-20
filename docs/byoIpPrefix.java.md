@@ -4,7 +4,7 @@
 
 ### ByoIpPrefix <a name="ByoIpPrefix" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix cloudflare_byo_ip_prefix}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer"></a>
 
@@ -19,9 +19,9 @@ ByoIpPrefix.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .asn(java.lang.Number)
     .cidr(java.lang.String)
-//  .accountId(java.lang.String)
 //  .delegateLoaCreation(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .loaDocumentId(java.lang.String)
@@ -39,9 +39,9 @@ ByoIpPrefix.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier of a Cloudflare account. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.asn">asn</a></code> | <code>java.lang.Number</code> | Autonomous System Number (ASN) the prefix will be advertised under. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.cidr">cidr</a></code> | <code>java.lang.String</code> | IP Prefix in Classless Inter-Domain Routing format. |
-| <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier of a Cloudflare account. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.delegateLoaCreation">delegateLoaCreation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Cloudflare is allowed to generate the LOA document on behalf of the prefix owner. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description of the prefix. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.loaDocumentId">loaDocumentId</a></code> | <code>java.lang.String</code> | Identifier for the uploaded LOA document. |
@@ -108,13 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Identifier of a Cloudflare account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+
+---
+
 ##### `asn`<sup>Required</sup> <a name="asn" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.asn"></a>
 
 - *Type:* java.lang.Number
 
 Autonomous System Number (ASN) the prefix will be advertised under.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
 
 ---
 
@@ -124,17 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Identifier of a Cloudflare account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether Cloudflare is allowed to generate the LOA document on behalf of the prefix owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Description of the prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier for the uploaded LOA document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
 
 ---
 
@@ -196,7 +196,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.resetDelegateLoaCreation">resetDelegateLoaCreation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.resetLoaDocumentId">resetLoaDocumentId</a></code> | *No description.* |
@@ -514,12 +513,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetDelegateLoaCreation` <a name="resetDelegateLoaCreation" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefix.resetDelegateLoaCreation"></a>
 
 ```java
@@ -641,7 +634,7 @@ The construct id used in the generated config for the ByoIpPrefix to import.
 
 The id of the existing ByoIpPrefix that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1115,9 +1108,9 @@ ByoIpPrefixConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .asn(java.lang.Number)
     .cidr(java.lang.String)
-//  .accountId(java.lang.String)
 //  .delegateLoaCreation(java.lang.Boolean|IResolvable)
 //  .description(java.lang.String)
 //  .loaDocumentId(java.lang.String)
@@ -1135,9 +1128,9 @@ ByoIpPrefixConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier of a Cloudflare account. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.asn">asn</a></code> | <code>java.lang.Number</code> | Autonomous System Number (ASN) the prefix will be advertised under. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.cidr">cidr</a></code> | <code>java.lang.String</code> | IP Prefix in Classless Inter-Domain Routing format. |
-| <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier of a Cloudflare account. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.delegateLoaCreation">delegateLoaCreation</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether Cloudflare is allowed to generate the LOA document on behalf of the prefix owner. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description of the prefix. |
 | <code><a href="#@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.loaDocumentId">loaDocumentId</a></code> | <code>java.lang.String</code> | Identifier for the uploaded LOA document. |
@@ -1214,6 +1207,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Identifier of a Cloudflare account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+
+---
+
 ##### `asn`<sup>Required</sup> <a name="asn" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.asn"></a>
 
 ```java
@@ -1224,7 +1231,7 @@ public java.lang.Number getAsn();
 
 Autonomous System Number (ASN) the prefix will be advertised under.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#asn ByoIpPrefix#asn}
 
 ---
 
@@ -1238,21 +1245,7 @@ public java.lang.String getCidr();
 
 IP Prefix in Classless Inter-Domain Routing format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.byoIpPrefix.ByoIpPrefixConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Identifier of a Cloudflare account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#account_id ByoIpPrefix#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#cidr ByoIpPrefix#cidr}
 
 ---
 
@@ -1266,7 +1259,7 @@ public java.lang.Boolean|IResolvable getDelegateLoaCreation();
 
 Whether Cloudflare is allowed to generate the LOA document on behalf of the prefix owner.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#delegate_loa_creation ByoIpPrefix#delegate_loa_creation}
 
 ---
 
@@ -1280,7 +1273,7 @@ public java.lang.String getDescription();
 
 Description of the prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#description ByoIpPrefix#description}
 
 ---
 
@@ -1294,7 +1287,7 @@ public java.lang.String getLoaDocumentId();
 
 Identifier for the uploaded LOA document.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/byo_ip_prefix#loa_document_id ByoIpPrefix#loa_document_id}
 
 ---
 

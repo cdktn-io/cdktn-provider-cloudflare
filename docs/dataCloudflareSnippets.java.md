@@ -4,7 +4,7 @@
 
 ### DataCloudflareSnippets <a name="DataCloudflareSnippets" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippets cloudflare_snippets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/snippets cloudflare_snippets}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSnippets.DataCloudflareSnippets.Initializer"></a>
 
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 The identifying name of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
 
 ---
 
@@ -461,7 +461,7 @@ The construct id used in the generated config for the DataCloudflareSnippets to 
 
 The id of the existing DataCloudflareSnippets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/snippets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -816,7 +816,7 @@ public java.lang.String getSnippetName();
 
 The identifying name of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/snippets#snippet_name DataCloudflareSnippets#snippet_name}
 
 ---
 
@@ -830,7 +830,7 @@ public java.lang.String getZoneId();
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/snippets#zone_id DataCloudflareSnippets#zone_id}
 
 ---
 

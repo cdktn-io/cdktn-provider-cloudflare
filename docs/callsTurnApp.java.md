@@ -4,7 +4,7 @@
 
 ### CallsTurnApp <a name="CallsTurnApp" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app cloudflare_calls_turn_app}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.Initializer"></a>
 
@@ -19,7 +19,7 @@ CallsTurnApp.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .keyId(java.lang.String)
 //  .name(java.lang.String)
     .build();
@@ -102,13 +102,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.Initializer.parameter.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A short description of a TURN key, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
 
 ---
 
@@ -160,7 +160,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetKeyId">resetKeyId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetName">resetName</a></code> | *No description.* |
 
@@ -477,12 +476,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetKeyId` <a name="resetKeyId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnApp.resetKeyId"></a>
 
 ```java
@@ -598,7 +591,7 @@ The construct id used in the generated config for the CallsTurnApp to import.
 
 The id of the existing CallsTurnApp that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -918,7 +911,7 @@ CallsTurnAppConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .keyId(java.lang.String)
 //  .name(java.lang.String)
     .build();
@@ -1011,7 +1004,7 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnAppConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.callsTurnApp.CallsTurnAppConfig.property.accountId"></a>
 
 ```java
 public java.lang.String getAccountId();
@@ -1021,7 +1014,7 @@ public java.lang.String getAccountId();
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app#account_id CallsTurnApp#account_id}
 
 ---
 
@@ -1035,7 +1028,7 @@ public java.lang.String getKeyId();
 
 A Cloudflare-generated unique identifier for a item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app#key_id CallsTurnApp#key_id}
 
 ---
 
@@ -1049,7 +1042,7 @@ public java.lang.String getName();
 
 A short description of a TURN key, not shown to end users.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/calls_turn_app#name CallsTurnApp#name}
 
 ---
 

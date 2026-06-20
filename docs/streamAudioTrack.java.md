@@ -4,7 +4,7 @@
 
 ### StreamAudioTrack <a name="StreamAudioTrack" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track cloudflare_stream_audio_track}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer"></a>
 
@@ -19,8 +19,8 @@ StreamAudioTrack.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .identifier(java.lang.String)
-//  .accountId(java.lang.String)
 //  .audioIdentifier(java.lang.String)
 //  .default(java.lang.Boolean|IResolvable)
 //  .label(java.lang.String)
@@ -38,8 +38,8 @@ StreamAudioTrack.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.identifier">identifier</a></code> | <code>java.lang.String</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.identifier">identifier</a></code> | <code>java.lang.String</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.audioIdentifier">audioIdentifier</a></code> | <code>java.lang.String</code> | The unique identifier for an additional audio track. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.default">default</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Denotes whether the audio track will be played by default in a player. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.label">label</a></code> | <code>java.lang.String</code> | A string to uniquely identify the track amongst other audio track labels for the specified video. |
@@ -106,23 +106,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+The account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
+
+---
+
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.identifier"></a>
 
 - *Type:* java.lang.String
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-The account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The unique identifier for an additional audio track.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Denotes whether the audio track will be played by default in a player.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#default StreamAudioTrack#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#default StreamAudioTrack#default}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A string to uniquely identify the track amongst other audio track labels for the specified video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#label StreamAudioTrack#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#label StreamAudioTrack#label}
 
 ---
 
@@ -184,7 +184,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAudioIdentifier">resetAudioIdentifier</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetDefault">resetDefault</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetLabel">resetLabel</a></code> | *No description.* |
@@ -502,12 +501,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetAudioIdentifier` <a name="resetAudioIdentifier" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrack.resetAudioIdentifier"></a>
 
 ```java
@@ -629,7 +622,7 @@ The construct id used in the generated config for the StreamAudioTrack to import
 
 The id of the existing StreamAudioTrack that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -994,8 +987,8 @@ StreamAudioTrackConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .identifier(java.lang.String)
-//  .accountId(java.lang.String)
 //  .audioIdentifier(java.lang.String)
 //  .default(java.lang.Boolean|IResolvable)
 //  .label(java.lang.String)
@@ -1013,8 +1006,8 @@ StreamAudioTrackConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.identifier">identifier</a></code> | <code>java.lang.String</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | The account identifier tag. |
+| <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.identifier">identifier</a></code> | <code>java.lang.String</code> | A Cloudflare-generated unique identifier for a media item. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.audioIdentifier">audioIdentifier</a></code> | <code>java.lang.String</code> | The unique identifier for an additional audio track. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.default">default</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Denotes whether the audio track will be played by default in a player. |
 | <code><a href="#@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.label">label</a></code> | <code>java.lang.String</code> | A string to uniquely identify the track amongst other audio track labels for the specified video. |
@@ -1091,6 +1084,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+The account identifier tag.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
+
+---
+
 ##### `identifier`<sup>Required</sup> <a name="identifier" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.identifier"></a>
 
 ```java
@@ -1101,21 +1108,7 @@ public java.lang.String getIdentifier();
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamAudioTrack.StreamAudioTrackConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-The account identifier tag.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#account_id StreamAudioTrack#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#identifier StreamAudioTrack#identifier}
 
 ---
 
@@ -1129,7 +1122,7 @@ public java.lang.String getAudioIdentifier();
 
 The unique identifier for an additional audio track.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#audio_identifier StreamAudioTrack#audio_identifier}
 
 ---
 
@@ -1143,7 +1136,7 @@ public java.lang.Boolean|IResolvable getDefault();
 
 Denotes whether the audio track will be played by default in a player.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#default StreamAudioTrack#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#default StreamAudioTrack#default}
 
 ---
 
@@ -1157,7 +1150,7 @@ public java.lang.String getLabel();
 
 A string to uniquely identify the track amongst other audio track labels for the specified video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_audio_track#label StreamAudioTrack#label}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_audio_track#label StreamAudioTrack#label}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### R2BucketLifecycle <a name="R2BucketLifecycle" id="@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycle"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle cloudflare_r2_bucket_lifecycle}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycle.Initializer"></a>
 
@@ -516,7 +516,7 @@ The construct id used in the generated config for the R2BucketLifecycle to impor
 
 The id of the existing R2BucketLifecycle that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -835,7 +835,7 @@ new R2BucketLifecycleConfig {
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig.property.accountId">AccountId</a></code> | <code>string</code> | Account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig.property.bucketName">BucketName</a></code> | <code>string</code> | Name of the bucket. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig.property.jurisdiction">Jurisdiction</a></code> | <code>string</code> | Jurisdiction of the bucket. |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig.property.rules">Rules</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRules">R2BucketLifecycleRules</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleConfig.property.rules">Rules</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRules">R2BucketLifecycleRules</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}. |
 
 ---
 
@@ -919,7 +919,7 @@ public string AccountId { get; set; }
 
 Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#account_id R2BucketLifecycle#account_id}
 
 ---
 
@@ -933,7 +933,7 @@ public string BucketName { get; set; }
 
 Name of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#bucket_name R2BucketLifecycle#bucket_name}
 
 ---
 
@@ -947,7 +947,7 @@ public string Jurisdiction { get; set; }
 
 Jurisdiction of the bucket.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#jurisdiction R2BucketLifecycle#jurisdiction}
 
 ---
 
@@ -959,7 +959,7 @@ public IResolvable|R2BucketLifecycleRules[] Rules { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRules">R2BucketLifecycleRules</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#rules R2BucketLifecycle#rules}.
 
 ---
 
@@ -1003,7 +1003,7 @@ public R2BucketLifecycleRulesConditions Conditions { get; set; }
 
 Conditions that apply to all transitions of this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#conditions R2BucketLifecycle#conditions}
 
 ---
 
@@ -1017,7 +1017,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Whether or not this rule is in effect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#enabled R2BucketLifecycle#enabled}
 
 ---
 
@@ -1031,7 +1031,7 @@ public string Id { get; set; }
 
 Unique identifier for this rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#id R2BucketLifecycle#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1048,7 +1048,7 @@ public R2BucketLifecycleRulesAbortMultipartUploadsTransition AbortMultipartUploa
 
 Transition to abort ongoing multipart uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#abort_multipart_uploads_transition R2BucketLifecycle#abort_multipart_uploads_transition}
 
 ---
 
@@ -1062,7 +1062,7 @@ public R2BucketLifecycleRulesDeleteObjectsTransition DeleteObjectsTransition { g
 
 Transition to delete objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#delete_objects_transition R2BucketLifecycle#delete_objects_transition}
 
 ---
 
@@ -1076,7 +1076,7 @@ public IResolvable|R2BucketLifecycleRulesStorageClassTransitions[] StorageClassT
 
 Transitions to change the storage class of objects.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#storage_class_transitions R2BucketLifecycle#storage_class_transitions}
 
 ---
 
@@ -1110,7 +1110,7 @@ public R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition Condition 
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
 
 ---
 
@@ -1131,7 +1131,7 @@ new R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}. |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesAbortMultipartUploadsTransitionCondition.property.type">Type</a></code> | <code>string</code> | Available values: "Age". |
 
 ---
@@ -1144,7 +1144,7 @@ public double MaxAge { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}.
 
 ---
 
@@ -1158,7 +1158,7 @@ public string Type { get; set; }
 
 Available values: "Age".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
 
 ---
 
@@ -1192,7 +1192,7 @@ public string Prefix { get; set; }
 
 Transitions will only apply to objects/uploads in the bucket that start with the given prefix, an empty prefix can be provided to scope rule to all objects/uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#prefix R2BucketLifecycle#prefix}
 
 ---
 
@@ -1226,7 +1226,7 @@ public R2BucketLifecycleRulesDeleteObjectsTransitionCondition Condition { get; s
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
 
 ---
 
@@ -1249,8 +1249,8 @@ new R2BucketLifecycleRulesDeleteObjectsTransitionCondition {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition.property.type">Type</a></code> | <code>string</code> | Available values: "Age", "Date". |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition.property.date">Date</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}. |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition.property.date">Date</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesDeleteObjectsTransitionCondition.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}. |
 
 ---
 
@@ -1264,7 +1264,7 @@ public string Type { get; set; }
 
 Available values: "Age", "Date".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
 
 ---
 
@@ -1276,7 +1276,7 @@ public string Date { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}.
 
 ---
 
@@ -1288,7 +1288,7 @@ public double MaxAge { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}.
 
 ---
 
@@ -1324,7 +1324,7 @@ public R2BucketLifecycleRulesStorageClassTransitionsCondition Condition { get; s
 
 Condition for lifecycle transitions to apply after an object reaches an age in seconds.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#condition R2BucketLifecycle#condition}
 
 ---
 
@@ -1338,7 +1338,7 @@ public string StorageClass { get; set; }
 
 Available values: "InfrequentAccess".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#storage_class R2BucketLifecycle#storage_class}
 
 ---
 
@@ -1361,8 +1361,8 @@ new R2BucketLifecycleRulesStorageClassTransitionsCondition {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition.property.type">Type</a></code> | <code>string</code> | Available values: "Age", "Date". |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition.property.date">Date</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}. |
-| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition.property.date">Date</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}. |
+| <code><a href="#@cdktn/provider-cloudflare.r2BucketLifecycle.R2BucketLifecycleRulesStorageClassTransitionsCondition.property.maxAge">MaxAge</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}. |
 
 ---
 
@@ -1376,7 +1376,7 @@ public string Type { get; set; }
 
 Available values: "Age", "Date".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#type R2BucketLifecycle#type}
 
 ---
 
@@ -1388,7 +1388,7 @@ public string Date { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#date R2BucketLifecycle#date}.
 
 ---
 
@@ -1400,7 +1400,7 @@ public double MaxAge { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_bucket_lifecycle#max_age R2BucketLifecycle#max_age}.
 
 ---
 

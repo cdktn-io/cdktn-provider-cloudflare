@@ -4,7 +4,7 @@
 
 ### WorkersDeployment <a name="WorkersDeployment" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment cloudflare_workers_deployment}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.Initializer"></a>
 
@@ -76,7 +76,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putAnnotations">PutAnnotations</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.putVersions">PutVersions</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetAnnotations">ResetAnnotations</a></code> | *No description.* |
 
 ---
@@ -414,12 +413,6 @@ private void PutVersions(IResolvable|WorkersDeploymentVersions[] Value)
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 ##### `ResetAnnotations` <a name="ResetAnnotations" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeployment.resetAnnotations"></a>
 
 ```csharp
@@ -529,7 +522,7 @@ The construct id used in the generated config for the WorkersDeployment to impor
 
 The id of the existing WorkersDeployment that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -908,7 +901,7 @@ public string WorkersMessage { get; set; }
 
 Human-readable message about the deployment. Truncated to 1000 bytes if longer.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#workers_message WorkersDeployment#workers_message}
 
 ---
 
@@ -927,10 +920,10 @@ new WorkersDeploymentConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string AccountId,
     string ScriptName,
     string Strategy,
     IResolvable|WorkersDeploymentVersions[] Versions,
-    string AccountId = null,
     WorkersDeploymentAnnotations Annotations = null
 };
 ```
@@ -946,11 +939,11 @@ new WorkersDeploymentConfig {
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.scriptName">ScriptName</a></code> | <code>string</code> | Name of the script, used in URLs and route configuration. |
 | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.strategy">Strategy</a></code> | <code>string</code> | Available values: "percentage". |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.versions">Versions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">Annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.versions">Versions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.annotations">Annotations</a></code> | <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}. |
 
 ---
 
@@ -1024,6 +1017,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+
+---
+
 ##### `ScriptName`<sup>Required</sup> <a name="ScriptName" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.scriptName"></a>
 
 ```csharp
@@ -1034,7 +1041,7 @@ public string ScriptName { get; set; }
 
 Name of the script, used in URLs and route configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#script_name WorkersDeployment#script_name}
 
 ---
 
@@ -1048,7 +1055,7 @@ public string Strategy { get; set; }
 
 Available values: "percentage".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#strategy WorkersDeployment#strategy}
 
 ---
 
@@ -1060,21 +1067,7 @@ public IResolvable|WorkersDeploymentVersions[] Versions { get; set; }
 
 - *Type:* Io.Cdktn.IResolvable|<a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions">WorkersDeploymentVersions</a>[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#account_id WorkersDeployment#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#versions WorkersDeployment#versions}.
 
 ---
 
@@ -1086,7 +1079,7 @@ public WorkersDeploymentAnnotations Annotations { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentAnnotations">WorkersDeploymentAnnotations</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#annotations WorkersDeployment#annotations}.
 
 ---
 
@@ -1107,8 +1100,8 @@ new WorkersDeploymentVersions {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.percentage">Percentage</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}. |
-| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.versionId">VersionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.percentage">Percentage</a></code> | <code>double</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}. |
+| <code><a href="#@cdktn/provider-cloudflare.workersDeployment.WorkersDeploymentVersions.property.versionId">VersionId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}. |
 
 ---
 
@@ -1120,7 +1113,7 @@ public double Percentage { get; set; }
 
 - *Type:* double
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#percentage WorkersDeployment#percentage}.
 
 ---
 
@@ -1132,7 +1125,7 @@ public string VersionId { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_deployment#version_id WorkersDeployment#version_id}.
 
 ---
 

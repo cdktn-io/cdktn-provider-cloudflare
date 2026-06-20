@@ -4,7 +4,7 @@
 
 ### DataCloudflareAccountToken <a name="DataCloudflareAccountToken" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_token cloudflare_account_token}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/account_token cloudflare_account_token}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountToken.Initializer"></a>
 
@@ -421,7 +421,7 @@ The construct id used in the generated config for the DataCloudflareAccountToken
 
 The id of the existing DataCloudflareAccountToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/account_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -829,7 +829,7 @@ new DataCloudflareAccountTokenConfig {
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.accountId">AccountId</a></code> | <code>string</code> | Account identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.filter">Filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenConfig.property.tokenId">TokenId</a></code> | <code>string</code> | Token identifier tag. |
 
 ---
@@ -914,7 +914,7 @@ public string AccountId { get; set; }
 
 Account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/account_token#account_id DataCloudflareAccountToken#account_id}
 
 ---
 
@@ -926,7 +926,7 @@ public DataCloudflareAccountTokenFilter Filter { get; set; }
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareAccountToken.DataCloudflareAccountTokenFilter">DataCloudflareAccountTokenFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/account_token#filter DataCloudflareAccountToken#filter}.
 
 ---
 
@@ -940,7 +940,7 @@ public string TokenId { get; set; }
 
 Token identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/account_token#token_id DataCloudflareAccountToken#token_id}
 
 ---
 
@@ -974,7 +974,7 @@ public string Direction { get; set; }
 
 Direction to order results. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/account_token#direction DataCloudflareAccountToken#direction}
 
 ---
 

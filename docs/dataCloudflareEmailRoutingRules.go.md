@@ -4,7 +4,7 @@
 
 ### DataCloudflareEmailRoutingRules <a name="DataCloudflareEmailRoutingRules" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_routing_rules cloudflare_email_routing_rules}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareEmailRoutingRules.DataCloudflareEmailRoutingRules.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareEmailRouting
 
 The id of the existing DataCloudflareEmailRoutingRules that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_rules#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_routing_rules#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ Enabled interface{}
 
 Filter by enabled routing rules.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_rules#enabled DataCloudflareEmailRoutingRules#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_routing_rules#enabled DataCloudflareEmailRoutingRules#enabled}
 
 ---
 
@@ -790,7 +790,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_rules#max_items DataCloudflareEmailRoutingRules#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_routing_rules#max_items DataCloudflareEmailRoutingRules#max_items}
 
 ---
 
@@ -804,7 +804,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/email_routing_rules#zone_id DataCloudflareEmailRoutingRules#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/email_routing_rules#zone_id DataCloudflareEmailRoutingRules#zone_id}
 
 ---
 

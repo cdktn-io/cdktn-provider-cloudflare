@@ -4,7 +4,7 @@
 
 ### SchemaValidationSettings <a name="SchemaValidationSettings" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings cloudflare_schema_validation_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer"></a>
 
@@ -20,8 +20,8 @@ SchemaValidationSettings.Builder.create(Construct scope, java.lang.String id)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .validationDefaultMitigationAction(java.lang.String)
+    .zoneId(java.lang.String)
 //  .validationOverrideMitigationAction(java.lang.String)
-//  .zoneId(java.lang.String)
     .build();
 ```
 
@@ -37,8 +37,8 @@ SchemaValidationSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.validationDefaultMitigationAction">validationDefaultMitigationAction</a></code> | <code>java.lang.String</code> | The default mitigation action used Mitigation actions are as follows:. |
-| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.validationOverrideMitigationAction">validationOverrideMitigationAction</a></code> | <code>java.lang.String</code> | When set, this overrides both zone level and operation level mitigation actions. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.validationOverrideMitigationAction">validationOverrideMitigationAction</a></code> | <code>java.lang.String</code> | When set, this overrides both zone level and operation level mitigation actions. |
 
 ---
 
@@ -114,7 +114,17 @@ The default mitigation action used Mitigation actions are as follows:.
   * `"none"` - skip running schema validation
     Available values: "none", "log", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.zoneId"></a>
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
 
 ---
 
@@ -129,17 +139,7 @@ When set, this overrides both zone level and operation level mitigation actions.
   * `null` - clears any existing override
     Available values: "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
-
----
-
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.Initializer.parameter.zoneId"></a>
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
 
 ---
 
@@ -172,7 +172,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.resetValidationOverrideMitigationAction">resetValidationOverrideMitigationAction</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -493,12 +492,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 public void resetValidationOverrideMitigationAction()
 ```
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettings.resetZoneId"></a>
-
-```java
-public void resetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -602,7 +595,7 @@ The construct id used in the generated config for the SchemaValidationSettings t
 
 The id of the existing SchemaValidationSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -879,8 +872,8 @@ SchemaValidationSettingsConfig.builder()
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .validationDefaultMitigationAction(java.lang.String)
+    .zoneId(java.lang.String)
 //  .validationOverrideMitigationAction(java.lang.String)
-//  .zoneId(java.lang.String)
     .build();
 ```
 
@@ -896,8 +889,8 @@ SchemaValidationSettingsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.validationDefaultMitigationAction">validationDefaultMitigationAction</a></code> | <code>java.lang.String</code> | The default mitigation action used Mitigation actions are as follows:. |
-| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.validationOverrideMitigationAction">validationOverrideMitigationAction</a></code> | <code>java.lang.String</code> | When set, this overrides both zone level and operation level mitigation actions. |
 | <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.validationOverrideMitigationAction">validationOverrideMitigationAction</a></code> | <code>java.lang.String</code> | When set, this overrides both zone level and operation level mitigation actions. |
 
 ---
 
@@ -987,7 +980,21 @@ The default mitigation action used Mitigation actions are as follows:.
   * `"none"` - skip running schema validation
     Available values: "none", "log", "block".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings#validation_default_mitigation_action SchemaValidationSettings#validation_default_mitigation_action}
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.zoneId"></a>
+
+```java
+public java.lang.String getZoneId();
+```
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
 
 ---
 
@@ -1006,21 +1013,7 @@ When set, this overrides both zone level and operation level mitigation actions.
   * `null` - clears any existing override
     Available values: "none".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
-
----
-
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.schemaValidationSettings.SchemaValidationSettingsConfig.property.zoneId"></a>
-
-```java
-public java.lang.String getZoneId();
-```
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/schema_validation_settings#zone_id SchemaValidationSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/schema_validation_settings#validation_override_mitigation_action SchemaValidationSettings#validation_override_mitigation_action}
 
 ---
 

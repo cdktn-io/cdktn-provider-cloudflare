@@ -4,7 +4,7 @@
 
 ### WorkersKvNamespace <a name="WorkersKvNamespace" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv_namespace cloudflare_workers_kv_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespace.resetAccountId"></a>
-
-```typescript
-public resetAccountId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the WorkersKvNamespace to impo
 
 The id of the existing WorkersKvNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv_namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -778,8 +771,8 @@ const workersKvNamespaceConfig: workersKvNamespace.WorkersKvNamespaceConfig = { 
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.title">title</a></code> | <code>string</code> | A human-readable string name for a Namespace. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.title">title</a></code> | <code>string</code> | A human-readable string name for a Namespace. |
 
 ---
 
@@ -853,6 +846,20 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+
+---
+
 ##### `title`<sup>Required</sup> <a name="title" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.title"></a>
 
 ```typescript
@@ -863,21 +870,7 @@ public readonly title: string;
 
 A human-readable string name for a Namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.workersKvNamespace.WorkersKvNamespaceConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv_namespace#account_id WorkersKvNamespace#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv_namespace#title WorkersKvNamespace#title}
 
 ---
 

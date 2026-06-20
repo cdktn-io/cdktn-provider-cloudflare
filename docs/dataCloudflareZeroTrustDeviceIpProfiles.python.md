@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDeviceIpProfiles <a name="DataCloudflareZeroTrustDeviceIpProfiles" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles cloudflare_zero_trust_device_ip_profiles}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles cloudflare_zero_trust_device_ip_profiles}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfiles.Initializer.parameter.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | The number of IP profiles to return per page. |
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#max_items DataCloudflareZeroTrustDeviceIpProfiles#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#max_items DataCloudflareZeroTrustDeviceIpProfiles#max_items}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The number of IP profiles to return per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#per_page DataCloudflareZeroTrustDeviceIpProfiles#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#per_page DataCloudflareZeroTrustDeviceIpProfiles#per_page}
 
 ---
 
@@ -532,7 +532,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDev
 
 The id of the existing DataCloudflareZeroTrustDeviceIpProfiles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,7 +814,7 @@ dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesC
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDeviceIpProfiles.DataCloudflareZeroTrustDeviceIpProfilesConfig.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | The number of IP profiles to return per page. |
 
@@ -898,7 +898,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#account_id DataCloudflareZeroTrustDeviceIpProfiles#account_id}.
 
 ---
 
@@ -912,7 +912,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#max_items DataCloudflareZeroTrustDeviceIpProfiles#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#max_items DataCloudflareZeroTrustDeviceIpProfiles#max_items}
 
 ---
 
@@ -926,7 +926,7 @@ per_page: typing.Union[int, float]
 
 The number of IP profiles to return per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_device_ip_profiles#per_page DataCloudflareZeroTrustDeviceIpProfiles#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_device_ip_profiles#per_page DataCloudflareZeroTrustDeviceIpProfiles#per_page}
 
 ---
 

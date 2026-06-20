@@ -4,14 +4,14 @@
 
 ### EmailRoutingSettings <a name="EmailRoutingSettings" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_settings cloudflare_email_routing_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer"></a>
 
 ```typescript
 import { emailRoutingSettings } from '@cdktn/provider-cloudflare'
 
-new emailRoutingSettings.EmailRoutingSettings(scope: Construct, id: string, config?: EmailRoutingSettingsConfig)
+new emailRoutingSettings.EmailRoutingSettings(scope: Construct, id: string, config: EmailRoutingSettingsConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig">EmailRoutingSettingsConfig</a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettings.resetZoneId"></a>
-
-```typescript
-public resetZoneId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the EmailRoutingSettings to im
 
 The id of the existing EmailRoutingSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -896,7 +889,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.emailRoutingSettings.EmailRoutingSettingsConfig.property.zoneId"></a>
 
 ```typescript
 public readonly zoneId: string;
@@ -906,7 +899,7 @@ public readonly zoneId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_settings#zone_id EmailRoutingSettings#zone_id}
 
 ---
 

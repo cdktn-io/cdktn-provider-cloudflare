@@ -4,7 +4,7 @@
 
 ### ZeroTrustDlpEntry <a name="ZeroTrustDlpEntry" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry cloudflare_zero_trust_dlp_entry}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer"></a>
 
@@ -21,10 +21,10 @@ zeroTrustDlpEntry.ZeroTrustDlpEntry(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   enabled: bool | IResolvable,
   name: str,
   pattern: ZeroTrustDlpEntryPattern,
-  account_id: str = None,
   description: str = None,
   profile_id: str = None,
   type: str = None
@@ -42,12 +42,12 @@ zeroTrustDlpEntry.ZeroTrustDlpEntry(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.pattern">pattern</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.profileId">profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.pattern">pattern</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.profileId">profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.type">type</a></code> | <code>str</code> | Available values: "custom", "predefined", "integration". |
 
 ---
@@ -112,11 +112,19 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.enabled"></a>
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
 
 ---
 
@@ -124,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
 
 ---
 
@@ -132,15 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
 
 ---
 
@@ -148,7 +148,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}.
 
 ---
 
@@ -156,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "custom", "predefined", "integration".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
 
 ---
 
@@ -199,7 +199,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.putPattern">put_pattern</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.resetProfileId">reset_profile_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.resetType">reset_type</a></code> | *No description.* |
@@ -567,7 +566,7 @@ def put_pattern(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}.
 
 ---
 
@@ -577,15 +576,9 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Available values: "luhn".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#validation ZeroTrustDlpEntry#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#validation ZeroTrustDlpEntry#validation}
 
 ---
-
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
 
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntry.resetDescription"></a>
 
@@ -719,7 +712,7 @@ The construct id used in the generated config for the ZeroTrustDlpEntry to impor
 
 The id of the existing ZeroTrustDlpEntry that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1204,10 +1197,10 @@ zeroTrustDlpEntry.ZeroTrustDlpEntryConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   enabled: bool | IResolvable,
   name: str,
   pattern: ZeroTrustDlpEntryPattern,
-  account_id: str = None,
   description: str = None,
   profile_id: str = None,
   type: str = None
@@ -1225,12 +1218,12 @@ zeroTrustDlpEntry.ZeroTrustDlpEntryConfig(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.pattern">pattern</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.profileId">profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.pattern">pattern</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.profileId">profile_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.type">type</a></code> | <code>str</code> | Available values: "custom", "predefined", "integration". |
 
 ---
@@ -1305,6 +1298,18 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
+
+---
+
 ##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.enabled"></a>
 
 ```python
@@ -1313,7 +1318,7 @@ enabled: bool | IResolvable
 
 - *Type:* bool | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#enabled ZeroTrustDlpEntry#enabled}.
 
 ---
 
@@ -1325,7 +1330,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#name ZeroTrustDlpEntry#name}.
 
 ---
 
@@ -1337,19 +1342,7 @@ pattern: ZeroTrustDlpEntryPattern
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern">ZeroTrustDlpEntryPattern</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#account_id ZeroTrustDlpEntry#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#pattern ZeroTrustDlpEntry#pattern}.
 
 ---
 
@@ -1361,7 +1354,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#description ZeroTrustDlpEntry#description}.
 
 ---
 
@@ -1373,7 +1366,7 @@ profile_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#profile_id ZeroTrustDlpEntry#profile_id}.
 
 ---
 
@@ -1387,7 +1380,7 @@ type: str
 
 Available values: "custom", "predefined", "integration".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#type ZeroTrustDlpEntry#type}
 
 ---
 
@@ -1408,7 +1401,7 @@ zeroTrustDlpEntry.ZeroTrustDlpEntryPattern(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern.property.regex">regex</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern.property.regex">regex</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpEntry.ZeroTrustDlpEntryPattern.property.validation">validation</a></code> | <code>str</code> | Available values: "luhn". |
 
 ---
@@ -1421,7 +1414,7 @@ regex: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#regex ZeroTrustDlpEntry#regex}.
 
 ---
 
@@ -1435,7 +1428,7 @@ validation: str
 
 Available values: "luhn".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_entry#validation ZeroTrustDlpEntry#validation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_entry#validation ZeroTrustDlpEntry#validation}
 
 ---
 

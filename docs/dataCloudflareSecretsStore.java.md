@@ -4,7 +4,7 @@
 
 ### DataCloudflareSecretsStore <a name="DataCloudflareSecretsStore" id="@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store cloudflare_secrets_store}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store cloudflare_secrets_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore.Initializer"></a>
 
@@ -37,7 +37,7 @@ DataCloudflareSecretsStore.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Account Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreFilter">DataCloudflareSecretsStoreFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreFilter">DataCloudflareSecretsStoreFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStore.Initializer.parameter.storeId">storeId</a></code> | <code>java.lang.String</code> | Store Identifier. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#account_id DataCloudflareSecretsStore#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#account_id DataCloudflareSecretsStore#account_id}
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreFilter">DataCloudflareSecretsStoreFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Store Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#store_id DataCloudflareSecretsStore#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#store_id DataCloudflareSecretsStore#store_id}
 
 ---
 
@@ -498,7 +498,7 @@ The construct id used in the generated config for the DataCloudflareSecretsStore
 
 The id of the existing DataCloudflareSecretsStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,7 +814,7 @@ DataCloudflareSecretsStoreConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Account Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreFilter">DataCloudflareSecretsStoreFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreFilter">DataCloudflareSecretsStoreFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreConfig.property.storeId">storeId</a></code> | <code>java.lang.String</code> | Store Identifier. |
 
 ---
@@ -899,7 +899,7 @@ public java.lang.String getAccountId();
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#account_id DataCloudflareSecretsStore#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#account_id DataCloudflareSecretsStore#account_id}
 
 ---
 
@@ -911,7 +911,7 @@ public DataCloudflareSecretsStoreFilter getFilter();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareSecretsStore.DataCloudflareSecretsStoreFilter">DataCloudflareSecretsStoreFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#filter DataCloudflareSecretsStore#filter}.
 
 ---
 
@@ -925,7 +925,7 @@ public java.lang.String getStoreId();
 
 Store Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#store_id DataCloudflareSecretsStore#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#store_id DataCloudflareSecretsStore#store_id}
 
 ---
 
@@ -961,7 +961,7 @@ public java.lang.String getDirection();
 
 Direction to sort objects Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#direction DataCloudflareSecretsStore#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#direction DataCloudflareSecretsStore#direction}
 
 ---
 
@@ -975,7 +975,7 @@ public java.lang.String getOrder();
 
 Order secrets by values in the given field Available values: "name", "comment", "created", "modified", "status".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store#order DataCloudflareSecretsStore#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store#order DataCloudflareSecretsStore#order}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ZeroTrustList <a name="ZeroTrustList" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.putItems">putItems</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetItems">resetItems</a></code> | *No description.* |
 
@@ -402,12 +401,6 @@ public putItems(value: IResolvable | ZeroTrustListItems[]): void
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetAccountId"></a>
-
-```typescript
-public resetAccountId(): void
-```
-
 ##### `resetDescription` <a name="resetDescription" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetDescription"></a>
 
 ```typescript
@@ -523,7 +516,7 @@ The construct id used in the generated config for the ZeroTrustList to import.
 
 The id of the existing ZeroTrustList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -893,9 +886,9 @@ const zeroTrustListConfig: zeroTrustList.ZeroTrustListConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.name">name</a></code> | <code>string</code> | Specify the list name. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.type">type</a></code> | <code>string</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID". |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.description">description</a></code> | <code>string</code> | Provide the list description. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.items">items</a></code> | <code>cdktn.IResolvable \| <a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListItems">ZeroTrustListItems</a>[]</code> | Add items to the list. |
 
@@ -971,6 +964,18 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.name"></a>
 
 ```typescript
@@ -981,7 +986,7 @@ public readonly name: string;
 
 Specify the list name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
 
 ---
 
@@ -995,19 +1000,7 @@ public readonly type: string;
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
 
 ---
 
@@ -1021,7 +1014,7 @@ public readonly description: string;
 
 Provide the list description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
 
 ---
 
@@ -1035,7 +1028,7 @@ public readonly items: IResolvable | ZeroTrustListItems[];
 
 Add items to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
 
 ---
 
@@ -1068,7 +1061,7 @@ public readonly description: string;
 
 Provide the list item description (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
 
 ---
 
@@ -1082,7 +1075,7 @@ public readonly value: string;
 
 Specify the item value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#value ZeroTrustList#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#value ZeroTrustList#value}
 
 ---
 

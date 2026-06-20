@@ -4,7 +4,7 @@
 
 ### CloudforceOneRequestPriority <a name="CloudforceOneRequestPriority" id="@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_priority cloudflare_cloudforce_one_request_priority}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriority.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the CloudforceOneRequestPriori
 
 The id of the existing CloudforceOneRequestPriority that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_priority#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_priority#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -937,11 +930,11 @@ new CloudforceOneRequestPriorityConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string AccountId,
     string[] Labels,
     double Priority,
     string Requirement,
-    string Tlp,
-    string AccountId = null
+    string Tlp
 };
 ```
 
@@ -956,11 +949,11 @@ new CloudforceOneRequestPriorityConfig {
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.labels">Labels</a></code> | <code>string[]</code> | List of labels. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.priority">Priority</a></code> | <code>double</code> | Priority. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.requirement">Requirement</a></code> | <code>string</code> | Requirement. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.tlp">Tlp</a></code> | <code>string</code> | The CISA defined Traffic Light Protocol (TLP). Available values: "clear", "amber", "amber-strict", "green", "red". |
-| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -1034,6 +1027,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_priority#account_id CloudforceOneRequestPriority#account_id}
+
+---
+
 ##### `Labels`<sup>Required</sup> <a name="Labels" id="@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.labels"></a>
 
 ```csharp
@@ -1044,7 +1051,7 @@ public string[] Labels { get; set; }
 
 List of labels.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_priority#labels CloudforceOneRequestPriority#labels}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_priority#labels CloudforceOneRequestPriority#labels}
 
 ---
 
@@ -1058,7 +1065,7 @@ public double Priority { get; set; }
 
 Priority.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_priority#priority CloudforceOneRequestPriority#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_priority#priority CloudforceOneRequestPriority#priority}
 
 ---
 
@@ -1072,7 +1079,7 @@ public string Requirement { get; set; }
 
 Requirement.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_priority#requirement CloudforceOneRequestPriority#requirement}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_priority#requirement CloudforceOneRequestPriority#requirement}
 
 ---
 
@@ -1086,21 +1093,7 @@ public string Tlp { get; set; }
 
 The CISA defined Traffic Light Protocol (TLP). Available values: "clear", "amber", "amber-strict", "green", "red".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_priority#tlp CloudforceOneRequestPriority#tlp}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.cloudforceOneRequestPriority.CloudforceOneRequestPriorityConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_priority#account_id CloudforceOneRequestPriority#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_priority#tlp CloudforceOneRequestPriority#tlp}
 
 ---
 

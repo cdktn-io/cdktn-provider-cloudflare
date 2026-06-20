@@ -4,7 +4,7 @@
 
 ### ZeroTrustList <a name="ZeroTrustList" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list cloudflare_zero_trust_list}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer"></a>
 
@@ -21,9 +21,9 @@ zeroTrustList.ZeroTrustList(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   name: str,
   type: str,
-  account_id: str = None,
   description: str = None,
   items: IResolvable | typing.List[ZeroTrustListItems] = None
 )
@@ -40,9 +40,9 @@ zeroTrustList.ZeroTrustList(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.name">name</a></code> | <code>str</code> | Specify the list name. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.type">type</a></code> | <code>str</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID". |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.description">description</a></code> | <code>str</code> | Provide the list description. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.items">items</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListItems">ZeroTrustListItems</a>]</code> | Add items to the list. |
 
@@ -108,13 +108,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 Specify the list name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
 
 ---
 
@@ -124,15 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
 
 ---
 
@@ -142,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Provide the list description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Add items to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
 
 ---
 
@@ -185,7 +185,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.putItems">put_items</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetDescription">reset_description</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetItems">reset_items</a></code> | *No description.* |
 
@@ -553,12 +552,6 @@ def put_items(
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 ##### `reset_description` <a name="reset_description" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustList.resetDescription"></a>
 
 ```python
@@ -685,7 +678,7 @@ The construct id used in the generated config for the ZeroTrustList to import.
 
 The id of the existing ZeroTrustList that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1049,9 +1042,9 @@ zeroTrustList.ZeroTrustListConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   name: str,
   type: str,
-  account_id: str = None,
   description: str = None,
   items: IResolvable | typing.List[ZeroTrustListItems] = None
 )
@@ -1068,9 +1061,9 @@ zeroTrustList.ZeroTrustListConfig(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.name">name</a></code> | <code>str</code> | Specify the list name. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.type">type</a></code> | <code>str</code> | Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID". |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.description">description</a></code> | <code>str</code> | Provide the list description. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.items">items</a></code> | <code>cdktn.IResolvable \| typing.List[<a href="#@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListItems">ZeroTrustListItems</a>]</code> | Add items to the list. |
 
@@ -1146,6 +1139,18 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.name"></a>
 
 ```python
@@ -1156,7 +1161,7 @@ name: str
 
 Specify the list name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#name ZeroTrustList#name}
 
 ---
 
@@ -1170,19 +1175,7 @@ type: str
 
 Specify the list type. Available values: "SERIAL", "URL", "DOMAIN", "EMAIL", "IP", "CATEGORY", "LOCATION", "DEVICE", "AAGUID".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustList.ZeroTrustListConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#account_id ZeroTrustList#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#type ZeroTrustList#type}
 
 ---
 
@@ -1196,7 +1189,7 @@ description: str
 
 Provide the list description.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
 
 ---
 
@@ -1210,7 +1203,7 @@ items: IResolvable | typing.List[ZeroTrustListItems]
 
 Add items to the list.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#items ZeroTrustList#items}
 
 ---
 
@@ -1246,7 +1239,7 @@ description: str
 
 Provide the list item description (optional).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#description ZeroTrustList#description}
 
 ---
 
@@ -1260,7 +1253,7 @@ value: str
 
 Specify the item value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_list#value ZeroTrustList#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_list#value ZeroTrustList#value}
 
 ---
 

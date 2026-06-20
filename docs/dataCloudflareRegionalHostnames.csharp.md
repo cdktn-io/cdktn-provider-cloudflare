@@ -4,7 +4,7 @@
 
 ### DataCloudflareRegionalHostnames <a name="DataCloudflareRegionalHostnames" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostnames.DataCloudflareRegionalHostnames"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/regional_hostnames cloudflare_regional_hostnames}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/regional_hostnames cloudflare_regional_hostnames}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRegionalHostnames.DataCloudflareRegionalHostnames.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareRegionalHost
 
 The id of the existing DataCloudflareRegionalHostnames that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/regional_hostnames#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/regional_hostnames#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -745,7 +745,7 @@ public double MaxItems { get; set; }
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/regional_hostnames#max_items DataCloudflareRegionalHostnames#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/regional_hostnames#max_items DataCloudflareRegionalHostnames#max_items}
 
 ---
 
@@ -759,7 +759,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/regional_hostnames#zone_id DataCloudflareRegionalHostnames#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/regional_hostnames#zone_id DataCloudflareRegionalHostnames#zone_id}
 
 ---
 

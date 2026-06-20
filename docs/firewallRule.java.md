@@ -4,7 +4,7 @@
 
 ### FirewallRule <a name="FirewallRule" id="@cdktn/provider-cloudflare.firewallRule.FirewallRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule cloudflare_firewall_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer"></a>
 
@@ -21,7 +21,7 @@ FirewallRule.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .action(FirewallRuleAction)
     .filter(FirewallRuleFilter)
-//  .zoneId(java.lang.String)
+    .zoneId(java.lang.String)
     .build();
 ```
 
@@ -37,7 +37,7 @@ FirewallRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.action">action</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleAction">FirewallRuleAction</a></code> | The action to perform when the threshold of matched traffic within the configured period is exceeded. |
-| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
 
 ---
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 The action to perform when the threshold of matched traffic within the configured period is exceeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#action FirewallRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#action FirewallRule#action}
 
 ---
 
@@ -116,17 +116,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
 
 ---
 
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.firewallRule.FirewallRule.Initializer.parameter.zoneId"></a>
 
 - *Type:* java.lang.String
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
 
 ---
 
@@ -160,7 +160,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.putAction">putAction</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.putFilter">putFilter</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRule.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -499,12 +498,6 @@ public void putFilter(FirewallRuleFilter value)
 
 ---
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.firewallRule.FirewallRule.resetZoneId"></a>
-
-```java
-public void resetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -608,7 +601,7 @@ The construct id used in the generated config for the FirewallRule to import.
 
 The id of the existing FirewallRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -969,7 +962,7 @@ public java.lang.String getMode();
 
 The action to perform. Available values: "simulate", "ban", "challenge", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#mode FirewallRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#mode FirewallRule#mode}
 
 ---
 
@@ -986,7 +979,7 @@ A custom content type and reponse to return when the threshold is exceeded.
 The custom response configured in this object will override the custom error for the zone. This object is optional.
 Notes: If you omit this object, Cloudflare will use the default HTML error page. If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone challenge pages and you should not provide the "response" object.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#response FirewallRule#response}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#response FirewallRule#response}
 
 ---
 
@@ -1003,7 +996,7 @@ The time in seconds during which Cloudflare will perform the mitigation action.
 Must be an integer value greater than or equal to the period.
 Notes: If "mode" is "challenge", "managed_challenge", or "js_challenge", Cloudflare will use the zone's Challenge Passage time and you should not provide this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#timeout FirewallRule#timeout}
 
 ---
 
@@ -1039,7 +1032,7 @@ public java.lang.String getBody();
 
 The response body to return. The value must conform to the configured content type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#body FirewallRule#body}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#body FirewallRule#body}
 
 ---
 
@@ -1053,7 +1046,7 @@ public java.lang.String getContentType();
 
 The content type of the body. Must be one of the following: `text/plain`, `text/xml`, or `application/json`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#content_type FirewallRule#content_type}
 
 ---
 
@@ -1074,7 +1067,7 @@ FirewallRuleConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .action(FirewallRuleAction)
     .filter(FirewallRuleFilter)
-//  .zoneId(java.lang.String)
+    .zoneId(java.lang.String)
     .build();
 ```
 
@@ -1090,7 +1083,7 @@ FirewallRuleConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.action">action</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleAction">FirewallRuleAction</a></code> | The action to perform when the threshold of matched traffic within the configured period is exceeded. |
-| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#filter FirewallRule#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
 
 ---
@@ -1175,7 +1168,7 @@ public FirewallRuleAction getAction();
 
 The action to perform when the threshold of matched traffic within the configured period is exceeded.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#action FirewallRule#action}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#action FirewallRule#action}
 
 ---
 
@@ -1187,11 +1180,11 @@ public FirewallRuleFilter getFilter();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.firewallRule.FirewallRuleFilter">FirewallRuleFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#filter FirewallRule#filter}.
 
 ---
 
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.firewallRule.FirewallRuleConfig.property.zoneId"></a>
 
 ```java
 public java.lang.String getZoneId();
@@ -1201,7 +1194,7 @@ public java.lang.String getZoneId();
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#zone_id FirewallRule#zone_id}
 
 ---
 
@@ -1241,7 +1234,7 @@ public java.lang.String getDescription();
 
 An informative summary of the filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#description FirewallRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#description FirewallRule#description}
 
 ---
 
@@ -1255,7 +1248,7 @@ public java.lang.String getExpression();
 
 The filter expression. For more information, refer to [Expressions](https://developers.cloudflare.com/ruleset-engine/rules-language/expressions/).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#expression FirewallRule#expression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#expression FirewallRule#expression}
 
 ---
 
@@ -1269,7 +1262,7 @@ public java.lang.Boolean|IResolvable getPaused();
 
 When true, indicates that the filter is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#paused FirewallRule#paused}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#paused FirewallRule#paused}
 
 ---
 
@@ -1283,7 +1276,7 @@ public java.lang.String getRef();
 
 A short reference tag. Allows you to select related filters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/firewall_rule#ref FirewallRule#ref}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/firewall_rule#ref FirewallRule#ref}
 
 ---
 

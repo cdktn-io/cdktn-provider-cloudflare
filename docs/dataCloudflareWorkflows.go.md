@@ -4,7 +4,7 @@
 
 ### DataCloudflareWorkflows <a name="DataCloudflareWorkflows" id="@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflows"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workflows cloudflare_workflows}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workflows cloudflare_workflows}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflows.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareWorkflows to
 
 The id of the existing DataCloudflareWorkflows that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workflows#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workflows#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -690,7 +690,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dataclou
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflowsConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflowsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflowsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflowsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workflows#account_id DataCloudflareWorkflows#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflowsConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workflows#account_id DataCloudflareWorkflows#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflowsConfig.property.maxItems">MaxItems</a></code> | <code>*f64</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareWorkflows.DataCloudflareWorkflowsConfig.property.search">Search</a></code> | <code>*string</code> | Allows filtering workflows` name. |
 
@@ -774,7 +774,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workflows#account_id DataCloudflareWorkflows#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workflows#account_id DataCloudflareWorkflows#account_id}.
 
 ---
 
@@ -788,7 +788,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workflows#max_items DataCloudflareWorkflows#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workflows#max_items DataCloudflareWorkflows#max_items}
 
 ---
 
@@ -802,7 +802,7 @@ Search *string
 
 Allows filtering workflows` name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/workflows#search DataCloudflareWorkflows#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/workflows#search DataCloudflareWorkflows#search}
 
 ---
 

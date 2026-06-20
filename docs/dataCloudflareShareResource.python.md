@@ -4,7 +4,7 @@
 
 ### DataCloudflareShareResource <a name="DataCloudflareShareResource" id="@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource cloudflare_share_resource}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource cloudflare_share_resource}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource.Initializer"></a>
 
@@ -41,7 +41,7 @@ dataCloudflareShareResource.DataCloudflareShareResource(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource.Initializer.parameter.shareId">share_id</a></code> | <code>str</code> | Share identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceFilter">DataCloudflareShareResourceFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource.Initializer.parameter.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceFilter">DataCloudflareShareResourceFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResource.Initializer.parameter.shareResourceId">share_resource_id</a></code> | <code>str</code> | Share Resource identifier. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#account_id DataCloudflareShareResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#account_id DataCloudflareShareResource#account_id}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#share_id DataCloudflareShareResource#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#share_id DataCloudflareShareResource#share_id}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceFilter">DataCloudflareShareResourceFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}.
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Share Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#share_resource_id DataCloudflareShareResource#share_resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#share_resource_id DataCloudflareShareResource#share_resource_id}
 
 ---
 
@@ -427,7 +427,7 @@ def put_filter(
 
 Filter share resources by resource_type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#resource_type DataCloudflareShareResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#resource_type DataCloudflareShareResource#resource_type}
 
 ---
 
@@ -437,7 +437,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter share resources by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#status DataCloudflareShareResource#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#status DataCloudflareShareResource#status}
 
 ---
 
@@ -567,7 +567,7 @@ The construct id used in the generated config for the DataCloudflareShareResourc
 
 The id of the existing DataCloudflareShareResource that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -962,7 +962,7 @@ dataCloudflareShareResource.DataCloudflareShareResourceConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceConfig.property.accountId">account_id</a></code> | <code>str</code> | Account identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceConfig.property.shareId">share_id</a></code> | <code>str</code> | Share identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceFilter">DataCloudflareShareResourceFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceConfig.property.filter">filter</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceFilter">DataCloudflareShareResourceFilter</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceConfig.property.shareResourceId">share_resource_id</a></code> | <code>str</code> | Share Resource identifier. |
 
 ---
@@ -1047,7 +1047,7 @@ account_id: str
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#account_id DataCloudflareShareResource#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#account_id DataCloudflareShareResource#account_id}
 
 ---
 
@@ -1061,7 +1061,7 @@ share_id: str
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#share_id DataCloudflareShareResource#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#share_id DataCloudflareShareResource#share_id}
 
 ---
 
@@ -1073,7 +1073,7 @@ filter: DataCloudflareShareResourceFilter
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareShareResource.DataCloudflareShareResourceFilter">DataCloudflareShareResourceFilter</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#filter DataCloudflareShareResource#filter}.
 
 ---
 
@@ -1087,7 +1087,7 @@ share_resource_id: str
 
 Share Resource identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#share_resource_id DataCloudflareShareResource#share_resource_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#share_resource_id DataCloudflareShareResource#share_resource_id}
 
 ---
 
@@ -1123,7 +1123,7 @@ resource_type: str
 
 Filter share resources by resource_type. Available values: "custom-ruleset", "gateway-policy", "gateway-destination-ip", "gateway-block-page-settings", "gateway-extended-email-matching", "idp-federation-grant".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#resource_type DataCloudflareShareResource#resource_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#resource_type DataCloudflareShareResource#resource_type}
 
 ---
 
@@ -1137,7 +1137,7 @@ status: str
 
 Filter share resources by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/share_resource#status DataCloudflareShareResource#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_resource#status DataCloudflareShareResource#status}
 
 ---
 

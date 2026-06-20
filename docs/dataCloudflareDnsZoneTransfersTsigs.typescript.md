@@ -4,7 +4,7 @@
 
 ### DataCloudflareDnsZoneTransfersTsigs <a name="DataCloudflareDnsZoneTransfersTsigs" id="@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigs"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_tsigs cloudflare_dns_zone_transfers_tsigs}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigs.Initializer"></a>
 
@@ -401,7 +401,7 @@ The construct id used in the generated config for the DataCloudflareDnsZoneTrans
 
 The id of the existing DataCloudflareDnsZoneTransfersTsigs that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/dns_zone_transfers_tsigs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_tsigs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -650,7 +650,7 @@ const dataCloudflareDnsZoneTransfersTsigsConfig: dataCloudflareDnsZoneTransfersT
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/dns_zone_transfers_tsigs#account_id DataCloudflareDnsZoneTransfersTsigs#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_tsigs#account_id DataCloudflareDnsZoneTransfersTsigs#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareDnsZoneTransfersTsigs.DataCloudflareDnsZoneTransfersTsigsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -733,7 +733,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/dns_zone_transfers_tsigs#account_id DataCloudflareDnsZoneTransfersTsigs#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_tsigs#account_id DataCloudflareDnsZoneTransfersTsigs#account_id}.
 
 ---
 
@@ -747,7 +747,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/dns_zone_transfers_tsigs#max_items DataCloudflareDnsZoneTransfersTsigs#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/dns_zone_transfers_tsigs#max_items DataCloudflareDnsZoneTransfersTsigs#max_items}
 
 ---
 

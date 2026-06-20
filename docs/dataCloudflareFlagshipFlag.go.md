@@ -4,7 +4,7 @@
 
 ### DataCloudflareFlagshipFlag <a name="DataCloudflareFlagshipFlag" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag cloudflare_flagship_flag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareFlagshipFlag.DataCloudflareFlagshipFlag.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareFlagshipFlag
 
 The id of the existing DataCloudflareFlagshipFlag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -843,7 +843,7 @@ AccountId *string
 
 Cloudflare account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag#account_id DataCloudflareFlagshipFlag#account_id}
 
 ---
 
@@ -857,7 +857,7 @@ AppId *string
 
 App identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag#app_id DataCloudflareFlagshipFlag#app_id}
 
 ---
 
@@ -871,7 +871,7 @@ FlagKey *string
 
 Flag key (slug).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/flagship_flag#flag_key DataCloudflareFlagshipFlag#flag_key}
 
 ---
 

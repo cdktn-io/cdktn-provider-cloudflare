@@ -4,7 +4,7 @@
 
 ### ZeroTrustDlpSensitivityLevel <a name="ZeroTrustDlpSensitivityLevel" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level cloudflare_zero_trust_dlp_sensitivity_level}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer"></a>
 
@@ -39,10 +39,10 @@ zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.sensitivityGroupId">sensitivity_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.sensitivityGroupId">sensitivity_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevel.Initializer.parameter.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}.
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}.
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}.
 
 ---
 
@@ -638,7 +638,7 @@ The construct id used in the generated config for the ZeroTrustDlpSensitivityLev
 
 The id of the existing ZeroTrustDlpSensitivityLevel that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -987,10 +987,10 @@ zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.sensitivityGroupId">sensitivity_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.name">name</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.sensitivityGroupId">sensitivity_group_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSensitivityLevel.ZeroTrustDlpSensitivityLevelConfig.property.description">description</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}. |
 
 ---
 
@@ -1072,7 +1072,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#account_id ZeroTrustDlpSensitivityLevel#account_id}.
 
 ---
 
@@ -1084,7 +1084,7 @@ name: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#name ZeroTrustDlpSensitivityLevel#name}.
 
 ---
 
@@ -1096,7 +1096,7 @@ sensitivity_group_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#sensitivity_group_id ZeroTrustDlpSensitivityLevel#sensitivity_group_id}.
 
 ---
 
@@ -1108,7 +1108,7 @@ description: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_sensitivity_level#description ZeroTrustDlpSensitivityLevel#description}.
 
 ---
 

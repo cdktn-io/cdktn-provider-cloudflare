@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDlpDataTags <a name="DataCloudflareZeroTrustDlpDataTags" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags cloudflare_zero_trust_dlp_data_tags}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags cloudflare_zero_trust_dlp_data_tags}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer"></a>
 
@@ -36,8 +36,8 @@ DataCloudflareZeroTrustDlpDataTags.Builder.create(Construct scope, java.lang.Str
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.categoryId">categoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.categoryId">categoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTags.Initializer.parameter.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -106,7 +106,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}.
 
 ---
 
@@ -114,7 +114,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}.
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#max_items DataCloudflareZeroTrustDlpDataTags#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#max_items DataCloudflareZeroTrustDlpDataTags#max_items}
 
 ---
 
@@ -476,7 +476,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDlp
 
 The id of the existing DataCloudflareZeroTrustDlpDataTags that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -758,8 +758,8 @@ DataCloudflareZeroTrustDlpDataTagsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.categoryId">categoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.categoryId">categoryId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTags.DataCloudflareZeroTrustDlpDataTagsConfig.property.maxItems">maxItems</a></code> | <code>java.lang.Number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -842,7 +842,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#account_id DataCloudflareZeroTrustDlpDataTags#account_id}.
 
 ---
 
@@ -854,7 +854,7 @@ public java.lang.String getCategoryId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#category_id DataCloudflareZeroTrustDlpDataTags#category_id}.
 
 ---
 
@@ -868,7 +868,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tags#max_items DataCloudflareZeroTrustDlpDataTags#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tags#max_items DataCloudflareZeroTrustDlpDataTags#max_items}
 
 ---
 

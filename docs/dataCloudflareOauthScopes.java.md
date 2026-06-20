@@ -4,7 +4,7 @@
 
 ### DataCloudflareOauthScopes <a name="DataCloudflareOauthScopes" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/oauth_scopes cloudflare_oauth_scopes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareOauthScopes.DataCloudflareOauthScopes.Initializer"></a>
 
@@ -104,7 +104,7 @@ Must be unique amongst siblings in the same scope
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/oauth_scopes#max_items DataCloudflareOauthScopes#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/oauth_scopes#max_items DataCloudflareOauthScopes#max_items}
 
 ---
 
@@ -456,7 +456,7 @@ The construct id used in the generated config for the DataCloudflareOauthScopes 
 
 The id of the existing DataCloudflareOauthScopes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/oauth_scopes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/oauth_scopes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -776,7 +776,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/oauth_scopes#max_items DataCloudflareOauthScopes#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/oauth_scopes#max_items DataCloudflareOauthScopes#max_items}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### ZeroTrustDeviceSubnet <a name="ZeroTrustDeviceSubnet" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet cloudflare_zero_trust_device_subnet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer"></a>
 
@@ -21,9 +21,9 @@ zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   name: str,
   network: str,
-  account_id: str = None,
   comment: str = None,
   is_default_network: bool | IResolvable = None
 )
@@ -40,9 +40,9 @@ zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.name">name</a></code> | <code>str</code> | A user-friendly name for the subnet. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.network">network</a></code> | <code>str</code> | The private IPv4 or IPv6 range defining the subnet, in CIDR notation. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.comment">comment</a></code> | <code>str</code> | An optional description of the subnet. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.isDefaultNetwork">is_default_network</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, this is the default subnet for the account. There can only be one default subnet per account. |
 
@@ -108,13 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Cloudflare account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#account_id ZeroTrustDeviceSubnet#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 A user-friendly name for the subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#name ZeroTrustDeviceSubnet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#name ZeroTrustDeviceSubnet#name}
 
 ---
 
@@ -124,17 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#network ZeroTrustDeviceSubnet#network}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Cloudflare account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#account_id ZeroTrustDeviceSubnet#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#network ZeroTrustDeviceSubnet#network}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An optional description of the subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#comment ZeroTrustDeviceSubnet#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#comment ZeroTrustDeviceSubnet#comment}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If `true`, this is the default subnet for the account. There can only be one default subnet per account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#is_default_network ZeroTrustDeviceSubnet#is_default_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#is_default_network ZeroTrustDeviceSubnet#is_default_network}
 
 ---
 
@@ -186,7 +186,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.resetComment">reset_comment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.resetIsDefaultNetwork">reset_is_default_network</a></code> | *No description.* |
 
@@ -540,12 +539,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 ##### `reset_comment` <a name="reset_comment" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnet.resetComment"></a>
 
 ```python
@@ -672,7 +665,7 @@ The construct id used in the generated config for the ZeroTrustDeviceSubnet to i
 
 The id of the existing ZeroTrustDeviceSubnet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1036,9 +1029,9 @@ zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   name: str,
   network: str,
-  account_id: str = None,
   comment: str = None,
   is_default_network: bool | IResolvable = None
 )
@@ -1055,9 +1048,9 @@ zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig(
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.name">name</a></code> | <code>str</code> | A user-friendly name for the subnet. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.network">network</a></code> | <code>str</code> | The private IPv4 or IPv6 range defining the subnet, in CIDR notation. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.accountId">account_id</a></code> | <code>str</code> | Cloudflare account ID. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.comment">comment</a></code> | <code>str</code> | An optional description of the subnet. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.isDefaultNetwork">is_default_network</a></code> | <code>bool \| cdktn.IResolvable</code> | If `true`, this is the default subnet for the account. There can only be one default subnet per account. |
 
@@ -1133,6 +1126,20 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Cloudflare account ID.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#account_id ZeroTrustDeviceSubnet#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.name"></a>
 
 ```python
@@ -1143,7 +1150,7 @@ name: str
 
 A user-friendly name for the subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#name ZeroTrustDeviceSubnet#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#name ZeroTrustDeviceSubnet#name}
 
 ---
 
@@ -1157,21 +1164,7 @@ network: str
 
 The private IPv4 or IPv6 range defining the subnet, in CIDR notation.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#network ZeroTrustDeviceSubnet#network}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.zeroTrustDeviceSubnet.ZeroTrustDeviceSubnetConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Cloudflare account ID.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#account_id ZeroTrustDeviceSubnet#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#network ZeroTrustDeviceSubnet#network}
 
 ---
 
@@ -1185,7 +1178,7 @@ comment: str
 
 An optional description of the subnet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#comment ZeroTrustDeviceSubnet#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#comment ZeroTrustDeviceSubnet#comment}
 
 ---
 
@@ -1199,7 +1192,7 @@ is_default_network: bool | IResolvable
 
 If `true`, this is the default subnet for the account. There can only be one default subnet per account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_device_subnet#is_default_network ZeroTrustDeviceSubnet#is_default_network}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_device_subnet#is_default_network ZeroTrustDeviceSubnet#is_default_network}
 
 ---
 

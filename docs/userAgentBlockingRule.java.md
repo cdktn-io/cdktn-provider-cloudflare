@@ -4,7 +4,7 @@
 
 ### UserAgentBlockingRule <a name="UserAgentBlockingRule" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule cloudflare_user_agent_blocking_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer"></a>
 
@@ -21,9 +21,9 @@ UserAgentBlockingRule.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .configuration(UserAgentBlockingRuleConfiguration)
     .mode(java.lang.String)
+    .zoneId(java.lang.String)
 //  .description(java.lang.String)
 //  .paused(java.lang.Boolean|IResolvable)
-//  .zoneId(java.lang.String)
     .build();
 ```
 
@@ -38,11 +38,11 @@ UserAgentBlockingRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration">UserAgentBlockingRuleConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}. |
+| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration">UserAgentBlockingRuleConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}. |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge". |
+| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | An informative summary of the rule. This value is sanitized and any tags will be removed. |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.paused">paused</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, indicates that the rule is currently paused. |
-| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
 
 ---
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration">UserAgentBlockingRuleConfiguration</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}.
 
 ---
 
@@ -120,7 +120,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.zoneId"></a>
+
+- *Type:* java.lang.String
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
 
 ---
 
@@ -130,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 An informative summary of the rule. This value is sanitized and any tags will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
 
 ---
 
@@ -140,17 +150,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 When true, indicates that the rule is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
-
----
-
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.Initializer.parameter.zoneId"></a>
-
-- *Type:* java.lang.String
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
 
 ---
 
@@ -185,7 +185,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.putConfiguration">putConfiguration</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.resetPaused">resetPaused</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -524,12 +523,6 @@ public void resetDescription()
 public void resetPaused()
 ```
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRule.resetZoneId"></a>
-
-```java
-public void resetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -633,7 +626,7 @@ The construct id used in the generated config for the UserAgentBlockingRule to i
 
 The id of the existing UserAgentBlockingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -966,9 +959,9 @@ UserAgentBlockingRuleConfig.builder()
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .configuration(UserAgentBlockingRuleConfiguration)
     .mode(java.lang.String)
+    .zoneId(java.lang.String)
 //  .description(java.lang.String)
 //  .paused(java.lang.Boolean|IResolvable)
-//  .zoneId(java.lang.String)
     .build();
 ```
 
@@ -983,11 +976,11 @@ UserAgentBlockingRuleConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration">UserAgentBlockingRuleConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}. |
+| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.configuration">configuration</a></code> | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration">UserAgentBlockingRuleConfiguration</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}. |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge". |
+| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | An informative summary of the rule. This value is sanitized and any tags will be removed. |
 | <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.paused">paused</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | When true, indicates that the rule is currently paused. |
-| <code><a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.zoneId">zoneId</a></code> | <code>java.lang.String</code> | Defines an identifier. |
 
 ---
 
@@ -1069,7 +1062,7 @@ public UserAgentBlockingRuleConfiguration getConfiguration();
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfiguration">UserAgentBlockingRuleConfiguration</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#configuration UserAgentBlockingRule#configuration}.
 
 ---
 
@@ -1083,7 +1076,21 @@ public java.lang.String getMode();
 
 The action to apply to a matched request. Available values: "block", "challenge", "whitelist", "js_challenge", "managed_challenge".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#mode UserAgentBlockingRule#mode}
+
+---
+
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.zoneId"></a>
+
+```java
+public java.lang.String getZoneId();
+```
+
+- *Type:* java.lang.String
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
 
 ---
 
@@ -1097,7 +1104,7 @@ public java.lang.String getDescription();
 
 An informative summary of the rule. This value is sanitized and any tags will be removed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#description UserAgentBlockingRule#description}
 
 ---
 
@@ -1111,21 +1118,7 @@ public java.lang.Boolean|IResolvable getPaused();
 
 When true, indicates that the rule is currently paused.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
-
----
-
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.userAgentBlockingRule.UserAgentBlockingRuleConfig.property.zoneId"></a>
-
-```java
-public java.lang.String getZoneId();
-```
-
-- *Type:* java.lang.String
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#zone_id UserAgentBlockingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#paused UserAgentBlockingRule#paused}
 
 ---
 
@@ -1164,7 +1157,7 @@ The configuration target.
 You must set the target to `ua` when specifying a user agent in the rule.
 Available values: "ua".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#target UserAgentBlockingRule#target}
 
 ---
 
@@ -1178,7 +1171,7 @@ public java.lang.String getValue();
 
 the user agent to exactly match.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/user_agent_blocking_rule#value UserAgentBlockingRule#value}
 
 ---
 

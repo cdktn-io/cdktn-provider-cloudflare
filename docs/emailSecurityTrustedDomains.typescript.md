@@ -4,7 +4,7 @@
 
 ### EmailSecurityTrustedDomains <a name="EmailSecurityTrustedDomains" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains cloudflare_email_security_trusted_domains}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.resetComments">resetComments</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.resetIsRecent">resetIsRecent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.resetIsRegex">resetIsRegex</a></code> | *No description.* |
@@ -391,12 +390,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.resetAccountId"></a>
-
-```typescript
-public resetAccountId(): void
-```
-
 ##### `resetComments` <a name="resetComments" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomains.resetComments"></a>
 
 ```typescript
@@ -524,7 +517,7 @@ The construct id used in the generated config for the EmailSecurityTrustedDomain
 
 The id of the existing EmailSecurityTrustedDomains that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -916,11 +909,11 @@ const emailSecurityTrustedDomainsConfig: emailSecurityTrustedDomains.EmailSecuri
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.pattern">pattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.accountId">accountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.comments">comments</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.pattern">pattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.comments">comments</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.isRecent">isRecent</a></code> | <code>boolean \| cdktn.IResolvable</code> | Select to prevent recently registered domains from triggering a Suspicious or Malicious disposition. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.isRegex">isRegex</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.isRegex">isRegex</a></code> | <code>boolean \| cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.isSimilarity">isSimilarity</a></code> | <code>boolean \| cdktn.IResolvable</code> | Select for partner or other approved domains that have similar spelling to your connected domains. |
 
 ---
@@ -995,19 +988,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `pattern`<sup>Required</sup> <a name="pattern" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.pattern"></a>
-
-```typescript
-public readonly pattern: string;
-```
-
-- *Type:* string
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}.
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -1017,7 +998,19 @@ public readonly accountId: string;
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#account_id EmailSecurityTrustedDomains#account_id}
+
+---
+
+##### `pattern`<sup>Required</sup> <a name="pattern" id="@cdktn/provider-cloudflare.emailSecurityTrustedDomains.EmailSecurityTrustedDomainsConfig.property.pattern"></a>
+
+```typescript
+public readonly pattern: string;
+```
+
+- *Type:* string
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#pattern EmailSecurityTrustedDomains#pattern}.
 
 ---
 
@@ -1029,7 +1022,7 @@ public readonly comments: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#comments EmailSecurityTrustedDomains#comments}.
 
 ---
 
@@ -1043,7 +1036,7 @@ public readonly isRecent: boolean | IResolvable;
 
 Select to prevent recently registered domains from triggering a Suspicious or Malicious disposition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#is_recent EmailSecurityTrustedDomains#is_recent}
 
 ---
 
@@ -1055,7 +1048,7 @@ public readonly isRegex: boolean | IResolvable;
 
 - *Type:* boolean | cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#is_regex EmailSecurityTrustedDomains#is_regex}.
 
 ---
 
@@ -1071,7 +1064,7 @@ Select for partner or other approved domains that have similar spelling to your 
 
 Prevents listed domains from triggering a Spoof disposition.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_trusted_domains#is_similarity EmailSecurityTrustedDomains#is_similarity}
 
 ---
 

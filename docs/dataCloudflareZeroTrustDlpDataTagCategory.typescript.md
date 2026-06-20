@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDlpDataTagCategory <a name="DataCloudflareZeroTrustDlpDataTagCategory" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategory.Initializer"></a>
 
@@ -387,7 +387,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDlp
 
 The id of the existing DataCloudflareZeroTrustDlpDataTagCategory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tag_category#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_category#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -702,8 +702,8 @@ const dataCloudflareZeroTrustDlpDataTagCategoryConfig: dataCloudflareZeroTrustDl
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategoryConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategoryConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategoryConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategoryConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tag_category#account_id DataCloudflareZeroTrustDlpDataTagCategory#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategoryConfig.property.categoryId">categoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tag_category#category_id DataCloudflareZeroTrustDlpDataTagCategory#category_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategoryConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_category#account_id DataCloudflareZeroTrustDlpDataTagCategory#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpDataTagCategory.DataCloudflareZeroTrustDlpDataTagCategoryConfig.property.categoryId">categoryId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_category#category_id DataCloudflareZeroTrustDlpDataTagCategory#category_id}. |
 
 ---
 
@@ -785,7 +785,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tag_category#account_id DataCloudflareZeroTrustDlpDataTagCategory#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_category#account_id DataCloudflareZeroTrustDlpDataTagCategory#account_id}.
 
 ---
 
@@ -797,7 +797,7 @@ public readonly categoryId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_data_tag_category#category_id DataCloudflareZeroTrustDlpDataTagCategory#category_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_data_tag_category#category_id DataCloudflareZeroTrustDlpDataTagCategory#category_id}.
 
 ---
 

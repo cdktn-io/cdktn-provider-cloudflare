@@ -4,14 +4,14 @@
 
 ### LeakedCredentialCheck <a name="LeakedCredentialCheck" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/leaked_credential_check cloudflare_leaked_credential_check}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.Initializer"></a>
 
 ```csharp
 using Io.Cdktn.Providers.Cloudflare;
 
-new LeakedCredentialCheck(Construct Scope, string Id, LeakedCredentialCheckConfig Config = null);
+new LeakedCredentialCheck(Construct Scope, string Id, LeakedCredentialCheckConfig Config);
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `Config`<sup>Optional</sup> <a name="Config" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.Initializer.parameter.config"></a>
+##### `Config`<sup>Required</sup> <a name="Config" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig">LeakedCredentialCheckConfig</a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.resetEnabled">ResetEnabled</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -394,12 +393,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 private void ResetEnabled()
 ```
 
-##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheck.resetZoneId"></a>
-
-```csharp
-private void ResetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -503,7 +496,7 @@ The construct id used in the generated config for the LeakedCredentialCheck to i
 
 The id of the existing LeakedCredentialCheck that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/leaked_credential_check#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,8 +750,8 @@ new LeakedCredentialCheckConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    bool|IResolvable Enabled = null,
-    string ZoneId = null
+    string ZoneId,
+    bool|IResolvable Enabled = null
 };
 ```
 
@@ -773,8 +766,8 @@ new LeakedCredentialCheckConfig {
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Determines whether or not Leaked Credential Checks are enabled. |
 | <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Defines an identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Determines whether or not Leaked Credential Checks are enabled. |
 
 ---
 
@@ -848,6 +841,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.zoneId"></a>
+
+```csharp
+public string ZoneId { get; set; }
+```
+
+- *Type:* string
+
+Defines an identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
+
+---
+
 ##### `Enabled`<sup>Optional</sup> <a name="Enabled" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.enabled"></a>
 
 ```csharp
@@ -858,21 +865,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Determines whether or not Leaked Credential Checks are enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
-
----
-
-##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.leakedCredentialCheck.LeakedCredentialCheckConfig.property.zoneId"></a>
-
-```csharp
-public string ZoneId { get; set; }
-```
-
-- *Type:* string
-
-Defines an identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/leaked_credential_check#zone_id LeakedCredentialCheck#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/leaked_credential_check#enabled LeakedCredentialCheck#enabled}
 
 ---
 

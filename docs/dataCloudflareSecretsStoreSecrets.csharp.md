@@ -4,7 +4,7 @@
 
 ### DataCloudflareSecretsStoreSecrets <a name="DataCloudflareSecretsStoreSecrets" id="@cdktn/provider-cloudflare.dataCloudflareSecretsStoreSecrets.DataCloudflareSecretsStoreSecrets"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets cloudflare_secrets_store_secrets}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets cloudflare_secrets_store_secrets}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSecretsStoreSecrets.DataCloudflareSecretsStoreSecrets.Initializer"></a>
 
@@ -422,7 +422,7 @@ The construct id used in the generated config for the DataCloudflareSecretsStore
 
 The id of the existing DataCloudflareSecretsStoreSecrets that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -886,7 +886,7 @@ public string AccountId { get; set; }
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#account_id DataCloudflareSecretsStoreSecrets#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#account_id DataCloudflareSecretsStoreSecrets#account_id}
 
 ---
 
@@ -900,7 +900,7 @@ public string StoreId { get; set; }
 
 Store Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#store_id DataCloudflareSecretsStoreSecrets#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#store_id DataCloudflareSecretsStoreSecrets#store_id}
 
 ---
 
@@ -914,7 +914,7 @@ public string Direction { get; set; }
 
 Direction to sort objects Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#direction DataCloudflareSecretsStoreSecrets#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#direction DataCloudflareSecretsStoreSecrets#direction}
 
 ---
 
@@ -928,7 +928,7 @@ public double MaxItems { get; set; }
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#max_items DataCloudflareSecretsStoreSecrets#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#max_items DataCloudflareSecretsStoreSecrets#max_items}
 
 ---
 
@@ -942,7 +942,7 @@ public string Order { get; set; }
 
 Order secrets by values in the given field Available values: "name", "comment", "created", "modified", "status".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#order DataCloudflareSecretsStoreSecrets#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#order DataCloudflareSecretsStoreSecrets#order}
 
 ---
 
@@ -956,7 +956,7 @@ public IResolvable|string[][] Scopes { get; set; }
 
 Only secrets with the given scopes will be returned.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#scopes DataCloudflareSecretsStoreSecrets#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#scopes DataCloudflareSecretsStoreSecrets#scopes}
 
 ---
 
@@ -970,7 +970,7 @@ public string Search { get; set; }
 
 Search secrets using a filter string, filtering across name and comment.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/secrets_store_secrets#search DataCloudflareSecretsStoreSecrets#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/secrets_store_secrets#search DataCloudflareSecretsStoreSecrets#search}
 
 ---
 

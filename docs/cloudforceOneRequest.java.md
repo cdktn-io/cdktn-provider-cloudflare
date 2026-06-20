@@ -4,7 +4,7 @@
 
 ### CloudforceOneRequest <a name="CloudforceOneRequest" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request cloudflare_cloudforce_one_request}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.Initializer"></a>
 
@@ -19,7 +19,7 @@ CloudforceOneRequest.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .content(java.lang.String)
 //  .priority(java.lang.String)
 //  .requestType(java.lang.String)
@@ -108,13 +108,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.Initializer.parameter.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#account_id CloudforceOneRequest#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#account_id CloudforceOneRequest#account_id}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Request content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Priority for analyzing the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Requested information from request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Brief description of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
 
 ---
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The CISA defined Traffic Light Protocol (TLP). Available values: "clear", "amber", "amber-strict", "green", "red".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
 
 ---
 
@@ -196,7 +196,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.resetContent">resetContent</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.resetPriority">resetPriority</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.resetRequestType">resetRequestType</a></code> | *No description.* |
@@ -516,12 +515,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetContent` <a name="resetContent" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequest.resetContent"></a>
 
 ```java
@@ -655,7 +648,7 @@ The construct id used in the generated config for the CloudforceOneRequest to im
 
 The id of the existing CloudforceOneRequest that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1096,7 +1089,7 @@ CloudforceOneRequestConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
 //  .content(java.lang.String)
 //  .priority(java.lang.String)
 //  .requestType(java.lang.String)
@@ -1195,7 +1188,7 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.cloudforceOneRequest.CloudforceOneRequestConfig.property.accountId"></a>
 
 ```java
 public java.lang.String getAccountId();
@@ -1205,7 +1198,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#account_id CloudforceOneRequest#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#account_id CloudforceOneRequest#account_id}
 
 ---
 
@@ -1219,7 +1212,7 @@ public java.lang.String getContent();
 
 Request content.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#content CloudforceOneRequest#content}
 
 ---
 
@@ -1233,7 +1226,7 @@ public java.lang.String getPriority();
 
 Priority for analyzing the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#priority CloudforceOneRequest#priority}
 
 ---
 
@@ -1247,7 +1240,7 @@ public java.lang.String getRequestType();
 
 Requested information from request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#request_type CloudforceOneRequest#request_type}
 
 ---
 
@@ -1261,7 +1254,7 @@ public java.lang.String getSummary();
 
 Brief description of the request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#summary CloudforceOneRequest#summary}
 
 ---
 
@@ -1275,7 +1268,7 @@ public java.lang.String getTlp();
 
 The CISA defined Traffic Light Protocol (TLP). Available values: "clear", "amber", "amber-strict", "green", "red".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request#tlp CloudforceOneRequest#tlp}
 
 ---
 

@@ -4,7 +4,7 @@
 
 ### DataCloudflareSpectrumApplications <a name="DataCloudflareSpectrumApplications" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications cloudflare_spectrum_applications}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications cloudflare_spectrum_applications}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareSpectrumApplications.DataCloudflareSpectrumApplications.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Sets the direction by which results are ordered. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
 
 ---
 
@@ -140,7 +140,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
 
 ---
 
@@ -513,7 +513,7 @@ The construct id used in the generated config for the DataCloudflareSpectrumAppl
 
 The id of the existing DataCloudflareSpectrumApplications that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -905,7 +905,7 @@ public java.lang.String getDirection();
 
 Sets the direction by which results are ordered. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#direction DataCloudflareSpectrumApplications#direction}
 
 ---
 
@@ -919,7 +919,7 @@ public java.lang.Number getMaxItems();
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#max_items DataCloudflareSpectrumApplications#max_items}
 
 ---
 
@@ -933,7 +933,7 @@ public java.lang.String getOrder();
 
 Application field by which results are ordered. Available values: "protocol", "app_id", "created_on", "modified_on", "dns".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#order DataCloudflareSpectrumApplications#order}
 
 ---
 
@@ -947,7 +947,7 @@ public java.lang.String getZoneId();
 
 Zone identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/spectrum_applications#zone_id DataCloudflareSpectrumApplications#zone_id}
 
 ---
 

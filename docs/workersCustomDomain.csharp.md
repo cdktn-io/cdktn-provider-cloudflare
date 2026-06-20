@@ -4,7 +4,7 @@
 
 ### WorkersCustomDomain <a name="WorkersCustomDomain" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain cloudflare_workers_custom_domain}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetEnvironment">ResetEnvironment</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetZoneId">ResetZoneId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetZoneName">ResetZoneName</a></code> | *No description.* |
@@ -390,12 +389,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 ##### `ResetEnvironment` <a name="ResetEnvironment" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomain.resetEnvironment"></a>
 
 ```csharp
@@ -517,7 +510,7 @@ The construct id used in the generated config for the WorkersCustomDomain to imp
 
 The id of the existing WorkersCustomDomain that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -881,9 +874,9 @@ new WorkersCustomDomainConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string AccountId,
     string Hostname,
     string Service,
-    string AccountId = null,
     string Environment = null,
     string ZoneId = null,
     string ZoneName = null
@@ -901,9 +894,9 @@ new WorkersCustomDomainConfig {
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.hostname">Hostname</a></code> | <code>string</code> | Hostname of the domain. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.service">Service</a></code> | <code>string</code> | Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker. |
-| <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.environment">Environment</a></code> | <code>string</code> | Worker environment associated with the domain. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | ID of the zone containing the domain hostname. |
 | <code><a href="#@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.zoneName">ZoneName</a></code> | <code>string</code> | Name of the zone containing the domain hostname. |
@@ -980,6 +973,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
+
+---
+
 ##### `Hostname`<sup>Required</sup> <a name="Hostname" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.hostname"></a>
 
 ```csharp
@@ -992,7 +999,7 @@ Hostname of the domain.
 
 Can be either the zone apex or a subdomain of the zone. Requests to this hostname will be routed to the configured Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain#hostname WorkersCustomDomain#hostname}
 
 ---
 
@@ -1006,21 +1013,7 @@ public string Service { get; set; }
 
 Name of the Worker associated with the domain. Requests to the configured hostname will be routed to this Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.workersCustomDomain.WorkersCustomDomainConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain#account_id WorkersCustomDomain#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain#service WorkersCustomDomain#service}
 
 ---
 
@@ -1034,7 +1027,7 @@ public string Environment { get; set; }
 
 Worker environment associated with the domain.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain#environment WorkersCustomDomain#environment}
 
 ---
 
@@ -1048,7 +1041,7 @@ public string ZoneId { get; set; }
 
 ID of the zone containing the domain hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain#zone_id WorkersCustomDomain#zone_id}
 
 ---
 
@@ -1062,7 +1055,7 @@ public string ZoneName { get; set; }
 
 Name of the zone containing the domain hostname.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_custom_domain#zone_name WorkersCustomDomain#zone_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_custom_domain#zone_name WorkersCustomDomain#zone_name}
 
 ---
 

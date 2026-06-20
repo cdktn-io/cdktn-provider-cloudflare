@@ -4,7 +4,7 @@
 
 ### MagicTransitSite <a name="MagicTransitSite" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site cloudflare_magic_transit_site}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer"></a>
 
@@ -19,8 +19,8 @@ MagicTransitSite.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .connectorId(java.lang.String)
 //  .description(java.lang.String)
 //  .haMode(java.lang.Boolean|IResolvable)
@@ -40,10 +40,10 @@ MagicTransitSite.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the site. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | The name of the site. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.connectorId">connectorId</a></code> | <code>java.lang.String</code> | Magic Connector identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#description MagicTransitSite#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#description MagicTransitSite#description}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.haMode">haMode</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Site high availability mode. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.location">location</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteLocation">MagicTransitSiteLocation</a></code> | Location of site in latitude and longitude. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.secondaryConnectorId">secondaryConnectorId</a></code> | <code>java.lang.String</code> | Magic Connector identifier tag. Used when high availability mode is on. |
@@ -110,23 +110,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.name"></a>
 
 - *Type:* java.lang.String
 
 The name of the site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Magic Connector identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#description MagicTransitSite#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#description MagicTransitSite#description}.
 
 ---
 
@@ -156,7 +156,7 @@ Site high availability mode.
 
 If set to true, the site can have two connectors and runs in high availability mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
 
 ---
 
@@ -166,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Location of site in latitude and longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
 
 ---
 
@@ -176,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Magic Connector identifier tag. Used when high availability mode is on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
 
 ---
 
@@ -209,7 +209,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.putLocation">putLocation</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.resetConnectorId">resetConnectorId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.resetHaMode">resetHaMode</a></code> | *No description.* |
@@ -541,12 +540,6 @@ public void putLocation(MagicTransitSiteLocation value)
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetConnectorId` <a name="resetConnectorId" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSite.resetConnectorId"></a>
 
 ```java
@@ -680,7 +673,7 @@ The construct id used in the generated config for the MagicTransitSite to import
 
 The id of the existing MagicTransitSite that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1055,8 +1048,8 @@ MagicTransitSiteConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .connectorId(java.lang.String)
 //  .description(java.lang.String)
 //  .haMode(java.lang.Boolean|IResolvable)
@@ -1076,10 +1069,10 @@ MagicTransitSiteConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the site. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.name">name</a></code> | <code>java.lang.String</code> | The name of the site. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.connectorId">connectorId</a></code> | <code>java.lang.String</code> | Magic Connector identifier tag. |
-| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#description MagicTransitSite#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.description">description</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#description MagicTransitSite#description}. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.haMode">haMode</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Site high availability mode. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.location">location</a></code> | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteLocation">MagicTransitSiteLocation</a></code> | Location of site in latitude and longitude. |
 | <code><a href="#@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.secondaryConnectorId">secondaryConnectorId</a></code> | <code>java.lang.String</code> | Magic Connector identifier tag. Used when high availability mode is on. |
@@ -1156,6 +1149,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.name"></a>
 
 ```java
@@ -1166,21 +1173,7 @@ public java.lang.String getName();
 
 The name of the site.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.magicTransitSite.MagicTransitSiteConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#account_id MagicTransitSite#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#name MagicTransitSite#name}
 
 ---
 
@@ -1194,7 +1187,7 @@ public java.lang.String getConnectorId();
 
 Magic Connector identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#connector_id MagicTransitSite#connector_id}
 
 ---
 
@@ -1206,7 +1199,7 @@ public java.lang.String getDescription();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#description MagicTransitSite#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#description MagicTransitSite#description}.
 
 ---
 
@@ -1222,7 +1215,7 @@ Site high availability mode.
 
 If set to true, the site can have two connectors and runs in high availability mode.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#ha_mode MagicTransitSite#ha_mode}
 
 ---
 
@@ -1236,7 +1229,7 @@ public MagicTransitSiteLocation getLocation();
 
 Location of site in latitude and longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#location MagicTransitSite#location}
 
 ---
 
@@ -1250,7 +1243,7 @@ public java.lang.String getSecondaryConnectorId();
 
 Magic Connector identifier tag. Used when high availability mode is on.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#secondary_connector_id MagicTransitSite#secondary_connector_id}
 
 ---
 
@@ -1286,7 +1279,7 @@ public java.lang.String getLat();
 
 Latitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#lat MagicTransitSite#lat}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#lat MagicTransitSite#lat}
 
 ---
 
@@ -1300,7 +1293,7 @@ public java.lang.String getLon();
 
 Longitude.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/magic_transit_site#lon MagicTransitSite#lon}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/magic_transit_site#lon MagicTransitSite#lon}
 
 ---
 

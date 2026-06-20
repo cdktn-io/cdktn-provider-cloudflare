@@ -4,7 +4,7 @@
 
 ### StreamKey <a name="StreamKey" id="@cdktn/provider-cloudflare.streamKey.StreamKey"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_key cloudflare_stream_key}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_key cloudflare_stream_key}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.streamKey.StreamKey.Initializer"></a>
 
@@ -19,7 +19,7 @@ StreamKey.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
     .build();
 ```
 
@@ -98,13 +98,13 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamKey.StreamKey.Initializer.parameter.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamKey.StreamKey.Initializer.parameter.accountId"></a>
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_key#account_id StreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_key#account_id StreamKey#account_id}
 
 ---
 
@@ -136,7 +136,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.streamKey.StreamKey.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.streamKey.StreamKey.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.streamKey.StreamKey.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.streamKey.StreamKey.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -451,12 +450,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.streamKey.StreamKey.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -560,7 +553,7 @@ The construct id used in the generated config for the StreamKey to import.
 
 The id of the existing StreamKey that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_key#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_key#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -847,7 +840,7 @@ StreamKeyConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
-//  .accountId(java.lang.String)
+    .accountId(java.lang.String)
     .build();
 ```
 
@@ -936,7 +929,7 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamKey.StreamKeyConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.streamKey.StreamKeyConfig.property.accountId"></a>
 
 ```java
 public java.lang.String getAccountId();
@@ -946,7 +939,7 @@ public java.lang.String getAccountId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream_key#account_id StreamKey#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream_key#account_id StreamKey#account_id}
 
 ---
 

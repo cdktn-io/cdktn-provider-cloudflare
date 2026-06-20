@@ -4,7 +4,7 @@
 
 ### ZeroTrustDlpSettings <a name="ZeroTrustDlpSettings" id="@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings cloudflare_zero_trust_dlp_settings}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings cloudflare_zero_trust_dlp_settings}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer"></a>
 
@@ -37,7 +37,7 @@ ZeroTrustDlpSettings.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.aiContextAnalysis">aiContextAnalysis</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether AI context analysis is enabled at the account level. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.ocr">ocr</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether OCR is enabled at the account level. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettings.Initializer.parameter.payloadLogging">payloadLogging</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsPayloadLogging">ZeroTrustDlpSettingsPayloadLogging</a></code> | Request model for payload log settings within the DLP settings endpoint. |
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether AI context analysis is enabled at the account level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#ai_context_analysis ZeroTrustDlpSettings#ai_context_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#ai_context_analysis ZeroTrustDlpSettings#ai_context_analysis}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether OCR is enabled at the account level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#ocr ZeroTrustDlpSettings#ocr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#ocr ZeroTrustDlpSettings#ocr}
 
 ---
 
@@ -141,7 +141,7 @@ Request model for payload log settings within the DLP settings endpoint.
 Unlike the legacy endpoint, null and missing are treated identically here
 (both mean "not provided" for PATCH, "reset to default" for PUT).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#payload_logging ZeroTrustDlpSettings#payload_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#payload_logging ZeroTrustDlpSettings#payload_logging}
 
 ---
 
@@ -624,7 +624,7 @@ The construct id used in the generated config for the ZeroTrustDlpSettings to im
 
 The id of the existing ZeroTrustDlpSettings that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -951,7 +951,7 @@ ZeroTrustDlpSettingsConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.aiContextAnalysis">aiContextAnalysis</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether AI context analysis is enabled at the account level. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.ocr">ocr</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Whether OCR is enabled at the account level. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsConfig.property.payloadLogging">payloadLogging</a></code> | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpSettings.ZeroTrustDlpSettingsPayloadLogging">ZeroTrustDlpSettingsPayloadLogging</a></code> | Request model for payload log settings within the DLP settings endpoint. |
@@ -1036,7 +1036,7 @@ public java.lang.String getAccountId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#account_id ZeroTrustDlpSettings#account_id}.
 
 ---
 
@@ -1050,7 +1050,7 @@ public java.lang.Boolean|IResolvable getAiContextAnalysis();
 
 Whether AI context analysis is enabled at the account level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#ai_context_analysis ZeroTrustDlpSettings#ai_context_analysis}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#ai_context_analysis ZeroTrustDlpSettings#ai_context_analysis}
 
 ---
 
@@ -1064,7 +1064,7 @@ public java.lang.Boolean|IResolvable getOcr();
 
 Whether OCR is enabled at the account level.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#ocr ZeroTrustDlpSettings#ocr}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#ocr ZeroTrustDlpSettings#ocr}
 
 ---
 
@@ -1081,7 +1081,7 @@ Request model for payload log settings within the DLP settings endpoint.
 Unlike the legacy endpoint, null and missing are treated identically here
 (both mean "not provided" for PATCH, "reset to default" for PUT).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#payload_logging ZeroTrustDlpSettings#payload_logging}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#payload_logging ZeroTrustDlpSettings#payload_logging}
 
 ---
 
@@ -1123,7 +1123,7 @@ Masking level for payload logs.
 * `default`: DLP uses its default masking behavior.
   Available values: "full", "partial", "clear", "default".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#masking_level ZeroTrustDlpSettings#masking_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#masking_level ZeroTrustDlpSettings#masking_level}
 
 ---
 
@@ -1141,7 +1141,7 @@ Base64-encoded public key for encrypting payload logs.
 * Set to an empty string to disable payload logging.
 * Omit or set to null to leave unchanged (PATCH) or reset to disabled (PUT).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_settings#public_key ZeroTrustDlpSettings#public_key}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_settings#public_key ZeroTrustDlpSettings#public_key}
 
 ---
 

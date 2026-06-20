@@ -4,7 +4,7 @@
 
 ### R2DataCatalog <a name="R2DataCatalog" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.resetAccountId">resetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalog.resetAccountId"></a>
-
-```typescript
-public resetAccountId(): void
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the R2DataCatalog to import.
 
 The id of the existing R2DataCatalog that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -822,8 +815,8 @@ const r2DataCatalogConfig: r2DataCatalog.R2DataCatalogConfig = { ... }
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.bucketName">bucketName</a></code> | <code>string</code> | Specifies the R2 bucket name. |
 | <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.accountId">accountId</a></code> | <code>string</code> | Use this to identify the account. |
+| <code><a href="#@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.bucketName">bucketName</a></code> | <code>string</code> | Specifies the R2 bucket name. |
 
 ---
 
@@ -897,6 +890,20 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.accountId"></a>
+
+```typescript
+public readonly accountId: string;
+```
+
+- *Type:* string
+
+Use this to identify the account.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
+
+---
+
 ##### `bucketName`<sup>Required</sup> <a name="bucketName" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.bucketName"></a>
 
 ```typescript
@@ -907,21 +914,7 @@ public readonly bucketName: string;
 
 Specifies the R2 bucket name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.r2DataCatalog.R2DataCatalogConfig.property.accountId"></a>
-
-```typescript
-public readonly accountId: string;
-```
-
-- *Type:* string
-
-Use this to identify the account.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
 
 ---
 

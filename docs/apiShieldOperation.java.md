@@ -4,7 +4,7 @@
 
 ### ApiShieldOperation <a name="ApiShieldOperation" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation cloudflare_api_shield_operation}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer"></a>
 
@@ -22,7 +22,7 @@ ApiShieldOperation.Builder.create(Construct scope, java.lang.String id)
     .endpoint(java.lang.String)
     .host(java.lang.String)
     .method(java.lang.String)
-//  .zoneId(java.lang.String)
+    .zoneId(java.lang.String)
     .build();
 ```
 
@@ -112,7 +112,7 @@ The endpoint which can contain path parameter templates in curly braces, each wi
 
 This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 RFC3986-compliant host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 
 ---
 
@@ -132,17 +132,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 
 ---
 
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.Initializer.parameter.zoneId"></a>
 
 - *Type:* java.lang.String
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 
 ---
 
@@ -174,7 +174,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -489,12 +488,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperation.resetZoneId"></a>
-
-```java
-public void resetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -598,7 +591,7 @@ The construct id used in the generated config for the ApiShieldOperation to impo
 
 The id of the existing ApiShieldOperation that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -954,7 +947,7 @@ ApiShieldOperationConfig.builder()
     .endpoint(java.lang.String)
     .host(java.lang.String)
     .method(java.lang.String)
-//  .zoneId(java.lang.String)
+    .zoneId(java.lang.String)
     .build();
 ```
 
@@ -1058,7 +1051,7 @@ The endpoint which can contain path parameter templates in curly braces, each wi
 
 This will further be Cloudflare-normalized upon insertion. See: https://developers.cloudflare.com/rules/normalization/how-it-works/.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#endpoint ApiShieldOperation#endpoint}
 
 ---
 
@@ -1072,7 +1065,7 @@ public java.lang.String getHost();
 
 RFC3986-compliant host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#host ApiShieldOperation#host}
 
 ---
 
@@ -1086,11 +1079,11 @@ public java.lang.String getMethod();
 
 The HTTP method used to access the endpoint. Available values: "GET", "POST", "HEAD", "OPTIONS", "PUT", "DELETE", "CONNECT", "PATCH", "TRACE".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#method ApiShieldOperation#method}
 
 ---
 
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.apiShieldOperation.ApiShieldOperationConfig.property.zoneId"></a>
 
 ```java
 public java.lang.String getZoneId();
@@ -1100,7 +1093,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/api_shield_operation#zone_id ApiShieldOperation#zone_id}
 
 ---
 

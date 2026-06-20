@@ -4,7 +4,7 @@
 
 ### ZeroTrustAccessTag <a name="ZeroTrustAccessTag" id="@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_tag cloudflare_zero_trust_access_tag}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.resetAccountId">ResetAccountId</a></code> | *No description.* |
 
 ---
 
@@ -387,12 +386,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTag.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -496,7 +489,7 @@ The construct id used in the generated config for the ZeroTrustAccessTag to impo
 
 The id of the existing ZeroTrustAccessTag that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_tag#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -761,8 +754,8 @@ new ZeroTrustAccessTagConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
-    string Name,
-    string AccountId = null
+    string AccountId,
+    string Name
 };
 ```
 
@@ -777,8 +770,8 @@ new ZeroTrustAccessTagConfig {
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.name">Name</a></code> | <code>string</code> | The name of the tag. |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.name">Name</a></code> | <code>string</code> | The name of the tag. |
 
 ---
 
@@ -852,6 +845,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.name"></a>
 
 ```csharp
@@ -862,21 +869,7 @@ public string Name { get; set; }
 
 The name of the tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.zeroTrustAccessTag.ZeroTrustAccessTagConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_access_tag#account_id ZeroTrustAccessTag#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_access_tag#name ZeroTrustAccessTag#name}
 
 ---
 

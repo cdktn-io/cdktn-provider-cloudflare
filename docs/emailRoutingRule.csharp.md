@@ -4,7 +4,7 @@
 
 ### EmailRoutingRule <a name="EmailRoutingRule" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule cloudflare_email_routing_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.Initializer"></a>
 
@@ -79,7 +79,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetEnabled">ResetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetName">ResetName</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetPriority">ResetPriority</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetZoneId">ResetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -434,12 +433,6 @@ private void ResetName()
 private void ResetPriority()
 ```
 
-##### `ResetZoneId` <a name="ResetZoneId" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRule.resetZoneId"></a>
-
-```csharp
-private void ResetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -543,7 +536,7 @@ The construct id used in the generated config for the EmailRoutingRule to import
 
 The id of the existing EmailRoutingRule that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -910,7 +903,7 @@ new EmailRoutingRuleActions {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions.property.type">Type</a></code> | <code>string</code> | Type of supported action. Available values: "drop", "forward", "worker". |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions.property.value">Value</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions.property.value">Value</a></code> | <code>string[]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}. |
 
 ---
 
@@ -924,7 +917,7 @@ public string Type { get; set; }
 
 Type of supported action. Available values: "drop", "forward", "worker".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 
 ---
 
@@ -936,7 +929,7 @@ public string[] Value { get; set; }
 
 - *Type:* string[]
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}.
 
 ---
 
@@ -957,10 +950,10 @@ new EmailRoutingRuleConfig {
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     IResolvable|EmailRoutingRuleActions[] Actions,
     IResolvable|EmailRoutingRuleMatchers[] Matchers,
+    string ZoneId,
     bool|IResolvable Enabled = null,
     string Name = null,
-    double Priority = null,
-    string ZoneId = null
+    double Priority = null
 };
 ```
 
@@ -977,10 +970,10 @@ new EmailRoutingRuleConfig {
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.actions">Actions</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleActions">EmailRoutingRuleActions</a>[]</code> | List actions patterns. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.matchers">Matchers</a></code> | <code>Io.Cdktn.IResolvable\|<a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleMatchers">EmailRoutingRuleMatchers</a>[]</code> | Matching patterns to forward to your actions. |
+| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.enabled">Enabled</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Routing rule status. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.name">Name</a></code> | <code>string</code> | Routing rule name. |
 | <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.priority">Priority</a></code> | <code>double</code> | Priority of the routing rule. |
-| <code><a href="#@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.zoneId">ZoneId</a></code> | <code>string</code> | Identifier. |
 
 ---
 
@@ -1064,7 +1057,7 @@ public IResolvable|EmailRoutingRuleActions[] Actions { get; set; }
 
 List actions patterns.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#actions EmailRoutingRule#actions}
 
 ---
 
@@ -1078,7 +1071,21 @@ public IResolvable|EmailRoutingRuleMatchers[] Matchers { get; set; }
 
 Matching patterns to forward to your actions.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#matchers EmailRoutingRule#matchers}
+
+---
+
+##### `ZoneId`<sup>Required</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.zoneId"></a>
+
+```csharp
+public string ZoneId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
 
 ---
 
@@ -1092,7 +1099,7 @@ public bool|IResolvable Enabled { get; set; }
 
 Routing rule status.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#enabled EmailRoutingRule#enabled}
 
 ---
 
@@ -1106,7 +1113,7 @@ public string Name { get; set; }
 
 Routing rule name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#name EmailRoutingRule#name}
 
 ---
 
@@ -1120,21 +1127,7 @@ public double Priority { get; set; }
 
 Priority of the routing rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
-
----
-
-##### `ZoneId`<sup>Optional</sup> <a name="ZoneId" id="@cdktn/provider-cloudflare.emailRoutingRule.EmailRoutingRuleConfig.property.zoneId"></a>
-
-```csharp
-public string ZoneId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#zone_id EmailRoutingRule#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#priority EmailRoutingRule#priority}
 
 ---
 
@@ -1172,7 +1165,7 @@ public string Type { get; set; }
 
 Type of matcher. Available values: "all", "literal".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#type EmailRoutingRule#type}
 
 ---
 
@@ -1186,7 +1179,7 @@ public string Field { get; set; }
 
 Field for type matcher. Available values: "to".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#field EmailRoutingRule#field}
 
 ---
 
@@ -1200,7 +1193,7 @@ public string Value { get; set; }
 
 Value for matcher.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_routing_rule#value EmailRoutingRule#value}
 
 ---
 

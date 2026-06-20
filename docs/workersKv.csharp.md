@@ -4,7 +4,7 @@
 
 ### WorkersKv <a name="WorkersKv" id="@cdktn/provider-cloudflare.workersKv.WorkersKv"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv cloudflare_workers_kv}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv cloudflare_workers_kv}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKv.resetMetadata">ResetMetadata</a></code> | *No description.* |
 
 ---
@@ -388,12 +387,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 ##### `ResetMetadata` <a name="ResetMetadata" id="@cdktn/provider-cloudflare.workersKv.WorkersKv.resetMetadata"></a>
 
 ```csharp
@@ -503,7 +496,7 @@ The construct id used in the generated config for the WorkersKv to import.
 
 The id of the existing WorkersKv that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -834,10 +827,10 @@ new WorkersKvConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string AccountId,
     string KeyName,
     string NamespaceId,
     string Value,
-    string AccountId = null,
     string Metadata = null
 };
 ```
@@ -853,10 +846,10 @@ new WorkersKvConfig {
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.keyName">KeyName</a></code> | <code>string</code> | A key's name. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.namespaceId">NamespaceId</a></code> | <code>string</code> | Namespace identifier tag. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.value">Value</a></code> | <code>string</code> | A byte sequence to be stored, up to 25 MiB in length. |
-| <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.metadata">Metadata</a></code> | <code>string</code> | Associates arbitrary JSON data with a key/value pair. |
 
 ---
@@ -931,6 +924,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+
+---
+
 ##### `KeyName`<sup>Required</sup> <a name="KeyName" id="@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.keyName"></a>
 
 ```csharp
@@ -943,7 +950,7 @@ A key's name.
 
 The name may be at most 512 bytes. All printable, non-whitespace characters are valid. Use percent-encoding to define key names as part of a URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv#key_name WorkersKv#key_name}
 
 ---
 
@@ -957,7 +964,7 @@ public string NamespaceId { get; set; }
 
 Namespace identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv#namespace_id WorkersKv#namespace_id}
 
 ---
 
@@ -971,21 +978,7 @@ public string Value { get; set; }
 
 A byte sequence to be stored, up to 25 MiB in length.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv#value WorkersKv#value}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.workersKv.WorkersKvConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv#account_id WorkersKv#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv#value WorkersKv#value}
 
 ---
 
@@ -999,7 +992,7 @@ public string Metadata { get; set; }
 
 Associates arbitrary JSON data with a key/value pair.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/workers_kv#metadata WorkersKv#metadata}
 
 ---
 

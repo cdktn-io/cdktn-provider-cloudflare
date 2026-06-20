@@ -4,7 +4,7 @@
 
 ### DataCloudflareZeroTrustDlpSensitivityGroups <a name="DataCloudflareZeroTrustDlpSensitivityGroups" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_groups cloudflare_zero_trust_dlp_sensitivity_groups}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_groups cloudflare_zero_trust_dlp_sensitivity_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroups.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareZeroTrustDlp
 
 The id of the existing DataCloudflareZeroTrustDlpSensitivityGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -643,7 +643,7 @@ const dataCloudflareZeroTrustDlpSensitivityGroupsConfig: dataCloudflareZeroTrust
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroupsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroupsConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroupsConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroupsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#account_id DataCloudflareZeroTrustDlpSensitivityGroups#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroupsConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#account_id DataCloudflareZeroTrustDlpSensitivityGroups#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareZeroTrustDlpSensitivityGroups.DataCloudflareZeroTrustDlpSensitivityGroupsConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 
 ---
@@ -726,7 +726,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#account_id DataCloudflareZeroTrustDlpSensitivityGroups#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#account_id DataCloudflareZeroTrustDlpSensitivityGroups#account_id}.
 
 ---
 
@@ -740,7 +740,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#max_items DataCloudflareZeroTrustDlpSensitivityGroups#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/zero_trust_dlp_sensitivity_groups#max_items DataCloudflareZeroTrustDlpSensitivityGroups#max_items}
 
 ---
 

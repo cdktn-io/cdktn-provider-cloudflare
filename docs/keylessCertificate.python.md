@@ -4,7 +4,7 @@
 
 ### KeylessCertificate <a name="KeylessCertificate" id="@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate cloudflare_keyless_certificate}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer"></a>
 
@@ -23,12 +23,12 @@ keylessCertificate.KeylessCertificate(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   certificate: str,
   host: str,
+  zone_id: str,
   bundle_method: str = None,
   enabled: bool | IResolvable = None,
   name: str = None,
   port: typing.Union[int, float] = None,
-  tunnel: KeylessCertificateTunnel = None,
-  zone_id: str = None
+  tunnel: KeylessCertificateTunnel = None
 )
 ```
 
@@ -45,12 +45,12 @@ keylessCertificate.KeylessCertificate(
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.certificate">certificate</a></code> | <code>str</code> | The zone's SSL certificate or SSL certificate and intermediate(s). |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.host">host</a></code> | <code>str</code> | The keyless SSL name. |
+| <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.bundleMethod">bundle_method</a></code> | <code>str</code> | A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the Keyless SSL is on or off. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.name">name</a></code> | <code>str</code> | The keyless SSL name. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.port">port</a></code> | <code>typing.Union[int, float]</code> | The keyless SSL port used to communicate between Cloudflare and the client's Keyless SSL server. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.tunnel">tunnel</a></code> | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateTunnel">KeylessCertificateTunnel</a></code> | Configuration for using Keyless SSL through a Cloudflare Tunnel. |
-| <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -120,7 +120,7 @@ Must be unique amongst siblings in the same scope
 
 The zone's SSL certificate or SSL certificate and intermediate(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
 
 ---
 
@@ -130,7 +130,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The keyless SSL name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
+
+---
+
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.zoneId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
 
 ---
 
@@ -143,7 +153,7 @@ A ubiquitous bundle has the highest probability of being verified everywhere, ev
 An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
 Available values: "ubiquitous", "optimal", "force".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
 
 ---
 
@@ -153,7 +163,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Whether or not the Keyless SSL is on or off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
 
 ---
 
@@ -163,7 +173,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The keyless SSL name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
 
 ---
 
@@ -173,7 +183,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The keyless SSL port used to communicate between Cloudflare and the client's Keyless SSL server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
 
 ---
 
@@ -183,17 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Configuration for using Keyless SSL through a Cloudflare Tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
-
----
-
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.Initializer.parameter.zoneId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
 
 ---
 
@@ -231,7 +231,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.resetName">reset_name</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.resetPort">reset_port</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.resetTunnel">reset_tunnel</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -598,7 +597,7 @@ def put_tunnel(
 
 Private IP of the Key Server Host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
 
 ---
 
@@ -608,7 +607,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Cloudflare Tunnel Virtual Network ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
 
 ---
 
@@ -640,12 +639,6 @@ def reset_port() -> None
 
 ```python
 def reset_tunnel() -> None
-```
-
-##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificate.resetZoneId"></a>
-
-```python
-def reset_zone_id() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -762,7 +755,7 @@ The construct id used in the generated config for the KeylessCertificate to impo
 
 The id of the existing KeylessCertificate that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1205,12 +1198,12 @@ keylessCertificate.KeylessCertificateConfig(
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   certificate: str,
   host: str,
+  zone_id: str,
   bundle_method: str = None,
   enabled: bool | IResolvable = None,
   name: str = None,
   port: typing.Union[int, float] = None,
-  tunnel: KeylessCertificateTunnel = None,
-  zone_id: str = None
+  tunnel: KeylessCertificateTunnel = None
 )
 ```
 
@@ -1227,12 +1220,12 @@ keylessCertificate.KeylessCertificateConfig(
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.certificate">certificate</a></code> | <code>str</code> | The zone's SSL certificate or SSL certificate and intermediate(s). |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.host">host</a></code> | <code>str</code> | The keyless SSL name. |
+| <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.bundleMethod">bundle_method</a></code> | <code>str</code> | A ubiquitous bundle has the highest probability of being verified everywhere, even by clients using outdated or unusual trust stores. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.enabled">enabled</a></code> | <code>bool \| cdktn.IResolvable</code> | Whether or not the Keyless SSL is on or off. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.name">name</a></code> | <code>str</code> | The keyless SSL name. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.port">port</a></code> | <code>typing.Union[int, float]</code> | The keyless SSL port used to communicate between Cloudflare and the client's Keyless SSL server. |
 | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.tunnel">tunnel</a></code> | <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateTunnel">KeylessCertificateTunnel</a></code> | Configuration for using Keyless SSL through a Cloudflare Tunnel. |
-| <code><a href="#@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.zoneId">zone_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1316,7 +1309,7 @@ certificate: str
 
 The zone's SSL certificate or SSL certificate and intermediate(s).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#certificate KeylessCertificate#certificate}
 
 ---
 
@@ -1330,7 +1323,21 @@ host: str
 
 The keyless SSL name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#host KeylessCertificate#host}
+
+---
+
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.zoneId"></a>
+
+```python
+zone_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
 
 ---
 
@@ -1347,7 +1354,7 @@ A ubiquitous bundle has the highest probability of being verified everywhere, ev
 An optimal bundle uses the shortest chain and newest intermediates. And the force bundle verifies the chain, but does not otherwise modify it.
 Available values: "ubiquitous", "optimal", "force".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#bundle_method KeylessCertificate#bundle_method}
 
 ---
 
@@ -1361,7 +1368,7 @@ enabled: bool | IResolvable
 
 Whether or not the Keyless SSL is on or off.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#enabled KeylessCertificate#enabled}
 
 ---
 
@@ -1375,7 +1382,7 @@ name: str
 
 The keyless SSL name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#name KeylessCertificate#name}
 
 ---
 
@@ -1389,7 +1396,7 @@ port: typing.Union[int, float]
 
 The keyless SSL port used to communicate between Cloudflare and the client's Keyless SSL server.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#port KeylessCertificate#port}
 
 ---
 
@@ -1403,21 +1410,7 @@ tunnel: KeylessCertificateTunnel
 
 Configuration for using Keyless SSL through a Cloudflare Tunnel.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
-
----
-
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.keylessCertificate.KeylessCertificateConfig.property.zoneId"></a>
-
-```python
-zone_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#zone_id KeylessCertificate#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#tunnel KeylessCertificate#tunnel}
 
 ---
 
@@ -1453,7 +1446,7 @@ private_ip: str
 
 Private IP of the Key Server Host.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#private_ip KeylessCertificate#private_ip}
 
 ---
 
@@ -1467,7 +1460,7 @@ vnet_id: str
 
 Cloudflare Tunnel Virtual Network ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/keyless_certificate#vnet_id KeylessCertificate#vnet_id}
 
 ---
 

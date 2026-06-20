@@ -4,7 +4,7 @@
 
 ### DnsFirewall <a name="DnsFirewall" id="@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall cloudflare_dns_firewall}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.Initializer"></a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.putAttackMitigation">PutAttackMitigation</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.resetAttackMitigation">ResetAttackMitigation</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.resetDeprecateAnyRequests">ResetDeprecateAnyRequests</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.resetDnsFirewallIpCount">ResetDnsFirewallIpCount</a></code> | *No description.* |
@@ -409,12 +408,6 @@ func PutAttackMitigation(value DnsFirewallAttackMitigation)
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.resetAccountId"></a>
-
-```go
-func ResetAccountId()
-```
-
 ##### `ResetAttackMitigation` <a name="ResetAttackMitigation" id="@cdktn/provider-cloudflare.dnsFirewall.DnsFirewall.resetAttackMitigation"></a>
 
 ```go
@@ -572,7 +565,7 @@ The construct id used in the generated config for the DnsFirewall to import.
 
 The id of the existing DnsFirewall that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1096,7 +1089,7 @@ Enabled interface{}
 
 When enabled, automatically mitigate random-prefix attacks to protect upstream DNS servers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#enabled DnsFirewall#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#enabled DnsFirewall#enabled}
 
 ---
 
@@ -1110,7 +1103,7 @@ OnlyWhenUpstreamUnhealthy interface{}
 
 Only mitigate attacks when upstream servers seem unhealthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#only_when_upstream_unhealthy DnsFirewall#only_when_upstream_unhealthy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#only_when_upstream_unhealthy DnsFirewall#only_when_upstream_unhealthy}
 
 ---
 
@@ -1129,9 +1122,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnsfirew
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
+	AccountId: *string,
 	Name: *string,
 	UpstreamIps: *[]*string,
-	AccountId: *string,
 	AttackMitigation: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.dnsFirewall.DnsFirewallAttackMitigation,
 	DeprecateAnyRequests: interface{},
 	DnsFirewallIpCount: *f64,
@@ -1155,9 +1148,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/dnsfirew
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.name">Name</a></code> | <code>*string</code> | DNS Firewall cluster name. |
-| <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.upstreamIps">UpstreamIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.name">Name</a></code> | <code>*string</code> | DNS Firewall cluster name. |
+| <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.upstreamIps">UpstreamIps</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.attackMitigation">AttackMitigation</a></code> | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallAttackMitigation">DnsFirewallAttackMitigation</a></code> | Attack mitigation settings. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.deprecateAnyRequests">DeprecateAnyRequests</a></code> | <code>interface{}</code> | Whether to refuse to answer queries for the ANY type. |
 | <code><a href="#@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.dnsFirewallIpCount">DnsFirewallIpCount</a></code> | <code>*f64</code> | Number of IPv4 addresses to assign to the DNS Firewall cluster. |
@@ -1240,6 +1233,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#account_id DnsFirewall#account_id}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.name"></a>
 
 ```go
@@ -1250,7 +1257,7 @@ Name *string
 
 DNS Firewall cluster name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#name DnsFirewall#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#name DnsFirewall#name}
 
 ---
 
@@ -1262,21 +1269,7 @@ UpstreamIps *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}.
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.dnsFirewall.DnsFirewallConfig.property.accountId"></a>
-
-```go
-AccountId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#account_id DnsFirewall#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#upstream_ips DnsFirewall#upstream_ips}.
 
 ---
 
@@ -1290,7 +1283,7 @@ AttackMitigation DnsFirewallAttackMitigation
 
 Attack mitigation settings.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#attack_mitigation DnsFirewall#attack_mitigation}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#attack_mitigation DnsFirewall#attack_mitigation}
 
 ---
 
@@ -1304,7 +1297,7 @@ DeprecateAnyRequests interface{}
 
 Whether to refuse to answer queries for the ANY type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#deprecate_any_requests DnsFirewall#deprecate_any_requests}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#deprecate_any_requests DnsFirewall#deprecate_any_requests}
 
 ---
 
@@ -1320,7 +1313,7 @@ Number of IPv4 addresses to assign to the DNS Firewall cluster.
 
 Only used during cluster creation and cannot be changed later.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#dns_firewall_ip_count DnsFirewall#dns_firewall_ip_count}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#dns_firewall_ip_count DnsFirewall#dns_firewall_ip_count}
 
 ---
 
@@ -1334,7 +1327,7 @@ EcsFallback interface{}
 
 Whether to forward client IP (resolver) subnet if no EDNS Client Subnet is sent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#ecs_fallback DnsFirewall#ecs_fallback}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#ecs_fallback DnsFirewall#ecs_fallback}
 
 ---
 
@@ -1356,7 +1349,7 @@ This setting does not affect the TTL value in the DNS response
 Cloudflare returns to clients. Cloudflare will always forward the TTL
 value received from upstream nameservers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#maximum_cache_ttl DnsFirewall#maximum_cache_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#maximum_cache_ttl DnsFirewall#maximum_cache_ttl}
 
 ---
 
@@ -1383,7 +1376,7 @@ response will be cached for at least the specified duration. Cached
 responses may be removed earlier for capacity or other operational
 reasons.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#minimum_cache_ttl DnsFirewall#minimum_cache_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#minimum_cache_ttl DnsFirewall#minimum_cache_ttl}
 
 ---
 
@@ -1401,7 +1394,7 @@ This setting does not affect the TTL value in the DNS response
 Cloudflare returns to clients. Cloudflare will always forward the TTL
 value received from upstream nameservers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#negative_cache_ttl DnsFirewall#negative_cache_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#negative_cache_ttl DnsFirewall#negative_cache_ttl}
 
 ---
 
@@ -1417,7 +1410,7 @@ Maximum number of DNS queries per second that will be forwarded to your upstream
 
 The limit is enforced per server, where each server receives a fraction of the configured value. The actual aggregate rate for a data center may vary depending on how many servers are present. Responses served from cache do not count toward this limit. Set to null to disable rate limiting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#ratelimit DnsFirewall#ratelimit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#ratelimit DnsFirewall#ratelimit}
 
 ---
 
@@ -1431,7 +1424,7 @@ Retries *f64
 
 Number of retries for fetching DNS responses from upstream nameservers (not counting the initial attempt).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/dns_firewall#retries DnsFirewall#retries}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/dns_firewall#retries DnsFirewall#retries}
 
 ---
 

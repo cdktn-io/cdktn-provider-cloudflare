@@ -4,7 +4,7 @@
 
 ### CloudforceOneRequestAsset <a name="CloudforceOneRequestAsset" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset cloudflare_cloudforce_one_request_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer"></a>
 
@@ -21,10 +21,10 @@ cloudforceOneRequestAsset.CloudforceOneRequestAsset(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   page: typing.Union[int, float],
   per_page: typing.Union[int, float],
   request_id: str,
-  account_id: str = None,
   source: str = None
 )
 ```
@@ -40,10 +40,10 @@ cloudforceOneRequestAsset.CloudforceOneRequestAsset(
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.page">page</a></code> | <code>typing.Union[int, float]</code> | Page number of results. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Number of results per page. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.requestId">request_id</a></code> | <code>str</code> | UUID. |
-| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.source">source</a></code> | <code>str</code> | Asset file to upload. |
 
 ---
@@ -108,13 +108,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
+
+---
+
 ##### `page`<sup>Required</sup> <a name="page" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.page"></a>
 
 - *Type:* typing.Union[int, float]
 
 Page number of results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
 
 ---
 
@@ -124,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
 
 ---
 
@@ -134,17 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
 
 ---
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Asset file to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
 
 ---
 
@@ -186,7 +186,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetAccountId">reset_account_id</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetSource">reset_source</a></code> | *No description.* |
 
 ---
@@ -539,12 +538,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 ##### `reset_source` <a name="reset_source" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAsset.resetSource"></a>
 
 ```python
@@ -665,7 +658,7 @@ The construct id used in the generated config for the CloudforceOneRequestAsset 
 
 The id of the existing CloudforceOneRequestAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1040,10 +1033,10 @@ cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   page: typing.Union[int, float],
   per_page: typing.Union[int, float],
   request_id: str,
-  account_id: str = None,
   source: str = None
 )
 ```
@@ -1059,10 +1052,10 @@ cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig(
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.page">page</a></code> | <code>typing.Union[int, float]</code> | Page number of results. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.perPage">per_page</a></code> | <code>typing.Union[int, float]</code> | Number of results per page. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.requestId">request_id</a></code> | <code>str</code> | UUID. |
-| <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.source">source</a></code> | <code>str</code> | Asset file to upload. |
 
 ---
@@ -1137,6 +1130,20 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
+
+---
+
 ##### `page`<sup>Required</sup> <a name="page" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.page"></a>
 
 ```python
@@ -1147,7 +1154,7 @@ page: typing.Union[int, float]
 
 Page number of results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#page CloudforceOneRequestAsset#page}
 
 ---
 
@@ -1161,7 +1168,7 @@ per_page: typing.Union[int, float]
 
 Number of results per page.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#per_page CloudforceOneRequestAsset#per_page}
 
 ---
 
@@ -1175,21 +1182,7 @@ request_id: str
 
 UUID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.cloudforceOneRequestAsset.CloudforceOneRequestAssetConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#account_id CloudforceOneRequestAsset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#request_id CloudforceOneRequestAsset#request_id}
 
 ---
 
@@ -1203,7 +1196,7 @@ source: str
 
 Asset file to upload.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_asset#source CloudforceOneRequestAsset#source}
 
 ---
 

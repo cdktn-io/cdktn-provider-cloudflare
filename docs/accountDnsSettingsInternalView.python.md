@@ -4,7 +4,7 @@
 
 ### AccountDnsSettingsInternalView <a name="AccountDnsSettingsInternalView" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view cloudflare_account_dns_settings_internal_view}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer"></a>
 
@@ -21,9 +21,9 @@ accountDnsSettingsInternalView.AccountDnsSettingsInternalView(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   name: str,
-  zones: typing.List[str],
-  account_id: str = None
+  zones: typing.List[str]
 )
 ```
 
@@ -38,9 +38,9 @@ accountDnsSettingsInternalView.AccountDnsSettingsInternalView(
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.name">name</a></code> | <code>str</code> | The name of the view. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.zones">zones</a></code> | <code>typing.List[str]</code> | The list of zones linked to this view. |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -104,13 +104,23 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.accountId"></a>
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.name"></a>
 
 - *Type:* str
 
 The name of the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
 
 ---
 
@@ -120,17 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 The list of zones linked to this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.Initializer.parameter.accountId"></a>
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
 
 ---
 
@@ -162,7 +162,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.resetAccountId">reset_account_id</a></code> | *No description.* |
 
 ---
 
@@ -514,12 +513,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_account_id` <a name="reset_account_id" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalView.resetAccountId"></a>
-
-```python
-def reset_account_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -634,7 +627,7 @@ The construct id used in the generated config for the AccountDnsSettingsInternal
 
 The id of the existing AccountDnsSettingsInternalView that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,9 +936,9 @@ accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig(
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  account_id: str,
   name: str,
-  zones: typing.List[str],
-  account_id: str = None
+  zones: typing.List[str]
 )
 ```
 
@@ -960,9 +953,9 @@ accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig(
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.name">name</a></code> | <code>str</code> | The name of the view. |
 | <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.zones">zones</a></code> | <code>typing.List[str]</code> | The list of zones linked to this view. |
-| <code><a href="#@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.accountId">account_id</a></code> | <code>str</code> | Identifier. |
 
 ---
 
@@ -1036,6 +1029,20 @@ provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecPro
 
 ---
 
+##### `account_id`<sup>Required</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.accountId"></a>
+
+```python
+account_id: str
+```
+
+- *Type:* str
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+
+---
+
 ##### `name`<sup>Required</sup> <a name="name" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.name"></a>
 
 ```python
@@ -1046,7 +1053,7 @@ name: str
 
 The name of the view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view#name AccountDnsSettingsInternalView#name}
 
 ---
 
@@ -1060,21 +1067,7 @@ zones: typing.List[str]
 
 The list of zones linked to this view.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
-
----
-
-##### `account_id`<sup>Optional</sup> <a name="account_id" id="@cdktn/provider-cloudflare.accountDnsSettingsInternalView.AccountDnsSettingsInternalViewConfig.property.accountId"></a>
-
-```python
-account_id: str
-```
-
-- *Type:* str
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/account_dns_settings_internal_view#account_id AccountDnsSettingsInternalView#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/account_dns_settings_internal_view#zones AccountDnsSettingsInternalView#zones}
 
 ---
 

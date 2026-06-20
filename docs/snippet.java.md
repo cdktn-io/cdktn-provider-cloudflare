@@ -4,7 +4,7 @@
 
 ### Snippet <a name="Snippet" id="@cdktn/provider-cloudflare.snippet.Snippet"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet cloudflare_snippet}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet cloudflare_snippet}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.snippet.Snippet.Initializer"></a>
 
@@ -22,7 +22,7 @@ Snippet.Builder.create(Construct scope, java.lang.String id)
     .files(IResolvable|java.util.List<SnippetFiles>)
     .metadata(SnippetMetadata)
     .snippetName(java.lang.String)
-//  .zoneId(java.lang.String)
+    .zoneId(java.lang.String)
     .build();
 ```
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 The list of files belonging to the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#files Snippet#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#files Snippet#files}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Provide metadata about the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#metadata Snippet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#metadata Snippet#metadata}
 
 ---
 
@@ -130,17 +130,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identify the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
 
 ---
 
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.snippet.Snippet.Initializer.parameter.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.snippet.Snippet.Initializer.parameter.zoneId"></a>
 
 - *Type:* java.lang.String
 
 Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#zone_id Snippet#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#zone_id Snippet#zone_id}
 
 ---
 
@@ -174,7 +174,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.snippet.Snippet.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.snippet.Snippet.putFiles">putFiles</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.snippet.Snippet.putMetadata">putMetadata</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.Snippet.resetZoneId">resetZoneId</a></code> | *No description.* |
 
 ---
 
@@ -513,12 +512,6 @@ public void putMetadata(SnippetMetadata value)
 
 ---
 
-##### `resetZoneId` <a name="resetZoneId" id="@cdktn/provider-cloudflare.snippet.Snippet.resetZoneId"></a>
-
-```java
-public void resetZoneId()
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -622,7 +615,7 @@ The construct id used in the generated config for the Snippet to import.
 
 The id of the existing Snippet that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,7 +949,7 @@ SnippetConfig.builder()
     .files(IResolvable|java.util.List<SnippetFiles>)
     .metadata(SnippetMetadata)
     .snippetName(java.lang.String)
-//  .zoneId(java.lang.String)
+    .zoneId(java.lang.String)
     .build();
 ```
 
@@ -1058,7 +1051,7 @@ public IResolvable|java.util.List<SnippetFiles> getFiles();
 
 The list of files belonging to the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#files Snippet#files}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#files Snippet#files}
 
 ---
 
@@ -1072,7 +1065,7 @@ public SnippetMetadata getMetadata();
 
 Provide metadata about the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#metadata Snippet#metadata}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#metadata Snippet#metadata}
 
 ---
 
@@ -1086,11 +1079,11 @@ public java.lang.String getSnippetName();
 
 Identify the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#snippet_name Snippet#snippet_name}
 
 ---
 
-##### `zoneId`<sup>Optional</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.snippet.SnippetConfig.property.zoneId"></a>
+##### `zoneId`<sup>Required</sup> <a name="zoneId" id="@cdktn/provider-cloudflare.snippet.SnippetConfig.property.zoneId"></a>
 
 ```java
 public java.lang.String getZoneId();
@@ -1100,7 +1093,7 @@ public java.lang.String getZoneId();
 
 Use this field to specify the unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#zone_id Snippet#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#zone_id Snippet#zone_id}
 
 ---
 
@@ -1121,8 +1114,8 @@ SnippetFiles.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#content Snippet#content}. |
-| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#name Snippet#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.content">content</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#content Snippet#content}. |
+| <code><a href="#@cdktn/provider-cloudflare.snippet.SnippetFiles.property.name">name</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#name Snippet#name}. |
 
 ---
 
@@ -1134,7 +1127,7 @@ public java.lang.String getContent();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#content Snippet#content}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#content Snippet#content}.
 
 ---
 
@@ -1146,7 +1139,7 @@ public java.lang.String getName();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#name Snippet#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#name Snippet#name}.
 
 ---
 
@@ -1180,7 +1173,7 @@ public java.lang.String getMainModule();
 
 Specify the name of the file that contains the main module of the snippet.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/snippet#main_module Snippet#main_module}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/snippet#main_module Snippet#main_module}
 
 ---
 

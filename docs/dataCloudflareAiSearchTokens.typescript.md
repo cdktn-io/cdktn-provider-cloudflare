@@ -4,7 +4,7 @@
 
 ### DataCloudflareAiSearchTokens <a name="DataCloudflareAiSearchTokens" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer"></a>
 
@@ -408,7 +408,7 @@ The construct id used in the generated config for the DataCloudflareAiSearchToke
 
 The id of the existing DataCloudflareAiSearchTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -679,7 +679,7 @@ const dataCloudflareAiSearchTokensConfig: dataCloudflareAiSearchTokens.DataCloud
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.accountId">accountId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.maxItems">maxItems</a></code> | <code>number</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.search">search</a></code> | <code>string</code> | Filter tokens whose name contains this string (case-insensitive). |
 
@@ -763,7 +763,7 @@ public readonly accountId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
 
 ---
 
@@ -777,7 +777,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
 
 ---
 
@@ -791,7 +791,7 @@ public readonly search: string;
 
 Filter tokens whose name contains this string (case-insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/ai_search_tokens#search DataCloudflareAiSearchTokens#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#search DataCloudflareAiSearchTokens#search}
 
 ---
 

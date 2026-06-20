@@ -4,7 +4,7 @@
 
 ### ZeroTrustDlpDataTagCategory <a name="ZeroTrustDlpDataTagCategory" id="@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategory"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category cloudflare_zero_trust_dlp_data_tag_category}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategory.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ZeroTrustDlpDataTagCategor
 
 The id of the existing ZeroTrustDlpDataTagCategory that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -844,9 +844,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/zerotrus
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category#account_id ZeroTrustDlpDataTagCategory#account_id}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category#name ZeroTrustDlpDataTagCategory#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category#description ZeroTrustDlpDataTagCategory#description}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category#account_id ZeroTrustDlpDataTagCategory#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category#name ZeroTrustDlpDataTagCategory#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.zeroTrustDlpDataTagCategory.ZeroTrustDlpDataTagCategoryConfig.property.description">Description</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category#description ZeroTrustDlpDataTagCategory#description}. |
 
 ---
 
@@ -928,7 +928,7 @@ AccountId *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category#account_id ZeroTrustDlpDataTagCategory#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category#account_id ZeroTrustDlpDataTagCategory#account_id}.
 
 ---
 
@@ -940,7 +940,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category#name ZeroTrustDlpDataTagCategory#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category#name ZeroTrustDlpDataTagCategory#name}.
 
 ---
 
@@ -952,7 +952,7 @@ Description *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/zero_trust_dlp_data_tag_category#description ZeroTrustDlpDataTagCategory#description}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zero_trust_dlp_data_tag_category#description ZeroTrustDlpDataTagCategory#description}.
 
 ---
 

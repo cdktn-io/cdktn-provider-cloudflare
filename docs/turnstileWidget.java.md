@@ -4,7 +4,7 @@
 
 ### TurnstileWidget <a name="TurnstileWidget" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget cloudflare_turnstile_widget}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer"></a>
 
@@ -19,10 +19,10 @@ TurnstileWidget.Builder.create(Construct scope, java.lang.String id)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .domains(java.util.List<java.lang.String>)
     .mode(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .botFightMode(java.lang.Boolean|IResolvable)
 //  .clearanceLevel(java.lang.String)
 //  .ephemeralId(java.lang.Boolean|IResolvable)
@@ -42,10 +42,10 @@ TurnstileWidget.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.mode">mode</a></code> | <code>java.lang.String</code> | Widget Mode Available values: "non-interactive", "invisible", "managed". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Human readable widget name. |
-| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.botFightMode">botFightMode</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only). |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.clearanceLevel">clearanceLevel</a></code> | <code>java.lang.String</code> | If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.ephemeralId">ephemeralId</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Return the Ephemeral ID in /siteverify (ENT only). |
@@ -114,11 +114,21 @@ Must be unique amongst siblings in the same scope
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.accountId"></a>
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+
+---
+
 ##### `domains`<sup>Required</sup> <a name="domains" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.domains"></a>
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
 
 ---
 
@@ -128,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Widget Mode Available values: "non-interactive", "invisible", "managed".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -142,17 +152,7 @@ Not unique. Cloudflare suggests that you
 set this to a meaningful string to make it easier to identify your
 widget, and where it is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.Initializer.parameter.accountId"></a>
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -162,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
@@ -172,7 +172,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
 
 ---
 
@@ -182,7 +182,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Return the Ephemeral ID in /siteverify (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
 
 ---
 
@@ -192,7 +192,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Do not show any Cloudflare branding on the widget (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 
 ---
 
@@ -202,7 +202,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Region where this widget can be used. This cannot be changed after creation. Available values: "world", "china".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 
@@ -234,7 +234,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.moveFromId">moveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetBotFightMode">resetBotFightMode</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetClearanceLevel">resetClearanceLevel</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetEphemeralId">resetEphemeralId</a></code> | *No description.* |
@@ -554,12 +553,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetAccountId"></a>
-
-```java
-public void resetAccountId()
-```
-
 ##### `resetBotFightMode` <a name="resetBotFightMode" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidget.resetBotFightMode"></a>
 
 ```java
@@ -693,7 +686,7 @@ The construct id used in the generated config for the TurnstileWidget to import.
 
 The id of the existing TurnstileWidget that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1156,10 +1149,10 @@ TurnstileWidgetConfig.builder()
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
 //  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
+    .accountId(java.lang.String)
     .domains(java.util.List<java.lang.String>)
     .mode(java.lang.String)
     .name(java.lang.String)
-//  .accountId(java.lang.String)
 //  .botFightMode(java.lang.Boolean|IResolvable)
 //  .clearanceLevel(java.lang.String)
 //  .ephemeralId(java.lang.Boolean|IResolvable)
@@ -1179,10 +1172,10 @@ TurnstileWidgetConfig.builder()
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.lifecycle">lifecycle</a></code> | <code>io.cdktn.cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provider">provider</a></code> | <code>io.cdktn.cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<io.cdktn.cdktn.FileProvisioner\|io.cdktn.cdktn.LocalExecProvisioner\|io.cdktn.cdktn.RemoteExecProvisioner></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains">domains</a></code> | <code>java.util.List<java.lang.String></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.mode">mode</a></code> | <code>java.lang.String</code> | Widget Mode Available values: "non-interactive", "invisible", "managed". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.name">name</a></code> | <code>java.lang.String</code> | Human readable widget name. |
-| <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId">accountId</a></code> | <code>java.lang.String</code> | Identifier. |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.botFightMode">botFightMode</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only). |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.clearanceLevel">clearanceLevel</a></code> | <code>java.lang.String</code> | If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive". |
 | <code><a href="#@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.ephemeralId">ephemeralId</a></code> | <code>java.lang.Boolean\|io.cdktn.cdktn.IResolvable</code> | Return the Ephemeral ID in /siteverify (ENT only). |
@@ -1261,6 +1254,20 @@ public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner
 
 ---
 
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId"></a>
+
+```java
+public java.lang.String getAccountId();
+```
+
+- *Type:* java.lang.String
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+
+---
+
 ##### `domains`<sup>Required</sup> <a name="domains" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.domains"></a>
 
 ```java
@@ -1269,7 +1276,7 @@ public java.util.List<java.lang.String> getDomains();
 
 - *Type:* java.util.List<java.lang.String>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#domains TurnstileWidget#domains}.
 
 ---
 
@@ -1283,7 +1290,7 @@ public java.lang.String getMode();
 
 Widget Mode Available values: "non-interactive", "invisible", "managed".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#mode TurnstileWidget#mode}
 
 ---
 
@@ -1301,21 +1308,7 @@ Not unique. Cloudflare suggests that you
 set this to a meaningful string to make it easier to identify your
 widget, and where it is used.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
-
----
-
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.turnstileWidget.TurnstileWidgetConfig.property.accountId"></a>
-
-```java
-public java.lang.String getAccountId();
-```
-
-- *Type:* java.lang.String
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#account_id TurnstileWidget#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#name TurnstileWidget#name}
 
 ---
 
@@ -1329,7 +1322,7 @@ public java.lang.Boolean|IResolvable getBotFightMode();
 
 If bot_fight_mode is set to `true`, Cloudflare issues computationally expensive challenges in response to malicious bots (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#bot_fight_mode TurnstileWidget#bot_fight_mode}
 
 ---
 
@@ -1343,7 +1336,7 @@ public java.lang.String getClearanceLevel();
 
 If Turnstile is embedded on a Cloudflare site and the widget should grant challenge clearance, this setting can determine the clearance level to be set Available values: "no_clearance", "jschallenge", "managed", "interactive".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#clearance_level TurnstileWidget#clearance_level}
 
 ---
 
@@ -1357,7 +1350,7 @@ public java.lang.Boolean|IResolvable getEphemeralId();
 
 Return the Ephemeral ID in /siteverify (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#ephemeral_id TurnstileWidget#ephemeral_id}
 
 ---
 
@@ -1371,7 +1364,7 @@ public java.lang.Boolean|IResolvable getOfflabel();
 
 Do not show any Cloudflare branding on the widget (ENT only).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#offlabel TurnstileWidget#offlabel}
 
 ---
 
@@ -1385,7 +1378,7 @@ public java.lang.String getRegion();
 
 Region where this widget can be used. This cannot be changed after creation. Available values: "world", "china".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/turnstile_widget#region TurnstileWidget#region}
 
 ---
 

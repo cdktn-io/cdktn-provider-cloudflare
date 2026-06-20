@@ -4,7 +4,7 @@
 
 ### CustomOriginTrustStore <a name="CustomOriginTrustStore" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store cloudflare_custom_origin_trust_store}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.Initializer"></a>
 
@@ -22,7 +22,7 @@ customOriginTrustStore.CustomOriginTrustStore(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   certificate: str,
-  zone_id: str = None
+  zone_id: str
 )
 ```
 
@@ -110,17 +110,17 @@ The root CA certificate in PEM format.
 
 Only root CA certificates are accepted; intermediate and leaf certificates are not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
 
 ---
 
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.Initializer.parameter.zoneId"></a>
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
 
 ---
 
@@ -152,7 +152,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -504,12 +503,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStore.resetZoneId"></a>
-
-```python
-def reset_zone_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -624,7 +617,7 @@ The construct id used in the generated config for the CustomOriginTrustStore to 
 
 The id of the existing CustomOriginTrustStore that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -956,7 +949,7 @@ customOriginTrustStore.CustomOriginTrustStoreConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   certificate: str,
-  zone_id: str = None
+  zone_id: str
 )
 ```
 
@@ -1058,11 +1051,11 @@ The root CA certificate in PEM format.
 
 Only root CA certificates are accepted; intermediate and leaf certificates are not supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store#certificate CustomOriginTrustStore#certificate}
 
 ---
 
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.zoneId"></a>
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.customOriginTrustStore.CustomOriginTrustStoreConfig.property.zoneId"></a>
 
 ```python
 zone_id: str
@@ -1072,7 +1065,7 @@ zone_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_origin_trust_store#zone_id CustomOriginTrustStore#zone_id}
 
 ---
 

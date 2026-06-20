@@ -4,7 +4,7 @@
 
 ### ContentScanning <a name="ContentScanning" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/content_scanning cloudflare_content_scanning}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/content_scanning cloudflare_content_scanning}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.Initializer"></a>
 
@@ -22,7 +22,7 @@ contentScanning.ContentScanning(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   value: str,
-  zone_id: str = None
+  zone_id: str
 )
 ```
 
@@ -108,17 +108,17 @@ Must be unique amongst siblings in the same scope
 
 The status value for Content Scanning. Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/content_scanning#value ContentScanning#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/content_scanning#value ContentScanning#value}
 
 ---
 
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.Initializer.parameter.zoneId"></a>
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.Initializer.parameter.zoneId"></a>
 
 - *Type:* str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
 
 ---
 
@@ -150,7 +150,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 | <code><a href="#@cdktn/provider-cloudflare.contentScanning.ContentScanning.moveFromId">move_from_id</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanning.ContentScanning.moveTo">move_to</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.contentScanning.ContentScanning.moveToId">move_to_id</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.contentScanning.ContentScanning.resetZoneId">reset_zone_id</a></code> | *No description.* |
 
 ---
 
@@ -502,12 +501,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `reset_zone_id` <a name="reset_zone_id" id="@cdktn/provider-cloudflare.contentScanning.ContentScanning.resetZoneId"></a>
-
-```python
-def reset_zone_id() -> None
-```
-
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
 
 | **Name** | **Description** |
@@ -622,7 +615,7 @@ The construct id used in the generated config for the ContentScanning to import.
 
 The id of the existing ContentScanning that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/content_scanning#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -888,7 +881,7 @@ contentScanning.ContentScanningConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   value: str,
-  zone_id: str = None
+  zone_id: str
 )
 ```
 
@@ -988,11 +981,11 @@ value: str
 
 The status value for Content Scanning. Available values: "enabled", "disabled".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/content_scanning#value ContentScanning#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/content_scanning#value ContentScanning#value}
 
 ---
 
-##### `zone_id`<sup>Optional</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanning.ContentScanningConfig.property.zoneId"></a>
+##### `zone_id`<sup>Required</sup> <a name="zone_id" id="@cdktn/provider-cloudflare.contentScanning.ContentScanningConfig.property.zoneId"></a>
 
 ```python
 zone_id: str
@@ -1002,7 +995,7 @@ zone_id: str
 
 Defines an identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/content_scanning#zone_id ContentScanning#zone_id}
 
 ---
 

@@ -4,14 +4,14 @@
 
 ### Stream <a name="Stream" id="@cdktn/provider-cloudflare.stream.Stream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream cloudflare_stream}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream cloudflare_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.stream.Stream.Initializer"></a>
 
 ```typescript
 import { stream } from '@cdktn/provider-cloudflare'
 
-new stream.Stream(scope: Construct, id: string, config?: StreamConfig)
+new stream.Stream(scope: Construct, id: string, config: StreamConfig)
 ```
 
 | **Name** | **Type** | **Description** |
@@ -40,7 +40,7 @@ Must be unique amongst siblings in the same scope
 
 ---
 
-##### `config`<sup>Optional</sup> <a name="config" id="@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.config"></a>
+##### `config`<sup>Required</sup> <a name="config" id="@cdktn/provider-cloudflare.stream.Stream.Initializer.parameter.config"></a>
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.stream.StreamConfig">StreamConfig</a>
 
@@ -75,7 +75,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.moveTo">moveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.moveToId">moveToId</a></code> | Moves this resource to the resource corresponding to "id". |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.putPublicDetails">putPublicDetails</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetAccountId">resetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetAllowedOrigins">resetAllowedOrigins</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetCreator">resetCreator</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.stream.Stream.resetIdentifier">resetIdentifier</a></code> | *No description.* |
@@ -411,12 +410,6 @@ public putPublicDetails(value: StreamPublicDetails): void
 
 ---
 
-##### `resetAccountId` <a name="resetAccountId" id="@cdktn/provider-cloudflare.stream.Stream.resetAccountId"></a>
-
-```typescript
-public resetAccountId(): void
-```
-
 ##### `resetAllowedOrigins` <a name="resetAllowedOrigins" id="@cdktn/provider-cloudflare.stream.Stream.resetAllowedOrigins"></a>
 
 ```typescript
@@ -586,7 +579,7 @@ The construct id used in the generated config for the Stream to import.
 
 The id of the existing Stream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1327,7 +1320,7 @@ public readonly provisioners: (FileProvisioner | LocalExecProvisioner | RemoteEx
 
 ---
 
-##### `accountId`<sup>Optional</sup> <a name="accountId" id="@cdktn/provider-cloudflare.stream.StreamConfig.property.accountId"></a>
+##### `accountId`<sup>Required</sup> <a name="accountId" id="@cdktn/provider-cloudflare.stream.StreamConfig.property.accountId"></a>
 
 ```typescript
 public readonly accountId: string;
@@ -1337,7 +1330,7 @@ public readonly accountId: string;
 
 The account identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#account_id Stream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#account_id Stream#account_id}
 
 ---
 
@@ -1353,7 +1346,7 @@ Lists the origins allowed to display the video.
 
 Enter allowed origin domains in an array and use `*` for wildcard subdomains. Empty arrays allow the video to be viewed on any origin.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#allowed_origins Stream#allowed_origins}
 
 ---
 
@@ -1367,7 +1360,7 @@ public readonly creator: string;
 
 A user-defined identifier for the media creator.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#creator Stream#creator}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#creator Stream#creator}
 
 ---
 
@@ -1381,7 +1374,7 @@ public readonly identifier: string;
 
 A Cloudflare-generated unique identifier for a media item.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#identifier Stream#identifier}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#identifier Stream#identifier}
 
 ---
 
@@ -1397,7 +1390,7 @@ The maximum duration in seconds for a video upload.
 
 Can be set for a video that is not yet uploaded to limit its duration. Uploads that exceed the specified duration will fail during processing. A value of `-1` means the value is unknown.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#max_duration_seconds Stream#max_duration_seconds}
 
 ---
 
@@ -1411,7 +1404,7 @@ public readonly meta: string;
 
 A user modifiable key-value store used to reference other systems of record for managing videos.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#meta Stream#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#meta Stream#meta}
 
 ---
 
@@ -1425,7 +1418,7 @@ public readonly publicDetails: StreamPublicDetails;
 
 Public details for the video including title, share link, channel link, and logo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#public_details Stream#public_details}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#public_details Stream#public_details}
 
 ---
 
@@ -1441,7 +1434,7 @@ Indicates whether the video can be a accessed using the UID.
 
 When set to `true`, a signed token must be generated with a signing key to view the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#require_signed_urls Stream#require_signed_urls}
 
 ---
 
@@ -1457,7 +1450,7 @@ Indicates the date and time at which the video will be deleted.
 
 Omit the field to indicate no change, or include with a `null` value to remove an existing scheduled deletion. If specified, must be at least 30 days from upload time.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#scheduled_deletion Stream#scheduled_deletion}
 
 ---
 
@@ -1473,7 +1466,7 @@ The timestamp for a thumbnail image calculated as a percentage value of the vide
 
 To convert from a second-wise timestamp to a percentage, divide the desired timestamp by the total duration of the video.  If this value is not set, the default thumbnail image is taken from 0s of the video.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#thumbnail_timestamp_pct Stream#thumbnail_timestamp_pct}
 
 ---
 
@@ -1487,7 +1480,7 @@ public readonly uid: string;
 
 The unique identifier for the video. Can be used to verify the video being updated.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#uid Stream#uid}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#uid Stream#uid}
 
 ---
 
@@ -1501,7 +1494,7 @@ public readonly uploadExpiry: string;
 
 The date and time when the video upload URL is no longer valid for direct user uploads.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#upload_expiry Stream#upload_expiry}
 
 ---
 
@@ -1541,10 +1534,10 @@ const streamPublicDetails: stream.StreamPublicDetails = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.channelLink">channelLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#channel_link Stream#channel_link}. |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.logo">logo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#logo Stream#logo}. |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.shareLink">shareLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#share_link Stream#share_link}. |
-| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#title Stream#title}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.channelLink">channelLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#channel_link Stream#channel_link}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.logo">logo</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#logo Stream#logo}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.shareLink">shareLink</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#share_link Stream#share_link}. |
+| <code><a href="#@cdktn/provider-cloudflare.stream.StreamPublicDetails.property.title">title</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#title Stream#title}. |
 
 ---
 
@@ -1556,7 +1549,7 @@ public readonly channelLink: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#channel_link Stream#channel_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#channel_link Stream#channel_link}.
 
 ---
 
@@ -1568,7 +1561,7 @@ public readonly logo: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#logo Stream#logo}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#logo Stream#logo}.
 
 ---
 
@@ -1580,7 +1573,7 @@ public readonly shareLink: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#share_link Stream#share_link}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#share_link Stream#share_link}.
 
 ---
 
@@ -1592,7 +1585,7 @@ public readonly title: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/stream#title Stream#title}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/stream#title Stream#title}.
 
 ---
 

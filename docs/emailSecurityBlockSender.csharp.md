@@ -4,7 +4,7 @@
 
 ### EmailSecurityBlockSender <a name="EmailSecurityBlockSender" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender cloudflare_email_security_block_sender}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.Initializer"></a>
 
@@ -74,7 +74,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.moveFromId">MoveFromId</a></code> | Move the resource corresponding to "id" to this resource. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.moveTo">MoveTo</a></code> | Moves this resource to the target resource given by moveTarget. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.moveToId">MoveToId</a></code> | Moves this resource to the resource corresponding to "id". |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.resetComments">ResetComments</a></code> | *No description.* |
 
 ---
@@ -388,12 +387,6 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.resetAccountId"></a>
-
-```csharp
-private void ResetAccountId()
-```
-
 ##### `ResetComments` <a name="ResetComments" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSender.resetComments"></a>
 
 ```csharp
@@ -503,7 +496,7 @@ The construct id used in the generated config for the EmailSecurityBlockSender t
 
 The id of the existing EmailSecurityBlockSender that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -867,10 +860,10 @@ new EmailSecurityBlockSenderConfig {
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
     (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
+    string AccountId,
     bool|IResolvable IsRegex,
     string Pattern,
     string PatternType,
-    string AccountId = null,
     string Comments = null
 };
 ```
@@ -886,11 +879,11 @@ new EmailSecurityBlockSenderConfig {
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.lifecycle">Lifecycle</a></code> | <code>Io.Cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.provider">Provider</a></code> | <code>Io.Cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.provisioners">Provisioners</a></code> | <code>Io.Cdktn.FileProvisioner\|Io.Cdktn.LocalExecProvisioner\|Io.Cdktn.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.isRegex">IsRegex</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.pattern">Pattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.patternType">PatternType</a></code> | <code>string</code> | Type of pattern matching. |
 | <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.accountId">AccountId</a></code> | <code>string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.comments">Comments</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.isRegex">IsRegex</a></code> | <code>bool\|Io.Cdktn.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.pattern">Pattern</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.patternType">PatternType</a></code> | <code>string</code> | Type of pattern matching. |
+| <code><a href="#@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.comments">Comments</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}. |
 
 ---
 
@@ -964,6 +957,20 @@ public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisione
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.accountId"></a>
+
+```csharp
+public string AccountId { get; set; }
+```
+
+- *Type:* string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+
+---
+
 ##### `IsRegex`<sup>Required</sup> <a name="IsRegex" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.isRegex"></a>
 
 ```csharp
@@ -972,7 +979,7 @@ public bool|IResolvable IsRegex { get; set; }
 
 - *Type:* bool|Io.Cdktn.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#is_regex EmailSecurityBlockSender#is_regex}.
 
 ---
 
@@ -984,7 +991,7 @@ public string Pattern { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#pattern EmailSecurityBlockSender#pattern}.
 
 ---
 
@@ -1001,21 +1008,7 @@ Type of pattern matching.
 Note: UNKNOWN is deprecated and cannot be used when creating or updating policies, but may be returned for existing entries.
 Available values: "EMAIL", "DOMAIN", "IP", "UNKNOWN".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.emailSecurityBlockSender.EmailSecurityBlockSenderConfig.property.accountId"></a>
-
-```csharp
-public string AccountId { get; set; }
-```
-
-- *Type:* string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#account_id EmailSecurityBlockSender#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#pattern_type EmailSecurityBlockSender#pattern_type}
 
 ---
 
@@ -1027,7 +1020,7 @@ public string Comments { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/email_security_block_sender#comments EmailSecurityBlockSender#comments}.
 
 ---
 

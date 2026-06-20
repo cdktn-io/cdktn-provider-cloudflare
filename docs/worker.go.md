@@ -4,7 +4,7 @@
 
 ### Worker <a name="Worker" id="@cdktn/provider-cloudflare.worker.Worker"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker cloudflare_worker}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker cloudflare_worker}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.worker.Worker.Initializer"></a>
 
@@ -77,7 +77,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putObservability">PutObservability</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putSubdomain">PutSubdomain</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.putTailConsumers">PutTailConsumers</a></code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetAccountId">ResetAccountId</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetLogpush">ResetLogpush</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetObservability">ResetObservability</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.Worker.resetSubdomain">ResetSubdomain</a></code> | *No description.* |
@@ -431,12 +430,6 @@ func PutTailConsumers(value interface{})
 
 ---
 
-##### `ResetAccountId` <a name="ResetAccountId" id="@cdktn/provider-cloudflare.worker.Worker.resetAccountId"></a>
-
-```go
-func ResetAccountId()
-```
-
 ##### `ResetLogpush` <a name="ResetLogpush" id="@cdktn/provider-cloudflare.worker.Worker.resetLogpush"></a>
 
 ```go
@@ -570,7 +563,7 @@ The construct id used in the generated config for the Worker to import.
 
 The id of the existing Worker that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -989,8 +982,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/worker"
 	Lifecycle: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle,
 	Provider: github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider,
 	Provisioners: *[]interface{},
-	Name: *string,
 	AccountId: *string,
+	Name: *string,
 	Logpush: interface{},
 	Observability: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.worker.WorkerObservability,
 	Subdomain: github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15.worker.WorkerSubdomain,
@@ -1010,8 +1003,8 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/worker"
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Identifier. |
+| <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.name">Name</a></code> | <code>*string</code> | Name of the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.logpush">Logpush</a></code> | <code>interface{}</code> | Whether logpush is enabled for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.observability">Observability</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerObservability">WorkerObservability</a></code> | Observability settings for the Worker. |
 | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerConfig.property.subdomain">Subdomain</a></code> | <code><a href="#@cdktn/provider-cloudflare.worker.WorkerSubdomain">WorkerSubdomain</a></code> | Subdomain settings for the Worker. |
@@ -1090,6 +1083,20 @@ Provisioners *[]interface{}
 
 ---
 
+##### `AccountId`<sup>Required</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId"></a>
+
+```go
+AccountId *string
+```
+
+- *Type:* *string
+
+Identifier.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#account_id Worker#account_id}
+
+---
+
 ##### `Name`<sup>Required</sup> <a name="Name" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.name"></a>
 
 ```go
@@ -1100,21 +1107,7 @@ Name *string
 
 Name of the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#name Worker#name}
-
----
-
-##### `AccountId`<sup>Optional</sup> <a name="AccountId" id="@cdktn/provider-cloudflare.worker.WorkerConfig.property.accountId"></a>
-
-```go
-AccountId *string
-```
-
-- *Type:* *string
-
-Identifier.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#account_id Worker#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#name Worker#name}
 
 ---
 
@@ -1128,7 +1121,7 @@ Logpush interface{}
 
 Whether logpush is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#logpush Worker#logpush}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#logpush Worker#logpush}
 
 ---
 
@@ -1142,7 +1135,7 @@ Observability WorkerObservability
 
 Observability settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#observability Worker#observability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#observability Worker#observability}
 
 ---
 
@@ -1156,7 +1149,7 @@ Subdomain WorkerSubdomain
 
 Subdomain settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#subdomain Worker#subdomain}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#subdomain Worker#subdomain}
 
 ---
 
@@ -1170,7 +1163,7 @@ Tags *[]*string
 
 Tags associated with the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#tags Worker#tags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#tags Worker#tags}
 
 ---
 
@@ -1184,7 +1177,7 @@ TailConsumers interface{}
 
 Other Workers that should consume logs from the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#tail_consumers Worker#tail_consumers}
 
 ---
 
@@ -1224,7 +1217,7 @@ Enabled interface{}
 
 Whether observability is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1238,7 +1231,7 @@ HeadSamplingRate *f64
 
 The sampling rate for observability. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1252,7 +1245,7 @@ Logs WorkerObservabilityLogs
 
 Log settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#logs Worker#logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#logs Worker#logs}
 
 ---
 
@@ -1266,7 +1259,7 @@ Traces WorkerObservabilityTraces
 
 Trace settings for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#traces Worker#traces}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#traces Worker#traces}
 
 ---
 
@@ -1308,7 +1301,7 @@ Destinations *[]*string
 
 A list of destinations where logs will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -1322,7 +1315,7 @@ Enabled interface{}
 
 Whether logs are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1336,7 +1329,7 @@ HeadSamplingRate *f64
 
 The sampling rate for logs. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1350,7 +1343,7 @@ InvocationLogs interface{}
 
 Whether [invocation logs](https://developers.cloudflare.com/workers/observability/logs/workers-logs/#invocation-logs) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#invocation_logs Worker#invocation_logs}
 
 ---
 
@@ -1364,7 +1357,7 @@ Persist interface{}
 
 Whether log persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -1406,7 +1399,7 @@ Destinations *[]*string
 
 A list of destinations where traces will be exported to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#destinations Worker#destinations}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#destinations Worker#destinations}
 
 ---
 
@@ -1420,7 +1413,7 @@ Enabled interface{}
 
 Whether traces are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1434,7 +1427,7 @@ HeadSamplingRate *f64
 
 The sampling rate for traces. From 0 to 1 (1 = 100%, 0.1 = 10%).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#head_sampling_rate Worker#head_sampling_rate}
 
 ---
 
@@ -1448,7 +1441,7 @@ Persist interface{}
 
 Whether trace persistence is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#persist Worker#persist}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#persist Worker#persist}
 
 ---
 
@@ -1465,7 +1458,7 @@ Controls how inbound trace context (traceparent/tracestate) headers on incoming 
 "authenticated" (default) honors inbound trace context only when accompanied by a valid trace auth token. "accept" unconditionally accepts inbound trace context. Requires the trace propagation feature to be enabled.
 Available values: "authenticated", "accept".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#propagation_policy Worker#propagation_policy}
 
 ---
 
@@ -1579,7 +1572,7 @@ Enabled interface{}
 
 Whether the *.workers.dev subdomain is enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#enabled Worker#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#enabled Worker#enabled}
 
 ---
 
@@ -1593,7 +1586,7 @@ PreviewsEnabled interface{}
 
 Whether [preview URLs](https://developers.cloudflare.com/workers/configuration/previews/) are enabled for the Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#previews_enabled Worker#previews_enabled}
 
 ---
 
@@ -1627,7 +1620,7 @@ Name *string
 
 Name of the consumer Worker.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/worker#name Worker#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/worker#name Worker#name}
 
 ---
 
