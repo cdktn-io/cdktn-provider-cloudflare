@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_message
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_message
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,25 +15,25 @@ export interface CloudforceOneRequestMessageConfig extends cdktn.TerraformMetaAr
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_message#account_id CloudforceOneRequestMessage#account_id}
   */
-  readonly accountId?: string;
+  readonly accountId: string;
   /**
   * Content of message.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_message#content CloudforceOneRequestMessage#content}
   */
   readonly content?: string;
   /**
   * UUID.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_message#request_id CloudforceOneRequestMessage#request_id}
   */
   readonly requestId: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message}
 */
 export class CloudforceOneRequestMessage extends cdktn.TerraformResource {
 
@@ -49,7 +49,7 @@ export class CloudforceOneRequestMessage extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a CloudforceOneRequestMessage resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the CloudforceOneRequestMessage to import
-  * @param importFromId The id of the existing CloudforceOneRequestMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing CloudforceOneRequestMessage that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_message#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the CloudforceOneRequestMessage to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -61,7 +61,7 @@ export class CloudforceOneRequestMessage extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/cloudforce_one_request_message cloudflare_cloudforce_one_request_message} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -72,7 +72,7 @@ export class CloudforceOneRequestMessage extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_cloudforce_one_request_message',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.20.0',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
@@ -92,16 +92,13 @@ export class CloudforceOneRequestMessage extends cdktn.TerraformResource {
   // ATTRIBUTES
   // ==========
 
-  // account_id - computed: false, optional: true, required: false
+  // account_id - computed: false, optional: false, required: true
   private _accountId?: string; 
   public get accountId() {
     return this.getStringAttribute('account_id');
   }
   public set accountId(value: string) {
     this._accountId = value;
-  }
-  public resetAccountId() {
-    this._accountId = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get accountIdInput() {

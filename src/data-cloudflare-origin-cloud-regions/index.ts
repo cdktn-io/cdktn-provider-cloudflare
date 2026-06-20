@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_regions
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_regions
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface DataCloudflareOriginCloudRegionsConfig extends cdktn.TerraformM
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_regions#max_items DataCloudflareOriginCloudRegions#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_regions#max_items DataCloudflareOriginCloudRegions#max_items}
   */
   readonly maxItems?: number;
   /**
   * Identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_regions#zone_id DataCloudflareOriginCloudRegions#zone_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_regions#zone_id DataCloudflareOriginCloudRegions#zone_id}
   */
   readonly zoneId: string;
 }
@@ -122,7 +122,7 @@ export class DataCloudflareOriginCloudRegionsResultList extends cdktn.ComplexLis
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_regions cloudflare_origin_cloud_regions}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_regions cloudflare_origin_cloud_regions}
 */
 export class DataCloudflareOriginCloudRegions extends cdktn.TerraformDataSource {
 
@@ -138,7 +138,7 @@ export class DataCloudflareOriginCloudRegions extends cdktn.TerraformDataSource 
   * Generates CDKTN code for importing a DataCloudflareOriginCloudRegions resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareOriginCloudRegions to import
-  * @param importFromId The id of the existing DataCloudflareOriginCloudRegions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_regions#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareOriginCloudRegions that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_regions#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareOriginCloudRegions to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -150,7 +150,7 @@ export class DataCloudflareOriginCloudRegions extends cdktn.TerraformDataSource 
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.20.0/docs/data-sources/origin_cloud_regions cloudflare_origin_cloud_regions} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/origin_cloud_regions cloudflare_origin_cloud_regions} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -161,7 +161,7 @@ export class DataCloudflareOriginCloudRegions extends cdktn.TerraformDataSource 
       terraformResourceType: 'cloudflare_origin_cloud_regions',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.20.0',
+        providerVersion: '5.21.0',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
