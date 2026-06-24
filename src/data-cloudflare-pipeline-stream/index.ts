@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataCloudflarePipelineStreamConfig extends cdktn.TerraformMetaA
   /**
   * Specifies the public ID of the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream#account_id DataCloudflarePipelineStream#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream#account_id DataCloudflarePipelineStream#account_id}
   */
   readonly accountId?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream#filter DataCloudflarePipelineStream#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream#filter DataCloudflarePipelineStream#filter}
   */
   readonly filter?: DataCloudflarePipelineStreamFilter;
   /**
   * Specifies the public ID of the stream.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream#stream_id DataCloudflarePipelineStream#stream_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream#stream_id DataCloudflarePipelineStream#stream_id}
   */
   readonly streamId?: string;
 }
@@ -33,13 +33,13 @@ export interface DataCloudflarePipelineStreamFilter {
   /**
   * Filters streams by name (case-insensitive substring).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream#name DataCloudflarePipelineStream#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream#name DataCloudflarePipelineStream#name}
   */
   readonly name?: string;
   /**
   * Specifies the public ID of the pipeline.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream#pipeline_id DataCloudflarePipelineStream#pipeline_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream#pipeline_id DataCloudflarePipelineStream#pipeline_id}
   */
   readonly pipelineId?: string;
 }
@@ -659,7 +659,7 @@ export class DataCloudflarePipelineStreamWorkerBindingOutputReference extends cd
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream cloudflare_pipeline_stream}
 */
 export class DataCloudflarePipelineStream extends cdktn.TerraformDataSource {
 
@@ -675,7 +675,7 @@ export class DataCloudflarePipelineStream extends cdktn.TerraformDataSource {
   * Generates CDKTN code for importing a DataCloudflarePipelineStream resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflarePipelineStream to import
-  * @param importFromId The id of the existing DataCloudflarePipelineStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflarePipelineStream that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflarePipelineStream to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -687,7 +687,7 @@ export class DataCloudflarePipelineStream extends cdktn.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/pipeline_stream cloudflare_pipeline_stream} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/pipeline_stream cloudflare_pipeline_stream} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -698,7 +698,7 @@ export class DataCloudflarePipelineStream extends cdktn.TerraformDataSource {
       terraformResourceType: 'cloudflare_pipeline_stream',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.21.0',
+        providerVersion: '5.21.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,
