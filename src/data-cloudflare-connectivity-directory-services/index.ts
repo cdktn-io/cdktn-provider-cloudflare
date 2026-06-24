@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/connectivity_directory_services
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/connectivity_directory_services
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,19 +15,19 @@ export interface DataCloudflareConnectivityDirectoryServicesConfig extends cdktn
   /**
   * Account identifier
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/connectivity_directory_services#account_id DataCloudflareConnectivityDirectoryServices#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/connectivity_directory_services#account_id DataCloudflareConnectivityDirectoryServices#account_id}
   */
   readonly accountId?: string;
   /**
   * Max items to fetch, default: 1000
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/connectivity_directory_services#max_items DataCloudflareConnectivityDirectoryServices#max_items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/connectivity_directory_services#max_items DataCloudflareConnectivityDirectoryServices#max_items}
   */
   readonly maxItems?: number;
   /**
   * Available values: "tcp", "http".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/connectivity_directory_services#type DataCloudflareConnectivityDirectoryServices#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/connectivity_directory_services#type DataCloudflareConnectivityDirectoryServices#type}
   */
   readonly type?: string;
 }
@@ -403,7 +403,7 @@ export class DataCloudflareConnectivityDirectoryServicesResultList extends cdktn
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/connectivity_directory_services cloudflare_connectivity_directory_services}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/connectivity_directory_services cloudflare_connectivity_directory_services}
 */
 export class DataCloudflareConnectivityDirectoryServices extends cdktn.TerraformDataSource {
 
@@ -419,7 +419,7 @@ export class DataCloudflareConnectivityDirectoryServices extends cdktn.Terraform
   * Generates CDKTN code for importing a DataCloudflareConnectivityDirectoryServices resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataCloudflareConnectivityDirectoryServices to import
-  * @param importFromId The id of the existing DataCloudflareConnectivityDirectoryServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/connectivity_directory_services#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataCloudflareConnectivityDirectoryServices that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/connectivity_directory_services#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataCloudflareConnectivityDirectoryServices to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -431,7 +431,7 @@ export class DataCloudflareConnectivityDirectoryServices extends cdktn.Terraform
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/connectivity_directory_services cloudflare_connectivity_directory_services} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/connectivity_directory_services cloudflare_connectivity_directory_services} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -442,7 +442,7 @@ export class DataCloudflareConnectivityDirectoryServices extends cdktn.Terraform
       terraformResourceType: 'cloudflare_connectivity_directory_services',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.21.0',
+        providerVersion: '5.21.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog
+// https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_data_catalog
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,13 +15,13 @@ export interface R2DataCatalogConfig extends cdktn.TerraformMetaArguments {
   /**
   * Use this to identify the account.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_data_catalog#account_id R2DataCatalog#account_id}
   */
   readonly accountId: string;
   /**
   * Specifies the R2 bucket name.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_data_catalog#bucket_name R2DataCatalog#bucket_name}
   */
   readonly bucketName: string;
 }
@@ -211,7 +211,7 @@ export class R2DataCatalogMaintenanceConfigOutputReference extends cdktn.Complex
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}
+* Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_data_catalog cloudflare_r2_data_catalog}
 */
 export class R2DataCatalog extends cdktn.TerraformResource {
 
@@ -227,7 +227,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
   * Generates CDKTN code for importing a R2DataCatalog resource upon running "cdktn plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the R2DataCatalog to import
-  * @param importFromId The id of the existing R2DataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing R2DataCatalog that should be imported. Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_data_catalog#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the R2DataCatalog to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktn.TerraformProvider) {
@@ -239,7 +239,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource
+  * Create a new {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/r2_data_catalog cloudflare_r2_data_catalog} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -250,7 +250,7 @@ export class R2DataCatalog extends cdktn.TerraformResource {
       terraformResourceType: 'cloudflare_r2_data_catalog',
       terraformGeneratorMetadata: {
         providerName: 'cloudflare',
-        providerVersion: '5.21.0',
+        providerVersion: '5.21.1',
         providerVersionConstraint: '~> 5.0'
       },
       provider: config.provider,

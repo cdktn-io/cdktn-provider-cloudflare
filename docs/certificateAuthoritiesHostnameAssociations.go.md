@@ -4,7 +4,7 @@
 
 ### CertificateAuthoritiesHostnameAssociations <a name="CertificateAuthoritiesHostnameAssociations" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations cloudflare_certificate_authorities_hostname_associations}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociations.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the CertificateAuthoritiesHost
 
 The id of the existing CertificateAuthoritiesHostnameAssociations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_authorities_hostname_associations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -808,7 +808,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/certific
 | <code><a href="#@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociationsConfig.property.provider">Provider</a></code> | <code>github.com/open-constructs/cdk-terrain-go/cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociationsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociationsConfig.property.zoneId">ZoneId</a></code> | <code>*string</code> | Identifier. |
-| <code><a href="#@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociationsConfig.property.hostnames">Hostnames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_authorities_hostname_associations#hostnames CertificateAuthoritiesHostnameAssociations#hostnames}. |
+| <code><a href="#@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociationsConfig.property.hostnames">Hostnames</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations#hostnames CertificateAuthoritiesHostnameAssociations#hostnames}. |
 | <code><a href="#@cdktn/provider-cloudflare.certificateAuthoritiesHostnameAssociations.CertificateAuthoritiesHostnameAssociationsConfig.property.mtlsCertificateId">MtlsCertificateId</a></code> | <code>*string</code> | The UUID for a certificate that was uploaded to the mTLS Certificate Management endpoint. |
 
 ---
@@ -893,7 +893,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_authorities_hostname_associations#zone_id CertificateAuthoritiesHostnameAssociations#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations#zone_id CertificateAuthoritiesHostnameAssociations#zone_id}
 
 ---
 
@@ -905,7 +905,7 @@ Hostnames *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_authorities_hostname_associations#hostnames CertificateAuthoritiesHostnameAssociations#hostnames}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations#hostnames CertificateAuthoritiesHostnameAssociations#hostnames}.
 
 ---
 
@@ -921,7 +921,7 @@ The UUID for a certificate that was uploaded to the mTLS Certificate Management 
 
 If no mtls_certificate_id is given, the hostnames will be associated to your active Cloudflare Managed CA.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/certificate_authorities_hostname_associations#mtls_certificate_id CertificateAuthoritiesHostnameAssociations#mtls_certificate_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/certificate_authorities_hostname_associations#mtls_certificate_id CertificateAuthoritiesHostnameAssociations#mtls_certificate_id}
 
 ---
 

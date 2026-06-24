@@ -4,7 +4,7 @@
 
 ### GoogleTagGateway <a name="GoogleTagGateway" id="@cdktn/provider-cloudflare.googleTagGateway.GoogleTagGateway"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway cloudflare_google_tag_gateway}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway cloudflare_google_tag_gateway}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.googleTagGateway.GoogleTagGateway.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the GoogleTagGateway to import
 
 The id of the existing GoogleTagGateway that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -958,7 +958,7 @@ Enabled interface{}
 
 Enables or disables Google Tag Gateway for this zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway#enabled GoogleTagGateway#enabled}
 
 ---
 
@@ -974,7 +974,7 @@ Specifies the endpoint path for proxying Google Tag Manager requests.
 
 Use an absolute path starting with '/', with no nested paths and alphanumeric characters only (e.g. /metrics).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway#endpoint GoogleTagGateway#endpoint}
 
 ---
 
@@ -988,7 +988,7 @@ HideOriginalIp interface{}
 
 Hides the original client IP address from Google when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway#hide_original_ip GoogleTagGateway#hide_original_ip}
 
 ---
 
@@ -1002,7 +1002,7 @@ MeasurementId *string
 
 Specify the Google Tag Manager container or measurement ID (e.g. GTM-XXXXXXX or G-XXXXXXXXXX).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway#measurement_id GoogleTagGateway#measurement_id}
 
 ---
 
@@ -1016,7 +1016,7 @@ ZoneId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway#zone_id GoogleTagGateway#zone_id}
 
 ---
 
@@ -1030,7 +1030,7 @@ SetUpTag interface{}
 
 Set up the associated Google Tag on the zone automatically when enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/google_tag_gateway#set_up_tag GoogleTagGateway#set_up_tag}
 
 ---
 

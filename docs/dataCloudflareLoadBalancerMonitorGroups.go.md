@@ -4,7 +4,7 @@
 
 ### DataCloudflareLoadBalancerMonitorGroups <a name="DataCloudflareLoadBalancerMonitorGroups" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancerMonitorGroups.DataCloudflareLoadBalancerMonitorGroups"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/load_balancer_monitor_groups cloudflare_load_balancer_monitor_groups}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/load_balancer_monitor_groups cloudflare_load_balancer_monitor_groups}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareLoadBalancerMonitorGroups.DataCloudflareLoadBalancerMonitorGroups.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareLoadBalancer
 
 The id of the existing DataCloudflareLoadBalancerMonitorGroups that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/load_balancer_monitor_groups#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/load_balancer_monitor_groups#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -738,7 +738,7 @@ AccountId *string
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/load_balancer_monitor_groups#account_id DataCloudflareLoadBalancerMonitorGroups#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/load_balancer_monitor_groups#account_id DataCloudflareLoadBalancerMonitorGroups#account_id}
 
 ---
 
@@ -752,7 +752,7 @@ MaxItems *f64
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/load_balancer_monitor_groups#max_items DataCloudflareLoadBalancerMonitorGroups#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/load_balancer_monitor_groups#max_items DataCloudflareLoadBalancerMonitorGroups#max_items}
 
 ---
 

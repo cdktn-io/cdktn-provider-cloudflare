@@ -4,7 +4,7 @@
 
 ### CustomPageAsset <a name="CustomPageAsset" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_page_asset cloudflare_custom_page_asset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/custom_page_asset cloudflare_custom_page_asset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.customPageAsset.CustomPageAsset.Initializer"></a>
 
@@ -503,7 +503,7 @@ The construct id used in the generated config for the CustomPageAsset to import.
 
 The id of the existing CustomPageAsset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_page_asset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/custom_page_asset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -950,7 +950,7 @@ public readonly description: string;
 
 A short description of the custom asset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_page_asset#description CustomPageAsset#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/custom_page_asset#description CustomPageAsset#description}
 
 ---
 
@@ -964,7 +964,7 @@ public readonly name: string;
 
 The unique name of the custom asset. Can only contain letters (A-Z, a-z), numbers (0-9), and underscores (_).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_page_asset#name CustomPageAsset#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/custom_page_asset#name CustomPageAsset#name}
 
 ---
 
@@ -978,7 +978,7 @@ public readonly url: string;
 
 The URL where the asset content is fetched from.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_page_asset#url CustomPageAsset#url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/custom_page_asset#url CustomPageAsset#url}
 
 ---
 
@@ -992,7 +992,7 @@ public readonly accountId: string;
 
 The Account ID to use for this endpoint. Mutually exclusive with the Zone ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_page_asset#account_id CustomPageAsset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/custom_page_asset#account_id CustomPageAsset#account_id}
 
 ---
 
@@ -1006,7 +1006,7 @@ public readonly zoneId: string;
 
 The Zone ID to use for this endpoint. Mutually exclusive with the Account ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/custom_page_asset#zone_id CustomPageAsset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/custom_page_asset#zone_id CustomPageAsset#zone_id}
 
 ---
 
