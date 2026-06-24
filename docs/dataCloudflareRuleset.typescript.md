@@ -4,7 +4,7 @@
 
 ### DataCloudflareRuleset <a name="DataCloudflareRuleset" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRuleset"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ruleset cloudflare_ruleset}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ruleset cloudflare_ruleset}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRuleset.Initializer"></a>
 
@@ -415,7 +415,7 @@ The construct id used in the generated config for the DataCloudflareRuleset to i
 
 The id of the existing DataCloudflareRuleset that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ruleset#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -861,7 +861,7 @@ public readonly accountId: string;
 
 The unique ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ruleset#account_id DataCloudflareRuleset#account_id}
 
 ---
 
@@ -875,7 +875,7 @@ public readonly id: string;
 
 The unique ID of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ruleset#id DataCloudflareRuleset#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -892,7 +892,7 @@ public readonly rulesetId: string;
 
 The unique ID of the ruleset.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ruleset#ruleset_id DataCloudflareRuleset#ruleset_id}
 
 ---
 
@@ -906,7 +906,7 @@ public readonly zoneId: string;
 
 The unique ID of the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ruleset#zone_id DataCloudflareRuleset#zone_id}
 
 ---
 
@@ -1468,6 +1468,39 @@ const dataCloudflareRulesetRulesActionParametersUriPath: dataCloudflareRuleset.D
 import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
 
 const dataCloudflareRulesetRulesActionParametersUriQuery: dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersUriQuery = { ... }
+```
+
+
+### DataCloudflareRulesetRulesActionParametersVary <a name="DataCloudflareRulesetRulesActionParametersVary" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVary"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVary.Initializer"></a>
+
+```typescript
+import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
+
+const dataCloudflareRulesetRulesActionParametersVary: dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVary = { ... }
+```
+
+
+### DataCloudflareRulesetRulesActionParametersVaryDefault <a name="DataCloudflareRulesetRulesActionParametersVaryDefault" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefault"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefault.Initializer"></a>
+
+```typescript
+import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
+
+const dataCloudflareRulesetRulesActionParametersVaryDefault: dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefault = { ... }
+```
+
+
+### DataCloudflareRulesetRulesActionParametersVaryHeaders <a name="DataCloudflareRulesetRulesActionParametersVaryHeaders" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeaders"></a>
+
+#### Initializer <a name="Initializer" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeaders.Initializer"></a>
+
+```typescript
+import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
+
+const dataCloudflareRulesetRulesActionParametersVaryHeaders: dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeaders = { ... }
 ```
 
 
@@ -10691,6 +10724,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.transformedRequestFields">transformedRequestFields</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList">DataCloudflareRulesetRulesActionParametersTransformedRequestFieldsList</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.uri">uri</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersUriOutputReference">DataCloudflareRulesetRulesActionParametersUriOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.values">values</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.vary">vary</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference">DataCloudflareRulesetRulesActionParametersVaryOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParameters">DataCloudflareRulesetRulesActionParameters</a></code> | *No description.* |
 
 ---
@@ -11496,6 +11530,16 @@ public readonly values: string[];
 ```
 
 - *Type:* string[]
+
+---
+
+##### `vary`<sup>Required</sup> <a name="vary" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersOutputReference.property.vary"></a>
+
+```typescript
+public readonly vary: DataCloudflareRulesetRulesActionParametersVaryOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference">DataCloudflareRulesetRulesActionParametersVaryOutputReference</a>
 
 ---
 
@@ -17767,6 +17811,964 @@ public readonly internalValue: DataCloudflareRulesetRulesActionParametersUriQuer
 ```
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersUriQuery">DataCloudflareRulesetRulesActionParametersUriQuery</a>
+
+---
+
+
+### DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference <a name="DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.action">action</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefault">DataCloudflareRulesetRulesActionParametersVaryDefault</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.action"></a>
+
+```typescript
+public readonly action: string;
+```
+
+- *Type:* string
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataCloudflareRulesetRulesActionParametersVaryDefault;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefault">DataCloudflareRulesetRulesActionParametersVaryDefault</a>
+
+---
+
+
+### DataCloudflareRulesetRulesActionParametersVaryHeadersMap <a name="DataCloudflareRulesetRulesActionParametersVaryHeadersMap" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.Initializer"></a>
+
+```typescript
+import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.get">get</a></code> | *No description.* |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `get` <a name="get" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.get"></a>
+
+```typescript
+public get(key: string): DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference
+```
+
+###### `key`<sup>Required</sup> <a name="key" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.get.parameter.key"></a>
+
+- *Type:* string
+
+the key of the item to return.
+
+---
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+
+### DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference <a name="DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string, complexObjectKey: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.Initializer.parameter.complexObjectKey">complexObjectKey</a></code> | <code>string</code> | the key of this item in the map. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+##### `complexObjectKey`<sup>Required</sup> <a name="complexObjectKey" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.Initializer.parameter.complexObjectKey"></a>
+
+- *Type:* string
+
+the key of this item in the map.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.action">action</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.languages">languages</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.mediaTypes">mediaTypes</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeaders">DataCloudflareRulesetRulesActionParametersVaryHeaders</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `action`<sup>Required</sup> <a name="action" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.action"></a>
+
+```typescript
+public readonly action: string;
+```
+
+- *Type:* string
+
+---
+
+##### `languages`<sup>Required</sup> <a name="languages" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.languages"></a>
+
+```typescript
+public readonly languages: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `mediaTypes`<sup>Required</sup> <a name="mediaTypes" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.mediaTypes"></a>
+
+```typescript
+public readonly mediaTypes: string[];
+```
+
+- *Type:* string[]
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataCloudflareRulesetRulesActionParametersVaryHeaders;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeaders">DataCloudflareRulesetRulesActionParametersVaryHeaders</a>
+
+---
+
+
+### DataCloudflareRulesetRulesActionParametersVaryOutputReference <a name="DataCloudflareRulesetRulesActionParametersVaryOutputReference" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.Initializer"></a>
+
+```typescript
+import { dataCloudflareRuleset } from '@cdktn/provider-cloudflare'
+
+new dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference(terraformResource: IInterpolatingParent, terraformAttribute: string)
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.Initializer.parameter.terraformResource">terraformResource</a></code> | <code>cdktn.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.Initializer.parameter.terraformAttribute">terraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `terraformResource`<sup>Required</sup> <a name="terraformResource" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* cdktn.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.computeFqn">computeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getAnyMapAttribute">getAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getBooleanAttribute">getBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getBooleanMapAttribute">getBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getListAttribute">getListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberAttribute">getNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberListAttribute">getNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberMapAttribute">getNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getStringAttribute">getStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+
+---
+
+##### `computeFqn` <a name="computeFqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.computeFqn"></a>
+
+```typescript
+public computeFqn(): string
+```
+
+##### `getAnyMapAttribute` <a name="getAnyMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getAnyMapAttribute"></a>
+
+```typescript
+public getAnyMapAttribute(terraformAttribute: string): {[ key: string ]: any}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanAttribute` <a name="getBooleanAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getBooleanAttribute"></a>
+
+```typescript
+public getBooleanAttribute(terraformAttribute: string): IResolvable
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getBooleanMapAttribute` <a name="getBooleanMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getBooleanMapAttribute"></a>
+
+```typescript
+public getBooleanMapAttribute(terraformAttribute: string): {[ key: string ]: boolean}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getListAttribute` <a name="getListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getListAttribute"></a>
+
+```typescript
+public getListAttribute(terraformAttribute: string): string[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberAttribute` <a name="getNumberAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberAttribute"></a>
+
+```typescript
+public getNumberAttribute(terraformAttribute: string): number
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberListAttribute` <a name="getNumberListAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberListAttribute"></a>
+
+```typescript
+public getNumberListAttribute(terraformAttribute: string): number[]
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getNumberMapAttribute` <a name="getNumberMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberMapAttribute"></a>
+
+```typescript
+public getNumberMapAttribute(terraformAttribute: string): {[ key: string ]: number}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringAttribute` <a name="getStringAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getStringAttribute"></a>
+
+```typescript
+public getStringAttribute(terraformAttribute: string): string
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `getStringMapAttribute` <a name="getStringMapAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getStringMapAttribute"></a>
+
+```typescript
+public getStringMapAttribute(terraformAttribute: string): {[ key: string ]: string}
+```
+
+###### `terraformAttribute`<sup>Required</sup> <a name="terraformAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `interpolationForAttribute` <a name="interpolationForAttribute" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.interpolationForAttribute"></a>
+
+```typescript
+public interpolationForAttribute(property: string): IResolvable
+```
+
+###### `property`<sup>Required</sup> <a name="property" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `resolve` <a name="resolve" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.resolve"></a>
+
+```typescript
+public resolve(_context: IResolveContext): any
+```
+
+Produce the Token's value at resolution time.
+
+###### `_context`<sup>Required</sup> <a name="_context" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.resolve.parameter._context"></a>
+
+- *Type:* cdktn.IResolveContext
+
+---
+
+##### `toString` <a name="toString" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.toString"></a>
+
+```typescript
+public toString(): string
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.default">default</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference">DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.headers">headers</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap">DataCloudflareRulesetRulesActionParametersVaryHeadersMap</a></code> | *No description.* |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVary">DataCloudflareRulesetRulesActionParametersVary</a></code> | *No description.* |
+
+---
+
+##### `creationStack`<sup>Required</sup> <a name="creationStack" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.creationStack"></a>
+
+```typescript
+public readonly creationStack: string[];
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `fqn`<sup>Required</sup> <a name="fqn" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.fqn"></a>
+
+```typescript
+public readonly fqn: string;
+```
+
+- *Type:* string
+
+---
+
+##### `default`<sup>Required</sup> <a name="default" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.default"></a>
+
+```typescript
+public readonly default: DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference">DataCloudflareRulesetRulesActionParametersVaryDefaultOutputReference</a>
+
+---
+
+##### `headers`<sup>Required</sup> <a name="headers" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.headers"></a>
+
+```typescript
+public readonly headers: DataCloudflareRulesetRulesActionParametersVaryHeadersMap;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryHeadersMap">DataCloudflareRulesetRulesActionParametersVaryHeadersMap</a>
+
+---
+
+##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVaryOutputReference.property.internalValue"></a>
+
+```typescript
+public readonly internalValue: DataCloudflareRulesetRulesActionParametersVary;
+```
+
+- *Type:* <a href="#@cdktn/provider-cloudflare.dataCloudflareRuleset.DataCloudflareRulesetRulesActionParametersVary">DataCloudflareRulesetRulesActionParametersVary</a>
 
 ---
 

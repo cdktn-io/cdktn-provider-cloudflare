@@ -4,7 +4,7 @@
 
 ### DataCloudflareAiSearchTokens <a name="DataCloudflareAiSearchTokens" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens cloudflare_ai_search_tokens}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer"></a>
 
@@ -38,7 +38,7 @@ dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer.parameter.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer.parameter.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer.parameter.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokens.Initializer.parameter.search">search</a></code> | <code>str</code> | Filter tokens whose name contains this string (case-insensitive). |
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Filter tokens whose name contains this string (case-insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#search DataCloudflareAiSearchTokens#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#search DataCloudflareAiSearchTokens#search}
 
 ---
 
@@ -532,7 +532,7 @@ The construct id used in the generated config for the DataCloudflareAiSearchToke
 
 The id of the existing DataCloudflareAiSearchTokens that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -814,7 +814,7 @@ dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig(
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.lifecycle">lifecycle</a></code> | <code>cdktn.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner]</code> | *No description.* |
-| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.accountId">account_id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.maxItems">max_items</a></code> | <code>typing.Union[int, float]</code> | Max items to fetch, default: 1000. |
 | <code><a href="#@cdktn/provider-cloudflare.dataCloudflareAiSearchTokens.DataCloudflareAiSearchTokensConfig.property.search">search</a></code> | <code>str</code> | Filter tokens whose name contains this string (case-insensitive). |
 
@@ -898,7 +898,7 @@ account_id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#account_id DataCloudflareAiSearchTokens#account_id}.
 
 ---
 
@@ -912,7 +912,7 @@ max_items: typing.Union[int, float]
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#max_items DataCloudflareAiSearchTokens#max_items}
 
 ---
 
@@ -926,7 +926,7 @@ search: str
 
 Filter tokens whose name contains this string (case-insensitive).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/ai_search_tokens#search DataCloudflareAiSearchTokens#search}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/ai_search_tokens#search DataCloudflareAiSearchTokens#search}
 
 ---
 

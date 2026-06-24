@@ -4,7 +4,7 @@
 
 ### OriginTlsComplianceModes <a name="OriginTlsComplianceModes" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes cloudflare_origin_tls_compliance_modes}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.originTlsComplianceModes.OriginTlsComplianceModes.Initializer"></a>
 
@@ -108,7 +108,7 @@ List of TLS compliance modes that constrain the key-exchange algorithms Cloudfla
 
 Currently supported values are `fips` (FIPS-approved curves) and `pqh` (post-quantum hybrid). Future modes (e.g. `cnsa2`) may be added; clients should treat unknown values as opaque strings. Multiple modes are combined as the intersection of their permitted algorithm lists; selections whose intersection is empty are rejected. An empty list clears the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_tls_compliance_modes#value OriginTlsComplianceModes#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes#value OriginTlsComplianceModes#value}
 
 ---
 
@@ -118,7 +118,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_tls_compliance_modes#zone_id OriginTlsComplianceModes#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes#zone_id OriginTlsComplianceModes#zone_id}
 
 ---
 
@@ -567,7 +567,7 @@ The construct id used in the generated config for the OriginTlsComplianceModes t
 
 The id of the existing OriginTlsComplianceModes that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_tls_compliance_modes#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -957,7 +957,7 @@ List of TLS compliance modes that constrain the key-exchange algorithms Cloudfla
 
 Currently supported values are `fips` (FIPS-approved curves) and `pqh` (post-quantum hybrid). Future modes (e.g. `cnsa2`) may be added; clients should treat unknown values as opaque strings. Multiple modes are combined as the intersection of their permitted algorithm lists; selections whose intersection is empty are rejected. An empty list clears the constraint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_tls_compliance_modes#value OriginTlsComplianceModes#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes#value OriginTlsComplianceModes#value}
 
 ---
 
@@ -971,7 +971,7 @@ public java.lang.String getZoneId();
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/origin_tls_compliance_modes#zone_id OriginTlsComplianceModes#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/origin_tls_compliance_modes#zone_id OriginTlsComplianceModes#zone_id}
 
 ---
 

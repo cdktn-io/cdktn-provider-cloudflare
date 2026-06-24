@@ -4,7 +4,7 @@
 
 ### DataCloudflareShareRecipient <a name="DataCloudflareShareRecipient" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipient.DataCloudflareShareRecipient"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipient cloudflare_share_recipient}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipient cloudflare_share_recipient}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShareRecipient.DataCloudflareShareRecipient.Initializer"></a>
 
@@ -394,7 +394,7 @@ The construct id used in the generated config for the DataCloudflareShareRecipie
 
 The id of the existing DataCloudflareShareRecipient that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipient#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipient#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -830,7 +830,7 @@ public string AccountId { get; set; }
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipient#account_id DataCloudflareShareRecipient#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipient#account_id DataCloudflareShareRecipient#account_id}
 
 ---
 
@@ -844,7 +844,7 @@ public string RecipientId { get; set; }
 
 Share Recipient identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipient#recipient_id DataCloudflareShareRecipient#recipient_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipient#recipient_id DataCloudflareShareRecipient#recipient_id}
 
 ---
 
@@ -858,7 +858,7 @@ public string ShareId { get; set; }
 
 Share identifier tag.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipient#share_id DataCloudflareShareRecipient#share_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipient#share_id DataCloudflareShareRecipient#share_id}
 
 ---
 
@@ -872,7 +872,7 @@ public bool|IResolvable IncludeResources { get; set; }
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/share_recipient#include_resources DataCloudflareShareRecipient#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/share_recipient#include_resources DataCloudflareShareRecipient#include_resources}
 
 ---
 

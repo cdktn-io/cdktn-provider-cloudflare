@@ -4,7 +4,7 @@
 
 ### DataCloudflareShares <a name="DataCloudflareShares" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares cloudflare_shares}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares cloudflare_shares}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.dataCloudflareShares.DataCloudflareShares.Initializer"></a>
 
@@ -457,7 +457,7 @@ The construct id used in the generated config for the DataCloudflareShares to im
 
 The id of the existing DataCloudflareShares that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -998,7 +998,7 @@ public readonly accountId: string;
 
 Account identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#account_id DataCloudflareShares#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#account_id DataCloudflareShares#account_id}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly direction: string;
 
 Direction to sort objects. Available values: "asc", "desc".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#direction DataCloudflareShares#direction}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#direction DataCloudflareShares#direction}
 
 ---
 
@@ -1026,7 +1026,7 @@ public readonly includeRecipientCounts: boolean | IResolvable;
 
 Include recipient counts in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#include_recipient_counts DataCloudflareShares#include_recipient_counts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#include_recipient_counts DataCloudflareShares#include_recipient_counts}
 
 ---
 
@@ -1040,7 +1040,7 @@ public readonly includeResources: boolean | IResolvable;
 
 Include resources in the response.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#include_resources DataCloudflareShares#include_resources}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#include_resources DataCloudflareShares#include_resources}
 
 ---
 
@@ -1054,7 +1054,7 @@ public readonly kind: string;
 
 Filter shares by kind. Available values: "sent", "received".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#kind DataCloudflareShares#kind}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#kind DataCloudflareShares#kind}
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly maxItems: number;
 
 Max items to fetch, default: 1000.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#max_items DataCloudflareShares#max_items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#max_items DataCloudflareShares#max_items}
 
 ---
 
@@ -1082,7 +1082,7 @@ public readonly order: string;
 
 Order shares by values in the given field. Available values: "name", "created".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#order DataCloudflareShares#order}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#order DataCloudflareShares#order}
 
 ---
 
@@ -1096,7 +1096,7 @@ public readonly resourceTypes: string[];
 
 Filter share resources by resource_types.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#resource_types DataCloudflareShares#resource_types}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#resource_types DataCloudflareShares#resource_types}
 
 ---
 
@@ -1110,7 +1110,7 @@ public readonly status: string;
 
 Filter shares by status. Available values: "active", "deleting", "deleted".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#status DataCloudflareShares#status}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#status DataCloudflareShares#status}
 
 ---
 
@@ -1126,7 +1126,7 @@ Filter shares by tag.
 
 Each value is either `key=value` (matches shares whose tags contain that key/value pair) or `key` alone (matches shares that have any value for that key). May be repeated; multiple `tag` parameters are ANDed together. Maximum 20 `tag` parameters per request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#tag DataCloudflareShares#tag}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#tag DataCloudflareShares#tag}
 
 ---
 
@@ -1140,7 +1140,7 @@ public readonly targetType: string;
 
 Filter shares by target_type. Available values: "account", "organization".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/data-sources/shares#target_type DataCloudflareShares#target_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/data-sources/shares#target_type DataCloudflareShares#target_type}
 
 ---
 

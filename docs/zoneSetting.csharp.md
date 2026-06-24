@@ -4,7 +4,7 @@
 
 ### ZoneSetting <a name="ZoneSetting" id="@cdktn/provider-cloudflare.zoneSetting.ZoneSetting"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting cloudflare_zone_setting}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_setting cloudflare_zone_setting}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneSetting.ZoneSetting.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the ZoneSetting to import.
 
 The id of the existing ZoneSetting that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_setting#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -943,7 +943,7 @@ public string SettingId { get; set; }
 
 Setting name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_setting#setting_id ZoneSetting#setting_id}
 
 ---
 
@@ -957,7 +957,7 @@ public System.Collections.Generic.IDictionary<string, object> Value { get; set; 
 
 Current value of the zone setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#value ZoneSetting#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_setting#value ZoneSetting#value}
 
 ---
 
@@ -971,7 +971,7 @@ public string ZoneId { get; set; }
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_setting#zone_id ZoneSetting#zone_id}
 
 ---
 
@@ -985,7 +985,7 @@ public bool|IResolvable Enabled { get; set; }
 
 ssl-recommender enrollment setting.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_setting#enabled ZoneSetting#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_setting#enabled ZoneSetting#enabled}
 
 ---
 

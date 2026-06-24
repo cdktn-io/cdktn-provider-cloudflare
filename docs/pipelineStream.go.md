@@ -4,7 +4,7 @@
 
 ### PipelineStream <a name="PipelineStream" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStream"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream cloudflare_pipeline_stream}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream cloudflare_pipeline_stream}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.pipelineStream.PipelineStream.Initializer"></a>
 
@@ -569,7 +569,7 @@ The construct id used in the generated config for the PipelineStream to import.
 
 The id of the existing PipelineStream that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -988,10 +988,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.accountId">AccountId</a></code> | <code>*string</code> | Specifies the public ID of the account. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.name">Name</a></code> | <code>*string</code> | Specifies the name of the Stream. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.format">Format</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat">PipelineStreamFormat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#format PipelineStream#format}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.http">Http</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttp">PipelineStreamHttp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#http PipelineStream#http}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.schema">Schema</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema">PipelineStreamSchema</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#schema PipelineStream#schema}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.workerBinding">WorkerBinding</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamWorkerBinding">PipelineStreamWorkerBinding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#worker_binding PipelineStream#worker_binding}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.format">Format</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat">PipelineStreamFormat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#format PipelineStream#format}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.http">Http</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttp">PipelineStreamHttp</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#http PipelineStream#http}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.schema">Schema</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema">PipelineStreamSchema</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#schema PipelineStream#schema}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamConfig.property.workerBinding">WorkerBinding</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamWorkerBinding">PipelineStreamWorkerBinding</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#worker_binding PipelineStream#worker_binding}. |
 
 ---
 
@@ -1075,7 +1075,7 @@ AccountId *string
 
 Specifies the public ID of the account.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#account_id PipelineStream#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#account_id PipelineStream#account_id}
 
 ---
 
@@ -1089,7 +1089,7 @@ Name *string
 
 Specifies the name of the Stream.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#name PipelineStream#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#name PipelineStream#name}
 
 ---
 
@@ -1101,7 +1101,7 @@ Format PipelineStreamFormat
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat">PipelineStreamFormat</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#format PipelineStream#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#format PipelineStream#format}.
 
 ---
 
@@ -1113,7 +1113,7 @@ Http PipelineStreamHttp
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttp">PipelineStreamHttp</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#http PipelineStream#http}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#http PipelineStream#http}.
 
 ---
 
@@ -1125,7 +1125,7 @@ Schema PipelineStreamSchema
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema">PipelineStreamSchema</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#schema PipelineStream#schema}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#schema PipelineStream#schema}.
 
 ---
 
@@ -1137,7 +1137,7 @@ WorkerBinding PipelineStreamWorkerBinding
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamWorkerBinding">PipelineStreamWorkerBinding</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#worker_binding PipelineStream#worker_binding}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#worker_binding PipelineStream#worker_binding}.
 
 ---
 
@@ -1165,9 +1165,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.type">Type</a></code> | <code>*string</code> | Available values: "json", "parquet". |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.compression">Compression</a></code> | <code>*string</code> | Available values: "uncompressed", "snappy", "gzip", "zstd", "lz4". |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.decimalEncoding">DecimalEncoding</a></code> | <code>*string</code> | Available values: "number", "string", "bytes". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.rowGroupBytes">RowGroupBytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.rowGroupBytes">RowGroupBytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.timestampFormat">TimestampFormat</a></code> | <code>*string</code> | Available values: "rfc3339", "unix_millis". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.unstructured">Unstructured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamFormat.property.unstructured">Unstructured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}. |
 
 ---
 
@@ -1181,7 +1181,7 @@ Type *string
 
 Available values: "json", "parquet".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#type PipelineStream#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#type PipelineStream#type}
 
 ---
 
@@ -1195,7 +1195,7 @@ Compression *string
 
 Available values: "uncompressed", "snappy", "gzip", "zstd", "lz4".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#compression PipelineStream#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#compression PipelineStream#compression}
 
 ---
 
@@ -1209,7 +1209,7 @@ DecimalEncoding *string
 
 Available values: "number", "string", "bytes".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#decimal_encoding PipelineStream#decimal_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#decimal_encoding PipelineStream#decimal_encoding}
 
 ---
 
@@ -1221,7 +1221,7 @@ RowGroupBytes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}.
 
 ---
 
@@ -1235,7 +1235,7 @@ TimestampFormat *string
 
 Available values: "rfc3339", "unix_millis".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#timestamp_format PipelineStream#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#timestamp_format PipelineStream#timestamp_format}
 
 ---
 
@@ -1247,7 +1247,7 @@ Unstructured interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}.
 
 ---
 
@@ -1285,7 +1285,7 @@ Authentication interface{}
 
 Indicates that authentication is required for the HTTP endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#authentication PipelineStream#authentication}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#authentication PipelineStream#authentication}
 
 ---
 
@@ -1299,7 +1299,7 @@ Enabled interface{}
 
 Indicates that the HTTP endpoint is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#enabled PipelineStream#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#enabled PipelineStream#enabled}
 
 ---
 
@@ -1313,7 +1313,7 @@ Cors PipelineStreamHttpCors
 
 Specifies the CORS options for the HTTP endpoint.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#cors PipelineStream#cors}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#cors PipelineStream#cors}
 
 ---
 
@@ -1333,7 +1333,7 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttpCors.property.origins">Origins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#origins PipelineStream#origins}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamHttpCors.property.origins">Origins</a></code> | <code>*[]*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#origins PipelineStream#origins}. |
 
 ---
 
@@ -1345,7 +1345,7 @@ Origins *[]*string
 
 - *Type:* *[]*string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#origins PipelineStream#origins}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#origins PipelineStream#origins}.
 
 ---
 
@@ -1367,9 +1367,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema.property.fields">Fields</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#fields PipelineStream#fields}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema.property.format">Format</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat">PipelineStreamSchemaFormat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#format PipelineStream#format}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema.property.inferred">Inferred</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#inferred PipelineStream#inferred}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema.property.fields">Fields</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#fields PipelineStream#fields}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema.property.format">Format</a></code> | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat">PipelineStreamSchemaFormat</a></code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#format PipelineStream#format}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchema.property.inferred">Inferred</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#inferred PipelineStream#inferred}. |
 
 ---
 
@@ -1381,7 +1381,7 @@ Fields interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#fields PipelineStream#fields}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#fields PipelineStream#fields}.
 
 ---
 
@@ -1393,7 +1393,7 @@ Format PipelineStreamSchemaFormat
 
 - *Type:* <a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat">PipelineStreamSchemaFormat</a>
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#format PipelineStream#format}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#format PipelineStream#format}.
 
 ---
 
@@ -1405,7 +1405,7 @@ Inferred interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#inferred PipelineStream#inferred}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#inferred PipelineStream#inferred}.
 
 ---
 
@@ -1431,10 +1431,10 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.type">Type</a></code> | <code>*string</code> | Available values: "int32", "int64", "float32", "float64", "bool", "string", "binary", "timestamp", "json". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.metadataKey">MetadataKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#metadata_key PipelineStream#metadata_key}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#name PipelineStream#name}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#required PipelineStream#required}. |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.sqlName">SqlName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#sql_name PipelineStream#sql_name}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.metadataKey">MetadataKey</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#metadata_key PipelineStream#metadata_key}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#name PipelineStream#name}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.required">Required</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#required PipelineStream#required}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.sqlName">SqlName</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#sql_name PipelineStream#sql_name}. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFields.property.unit">Unit</a></code> | <code>*string</code> | Available values: "second", "millisecond", "microsecond", "nanosecond". |
 
 ---
@@ -1449,7 +1449,7 @@ Type *string
 
 Available values: "int32", "int64", "float32", "float64", "bool", "string", "binary", "timestamp", "json".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#type PipelineStream#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#type PipelineStream#type}
 
 ---
 
@@ -1461,7 +1461,7 @@ MetadataKey *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#metadata_key PipelineStream#metadata_key}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#metadata_key PipelineStream#metadata_key}.
 
 ---
 
@@ -1473,7 +1473,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#name PipelineStream#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#name PipelineStream#name}.
 
 ---
 
@@ -1485,7 +1485,7 @@ Required interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#required PipelineStream#required}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#required PipelineStream#required}.
 
 ---
 
@@ -1497,7 +1497,7 @@ SqlName *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#sql_name PipelineStream#sql_name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#sql_name PipelineStream#sql_name}.
 
 ---
 
@@ -1511,7 +1511,7 @@ Unit *string
 
 Available values: "second", "millisecond", "microsecond", "nanosecond".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#unit PipelineStream#unit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#unit PipelineStream#unit}
 
 ---
 
@@ -1539,9 +1539,9 @@ import "github.com/cdktn-io/cdktn-provider-cloudflare-go/cloudflare/v15/pipeline
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.type">Type</a></code> | <code>*string</code> | Available values: "json", "parquet". |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.compression">Compression</a></code> | <code>*string</code> | Available values: "uncompressed", "snappy", "gzip", "zstd", "lz4". |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.decimalEncoding">DecimalEncoding</a></code> | <code>*string</code> | Available values: "number", "string", "bytes". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.rowGroupBytes">RowGroupBytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.rowGroupBytes">RowGroupBytes</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}. |
 | <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.timestampFormat">TimestampFormat</a></code> | <code>*string</code> | Available values: "rfc3339", "unix_millis". |
-| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.unstructured">Unstructured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}. |
+| <code><a href="#@cdktn/provider-cloudflare.pipelineStream.PipelineStreamSchemaFormat.property.unstructured">Unstructured</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}. |
 
 ---
 
@@ -1555,7 +1555,7 @@ Type *string
 
 Available values: "json", "parquet".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#type PipelineStream#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#type PipelineStream#type}
 
 ---
 
@@ -1569,7 +1569,7 @@ Compression *string
 
 Available values: "uncompressed", "snappy", "gzip", "zstd", "lz4".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#compression PipelineStream#compression}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#compression PipelineStream#compression}
 
 ---
 
@@ -1583,7 +1583,7 @@ DecimalEncoding *string
 
 Available values: "number", "string", "bytes".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#decimal_encoding PipelineStream#decimal_encoding}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#decimal_encoding PipelineStream#decimal_encoding}
 
 ---
 
@@ -1595,7 +1595,7 @@ RowGroupBytes *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#row_group_bytes PipelineStream#row_group_bytes}.
 
 ---
 
@@ -1609,7 +1609,7 @@ TimestampFormat *string
 
 Available values: "rfc3339", "unix_millis".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#timestamp_format PipelineStream#timestamp_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#timestamp_format PipelineStream#timestamp_format}
 
 ---
 
@@ -1621,7 +1621,7 @@ Unstructured interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#unstructured PipelineStream#unstructured}.
 
 ---
 
@@ -1655,7 +1655,7 @@ Enabled interface{}
 
 Indicates that the worker binding is enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/pipeline_stream#enabled PipelineStream#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/pipeline_stream#enabled PipelineStream#enabled}
 
 ---
 

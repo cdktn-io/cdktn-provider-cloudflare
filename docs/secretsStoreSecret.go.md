@@ -4,7 +4,7 @@
 
 ### SecretsStoreSecret <a name="SecretsStoreSecret" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret cloudflare_secrets_store_secret}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret cloudflare_secrets_store_secret}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.secretsStoreSecret.SecretsStoreSecret.Initializer"></a>
 
@@ -496,7 +496,7 @@ The construct id used in the generated config for the SecretsStoreSecret to impo
 
 The id of the existing SecretsStoreSecret that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -991,7 +991,7 @@ AccountId *string
 
 Account Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret#account_id SecretsStoreSecret#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret#account_id SecretsStoreSecret#account_id}
 
 ---
 
@@ -1005,7 +1005,7 @@ Name *string
 
 The name of the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret#name SecretsStoreSecret#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret#name SecretsStoreSecret#name}
 
 ---
 
@@ -1021,7 +1021,7 @@ The list of services that can use this secret.
 
 Valid values are `workers`, `ai_gateway`, `dex`, and `access`. Must be listed in alphabetical order.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret#scopes SecretsStoreSecret#scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret#scopes SecretsStoreSecret#scopes}
 
 ---
 
@@ -1035,7 +1035,7 @@ StoreId *string
 
 Store Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret#store_id SecretsStoreSecret#store_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret#store_id SecretsStoreSecret#store_id}
 
 ---
 
@@ -1051,7 +1051,7 @@ The value of the secret.
 
 Maximum 64 KiB (65,536 bytes). Note that this is 'write only' - no API response will provide this value, it is only used to create/modify secrets.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret#value SecretsStoreSecret#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret#value SecretsStoreSecret#value}
 
 ---
 
@@ -1065,7 +1065,7 @@ Comment *string
 
 Freeform text describing the secret.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/secrets_store_secret#comment SecretsStoreSecret#comment}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/secrets_store_secret#comment SecretsStoreSecret#comment}
 
 ---
 

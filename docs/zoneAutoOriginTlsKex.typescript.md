@@ -4,7 +4,7 @@
 
 ### ZoneAutoOriginTlsKex <a name="ZoneAutoOriginTlsKex" id="@cdktn/provider-cloudflare.zoneAutoOriginTlsKex.ZoneAutoOriginTlsKex"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex cloudflare_zone_auto_origin_tls_kex}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.zoneAutoOriginTlsKex.ZoneAutoOriginTlsKex.Initializer"></a>
 
@@ -489,7 +489,7 @@ The construct id used in the generated config for the ZoneAutoOriginTlsKex to im
 
 The id of the existing ZoneAutoOriginTlsKex that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -772,7 +772,7 @@ const zoneAutoOriginTlsKexConfig: zoneAutoOriginTlsKex.ZoneAutoOriginTlsKexConfi
 | <code><a href="#@cdktn/provider-cloudflare.zoneAutoOriginTlsKex.ZoneAutoOriginTlsKexConfig.property.provider">provider</a></code> | <code>cdktn.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zoneAutoOriginTlsKex.ZoneAutoOriginTlsKexConfig.property.provisioners">provisioners</a></code> | <code>cdktn.FileProvisioner \| cdktn.LocalExecProvisioner \| cdktn.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktn/provider-cloudflare.zoneAutoOriginTlsKex.ZoneAutoOriginTlsKexConfig.property.enabled">enabled</a></code> | <code>boolean \| cdktn.IResolvable</code> | Controls enablement of Auto-Origin TLS KEX selection for the zone. |
-| <code><a href="#@cdktn/provider-cloudflare.zoneAutoOriginTlsKex.ZoneAutoOriginTlsKexConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex#zone_id ZoneAutoOriginTlsKex#zone_id}. |
+| <code><a href="#@cdktn/provider-cloudflare.zoneAutoOriginTlsKex.ZoneAutoOriginTlsKexConfig.property.zoneId">zoneId</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex#zone_id ZoneAutoOriginTlsKex#zone_id}. |
 
 ---
 
@@ -856,7 +856,7 @@ public readonly enabled: boolean | IResolvable;
 
 Controls enablement of Auto-Origin TLS KEX selection for the zone.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex#enabled ZoneAutoOriginTlsKex#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex#enabled ZoneAutoOriginTlsKex#enabled}
 
 ---
 
@@ -868,7 +868,7 @@ public readonly zoneId: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/zone_auto_origin_tls_kex#zone_id ZoneAutoOriginTlsKex#zone_id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/zone_auto_origin_tls_kex#zone_id ZoneAutoOriginTlsKex#zone_id}.
 
 ---
 

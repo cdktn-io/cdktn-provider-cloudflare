@@ -4,7 +4,7 @@
 
 ### LoadBalancerMonitorGroup <a name="LoadBalancerMonitorGroup" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup"></a>
 
-Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
+Represents a {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group cloudflare_load_balancer_monitor_group}.
 
 #### Initializers <a name="Initializers" id="@cdktn/provider-cloudflare.loadBalancerMonitorGroup.LoadBalancerMonitorGroup.Initializer"></a>
 
@@ -110,7 +110,7 @@ Must be unique amongst siblings in the same scope
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
 
 ---
 
@@ -120,7 +120,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 A short description of the monitor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloud
 
 List of monitors in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
 
 ---
 
@@ -642,7 +642,7 @@ The construct id used in the generated config for the LoadBalancerMonitorGroup t
 
 The id of the existing LoadBalancerMonitorGroup that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1054,7 +1054,7 @@ account_id: str
 
 Identifier.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#account_id LoadBalancerMonitorGroup#account_id}
 
 ---
 
@@ -1068,7 +1068,7 @@ description: str
 
 A short description of the monitor group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#description LoadBalancerMonitorGroup#description}
 
 ---
 
@@ -1082,7 +1082,7 @@ members: IResolvable | typing.List[LoadBalancerMonitorGroupMembers]
 
 List of monitors in this group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#members LoadBalancerMonitorGroup#members}
 
 ---
 
@@ -1122,7 +1122,7 @@ enabled: bool | IResolvable
 
 Whether this monitor is enabled in the group.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#enabled LoadBalancerMonitorGroup#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#enabled LoadBalancerMonitorGroup#enabled}
 
 ---
 
@@ -1136,7 +1136,7 @@ monitor_id: str
 
 The ID of the Monitor to use for checking the health of origins within this pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#monitor_id LoadBalancerMonitorGroup#monitor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#monitor_id LoadBalancerMonitorGroup#monitor_id}
 
 ---
 
@@ -1150,7 +1150,7 @@ monitoring_only: bool | IResolvable
 
 Whether this monitor is used for monitoring only (does not affect pool health).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#monitoring_only LoadBalancerMonitorGroup#monitoring_only}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#monitoring_only LoadBalancerMonitorGroup#monitoring_only}
 
 ---
 
@@ -1164,7 +1164,7 @@ must_be_healthy: bool | IResolvable
 
 Whether this monitor must be healthy for the pool to be considered healthy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.0/docs/resources/load_balancer_monitor_group#must_be_healthy LoadBalancerMonitorGroup#must_be_healthy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/cloudflare/cloudflare/5.21.1/docs/resources/load_balancer_monitor_group#must_be_healthy LoadBalancerMonitorGroup#must_be_healthy}
 
 ---
 
