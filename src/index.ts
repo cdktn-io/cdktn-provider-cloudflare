@@ -103,6 +103,7 @@ export * as magicWanGreTunnel from './magic-wan-gre-tunnel/index';
 export * as magicWanIpsecTunnel from './magic-wan-ipsec-tunnel/index';
 export * as magicWanStaticRoute from './magic-wan-static-route/index';
 export * as managedTransforms from './managed-transforms/index';
+export * as moqRelay from './moq-relay/index';
 export * as mtlsCertificate from './mtls-certificate/index';
 export * as notificationPolicy from './notification-policy/index';
 export * as notificationPolicyWebhooks from './notification-policy-webhooks/index';
@@ -433,6 +434,8 @@ export * as dataCloudflareMagicWanGreTunnel from './data-cloudflare-magic-wan-gr
 export * as dataCloudflareMagicWanIpsecTunnel from './data-cloudflare-magic-wan-ipsec-tunnel/index';
 export * as dataCloudflareMagicWanStaticRoute from './data-cloudflare-magic-wan-static-route/index';
 export * as dataCloudflareManagedTransforms from './data-cloudflare-managed-transforms/index';
+export * as dataCloudflareMoqRelay from './data-cloudflare-moq-relay/index';
+export * as dataCloudflareMoqRelays from './data-cloudflare-moq-relays/index';
 export * as dataCloudflareMtlsCertificate from './data-cloudflare-mtls-certificate/index';
 export * as dataCloudflareMtlsCertificateAssociations from './data-cloudflare-mtls-certificate-associations/index';
 export * as dataCloudflareMtlsCertificates from './data-cloudflare-mtls-certificates/index';
